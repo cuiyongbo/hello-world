@@ -1,0 +1,56 @@
+﻿1. fatal error C1083: Cannot open precompiled header file
+	1. 检查项目precompile 为 yu
+	2. stdafx.cpp为yc 
+
+2. VS工程环境变量定义
+	工程 "property"-"C/C++"-"Preprocessor"-"Macros"
+
+3. Windows 10 锁屏壁纸位置
+	C:\Users\User-Name\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_……\LocalState\Assets
+	Batch rename: dir | rename * *.jpg
+
+4. fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
+	工程 "property" - "Config manager" - "platform": Win32 --> X64
+	
+5. '__LINE__Var' : undeclared identifier
+	工程 "property" - "C/C++" - "All Options" - "Debug information format" : "Program Database (/Zi)"
+
+6. Enable String Pooling
+	工程 "property" - "C/C++" - "Code Generation" - "Enable String Pooling" - "Yes (/GF)"
+	
+7. Disable source control
+	"Tools" - "Options" - "Source Control" - "Current source control plug-in" - "None"
+	Open < C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer >, rename <Microsoft.TeamFoundation.Git.Provider>
+	
+8. gtest 选择性运行测试用例
+	工程 "property" - "Debug" - "Command Arguments"  - "--gtest_filter = MemoryLeak*.*"
+
+9. 不编译指定的源文件
+	文件 "property" - "General" - "Exclude from build"  - "yes"
+
+10. warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+    warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:REF' specification
+	工程 "property" - "Linker" - "All Options" - "References" - "No (/OPT:NOREF)"
+	工程 "property" - "Linker" - "All Options" - "Enable COMDAT Folding" - "No (/OPT:NOICF)"
+
+11. warning C4627: '#include "**.h"': skipped when looking for precompiled header use Add directive to 'stdafx.h' or rebuild precompiled header
+	fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+	Solution 1. add '#include "stdafx.h"' to your source
+	Solution 2. 工程 "property" - "C/C++" - "Precompiled Header" - "Not Using Precompiled Headers"
+
+12. warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+	The run-time libraries now contain directives to prevent mixing different types. You will receive this warning 
+	if you try to use different types or debug and non-debug versions of the run-time library in the same program. 
+	For example, if you compiled one file to use one kind of run-time library and another file to use another kind 
+	(for example, single-threaded versus multithreaded) and tried to link them, you will get this warning. 
+	You should compile all source files to use the same run-time library. See the Use Run-Time Library (/MD, /MT, /LD) compiler options for more information.
+
+13. __debugbreak
+	This work even in Release
+
+14. Precompile setting
+For the entire project, you should choose the options "Use Precompiled Header (/Yu)", "stdafx.h", "$(IntDir)\$(TargetName).pch".
+For the stdafx.cpp file (right-click on it in Solution Explorer and select Properties), you should specify these options: "Create Precompiled Header (/Yc)", "stdafx.h", "$(IntDir)\$(TargetName).pch".
+
+15 Error C2220
+	Don't use /WX to compile ["Property" - "C/C++" - "Treat warning as error"]

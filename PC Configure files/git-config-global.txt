@@ -1,0 +1,13 @@
+git config --global user.name "gituser"
+
+git config --global user.name "cherry"
+
+git config --global user.email "csu20140909@gmail.com"
+git config --global branch.autosetuprebase always
+git config --global color.ui true
+git config --global color.status auto
+git config --global color.branch auto
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+
+git config --list
