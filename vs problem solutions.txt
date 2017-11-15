@@ -44,6 +44,7 @@
 	For example, if you compiled one file to use one kind of run-time library and another file to use another kind 
 	(for example, single-threaded versus multithreaded) and tried to link them, you will get this warning. 
 	You should compile all source files to use the same run-time library. See the Use Run-Time Library (/MD, /MT, /LD) compiler options for more information.
+	https://msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx
 
 13. __debugbreak
 	This work even in Release
