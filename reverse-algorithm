@@ -1,0 +1,59 @@
+		// TEMPLATE FUNCTION rotate
+template<class _FwdIt> inline
+	void _Rotate(_FwdIt _First, _FwdIt _Mid, _FwdIt _Last,
+		forward_iterator_tag)
+	{	// rotate [_First, _Last), forward iterators
+	for (_FwdIt _Next = _Mid; ; )
+		{	// swap [_First, ...) into place
+		_STD iter_swap(_First, _Next);
+		if (++_First == _Mid)
+			if (++_Next == _Last)
+				break;	// done, quit
+			else
+				_Mid = _Next;	// mark end of next interval
+		else if (++_Next == _Last)
+			_Next = _Mid;	// wrap to last end
+		}
+	}
+
+template<class _BidIt> inline
+	void _Rotate(_BidIt _First, _BidIt _Mid, _BidIt _Last,
+		bidirectional_iterator_tag)
+	{	// rotate [_First, _Last), bidirectional iterators
+	_STD reverse(_First, _Mid);
+	_STD reverse(_Mid, _Last);
+	_STD reverse(_First, _Last);
+	}
+
+template<class _RanIt,
+	class _Diff,
+	class _Ty> inline
+	void _Rotate(_RanIt _First, _RanIt _Mid, _RanIt _Last, _Diff *, _Ty *)
+	{	// rotate [_First, _Last), random-access iterators
+	_Diff _Shift = _Mid - _First;
+	_Diff _Count = _Last - _First;
+
+	for (_Diff _Factor = _Shift; _Factor != 0; )
+		{	// find subcycle count as GCD of shift count and length
+		_Diff _Tmp = _Count % _Factor;
+		_Count = _Factor;
+		_Factor = _Tmp;
+		}
+
+	if (_Count < _Last - _First)
+		for (; 0 < _Count; --_Count)
+			{	// rotate each subcycle
+			_RanIt _Hole = _First + _Count;
+			_RanIt _Next = _Hole;
+			_RanIt _Next1 = _Next + _Shift == _Last ? _First : _Next + _Shift;
+			for (; ; )
+				{	// percolate elements back around subcycle
+				iter_swap(_Next, _Next1);
+				_Next = _Next1;
+				_Next1 = _Shift < _Last - _Next1 ? _Next1 + _Shift
+					: _First + (_Shift - (_Last - _Next1));
+				if (_Next1 == _Hole)
+					break;
+				}
+			}
+	}
