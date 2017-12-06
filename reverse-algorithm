@@ -1,4 +1,13 @@
-		// TEMPLATE FUNCTION rotate
+// TEMPLATE FUNCTION reverse
+template<class _BidIt> inline
+void _Reverse(_BidIt _First, _BidIt _Last, bidirectional_iterator_tag)
+{	// reverse elements in [_First, _Last), bidirectional iterators
+	for (; _First != _Last && _First != --_Last; ++_First)
+		_STD iter_swap(_First, _Last);
+}
+
+
+// TEMPLATE FUNCTION rotate
 template<class _FwdIt> inline
 	void _Rotate(_FwdIt _First, _FwdIt _Mid, _FwdIt _Last,
 		forward_iterator_tag)
