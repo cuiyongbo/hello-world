@@ -66,3 +66,26 @@ template<class _RanIt,
 				}
 			}
 	}
+	
+	
+void rotate(int* a, int* pos, int count)
+{
+	int shift = pos - a;
+	if(shift < 0 || shift >= count)
+		return;
+	
+	int tmp = a[0];
+	
+	int cur = 0;
+	int k = 1;
+	int next = k*shift;
+	while(next != 0)
+	{
+		a[cur] = a[next];
+		
+		cur = next;
+		next = ++k * shift % count;
+	}
+	
+	a[cur] = tmp;
+}	
