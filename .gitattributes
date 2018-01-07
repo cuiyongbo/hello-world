@@ -1,0 +1,3 @@
+*.docx dif=pandoc
+*.doc  dif=pandoc
+
