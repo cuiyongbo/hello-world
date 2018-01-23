@@ -3,4 +3,10 @@
 *.swp
 *.pyc
 .DS_Store
-python-2.7.14-docs-pdf-a4/*
+/C_Jumps.pdf
+/MIT6_096IAP11_lec08_C++_memory_management.pdf
+/MIT6_096IAP11_lec09_C++_template_overload.pdf
+/MIT6_096IAP11_lec10_C++_File_Handling.pdf
+/rfc3174.pdf
+/python-2.7.14-docs-pdf-a4
+
