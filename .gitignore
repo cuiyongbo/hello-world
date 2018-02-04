@@ -2,6 +2,7 @@
 ~\$*.docx
 *.swp
 *.pyc
+*.out
 .DS_Store
 /C_Jumps.pdf
 /MIT6_096IAP11_lec08_C++_memory_management.pdf
