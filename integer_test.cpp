@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 struct  Integer
 {
 	Integer():
