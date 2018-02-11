@@ -10,6 +10,7 @@ Welcome to My Wiki's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   computer_glossary
 
 
 Indices and tables
