@@ -11,6 +11,7 @@ Welcome to My Wiki's documentation!
    :caption: Contents:
 
    computer_glossary
+   program_glossary
 
 
 Indices and tables
