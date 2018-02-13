@@ -7,3 +7,5 @@ Hash Tutorial
    hashTutorial/introduction
    hashTutorial/hash_function
    hashTutorial/collision_resolution
+   hashTutorial/closed_hashing_analysis
+   hashTutorial/deletion
