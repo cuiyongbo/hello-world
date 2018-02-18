@@ -7,4 +7,6 @@ Steps of Programming
 
    programmer_note/hash_tutorial
    programmer_note/os_problems
+   programmer_note/software_shortcuts_note
+
 
