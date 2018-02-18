@@ -12,6 +12,8 @@ Welcome to My Wiki's documentation!
 
    computer_glossary
    programmer_note
+   camera_glossary
+   millitary_terms
 
 
 Indices and tables
