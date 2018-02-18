@@ -6,4 +6,5 @@ Steps of Programming
    :caption: Contents:
 
    programmer_note/hash_tutorial
+   programmer_note/os_problems
 
