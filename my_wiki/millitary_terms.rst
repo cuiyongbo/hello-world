@@ -70,3 +70,79 @@ Millitary Terms
 | The straits of Gibraltar are the gate of the Mediterranean. [直布羅陀海峡]
 | The Suez Canal joins the Mediterranean and the Red Sea. [蘇伊士運河]
 |
+| workhorse
+| Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
+| Definition: If you describe a person or machine as a workhorse, you mean that they can be relied upon to do a large amount of work, especiall work that is dull or routine.
+| Usage: My husband nerver even looked at me. I was just a workhorse bring up three children.
+| Usage: Falcon 9, the workhorse of SpaceX.
+| 
+| constellation
+| Definition: a constellation is a group of stars which form a pattern and have a name. [星系]
+| Definition: a constellation of similar things is a group of them.
+| Usage: Most patients have a constellation of diseases, with few clear-up distinctions between them. 
+| 
+| Solar system
+|
+
+.. image:: images/solar_system.png
+
+| Falcon heavy
+| Delta IV Heavy
+| Proton M
+| Falcon 9
+| Atlas V 551
+| Ariane 5 ES
+|
+
+.. image:: images/heavy_rockets.png
+
+| Space shuttle
+|
+
+.. image:: images/spaceshuttle.png
+
+| booster
+|
+
+.. image:: images/booster.png
+
+| parachute
+|
+
+.. image:: images/parachute.png
+
+|
+| condolence
+| Usage: President Vladimir Putin has expressed his condolences to the victims’s families.
+| Usage: a letter of condolence. [吊唁信]
+| 
+| archenemy
+| arch-enemy [世仇]
+| Definition: a person who is extremely hostile or opposed to someone or something.
+| Usage: The twins were archenemies. [天生不和]
+| 
+| cockpit
+| Definition: a compartment for the pilot and sometimes also the crew in an aircraft or spacecraft.
+| Usage:  The company was banned from operating international flights when surprise inspectors found someone other than the flight crew in a cockpit. [驾驶舱]
+| 
+| confiscate
+| Definition: take or seize (someone’s property) with authority. [没收]
+| Usage: The guards confiscated his camera.
+|  
+| secession
+| Definition: the action of withdraw formally from membership of a federation or body, especially a political state.
+| Usage: The referendum on independence [独立公投] in September showed that more than 90% of the 3.3 million people who voted had supported secession.
+| 
+| mandate
+| Definition: an offical order or commission to do something.
+| Usage: A mandate to seek the release of political prisoners.
+| 
+| annul
+| Definition: declare invalid (an offical aggreement, decision, or result).
+| Usage: The elections were annulled by the general amid renewed protests.
+|
+
+
+
+
+

@@ -14,6 +14,7 @@ Welcome to My Wiki's documentation!
    programmer_note
    camera_glossary
    millitary_terms
+   mathematics_glossary
 
 
 Indices and tables
