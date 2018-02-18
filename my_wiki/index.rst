@@ -15,6 +15,7 @@ Welcome to My Wiki's documentation!
    camera_glossary
    millitary_terms
    mathematics_glossary
+   biology_glossary
 
 
 Indices and tables

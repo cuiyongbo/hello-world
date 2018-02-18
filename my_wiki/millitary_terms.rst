@@ -141,6 +141,77 @@ Millitary Terms
 | Definition: declare invalid (an offical aggreement, decision, or result).
 | Usage: The elections were annulled by the general amid renewed protests.
 |
+| enclave [少数民族聚居地]
+| Definition: a portion of territory within or surrounded by a larger territory whose inhabitants are culturally or ethnically distinct. 
+| Definition: a place or group that is different in character from those surrounding it.
+| Usage: The engineer department is traditionally a male encalve.
+| 
+| coalition [联合政府]
+| Definition: an alliance for combined action, especially a temporary alliance of political parties forming a government or of states. 
+| Definition: The party was only able to govern in coalition with three or even four other parties.
+| 
+| doctrine
+| Definition: a belief or set of beliefs held and taught by a church, political party, or other group.
+| Usage: The Monroe Doctrine.
+| 
+| dogma [教条]
+| Definition: a principle or set of principles laid down by an authority as incontrovertibly true.
+| Usage: political dogma
+| Usage: The alphaGo has upset the established chess dogma. 
+| 
+| retalitory
+| Definition: (of an action) characterized by a desire for revenge.
+| Usage: Fears of a retalitory attack by the victim’s friends.
+| 
+| dual nationality. [双重国籍]
+| criminal record [前科]
+|
+| burglary [入室行窃]
+| Definition: the crime of entering a building illegally and stealing things from it.
+| Usage: The youth was charged with three counts of burglary.
+| 
+| felon [重犯]
+| Definition: A person who has been convicted of a felony.
+| Definition: cruel; wicked.
+| Usage: The felon undermining hand of dark corruption.
+| 
+| complicity [共谋，共犯]
+| Definition: the state of being involved with others in an illegal activity or wrongdoing.
+| Usage: They were accused of complicity in the attempt to overthrow the government.
+| Definition: the action of taking part with another person in a crime. 
+| Usage: He was charged with being guilty of complicity in the murder.
+| 
+| liaision [联络人]
+| Definition: a person who acts as a link to assist communication or cooperation between groups of people.
+| Usage: He is our liaison with a number of interested parties. 
+|
+| vandalize
+| vandalism
+| Definition: action involving deliberate destruction of damage to public or private property.
+| Usage: Stations have been wrecked and vandalized beyond recognition.
+| 
+| sentinel
+| Synonyms: sentry
+| 
+| extortion [勒索，恐吓]
+| Definition: Extortion is the crime of obtaining something from someone, especially money, by using force or threats.
+| Usage: He has been charged with extortion and abusing his power.
+| 
+| coercion [政治高压]
+| Definition: Coercion is the act or process of persuading someone forcefully to do something that they did not want to do.
+| Usage: It was vital that the elections should be free of coercion or intimidation.
+| 
+| espionage [谍报活动]
+| Definition: The practice of spying or of using spies, typically by governments to obtain political and millitary information.
+| Antonym: counter-espionage
+| Usage: Some of the commercial activities were a cover for espionage.
+| 
+| scaffold  [断头台]
+| Definition: A scaffold is a raised platform where criminals were hanged or had their head cut off.
+| Usage: Ascending the shaky ladder to the scaffold, More addressed the executioner.
+| Definition: A scaffold is a temporary raised platform on which workers stand to paint, repair, or build high parts of a building.
+| 
+
 
 
 
