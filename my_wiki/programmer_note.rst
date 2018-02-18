@@ -5,5 +5,5 @@ Steps of Programming
    :maxdepth: 2
    :caption: Contents:
 
-   program_glossary/hash_tutorial
+   programmer_note/hash_tutorial
 
