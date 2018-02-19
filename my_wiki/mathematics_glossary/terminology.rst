@@ -56,3 +56,8 @@ Terminology
    The reciprocal function: :math:`y = \frac{1}{x}`. For every x except 0, y represents its multiplicative inverse.
 
 |
+| vertex [顶点]
+| Definition: Each angular point of a polygon, polyhedron, or other figure.
+| Plural: vertices
+| Synonyms: apex, peak, pinnacle
+| 

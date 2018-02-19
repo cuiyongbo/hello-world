@@ -16,6 +16,13 @@ Millitary Terms
 | the Northern Expedition [北伐战争]
 | puppet state [附庸国]
 | 
+| anti-Semitism
+| Definition: hostility to or prejudice against Jews.
+|
+| ultimatum [最后通牒]
+| Definition: A final demand or statement of terms, the rejection of which will result a breakdown in relations.
+| Usage: Their employers issued an ultimatum demanding an immediate return to work.
+| 
 | embargo  [禁运]
 | Definition: an official ban on trade or other commercial activity with a particular country.
 | Usage: The United States sought to bring the Japenest war effort to a complete halt by imposing a full embargo on all trade between the United States to it.
@@ -70,6 +77,12 @@ Millitary Terms
 | The straits of Gibraltar are the gate of the Mediterranean. [直布羅陀海峡]
 | The Suez Canal joins the Mediterranean and the Red Sea. [蘇伊士運河]
 |
+| strait
+| Definition: A very difficult situation especially because of lack of money.
+| Usage: The factory is in dire straits.
+| Definition: A narrow passage of water that connect two seas or large areas of water, especially in the names of places.
+| Usage: the Straits of Gibraltar (直布罗陀海峡)
+| 
 | workhorse
 | Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
 | Definition: If you describe a person or machine as a workhorse, you mean that they can be relied upon to do a large amount of work, especiall work that is dull or routine.
@@ -112,6 +125,17 @@ Millitary Terms
 .. image:: images/parachute.png
 
 |
+| rendezvous
+| Definition: (noun) A rendevous is a meeting, often a secret one, that you have arranged with someone for a particular time and place.
+| Definition: (verb) If you rendezvous with someone or if the two of you rendezvous, you meet them at a time and place that you have arraged.
+| Usage: I had almost decided to keep my rendezvous with Tony.
+| Usage: Their rendezvous would be the Penta Hotel at Heathrow Airport.
+| Usage: The plan was to rendezvous with him on Sunday afternoon.
+|
+| deplore [谴责]
+| Definition: Feel or express strong disapproval of something.
+| Usage: We deplored this act of violence.
+| 
 | condolence
 | Usage: President Vladimir Putin has expressed his condolences to the victims’s families.
 | Usage: a letter of condolence. [吊唁信]
@@ -145,7 +169,11 @@ Millitary Terms
 | Definition: a portion of territory within or surrounded by a larger territory whose inhabitants are culturally or ethnically distinct. 
 | Definition: a place or group that is different in character from those surrounding it.
 | Usage: The engineer department is traditionally a male encalve.
-| 
+|
+| rove [流离失所]
+| Definition: Travel constantly without a fixed destination; wander.
+| Usage: A quarter of a million refugees roves around the country.
+|  
 | coalition [联合政府]
 | Definition: an alliance for combined action, especially a temporary alliance of political parties forming a government or of states. 
 | Definition: The party was only able to govern in coalition with three or even four other parties.

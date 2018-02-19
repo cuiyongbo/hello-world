@@ -16,6 +16,7 @@ Welcome to My Wiki's documentation!
    millitary_terms
    mathematics_glossary
    biology_glossary
+   english_notes
 
 
 Indices and tables

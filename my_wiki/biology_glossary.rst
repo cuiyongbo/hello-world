@@ -12,9 +12,9 @@ Biology Terms
 | 
 | genital 
 | Synonyms: dick [阴茎]
-| cum
-| precum
-| semen
+| cum [高潮]
+| precum [男性性生活时阴茎的分泌物]
+| semen [精液]
 | Definition: the male reproductive fluid, containing spermatozoa in suspension.
 | 
 | masochist
@@ -31,7 +31,7 @@ Biology Terms
 | sadomasochism
 | sadomasochist
 | Definition: psychological tendency or sexual practice characterized by both sadism and masochism.
-| 
+|
 | fetal
 | foetal
 | fetus
@@ -84,4 +84,39 @@ Biology Terms
 | endocrap
 | Definition: the innermost layer of the pericarp that surrounds a seed in a fruite, it may be membranous (as in apples) or woody (as in the stone of a peach or cherry or plum [李子])
 | 
-
+| harem [后宫]
+| Definition: (in former times) the separate part of a Muslim household reserved for wives, concubines, and femal servants.
+| Definition: a group of female animals sharing a single mate.
+| Definition: a group of women preceived as centering around a particular man.
+| Usage: Rich men with their extensive harems of buxom blondes.
+| 
+| buxom
+| Definition: (of women) plump, especially with large breasts.
+| 
+| concubinary
+| concubine [妾]
+| Definition: (in polygamous societies) a woman who lives with a man but has lower status than his wife.
+| 
+| polygamy
+| polygamist
+| polygamous [非一夫一妻制]
+| Definition: the practice or custom of having more than one wife or husband at the same time.
+| Definition: (Zoology) a pattern of mating in which an animal has more than one mate.
+| Definition: (Botany) the condition of bearing some male, some female, and sometimes some perfect flowers on the same plant.
+| 
+| sinew
+| Definition: A piece of tough fibrous tissue uniting muscle to bone or bone to bone; a tendon or ligament. [韧带]
+| Definition: The parts of a structure, system, or thing that give it strength or bind it together.
+| Usage: The sinews of government.
+|
+| fungus  
+| Plural: fungi [真菌]
+| 
+| mass extinction event [大灭绝事件]
+| asteroid 
+| crater
+| Definition: A crater is a large hole, which has been caused by something hitting it or by an explosion.
+| 
+| gustation [味觉]
+| Definition: The faculty of distinguishing sweet, sour, bitter or salty properties in the mouth.
+| 
