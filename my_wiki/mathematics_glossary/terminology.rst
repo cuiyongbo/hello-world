@@ -24,6 +24,14 @@ Terminology
 
 .. image:: images/right_triangle.png
 
+.. figure:: images/trigonometrics.png
+   
+   Trigonometric
+
+.. figure:: images/tan_x.png
+
+   :math:`f(x) = tan x`
+
 | convex polygon [凸多边形]
 | similar triangle [相似三角形]
 | corresponding side [对应边] 
