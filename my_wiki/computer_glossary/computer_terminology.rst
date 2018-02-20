@@ -32,5 +32,10 @@ Computer Terminology
 | concatenation
 | Definition: a concatenatijon of things or events is their occurrence one after another, because they are linked.
 | 
-
-
+| cipher
+| Definition: A person or thing of no importance, especially a person who does the bidding of others and seems to have no will of their own.
+| Definition: A sceret way of writing, especially six in which a set of letters or symbols is used to represent others.
+| Usage: A message in cipher.
+| 
+| divide-and-conquer [分而治之]
+| 

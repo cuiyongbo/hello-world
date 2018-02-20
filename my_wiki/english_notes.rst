@@ -37,6 +37,14 @@ English Note
 | glossary
 | Definition: A glossary of special, unusual, or technical words or expressions is an alphabatical list of them giving their meanings, for example at the end of | a book on a particular subject.
 | 
+| nomenclature [命名法]
+| Definition: The nomenclature of a particular set of things is the system of naming those things.
+| Usage: Mistakes arising from ignorance of the nomenclature of the  woody plants.
+| 
+| terminology
+| Definition: The terminology of a subject is the set of special words and expressions used in connecting with it.
+| Usage: Gastritis, which in medical terminology means an inflammation of the stomach.
+| 
 | abyssal
 | Definition: (adjective) Of or relating to the great depths of the oceans.
 | Synonyms: abysmal, unfathomable
@@ -356,7 +364,7 @@ English Note
 | Defintion: Stay longer than intended, delay leaving a place
 | Usage: She could tarry a bit an not get home untill four.
 | 
-| incognito 
+| incognito [匿名，隐姓埋名]
 | Definition: (of a person) having one’s true identity concealed[adjective & adverb].
 | Usage: In order to observe you have to be incognito.
 | Usage: Movie stars often prefer to travel incognito.
@@ -444,6 +452,11 @@ English Note
 | Definition: Lacking variety or excitement; dull
 | Synonyms: unglamoros; commonplace; prosiac
 | Usage: So here I shall end my days; and I must say, Dorothy, my dear, that you are going back into that stupid, humdrum world again.
+| 
+| glamour 
+| glamorous
+| Definition: The attractive or exciting quality that makes certain people or things seem appealing or special.
+| Usage: The glamour days of Old Hollywood.
 | 
 | dilatation
 | Definition: The state of being stretched beyonded normal dimension.
@@ -742,4 +755,1198 @@ English Note
 | betwixt
 | Definition: archaic term for between.
 | 
+| ere
+| Defition: archaic term for before.
+| 
+| forebear
+| Synonyms: ancestor
+| 
+| mist
+| Definition: A cloud of tiny water droplets suspended in the atmosphere at or near the earth surface limiting visibility, but to a lesser extent than a fog.
+| Usage: A mist rose out of the river.
+| Usage: The windows were misted up with condensation.
+| Definition: used in reference to something that blurs one’s perceptions or memory.
+| Usage: Sardinia’s origins are lost in the mist of time. [撒丁岛]
+| Definition: (of a person’s eyes) become covered with a film of tears causing blurred vision.
+| Usage: Her eyes misted at the image of her parents. 
+| 
+| flutter
+| Definition: (of a bird or other winged creature) fly unsteadily or hover by flapping te wings quickly and lightly.
+| Usage: A couple of butterflies fluttered around the garden.
+| Definition: (of a person) move restlessly or uncertainly.
+| Usage: The hostess fluttered forward to greet her guests.
+| Definition: A state or sensation of tremulous excitement.
+| Usage: Her inside were in a flutter.
+| Usage: Sandra felt a flutter in the pit of her stomach.
+| Idiom: flutter one’s eyelashes [暗送秋波]
+| Definition: open and close one’s eyes rapidly in a coyly flirtatious manner.
+| 
+| flirtatious
+| Definition: behaving in such a way as to suggest a playful sexual attraction to someone.
+| Usag: She was beautiful and very flirtatious.
+| 
+| hover
+| Definition: remain in one place in the air.
+| Usage: Arm helicopters hovered overhead.
+| Definition: remain at or near  a particular level.
+| Usage: Inflation will hover around the 4% mark.
+| Definition: [Computing] use a mouse or other device to position the cursor over a particular area of a computer screen so as to cause a program to respond, | without clicking a button on the device.
+| Usage: You can hover your cursor over any button to see an explanation.
+| 
+| wondrous
+| Definition: inspiring a feeling of wonder or delight; marvelous; marvelously.
+| Usage: She is grown wondrous pretty.
+| 
+| marvel
+| Definition: be filled with wonder or astonishment.
+| Usage: “Isn’t this an evening, ” marveled John.
+| Definition: A wonderful or astonishing person or thing.
+| Usage: Charlie, you’re a marvel.
+| 
+| riddle
+| Definition: A question or statement intentionally phrased so as to require ingenuity in ascertaining its answer or meaning, typically presented as a game.
+| Definition: A person, event, or fact that is difficult to understand or explain.
+| Usage: The riddle of her death.
+| Idiom: talk (or speak) in riddles.
+| Definition: express oneself in an ambiguous or puzzling manner.
+| 
+| 
+| meek
+| Definition: quiet, gentle, and easily imposed on; submissive.
+| Usage: I used to call her Miss Mouse because she was so meek and mild.
+| 
+| forbear
+| Definition: politely or patiently restrain an impulse to do something.
+| Usage: The boy forbore from touching anything.
+| Definition: refrain from doing or using something.
+| Usage: Rebecca could not forbear a smile.
+| 
+| dumb
+| Definition:temporarily unable or unwilling to speak.
+| Usage: She stood dumb while he poured out a stream of abuse.
+| Usage: They stared in dumb amazement.
+| Definition: (of a person) unable to speak, most typically because of congenital deafness.
+| Usage: He was born deaf, dumb, and blind.
+| Idiom: dumb down
+| Definition: simplify or reduce the intellectual content of something so as to make it accessible to a larger number of people.
+| Usage: Critics have accused publishers of dumbing down books.
+| Usage: The need to dumb down for mass audiences.
+| 
+| congenital
+| Definition: (especially of a disease or physical abnormality) present from birth.
+| Usage: A congenital malformation of the heart.
+| Definition: (of a person) having a particular trait from birth or by firmly estalished habit.
+| Usage: A congenital liar.
+| sponge
+| Definition: A piece of a soft, light, porous substance originally consisting of the fibrous skeleton of an invertebrate but now usually  made of synthetic | material. 
+| Usage: Sponges absorb liquid and are used for washing and cleaning.
+| Definition: wipe, rub, or clean with a wet sponge or cloth.
+| Usage: She sponged him down in an attempt to cool his fever.
+| Definition: a heavy drinker.
+| Definition: Obtain or accept money or food from other people without doing or intending to do anything in return.
+| Usage: They found they could earn a perfectly good living by sponging off others.
+| Usage: He edged closer, clearly intending to sponge money from her.
+| 
+| edge
+| Definition: A quality or factor that gives superiority over close rivals or competitor.
+| Usage: The veal had the edge on flavor.
+| Definition: move gradually, carefully, or furtively in a particular direction.
+| Usage: Nick edged his way through the crowd.
+| Usage: Hazel quietly edged himself away from the others.
+| Definition: defeat by a small margin.
+| Usage: Connecticut avoided an upset and edged Yale 49-48.
+| Idiom: on edge - tense, nervous, or irritable.
+| Usage: Never had she felt so on edge before an interview.
+| Idiom: on the edge of one’s seat
+| Definition: very excited and giving ones’ full attention to something.
+| Idiom: set someone’s teeth on edge [把某人气得咬牙切齿]
+| Definition: (especially of an unpleasantly harsh sound) cause someone to feel intense discomfort or irritation.
+| Usage: A grating that set her teeth  on edge.
+| Idiom: take the edge off
+| Definition: reduce the intensity of effect of (something unpleasant or severe).
+| Usage: The tablets will take the edge of the pain.
+| Idiom: edge someone out
+| Definition: Remove a person from an organization or role by indirect means.
+| Usage: She was edged out of the organization by the director.
+| 
+| veal
+| Definition: The flesh of a calf, used as food.
+| 
+| grieve
+| Definition: If you grieve over something, especially someone’s death, you feel very sad about it.
+| Usage: He’s griving over his dead wife and son.
+| Definition: If you are grieved by something, it make you unhappy or upset.
+| Usage: He was deeply grieved by the suffering of the common people.
+| 
+| intoxicated
+| Definition: Someone who is intoxicated is drunk.
+| Usage: He appeared intoxicated, police said.
+| Definition: If you are intoxicated by something such as a feeling or an event, you are so excited by it that you find it hard to think clearly and sensibly.
+| Usage: They seem to have become intoxicated by their success.
+| 
+| resign
+| Definition: (be resigned) accept that something undesirable cannot be avoided.
+| Usage: He seems resigned to a shortened career.
+| Usage: She resigned herself to a lengthy session.
+| Definition: (archaic) surrender oneself to another’s guide.
+| Usage: He vows to resign himself to her direction.
+| 
+| utter
+| Definition: complete; absolute.
+| Usage: Charles stared at her in utter amazement.
+| Definition: make (a sound) with one’s voice
+| Usage: He uttered an exasperated snort.
+| Definition: They are busily scribbling down every word she utters.
+| 
+| snort
+| Definition: make a sudden sound though one’s nose, especially to express indignation or dersion.
+| Usage: She snorted with laughter.
+| Usage: “How perfectly ridiculous!” he snorted.
+| Definition: (of an animal) make a suddent explosive sound through the nose, especially when excited or frightened.
+| Definition: to take drugs by breathing them in through  nose.
+| Usage: To snort cocaine. [嗑药]
+| 
+| pane [橱柜]
+| Definition: A single sheet of glass in a window or door.
+| 
+| mannequin
+| Definition: A mannequin is a life-sized model of a person which is used to display clothes, especiall in shop windows.
+| Definition: A mannequin is a person who displays clothes, hats, or shoes by wearing them, especially in fashion shows or in fashion photographs.
+| Synonyms: model
 
+.. image:: images/mannequin.png
+
+| veil unveil
+| Definition: A piece of fine material worn by women to protect or conceal the face. [面纱]
+| Definition: cover with or as thought with a veil.
+| Usage: She veiled her face.
+| Usage: A fine drizzle (a mild rain) began to veil the hills.
+| Idiom: take the veil  
+| Definition: become a nun
+| Idiom: beyond the veil
+| Definition: in a mysterious or hidden place or state, especially the unknown state of after death.
+| Idiom: draw a veil over
+| Definition: avoid discussing or calling attention to (something), especially because it’s embarrassing or unpleasant.
+| 
+| dissect
+| Definition: methodically cut up (a body, part, or plant) in order to study its internal parts.
+| Usage: Anatomical dissection.
+| Definition: analyze (something) in minute detail.
+| Usage: Your enjoyment of a novel can suffer from too much analysis and dissections.
+| 
+| autobiography
+| Definition: an account of a person’s life written by that person.
+| Usage: He gives a vivid description of his childhood in his autobiography.
+| 
+| crumb
+| Definition: a small fragment of bread, cake or cracker.
+| Definition: The budget provided few crumbs of comfort.
+| Idioms: crumbs from someone’s (or a rich man’s) table.
+| Definition: an unfair and inadequate or unsatisfactory share of something.
+| 
+| savory
+| Definition: (of food) belonging to the category that is salt or spicy rather than sweet.
+| Definition: Having an appetizing taste or smell.
+| Usage: She carried in a pie from the kitchen, steaming and savory.
+| Definition: Morally wholesome or aceeptable, usually with negative.
+| Usage: Everyone knew it was a front for less savory operations.
+| 
+| heed
+| Definition: pay attention to; take notice of
+| Usage: He should have heeded the warnings.
+| Definition: careful attention
+| Usage: If he heard, he paid no heed.
+| Usage: we must take heed of the suggestion.
+| 
+| thrift
+| Definition: The quality of using money and other resources carefully and not wastefully.
+| Usage: The value of thrift and self-reliance.
+| 
+| belittle  be little
+| Definition: make (sb or sth) seem unimportant.
+| Usage: She felt belittled.
+| 
+| reproach
+| Definition: address (someone) in such a way as to express disapproval or disappointment.
+| Usage: Critics of the administration reproached the president for his failure to tackle the deficiency.
+| Definition: (reproach someone with) accuse someone of.
+| Usage: His wife reproached hime with cowardice.
+| 
+| hem
+| Definition: The edge of a piece of clothing that has been turned under and sewn.
+| Idiom: hew and haw
+| Definition: hesitate; be indecisive.
+| Usage: I waste a lot of time hemming and hawing before going into action.
+| 
+| vigour
+| Definition: physical strength and good health
+| Usage: They set about the task with vigor.
+| 
+| spurn
+| Definition: strike, tread, or push away with the foot
+| Usage: With one touch of my feet, I spurn the solid Earth.
+| Definition: reject with disdain or contempt.
+| Usage: He spoke gruffly, as if afraid that his invitation would be spurned.
+| 
+| disdain
+| Definition: The felling that someone is unworthy of one’s consideration or respect; contempt
+| Usage: Her upper lip curled in disdain.
+| Usage: An aristocratic disdain for manual labor.
+| 
+| haughty
+| Definition: Arrogantly superior and disdainful.
+| Usage: A haughty aristocrat.
+| 
+| tempest
+| Definition: a violent windy storm.
+| Idiom: a tempest in a teapot.
+| Definition: great anger or excitement about a trivial matter.
+| 
+| strife
+| Definition: angry or bitter disagreement over fundamental issues; conflict.
+| Usage: Strife with community.
+| 
+| spacious
+| Definition: (especially of a room or building) having ample space.
+| Usage: White walls can give a feeling of spaciousness.
+| 
+| exaggerate
+| Definition: represent (something) as being larger, greater, better, or worse than it really was.
+| Usage: They were apt to exaggerate any aches and pains.
+| Usage: I couldn’t sleep for three days -- I ‘m not exaggerating.
+| 
+| wistful
+| Definition: having or showing a feeling of vague or regretful longing.
+| Usage: She sighed wistfully.
+| Usage: “If only I had known you then,” he said wistfully.
+| 
+| mediocre
+| Definition: of only moderate quality; not very good.
+| Usage: I thought the play was only mediocre.
+| 
+| bigot
+| Definition: a person who is intolerant toward those holding different opinions.
+| Usage: Don’t let a few small-minded bigots destroy the good image of the city.
+| 
+| all-inclusive
+| Definition: All-inclusive is used to indicate that a price, especially the price of a holiday, includes all the charges and all the services offered.
+| Usage: An all-inclusive two-week holiday costs around $2880 per person.
+| 
+| voluminous
+| Definition: large in number or quantity (especially of discourse)
+| Definition: (of cloth or drapery) loose and ample.
+| Definition: (of a writer) producing many books.
+| Usage: a voluminous skirt.
+| 
+| discourse
+| Definition: written or spoken communication or debate.
+| Usage: The language of political discourse.
+| Definition: speak or write authoritatively about a topic.
+| Usage: She could discourse at great length on the history of Europe.
+| 
+| elf [精灵]
+| hobgoblin [哥布林]
+| Defintion: (in stories) a small ugly creature that likes to trick people or cause trouble.
+| 
+| stammer [结巴，打颤]
+| Definition: speak with sudden involuntary pauses and a tendency to repeat the initial letters of words.
+| Usage: “I … I can’t,” Isabel stammered.
+| 
+| inadvertent
+| Definition: An inadvertent action is one that you do without realizing what you are doing.
+| Synonyms: unintentional, not deliberate
+| Usage: The government has said it was an inadvertent error.
+| Usage: You may have inadvertently pressed the wrong button.
+| 
+| smell a rat [猫腻]
+| Definition: suspect trickery or deception.
+| 
+| smell blood
+| Definition: discern weakness or vulnerability in an opponent.
+| 
+| smell the roses
+| Definition: enjoy or appreciate what is often ignored.
+| 
+| smell something up
+| Definition: permeate an area with a bad smell.
+| Usage: He smelled up the whole house.
+| 
+| exceed
+| Definition: be greater in number or size than (a quantity, number, or other measureable thing).
+| Definition: go beyond what is allowed or stipulated by (a set limit, especially of one’s authority).
+| Synonyms: Surpass
+| Usage: Production costs have exceeded $60,000.
+| Usage: Catalog sales have exceeded expectation.
+| Usage: The officers had exceeded their authority.
+| 
+| fluctutant
+| Synonyms: fluctuating; unstable
+| 
+| versatile
+| Definition: able to adapt or be adapted to many diferent functions or activities.
+| Synonyms: all-round
+| Usage: A versatile fight jet.
+| Usage: He’s a very versatile actor who has player a wide variety of parts.
+| Definition: (archaic) chageable; inconstant
+| 
+| volatile
+| Definition: A volatile liquid or substance is one that will quickly change into a gas.
+| Usage: It’s thought that the blast occurred when volatile chemicals exploded.
+| Definition: If someone is volatile, their mood often changes quickly.
+| Usage: He had a volatile temper.
+| Definition: A situation that is volatile is likely to change suddenly and unexpectedly.
+| Usage: Armed soldiers guard the streets in this volatile atmosphere.
+| 
+| perpetrate
+| Definition: If someone perpetrates a crime or any other immoral or harmful act, they do it.
+| Synonyms: commit
+| Usage: You begin to ask yourself what kind of person perpetrated this crime.
+| Usage: It’s time the death penalty was used for perpetrators of terrorist acts.
+| 
+| blackmail
+| Definition: Blackmail is the action of threatening to reveal a secret about someone, unless they do something you tell them to do, such as give you money.
+| Usage: Opponents accused him of using blackmail and extortion.
+| Usage: The nasty thing about a blackmailer is that his starting point is usually the truth.
+| Synonyms: coercion, extortion, intimidation
+| Definition: If you describe an action as emotional or moral blackmail, you disapprove of it because someone is using a person’s emotions or moral values to | persuade them to do something against their will.
+| Usage: The tactics employed can range from overt bullying to subtle emotional blackmail. [道德绑架]
+| 
+| high-profile
+| Definition: A high-profile person or event attracts a lot of attention or publicity.
+| Usage: The high-profile reception being given to Mr Zhou.
+| 
+| profile
+| Definition: Your profile is the outline of your face as it is seen when someone is looking at you from the side.
+| Definition: If you see someone in profile, you see him or her from the side.
+| Usage: This picture shows the girl in profile.
+| Definition: To profile someone means to give an account of that person’s life and character.
+| Definition: A profile of someone is a short article or programme in which his or her life and character is described.
+| Usage: The BBC journalist profiles the rebel leader.
+| Definition: a graphical or other representation of information relating to particular characteristics of something, recorded in quantified form.
+| Usage: The blood profiles of cancer patients.
+| 
+| high profile / low profile
+| Definition: If someone has a high profile, people notice him or her and what he or she does. If you keep a low profile, you avoid doing things that will make | people notice you.
+| Usage: Football is a high profile business.
+| Usage: The famous actor tries to keep a low profile.
+| 
+| jeer
+| Definition: make rude and mocking remarks, typically in a loud voice.
+| Usage: Some of the younger men jeered at him.
+| Usage: The players were jeered by disappointed fans. [嘘]
+| 
+| boo
+| Definition: If you boo a speaker or performer, you shout ‘boo’ or make other loud sounds to indicate that you don’t like them, their opinion, or their | performace.
+| Usage: The fans are entitled to their opinion but booing doesn’t help anyone.
+| Usage: Benzema was booed by the home fans after missing a last-minute sitter. [遭嘘]
+| 
+| trounce
+| Definition: to defeat somebody completely.
+| Usage: Brazil trounced Italy 5-1 in the final. [狂胜]
+| 
+| Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
+| 
+| tie 
+| Definition: restrict or limit (someone) to a particular situation, occupation, or place.
+| Usage: She didn’t want to be like her mother, tied to a feckless man.
+| Definition: achieve the same score or ranking as another competitor or team.
+| Usage: England tied 2-2 with Germany in the first round. [平局]
+| Usage: They tied for second place. [并列第二]
+| 
+| back-to-back
+| Definition: consecutively; in a row
+| Usage: Zidane’s Real have won back-to-back European titles, but are 19 points adrift of La Liga leaders Barcelona and were knocked out of the Copa del Rey [| 国王杯] by Leganes on Wednesday at the Bernabeu. [伯纳乌]
+| 
+| The Real, who finished second in the group to Tottenham, face Paris St-Germain in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14 | February at Bernabeu.
+| 
+| The Champions League and Europa league return this week as the knockout stage in each competition gets under way. [欧冠淘汰赛]
+| 
+| transfer window   转会窗口
+| quarter-final  四分之一决赛 
+| semi-final  半决赛
+| final       决赛
+| defending champion   卫冕冠军
+| 
+| Cristiano Ronaldo scored a hat-trick as Real Madrid thrashed Real Sociedad. [帽子戏法]
+| Real became the first team to successfully defend the Champions League last season. [卫冕成功]
+| 
+| Sevilla reached their second Copa del Rey final in three seasons with a 3-1 aggregate win over La Liga rivals Leganes.
+| 
+| English players may be “masters” of diving. [假摔]
+| Dybala is a phenomenon … sometimes. [现象级球员]
+| 
+| epic 
+| Synonyms: saga
+| Definition: a long and difficult job or activity that you think people should admire.
+| Usage: Their four-hour match on Centre court was an epic.
+| 
+| acrobat [杂技演员]
+| acrobatics [杂技]
+| acrobatically
+| Definition: an entertainer who performs gymnatic feats. [杂技演员]
+| Definition: a person noted for constant change of mind, allegiance, etc.
+| Definition: performing, involving, or adept at spectaculargymnastic feats.
+| Usage: An acrobatic dive.
+| 
+| net profit [净利润]
+| Definition: the actual profit after working expenses not included in the calculation of gross profit have been paid.
+| Usage: Twitter has posted its first quarter net profit, help by video advert sales growth.
+| 
+| meager
+| Definition: Deficient in amount  or quality or extent.
+| Usage: They were forced to supplement their meager earning.
+| 
+| cannular
+| Definition: a thin tube inserted into a vein or body cavity to administer medicine, drain of fluid, or insert a surgical instrument.
+| 
+| enamor
+| Definition: be filled with a feeling of love for
+| Usage: It is not difficult to see why Edward is enamored with her.
+| Usage: She was truly enamoured of New York.
+| 
+| raison d’être
+| Origin: French, literally ‘reason for being’.
+| Definition: The most important reason or purpose for someone or something’s existence.
+| Usage: An instituation whose raison d’être is public service broadcasting.
+| 
+| shoehorn
+| Defiintion: a curved instrument used to ease one’s heel into a shoe.
+| Definition: force into an inadequate space.
+| Usage: People were shoehorned into cramped corners.
+| 
+| prehensile
+| Definition: (of a part of an animal’s body) able to hold things
+| Usage: The monkey’s prehensile tail.
+| Definition: immoderately desirous of acquiring e.g. wealth.
+| Synonyms: excessive; immorderate; greedy
+| 
+| yammer
+| Definition: make a loud repetitive noise.
+| Definition: To complain peevishly or whimperingly.
+| Usage: The yammer of their animated conversation.
+| 
+| peevish
+| Definition: easily irritated, especially by unimportant things.
+| Usage: All this makes Steve fretful and peevish.
+| 
+| whimper
+| Definition: (of a person or animal) make a series of low, feeble sounds expressive of fear, pain, or discontent.
+| Usage: She gave a little whimper of protest.
+| Usage: A child in a bed began to whimper.
+| 
+| penultimate 
+| Definition: The penultimate thing in a series of things is the last but one; second last.
+| Usage: It is the first time Barcelona have been 19 points above Real since the penultimate day of 1990-91 season.
+| 
+| comeback
+| Definition: If someone such as an entertainer or sports personality makes a comeback, they return to their profession or sport after a period away.
+| Usage: Suarez, Messi lead Barcelona to 4-2 comeback win at Sociedad.
+| Definition: If something makes a comeback, it becomes fashionable again.
+| Usage: Loose fitting pants are making a comeback.
+| 
+| ballpark
+| Definition: (of prices or costs) approximate; rough.
+| Usage: The ballpark figure is $400-500.
+| 
+| retrofit
+| Definition: add (a component or accessory) to something that did not having it when manufactured.
+| Usage: Bus have been retroffited with easy-access feature.
+| Usage:  Voice recorders were retrofitted into planes already in service.
+| 
+| refrain
+| Definition: stop oneself from doing something.
+| Usage: She refrained from comment.
+| Definition: a repeated line or number of lines in a poem or song, typically at the end of each verse.
+| Definition: 
+| Usage: Complaints about poor food in schools have become a familiar refrain.
+| Usage: “Poor Tom” had become the constant refrain of his friend.
+|
+| lullaby [摇篮曲]
+| Definition: A quiet, gentle song sung to send a child to sleep.
+| 
+| ballad
+| Definition: a poem or song narrating a story in short stanzas. Traditional ballads are typically of unknown authorship, having been passed on orally from one | generation to the next as part of folk culture.
+| Usage: A medieval ballad about a knight and a lady. [民谣，叙事诗]
+| Definition: a small popular song about love. [情歌]
+| Usage: Here latest single is a ballad.
+| 
+| sidestep
+| Definition: avoid (someone or something) by stepping sideways.
+| Definition: avoid dealing with or discussing (something problematic or disagreeable).
+| Usage: He neatly sidestepped the questions about riots.
+| Usage: He cleverly sidestepped the tackle.
+| 
+| state-of-art
+| Definition: State-of-art (sometimes cutting edge) refers to the highest level of general development, as of a device, technique, or scientific field achieved | at a particular time.
+| 
+| puffery
+| Definition: exaggerated or false praise.
+| 
+| falsework
+| Definitin: temporary framework structures used to support a building during its construction.
+| 
+| immaterial
+| Definitin: unimportant under the circumstances; irrelevant.
+| Usage: It’s immaterial to me whether he stays or goes.
+| Definition: (philosophy) spiritual, rather than physical.
+| Usage: We have immaterial soul.
+| 
+| compromise
+| Definition: settle a dispute by mutual concession.
+| Definition: cause to become vulnerable or funtion less effectively.
+| Usage: Last month’s leak of source code will not compromise your IT security.
+| Usage: I should compromise the matter with my parents.
+| 
+| stifle
+| Definition: make (someone) unenable to breathe properly; suffocate.
+| Definition: restrain (a reaction) or stop oneself acting on (an emotion).
+| Definition: prevent or constrain (an activity or idea)
+| Usage: She stifled a desire to turn and flee.
+| Usage: She managed to stifle a yawn.
+| Usage: I was stifling in the airless room.
+| Usage: At 25, I found family life stifling.
+| Usage: They hope the new rules will not stifle creativity.
+| 
+| hitch
+| Definition: A knot used for fastening a rope to another rope or something else.
+| Definition: A period of service.
+| Definition: A temporary interruption or problem.
+| Definition: To get a free ride in a person’s car.
+| Usage: He returned to where he had hitched his horse.
+| Usage: His 12-yeas hitch in the navy.
+| Usage: Everything went without a hitch.
+| Usage: They hitched a ride in a truck. [搭顺风车]
+| Idiom: get hitched 
+| Defintion: get married.
+| Idiom: hitch one’s wagon to a star
+| Definition: try to succeed by forming a relationship with someone who is alreay successful.
+| 
+| eccentric
+| Definition: (of a thing) not placed centrally or not having its axis or other part placed centrally.
+| definiton: (of a person or their behavior) unconventional and slightly strange.
+| Usage: My favorite aunt is very eccentric.
+| 
+| bread-and-butter
+| Definition: a person’s livelihood or main source of income, typically as earned by routine work.
+| Definition: An everyday or ordinary person or thing.
+| Usage: Their bread and butter is reporting local events.
+| Usage: a good bread-and-butter player.
+| 
+| workhorse
+| Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
+| Definition: If you describe a person or machine as a workhorse, you mean that they can be relied upon to do a large amount of work, especiall work that is | dull or routine.
+| Usage: My husband nerver even looked at me. I was just a workhorse bring up three children.
+| 
+| almanac [年鉴]
+| Defininiton: a book that is pulished every year giving information for that year about a particular subject or activity. [年鉴]
+| 
+| anecdote [轶事]
+| Definition: a short and amusing or interesting story about a real incident or person.
+| Usage: He had a rich store of anecdotes.
+| 
+| distraught
+| Definition: exetremely upset and anxious so that you cannot think clearly.
+| 
+| spellbinding
+| Definition: holding the complete attention of (someone) as though by magic; fascinating.
+| Usage: She told the spellbinding story of the legend’s life.
+| 
+| typist
+| Usage: I’m quite a fast typist. [打字员]
+| 
+| astray
+| Definition: away from the correct path or direction.
+| Usage: we went astray but a man redirected us.
+| Definition: into error or morally questionable behavior.
+| Usage: He was led astray by boozy colleague.
+| Idiom: go astray
+| Definition: (of an object) become lost or mislaid.
+| Usage: The money had gone astray.
+| 
+| screwdriver 
+| Definition: 螺丝刀，改锥
+| 
+| fervent
+| Definition: having or showing very strong and sincere feeling about something.
+| Synonyms: ardent
+| Usage: A fervent admirer / believer / supporter.
+| 
+| stringent
+| Definition: (of regulations, requirements, or conditions) strict, precise, and exacting.
+| Usage: California’s air pollution guidelines are stringent.
+| 
+| exert
+| Definition: apply or bring to bear (a force, influence, or quality).
+| Usage: The Moon exerts a force on the Earth.
+| Definition: (exert oneself) make a physical or mental effect.
+| Usage: He would have to exert himself in order to be successful. 
+| 
+| in retrospect  
+| Definition: when looking back on a past event or situation; with hindsight
+| Usage: perhaps, in retrospect, I shouldn’t have come back.
+| 
+| bedrock
+| Definition: solid rock underlying loose deposits such as soil or alluvium.
+| Definition: the fundamental principles on which something is based.
+| Usage: Honest is the bedrock of a good relationship.
+| 
+| rudimentary
+| Definition: Rudimentary things are very basic or simple and are therefore unsatisfactory.
+| Usage: They are deprived of the ability to exercise the most rudimentary workers’ rights.
+| Definition: Rudimentary knowledge includes only the simplest and most basic facts.
+| 
+| jitter
+| Definition: If you have the jitters, you feel extremely nervous, for example because you have to do something important or because you are expecting | important news.
+| Usage: I had a case of the jitters during my first two speeches.
+| 
+| surmise
+| Definition: If you surmise that something is true, you guess it from the available evidence, although you do not know for certain.
+| Synonyms: infer
+| Usage: There’s little to go on, we can only surmise what happened.
+| Synonyms: conjecture
+| Usage: His surmise proved correct.
+| 
+| exploit
+| Definition: to treat a person or situation as an opportunity to gain an advantage for yourself
+| Usage: She realized that her youth and inexperience were being exploited.
+| Definition: to treat somebody unfaily by making them work and not giving them much in return
+| Usage: What is being done to stop employers from exploiting young people?
+| Definition: to use something or somebody well  to gain as much from it as possible
+| Usage: She fully exploits the humor of her role in the play.
+| Usgae: No minerals have yet been exploited in Antarctia.
+| 
+| fall in / into line
+| Definition: conform with others or with accepted behavior.
+| 
+| circumvent [绕行]
+| Definition: find a way around (an obstacle)
+| Usage: They found a way of circumventing the law. [钻空子]
+| Definition: to go on travel around something that is blocking your way; detour
+| 
+| detour
+| Definition: an alternative route for use by traffic when the usual road is temporarily closed.
+| Usage: I would detour the endless stream of motor home.
+| 
+| mere
+| Definition: used to emphasized how small or insignificant someone or something is.
+| Usage: The city is a mere 20 minutes from some stunning conutryside.
+| Definition: used to emphasize that the fact of something being present in a situation is enough to influence that situation.
+| Usage: His stomach rebelled at the mere thought of food.
+| 
+| sheer
+| Definition: (only before noun) used to emphasized the size, degree or amount of something
+| Usage: We were impressed by the sheer size of the cathedral.
+| Usage: I only agreed out of sheer deperation.
+| 
+| spectrum
+| Definition: The entire range of wavelengths of electromagnetic radiation.
+| Definition: An image or distribution of components of sound, particles, etc., arranged according to such characteristics as frequency, charge and energy.
+| Usage: A spectrum is formed by a ray of light passing through a prism.
+| Definition: A complete or wide range of related qualities, ideas, etc.
+| Usage: Self-help books are covering a broader and broader spectrum.
+| 
+| Cinderella [灰姑娘]
+| Definition: a person or thing of unrecognized or disregarded merit or beauty.
+| Definition: a neglected aspect of something
+| Usage: For years radio has been the Cinderella of the media world.
+| Usage: Is research into breast cancer to remain the Cinderella of medicine?
+| 
+| knee-jerk [不假思索，下意识]
+| Definition: (of a response) automatic and unthinking.
+| Usage: It was a knee-jerk action on her part.
+| 
+| quiz
+| Definition: a test of knowledge, especially a brief, informal test given to students.
+| Usage: A reading comprehension quiz.
+| Usage: You will be quizzed on chapter 6 tomorrow.
+| 
+| prowess
+| Definition: skill or expertise in a particular activity or field.
+| Usage: His prowess as a fisherman.
+| 
+| derate
+| Definition: reducing the power rating of (a component or device).
+| Usage: The engines were derated to 90 horse power.
+| 
+| selfie [自拍]
+| Definition: a photograph that one has taken of oneself, typically one taken with smartphone or webcam and shared via social media.
+| Usage: occasional selfies are acceptable, but posting a new picture of yourself everyday is not necessary.
+| 
+| liability
+| Definition: the state of being responsible for something, especially by law.
+| Usage: The partner accept unlimited liability for any risks they undertake.
+| Definition: a thing for which someone is responsible, especially a debt or financial obligation.
+| Usage: Valuing the company’s liabilities and assets.
+| Definition: a person or thing whose presence or behavior is likely to cause embarassment or put one at a disadvantage.
+| Usage: He has become a political liability.
+| 
+| absolve
+| Definition: set or declare (someone) free from blame, guilty, or responsibility.
+| Usage: The pardon absolved them of any crimes. [赦免令]
+| Usage: The court absolved him of all responsibility for the accident. [豁免]
+| 
+| succinct
+| Definition: expressed clearly and in a few words.
+| Synonyms: concise
+| Usage: Keep your answers as succint as possible.
+| 
+| courier
+| Definition: a person or company  whose job is to take packages or important papers somewhere
+| Usage: We sent the document by courier. [快递，快递员]
+| Definition: a person who is employed by a travel company to give advice and help to a group of tourist on holiday. [导游]
+| 
+| tap [水龙头]
+| hose [水管]
+| Definition: a flexible tue conveying water, used especially for watering plants and in firefighting. 
+| 
+| privy
+| Definition: allowed to know about something secret.
+| Usage: He was no longer privy to her innermost thoughts.
+| Definition: a toilet, especially an outdoor one.
+| 
+| gracious
+| Definition: courteous, kind, and pleasant.
+| Usage: Smilling and gracious in defeat.
+| Definition: elegant and tasteful, especially as exhibiting wealth or high social status.
+| Usage: A gracious lady.
+| Definition: used as a very polite word for royal people or their action.
+| Usage: Her gracious Majesty the Queen.
+| 
+| bug
+| Definition: conceal a miniature microphone in a room or telephone in order to monitor or record someone’s conversation.
+| Usage: The phones in the presidential palace were bugged.
+| Usage: They bugged her hotel room.
+| Definition: irritate, annoy or bother someone
+| Usage: A persistent reporter was bugging me.
+| Definition: an enthusiastic interest in something as a sport or a hobby
+| Usage: A travel bug.
+| Idiom: bug off
+| Definition: leave quickly, go off; a rude way of telling someone to go away.
+| Usage: If you see the enemy troop, bug off.
+| 
+| bug the heck out of
+| Definition: heck is a polite way of saying hell, to bug the heck out of is to be so irritating that even hell would complain.
+| 
+| apiary
+| apiarist [养蜂人]
+| Definition: a place where bees are kept; a collection of beehives.
+| 
+| circuit [巡回赛]
+| Definition: (in sport) a series of games or matches in which the same players regularly take part.
+| Usage: The women’s tennis circuit.
+| 
+| tour
+| Definition: a journey made by performers or an athletic team, in which they perform or play in several different places.
+| Definition: (in golf, tennis, and other sports) the annual round of events in which top professionals complete.
+| Usage: She joined the Royal Shakespeare Company on tour.
+| Usage: The band is currently on a nine-day tour of France.
+| Usage: The Prince will visit Boston on the last leg of his American tour.
+| 
+| hog
+| Definition: keep or use all of (something) for oneself in an unfair or selfish way.
+| Usage: He never hogged the limelight.
+| Idiom: go (the) whole hog
+| Definition: do something completely or thoroughly.
+| Idiom: live high on (or off) the hog
+| Definition: have a luxurious lifestyle.
+| 
+| the lion’s share
+| Definition: the idiomatic expression of the major share of something.
+| Synonyms: the main hog
+| 
+| limelight
+| Definition: intense white light obtained by heating a cylinder of lime [石灰], formerly used in theaters.
+| Definiton: (the limelight) the focuse of public attention.
+| Usage: The work that brought the artists into the limelight.
+| Idiom: steal / hog the limelight
+| Definition: take attention away from other people.
+| 
+| the limelight [聚光灯]
+| the silver screen [银幕]
+| Definition: the movie industry
+| Usage: Stars of the silver screen. 
+| 
+| regress 
+| Definition:  return to a former or less developed state.
+| Definition: return mentally to a former stage of life or a supposed previous life, especially through hypnosis or mental illness.
+| Usage: Art has been regressing toward adolescence for more than a generation now.
+| Usage: I regressed Sylvia to early childhood. [催眠]
+| Usage: regression test [回归测试]
+| 
+| hypnosis
+| Definition: The induction of a state of consciousness in which a person apparently loses the power of voluntary action and is highly responsive to suggestion | or direction. Its use in therapy, typically to recover supressed memories or to allow modification of behavior by suggestion, has been revived but is still | controversial.
+| Usage: She only remembered details of the accident under hypnosis.
+| 
+| dual
+| Definition: having two parts or aspects.
+| Usage: She had dual nationality. [双重国籍]
+| Usage: dual-core CPU. [双核处理器]
+| 
+| verbose
+| verbosity
+| Definition: using or experssed in more words than are needed.
+| Usage: Much academic terms are obscure and verbose.
+| 
+| resort   
+| Definition: a strategy or course of action that may be adopted in a difficult situation.
+| Usage: German and Italy tried to resolve their economic and social failures by resort to fascism.
+| Usage: The president was prepared to resort to force if negotiation failed.
+| Idiom: last resort
+| Definition: a final course of action, used only when all else has failed.
+| Usage: Asking them to leave the school should be a last resort. 
+| 
+| niche
+| Definition: a specialized segment of the market for a particular kind of product or service.
+| Definition: denoting or relating to products, services, or interests that appeals to a small, specialized section of the population.
+| Usage: The video game industry is no longer niche.
+| Usage: Smaller cooperatives must find and develop a nich for their speciality product.
+| Idiom: one’s niche
+| Definition: a comfortable or suitable position in life or employment.
+| Usage: He’s now a partner at a leading law firm and feels he has found his niche.
+| 
+| duck
+| Definition: to push somebody underwater and hold them there for a short time.
+| Usage: The kids were ducking each other in the pool.
+| Definition: duck (out of) something to avoid a difficult or unpleasant duty or responsibity.
+| Usage: It’s his turn to cook dinner, but I bet he’ll try to duck out of it. 
+| Idiom: take to something like a duck to water
+| Definition:take to something very readily.
+| Usage: She has taken to teaching like a duck to water.
+| Idiom: get / have one’s ducks in a row
+| Defiition: get one’s facts straight; get everything organized.
+| Idiom: water off a duck’s back
+| Definition: a potentially hurtful or harmful remark or incident that has no apparent effect on the person mentioned.
+| Usage: It was like water off a duck’s back to Nick, But I’m sure it upset Paul.
+| Usage: quite an odd duck ??
+| 
+| albeit
+| Synonyms: although
+| Usage: He finally agreed, albeit rather reluctantly, to help us.
+| 
+| ditto
+| Definition: used in accounts and lists to indicate that an item is repeated (often indicated by a ditto mark under the word or figure to be repeated).
+| Usage: The waiters were rude and unhelpful, the manager ditto.
+| 
+| gotcha
+| Definition: (non-standard) the written form of the way some people pronounce ‘I’ve got you’, which is not considered to be correct
+| Usage: ‘Gotcha!’ the child yelled as he grabbed his mother by the leg.
+| 
+| vintage
+| Definition: a wine of high quality made from the crop of a single identified district in a good year.
+| Definition: denoting something of high quality, especially something from the past or characteristic of the best period of a person’s work.
+| Usage: The opera is vintage Rossini.
+| 
+| porcelain [釉，陶瓷]
+| Definition: china 
+| 
+| culmination
+| Definition: the highest or climactic point of something, especially as attained after a long time.
+| Usage: The product was the culmination of 13 years of research.
+| 
+| pensive
+| Definition: engaged in, involving, or reflecting deep or serious thought.
+| Usage: A pensive mood. [沉重，严肃]
+| 
+| solace
+| Definition: to give comfort or cheer to (a person) in time of sorrow or distress.
+| Usage: His grandchildren were a solace in his old age. [安慰，慰藉]
+| Usage: He sought solace in the whisky bottle. [借酒浇愁]
+| 
+| predecessor
+| Definition: a person who held a job or office before the current holder. 
+| Usage: The new president’s foreign policy is very similar to that of his predecessor.
+| Definition: the predecessor of an object or machine is the object or machine that came before it in a sequence or process of development.
+| Synonyms: forerrunner
+| Usage: Although the car is 40mm shorter than its predecessor, its boot is 20 per cent larger.
+| 
+| risible
+| Definition: such as to provoke laughter.
+| 
+| ludicrous
+| Definition: so foolish, unreasonable, or out of place as to be amusing.
+| Usage: It’s ludicrous that I have been fined for riding bicycle on the lane.
+| Synonyms: ridiculous
+| 
+| checkmate
+| Definition: a position in which one player cannot prevent his or her king being captured and therefore loses the game. [将军]
+| Definition: a situation in which somebody has been completely defeated.
+| Usage: She hoped the plan would checkmate her opponents. 
+| 
+| endgame
+| Definition: the final stage of a game such as chess or bridge, when few pieces or cards remain.
+| Usage: The knight was trapped in the endgame.
+| Definition: the final stage of a political process.
+| Usage: The retaliatory endgame of nuclear warfare.
+| 
+| proximity
+| Definition: nearness in space, time, or relationship.
+| Usage: A house in the proximity of the highway.
+| 
+| bootstrap
+| Definition: a technique of loading a program into a computer by means of a few initial instructions that enable  the introduction of the rest of the program | from an input device.
+| Idiom: pull oneself up by one’s (own) bootstraps [自力更生]
+| Definition: If you have pulled yourself up by your bootstraps, you have achieved success by your own efforts, starting from very difficult circumstances and | without help from anyone.
+| 
+| fiasco
+| Definition: If you describe an event or attempt to do something as a fiasco, you are emphasizing that it fails completely.
+| Usage: His plans turned into a fiasco.
+| 
+| cumbersome
+| Definition: large and heavy; difficult to carry.
+| Definition: slow and complicated and therefore inefficient.
+| Usage: Cumbersome diving suits.
+| Usage: Cumbersome legal procedures.
+| Usage: Organizations with cumbersome hierachical structures.
+| 
+| cum
+| Definition: combined with; also used as (used to describe things with a dual nature or function).
+| Usage: a bedroom-cum-study. [卧室兼做书房]
+| 
+| impromptu
+| Definition: done without preparation or planning.
+| Synonyms: improvised
+| Usage: an impromptu speech. [即兴演讲]
+| Definition: a short piece of instrumental music, especially a solo, that is reminiscent of an improvisation.
+| 
+| improvisation
+| Definition: the action of imporvising.
+| Definition: something that is improvised, especially a piece of music, drama, etc., created without preparation.
+| Usage: She specialzes in improvisation on the piano.
+| 
+| reminisce
+| reminiscent
+| Definition: indulge in enjoyable recollection of past event.
+| Usage: We spent a happy evening reminiscing about the past. [秉烛夜谈]
+| 
+| forswear
+| Definition: to make a promise that you will stop doing or using something.
+| Synonyms: renounce
+| Usage: The country has not forsworn the use of chemical weapons.
+| 
+| emacitated
+| Definition: abnormally thin or weak, especially because of illness or a lack of food.
+| Usage: She was so emaciated that she could hardly stand.
+| 
+| telltale
+| Definition: a person, especially a child, who report others’ wrongdoings or reveals their secrets. [告密者，打小报告，小麻雀]
+| Definition: a device or object that automatically gives a visual indication of the state or presence of something.
+| Usage: Earlier this winter though, an image of an emaciated polar bear went viral, with many asking if this was the telltale image of climate change.
+| 
+| cloud
+| Definition: spoil or mar (something).
+| Usage: The general election was clouded by violence. [蒙上一层阴影]
+| Definition: (of someone’s face or eyes) show worry, sorrow, or anger.
+| Usage: Suspicion clouded her face.
+| Usage: His expression clouded over. [脸变得阴沉]
+| Idiom: every cloud has a silver lining
+| Definition: every difficult or sad situation has a comforting or more hopeful aspect even though this may not be immediately apparent. [塞翁失马，焉知非福]
+| Idiom: under a cloud
+| Definition: under suspicion
+| Usage: Apple has been under a cloud after revealing that it deliberately slowed batteries in old phones.
+| Idiom: in the clouds / have one’s head in the clouds
+| Definition: out of touch with reality; daydream
+| Usage: This clergyman was in the clouds.
+| Idiom: on cloud nine
+| Definition: extremely happy. [with reference to a ten-part classification of clouds in which “nine” was next to the highest]
+| 
+| be born with a silver spoon in one’s mouth
+| Definition: be born into a weathy family of high social standing.
+| 
+| bobbin [绕线筒，线轴]
+| Definition: a winder around which thread or tape or film or other flexible material can be wounded.
+| 
+| infringe
+| infringement
+| Definition: actively break the terms of (a law, agreement, etc.).
+| Usage: Making an unauthorized copy would infringe copyright. [盗版必究？]
+| Definition: infringe on / upon something
+| Usage: I wouldn’t infinge on his privacy.
+| Usage: An infringement of liberty.
+| 
+| encroach
+| encroachment
+| Definition: intrude on ( a person’s territory or a thing considered to be a right).
+| Usage: Rather than encroach on his privacy, she might have kept to her room.
+| Definition: (disapproving) to begin to affect or use up too much of someone’s time, rights, personal life, etc.
+| Usage: I won’t encroach on your time any longer.
+| Usage: He never allows work to encroach upon his family life.
+| Definition: advance gradually beyone usual or acceptable limits.
+| Usage: The sea has encroached all around the coast.
+| 
+| poach
+| Definition: cook (an egg), without its shell, in or over boiling water.
+| Definition: to cook food, especially fish, gently in a small amount of liquid. [煎，炖]
+| Definition: illegally hunt or catch (game or fish) on land that is not one’s own, or in contravention of offical protection. [盗猎，偷猎]
+| Usage: The elephants are poached for their tusks.
+| Idiom: poach on someone’s territory [私闯民宅]
+| 
+| in decline / on the decline
+| go / fall into decline
+| Definition: If something is in decline or on the decline, it is gradually decreasing in importance, quality, or power.
+| Usage: He is still one of the world’s most popular football players, but his game is in decline.
+| 
+| break off
+| Definition: If part of something breaks off or if you break it off, it come off or is removed by force.
+| Usage: Grace broke off a large piece of the clay.
+| Definition: If you break off when you doing or saying something, you suddenly stop doing it or saying it.
+| Usage: Luias broke off in mid-sentence.
+| 
+| maiden flight [处女航]
+| Definition: The maiden voyage or flight of a ship or aircraft is the first offical journey that it makes.
+| Usage: In 1912, the Titanic sank on her maiden voyage.
+| 
+| debut
+| Definition: The debut of a performer or sports player is their first public performance, appearance, or recording.
+| Usage: Her debut album “Sugar time”. [出道作品]
+| Usage: Lionel Messi made his debut for Barcelona 12 years ago this weekend. 
+| Usage: Barca brought on the 23-year-old Columbia defender Yerry Mina for his debut.
+| 
+| 成名作 
+| 
+| ferocious
+| Definition: A ferocious animal, person, or action is very fierce and violent.
+| Synonyms: fierce
+| Usage: By its nature a lion is ferocious.
+| Definition: A ferocious war, argument, or other form of conflict involves a great deal of anger, bitterness, and determination.
+| Usage: Fighting has been ferocious.
+| 
+| gigantic
+| Definition: If you describe something as gigantic, you are emphasizing that it is extremely large in size, amount, or degree.
+| Usage: A gigantic task of national reconstruction awaits us.
+| 
+| another nail in the coffin
+| the final nail in the coffin
+| Definition: If an event is another nail in the coffin of something or someone, it is the latest in a series of events which are seriously harming that thing | or person.
+| Usage: The President took the blame for the crisis and it became another nail in the coffin of his leadership.
+| Note: If you say that an event is the last nail or the final nail in the coffin of something or someone, you mean that it finally destroys something or | causes someone to fail.
+| Usage: The marriage was already in trouble and his affair proved to be the last nail in the coffin.
+| 
+| whimsical
+| Definition: a whimsical person or idea is unusual, playful, and unpredictable, rather than serious and pratical.
+| Synonyms: quirky
+| Usage: His graphic art became slighter and more whimsical.
+| 
+| slight
+| Definition: something that is slight is very small in degree or quantity.
+| Synonyms: small; slim
+| Definition: If you are slighted, someone does or says something that insults you by treating you as if your views or feelings are not important.
+| Usage: They felt silghted by not being adequately consulted.
+| Definition: you use in the slightest to emphasize a negative statement.
+| Usage: That doesn’t interest me in the slightest.
+| 
+| oddity
+| Definition: a strange or peculiar person, thing , or trait.
+| Usage: She was regarded as a bit of an oddity.
+| Usage: She suddenly realized the oddity of her remark and blushed.
+| 
+| entrepreneur [创业者，企业家]
+| Definition: a person who organizes and operates a business or businesses, taking on greater than normal financial risks in order to do so. 
+| 
+| game-changer
+| game-changing
+| Definition: an event, idea, or procedure that effects a significant shift in the current manner of doing or thinking about something.
+| Usage: A potential game changer that could revitalize the entire US aerospace industry.
+| 
+| game-over
+| Definition: said when a situation is regarded as hopeless or irreversible.
+| Usage: It’ll be game-over for all other heavy-lift rockets.
+| 
+| reserve
+| Definition: In sports, a reserve is someone who is available to play as part of a team if one of the members is ill or cannot play. (mainly BRIT; in AM us | substitude) [替补]
+| Usage: He ended up as a reserve, but still qualified for a team gold medal.
+| Definition: If someone shows reserve, they keep their feeling hidden.
+| Usage: I do hope you’ll overcome your reserve and let me know.
+| Definition: If you have something in reserve, you have it available for use when it is needed.
+| Usage: He poked around the top of his cupboard for the bottle of whisky that he kept in reserve.
+| [我有斗酒，藏之久矣，以待子不时之需]
+| 
+| die hard
+| Definition: disappear or change very slowly.
+| Usage: old habits die hard.
+| Usage: old soldiers never die, they just fade away.
+| 
+| die on the vine
+| Definition: be unsuccessful at an early stage.
+| 
+| never say die
+| Definition: used to encourage someone in a difficult situation.
+| 
+| to die for
+| Definition: extremely good or desirable.
+| Usage: The ice cream is to die for.
+| 
+| punctuation
+| Definition: punctuation is the use of symbols such as full stops or periods, commas, or question marks to divide written words into sentences and clauses.
+| Usage: He was known for his poor grammer and punctuation.
+| Usage: Punctuation marks. [标点符号]
+| 
+| relent
+| Definition: to finally agree to something after refusing.
+| Synonyms: yield; soften
+| Usage: ‘Well just for a little while then,’ she said, finally relenting.
+| 
+| relentless
+| Definition: not stopping or getting less strong.
+| Usage: The sun was relentless.
+| Usage: Her relentless pursuit of perfection. [处女座]
+| Definition: refusing to give up or be less strict or severe.
+| Usage: A relentless enemy.
+| 
+| wake
+| Definition: a trail of disturbed water or air left by the passage of a ship or aircraft.
+| Definition: used to refer to the aftermath or consequences of something.
+| Usage: The committee was set up in the wake of inquiry.
+| Idiom: wake up and smell the coffee
+| Definition: become aware of the realities of situation, however unpleasant.
+| 
+| dietary
+| Usage: Animal research showed that breast tumours struggled without the dietary nutrient asparagine.
+| 
+| culinary
+| Definition: culinary means concerned with cooking.
+| Usage: She was keen to acquire more advanced culinary skills.
+| 
+| brag
+| Definition: say in a boastful manner.
+| Synonyms: boast
+| Usage: They were bragging about how easy it had been.
+| 
+| lewd
+| Definition: crude and offensive in a sexual way. [いやらしい]
+| Usage: She began to gyrate to the music and sing a lewd song.
+| 
+| gyrate
+| Definition: dance in a wild or suggestive manner.
+| Usage: Strippers gyrated to rock music on a low stage. [脱衣舞者]
+| 
+| strppergram
+| Definition: a novelty greetings message dilivered by a person who accompanies it with a striptease act.
+| 
+| striptease [脱衣舞]
+| Definition: a form of entertainment in which a performer gradually undress to music in a way intended to be sexually exciting.
+| 
+| convulse
+| convulsive
+| convulsion
+| Definition: (of a person) suffer violent involutary contraction of the muscles, producing contortion of the body or lims.
+| Synonyms: spasm
+| Usage: She convulsed, collapsing to the floor with the pain.
+| 
+| amortize
+| amortization
+| Definition: gradually write off the initial cost of (an asset).
+| Usage: They want to amortize the tooling costs quickly.
+| Definition: redece or extinguish (a debt) by money regularly put aside.
+| Usage: Loan fees can be amortized over the life of the mortage.
+| 
+| stride
+| Definition: walk with long, decisive steps in a specific direction.
+| Usage: Striding confidently toward the future.
+| Idiom: break (one’s) stride
+| Definition: slow or interrupt the pace at which one walks or moves.
+| Idiom: match someone stride for stride
+| Definition: manage to keep up a competitor. [望其项背]
+| Idiom: take something in (one’s) stride
+| Definition: deal with something difficult or unpleasant in a calm and accepting way.
+| Usage: We took each new disease in stride.
+| 

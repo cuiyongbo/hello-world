@@ -120,3 +120,13 @@ Biology Terms
 | gustation [味觉]
 | Definition: The faculty of distinguishing sweet, sour, bitter or salty properties in the mouth.
 | 
+| ego
+| egoism
+| Definition: (psychology) the part of the mind that responsible for your sense of who you are (you identity). [ 自我 ]
+| Definition: a person’s sense of self-esteem or self-importance.
+| Usage: Winning the prize really boosted her ego. [自信，自我认同]
+| Usage: He had the biggest ego of anyone I’ve ever met. [自负]
+| 
+| superego
+| Definition: the part of a person’s mind that acts as a self-critical conscience, reflecting social standars learned from parents and teachers. [like super() | in Java??]
+| 

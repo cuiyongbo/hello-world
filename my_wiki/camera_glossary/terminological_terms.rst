@@ -58,4 +58,9 @@ Terminology
 | Definition: the spreading of light beyond its proper boundaries to form a fog around the edges of a bright
 | image in photograph or on a television screen.
 |
-
+| focal
+| Definition: Focal is used to describe something that releates to the point where a number of rays or lines meet.
+| Definition: The focal length of the lens. [焦距]
+| Definition: Focal is used to describe something that is very important.
+| Usage: Now Shanghai is a great metropolis and one of the focal centres of the Far East.
+| 
