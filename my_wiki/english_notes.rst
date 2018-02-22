@@ -707,6 +707,14 @@ English Note
 | Definition: Involving or committing sacrilege.
 | Usage: It seems sacrilegious to say this, but it’s really not that great a movie.
 | 
+| begrime
+| Definition: make soiled, filthy or dirty.
+| Usage: Paint flaking from begrimed walls.
+| 
+| flake
+| Definition: a small, flat, thin piece of something, typically one that has broken away or | been peeled off a larger piece. 
+| Usage: Paint peeling off the walls in unsightly flakes.
+| 
 | violate
 | violation
 | Definition: If someone violates an agreement, law, or promise, they break it.
@@ -986,8 +994,16 @@ English Note
 | Definition: strike, tread, or push away with the foot
 | Usage: With one touch of my feet, I spurn the solid Earth.
 | Definition: reject with disdain or contempt.
-| Usage: He spoke gruffly, as if afraid that his invitation would be spurned.
+| Synonyms: pooh-pooh
+| Usage: He spoke gruffly, as if afraid that his invitation would be spurned. [傲娇]
 | 
+| pooh-pooh
+| Definition: reject with contempt.
+| Usage: Oh pooh! Don't be such a spoilsport.
+|
+| spoilsport [扫兴，扫把星]
+| Definition: a person who behaves in a way that spoils others' pleasure, especially by not | joining in an activity.
+|
 | disdain
 | Definition: The felling that someone is unworthy of one’s consideration or respect; contempt
 | Usage: Her upper lip curled in disdain.
@@ -1367,6 +1383,7 @@ English Note
 | Definition: 螺丝刀，改锥
 | 
 | fervent
+| fervency
 | Definition: having or showing very strong and sincere feeling about something.
 | Synonyms: ardent
 | Usage: A fervent admirer / believer / supporter.
@@ -1752,6 +1769,13 @@ English Note
 | be born with a silver spoon in one’s mouth
 | Definition: be born into a weathy family of high social standing.
 | 
+| spoon-feed
+| Definition: feed someone by using a spoon.
+| Definition: provide someone with so much help or information that they do not need to think | for themselves.
+| 
+| misbehave
+| Definition: behave badly.
+| 
 | bobbin [绕线筒，线轴]
 | Definition: a winder around which thread or tape or film or other flexible material can be wounded.
 | 
@@ -1950,3 +1974,62 @@ English Note
 | Definition: deal with something difficult or unpleasant in a calm and accepting way.
 | Usage: We took each new disease in stride.
 | 
+| winter camp   冬营？？
+| winter break 冬歇
+| A Winter Break For English Football: whats All the Fuss About?
+| Over a year ago, England were extraordinarily knocked out of Euro 2016 at the | hands of Iceland. To highlight the sheer weight of the upset Iceland caused, | over 10% of their population were at the champions, in the form of fans, players | and staff.
+| 
+| make someone's hair stand on end
+| make (one's) / the hair stand up on the back of (one's) neck
+| Definition: to scare or horrify someone. [毛骨悚然]
+| Usage: Walking past the cemetery alone at night made Mary's hair stand up on the | back of her neck.
+| Usage: Just the thought of going into that abandoned building makes the hair | stand up on the back of my neck.
+| Usage: The hairs stand up on the back of your neck when you realise you have | discovered something as astonishing as these boxing gloves.
+| 
+| hair of the dog
+| Definition: (informal) an alcoholic drink taken to cure a hangover [宿醉].
+| Origin: from hair of the dog that bit you, formerly recommended as a remedy for | the bit of a mad dog.
+| 
+| put hair on one's chest
+| Definition: (of an alcoholic drink) be very strong.
+| 
+| in (or out of) one's hair
+| Definition: annoying (or ceasing to annoy someone).
+| Usage: I'm glad he's out of my hair.
+| 
+| let one's hair down
+| Definition: (informal) behave in an uninhibited or relaxed manner.
+| Usage: Let you hair down and just have some fun.
+| 
+| not a hair out of place
+| Definition: used to convey that a person is extremely neat and tidy in | appearance.
+| 
+| not turn a hair
+| Definition: remain apparently unmoved or unaffected.
+| Usage: The old womal didn't turn a hair; she just sat quietly rocking.
+| 
+| split hair
+| Definition: If you say that someone is splitting hairs, you mean that they are | making unnecessary distinctions between things when the differences are almost | negligible.
+| Synonyms: find fault.
+| Usage: Don't split hairs. You know what I'm getting at.
+| 
+| hair
+| Usage: A woman with shoulder-length fair hair. [披肩发] 
+| Defintion: (a hair) a very small quantity or extent.
+| Usage: His magic takes hime a hair above the competition.
+| 
+| verdant
+| verdancy
+| Definition: (of countryside) green with grass or other rich vegetation.
+| 
+| inhale
+| Definition: breathe in (air, gas, smoke, etc.)
+| Usage: She inhaled deeply on another cigarette.
+| Definition: eat (food) greedily or rapidly.
+| Usage: Later on I inhaled a box of chocolate cookies while watching TV.
+| 
+
+
+
+
+
