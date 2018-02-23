@@ -83,6 +83,11 @@ Millitary Terms
 | Definition: A narrow passage of water that connect two seas or large areas of water, especially in the names of places.
 | Usage: the Straits of Gibraltar (直布罗陀海峡)
 | 
+| canyon 
+| Definition: a deep gorge, typically one with a river flowing through it.
+| ravine
+| Definition: a deep, narrow gorge with narrow sides.
+|
 | workhorse
 | Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
 | Definition: If you describe a person or machine as a workhorse, you mean that they can be relied upon to do a large amount of work, especiall work that is dull or routine.

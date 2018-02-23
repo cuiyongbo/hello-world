@@ -135,3 +135,21 @@ Biology Terms
 | Definition: rapid reproduction of a cell, part or organism.
 | Usage: We attempted to measure cell proliferation.
 | 
+| heterogeneous homogeneous
+| 
+| cortex
+| Definition:  (anatomy) the outer layer of an organ in the body, especially the brain.
+| Usage: The cerebral cortex(大腦皮層).
+|
+| coronary 冠狀動脈
+| 
+| Forensic 法醫
+| Definition: relating to or denoting the application of scientific methods and techniques to the investigation of crime.
+| Usage: Forensic evidence.
+|
+| krait 环蛇
+| corba 眼镜蛇
+| viper 蝮蛇
+| rattlesnake 响尾蛇
+| scorpion [蝎子]
+| 

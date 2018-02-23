@@ -54,4 +54,9 @@ Computer Terminology
 |
 | prefix  VS suffix 
 | prepend VS append
+| ISA = Instruction Set Architecture
+| CISC = Complex Instruction Set Computing
+| RISC = Reduced Instruction Set Computing
 | 
+
+

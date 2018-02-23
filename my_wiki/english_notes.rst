@@ -50,6 +50,11 @@ English Note
 | Definition: The terminology of a subject is the set of special words and expressions used in connecting with it.
 | Usage: Gastritis, which in medical terminology means an inflammation of the stomach.
 | 
+| parlance
+| Definition: a particualr way of speaking or using words, especially a way common to those with a particular job or interest.
+| Usage: Dated terms that were once in common parlance.
+| Usage: Medical parlance.
+| 
 | abyssal
 | Definition: (adjective) Of or relating to the great depths of the oceans.
 | Synonyms: abysmal, unfathomable
@@ -148,6 +153,9 @@ English Note
 | 
 | monition
 | Definition:  A warning or an initimation of something imminent, especially of impending danger.
+| 
+| caveat
+| Definition: a warning that particular things need to be considered before something can be done.
 | 
 | frisson
 | Definition: (noun)  A sudden strong feeling of excitement or fear; a thrill
@@ -1232,6 +1240,10 @@ English Note
 | Definition: The most important reason or purpose for someone or something’s existence.
 | Usage: An instituation whose raison d’être is public service broadcasting.
 | 
+| de facto 
+| Synonyms: in fact
+| Usage: The general took de facto control of the country.
+| 
 | shoehorn
 | Defiintion: a curved instrument used to ease one’s heel into a shoe.
 | Definition: force into an inadequate space.
@@ -2213,6 +2225,122 @@ English Note
 | Definition: extremely, very.
 | Usage: I was thrice blessed.
 | 
-
-
+| metronome 节拍器
+| Guinness world records 吉尼斯世界纪录
+| 
+| seven sin: gluttony, greed, sloth, wrath, pride, lust, envy
+| the eight year itch [七年之痒]
+| Definition: the desire for new sexual experience that is thought to be felt after eight years of marriage.
+| 
+| Dante 但丁
+| Purgatory
+| Definition: (in Roman Catholic doctrine) a place or state of suffering inhabited by the souls of sinners who are expiating their sins before going to heaven. [| 炼狱]
+| Usage: Getting up at five o’clock every morning is sheer purgatory. [活受罪]
+| 
+| coupon [优惠券]
+| Definition: a voucher entitling the holder to a discount for a particular product.
+| voucher
+| Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
+| 
+| permute
+| permutable
+| permutation
+| Definition: submit to a process of alteration, rearrangement or permutation.
+| Usage: We wish to permute the order of bytes,
+| 
+| entropy
+| Definiiton: (physics) a thermodynamic quantity representing the unavailability of a system’s thermal energy for conversion into mechinical work, often interpreted | as the degree of disorder or randomness in the system. [熵]
+| Usage: In the business world, Entropy rules.
+| 
+| fabrication
+| Definition: the action or process of manufacturing or inventing something.
+| Usage: The assembly and fabrication of electronic products.
+| Definition: an invention; a lie.
+| Usage: The story was a complete fabrication. [本故事纯属虚构]
+|  
+| ulterior
+| Definition: existing beyond what is obvious or admitted; internally hidden.
+| Usage: Could there be an ulterior motive behind his request?
+| 
+| steer
+| Definition: (of a person) guide or control the movement of (a vehicle, vessel, or aircraft), for example by turning a wheel or operating a rudder.
+| Usage: He steered the boat slowly toward the busy quay.
+| Idiom: steer clear of
+| Definition: take care to avoid or keep away from.
+| Usage: His program steers clear of prickly local issues.
+| Idiom: steer a middle course
+| Definition: adopt a policy that avoid extremes. [中庸]
+| 
+| excel 
+| excellent 
+| excellence
+| Usage: You cannot excel at everything, so just stick to what you like and what you want to change for.
+| 
+| resurgence
+| Definition: an increase or revival after a period of little activity, popularity, or occurrence.
+| Usage:  A resurgence of inch to read classical Chinese.
+| 
+| distract
+| distraction
+| Definition: to take someone’s attention away from what they are trying to do.
+| Usage: I find it hard to work at home because of so many distractions.
+| 
+| stipulate
+| stipulation
+| Definition: demand or specify (a requirement), typically as part of bargain or agreement.
+| Usage: They donated their collection of prints with the stipulations that they will never be publicly exhibited.
+| 
+| elude
+| Definition: evade or escape from (a danger, enemy, or pursuer), typically in a skillful or cunning way.
+| Usage: He managed to elude his pursuers by escaping into an ally.
+| 
+| jiggle
+| Definition: shake something lightly up and down or from side to side.
+| Usage: He jiggled his head up and down when he spoke.
+| 
+| tacit
+| Definition: understood or implied without being stated. [默许]
+| Usage:  Your silence may be taken to mean tacit agreement.
+| 
+| jar
+| Definition: send a painful or damaging shock through (something, especially a part of body).
+| Usage: Do you fancy a jar after work?
+| Usage: The jolt seemed to jar every bone in her body.
+|  
+| luminary [权威]
+| Definition: a person who inspires or influences others, especially oen prominent in a particular sphere.
+| Definition: expert
+| Usage: One of the luminaries of child psychiatry.
+| 
+| acronym [首字母缩略词]
+| Definition: an abbreviation formed from the initial letters of others words and pronounced as a word (e.g., ASCII, NASA) 
+| 
+| Epiphany
+| Definition: a Christian festival, held on the 6 January, in memory of the time when Magi came to see the baby jesus at Bethlehem.
+| Usage: The festival commemorating the Epiphany is on January 6.
+| 
+| unobtrusive
+| Definition: not attracting unnecessary attention.
+| Usage: Correction should be neat and unobtrusive.
+| Usage: High-powered satellites can reach smaller and less obtrusive antenna.
+| 
+| rant
+| Definition: speak or shout at length in a wild, impassioned way.
+| Usage: She was still ranting on about the unfairness of it all.
+| 
+| vocation
+| Definition: a strong feeling of suitability for a particular career or occupation.
+| Usage: Not all of us have a vocation to be nurses or doctors.
+| 
+| rationale
+| Definition: a set of reasons or logical basis for a course of action or a particualr belief.
+| Usage: He explained the rationale behind the change.
+| 
+| windsurfing 帆板運動, 也是水上運動
+| Usage: Go windsurfing.
+| 
+| bicentennial
+| Definition: the two hundredth anniversay of a significant event.
+| Usage: Last year saw the bicentennial of Mozart’s birth.
+| 
 
