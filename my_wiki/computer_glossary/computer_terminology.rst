@@ -39,3 +39,19 @@ Computer Terminology
 | 
 | divide-and-conquer [分而治之]
 | 
+| corruption
+| Definition: the process by which something, typically a word or expression, is | changed from its original use or meaning to one that is regarded as erroneous | or debased.
+| Definition: the process of causing errors to appear in a computer program or | database.
+| Usage: The word “holiday” is a corruption of “holy day”.
+|
+| heuristic
+| Definition: enabling a person to discover or learn something for themselves.
+| Definition: (Computing) proceeding to a solution by trial and error or by rules that are loosely defined.
+| Usage: Heuristic teaching or education encourages you to learn by discovering things for yourself.
+| 
+| implementation-dependent
+| Usage: The result of the program is implementation-dependent.
+|
+| prefix  VS suffix 
+| prepend VS append
+| 

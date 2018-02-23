@@ -130,3 +130,8 @@ Biology Terms
 | superego
 | Definition: the part of a person’s mind that acts as a self-critical conscience, reflecting social standars learned from parents and teachers. [like super() | in Java??]
 | 
+| proliferation
+| Definition:rapid increase in numbers.
+| Definition: rapid reproduction of a cell, part or organism.
+| Usage: We attempted to measure cell proliferation.
+| 

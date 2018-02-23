@@ -12,6 +12,11 @@ English Note
 | anagram
 | Definition: A word, phrase, or name formed by rearranging the letters of another. such as cinema, formed from the word iceman.
 | 
+| synonym
+| synonymous
+| Definition: a word similar in meaning to another
+| Usage: Agression is often taken as synonymous with violence.
+| 
 | antonym
 | Definition: a word opposite in meaning to another
 | Usage: fast is one of the antonyms of slow
@@ -233,6 +238,8 @@ English Note
 | Usage: Fans who still have their original ticket stubs should contact Sheffield Arena by July 3.
 | Usage: I stubbed my toes against a table leg.
 | 
+| invoice  发票
+|
 | glitch
 | Definition: A glitch is a problem, which stops something from working properly or being successful.
 | Usage: Manufacturing glitches have limited the factory’s output, and costs are still far too high.
@@ -1440,6 +1447,10 @@ English Note
 | Usage: They found a way of circumventing the law. [钻空子]
 | Definition: to go on travel around something that is blocking your way; detour
 | 
+| obfuscation [搪塞]
+| Definition: the action making something obscure, unclear, or unintelligible.
+| Usage: When confronted with sharp questions they resorted to obfuscation.
+| 
 | detour
 | Definition: an alternative route for use by traffic when the usual road is temporarily closed.
 | Usage: I would detour the endless stream of motor home.
@@ -2028,8 +2039,180 @@ English Note
 | Definition: eat (food) greedily or rapidly.
 | Usage: Later on I inhaled a box of chocolate cookies while watching TV.
 | 
+| exorcism
+| exorcist
+| exorcise
+| Definition: drive out or attempt to drive out (an evil | spirit) from a person or place.
+| Usage: blue exorcist (青のエクソシスト).
+| Usage: Infants were exorcised prior to baptism.
+| 
+| long pig
+| Definition: obsolete human flesh eaten by cannibals.
+|
+| cannibal
+| cannibalize
+| cannibalism
+| Definition: an animal that eats the flesh of other animals of the same kind.
+| Definition: a person who eats human flesh.
+| Usage: Cannibal tributes.
+|
+| home-brew 
+| Definition: beer that sb made at home
+| 
+| notorious
+| Definition: famous or well known, typically for some bad quality or deed.
+| Usage: Los Angeles is notorious for its smog.
+| Usage: He was a notorious drinker and womanizer.
+| 
+| womanizer [滥交者]
+| Definition: a man who engages in numerous casual sexual affairs with women.
+| 
+| playboy
+| Definition: a wealthy man who spends his time enjoying himself, especially | one who behaves irresponsibly or is sexually promiscuous.
+| 
+| promiscuity
+| promiscuous
+| Definition: having or characterized by many transient sexual relationships.
+| Usage: They ran wild, indulging in promiscuous sex and experimenting with | drugs. 
+| 
+| rigmarole
+| Definition: a lengthy and complicated procedure.
+| Usage: I cannot face the whole rigmarole of get a work permit again.
+| Usage: He went through the rigmarole of securing the front door
+| 
+| flush
+| Definition: (of a person's skin or face) become red and hot, typically as the | result of illness or strong emotion.
+| Usage: she flushed with anger.
+| Definition: cleanse (something, especially a toilet) by causing large | quantities of water to pass through it.
+| 
+| spurious
+| Definition: not being what it purports to be true; false or fake.
+| Usage: He had  managed to make the entirely spurious impression that the | company is thriving.
+| 
+| superfluous
+| Definition: more than you need or want; unnecessary.
+| Usage: She gave him a look that made words superfluous.
+| 
+| imbue
+| Definition: (often be imbued with) inspire or permeate with a strong feeling or quality.
+| Usage: Her voice was imbued with an unusual seriousness.
+| 
+| facet
+| Definition: one side of something many-sided, especially of a cut gem.
+| Definition: a particular aspect or feature of something.
+| Usage: Let’s look at another facet of the problem.
 
+.. image:: images/facet_of_a_gem.png
 
+| stale
+| Definition: (of food) no longer fresh and plesant to eat.
+| Definition: no longer new and interesting.
+| Usage: Their marriage has gone stale
+| 
+| pedant [学究]
+| pedantic
+| Definition: too worried about small details or rules. 
+| Usage: Many of the essays are long, dense, and too pedantic to hold great appeal.
+| 
+| bellwether [领头羊]
+| Definition: the leading sheep of a flock, with a bell on its neck.
+| Definition: an indicator or predicator of something.
+| eg: University campuses are often the bellwether of change.
+| 
+| continue
+| continuation
+| Usage: Continuation of discussions about a permanent peace.
+| 
+| trauma [心灵创伤，后遗症]
+| Definition: emotional shock following a stressful event or physical injure, which may be associated with | physical shock and sometimes leads to long-term neurosis. 
+| Usage: She felt exhausted after the traumas of recent weeks.
+| 
+| exhort
+| exhortative
+| exhortation
+| Definition: an address or communication emphatically urging someone to do | something.
+| Usage: No amount of exhortation had any effect.
+| Usge: The media have been exhorting people to turn out for the demonstration. | [游行]
+| 
+| glutton
+| Definition: a person who eats too much. [饕餮]
+| Definition: a person who is excessively fond of or always eager for somthing.
+| Synonyms: mania
+| Usage: A glutton of adventure.
+| 
+| malediction [咒语，诅咒]
+| Definition: a magical word or phrase uttered with the intention of bring | about evil or destruction.
+| Synonyms: curse 
+| 
+| workaround [应变方法，变通]
+| Definition: a way in which you can solve or avoid a problem when the most | obvious solution is not possible.
+| 
+| makeshift
+| Definition: serving as a temporary substitute; sufficient for the time being.
+| Usage: A few cushions formed a makeshift bed.
+| 
+| confer
+| Definition: have discussions; exchange opinions.
+| Usage: The officials  were conferring with allies.
+| 
+| ubiquitous
+| Definition: present. appearing, or found everywhere.
+| Usage: His ubiquitous influence was felt by all the family.
+| 
+| sanity
+| Definition: the ability to think and behave in a normal and rational manner.
+| Usage: His behavior was so strange that I began to doubt his sanity.
+| 
+| yankee American [美国佬]
+| 
+| phony
+| Definition: not genuine; fradulent.
+| Usage: I thought your accent was a bit phony.
+| 
+| hassle
+| Definition: irritating inconvenience.
+| Usage: Traveling can be a hassle.
+| Definition: deliberate harassment.
+| 
+| hierarchy
+| hierarchical
+| Definition: an arrangement or classification of things according to relative | importance or inclusiveness.
+| Usage: She is quite high up in the management hierarchy.
+| 
+| hierarch
+| Definition: a chief priest, archbishop, or other leader.
+| 
+| intricate   
+| intricacy
+| Definition: very complicated or detailed.
+| Usage: The exquisite intricacy of Indian silver-work.
+| 
+| intrinsic
+| Definition: belonging naturally; essential.
+| Usage: Access to the arts is intrinsic to a high quality of life.
+| Usage: There is nothing intrinsically wrong with the idea.
+| [这种想法本身并没有错]
+| 
+| illustrate
+| illustration [插图]
+| Definition: a picture illustrating a book, newspaper.
+| Usage: A collection of pieces that illustrate the Bach’s technology.
+| 
+| anomaly
+| anomalous
+| Definition: something that deviates from what is standard, normal, or | expected.
+| Usage: There are a number of anomalies in the present system.
+| 
+| novice
+| Synonyms: beginner
+| Usage: He was a complete novice in foreign affairs.
+| 
+| thrice
+| Definition: three times.
+| Usage: A dose of 25mg thrice daily.
+| Definition: extremely, very.
+| Usage: I was thrice blessed.
+| 
 
 
 

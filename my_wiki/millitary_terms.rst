@@ -158,8 +158,10 @@ Millitary Terms
 | Usage: The referendum on independence [独立公投] in September showed that more than 90% of the 3.3 million people who voted had supported secession.
 | 
 | mandate
+| mandatory
 | Definition: an offical order or commission to do something.
 | Usage: A mandate to seek the release of political prisoners.
+| Usage: He didn’t want the guide to be mandatory.
 | 
 | annul
 | Definition: declare invalid (an offical aggreement, decision, or result).
@@ -193,6 +195,9 @@ Millitary Terms
 | 
 | dual nationality. [双重国籍]
 | criminal record [前科]
+| prior
+| Definition: a previous criminal conviction.
+| Usage: He had no juvenile record, no priors.
 |
 | burglary [入室行窃]
 | Definition: the crime of entering a building illegally and stealing things from it.
@@ -262,7 +267,11 @@ Millitary Terms
 | cadet [军官候补生]
 | Definition: a young person who is training to become an officer in the police or armed force. 
 | 
-
-
+| retaliation
+| Definition: the action of returning a military attack; counterattack.
+| Usage: The bombings are believed to be in retaliation for the trial of 15 | suspects.
+| Synonyms: revenge
+| Usage: Protectionism invites retaliation.
+| 
 
 
