@@ -2620,4 +2620,25 @@ English Note
 | Usage: orthodox medicine. [传统医学] 
 | Usage: Orthodox Church. [东正教]
 | 
+| annihilate
+| annihilation
+| Definition: complete destruction or obliteration.
+| Usage: The threat of global annihilation.
+| Definition: total defeat.
+| Usage: A show of independence is its only hope of avoiding annihilation in the next year's elections.
+| 
+| catastrophic
+| catastrophe
+| Definition: an event causing great and often sudden damage or suffering; a disaster.
+| Usage: A national economic catastrophe.
+|
+
+
+
+
+
+
+
+
+
 
