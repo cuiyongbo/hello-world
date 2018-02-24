@@ -151,5 +151,23 @@ Biology Terms
 | corba 眼镜蛇
 | viper 蝮蛇
 | rattlesnake 响尾蛇
-| scorpion [蝎子]
+| gopher 囊地鼠
+| scorpion 蝎子
+
+.. image:: images/scorpion.png
+
+| cicada  [知了，蝉]
+
+.. image:: images/cicada.png
+
+| castrate
+| castrator
+| castration [去势，阉割]
+| Definition: remove the testicles of (a male animal or man). 
+| Definition: deprived of power, vitality, or vigor.
+| Usage: The nation is a castrated giant, afraid to really to punish subversives.
+| 
+| masturbate
+| masturbation [手淫，自慰]
+| Definition: stimulate one’s own genitals for sexual pleasure.
 | 

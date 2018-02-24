@@ -62,6 +62,11 @@ Millitary Terms
 | mass grave [万人坑]
 | Definition: a pit dug in the ground to receive a large number of corpses.
 | 
+| guild
+| Definition: a medival association of craftmen or merchants, often having considerable power.
+| Definition: an association of people for mutual aid or the pursuit of a common goal.
+| Usage: The Screen Actors Guild. [电影演员协会]
+| 
 | medieval [中世纪]
 | Definition: relating to the Middle Ages (about AD 1000 to AD 1450).
 | Usage: A medieval castle.
@@ -189,13 +194,21 @@ Millitary Terms
 | Definition: a belief or set of beliefs held and taught by a church, political party, or other group.
 | Usage: The Monroe Doctrine.
 | 
+| pragmatic 經驗主義的   
+| dogmatic  教條主義的
 | dogma [教条]
 | Definition: a principle or set of principles laid down by an authority as incontrovertibly true.
 | Usage: political dogma
 | Usage: The alphaGo has upset the established chess dogma. 
+| Usage: A pragmatic approach to politics.
+| Usage: He tries to give his opinions without to be dogmatic.
 | 
 | retalitory
-| Definition: (of an action) characterized by a desire for revenge.
+| retaliation
+| Definition: the action of returning a military attack; counterattack.
+| Usage: The bombings are believed to be in retaliation for the trial of 15 | suspects.
+| Synonyms: revenge
+| Usage: Protectionism invites retaliation.
 | Usage: Fears of a retalitory attack by the victim’s friends.
 | 
 | dual nationality. [双重国籍]
@@ -272,11 +285,18 @@ Millitary Terms
 | cadet [军官候补生]
 | Definition: a young person who is training to become an officer in the police or armed force. 
 | 
-| retaliation
-| Definition: the action of returning a military attack; counterattack.
-| Usage: The bombings are believed to be in retaliation for the trial of 15 | suspects.
-| Synonyms: revenge
-| Usage: Protectionism invites retaliation.
+| arbiter 仲裁
+| Definition: a person who settles a dispute or has ultimate authority in a matter.
+| Usage: The military act as arbiter of the conflicts between political groups
+| 
+| asylum 政治庇护
+| Definition: (also political asylum) the protection granted by a nation to someone who has left their native country as political refugee.
+| Usage: She applied for asylum and was granted refugee status.
+| 
+| manifesto
+| Definition: a public declaration of policy and aim, especially one is issued before an election by a political party or candidate.
+| Usage: An election manifesto.
+| Usage: Manifesto of the communist party. [共产党宣言]
 | 
 
 

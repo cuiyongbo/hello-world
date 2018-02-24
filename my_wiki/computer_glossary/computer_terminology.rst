@@ -39,6 +39,7 @@ Computer Terminology
 | 
 | divide-and-conquer [分而治之]
 | 
+| corrupt
 | corruption
 | Definition: the process by which something, typically a word or expression, is | changed from its original use or meaning to one that is regarded as erroneous | or debased.
 | Definition: the process of causing errors to appear in a computer program or | database.
@@ -57,6 +58,17 @@ Computer Terminology
 | ISA = Instruction Set Architecture
 | CISC = Complex Instruction Set Computing
 | RISC = Reduced Instruction Set Computing
+| SoC = System on Chip
+| implicit    explicit
+| overhead
+| modularity
+| data hiding
+| polymorphism
+| class hierarchy
+| inheritance
+| public inheritance
+| protected inheritance
+| private inheritance
 | 
 
 

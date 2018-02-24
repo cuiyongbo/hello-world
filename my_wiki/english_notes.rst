@@ -55,6 +55,13 @@ English Note
 | Usage: Dated terms that were once in common parlance.
 | Usage: Medical parlance.
 | 
+| jargon 
+| Definition: words or expressions that are used by a particular profession or group of people, and are difficult for others to understand.
+| Usage: Try to avoid using too much technical jargon.
+| 
+| buzzword [(报刊等的)时髦术语,流行行话]
+| Definition: a word or phrase, especially one connected with a particular subject that has become fashionable and popular and is used a lot in newspaper, etc.
+| 
 | abyssal
 | Definition: (adjective) Of or relating to the great depths of the oceans.
 | Synonyms: abysmal, unfathomable
@@ -722,6 +729,10 @@ English Note
 | Definition: Involving or committing sacrilege.
 | Usage: It seems sacrilegious to say this, but it’s really not that great a movie.
 | 
+| piety 虔诚
+| Definition: the state of having or showing a deep respect for somebody or something, especially for God and religion; the state of being pious.
+| Usage: Act of piety and charity.
+| 
 | begrime
 | Definition: make soiled, filthy or dirty.
 | Usage: Paint flaking from begrimed walls.
@@ -939,6 +950,18 @@ English Note
 
 .. image:: images/mannequin.png
 
+| hakama
+| Definition: loose trousers with many pleats in the front, forming part of Japaness formal dress.
+
+.. image:: images/hakama.png
+
+| mattress 床垫
+
+.. image:: images/mattress.png
+
+| Zen
+| Definition: a Japanese form of Buddhism. [禅宗]
+|
 | veil unveil
 | Definition: A piece of fine material worn by women to protect or conceal the face. [面纱]
 | Definition: cover with or as thought with a veil.
@@ -1052,8 +1075,10 @@ English Note
 | Usage: “If only I had known you then,” he said wistfully.
 | 
 | mediocre
+| mediocrity
 | Definition: of only moderate quality; not very good.
 | Usage: I thought the play was only mediocre.
+| Usage: Hero rises above the mediocrity that surrounds him.
 | 
 | bigot
 | Definition: a person who is intolerant toward those holding different opinions.
@@ -1174,6 +1199,12 @@ English Note
 | trounce
 | Definition: to defeat somebody completely.
 | Usage: Brazil trounced Italy 5-1 in the final. [狂胜]
+| 
+| clobber
+| Definition: hit somebody hard.
+| Definition: defeat heavily.
+| Usage:  If he does that I’ll clobber him!
+| Usage: The Braves clobbered the Cubs 23-20.
 | 
 | Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
 | 
@@ -1426,6 +1457,11 @@ English Note
 | Definition: the fundamental principles on which something is based.
 | Usage: Honest is the bedrock of a good relationship.
 | 
+| conerstone 奠基石
+| Definition: a stone that forms the base of a corner of a building, joining two walls.
+| Definition: an important quality or feature on which a particular thing depends or is based.
+| Usage: A national minimum wage remained the cornerstone of policy.
+| 
 | rudimentary
 | Definition: Rudimentary things are very basic or simple and are therefore unsatisfactory.
 | Usage: They are deprived of the ability to exercise the most rudimentary workers’ rights.
@@ -1459,6 +1495,7 @@ English Note
 | Usage: They found a way of circumventing the law. [钻空子]
 | Definition: to go on travel around something that is blocking your way; detour
 | 
+| obfuscate
 | obfuscation [搪塞]
 | Definition: the action making something obscure, unclear, or unintelligible.
 | Usage: When confronted with sharp questions they resorted to obfuscation.
@@ -1667,6 +1704,14 @@ English Note
 | Definition: used in accounts and lists to indicate that an item is repeated (often indicated by a ditto mark under the word or figure to be repeated).
 | Usage: The waiters were rude and unhelpful, the manager ditto.
 | 
+| hitherto
+| Definition: untill now.
+| Usage: There is a need to replace what has hitherto been a haphazard method of payment.
+| 
+| whatsoever
+| Definition: (with negative) at all (used for emphasis)
+| Usage: I have no doubt whatsoever.
+| 
 | gotcha
 | Definition: (non-standard) the written form of the way some people pronounce ‘I’ve got you’, which is not considered to be correct
 | Usage: ‘Gotcha!’ the child yelled as he grabbed his mother by the leg.
@@ -1820,13 +1865,6 @@ English Note
 | Definition: advance gradually beyone usual or acceptable limits.
 | Usage: The sea has encroached all around the coast.
 | 
-| poach
-| Definition: cook (an egg), without its shell, in or over boiling water.
-| Definition: to cook food, especially fish, gently in a small amount of liquid. [煎，炖]
-| Definition: illegally hunt or catch (game or fish) on land that is not one’s own, or in contravention of offical protection. [盗猎，偷猎]
-| Usage: The elephants are poached for their tusks.
-| Idiom: poach on someone’s territory [私闯民宅]
-| 
 | in decline / on the decline
 | go / fall into decline
 | Definition: If something is in decline or on the decline, it is gradually decreasing in importance, quality, or power.
@@ -1872,7 +1910,11 @@ English Note
 | Definition: a whimsical person or idea is unusual, playful, and unpredictable, rather than serious and pratical.
 | Synonyms: quirky
 | Usage: His graphic art became slighter and more whimsical.
-| 
+|
+| arbitrary   
+| Definition: based on random choice or personal whim, rather than any reason of system.
+| Usage: His mealtimes were entirely arbitrary. 
+|
 | slight
 | Definition: something that is slight is very small in degree or quantity.
 | Synonyms: small; slim
@@ -1952,6 +1994,51 @@ English Note
 | culinary
 | Definition: culinary means concerned with cooking.
 | Usage: She was keen to acquire more advanced culinary skills.
+| 
+| concoct
+| Definition: make (a dish or meal) by combining various ingredients.
+| Usage: They concocted relish from corn that is so naturally sweet no extra sugar is needed.
+| 
+| poach
+| Definition: cook (an egg), without its shell, in or over boiling water.
+| Definition: to cook food, especially fish, gently in a small amount of liquid. [煎，炖]
+| Definition: illegally hunt or catch (game or fish) on land that is not one’s own, or in contravention of offical protection. [盗猎，偷猎]
+| Usage: The elephants are poached for their tusks.
+| Idiom: poach on someone’s territory [私闯民宅]
+| 
+| char
+| Definiton: partially burn (an object) so as to blacken its surface.
+| Usage: Their bodies were badly charred in the fire.
+| 
+| Profiterole 泡芙
+| Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
+| choux  高麗萊
+| Definition: very light pastry made with egg, typically used for eclairs and profiteroles.
+| pastry [油酥麪团，油酥麪皮]
+| Definition: a dough of flour, and water, used as a base and covering in baked dishes such as pies.
+
+.. image:: images/Pastry_with_Azuki_beans.jpg
+
+| bland
+| Definition: lacking strong features or characteristics and therefore uninteresting.
+| Usage: Rebelling against the bland uniformity.
+| Definition: (of food or drink) mild or insipid.
+| Usage: bland beers of mediocre quality.
+| 
+| insipid
+| Definition: lacking flavor.
+| Definition: lacking vigor or interest.
+| Usgae: a cup of insipid coffee.
+| Usge: many artists continued to churn out insipid, shallow works.
+| 
+| churn
+| Definition: a machine or container in which butter is made by agitating mild or cream.
+
+.. image:: images/butter_churn.png
+
+| 
+| churn something out
+| Definition: produce something routinely or mechanically, especially in large quantities.
 | 
 | brag
 | Definition: say in a boastful manner.
@@ -2071,6 +2158,12 @@ English Note
 | home-brew 
 | Definition: beer that sb made at home
 | 
+| unsavory
+| unsavoriness
+| Definition: disagreeable to taste, smell, or look at.
+| Definition: disagreeable and unpleasant because morally disreputable.
+| Usage: an unsavory reputation.
+|
 | notorious
 | Definition: famous or well known, typically for some bad quality or deed.
 | Usage: Los Angeles is notorious for its smog.
@@ -2315,7 +2408,12 @@ English Note
 | acronym [首字母缩略词]
 | Definition: an abbreviation formed from the initial letters of others words and pronounced as a word (e.g., ASCII, NASA) 
 | 
-| Epiphany
+| CV [简历]
+| Full: curriculum vitae
+| Plural: curricula vitae
+| Definition: a brief account of a person’s education, qualifications, and previous experience, typically send with a job application.
+| 
+| Epiphany 主显节
 | Definition: a Christian festival, held on the 6 January, in memory of the time when Magi came to see the baby jesus at Bethlehem.
 | Usage: The festival commemorating the Epiphany is on January 6.
 | 
@@ -2342,5 +2440,184 @@ English Note
 | bicentennial
 | Definition: the two hundredth anniversay of a significant event.
 | Usage: Last year saw the bicentennial of Mozart’s birth.
+| 
+| 
+| overhead
+| Definition: above the level of the head; in the sky.
+| Definition: (of a cost or expense) incurred in the general upkeep or running of a plant, premises, or business, and not attributable to specific products or items.
+| 
+| upkeep
+| Definition: the process of keep something in good condition.
+| Usage: We will be responsible for the upkeep of the access road.
+| 
+| derive
+| derivation
+| Definition: obtain something from a specific source.
+| Usage: They derived great comfort from this assurance.
+| Usage: the derivation of scientific laws from observation.
+| Definition: (of a word) have (a specified word, usually of another language) as a root or origin.
+| Usage: The word “man” is derived from the Sanskrit “manu”. [梵语]
+| 
+| critique
+| Definition: a detailed analysis and assessment of something, especially a literary, philosophical, or political theory.
+| Definition: to write or give your opinion of, or reaction to, a set of idea, a work of art, etc.
+| Usage: A feminist critique of Freud’s theories.
+| 
+| lattice
+
+.. image:: images/lattice.png
+
+| slice
+| Definition: a thin, broad piece of food, such as bread, meat, or cake, cut from a larger portion.
+| Usage: Four slices of bread.
+| 
+| straw man
+| Definiton: a person regraded as having no substance or integrity.
+| Definition: an intentionally misrepresented proposition that is set up because it is easier to defeat than an opponent’s real argument.
+| Usage: her familiar procedure of creating a straw man by exaggerating their approach.
+| 
+| faint-hearted
+| faint-heartedness
+| Definition: lacking courage; timid.
+| Usage: Litigation(訴訟) is not for fainthearted.
+| 
+| traverse
+| Definition: travel across or through.
+| Usage: A moving catwalk that traversed a vast cavernous space.
+| 
+| interleave [留白]
+| Definition: insert pages, typically blank ones, between the pages of (a book),
+| Usage: Books of maps interleaved with tracing paper.
+| 
+| partition
+| Definition: the action or state of dividing or being divided into parts.
+| Usage: The country’s partition into separate states.
+| 
+| sync
+| synchronize
+| synchronization   
+| Definition: occur at the same time or rate.
+| Definition: (computing) cause (a set of data or files) to remain identical in more than one location.
+| Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
+| 
+| necessary
+| necessitate
+| Definition: make something necessary as a result or consequence.
+| Definition: force someone to do something. 
+| Usage: The late arrival has necessitated her getting out of bed.
+| 
+| middleman [中間商，经销商，掮客]
+| Definition: a person who buys goods from producers and sells them to retailers or consumers.
+| Usage: We aim to maintain value for money by cutting out the middleman and selling direct.
+| 
+| journeyman 技工
+| Definition: a person who has training and experience in a job but who is only average at it.
+| Definition: a worker or sports player who is reliable but not outstanding.
+| Usage: a solid journeyman professional.
+| 
+| menial
+| Definition: (of work) not requiring much skill and lacking prestige.
+| Usage: menial factory job.
+| 
+| piecemeal
+| Definition: characterized by unsystematic partial measures taken over a period of time.
+| Usage: The village is slowly being killed off by piecemeal development.
+| 
+| grungy
+| Definition: (informal) dirty in an unpleasant way.
+| Usage: a grungy task.
+|
+| imbibe
+| imbiber
+| imbibition
+| Definition: drink (alcohol).
+| Usage: Having imbibed too freely, he fell over.
+| 
+| practitioner (especially for medicine)
+| Definition: a person actively engaged in an art, discipline, or profession, especially medicine.
+| Usage: Patients are treated by skilled practitioners.
+| 
+| hoard
+| Definition: an ancient store of coins or other valuable artifacts. [宝藏]
+| Definition: a stock or store of money or valued objects, typically one that is secret or carefully guarded.
+| Usage: He came back to rescue his little hoard of gold.
+| 
+| distil
+| distillation [蒸馏]
+| Definition: the action of purifying a liquid by a process of heating and cooling.
+| Usage: The petroleum distillation process.
+| Definition: the extraction of the essential meaning or most important aspects of something.
+| Usage: The file is a distillation of personal experience.
+| 
+| attune
+| Definition: make receptive or aware.
+| Usage: A society more attuned to consumerism than to ideology.
+| Definition: accustom or acclimatize.
+| Usage: Students are not attuned to making decision.
+| 
+| audacious
+| Definition: showing a willingness to take surprising bold risks.
+| Usage: A series of audacious takeover.
+| 
+| stature
+| Definition: a person’s natural height.
+| Usage: He is small in stature.
+| Definition: importance or reputation gained by ability or achievement.
+| Usage: An architect of international stature.
+| 
+| overt
+| Definition: (formal) done in an open way and not secretly.
+| Usage: An overt act of aggression.
+| 
+| atrophy
+| Definition: (of body tissue or an organ) waste away, typically due to the degeneration of cells, or become vestigial during evolution.
+| Usage: In some beetles, the hind wings are atrophied.
+| Definition: gradually decline in effectiveness or vigor due to underuse or neglect.
+| Usage: Her artistic skills atrophied from lack of use.
+| 
+| vestigial
+| Definition: remaining as the last small part of something that used to exist.
+| Usage: It is often possible to see the vestigial remains of rear limbs on some snakes.
+| 
+| conform
+| conformity
+| Definition: (conform to / with something) (formal) behavior or actions that follow the accepted rules of society.
+| Usage: Regulations that are in conformity with European law.
+| 
+| confront
+| Definition: meet (someone) face to face with hostile or argumentative intent.
+| Usage: 300 policemen confronted equal number of union supporters.
+| Definition: face up and deal with (a problem or difficult situation).
+| Usage: The government found itself confronted by massive oppsition.
+| 
+| hone
+| Definition: sharpen a blade. [打磨]
+| Usage: He was carefully honing the curved blade.
+| Definition: refine or perfect something over a period of time.
+| Usage: She has taken numerous workshops to hone her skills over the years.
+| 
+| portfolio 
+| Definition: a large, thin, flat case for loose sheets of paper such as drawing or maps.
+
+.. image:: images/portfolio.png
+
+| plateau
+| Definition: an area of relatively level high ground.
+| Definition: a time of little or no change after a period of growth or progress.
+| Usage: Inflation has reached a plateau. [稳定期,停滞期]
+| 
+| rut
+| Definition: a long deep track made by the repeated passage of the wheels of vehicles.
+| Definition: a habit or pattern of behavior that has become dull and unproductive but is hard to change.
+| Usage: The administration was stuck in a rut and losing the direction.
+| 
+| subsume
+| Definition: include or absorb (something) in something else.
+| Usage: Most of these phenomena can be subsumed into two categories.
+| 
+| orthodox
+| Definition: (especially of beliefs or behavior) generally accepted or approved of; following generally accepted beliefs.
+| Usage: orthodox medicine. [传统医学] 
+| Usage: Orthodox Church. [东正教]
 | 
 
