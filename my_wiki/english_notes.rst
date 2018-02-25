@@ -1,7 +1,7 @@
 English Note
 ============
 
-**学而不思则罔，死而不学则殆**
+**学而不思则罔， 思而不学则殆**
 
 .. image:: images/names.png
 
@@ -1229,6 +1229,7 @@ English Note
 | final       决赛
 | defending champion   卫冕冠军
 | 
+| Messi took on three defenders to score, then rolled a free-kick under the wall for the second. [任意球贴地斩]
 | Cristiano Ronaldo scored a hat-trick as Real Madrid thrashed Real Sociedad. [帽子戏法]
 | Real became the first team to successfully defend the Champions League last season. [卫冕成功]
 | 
@@ -2632,9 +2633,21 @@ English Note
 | Definition: an event causing great and often sudden damage or suffering; a disaster.
 | Usage: A national economic catastrophe.
 |
-
-
-
+| MWC
+| Full: Mobile World Congress
+| 
+| MWC: Why do smartphones look so alike?
+| Is smartphone hardware treading water while industrial designers wait for bendy screens and other flexible, futuristic components to make more radical model possible? [曲面屏]
+| The reaction from many rivals, including Huawei, HTC, and LG, appears to have been to hold off their own flagship launches until later in the year. [旗舰机]
+| But the world changed in 2007 when Steven Jobs pulled the IPhone out of his pocket, and had what became the dominant design.
+| We've since gravitated to the black rectangle with a touchscreen as the form factor of choice, and it feels like we've now reached a technology plateau where firms compete by offering marginal | changes around the edges.
+| 
+| flip-phone [翻盖机]
+| candy-bar phone
+| silders
+| round phone
+| square phone
+| 
 
 
 
