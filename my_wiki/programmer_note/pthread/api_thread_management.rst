@@ -10,6 +10,11 @@ Passing Arguments to Threads
 
    Question: How can you safely pass data to newly created threads, given their non-deterministic start-up and scheduling? 
 
+   |
+
+   ANSWER: Make sure that all passed data is thread safe - that it can not be changed by other threads.  The three examples that follow demonstrate what not and what to do.
+
+
 
 Example 1 - Thread Argument Passing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -224,4 +229,6 @@ Miscellaneous Routines
 .. code-block:: c
    
    pthread_once_t once_control = PTHREAD_ONCE_INIT;
-   
+
+
+:doc:`GO TO THE EXERCISE HERE <exercise>`

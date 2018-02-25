@@ -53,4 +53,6 @@ The Pthreads API
 
    api_creating_and_terminating
    api_thread_management
+   api_mutex
+   api_condition_var
 

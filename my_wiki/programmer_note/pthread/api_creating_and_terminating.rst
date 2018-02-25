@@ -91,6 +91,10 @@ Thread Binding and Scheduling
 
    Question: After a thread has been created, how do you know a)when it will be scheduled to run by the operating system, and b)which processor/core it will run on? 
 
+   |
+
+   ANSWER: Unless you are using the Pthreads scheduling mechanism, it is up to the implementation and/or OS to decide where and when threads will execute. Robust programs should not depend upon threads executing in a specific order or on a specific processor/core.
+
 * The Pthreads API provides several routines that may be used to specify how threads are scheduled for execution. For example, threads can be scheduled to run :abbr:`FIFO (first-in first-out)`, :abbr:`RR (round-robin)` , :abbr:`OTHER (operating system determines)`. It also provides the ability to set a thread's scheduling priority value.
 
 * These topics are not covered here, however a good overview of "how things work" under Linux can be found in the ``sched_setscheduler`` man page.
