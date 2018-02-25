@@ -298,5 +298,22 @@ Millitary Terms
 | Usage: An election manifesto.
 | Usage: Manifesto of the communist party. [共产党宣言]
 | 
+| UN Security Council 联合国安理会
+| Syria War: UN Security Council approves 30-day ceasefire. [停火]
+| 
+| unanimous
+| unanimously
+| Definition: When a group of people are unanimous, they all agree about something or all vote for the same | thing.
+| Usage: The UN Security Council has unanimously approved a resolution demanding a 30-day ceasefire in Syria to | allow aid deliveries and medical evacuations.
+| 
+| truce [休战，停战]
+| Definition: a truce is an agreement between two people or groups of people to stop fighting or quarrelling for | a short time.
+| Usage: Let's call a truce.
+| 
+| impact
+| Definition: If one object impacts on another, it hits it with great force.
+| Definition: To impact on a situation, process, or person means to affect them.
+| Usage: However, some of the biggeds jihadist rebel groups, and their associates, are not covered by the truce, | raising questions about its real impact.
+| 
 
 
