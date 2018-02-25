@@ -48,3 +48,9 @@ The Pthreads API
 * A number of excellent books about Pthreads are available. Several of these are listed in the References section of this tutorial.
 
 
+.. toctree::
+   :maxdepth: 2
+
+   api_creating_and_terminating
+   
+
