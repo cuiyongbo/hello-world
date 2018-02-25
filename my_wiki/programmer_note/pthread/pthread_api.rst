@@ -52,5 +52,5 @@ The Pthreads API
    :maxdepth: 2
 
    api_creating_and_terminating
-   
+   api_thread_management
 
