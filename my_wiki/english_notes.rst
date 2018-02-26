@@ -2643,13 +2643,31 @@ English Note
 | We've since gravitated to the black rectangle with a touchscreen as the form factor of choice, and it feels like we've now reached a technology plateau where firms compete by offering marginal | changes around the edges.
 | 
 | flip-phone [翻盖机]
+
+.. image:: images/flipphone.jpg
+
 | candy-bar phone
+
+.. image:: images/candybarphone.jpg
+
 | silders
+
+.. image:: images/slider-phone.jpg
+
 | round phone
+
+.. image:: images/roundiphone.jpg
+
 | square phone
+
+.. image:: images/squarephone.jpeg
+
 | 
 |  gentlemen's agreement 君子协定
 |
+| proctor [监考老师]
+| Definition: a person who monitor students during an examination.
+| 
 
 
 
