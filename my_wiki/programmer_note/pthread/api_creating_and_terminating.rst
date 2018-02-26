@@ -132,34 +132,4 @@ Example: Pthread Creation and Termination
 
 This simple example code creates 5 threads with the ``pthread_create()`` routine. Each thread prints a "Hello World!" message, and then terminates with a call to ``pthread_exit()``.
 
-.. code-block:: c
-   :linenos:
-   :caption:  Pthread Creation and Termination Example
-
-   #include <stdio.h>
-   #include <pthread.h>
-   #define NUM_THREADS     5
-
-   void* PrintHello(void *threadid)
-   {
-      long tid = (long)threadid;
-      printf("Hello World! It's me, thread #%ld!\n", tid);
-      pthread_exit(NULL);
-   }
-
-   int main (int argc, char *argv[])
-   {
-      pthread_t threads[NUM_THREADS];
-      for(long t=0; t<NUM_THREADS; t++)
-      {
-         printf("In main: creating thread %ld\n", t);
-         int rc = pthread_create(&threads[t], NULL, PrintHello, (void *)t);
-         if (rc)
-         {
-            printf("ERROR; return code from pthread_create() is %d\n", rc);
-            exit(-1);
-         }
-      }
-      /* Last thing that main() should do */
-      pthread_exit(NULL);
-   }
+:download:`View source code <src_files/hello.c>`
