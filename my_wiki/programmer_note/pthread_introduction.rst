@@ -6,3 +6,4 @@ Pthread Introduction
 
    pthread/pthread_overview
    pthread/pthread_api
+   pthread/exercise

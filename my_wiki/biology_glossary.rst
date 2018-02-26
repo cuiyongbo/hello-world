@@ -32,6 +32,17 @@ Biology Terms
 | sadomasochist
 | Definition: psychological tendency or sexual practice characterized by both sadism and masochism.
 |
+| castrate
+| castrator
+| castration [去势，阉割]
+| Definition: remove the testicles of (a male animal or man). 
+| Definition: deprived of power, vitality, or vigor.
+| Usage: The nation is a castrated giant, afraid to really to punish subversives.
+| 
+| masturbate
+| masturbation [手淫，自慰]
+| Definition: stimulate one’s own genitals for sexual pleasure.
+| 
 | fetal
 | foetal
 | fetus
@@ -160,14 +171,6 @@ Biology Terms
 
 .. image:: images/cicada.png
 
-| castrate
-| castrator
-| castration [去势，阉割]
-| Definition: remove the testicles of (a male animal or man). 
-| Definition: deprived of power, vitality, or vigor.
-| Usage: The nation is a castrated giant, afraid to really to punish subversives.
-| 
-| masturbate
-| masturbation [手淫，自慰]
-| Definition: stimulate one’s own genitals for sexual pleasure.
+| decomposition
+| Definition: Decomposition is the process of decay when a living thing changes chemically after dying.
 | 

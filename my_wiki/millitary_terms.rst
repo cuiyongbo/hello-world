@@ -92,6 +92,8 @@ Millitary Terms
 | Definition: a deep gorge, typically one with a river flowing through it.
 | ravine
 | Definition: a deep, narrow gorge with narrow sides.
+| sierra
+| Definition: a long jagged mountain chain.
 |
 | workhorse
 | Definition: a workhorse is a horse is used to do a job, for example to pull a plough.

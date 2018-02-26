@@ -70,8 +70,7 @@ Usage
    
    Note that not all implementations may provide the process-shared attribute.
 
-* The ``pthread_condattr_init()`` and ``pthread_condattr_destroy()`` routines are used to create and destroy condition variable attribute objects.
-``pthread_cond_destroy()`` should be used to free a condition variable that is no longer needed.
+* The ``pthread_condattr_init()`` and ``pthread_condattr_destroy()`` routines are used to create and destroy condition variable attribute objects. ``pthread_cond_destroy()`` should be used to free a condition variable that is no longer needed.
 
 
 Waiting and Signaling on Condition Variables
