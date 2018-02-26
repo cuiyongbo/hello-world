@@ -2193,7 +2193,12 @@ English Note
 | 
 | spurious
 | Definition: not being what it purports to be true; false or fake.
-| Usage: He had  managed to make the entirely spurious impression that the | company is thriving.
+| Usage: He had  managed to make the entirely spurious impression that the company is thriving.
+| 
+| purport
+| Definition: If you say that someone or something purports to do or be a particular thing, you mean that they clainm to do or | to to be that thing, although you man not always believe that claim.
+| Synonyms: claim
+| Usage: A book that purports to tell the whole truth.
 | 
 | superfluous
 | Definition: more than you need or want; unnecessary.

@@ -70,5 +70,7 @@ Computer Terminology
 | protected inheritance
 | private inheritance
 | 
-
+| Qualcomm Snapdragon processor 高通骁龙处理器
+| Samsung 三星
+|
 

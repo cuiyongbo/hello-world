@@ -101,12 +101,12 @@ Usage
   
 * The ``pthread_cond_broadcast()`` routine should be used instead of ``pthread_cond_signal()`` if more than one thread is in a blocking wait state.
   
-* It is a logical error to call pthread_cond_signal() before calling pthread_cond_wait().
+* It is a logical error to call ``pthread_cond_signal()`` before calling ``pthread_cond_wait()``.
 
 * Proper locking and unlocking of the associated mutex variable is essential when using these routines. For example:
   
-   * Failing to lock the mutex before calling pthread_cond_wait() may cause it NOT to block.
-   * Failing to unlock the mutex after calling pthread_cond_signal() may not allow a matching ``pthread_cond_wait()`` routine to complete (it will remain blocked).
+   * Failing to lock the mutex before calling ``pthread_cond_wait()`` may cause it NOT to block.
+   * Failing to unlock the mutex after calling ``pthread_cond_signal()`` may not allow a matching ``pthread_cond_wait()`` routine to complete (it will remain blocked).
      
 
 Example: Using Condition Variables
