@@ -2641,8 +2641,7 @@ English Note
 | MWC
 | Full: Mobile World Congress
 | 
-| MWC: Why do smartphones look so alike?
-| Is smartphone hardware treading water while industrial designers wait for bendy screens and other flexible, futuristic components to make more radical model possible? [曲面屏]
+| MWC: Why do smartphones look so alike?| Is smartphone hardware treading water while industrial designers wait for bendy screens and other flexible, futuristic components to make more radical model possible? [曲面屏]
 | The reaction from many rivals, including Huawei, HTC, and LG, appears to have been to hold off their own flagship launches until later in the year. [旗舰机]
 | But the world changed in 2007 when Steven Jobs pulled the IPhone out of his pocket, and had what became the dominant design.
 | We've since gravitated to the black rectangle with a touchscreen as the form factor of choice, and it feels like we've now reached a technology plateau where firms compete by offering marginal | changes around the edges.
@@ -2673,8 +2672,22 @@ English Note
 | proctor [监考老师]
 | Definition: a person who monitor students during an examination.
 | 
-
-
-
+| embezzle
+| embezzler
+| embezzlement
+| Definition: steal or misappropriate (money placed in one's trust or belonging to the organization for which one works).
+| Usage: She had embezzled $5,600,000 in company funds.
+| 
+| undertow
+| Definition: a current in the sea or ocean that moves in the opposite direction to the water near the surface.
+| Usage: The children were dragged into sea by the strong undertow.
+| Definition: (undertow of something) a feeling or quality that influences people in a particular situation even though they may not really be aware of it.
+| Usage: THere's a dark undertow of loss that links the novel with earlier works.
+| 
+| outstrip
+| Definition: move faster than or overtake (someone else).
+| Synonyms: exceed
+| Usage: Supply far outstripped demand.
+| 
 
 

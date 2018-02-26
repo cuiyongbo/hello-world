@@ -43,6 +43,12 @@ Biology Terms
 | masturbation [手淫，自慰]
 | Definition: stimulate one’s own genitals for sexual pleasure.
 | 
+| hectic
+| hectically
+| Definition: (medicine) relating to, affected by, or denoting a regularly recurrent fever typically accompanying tuberculosis(肺炎), with flushed cheeks and hot, | dry skin. [潮红]
+| Definition: full of incessant or frantic activity; busy; tight.
+| Usage: A hectic business schedule.
+| 
 | fetal
 | foetal
 | fetus
@@ -75,12 +81,6 @@ Biology Terms
 | Usage: Fears that a war could ravage their country. [蹂躏，摧残]
 | Definition: the severely damaging or destructive effects of something.
 | Usage: His face had withstood the ravages of time.
-| 
-| hectic
-| hectically
-| Definition: (medicine) relating to, affected by, or denoting a regularly recurrent fever typically accompanying tuberculosis(肺炎), with flushed cheeks and hot, | dry skin. [潮红]
-| Definition: full of incessant or frantic activity; busy; tight.
-| Usage: A hectic business schedule.
 | 
 | cucumber [黄瓜]
 | serine [丝氨酸]
