@@ -66,10 +66,7 @@ int main(int argc, char *argv[])
 
   sum=0.0;
   for (int i=0;i<ARRAYSIZE;i++)
-  { 
-    a[i] = i*1.0;
     sum += a[i]; 
-  }
   printf("Check Sum= %e\n",sum);
 
   /* Clean up and exit */

@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
   size_t stacksize;
   pthread_attr_getstacksize (&attr, &stacksize);
-  printf("Thread stack size = %d bytes (hint, hint)\n", (int)stacksize);
+  printf("Thread stack size = %d bytes\n", (int)stacksize);
   
   long t;
   pthread_t threads[NTHREADS];

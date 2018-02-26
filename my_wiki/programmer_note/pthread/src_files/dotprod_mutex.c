@@ -93,46 +93,46 @@ no longer needed.
 int main (int argc, char *argv[])
 {
 
-/* Assign storage and initialize values */
-double* a = (double*) malloc (NUMTHRDS*VECLEN*sizeof(double));
-double* b = (double*) malloc (NUMTHRDS*VECLEN*sizeof(double));
-for (long i=0; i<VECLEN*NUMTHRDS; i++)
-{
-  a[i]=1;
-  b[i]=a[i];
-}
-
-dotstr.veclen = VECLEN; 
-dotstr.a = a; 
-dotstr.b = b; 
-dotstr.sum=0;
-
-/* Create threads to perform the dotproduct  */
-pthread_mutex_init(&mutexsum, NULL);
-pthread_attr_t attr;
-pthread_attr_init(&attr);
-pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
-
-/* Each thread works on a different set of data.
- * The offset is specified by 'i'. The size of
- * the data for each thread is indicated by VECLEN.
- */
-for(long i=0;i<NUMTHRDS;i++)
-   pthread_create(&callThd[i], &attr, dotprod, (void *)i); 
-
-pthread_attr_destroy(&attr);
-/* Wait on the other threads */
-
-void *status;
-for(long i=0;i<NUMTHRDS;i++)
-  pthread_join(callThd[i], &status);
-
-/* After joining, print out the results and cleanup */
-
-printf ("Sum =  %f \n", dotstr.sum);
-free (a);
-free (b);
-pthread_mutex_destroy(&mutexsum);
-pthread_exit(NULL);
+  /* Assign storage and initialize values */
+  double* a = (double*) malloc (NUMTHRDS*VECLEN*sizeof(double));
+  double* b = (double*) malloc (NUMTHRDS*VECLEN*sizeof(double));
+  for (long i=0; i<VECLEN*NUMTHRDS; i++)
+  {
+    a[i]=1;
+    b[i]=a[i];
+  }
+  
+  dotstr.veclen = VECLEN; 
+  dotstr.a = a; 
+  dotstr.b = b; 
+  dotstr.sum=0;
+  
+  /* Create threads to perform the dotproduct  */
+  pthread_mutex_init(&mutexsum, NULL);
+  pthread_attr_t attr;
+  pthread_attr_init(&attr);
+  pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
+  
+  /* Each thread works on a different set of data.
+   * The offset is specified by 'i'. The size of
+   * the data for each thread is indicated by VECLEN.
+   */
+  for(long i=0;i<NUMTHRDS;i++)
+     pthread_create(&callThd[i], &attr, dotprod, (void *)i); 
+  
+  pthread_attr_destroy(&attr);
+  /* Wait on the other threads */
+  
+  void *status;
+  for(long i=0;i<NUMTHRDS;i++)
+    pthread_join(callThd[i], &status);
+  
+  /* After joining, print out the results and cleanup */
+  
+  printf ("Sum =  %f \n", dotstr.sum);
+  free (a);
+  free (b);
+  pthread_mutex_destroy(&mutexsum);
+  pthread_exit(NULL);
 }   
 

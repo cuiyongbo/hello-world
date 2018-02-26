@@ -11,6 +11,7 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #define NUM_THREADS	4
 
 void* BusyWork(void *t)
@@ -23,6 +24,7 @@ void* BusyWork(void *t)
     result = result + sin(i) * tan(i);
 
    printf("Thread %ld done. Result = %e\n",tid, result);
+   return NULL;
 }
 
 int main(int argc, char *argv[])

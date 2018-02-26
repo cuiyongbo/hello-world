@@ -4,4 +4,4 @@ Camera Glossary
 .. toctree::
    :maxdepth: 2
 
-   camera_glossary/terminological_terms
+   camera_glossary/camera_terminology

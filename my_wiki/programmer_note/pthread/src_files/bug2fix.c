@@ -18,6 +18,7 @@
 #define NTHREADS	8
 #define ARRAY_SIZE      5000000
 #define MEGEXTRA        10000000
+#define SYSTEM_PAGE_SIZE  4096
 
 pthread_attr_t attr;
 
@@ -39,8 +40,23 @@ void *Hello(void *threadid)
 int main(int argc, char *argv[])
 {
   pthread_attr_init(&attr);
+  
+  /*
+   In Mac OS X, pthread_attr_setstacksize will fail if stacksize is not a multiple of the system page size.
+   use 'getconf PAGESIZE' to get default page size.
+   in my case PAGESIZE = 4096.
+  */
+
+  /*How to calculate the Least multiple of a specific number a no less than number b??
+  (~a & b + 1) * a
+  (b+a-1)/a * a
+  */
   size_t stacksize = ARRAY_SIZE*sizeof(double) + MEGEXTRA;
-  pthread_attr_setstacksize (&attr, stacksize);
+  stacksize = (stacksize + SYSTEM_PAGE_SIZE - 1)/SYSTEM_PAGE_SIZE * SYSTEM_PAGE_SIZE;
+  int retcode = pthread_attr_setstacksize (&attr, stacksize);
+  if(retcode != 0)
+	printf("pthread_attr_setstacksize failed\n");
+
   pthread_attr_getstacksize (&attr, &stacksize);
   printf("Thread stack size = %d bytes.\n", (int)stacksize);
   

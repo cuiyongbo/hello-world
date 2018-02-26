@@ -4,4 +4,4 @@ Mathematics
 .. toctree::
    :maxdepth: 2
 
-   mathematics_glossary/terminology
+   mathematics_glossary/mathematics_terminology

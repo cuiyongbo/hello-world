@@ -78,3 +78,5 @@ Terminology
 | Synonyms: numerator
 | Usage: common denominator. [公分母]
 | 
+| Least common multiple 最小公倍数
+|
