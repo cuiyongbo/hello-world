@@ -47,19 +47,27 @@ These are the Boolean operations, ordered by ascending priority:
 +-------------+--------------------------------------+-------+
 | Operation   | Result                               | Notes |
 +=============+======================================+=======+
-| ``x or y``  | if x is false, then y, else x        | (1)   |
+| ``x or y``  | if x is false, then y, else x        | \(1)  |
 +-------------+--------------------------------------+-------+
-| ``x and y`` | if x is false, then x, else y        | (2)   |
+| ``x and y`` | if x is false, then x, else y        | \(2)  |
 +-------------+--------------------------------------+-------+
-| ``not x``   | if x is false, then True, else False | (3)   |
+| ``not x``   | if x is false, then True, else False | \(3)  |
 +-------------+--------------------------------------+-------+
 
 
 Notes:
 
-   1. This is a short-circuit operator, so it only evaluates the second argument if the first one is false.
-   2. This is a short-circuit operator, so it only evaluates the second argument if the first one is true.
-   3. ``not`` has a lower priority than non-Boolean operators, so ``not a == b`` is interpreted as ``not (a == b)``, and ``a == not b`` is a syntax error.
+(1)
+   This is a short-circuit operator, so it only evaluates the second
+   argument if the first one is false.
+
+(2)
+   This is a short-circuit operator, so it only evaluates the second
+   argument if the first one is true.
+
+(3)
+   ``not`` has a lower priority than non-Boolean operators, so ``not a == b`` is
+   interpreted as ``not (a == b)``, and ``a == not b`` is a syntax error.
 
 
 Comparisons
@@ -108,11 +116,146 @@ Numbers are created by numeric literals or as the result of built-in functions a
 
 Python fully supports mixed arithmetic: when a binary arithmetic operator has operands of different numeric types, the operand with the “narrower” type is widened to that of the other, where plain integer is narrower than long integer is narrower than floating point is narrower than complex. Comparisons between numbers of mixed type use the same rule.  
 
-All built-in numeric types support the following operations. See The power operator and later sections for the operators’ priorities.
-
-
 .. note::
 
    * ``sys.maxint`` is always set to the maximum plain integer value for the current platform, the minimum value is ``-sys.maxint - 1``.
    * information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in ``sys.float_info``.
    * The constructors ``int(), long(), float(), and complex()`` can be used to produce numbers of a specific type.
+
+
+All built-in numeric types support the following operations. See The power operator and later sections for the operators’ priorities.
+
++--------------------+-----------------------------------------------------------------------------+-------+
+| Operation          | Result                                                                      | Notes |
++====================+=============================================================================+=======+
+| ``x + y``          | sum of x and y                                                              |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``x - y``          | difference of x and y                                                       |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``x * y``          | product of x and y                                                          |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``x / y``          | quotient of x and y                                                         | \(1)  |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``x // y``         | (floored) quotient of x and y                                               |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``x % y``          | remainder of ``x / y``                                                      |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``-x``             | x negated                                                                   |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``+x``             | x unchanged                                                                 |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``abs(x)``         | absolute value or magnitude of x                                            |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``int(x)``         | x converted to integer                                                      | \(2)  |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``long(x)``        | x converted to long integer                                                 | \(2)  |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``float(x)``       | x converted to floating point                                               | \(3)  |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``complex(re,im)`` | a complex number with real part re, imaginary part im. im defaults to zero. |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``c.conjugate()``  | conjugate of the complex number c. (Identity on real numbers)               |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``divmod(x, y)``   | the pair ``(x // y, x % y)``                                                |       |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``pow(x, y)``      | x to the power y                                                            | \(4)  |
++--------------------+-----------------------------------------------------------------------------+-------+
+| ``x ** y``         | x to the power y                                                            | \(4)  |
++--------------------+-----------------------------------------------------------------------------+-------+
+
+Notes:
+
+(1)
+   Also referred to as integer division.  The resultant value is a whole
+   integer, though the result's type is not necessarily int.  The result is
+   always rounded towards minus infinity: ``1//2`` is ``0``, ``(-1)//2`` is
+   ``-1``, ``1//(-2)`` is ``-1``, and ``(-1)//(-2)`` is ``0``.
+
+(2)
+   Conversion from floats using ``int()`` or ``long()`` truncates toward zero like the related function, ``math.trunc()``. 
+   Use the function ``math.floor()`` to round downward and ``math.ceil()`` to round upward.
+
+(3)
+   float also accepts the strings “nan” and “inf” with an optional prefix “+” or “-” for :abbr:`NaN (Not a Number)` and positive or negative infinity.
+
+(4)
+   Python defines ``pow(0, 0)`` and ``0 ** 0`` to be 1, as is common for programming languages.
+
+
+Bitwise Operations on Integer Type
+----------------------------------
+
+Bitwise operations only make sense for integers. Negative numbers are treated as their 2’s complement value (this assumes a sufficiently large number of bits that no overflow occurs during the operation).
+
+*The priorities of the binary bitwise operations are all lower than the numeric operations and higher than the comparisons; the unary operation ~ has the same priority as the other unary numeric operations (+ and -).*
+
+This table lists the bitwise operations sorted in ascending priority:
+
++------------+---------------------------------+----------+
+| Operation  | Result                          | Notes    |
++============+=================================+==========+
+| ``x | y``  | bitwise or of x and y           |          |
++------------+---------------------------------+----------+
+| ``x ^ y``  | bitwise exclusive or of x and y |          |
++------------+---------------------------------+----------+
+| ``x & y``  | bitwise and of x and y          |          |
++------------+---------------------------------+----------+
+| ``x << n`` | x shifted left by n bits        | \(1)\(2) |
++------------+---------------------------------+----------+
+| ``x >> n`` | x shifted right by n bits       | \(1)\(3) |
++------------+---------------------------------+----------+
+| ``~x``     | the bits of x inverted          |          |
++------------+---------------------------------+----------+
+
+
+Notes:
+
+(1)
+   Negative shift counts are illegal and cause a ``ValueError`` to be raised.
+
+(2)
+   A left shift by n bits is equivalent to multiplication by ``pow(2, n)``. 
+   A long integer is returned if the result exceeds the range of plain integers.
+
+(3)
+   A right shift by n bits is equivalent to division by ``pow(2, n)``.
+
+
+Additional Methods on Float
+---------------------------
+
+
+The float type implements the :class:`numbers.Real` :term:`abstract base
+class`. float also has the following additional methods.
+
+.. method:: float.as_integer_ratio()
+
+   Return a pair of integers whose ratio is exactly equal to the
+   original float and with a positive denominator.  Raises
+   :exc:`OverflowError` on infinities and a :exc:`ValueError` on
+   NaNs.
+
+.. method:: float.is_integer()
+
+   Return ``True`` if the float instance is finite with integral value, and ``False`` otherwise::
+
+      >>> (-2.0).is_integer()
+      True
+      >>> (3.2).is_integer()
+      False
+
+Two methods support conversion to and from hexadecimal strings.  
+Since Python's floats are stored internally as binary numbers, 
+converting a float to or from a *decimal* string usually involves a small rounding error.  
+In contrast, hexadecimal strings allow exact representation and specification of floating-point numbers.  
+This can be useful when debugging, and in numerical work:
+
+   * float.hex()
+   * float.fromhex
+   
+   .. code-block:: python
+   
+      >>> float.hex(3740.0)
+      '0x1.d380000000000p+11'
+      >>> float.fromhex('0x3.a7p10')
+      3740.0
