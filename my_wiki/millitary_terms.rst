@@ -317,5 +317,11 @@ Millitary Terms
 | Definition: To impact on a situation, process, or person means to affect them.
 | Usage: However, some of the biggeds jihadist rebel groups, and their associates, are not covered by the truce, | raising questions about its real impact.
 | 
-
+| autonomy
+| autonomous
+| Definition: (of a country or region) having self-government, at least to a significant degree.
+| Usage: The federation included sixteen autonomous republics.
+| Definition: action independently or having the freedom to do so.
+| Usage: autonomous underwater vehicles.
+| 
 
