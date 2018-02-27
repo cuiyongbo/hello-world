@@ -7,9 +7,9 @@ Steps of Programming
 
    programmer_note/hash_tutorial
    programmer_note/pthread_introduction
+   programmer_note/python_note
    programmer_note/os_problems
    programmer_note/rst_syntax_note
-   programmer_note/python_note
    programmer_note/threads_vs_processes
 
 

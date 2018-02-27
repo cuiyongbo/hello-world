@@ -1,5 +1,5 @@
-Millitary Terms
-===============
+Military Terms
+==============
 
 | MIA -- missing-in-action [失踪]
 | KIA -- killed-in-action [阵亡]
@@ -37,7 +37,7 @@ Millitary Terms
 | 
 | inter [埋葬]
 | Definition: place (a corpse) in a grave or tomb, typically with funeral rites.
-| Usage: He was interred with the millitary honors due to him. 
+| Usage: He was interred with the military honors due to him. 
 | 
 | loot
 | Definition: goods, especially private property, take from an enemy in war. [战利品]
@@ -45,7 +45,7 @@ Millitary Terms
 | Usage: The theif made off  with $5 million in loot.
 | 
 | militia  [民兵，预备役]
-| Definition: a millitary force that is raised from the civil population to supplement a regular army in an emergency.
+| Definition: a military force that is raised from the civil population to supplement a regular army in an emergency.
 | 
 | mercenary [雇佣兵]
 | Definition: a professional soldier hired to serve in a foreign country.
@@ -255,7 +255,7 @@ Millitary Terms
 | Usage: It was vital that the elections should be free of coercion or intimidation.
 | 
 | espionage [谍报活动]
-| Definition: The practice of spying or of using spies, typically by governments to obtain political and millitary information.
+| Definition: The practice of spying or of using spies, typically by governments to obtain political and military information.
 | Antonym: counter-espionage
 | Usage: Some of the commercial activities were a cover for espionage.
 | 
@@ -324,4 +324,20 @@ Millitary Terms
 | Definition: action independently or having the freedom to do so.
 | Usage: autonomous underwater vehicles.
 | 
-
+| crown prince [储君，太子]
+| Definition: a crown prince is a prince of a country who will become the king of his country when the present king or queen dies.
+| 
+| shake-up
+| Definition: a shake-up is a major set of changes in an oragnization or system.
+| Usage: Crown Prince Mohammed bin Salman is believed to be behind various recent shake-ups in the country.
+| 
+| abuse of power 滥用职权
+| Usage: The prince led a drive against corruption and abuse of power.
+| 
+| decree [敕令，手令]
+| Definition: A decree is an official order or decision, especially made by the ruler of a country.
+| Usage: Presidential decrees.
+| Usage: Saudi Arabia had sacked its top military commanders, including the chief of staff, in a series of late-night royal decrees.
+| 
+| austerity
+| 

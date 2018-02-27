@@ -1,5 +1,5 @@
-Built-in Types
-==============
+Built-in Types Tricks
+=====================
 
 
 Long Strings
@@ -94,8 +94,8 @@ As you can see, Unicode strings use the prefix ``u``, just as raw strings use th
    Unicode string or Unicode object—they don’t really belong to the same type as strings. 
 
 
-Built-in Functions
-==================
+Built-in Functions Tricks
+=========================
 
 
 input vs. raw_input
