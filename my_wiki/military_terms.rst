@@ -340,4 +340,42 @@ Military Terms
 | Usage: Saudi Arabia had sacked its top military commanders, including the chief of staff, in a series of late-night royal decrees.
 | 
 | austerity
+| Definition: difficult economic conditions created by government measures to reduce budget deficit, especially by reducing public expenditure. [财政紧缩政策]
+| Definition: sternness or severity of manner or attitude.
+| Usage: He was note for his austerity and his authoritarianism.
+| 
+| stern
+| sternness
+| Definition: (of a person or their manner) serious and unrelenting, especially in the assertion of authority and exercise of discipline.
+| Usage: A smile transformed his stern face.
+| Definition: the rearmost part of a ship or boat.
+| Usage: He stood at the stern of the yacht. [游艇]
+| Idiom: be made of sterner stuff
+| Definition: have a stronger character and be more able to overcome problems than others.
+| Usage: Whereas James was deeply wounded by the failure, George was made of sterner stuff.
+| 
+| servere
+| serverity
+| Definition: (of something bad or undesirable) very great; intense.
+| Usage: A severe shortage of technicians.
+| Definition: demanding great ability, skill or resilience.
+| Usage: a severe test of stamina.
+| Definition: strict or harsh.
+| Usage: He is usually severe on what he regards as tendentious pseudo-learning.
+| Definiton: very plain in style or appearance. [朴素]
+| Usage: She wore another severe suit, gray this time.
+| 
+| resilient
+| resilience
+| Definiton: the ability of a substance or object to spring back into shape; elasticity. [韧性]
+| Definition: the capacity to recover quickly from difficulties; toughness.
+| Usage: Babies are generally far more resilient than new parents realize.
+| 
+| sever
+| severable
+| Definition: divide by cutting or slicing, especially suddenly and forcibly.
+| Synonyms: behead [斩首]
+| Usage: The head was severed from the body.
+| Definition: put an end to (a connection or relationship); break off.
+| Usage: He severed his relationship with Lawrence.
 | 
