@@ -593,7 +593,7 @@ English Note
 | 
 | strenuous
 | Definition: Requiring or using great exertion
-| Usage: all your muscles need more oxygen during srenuous exercise.
+| Usage: all your muscles need more oxygen during strenuous exercise.
 | 
 | enchant
 | Definition: fill someone with great delight; charm.

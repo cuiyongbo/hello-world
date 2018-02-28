@@ -2,7 +2,7 @@ Computer Terminology
 ====================
 
 | Rat’s nest
-| Definition: A situation or condition that is characterized by messiness, disorder, disarray, or confusion. Commonly used in the technology sector to refer to a | software design or implementation that is hopelessly convoluted and difficult to understand, analogous to how a rat might construct its nest (haphazardly and | hastily thrown together from whatever materials happended to be readily available at the time).
+| Definition: A situation or condition that is characterized by messiness, disorder, disarray, or confusion. Commonly used in the technology sector to refer to a software design or implementation that is hopelessly convoluted and difficult to understand, analogous to how a rat might construct its nest (haphazardly and hastily thrown together from whatever materials happended to be readily available at the time).
 | Usage: I tried to figure out which wire was causing the problem, but there’s a veritable rat’s nest of wires, chords, and cables down there.
 | 
 | Type coercison and conversion 
@@ -10,6 +10,7 @@ Computer Terminology
 | two’s complement [二进制补码]
 | backward compatibility [向下兼容]
 | regression test [回归测试]
+| divide-and-conquer [分而治之]
 | compile time
 | run-time
 | predecessor [前驱]
@@ -21,14 +22,12 @@ Computer Terminology
 |
 | concatenate
 | concatenation
-| Definition: a concatenatijon of things or events is their occurrence one after another, because they are linked.
+| Definition: a concatenation of things or events is their occurrence one after another, because they are linked.
 | 
 | cipher
 | Definition: A person or thing of no importance, especially a person who does the bidding of others and seems to have no will of their own.
 | Definition: A sceret way of writing, especially six in which a set of letters or symbols is used to represent others.
 | Usage: A message in cipher.
-| 
-| divide-and-conquer [分而治之]
 | 
 | corrupt
 | corruption
@@ -64,4 +63,6 @@ Computer Terminology
 | Qualcomm Snapdragon processor 高通骁龙处理器
 | Samsung 三星
 |
-
+| breadth-first traversal 广度优先遍历
+| depth-first traversal 深度优先遍历
+| 

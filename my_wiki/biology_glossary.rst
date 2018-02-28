@@ -174,3 +174,26 @@ Biology Terms
 | decomposition
 | Definition: Decomposition is the process of decay when a living thing changes chemically after dying.
 | 
+| 
+| pollen [花粉]
+| pollinate
+| pollination [传粉]
+| Definition: to pollinate a plant or tree means to fertilize it with pollen. this is often done by insects.
+| Usage: Without sufficient pollination, the growth of the corn is stunted.
+| 
+| hoverfly
+| Definition: many hoverflies have strips and resemble bees and wasps.
+
+.. figure:: images/hoverfly.jpg
+   
+   hoverfly
+
+.. figure:: images/wasp.jpg
+
+   wasp
+
+New clues to decline to of bees and other pollinators.
+
+they provide ecosystem service s indluding pollination and for some spieces, biological control of crop pests.
+
+It remains to be seen how the virus may affect the ability to hoverflies to undergo a strenuous long-distance mirgation or how long the virus may persist in their bodies given no virus replication was detected.
