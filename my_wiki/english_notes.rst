@@ -2689,5 +2689,17 @@ English Note
 | Synonyms: exceed
 | Usage: Supply far outstripped demand.
 | 
-
-
+| anonym [匿名]
+| anonymous
+| Definition: (of a person) not identified by name; of unknown name.
+| Usage: an anonymous phone call.
+| 
+| pseudonym [笔名，化名]
+| Definition: a fictious name, especially one used by an authour.
+| Usage: She writes under a pseudonym.
+| 
+| pseudo
+| Definition: not genuine; false or pretended.
+| Usage: pseudocode.
+| Usage: pseudo-science.
+| 
