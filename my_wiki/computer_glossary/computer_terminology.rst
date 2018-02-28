@@ -16,9 +16,15 @@ Computer Terminology
 | predecessor [前驱]
 | successor  [后继]
 | spam email [垃圾邮件]
+| implementation-dependent
+|
 | PEP -- python enhancement proposal
 | DoS  -- Denial-of-Service
 | DDoS -- Distributed Denial-of-Service
+| ISA = Instruction Set Architecture
+| CISC = Complex Instruction Set Computing
+| RISC = Reduced Instruction Set Computing
+| SoC = System on Chip
 |
 | concatenate
 | concatenation
@@ -31,28 +37,36 @@ Computer Terminology
 | 
 | corrupt
 | corruption
-| Definition: the process by which something, typically a word or expression, is | changed from its original use or meaning to one that is regarded as erroneous | or debased.
-| Definition: the process of causing errors to appear in a computer program or | database.
+| Definition: the process by which something, typically a word or expression, is changed from its original use or meaning to one that is regarded as erroneous or debased.
 | Usage: The word “holiday” is a corruption of “holy day”.
+| Definition: the process of causing errors to appear in a computer program or database.
 |
 | heuristic
 | Definition: enabling a person to discover or learn something for themselves.
+| Usage: Heuristic teaching encourages you to learn by discovering things for yourself.
 | Definition: (Computing) proceeding to a solution by trial and error or by rules that are loosely defined.
-| Usage: Heuristic teaching or education encourages you to learn by discovering things for yourself.
 | 
-| implementation-dependent
-| Usage: The result of the program is implementation-dependent.
-|
+| overhead == cost
+| hover
+| Definition: (Computing) use a mouse or other device to position the cursor over a particular area of a computer screen so as to cause a program to respond, without clicking a button on the device.
+| Usage: You can hover your cursor over any button to see an explanation.
+| 
+| on the fly
+| Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
+| 
+| sync
+| synchronize
+| synchronization   
+| Definition: occur at the same time or rate.
+| Definition: (Computing) cause (a set of data or files) to remain identical in more than one location.
+| Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
+| 
 | prefix  VS suffix 
 | prepend VS append
-| ISA = Instruction Set Architecture
-| CISC = Complex Instruction Set Computing
-| RISC = Reduced Instruction Set Computing
-| SoC = System on Chip
 | implicit    explicit
-| overhead
 | modularity
 | data hiding
+| data corruption
 | polymorphism
 | class hierarchy
 | inheritance

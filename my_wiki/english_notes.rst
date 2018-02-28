@@ -676,12 +676,16 @@ English Note
 | Definition: A place where a boat or ship is moored.
 | Usage: The boat had been at its usual moorings immediately prior to the storm.
 | 
-| dog-ear
+| dog-ear [书页折角做标记]
 | Definition: Fold down the corner of (a book or magazine), typically to mark a place.
 | 
 | interpolation
-| Definition: An interpolation jis an addition to a piece of writing.
+| Definition: An interpolation is an addition to a piece of writing.
 | Usage: The interpolation appears to have been inserted very soon after the original text was finished.
+| 
+| interleave [留白]
+| Definition: insert pages, typically blank ones, between the pages of (a book).
+| Usage: Books of maps interleaved with tracing paper.
 | 
 | cartography
 | Definition: The activity of making map.
@@ -694,7 +698,7 @@ English Note
 | Synonyms: omit, ignore, contract
 | 
 | on the fly
-| Definition: (of an addition or modification in computing) Carried out during the running of a program without interrupt.
+| Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
 | Definition: If you do something on the fly, you do it quickly, without thinking about it or planning it in advance.
 | Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
 | 
@@ -2491,21 +2495,10 @@ English Note
 | Definition: travel across or through.
 | Usage: A moving catwalk that traversed a vast cavernous space.
 | 
-| interleave [留白]
-| Definition: insert pages, typically blank ones, between the pages of (a book),
-| Usage: Books of maps interleaved with tracing paper.
-| 
 | partition
 | Definition: the action or state of dividing or being divided into parts.
 | Usage: The country’s partition into separate states.
-| 
-| sync
-| synchronize
-| synchronization   
-| Definition: occur at the same time or rate.
-| Definition: (computing) cause (a set of data or files) to remain identical in more than one location.
-| Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
-| 
+|
 | necessary
 | necessitate
 | Definition: make something necessary as a result or consequence.
