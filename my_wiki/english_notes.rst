@@ -269,11 +269,6 @@ English Note
 | Definition: Give somebody a lower rank or less senior position, usually as a punishment.
 | Usage: The head of the army was demoted to deputy defense secretary.
 | 
-| sequel
-| Definition 1: A published, broadcast, or recorded work that continues the story or develops the theme of an earlier one.
-| Definition 2: Something that takes place after  or as a result of an earlier event.
-| Usage: This encouragement to grow potatoes had a disastrous sequel some fifty years later.
-| 
 | shrine 
 | Definition: A place regarded as holy because of its associations with a divinity or a sacred person or relic, typically marked by a building or other | construction.
 | 
@@ -686,6 +681,18 @@ English Note
 | interleave [留白]
 | Definition: insert pages, typically blank ones, between the pages of (a book).
 | Usage: Books of maps interleaved with tracing paper.
+| 
+| postscript
+| Definition: (abbr. **PS**) an extra message that you add at the end of a letter after your signature. [附言]
+| Usage: He added a postscript: "Leaving tomorrow".
+| Definition: an additional statement or action that provides further information on or a sequel to something.[后话]
+| Usage: As a postscript to this, Paul did finally marry.
+|
+| sequel
+| Definition: a book, film, movie, play etc. that continues the story of an earlier one. [续集]
+| Usage: A sequel to the hit movie *Sister Act*.
+| Definition: Something that takes place after  or as a result of an earlier event.
+| Usage: This encouragement to grow potatoes had a disastrous sequel some fifty years later.
 | 
 | cartography
 | Definition: The activity of making map.

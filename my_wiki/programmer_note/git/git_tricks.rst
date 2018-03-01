@@ -17,3 +17,17 @@ If you want to rename the current branch, you can do:
    git branch -m <newname>
 
 A way to remember this, is ``-m`` is for "move" (or mv), which is how you rename files.
+
+
+
+Delete a remote branch
+----------------------
+
+.. code-block:: sh
+
+   git push <remote_name> :<branch_name>
+
+.. note::
+
+   Mostly the <remote_name> is ``origin``. no need to switch to remote_name/branch_name
+
