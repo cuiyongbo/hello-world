@@ -55,6 +55,10 @@ Find the information about branchs
      origin/HEAD -> origin/master # where current local branch points to 
      origin/master
      origin/test
+   git branch -a # both local and remote branch
+   * master
+     remotes/origin/HEAD -> origin/master
+     remotes/origin/master
    git branch -v
      master b351f2e [ahead 1] Added git to delete a remote branch
    * test   40eebf1 Reviewed git note
@@ -62,4 +66,3 @@ Find the information about branchs
      master b351f2e [origin/master: ahead 1] Added git to delete a remote branch
    * test   40eebf1 [origin/test] Reviewed git note
    
-
