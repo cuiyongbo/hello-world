@@ -694,6 +694,12 @@ English Note
 | Definition: Something that takes place after  or as a result of an earlier event.
 | Usage: This encouragement to grow potatoes had a disastrous sequel some fifty years later.
 | 
+| prologue
+| Definition: A prologue is a speech or section of text that introduces a play or book. [序]
+| Usage: The prologue to the novel is written in the form of a newspaper account.
+| Definition: If one event is a prologue to another, it leads to it. [序曲]
+| Usage: Civil unrest in a few isolated villages became the prologue to widerspread rebellion.
+| 
 | cartography
 | Definition: The activity of making map.
 | 

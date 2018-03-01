@@ -197,3 +197,18 @@ New clues to decline to of bees and other pollinators.
 they provide ecosystem service s indluding pollination and for some spieces, biological control of crop pests.
 
 It remains to be seen how the virus may affect the ability to hoverflies to undergo a strenuous long-distance mirgation or how long the virus may persist in their bodies given no virus replication was detected.
+
+
+| pigment [色素]
+| Definition: A pigment is a substance that gives something a particular color.
+| Usage: The brown pigment in the skin.
+| 
+| soot [炭灰]
+| Definition: Soot is black powder which rises in the somke from a fire and collects on the inside of chimneys.
+| Usage: A wall blackened by soot.
+| 
+| motify
+| Definition: A motif is a theme or idea that is frequently repeated throughout a piece of literature or music.
+| Usage: The motif of these volume is that 'solitude is the richness of the soul, loneliness is its poverty.'
+| Definition: A motif is a desigh which is used as a decoration or as part of an artistic pattern.
+| 

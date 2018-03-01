@@ -18,6 +18,8 @@ Windows
 #. Show Context menu – Shift + F10 / 右Control左边的键
 #. On-Screen Keyboard - osk
 #. Ctrl + Space - switch between Ch/En input method
+#. Shift + Space - Full/half width switch
+#. Ctrl + Shift + F - Simplified/Traditional Chinese input switch 
 
 
 VS 2013
@@ -216,3 +218,9 @@ MacOS Terminal
 #. Display next Command – Ctrl + N
 
 
+Sublime-rst-completion
+----------------------
+
+#. emphasis ctrl+alt+i (super+shift+i on Mac)
+#. strong emphasis (bold)  ctrl+alt+b (super+shift+b on Mac)
+#. literal literal text (inline code) ctrl+alt+k (super+shift+k on Mac)

@@ -80,3 +80,6 @@ Computer Terminology
 | breadth-first traversal 广度优先遍历
 | depth-first traversal 深度优先遍历
 | 
+| 
+| Subscript vs Superscript [上标，下标]
+| Definition: A subscript or superscript is a number, figure, symbol, or indicator that is smaller than the normal line of type and is set slightly below or above it. Subscripts appear at or below the baseline, while superscripts are above.

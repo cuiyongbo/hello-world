@@ -379,3 +379,13 @@ Military Terms
 | Definition: put an end to (a connection or relationship); break off.
 | Usage: He severed his relationship with Lawrence.
 | 
+| 
+| maneuver
+| manoeuver [演习]
+| Definition: a large-scale exercise of troops, warships, and other forces.
+| Synonyms: trainning exercises, operations
+| Usage: The Russian vessel was on maneuver.
+| Definition: carefully guide or manipulate (someone or something) in order to achieve an end.
+| Synonyms: plot, conspire
+| Usage: They were maneuvering him into a betrayal of his countryman.
+| 
