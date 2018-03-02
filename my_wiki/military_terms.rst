@@ -379,7 +379,6 @@ Military Terms
 | Definition: put an end to (a connection or relationship); break off.
 | Usage: He severed his relationship with Lawrence.
 | 
-| 
 | maneuver
 | manoeuver [演习]
 | Definition: a large-scale exercise of troops, warships, and other forces.
@@ -389,3 +388,63 @@ Military Terms
 | Synonyms: plot, conspire
 | Usage: They were maneuvering him into a betrayal of his countryman.
 | 
+| 
+| invincible
+| Definition: If you describe an army or sports team as invincible, you believe that they are too powerful to be defeated.
+| Synonyms: unbeatable
+| Usage: President Putin has uneviled Russia's stockpile of "invincible" nuclear weapons, with a video graphic appearing to show missiles raining on Floriada.
+| Definition: If someone has an invincible belief or attitude, it cannot be changed.
+| Synonyms: unshakable
+| Usage: He had an invicible faith in the medicinal virtues of garlic.
+| 
+| arsenal
+| Definition: An arsenal is a large collection of weapons and military equipment held by a country, group, or person.
+| Usage: Russia and the other republics are committed to destroying most of their nuclear arsenals.
+| 
+| bunker 掩体
+| Definition: A bunker is a place, usually undergroup, that has been built with strong walls to protect it against heavy gunfire and bombing.
+| 
+| raucous
+| Definition: A raucous sound is loud, harsh, and rather unpleasant.
+| Usage: A raucous crowd of 25,000 delirious fans.
+| 
+| bar
+| Definition: If you say someone is behind bars, you mean that they are in prison.
+| Usage: Nearly 5,000 people a year are put behind bars over motoring penalties.
+| 
+| life expectancy
+| Definition: The life expectancy of a person, animal, or plant is the length of tiem that they are normally likely to live.
+| Synonyms: lifespan
+| Usage: The average life expectancy in ancient times was less than 40.
+| 
+| nuclear attack
+| nuclear arsenal 核武库
+| nuclear bunker 核掩体
+| nuclear warhead 核弹头
+| bomb shelter
+| intercontinental ballistic missile 洲际弹道导弹
+| cruise missile 巡航导弹
+| torpedo 鱼雷
+| 
+| the Cold War 冷战
+| the White house 白宫
+| The Kremlin 克里姆林宫
+| The US State Department 美国国会
+
+.. figure:: images/the_pentagon.jpg
+
+   the Pentagon [五角大楼，美国国防部]
+
+The Pentagon is the headquarters of the United States Department of Defense, located in Arlington County, Virginia, across the Potomac River from Washington, D.C. As a symbol of the U.S. military, The Pentagon is often used metonymically to refer to the U.S. Department of Defense.
+
+The Pentagon was designed by American architect George Bergstrom (1876–1955), and built by general contractor John McShain of Philadelphia. Ground was broken for construction on September 11, 1941, and the building was dedicated on January 15, 1943. General Brehon Somervell provided the major motive power behind the project; Colonel Leslie Groves was responsible for overseeing the project for the U.S. Army.
+
+The Pentagon is one of the world's largest office buildings。 It has five sides, five floors above ground, two basement levels, and five ring corridors per floor with a total of 17.5 mi (28.2 km) of corridors. The Pentagon includes a five-acre central plaza, which is shaped like a pentagon and informally known as "ground zero," a nickname originating during the Cold War on the presumption that it would be targeted by the Soviet Union at the outbreak of nuclear war.
+
+
+US Central Command
+
+US Central Command, also known as Centcom, is the headquater at MacDill Air Base in Tampa.
+It is responsible for the operational theatre spanning parts of the Middle Ease, Central Asia, and North Africa.
+
+This isn't a warfighting strategy, to have a video of attacking Florida. Ths a message. The symbolism is in the video itself. It's a rhetorical flourish.
