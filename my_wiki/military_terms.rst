@@ -388,7 +388,6 @@ Military Terms
 | Synonyms: plot, conspire
 | Usage: They were maneuvering him into a betrayal of his countryman.
 | 
-| 
 | invincible
 | Definition: If you describe an army or sports team as invincible, you believe that they are too powerful to be defeated.
 | Synonyms: unbeatable
@@ -448,3 +447,18 @@ US Central Command, also known as Centcom, is the headquater at MacDill Air Base
 It is responsible for the operational theatre spanning parts of the Middle Ease, Central Asia, and North Africa.
 
 This isn't a warfighting strategy, to have a video of attacking Florida. Ths a message. The symbolism is in the video itself. It's a rhetorical flourish.
+
+utopia
+
+乌托邦（英语：utopia，国际音标：/juˈtoʊpiə/）也稱理想國（和製漢語，曾為魯迅《華蓋集》中使用），無何有之鄉（源于《庄子》），是一个理想的群体和社会的构想，名字由托马斯·摩尔的《乌托邦》一书中所写的完全理想的共和国“乌托邦”而来。意指理想完美的境界，特別是用於表示法律、政府及社會情況。托马斯·摩尔在书中虚构了一个大西洋上的小岛，小岛上的国家拥有完美的社会、政治和法制体系。这个词用来描述一种被称为“意向社群”的理想社会和文学虚构的社会。这个概念也引出了其他的概念，最突出的概念就是反乌托邦。
+
+Dystopia
+
+反乌托邦（英语：Dystopia、Cacotopia、kakotopia或anti-utopia，中文又稱反面乌托邦、敌托邦、惡托邦、絕望鄉或废托邦）是烏托邦（utopia）的反義語，希臘語字面意思是「不好的地方」（not-good place），它是一種不得人心、令人恐懼的假想社群或社會，是与理想社会相反的，一种极端恶劣的社会最终形态。反烏托邦常常表徵爲反人类、極權政府、生態災難或其他社會性的灾難性衰敗。這種社會出現在許多藝術作品中，特別是設定在未來的故事。反烏托邦出現在許多虛構作品的亞流派中，常被用於提醒人們注意現實世界中的有關環境、政治、經濟、宗教、心理學、道德倫理、科學技術方面的問題，這些問題如果被人們忽略，有可能導致出現反烏托邦的狀况。
+
+cyberpunk
+
+赛博朋克（英语：cyberpunk，是cybernetics与punk的结合词），又称数位庞克、赛博庞克、电脑叛客、网路叛客、电驭叛客，是科幻小说的一个分支，以计算机或信息技术为主题，小说中通常有社会秩序高度控管下存在弱点受破坏的情节。现在赛博朋克的情节通常围绕骇客、人工智能及大型企业之间的矛盾而展开，背景设在不远的将来的一个反乌托邦地球，而不像早期科幻（如太空歌剧）时空背景多在遥远未来的外太空殖民地。它的出现是对科幻小说一贯忽略信息技术高速发展的一种自我修正。
+
+.. image:: images/Tokyo_Shibuya_Night.jpg
+
