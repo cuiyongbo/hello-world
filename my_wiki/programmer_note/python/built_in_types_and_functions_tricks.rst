@@ -187,4 +187,42 @@ Useful Function List
 | integer.bit_length()     | Return the number of bits necessary to represent an integer in binary, |
 |                          | excluding the sign and leading zeros                                   |
 +--------------------------+------------------------------------------------------------------------+
+
     
+Binary to Decimal
+=================
+
+.. code-block:: python
+
+  >>> int("1111", 2)
+  15
+
+
+Python ByteOrder
+================
+
+
+For multibyte data, It follows the architecture of the machine by default. If you need it to work cross-platform, then you'll want to force it.
+
+ASCII and UTF-8 are encoded as a single byte per character, so is it affected by the byte ordering? No.
+
+Here is how to pack little ``<`` or big ``>`` endian:
+
+.. code-block:: python
+
+  import struct
+  
+  struct.pack('<L', 1234)
+  '\xd2\x04\x00\x00'
+  
+  struct.pack('>L', 1234)
+  '\x00\x00\x04\xd2'
+
+You can also encode strings as big or little endian this way if you are using UTF-16, as an example:
+
+.. code-block:: python
+
+  s.encode('utf-16LE')
+  s.encode('utf-16BE')
+
+UTF-8, ASCII do not have endianness since it is 1 byte per character.
