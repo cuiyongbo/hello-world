@@ -152,3 +152,22 @@ MacOs Problems
       .. code-block:: sh
 
          createinstallmedia --volume /Volumes/Untitled --applicationpath "/Applications/Install OS X Yosemite.app"
+
+
+#. How to reset NVRAM on your Mac
+   
+If you experience issues related to settings stored in NVRAM, resetting NVRAM might help.
+
+:abbr:`NVRAM (nonvolatile random-access memory)` is a small amount of memory that your Mac uses to store certain settings and access them quickly. 
+Settings that can be stored in NVRAM include sound volume, display resolution, startup-disk selection, time zone, and recent kernel panic information. The settings stored in NVRAM depend on your Mac and the devices you're using with your Mac.
+
+If you experience issues related to these settings or others, resetting NVRAM might help. For example, if your Mac starts up from a disk other than the one selected in Startup Disk preferences, or a question mark icon briefly appears before your Mac starts up, you might need to reset NVRAM.
+
+Shut down your Mac, then turn it on and immediately press and hold these four keys together: **Option, Command, P, and R**. 
+You can release the keys after about 20 seconds, during which your Mac might appear to restart.
+
+   .. note::
+
+      Failed to locate volume with UUID ********
+      
+      Couldn't find Mac OS X (Server) install data.
