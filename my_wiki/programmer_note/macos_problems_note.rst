@@ -156,18 +156,57 @@ MacOs Problems
 
 #. How to reset NVRAM on your Mac
    
-If you experience issues related to settings stored in NVRAM, resetting NVRAM might help.
+   If you experience issues related to settings stored in NVRAM, resetting NVRAM might help.
 
-:abbr:`NVRAM (nonvolatile random-access memory)` is a small amount of memory that your Mac uses to store certain settings and access them quickly. 
-Settings that can be stored in NVRAM include sound volume, display resolution, startup-disk selection, time zone, and recent kernel panic information. The settings stored in NVRAM depend on your Mac and the devices you're using with your Mac.
+   :abbr:`NVRAM (nonvolatile random-access memory)` is a small amount of memory that your Mac uses to store certain settings and access them quickly. 
+   Settings that can be stored in NVRAM include sound volume, display resolution, startup-disk selection, time zone, and recent kernel panic information. The settings stored in NVRAM depend on your Mac and the devices you're using with your Mac.
 
-If you experience issues related to these settings or others, resetting NVRAM might help. For example, if your Mac starts up from a disk other than the one selected in Startup Disk preferences, or a question mark icon briefly appears before your Mac starts up, you might need to reset NVRAM.
+   If you experience issues related to these settings or others, resetting NVRAM might help. For example, if your Mac starts up from a disk other than the one selected in Startup Disk preferences, or a question mark icon briefly appears before your Mac starts up, you might need to reset NVRAM.
 
-Shut down your Mac, then turn it on and immediately press and hold these four keys together: **Option, Command, P, and R**. 
-You can release the keys after about 20 seconds, during which your Mac might appear to restart.
+   Shut down your Mac, then turn it on and immediately press and hold these four keys together: **Option, Command, P, and R**. 
+   You can release the keys after about 20 seconds, during which your Mac might appear to restart.
 
    .. note::
 
-      Failed to locate volume with UUID ********
-      
-      Couldn't find Mac OS X (Server) install data.
+      some problem information:
+
+         * Failed to locate volume with UUID ********
+         * Couldn't find Mac OS X (Server) install data.
+
+
+#. diskutil command
+   
+   Usage::
+
+      Usage:  diskutil [quiet] <verb> <options>, where <verb> is as follows:
+   
+        list                 (List the partitions of a disk)
+        info[rmation]        (Get information on a specific disk or partition)
+        listFilesystems      (List file systems available for formatting)
+        activity             (Continuous log of system-wide disk arbitration)
+   
+        u[n]mount            (Unmount a single volume)
+        unmountDisk          (Unmount an entire disk (all volumes))
+        eject                (Eject a disk)
+        mount                (Mount a single volume)
+        mountDisk            (Mount an entire disk (all mountable volumes))
+   
+   .. code-block:: sh
+
+      sudo diskutil list
+      /dev/disk0 (internal, physical):
+      #:                       TYPE NAME                    SIZE       IDENTIFIER
+      0:      GUID_partition_scheme                        *500.3 GB   disk0
+      1:                        EFI EFI                     209.7 MB   disk0s1
+      2:          Apple_CoreStorage Macintosh HD            499.4 GB   disk0s2
+      3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+
+      sudo diskutil info /dev/disk0
+      sudo diskutil info disk0s2
+      sudo diskutil listFilesystems
+      sudo diskutil unmount | umount [force] device
+      sudo diskutil unmountDisk | umountDisk [force] device
+      sudo diskutil mount [readOnly] [-mountPoint path] device
+      sudo diskutil mountDisk device
+
+
