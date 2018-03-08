@@ -1,7 +1,6 @@
 Built-in Types Tricks
 =====================
 
-
 Long Strings
 ------------
    
@@ -77,7 +76,6 @@ backslash? (Perhaps it’s the end of a DOS path, for example.) A simple way of 
 
 Unicode Strings
 ---------------
-
    
 Normal strings in Python are stored internally as 8-bit ASCII, while
 Unicode strings are stored as 16-bit Unicode. This allows for a more varied set of characters, including special characters from most languages in the world. for example:
@@ -96,7 +94,6 @@ As you can see, Unicode strings use the prefix ``u``, just as raw strings use th
 
 Built-in Functions Tricks
 =========================
-
 
 input vs. raw_input
 -------------------
@@ -226,3 +223,57 @@ You can also encode strings as big or little endian this way if you are using UT
   s.encode('utf-16BE')
 
 UTF-8, ASCII do not have endianness since it is 1 byte per character.
+
+
+time Module Tricks
+==================
+
++--------------------------+-----------------------------------------------------------------------------+
+| Function                 | Description                                                                 |
++==========================+=============================================================================+
+| ``sleep(seconds)``       | Delay execution for a given number of seconds.                              |
++--------------------------+-----------------------------------------------------------------------------+
+| ``time()``               | Return the current time in seconds since the Epoch.                         |
++--------------------------+-----------------------------------------------------------------------------+
+| ``clock()``              | Return the CPU time or real time since the start                            |
+|                          | of the process or since the first call to ``clock()``.                      |
++--------------------------+-----------------------------------------------------------------------------+
+| ``gmtime([seconds])``    | Convert seconds since the Epoch to a time tuple expressing UTC(a.k.a. GMT). |
+|                          | When 'seconds' is not passed in, convert the current time instead.          |
++--------------------------+-----------------------------------------------------------------------------+
+| ``localtime([seconds])`` | Ditto, but conver to a time tuple expressing local time.                    |
++--------------------------+-----------------------------------------------------------------------------+
+
+
+
+sys Module Tricks
+=================
+
+
+
+
+
+unittest Module Tricks
+======================
+
+#. run test cases only interested
+   
+  .. code-block:: python
+
+    suite = unittest.TestSuite()
+    suite.addTest(Test("test_dynamic_adjustment_no_better_route"))
+    suite.addTest(Test("test_dynamic_adjustment_new_better_route"))
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+
+#. run all tests from a test suite
+   
+  .. code-block:: python
+
+    suite = unittest.TestLoader().loadTestsFromTestCase(Test)
+    result = unittest.TextTestRunner(verbosity=2).run(suite)
+
+
+String format syntax
+====================
+
+https://docs.python.org/2/library/string.html?highlight=string#format-examples
