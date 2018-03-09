@@ -154,37 +154,39 @@ floor vs ceil
 Useful Function List
 ====================
 
-+--------------------------+------------------------------------------------------------------------+
-| Function                 | Description                                                            |
-+==========================+========================================================================+
-| help()                   | Offers interactive help                                                |
-+--------------------------+------------------------------------------------------------------------+
-| str(object)              | Converts a value to string                                             |
-+--------------------------+------------------------------------------------------------------------+
-| int(object)              | Converts a string or number to an integer                              |
-+--------------------------+------------------------------------------------------------------------+
-| long(object)             | Converts a string or number to a long integer                          |
-+--------------------------+------------------------------------------------------------------------+
-| float(object)            | Converts a string or number to a float-point number                    |
-+--------------------------+------------------------------------------------------------------------+
-| repr(object)             | Returns a string representation                                        |
-+--------------------------+------------------------------------------------------------------------+
-| abs(number)              | Returns the absolute value of a number                                 |
-+--------------------------+------------------------------------------------------------------------+
-| round(number[, ndigits]) | Rounds a number to a given precision                                   |
-+--------------------------+------------------------------------------------------------------------+
-| cmath.sqrt(number)       | Returns the square root; works with negative numbers                   |
-+--------------------------+------------------------------------------------------------------------+
-| math.sqrt(number)        | Ditto; but doesn’t work with negative numbers                          |
-+--------------------------+------------------------------------------------------------------------+
-| math.trunc(x)            | Truncate x to Integral                                                 |
-+--------------------------+------------------------------------------------------------------------+
-| bin(number)              | Return the binary representation of an integer or long integer.        |
-+--------------------------+------------------------------------------------------------------------+
-| integer.bit_length()     | Return the number of bits necessary to represent an integer in binary, |
-|                          | excluding the sign and leading zeros                                   |
-+--------------------------+------------------------------------------------------------------------+
-
++------------------------------+------------------------------------------------------------------------+
+| Function                     | Description                                                            |
++==============================+========================================================================+
+| ``help()``                   | Offers interactive help                                                |
++------------------------------+------------------------------------------------------------------------+
+| ``str(object)``              | Converts a value to string                                             |
++------------------------------+------------------------------------------------------------------------+
+| ``int(object)``              | Converts a string or number to an integer                              |
++------------------------------+------------------------------------------------------------------------+
+| ``long(object)``             | Converts a string or number to a long integer                          |
++------------------------------+------------------------------------------------------------------------+
+| ``float(object)``            | Converts a string or number to a float-point number                    |
++------------------------------+------------------------------------------------------------------------+
+| ``repr(object)``             | Returns a string representation                                        |
++------------------------------+------------------------------------------------------------------------+
+| ``abs(number)``              | Returns the absolute value of a number                                 |
++------------------------------+------------------------------------------------------------------------+
+| ``round(number[, ndigits])`` | Rounds a number to a given precision                                   |
++------------------------------+------------------------------------------------------------------------+
+| ``cmath.sqrt(number)``       | Returns the square root; works with negative numbers                   |
++------------------------------+------------------------------------------------------------------------+
+| ``math.sqrt(number)``        | Ditto; but doesn’t work with negative numbers                          |
++------------------------------+------------------------------------------------------------------------+
+| ``math.trunc(x)``            | Truncate x to Integral                                                 |
++------------------------------+------------------------------------------------------------------------+
+| ``bin(number)``              | Return the binary representation of an integer or long integer.        |
++------------------------------+------------------------------------------------------------------------+
+| ``integer.bit_length()``     | Return the number of bits necessary to represent an integer in binary, |
+|                              | excluding the sign and leading zeros                                   |
++------------------------------+------------------------------------------------------------------------+
+| ``len(object)``              | Return the number of items of a sequence or collection.                |
++------------------------------+------------------------------------------------------------------------+
+   
     
 Binary to Decimal
 =================
@@ -228,29 +230,58 @@ UTF-8, ASCII do not have endianness since it is 1 byte per character.
 time Module Tricks
 ==================
 
-+--------------------------+-----------------------------------------------------------------------------+
-| Function                 | Description                                                                 |
-+==========================+=============================================================================+
-| ``sleep(seconds)``       | Delay execution for a given number of seconds.                              |
-+--------------------------+-----------------------------------------------------------------------------+
-| ``time()``               | Return the current time in seconds since the Epoch.                         |
-+--------------------------+-----------------------------------------------------------------------------+
-| ``clock()``              | Return the CPU time or real time since the start                            |
-|                          | of the process or since the first call to ``clock()``.                      |
-+--------------------------+-----------------------------------------------------------------------------+
-| ``gmtime([seconds])``    | Convert seconds since the Epoch to a time tuple expressing UTC(a.k.a. GMT). |
-|                          | When 'seconds' is not passed in, convert the current time instead.          |
-+--------------------------+-----------------------------------------------------------------------------+
-| ``localtime([seconds])`` | Ditto, but conver to a time tuple expressing local time.                    |
-+--------------------------+-----------------------------------------------------------------------------+
-
++-------------------------------+------------------------------------------------------------------------------------------+
+| Function                      | Description                                                                              |
++===============================+==========================================================================================+
+| ``sleep(seconds)``            | Delay execution for a given number of seconds.                                           |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``time()``                    | Return the current time in seconds since the Epoch.                                      |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``clock()``                   | Return the CPU time or real time since the start                                         |
+|                               | of the process or since the first call to ``clock()``.                                   |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``gmtime([seconds])``         | Convert seconds since the Epoch to a time tuple expressing UTC(a.k.a. GMT).              |
+|                               | When 'seconds' is not passed in, convert the current time instead.                       |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``localtime([seconds])``      | Ditto, but convert to a time tuple expressing local time.                                |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``mktime(tuple)``             | Convert a time tuple in local time to seconds since the Epoch.                           |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``ctime(seconds)``            | Convert a time in seconds since the Epoch to a string in local time.                     |
+|                               | This is equivalent to ``asctime(localtime(seconds))``.                                   |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``asctime([tuple])``          | Convert a time tuple to a string. When the time tuple is not present,                    |
+|                               | current time as returned by ``localtime()`` is used.                                     |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``strftime(format[, tuple])`` | Convert a time tuple to a string according to a format specification.                    |
+|                               | When the time tuple is not present, current time as returned by ``localtime()`` is used. |
++-------------------------------+------------------------------------------------------------------------------------------+
+| ``strptime(string, format)``  | Parse a string to a time tuple according to a format specification.                      |
++-------------------------------+------------------------------------------------------------------------------------------+
 
 
 sys Module Tricks
 =================
 
-
-
++---------------+------------------------------------------------------------------+
+| Attribute     | Description                                                      |
++===============+==================================================================+
+| argv          | command line arguments; argv[0] is the script pathname if known  |
++---------------+------------------------------------------------------------------+
+| modules       | dictionary of loaded modules                                     |
++---------------+------------------------------------------------------------------+
+| getsizeof()   | return the size of an object in bytes                            |
++---------------+------------------------------------------------------------------+
+| getrefcount() | return the reference count for an object (plus one :-)           |
++---------------+------------------------------------------------------------------+
+| gettrace()    | get the global debug tracing function                            |
++---------------+------------------------------------------------------------------+
+| platform      | platform identifier                                              |
++---------------+------------------------------------------------------------------+
+| executable    | absolute path of the executable binary of the Python interpreter |
++---------------+------------------------------------------------------------------+
+| byteorder     | system byteorder                                                 |
++---------------+------------------------------------------------------------------+
 
 
 unittest Module Tricks
