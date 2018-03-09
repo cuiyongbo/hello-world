@@ -6,4 +6,4 @@ Python note
 
    python/python_built_in_types
    python/python_built_in_functions
-   python/built_in_types_and_functions_tricks
+   python/usage_tricks
