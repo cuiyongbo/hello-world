@@ -221,6 +221,10 @@ MacOS Terminal
 Sublime-rst-completion
 ----------------------
 
-#. emphasis ctrl+alt+i (super+shift+i on Mac)
-#. strong emphasis (bold)  ctrl+alt+b (super+shift+b on Mac)
-#. literal literal text (inline code) ctrl+alt+k (super+shift+k on Mac)
+#. emphasis, ctrl+alt+i (super+shift+i on Mac)
+#. strong emphasis (bold),  ctrl+alt+b (super+shift+b on Mac)
+#. literal literal text (inline code), ctrl+alt+k (super+shift+k on Mac)
+#. magical table, ctrl+t, enter (Linux or Windows) or super+shift+t, enter (Mac)
+#. Folding/unfolding, shift + TAB (alt + TAB in Mac) [put the cursor in a completed header]
+#. adjust header level, ctrl + + (plus key) and ctrl + - (minus key) (alt + + and alt + -, in Mac)
+#. render preview, ctrl + shift + r
