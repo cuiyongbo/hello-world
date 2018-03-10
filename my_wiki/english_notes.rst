@@ -1222,9 +1222,11 @@ English Note
 | Definition: defeat heavily.
 | Usage:  If he does that I’ll clobber him!
 | Usage: The Braves clobbered the Cubs 23-20.
-| 
-| Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
-| 
+|
+
+Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
+
+|
 | tie 
 | Definition: restrict or limit (someone) to a particular situation, occupation, or place.
 | Usage: She didn’t want to be like her mother, tied to a feckless man.
@@ -1232,13 +1234,33 @@ English Note
 | Usage: England tied 2-2 with Germany in the first round. [平局]
 | Usage: They tied for second place. [并列第二]
 | 
+| flick
+| Definition: a sudden sharp movement.
+| Definition: the suddent release of a bent finger or thumb, especially to propel a small object.
+| Usage: He sent his cigarette spinning away with a flick of his fingers. [掸烟灰]
+| Usage: Emily flicked some ash off her sleeve.
+| 
+| capitalize
+| Definition: (capitalize on) take the chance to gain advantage from.
+| Usage: An attempt by the opposition to capitalize on the government's embarrassment.
+| Definition: provide (a company or industry) with capital (as adjective capitalized).
+| Usage: A highly capitalized industry.
+| Definition: realize (the present value of an income); convert into capital.
+|
+
+Tottenham appeared to be in control until Gonzalo Higuain turned in Sami Khedira's flick to give Juventus a 64th-minute lifeline - which they capitalised on ruthlessly and Paulo Dybala raced clear for the decisive goal three minutes later.
+
+|
 | back-to-back
 | Definition: consecutively; in a row
-| Usage: Zidane’s Real have won back-to-back European titles, but are 19 points adrift of La Liga leaders Barcelona and were knocked out of the Copa del Rey [| 国王杯] by Leganes on Wednesday at the Bernabeu. [伯纳乌]
-| 
-| The Real, who finished second in the group to Tottenham, face Paris St-Germain in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14 | February at Bernabeu.
-| 
-| The Champions League and Europa league return this week as the knockout stage in each competition gets under way. [欧冠淘汰赛]
+|
+
+Zidane’s Real have won back-to-back European titles, but are 19 points adrift of La Liga leaders Barcelona and were knocked out of the Copa del Rey [国王杯] by Leganes on Wednesday at the Bernabeu. [伯纳乌]
+
+The Real, who finished second in the group to Tottenham, face Paris St-Germain in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14 February at Bernabeu.
+
+The Champions League and Europa league return this week as the knockout stage in each competition gets under way. [欧冠淘汰赛]
+
 | 
 | transfer window   转会窗口
 | quarter-final  四分之一决赛 
@@ -1246,14 +1268,49 @@ English Note
 | final       决赛
 | defending champion   卫冕冠军
 | 
-| Messi took on three defenders to score, then rolled a free-kick under the wall for the second. [任意球贴地斩]
-| Cristiano Ronaldo scored a hat-trick as Real Madrid thrashed Real Sociedad. [帽子戏法]
-| Real became the first team to successfully defend the Champions League last season. [卫冕成功]
+
+Messi took on three defenders to score, then rolled a free-kick under the wall for the second. [任意球贴地斩]
+
+Cristiano Ronaldo scored a hat-trick as Real Madrid thrashed Real Sociedad. [帽子戏法] 
+
+Real became the first team to successfully defend the Champions League last season. [卫冕成功] 
+
+Sevilla reached their second Copa del Rey final in three seasons with a 3-1 aggregate win over La Liga rivals Leganes.
+
+Spurs showed maturity as well as excellence to come from two goals down to earn a draw in Turin in the first leg, putting themselves in a favourable position to finish the job and secure a place in the quarter-finals.
+
+And yet from a position of strength bolstered even further by Son's goal just before the interval [中场休息], Spurs once again came up short.
+
+There is no doubting the quality in this Tottenham side and they were excellent in spells at Wembley, but with two Premier League title  campaigns promising much but unable to deliver and an FA Cup semi-final loss to Chelsea last season, teh requirement for tangible success is intensifying.
+
+English players may be “masters” of diving. [假摔]
+
+Dybala is a phenomenon … sometimes. [现象级球员]
+
+Son was inches off target late on as Spurs pressed - his performance mirroring that of his team on a night when they got plenty right but could not make the crucial moment count.
+
+Pochettino is a dreamer, but this turned into a nightmare. They've been put out by a side who were cuter, more street-wise, and took their chance. 
+
+|
+| street-wise
+| Definition: having the experience and knowledge necessary to deal with the potential difficultiew or dangers of life in urban.
+| Definition: reflective of modern life, especially that of urban youth. [市侩]
+|
+| tangible
+| tangibly
+| tangibility
+| Definition: perceptible by touch.
+| Usage: The atmosphere of neglect and abandonment was almost tangible.
+| Definition: clear and definite; real.
+| Usage: The emphasis is now on tangible results.
 | 
-| Sevilla reached their second Copa del Rey final in three seasons with a 3-1 aggregate win over La Liga rivals Leganes.
-| 
-| English players may be “masters” of diving. [假摔]
-| Dybala is a phenomenon … sometimes. [现象级球员]
+| mixed
+| Definition: consisting of different qualities or elements.
+| Definition: (of an assessment of, reaction to, or feeling about something) containing a mixture of both favorable and negative elements.
+| Usage: Son's mixed night. [悲喜交加]
+| Usage: I had mixed feelings about seeing Laura again.
+| Usage: The play was given a mixed reception by the critics. [毁誉参半]
+|
 | 
 | epic 
 | Synonyms: saga
@@ -2573,7 +2630,7 @@ English Note
 | 
 | stature
 | Definition: a person’s natural height.
-| Usage: He is small in stature.
+| Usage: Napoleon is small in stature.
 | Definition: importance or reputation gained by ability or achievement.
 | Usage: An architect of international stature.
 | 
