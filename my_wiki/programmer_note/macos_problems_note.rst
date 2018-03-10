@@ -210,3 +210,15 @@ MacOs Problems
       sudo diskutil mountDisk device
 
 
+#. mac to mount a dmg file manually
+   
+   In order to manually mount DMG file, you'll need to use :command:`hdiutil` command. 
+   You don't have to be a privileged user, so can do it as your own user.
+
+   .. code-block:: sh
+
+      hdiutil attach /path_to_dmg_file # mount
+
+      hdiutil eject /Volumes/dmg_mount_point #unmount
+
+
