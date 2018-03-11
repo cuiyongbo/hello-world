@@ -2766,3 +2766,13 @@ Pochettino is a dreamer, but this turned into a nightmare. They've been put out 
 | Usage: pseudocode.
 | Usage: pseudo-science.
 | 
+| beaucoup 
+| Definition: many; a lot.
+| Usage: You can spent beaucoup bucks on software.
+| Usage: beaucoup fraud.
+|
+
+Well I appreciate it, but I prefer to win fair and square.
+
+|
+

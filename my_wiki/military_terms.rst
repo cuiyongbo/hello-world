@@ -462,5 +462,23 @@ cyberpunk
 
 .. image:: images/Tokyo_Shibuya_Night.jpg
 
+Tudor
 
+Relating to the English royal dynasty which held the throne from 
+the accession of Henry VII in 1485 until the death of Elizabeth I in 1603.
 
+The cannonballs crack and corrode when exposed to air.
+
+chlorine - Cl - the chemical element of atomic number 17.
+
+| 
+| corrode
+| corrosion
+| Definition: destroy or damage (metal, stone, or ohter materials) slowly by chemical action.
+| Usage: Acid rain poisons fish and corrodes buildings.
+| Usage: Over years copper pipework corrodes. [氧化，生锈]
+| 
+| curator
+| Definition: A keeper or custodian of a museum or other collection.
+| Usage: The curator of drawings at the National Gallery.
+| 
