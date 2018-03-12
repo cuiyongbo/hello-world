@@ -212,3 +212,11 @@ It remains to be seen how the virus may affect the ability to hoverflies to unde
 | Usage: The motif of these volume is that 'solitude is the richness of the soul, loneliness is its poverty.'
 | Definition: A motif is a desigh which is used as a decoration or as part of an artistic pattern.
 | 
+| cockroach [蟑螂]
+| Definition: A cockroach is a large brown insect that is sometimes found in warm places or where food is kept.
+
+.. figure:: images/brown-cockroach.jpg
+
+   cockroach
+
+hemorrhoid 痔疮

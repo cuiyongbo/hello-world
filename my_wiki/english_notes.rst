@@ -1226,7 +1226,19 @@ English Note
 
 Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
 
-|
+Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime backheel doubled the lead.
+
+| 
+| sublime
+| Definition: of very great excellence or beauty,
+| Usage: Experiences that ranged from the sublime to the ridiculous.
+| Definition: (of a person's attitude or behavior) extreme or unparalleled.
+| Usage: He had the sublime confidence of youth.
+| Defintion: (chemistry) (of a solid substance) change directly into vapor when heated, typically forming a solid deposit again once cooling.
+| Usage: The ice sublimed away, leaving the books dry and undamaged. [升华]
+| Definition: elevate to a high degree of moral or spiritual purity or excellence.
+| Usage: Let your thoughts be sublimed by the spirit of God.
+| 
 | tie 
 | Definition: restrict or limit (someone) to a particular situation, occupation, or place.
 | Usage: She didn’t want to be like her mother, tied to a feckless man.
@@ -2741,8 +2753,14 @@ Pochettino is a dreamer, but this turned into a nightmare. They've been put out 
 | Definition: steal or misappropriate (money placed in one's trust or belonging to the organization for which one works).
 | Usage: She had embezzled $5,600,000 in company funds.
 | 
+| launder
+| Definition: When you launder clothes, sheets, and towels, you wash and iron them.[洗涤，熨烫]
+| Usage: She wore a freshly laundered and starched white shirt.
+| Definition: To launder money that has obtained illegally means to process it through a legitimate business or send it abroad to a foreign bank, so that when it comes back nobody knows that it was illegally obtained.
+| Usage: Money laundering. [洗钱]
+| 
 | undertow
-| Definition: a current in the sea or ocean that moves in the opposite direction to the water near the surface.
+| Definition: a current in the sea that moves in the opposite direction to the water near the surface.
 | Usage: The children were dragged into sea by the strong undertow.
 | Definition: (undertow of something) a feeling or quality that influences people in a particular situation even though they may not really be aware of it.
 | Usage: THere's a dark undertow of loss that links the novel with earlier works.
@@ -2774,5 +2792,19 @@ Pochettino is a dreamer, but this turned into a nightmare. They've been put out 
 
 Well I appreciate it, but I prefer to win fair and square.
 
+| verisimilar
+| verisimilitude
+| Definition: The appearance of being true or real.
+| Usage: The detail gives the novel some verisimilitude.
+| 
+| amigo
+| bravo
+| Definition: Some people say 'bravo' to express appreciation when someone has done something well.
+| Synonyms: well done
+| Usage: 'Bravo, Rena! You're right,' the student said.
+| 
+| adieu
+| Definition: Adieu means the same as goodbye.
+| Usage: 'Gents, I bid you adieu.'
 |
 
