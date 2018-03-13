@@ -220,3 +220,41 @@ It remains to be seen how the virus may affect the ability to hoverflies to unde
    cockroach
 
 hemorrhoid 痔疮
+
+finch
+
+dove
+
+pigeon
+
+tit
+
+| pox 流感
+| smallpox 天花
+| chickenpox 禽流感
+| Definition: People sometimes refer to the diseases syphilis as the pox.
+| 
+| get on someones's tits
+| Definition: irritate someone intensely.
+| 
+| tits and ass
+| Definition: used in reference to the use of crudely sexual image of women.
+| 
+| plumage
+| Definition: A bird's plumage is all the feathers on its body.
+| 
+| lethargy
+| lethargic 无精打采
+| Definition: a lack of energy and enthusiasm.
+| Usage: There was an air of lethargy around him.
+| 
+| regurgitate
+| regurgitation
+| Definition: bring (swallowed food) up again to the mouth.
+| Usage: Gulls regurgitate food for the chicks.
+| Definition: repeat (information) without analysing or comprehending it.
+| 
+| gull
+| Definition: a gull is a common sea bird.
+| 
+

@@ -2093,6 +2093,14 @@ Pochettino is a dreamer, but this turned into a nightmare. They've been put out 
 | Usage: The elephants are poached for their tusks.
 | Idiom: poach on someone’s territory [私闯民宅]
 | 
+| stuff
+| Definition: If you stuff a bird such as a chicken or a vegetable such as pepper, you put a mixture of food inside it before cooking it.
+| Usage: Will you stuff the turkey and shove it in the oven for me?
+| Definition: If a dead animal is stuffed, it is filled with a substance so that it can be preserved and display.
+| Usage: He didn't much care for the stuffed animal heads that hung on the walls.
+| Definition: If you stuff yourself, you eat a lot of food.
+| Usage: But you're just so stuffed you won't be able to drink anything.
+| 
 | char
 | Definiton: partially burn (an object) so as to blacken its surface.
 | Usage: Their bodies were badly charred in the fire.
@@ -2807,4 +2815,13 @@ Well I appreciate it, but I prefer to win fair and square.
 | Definition: Adieu means the same as goodbye.
 | Usage: 'Gents, I bid you adieu.'
 |
-
+| vigilant
+| vigilance
+| Definition: Someone who is vigilant gives careful attention to a particular problem or situation and concentrates on noticing any danger or trouble that there might be.
+| Usage: Drugs are a problem that requires contant vigilance.
+| 
+| lethargy
+| lethargic 无精打采
+| Definition: a lack of energy and enthusiasm.
+| Usage: There was an air of lethargy around him.
+|
