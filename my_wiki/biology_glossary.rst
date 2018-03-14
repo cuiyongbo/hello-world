@@ -243,11 +243,6 @@ tit
 | plumage
 | Definition: A bird's plumage is all the feathers on its body.
 | 
-| lethargy
-| lethargic 无精打采
-| Definition: a lack of energy and enthusiasm.
-| Usage: There was an air of lethargy around him.
-| 
 | regurgitate
 | regurgitation
 | Definition: bring (swallowed food) up again to the mouth.
