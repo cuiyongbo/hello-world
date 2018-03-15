@@ -2825,3 +2825,7 @@ Well I appreciate it, but I prefer to win fair and square.
 | Definition: a lack of energy and enthusiasm.
 | Usage: There was an air of lethargy around him.
 |
+| pansy
+| Definition: 三色堇
+| Definition: an offensive word for a homosexual man. [娘娘腔，娘炮]
+| 
