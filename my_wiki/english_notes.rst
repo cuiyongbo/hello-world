@@ -1518,6 +1518,13 @@ Pochettino is a dreamer, but this turned into a nightmare. They've been put out 
 | 
 | screwdriver 
 | Definition: 螺丝刀，改锥
+| clamp
+| Definition: 夹钳，车轮夹锁（用于锁住违章停放的车辆）
+
+.. figure:: images/clamp.jpg
+
+   clamp
+
 | 
 | fervent
 | fervency
