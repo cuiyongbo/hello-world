@@ -482,3 +482,8 @@ chlorine - Cl - the chemical element of atomic number 17.
 | Definition: A keeper or custodian of a museum or other collection.
 | Usage: The curator of drawings at the National Gallery.
 | 
+| annex
+| annexation
+| Definition: If a country annexes another country or an area of land, it seizes it and take control of it.
+| Usage: Indonesia's annexation of East Timor has never won the acceptance of the UN.
+|

@@ -2851,28 +2851,33 @@ On behalf of The United states Government, I'm commandeering your churro cart an
 
 Super Fun Guy is gonna take it in the tokus. [捅菊花]
 
-casanova
+casanova 情圣
 
 con woman 女骗子
 
 knockoff 山寨货
 
-two rolls of pennies? you shouldn't have.
-Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pay for weddings in old country.
+Tobby: two rolls of pennies? you shouldn't have.
 
-be nuts about
-Definition: like very much.
-Usage: He's absolutely nuts about her.
+Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pay for weddings in old country.
 
-blackjack
-Definition: a leather-covered bludgeon with short, flexible shaft or strip, used as a hand weapon.
+| be nuts about
+| Definition: like very much.
+| Usage: He's absolutely nuts about her.
+| 
+| blackjack
+| Definition: a leather-covered bludgeon with short, flexible shaft or strip, used as a hand weapon.
 
 .. figure:: images/blackjack.jpg
 
    blackjack
 
-unornamented
-ornamentation
-Definition: lacking embellishment or ornamentation.
+| ornament
+| unornamented
+| ornamentation
+| Definition: lacking embellishment or ornamentation.
+| 
+
+
 
 
