@@ -2836,3 +2836,43 @@ Well I appreciate it, but I prefer to win fair and square.
 | Definition: 三色堇
 | Definition: an offensive word for a homosexual man. [娘娘腔，娘炮]
 | 
+
+My ego and my pride have alway been my Achilles heel.
+
+A cenotaph is a lovely rememberance, it's an honor to be invited.
+
+We all loved her, we have common ground, just not enough to bridge the gap.
+
+We have to maintain relationships or they disappear.
+
+she is having a rough day.
+
+On behalf of The United states Government, I'm commandeering your churro cart and all its cooking oil.
+
+Super Fun Guy is gonna take it in the tokus. [捅菊花]
+
+casanova
+
+con woman 女骗子
+
+knockoff 山寨货
+
+two rolls of pennies? you shouldn't have.
+Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pay for weddings in old country.
+
+be nuts about
+Definition: like very much.
+Usage: He's absolutely nuts about her.
+
+blackjack
+Definition: a leather-covered bludgeon with short, flexible shaft or strip, used as a hand weapon.
+
+.. figure:: images/blackjack.jpg
+
+   blackjack
+
+unornamented
+ornamentation
+Definition: lacking embellishment or ornamentation.
+
+
