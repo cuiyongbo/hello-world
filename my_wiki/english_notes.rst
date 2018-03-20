@@ -27,7 +27,7 @@ English Note
 | A nominal number is a number used only as a name, or to identify something (not as an actual value or position). 
 | 
 | vowel
-| Definition: A vowel is a sound such as the ones represented in writing by letters ‘a’, ‘i’, ‘u’, ‘e’, and ‘o’,  which  you pronounce with your mouth open, | allowing the air flow through it.
+| Definition: A vowel is a sound such as the ones represented in writing by letters ‘a’, ‘i’, ‘u’, ‘e’, and ‘o’, which  you pronounce with your mouth open, allowing the air flow through it.
 | Antonyms: consonant
 | Usage: The vowel in words like ‘my’ and ‘thigh’ is not very difficult.
 | 

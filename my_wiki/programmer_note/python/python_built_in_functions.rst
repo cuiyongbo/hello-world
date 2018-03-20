@@ -19,7 +19,7 @@ Python interpreter has many functions built into it that are always available, T
 :func:`chr`            |func-frozenset|_    |func-list|_          |func-range|_         :func:`vars`          
 :func:`classmethod`    :func:`getattr`      :func:`locals`        :func:`repr`          :func:`zip`           
 :func:`compile`        :func:`globals`      :func:`map`           :func:`reversed`      :func:`__import__`    
-:func:`complex`        :func:`hasattr`      :func:`max`           :func:`round`       
+:func:`complex`        :func:`hasattr`      :func:`max`           :func:`round`         :func:`xrange`        
 =====================  ===================  ====================  ====================  ======================
 
 
@@ -206,6 +206,135 @@ Container functions
    The difference with ``repr(object)`` is that ``str(object)`` does not always 
    attempt to return a string that is acceptable to ``eval()``; 
    its goal is to return a printable string. If no argument is given, returns the empty string, ''.
+
+
+Iterator functions
+---------------------------
+
+.. function:: iter(object[, sentinel])
+
+   Return an :term:`iterator` object.  The first argument is interpreted very
+   differently depending on the presence of the second argument. Without a
+   second argument, *object* must be a collection object which supports the
+   iteration protocol (the :meth:`__iter__` method), or it must support the
+   sequence protocol (the :meth:`__getitem__` method with integer arguments
+   starting at ``0``).  If it does not support either of those protocols,
+   :exc:`TypeError` is raised. 
+
+   If the second argument, *sentinel*, is given,
+   then *object* must be a callable object.  The iterator created in this case
+   will call *object* with no arguments for each call to its
+   :meth:`~iterator.__next__` method; if the value returned is equal to
+   *sentinel*, :exc:`StopIteration` will be raised, otherwise the value will
+   be returned.
+
+   See also :ref:`typeiter`.
+
+   One useful application of the second form of :func:`iter` is to read lines of
+   a file until a certain line is reached.  The following example reads a file
+   until the :meth:`~io.TextIOBase.readline` method returns an empty string::
+
+      with open('mydata.txt') as fp:
+         for line in iter(fp.readline, ''):
+            process_line(line)
+
+
+.. function:: next(iterator[, default])
+
+   Retrieve the next item from the *iterator* by calling its
+   :meth:`~iterator.__next__` method.  If *default* is given, it is returned
+   if the iterator is exhausted, otherwise :exc:`StopIteration` is raised.
+
+.. function:: reversed(seq)
+
+   Return a reverse :term:`iterator`.  *seq* must be an object which has
+   a :meth:`__reversed__` method or supports the sequence protocol (the
+   :meth:`__len__` method and the :meth:`__getitem__` method with integer
+   arguments starting at ``0``).
+
+
+.. function:: sorted(iterable, *, key=None, reverse=False)
+
+   Return a new sorted list from the items in *iterable*.
+
+   Has two optional arguments which must be specified as keyword arguments.
+
+   *key* specifies a function of one argument that is used to extract a comparison
+   key from each list element: ``key=str.lower``.  The default value is ``None``
+   (compare the elements directly).
+
+   *reverse* is a boolean value.  If set to ``True``, then the list elements are
+   sorted as if each comparison were reversed.
+
+   Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a
+   *key* function.
+
+   The built-in :func:`sorted` function is guaranteed to be stable. A sort is
+   stable if it guarantees not to change the relative order of elements that
+   compare equal --- this is helpful for sorting in multiple passes (for
+   example, sort by department, then by salary grade).
+
+   For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`.
+
+
+.. class:: slice(stop)
+.. class:: slice(start, stop[, step])
+
+   .. index:: single: Numerical Python
+
+   Return a :term:`slice` object representing the set of indices specified by
+   ``range(start, stop, step)``.  The *start* and *step* arguments default to ``None``.
+
+   .. note::
+
+      stop is not inclusive.
+
+      .. code-block:: python
+
+         >>> l = range(1, 10)
+         >>> len(l)
+         9
+         >>> l[1:9:2]
+         [2, 4, 6, 8]
+         >>> l[1:3:1]
+         [2, 3]
+         >>> l[8:6:-1]
+         [9, 8]
+
+
+.. function:: len(s)
+
+   Return the length (the number of items) of an object.  The argument may be a
+   sequence (such as a string, bytes, tuple, list, or range) or a collection
+   (such as a dictionary, set, or frozen set).
+
+
+.. _func-range:
+.. function:: range(stop)
+.. function:: range(start, stop[, step])
+   :noindex:
+
+   Rather than being a function, :class:`range` is actually an immutable
+   sequence type, as documented in :ref:`typesseq-range` and :ref:`typesseq`.
+
+
+.. class:: xrange(stop)
+.. class:: xrange(start, stop[, step])
+
+   This function is very similar to :func:`range`, but returns an :class:`xrange object` instead of a list. 
+   This is an opaque sequence type which yields the same values as the corresponding list, 
+   without actually storing them all simultaneously. The advantage of :func:`xrange` over :func:`range` is 
+   minimal (since :func:`xrange` still has to create the values when asked for them) except 
+   when a very large range is used on a memory-starved machine or when all of the range’s elements 
+   are never used (such as when the loop is usually terminated with ``break``). 
+
+   .. note:: 
+
+      :func:`xrange` is intended to be simple and fast. Implementations may impose restrictions to achieve this. 
+      The C implementation of Python restricts all arguments to native C longs (“short” Python integers), 
+      and also requires that the number of elements fit in a native C long. 
+      If a larger range is needed, an alternate version can be crafted using 
+      the :mod:`itertools` module: ``islice(count(start, step), (stop-start+step-1+2*(step<0))//step)``.
 
 
 Numeric functions

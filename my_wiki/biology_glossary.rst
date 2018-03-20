@@ -248,8 +248,18 @@ tit
 | Definition: bring (swallowed food) up again to the mouth.
 | Usage: Gulls regurgitate food for the chicks.
 | Definition: repeat (information) without analysing or comprehending it.
-| 
-| gull
-| Definition: a gull is a common sea bird.
-| 
 
+.. figure:: images/gull.jpeg
+
+   Gull 
+
+Given recent weather events in Texas, however, it's possible that rought winds and strong currents played a part
+in the animal's demise. The eels do occasionally venture into the shallows, so it's hard to say for sure.
+
+.. figure:: images/eel.png
+
+   eel
+
+| demise
+| Definition: an animal's death.
+| Definition: the end or failure of an enterprise or institution.
