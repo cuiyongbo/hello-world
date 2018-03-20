@@ -1224,6 +1224,30 @@ English Note
 | Usage: The Braves clobbered the Cubs 23-20.
 |
 
+Barcelona v Chelsea: Lionel Messi joins the Champions League 100 club.[百球俱乐部]
+
+Some of Messi's close control and dribbling was breathtaking, drawing gasps of delight from the home crowd,
+and with three goals and that wondrous assist over the course of the two legs of the Chelsea tie it's very easy
+to conclude he was the difference between the teams.
+
+Messi is an arch-competitor and is gunning for his fifth league title after seeing bitter rivals Real Madrid take
+the crown for the past two seasons.
+
+Though Messi will rightly claim the lion's share of the headlines, perhaps the most significant moment in the game
+from the home team's perspective was Dembele's thumping finish from Messi's assist - his first goal in Barca colors.
+
+His selection in the starting XI was a surprise after he was left on the bench for the first leg, but the flamboyant
+manner in which he took his goal, firing a fierce rising drive into the root of the net, showed exactly how important he could 
+become to the team.
+
+
+Rakitic was almost impeccable on Wednesday. He completed 74 passes, more than any other player, at a conversion rate of 94.6%, 
+with his controlled and sensible passing keepping his team ticking over in the way Busquets has done for so many years.
+
+impeccable
+
+Definition: in accordance with the highest standards; faultless.
+
 Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
 
 Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime backheel doubled the lead.
@@ -2877,7 +2901,33 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | ornamentation
 | Definition: lacking embellishment or ornamentation.
 | 
-
+| habit-forming [上瘾]
+| Definition: capable of leading to physilogical or psychological dependence.
+| 
+| ethnic
+| Definition: Denoting or deriving from or distinctive of the ways of living build up by a | group of people.
+| 
+| distinct
+| distinctness
+| distinguish
+| Definition: recognizably different in nature from something else of a similar type.
+| Definition: so clearly apparent as to be unmistakable; definite.
+| 
+| distinctive
+| Definition: characteristic of one person or thing, and so serving to distinguish it from | others.
+| Usage: clothes with a distinctive style.
+| 
+| off-license [外卖酒店，便利店]
+| Definition: a store that sells alcoholic beverage for consumption elsewhere.
+| Definition: a shop that sells alcoholic drinks in bottles and cans to take away.
+| 
+| beverage
+| Defintion: a drink, especially one other than water.
+| 
+| raillery
+| Definition: light teasing repartee.
+| Definition: friendly joke about a person.
+| 
 
 
 
