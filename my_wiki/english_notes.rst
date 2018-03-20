@@ -2928,6 +2928,10 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | Definition: light teasing repartee.
 | Definition: friendly joke about a person.
 | 
-
+hook
+Definition: a hook is a bent piece of metal or plastic, used to catch or hold things, or to hang things up.
+Idioms: on the hook
+Definition: caught in a difficult or dangerous situation.
+Usage: There I was back on the hook.
 
 

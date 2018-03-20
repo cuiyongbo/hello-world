@@ -228,3 +228,4 @@ Sublime-rst-completion
 #. Folding/unfolding, shift + TAB (alt + TAB in Mac) [put the cursor in a completed header]
 #. adjust header level, ctrl + + (plus key) and ctrl + - (minus key) (alt + + and alt + -, in Mac)
 #. render preview, ctrl + shift + r
+#. simple table,  ctrl+t, s (Linux or Windows) or super+shift+t, s (Mac)
