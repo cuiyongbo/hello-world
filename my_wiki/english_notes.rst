@@ -104,11 +104,11 @@ English Note
 | Usage: Education cannot simply be a prelude to a career.
 | 
 | put stock in
-| Definition: [often with negative] have a specific amount of belief or faith in
+| Definition: [often with negative] have a specific amount of belief or faith in.
 | Usage: I don’t put much stock in traditional Chinese medicine.
 | 
 | in (or out of) stock
-| Definition: (of goods) available (or unavailable) for immediate sale in store
+| Definition: (of goods) available (or unavailable) for immediate sale in store.
 | Usage: The new Iphone8 is out of stock at the present.
 | 
 | on the stocks
@@ -116,7 +116,7 @@ English Note
 | Usage: Also on the stocks is a bill to bring about tax relief for these business. 
 | 
 | up one’s sleeve
-| Definition: (of a strategy, idea, or resource) kept secret and in reserve for use when needed
+| Definition: (of a strategy, idea, or resource) kept secret and in reserve for use when needed.
 | Usage: He was new to the game but had a few tricks up his sleeve.
 | 
 | tried-and-true
@@ -2928,10 +2928,16 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | Definition: light teasing repartee.
 | Definition: friendly joke about a person.
 | 
-hook
-Definition: a hook is a bent piece of metal or plastic, used to catch or hold things, or to hang things up.
-Idioms: on the hook
-Definition: caught in a difficult or dangerous situation.
-Usage: There I was back on the hook.
-
+| hook
+| Definition: a hook is a bent piece of metal or plastic, used to catch or hold things, or to hang things up.
+| Idioms: on the hook
+| Definition: caught in a difficult or dangerous situation.
+| Usage: There I was back on the hook.
+| 
+| complacent
+| complacency
+| Definition: showing smug or uncritical satisfication with oneself or one's achievements.
+| Synonyms: self-satisfied
+| Usage: You can't afford to be complacent about security.
+| 
 

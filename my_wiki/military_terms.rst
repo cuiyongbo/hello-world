@@ -487,3 +487,6 @@ chlorine - Cl - the chemical element of atomic number 17.
 | Definition: If a country annexes another country or an area of land, it seizes it and take control of it.
 | Usage: Indonesia's annexation of East Timor has never won the acceptance of the UN.
 |
+
+Chinese President Xi Jinping has told the :abbr:`NPC (National People's Congress)` that China must
+not become complacent about its development.
