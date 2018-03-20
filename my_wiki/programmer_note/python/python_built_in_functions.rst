@@ -1,6 +1,7 @@
 Built-in Functions
 ==================
 
+Python interpreter has many functions built into it that are always available, They are listed in alphabatical order.
 
 =====================  ===================  ====================  ====================  ======================
 ..                     ..                   Built-in Functions    ..                    ..                    
@@ -36,6 +37,82 @@ Built-in Functions
 .. |func-bytes| replace:: ``bytes()``
 
 
+Basically, they can be classified into 4 groups: container types, numeric types and mathematical functions, miscellaneous utility function
+
+
+How to find help
+----------------
+
+.. function:: help([object])
+
+   Invoke the built-in help system.  (This function is intended for interactive
+   use.)  If no argument is given, the interactive help system starts on the
+   interpreter console.  If the argument is a string, then the string is looked up
+   as the name of a module, function, class, method, keyword, or documentation
+   topic, and a help page is printed on the console.  If the argument is any other
+   kind of object, a help page on the object is generated.
+
+   This function is added to the built-in namespace by the :mod:`site` module.
+
+
+.. function:: dir([object])
+
+   Without arguments, return the list of names in the current local scope.  With an
+   argument, attempt to return a list of valid attributes for that object.
+
+   If the object has a method named :meth:`__dir__`, this method will be called and
+   must return the list of attributes. This allows objects that implement a custom
+   :func:`__getattr__` or :func:`__getattribute__` function to customize the way
+   :func:`dir` reports their attributes.
+
+   If the object does not provide :meth:`__dir__`, the function tries its best to
+   gather information from the object's :attr:`~object.__dict__` attribute, if defined, and
+   from its type object.  The resulting list is not necessarily complete, and may
+   be inaccurate when the object has a custom :func:`__getattr__`.
+
+   The default :func:`dir` mechanism behaves differently with different types of
+   objects, as it attempts to produce the most relevant, rather than complete,
+   information:
+
+   * If the object is a module object, the list contains the names of the module's
+     attributes.
+
+   * If the object is a type or class object, the list contains the names of its
+     attributes, and recursively of the attributes of its bases.
+
+   * Otherwise, the list contains the object's attributes' names, the names of its
+     class's attributes, and recursively of the attributes of its class's base
+     classes.
+
+   The resulting list is sorted alphabetically.  For example::
+
+      >>> import struct
+      >>> dir()   # show the names in the module namespace  # doctest: +SKIP
+      ['__builtins__', '__name__', 'struct']
+      >>> dir(struct)   # show the names in the struct module # doctest: +SKIP
+      ['Struct', '__all__', '__builtins__', '__cached__', '__doc__', '__file__',
+       '__initializing__', '__loader__', '__name__', '__package__',
+       '_clearcache', 'calcsize', 'error', 'pack', 'pack_into',
+       'unpack', 'unpack_from']
+      >>> class Shape:
+      ...     def __dir__(self):
+      ...         return ['area', 'perimeter', 'location']
+      >>> s = Shape()
+      >>> dir(s)
+      ['area', 'location', 'perimeter']
+      >>> dir(Shape)
+      ['__dir__', '__doc__', '__module__']
+
+   .. note::
+
+      Because :func:`dir` is supplied primarily as a convenience for use at an
+      interactive prompt, it tries to supply an interesting set of names more
+      than it tries to supply a rigorously or consistently defined set of names,
+      and its detailed behavior may change across releases.  For example,
+      metaclass attributes are not in the result list when the argument is a
+      class.
+
+
 .. function:: abs(x)
 
    Return the absolute value of a number.  The argument may be an
@@ -64,6 +141,9 @@ Built-in Functions
                return False
          return True
 
+
+Container functions
+-------------------
 
 .. _func-set:
 .. class:: set([iterable])
@@ -127,6 +207,9 @@ Built-in Functions
    attempt to return a string that is acceptable to ``eval()``; 
    its goal is to return a printable string. If no argument is given, returns the empty string, ''.
 
+
+Numeric functions
+-----------------
 
 .. class:: class complex([real[, imag]])
 
@@ -192,6 +275,9 @@ Built-in Functions
    Conversion of floating point numbers to integers truncates (towards zero). If no arguments are given, returns ``0L``.
 
 
+str-int conversion functions
+----------------------------
+
 .. function:: oct(x)
 
    Convert an integer number (of any size) to an octal string. The result is a valid Python expression.
@@ -242,6 +328,9 @@ Built-in Functions
       >>> int('0x2020', 16)
       8224
 
+
+Miscellaneous functions
+-----------------------
 
 .. function:: locals()
 
@@ -364,4 +453,5 @@ Built-in Functions
       >>> x1, y1 = zip(*zipped)
       >>> x == list(x1) and y == list(y1)
       True 
+
 
