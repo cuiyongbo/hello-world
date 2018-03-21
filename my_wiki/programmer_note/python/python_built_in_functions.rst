@@ -422,6 +422,112 @@ Mathematical functions
    magnitude is returned.
 
 
+.. function:: divmod(a, b)
+
+   Take two (non complex) numbers as arguments and return a pair of numbers
+   consisting of their quotient and remainder when using integer division.  With
+   mixed operand types, the rules for binary arithmetic operators apply.  For
+   integers, the result is the same as ``(a // b, a % b)``. For floating point
+   numbers the result is ``(q, a % b)``, where *q* is usually ``math.floor(a /
+   b)`` but may be 1 less than that.  In any case ``q * b + a % b`` is very
+   close to *a*, if ``a % b`` is non-zero it has the same sign as *b*, and ``0
+   <= abs(a % b) < abs(b)``.
+
+
+.. function:: max(iterable, *[, key, default])
+.. function:: max(arg1, arg2, *args[, key])
+
+   Return the largest item in an iterable or the largest of two or more arguments.
+
+   If one positional argument is provided, it should be an :term:`iterable`.
+   The largest item in the iterable is returned.  If two or more positional
+   arguments are provided, the largest of the positional arguments is returned.
+
+   There are two optional keyword-only arguments. The *key* argument specifies
+   a one-argument ordering function like that used for :meth:`list.sort`. The
+   *default* argument specifies an object to return if the provided iterable is empty.
+   If the iterable is empty and *default* is not provided, a :exc:`ValueError` is raised.
+
+   If multiple items are maximal, the function returns the first one encountered.
+   This is consistent with other sort-stability preserving tools such as 
+   ``sorted(iterable, key=keyfunc, reverse=True)[0]`` and
+   ``heapq.nlargest(1, iterable, key=keyfunc)``.
+
+
+.. function:: min(iterable, *[, key, default])
+.. function:: min(arg1, arg2, *args[, key])
+
+   Return the smallest item in an iterable or the smallest of two or more
+   arguments.
+
+   If one positional argument is provided, it should be an :term:`iterable`.
+   The smallest item in the iterable is returned.  If two or more positional
+   arguments are provided, the smallest of the positional arguments is returned.
+
+   There are two optional keyword-only arguments. The *key* argument specifies
+   a one-argument ordering function like that used for :meth:`list.sort`. The
+   *default* argument specifies an object to return if the provided iterable is empty.
+   If the iterable is empty and *default* is not provided, a :exc:`ValueError` is raised.
+
+   If multiple items are minimal, the function returns the first one encountered.
+   This is consistent with other sort-stability preserving tools such as 
+   ``sorted(iterable, key=keyfunc)[0]`` and ``heapq.nsmallest(1, iterable, key=keyfunc)``.
+
+
+.. function:: pow(x, y[, z])
+
+   Return *x* to the power *y*; if *z* is present, return *x* to the power *y*,
+   modulo *z* (computed more efficiently than ``pow(x, y) % z``). The two-argument
+   form ``pow(x, y)`` is equivalent to using the power operator: ``x**y``.
+
+   The arguments must have numeric types.  With mixed operand types, the
+   coercion rules for binary arithmetic operators apply.  For :class:`int`
+   operands, the result has the same type as the operands (after coercion)
+   unless the second argument is negative; in that case, all arguments are
+   converted to float and a float result is delivered.  For example, ``10**2``
+   returns ``100``, but ``10**-2`` returns ``0.01``.  If the second argument is
+   negative, the third argument must be omitted.  If *z* is present, *x* and *y*
+   must be of integer types, and *y* must be non-negative.
+
+
+.. function:: round(number[, ndigits])
+
+   Return *number* rounded to *ndigits* precision after the decimal point.
+   If *ndigits* is omitted or is ``None``, it returns the nearest integer to its input.
+
+   For the built-in types supporting :func:`round`, values are rounded to the
+   closest multiple of 10 to the power minus *ndigits*; if two multiples are
+   equally close, rounding is done toward the even choice (so, for example,
+   both ``round(0.5)`` and ``round(-0.5)`` are ``0``, and ``round(1.5)`` is
+   ``2``).  Any integer value is valid for *ndigits* (positive, zero, or
+   negative).  The return value is an integer if called with one argument,
+   otherwise of the same type as *number*.
+
+   For a general Python object ``number``, ``round(number, ndigits)`` delegates to
+   ``number.__round__(ndigits)``.
+
+   .. note::
+
+      The behavior of :func:`round` for floats can be surprising: for example,
+      ``round(2.675, 2)`` gives ``2.67`` instead of the expected ``2.68``.
+      This is not a bug: it's a result of the fact that most decimal fractions
+      can't be represented exactly as a float.  See :ref:`tut-fp-issues` for
+      more information.
+
+
+.. function:: sum(iterable[, start])
+
+   Sums *start* and the items of an *iterable* from left to right and returns the total.
+   *start* defaults to ``0``. The *iterable*'s items are normally numbers,
+   and the start value is not allowed to be a string.
+
+   For some use cases, there are good alternatives to :func:`sum`.
+   The preferred, fast way to concatenate a sequence of strings is by calling
+   ``''.join(sequence)``.  To add floating point values with extended precision,
+   see :func:`math.fsum`\.  To concatenate a series of iterables, consider using
+   :func:`itertools.chain`.
+
+
 str-int conversion functions
 ----------------------------
 
@@ -459,17 +565,6 @@ str-int conversion functions
    As :func:`repr`, return a string containing a printable representation of an
    object, but escape the non-ASCII characters in the string returned by
    :func:`repr` using ``\x``, ``\u`` or ``\U`` escapes. 
-
-
-.. function:: repr(object)
-
-   Return a string containing a printable representation of an object.  For many
-   types, this function makes an attempt to return a string that would yield an
-   object with the same value when passed to :func:`eval`, otherwise the
-   representation is a string enclosed in angle brackets that contains the name
-   of the type of the object together with additional information often
-   including the name and address of the object.  A class can control what this
-   function returns for its instances by defining a :meth:`__repr__` method.
 
 
 .. function:: chr(i)
@@ -671,3 +766,14 @@ Miscellaneous functions
       function.  The :func:`globals` and :func:`locals` functions
       returns the current global and local dictionary, respectively, which may be
       useful to pass around for use by :func:`eval` or :func:`exec`.
+
+
+.. function:: repr(object)
+
+   Return a string containing a printable representation of an object.  For many
+   types, this function makes an attempt to return a string that would yield an
+   object with the same value when passed to :func:`eval`, otherwise the
+   representation is a string enclosed in angle brackets that contains the name
+   of the type of the object together with additional information often
+   including the name and address of the object.  A class can control what this
+   function returns for its instances by defining a :meth:`__repr__` method.
