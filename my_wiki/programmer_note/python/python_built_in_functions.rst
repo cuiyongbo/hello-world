@@ -1334,7 +1334,7 @@ Miscellaneous utilities
           def delx(self):
               del self._x
 
-          x = property(getx, setx, delx, "I'm the 'x' property.")
+          x = property(C.getx, C.setx, C.delx, "I'm x")
 
    If *c* is an instance of *C*, ``c.x`` will invoke the getter,
    ``c.x = value`` will invoke the setter and ``del c.x`` the deleter.

@@ -2942,4 +2942,35 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | Synonyms: self-satisfied
 | Usage: You can't afford to be complacent about security.
 | 
+| 
+| layman
+| Definition: a nonordained member of a church.
+| Definition: a person without professional or specialized knowledge in a particular subject.
+| Usage: The book seems well suited to the interested laymen.
+| 
+| miscellaneous
+| miscellaneousness
+| Definition: of various types or from different source.
+| Usage: He picked up the miscellaneous papers.
+| 
+| erratic
+| Definition: not even or regular in pattern or movement; unpredictable.
+| Usage: Her breathing was erratic.
+| 
+| obituary 讣告
+| Definition: a notice of a death, especially in a newspaper, typically including a brief biography or the deceased person.
+
+He often paid tribute to his wife, who had looked after himefor more than 20 years.
+and friends and relatives were shocked when he left her for one of his nurses.
+
+| tribute
+| Definition: an act, statement, or gift that is intend to show gratitude, respect, or admiration.
+| Definition: (especiallu in the past) money given by one country or ruler to another, especially in return for protection or for not being attcked. [贡品，贡金]
+
+Police questioned several people about allegations that he had been subjected to verbal and physical abuse over a period of years.
+
+| verbal
+| Definition: relating to or in the form of words.
+| Usage: verbal abuse.
+|
 
