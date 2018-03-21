@@ -299,6 +299,52 @@ Iterator functions
       the :mod:`itertools` module: ``islice(count(start, step), (stop-start+step-1+2*(step<0))//step)``.
 
 
+.. function:: enumerate(iterable, start=0)
+
+   Return an enumerate object. *iterable* must be a sequence, an
+   :term:`iterator`, or some other object which supports iteration.
+   The :meth:`~iterator.__next__` method of the iterator returned by
+   :func:`enumerate` returns a tuple containing a count (from *start* which
+   defaults to 0) and the values obtained from iterating over *iterable*.
+
+      >>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+      >>> list(enumerate(seasons))
+      [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+      >>> list(enumerate(seasons, start=1))
+      [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
+
+   Equivalent to::
+
+      def enumerate(sequence, start=0):
+          n = start
+          for elem in sequence:
+              yield n, elem
+              n += 1
+
+
+.. function:: filter(function, iterable)
+
+   Construct an iterator from those elements of *iterable* for which *function*
+   returns true.  *iterable* may be either a sequence, a container which
+   supports iteration, or an iterator.  If *function* is ``None``, the identity
+   function is assumed, that is, all elements of *iterable* that are false are
+   removed.
+
+   Note that ``filter(function, iterable)`` is equivalent to the generator
+   expression ``(item for item in iterable if function(item))`` if function is
+   not ``None`` and ``(item for item in iterable if item)`` if function is
+   ``None``. for example::
+
+      >>> se = range(1,10)
+      >>> filter((lambda x: x%2), se)
+      [1, 3, 5, 7, 9]
+      >>> filter(lambda x: x%2, se)
+      [1, 3, 5, 7, 9]
+
+   See :func:`itertools.filterfalse` for the complementary function that returns
+   elements of *iterable* for which *function* returns false.
+
+
 Numeric functions
 -----------------
 
@@ -934,6 +980,60 @@ Miscellaneous utilities
       True 
 
 
+.. function:: repr(object)
+
+   Return a string containing a printable representation of an object.  For many
+   types, this function makes an attempt to return a string that would yield an
+   object with the same value when passed to :func:`eval`, otherwise the
+   representation is a string enclosed in angle brackets that contains the name
+   of the type of the object together with additional information often
+   including the name and address of the object.  A class can control what this
+   function returns for its instances by defining a :meth:`__repr__` method.
+
+
+.. index::
+   single: __format__
+   single: string; format() (built-in function)
+
+.. function:: format(value[, format_spec])
+
+   Convert a *value* to a "formatted" representation, as controlled by
+   *format_spec*.  The interpretation of *format_spec* will depend on the type
+   of the *value* argument, however there is a standard formatting syntax that
+   is used by most built-in types: :ref:`formatspec`.
+
+   The default *format_spec* is an empty string which usually gives the same
+   effect as calling :func:`str(value) <str>`.
+
+   A call to ``format(value, format_spec)`` is translated to
+   ``type(value).__format__(value, format_spec)`` which bypasses the instance
+   dictionary when searching for the value's :meth:`__format__` method.  A
+   :exc:`TypeError` exception is raised if the method search reaches
+   :mod:`object` and the *format_spec* is non-empty, or if either the
+   *format_spec* or the return value are not strings.
+
+
+.. function:: print(*objects, sep=' ', end='\\n', file=sys.stdout, flush=False)
+
+   Print *objects* to the text stream *file*, separated by *sep* and followed
+   by *end*.  *sep*, *end*, *file* and *flush*, if present, must be given as keyword
+   arguments.
+
+   All non-keyword arguments are converted to strings like :func:`str` does and
+   written to the stream, separated by *sep* and followed by *end*.  Both *sep*
+   and *end* must be strings; they can also be ``None``, which means to use the
+   default values.  If no *objects* are given, :func:`print` will just write
+   *end*.
+
+   The *file* argument must be an object with a ``write(string)`` method; if it
+   is not present or ``None``, :data:`sys.stdout` will be used.  Since printed
+   arguments are converted to text strings, :func:`print` cannot be used with
+   binary mode file objects.  For these, use ``file.write(...)`` instead.
+
+   Whether output is buffered is usually determined by *file*, but if the
+   *flush* keyword argument is true, the stream is forcibly flushed.
+
+
 .. function:: eval(expression, globals=None, locals=None)
 
    The arguments are a string and optional globals and locals.  If provided,
@@ -966,17 +1066,6 @@ Miscellaneous utilities
       function.  The :func:`globals` and :func:`locals` functions
       returns the current global and local dictionary, respectively, which may be
       useful to pass around for use by :func:`eval` or :func:`exec`.
-
-
-.. function:: repr(object)
-
-   Return a string containing a printable representation of an object.  For many
-   types, this function makes an attempt to return a string that would yield an
-   object with the same value when passed to :func:`eval`, otherwise the
-   representation is a string enclosed in angle brackets that contains the name
-   of the type of the object together with additional information often
-   including the name and address of the object.  A class can control what this
-   function returns for its instances by defining a :meth:`__repr__` method.
 
 
 .. function:: breakpoint(*args, **kws)
