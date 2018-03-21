@@ -113,35 +113,6 @@ How to find help
       class.
 
 
-.. function:: abs(x)
-
-   Return the absolute value of a number.  The argument may be an
-   integer or a floating point number.  If the argument is a complex number, its
-   magnitude is returned.
-
-
-.. function:: all(iterable)
-
-   Return ``True`` if all elements of the iterable are true (or if the iterable is empty). Equivalent to::
-   
-      def all(iterable):
-         for element in iterable:
-            if not element:
-               return False
-         return True
-   
-
-.. function:: any(iterable)
-
-   Return ``True`` if all elements of the iterable are true (or if the iterable is empty). Equivalent to::
-   
-      def all(iterable):
-         for element in iterable:
-            if not element:
-               return False
-         return True
-
-
 Container functions
 -------------------
 
@@ -404,8 +375,74 @@ Numeric functions
    Conversion of floating point numbers to integers truncates (towards zero). If no arguments are given, returns ``0L``.
 
 
+Boolean functions
+-----------------
+
+.. class:: bool([x])
+
+   Return a Boolean value, i.e. one of ``True`` or ``False``. 
+   *x* is converted using the standard truth testing procedure. 
+   If x is false or omitted, this returns ``False``; otherwise it returns ``True``. 
+   bool is also a class, which is a subclass of int. Class bool cannot be subclassed further. 
+   Its only instances are ``False`` and ``True``.
+
+
+.. function:: all(iterable)
+
+   Return ``True`` if all elements of the iterable are true (or if the iterable is empty). 
+   Equivalent to::
+   
+      def all(iterable):
+         for element in iterable:
+            if not element:
+               return False
+         return True
+   
+
+.. function:: any(iterable)
+
+   Return ``True`` if all elements of the iterable are true (or if the iterable is empty). 
+   Equivalent to::
+   
+      def any(iterable):
+         for element in iterable:
+            if element:
+               return True
+         return False
+
+
+
+Mathematical functions
+----------------------
+
+.. function:: abs(x)
+
+   Return the absolute value of a number.  The argument may be an
+   integer or a floating point number.  If the argument is a complex number, its
+   magnitude is returned.
+
+
 str-int conversion functions
 ----------------------------
+
+.. function:: bin(x)
+
+   Convert an integer number to a binary string. The result is a valid Python expression. 
+   If x is not a Python :class:`int` object, it has to define an :meth:`__index__` method 
+   that returns an integer. some examples::
+
+      >>> bin(14)
+      '0b1110'
+      >>> bin(-14)
+      '-0b1110'
+
+   If prefix "0b" is desired or not, you can use either of the following ways::
+
+      >>> format(14, '#b'), format(14, 'b')
+      ('0b1110', '1110')
+
+  See also :func:`format` for more information.
+
 
 .. function:: oct(x)
 
@@ -415,6 +452,24 @@ str-int conversion functions
 .. function:: hex(x)
 
    Convert an integer number (of any size) to a lowercase hexadecimal string prefixed with “0x”
+
+
+.. function:: ascii(object)
+
+   As :func:`repr`, return a string containing a printable representation of an
+   object, but escape the non-ASCII characters in the string returned by
+   :func:`repr` using ``\x``, ``\u`` or ``\U`` escapes. 
+
+
+.. function:: repr(object)
+
+   Return a string containing a printable representation of an object.  For many
+   types, this function makes an attempt to return a string that would yield an
+   object with the same value when passed to :func:`eval`, otherwise the
+   representation is a string enclosed in angle brackets that contains the name
+   of the type of the object together with additional information often
+   including the name and address of the object.  A class can control what this
+   function returns for its instances by defining a :meth:`__repr__` method.
 
 
 .. function:: chr(i)
@@ -584,3 +639,35 @@ Miscellaneous functions
       True 
 
 
+.. function:: eval(expression, globals=None, locals=None)
+
+   The arguments are a string and optional globals and locals.  If provided,
+   *globals* must be a dictionary.  If provided, *locals* can be any mapping
+   object.
+
+   The *expression* argument is parsed and evaluated as a Python expression
+   (technically speaking, a condition list) using the *globals* and *locals*
+   dictionaries as global and local namespace.  If the *globals* dictionary is
+   present and lacks ``__builtins__``, the current globals are copied into *globals*
+   before *expression* is parsed.  This means that *expression* normally has full
+   access to the standard :mod:`builtins` module and restricted environments are
+   propagated.  If the *locals* dictionary is omitted it defaults to the *globals*
+   dictionary.  If both dictionaries are omitted, the expression is executed in the
+   environment where :func:`eval` is called.  The return value is the result of
+   the evaluated expression. Syntax errors are reported as exceptions.  Example:
+
+      >>> x = 1
+      >>> eval('x+1')
+      2
+
+   This function can also be used to execute arbitrary code objects (such as
+   those created by :func:`compile`).  In this case pass a code object instead
+   of a string.  If the code object has been compiled with ``'exec'`` as the
+   *mode* argument, :func:`eval`\'s return value will be ``None``.
+
+   .. note::
+
+      Hints: dynamic execution of statements is supported by the :func:`exec`
+      function.  The :func:`globals` and :func:`locals` functions
+      returns the current global and local dictionary, respectively, which may be
+      useful to pass around for use by :func:`eval` or :func:`exec`.
