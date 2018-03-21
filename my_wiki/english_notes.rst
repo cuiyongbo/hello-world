@@ -2930,6 +2930,8 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | 
 | hook
 | Definition: a hook is a bent piece of metal or plastic, used to catch or hold things, or to hang things up.
+| Definition: a short swing punch made with the elbow bent, especially in boxing.
+| Usage: a perfectly timed right hook to the chin.
 | Idioms: on the hook
 | Definition: caught in a difficult or dangerous situation.
 | Usage: There I was back on the hook.

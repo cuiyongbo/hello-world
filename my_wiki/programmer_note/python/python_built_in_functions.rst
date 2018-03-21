@@ -169,15 +169,6 @@ Container functions
    Rather than being a function, :class:`tuple` is actually an immutable
    sequence type, as documented in :ref:`typesseq-tuple` and :ref:`typesseq`.
 
-.. _func-str:
-.. class:: class str(object='')
-
-   Return a string containing a nicely printable representation of an object. 
-   For strings, this returns the string itself. 
-   The difference with ``repr(object)`` is that ``str(object)`` does not always 
-   attempt to return a string that is acceptable to ``eval()``; 
-   its goal is to return a printable string. If no argument is given, returns the empty string, ''.
-
 
 Iterator functions
 ---------------------------
@@ -411,7 +402,6 @@ Boolean functions
          return False
 
 
-
 Mathematical functions
 ----------------------
 
@@ -528,6 +518,65 @@ Mathematical functions
    :func:`itertools.chain`.
 
 
+String functions
+----------------
+
+.. _func-str:
+.. class:: class str(object='')
+
+   Return a string containing a nicely printable representation of an object. 
+   For strings, this returns the string itself. 
+   The difference with ``repr(object)`` is that ``str(object)`` does not always 
+   attempt to return a string that is acceptable to ``eval()``; 
+   its goal is to return a printable string. If no argument is given, returns the empty string, ''.
+
+
+.. _func-bytearray:
+.. class:: bytearray([source[, encoding[, errors]]])
+   :noindex:
+
+   Return a new array of bytes.  The :class:`bytearray` class is a mutable
+   sequence of integers in the range 0 <= x < 256.  It has most of the usual
+   methods of mutable sequences, described in :ref:`typesseq-mutable`, as well
+   as most methods that the :class:`bytes` type has, see :ref:`bytes-methods`.
+
+   The optional *source* parameter can be used to initialize the array in a few
+   different ways:
+
+   * If it is a *string*, you must also give the *encoding* (and optionally,
+     *errors*) parameters; :func:`bytearray` then converts the string to
+     bytes using :meth:`str.encode`.
+
+   * If it is an *integer*, the array will have that size and will be
+     initialized with null bytes.
+
+   * If it is an object conforming to the *buffer* interface, a read-only buffer
+     of the object will be used to initialize the bytes array.
+
+   * If it is an *iterable*, it must be an iterable of integers in the range
+     ``0 <= x < 256``, which are used as the initial contents of the array.
+
+   Without an argument, an array of size 0 is created.
+
+   See also :ref:`binaryseq` and :ref:`typebytearray`.
+
+
+.. _func-bytes:
+.. class:: bytes([source[, encoding[, errors]]])
+   :noindex:
+
+   Return a new "bytes" object, which is an immutable sequence of integers in
+   the range ``0 <= x < 256``.  :class:`bytes` is an immutable version of
+   :class:`bytearray` -- it has the same non-mutating methods and the same
+   indexing and slicing behavior.
+
+   Accordingly, constructor arguments are interpreted as for :func:`bytearray`.
+
+   Bytes objects can also be created with literals, see :ref:`strings`.
+
+   See also :ref:`binaryseq`, :ref:`typebytes`, and :ref:`bytes-methods`.
+
+
 str-int conversion functions
 ----------------------------
 
@@ -608,25 +657,85 @@ str-int conversion functions
       8224
 
 
-Miscellaneous functions
------------------------
+Class utilities
+---------------
 
-.. function:: locals()
+.. class:: object()
 
-   Update and return a dictionary representing the current local symbol table.
-   Free variables are returned by :func:`locals` when it is called in function
-   blocks, but not in class blocks.
+   Return a new featureless object.  :class:`object` is a base for all classes.
+   It has the methods that are common to all instances of Python classes.
+   This function does not accept any arguments.
+
+   .. code-block:: python
+
+      >>> help(object)
+      Help on class object in module __builtin__:
+      
+      class object
+       |  The most base type
 
    .. note::
-      The contents of this dictionary should not be modified; changes may not
-      affect the values of local and free variables used by the interpreter.
+
+      :class:`object` does *not* have a :attr:`~object.__dict__`, so you can't
+      assign arbitrary attributes to an instance of the :class:`object` class.
 
 
-.. function:: globals()
+.. function:: super([type[, object-or-type]])
 
-   Return a dictionary representing the current global symbol table. This is always
-   the dictionary of the current module (inside a function or method, this is the
-   module where it is defined, not the module from which it is called).
+   Return a proxy object that delegates method calls to a parent or sibling
+   class of *type*.  This is useful for accessing inherited methods that have
+   been overridden in a class. The search order is same as that used by
+   :func:`getattr` except that the *type* itself is skipped.
+
+   The :attr:`~class.__mro__` attribute of the *type* lists the method
+   resolution search order used by both :func:`getattr` and :func:`super`.  The
+   attribute is dynamic and can change whenever the inheritance hierarchy is
+   updated.
+
+   If the second argument is omitted, the super object returned is unbound.  If
+   the second argument is an object, ``isinstance(obj, type)`` must be true.  If
+   the second argument is a type, ``issubclass(type2, type)`` must be true (this
+   is useful for classmethods).
+
+   There are two typical use cases for *super*.  In a class hierarchy with
+   single inheritance, *super* can be used to refer to parent classes without
+   naming them explicitly, thus making the code more maintainable.  This use
+   closely parallels the use of *super* in other programming languages.
+
+   The second use case is to support cooperative multiple inheritance in a
+   dynamic execution environment.  This use case is unique to Python and is
+   not found in statically compiled languages or languages that only support
+   single inheritance.  This makes it possible to implement "diamond diagrams"
+   where multiple base classes implement the same method.  Good design dictates
+   that this method have the same calling signature in every case (because the
+   order of calls is determined at runtime, because that order adapts
+   to changes in the class hierarchy, and because that order can include
+   sibling classes that are unknown prior to runtime).
+
+   For both use cases, a typical superclass call looks like this::
+
+      class C(B):
+          def method(self, arg):
+              super().method(arg)    # This does the same thing as:
+                                     # super(C, self).method(arg)
+
+   Note that :func:`super` is implemented as part of the binding process for
+   explicit dotted attribute lookups such as ``super().__getitem__(name)``.
+   It does so by implementing its own :meth:`__getattribute__` method for searching
+   classes in a predictable order that supports cooperative multiple inheritance.
+   Accordingly, :func:`super` is undefined for implicit lookups using statements or
+   operators such as ``super()[name]``.
+
+   Also note that, aside from the zero argument form, :func:`super` is not
+   limited to use inside methods.  The two argument form specifies the
+   arguments exactly and makes the appropriate references.  The zero
+   argument form only works inside a class definition, as the compiler fills
+   in the necessary details to correctly retrieve the class being defined,
+   as well as accessing the current instance for ordinary methods.
+
+   For practical suggestions on how to design cooperative classes using
+   :func:`super`, see `guide to using super()
+   <https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_.
 
 
 .. class:: type(object)
@@ -697,12 +806,33 @@ Miscellaneous functions
    object allows it.  For example, ``setattr(x, 'foobar', 123)`` is equivalent to
    ``x.foobar = 123``.
 
-   
+
 .. function:: delattr(object, name)
 
    This is a relative of ``setattr()``. The arguments are an object and a string. 
    The string must be the name of one of the object’s attributes. The function deletes the named attribute, provided the object allows it. 
    For example, delattr(x, 'foobar') is equivalent to del x.foobar.
+
+
+Miscellaneous utilities
+-----------------------
+
+.. function:: locals()
+
+   Update and return a dictionary representing the current local symbol table.
+   Free variables are returned by :func:`locals` when it is called in function
+   blocks, but not in class blocks.
+
+   .. note::
+      The contents of this dictionary should not be modified; changes may not
+      affect the values of local and free variables used by the interpreter.
+
+
+.. function:: globals()
+
+   Return a dictionary representing the current global symbol table. This is always
+   the dictionary of the current module (inside a function or method, this is the
+   module where it is defined, not the module from which it is called).
 
 
 .. function:: map(function, iterable, ...)
@@ -777,3 +907,17 @@ Miscellaneous functions
    of the type of the object together with additional information often
    including the name and address of the object.  A class can control what this
    function returns for its instances by defining a :meth:`__repr__` method.
+
+
+.. function:: breakpoint(*args, **kws)
+
+   This function drops you into the debugger at the call site.  Specifically,
+   it calls :func:`sys.breakpointhook`, passing ``args`` and ``kws`` straight
+   through.  By default, ``sys.breakpointhook()`` calls
+   :func:`pdb.set_trace()` expecting no arguments.  In this case, it is
+   purely a convenience function so you don't have to explicitly import
+   :mod:`pdb` or type as much code to enter the debugger.  However,
+   :func:`sys.breakpointhook` can be set to some other function and
+   :func:`breakpoint` will automatically call that, allowing you to drop into
+   the debugger of choice.
+
