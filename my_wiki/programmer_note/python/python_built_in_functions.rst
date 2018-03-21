@@ -703,6 +703,58 @@ str-int conversion functions
       8224
 
 
+File Utilities
+--------------
+
+.. class:: file(name[, mode[, buffering]])
+
+   Constructor function for the file type, described further in section File Objects. 
+   The constructor’s arguments are the same as those of the :func:`open` built-in function described below.
+
+   When opening a file, it’s preferable to use :func:`open` instead of invoking this constructor directly. 
+   file is more suited to type testing (for example, writing ``isinstance(f, file)``).
+
+   .. versionadded::
+      2.2
+
+
+.. function:: open(name[, mode[, buffering]])
+
+   Open a file, returning an object of the file type described in section File Objects.
+   If the file cannot be opened, :exc:`IOError` is raised. When opening a file,
+   it’s preferable to use :func:`open` instead of invoking the file constructor directly.
+
+   The first two arguments are the same as for stdio’s ``fopen()``:
+   *name* is the file name to be opened, and *mode* is a string indicating how the file is to be opened.
+
+
+      ===========  =================================================================
+      Character    Meaning                                                          
+      ===========  =================================================================
+      ``'r'``      open for reading (default)                                       
+      ``'w'``      open for writing, truncating the file first                      
+      ``'x'``      open for exclusive creation, failing if the file already exists  
+      ``'a'``      open for writing, appending to the end of the file if it exists  
+      ``'b'``      binary mode                                                      
+      ``'t'``      text mode (default)                                              
+      ``'+'``      open a disk file for updating (reading and writing)              
+      ===========  =================================================================
+
+   The optional *buffering* argument specifies the file’s desired buffer size:
+
+      =======  ======================
+      Value    Meaning               
+      =======  ======================
+      <0       system default        
+      0        unbuffered            
+      1        line buffered         
+      >1       buffer size in bytes  
+      =======  ======================
+
+   If omitted, the system default is used, which is usually line buffered for tty devices 
+   and fully buffered for other files. 
+
+
 Class utilities
 ---------------
 
@@ -933,6 +985,66 @@ Class utilities
 Miscellaneous utilities
 -----------------------
 
+.. function:: input([prompt])
+
+   Equivalent to ``eval(raw_input(prompt))``.
+
+   This function does not catch user errors. If the input is not syntactically valid, a :exc:`SyntaxError` will be raised. 
+   Other exceptions may be raised if there is an error during evaluation.
+
+   If the :mod:`readline` module was loaded, then :func:`input` will use it to provide elaborate line editing and history features.
+
+   Consider using the :func:`raw_input` function for general input from users.
+
+
+.. function:: raw_input([prompt])
+
+   If the prompt argument is present, it is written to standard output without a trailing newline.
+   The function then reads a line from input, converts it to a string (stripping a trailing newline),
+   and returns that. When ``EOF`` is read, :exc:`EOFError` is raised. Example::
+
+      >>> input("-->")
+      -->nihao
+      Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+        File "<string>", line 1, in <module>
+      NameError: name 'nihao' is not defined
+      >>> s = input("-->")
+      -->"ni hao"
+      >>> s
+      'ni hao'
+      >>> s = raw_input("-->")
+      -->Hello world
+      >>> s
+      'Hello world'
+
+
+.. function:: id(object)
+
+   Return the "identity" of an object.  This is an integer which
+   is guaranteed to be unique and constant for this object during its lifetime.
+   Two objects with non-overlapping lifetimes may have the same :func:`id`
+   value.
+
+   .. note::
+
+      This is the address of the object in memory.
+
+
+.. function:: hash(object)
+
+   Return the hash value of the object (if it has one).  Hash values are
+   integers.  They are used to quickly compare dictionary keys during a
+   dictionary lookup.  Numeric values that compare equal have the same hash
+   value (even if they are of different types, as is the case for 1 and 1.0).
+
+  .. note::
+
+    For objects with custom :meth:`__hash__` methods, note that :func:`hash`
+    truncates the return value based on the bit width of the host machine.
+    See :meth:`__hash__` for details.
+
+
 .. function:: locals()
 
    Update and return a dictionary representing the current local symbol table.
@@ -951,6 +1063,21 @@ Miscellaneous utilities
    module where it is defined, not the module from which it is called).
 
 
+.. function:: vars([object])
+
+   Return the :attr:`~object.__dict__` attribute for a module, class, instance,
+   or any other object with a :attr:`~object.__dict__` attribute.
+
+   Objects such as modules and instances have an updateable :attr:`~object.__dict__`
+   attribute; however, other objects may have write restrictions on their
+   :attr:`~object.__dict__` attributes (for example, classes use a
+   :class:`types.MappingProxyType` to prevent direct dictionary updates).
+
+   Without an argument, :func:`vars` acts like :func:`locals`.  Note, the
+   locals dictionary is only useful for reads since updates to the locals
+   dictionary are ignored.
+
+
 .. function:: map(function, iterable, ...)
 
    Return an iterator that applies *function* to every item of *iterable*,
@@ -958,7 +1085,42 @@ Miscellaneous utilities
    *function* must take that many arguments and is applied to the items from all
    iterables in parallel.  With multiple iterables, the iterator stops when the
    shortest iterable is exhausted.  For cases where the function inputs are
-   already arranged into argument tuples, see :func:`itertools.starmap`\.
+   already arranged into argument tuples, see :func:`itertools.starmap`.
+
+.. function:: reduce(function, iterable[, initializer])
+
+   Apply function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
+   For example, ``reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])`` calculates ``((((1+2)+3)+4)+5)``.
+   The left argument *x*, is the accumulated value and the right argument *y*, is the update value from the iterable.
+   If the optional *initializer* is present, it is placed before the items of the iterable in the calculation,
+   and serves as a default when the iterable is empty. If *initializer* is not given and iterable contains only one item,
+   the first item is returned. Roughly equivalent to::
+
+      def reduce(function, iterable, initializer=None):
+         it = iter(iterable)
+         if initializer is None:
+            initializer = next(it)
+         except StopIteration:
+            raise TypeError('reduce() of empty sequence with no initial value')
+         result = initializer
+         for x in it:
+            result = function(result, x)
+         return result
+
+   for example::
+
+      >>> reduce(lambda:0, [])
+      Traceback (most recent call last):
+        File "<stdin>", line 1, in <module>
+      TypeError: reduce() of empty sequence with no initial value
+      >>> nums
+      [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      >>> reduce(lambda x,y:x+y, nums)
+      45
+      >>> reduce(lambda x,y:x+y, nums, 10)
+      55
+      >>> sum(nums, 10)
+      55
 
 
 .. function:: zip([iterable, ...])
@@ -1139,3 +1301,157 @@ Miscellaneous utilities
    .. versionchanged:: 3.5
       Previously, :exc:`TypeError` was raised when null bytes were encountered
       in *source*.
+
+
+.. _func-memoryview:
+.. function:: memoryview(obj)
+   :noindex:
+
+   Return a "memory view" object created from the given argument.  See
+   :ref:`typememoryview` for more information.
+
+
+.. class:: property(fget=None, fset=None, fdel=None, doc=None)
+
+   Return a property attribute.
+
+   *fget* is a function for getting an attribute value.  *fset* is a function
+   for setting an attribute value. *fdel* is a function for deleting an attribute
+   value.  And *doc* creates a docstring for the attribute.
+
+   A typical use is to define a managed attribute ``x``::
+
+      class C:
+          def __init__(self):
+              self._x = None
+
+          def getx(self):
+              return self._x
+
+          def setx(self, value):
+              self._x = value
+
+          def delx(self):
+              del self._x
+
+          x = property(getx, setx, delx, "I'm the 'x' property.")
+
+   If *c* is an instance of *C*, ``c.x`` will invoke the getter,
+   ``c.x = value`` will invoke the setter and ``del c.x`` the deleter.
+
+   If given, *doc* will be the docstring of the property attribute. Otherwise, the
+   property will copy *fget*'s docstring (if it exists).  This makes it possible to
+   create read-only properties easily using :func:`property` as a :term:`decorator`::
+
+      class Parrot:
+          def __init__(self):
+              self._voltage = 100000
+
+          @property
+          def voltage(self):
+              """Get the current voltage."""
+              return self._voltage
+
+   The ``@property`` decorator turns the :meth:`voltage` method into a "getter"
+   for a read-only attribute with the same name, and it sets the docstring for
+   *voltage* to "Get the current voltage."
+
+   A property object has :attr:`~property.getter`, :attr:`~property.setter`,
+   and :attr:`~property.deleter` methods usable as decorators that create a
+   copy of the property with the corresponding accessor function set to the
+   decorated function.  This is best explained with an example::
+
+      class C:
+          def __init__(self):
+              self._x = None
+
+          @property
+          def x(self):
+              """I'm the 'x' property."""
+              return self._x
+
+          @x.setter
+          def x(self, value):
+              self._x = value
+
+          @x.deleter
+          def x(self):
+              del self._x
+
+   This code is exactly equivalent to the first example.  Be sure to give the
+   additional functions the same name as the original property (``x`` in this
+   case.)
+
+   The returned property object also has the attributes ``fget``, ``fset``, and
+   ``fdel`` corresponding to the constructor arguments.
+
+   .. versionchanged:: 3.5
+      The docstrings of property objects are now writeable.
+
+
+.. function:: __import__(name, globals=None, locals=None, fromlist=(), level=0)
+
+   .. index::
+      statement: import
+      module: imp
+
+   .. note::
+
+      This is an advanced function that is not needed in everyday Python
+      programming, unlike :func:`importlib.import_module`.
+
+   This function is invoked by the :keyword:`import` statement.  It can be
+   replaced (by importing the :mod:`builtins` module and assigning to
+   ``builtins.__import__``) in order to change semantics of the
+   :keyword:`import` statement, but doing so is **strongly** discouraged as it
+   is usually simpler to use import hooks (see :pep:`302`) to attain the same
+   goals and does not cause issues with code which assumes the default import
+   implementation is in use.  Direct use of :func:`__import__` is also
+   discouraged in favor of :func:`importlib.import_module`.
+
+   The function imports the module *name*, potentially using the given *globals*
+   and *locals* to determine how to interpret the name in a package context.
+   The *fromlist* gives the names of objects or submodules that should be
+   imported from the module given by *name*.  The standard implementation does
+   not use its *locals* argument at all, and uses its *globals* only to
+   determine the package context of the :keyword:`import` statement.
+
+   *level* specifies whether to use absolute or relative imports. ``0`` (the
+   default) means only perform absolute imports.  Positive values for
+   *level* indicate the number of parent directories to search relative to the
+   directory of the module calling :func:`__import__` (see :pep:`328` for the
+   details).
+
+   When the *name* variable is of the form ``package.module``, normally, the
+   top-level package (the name up till the first dot) is returned, *not* the
+   module named by *name*. However, when a non-empty *fromlist* argument is
+   given, the module named by *name* is returned.
+
+   For example, the statement ``import spam`` results in bytecode resembling the
+   following code::
+
+      spam = __import__('spam', globals(), locals(), [], 0)
+
+   The statement ``import spam.ham`` results in this call::
+
+      spam = __import__('spam.ham', globals(), locals(), [], 0)
+
+   Note how :func:`__import__` returns the toplevel module here because this is
+   the object that is bound to a name by the :keyword:`import` statement.
+
+   On the other hand, the statement ``from spam.ham import eggs, sausage as
+   saus`` results in ::
+
+      _temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], 0)
+      eggs = _temp.eggs
+      saus = _temp.sausage
+
+   Here, the ``spam.ham`` module is returned from :func:`__import__`.  From this
+   object, the names to import are retrieved and assigned to their respective names.
+
+   If you simply want to import a module (potentially within a package) by name,
+   use :func:`importlib.import_module`.
+
+   .. versionchanged:: 3.3
+      Negative values for *level* are no longer supported (which also changes
+      the default value to 0).

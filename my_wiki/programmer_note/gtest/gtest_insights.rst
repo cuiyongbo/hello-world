@@ -14,16 +14,14 @@ Google Test Insights
      //
      // Google Test will call Foo::SetUpTestCase() before running the first
      // test in test case Foo.  Hence a sub-class can define its own
-     // SetUpTestCase() method to shadow the one defined in the super
-     // class.
+     // SetUpTestCase() method to shadow the one defined in the super class.
      static void SetUpTestCase() {}
    
      // Tears down the stuff shared by all tests in this test case.
      //
      // Google Test will call Foo::TearDownTestCase() after running the last
      // test in test case Foo.  Hence a sub-class can define its own
-     // TearDownTestCase() method to shadow the one defined in the super
-     // class.
+     // TearDownTestCase() method to shadow the one defined in the super class.
      static void TearDownTestCase() {}
    
      // ...
