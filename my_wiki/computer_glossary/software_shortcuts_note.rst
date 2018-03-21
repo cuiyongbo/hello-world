@@ -229,3 +229,6 @@ Sublime-rst-completion
 #. adjust header level, ctrl + + (plus key) and ctrl + - (minus key) (alt + + and alt + -, in Mac)
 #. render preview, ctrl + shift + r
 #. simple table,  ctrl+t, s (Linux or Windows) or super+shift+t, s (Mac)
+#. Folding/unfolding, shift + TAB (alt + TAB in Mac)
+#. Navigation, alt+down and alt+up move the cursor position to the closer next or previous header respectively.
+   alt+shift+down and alt+shift+up to the same, but only between headers with the same or higher level
