@@ -171,7 +171,7 @@ Container functions
 
 
 Iterator functions
----------------------------
+------------------
 
 .. function:: iter(object[, sentinel])
 
@@ -814,6 +814,76 @@ Class utilities
    For example, delattr(x, 'foobar') is equivalent to del x.foobar.
 
 
+.. function:: callable(object)
+
+   Return :const:`True` if the *object* argument appears callable,
+   :const:`False` if not.  If this returns true, it is still possible that a
+   call fails, but if it is false, calling *object* will never succeed.
+   Note that classes are callable (calling a class returns a new instance);
+   instances are callable if their class has a :meth:`__call__` method.
+
+
+.. decorator:: classmethod
+
+   Transform a method into a class method.
+
+   A class method receives the class as implicit first argument, just like an
+   instance method receives the instance. To declare a class method, use this
+   idiom::
+
+      class C:
+          @classmethod
+          def f(cls, arg1, arg2, ...): ...
+
+   The ``@classmethod`` form is a function :term:`decorator` -- see the description
+   of function definitions in :ref:`function` for details.
+
+   It can be called either on the class (such as ``C.f()``) or on an instance (such
+   as ``C().f()``).  The instance is ignored except for its class. If a class
+   method is called for a derived class, the derived class object is passed as the
+   implied first argument.
+
+   Class methods are different than C++ or Java static methods. If you want those,
+   see :func:`staticmethod` in this section.
+
+   For more information on class methods, consult the documentation on the standard
+   type hierarchy in :ref:`types`.
+
+
+.. decorator:: staticmethod
+
+   Transform a method into a static method.
+
+   A static method does not receive an implicit first argument. To declare a static
+   method, use this idiom::
+
+      class C:
+          @staticmethod
+          def f(arg1, arg2, ...): ...
+
+   The ``@staticmethod`` form is a function :term:`decorator` -- see the
+   description of function definitions in :ref:`function` for details.
+
+   It can be called either on the class (such as ``C.f()``) or on an instance (such
+   as ``C().f()``).  The instance is ignored except for its class.
+
+   Static methods in Python are similar to those found in Java or C++. Also see
+   :func:`classmethod` for a variant that is useful for creating alternate class
+   constructors.
+
+   Like all decorators, it is also possible to call ``staticmethod`` as
+   a regular function and do something with its result.  This is needed
+   in some cases where you need a reference to a function from a class
+   body and you want to avoid the automatic transformation to instance
+   method.  For these cases, use this idiom::
+
+      class C:
+          builtin_open = staticmethod(open)
+
+   For more information on static methods, consult the documentation on the
+   standard type hierarchy in :ref:`types`.
+
+
 Miscellaneous utilities
 -----------------------
 
@@ -921,3 +991,62 @@ Miscellaneous utilities
    :func:`breakpoint` will automatically call that, allowing you to drop into
    the debugger of choice.
 
+
+.. function:: compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)
+
+   Compile the *source* into a code or AST object.  Code objects can be executed
+   by :func:`exec` or :func:`eval`.  *source* can either be a normal string, a
+   byte string, or an AST object.  Refer to the :mod:`ast` module documentation
+   for information on how to work with AST objects.
+
+   The *filename* argument should give the file from which the code was read;
+   pass some recognizable value if it wasn't read from a file (``'<string>'`` is
+   commonly used).
+
+   The *mode* argument specifies what kind of code must be compiled; it can be
+   ``'exec'`` if *source* consists of a sequence of statements, ``'eval'`` if it
+   consists of a single expression, or ``'single'`` if it consists of a single
+   interactive statement (in the latter case, expression statements that
+   evaluate to something other than ``None`` will be printed).
+
+   The optional arguments *flags* and *dont_inherit* control which future
+   statements (see :pep:`236`) affect the compilation of *source*.  If neither
+   is present (or both are zero) the code is compiled with those future
+   statements that are in effect in the code that is calling :func:`compile`.  If the
+   *flags* argument is given and *dont_inherit* is not (or is zero) then the
+   future statements specified by the *flags* argument are used in addition to
+   those that would be used anyway. If *dont_inherit* is a non-zero integer then
+   the *flags* argument is it -- the future statements in effect around the call
+   to compile are ignored.
+
+   Future statements are specified by bits which can be bitwise ORed together to
+   specify multiple statements.  The bitfield required to specify a given feature
+   can be found as the :attr:`~__future__._Feature.compiler_flag` attribute on
+   the :class:`~__future__._Feature` instance in the :mod:`__future__` module.
+
+   The argument *optimize* specifies the optimization level of the compiler; the
+   default value of ``-1`` selects the optimization level of the interpreter as
+   given by :option:`-O` options.  Explicit levels are ``0`` (no optimization;
+   ``__debug__`` is true), ``1`` (asserts are removed, ``__debug__`` is false)
+   or ``2`` (docstrings are removed too).
+
+   This function raises :exc:`SyntaxError` if the compiled source is invalid,
+   and :exc:`ValueError` if the source contains null bytes.
+
+   If you want to parse Python code into its AST representation, see
+   :func:`ast.parse`.
+
+   .. note::
+
+      When compiling a string with multi-line code in ``'single'`` or
+      ``'eval'`` mode, input must be terminated by at least one newline
+      character.  This is to facilitate detection of incomplete and complete
+      statements in the :mod:`code` module.
+
+   .. versionchanged:: 3.2
+      Allowed use of Windows and Mac newlines.  Also input in ``'exec'`` mode
+      does not have to end in a newline anymore.  Added the *optimize* parameter.
+
+   .. versionchanged:: 3.5
+      Previously, :exc:`TypeError` was raised when null bytes were encountered
+      in *source*.
