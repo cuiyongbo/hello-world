@@ -3,24 +3,25 @@ Built-in Functions
 
 Python interpreter has many functions built into it that are always available, They are listed in alphabatical order.
 
-=====================  ===================  ====================  ====================  ======================
-..                     ..                   Built-in Functions    ..                    ..                    
-=====================  ===================  ====================  ====================  ======================
-:func:`abs`            :func:`delattr`      :func:`hash`          |func-memoryview|_    |func-set|_           
-:func:`all`            |func-dict|_         :func:`help`          :func:`min`           :func:`setattr`       
-:func:`any`            :func:`dir`          :func:`hex`           :func:`next`          :func:`slice`         
-:func:`ascii`          :func:`divmod`       :func:`id`            :func:`object`        :func:`sorted`        
-:func:`bin`            :func:`enumerate`    :func:`input`         :func:`oct`           :func:`staticmethod`  
-:func:`bool`           :func:`eval`         :func:`int`           :func:`open`          |func-str|_           
-:func:`breakpoint`     :func:`exec`         :func:`isinstance`    :func:`ord`           :func:`sum`           
-|func-bytearray|_      :func:`filter`       :func:`issubclass`    :func:`pow`           :func:`super`         
-|func-bytes|_          :func:`float`        :func:`iter`          :func:`print`         |func-tuple|_         
-:func:`callable`       :func:`format`       :func:`len`           :func:`property`      :func:`type`          
-:func:`chr`            |func-frozenset|_    |func-list|_          |func-range|_         :func:`vars`          
-:func:`classmethod`    :func:`getattr`      :func:`locals`        :func:`repr`          :func:`xrange`        
-:func:`compile`        :func:`globals`      :func:`map`           :func:`reversed`      :func:`zip`           
-:func:`complex`        :func:`hasattr`      :func:`max`           :func:`round`         :func:`__import__`    
-=====================  ===================  ====================  ====================  ======================
+=====================  ===================  ====================  ==================  ======================
+..                     ..                   Built-in Functions    ..                  ..                    
+=====================  ===================  ====================  ==================  ======================
+:func:`abs`            |func-dict|_         :func:`help`          :func:`next`        :func:`slice`         
+:func:`all`            :func:`dir`          :func:`hex`           :func:`object`      :func:`sorted`        
+:func:`any`            :func:`divmod`       :func:`id`            :func:`oct`         :func:`staticmethod`  
+:func:`ascii`          :func:`enumerate`    :func:`input`         :func:`open`        |func-str|_           
+:func:`bin`            :func:`eval`         :func:`int`           :func:`ord`         :func:`sum`           
+:func:`bool`           :func:`exec`         :func:`isinstance`    :func:`pow`         :func:`super`         
+:func:`breakpoint`     :func:`file`         :func:`issubclass`    :func:`print`       |func-tuple|_         
+|func-bytearray|_      :func:`filter`       :func:`iter`          :func:`property`    :func:`type`          
+|func-bytes|_          :func:`float`        :func:`len`           |func-range|_       :func:`vars`          
+:func:`callable`       :func:`format`       |func-list|_          :func:`reload`      :func:`xrange`        
+:func:`chr`            |func-frozenset|_    :func:`locals`        :func:`repr`        :func:`zip`           
+:func:`classmethod`    :func:`getattr`      :func:`map`           :func:`reversed`    :func:`__import__`    
+:func:`compile`        :func:`globals`      :func:`max`           :func:`round`     
+:func:`complex`        :func:`hasattr`      |func-memoryview|_    |func-set|_       
+:func:`delattr`        :func:`hash`         :func:`min`           :func:`setattr`   
+=====================  ===================  ====================  ==================  ======================
 
 
 .. using :func:`dict` would create a link to another page, so local targets are used, with replacement texts to make the output in the table consistent
