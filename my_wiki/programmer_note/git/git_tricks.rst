@@ -75,27 +75,17 @@ Rename a remote branch
    git push --set-upstream origin test # reset the upstream branch for the new branch
 
 
-Commit with amendment
----------------------
-
-.. code-block:: sh
-
-   git commit --amend -m" test amendment"
-
-
 Commit skip add
 ---------------
 
 by using the ``-a`` switch with the commit command to automatically "add" changes from
 all known files (i.e. all files that are already listed in the index) and
 to automatically "rm" files in the index that have been removed from the working tree,
-and then perform the actual commit. for example::
+and then perform the actual commit. 
+
+.. code-block:: sh
 
    $ git commit -a -m "added git commit: -a, --amend options"
-   [master 6cbd05f] added git commit: -a, --amend options
-    4 files changed, 30 insertions(+), 8 deletions(-)
-   
-   cuiyb@cuiyb MINGW64 /c/VS-Demo/hello-world/my_wiki (master)
    $ git status
    On branch master
    Your branch is ahead of 'origin/master' by 1 commit.
@@ -106,3 +96,30 @@ and then perform the actual commit. for example::
            programmer_note/number_tricks.rst # untracking files still unstaged, thus, uncommitted. 
    
    nothing added to commit but untracked files present (use "git add" to track)
+
+
+Commit with amendment
+---------------------
+
+.. code-block:: sh
+
+   $ git log -2 --oneline
+   8b8ce2f added number tricks
+   6cbd05f added git commit: -a, --amend options
+   
+   $ git commit -a --amend -m"added number tricks"
+
+   $ git log -2 --oneline
+   edb911d added number tricks # note that the commit ID has changed
+   6cbd05f added git commit: -a, --amend options
+
+   $ git log -2 --oneline
+   8710e3c implemented git commit --amend
+   edb911d added number tricks
+   
+   $ git commit -a --amend -m"implemented git commit --amend, and fix"
+   
+   $ git log -2 --oneline
+   2ee7aee implemented git commit --amend, and fix
+   edb911d added number tricks
+
