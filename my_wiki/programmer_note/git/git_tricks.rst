@@ -101,25 +101,62 @@ and then perform the actual commit.
 Commit with amendment
 ---------------------
 
-.. code-block:: sh
-
-   $ git log -2 --oneline
-   8b8ce2f added number tricks
-   6cbd05f added git commit: -a, --amend options
+   .. code-block:: sh
    
-   $ git commit -a --amend -m"added number tricks"
-
-   $ git log -2 --oneline
-   edb911d added number tricks # note that the commit ID has changed
-   6cbd05f added git commit: -a, --amend options
-
-   $ git log -2 --oneline
-   8710e3c implemented git commit --amend
-   edb911d added number tricks
+      $ git log -2 --oneline
+      8b8ce2f added number tricks
+      6cbd05f added git commit: -a, --amend options
+      
+      $ git commit -a --amend
    
-   $ git commit -a --amend -m"implemented git commit --amend, and fix"
+      $ git log -2 --oneline
+      edb911d added number tricks # note that the commit ID has changed
+      6cbd05f added git commit: -a, --amend options
    
-   $ git log -2 --oneline
-   2ee7aee implemented git commit --amend, and fix
-   edb911d added number tricks
+      $ git log -2 --oneline
+      8710e3c implemented git commit --amend
+      edb911d added number tricks
+      
+      $ git commit -a --amend -m"implemented git commit --amend, and fix"
+      
+      $ git log -2 --oneline
+      2ee7aee implemented git commit --amend, and fix
+      edb911d added number tricks
 
+   .. note::
+
+      Important: If you've already pushed commits to remote server, and then squash them locally,
+      you will have to force the push to your branch.
+
+      .. code-block:: sh
+
+         $ git push origin branch-name --force
+
+
+Stash current changes
+---------------------
+
+   .. code-block:: sh
+   
+      $ git stash help
+      usage: git stash list [<options>]
+         or: git stash show [<stash>]
+         or: git stash drop [-q|--quiet] [<stash>]
+         or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+         or: git stash branch <branchname> [<stash>]
+         or: git stash [save [--patch] [-k|--[no-]keep-index] [-q|--quiet]
+                             [-u|--include-untracked] [-a|--all] [<message>]]
+         or: git stash clear
+      
+      
+      $ git stash save -- combine_commits
+      Saved working directory and index state On test: combine_commits
+      HEAD is now at cd1e124 commit another 3 commits
+      
+      $ git stash list
+      stash@{0}: On test: combine_commits
+      
+      $ git stash drop stash@{0} # delete a stash
+      Dropped stash@{0} (243d8bf957027713d5bc89be8b66c214e9e7abf9)
+      
+      $ git stash pop # restore changes
