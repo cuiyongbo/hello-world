@@ -4,98 +4,98 @@ Git Tricks
 Find the information about branchs
 ----------------------------------
 
-.. code-block:: sh
-
-   git branch # show local branches
-     master
-   * test # current branch
-   git branch -r # show remote branches
-     origin/HEAD -> origin/master # where current local branch points to 
-     origin/master
-     origin/test
-   git branch -a # both local and remote branch
-   * master
-     remotes/origin/HEAD -> origin/master
-     remotes/origin/master
-   git branch -v
-     master b351f2e [ahead 1] Added git to delete a remote branch
-   * test   40eebf1 Reviewed git note
-   git branch -vv
-     master b351f2e [origin/master: ahead 1] Added git to delete a remote branch
-   * test   40eebf1 [origin/test] Reviewed git note
+   .. code-block:: sh
    
+      git branch # show local branches
+        master
+      * test # current branch
+      git branch -r # show remote branches
+        origin/HEAD -> origin/master # where current local branch points to 
+        origin/master
+        origin/test
+      git branch -a # both local and remote branch
+      * master
+        remotes/origin/HEAD -> origin/master
+        remotes/origin/master
+      git branch -v
+        master b351f2e [ahead 1] Added git to delete a remote branch
+      * test   40eebf1 Reviewed git note
+      git branch -vv
+        master b351f2e [origin/master: ahead 1] Added git to delete a remote branch
+      * test   40eebf1 [origin/test] Reviewed git note
+      
 
 Rename a local branch
 ---------------------
 
-If you want to rename a branch while pointed to any branch, do:
-
-.. code-block:: sh
-
-   git branch -m <oldname> <newname>
-
-If you want to rename the current branch, you can do:
-
-.. code-block:: sh
-
-   git branch -m <newname>
-
-A way to remember this, is ``-m`` is for "move" (or mv), which is how you rename files.
+   If you want to rename a branch while pointed to any branch, do:
+   
+   .. code-block:: sh
+   
+      git branch -m <oldname> <newname>
+   
+   If you want to rename the current branch, you can do:
+   
+   .. code-block:: sh
+   
+      git branch -m <newname>
+   
+   A way to remember this, is ``-m`` is for "move" (or mv), which is how you rename files.
 
 
 Delete a local branch
 ---------------------
 
-.. code-block:: sh
-
-   git branch -D <branch_name>
+   .. code-block:: sh
+   
+      git branch -D <branch_name>
 
 
 Delete a remote branch
 ----------------------
 
-.. code-block:: sh
-
-   git push <remote_name> :<branch_name>
-
-.. note::
-
-   Mostly the <remote_name> is ``origin``. no need to switch to remote_name/branch_name
+   .. code-block:: sh
+   
+      git push <remote_name> :<branch_name>
+   
+   .. note::
+   
+      Mostly the <remote_name> is ``origin``. no need to switch to remote_name/branch_name
 
 
 Rename a remote branch
 ----------------------
 
-.. code-block:: sh
-
-   git checkout -b test1 # swith to a test branch, create test branch if it doesn't exist
-   git push --set-upstream origin test1 # push the current branch and set the remote as upstream
-   git branch -m test # rename branch name to the desired one
-   git push origin :test1 test # delete the old-name remote branch and push the new-name local branch
-   git push --set-upstream origin test # reset the upstream branch for the new branch
+   .. code-block:: sh
+   
+      git checkout -b test1 # swith to a test branch, create test branch if it doesn't exist
+      git push --set-upstream origin test1 # push the current branch and set the remote as upstream
+      git branch -m test # rename branch name to the desired one
+      git push origin :test1 test # delete the old-name remote branch and push the new-name local branch
+      git push --set-upstream origin test # reset the upstream branch for the new branch
 
 
 Commit skip add
 ---------------
 
-by using the ``-a`` switch with the commit command to automatically "add" changes from
-all known files (i.e. all files that are already listed in the index) and
-to automatically "rm" files in the index that have been removed from the working tree,
-and then perform the actual commit. 
-
-.. code-block:: sh
-
-   $ git commit -a -m "added git commit: -a, --amend options"
-   $ git status
-   On branch master
-   Your branch is ahead of 'origin/master' by 1 commit.
-     (use "git push" to publish your local commits)
-   Untracked files:
-     (use "git add <file>..." to include in what will be committed)
+   By using the ``-a`` switch with the commit command to automatically "add" changes from
+   all known files (i.e. all files that are already listed in the index) and
+   to automatically "rm" files in the index that have been removed from the working tree,
+   and then perform the actual commit. 
    
-           programmer_note/number_tricks.rst # untracking files still unstaged, thus, uncommitted. 
+   .. code-block:: sh
    
-   nothing added to commit but untracked files present (use "git add" to track)
+      $ git commit -a -m "added git commit: -a, --amend options"
+      $ git status
+      On branch master
+      Your branch is ahead of 'origin/master' by 1 commit.
+        (use "git push" to publish your local commits)
+      Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+      
+              programmer_note/number_tricks.rst # untracking files still unstaged, thus, uncommitted. 
+      
+      nothing added to commit but untracked files present (use "git add" to track)
 
 
 Commit with amendment
@@ -137,6 +137,7 @@ Stash current changes
 ---------------------
 
    .. code-block:: sh
+      :caption: git stash usage 
    
       $ git stash help
       usage: git stash list [<options>]
@@ -148,7 +149,8 @@ Stash current changes
                              [-u|--include-untracked] [-a|--all] [<message>]]
          or: git stash clear
       
-      
+   .. code-block:: sh
+
       $ git stash save -- combine_commits
       Saved working directory and index state On test: combine_commits
       HEAD is now at cd1e124 commit another 3 commits
@@ -160,3 +162,131 @@ Stash current changes
       Dropped stash@{0} (243d8bf957027713d5bc89be8b66c214e9e7abf9)
       
       $ git stash pop # restore changes
+
+
+Combine several commits into one
+--------------------------------
+
+
+#. combine last 2 commits
+
+   .. code-block:: sh
+  
+      $ git log -5 --oneline
+      7d00a71 deleted python_indention_error.PNG
+      b589a16 Added boolean functions
+      d404925 Added iterator functions
+      55d5b05 added help and dir
+      a89a0e3 added int, long, float, complex
+      
+      $ git reset --soft HEAD^
+      
+      $ git commit -a --amend
+      
+      cuiyb@cuiyb MINGW64 /c/VS-Demo/hello-world/my_wiki (test)
+      $ git log --oneline -5
+      ded0055 Added boolean functions
+      d404925 Added iterator functions
+      55d5b05 added help and dir
+      a89a0e3 added int, long, float, complex
+      5fec164 Added type, isinstance
+
+#. combine last n commits
+
+   .. code-block:: sh
+
+      $ git log --oneline -5
+      ded0055 Added boolean functions
+      d404925 Added iterator functions
+      55d5b05 added help and dir
+      a89a0e3 added int, long, float, complex
+      5fec164 Added type, isinstance
+      
+      $ git rebase -i HEAD~4
+      
+      $ git log --oneline -5
+      2bc541a added int, long, float, complex
+      5fec164 Added type, isinstance
+      00e1ffb added chr, ord, unichr, all, any
+      0edff53 Added raillery, habit-forming, off-license
+      ab4b8b8 Added extern c linkage
+   
+   .. code-block:: sh
+      :caption: rebase options
+
+      pick   a89a0e3 added int, long, float, complex     
+      squash 55d5b05 added help and dir
+      squash d404925 Added iterator functions
+      squash ded0055 Added boolean functions
+   
+#. another method to combine last n commits
+
+   .. code-block:: sh
+
+      $ git log --oneline -5
+      2bc541a added int, long, float, complex
+      5fec164 Added type, isinstance
+      00e1ffb added chr, ord, unichr, all, any
+      0edff53 Added raillery, habit-forming, off-license
+      ab4b8b8 Added extern c linkage
+      
+      $ git rebase -i 0edff53
+      
+      $ git log --oneline -5
+      e4afdcd added chr, ord, unichr, all, any
+      0edff53 Added raillery, habit-forming, off-license
+      ab4b8b8 Added extern c linkage
+      90a7dc6 Failed to refrain myself in weekends
+      3639325 added clamp
+
+   .. code-block:: sh
+      :caption: rebase options
+
+      pick   00e1ffb added chr, ord, unichr, all, any
+      squash 5fec164 Added type, isinstance
+      squash 2bc541a added int, long, float, complex
+
+#. more examples
+   
+   .. code-block:: sh
+
+      $ git log --oneline -5
+      e4afdcd added chr, ord, unichr, all, any
+      0edff53 Added raillery, habit-forming, off-license
+      ab4b8b8 Added extern c linkage
+      90a7dc6 Failed to refrain myself in weekends
+      3639325 added clamp
+      
+      $ git rebase -i HEAD~4
+      
+      $ git log --oneline -5
+      8442056 added chr, ord, unichr, all, any
+      eb4ad04 Failed to refrain myself in weekends
+      3639325 added clamp
+      7583d4b added pansy
+      a4ffedb Moved lethargy
+      
+      .. code-block:: sh
+         :caption: rebase option
+      
+         pick   90a7dc6 Failed to refrain myself in weekends
+         squash ab4b8b8 Added extern c linkage
+         squash 0edff53 Added raillery, habit-forming, off-license
+         pick   e4afdcd added chr, ord, unichr, all, any
+
+   .. note::
+   
+      Important: If you've already pushed commits to remote server, 
+      and then squash them locally, you will have to force the push to your branch.
+      
+      .. code-block:: sh
+      
+         $ git push origin branch-name --force
+      
+      Helpful hint: You can always edit your last commit message, 
+      before pushing, by using:
+      
+      .. code-block:: sh
+      
+         $ git commit --amend
+
