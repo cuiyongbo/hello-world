@@ -32,7 +32,7 @@ English Note
 | “A” becomes “an” if and only if the following sound is a vowel.
 | 
 | encyclopedia
-| Definition: An encyclopedia is a book or set of books in which facts about many different subjects or about one particular subject are arranged for reference, | usually in alphabetical order.
+| Definition: An encyclopedia is a book or set of books in which facts about many different subjects or about one particular subject are arranged for reference, usually in alphabetical order.
 | 
 | glossary
 | Definition: A glossary of special, unusual, or technical words or expressions is an alphabatical list of them giving their meanings, for example at the end of | a book on a particular subject.
@@ -2968,4 +2968,7 @@ Police questioned several people about allegations that he had been subjected to
 | Definition: relating to or in the form of words.
 | Usage: verbal abuse.
 |
-
+|light-hearted
+|Synonyms: cheerful; happy
+|Usage: They were lighted and prepared to enjoy life.
+|

@@ -14,11 +14,11 @@ Python interpreter has many functions built into it that are always available, T
 :func:`bool`           :func:`exec`         :func:`isinstance`    :func:`pow`         :func:`super`         
 :func:`breakpoint`     :func:`file`         :func:`issubclass`    :func:`print`       |func-tuple|_         
 |func-bytearray|_      :func:`filter`       :func:`iter`          :func:`property`    :func:`type`          
-|func-bytes|_          :func:`float`        :func:`len`           |func-range|_       :func:`vars`          
-:func:`callable`       :func:`format`       |func-list|_          :func:`reload`      :func:`xrange`        
-:func:`chr`            |func-frozenset|_    :func:`locals`        :func:`repr`        :func:`zip`           
-:func:`classmethod`    :func:`getattr`      :func:`map`           :func:`reversed`    :func:`__import__`    
-:func:`compile`        :func:`globals`      :func:`max`           :func:`round`     
+|func-bytes|_          :func:`float`        :func:`len`           |func-range|_       :func:`unicode`       
+:func:`callable`       :func:`format`       |func-list|_          :func:`reload`      :func:`vars`          
+:func:`chr`            |func-frozenset|_    :func:`locals`        :func:`repr`        :func:`xrange`        
+:func:`classmethod`    :func:`getattr`      :func:`map`           :func:`reversed`    :func:`zip`           
+:func:`compile`        :func:`globals`      :func:`max`           :func:`round`       :func:`__import__`    
 :func:`complex`        :func:`hasattr`      |func-memoryview|_    |func-set|_       
 :func:`delattr`        :func:`hash`         :func:`min`           :func:`setattr`   
 =====================  ===================  ====================  ==================  ======================
@@ -687,6 +687,37 @@ str-int conversion functions
    
       >>> unichr(97)
       u'a'
+
+
+.. class:: unicode(object='')
+.. class:: unicode(object[, encoding[, errors]])
+
+   Return the Unicode string version of object using one of the following modes:
+
+   If *encoding* and/or *errors* are given, :func:`unicode` will decode the object
+   which can either be an 8-bit string or a character buffer using the codec for encoding.
+   The *encoding* parameter is a string giving the name of an encoding;
+   if the encoding is not known, :exc:`LookupError` is raised. Error handling is done according to errors;
+   this specifies the treatment of characters which are invalid in the input encoding.
+   If *errors* is ``'strict'`` (the default), a :exc:`ValueError` is raised on errors,
+   while a value of ``'ignore'`` causes errors to be silently ignored, and a value of ``'replace'``
+   causes the official Unicode replacement character, U+FFFD, to be used to replace input characters which cannot be decoded.
+   See also the :mod:`codecs` module.
+
+   If no optional parameters are given, :func:`unicode` will mimic the behaviour of :func:`str`
+   except that it returns Unicode strings instead of 8-bit strings. More precisely, if object is a :class:`Unicode` string
+   or subclass it will return that :class:`Unicode` string without any additional decoding applied.
+
+   For objects which provide a :meth:`__unicode__()` method, it will call this method
+   without arguments to create a :class:`Unicode` string. For all other objects,
+   the 8-bit string version or representation is requested and then converted to a :class:`Unicode` string
+   using the codec for the default encoding in ``'strict'`` mode.
+
+   .. versionadded:: 2.0
+
+   .. versionchanged::
+      2.2
+      Support for :meth:`__unicode__()` added.
 
 
 .. function:: ord(c)

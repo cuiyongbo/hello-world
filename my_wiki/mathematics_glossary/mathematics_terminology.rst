@@ -95,4 +95,7 @@ Mathematical Terminology
 | A cardinal number says how many of something there are, such as one, two, three; [基数词]
 | An ordinal number tells us the position of something in a list; [序数词]
 | A nominal number is a number used only as a name, or to identify something (not as an actual value or position). 
-|
+
+.. figure:: images/abacus.jpg
+
+   abacus 算盘
