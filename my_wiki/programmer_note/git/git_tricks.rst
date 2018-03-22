@@ -48,7 +48,7 @@ Delete a local branch
 
 .. code-block:: sh
 
-  git branch -D <branch_name>
+   git branch -D <branch_name>
 
 
 Delete a remote branch
@@ -80,7 +80,7 @@ Commit with amendment
 
 .. code-block:: sh
 
-  git commit --amend -m" test amendment"
+   git commit --amend -m" test amendment"
 
 
 Commit skip add
@@ -89,4 +89,20 @@ Commit skip add
 by using the ``-a`` switch with the commit command to automatically "add" changes from
 all known files (i.e. all files that are already listed in the index) and
 to automatically "rm" files in the index that have been removed from the working tree,
-and then perform the actual commit;
+and then perform the actual commit. for example::
+
+   $ git commit -a -m "added git commit: -a, --amend options"
+   [master 6cbd05f] added git commit: -a, --amend options
+    4 files changed, 30 insertions(+), 8 deletions(-)
+   
+   cuiyb@cuiyb MINGW64 /c/VS-Demo/hello-world/my_wiki (master)
+   $ git status
+   On branch master
+   Your branch is ahead of 'origin/master' by 1 commit.
+     (use "git push" to publish your local commits)
+   Untracked files:
+     (use "git add <file>..." to include in what will be committed)
+   
+           programmer_note/number_tricks.rst # untracking files still unstaged, thus, uncommitted. 
+   
+   nothing added to commit but untracked files present (use "git add" to track)
