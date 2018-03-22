@@ -14,4 +14,5 @@ Steps of Programming
    programmer_note/rst_syntax_note
    programmer_note/threads_vs_processes
    programmer_note/programmer_tricks
+   programmer_note/number_tricks
    programmer_note/extern_c_linkage

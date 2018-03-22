@@ -1,5 +1,5 @@
-Terminology
-===========
+Mathematical Terminology
+========================
 
 | algebra
 | algebraic
@@ -86,3 +86,13 @@ Terminology
 .. image:: images/quotient.png
 
 .. image:: images/arithmetic_operations.png
+
+| power
+| Definition: In mathematics, power is used in expressions such as 2 to the power of 4 or 2 to the 4th power to indicate that 2 must be multiplied by itself 4 times.
+| Usage: Any number to the power of nought is equal to one.
+| 
+| cardinal, ordinal, nominal number
+| A cardinal number says how many of something there are, such as one, two, three; [基数词]
+| An ordinal number tells us the position of something in a list; [序数词]
+| A nominal number is a number used only as a name, or to identify something (not as an actual value or position). 
+|

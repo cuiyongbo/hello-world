@@ -74,3 +74,19 @@ Rename a remote branch
    git push origin :test1 test # delete the old-name remote branch and push the new-name local branch
    git push --set-upstream origin test # reset the upstream branch for the new branch
 
+
+Commit with amendment
+---------------------
+
+.. code-block:: sh
+
+  git commit --amend -m" test amendment"
+
+
+Commit skip add
+---------------
+
+by using the ``-a`` switch with the commit command to automatically "add" changes from
+all known files (i.e. all files that are already listed in the index) and
+to automatically "rm" files in the index that have been removed from the working tree,
+and then perform the actual commit;

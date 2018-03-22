@@ -19,12 +19,7 @@ English Note
 | 
 | antonym
 | Definition: a word opposite in meaning to another
-| Usage: fast is one of the antonyms of slow
-| 
-| cardinal, ordinal, nominal number
-| A cardinal number says how many of something there are, such as one, two, three;
-| An ordinal number tells us the position of something in a list;
-| A nominal number is a number used only as a name, or to identify something (not as an actual value or position). 
+| Usage: fast is one of the antonyms of slow.
 | 
 | vowel
 | Definition: A vowel is a sound such as the ones represented in writing by letters ‘a’, ‘i’, ‘u’, ‘e’, and ‘o’, which  you pronounce with your mouth open, allowing the air flow through it.
