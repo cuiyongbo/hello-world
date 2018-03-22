@@ -17,9 +17,9 @@ Python interpreter has many functions built into it that are always available, T
 |func-bytes|_          :func:`float`        :func:`iter`          :func:`print`         |func-tuple|_         
 :func:`callable`       :func:`format`       :func:`len`           :func:`property`      :func:`type`          
 :func:`chr`            |func-frozenset|_    |func-list|_          |func-range|_         :func:`vars`          
-:func:`classmethod`    :func:`getattr`      :func:`locals`        :func:`repr`          :func:`zip`           
-:func:`compile`        :func:`globals`      :func:`map`           :func:`reversed`      :func:`__import__`    
-:func:`complex`        :func:`hasattr`      :func:`max`           :func:`round`         :func:`xrange`        
+:func:`classmethod`    :func:`getattr`      :func:`locals`        :func:`repr`          :func:`xrange`        
+:func:`compile`        :func:`globals`      :func:`map`           :func:`reversed`      :func:`zip`           
+:func:`complex`        :func:`hasattr`      :func:`max`           :func:`round`         :func:`__import__`    
 =====================  ===================  ====================  ====================  ======================
 
 
@@ -37,7 +37,9 @@ Python interpreter has many functions built into it that are always available, T
 .. |func-bytes| replace:: ``bytes()``
 
 
-Basically, they can be classified into 4 groups: container types, numeric types and mathematical functions, miscellaneous utility function
+Basically, they can be classified into distinct groups: container functions, iterator functions, 
+numeric types and mathematical functions, string functions, string-int conversion functions,
+class utilities, file utilities, miscellaneous utility function.
 
 
 How to find help
@@ -1077,6 +1079,13 @@ Miscellaneous utilities
    locals dictionary is only useful for reads since updates to the locals
    dictionary are ignored.
 
+   .. code-block:: python
+
+      >>> os.__dict__ == vars(os)
+      True
+      >>> vars() == locals()
+      True
+
 
 .. function:: map(function, iterable, ...)
 
@@ -1455,3 +1464,51 @@ Miscellaneous utilities
    .. versionchanged:: 3.3
       Negative values for *level* are no longer supported (which also changes
       the default value to 0).
+
+
+.. function:: reload(module)
+
+   Reload a previously imported module. The argument must be a module object,
+   so it must have been successfully imported before. This is useful if you
+   have edited the module source file using an external editor and want to try out
+   the new version without leaving the Python interpreter. The return value is the
+   module object (the same as the module argument).
+
+   When reload(module) is executed:
+
+   * Python modules’ code is recompiled and the module-level code reexecuted, defining a new set of objects which are bound to names in the module’s dictionary. The :meth:`init` function of extension modules is not called a second time.
+
+   * As with all other objects in Python the old objects are only reclaimed after their reference counts drop to zero.
+
+   * The names in the module namespace are updated to point to any new or changed objects.
+     
+   * Other references to the old objects (such as names external to the module) are not rebound to refer to the new objects and must be updated in each namespace where they occur if that is desired.
+
+There are a number of other caveats:
+
+When a module is reloaded, its dictionary (containing the module’s global variables) is retained.
+Redefinitions of names will override the old definitions, so this is generally not a problem.
+If the new version of a module does not define a name that was defined by the old version,
+the old definition remains. This feature can be used to the module’s advantage if it maintains
+a global table or cache of objects — with a ``try`` statement it can test for the table’s presence
+and skip its initialization if desired::
+
+   try:
+       cache
+   except NameError:
+       cache = {}
+
+It is generally not very useful to reload built-in or dynamically loaded modules.
+Reloading :mod:`sys`, :mod:`__main__`, :mod:`builtins` and other key modules is not recommended.
+In many cases extension modules are not designed to be initialized more than once,
+and may fail in arbitrary ways when reloaded.
+
+If a module imports objects from another module using ``from … import …``,
+calling :func:`reload` for the other module does not redefine the objects
+imported from it — one way around this is to re-execute the from statement,
+another is to use import and qualified names (module.*name*) instead.
+
+If a module instantiates instances of a class, reloading the module that defines
+the class does not affect the method definitions of the instances — they continue to
+use the old class definition. The same is true for derived classes.
+

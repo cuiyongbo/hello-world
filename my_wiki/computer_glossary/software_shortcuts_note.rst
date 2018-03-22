@@ -216,6 +216,7 @@ MacOS Terminal
 #. Delete to Right of Cursor from right – Ctrl + K
 #. Display previous Command – Ctrl + P
 #. Display next Command – Ctrl + N
+#. Clear screen - Ctrl + L
 
 
 Sublime-rst-completion
