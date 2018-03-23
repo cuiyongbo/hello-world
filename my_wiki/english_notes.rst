@@ -2710,12 +2710,7 @@ Pochettino is a dreamer, but this turned into a nightmare. They've been put out 
 | Usage: He was carefully honing the curved blade.
 | Definition: refine or perfect something over a period of time.
 | Usage: She has taken numerous workshops to hone her skills over the years.
-| 
-| portfolio 
-| Definition: a large, thin, flat case for loose sheets of paper such as drawing or maps.
-
-.. image:: images/portfolio.png
-
+|
 | plateau
 | Definition: an area of relatively level high ground.
 | Definition: a time of little or no change after a period of growth or progress.
@@ -2982,4 +2977,40 @@ subjected to verbal and physical abuse over a period of years.
 | Definition: a tool to check whether something conforms to a desired dimension.
 | Definition: a means of estimating something, or a criterion or test.
 | Usage: Emigration is pherhaps the best gauge of public unease.
+| 
+| stillborn
+| Definition: (of an infant) born dead. [死胎]
+| Usage: one of the twins was stillborn.
+| Definition: (of a proposal or plan) having failed to develop or be realized.
+| Usage: The proposed wealth tax was stillborn.
+| 
+| in hock
+| Definition: if someone is in hock, they are in debt.
+| Definition: if you are in hock to somebody, you feel you have to do somethings for them because they have given you money or support.
+| Usage: Even company directors on $100,000 a year can be deeply in hock to the banks.
+| Usage: It is almost impossible for the prime minister to stand above the factions. He always seems in hock to one or another.
+|
+| en masse
+| Definition: in a group; all together.
+| Usage: The Cabinet immediately resigned en masse. 
+| 
+
+Airbus is testing a big harpoon to snare rouge or redundant satellites
+and pull them out of the sky.
+
+.. figure:: images/harpoon.jpg
+
+   Big harpoon is 'Solution to space junk' 
+
+| rogue
+| Definition: a person or thing that behaves in an aberrant or unpredictable way. typicall with damaging or dangerous effect.
+| Usage: He hacked into data and ran rogue programs.
+| 
+| tether
+| Definition: a rope or chain with which an animal is tied to restrict its movement.
+| Definition: tie an animal with a rope or chain so as to restrict its movement.
+| Usage: The horse had been tied to a post.
+| Idioms: the end of one's tether
+| Definition: To be completely worn out, exasperated, or exhausted; to have no more patience, endurance, or energy left.
+| Usage: Joshua started throwing a tantrum this afternoon, and with all the other things I have to get done, I'm at the end of my tether!
 | 

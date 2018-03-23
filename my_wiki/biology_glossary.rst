@@ -268,4 +268,44 @@ in the animal's demise. The eels do occasionally venture into the shallows, so i
 
    Hyena 鬣狗
 
+.. figure:: images/Nile-Crocodile.jpg
 
+   crocodile 尼罗鳄
+
+.. figure:: images/alligator_american.jpg
+
+   Aligator 短吻鳄
+
+
+.. figure:: images/rhino.jpg
+
+   rhinoceros
+
+|
+| hock
+| Definition: A hock is a piece of meat from above the foot of an animal, especially a pig.
+| Definition: The hock of an animal, especially a horse, is the joint in its back leg that points backwards.
+
+.. image:: images/pork-cut-diagram.jpg
+
+.. image:: images/horse_hock-knee.jpg
+
+| collagen [胶原蛋白]
+| Definition: the main structural protein found in animal connective tissue, yielding gelatin when boiled.
+| 
+| rib
+| Definition: your ribs are the 12 pairs of curved bones that surrond your chest. [肋骨]
+| Definition: a rib of meat such as beef or pork is a piece that has been cut to include one of the animal's ribs.
+
+.. image:: images/human-ribs.jpg
+
+She was so badly malformed as to be unable to feed.
+In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care Unit)`.
+
+| 
+| neonatal
+| neonatology
+| neonatologist
+| Definition: relating to newborn children (or other animals).
+| Usage: Special attention is given to mortality in the neonatal period.
+|

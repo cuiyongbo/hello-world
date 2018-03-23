@@ -83,3 +83,13 @@ Computer Terminology
 | 
 | Subscript vs Superscript [上标，下标]
 | Definition: A subscript or superscript is a number, figure, symbol, or indicator that is smaller than the normal line of type and is set slightly below or above it. Subscripts appear at or below the baseline, while superscripts are above.
+|
+| archive
+| Definition: The archive or archives are a collection of documents and records that contain historical information.
+| Usage: zip archive.
+| portfolio
+| Definition: a large, thin, flat case for loose sheets of paper such as drawing or maps.
+| Definition: a portfolio is a set of pictures by someone, or photographs of examples of their work, which they use when entering competitions or applying for work.
+
+.. figure:: images/portfolio.png
+

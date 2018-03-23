@@ -80,8 +80,17 @@ VS 2013
 #. Rebuild Solution: Alt + B, R    
 #. Build current project: Alt + B, U   
 #. Rebuild current project: Alt + B, E
+#. Highlighten word: Ctrl + W
+#. Threads view: Ctrl + Alt + H
 
+#. Bookmarks
+   
+   - Bookmark Window: Ctrl + K, W
+   - Toggle Bookmark: Ctrl + K, K
+     
  
+ 
+
 VAssist X
 ---------
 
@@ -231,5 +240,14 @@ Sublime-rst-completion
 #. render preview, ctrl + shift + r
 #. simple table,  ctrl+t, s (Linux or Windows) or super+shift+t, s (Mac)
 #. Folding/unfolding, shift + TAB (alt + TAB in Mac)
+
 #. Navigation, alt+down and alt+up move the cursor position to the closer next or previous header respectively.
    alt+shift+down and alt+shift+up to the same, but only between headers with the same or higher level
+
+
+Sublime Text
+------------
+
+#. Hightlighten one word: Ctrl + D
+#. Swap lines: Ctrl + Shift + Up / Down
+#. 

@@ -585,5 +585,74 @@ The string module provides a Template class that implements these rules. The met
 json Module Tricks
 ==================
 
+==============  =============
+json type       python type  
+==============  =============
+json array      list         
+json object     dict         
+json string     str          
+json integer    int, float   
+json true       True         
+json fase       False        
+json null       None         
+==============  =============
 
 
+Executable Python Scripts
+=========================
+
+On BSD’ish Unix systems, Python scripts can be made directly executable,
+like shell scripts, by putting the line
+
+.. code-block:: python
+
+   #!/usr/bin/env python
+
+(assuming that the interpreter is on the user’s :envvar:`PATH`) at the beginning of the script
+and giving the file an executable mode. The ``#!`` must be the first two characters of the file.
+On some platforms, this first line must end with a Unix-style line ending ('\n'),
+not a Windows ('\r\n') line ending. Note that the hash, or pound, character,
+``'#'``, is used to start a comment in Python.
+
+The script can be given an executable mode, or permission,
+using the :command:`chmod` command.
+
+.. code-block:: python
+
+   $ chmod +x myscript.py
+
+On Windows systems, there is no notion of an “executable mode”.
+The Python installer automatically associates ``.py`` files with :command:`python.exe`
+so that a double-click on a Python file will run it as a script. The extension can also be ``.pyw``,
+in that case, the console window that normally appears is suppressed.
+
+
+The Interactive Startup File
+============================
+
+When you use Python interactively, it is frequently handy to have some standard commands
+executed every time the interpreter is started. You can do this by setting an environment
+variable named :envvar:`PYTHONSTARTUP` to the name of a file containing your start-up commands.
+This is similar to the :file:`.profile` feature of the Unix shells.
+
+This file is only read in interactive sessions, not when Python reads commands from a script,
+and not when :file:`/dev/tty` is given as the explicit source of commands (which otherwise behaves
+like an interactive session). It is executed in the same namespace where interactive commands are executed,
+so that objects that it defines or imports can be used without qualification in the interactive session.
+You can also change the prompts ``sys.ps1`` and ``sys.ps2`` in this file.
+
+If you want to read an additional start-up file from the current directory,
+you can program this in the global start-up file using code like::
+
+   if os.path.isfile('.pythonrc.py'):
+      exec(open('.pythonrc.py').read())
+
+If you want to use the startup file in a script,
+you must do this explicitly in the script::
+
+   import os
+   filename = os.environ.get('PYTHONSTARTUP')
+   if filename and os.path.isfile(filename):
+       with open(filename) as fobj:
+           startup_file = fobj.read()
+       exec(startup_file)
