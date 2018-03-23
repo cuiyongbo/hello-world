@@ -263,3 +263,9 @@ in the animal's demise. The eels do occasionally venture into the shallows, so i
 | demise
 | Definition: an animal's death.
 | Definition: the end or failure of an enterprise or institution.
+
+.. figure:: images/spotted-hyena-kenya.jpg
+
+   Hyena 鬣狗
+
+

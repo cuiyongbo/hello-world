@@ -2954,21 +2954,32 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | 
 | obituary 讣告
 | Definition: a notice of a death, especially in a newspaper, typically including a brief biography or the deceased person.
+|
 
 He often paid tribute to his wife, who had looked after himefor more than 20 years.
 and friends and relatives were shocked when he left her for one of his nurses.
 
+|
 | tribute
 | Definition: an act, statement, or gift that is intend to show gratitude, respect, or admiration.
 | Definition: (especiallu in the past) money given by one country or ruler to another, especially in return for protection or for not being attcked. [贡品，贡金]
+|
 
-Police questioned several people about allegations that he had been subjected to verbal and physical abuse over a period of years.
+Police questioned several people about allegations that he had been 
+subjected to verbal and physical abuse over a period of years.
 
+|
 | verbal
 | Definition: relating to or in the form of words.
 | Usage: verbal abuse.
 |
-|light-hearted
-|Synonyms: cheerful; happy
-|Usage: They were lighted and prepared to enjoy life.
+| light-hearted
+| Synonyms: cheerful; happy
+| Usage: They were lighted and prepared to enjoy life.
 |
+| gauge
+| Definition: an instrument device for measuring the magnitude, amount, or the contents of something, typically with a visual display of such information.
+| Definition: a tool to check whether something conforms to a desired dimension.
+| Definition: a means of estimating something, or a criterion or test.
+| Usage: Emigration is pherhaps the best gauge of public unease.
+| 
