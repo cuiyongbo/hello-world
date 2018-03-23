@@ -16,3 +16,4 @@ Steps of Programming
    programmer_note/programmer_tricks
    programmer_note/number_tricks
    programmer_note/extern_c_linkage
+   programmer_note/programming_pearls_1

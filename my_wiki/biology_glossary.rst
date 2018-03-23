@@ -281,6 +281,16 @@ in the animal's demise. The eels do occasionally venture into the shallows, so i
 
    rhinoceros
 
+.. figure:: images/Spotted-House-Gecko.jpg
+
+   Gecko 壁虎
+
+.. figure:: images/chameleon.jpg
+
+   Chameleon 变色龙
+
+| chammeleon
+| Definition: a person who changes their opinions or behavior according to the situation. [墙头草]
 |
 | hock
 | Definition: A hock is a piece of meat from above the foot of an animal, especially a pig.
