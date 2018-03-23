@@ -167,7 +167,6 @@ Stash current changes
 Combine several commits into one
 --------------------------------
 
-
 #. combine last 2 commits
 
    .. code-block:: sh
@@ -289,4 +288,5 @@ Combine several commits into one
       .. code-block:: sh
       
          $ git commit --amend
+
 
