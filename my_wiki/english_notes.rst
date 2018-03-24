@@ -1235,19 +1235,30 @@ His selection in the starting XI was a surprise after he was left on the bench f
 manner in which he took his goal, firing a fierce rising drive into the root of the net, showed exactly how important he could 
 become to the team.
 
+Germany and Spain played out an entertaining friendly draw in a meeting
+of the past two world champions.
+
+Spain, the 2010 World Cup winners, led within six minutes as Rodrigo
+smashed home from Andres Iniesta's pass.
+
+But reigning world champions Germany levelled from Thomas Muller's
+25-yard curling effort in a lively first half.
+
+Elsewhere, France threw away a 2-0 lead to lose 3-2 to Colombia at
+the Stade de France. [法兰西大球场]
+
+Barcelona completed one of the greatest comebacks in football history
+as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
+
 
 Rakitic was almost impeccable on Wednesday. He completed 74 passes, more than any other player, at a conversion rate of 94.6%, 
 with his controlled and sensible passing keepping his team ticking over in the way Busquets has done for so many years.
 
-impeccable
-
-Definition: in accordance with the highest standards; faultless.
-
-Barcelona completed one of the greatest comebacks in football history as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
-
 Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime backheel doubled the lead.
 
 | 
+| impeccable
+| Definition: in accordance with the highest standards; faultless.
 | sublime
 | Definition: of very great excellence or beauty,
 | Usage: Experiences that ranged from the sublime to the ridiculous.
@@ -1286,11 +1297,15 @@ Tottenham appeared to be in control until Gonzalo Higuain turned in Sami Khedira
 | Definition: consecutively; in a row
 |
 
-Zidane’s Real have won back-to-back European titles, but are 19 points adrift of La Liga leaders Barcelona and were knocked out of the Copa del Rey [国王杯] by Leganes on Wednesday at the Bernabeu. [伯纳乌]
+Zidane’s Real have won back-to-back European titles, but are 19 points
+adrift of La Liga leaders Barcelona and were knocked out of the Copa del Rey [国王杯]
+by Leganes on Wednesday at the Bernabeu. [伯纳乌]
 
-The Real, who finished second in the group to Tottenham, face Paris St-Germain in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14 February at Bernabeu.
+The Real, who finished second in the group to Tottenham, face Paris St-Germain
+in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14 February at Bernabeu.
 
-The Champions League and Europa league return this week as the knockout stage in each competition gets under way. [欧冠淘汰赛]
+The Champions League and Europa league return this week as the knockout stage
+in each competition gets under way. [欧冠淘汰赛]
 
 | 
 | transfer window   转会窗口
@@ -1299,6 +1314,7 @@ The Champions League and Europa league return this week as the knockout stage in
 | final       决赛
 | defending champion   卫冕冠军
 | 
+
 Italy and  Argentina observed a minute's silence as a mark
 of respect to David Astori before kick-off. [默哀一分钟]
 
@@ -1314,17 +1330,26 @@ Sevilla reached their second Copa del Rey final in three seasons with a 3-1 aggr
 
 Spurs showed maturity as well as excellence to come from two goals down to earn a draw in Turin in the first leg, putting themselves in a favourable position to finish the job and secure a place in the quarter-finals.
 
-And yet from a position of strength bolstered even further by Son's goal just before the interval [中场休息], Spurs once again came up short.
+And yet from a position of strength bolstered even further
+by Son's goal just before the interval [中场休息], Spurs once again came up short.
 
-There is no doubting the quality in this Tottenham side and they were excellent in spells at Wembley, but with two Premier League title  campaigns promising much but unable to deliver and an FA Cup semi-final loss to Chelsea last season, teh requirement for tangible success is intensifying.
+There is no doubting the quality in this Tottenham side
+and they were excellent in spells at Wembley, but with two
+Premier League title  campaigns promising much but unable to deliver
+and an FA Cup semi-final loss to Chelsea last season, the requirement
+for tangible success is intensifying.
 
 English players may be “masters” of diving. [假摔]
 
 Dybala is a phenomenon … sometimes. [现象级球员]
 
-Son was inches off target late on as Spurs pressed - his performance mirroring that of his team on a night when they got plenty right but could not make the crucial moment count.
+Son was inches off target late on as Spurs pressed - his performance
+mirroring that of his team on a night when they got plenty right
+but could not make the crucial moment count.
 
-Pochettino is a dreamer, but this turned into a nightmare. They've been put out by a side who were cuter, more street-wise, and took their chance. 
+Pochettino is a dreamer, but this turned into a nightmare.
+They've been put out by a side who were cuter, more street-wise,
+and took their chance. 
 
 |
 | street-wise

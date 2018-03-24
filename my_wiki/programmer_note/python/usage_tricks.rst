@@ -663,3 +663,20 @@ you must do this explicitly in the script::
       with open(filename) as fobj:
          startup_file = fobj.read()
       exec(startup_file)
+
+
+Python3
+=======
+
+Install python3::
+
+   $ brew install python3
+
+Install packages for python3::
+
+   $ pip3 install <package>
+
+Uninstall python3::
+
+   $ brew uninstall python3
+
