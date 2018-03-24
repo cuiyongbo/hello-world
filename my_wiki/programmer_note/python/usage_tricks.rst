@@ -597,6 +597,13 @@ json fase       False
 json null       None         
 ==============  =============
 
+.. note:: 
+  
+   Locate module::
+
+      >>> json.__file__
+      '/usr/lib/python2.7/json/__init__.pyc'
+
 
 Executable Python Scripts
 =========================
@@ -604,7 +611,7 @@ Executable Python Scripts
 On BSD’ish Unix systems, Python scripts can be made directly executable,
 like shell scripts, by putting the line
 
-.. code-block:: python
+.. code-block:: sh
 
    #!/usr/bin/env python
 
@@ -617,7 +624,7 @@ not a Windows ('\r\n') line ending. Note that the hash, or pound, character,
 The script can be given an executable mode, or permission,
 using the :command:`chmod` command.
 
-.. code-block:: python
+.. code-block:: sh
 
    $ chmod +x myscript.py
 
@@ -653,6 +660,6 @@ you must do this explicitly in the script::
    import os
    filename = os.environ.get('PYTHONSTARTUP')
    if filename and os.path.isfile(filename):
-       with open(filename) as fobj:
-           startup_file = fobj.read()
-       exec(startup_file)
+      with open(filename) as fobj:
+         startup_file = fobj.read()
+      exec(startup_file)

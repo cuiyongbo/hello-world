@@ -1299,6 +1299,10 @@ The Champions League and Europa league return this week as the knockout stage in
 | final       决赛
 | defending champion   卫冕冠军
 | 
+Italy and  Argentina observed a minute's silence as a mark
+of respect to David Astori before kick-off. [默哀一分钟]
+
+Italy paid tribute to the late David Astori as they lost 2-0 to Argentina on an emotional night in Machester. [已故的]
 
 Messi took on three defenders to score, then rolled a free-kick under the wall for the second. [任意球贴地斩]
 
@@ -2932,7 +2936,6 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | Synonyms: self-satisfied
 | Usage: You can't afford to be complacent about security.
 | 
-| 
 | layman
 | Definition: a nonordained member of a church.
 | Definition: a person without professional or specialized knowledge in a particular subject.
@@ -2946,12 +2949,29 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | erratic
 | Definition: not even or regular in pattern or movement; unpredictable.
 | Usage: Her breathing was erratic.
+
+Italy captain Gianluigi Buffon, making his 176th appearance, a European record, 
+said that the death of his friend was partly responsible for his decision to
+reverse his international retirement. [收回前言，食言]
+
+Italy will wear the same inscription on their kit when they face England on Tuesday.
+
+| inscription
+| inscriptional
+| inscriptive
+| Definition: words inscribed, as on a monument or in a book.
+| Usage: The inscription on her headstone. [铭文]
+| 
+| headstone
+| Definition: a slab of stone set up at the head of a grave, typically inscribed with the name of the dead person.
+| Synonyms: tombstone; gravestone.
+| 
 | 
 | obituary 讣告
 | Definition: a notice of a death, especially in a newspaper, typically including a brief biography or the deceased person.
 |
 
-He often paid tribute to his wife, who had looked after himefor more than 20 years.
+He often paid tribute to his wife, who had looked after him for more than 20 years.
 and friends and relatives were shocked when he left her for one of his nurses.
 
 |

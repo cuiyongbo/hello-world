@@ -250,4 +250,3 @@ Sublime Text
 
 #. Hightlighten one word: Ctrl + D
 #. Swap lines: Ctrl + Shift + Up / Down
-#. 
