@@ -10,3 +10,4 @@ Python note
    python/urllib_tricks
    python/sort_tricks
    python/regex_tricks
+   python/application_examples

@@ -17,3 +17,4 @@ Steps of Programming
    programmer_note/number_tricks
    programmer_note/extern_c_linkage
    programmer_note/programming_pearls_1
+   programmer_note/cpp_class_basics
