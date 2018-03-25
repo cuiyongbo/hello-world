@@ -40,7 +40,7 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+#templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -102,10 +102,21 @@ html_theme_options = {'collapsiblesidebar': True}
 #
 # html_theme_options = {}
 
+# Path to find HTML templates.
+templates_path = ['tools/templates']
+
+# Custom sidebar templates, filenames relative to this file.
+html_sidebars = {
+    # Defaults taken from http://www.sphinx-doc.org/en/stable/config.html#confval-html_sidebars
+    # Removes the quick search block
+    '**': ['localtoc.html', 'relations.html', 'customsourcelink.html'],
+    'index': ['indexsidebar.html'],
+}
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['tools/static']
 
 
 # -- Options for HTMLHelp output ------------------------------------------
