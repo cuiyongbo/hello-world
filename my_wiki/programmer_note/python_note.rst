@@ -7,3 +7,5 @@ Python note
    python/python_built_in_types
    python/python_built_in_functions
    python/usage_tricks
+   python/urllib_tricks
+   python/sort_tricks

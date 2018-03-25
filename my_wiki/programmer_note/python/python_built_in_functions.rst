@@ -239,7 +239,7 @@ Iterator functions
    compare equal --- this is helpful for sorting in multiple passes (for
    example, sort by department, then by salary grade).
 
-   For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`.
+   For sorting examples and a brief sorting tutorial, see :doc:`Sorting HOW TO <sort_tricks>`.
 
 
 .. class:: slice(stop)

@@ -231,17 +231,17 @@ MacOS Terminal
 Sublime-rst-completion
 ----------------------
 
-#. emphasis, ctrl+alt+i (super+shift+i on Mac)
-#. strong emphasis (bold),  ctrl+alt+b (super+shift+b on Mac)
-#. literal literal text (inline code), ctrl+alt+k (super+shift+k on Mac)
-#. magical table, ctrl+t, enter (Linux or Windows) or super+shift+t, enter (Mac)
-#. Folding/unfolding, shift + TAB (alt + TAB in Mac) [put the cursor in a completed header]
-#. adjust header level, ctrl + + (plus key) and ctrl + - (minus key) (alt + + and alt + -, in Mac)
-#. render preview, ctrl + shift + r
-#. simple table,  ctrl+t, s (Linux or Windows) or super+shift+t, s (Mac)
-#. Folding/unfolding, shift + TAB (alt + TAB in Mac)
+#. emphasis: ctrl+alt+i (super+shift+i on Mac)
+#. strong emphasis (bold):  ctrl+alt+b (super+shift+b on Mac)
+#. literal literal text (inline code): ctrl+alt+k (super+shift+k on Mac)
+#. magical table: ctrl+t, enter (Linux or Windows) or super+shift+t, enter (Mac)
+#. Folding/unfolding: shift + TAB (alt + TAB in Mac) [put the cursor in a completed header]
+#. adjust header level: ctrl + + (plus key) and ctrl + - (minus key) (alt + + and alt + -, in Mac)
+#. render preview: ctrl + shift + r
+#. simple table: ctrl+t, s (Linux or Windows) or super+shift+t, s (Mac)
+#. Folding/unfolding: shift + TAB (alt + TAB in Mac)
 
-#. Navigation, alt+down and alt+up move the cursor position to the closer next or previous header respectively.
+#. Navigation: alt+down and alt+up move the cursor position to the closer next or previous header respectively.
    alt+shift+down and alt+shift+up to the same, but only between headers with the same or higher level
 
 
@@ -249,4 +249,6 @@ Sublime Text
 ------------
 
 #. Hightlighten one word: Ctrl + D
-#. Swap lines: Ctrl + Shift + Up / Down
+#. Swap lines: Ctrl + Shift + Up/Down (Windows), Ctrl + Command + Up/Down (Mac)
+#. Switch Tabs: Option + Command + Letf/Right (Mac)
+   

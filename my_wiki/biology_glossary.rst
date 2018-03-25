@@ -244,10 +244,15 @@ tit
 | Definition: A bird's plumage is all the feathers on its body.
 | 
 | regurgitate
-| regurgitation
+| regurgitation [反刍喂食]
 | Definition: bring (swallowed food) up again to the mouth.
 | Usage: Gulls regurgitate food for the chicks.
 | Definition: repeat (information) without analysing or comprehending it.
+
+.. figure:: images/penguin_regurgitation.jpg
+
+   Penguin regurgitation
+
 
 .. figure:: images/gull.jpeg
 
@@ -319,3 +324,10 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | Definition: relating to newborn children (or other animals).
 | Usage: Special attention is given to mortality in the neonatal period.
 |
+| poikilotherm
+| poikilothermic [冷血动物]
+| Definition: an organism that cannot regulate its body temperature except by behavioral means such as basking or burrowing.
+| Often contrasted with homeotherm; compare with cold-blooded.
+| Synonyms: cold-blooded.
+| Antonyms: homeotherm [恒温动物]
+| 

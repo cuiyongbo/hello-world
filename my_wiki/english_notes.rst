@@ -3059,3 +3059,42 @@ and pull them out of the sky.
 | Definition: To be completely worn out, exasperated, or exhausted; to have no more patience, endurance, or energy left.
 | Usage: Joshua started throwing a tantrum this afternoon, and with all the other things I have to get done, I'm at the end of my tether!
 | 
+| authoritative
+| Definition: able to be trusted as being accurate or true; reliable.
+| Usage: An authoritative sorce.
+| 
+| be nothing to write home about
+| Definition: be very mediocre or unexceptional.
+| 
+| be (or have something) written all over one (or one's face)
+| Definition: used to convey that the presence of a particular quality or feeling is clearly revealed by a person's expression.
+| Usgae: guilit was written all over his face.
+| 
+| (and) that's all she wrote
+| Definition: used to convey that there is or was nothing to be said about a matter.
+| Usage: we were arguing about who should pay the bill, but he pulled out a couple of hundreds and that's all she wrote.
+| 
+| top-notch
+| top-notcher
+| Definition: of the highest quality.
+| Usage: a top-notch hotel.
+| 
+| cold-blooded
+| Definition: (of a kind of animal) having a body temperature varing that of the environment.
+| Synonyms: poikilothermic [冷血动物]
+| Definition: without compunction or human feeling.
+| Usage: a cold-blooded killer.
+| 
+| outwit
+| Definition: to get the better of by cunning or ingenuity.
+| Synonyms: outsmart.
+| Usage: Ray had outwitted many an opponent.
+| 
+| ingenuity
+| Definition: the ability to invent things or solve problems in a clever way. 
+| 
+| miserly
+| miser [吝啬鬼，守财奴]
+| Definition: a person who hoards wealth and spend as little money as possible.
+| Usage: His miserly great-uncle proved to be worth nearly $1 million.
+| 
