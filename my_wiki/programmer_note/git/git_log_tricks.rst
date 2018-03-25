@@ -1,6 +1,8 @@
 Git log
 =======
 
+Options
+-------
 
 .. code-block:: sh
    :caption: Hot hits options 
@@ -60,4 +62,28 @@ Git log
    # format:<string> and tformat:<string>. When <format> is none of the above,
    # and has %placeholder in it, it acts as if --pretty=tformat:<string> were given
    # When =<format> part is omitted, it defaults to medium.
+
+
+Examples
+--------
+
+#. git log pretty example
+   
+   .. code-block:: sh
+      :caption: git-branches-by-commit-date
+      
+      #!/usr/bin/sh
+      # Credit http://stackoverflow.com/a/2514279
+      
+      for branch in `git branch -r | grep -v HEAD`
+      do
+         echo -e `git show --format="%ai %ar by %an" $branch | head -n 1` \\t$branch
+      done |
+         sort -r
+      
+      #for branch in `git branch -r | grep -v HEAD`
+      #do
+      #  echo -e `git show --pretty=format:"%Cred %cn %Cgreen %ar %Creset" $branch | head -n 1` $branch
+      #done | 
+      #  sort -r
 
