@@ -1,6 +1,16 @@
 Git Tricks
 ==========
 
+Create a new local branch
+-------------------------
+
+   .. code-block:: sh
+
+      git checkout -B branch_name remotes/origin/branch_name --
+      git checkout -B branch_name origin/branch_name
+      git checkout -b branch_name # branch_name doesn't exist.
+
+
 Find the information about branchs
 ----------------------------------
 

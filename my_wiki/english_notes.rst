@@ -2955,6 +2955,23 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | Definition: caught in a difficult or dangerous situation.
 | Usage: There I was back on the hook.
 | 
+| under the hood
+| Definition: a metaphorical area that contains the underlying implementation of something - e.g. a piece of hardware, a piece of software, an idea, etc.
+| Usage: Let's now look under the hood to see how the software goes about transmitting data so quickly.
+| Usage: To understand how it really works we need to look under the hood.
+| Definition: inside the chassis of a piece of equipment, such as a computer.
+| Usage: Under the hood, this baby has quad-core AND Phenom!
+| 
+| chassis
+| Definition: the base frame of a car, carriage, or other wheeled vehicle.
+| Definition: the outer structural framework of a piece of audio, radio, or computer equipment.
+| 
+| temporal
+| Definition: relating to wordly as opposed to spiritual affrairs; secular.
+| Usage: The Church did not imitated the secular rulers who thought only of temporal gain.
+| Definition: relating to time.
+| Definition: The spatial and temporal dimensions of human interference in complex systems.
+| 
 | complacent
 | complacency
 | Definition: showing smug or uncritical satisfication with oneself or one's achievements.
