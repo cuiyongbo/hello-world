@@ -2183,6 +2183,14 @@ Isco scored a hat-trick as Spain warmed up for the 2018 World Cup by crushing 20
 
 .. image:: images/Pastry_with_Azuki_beans.jpg
 
+Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) which is prepared
+by infusing the processed whole tea leaves in hot water.
+It is the most popular tea in Japan.
+
+.. figure:: images/sencha_green_tea.jpg
+
+   sancha green tea
+
 | bland
 | Definition: lacking strong features or characteristics and therefore uninteresting.
 | Usage: Rebelling against the bland uniformity.
@@ -2841,6 +2849,7 @@ Isco scored a hat-trick as Spain warmed up for the 2018 World Cup by crushing 20
 | anonymous
 | Definition: (of a person) not identified by name; of unknown name.
 | Usage: an anonymous phone call.
+| Usage: anonumous source.
 | 
 | pseudonym [笔名，化名]
 | Definition: a fictious name, especially one used by an authour.
@@ -2980,13 +2989,7 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | Usage: The Church did not imitated the secular rulers who thought only of temporal gain.
 | Definition: relating to time.
 | Definition: The spatial and temporal dimensions of human interference in complex systems.
-| 
-| complacent
-| complacency
-| Definition: showing smug or uncritical satisfication with oneself or one's achievements.
-| Synonyms: self-satisfied
-| Usage: You can't afford to be complacent about security.
-| 
+|
 | layman
 | Definition: a nonordained member of a church.
 | Definition: a person without professional or specialized knowledge in a particular subject.

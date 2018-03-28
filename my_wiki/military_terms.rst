@@ -490,3 +490,14 @@ chlorine - Cl - the chemical element of atomic number 17.
 
 Chinese President Xi Jinping has told the :abbr:`NPC (National People's Congress)` that China must
 not become complacent about its development.
+
+| 
+| complacent
+| complacency
+| Definition: showing smug or uncritical satisfication with oneself or one's achievements.
+| Synonyms: self-satisfied
+| Usage: You can't afford to be complacent about security.
+| 
+| vigilante [义警]
+| Definition: a member of a self-appointed group of citizens who undertake law enforcement in their community without legal authority, typically because the legal agencies are thought to be inadequate.
+
