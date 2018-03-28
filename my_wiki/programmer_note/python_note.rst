@@ -6,8 +6,8 @@ Python note
 
    python/python_built_in_types
    python/python_built_in_functions
-   python/usage_tricks
    python/urllib_tricks
    python/sort_tricks
    python/regex_tricks
+   python/daily_usage_tricks
    python/application_examples

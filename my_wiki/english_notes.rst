@@ -249,7 +249,15 @@ English Note
 | Usage: I stubbed my toes against a table leg.
 | 
 | invoice  发票
+| 
+| coupon [优惠券]
+| Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
+| Synonyms: voucher
 |
+| voucher
+| Definition: a voucher is a piece of paper that can be used instead of money to pay for something.
+| Usage: The winner will each receive a voucher for a pair of cinema tickets.
+| 
 | glitch
 | Definition: A glitch is a problem, which stops something from working properly or being successful.
 | Usage: Manufacturing glitches have limited the factory’s output, and costs are still far too high.
@@ -1212,6 +1220,10 @@ English Note
 | Definition: to defeat somebody completely.
 | Usage: Brazil trounced Italy 5-1 in the final. [狂胜]
 | 
+| thrash
+| Definition: if one player or team thrashes another in a game or match, they defeat them easily or by a large score.
+| Usage: Cristiano Ronaldo scored a hat-trick as Real Madrid thrashed Real Sociedad. [帽子戏法] 
+| 
 | clobber
 | Definition: hit somebody hard.
 | Definition: defeat heavily.
@@ -1322,8 +1334,6 @@ Italy paid tribute to the late David Astori as they lost 2-0 to Argentina on an 
 
 Messi took on three defenders to score, then rolled a free-kick under the wall for the second. [任意球贴地斩]
 
-Cristiano Ronaldo scored a hat-trick as Real Madrid thrashed Real Sociedad. [帽子戏法] 
-
 Real became the first team to successfully defend the Champions League last season. [卫冕成功] 
 
 Sevilla reached their second Copa del Rey final in three seasons with a 3-1 aggregate win over La Liga rivals Leganes.
@@ -1353,7 +1363,7 @@ and took their chance.
 
 |
 | street-wise
-| Definition: having the experience and knowledge necessary to deal with the potential difficultiew or dangers of life in urban.
+| Definition: having the experience and knowledge necessary to deal with the potential difficulties or dangers of life in urban.
 | Definition: reflective of modern life, especially that of urban youth. [市侩]
 |
 | tangible
@@ -1370,7 +1380,11 @@ and took their chance.
 | Usage: Son's mixed night. [悲喜交加]
 | Usage: I had mixed feelings about seeing Laura again.
 | Usage: The play was given a mixed reception by the critics. [毁誉参半]
-|
+
+Isco scored a hat-trick as Spain warmed up for the 2018 World Cup by crushing 2014 finalists Argentina in Madrid.
+
+
+
 | 
 | epic 
 | Synonyms: saga
@@ -2484,11 +2498,6 @@ and took their chance.
 | Purgatory
 | Definition: (in Roman Catholic doctrine) a place or state of suffering inhabited by the souls of sinners who are expiating their sins before going to heaven. [| 炼狱]
 | Usage: Getting up at five o’clock every morning is sheer purgatory. [活受罪]
-| 
-| coupon [优惠券]
-| Definition: a voucher entitling the holder to a discount for a particular product.
-| voucher
-| Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
 | 
 | permute
 | permutable

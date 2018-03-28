@@ -1188,20 +1188,3 @@ enables REs to be formatted more neatly::
 This is far more readable than::
 
    pat = re.compile(r"\s*(?P<header>[^:]+)\s*:(?P<value>.*?)\s*$")
-
-
-Feedback
-========
-
-Regular expressions are a complicated topic.  Did this document help you
-understand them?  Were there parts that were unclear, or Problems you
-encountered that weren't covered here?  If so, please send suggestions for
-improvements to the author.
-
-The most complete book on regular expressions is almost certainly Jeffrey
-Friedl's Mastering Regular Expressions, published by O'Reilly.  Unfortunately,
-it exclusively concentrates on Perl and Java's flavours of regular expressions,
-and doesn't contain any Python material at all, so it won't be useful as a
-reference for programming in Python.  (The first edition covered Python's
-now-removed :mod:`!regex` module, which won't help you much.)  Consider checking
-it out from your library.

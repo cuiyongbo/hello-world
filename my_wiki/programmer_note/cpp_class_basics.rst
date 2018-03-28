@@ -1,3 +1,12 @@
+``delete this`` in c++
+======================
+
+Basically you are not advised to do ``delete this`` operation unless
+
+   * The class you delete was allocated on heap or free store.
+   * You will ``NEVER`` use the pointer again after you delete it.
+
+
 C++ class example
 =================
 
