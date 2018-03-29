@@ -3127,3 +3127,14 @@ and pull them out of the sky.
 | Definition: a person who hoards wealth and spend as little money as possible.
 | Usage: His miserly great-uncle proved to be worth nearly $1 million.
 | 
+
+A :abbr:`PCC (police and crime commissioner)` had backed a proposal to
+make attacking service animals a criminal offence.
+
+Nottinghamshire PCC Paddy Tipping has written to the government 
+asking ministers to support Finn's Law, which would give police dogs
+and horses the same status as injured officers.
+
+Police dog Quantum suffered stab wounds on 15 March in Nottingham.
+He had nine stitches and will need specialist trainning before
+his is able to return to duty. [缝了九针]
