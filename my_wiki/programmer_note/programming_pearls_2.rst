@@ -1,3 +1,19 @@
+Predefined Macros
+=================
+
+``__FUNCTION__`` is non standard, ``__func__`` exists in C99 / C++11.
+The others (``__LINE__`` and ``__FILE__``) are just fine.
+
+It will always report the right file and line (and function if you choose to
+use ``__FUNCTION__``/``__func__``). Optimization is a non-factor since it is
+a compile time macro expansion; it will never effect performance in any way.
+
+.. code-block:: c++
+   :caption: Codes taken from Jansson
+
+   #define failhdr fprintf(stderr, "%s:%d: ", __FILE__, __LINE__)
+
+
 ``inline`` keyword
 ==================
 
@@ -35,3 +51,5 @@ For code portability, the following preprocessor directives can be used::
    #else
    #define forceinline inline
    #endif
+
+

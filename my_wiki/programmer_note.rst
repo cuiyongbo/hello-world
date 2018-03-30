@@ -19,3 +19,4 @@ Steps of Programming
    programmer_note/programming_pearls_1
    programmer_note/programming_pearls_2
    programmer_note/cpp_class_basics
+   programmer_note/cpp_type_tricks

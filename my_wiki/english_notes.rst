@@ -135,12 +135,11 @@ English Note
 | Usage: Lovers of sloppy romance.
 | 
 | more bang for the buck
-| Definition: Having greater value for the amount of money one is spending
-| Usage: It’s not one of the most popular brands, but this high-definition TV will give you away more bang for your buck.
+| Definition: Having greater value for the amount of money one is spending.
+| Usage: It’s not one of the most popular brands, but this :abbr:`HD (high-definition)` TV will give you away more bang for your buck.
 | Definition: If you get more bang for your buck or more bang for the buck, you get a bigger quantity or better quality of something for the same amount of | money. You can also say that someone gets a bigger bang for their buck or a bigger bang for the buck. You can also say that someone gets little bang for the | buck, when they get less than they expected for the amount of money they spent.
 | Usage: While desktop computers still give you more bang for your buck, today's notebooks are capable of more than just basic office work. 
 | Usage: Companies are scrambling to find new ways of delivering more bang for the client's buck. 
-| Usage: I think it's very, very important for those governments to do whatever they can to get a bigger bang for the buck. 
 | Usage: The company is getting little bang for its buck.
 | 
 | etiquette [礼仪，职业操守]
@@ -1647,9 +1646,9 @@ Isco scored a hat-trick as Spain warmed up for the 2018 World Cup by crushing 20
 | Definition: conform with others or with accepted behavior.
 | 
 | circumvent [绕行]
-| Definition: find a way around (an obstacle)
+| Definition: find a way around (an obstacle).
 | Usage: They found a way of circumventing the law. [钻空子]
-| Definition: to go on travel around something that is blocking your way; detour
+| Definition: to go on travel around something that is blocking your way; detour.
 | 
 | obfuscate
 | obfuscation [搪塞]
@@ -3158,4 +3157,19 @@ his is able to return to duty. [缝了九针]
 | Definition: If you drain a place or object, you dry it by causing water to flow out of it. If a place or object drains, water flows out of it until it is dry.
 | Usage: Springs and rivers that drain into lakes carry dissolved nitrates and phosphates.
 | Usage: Minners built the tunnel to drain water out of the mines.
+| 
+| quarry
+| Definition: a quarry is an area that is dug out from a piece of land or the side of a mountain in order to get stone or minerals.
+| Usage: An old limestone quarry. [采石场]
+| Definition: A person's or animal's quarry is the person or animal that they are hunting.
+| 
+| limestone [石灰石]
+| Definition: limestone is a whitish-colored rock which is used for building and for making cement.
+| 
+| sensitive data 敏感数据
+| 
+| nonfactor
+| non-factor
+| Definition: Something which is not a factor, or does not play a significant role.
+| Usage: The far-right is closely watched, controlled and a nonfactor.
 | 

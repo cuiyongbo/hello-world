@@ -6,6 +6,7 @@ Python note
 
    python/python_built_in_types
    python/python_built_in_functions
+   python/str_methods
    python/urllib_tricks
    python/sort_tricks
    python/regex_tricks
