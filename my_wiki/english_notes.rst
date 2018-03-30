@@ -3138,3 +3138,24 @@ and horses the same status as injured officers.
 Police dog Quantum suffered stab wounds on 15 March in Nottingham.
 He had nine stitches and will need specialist trainning before
 his is able to return to duty. [缝了九针]
+
+| malformed
+| Definition: If people or parts of their body are malformed, they do not have the shape or form that they are supposed to, especially when they have been like this since birth.   
+| Usage: More rarely, the tubes have been malformed from birth.
+| Synonyms: deformed
+| 
+| equivalent
+| Definition: If one amount or value is the equivalent of another, they are the same.
+| Usage: Even the cheapest car costs the equivalent of 70 years' salary for a government worker.
+|
+| trivial
+| Definition: If you describe something as trivial, you think that it is unimportant and not serious.
+| Synonyms: insignificant
+| Usage: I don't like to visit the doctor just for something trivial.
+|
+| drain
+| Definition: If you drain a liquid from a place or object, you remove the liquid by cauing it to flow somewhere else. If a liquid drains somewhere, it flows there.
+| Definition: If you drain a place or object, you dry it by causing water to flow out of it. If a place or object drains, water flows out of it until it is dry.
+| Usage: Springs and rivers that drain into lakes carry dissolved nitrates and phosphates.
+| Usage: Minners built the tunnel to drain water out of the mines.
+| 

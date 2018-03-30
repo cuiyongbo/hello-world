@@ -7,6 +7,37 @@ Basically you are not advised to do ``delete this`` operation unless
    * You will ``NEVER`` use the pointer again after you delete it.
 
 
+Declare class constructor as private
+====================================
+
+Here are some of the uses of private constructor :
+
+   * Objects can only be created on heap
+   * Singleton Design Pattern
+   * To limit the number of instance creation
+   * To give meaningful name for object creation using static factory method
+   * Static Utility Class or Constant Class
+   * To prevent Subclassing (lose the chance to be inherited)
+   * Builder Design Pattern and thus for creating immutable classes
+
+
+Declare class destructor as ``private/protected``
+=================================================
+
+Basically, any time you want some other class to be responsible for the life cycle of your class' objects,
+or you have reason to prevent the destruction of an object, you can make the destructor private.
+
+For instance, if you're doing some sort of reference counting thing, you can have the object
+(or manager that has been "friend"ed) responsible for counting the number of references to itself
+and delete it when the number hits zero. A private destructor would prevent anybody else from
+deleting it when there were still references to it.
+
+.. code-block:: c++
+
+   delete w;
+   // error C2248: 'Water::~Water' : cannot access protected member declared in class 'Water'
+
+
 C++ class example
 =================
 
