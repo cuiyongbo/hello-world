@@ -143,9 +143,31 @@ English Note
 | Usage: The company is getting little bang for its buck.
 | 
 | etiquette [礼仪，职业操守]
-| Definition: (noun) The customary of polite behavior in society or among members of a particular profession or group
+| Definition: (noun) The customary of polite behavior in society or among members of a particular profession or group.
 | Usage: Advice on etiquette.
-| Usage: Medical / legal / professional etiquette
+| Usage: Medical / legal / professional etiquette.
+| 
+| gentility
+| Definition: social superiority as demonstrated by genteel manners, behavior, or appearance.
+| Usage: He took her hand with discreet gentility.
+| Definition: the fact of being quiet and old-fashioned.
+| Usage: The faded gentility of the town.
+| 
+| genteel
+| gneteelly
+| Definition: (of people and their way of life) quiet and polite, often in an exaggerate way; from, or pretending to be from , a high | social class.
+| Usage: He lived in genteel poverty.
+| Usage: (of a place) quiet and old-fashioned and perhaps slightly boring.
+| 
+| aristocracy
+| aristocratic
+| Definition: The highest class in certain societies, especially those holding hereditary titles or offices.
+| Usage: The ancient Polish aristocracy had hereditary right to elect the king.
+| Definition: A group regared as privileged or superior in a particular sphere.
+| Usage: High-level technocrats make up a large part of this "technical aristocracy."
+| 
+| hereditary
+| Definition: (of a title, office, or right) conferred by or based on inheritance.
 | 
 | monitory
 | Definition: (adjective) Conveying an admonition or a warning
@@ -3147,11 +3169,6 @@ his is able to return to duty. [缝了九针]
 | Definition: If one amount or value is the equivalent of another, they are the same.
 | Usage: Even the cheapest car costs the equivalent of 70 years' salary for a government worker.
 |
-| trivial
-| Definition: If you describe something as trivial, you think that it is unimportant and not serious.
-| Synonyms: insignificant
-| Usage: I don't like to visit the doctor just for something trivial.
-|
 | drain
 | Definition: If you drain a liquid from a place or object, you remove the liquid by cauing it to flow somewhere else. If a liquid drains somewhere, it flows there.
 | Definition: If you drain a place or object, you dry it by causing water to flow out of it. If a place or object drains, water flows out of it until it is dry.
@@ -3177,3 +3194,51 @@ his is able to return to duty. [缝了九针]
 | Definition: If an experience stands a person in good stead, it is or will be of great use to him.
 | Usage: Getting some work experience now will stand you in good stead when you apply for a permanent job.
 | 
+| malign
+| Definition: speak unfavorably about. [中伤，诽谤，说坏话]
+| Usage: Don't you dare malign her in my presence.
+| Definition: evil in nature or effect; malevolent.
+| Usage: She had a strong and malign influence.
+| 
+| malevolent
+| Definition: having or showing a wish to do evil to others.
+| Usage: The glint of dark, malevolent eye. [眼神邪魅]
+| 
+| malignant
+| Definition: (of a disease) very virulent or infectious.
+| Definition: (of a tumor) tending to invade normal tissue or recur after removal; cancerous.
+| Antonyms: benign.
+| Usage: A malignant tumor.
+| 
+| lenity
+| lenient
+| Definition: (of punishment or a person in authority) permissive, merciful, or tolerant.
+| Usage: Judges were far too lenient with petty criminals.
+| 
+| petty
+| Definition: of little importance; trivial.
+| Usage: The petty divisions of party politics.
+| 
+| trivial
+| Definition: If you describe something as trivial, you think that it is unimportant and not serious.
+| Synonyms: insignificant
+| Usage: I don't like to visit the doctor just for something trivial.
+|
+| stoicism
+| Definition: An indifference to pleasure or pain.
+| Usage: She endured her long illness with stoicism.
+| 
+| wordless
+| Definition: expressed without speech.
+| Usage: The wordless language of the heart.
+| 
+| summerhouse [凉亭]
+| Definition: a small, roofed structure in a park or garden affording shade and rest.
+
+.. image:: images/ryton-octagonal-summerhouse.jpg
+
+
+
+
+
+
