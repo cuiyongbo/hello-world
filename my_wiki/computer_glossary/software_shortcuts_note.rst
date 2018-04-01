@@ -251,4 +251,6 @@ Sublime Text
 #. Hightlighten one word: Ctrl + D
 #. Swap lines: Ctrl + Shift + Up/Down (Windows), Ctrl + Command + Up/Down (Mac)
 #. Switch Tabs: Option + Command + Letf/Right (Mac)
-   
+#. New Window: Shift + Command + N (Mac)
+#. Close Window: Shift + Command + W (Mac)
+#. Close File: Command + W (Mac)

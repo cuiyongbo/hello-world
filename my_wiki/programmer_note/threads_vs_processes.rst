@@ -75,10 +75,14 @@ If you don’t want to bother with synchronization issues, then forking may be a
 fork
 ====
 
+The UNIX standards, specifically IEEE Std 1003.1, 2004 Edition, defines a process as 
+“an address space with one or more threads executing within that address space, and
+the required system resources for those threads."
+
 See :doc:`fork man page <fork_info>`
 
 
-pthread API
+Pthread API
 ===========
 
 See :doc:`Pthread API Introduction <pthread/pthread_api>`.

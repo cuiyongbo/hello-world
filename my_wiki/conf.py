@@ -90,11 +90,11 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 #html_theme = 'alabaster'
-#html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 
-html_theme = 'pydoctheme'
-html_theme_path = ['tools']
-html_theme_options = {'collapsiblesidebar': True}
+#html_theme = 'pydoctheme'
+#html_theme_path = ['tools']
+#html_theme_options = {'collapsiblesidebar': True}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

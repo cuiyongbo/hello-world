@@ -2,11 +2,10 @@ Predefined Macros
 =================
 
 ``__FUNCTION__`` is non standard, ``__func__`` exists in C99 / C++11.
-The others (``__LINE__`` and ``__FILE__``) are just fine.
-
-It will always report the right file and line (and function if you choose to
-use ``__FUNCTION__``/``__func__``). Optimization is a non-factor since it is
-a compile time macro expansion; it will never effect performance in any way.
+The others (``__LINE__`` and ``__FILE__``) are just fine. they will always
+report the right file and line. And function if you choose to use ``__FUNCTION__``/``__func__``,
+optimization is a non-factor since it is a compile time macro expansion;
+it will never effect performance in any way.
 
 .. code-block:: c++
    :caption: Codes taken from Jansson
@@ -51,5 +50,74 @@ For code portability, the following preprocessor directives can be used::
    #else
    #define forceinline inline
    #endif
+
+
+Flexible array member
+=====================
+
+
+Flexible array member is a feature introduced in the C99 standard of the C programming language
+(in particular, in section §6.7.2.1, item 16, page 103). It is a member of a struct,
+which is an array without a given dimension, and it must be the last member of such a struct,
+as in the following example::
+
+   struct vectord {
+       size_t len;
+       double arr[]; // the flexible array member must be last
+   };
+
+The ``sizeof`` operator on such a struct gives the size of the structure as if
+the flexible array member had been omitted except that it may have more trailing
+padding than the omission would imply. As such it is preferable to use ``offsetof``
+when determining size for dynamic allocation, as in the following example::
+
+   size = offsetof(struct vectord, arr) + nr_entries * sizeof(double);
+
+When allocating such structures on the heap, it is generally required to reserve
+some space for the flexible array member,as in the following example::
+
+   struct vectord *allocate_vectord (size_t len) 
+   {
+   
+      struct vectord *vec = malloc(offsetof(struct vectord, arr) 
+                                          + len * sizeof(vec->arr[0]));
+   
+      if (!vec) {
+         perror("malloc vectord failed");
+         exit(EXIT_FAILURE);
+      }
+   
+      vec->len = len;
+   
+      for (size_t i = 0; i < len; i++)
+         vec->arr[i] = 0;
+   
+      return vec;
+   }
+
+When using structures with a flexible array member, some convention regarding the actual size of that member should be defined.
+In the example above, the convention is that the member *arr* has len double-precision numbers.
+
+In previous standards of the C language, it was common to declare a zero-sized array member instead of a flexible array member.
+The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C++ does not have flexible array members.
+
+.. note::
+
+   ``offsetof`` is a macro defined in :file:`stddef.h`, typically like this::
+
+      #define offsetof(TYPE, MEMBER) ((size_t) &(((TYPE*)0)->MEMBER))
+
+   .. code-block:: c
+      :caption: code block taken from Jansson
+
+         #define container_of(ptr_, type_, member_)  \
+                              ((type_ *)((char *)ptr_ - offsetof(type_, member_)))
+
+         #define json_to_object(json_)  container_of(json_, json_object_t, json)
+         #define json_to_array(json_)   container_of(json_, json_array_t, json)
+         #define json_to_string(json_)  container_of(json_, json_string_t, json)
+         #define json_to_real(json_)    container_of(json_, json_real_t, json)
+         #define json_to_integer(json_) container_of(json_, json_integer_t, json)
+
 
 

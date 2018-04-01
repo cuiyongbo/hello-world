@@ -3173,3 +3173,7 @@ his is able to return to duty. [缝了九针]
 | Definition: Something which is not a factor, or does not play a significant role.
 | Usage: The far-right is closely watched, controlled and a nonfactor.
 | 
+| hold/stand sb. in good stead
+| Definition: If an experience stands a person in good stead, it is or will be of great use to him.
+| Usage: Getting some work experience now will stand you in good stead when you apply for a permanent job.
+| 

@@ -1,5 +1,6 @@
+*****************
 Computer Glossary
-=================
+*****************
 
 .. toctree::
    :maxdepth: 2
@@ -12,5 +13,6 @@ Computer Glossary
    computer_glossary/android_cpu_differences
    computer_glossary/install_ubuntu_on_mac
    computer_glossary/unix_configure_file
+   computer_glossary/shell_commands
 
 
