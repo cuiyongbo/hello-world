@@ -130,5 +130,18 @@ dictionary is reproduced here for convenience ::
 
 Note: `Quick reference to common Http Status code <https://wiki.apache.org/httpd/CommonHTTPStatusCodes>`_
 
+Another http response code lookup table::
 
+   table = requests.codes.__dict__
+   pprint(table)
+
+4XX was a client error and 5XX a server one.
+
+.. note::
+
+   *timeout* is not a time limit on the entire response download;
+   rather, an exception is raised if the server has not issued a
+   response for *timeout* seconds (more precisely, if no bytes
+   have been received on the underlying socket for *timeout* seconds).
+   If no *timeout* is specified explicitly, requests do not time out.
 

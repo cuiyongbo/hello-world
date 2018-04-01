@@ -160,6 +160,7 @@ VmWare
 
 #. Copy – Ctrl + Insert
 #. Paste – Shift + Insert
+#. Switch Focus - Ctrl + Alt (Windows), Ctrl + Option (Mac)
 
 
 MS Word

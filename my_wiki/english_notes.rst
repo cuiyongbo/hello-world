@@ -3227,7 +3227,14 @@ his is able to return to duty. [缝了九针]
 | stoicism
 | Definition: An indifference to pleasure or pain.
 | Usage: She endured her long illness with stoicism.
-| 
+|
+
+an ancient Greek school of philosophy founded at Athens by Zeno of Citium.
+The school taught that virtue, the highest good, is based on knowledge,
+and that the wise live in harmony with the divine Reason (also identified
+with Fate and Providence) that governs nature, and are indifferent to
+the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
+
 | wordless
 | Definition: expressed without speech.
 | Usage: The wordless language of the heart.

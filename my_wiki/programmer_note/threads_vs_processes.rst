@@ -79,7 +79,7 @@ The UNIX standards, specifically IEEE Std 1003.1, 2004 Edition, defines a proces
 “an address space with one or more threads executing within that address space, and
 the required system resources for those threads."
 
-See :doc:`fork man page <fork_info>`
+See :doc:`fork man page <linux_system_call/fork_info>`
 
 
 Pthread API

@@ -1,16 +1,13 @@
-FORK
-====
+***********
+fork Manual
+***********
 
-   Linux Programmer's Manual                                        FORK(2)
-
-NAME
-----
+**NAME**
 
    fork - create a child process
 
 
-SYNOPSIS
---------
+**SYNOPSIS**
 
    .. code-block:: c
    
@@ -19,8 +16,7 @@ SYNOPSIS
       pid_t fork(void);
 
 
-DESCRIPTION
------------
+**DESCRIPTION**
 
    ``fork()``  creates  a  new process by duplicating the calling process. 
    The new process is referred to as the child process.
@@ -99,15 +95,14 @@ DESCRIPTION
         the directory stream positioning; on :file:`Linux/glibc` they do not.
 
 
-RETURN VALUE
-------------
+**RETURN VALUE**
+
 
    On success, the PID of the child process is returned in the parent, and 0 is returned in the child. 
    On failure, -1 is returned in the parent, no child process is created, and ``errno`` is set appropriately.
 
 
-ERRORS
-------
+**ERRORS**
 
    EAGAIN
 
@@ -131,21 +126,18 @@ ERRORS
       ``fork()`` is not supported on this platform (for example, hardware without a :abbr:`MMU (Memory-Management Unit)`).
 
 
-NOTES
------
+**NOTES**
 
    Under Linux, ``fork()`` is implemented using copy-on-write pages, so the only penalty that it incurs is the time and
    memory required to duplicate the parent's page tables, and to create a unique task structure for the child.
 
 
-EXAMPLE
--------
+**EXAMPLE**
 
-   See pipe(2) and wait(2).
+   See :manpage:`pipe(2)` and :manpage:`wait(2)`.
 
 
-SEE ALSO
---------
+**SEE ALSO**
 
    clone(2), execve(2), exit(2), setrlimit(2), unshare(2), vfork(2), wait(2),
    daemon(3), capabilities(7), credentials(7)
