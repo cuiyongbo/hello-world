@@ -59,7 +59,7 @@ Mathematical Terminology
 | multiplicative inverser
 | Definition: In mathematics, a **multiplicative inverse** or **reciprocal** for a number x, denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction :math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real number, divide 1 by the number. For example, the reciprocal of 5 is one fifth (1/5 or 0.2), and the reciprocal of 0.25 is 4. The reciprocal function, the function f(x) that maps x to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse (an involution).
 
-.. figure:: images/600px-Hyperbola_one_over_x.svg.png
+.. figure:: images/one_over_x.png
 
    The reciprocal function: :math:`y = \frac{1}{x}`. For every x except 0, y represents its multiplicative inverse.
 
@@ -99,3 +99,17 @@ Mathematical Terminology
 .. figure:: images/abacus.jpg
 
    abacus 算盘
+
+.. figure:: images/Manhattan_distance.svg
+
+   Manhanttan Distance
+   
+   Red: Manhattan distance.
+   Green: diagonal, straight-line distance. 
+   Blue, yellow: equivalent Manhattan distances.
+
+The distance between two points in a grid based on a strictly horizontal
+and/or vertical path (that is, along the grid lines), as opposed to the diagonal
+or "as the crow flies" distance. The Manhattan distance is the simple sum of the
+horizontal and vertical components, whereas the diagonal distance might be
+computed by applying the Pythagorean theorem. [勾股定理]

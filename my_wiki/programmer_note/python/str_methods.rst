@@ -55,7 +55,7 @@ expression support in the :mod:`re` module).
 .. method:: str.find(sub[, start[, end]])
 .. method:: str.rfind(sub[, start[, end]])
 
-   Return the lowest index in the string where substring *sub* is found within the slice
+   Return the lowest/highest index in the string where substring *sub* is found within the slice
    ``s[start:end]``. Optional arguments *start* and *end* are interpreted as in slice notation.
    Return ``-1`` if *sub* is not found.
 

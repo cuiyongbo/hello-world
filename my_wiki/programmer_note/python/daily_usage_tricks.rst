@@ -304,12 +304,6 @@ unittest Module Tricks
       result = unittest.TextTestRunner(verbosity=2).run(suite)
 
 
-String format syntax
-====================
-
-See :doc:`string_format_syntax`
-
-
 json Module Tricks
 ==================
 
