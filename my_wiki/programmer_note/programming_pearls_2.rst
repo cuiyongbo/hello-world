@@ -55,7 +55,6 @@ For code portability, the following preprocessor directives can be used::
 Flexible array member
 =====================
 
-
 Flexible array member is a feature introduced in the C99 standard of the C programming language
 (in particular, in section §6.7.2.1, item 16, page 103). It is a member of a struct,
 which is an array without a given dimension, and it must be the last member of such a struct,
