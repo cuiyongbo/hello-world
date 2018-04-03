@@ -117,4 +117,27 @@ C++ class example
       return 0;
    }
    
-   
+
+C++ enumerator example
+======================
+
+.. code-block:: c++
+
+   enum FileMode
+   {
+      FileMode_none = 0,
+      FileMode_readOnly = 0x01,
+      FileMode_writeOnly = 0x10,
+      FileMode_readWrite = 0x100
+   };
+
+   FileMode operator | (FileMode l, FileMode r)
+   {
+      return FileMode(int(l) | int(r));
+   }
+
+   FileMode operator & (FileMode l, FileMode r)
+   {
+      return FileMode(int(l) & int(r));
+   }
+      

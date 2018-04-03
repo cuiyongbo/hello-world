@@ -279,10 +279,6 @@ English Note
 | Definition: a voucher is a piece of paper that can be used instead of money to pay for something.
 | Usage: The winner will each receive a voucher for a pair of cinema tickets.
 | 
-| glitch
-| Definition: A glitch is a problem, which stops something from working properly or being successful.
-| Usage: Manufacturing glitches have limited the factory’s output, and costs are still far too high.
-| 
 | Faction
 | Definition 1: A faction is an organized group of people within a larger group. Which opposes some of the ideas of the larger group and fights for its own | ideas.
 | Definition 2: Faction is also used to describe argument and disagreement within a group of people.
@@ -1543,19 +1539,25 @@ Isco scored a hat-trick as Spain warmed up for the 2018 World Cup by crushing 20
 | Usage: At 25, I found family life stifling.
 | Usage: They hope the new rules will not stifle creativity.
 | 
+| glitch
+| Definition: A glitch is a problem, which stops something from working properly or being successful.
+| Synonyms: hitch; problem.
+| Usage: Manufacturing glitches have limited the factory’s output, and costs are still far too high.
+| 
 | hitch
 | Definition: A knot used for fastening a rope to another rope or something else.
-| Definition: A period of service.
-| Definition: A temporary interruption or problem.
-| Definition: To get a free ride in a person’s car.
 | Usage: He returned to where he had hitched his horse.
+| Definition: A period of service.
 | Usage: His 12-yeas hitch in the navy.
+| Definition: A temporary interruption or problem.
 | Usage: Everything went without a hitch.
+| Usage: After some technical hitches the show finally got under the way. 
+| Definition: To get a free ride in a person’s car.
 | Usage: They hitched a ride in a truck. [搭顺风车]
 | Idiom: get hitched 
 | Defintion: get married.
-| Idiom: hitch one’s wagon to a star
-| Definition: try to succeed by forming a relationship with someone who is alreay successful.
+| Idiom: hitch one’s wagon to a star [找关系]
+| Definition: try to succeed by forming a relationship with someone who is already successful.
 | 
 | eccentric
 | Definition: (of a thing) not placed centrally or not having its axis or other part placed centrally.

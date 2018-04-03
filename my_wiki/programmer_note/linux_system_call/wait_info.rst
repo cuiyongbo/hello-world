@@ -112,7 +112,7 @@ wait Mannual
          or ``CLD_CONTINUED`` (child continued by ``SIGCONT``).
 
    If ``WNOHANG`` was specified in options and there were no children in a waitable state,
-   then ``waitid()`` returns 0 immediately and the state of the  ``siginfo_t``  structure 
+   then ``waitid()`` returns 0 immediately and the state of the ``siginfo_t`` structure 
    pointed to by *infop* is unspecified. To distinguish this case from that where a child
    was in a waitable state, zero out the ``si_pid`` field before the call and check for a
    nonzero value in this field after the call returns.
@@ -127,7 +127,7 @@ wait Mannual
    waitpid()
       on success, returns the process ID of the child whose state has changed;
       if ``WNOHANG`` was specified and one or more child(ren) specified by pid exist,
-      but have not yet changed state, then 0 is returned. On error, -1 is return.
+      but have not yet changed state, then ``0`` is returned. On error, ``-1`` is return.
 
    waitid()
       returns 0 on success or if ``WNOHANG`` was specified and no child(ren) specified
@@ -156,18 +156,15 @@ wait Mannual
 
 **NOTES**
        
-   A child that terminates, but has not been waited for becomes a "zombie".  The kernel maintains a minimal set of information about the  zombie  process  (PID,  termination  status,
-   resource  usage  information) in order to allow the parent to later perform a wait to obtain information about the child.  As long as a zombie is not removed from the system via a
-   wait, it will consume a slot in the kernel process table, and if this table fills, it will not be possible to create further processes.  If a parent process terminates,  then  its
-   "zombie" children (if any) are adopted by init(8), which automatically performs a wait to remove the zombies.
-
-   POSIX.1-2001  specifies  that  if  the disposition of SIGCHLD is set to SIG_IGN or the SA_NOCLDWAIT flag is set for SIGCHLD (see sigaction(2)), then children that terminate do not
-   become zombies and a call to wait() or waitpid() will block until all children have terminated, and then fail with errno set to ECHILD.  (The  original  POSIX  standard  left  the
-   behavior of setting SIGCHLD to SIG_IGN unspecified.  Note that even though the default disposition of SIGCHLD is "ignore", explicitly setting the disposition to SIG_IGN results in
-   different treatment of zombie process children.)
-
-   Linux 2.6 conforms to the POSIX requirements.  However, Linux 2.4 (and earlier) does not: if a wait() or waitpid() call is made while SIGCHLD is being ignored,  the  call  behaves
-   just as though SIGCHLD were not being ignored, that is, the call blocks until the next child terminates and then returns the process ID and status of that child.
+   A child that terminates, but has not been waited for becomes a "zombie".
+   The kernel maintains a minimal set of information about the zombie process
+   (PID, termination status, resource usage information) in order to allow the
+   parent to later perform a ``wait`` to obtain information about the child.
+   As long as a zombie is not removed from the system via a ``wait``, it will
+   consume a slot in the kernel process table, and if this table fills, it will
+   not be possible to create further processes. If a parent process terminates, 
+   then its "zombie" children (if any) are adopted by :manpage:`init(8)`,
+   which automatically performs a ``wait`` to remove the zombies.
 
 
 **EXAMPLE**

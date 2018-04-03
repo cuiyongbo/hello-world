@@ -1,4 +1,8 @@
+*****************
 What is a Thread?
+*****************
+
+Thread vs Process
 =================
 
 * Technically, **a thread is defined as an independent stream of instructions that can be scheduled to run as such by the operating system**. But what does this mean?

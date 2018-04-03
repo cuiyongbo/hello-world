@@ -74,12 +74,14 @@ fork Manual
 
    Note the following further points:
 
-      * The  child  process is created with a single thread—the one that called ``fork()``. The entire virtual address 
-         space of the parent is replicated in the child, including the states of mutexes, condition variables, and other pthreads objects;
-         the use of :manpage:`pthread_atfork(3)` may be helpful for dealing with problems that this can cause.
+      * The  child  process is created with a single thread—the one that called ``fork()``.
+        The entire virtual address space of the parent is replicated in the child, including
+        the states of mutexes, condition variables, and other pthreads objects; the use of
+        :manpage:`pthread_atfork(3)` may be helpful for dealing with problems that this can cause.
 
-      * After a :manpage:`fork(2)` in a multithreaded program, the child can safely call only async-signal-safe functions
-        (see :manpage:`signal(7)`) until such time as it calls :manpage:`execve(2)`.
+      * After a :manpage:`fork(2)` in a multithreaded program, the child can safely
+        call only async-signal-safe functions (see :manpage:`signal(7)`) until
+        such time as it calls :manpage:`execve(2)`.
 
       * The child inherits copies of the parent's set of open file descriptors. Each file descriptor in the child
         refers to the same open file description (see :manpage:`open(2)`) as the corresponding file descriptor in the parent.
@@ -141,3 +143,18 @@ fork Manual
 
    clone(2), execve(2), exit(2), setrlimit(2), unshare(2), vfork(2), wait(2),
    daemon(3), capabilities(7), credentials(7)
+
+
+**Zombie Process**
+
+   Using ``fork`` to create processes can be very useful, but you must keep track of child processes. When a
+   child process terminates, an association with its parent survives until the parent in turn either terminates
+   normally or calls ``wait``. The child process entry in the process table is therefore not freed up immediately.
+   Although no longer active, the child process is still in the system because its exit code needs to be stored
+   in case the parent subsequently calls **wait**. It becomes what is known as **defunct**, or a **zombie process**.
+
+   If the parent then terminates abnormally, the child process automatically gets the process with PID ``1``
+   (``init``) as parent. The child process is now a zombie that is no longer running but has been inherited by
+   ``init`` because of the abnormal termination of the parent process. The zombie will remain in the process
+   table until collected by the ``init`` process. The bigger the table, the slower this procedure. You need to
+   avoid zombie processes, because they consume resources until ``init`` cleans them up.

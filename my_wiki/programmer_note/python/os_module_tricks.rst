@@ -103,7 +103,7 @@ Frequently Used Methods
    Return the size, in bytes, of path. Raise :exc:`os.error`
    if the file does not exist or is inaccessible.
 
-   .. versionadded:: 1.5.2.
+   .. versionadded:: 1.5.2
 
 .. method:: os.path.isabs(path)
 
@@ -158,6 +158,33 @@ Frequently Used Methods
    directory for each drive, ``os.path.join("c:", "foo")`` represents
    a path relative to the current directory on drive
    ``C: (c:foo)``, not ``c:\foo``.
+
+.. note:: 
+
+   The return value is a number giving the number of seconds since the epoch
+   (see the :mod:`time` module). Raise :exc:`os.error` if the file does not
+   exist or is inaccessible.
+
+.. method:: os.path.getatime(path)
+
+   Return the time of last access of path. 
+
+   .. versionadded:: 1.5.2
+
+.. method:: os.path.getmtime(path)
+
+   Return the time of last modification of path. 
+
+   .. versionadded:: 1.5.2
+
+.. method:: os.path.getctime(path)
+
+   Return the system’s ctime which, on some systems
+   (like Unix) is the time of the last metadata change,
+   and, on others (like Windows), is the creation time
+   for path. 
+
+   .. versionadded:: 2.3
 
 
 ******************************
