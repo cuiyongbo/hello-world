@@ -169,4 +169,10 @@ ps Command
 See :doc:`ps_command`.
 
 
+kill & killall Command
+======================
+
+See :doc:`kill_command`.
+
+
 
