@@ -10,6 +10,8 @@ Python note
    python/string_format_syntax
    python/urllib_tricks
    python/sort_tricks
+   python/introduction_to_re_module
    python/regex_tricks
+   python/os_module_tricks
    python/daily_usage_tricks
    python/application_examples

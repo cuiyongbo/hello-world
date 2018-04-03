@@ -18,7 +18,7 @@
    This document is an introductory tutorial to using regular expressions in Python
    with the :mod:`re` module.  It provides a gentler introduction than the
    corresponding section in the Library Reference.
-   
+
 
 Introduction
 ============
