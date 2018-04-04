@@ -2984,9 +2984,17 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | beverage
 | Defintion: a drink, especially one other than water.
 | 
+| moonshine
+| Definition: Whiskey illegally distilled from corn mash. [私酒]
+| Definition: foolish talk or ideas. [醉话，胡话]
+| Usage: Whatever I said, it was moonshine. 
+| 
 | raillery
 | Definition: light teasing repartee.
 | Definition: friendly joke about a person.
+| 
+| repartee
+| Definition: conversation or speech characterized by quick, witty comments or replies.
 | 
 | hook
 | Definition: a hook is a bent piece of metal or plastic, used to catch or hold things, or to hang things up.
@@ -3259,4 +3267,19 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 | Definition: A vista is a version of situation or of a range or possibilities.
 | Usage: These uprisings come from desperation and a vista of a future without hope.
 | 
-
+| ingest
+| ingestion
+| ingestive
+| Definition: take (food, drink, or another substance) itno the body by swallowing or absorbing it.
+| Usage: The drug is more easily ingested in pill form.
+| Definition: absorb (information).
+| Usage: He spent his days ingesting the content of the library.
+| 
+| galvanize
+| galvanization
+| Phrase: galvanize sb into (doing) sth
+| Definition: to make sb take action by shocking them or by making them excited.
+| Usage: The urgency of his voice galvanized them into action.
+| Definition: (often as adjective galvanized) coat (iron or steel) with a protective layer of zince. [镀锌]
+| Usage: An old galvanized bucket.
+| 
