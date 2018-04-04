@@ -7,6 +7,8 @@ Computer Glossary
 
    computer_glossary/computer_terminology
    computer_glossary/software_shortcuts_note
+   computer_glossary/os_problems
+   computer_glossary/rst_syntax_note
    computer_glossary/software_screenshots
    computer_glossary/cpu_architecture
    computer_glossary/arm_compiler_unaligned_access

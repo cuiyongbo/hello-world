@@ -69,7 +69,14 @@ Windows Problems
    
    Solution::
 
-      The run-time libraries now contain directives to prevent mixing different types. You will receive this warning if you try to use different types or debug and non-debug versions of the run-time library in the same program. For example, if you compiled one file to use one kind of run-time library and another file to use another kind (for example, single-threaded versus multithreaded) and tried to link them, you will get this warning. You should compile all source files to use the same run-time library. See the Use `Run-Time Library (/MD, /MT, /LD) compiler options <https://  msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx>`_ for more information.
+      The run-time libraries now contain directives to prevent mixing different types.
+      You will receive this warning if you try to use different types or debug and non-debug
+      versions of the run-time library in the same program. For example, if you compiled one
+      file to use one kind of run-time library and another file to use another kind (for example,
+      single-threaded versus multithreaded) and tried to link them, you will get this warning.
+      You should compile all source files to use the same run-time library. See the Use
+      `Run-Time Library (/MD, /MT, /LD) compiler options 
+      <https://msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx>`_ for more information.
    
 
 #. VS __debugbreak
