@@ -1283,7 +1283,7 @@ as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
 Rakitic was almost impeccable on Wednesday. He completed 74 passes, more than any other player, at a conversion rate of 94.6%, 
 with his controlled and sensible passing keepping his team ticking over in the way Busquets has done for so many years.
 
-Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime backheel doubled the lead.
+Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime backheel doubled the lead. [脚后跟妙传]
 
 | 
 | impeccable
@@ -1400,8 +1400,12 @@ and took their chance.
 
 Isco scored a hat-trick as Spain warmed up for the 2018 World Cup by crushing 2014 finalists Argentina in Madrid.
 
+Cristiano Ronaldo scored one of the Champions League's greatest goals as his incredible bicycle kick
+helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车射门]
 
-
+| demolish
+| Definition: overwhelmingly defeat (a player or team).
+| Usage: They demolished the Denver Broncos, 55-10.
 | 
 | epic 
 | Synonyms: saga
