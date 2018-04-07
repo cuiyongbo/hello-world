@@ -331,3 +331,9 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | Synonyms: cold-blooded.
 | Antonyms: homeotherm [恒温动物]
 | 
+| imprint
+| Definition: (of a young animal) come to recognize (another animal, person, or thing) as a parent or other object of habitual trust. [印随]
+
+.. image:: images/animal_imprinting_1.jpg
+.. image:: images/animal_imprinting_2.jpg
+.. image:: images/imprinted_fossil.jpg

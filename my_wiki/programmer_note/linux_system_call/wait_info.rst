@@ -1,5 +1,5 @@
 ************
-wait Mannual
+WAIT Mannual
 ************
 
 **NAME**

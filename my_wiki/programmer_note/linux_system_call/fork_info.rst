@@ -1,5 +1,5 @@
 ***********
-fork Manual
+FORK Manual
 ***********
 
 **NAME**
@@ -34,7 +34,8 @@ fork Manual
 
       * The child's parent PID is the same as the parent's PID.
 
-      * The child does not inherit its parent's memory locks (:manpage:`mlock(2)`, :manpage:`mlockall(2)`).
+      * The child does not inherit its parent's memory locks
+        (:manpage:`mlock(2)`, :manpage:`mlockall(2)`).
 
       * Process resource utilizations (:manpage:`getrusage(2)`) and
         CPU time counters (:manpage:`times(2)`) are reset to zero in the child.
@@ -47,13 +48,16 @@ fork Manual
         (On the other hand, it does inherit :manpage:`fcntl(2)` open file description locks
         and :manpage:`flock(2)` locks from its parent.)
 
-      * The child does not inherit timers from its parent (:manpage:`setitimer(2)`, :manpage:`alarm(2)`, :manpage:`timer_create(2)`).
+      * The child does not inherit timers from its parent
+        (:manpage:`setitimer(2)`, :manpage:`alarm(2)`, :manpage:`timer_create(2)`).
 
-      * The child does not inherit outstanding asynchronous I/O operations from its parent (:manpage:`aio_read(3)`, :manpage:`aio_write(3)`),
-        nor does it inherit any asynchronous I/O contexts from its parent (see :manpage:`io_setup(2)`).
+      * The child does not inherit outstanding asynchronous I/O operations from its parent
+        (:manpage:`aio_read(3)`, :manpage:`aio_write(3)`), nor does it inherit any
+        asynchronous I/O contexts from its parent (see :manpage:`io_setup(2)`).
 
-   The  process  attributes  in  the preceding list are all specified in POSIX.1. The parent and child also differ
-   with respect to the following Linux-specific process attributes:
+   The process attributes in the preceding list are all specified in POSIX.1.
+   The parent and child also differ with respect to the following Linux-specific
+   process attributes:
 
       * The child does not inherit directory change notifications (dnotify) from its parent.
         (see the description of ``F_NOTIFY`` in :manpage:`fcntl(2)`).
@@ -67,10 +71,12 @@ fork Manual
       * Memory mappings that have been marked with the :manpage:`madvise(2)`
         ``MADV_DONTFORK`` flag are not inherited across a ``fork()``.
 
-      * The termination signal of the child is always ``SIGCHLD`` (see :manpage:`clone(2)`).
+      * The termination signal of the child is always ``SIGCHLD``
+        (see :manpage:`clone(2)`).
 
-      * The port access permission bits set by :manpage:`ioperm(2)` are not inherited by the child;
-        the child must turn on any bits that it requires using :manpage:`ioperm(2)`.
+      * The port access permission bits set by :manpage:`ioperm(2)`
+        are not inherited by the child; the child must turn on any bits
+        that it requires using :manpage:`ioperm(2)`.
 
    Note the following further points:
 
@@ -124,7 +130,8 @@ fork Manual
 
    ENOSYS 
 
-      ``fork()`` is not supported on this platform (for example, hardware without a :abbr:`MMU (Memory-Management Unit)`).
+      ``fork()`` is not supported on this platform
+      (for example, hardware without a :abbr:`MMU (Memory-Management Unit)`).
 
 
 **NOTES**

@@ -3287,3 +3287,34 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 | Definition: (often as adjective galvanized) coat (iron or steel) with a protective layer of zince. [镀锌]
 | Usage: An old galvanized bucket.
 | 
+| colophon
+| Definition: a publisher's emblem or imprint, especially one on the title page or spine of a book. [书脊]
+| Definition: a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing.
+| 
+| emblem [国徽，徽章，象征]
+| Definition: a heraldic device or symbolic object as a distinctive badge of a nation, organization, or family.
+| Usage: America's national emblem, the bald eagle. 
+| Usage: The dove is an emblem of peace.
+| Definition: (emblem of) a thing serving as a symbolic representation of a particular quality or concept.
+| Usage: Our child would be a dazzling emblem of our love. [结晶]
+| 
+| imprint
+| Definition: the name of the publisher of a book, usually printed below the title on the first page.
+| Definition: a mark made by pressing something onto a softer substance so that its outline is reproduced.
+| Usage: He made imprints of the keys in the bars of soap.
+| Usage: Tire marks were imprinted in the snow. [车辙印]
+| Usage: Clothes imprinted with the logos of sports teams.
+| Definition: a lasting impression or effect.
+| Usage: Years in the colonies had left their imprint.
+| Usage: He would always have this ghastly image imprinted on his mind. [久久不能释怀]
+| Definition: (of a young animal) come to recognize (another animal, person, or thing) as a parent or other object of habitual trust. [印随]
+|
+
+
+
+
+
+
+
+
+
