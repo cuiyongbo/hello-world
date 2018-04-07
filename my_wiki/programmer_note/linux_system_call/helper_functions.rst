@@ -205,36 +205,30 @@ pause
      
    pause -- stop until signal
 
-
 **SYNOPSIS**
 
    .. code-block:: c
 
       #include <unistd.h>
-
       int pause(void);
-
 
 **DESCRIPTION**
 
    The ``pause()`` function forces a process to pause until a signal is received from
-   either the :manpage:`kill(2)` function or an interval timer.  (See :manpage:`setitimer(2)`.)  
+   either the :manpage:`kill(2)` function or an interval timer. (See :manpage:`setitimer(2)`.)  
    Upon termination of a signal handler started during a ``pause()``, the ``pause()`` call will
    return.
-
 
 **RETURN VALUES**
 
    Always returns -1.
 
-
 **ERRORS**
 
    The ``pause()`` function always returns:
 
-   [EINTR]
+   EINTR
       The call was interrupted.
-
 
 **SEE ALSO**
 

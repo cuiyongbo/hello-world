@@ -2165,11 +2165,20 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: A relentless enemy.
 | 
 | wake
-| Definition: a trail of disturbed water or air left by the passage of a ship or aircraft.
+| Definition: a trail of disturbed water or air left by the passage of a ship or aircraft. [航迹云]
 | Definition: used to refer to the aftermath or consequences of something.
 | Usage: The committee was set up in the wake of inquiry.
 | Idiom: wake up and smell the coffee
 | Definition: become aware of the realities of situation, however unpleasant.
+| 
+| advent
+| Definition: the arrival of a notable person, thing, or event.
+| Usage: The advent of television.
+| 
+| discrepant
+| discrepancy
+| Definition: a lack of compatibility or similarity between two or more facts.
+| Definition: There's a discrepancy between your account and his.
 | 
 | dietary
 | Usage: Animal research showed that breast tumours struggled without the dietary nutrient asparagine.
@@ -3309,6 +3318,7 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 | Usage: He would always have this ghastly image imprinted on his mind. [久久不能释怀]
 | Definition: (of a young animal) come to recognize (another animal, person, or thing) as a parent or other object of habitual trust. [印随]
 |
+
 
 
 

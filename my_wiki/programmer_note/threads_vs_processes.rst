@@ -89,4 +89,8 @@ See :doc:`fork man page <linux_system_call/fork_info>`
 Pthread API
 ===========
 
+Multiple strands of execution in a single program are called threads.
+A more precise definition is that a thread is a sequence of control
+within a process.
+
 See :doc:`Pthread API Introduction <pthread/pthread_api>`.

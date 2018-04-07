@@ -2,6 +2,9 @@
 SIGNAL Manual
 *************
 
+signal
+======
+
 **NAME**
 
    signal -- simplified software signal facilities
@@ -110,13 +113,13 @@ SIGNAL Manual
    As a consequence, the system will discard the exit status from the child processes.
    If the calling process subsequently issues a call to :manpage:`wait(2)` or equivalent,
    it will block until all of the calling process's children terminate,
-   and then return a value of ``-1`` with ``errno`` set to ``ECHILD``.
+   and then return a value of ``-1`` with *errno* set to ``ECHILD``.
 
 
 **RETURN VALUES**
 
    The previous action is returned on a successful call.  Otherwise, ``SIG_ERR`` is
-   returned and the global variable ``errno`` is set to indicate the error.
+   returned and the global variable *errno* is set to indicate the error.
 
 
 **ERRORS**
@@ -138,9 +141,8 @@ SIGNAL Manual
    sigsuspend(2), wait(2), fpsetmask(3), setjmp(3), siginterrupt(3), tty(4)
 
 
-****************
-SIGACTION Manual
-****************
+sigaction
+=========
 
 **NAME**
 
@@ -424,7 +426,7 @@ SIGACTION Manual
 **RETURN VALUE**
 
    ``sigaction()`` returns ``0`` on success; on error, ``-1`` is returned,
-   and ``errno`` is set to indicate the error.
+   and *errno* is set to indicate the error.
 
 
 **ERRORS**
@@ -492,7 +494,6 @@ SIGACTION Manual
 
    See mprotect(2).
 
-
 **SEE ALSO**
 
    kill(1),  kill(2),  killpg(2),  pause(2),  restart_syscall(2),  sigalt‐
@@ -501,14 +502,12 @@ SIGACTION Manual
    tops(3), sigvec(3), core(5), signal(7)
 
 
-****************
-SIGSETOPS Manual
-****************
+sigsetops
+=========
 
 **NAME**
 
    sigemptyset, sigfillset, sigaddset, sigdelset, sigismember - POSIX signal set operations
-
 
 **SYNOPSIS**
 
@@ -550,14 +549,13 @@ SIGSETOPS Manual
 
    ``sigismember()`` returns ``1`` if signum is a member of set,
    ``0`` if signum is not a member, and ``-1`` on error.
-   On error, these functions set ``errno`` to indicate the cause.
+   On error, these functions set *errno* to indicate the cause.
 
 
 **ERRORS**
 
    EINVAL
       *sig* is not a valid signal.
-
 
 **NOTES**
 
@@ -585,3 +583,100 @@ SIGSETOPS Manual
    :manpage:`sigaction(2)`, :manpage:`sigpending(2)`,
    :manpage:`sigprocmask(2)`, :manpage:`sigsuspend(2)`.
 
+
+sigprocmask
+===========
+
+**NAME**
+
+   sigprocmask -- manipulate current signal mask
+
+**SYNOPSIS**
+
+   .. code-block:: c
+
+      #include <signal.h>
+      int sigprocmask(int how, const sigset_t *restrict set, sigset_t *restrict oset);
+
+**DESCRIPTION**
+
+   The ``sigprocmask()`` function examines and/or changes the current signal mask
+   (those signals that are blocked from delivery). Signals are blocked if they are
+   members of the current signal mask set.
+
+   If *set* is not null, the action of ``sigprocmask()`` depends on the value of the
+   parameter *how*.  The signal mask is changed as a function of the specified *set*
+   and the current mask. The function is specified by *how* using one of
+   the following values from :file:`signal.h`::
+
+      SIG_BLOCK    The new mask is the union of the current mask and the specified set.
+
+      SIG_UNBLOCK  The new mask is the intersection of the current mask and the 
+                     complement of the specified set.
+
+      SIG_SETMASK  The current mask is replaced by the specified set.
+
+   If *oset* is not null, it is set to the previous value of the signal mask.  When
+   *set* is null, the value of *how* is insignificant and the mask remains unset
+   providing a way to examine the signal mask without modification.
+
+   The system quietly disallows ``SIGKILL`` or ``SIGSTOP`` to be blocked.
+
+
+**RETURN VALUES**
+
+   A ``0`` value indicated that the call succeeded.
+   A ``-1`` return value indicates an error occurred
+   and *errno* is set to indicated the reason.
+
+
+**ERRORS**
+
+   The ``sigprocmask()`` call will fail and the signal mask will
+   be unchanged if one of the following occurs:
+
+      EINVAL
+         how has a value other than those listed here.
+
+
+**SEE ALSO**
+     
+   :manpage:`kill(2)`, :manpage:`sigaction(2)`,
+   :manpage:`sigsuspend(2)`, :manpage:`sigsetops(3)`.
+
+
+sigsuspend
+==========
+
+**NAME**
+
+   sigsuspend -- atomically release blocked signals and wait for interrupt
+
+**SYNOPSIS**
+
+   .. code-block:: c
+
+      #include <signal.h>
+      int sigsuspend(const sigset_t *sigmask);
+
+**DESCRIPTION**
+
+   ``sigsuspend()`` temporarily changes the blocked signal mask to the set to which
+   *sigmask* points, and then waits for a signal to arrive; on return the previous set
+   of masked signals is restored. The signal mask set is usually empty to indicate
+   that all signals are to be unblocked for the duration of the call.
+
+   In normal usage, a signal is blocked using :manpage:`sigprocmask(2)` to begin
+   a critical section, variables modified on the occurrence of the signal are examined
+   to determine that there is no work to be done, and the process pauses awaiting work
+   by using ``sigsuspend()`` with the previous mask returned by *sigprocmask*.
+
+**RETURN VALUES**
+
+   The ``sigsuspend()`` function always terminates by being interrupted,
+   returning ``-1`` with *errno* set to ``EINTR``.
+
+**SEE ALSO**
+
+   :manpage:`sigaction(2)`, :manpage:`sigprocmask(2)`,
+   :manpage:`sigsetops(3)`.

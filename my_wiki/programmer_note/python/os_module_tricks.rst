@@ -186,6 +186,17 @@ Frequently Used Methods
 
    .. versionadded:: 2.3
 
+.. method:: os.path.normpath(path)
+
+   Normalize path, eliminating double forwardslashes, etc.
+
+   .. code-block:: python
+
+      >>> os.path.normpath('/ljklfs//sdf//sdf////sdf')
+      '/ljklfs/sdf/sdf/sdf'
+      >>> os.path.normpath('/ljklfs//sdf\\\sdf\\\sdf')
+      '/ljklfs/sdf\\\\sdf\\\\sdf'
+
 
 ******************************
 Python to traverse a directory
