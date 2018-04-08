@@ -94,3 +94,9 @@ A more precise definition is that a thread is a sequence of control
 within a process.
 
 See :doc:`Pthread API Introduction <pthread/pthread_api>`.
+
+
+Reentry Routines vs Thread-safe Routines
+========================================
+
+You need routines known as re-entrant routines. Re-entrant code can be called more than once, whether by different threads or by nested invocations in some way, and still function correctly. Thus, the re-entrant section of code usually must use local variables only in such a way that each and every call to the code gets its own unique copy of the data.

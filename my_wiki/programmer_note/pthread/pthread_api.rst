@@ -56,3 +56,11 @@ The Pthreads API
    api_mutex
    api_condition_var
 
+
+.. note::
+
+   pthread_** functions, is among the few Linux functions that do not follow
+   the convention of using a return value of ``1`` for errors. Unless you are
+   very sure, it’s always safest to double-check the manual before checking
+   the return code.
+

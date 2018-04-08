@@ -125,7 +125,7 @@ Terminating Threads & pthread_exit()
   
    * There is a definite problem if ``main()`` finishes before the threads it spawned if you don't call ``pthread_exit()`` explicitly. All of the threads it created will terminate because ``main()`` is done and no longer exists to support the threads.
    * By having ``main()`` explicitly call ``pthread_exit()`` as the last thing it does, ``main()`` will block and be kept alive to support the threads it created until they are done.
-     
+   
 
 Example: Pthread Creation and Termination
 -----------------------------------------
@@ -133,3 +133,15 @@ Example: Pthread Creation and Termination
 This simple example code creates 5 threads with the ``pthread_create()`` routine. Each thread prints a "Hello World!" message, and then terminates with a call to ``pthread_exit()``.
 
 :download:`View source code <src_files/hello.c>`
+
+
+.. note::
+
+   Using *fork* causes execution to continue in the same location with a different return code,
+   whereas using a new thread explicitly provides a pointer to a function where the new thread
+   should start executing.
+
+   When a thread terminates, it calls the *pthread_exit* function, much as a process calls *exit*
+   when it terminates. This function terminates the calling thread, returning a pointer to an object.
+   **Never use it to return a pointer to a local variable, because the variable will cease to exist
+   when the thread does so, causing a serious bug.**
