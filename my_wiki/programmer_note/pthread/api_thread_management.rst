@@ -8,11 +8,11 @@ Passing Arguments to Threads
 
 .. note::
 
-   Question: How can you safely pass data to newly created threads, given their non-deterministic start-up and scheduling? 
+   Question: How can you safely pass data to newly created threads,
+   given their non-deterministic start-up and scheduling? 
 
-   |
-
-   ANSWER: Make sure that all passed data is thread safe - that it can not be changed by other threads.  The three examples that follow demonstrate what not and what to do.
+   ANSWER: Make sure that all passed data is thread safe - that
+   it can not be changed by other threads.
 
 
 

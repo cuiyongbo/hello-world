@@ -175,4 +175,8 @@ kill & killall Command
 See :doc:`kill_command`.
 
 
+grep Command
+============
+
+See :doc:`grep_command`
 

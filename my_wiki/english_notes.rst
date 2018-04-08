@@ -1247,6 +1247,17 @@ English Note
 | Usage:  If he does that I’ll clobber him!
 | Usage: The Braves clobbered the Cubs 23-20.
 |
+| runaway
+| Definition: a person who has run away, especially from their family or an institution.
+| Usage: A teenage runaway. [离家出走]
+| Definition: an animal or vehicle that is running out of control.
+| Usage: A runaway train.
+| Definition: denoting something happening or done very quickly, easily, or uncontrollably.
+| Usage: The runaway success of the book.
+|
+
+Lionel Messi scored a hat-trick as runaway leaders Barcelona equalled the La Liga record
+of 38 games unbeaten with victory over Leganes.
 
 Barcelona v Chelsea: Lionel Messi joins the Champions League 100 club.[百球俱乐部]
 
@@ -3318,8 +3329,18 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 | Usage: He would always have this ghastly image imprinted on his mind. [久久不能释怀]
 | Definition: (of a young animal) come to recognize (another animal, person, or thing) as a parent or other object of habitual trust. [印随]
 |
+| fitful
+| Definition: something that is fitful happens for irregular periods of time or occurs at irregular times, rather than being continous.
+| Usage: The government is making slow and fitful progress in these negotiations.
+|
 
+It was three weeks ago that Facebook suspended Cambridge Analytica
+just hours before a whistleblower's revelations to the Observer
+newspaper triggered the current scandal over improper use of data.
 
+whistleblower
+whistle-blower
+Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
 
 
 

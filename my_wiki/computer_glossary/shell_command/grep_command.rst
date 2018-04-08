@@ -1,383 +1,451 @@
-GREP(1)                     General Commands Manual                    GREP(1)
+************
+grep command
+************
+
+**NAME**
+   
+   grep, egrep, fgrep, rgrep - print lines matching a pattern
+
+**SYNOPSIS**
+
+   .. code-block:: sh
+
+      grep [OPTIONS] PATTERN [FILE...]
+      grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...]
+
+**DESCRIPTION**
+ 
+   :command:`grep` searches the named input *FILEs* (or standard input if no files are
+   named, or if a single hyphen-minus (-) is given as file name) for lines
+   containing a match to the given *PATTERN*. By default, :command:`grep` prints the
+   matching lines.
+
+   In addition, three variant programs :command:`egrep`, :command:`fgrep` and :command:`rgrep` are
+   available.  :command:`egrep`  is the same as ``grep -E``. :command:`fgrep` is the same as
+   ``grep -F``. :command:`rgrep` is the same as ``grep -r``. Direct invocation as either
+   *egrep* or *fgrep* is deprecated, but is provided to allow historical
+   applications that rely on them to run unmodified.
+
+**OPTIONS**
+
+   #. Generic Program Information
+      
+      .. option:: --help 
+
+         Print a usage message briefly summarizing these command-line
+         options and the bug-reporting address, then exit.
+
+      .. option:: -V, --version
+
+         Print the version number of grep to the standard output stream.
+         This version number should be included in all bug reports.
+
+   #. Matcher Selection
+      
+      .. option:: -E, --extended-regexp
+         
+         Interpret *PATTERN* as an extended regular expression (ERE, see
+         below). (-E is specified by POSIX.)
+
+      .. option:: -F, --fixed-strings
+         
+         Interpret *PATTERN* as a list of fixed strings (rather than
+         regular expressions), separated by newlines, any of which is to
+         be matched. (-F is specified by POSIX.)
+
+      .. option:: -G, --basic-regexp
+
+         Interpret *PATTERN* as a basic regular expression (BRE, see
+         below). This is the default.
+
+      .. option:: -P, --perl-regexp
+              
+         Interpret *PATTERN* as a Perl regular expression (PCRE, see
+         below). This is highly experimental and ``grep -P``  may warn of
+         unimplemented features.
+
+   #. Matching Control
+       
+      .. option:: -e PATTERN, --regexp=PATTERN
+         
+         Use *PATTERN* as the pattern. This can be used to specify
+         multiple search patterns, or to protect a pattern beginning
+         with a hyphen (-). (:option:`-e` is specified by POSIX.)
+
+      .. option:: -f FILE, --file=FILE
+         
+         Obtain patterns from *FILE*, one per line. The empty file
+         contains zero patterns, and therefore matches nothing.
+         (:option:`-f` is specified by POSIX.)
+
+      .. option:: -i, --ignore-case
+         
+         Ignore case distinctions in both the *PATTERN* and the input
+         files. (:option:`-i` is specified by POSIX.)
+
+      .. option:: -v, --invert-match
+              
+         Invert the sense of matching, to select non-matching lines.
+         (:option:`-v` is specified by POSIX.)
+
+      .. option:: -w, --word-regexp
+         
+         Select only those lines containing matches that form whole
+         words. The test is that the matching substring must either be
+         at the beginning of the line, or preceded by a non-word
+         constituent character. Similarly, it must be either at the end
+         of the line or followed by a non-word constituent character.
+         Word-constituent characters are letters, digits, and the
+         underscore.
+
+      .. option:: -x, --line-regexp
+         
+         Select only those matches that exactly match the whole line.
+         This option has the same effect as anchoring the expression with
+         ``^`` and ``$``. (:option:`-x` is specified by POSIX.)
+
+   #. General Output Control
+
+      .. option:: -c, --count
+              
+         Suppress normal output; instead print a count of matching lines
+         for each input file. With the :option:`-v,  --invert-match` option,
+         count non-matching lines.  (:option:`-c` is specified by POSIX.)
+
+      .. option:: --color[=WHEN], --colour[=WHEN]
+         
+         Surround the matched (non-empty) strings, matching lines, context
+         lines, file names, line numbers, byte offsets, and separators 
+         (for fields and groups of context lines) with escape sequences to
+         display them in color on the terminal. *WHEN* is ``never``, ``always``,
+         or ``auto``.
+
+      .. option:: -L, --files-without-match
+         
+         Suppress normal output; instead print the name of each input
+         file from which no output would normally have been printed. The
+         scanning will stop on the first match.
+
+      .. option:: -l, --files-with-matches
+         
+         Suppress normal output; instead print the name of each input file
+         from which output would normally have been printed. The scanning
+         will stop on the first match. (:option:`-l`  is specified by POSIX.)
+
+      .. option:: -m NUM, --max-count=NUM
+         
+         Stop reading a file after *NUM* matching lines. If the input is
+         standard input from a regular file, and *NUM* matching lines are
+         output, :command:`grep` ensures that the standard input is positioned
+         to just after the last matching line before exiting, regardless of
+         the presence of trailing context lines. This enables a calling
+         process to resume a search. When :command:`grep` stops after *NUM* matching
+         lines, it outputs any trailing context lines. When the :option:`-c, --count`
+         option is also used, :command:`grep` does not output a count greater than *NUM*.
+         When the :option:`-v, --invert-match` option is also used, :command:`grep`
+         stops after outputting *NUM* non-matching lines.
+
+      .. option:: -o, --only-matching
+
+         Print only the matched (non-empty) parts of a matching line,
+         with each such part on a separate output line.
+
+      .. option:: -q, --quiet, --silent
+              
+         Quiet; do not write anything to standard output. Exit immediately with
+         zero status if any match is found, even if an error was detected.
+         Also see the :option:`-s` or :option:`--no-messages` option.
+         (:option:`-q` is specified by POSIX.)
+
+      .. option:: -s, --no-messages
+         
+         Suppress error messages about nonexistent or unreadable files.
+         Portability note: unlike GNU *grep*, 7th Edition Unix *grep* did not
+         conform to POSIX, because it lacked :option:`-q` and its :option:`-s`
+         option behaved like GNU grep's :option:`-q` option. USG-style *grep*
+         also lacked :option:`-q` but its :option:`-s` option behaved like GNU
+         *grep*. Portable shell scripts should avoid both :option:`-q` and
+         :option:`-s` and should redirect standard and error output to
+         :file:`/dev/null` instead.  (:option:`-s` is specified by POSIX.)
+
+   #. Output Line Prefix Control
+      
+      .. option:: -b, --byte-offset
+         
+         Print the 0-based byte offset within the input file before each
+         line of output. If :option:`-o, --only-matching` is specified, print the
+         offset of the matching part itself.
+
+      .. option:: -H, --with-filename
+
+         Print the file name for each match. This is the default when
+         there is more than one file to search.
+
+      .. option:: -h, --no-filename
+
+         Suppress  the  prefixing  of  file names on output. This is the
+         default when there is only one file (or only standard input) to
+         search.
+
+      .. option:: --label=LABEL
+         
+         Display input actually coming from standard input as input
+         coming from file *LABEL*. This is especially useful  when
+         implementing  tools  like :command:`zgrep`, e.g.,
+         ``gzip -cd foo.gz | grep --label=foo -H`` something.
+         See also the :option:`-H` option.
+
+      .. option:: -n, --line-number
+         
+         Prefix each line of output with the 1-based line number within
+         its input file. (:option:`-n` is specified by POSIX.)
+
+      .. option:: -T, --initial-tab
+
+         Make sure that the first character of actual line content lies
+         on a tab stop, so that the alignment of tabs looks normal. This
+         is useful with options that prefix their output to the actual
+         content: :option:`-H, -n, -b`. In order to improve the probability
+         that lines from a single file will all start at the same column,
+         this also causes the line number and byte offset (if present) to
+         be printed in a minimum size field width.
+
+      .. option:: -u, --unix-byte-offsets
+              
+         Report Unix-style byte offsets. This switch causes :command:`grep` to
+         report byte offsets as if the file were a Unix-style text file,
+         i.e., with CR characters stripped off. This will produce
+         results identical to running :command:`grep` on a Unix  machine.
+         **This option has no effect unless :option:`-b` option is also used;
+         it has no effect on platforms other than MS-DOS and MS-Windows.**
+
+      .. option:: -Z, --null
+         
+         Output a zero byte (the ASCII NUL character) instead of the
+         character that normally follows a file name. For example, 
+         ``grep -lZ`` outputs a zero byte after each file name instead
+         of the usual newline. This option makes the output unambiguous,
+         even in the presence of file names containing unusual characters
+         like newlines. This option can be used with commands like
+         ``find -print0``, ``perl -0``, ``sort -z``, and ``xargs -0`` 
+         to process arbitrary file names, even those that contain
+         newline characters.
+
+   #. Context Line Control
+      
+      .. option:: -A NUM, --after-context=NUM
+      .. option:: -B NUM, --before-context=NUM
+
+         Print *NUM* lines of trailing context before/after matching lines.
+
+      .. option:: -C NUM, -NUM, --context=NUM
+         
+         Print *NUM* lines of output context.
+
+      .. code-block:: sh
+   
+         grep -n "\-\-color" --color=auto -A 2 -B 2 grep_command.rst
+         grep -n "\-\-color" --color=auto -C 2 grep_command.rst
+
+      .. note::
+
+         Places a line containing a group separator (--) between contiguous
+         groups of matches. With the :option:`-o, --only-matching` option,
+         this has no effect and a warning is given.
 
 
+   #. File and Directory Selection
+      
+      .. option:: -a, --text
+              
+         Process a binary file as if it were text; this is equivalent to
+         the ``--binary-files=text`` option.
 
-NAME
-       grep, egrep, fgrep, rgrep - print lines matching a pattern
+      .. option:: --binary-files=TYPE
+              
+         If the first few bytes of a file indicate that the file contains
+         binary data, assume that the file is of type TYPE. By default,
+         *TYPE* is binary, and :command:`grep` normally outputs either
+         a one-line message saying that a binary file matches, or no message if
+         there is no match. If *TYPE* is ``without-match``, :command:`grep` assumes
+         that a binary file does not match; this is equivalent to the :option:`-I`
+         option. 
 
-SYNOPSIS
-       grep [OPTIONS] PATTERN [FILE...]
-       grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...]
+         .. warning::
+         
+            ``grep --binary-files=text`` might output binary garbage, which can have
+            nasty side effects if the output is a terminal and if the terminal driver
+            interprets some of it as commands.
 
-DESCRIPTION
-       grep  searches the named input FILEs (or standard input if no files are
-       named, or if a single hyphen-minus (-) is given as file name) for lines
-       containing  a  match to the given PATTERN.  By default, grep prints the
-       matching lines.
+      .. option:: -I
 
-       In  addition,  three  variant  programs  egrep,  fgrep  and  rgrep  are
-       available.   egrep  is  the  same  as  grep -E.   fgrep  is the same as
-       grep -F.  rgrep is the same as grep -r.  Direct  invocation  as  either
-       egrep  or  fgrep  is  deprecated,  but  is provided to allow historical
-       applications that rely on them to run unmodified.
+         Process a binary file as if it did not contain matching data;
+         this is equivalent to the ``--binary-files=without-match`` option.
 
-OPTIONS
-   Generic Program Information
-       --help Print a usage message  briefly  summarizing  these  command-line
-              options and the bug-reporting address, then exit.
+      .. option:: -D ACTION, --devices=ACTION
+              
+         If an input file is a device, FIFO or socket, use *ACTION* to
+         process it. By default, *ACTION* is ``read``, which means that
+         devices are read just as if they were ordinary files. If *ACTION*
+         is skip, devices are silently skipped.
 
-       -V, --version
-              Print  the version number of grep to the standard output stream.
-              This version number should be included in all bug  reports  (see
-              below).
+      .. option:: -d ACTION, --directories=ACTION
 
-   Matcher Selection
-       -E, --extended-regexp
-              Interpret  PATTERN  as  an extended regular expression (ERE, see
-              below).  (-E is specified by POSIX.)
+         If an input file is a directory, use *ACTION* to process it. By
+         default, *ACTION* is ``read``, i.e., read directories just as if they
+         were ordinary files. If *ACTION* is skip, silently skip directories.
+         If *ACTION* is ``recurse``, read all files under each directory,
+         recursively, following symbolic links only if they are on the
+         command line. This is equivalent to the :option:`-r` option.
 
-       -F, --fixed-strings
-              Interpret PATTERN as  a  list  of  fixed  strings  (rather  than
-              regular  expressions), separated by newlines, any of which is to
-              be matched.  (-F is specified by POSIX.)
+      .. option:: -r, --recursive
 
-       -G, --basic-regexp
-              Interpret PATTERN  as  a  basic  regular  expression  (BRE,  see
-              below).  This is the default.
+         Read all files under each directory, recursively, following
+         symbolic links only if they are on the command line. 
 
-       -P, --perl-regexp
-              Interpret  PATTERN  as  a  Perl  regular  expression  (PCRE, see
-              below).  This is highly experimental and grep  -P  may  warn  of
-              unimplemented features.
+      .. option:: -R, --dereference-recursive
 
-   Matching Control
-       -e PATTERN, --regexp=PATTERN
-              Use  PATTERN  as  the  pattern.   This  can  be  used to specify
-              multiple search patterns, or to protect a pattern beginning with
-              a hyphen (-).  (-e is specified by POSIX.)
+         Read all files under each directory, recursively. Follow all
+         symbolic links, unlike :option:`-r`.
 
-       -f FILE, --file=FILE
-              Obtain  patterns  from  FILE,  one  per  line.   The  empty file
-              contains zero patterns, and therefore matches nothing.   (-f  is
-              specified by POSIX.)
+      .. option:: --exclude=GLOB
+             
+         Skip files whose base name matches *GLOB* (using wildcard
+         matching). A file-name glob can use ``*``, ``?``, and ``[...]``
+         as wildcards, and ``\`` to quote a wildcard or backslash
+         character literally.
 
-       -i, --ignore-case
-              Ignore  case  distinctions  in  both  the  PATTERN and the input
-              files.  (-i is specified by POSIX.)
+      .. option:: --include=GLOB
 
-       -v, --invert-match
-              Invert the sense of matching, to select non-matching lines.  (-v
-              is specified by POSIX.)
+         Search only files whose base name matches *GLOB* (using wildcard
+         matching as described under :option:`--exclude`).
+         
+      .. option:: --exclude-from=FILE
+              
+         Skip files whose base name matches any of the file-name globs
+         read from *FILE* (using wildcard matching as described under
+         :option:`--exclude`).
 
-       -w, --word-regexp
-              Select  only  those  lines  containing  matches  that form whole
-              words.  The test is that the matching substring must  either  be
-              at  the  beginning  of  the  line,  or  preceded  by  a non-word
-              constituent character.  Similarly, it must be either at the  end
-              of  the  line  or  followed by a non-word constituent character.
-              Word-constituent  characters  are  letters,  digits,   and   the
-              underscore.
+      .. option:: --exclude-dir=DIR
+              
+         Exclude directories matching the pattern *DIR* from
+         recursive searches.
 
-       -x, --line-regexp
-              Select  only  those  matches  that exactly match the whole line.
-              This option has the same effect as anchoring the expression with
-              ^ and $.  (-x is specified by POSIX.)
+   #. Other Options
 
-       -y     Obsolete synonym for -i.
+      .. option:: --line-buffered
 
-   General Output Control
-       -c, --count
-              Suppress  normal output; instead print a count of matching lines
-              for each input file.  With the -v,  --invert-match  option  (see
-              below), count non-matching lines.  (-c is specified by POSIX.)
+         Use line buffering on output. This can cause a performance
+         penalty.
 
-       --color[=WHEN], --colour[=WHEN]
-              Surround   the  matched  (non-empty)  strings,  matching  lines,
-              context lines, file  names,  line  numbers,  byte  offsets,  and
-              separators  (for fields and groups of context lines) with escape
-              sequences to display them in color on the terminal.  The  colors
-              are  defined  by  the  environment  variable  GREP_COLORS.   The
-              deprecated environment variable GREP_COLOR is  still  supported,
-              but  its setting does not have priority.  WHEN is never, always,
-              or auto.
+      .. option:: -U, --binary
 
-       -L, --files-without-match
-              Suppress normal output; instead print the  name  of  each  input
-              file from which no output would normally have been printed.  The
-              scanning will stop on the first match.
+         Treat the file(s) as binary. By default, under MS-DOS and MS-
+         Windows, :command:`grep` guesses the file type by looking at the
+         contents of the first 32KB read from the file. If :command:`grep`
+         decides the file is a text file, it strips the CR characters from
+         the original file contents (to make regular expressions with ``^``
+         and ``$`` work correctly). Specifying :option:`-U` overrules this
+         guesswork, causing all files to be read and passed to the matching
+         mechanism verbatim; if the file is a text file with CR/LF pairs at
+         the end of each line, this will cause some regular expressions to
+         fail. This option has no effect on platforms other than MS-DOS and
+         MS-Windows.
 
-       -l, --files-with-matches
-              Suppress normal output; instead print the  name  of  each  input
-              file  from  which  output would normally have been printed.  The
-              scanning will stop on the first  match.   (-l  is  specified  by
-              POSIX.)
+      .. option:: -z, --null-data
 
-       -m NUM, --max-count=NUM
-              Stop  reading  a file after NUM matching lines.  If the input is
-              standard input from a regular file, and NUM matching  lines  are
-              output,  grep  ensures  that the standard input is positioned to
-              just after the last matching line before exiting, regardless  of
-              the  presence of trailing context lines.  This enables a calling
-              process to resume a search.  When grep stops after NUM  matching
-              lines,  it  outputs  any trailing context lines.  When the -c or
-              --count option is also  used,  grep  does  not  output  a  count
-              greater  than NUM.  When the -v or --invert-match option is also
-              used, grep stops after outputting NUM non-matching lines.
+         Treat the input as a set of lines, each terminated by a zero
+         byte (the ASCII NUL character) instead of a newline. Like the
+         :option:`-Z, --null` option, this option can be used with
+         commands like ``sort -z`` to process arbitrary file names.
 
-       -o, --only-matching
-              Print only the matched (non-empty) parts  of  a  matching  line,
-              with each such part on a separate output line.
 
-       -q, --quiet, --silent
-              Quiet;   do   not  write  anything  to  standard  output.   Exit
-              immediately with zero status if any match is found, even  if  an
-              error  was  detected.   Also see the -s or --no-messages option.
-              (-q is specified by POSIX.)
+**REGULAR EXPRESSIONS**
 
-       -s, --no-messages
-              Suppress error messages about nonexistent or  unreadable  files.
-              Portability note: unlike GNU grep, 7th Edition Unix grep did not
-              conform to POSIX, because it lacked -q and its -s option behaved
-              like  GNU  grep's  -q option.  USG-style grep also lacked -q but
-              its -s option behaved like GNU  grep.   Portable  shell  scripts
-              should  avoid  both  -q  and -s and should redirect standard and
-              error output to /dev/null instead.  (-s is specified by POSIX.)
+   A regular expression is a pattern that describes a set of strings.
+   Regular expressions are constructed analogously to arithmetic expressions,
+   by using various operators to combine smaller expressions.
 
-   Output Line Prefix Control
-       -b, --byte-offset
-              Print the 0-based byte offset within the input file before  each
-              line of output.  If -o (--only-matching) is specified, print the
-              offset of the matching part itself.
+   grep understands three different versions of regular expression syntax:
+   “basic” (BRE), “extended” (ERE) and “perl” (PRCE). In GNU grep, there
+   is no difference in available functionality between basic and extended
+   syntaxes. In other implementations, basic regular expressions are less
+   powerful. The following description applies to extended regular
+   expressions; differences for basic regular expressions are summarized
+   afterwards. Perl regular expressions give additional functionality,
+   and are documented in :manpage:`pcresyntax(3)` and :manpage:`pcrepattern(3)`,
+   but only work if pcre is available in the system.
 
-       -H, --with-filename
-              Print the file name for each match.  This is  the  default  when
-              there is more than one file to search.
+   The fundamental building blocks are the regular expressions that match
+   a single character. Most characters, including all letters and digits,
+   are regular expressions that match themselves. Any meta-character with
+   special meaning may be quoted by preceding it with a backslash.
 
-       -h, --no-filename
-              Suppress  the  prefixing  of  file names on output.  This is the
-              default when there is only one file (or only standard input)  to
-              search.
+   The period ``.`` matches any single character.
 
-       --label=LABEL
-              Display  input  actually  coming  from  standard  input as input
-              coming  from  file  LABEL.   This  is  especially  useful   when
-              implementing  tools  like  zgrep,  e.g.,  gzip -cd foo.gz | grep
-              --label=foo -H something.  See also the -H option.
+   #. Character Classes and Bracket Expressions
+      
+      A bracket expression is a list of characters enclosed by ``[`` and ``]``.
+      It matches any single character in that list; if the first character of
+      the list is the caret ``^`` then it matches any character not in the list.
+      For example, the regular expression ``[0123456789]`` matches any single
+      digit.
 
-       -n, --line-number
-              Prefix each line of output with the 1-based line  number  within
-              its input file.  (-n is specified by POSIX.)
+      Within a bracket expression, a range expression consists of two characters
+      separated by a hyphen (``-``).  It matches any single character that
+      sorts between the two characters, inclusive, using the locale's collating
+      sequence and character set. For example, in the default C locale, ``[a-d]``
+      is equivalent to ``[abcd]``.  Many locales sort characters in dictionary
+      order, and in these locales ``[a-d]`` is typically not equivalent to ``[abcd]``;
+      it might be equivalent to ``[aBbCcDd]``, for example. To obtain the traditional
+      interpretation of bracket expressions, you can use the C locale by setting
+      the :env:`LC_ALL` environment variable to the value ``C``.
 
-       -T, --initial-tab
-              Make  sure  that the first character of actual line content lies
-              on a tab stop, so that the alignment of tabs looks normal.  This
-              is  useful  with  options that prefix their output to the actual
-              content: -H,-n, and -b.  In order  to  improve  the  probability
-              that lines from a single file will all start at the same column,
-              this also causes the line number and byte offset (if present) to
-              be printed in a minimum size field width.
+      Finally, certain named classes of characters are predefined within bracket
+      expressions, as follows. Their names are self explanatory, and
+      they are [:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:],
+      [:lower:], [:print:], [:punct:], [:space:], [:upper:], and [:xdigit:].
+      For example, [[:alnum:]] means the character class of numbers and
+      letters in the current locale. In the C locale and ASCII character set
+      encoding, this is the same as ``[0-9A-Za-z]``. (Note that the brackets in
+      these class names are part of the symbolic names, and must be included
+      in addition to the brackets delimiting the bracket expression.) 
 
-       -u, --unix-byte-offsets
-              Report  Unix-style  byte  offsets.   This  switch causes grep to
-              report byte offsets as if the file were a Unix-style text  file,
-              i.e.,  with  CR  characters  stripped  off.   This  will produce
-              results identical to running  grep  on  a  Unix  machine.   This
-              option  has  no  effect unless -b option is also used; it has no
-              effect on platforms other than MS-DOS and MS-Windows.
 
-       -Z, --null
-              Output a zero byte (the ASCII  NUL  character)  instead  of  the
-              character  that normally follows a file name.  For example, grep
-              -lZ outputs a zero byte after each  file  name  instead  of  the
-              usual  newline.   This option makes the output unambiguous, even
-              in the presence of file names containing unusual characters like
-              newlines.   This  option  can  be  used  with commands like find
-              -print0, perl -0, sort -z, and xargs  -0  to  process  arbitrary
-              file names, even those that contain newline characters.
+      .. note::
 
-   Context Line Control
-       -A NUM, --after-context=NUM
-              Print  NUM  lines  of  trailing  context  after  matching lines.
-              Places  a  line  containing  a  group  separator  (--)   between
-              contiguous  groups  of  matches.  With the -o or --only-matching
-              option, this has no effect and a warning is given.
+         Most meta-characters lose their special meaning inside bracket expressions.
+         To include a literal ``]`` place it first in the list. Similarly, to include
+         a literal ``^`` place it anywhere but first. Finally, to include a
+         literal ``-`` place it last.
 
-       -B NUM, --before-context=NUM
-              Print NUM  lines  of  leading  context  before  matching  lines.
-              Places   a  line  containing  a  group  separator  (--)  between
-              contiguous groups of matches.  With the  -o  or  --only-matching
-              option, this has no effect and a warning is given.
+   #. Anchoring
+      
+      The caret ``^`` and the dollar sign ``$`` are meta-characters that
+      respectively match the empty string at the beginning and end of a line.
 
-       -C NUM, -NUM, --context=NUM
-              Print  NUM  lines of output context.  Places a line containing a
-              group separator (--) between contiguous groups of matches.  With
-              the  -o  or  --only-matching  option,  this  has no effect and a
-              warning is given.
+   #. The Backslash Character and Special Expressions
+      
+      The symbols ``\<`` and ``\>`` respectively match the empty string at the
+      beginning and end of a word. The symbol ``\b`` matches the empty string at
+      the edge of a word, and ``\B`` matches the empty string provided it's not
+      at the edge of a word. The symbol ``\w`` is a synonym for ``[_[:alnum:]]``
+      and ``\W`` is a synonym for ``[^_[:alnum:]]``.
 
-   File and Directory Selection
-       -a, --text
-              Process a binary file as if it were text; this is equivalent  to
-              the --binary-files=text option.
+   #. Repetition
+      
+      A regular expression may be followed by one of several repetition
+      operators::
 
-       --binary-files=TYPE
-              If the first few bytes of a file indicate that the file contains
-              binary data, assume that the file is of type TYPE.  By  default,
-              TYPE  is  binary,  and  grep  normally outputs either a one-line
-              message saying that a binary file  matches,  or  no  message  if
-              there  is no match.  If TYPE is without-match, grep assumes that
-              a binary file does not match;  this  is  equivalent  to  the  -I
-              option.   If TYPE is text, grep processes a binary file as if it
-              were text; this is equivalent to the -a option.   Warning:  grep
-              --binary-files=text  might output binary garbage, which can have
-              nasty side effects if the  output  is  a  terminal  and  if  the
-              terminal driver interprets some of it as commands.
-
-       -D ACTION, --devices=ACTION
-              If  an  input  file  is  a device, FIFO or socket, use ACTION to
-              process it.  By  default,  ACTION  is  read,  which  means  that
-              devices are read just as if they were ordinary files.  If ACTION
-              is skip, devices are silently skipped.
-
-       -d ACTION, --directories=ACTION
-              If an input file is a directory, use ACTION to process  it.   By
-              default,  ACTION is read, i.e., read directories just as if they
-              were  ordinary  files.   If  ACTION  is  skip,   silently   skip
-              directories.   If  ACTION  is recurse, read all files under each
-              directory, recursively, following symbolic links  only  if  they
-              are on the command line.  This is equivalent to the -r option.
-
-       --exclude=GLOB
-              Skip   files  whose  base  name  matches  GLOB  (using  wildcard
-              matching).  A file-name  glob  can  use  *,  ?,  and  [...]   as
-              wildcards,  and  \  to  quote  a wildcard or backslash character
-              literally.
-
-       --exclude-from=FILE
-              Skip files whose base name matches any of  the  file-name  globs
-              read  from  FILE  (using  wildcard  matching  as described under
-              --exclude).
-
-       --exclude-dir=DIR
-              Exclude directories matching  the  pattern  DIR  from  recursive
-              searches.
-
-       -I     Process  a  binary  file as if it did not contain matching data;
-              this is equivalent to the --binary-files=without-match option.
-
-       --include=GLOB
-              Search only files whose base name matches GLOB  (using  wildcard
-              matching as described under --exclude).
-
-       -r, --recursive
-              Read  all  files  under  each  directory, recursively, following
-              symbolic links only if they are on the command  line.   This  is
-              equivalent to the -d recurse option.
-
-       -R, --dereference-recursive
-              Read  all  files  under each directory, recursively.  Follow all
-              symbolic links, unlike -r.
-
-   Other Options
-       --line-buffered
-              Use line buffering on output.   This  can  cause  a  performance
-              penalty.
-
-       -U, --binary
-              Treat  the  file(s) as binary.  By default, under MS-DOS and MS-
-              Windows, grep guesses the file type by looking at  the  contents
-              of  the first 32KB read from the file.  If grep decides the file
-              is a text file, it strips the CR characters  from  the  original
-              file  contents  (to  make  regular expressions with ^ and $ work
-              correctly).  Specifying -U overrules this guesswork, causing all
-              files  to be read and passed to the matching mechanism verbatim;
-              if the file is a text file with CR/LF pairs at the end  of  each
-              line,  this  will  cause some regular expressions to fail.  This
-              option has no effect on platforms  other  than  MS-DOS  and  MS-
-              Windows.
-
-       -z, --null-data
-              Treat  the  input  as  a set of lines, each terminated by a zero
-              byte (the ASCII NUL character) instead of a newline.   Like  the
-              -Z  or --null option, this option can be used with commands like
-              sort -z to process arbitrary file names.
-
-REGULAR EXPRESSIONS
-       A regular expression is a pattern that  describes  a  set  of  strings.
-       Regular   expressions   are   constructed   analogously  to  arithmetic
-       expressions, by using various operators to combine smaller expressions.
-
-       grep understands three different versions of regular expression syntax:
-       “basic”  (BRE),  “extended” (ERE) and “perl” (PRCE). In GNU grep, there
-       is no difference in available functionality between basic and  extended
-       syntaxes.  In other implementations, basic regular expressions are less
-       powerful.   The  following  description  applies  to  extended  regular
-       expressions;  differences  for basic regular expressions are summarized
-       afterwards.  Perl regular expressions  give  additional  functionality,
-       and  are  documented in pcresyntax(3) and pcrepattern(3), but only work
-       if pcre is available in the system.
-
-       The fundamental building blocks are the regular expressions that  match
-       a single character.  Most characters, including all letters and digits,
-       are regular expressions that match themselves.  Any meta-character with
-       special meaning may be quoted by preceding it with a backslash.
-
-       The period . matches any single character.
-
-   Character Classes and Bracket Expressions
-       A  bracket  expression is a list of characters enclosed by [ and ].  It
-       matches any single character in that list; if the  first  character  of
-       the  list is the caret ^ then it matches any character not in the list.
-       For example, the regular expression  [0123456789]  matches  any  single
-       digit.
-
-       Within  a  bracket  expression,  a  range  expression  consists  of two
-       characters separated by a hyphen.  It matches any single character that
-       sorts  between  the  two  characters,  inclusive,  using  the  locale's
-       collating sequence and character set.  For example, in  the  default  C
-       locale, [a-d] is equivalent to [abcd].  Many locales sort characters in
-       dictionary  order,  and  in  these  locales  [a-d]  is  typically   not
-       equivalent to [abcd]; it might be equivalent to [aBbCcDd], for example.
-       To obtain the traditional interpretation of  bracket  expressions,  you
-       can  use the C locale by setting the LC_ALL environment variable to the
-       value C.
-
-       Finally, certain named classes  of  characters  are  predefined  within
-       bracket expressions, as follows.  Their names are self explanatory, and
-       they  are  [:alnum:],  [:alpha:],  [:cntrl:],   [:digit:],   [:graph:],
-       [:lower:],  [:print:], [:punct:], [:space:], [:upper:], and [:xdigit:].
-       For example, [[:alnum:]] means  the  character  class  of  numbers  and
-       letters  in the current locale. In the C locale and ASCII character set
-       encoding, this is the same as [0-9A-Za-z].  (Note that the brackets  in
-       these  class names are part of the symbolic names, and must be included
-       in addition to the brackets delimiting the bracket  expression.)   Most
-       meta-characters  lose their special meaning inside bracket expressions.
-       To include a literal ] place it  first  in  the  list.   Similarly,  to
-       include a literal ^ place it anywhere but first.  Finally, to include a
-       literal - place it last.
-
-   Anchoring
-       The caret ^ and the dollar sign $ are meta-characters that respectively
-       match the empty string at the beginning and end of a line.
-
-   The Backslash Character and Special Expressions
-       The  symbols  \<  and  \>  respectively  match  the empty string at the
-       beginning and end of a word.  The symbol \b matches the empty string at
-       the  edge  of a word, and \B matches the empty string provided it's not
-       at the edge of a word.  The symbol \w is a synonym for [_[:alnum:]] and
-       \W is a synonym for [^_[:alnum:]].
-
-   Repetition
-       A  regular  expression  may  be  followed  by one of several repetition
-       operators:
-       ?      The preceding item is optional and matched at most once.
-       *      The preceding item will be matched zero or more times.
-       +      The preceding item will be matched one or more times.
-       {n}    The preceding item is matched exactly n times.
-       {n,}   The preceding item is matched n or more times.
-       {,m}   The preceding item is matched at most m times.  This  is  a  GNU
-              extension.
-       {n,m}  The  preceding  item  is  matched at least n times, but not more
-              than m times.
+         ?      The preceding item is optional and matched at most once.
+         *      The preceding item will be matched zero or more times.
+         +      The preceding item will be matched one or more times.
+         {n}    The preceding item is matched exactly n times.
+         {n,}   The preceding item is matched n or more times.
+         {,m}   The preceding item is matched at most m times. This is a GNU
+                extension.
+         {n,m}  The preceding item is matched at least n times, but not more
+                than m times.
 
    Concatenation
        Two regular expressions may  be  concatenated;  the  resulting  regular
@@ -586,56 +654,16 @@ ENVIRONMENT VARIABLES
               as  options.   This  behavior  is  available only with the GNU C
               library, and only when POSIXLY_CORRECT is not set.
 
-EXIT STATUS
-       The exit status is 0 if selected lines are found, and 1 if  not  found.
-       If an error occurred the exit status is 2.  (Note: POSIX error handling
-       code should check for '2' or greater.)
 
-COPYRIGHT
-       Copyright 1998-2000, 2002, 2005-2014 Free Software Foundation, Inc.
+**EXIT STATUS**
 
-       This is free software; see the source for copying conditions.  There is
-       NO  warranty;  not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
-       PURPOSE.
+   The exit status is 0 if selected lines are found, and 1 if  not  found.
+   If an error occurred the exit status is 2.  (Note: POSIX error handling
+   code should check for '2' or greater.)
 
-BUGS
-   Reporting Bugs
-       Email bug reports to <bug-grep@gnu.org>, a mailing list whose web  page
-       is  <http://lists.gnu.org/mailman/listinfo/bug-grep>.   grep's Savannah
-       bug tracker is located at <http://savannah.gnu.org/bugs/?group=grep>.
+**SEE ALSO**
 
-   Known Bugs
-       Large repetition counts in the {n,m} construct may cause  grep  to  use
-       lots of memory.  In addition, certain other obscure regular expressions
-       require exponential time and space, and may cause grep to  run  out  of
-       memory.
-
-       Back-references are very slow, and may require exponential time.
-
-SEE ALSO
    Regular Manual Pages
-       awk(1),  cmp(1),  diff(1),  find(1), gzip(1), perl(1), sed(1), sort(1),
-       xargs(1), zgrep(1), read(2),  pcre(3),  pcresyntax(3),  pcrepattern(3),
-       terminfo(5), glob(7), regex(7).
-
-   POSIX Programmer's Manual Page
-       grep(1p).
-
-   TeXinfo Documentation
-       The  full  documentation  for  grep  is maintained as a TeXinfo manual,
-       which you can read at http://www.gnu.org/software/grep/manual/.  If the
-       info and grep programs are properly installed at your site, the command
-
-              info grep
-
-       should give you access to the complete manual.
-
-NOTES
-       This  man  page  is maintained only fitfully; the full documentation is
-       often more up-to-date.
-
-       GNU's not Unix, but Unix is a beast; its plural form is Unixen.
-
-
-
-User Commands                    GNU grep 2.20                         GREP(1)
+      awk(1),  cmp(1),  diff(1),  find(1), gzip(1), perl(1), sed(1), sort(1),
+      xargs(1), zgrep(1), read(2),  pcre(3),  pcresyntax(3),  pcrepattern(3),
+      terminfo(5), glob(7), regex(7).
