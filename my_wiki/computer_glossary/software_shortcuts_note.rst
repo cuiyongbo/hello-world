@@ -1,8 +1,10 @@
-Software Shortcuts
-==================
+*****************
+Software Shotcuts
+*****************
+
 
 Windows
--------
+=======
 
 #. Windows + E – Open file explorer
 #. Ctrl + N – open a new window the same directory with the current director
@@ -23,7 +25,7 @@ Windows
 
 
 VS 2013
--------
+=======
 
 #. 复制/剪切/删除整行代码 
    
@@ -88,11 +90,9 @@ VS 2013
    - Bookmark Window: Ctrl + K, W
    - Toggle Bookmark: Ctrl + K, K
      
- 
- 
 
 VAssist X
----------
+=========
 
 #. Find symbols: Shift + Alt + S  
 #. Rename variable: Shift + Alt + R
@@ -107,7 +107,7 @@ VAssist X
 
 
 Chrome
-------
+======
 
 #. Open last closed pages: Ctrl + Shift + T
 #. Open Bookmark manager: Ctrl + Shift + O
@@ -122,7 +122,7 @@ Chrome
 
 
 FireFox
--------
+=======
 
 #. History: Ctrl + H
 #. Bookmark: Ctrl + B
@@ -138,7 +138,7 @@ FireFox
    
 
 Safari
-------
+======
 
 #. New Tab – Command + T
 #. Edit Bookmark – Option + Command + B
@@ -156,7 +156,7 @@ Safari
 
 
 VmWare
-------
+======
 
 #. Copy – Ctrl + Insert
 #. Paste – Shift + Insert
@@ -164,7 +164,7 @@ VmWare
 
 
 MS Word
--------
+=======
 
 #. Format brush: Ctrl + Shift + C / V
 #. Bold: Ctrl + B
@@ -183,7 +183,7 @@ MS Word
 
 
 Mac OS X
---------
+========
 
 #. 微调音量: shift＋option＋F12
 #. 调节音量时关闭提示音: shift + fn + F11/F12
@@ -211,7 +211,7 @@ Mac OS X
 
 
 MacOS Terminal
---------------
+==============
 
 #. New tab – Command + T
 #. Close tab – Command + W
@@ -230,7 +230,7 @@ MacOS Terminal
 
 
 Sublime-rst-completion
-----------------------
+======================
 
 #. emphasis: ctrl+alt+i (super+shift+i on Mac)
 #. strong emphasis (bold):  ctrl+alt+b (super+shift+b on Mac)
@@ -247,7 +247,7 @@ Sublime-rst-completion
 
 
 Sublime Text
-------------
+============
 
 #. Hightlighten one word: Ctrl + D
 #. Swap lines: Ctrl + Shift + Up/Down (Windows), Ctrl + Command + Up/Down (Mac)
@@ -255,3 +255,17 @@ Sublime Text
 #. New Window: Shift + Command + N (Mac)
 #. Close Window: Shift + Command + W (Mac)
 #. Close File: Command + W (Mac)
+#. Show/Hide side bar: Ctrl + K + B (Windows), Command + K + B (Mac)
+   
+#. Vertical Selection:
+   
+      Ctrl + Alt + Up/Down (Windows/Linux)
+      Ctrl + Shift + Up/Down (Mac)
+
+   .. note:: 
+
+      For Windows using Intel graphics cards, there are HotKeys setup that
+      cause ``Ctrl + Alt + Up/Down`` to rotate screen, you need to disable
+      these HotKeys for this to work on Windows.
+
+      .. image:: images/intel-graphics-options.png

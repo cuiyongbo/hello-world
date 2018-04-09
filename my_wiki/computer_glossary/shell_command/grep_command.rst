@@ -1,5 +1,7 @@
+:orphan:
+
 ************
-grep command
+grep Command
 ************
 
 **NAME**
@@ -109,7 +111,7 @@ grep command
       .. option:: -c, --count
               
          Suppress normal output; instead print a count of matching lines
-         for each input file. With the :option:`-v,  --invert-match` option,
+         for each input file. With the ``-v, --invert-match`` option,
          count non-matching lines.  (:option:`-c` is specified by POSIX.)
 
       .. option:: --color[=WHEN], --colour[=WHEN]
@@ -140,9 +142,9 @@ grep command
          to just after the last matching line before exiting, regardless of
          the presence of trailing context lines. This enables a calling
          process to resume a search. When :command:`grep` stops after *NUM* matching
-         lines, it outputs any trailing context lines. When the :option:`-c, --count`
+         lines, it outputs any trailing context lines. When the ``-c, --count``
          option is also used, :command:`grep` does not output a count greater than *NUM*.
-         When the :option:`-v, --invert-match` option is also used, :command:`grep`
+         When the ``-v, --invert-match`` option is also used, :command:`grep`
          stops after outputting *NUM* non-matching lines.
 
       .. option:: -o, --only-matching
@@ -399,7 +401,7 @@ grep command
       order, and in these locales ``[a-d]`` is typically not equivalent to ``[abcd]``;
       it might be equivalent to ``[aBbCcDd]``, for example. To obtain the traditional
       interpretation of bracket expressions, you can use the C locale by setting
-      the :env:`LC_ALL` environment variable to the value ``C``.
+      the :envvar:`LC_ALL` environment variable to the value ``C``.
 
       Finally, certain named classes of characters are predefined within bracket
       expressions, as follows. Their names are self explanatory, and
@@ -410,7 +412,6 @@ grep command
       encoding, this is the same as ``[0-9A-Za-z]``. (Note that the brackets in
       these class names are part of the symbolic names, and must be included
       in addition to the brackets delimiting the bracket expression.) 
-
 
       .. note::
 
@@ -447,212 +448,46 @@ grep command
          {n,m}  The preceding item is matched at least n times, but not more
                 than m times.
 
-   Concatenation
-       Two regular expressions may  be  concatenated;  the  resulting  regular
-       expression  matches  any  string formed by concatenating two substrings
-       that respectively match the concatenated expressions.
+   #. Concatenation
+      
+      Two regular expressions may be concatenated; the resulting regular
+      expression matches any string formed by concatenating two substrings
+      that respectively match the concatenated expressions.
 
-   Alternation
-       Two regular expressions may be joined by  the  infix  operator  |;  the
-       resulting   regular  expression  matches  any  string  matching  either
-       alternate expression.
+   #. Alternation
+      
+      Two regular expressions may be joined by the infix operator (|); the
+      resulting regular expression matches any string matching either
+      alternate expression.
 
-   Precedence
-       Repetition takes precedence over concatenation,  which  in  turn  takes
-       precedence  over  alternation.   A  whole expression may be enclosed in
-       parentheses  to  override   these   precedence   rules   and   form   a
-       subexpression.
+   #. Precedence
+      
+      Repetition takes precedence over concatenation, which in turn takes precedence
+      over alternation. A whole expression may be enclosed in parentheses to override
+      these precedence rules and form a subexpression.
 
-   Back References and Subexpressions
-       The back-reference \n, where n is a single digit, matches the substring
-       previously matched  by  the  nth  parenthesized  subexpression  of  the
-       regular expression.
+   #. Back References and Subexpressions
+      
+      The back-reference ``\n``, where ``n`` is a single digit, matches the substring
+      previously matched by the nth parenthesized subexpression of the regular expression.
 
-   Basic vs Extended Regular Expressions
-       In  basic  regular expressions the meta-characters ?, +, {, |, (, and )
-       lose their special meaning; instead use the  backslashed  versions  \?,
-       \+, \{, \|, \(, and \).
+   #. Basic vs Extended Regular Expressions
+      
+      lose their special meaning; instead use the backslashed versions,
+      In basic regular expressions the meta-characters ``?, +, {, |, (, and )``
+      ``\?, \+, \{, \|, \(, and \)``.
 
-       Traditional  egrep did not support the { meta-character, and some egrep
-       implementations support \{ instead, so portable scripts should avoid  {
-       in grep -E patterns and should use [{] to match a literal {.
+      Traditional :command:`egrep` did not support the ``{`` meta-character,
+      and some :command:`egrep` implementations support ``\{`` instead,
+      so portable scripts should avoid ``{`` in ``grep -E`` patterns and
+      should use ``[{]`` to match a literal ``{``.
 
-       GNU grep -E attempts to support traditional usage by assuming that { is
-       not  special  if  it  would  be  the  start  of  an  invalid   interval
-       specification.   For example, the command grep -E '{1' searches for the
-       two-character string {1 instead of reporting  a  syntax  error  in  the
-       regular  expression.   POSIX  allows this behavior as an extension, but
-       portable scripts should avoid it.
-
-ENVIRONMENT VARIABLES
-       The  behavior  of  grep  is  affected  by  the  following   environment
-       variables.
-
-       The  locale  for  category  LC_foo  is specified by examining the three
-       environment variables LC_ALL, LC_foo, LANG, in that order.   The  first
-       of  these  variables that is set specifies the locale.  For example, if
-       LC_ALL is not set, but LC_MESSAGES is set to pt_BR, then the  Brazilian
-       Portuguese  locale  is used for the LC_MESSAGES category.  The C locale
-       is used if none of these environment variables are set, if  the  locale
-       catalog  is  not  installed,  or if grep was not compiled with national
-       language support (NLS).
-
-       GREP_OPTIONS
-              This variable specifies default options to be placed in front of
-              any   explicit   options.    For  example,  if  GREP_OPTIONS  is
-              '--binary-files=without-match --directories=skip', grep  behaves
-              as   if   the   two   options  --binary-files=without-match  and
-              --directories=skip  had  been  specified  before  any   explicit
-              options.   Option specifications are separated by whitespace.  A
-              backslash escapes the next character,  so  it  can  be  used  to
-              specify an option containing whitespace or a backslash.
-
-       GREP_COLOR
-              This  variable  specifies  the  color  used to highlight matched
-              (non-empty) text.  It is deprecated in favor of GREP_COLORS, but
-              still supported.  The mt, ms, and mc capabilities of GREP_COLORS
-              have priority over it.  It can only specify the  color  used  to
-              highlight  the  matching  non-empty text in any matching line (a
-              selected line when the -v command-line option is omitted,  or  a
-              context line when -v is specified).  The default is 01;31, which
-              means a bold red  foreground  text  on  the  terminal's  default
-              background.
-
-       GREP_COLORS
-              Specifies  the  colors  and  other  attributes used to highlight
-              various parts of the output.  Its  value  is  a  colon-separated
-              list       of       capabilities      that      defaults      to
-              ms=01;31:mc=01;31:sl=:cx=:fn=35:ln=32:bn=32:se=36  with  the  rv
-              and  ne  boolean  capabilities omitted (i.e., false).  Supported
-              capabilities are as follows.
-
-              sl=    SGR substring for whole selected  lines  (i.e.,  matching
-                     lines when the -v command-line option is omitted, or non-
-                     matching lines when -v is  specified).   If  however  the
-                     boolean  rv capability and the -v command-line option are
-                     both specified, it  applies  to  context  matching  lines
-                     instead.   The  default  is  empty  (i.e., the terminal's
-                     default color pair).
-
-              cx=    SGR substring for whole context lines (i.e., non-matching
-                     lines  when  the  -v  command-line  option is omitted, or
-                     matching lines when -v is  specified).   If  however  the
-                     boolean  rv capability and the -v command-line option are
-                     both specified, it applies to selected non-matching lines
-                     instead.   The  default  is  empty  (i.e., the terminal's
-                     default color pair).
-
-              rv     Boolean value that reverses (swaps) the meanings  of  the
-                     sl=  and cx= capabilities when the -v command-line option
-                     is specified.  The default is false (i.e., the capability
-                     is omitted).
-
-              mt=01;31
-                     SGR substring for matching non-empty text in any matching
-                     line (i.e., a selected  line  when  the  -v  command-line
-                     option   is  omitted,  or  a  context  line  when  -v  is
-                     specified).  Setting this is equivalent to  setting  both
-                     ms=  and mc= at once to the same value.  The default is a
-                     bold  red  text  foreground   over   the   current   line
-                     background.
-
-              ms=01;31
-                     SGR  substring  for matching non-empty text in a selected
-                     line.  (This is only used when the -v command-line option
-                     is  omitted.)   The  effect  of  the  sl=  (or cx= if rv)
-                     capability  remains  active  when  this  kicks  in.   The
-                     default  is  a  bold red text foreground over the current
-                     line background.
-
-              mc=01;31
-                     SGR substring for matching non-empty text  in  a  context
-                     line.  (This is only used when the -v command-line option
-                     is specified.)  The effect of the  cx=  (or  sl=  if  rv)
-                     capability  remains  active  when  this  kicks  in.   The
-                     default is a bold red text foreground  over  the  current
-                     line background.
-
-              fn=35  SGR  substring for file names prefixing any content line.
-                     The  default  is  a  magenta  text  foreground  over  the
-                     terminal's default background.
-
-              ln=32  SGR  substring  for  line  numbers  prefixing any content
-                     line.  The default is a green text  foreground  over  the
-                     terminal's default background.
-
-              bn=32  SGR  substring  for  byte  offsets  prefixing any content
-                     line.  The default is a green text  foreground  over  the
-                     terminal's default background.
-
-              se=36  SGR  substring  for  separators that are inserted between
-                     selected line fields (:), between  context  line  fields,
-                     (-),  and  between  groups of adjacent lines when nonzero
-                     context is specified (--).  The default is  a  cyan  text
-                     foreground over the terminal's default background.
-
-              ne     Boolean  value  that prevents clearing to the end of line
-                     using Erase in Line (EL) to Right  (\33[K)  each  time  a
-                     colorized  item  ends.   This  is  needed on terminals on
-                     which EL is not supported.  It  is  otherwise  useful  on
-                     terminals  for  which  the back_color_erase (bce) boolean
-                     terminfo capability  does  not  apply,  when  the  chosen
-                     highlight colors do not affect the background, or when EL
-                     is too slow or causes too much flicker.  The  default  is
-                     false (i.e., the capability is omitted).
-
-              Note  that  boolean  capabilities  have no =...  part.  They are
-              omitted (i.e., false) by default and become true when specified.
-
-              See  the  Select  Graphic  Rendition  (SGR)   section   in   the
-              documentation  of  the  text terminal that is used for permitted
-              values  and  their  meaning  as  character  attributes.    These
-              substring  values are integers in decimal representation and can
-              be concatenated with semicolons.  grep takes care of  assembling
-              the  result  into  a  complete  SGR sequence (\33[...m).  Common
-              values to concatenate include 1 for bold, 4 for underline, 5 for
-              blink,  7 for inverse, 39 for default foreground color, 30 to 37
-              for foreground colors, 90 to 97  for  16-color  mode  foreground
-              colors,  38;5;0  to  38;5;255  for  88-color and 256-color modes
-              foreground colors, 49 for default background color, 40 to 47 for
-              background  colors,  100  to  107  for  16-color mode background
-              colors, and 48;5;0 to 48;5;255 for 88-color and 256-color  modes
-              background colors.
-
-       LC_ALL, LC_COLLATE, LANG
-              These  variables specify the locale for the LC_COLLATE category,
-              which determines the collating sequence used to interpret  range
-              expressions like [a-z].
-
-       LC_ALL, LC_CTYPE, LANG
-              These  variables  specify  the locale for the LC_CTYPE category,
-              which determines the type of characters, e.g., which  characters
-              are whitespace.
-
-       LC_ALL, LC_MESSAGES, LANG
-              These variables specify the locale for the LC_MESSAGES category,
-              which determines the language that grep uses for messages.   The
-              default C locale uses American English messages.
-
-       POSIXLY_CORRECT
-              If  set, grep behaves as POSIX requires; otherwise, grep behaves
-              more like other GNU programs.  POSIX requires that options  that
-              follow  file  names  must  be treated as file names; by default,
-              such options are permuted to the front of the operand  list  and
-              are  treated as options.  Also, POSIX requires that unrecognized
-              options be diagnosed as “illegal”, but since they are not really
-              against  the  law  the default is to diagnose them as “invalid”.
-              POSIXLY_CORRECT  also   disables   _N_GNU_nonoption_argv_flags_,
-              described below.
-
-       _N_GNU_nonoption_argv_flags_
-              (Here  N is grep's numeric process ID.)  If the ith character of
-              this environment variable's value is 1, do not consider the  ith
-              operand  of  grep to be an option, even if it appears to be one.
-              A shell can put  this  variable  in  the  environment  for  each
-              command  it  runs,  specifying which operands are the results of
-              file name wildcard expansion and therefore should not be treated
-              as  options.   This  behavior  is  available only with the GNU C
-              library, and only when POSIXLY_CORRECT is not set.
+      GNU ``grep -E`` attempts to support traditional usage by assuming
+      that ``{`` is not special if it would be the start of an invalid interval
+      specification. For example, the command ``grep -E '{1'`` searches for the
+      two-character string ``{1`` instead of reporting a syntax error in the
+      regular expression. POSIX allows this behavior as an extension, but
+      portable scripts should avoid it.
 
 
 **EXIT STATUS**

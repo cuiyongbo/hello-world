@@ -1338,14 +1338,18 @@ Tottenham appeared to be in control until Gonzalo Higuain turned in Sami Khedira
 |
 
 Zidane’s Real have won back-to-back European titles, but are 19 points
-adrift of La Liga leaders Barcelona and were knocked out of the Copa del Rey [国王杯]
-by Leganes on Wednesday at the Bernabeu. [伯纳乌]
+adrift of La Liga leaders Barcelona and were knocked out of
+the Copa del Rey [国王杯] by Leganes on Wednesday at the Bernabeu. [伯纳乌]
 
 The Real, who finished second in the group to Tottenham, face Paris St-Germain
-in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14 February at Bernabeu.
+in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14
+February at Bernabeu.
 
 The Champions League and Europa league return this week as the knockout stage
 in each competition gets under way. [欧冠淘汰赛]
+
+Cristiano Ronaldo scored in a 10th straight game for Real Madrid but
+they were held to a derby [德比] draw by Atletico Madrid. 
 
 | 
 | transfer window   转会窗口
@@ -3338,9 +3342,15 @@ It was three weeks ago that Facebook suspended Cambridge Analytica
 just hours before a whistleblower's revelations to the Observer
 newspaper triggered the current scandal over improper use of data.
 
-whistleblower
-whistle-blower
-Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
+| whistleblower
+| whistle-blower
+| Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
+| 
+| corollary
+| Definition: a corollary of something is an idea, argument, or fact that results directly from it.
+| Synonyms: consequence.
+| Usage: The number of prisoners increased as a corollary of the government's determination to combat violent crime.
+|
 
 
 

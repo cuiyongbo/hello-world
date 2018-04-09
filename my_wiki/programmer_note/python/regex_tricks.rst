@@ -378,7 +378,7 @@ it matched, and more.
 
 You can learn about this by interactively experimenting with the :mod:`re`
 module.  If you have :mod:`tkinter` available, you may also want to look at
-:source:`Tools/demo/redemo.py`, a demonstration program included with the
+:file:`Tools/demo/redemo.py`, a demonstration program included with the
 Python distribution.  It allows you to enter REs and strings, and displays
 whether the RE matches or fails. :file:`redemo.py` can be quite useful when
 trying to debug a complicated RE.

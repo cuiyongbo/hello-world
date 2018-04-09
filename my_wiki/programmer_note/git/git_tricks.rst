@@ -1,8 +1,9 @@
+**********
 Git Tricks
-==========
+**********
 
 Create a new local branch
--------------------------
+=========================
 
    .. code-block:: sh
 
@@ -12,7 +13,7 @@ Create a new local branch
 
 
 Find the information about branchs
-----------------------------------
+==================================
 
    .. code-block:: sh
    
@@ -36,7 +37,7 @@ Find the information about branchs
       
 
 Rename a local branch
----------------------
+=====================
 
    If you want to rename a branch while pointed to any branch, do:
    
@@ -54,7 +55,7 @@ Rename a local branch
 
 
 Delete a local branch
----------------------
+=====================
 
    .. code-block:: sh
    
@@ -62,7 +63,7 @@ Delete a local branch
 
 
 Delete a remote branch
-----------------------
+======================
 
    .. code-block:: sh
    
@@ -74,7 +75,7 @@ Delete a remote branch
 
 
 Rename a remote branch
-----------------------
+======================
 
    .. code-block:: sh
    
@@ -86,7 +87,7 @@ Rename a remote branch
 
 
 Commit skip add
----------------
+===============
 
    By using the ``-a`` switch with the commit command to automatically "add" changes from
    all known files (i.e. all files that are already listed in the index) and
@@ -109,7 +110,7 @@ Commit skip add
 
 
 Commit with amendment
----------------------
+=====================
 
    .. code-block:: sh
    
@@ -144,7 +145,7 @@ Commit with amendment
 
 
 Stash current changes
----------------------
+=====================
 
    .. code-block:: sh
       :caption: git stash usage 
@@ -175,7 +176,7 @@ Stash current changes
 
 
 Combine several commits into one
---------------------------------
+================================
 
 #. combine last 2 commits
 
@@ -300,3 +301,9 @@ Combine several commits into one
          $ git commit --amend
 
 
+Discard unstaged changes in working directory
+=============================================
+
+.. code-block:: sh
+
+   git checkout -- <file>...
