@@ -492,9 +492,9 @@ grep Command
 
 **EXIT STATUS**
 
-   The exit status is 0 if selected lines are found, and 1 if  not  found.
-   If an error occurred the exit status is 2.  (Note: POSIX error handling
-   code should check for '2' or greater.)
+   The exit status is ``0`` if selected lines are found, and ``1`` if not found.
+   If an error occurred the exit status is ``2``. (Note: POSIX error handling
+   code should check for ``'2'`` or greater.)
 
 **SEE ALSO**
 

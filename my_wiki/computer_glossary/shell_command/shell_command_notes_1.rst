@@ -180,3 +180,8 @@ grep Command
 
 See :doc:`grep_command`
 
+
+find Command
+============
+
+See :doc:`find_command`

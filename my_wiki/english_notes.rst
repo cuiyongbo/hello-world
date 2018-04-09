@@ -3208,7 +3208,7 @@ his is able to return to duty. [缝了九针]
 | Usage: Even the cheapest car costs the equivalent of 70 years' salary for a government worker.
 |
 | drain
-| Definition: If you drain a liquid from a place or object, you remove the liquid by cauing it to flow somewhere else. If a liquid drains somewhere, it flows there.
+| Definition: If you drain a liquid from a place or object, you remove the liquid by causing it to flow somewhere else. If a liquid drains somewhere, it flows there.
 | Definition: If you drain a place or object, you dry it by causing water to flow out of it. If a place or object drains, water flows out of it until it is dry.
 | Usage: Springs and rivers that drain into lakes carry dissolved nitrates and phosphates.
 | Usage: Minners built the tunnel to drain water out of the mines.
@@ -3352,8 +3352,55 @@ newspaper triggered the current scandal over improper use of data.
 | Usage: The number of prisoners increased as a corollary of the government's determination to combat violent crime.
 |
 
+Heavy snow takes toll on Scotland's lambs
 
+THe death toll on Scottish sheep farms has seen a sharp increase
+following spells of heavy snow this winter, according to official
+figures.
 
+| take (quite) a toll / tolls on (somebody or something)
+| Definition: to cause damage or wear by using something or by hard living.
+| Usage: Drug abuse takes quite a toll on the lives of people.
+| 
+| attrition
+| Definition: The process of reducing something's strength or effectiveness through sustained attack or pressure.
+| Usage: The squadron suffered severe attrition of its bomers.
+| Definition: The gradual reduction of a workforce by employees leaving and not being repalced rather than by redundancy.
+| Usage: The company said that it will reduce its worldwide employment by about 10% through attrition. [裁员]
+| Definition: wearing away by friction; abrasion.
+| Usage: The skull shows attrition of the edges of the teeth.
+| 
+| abrasion [擦伤]
+| Definition: An abrasion is an area on a person's body where the skin has been scraped.
+| Usage: He had severe abrasions to his right cheek.
+| 
+| demoralize
+| demoralization
+| demoralizing
+| demoralizingly
+| Definition: cause someone to lose confidence or hope.
+| Usage: The General Strike had demoralized the trade union. [大罢工]
+| Definition: corrupt the morals of (someone).
+| Usage: She hastened her daughter's steps, lest she be demoralized by beholding the free manners of thes 'mad English'.
+| 
+| silage [干草，饲料]
+| Definiton: Silage is food for cattle that is made by cutting a crop such as grass or corn when it is green and then keeping it covered.
+| 
+| watershed
+| Definition: an area or ridge of land that separates waters flowing to different rivers, basins, or seas.
+| Definition: an area or region drained by a river, river system, or other body of water.
+| Definition: an event or period marking a turning point in a situation. [分水岭]
+| Usage: The election of Mary Robinson in 1990 was a watershed in Irish politics.
+| Definition: The time after which programmes that are regarded as unsuitable for children are broadcast on television.
+| Usage: The 9 p.m. watershed.
+
+.. figure:: images/watershed-diagram.jpg
+
+   Watershed diagram
+
+.. figure:: images/basin.jpg
+
+   Basin Geology
 
 
 

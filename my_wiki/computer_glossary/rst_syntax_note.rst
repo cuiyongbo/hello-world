@@ -49,5 +49,15 @@ rst FAQ
 
 
 #. Suppress WARNING: document isn't included in any toctree
+
+   Add ``:orphan:`` directive before the titile.
+
+#. Suppress WARNING: unknown option
    
-   Add ``orphan`` before the titile.
+   add ``suppress_warnings`` build configure
+   to :file:`conf.py` ::
+
+      suppress_warnings = [
+         "ref.option"
+      ]
+
