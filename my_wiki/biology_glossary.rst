@@ -337,3 +337,20 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 .. image:: images/animal_imprinting_1.jpg
 .. image:: images/animal_imprinting_2.jpg
 .. image:: images/imprinted_fossil.jpg
+
+| 
+| chimera
+| Definition: (in Greek mythology) a fire-breathing femal monster with a lion's head, a goat's body, and a serpent's tail.
+| Definition: any mythical animal with parts taken from various animals.
+| Definition: a thing that is hoped or wished for but in fact is illusory or impossible to achieve.
+| Usage: THe economic sovereignty you claim to defend is a chimera.
+| Definition: (Biology) an organism containing a mixture of genetically different tissues, formed by a processes such as fusion of early embryos, grafting, or mutation.
+| Definition: A DNA molecule with sequences derived from two or more different organisms, formed by laboratory manipulation.
+| 
+
+.. image:: images/chimera.jpg
+.. image:: images/sea_serpent_by_rusty.jpg
+
+
+
+

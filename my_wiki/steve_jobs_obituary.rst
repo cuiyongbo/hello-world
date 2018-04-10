@@ -1,6 +1,10 @@
 Steve Jobs
 ==========
 
+.. image:: images/steve_jobs_1.jpg
+.. image:: images/steve_jobs_2.jpg
+.. image:: images/steve_jobs_3.jpg
+
 .. figure:: images/steve_jobs.jpg
 
    Steve Jobs (1955 - 2011)
