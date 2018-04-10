@@ -11,6 +11,7 @@ Steps of Programming
    programmer_note/google_test_notes
    programmer_note/threads_vs_processes
    programmer_note/pthread_introduction
+   programmer_note/std_c_api
    programmer_note/linux_system_calls
    programmer_note/programmer_tricks
    programmer_note/number_tricks

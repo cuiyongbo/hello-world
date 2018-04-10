@@ -227,6 +227,7 @@ MacOS Terminal
 #. Display previous Command – Ctrl + P
 #. Display next Command – Ctrl + N
 #. Clear screen - Ctrl + L
+#. Move between words - Shift + Left/Right
 
 
 Sublime-rst-completion
@@ -260,7 +261,7 @@ Sublime Text
 #. Vertical Selection:
    
       Ctrl + Alt + Up/Down (Windows/Linux)
-      Ctrl + Shift + Up/Down (Mac)
+      Ctrl + Shift + Up/Down (Mac) [**not work**]
 
    .. note:: 
 
