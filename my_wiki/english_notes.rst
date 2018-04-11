@@ -3402,7 +3402,48 @@ figures.
 
    Basin Geology
 
-
-
-
+| 
+| head/top the bill [领衔主演]
+| Definition: be the main performer or act int the show, or play, etc.
+| Usage: Topping the bill tonight will be Robbie Williams.
+| 
+| bill and coo [卿卿我我]
+| Definition: behave or talk in a very loving or sentimental way.
+| Usage: All my sister and her boyfriend do is bill and coo - It's nauseating.
+| 
+| nauseate
+| nauseated
+| nauseating
+| Definition: make (someone) feel sick; affect with nausea.
+| Usage: The thought of food nauseated her.
+| Definiton: fill (someone) with revulsion; disgust. [令人作呕]
+| Usage: I was nauseated by the vicious comment.
+| 
+| nausea
+| Definiton: the felling that you have when you want to vomit, for example because you are ill or are disgusted by something.
+| Usage: Nausea and vomitingare common symptoms.
+| Definiton: loathing; revulsion; intented to induced a feeling of nostalgia.
+| Usage: It only induces in me a feeling of nausea.
+| 
+| seasick
+| seasickness [晕船]
+| Definition: suffering from sickness or nausea caused by the motion of a ship at sea.
+| 
+| loathe
+| loathing
+| Definition: feel intense dislike or disgust for.
+| Usage: She loathed him on sight.
+| 
+| revulsion
+| Definiton:a sense of disgust and loathing.
+| Usage: News of the attack will be met with sorrow and revulsion.
+| Definiton: (Medicine) the drawing of disease blood congestion from one part of the body to another, e.g., by counterirrigation.
+| 
+| counterirritant
+| counterirrigation
+| Definiton: something such as heat or an ointment that is used to produce surface irritation of the skin, thereby counteracting underlying pain or | discomfort. 
+| 
+| ointment [膏药，美白霜，防嗮霜 -_-!]
+| Definition: a smooth oily preparation that is rubbed on the skin for medicinal purposes or as a cosmetic.
+| 
 
