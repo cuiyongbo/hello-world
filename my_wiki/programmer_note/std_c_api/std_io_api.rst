@@ -2,6 +2,8 @@
 Std C I/O API
 *************
 
+Input API
+=========
 
 **NAME**
 
@@ -19,6 +21,10 @@ Std C I/O API
       int getchar(void);
       int ungetc(int c, FILE *stream);
 
+      /*Windows implementation*/
+      #define getc(_stream) fgetc(_stream)
+      #define getchar() getc(stdin)
+
 **DESCRIPTION**
 
    ``fgetc()`` reads the next character from stream and returns it as an
@@ -35,9 +41,10 @@ Std C I/O API
    A terminating null byte (``'\0'``) is stored after the last character in
    the buffer.
 
-   ``ungetc()`` pushes c back to stream, cast to unsigned char, where it is
+   ``ungetc()`` pushes *c* back to stream, cast to unsigned char, where it is
    available for subsequent read operations.  Pushed-back characters will
-   be returned in reverse order; only one pushback is guaranteed.
+   be returned in reverse order; only one pushback is guaranteed. 
+   (**you must not call ungetch() consecutively.**)
 
    Calls to the functions described here can be mixed with each other and
    with calls to other input functions from the stdio library for the same
@@ -72,4 +79,74 @@ Std C I/O API
    read(2), write(2), ferror(3), fgetwc(3), fgetws(3), fopen(3), fread(3),
    fseek(3),  getline(3), gets(3), getwchar(3), puts(3), scanf(3),
    ungetwc(3), unlocked_stdio(3), feature_test_macros(7)
+
+
+Output API
+==========
+
+**NAME**
+   
+   fputc, fputs, putc, putchar, puts - output of characters and strings
+
+**SYNOPSIS**
+   
+   .. code-block:: c
+
+      #include <stdio.h>
+
+      int fputc(int c, FILE *stream);
+      int putc(int c, FILE *stream);
+      int putchar(int c);
+      int puts(const char *s);
+      int fputs(const char *s, FILE *stream);
+
+      /*Windows implementation*/
+      #define putchar(_c) putc((_c),stdout)
+
+**DESCRIPTION**
+
+   ``fputc()`` writes the character *c*, cast to an unsigned char, to *stream*.
+
+   ``fputs()`` writes the string s to stream, without its terminating
+   null byte (``'\0'``).
+
+   ``putc()`` is equivalent to ``fputc()`` except that it may be implemented
+   as a macro which evaluates stream more than once.
+
+   ``putchar(c)`` is equivalent to ``putc(c, stdout)``.
+
+   ``puts()`` writes the string *s* and a trailing newline to stdout.
+
+   Calls to the functions described here can be mixed with each other and
+   with calls to other output functions from the stdio library for the
+   same output stream.
+
+   For nonlocking counterparts, see :manpage:`unlocked_stdio(3)`.
+
+
+**RETURN VALUE**
+
+   ``fputc()``, ``putc()`` and ``putchar()`` return the character written
+   as an unsigned char cast to an int or ``EOF`` on error.
+
+   ``puts()`` and ``fputs()`` return a nonnegative number on success,
+   or ``EOF`` on error.
+
+
+**ATTRIBUTES**
+
+   For an explanation of the terms used in this section, see
+   :manpage:`attributes(7)`.
+
+   +--------------------------+---------------+---------+
+   | Iterface                 | Atrribute     | Value   |
+   +==========================+===============+=========+
+   | fputc(), fputs(), putc() | Thread safety | MT-Safe |
+   | putchar(), puts()        |               |         |
+   +--------------------------+---------------+---------+
+
+**SEE ALSO**
+
+   write(2), ferror(3), fgets(3), fopen(3), fputwc(3), fputws(3),
+   fseek(3), fwrite(3), putwchar(3), scanf(3), unlocked_stdio(3)
 

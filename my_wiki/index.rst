@@ -10,6 +10,7 @@ Welcome to My Wiki's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   pending_tasks
    computer_glossary
    programmer_note
    camera_glossary
@@ -19,6 +20,7 @@ Welcome to My Wiki's documentation!
    english_notes
    steve_jobs_obituary
    stephen_hawking_obituary
+
 
 Indices and tables
 ==================

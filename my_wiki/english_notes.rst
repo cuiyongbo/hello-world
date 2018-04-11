@@ -3445,5 +3445,15 @@ figures.
 | 
 | ointment [膏药，美白霜，防嗮霜 -_-!]
 | Definition: a smooth oily preparation that is rubbed on the skin for medicinal purposes or as a cosmetic.
+| Synonyms: sun oil.
+|
 | 
-
+| delegate
+| delegation
+| Definition: a delegate is a person who is chosen to vote or make decisions on behalf of a group of other people, especially at a conference or meeting.
+| Synonyms: representive.
+| Definiton: If you delegate duties, responsibilities, or power to someone, you give them those duties, responsibilites, or that power so that they can act on | your behalf.
+| Synonyms: appoint.
+| Usage: How many of their activities can be safely and effectively delegated to less trained staff?
+| Usage: Officials have now been delegated to start work on a draft settlement.
+| 
