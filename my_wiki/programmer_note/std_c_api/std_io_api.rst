@@ -81,6 +81,12 @@ Input API
    ungetwc(3), unlocked_stdio(3), feature_test_macros(7)
 
 
+Input format conversion
+=======================
+
+   See :doc:`scanf_info`
+   
+
 Output API
 ==========
 
