@@ -1,5 +1,0 @@
-Styles Example
-Model/View Programming
-Coordinate System
-Unordered_map
-
