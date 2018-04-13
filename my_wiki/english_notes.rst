@@ -3447,7 +3447,6 @@ figures.
 | Definition: a smooth oily preparation that is rubbed on the skin for medicinal purposes or as a cosmetic.
 | Synonyms: sun oil.
 |
-| 
 | delegate
 | delegation
 | Definition: a delegate is a person who is chosen to vote or make decisions on behalf of a group of other people, especially at a conference or meeting.
@@ -3456,4 +3455,15 @@ figures.
 | Synonyms: appoint.
 | Usage: How many of their activities can be safely and effectively delegated to less trained staff?
 | Usage: Officials have now been delegated to start work on a draft settlement.
+| 
+| scenario
+| Definition: The scenario of a film is a piece of writing that gives an outline of the story.
+| Definition: if you talk about a likely or possible scenario, you are taking about the way in which a situation may develop.
+| Usage: Try to imagine all the possible scenarios and what action you would take. 
+| 
+| squelch
+| Definition: If you squelch something that is causing you trouble, for example rumors or oppositions, you firmly put a stop to it.
+| Synonyms: squash; suppress.
+| Usage: The President wants to squelch any perception that the meeting is an attempt to negotiate.
+| Definition: To squelch means to make a wet, sucking sound, like the sound you make when you are walking on wet, muddy group.
 | 

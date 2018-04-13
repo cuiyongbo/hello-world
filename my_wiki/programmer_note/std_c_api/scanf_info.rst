@@ -102,113 +102,99 @@ Input format conversion
    that specifies that the converted input should be placed in the location referred to by
    the n-th pointer argument following format.
 
-   Conversions
-       The following type modifier characters can appear in a conversion specification:
+   The following **type modifier characters** can appear in a conversion specification::
 
-       h      Indicates that the conversion will be one of d, i, o, u, x, X, or n  and  the  next
-              pointer is a pointer to a short int or unsigned short int (rather than int).
+      h     Indicates that the conversion will be one of d, i, o, u, x, X, or n and the next
+            pointer is a pointer to a short int or unsigned short int (rather than int).
 
-       hh     As for h, but the next pointer is a pointer to a signed char or unsigned char.
+      hh    As for h, but the next pointer is a pointer to a signed char or unsigned char.
 
-       j      As  for  h,  but the next pointer is a pointer to an intmax_t or a uintmax_t.  This
-              modifier was introduced in C99.
+      j     As for h, but the next pointer is a pointer to an intmax_t or a uintmax_t. This
+            modifier was introduced in C99.
 
-       l      Indicates either that the conversion will be one of d, i, o, u, x, X, or n and  the
-              next  pointer is a pointer to a long int or unsigned long int (rather than int), or
-              that the conversion will be one of e, f, or g and the next pointer is a pointer  to
-              double  (rather  than  float).  Specifying two l characters is equivalent to L.  If
-              used with %c or %s, the corresponding parameter is considered as  a  pointer  to  a
-              wide character or wide-character string respectively.
+      l     Indicates either that the conversion will be one of d, i, o, u, x, X, or n and the
+            next  pointer is a pointer to a long int or unsigned long int (rather than int), or
+            that the conversion will be one of e, f, or g and the next pointer is a pointer to
+            double (rather than float).  Specifying two l characters is equivalent to L. If
+            used with %c or %s, the corresponding parameter is considered as a pointer to a
+            wide character or wide-character string respectively.
 
-       L      Indicates  that  the conversion will be either e, f, or g and the next pointer is a
-              pointer to long double or the conversion will be d, i, o, u,  or  x  and  the  next
-              pointer is a pointer to long long.
+      L     Indicates that the conversion will be either e, f, or g and the next pointer is a
+            pointer to long double or the conversion will be d, i, o, u,  or  x  and  the  next
+            pointer is a pointer to long long.
 
-       q      equivalent to L.  This specifier does not exist in ANSI C.
+      t     As for h, but the next pointer is a pointer to a ptrdiff_t.
+            This modifier was introduced in C99.
 
-       t      As  for  h,  but  the  next pointer is a pointer to a ptrdiff_t.  This modifier was
-              introduced in C99.
+      z     As for h, but the next pointer is a pointer to a size_t.
+            This modifier was  introduced in C99.
 
-       z      As for h, but the next pointer is a pointer to a size_t.  This modifier was  intro‐
-              duced in C99.
+   The following conversion specifiers are available::
 
-       The following conversion specifiers are available:
+      %     Matches a literal '%'. That is, %% in the format string matches a single input '%'
+            character. No conversion is done (but initial white space characters are discarded),
+            and assignment does not occur.
 
-       %      Matches a literal '%'.  That is, %% in the format string matches a single input '%'
-              character.  No conversion is done (but initial  white  space  characters  are  dis‐
-              carded), and assignment does not occur.
+      d     Matches an optionally signed decimal integer; the next pointer must be a pointer to int.
 
-       d      Matches an optionally signed decimal integer; the next pointer must be a pointer to
-              int.
+      i     Matches an optionally signed integer; the next pointer must be a pointer to int.
+            The integer is read in base 16 if it begins with 0x or 0X, in base 8 if it begins
+            with 0, and in base 10 otherwise. Only characters that correspond to the base are used.
 
-       D      Equivalent to ld; this exists only for backward compatibility.  (Note: thus only in
-              libc4.  In libc5 and glibc the %D is silently ignored, causing old programs to fail
-              mysteriously.)
+      o     Matches an unsigned octal integer; the next pointer must be a pointer to unsigned int.
 
-       i      Matches an optionally signed integer; the next pointer must be a  pointer  to  int.
-              The  integer  is read in base 16 if it begins with 0x or 0X, in base 8 if it begins
-              with 0, and in base 10 otherwise.  Only characters that correspond to the base  are
-              used.
+      u     Matches an unsigned decimal integer; the next pointer must be a pointer to unsigned int.
 
-       o      Matches  an  unsigned octal integer; the next pointer must be a pointer to unsigned
-              int.
+      x     Matches an unsigned hexadecimal integer;  the next pointer must be a pointer to unsigned int.
 
-       u      Matches an unsigned decimal integer; the next pointer must be a pointer to unsigned
-              int.
+      X     Equivalent to x.
 
-       x      Matches  an  unsigned  hexadecimal  integer;  the next pointer must be a pointer to
-              unsigned int.
+      f     Matches an optionally signed floating-point number; the next pointer must be a pointer to float.
 
-       X      Equivalent to x.
+      e     Equivalent to f.
 
-       f      Matches an optionally signed floating-point number; the  next  pointer  must  be  a
-              pointer to float.
+      g     Equivalent to f.
 
-       e      Equivalent to f.
+      E     Equivalent to f.
 
-       g      Equivalent to f.
 
-       E      Equivalent to f.
+      s     Matches a sequence of non-white-space characters; the next pointer must be a
+            pointer to the initial element of a character array that is long enough to hold the
+            input sequence and the terminating null byte ('\0'), which is added automatically.
+            The input string stops at white space or at the maximum field width, whichever
+            occurs first.
 
-       a      (C99) Equivalent to f.
+      c     Matches a sequence of characters whose length is specified by the maximum field
+            width (default 1); the next pointer must be a pointer to char, and there must be
+            enough room for all the characters (no terminating null byte is added). The usual
+            skip of leading white space is suppressed. To skip white space first,
+            use an explicit space in the format.
 
-       s      Matches  a  sequence  of  non-white-space  characters;  the  next pointer must be a
-              pointer to the initial element of a character array that is long enough to hold the
-              input  sequence and the terminating null byte ('\0'), which is added automatically.
-              The input string stops at white space or at  the  maximum  field  width,  whichever
-              occurs first.
+      [     Matches  a nonempty sequence of characters from the specified set of accepted char‐
+            acters; the next pointer must be a pointer to char, and there must be  enough  room
+            for all the characters in the string, plus a terminating null byte.  The usual skip
+            of leading white space is suppressed.  The string is to be made up of characters in
+            (or not in) a particular set; the set is defined by the characters between the open
+            bracket [ character and a close bracket ] character.  The set excludes those  char‐
+            acters  if  the  first  character  after  the open bracket is a circumflex (^).  To
+            include a close bracket in the set, make it the  first  character  after  the  open
+            bracket or the circumflex; any other position will end the set.  The hyphen charac‐
+            ter - is also special; when placed between two other characters, it adds all inter‐
+            vening  characters  to  the  set.   To include a hyphen, make it the last character
+            before the final close bracket.  For instance, [^]0-9-] means the  set  "everything
+            except  close  bracket,  zero  through nine, and hyphen".  The string ends with the
+            appearance of a character not in the (or, with a circumflex, in) set  or  when  the
+            field width runs out.
 
-       c      Matches  a  sequence  of  characters whose length is specified by the maximum field
-              width (default 1); the next pointer must be a pointer to char, and  there  must  be
-              enough  room for all the characters (no terminating null byte is added).  The usual
-              skip of leading white space is suppressed.  To  skip  white  space  first,  use  an
-              explicit space in the format.
+      p     Matches a pointer value (as printed by %p in printf(3); the next pointer must be a
+            pointer to a pointer to void.
 
-       [      Matches  a nonempty sequence of characters from the specified set of accepted char‐
-              acters; the next pointer must be a pointer to char, and there must be  enough  room
-              for all the characters in the string, plus a terminating null byte.  The usual skip
-              of leading white space is suppressed.  The string is to be made up of characters in
-              (or not in) a particular set; the set is defined by the characters between the open
-              bracket [ character and a close bracket ] character.  The set excludes those  char‐
-              acters  if  the  first  character  after  the open bracket is a circumflex (^).  To
-              include a close bracket in the set, make it the  first  character  after  the  open
-              bracket or the circumflex; any other position will end the set.  The hyphen charac‐
-              ter - is also special; when placed between two other characters, it adds all inter‐
-              vening  characters  to  the  set.   To include a hyphen, make it the last character
-              before the final close bracket.  For instance, [^]0-9-] means the  set  "everything
-              except  close  bracket,  zero  through nine, and hyphen".  The string ends with the
-              appearance of a character not in the (or, with a circumflex, in) set  or  when  the
-              field width runs out.
-
-       p      Matches  a pointer value (as printed by %p in printf(3); the next pointer must be a
-              pointer to a pointer to void.
-
-       n      Nothing is expected; instead, the number of characters consumed thus far  from  the
-              input  is stored through the next pointer, which must be a pointer to int.  This is
-              not a conversion and does not increase the count returned  by  the  function.   The
-              assignment  can  be suppressed with the * assignment-suppression character, but the
-              effect on the return value is undefined.  Therefore %*n conversions should  not  be
-              used.
+      n     Nothing is expected; instead, the number of characters consumed thus far from the
+            input is stored through the next pointer, which must be a pointer to int. This is
+            not a conversion and does not increase the count returned by the  function. The
+            assignment can be suppressed with the * assignment-suppression character, but the
+            effect on the return value is undefined. Therefore %*n conversions should not be
+            used.
 
 
 **RETURN VALUE**
