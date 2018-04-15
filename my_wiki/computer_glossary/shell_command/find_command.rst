@@ -29,129 +29,125 @@ find Command
 
 **OPTIONS**
 
-   The :option:`-H`, :option:`-L` and :option:`-P` options control the treatment of symbolic links. Command-line
-   arguments following these are taken to be names of files or directories to be examined, up to the first argument
-   that begins with '-', or the argument '('  or '!'.  That argument and any following arguments are taken to be the
-   expression describing what is to be searched for. If no paths are given, the current directory is used. If no
-   expression is given, the expression ``-print`` is used (but you should probably consider using ``-print0``
-   instead, anyway).
-
    This manual page talks about options within the expression list. These options control the behaviour of :command:`find`
    but are specified immediately after the last path name. The five 'real' options :option:`-H`, :option:`-L`, :option:`-P`,
    :option:`-D`, and :option:`-O` must appear before the first path name, if at all. A double dash ``--`` can also be used
    to signal that any remaining arguments are not options (though ensuring that all start points begin with either './' or
    '/' is generally safer if you use wildcards in the list of start points).
 
-       -P     Never  follow symbolic links.  This is the default behaviour.  When find examines or prints information a
-              file, and the file is a symbolic link, the information used shall be taken from  the  properties  of  the
-              symbolic link itself.
+   .. option:: -P     
 
-       -L     Follow  symbolic links.  When find examines or prints information about files, the information used shall
-              be taken from the properties of the file to which the link points, not from the link itself (unless it is
-              a  broken  symbolic  link  or  find is unable to examine the file to which the link points).  Use of this
-              option implies -noleaf.  If you later use the -P option, -noleaf will still be in effect.  If  -L  is  in
-              effect  and  find discovers a symbolic link to a subdirectory during its search, the subdirectory pointed
-              to by the symbolic link will be searched.
+      Never follow symbolic links. This is the default behaviour. 
 
-              When the -L option is in effect, the -type predicate will always match against the type of the file  that
-              a symbolic link points to rather than the link itself (unless the symbolic link is broken).  Actions that
-              can cause symbolic links to become broken while find is executing (for example -delete) can give rise  to
-              confusing behaviour.  Using -L causes the -lname and -ilname predicates always to return false.
+   .. option:: -L     
 
-       -H     Do  not follow symbolic links, except while processing the command line arguments.  When find examines or
-              prints information about files, the information used shall be taken from the properties of  the  symbolic
-              link  itself.    The  only  exception to this behaviour is when a file specified on the command line is a
-              symbolic link, and the link can be resolved.  For that situation, the  information  used  is  taken  from
-              whatever  the  link  points to (that is, the link is followed).  The information about the link itself is
-              used as a fallback if the file pointed to by the symbolic link cannot be examined.  If -H  is  in  effect
-              and  one  of  the  paths specified on the command line is a symbolic link to a directory, the contents of
-              that directory will be examined (though of course -maxdepth 0 would prevent this).
+      Follow symbolic links.  When find examines or prints information about files, the information used shall
+      be taken from the properties of the file to which the link points, not from the link itself (unless it is
+      a broken symbolic link or find is unable to examine the file to which the link points).  Use of this
+      option implies -noleaf. If you later use the -P option, -noleaf will still be in effect.  If -L is in
+      effect and find discovers a symbolic link to a subdirectory during its search, the subdirectory pointed
+      to by the symbolic link will be searched.
 
-       If more than one of -H, -L and -P is specified, each overrides the others; the last one appearing on the command
-       line takes effect.  Since it is the default, the -P option should be considered to be in effect unless either -H
-       or -L is specified.
+      When the -L option is in effect, the -type predicate will always match against the type of the file that
+      a symbolic link points to rather than the link itself (unless the symbolic link is broken).  Actions that
+      can cause symbolic links to become broken while find is executing (for example -delete) can give rise  to
+      confusing behaviour.  Using -L causes the -lname and -ilname predicates always to return false.
 
-       GNU find frequently stats files during the processing of the command  line  itself,  before  any  searching  has
-       begun.   These options also affect how those arguments are processed.  Specifically, there are a number of tests
-       that compare files listed on the command line against a file we are currently considering.  In  each  case,  the
-       file  specified on the command line will have been examined and some of its properties will have been saved.  If
-       the named file is in fact a symbolic link, and the -P option is in effect (or if neither -H nor -L  were  speci‐
-       fied),  the  information used for the comparison will be taken from the properties of the symbolic link.  Other‐
-       wise, it will be taken from the properties of the file the link points to.  If find cannot follow the link  (for
-       example  because  it has insufficient privileges or the link points to a nonexistent file) the properties of the
-       link itself will be used.
+   .. option:: -H     
 
-       When the -H or -L options are in effect, any symbolic links listed as the argument of -newer  will  be  derefer‐
-       enced,  and the timestamp will be taken from the file to which the symbolic link points.  The same consideration
-       applies to -newerXY, -anewer and -cnewer.
+      Do not follow symbolic links, except while processing the command line arguments. If -H is in effect
+      and one of the  paths specified on the command line is a symbolic link to a directory, the contents of
+      that directory will be examined (though of course -maxdepth 0 would prevent this).
 
-       The -follow option has a similar effect to -L, though it takes effect at the point where it appears (that is, if
-       -L  is  not used but -follow is, any symbolic links appearing after -follow on the command line will be derefer‐
-       enced, and those before it will not).
+      If more than one of -H, -L and -P is specified, each overrides the others; the last one appearing on
+      the command line takes effect. 
 
-       -D debugoptions
-              Print diagnostic information; this can be helpful to diagnose problems with why find is  not  doing  what
-              you  want.   The  list of debug options should be comma separated.  Compatibility of the debug options is
-              not guaranteed between releases of findutils.  For a complete list of valid debug options, see the output
-              of find -D help.  Valid debug options include
 
-              help   Explain the debugging options
+   GNU find frequently stats files during the processing of the command line itself, before any searching has
+   begun. These options also affect how those arguments are processed. Specifically, there are a number of tests
+   that compare files listed on the command line against a file we are currently considering. In each case, the
+   file specified on the command line will have been examined and some of its properties will have been saved. If
+   the named file is in fact a symbolic link, and the -P option is in effect (or if neither -H nor -L  were  speci‐
+   fied), the information used for the comparison will be taken from the properties of the symbolic link.
+   Otherwise, it will be taken from the properties of the file the link points to. If find cannot follow the link
+   (for example because it has insufficient privileges or the link points to a nonexistent file) the properties
+   of the link itself will be used.
 
-              tree   Show the expression tree in its original and optimised form.
+   When the -H or -L options are in effect, any symbolic links listed as the argument of -newer
+   will be dereferenced, and the timestamp will be taken from the file to which the symbolic
+   link points. The same consideration applies to -newerXY, -anewer and -cnewer.
 
-              stat   Print messages as files are examined with the stat and lstat system calls.  The find program tries
-                     to minimise such calls.
+   The -follow option has a similar effect to -L, though it takes effect at the point where it
+   appears (that is, if -L  is  not used but -follow is, any symbolic links appearing after
+   -follow on the command line will be dereferenced, and those before it will not).
 
-              opt    Prints diagnostic information relating to the optimisation of the  expression  tree;  see  the  -O
-                     option.
+   .. option:: -D debugoptions
 
-              rates  Prints a summary indicating how often each predicate succeeded or failed.
+      Print diagnostic information; this can be helpful to diagnose problems with why find is not doing what
+      you want. The list of debug options should be comma separated. Compatibility of the debug options is
+      not guaranteed between releases of findutils. For a complete list of valid debug options, see the output
+      of ``find -D help``.  Valid debug options include::
 
-       -Olevel
-              Enables  query optimisation.   The find program reorders tests to speed up execution while preserving the
-              overall effect; that is, predicates with side effects are not reordered  relative  to  each  other.   The
-              optimisations performed at each optimisation level are as follows.
+         help       Explain the various -D options
+         tree       Display the expression tree
+         search     Navigate the directory tree verbosely
+         stat       Trace calls to stat(2) and lstat(2)
+         rates      Indicate how often each predicate succeeded
+         opt        Show diagnostic information relating to optimisation
+         exec       Show diagnostic information relating to -exec, -execdir, -ok and -okdir
+         time       Show diagnostic information relating to time-of-day and timestamp comparisons
 
-              0      Equivalent to optimisation level 1.
+   .. option::  -Olevel
 
-              1      This  is the default optimisation level and corresponds to the traditional behaviour.  Expressions
-                     are reordered so that tests based only on the names of files (for example -name  and  -regex)  are
-                     performed first.
+      Enables query optimisation. The find program reorders tests to speed up execution while preserving the
+      overall effect; that is, predicates with side effects are not reordered relative to each other. The
+      optimisations performed at each optimisation level are as follows::
 
-              2      Any  -type  or  -xtype  tests  are performed after any tests based only on the names of files, but
-                     before any tests that require information from the inode.  On many modern versions of  Unix,  file
-                     types  are  returned  by  readdir() and so these predicates are faster to evaluate than predicates
-                     which need to stat the file first.  If you use the -fstype FOO predicate and specify a  filesystem
-                     type FOO which is not known (that is, present in `/etc/mtab') at the time find starts, that predi‐
-                     cate is equivalent to -false.
+         0     Equivalent to optimisation level 1.
 
-              3      At this optimisation level, the full cost-based query optimiser is enabled.  The order of tests is
-                     modified so that cheap (i.e. fast) tests are performed first and more expensive ones are performed
-                     later, if necessary.  Within each cost band, predicates are evaluated earlier or  later  according
-                     to  whether they are likely to succeed or not.  For -o, predicates which are likely to succeed are
-                     evaluated earlier, and for -a, predicates which are likely to fail are evaluated earlier.
+         1     This is the default optimisation level and corresponds to the traditional behaviour. Expressions
+               are reordered so that tests based only on the names of files (for example -name  and  -regex)  are
+               performed first.
 
-              The cost-based optimiser has a fixed idea of how likely any given test is to succeed.  In some cases  the
-              probability  takes account of the specific nature of the test (for example, -type f is assumed to be more
-              likely to succeed than -type c).  The cost-based optimiser is currently being evaluated.   If it does not
-              actually improve the performance of find, it will be removed again.  Conversely, optimisations that prove
-              to be reliable, robust and effective may be enabled at lower optimisation levels over time.  However, the
-              default behaviour (i.e. optimisation level 1) will not be changed in the 4.3.x release series.  The find‐
-              utils test suite runs all the tests on find at each optimisation level and ensures that the result is the
-              same.
+         2      Any  -type  or  -xtype  tests  are performed after any tests based only on the names of files, but
+                before any tests that require information from the inode.  On many modern versions of  Unix,  file
+                types  are  returned  by  readdir() and so these predicates are faster to evaluate than predicates
+                which need to stat the file first.  If you use the -fstype FOO predicate and specify a  filesystem
+                type FOO which is not known (that is, present in `/etc/mtab') at the time find starts, that predi‐
+                cate is equivalent to -false.
 
-EXPRESSION
-       The part of the command line after the list of starting points is the expression.  This is a kind of query spec‐
-       ification describing how we match files and what we do with the files that were matched.  An expression is  com‐
-       posed of a sequence of things:
+         3      At this optimisation level, the full cost-based query optimiser is enabled.  The order of tests is
+                modified so that cheap (i.e. fast) tests are performed first and more expensive ones are performed
+                later, if necessary.  Within each cost band, predicates are evaluated earlier or  later  according
+                to  whether they are likely to succeed or not.  For -o, predicates which are likely to succeed are
+                evaluated earlier, and for -a, predicates which are likely to fail are evaluated earlier.
 
-       Tests  Tests  return  a true or false value, usually on the basis of some property of a file we are considering.
-              The -empty test for example is true only when the current file is empty.
+      The cost-based optimiser has a fixed idea of how likely any given test is to succeed.  In some cases  the
+      probability  takes account of the specific nature of the test (for example, -type f is assumed to be more
+      likely to succeed than -type c).  The cost-based optimiser is currently being evaluated.   If it does not
+      actually improve the performance of find, it will be removed again.  Conversely, optimisations that prove
+      to be reliable, robust and effective may be enabled at lower optimisation levels over time.  However, the
+      default behaviour (i.e. optimisation level 1) will not be changed in the 4.3.x release series.  The find‐
+      utils test suite runs all the tests on find at each optimisation level and ensures that the result is the
+      same.
 
-       Actions
-              Actions have side effects (such as printing something on the standard output) and return either  true  or
-              false,  usually  based  on  whether or not they are successful.  The -print action for example prints the
-              name of the current file on the standard output.
+
+**EXPRESSION**
+
+   The part of the command line after the list of *starting points* is the expression.
+   This is a kind of query specification describing how we match files and what we do
+   with the files that were matched. An expression is composed of a sequence
+   of things::
+
+      Tests  
+         Tests return  a true or false value, usually on the basis of some property
+         of a file we are considering. The -empty test for example is true only
+         when the current file is empty.
+
+      Actions
+         Actions have side effects (such as printing something on the standard output)
+         and return either true or false, usually based on whether or not they are successful.
+         The -print action for example prints the name of the current file on the standard output.
 
        Global options
               Global options affect the operation of tests and actions specified on  any  part  of  the  command  line.
@@ -256,7 +252,7 @@ EXPRESSION
 
        -xdev  Don't descend directories on other filesystems.
 
-   TESTS
+   **TESTS**
        Some tests, for example -newerXY and -samefile, allow comparison between the file currently being  examined  and
        some  reference file specified on the command line.  When these tests are used, the interpretation of the refer‐
        ence file is determined by the options -H, -L and -P and any previous -follow, but the reference  file  is  only
@@ -353,17 +349,40 @@ EXPRESSION
               File's data was last modified n*24 hours ago.  See the comments for -atime  to  understand  how  rounding
               affects the interpretation of file modification times.
 
-       -name pattern
-              Base of file name (the path with the leading directories removed) matches shell pattern pattern.  Because
-              the leading directories are removed, the file names considered for a match with -name will never  include
-              a slash, so `-name a/b' will never match anything (you probably need to use -path instead).  A warning is
-              issued if you try to do this, unless the environment variable POSIXLY_CORRECT is set.  The metacharacters
-              (`*',  `?', and `[]') match a `.' at the start of the base name (this is a change in findutils-4.2.2; see
-              section STANDARDS CONFORMANCE below).  To ignore a directory and the files under it, use -prune;  see  an
-              example  in  the description of -path.  Braces are not recognised as being special, despite the fact that
-              some shells including Bash imbue braces with a special meaning in shell patterns.  The filename  matching
-              is  performed  with  the use of the fnmatch(3) library function.   Don't forget to enclose the pattern in
-              quotes in order to protect it from expansion by the shell.
+      -name pattern
+         Base of file name (the path with the leading directories removed) matches shell pattern pattern. Because
+         the leading directories are removed, the file names considered for a match with -name will never include
+         a slash, so '-name a/b' will never match anything (you probably need to use -path instead). A warning is
+         issued if you try to do this, unless the environment variable POSIXLY_CORRECT is set.  The metacharacters
+         ('*',  '?', and '[]') match a '.' at the start of the base name (this is a change in findutils-4.2.2; see
+         section STANDARDS CONFORMANCE below). To ignore a directory and the files under it, use -prune; see an
+         example in the description of -path. Braces are not recognised as being special, despite the fact that
+         some shells including Bash imbue braces with a special meaning in shell patterns. The filename matching
+         is performed with the use of the fnmatch(3) library function. Don't forget to enclose the pattern in
+         quotes in order to protect it from expansion by the shell.
+
+      -regex pattern
+         File name matches regular expression pattern. This is a match on the whole path, not a search.  For
+         example, to match a file named './fubar3', you can use the regular expression '.*bar.' or '.*b.*3', but
+         not 'f.*r3'. The regular expressions understood by find are by default Emacs Regular Expressions,  but
+         this can be changed with the -regextype option.
+
+      -samefile name
+         File refers to the same inode as name. When -L is in effect, this can include symbolic links.
+
+      -path pattern
+         File name matches shell pattern pattern. The metacharacters do not treat '/' or '.' specially; so, for
+         example, ``find . -path "./sr*sc"`` will print an entry for a directory called './src/misc' (if one exists).
+         To ignore a whole directory tree, use -prune rather than checking every file in the tree. For example,
+         to skip the directory 'src/emacs' and all files and directories under it, and print the names of the other
+         files found, do something like this: ``find . -path ./src/emacs -prune -o -print``.
+         Note that the pattern match test applies to the whole file name, starting from one of the start points
+         named on the command line. It would only make sense to use an absolute path name here if the relevant
+         start point is also an absolute path. This means that this command will never match anything:
+         ``find bar -path /foo/bar/myfile -print``. Find compares the -path argument with the concatenation of
+         a directory name and the base name of the file it's examining. Since the concatenation will never end
+         with a slash, -path arguments ending in a slash will match nothing (except perhaps a start point
+         specified on the command line).
 
        -newer file
               File was modified more recently than file.  If file is a symbolic link and the -H option or the -L option
@@ -393,23 +412,6 @@ EXPRESSION
        -nouser
               No user corresponds to file's numeric user ID.
 
-       -path pattern
-              File name matches shell pattern pattern.  The metacharacters do not treat `/' or `.' specially;  so,  for
-              example,
-                        find . -path "./sr*sc"
-              will  print  an  entry  for a directory called `./src/misc' (if one exists).  To ignore a whole directory
-              tree, use -prune rather than checking every file in  the  tree.   For  example,  to  skip  the  directory
-              `src/emacs'  and  all  files  and  directories under it, and print the names of the other files found, do
-              something like this:
-                        find . -path ./src/emacs -prune -o -print
-              Note that the pattern match test applies to the whole file name, starting from one of  the  start  points
-              named  on  the  command line.  It would only make sense to use an absolute path name here if the relevant
-              start point is also an absolute path.  This means that this command will never match anything:
-                        find bar -path /foo/bar/myfile -print
-              Find compares the -path argument with the concatenation of a directory name and the base name of the file
-              it's  examining.   Since the concatenation will never end with a slash, -path arguments ending in a slash
-              will match nothing (except perhaps a start point specified on the command line).  The predicate -path  is
-              also supported by HP-UX find and will be in a forthcoming version of the POSIX standard.
 
        -perm mode
               File's  permission  bits  are exactly mode (octal or symbolic).  Since an exact match is required, if you
@@ -433,94 +435,54 @@ EXPRESSION
        -perm +mode
               This is no longer supported (and has been deprecated since 2005).  Use -perm /mode instead.
 
-       -readable
-              Matches  files  which  are  readable.  This takes into account access control lists and other permissions
-              artefacts which the -perm test ignores.  This test makes use of the access(2) system call, and so can  be
-              fooled by NFS servers which do UID mapping (or root-squashing), since many systems implement access(2) in
-              the client's kernel and so cannot make use of the UID mapping information held on the server.
+      -readable  Matches  files  which  are  readable.
+      -writable  Matches files which are writable.
 
-       -regex pattern
-              File name matches regular expression pattern.  This is a match on the whole  path,  not  a  search.   For
-              example,  to  match a file named `./fubar3', you can use the regular expression `.*bar.' or `.*b.*3', but
-              not `f.*r3'.  The regular expressions understood by find are by default Emacs  Regular  Expressions,  but
-              this can be changed with the -regextype option.
-
-       -samefile name
-              File refers to the same inode as name.   When -L is in effect, this can include symbolic links.
 
        -size n[cwbkMG]
-              File uses n units of space, rounding up.  The following suffixes can be used:
+         File uses n units of space, rounding up.
+         The following suffixes can be used:
 
-              `b'    for 512-byte blocks (this is the default if no suffix is used)
+            'b'   for 512-byte blocks (this is the default if no suffix is used)
+            'c'   for bytes
+            'w'   for two-byte words
+            'k'   for Kilobytes (units of 1024 bytes)
+            'M'   for Megabytes (units of 1048576 bytes)
+            'G'   for Gigabytes (units of 1073741824 bytes)
 
-              `c'    for bytes
+         The size does not count indirect blocks, but it does count blocks in sparse files that are not actually
+         allocated. Bear in mind that the '%k' and '%b' format specifiers of -printf handle sparse files differently.
+         The 'b' suffix always denotes 512-byte blocks and never 1 Kilobyte blocks, which is different to the behaviour of -ls.
 
-              `w'    for two-byte words
+         The + and - prefixes signify greater than and less than, as usual. Bear in mind that the size is rounded
+         up to the next unit. Therefore ``-size -1M`` is not equivalent to ``-size -1048576c``.  The former only
+         matches empty files, the latter matches files from 1 to 1,048,575 bytes.
 
-              `k'    for Kilobytes (units of 1024 bytes)
+      -true  Always true.
 
-              `M'    for Megabytes (units of 1048576 bytes)
+      -type c
+         File is of type c:
 
-              `G'    for Gigabytes (units of 1073741824 bytes)
+            b      block (buffered) special
+            c      character (unbuffered) special
+            d      directory
+            p      named pipe (FIFO)
+            f      regular file
+            l      symbolic link
+            s      socket
 
-              The  size  does not count indirect blocks, but it does count blocks in sparse files that are not actually
-              allocated.  Bear in mind that the `%k' and `%b' format specifiers of -printf handle sparse files  differ‐
-              ently.   The `b' suffix always denotes 512-byte blocks and never 1 Kilobyte blocks, which is different to
-              the behaviour of -ls.
+      -xtype c
+         The same as -type unless the file is a symbolic link. For symbolic links: if the -H or -P option was
+         specified, true if the file is a link to a file of type c; if the -L option has been given, true if c is
+         'l'.  In other words, for symbolic links, -xtype checks the type of the file that -type does not check.
 
-              The + and - prefixes signify greater than and less than, as usual.  Bear in mind that the size is rounded
-              up  to  the next unit. Therefore -size -1M is not equivalent to -size -1048576c.  The former only matches
-              empty files, the latter matches files from 1 to 1,048,575 bytes.
+      -uid n 
+         File's numeric user ID is n.
+      -user uname
+         File is owned by user uname (numeric user ID allowed).
 
-       -true  Always true.
+   **ACTIONS**
 
-       -type c
-              File is of type c:
-
-              b      block (buffered) special
-
-              c      character (unbuffered) special
-
-              d      directory
-
-              p      named pipe (FIFO)
-
-              f      regular file
-
-              l      symbolic link; this is never true if the -L option or the -follow option is in effect, unless  the
-                     symbolic  link  is  broken.   If  you  want to search for symbolic links when -L is in effect, use
-                     -xtype.
-
-              s      socket
-
-              D      door (Solaris)
-
-       -uid n File's numeric user ID is n.
-
-       -used n
-              File was last accessed n days after its status was last changed.
-
-       -user uname
-              File is owned by user uname (numeric user ID allowed).
-
-       -wholename pattern
-              See -path.  This alternative is less portable than -path.
-
-       -writable
-              Matches files which are writable.  This takes into account access control  lists  and  other  permissions
-              artefacts  which the -perm test ignores.  This test makes use of the access(2) system call, and so can be
-              fooled by NFS servers which do UID mapping (or root-squashing), since many systems implement access(2) in
-              the client's kernel and so cannot make use of the UID mapping information held on the server.
-
-       -xtype c
-              The  same  as  -type  unless the file is a symbolic link.  For symbolic links: if the -H or -P option was
-              specified, true if the file is a link to a file of type c; if the -L option has been given, true if c  is
-              `l'.  In other words, for symbolic links, -xtype checks the type of the file that -type does not check.
-
-       -context pattern
-              (SELinux only) Security context of the file matches glob pattern.
-
-   ACTIONS
        -delete
               Delete  files; true if removal succeeded.  If the removal failed, an error message is issued.  If -delete
               fails, find's exit status will be nonzero (when it eventually exits).  Use of -delete automatically turns
@@ -607,57 +569,48 @@ EXPRESSION
               Like -execdir but ask the user first in the same way as for -ok.  If the user does not agree, just return
               false.  If the command is run, its standard input is redirected from /dev/null.
 
-       -print True;  print  the  full  file name on the standard output, followed by a newline.   If you are piping the
-              output of find into another program and there is the faintest possibility that the files  which  you  are
-              searching  for  might  contain  a  newline,  then  you should seriously consider using the -print0 option
-              instead of -print.  See the UNUSUAL FILENAMES section for information about  how  unusual  characters  in
-              filenames are handled.
+       -print 
+         True; print the full file name on the standard output, followed by a newline. If you are piping the
+         output of find into another program and there is the faintest possibility that the files which you are
+         searching for might contain a newline, then you should seriously consider using the -print0 option
+         instead of -print. See the UNUSUAL FILENAMES section for information about how unusual characters in
+         filenames are handled.
 
        -print0
-              True;  print the full file name on the standard output, followed by a null character (instead of the new‐
-              line character that -print uses).  This allows file names that contain newlines or other types  of  white
-              space  to  be correctly interpreted by programs that process the find output.  This option corresponds to
-              the -0 option of xargs.
+         True; print the full file name on the standard output, followed by a null character
+         (instead of the newline character that -print uses). This allows file names that contain
+         newlines or other types of whitespace to be correctly interpreted by programs that process
+         the find output. This option corresponds to the -0 option of :command:`xargs`.
 
        -printf format
-              True; print format on the standard output, interpreting `\' escapes and `%' directives.  Field widths and
-              precisions  can  be  specified  as with the `printf' C function.  Please note that many of the fields are
-              printed as %s rather than %d, and this may mean that flags don't work as you  might  expect.   This  also
-              means that the `-' flag does work (it forces fields to be left-aligned).  Unlike -print, -printf does not
-              add a newline at the end of the string.  The escapes and directives are:
+         True; print format on the standard output, interpreting `\' escapes and `%' directives.  Field widths and
+         precisions  can  be  specified  as with the `printf' C function. Please note that many of the fields are
+         printed as %s rather than %d, and this may mean that flags don't work as you might expect. This also
+         means that the `-' flag does work (it forces fields to be left-aligned). Unlike -print, -printf does not
+         add a newline at the end of the string. The escapes and directives are::
 
-              \a     Alarm bell.
+            \a     Alarm bell.
+            \b     Backspace.
+            \c     Stop printing from this format immediately and flush the output.
+            \f     Form feed.
+            \n     Newline.
+            \r     Carriage return.
+            \t     Horizontal tab.
+            \v     Vertical tab.
+            \0     ASCII NUL.
+            \\     A literal backslash (`\').
+            \NNN   The character whose ASCII code is NNN (octal).
 
-              \b     Backspace.
+            A '\' character followed by any other character is treated as an ordinary character,
+            so they both are printed.
 
-              \c     Stop printing from this format immediately and flush the output.
+            %%     A literal percent sign.
 
-              \f     Form feed.
-
-              \n     Newline.
-
-              \r     Carriage return.
-
-              \t     Horizontal tab.
-
-              \v     Vertical tab.
-
-              \0     ASCII NUL.
-
-              \\     A literal backslash (`\').
-
-              \NNN   The character whose ASCII code is NNN (octal).
-
-              A `\' character followed by any other character is treated as an ordinary character,  so  they  both  are
-              printed.
-
-              %%     A literal percent sign.
-
-              %a     File's last access time in the format returned by the C `ctime' function.
-
-              %Ak    File's last access time in the format specified by k, which is either `@' or a directive for the C
-                     `strftime' function.  The possible values for k are listed below; some of them might not be avail‐
-                     able on all systems, due to differences in `strftime' between systems.
+            %a     File's last access time in the format returned by the C 'ctime' function.
+            %Ak    File's last access time in the format specified by k, which is either '@'
+                   or a directive for the C 'strftime' function. The possible values for k
+                   are listed below; some of them might not be available on all systems, due
+                   to differences in 'strftime' between systems.
 
                      @      seconds since Jan. 1, 1970, 00:00 GMT, with fractional part.
 
@@ -692,131 +645,91 @@ EXPRESSION
                      Date fields:
 
                      a      locale's abbreviated weekday name (Sun..Sat)
-
                      A      locale's full weekday name, variable length (Sunday..Saturday)
-
                      b      locale's abbreviated month name (Jan..Dec)
-
                      B      locale's full month name, variable length (January..December)
-
                      c      locale's  date  and  time  (Sat  Nov  04 12:02:33 EST 1989).  The format is the same as for
                             ctime(3) and so to preserve compatibility with that format, there is no fractional part  in
                             the seconds field.
-
                      d      day of month (01..31)
-
                      D      date (mm/dd/yy)
-
                      h      same as b
-
                      j      day of year (001..366)
-
                      m      month (01..12)
-
                      U      week number of year with Sunday as first day of week (00..53)
-
                      w      day of week (0..6)
-
                      W      week number of year with Monday as first day of week (00..53)
-
                      x      locale's date representation (mm/dd/yy)
-
                      y      last two digits of year (00..99)
-
                      Y      year (1970...)
 
-              %b     The  amount of disk space used for this file in 512-byte blocks.  Since disk space is allocated in
-                     multiples of the filesystem block size this is usually greater than %s/512, but  it  can  also  be
-                     smaller if the file is a sparse file.
+            %c     File's last status change time in the format returned by the C 'ctime' function.
+            %Ck    File's last status change time in the format specified by k, which is the same as for %A.
+            %t     File's last modification time in the format returned by the C 'ctime' function.
+            %Tk    File's last modification time in the format specified by k, which is the same as for %A.
 
-              %c     File's last status change time in the format returned by the C `ctime' function.
+            %b     The  amount of disk space used for this file in 512-byte blocks.  Since disk space is allocated in
+                   multiples of the filesystem block size this is usually greater than %s/512, but  it  can  also  be
+                   smaller if the file is a sparse file.
+           
+            %s     File's size in bytes.
+            %k     The amount of disk space used for this file in 1K blocks. 
 
-              %Ck    File's last status change time in the format specified by k, which is the same as for %A.
+            %d     File's depth in the directory tree; 0 means the file is a starting-point.
+            %D     The device number on which the file exists (the st_dev field of struct stat), in decimal.
+            %F     Type of the filesystem the file is on; this value can be used for -fstype.
+            %g     File's group name, or numeric group ID if the group has no name.
+            %G     File's numeric group ID.
 
-              %d     File's depth in the directory tree; 0 means the file is a starting-point.
+            %f     File's name with any leading directories removed (only the last element).
+            %h     Leading directories of file's name (all but the last element). If the file name contains no
+                   slashes (since it is in the current directory) the %h specifier expands to ".".
 
-              %D     The device number on which the file exists (the st_dev field of struct stat), in decimal.
+            %p     File's name.
+            %P     File's name with the name of the starting-point under which it was found removed.
 
-              %f     File's name with any leading directories removed (only the last element).
+            %H     Starting-point under which file was found.
+            %i     File's inode number (in decimal).
 
-              %F     Type of the filesystem the file is on; this value can be used for -fstype.
+            %n     Number of hard links to file.
+            %l     Object of symbolic link (empty string if file is not a symbolic link).
 
-              %g     File's group name, or numeric group ID if the group has no name.
+            %M     File's permissions (in symbolic form, as for ls). 
+            %m     File's permission bits (in octal). 
+                   Normally  you will want to have a leading zero on this number,
+                   and to do this, you should use the # flag (as in, for example, `%#m').
 
-              %G     File's numeric group ID.
+            %S     File's  sparseness. This is calculated as (BLOCKSIZE*st_blocks / st_size). The exact value you
+                   will get for an ordinary file of a certain length is system-dependent. However, normally sparse
+                   files  will have values less than 1.0, and files which use indirect blocks may have a value which
+                   is greater than 1.0. The value used for BLOCKSIZE is system-dependent, but is usually 512 bytes.
+                   If the file size is zero, the value printed is undefined. On systems which lack support for
+                   st_blocks, a file's sparseness is assumed to be 1.0.
 
-              %h     Leading  directories  of  file's  name  (all  but the last element).  If the file name contains no
-                     slashes (since it is in the current directory) the %h specifier expands to ".".
+            %u     File's user name, or numeric user ID if the user has no name.
+            %U     File's numeric user ID.
 
-              %H     Starting-point under which file was found.
+            %y     File's type (like in ls -l), U=unknown type (shouldn't happen)
+            %Y     File's type (like %y), plus follow symlinks: L=loop, N=nonexistent
 
-              %i     File's inode number (in decimal).
+            A '%' character followed by any other character is discarded, but the other character is printed (don't
+            rely on this, as further format characters may be introduced). A '%' at the end of the format argument
+            causes undefined behaviour since there is no following character. In some locales, it may hide your door
+            keys, while in others it may remove the final page from the novel you are reading.
 
-              %k     The amount of disk space used for this file in 1K blocks.  Since disk space is allocated in multi‐
-                     ples of the filesystem block size this is usually greater than %s/1024, but it can also be smaller
-                     if the file is a sparse file.
+            The %m and %d directives support the # , 0 and + flags, but the other directives do not, even if they
+            print numbers. Numeric directives that do not support these flags include G, U, b, D, k and n. The '-'
+            format flag is supported and changes the alignment of a field from right-justified (which is the default)
+            to left-justified.
 
-              %l     Object of symbolic link (empty string if file is not a symbolic link).
-
-              %m     File's permission bits (in octal).  This option uses the `traditional'  numbers  which  most  Unix
-                     implementations  use, but if your particular implementation uses an unusual ordering of octal per‐
-                     missions bits, you will see a difference between the actual value of the file's mode and the  out‐
-                     put  of  %m.    Normally  you will want to have a leading zero on this number, and to do this, you
-                     should use the # flag (as in, for example, `%#m').
-
-              %M     File's permissions (in symbolic form, as for ls).  This directive is supported in findutils  4.2.5
-                     and later.
-
-              %n     Number of hard links to file.
-
-              %p     File's name.
-
-              %P     File's name with the name of the starting-point under which it was found removed.
-
-              %s     File's size in bytes.
-
-              %S     File's  sparseness.   This  is calculated as (BLOCKSIZE*st_blocks / st_size).  The exact value you
-                     will get for an ordinary file of a certain length is system-dependent.  However,  normally  sparse
-                     files  will  have values less than 1.0, and files which use indirect blocks may have a value which
-                     is greater than 1.0.   The value used for BLOCKSIZE is system-dependent, but is usually 512 bytes.
-                     If  the  file  size  is  zero,  the value printed is undefined.  On systems which lack support for
-                     st_blocks, a file's sparseness is assumed to be 1.0.
-
-              %t     File's last modification time in the format returned by the C `ctime' function.
-
-              %Tk    File's last modification time in the format specified by k, which is the same as for %A.
-
-              %u     File's user name, or numeric user ID if the user has no name.
-
-              %U     File's numeric user ID.
-
-              %y     File's type (like in ls -l), U=unknown type (shouldn't happen)
-
-              %Y     File's type (like %y), plus follow symlinks: L=loop, N=nonexistent
-
-              %Z     (SELinux only) file's security context.
-
-              %{ %[ %(
-                     Reserved for future use.
-
-              A `%' character followed by any other character is discarded, but the other character is  printed  (don't
-              rely  on  this, as further format characters may be introduced).  A `%' at the end of the format argument
-              causes undefined behaviour since there is no following character.  In some locales, it may hide your door
-              keys, while in others it may remove the final page from the novel you are reading.
-
-              The  %m  and  %d  directives support the # , 0 and + flags, but the other directives do not, even if they
-              print numbers.  Numeric directives that do not support these flags include G, U, b, D, k and n.  The  `-'
-              format flag is supported and changes the alignment of a field from right-justified (which is the default)
-              to left-justified.
-
-              See the UNUSUAL FILENAMES section for information about how unusual characters in filenames are handled.
+            See the UNUSUAL FILENAMES section for information about how unusual characters in filenames are handled.
 
        -prune True; if the file is a directory, do not descend into it.  If -depth is given, false; no effect.  Because
               -delete implies -depth, you cannot usefully use -prune and -delete together.
 
-       -quit  Exit  immediately.   No  child processes will be left running, but no more paths specified on the command
-              line will be processed.  For example, find /tmp/foo /tmp/bar -print -quit will print only /tmp/foo.   Any
-              command  lines  which  have been built up with -execdir ... {} + will be invoked before find exits.   The
+       -quit  Exit immediately. No child processes will be left running, but no more paths specified on the command
+              line will be processed. For example, ``find /tmp/foo /tmp/bar -print -quit`` will print only :file:`/tmp/foo`.
+              Any command lines which have been built up with -execdir ... {} + will be invoked before find exits. The
               exit status may or may not be zero, depending on whether an error has already occurred.
 
    OPERATORS
@@ -956,52 +869,6 @@ STANDARDS CONFORMANCE
        The POSIXLY_CORRECT environment variable does not affect the behaviour of the -regex or  -iregex  tests  because
        those tests aren't specified in the POSIX standard.
 
-ENVIRONMENT VARIABLES
-       LANG   Provides a default value for the internationalization variables that are unset or null.
-
-       LC_ALL If set to a non-empty string value, override the values of all the other internationalization variables.
-
-       LC_COLLATE
-              The  POSIX  standard  specifies  that this variable affects the pattern matching to be used for the -name
-              option.   GNU find uses the fnmatch(3) library function, and so support for `LC_COLLATE' depends  on  the
-              system  library.     This  variable  also  affects  the  interpretation of the response to -ok; while the
-              `LC_MESSAGES' variable selects the actual pattern used to interpret the response to -ok, the  interpreta‐
-              tion of any bracket expressions in the pattern will be affected by `LC_COLLATE'.
-
-       LC_CTYPE
-              This  variable  affects  the treatment of character classes used in regular expressions and also with the
-              -name test, if the system's fnmatch(3) library function supports this.  This variable  also  affects  the
-              interpretation  of any character classes in the regular expressions used to interpret the response to the
-              prompt issued by -ok.  The `LC_CTYPE' environment variable will also affect which characters are  consid‐
-              ered to be unprintable when filenames are printed; see the section UNUSUAL FILENAMES.
-
-       LC_MESSAGES
-              Determines  the  locale  to be used for internationalised messages.  If the `POSIXLY_CORRECT' environment
-              variable is set, this also determines the interpretation of the response to the prompt made  by  the  -ok
-              action.
-
-       NLSPATH
-              Determines the location of the internationalisation message catalogues.
-
-       PATH   Affects  the  directories  which are searched to find the executables invoked by -exec, -execdir, -ok and
-              -okdir.
-
-       POSIXLY_CORRECT
-              Determines the block size used by -ls and -fls.  If POSIXLY_CORRECT is  set,  blocks  are  units  of  512
-              bytes.  Otherwise they are units of 1024 bytes.
-
-              Setting  this  variable  also  turns  off warning messages (that is, implies -nowarn) by default, because
-              POSIX requires that apart from the output for -ok, all messages printed on  stderr  are  diagnostics  and
-              must result in a non-zero exit status.
-
-              When  POSIXLY_CORRECT  is not set, -perm +zzz is treated just like -perm /zzz if +zzz is not a valid sym‐
-              bolic mode.  When POSIXLY_CORRECT is set, such constructs are treated as an error.
-
-              When POSIXLY_CORRECT is set, the response to the prompt made by the -ok action is  interpreted  according
-              to the system's message catalogue, as opposed to according to find's own message translations.
-
-       TZ     Affects the time zone used for some of the time-related format directives of -printf and -fprintf.
-
 EXAMPLES
        find /tmp -name core -type f -print | xargs /bin/rm -f
 
@@ -1118,80 +985,5 @@ SEE ALSO
        locate(1), locatedb(5),  updatedb(1),  xargs(1),  chmod(1),  fnmatch(3),  regex(7),  stat(2),  lstat(2),  ls(1),
        printf(3), strftime(3), ctime(3)
 
-       The  full  documentation for find is maintained as a Texinfo manual.  If the info and find programs are properly
-       installed at your site, the command info find should give you access to the complete manual.
-
-HISTORY
-       As of findutils-4.2.2, shell metacharacters (`*', `?' or `[]' for example) used in filename patterns will  match
-       a leading `.', because IEEE POSIX interpretation 126 requires this.
-
-       As of findutils-4.3.3, -perm /000 now matches all files instead of none.
-
-       Nanosecond-resolution timestamps were implemented in findutils-4.3.3.
-
-       As  of  findutils-4.3.11, the -delete action sets find's exit status to a nonzero value when it fails.  However,
-       find will not exit immediately.  Previously, find's exit status was unaffected by the failure of -delete.
-
-       Feature                Added in   Also occurs in
-       -newerXY               4.3.3      BSD
-       -D                     4.3.1
-       -O                     4.3.1
-       -readable              4.3.0
-       -writable              4.3.0
-       -executable            4.3.0
-       -regextype             4.2.24
-       -exec ... +            4.2.12     POSIX
-       -execdir               4.2.12     BSD
-       -okdir                 4.2.12
-       -samefile              4.2.11
-       -H                     4.2.5      POSIX
-       -L                     4.2.5      POSIX
-       -P                     4.2.5      BSD
-       -delete                4.2.3
-       -quit                  4.2.3
-       -d                     4.2.3      BSD
-       -wholename             4.2.0
-       -iwholename            4.2.0
-       -ignore_readdir_race   4.2.0
-       -fls                   4.0
-       -ilname                3.8
-       -iname                 3.8
-
-       -ipath                 3.8
-       -iregex                3.8
-
-       The syntax -perm +MODE was removed in findutils-4.5.12, in favour of -perm /MODE.  The  +MODE  syntax  had  been
-       deprecated since findutils-4.2.21 which was released in 2005.
-
-NON-BUGS
-   Operator precedence surprises
-       The  command find . -name afile -o -name bfile -print will never print afile because this is actually equivalent
-       to find . -name afile -o \( -name bfile -a -print \).  Remember that the precedence of -a is higher than that of
-       -o and when there is no operator specified between tests, -a is assumed.
-
-   “paths must precede expression” error message
-       $ find . -name *.c -print
-       find: paths must precede expression
-       Usage: find [-H] [-L] [-P] [-Olevel] [-D ... [path...] [expression]
-
-       This happens because *.c has been expanded by the shell resulting in find actually receiving a command line like
-       this:
-       find . -name frcode.c locate.c word_io.c -print
-       That command is of course not going to work.  Instead of doing things this way, you should enclose  the  pattern
-       in quotes or escape the wildcard:
-       $ find . -name '*.c' -print
-       $ find . -name \*.c -print
-
-BUGS
-       There  are  security problems inherent in the behaviour that the POSIX standard specifies for find, which there‐
-       fore cannot be fixed.  For example, the -exec action  is  inherently  insecure,  and  -execdir  should  be  used
-       instead.  Please see Finding Files for more information.
-
-       The environment variable LC_COLLATE has no effect on the -ok action.
-
-       The  best  way  to report a bug is to use the form at http://savannah.gnu.org/bugs/?group=findutils.  The reason
-       for this is that you will then be able to track progress in fixing the problem.   Other comments  about  find(1)
-       and  about  the  findutils  package in general can be sent to the bug-findutils mailing list.  To join the list,
-       send email to bug-findutils-request@gnu.org.
 
                                                                                                                 FIND(1)
