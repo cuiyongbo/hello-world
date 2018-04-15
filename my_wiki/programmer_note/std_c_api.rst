@@ -7,4 +7,5 @@ Std C API
    :maxdepth: 2
 
    std_c_api/std_io_api
+   std_c_api/std_file_operation_api
    

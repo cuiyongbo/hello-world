@@ -3467,3 +3467,19 @@ figures.
 | Usage: The President wants to squelch any perception that the meeting is an attempt to negotiate.
 | Definition: To squelch means to make a wet, sucking sound, like the sound you make when you are walking on wet, muddy group.
 | 
+| apostle [使徒]
+| Definition: each of the twelve chief disciples of Jesus Christ.
+| Usage: The twelve Apostles. [耶稣十二门徒]
+| 
+| ill-fated
+| Definiton: marked by or promising bad fortune.
+| Usage: An ill-fated expedition.
+| 
+| caries [龋齿]
+| Definiton: soft decayed area in a tooth, progressive decay can lead to the death of a tooth.
+| 
+| singsong
+| Definition: (of a person's voice) having a repeated rising and falling rhythm.
+| Usage: The singsong voices of children reciting tables.
+| 
+

@@ -97,7 +97,7 @@ Input format conversion
    The conversion specifications in format are of two forms, either beginning with ``'%'`` or
    beginning with ``"%n$"``. The two forms should not be mixed in the same format string, except
    that a string containing ``"%n$"`` specifications can include ``%%`` and ``%*``. If format contains
-   ``'%' `` specifications, then these correspond in order with successive pointer arguments. In
+   ``'%'`` specifications, then these correspond in order with successive pointer arguments. In
    the ``"%n$"`` form (which is specified in POSIX.1-2001, but not C99), n is a decimal integer
    that specifies that the converted input should be placed in the location referred to by
    the n-th pointer argument following format.
@@ -170,20 +170,20 @@ Input format conversion
             skip of leading white space is suppressed. To skip white space first,
             use an explicit space in the format.
 
-      [     Matches  a nonempty sequence of characters from the specified set of accepted char‐
-            acters; the next pointer must be a pointer to char, and there must be  enough  room
-            for all the characters in the string, plus a terminating null byte.  The usual skip
-            of leading white space is suppressed.  The string is to be made up of characters in
+      [     Matches a nonempty sequence of characters from the specified set of accepted
+            characters; the next pointer must be a pointer to char, and there must be enough room
+            for all the characters in the string, plus a terminating null byte. The usual skip
+            of leading white space is suppressed. The string is to be made up of characters in
             (or not in) a particular set; the set is defined by the characters between the open
-            bracket [ character and a close bracket ] character.  The set excludes those  char‐
-            acters  if  the  first  character  after  the open bracket is a circumflex (^).  To
-            include a close bracket in the set, make it the  first  character  after  the  open
-            bracket or the circumflex; any other position will end the set.  The hyphen charac‐
-            ter - is also special; when placed between two other characters, it adds all inter‐
-            vening  characters  to  the  set.   To include a hyphen, make it the last character
-            before the final close bracket.  For instance, [^]0-9-] means the  set  "everything
-            except  close  bracket,  zero  through nine, and hyphen".  The string ends with the
-            appearance of a character not in the (or, with a circumflex, in) set  or  when  the
+            bracket [ character and a close bracket ] character. The set excludes those
+            characters if the first character after the open bracket is a circumflex (^). To
+            include a close bracket in the set, make it the first character after the open
+            bracket or the circumflex; any other position will end the set. The hyphen character
+            - is also special; when placed between two other characters, it adds all intervening
+            characters to the set. To include a hyphen, make it the last character
+            before the final close bracket. For instance, [^]0-9-] means the  set  "everything
+            except close bracket, zero through nine, and hyphen". The string ends with the
+            appearance of a character not in the (or, with a circumflex, in) set or when the
             field width runs out.
 
       p     Matches a pointer value (as printed by %p in printf(3); the next pointer must be a
@@ -191,7 +191,7 @@ Input format conversion
 
       n     Nothing is expected; instead, the number of characters consumed thus far from the
             input is stored through the next pointer, which must be a pointer to int. This is
-            not a conversion and does not increase the count returned by the  function. The
+            not a conversion and does not increase the count returned by the function. The
             assignment can be suppressed with the * assignment-suppression character, but the
             effect on the return value is undefined. Therefore %*n conversions should not be
             used.
@@ -249,49 +249,6 @@ Input format conversion
    | vscanf(), vsscanf(), vfscanf() |               |         |
    +--------------------------------+---------------+---------+
 
-
-NOTES
-   The 'a' assignment-allocation modifier
-       Originally,  the  GNU  C library supported dynamic allocation for string inputs (as a non‐
-       standard extension) via the a character.  (This feature is present at least as far back as
-       glibc  2.0.)  Thus, one could write the following to have scanf() allocate a buffer for an
-       input string, with a pointer to that buffer being returned in *buf:
-
-           char *buf;
-           scanf("%as", &buf);
-
-       The use of the letter a for this purpose was problematic, since a is also specified by the
-       ISO  C standard as a synonym for f (floating-point input).  POSIX.1-2008 instead specifies
-       the m modifier for assignment allocation (as documented in DESCRIPTION, above).
-
-       Note that the a modifier is not available if the program is compiled with gcc -std=c99  or
-       gcc -D_ISOC99_SOURCE (unless _GNU_SOURCE is also specified), in which case the a is inter‐
-       preted as a specifier for floating-point numbers (see above).
-
-       Support for the m modifier was added to glibc starting with version 2.7, and new  programs
-       should use that modifier instead of a.
-
-       As  well  as  being standardized by POSIX, the m modifier has the following further advan‐
-       tages over the use of a:
-
-       * It may also be applied to %c conversion specifiers (e.g., %3mc).
-
-       * It avoids ambiguity with respect to the %a floating-point conversion specifier  (and  is
-         unaffected by gcc -std=c99 etc.).
-
-BUGS
-       All  functions  are fully C89 conformant, but provide the additional specifiers q and a as
-       well as an additional behavior of the L and l specifiers.  The latter may be considered to
-       be a bug, as it changes the behavior of specifiers defined in C89.
-
-       Some combinations of the type modifiers and conversion specifiers defined by ANSI C do not
-       make sense (e.g., %Ld).  While they may have a well-defined behavior on Linux,  this  need
-       not to be so on other architectures.  Therefore it usually is better to use modifiers that
-       are not defined by ANSI C at all, that is, use q instead of L in combination with d, i, o,
-       u, x, and X conversions or ll.
-
-       The usage of q is not the same as on 4.4BSD, as it may be used in float conversions equiv‐
-       alently to L.
 
 **EXAMPLE**
 

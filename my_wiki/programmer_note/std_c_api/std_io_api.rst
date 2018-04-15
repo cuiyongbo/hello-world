@@ -121,7 +121,7 @@ Output API
 
    ``putchar(c)`` is equivalent to ``putc(c, stdout)``.
 
-   ``puts()`` writes the string *s* and a trailing newline to stdout.
+   ``puts()`` writes the string *s* and a trailing newline to ``stdout``.
 
    Calls to the functions described here can be mixed with each other and
    with calls to other output functions from the stdio library for the
