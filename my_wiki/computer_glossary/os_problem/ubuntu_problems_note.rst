@@ -21,3 +21,7 @@ Ubuntu Problems
    .. code-block:: sh
 
       sudo apt-get source pkg-name
+
+#. Inspect shared memory usage
+   
+   .. image:: images/ubuntu_view_shared_memory_usage.png

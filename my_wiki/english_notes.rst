@@ -3482,4 +3482,10 @@ figures.
 | Definition: (of a person's voice) having a repeated rising and falling rhythm.
 | Usage: The singsong voices of children reciting tables.
 | 
+| meter
+| Definition: a device that measures and records the quantity, degree, or rate of something.
+| Usage: an electricity meter. [电流表/电压表]
 
+.. image:: images/meter_0.png
+.. image:: images/meter_1.jpg
+.. image:: images/meter_2.png

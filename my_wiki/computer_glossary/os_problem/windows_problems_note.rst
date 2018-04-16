@@ -110,3 +110,7 @@ Windows Problems
 
       File: HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\FileMRUList
       Project: HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\ProjectMRUList
+
+#. Inspect shared memory usage
+   
+   .. image:: images/windows_view_shared_memory_usage.png
