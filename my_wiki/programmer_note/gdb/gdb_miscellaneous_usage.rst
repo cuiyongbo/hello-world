@@ -1,3 +1,7 @@
+**********
+Gdb Tricks
+**********
+
 #. select executable file
    
    .. code-block:: sh

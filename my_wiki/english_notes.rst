@@ -3490,6 +3490,17 @@ figures.
 .. image:: images/meter_1.jpg
 .. image:: images/meter_2.png
 
-suffice
-superse
-
+|
+| suffice
+| Definition: to be enough to achieve a purpose or to fulfil a need.
+| Usage: Two examples should suffice to prove the contention.
+| Usage: Simple mediocrity cannot suffice them.
+| Phrase: suffice (it) to say
+| Definition: used to indicate that one is saying enough to make one's meaning clear while withholding something for reasons of discretion or brevity.
+| Usage: Suffice it to say that they were not considered suitable for this project.
+| 
+| supersede
+| Definition: to replace something because it has become old-fashioned or unacceptable.
+| Synonyms: supplant.
+| Usage: Hand tools are relics of the past5 that have now been superseded by the machine.
+|

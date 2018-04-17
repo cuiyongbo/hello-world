@@ -1,5 +1,5 @@
 *********
-Gdb Usage
+Gdb Notes
 *********
 
 .. toctree::

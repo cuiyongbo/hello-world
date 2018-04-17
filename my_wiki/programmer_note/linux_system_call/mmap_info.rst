@@ -26,9 +26,10 @@ mmap & munmap
    the kernel takes it as a hint about where to place the mapping; on Linux, the mapping
    will be created at a nearby page boundary. The address of the new mapping is returned
    as the result of the call.
-   The contents of a file mapping (as opposed to an anonymous mapping; see MAP_ANONYMOUS below),
+
+   The contents of a file mapping (as opposed to an anonymous mapping; see ``MAP_ANONYMOUS`` below),
    are initialized using *length* bytes starting at offset *offset* in the file (or other object)
-   referred to by the file descriptor ``fd``. offset must be a multiple of the page size as
+   referred to by the file descriptor ``fd``. *offset* must be a multiple of the page size as
    returned by ``sysconf(_SC_PAGE_SIZE)``.
 
    The *prot* argument describes the desired memory protection of the mapping (and must not
@@ -56,7 +57,7 @@ mmap & munmap
 
    In addition, zero or more of the following values can be ORed in flags:
 
-       MAP_32BIT (since Linux 2.4.20, 2.6)
+      MAP_32BIT (since Linux 2.4.20, 2.6)
          Put the mapping into the first 2 Gigabytes of the process address space. This flag is supported **only** on x86-64,
          for 64-bit programs. It was added to allow thread stacks to be allocated somewhere in the first 2GB of memory,
          so as to improve context-switch performance on some early 64-bit processors. Modern x86-64 processors no longer
@@ -235,75 +236,73 @@ mmap & munmap
 
 **EXAMPLE**
 
-   The following program prints part of the file specified in its first command-line argument to standard output.  The range of bytes to be printed is specified via offset and length values in the second and third command-line arguments. The program creates a memory mapping of the required pages of the file and then uses write(2) to output the desired bytes.
+   The following program prints part of the file specified in its first command-line argument to standard output.
+   The range of bytes to be printed is specified via *offset* and *length* values in the second and third command-line arguments.
+   The program creates a memory mapping of the required pages of the file and then uses write(2) to output the desired bytes.
 
-       #include <sys/mman.h>
-       #include <sys/stat.h>
-       #include <fcntl.h>
-       #include <stdio.h>
-       #include <stdlib.h>
-       #include <unistd.h>
+   .. code-block:: c
 
-       #define handle_error(msg) \
-           do { perror(msg); exit(EXIT_FAILURE); } while (0)
+      #include <sys/mman.h>
+      #include <sys/stat.h>
+      #include <fcntl.h>
+      #include <stdio.h>
+      #include <stdlib.h>
+      #include <unistd.h>
 
-       int
-       main(int argc, char *argv[])
-       {
-           char *addr;
-           int fd;
-           struct stat sb;
-           off_t offset, pa_offset;
-           size_t length;
-           ssize_t s;
+      #define handle_error(msg) \
+            do { perror(msg); exit(EXIT_FAILURE); } while (0)
 
-           if (argc < 3 || argc > 4) {
-               fprintf(stderr, "%s file offset [length]\n", argv[0]);
-               exit(EXIT_FAILURE);
-           }
+      int main(int argc, char *argv[])
+      {
+         if (argc < 3 || argc > 4) {
+            fprintf(stderr, "%s file offset [length]\n", argv[0]);
+            exit(EXIT_FAILURE);
+         }
 
-           fd = open(argv[1], O_RDONLY);
-           if (fd == -1)
-               handle_error("open");
+         int fd = open(argv[1], O_RDONLY);
+         if (fd == -1)
+            handle_error("open");
 
-           if (fstat(fd, &sb) == -1)           /* To obtain file size */
-               handle_error("fstat");
+         struct stat sb;
+         if (fstat(fd, &sb) == -1)  /* To obtain file size */
+            handle_error("fstat");
 
-           offset = atoi(argv[2]);
-           pa_offset = offset & ~(sysconf(_SC_PAGE_SIZE) - 1);
-               /* offset for mmap() must be page aligned */
+         /* offset for mmap() must be page aligned */
+         off_t offset = atoi(argv[2]);
+         off_t pa_offset = offset & ~(sysconf(_SC_PAGE_SIZE) - 1);
 
-           if (offset >= sb.st_size) {
-               fprintf(stderr, "offset is past end of file\n");
-               exit(EXIT_FAILURE);
-           }
+         if (offset >= sb.st_size) {
+            fprintf(stderr, "offset is past end of file\n");
+            exit(EXIT_FAILURE);
+         }
 
-           if (argc == 4) {
-               length = atoi(argv[3]);
-               if (offset + length > sb.st_size)
-                   length = sb.st_size - offset;
-                       /* Can't display bytes past end of file */
-
-           } else {    /* No length arg ==> display to end of file */
+         size_t length;
+         if (argc == 4) {
+            length = atoi(argv[3]);
+            /* Can't display bytes past end of file */
+            if (offset + length > sb.st_size)
                length = sb.st_size - offset;
-           }
+         } else {
+            /* No length arg ==> display to end of file */
+            length = sb.st_size - offset;
+         }
 
-           addr = mmap(NULL, length + offset - pa_offset, PROT_READ,
-                       MAP_PRIVATE, fd, pa_offset);
-           if (addr == MAP_FAILED)
-               handle_error("mmap");
+         char* addr = (char*)mmap(NULL, length + offset - pa_offset, PROT_READ,
+                                                      MAP_PRIVATE, fd, pa_offset);
+         if (addr == MAP_FAILED)
+            handle_error("mmap");
 
-           s = write(STDOUT_FILENO, addr + offset - pa_offset, length);
-           if (s != length) {
-               if (s == -1)
-                   handle_error("write");
+         ssize_t s = write(STDOUT_FILENO, addr + offset - pa_offset, length);
+         if (s != length) {
+            if (s == -1)
+               handle_error("write");
 
-               fprintf(stderr, "partial write");
-               exit(EXIT_FAILURE);
-           }
+             fprintf(stderr, "partial write");
+            exit(EXIT_FAILURE);
+         }
 
-           exit(EXIT_SUCCESS);
-       }
+         exit(EXIT_SUCCESS);
+      }
 
 
 **SEE ALSO**
