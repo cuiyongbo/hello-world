@@ -9,7 +9,7 @@ POSIX shared memory overview
 **DESCRIPTION**
 
    The POSIX shared memory API allows processes to communicate information
-   by sharing a region of memory. The interfaces employed in the API are::
+   by sharing a region of memory. The interfaces employed in the API are:
 
       shm_open(3)
          Create and open a new object, or open an existing object. This is analogous to open(2).
@@ -70,4 +70,5 @@ POSIX shared memory overview
 
 .. toctree::
    
+   shm_open
    mmap_info

@@ -14,7 +14,6 @@ mmap & munmap
       int munmap(void *addr, size_t length);
       void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
 
-
 **DESCRIPTION**
 
    ``mmap()`` creates a new mapping in the virtual address space of the calling process.
@@ -66,7 +65,7 @@ mmap & munmap
 
       MAP_ANONYMOUS
          The mapping is not backed by any file; its contents are initialized to zero. The *fd* and *offset* arguments
-         are ignored; however, some implementations require *fd* to be *-1* if ``MAP_ANONYMOUS`` is  specified,  and
+         are ignored; however, some implementations require *fd* to be *-1* if ``MAP_ANONYMOUS`` is specified, and
          portable applications should ensure this. The use of *MAP_ANONYMOUS* in conjunction with *MAP_SHARED* is
          supported on Linux only since kernel 2.4.
 

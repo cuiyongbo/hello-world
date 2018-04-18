@@ -3512,6 +3512,14 @@ figures.
 .. image:: images/Twitter-logo.jpg
 
 
+converse
+Definition: to make conversation with someone.
+Usage: They were conversing in German, their only common language.
+Definition: The converse of a statement is its opppsite or reverse.
+Usage: If spirituality is properly political, the converse is also true: the politics is properly spiritual.
+Definition: having characteristics which are the reverse of something else mentioned earlier.
+Usage: The only mode of change will be the slow process of growth, and the converse process of decay.
+
 
 
 
