@@ -2,7 +2,6 @@
 Software Shotcuts
 *****************
 
-
 Windows
 =======
 
@@ -161,6 +160,12 @@ VmWare
 #. Copy – Ctrl + Insert
 #. Paste – Shift + Insert
 #. Switch Focus - Ctrl + Alt (Windows), Ctrl + Option (Mac)
+#. New Tab - Shift + Alt + N
+#. Copy Current session - Ctrl + Alt + N
+#. Close Tab - Ctrl + Shift + F4
+#. Switch Between tabs - Ctrl + tab, Ctrl + Shift + tab
+#. Full Screen - Alt + Enter
+#. Open file transfer - Ctrl + Alt + F
 
 
 MS Word
