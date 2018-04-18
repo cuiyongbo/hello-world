@@ -71,4 +71,5 @@ POSIX shared memory overview
 .. toctree::
    
    shm_open
+   ftruncate_info
    mmap_info

@@ -185,3 +185,33 @@ find Command
 ============
 
 See :doc:`find_command`
+
+
+nohup Command
+=============
+
+See :doc:`nohup_command`
+
+
+Pipe & Redirect
+===============
+
+   .. code-block:: sh
+   
+      $ more < main.cpp # redirect input
+      $ kill -HUP 1234 >killout.txt 2>killerr.txt # redirect stdout to killout.txt and stderr to killerr.txt
+      $ kill -1 1234 >/dev/null 2>&1 # discard all output
+      $ ls -lh >>directoryEntries.txt # redirect stdout to directoryEntries.txt in append mode
+      $ ps | sort -h
+   
+   .. note::
+      
+      * 0 - stdin
+      * 1 - stdout
+      * 2 - stderr
+        
+      the "&" in "2>&1" cannot be omitted, otherwise the command will be interpreted as
+      "redirect stderr to a file named 1." "&" indicates that what follows is a file 
+      descriptor and not a filename.  
+
+

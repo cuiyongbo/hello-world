@@ -333,3 +333,25 @@ See ``'git help config'`` and search for ``'push.default'`` for further
 information. (the ``'simple'`` mode was introduced in Git 1.7.11. Use the
 similar mode ``'current'`` instead of ``'simple'`` if you sometimes use
 older versions of Git).
+
+
+Git to abort git pull
+=====================
+
+   .. code-block::
+      
+         git reset --keep HEAD@{1}
+
+   .. note:: 
+
+      Note that any local changes will be discarded.
+
+
+Git to checkout a new branch and track itself
+=============================================
+
+   .. code-block:: sh
+
+      $ git checkout -b brach_name
+      # perform changing and commit changes
+      $ git push -u origin branch_name
