@@ -141,3 +141,42 @@ C++ enumerator example
       return FileMode(int(l) & int(r));
    }
       
+
+Reference count example
+=======================
+
+.. code-block:: c++
+
+   class ControlPanel
+   {
+   public:
+      static void  createInstance()
+      {
+
+         if(++m_refCount == 1)
+            m_instance = new(ControlPanel);
+      }
+
+      static void destroyInstance()
+      {
+         if(--m_refCount == 0) 
+         {
+            delete m_instance;
+            m_instance = NULL;
+         }
+      }
+
+      static ControlPanel* instance() {return m_instance;}
+
+   private:
+      ControlPanel() {}
+      ControlPanel(const ControlPanel& other);
+      ControlPanel& operator=(const ControlPanel& other);
+
+   private:
+      static int m_refCount;
+      static ControlPanel* m_instance;
+   };
+
+   int ControlPanel::m_refCount = 0;
+   ControlPanel* ControlPanel::m_instance = NULL;
