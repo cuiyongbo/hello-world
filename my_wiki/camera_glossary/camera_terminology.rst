@@ -64,3 +64,85 @@ Terminology
 | Definition: Focal is used to describe something that is very important.
 | Usage: Now Shanghai is a great metropolis and one of the focal centres of the Far East.
 | 
+
+Aperture ring - 光圈环
+
+focus ring - 对焦环
+
+A ring on the lens of a camera that can be rotated to allows users
+to manually focus the camera.
+
+zoom ring - 变焦环
+
+A zoom adjustment ring found on many digital video recorders and digital cameras.
+Zoom rings enable motorized zoom that allows you to change the focal length in
+real-time as you shoot. A 4X zoom lens, for example, will enlarge or reduce the
+subject in an image by four times depending on which way it's zoomed. Zoom lenses
+are either optical zoom or digital zoom.
+
+optical zoom - 光学变焦
+
+On a digital camera, optical zoom is a true zoom feature. It allows you to zoom in
+(or out) on the subject in the LCD or viewfinder. This will enable you to get a
+closer view of the subject before taking your picture. Optical zoom changes the
+magnification of images with the actual optical glass before the images reach
+the imaging sensor. Optical zoom allows for better photo quality than digital zoom.
+
+digital zoom - 光学变焦
+
+Digital zoom is a function of a digital camera used to make the image seem more close-up.
+Digital zoom on a digital camera works the same as cropping and enlarging a photo in a
+graphics program. This type of zoom will result in a loss of quality and image resolution
+because the image is simply being enlarged without any extra details or pixels being added.
+Due to the quality of photos taken when using the digital zoom function, these photos may
+not be of good enough quality to print images larger than 4"x6".
+
+total zoom
+
+Some digital camera manufactures advertise a camera's zoom capability as a total zoom.
+When you see a total zoom listing, it is the digital zoom multiplied by the optical zoom.
+For instance, a camera touting a 20x total zoom could be a digital camera with 4x optical
+and 5x digital zoom.
+
+F-stop
+
+In digital photography and digital video recording, F-stop refers to the international standard
+sequence of numbers that express relative aperture. F-stop is the "lens focal length" divided by
+the "effective aperture diameter." The smaller the F-number, the greater the amount of light that
+passes through the lens. Each change of F-stop halves or doubles the image brightness as you step
+up or down.
+
+.. figure:: images/2180_AF-S-NIKKOR-50mm-f1.4G_Construction.jpg
+
+   AF-S NIKKOR 50mm 1.4G Construction
+
+See `Terminology about Nikkor lens <http://www.nikon.com.cn/sc_CN/learn_and_explore/lens_glossary.page>`_.
+
+Reproduction ratio - 成像率
+
+In close-up and macro photography, the reproduction ratio (or magnification ratio,
+magnification factor, magnification) specifies the ratio of the size of an image
+projected on the film or sensor of a camera, and the size of the subject itself:
+
+.. math::
+
+   R = \frac{s}{S}
+
+where R is the reproduction ratio, S the size of the subject and s the size of its image.
+As an example, if the length of an object is 100mm and its image on the film or camera
+sensor is 10mm, the reproduction ratio is 10/100=0.1. Thus, the reproduction ratio can
+be written as x0.1 or 0.1x, where x stands for "times" (i.e., the subject is magnified
+0.1 times). In practice, however, it is customary to specify the reproduction ratio as
+a fraction (in this case, 1/10) or ratio (in this case, 1:10).
+
+Typical examples of reproduction ratios are 1:3 (one-third the original size) and 1:100
+(one-hundredth the original size). To obtain the original size of the subject, you simply
+calculate:
+
+.. math::
+
+   S = \frac{s}{R}
+
+
+
+

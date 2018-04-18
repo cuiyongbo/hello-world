@@ -3504,3 +3504,14 @@ figures.
 | Synonyms: supplant.
 | Usage: Hand tools are relics of the past5 that have now been superseded by the machine.
 |
+| tweet
+| Definition: the chirp of a small or young bird.
+| Definition: a posing made on the social media website Twitter.
+| Usage: He started posting tweets via his cell phone to let his parents know he was safe.
+
+.. image:: images/Twitter-logo.jpg
+
+
+
+
+

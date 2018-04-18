@@ -310,5 +310,6 @@ mmap & munmap
    getpagesize(2), mincore(2), mlock(2), mmap2(2), mprotect(2), mremap(2),
    msync(2), remap_file_pages(2), setrlimit(2), shmat(2), shm_open(3), shm_overview(7)
    
-   The descriptions of the following files in proc(5): /proc/[pid]/maps, /proc/[pid]/map_files, and /proc/[pid]/smaps.
+   The descriptions of the following files in proc(5): /proc/[pid]/maps, /proc/[pid]/map_files,
+   and /proc/[pid]/smaps.
 
