@@ -64,6 +64,9 @@ Terminology
 | Definition: Focal is used to describe something that is very important.
 | Usage: Now Shanghai is a great metropolis and one of the focal centres of the Far East.
 | 
+| brokeh
+| Definition: the visual quality of the out-of-focus areas of an image, especially as rendered by a particular lens.
+|
 
 Aperture ring - 光圈环
 
@@ -142,7 +145,3 @@ calculate:
 .. math::
 
    S = \frac{s}{R}
-
-
-
-

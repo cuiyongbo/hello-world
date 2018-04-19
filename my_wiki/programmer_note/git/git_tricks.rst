@@ -338,7 +338,7 @@ older versions of Git).
 Git to abort git pull
 =====================
 
-   .. code-block::
+   .. code-block:: sh
       
          git reset --keep HEAD@{1}
 

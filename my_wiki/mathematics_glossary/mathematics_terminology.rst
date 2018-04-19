@@ -78,6 +78,11 @@ Mathematical Terminology
 | Synonyms: numerator
 | Usage: common denominator. [公分母]
 | 
+| 
+| mantissa
+| Definition: (MATHEMATICS) the part of a logarithm after the decimal point.
+| Definition: (COMPUTING) the part of a floating-point number which represents the significant digits of that number.
+| 
 | Least common multiple 最小公倍数
 |
 | quotient 商
@@ -113,3 +118,4 @@ and/or vertical path (that is, along the grid lines), as opposed to the diagonal
 or "as the crow flies" distance. The Manhattan distance is the simple sum of the
 horizontal and vertical components, whereas the diagonal distance might be
 computed by applying the Pythagorean theorem. [勾股定理]
+
