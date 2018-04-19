@@ -73,3 +73,4 @@ POSIX shared memory overview
    shm_open
    ftruncate_info
    mmap_info
+   fstat_info
