@@ -197,5 +197,5 @@ suppress_warnings = [
 
 
 exclude_patterns = [
-    "computer_glossary/shell_command/find_command.rst"
+    #"computer_glossary/shell_command/find_command.rst"
 ]

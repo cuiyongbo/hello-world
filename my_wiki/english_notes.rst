@@ -2937,8 +2937,17 @@ Well I appreciate it, but I prefer to win fair and square.
 | vigilant
 | vigilance
 | Definition: Someone who is vigilant gives careful attention to a particular problem or situation and concentrates on noticing any danger or trouble that there might be.
+| Synonyms: argus-eyed.
 | Usage: Drugs are a problem that requires contant vigilance.
 | 
+
+argus
+
+(Greek Mythology) a monster with a hundred eyes, used by Hera to watch over lo.
+He was killed by Hermes, and Hera then used his eyes to deck the peacock's tail.
+
+.. image:: images/ArgosPanoptes.jpg
+
 | lethargy
 | lethargic 无精打采
 | Definition: a lack of energy and enthusiasm.
@@ -3490,6 +3499,10 @@ figures.
 .. image:: images/meter_1.jpg
 .. image:: images/meter_2.png
 
+| 
+| mensurable
+| mensurability
+| Definition: capable of being measured; having fixed limited.
 |
 | suffice
 | Definition: to be enough to achieve a purpose or to fulfil a need.
@@ -3529,3 +3542,10 @@ figures.
 | Definition: a place with seats where sports, entertainments, and other public events take place.
 | Synonyms: stadium.
 | 
+| hebdomadal
+| Synonyms: weekly
+| Usage: He was forced to eke out a meager living scribbing hebdomadal feuilletons.
+| 
+| feuilleton
+| Definition: a part of newspaper or magazine devoted to fiction, criticism, or light literature.
+|
