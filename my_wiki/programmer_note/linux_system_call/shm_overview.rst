@@ -29,7 +29,7 @@ POSIX shared memory overview
          Remove a shared memory object name.
 
       close(2)       
-         Close the file descriptor allocated by :man:page:`shm_open(3)` when it is no longer needed.
+         Close the file descriptor allocated by :manpage:`shm_open(3)` when it is no longer needed.
 
       fstat(2)       
          Obtain a stat structure that describes the shared memory object.

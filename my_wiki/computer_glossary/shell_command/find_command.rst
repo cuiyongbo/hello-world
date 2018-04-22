@@ -27,6 +27,7 @@ find Command
    findutils documentation, which is called **Finding Files** and comes with findutils. That document also includes a
    lot more detail and discussion than this manual page, so you may find it a more useful source of information.
 
+
 **OPTIONS**
 
    This manual page talks about options within the expression list. These options control the behaviour of :command:`find`
@@ -62,32 +63,14 @@ find Command
       If more than one of -H, -L and -P is specified, each overrides the others; the last one appearing on
       the command line takes effect. 
 
-
-   GNU find frequently stats files during the processing of the command line itself, before any searching has
-   begun. These options also affect how those arguments are processed. Specifically, there are a number of tests
-   that compare files listed on the command line against a file we are currently considering. In each case, the
-   file specified on the command line will have been examined and some of its properties will have been saved. If
-   the named file is in fact a symbolic link, and the -P option is in effect (or if neither -H nor -L  were  speci‐
-   fied), the information used for the comparison will be taken from the properties of the symbolic link.
-   Otherwise, it will be taken from the properties of the file the link points to. If find cannot follow the link
-   (for example because it has insufficient privileges or the link points to a nonexistent file) the properties
-   of the link itself will be used.
-
-   When the -H or -L options are in effect, any symbolic links listed as the argument of -newer
-   will be dereferenced, and the timestamp will be taken from the file to which the symbolic
-   link points. The same consideration applies to -newerXY, -anewer and -cnewer.
-
-   The -follow option has a similar effect to -L, though it takes effect at the point where it
-   appears (that is, if -L  is  not used but -follow is, any symbolic links appearing after
-   -follow on the command line will be dereferenced, and those before it will not).
-
    .. option:: -D debugoptions
 
       Print diagnostic information; this can be helpful to diagnose problems with why find is not doing what
-      you want. The list of debug options should be comma separated. Compatibility of the debug options is
-      not guaranteed between releases of findutils. For a complete list of valid debug options, see the output
-      of ``find -D help``.  Valid debug options include::
-
+      you want. The list of debug options should be comma separated. Following show a complete list of valid
+      debug options::
+      
+         $ find -D help
+         Valid debug options include:
          help       Explain the various -D options
          tree       Display the expression tree
          search     Navigate the directory tree verbosely
@@ -981,9 +964,3 @@ EXIT STATUS
        some  starting  points  may  not  have  been  examined or some pending program invocations for -exec ... {} + or
        -execdir ... {} + may not have been performed.
 
-SEE ALSO
-       locate(1), locatedb(5),  updatedb(1),  xargs(1),  chmod(1),  fnmatch(3),  regex(7),  stat(2),  lstat(2),  ls(1),
-       printf(3), strftime(3), ctime(3)
-
-
-                                                                                                                FIND(1)

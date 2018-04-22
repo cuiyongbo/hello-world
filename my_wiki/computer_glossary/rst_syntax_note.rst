@@ -61,3 +61,7 @@ rst FAQ
          "ref.option"
       ]
 
+#. Exclude certain file(s) from building
+   
+   add file or file patterns to *exclude_patterns* in :file:`conf.py`.
+   

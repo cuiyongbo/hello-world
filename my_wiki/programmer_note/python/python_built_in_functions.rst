@@ -959,16 +959,16 @@ Class utilities
 
    Transform a method into a class method.
 
-   A class method receives the class as implicit first argument, just like an
-   instance method receives the instance. To declare a class method, use this
-   idiom::
+   The ``@classmethod`` form is a function :term:`decorator`. A class method
+   receives the class as implicit first argument, just like an instance method
+   receives the instance. To declare a class method, use this idiom::
 
       class C:
-          @classmethod
-          def f(cls, arg1, arg2, ...): ...
+         @classmethod
+         def f(cls, arg1, arg2, ...): ...
 
-   The ``@classmethod`` form is a function :term:`decorator` -- see the description
-   of function definitions in :ref:`function` for details.
+   The ``@classmethod`` form is a function :term:`decorator` -- see the
+   description of function definitions in :ref:`function` for details.
 
    It can be called either on the class (such as ``C.f()``) or on an instance (such
    as ``C().f()``).  The instance is ignored except for its class. If a class
@@ -976,25 +976,20 @@ Class utilities
    implied first argument.
 
    Class methods are different than C++ or Java static methods. If you want those,
-   see :func:`staticmethod` in this section.
-
-   For more information on class methods, consult the documentation on the standard
-   type hierarchy in :ref:`types`.
+   see :func:`staticmethod` following the section.
 
 
 .. decorator:: staticmethod
 
    Transform a method into a static method.
 
-   A static method does not receive an implicit first argument. To declare a static
-   method, use this idiom::
+   The ``@staticmethod`` form is a function :term:`decorator`, A static method
+   does not receive an implicit first argument. To declare a static method,
+   use this idiom::
 
       class C:
-          @staticmethod
-          def f(arg1, arg2, ...): ...
-
-   The ``@staticmethod`` form is a function :term:`decorator` -- see the
-   description of function definitions in :ref:`function` for details.
+         @staticmethod
+         def f(arg1, arg2, ...): ...
 
    It can be called either on the class (such as ``C.f()``) or on an instance (such
    as ``C().f()``).  The instance is ignored except for its class.
@@ -1004,16 +999,13 @@ Class utilities
    constructors.
 
    Like all decorators, it is also possible to call ``staticmethod`` as
-   a regular function and do something with its result.  This is needed
+   a regular function and do something with its result. This is needed
    in some cases where you need a reference to a function from a class
    body and you want to avoid the automatic transformation to instance
-   method.  For these cases, use this idiom::
+   method. For these cases, use this idiom::
 
       class C:
-          builtin_open = staticmethod(open)
-
-   For more information on static methods, consult the documentation on the
-   standard type hierarchy in :ref:`types`.
+         builtin_open = staticmethod(open)
 
 
 Miscellaneous utilities
@@ -1178,9 +1170,14 @@ Miscellaneous utilities
       >>> x = [1,2,3]
       >>> y = [4,5,6]
       >>> zipped = zip(x, y)
+      >>> zipped
+      [(1, 4), (2, 5), (3, 6)]
       >>> x1, y1 = zip(*zipped)
       >>> x == list(x1) and y == list(y1)
       True 
+      >>> mapped = map(None, x, y)
+      >>> mapped
+      [(1, 4), (2, 5), (3, 6)]
 
 
 .. function:: repr(object)

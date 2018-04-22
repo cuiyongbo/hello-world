@@ -175,12 +175,27 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
-
-
-
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
 
 suppress_warnings = [
-    "ref.option"
+    "ref.*",
+    "app.*",
+    "misc.highlighting_failure",
+    "toc.secnum"
+]
+
+# exclude_patterns
+# A list of glob-style patterns that should be excluded when looking for source files.1
+# They are matched against the source file names relative to the source directory, using
+# slashes as directory separators on all platforms.
+# Example patterns:
+# • 'library/xml.rst' – ignores the library/xml.rst file (replaces entry in unused_docs)
+# • 'library/xml' – ignores the library/xml directory (replaces entry in exclude_trees)
+# • 'library/xml*' – ignores all files and directories starting with library/xml
+# • '**/.svn' – ignores all .svn directories (replaces entry in exclude_dirnames)
+
+
+exclude_patterns = [
+    "computer_glossary/shell_command/find_command.rst"
 ]
