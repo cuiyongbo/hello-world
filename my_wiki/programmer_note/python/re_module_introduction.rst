@@ -5,10 +5,7 @@ re Module
 Brief Introduction
 ==================
 
-Support for regular expressions (RE). The document is taken 
-from the :mod:`re`.
-
-This module provides regular expression matching operations similar to
+:mod:`re` module provides regular expression matching operations similar to
 those found in Perl.  It supports both 8-bit and Unicode strings; both
 the pattern and the strings being processed can contain null bytes and
 characters outside the US ASCII range.
@@ -80,6 +77,7 @@ This module exports the following functions::
    compile  Compile a pattern into a RegexObject.
    purge    Clear the regular expression cache.
    escape   Backslash all non-alphanumerics in a string.
+   pattern  the match pattern, str
 
 Some of the functions in this module takes flags as optional parameters::
 

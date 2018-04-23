@@ -1,76 +1,28 @@
-.. _regex-howto:
-
-****************************
-  Regular Expression HOWTO
-****************************
-
-:Author: A.M. Kuchling <amk@amk.ca>
-
-.. TODO:
-   Document lookbehind assertions
-   Better way of displaying a RE, a string, and what it matches
-   Mention optional argument to match.groups()
-   Unicode (at least a reference)
-
-
-.. topic:: Abstract
-
-   This document is an introductory tutorial to using regular expressions in Python
-   with the :mod:`re` module.  It provides a gentler introduction than the
-   corresponding section in the Library Reference.
-
+************************
+Regular Expression HOWTO
+************************
 
 Introduction
 ============
 
-Regular expressions (called REs, or regexes, or regex patterns) are essentially
-a tiny, highly specialized programming language embedded inside Python and made
-available through the :mod:`re` module. Using this little language, you specify
-the rules for the set of possible strings that you want to match; this set might
-contain English sentences, or e-mail addresses, or TeX commands, or anything you
-like.  You can then ask questions such as "Does this string match the pattern?",
-or "Is there a match for the pattern anywhere in this string?".  You can also
-use REs to modify a string or to split it apart in various ways.
-
-Regular expression patterns are compiled into a series of bytecodes which are
-then executed by a matching engine written in C.  For advanced use, it may be
-necessary to pay careful attention to how the engine will execute a given RE,
-and write the RE in a certain way in order to produce bytecode that runs faster.
-Optimization isn't covered in this document, because it requires that you have a
-good understanding of the matching engine's internals.
-
-The regular expression language is relatively small and restricted, so not all
-possible string processing tasks can be done using regular expressions.  There
-are also tasks that *can* be done with regular expressions, but the expressions
-turn out to be very complicated.  In these cases, you may be better off writing
-Python code to do the processing; while Python code will be slower than an
-elaborate regular expression, it will also probably be more understandable.
+See :doc:`re module introduction re_module_introduction`. 
 
 
 Simple Patterns
 ===============
 
-We'll start by learning about the simplest possible regular expressions.  Since
-regular expressions are used to operate on strings, we'll begin with the most
-common task: matching characters.
-
-For a detailed explanation of the computer science underlying regular
-expressions (deterministic and non-deterministic finite automata), you can refer
-to almost any textbook on writing compilers.
-
-
 Matching Characters
 -------------------
 
-Most letters and characters will simply match themselves.  For example, the
+Most letters and characters will simply match themselves. For example, the
 regular expression ``test`` will match the string ``test`` exactly.  (You can
 enable a case-insensitive mode that would let this RE match ``Test`` or ``TEST``
 as well; more about this later.)
 
 There are exceptions to this rule; some characters are special
-:dfn:`metacharacters`, and don't match themselves.  Instead, they signal that
+:dfn:`metacharacters`, and don't match themselves. Instead, they signal that
 some out-of-the-ordinary thing should be matched, or they affect other portions
-of the RE by repeating them or changing their meaning.  Much of this document is
+of the RE by repeating them or changing their meaning. Much of this document is
 devoted to discussing various metacharacters and what they do.
 
 Here's a complete list of the metacharacters; their meanings will be discussed
@@ -133,20 +85,16 @@ category in the Unicode database.
    Matches any non-digit character; this is equivalent to the class ``[^0-9]``.
 
 ``\s``
-   Matches any whitespace character; this is equivalent to the class ``[
-   \t\n\r\f\v]``.
+   Matches any whitespace character; this is equivalent to the class ``[\t\n\r\f\v]``.
 
 ``\S``
-   Matches any non-whitespace character; this is equivalent to the class ``[^
-   \t\n\r\f\v]``.
+   Matches any non-whitespace character; this is equivalent to the class ``[^\t\n\r\f\v]``.
 
 ``\w``
-   Matches any alphanumeric character; this is equivalent to the class
-   ``[a-zA-Z0-9_]``.
+   Matches any alphanumeric character; this is equivalent to the class ``[a-zA-Z0-9_]``.
 
 ``\W``
-   Matches any non-alphanumeric character; this is equivalent to the class
-   ``[^a-zA-Z0-9_]``.
+   Matches any non-alphanumeric character; this is equivalent to the class ``[^a-zA-Z0-9_]``.
 
 These sequences can be included inside a character class.  For example,
 ``[\s,.]`` is a character class that will match any whitespace character, or
@@ -270,7 +218,7 @@ performing string substitutions. ::
    >>> import re
    >>> p = re.compile('ab*')
    >>> p
-   re.compile('ab*')
+   <_sre.SRE_Pattern object at 0x026C7980>
 
 :func:`re.compile` also accepts an optional *flags* argument, used to enable
 various special features and syntax variations.  We'll go over the available
@@ -413,18 +361,23 @@ Now you can query the :ref:`match object <match-objects>` for information
 about the matching string.  Match object instances
 also have several methods and attributes; the most important ones are:
 
-+------------------+--------------------------------------------+
-| Method/Attribute | Purpose                                    |
-+==================+============================================+
-| ``group()``      | Return the string matched by the RE        |
-+------------------+--------------------------------------------+
-| ``start()``      | Return the starting position of the match  |
-+------------------+--------------------------------------------+
-| ``end()``        | Return the ending position of the match    |
-+------------------+--------------------------------------------+
-| ``span()``       | Return a tuple containing the (start, end) |
-|                  | positions  of the match                    |
-+------------------+--------------------------------------------+
++------------------+---------------------------------------------+
+| Method/Attribute | Purpose                                     |
++==================+=============================================+
+| ``group()``      | Return subgroup(s) of the match by indices  |
+|                  | or names. For 0 returns the entire match.   |
++------------------+---------------------------------------------+
+| ``groups()``     | Return a tuple containing all the subgroups |
+|                  | of the match, from 1.                       |
++------------------+---------------------------------------------+
+| ``start()``      | Return the starting position of the match   |
++------------------+---------------------------------------------+
+| ``end()``        | Return the ending position of the match     |
++------------------+---------------------------------------------+
+| ``span()``       | Return a tuple containing the (start, end)  |
+|                  | positions  of the match                     |
++------------------+---------------------------------------------+
+
 
 Trying these methods will soon clarify their meaning::
 
@@ -878,14 +831,14 @@ using the following pattern methods:
 | Method/Attribute | Purpose                                       |
 +==================+===============================================+
 | ``split()``      | Split the string into a list, splitting it    |
-|                  | wherever the RE matches                       |
+|                  | wherever the RE matches.                      |
 +------------------+-----------------------------------------------+
 | ``sub()``        | Find all substrings where the RE matches, and |
-|                  | replace them with a different string          |
+|                  | replace them with a different string.         |
 +------------------+-----------------------------------------------+
 | ``subn()``       | Does the same thing as :meth:`!sub`,  but     |
 |                  | returns the new string and the number of      |
-|                  | replacements                                  |
+|                  | replacements.                                 |
 +------------------+-----------------------------------------------+
 
 
@@ -900,7 +853,7 @@ whitespace or by a fixed string.  As you'd expect, there's a module-level
 :func:`re.split` function, too.
 
 
-.. method:: .split(string [, maxsplit=0])
+.. method:: split(string [, maxsplit=0])
    :noindex:
 
    Split *string* by the matches of the regular expression.  If capturing
@@ -950,7 +903,7 @@ Another common task is to find all the matches for a pattern, and replace them
 with a different string.  The :meth:`~re.Pattern.sub` method takes a replacement value,
 which can be either a string or a function, and the string to be processed.
 
-.. method:: .sub(replacement, string[, count=0])
+.. method:: sub(replacement, string[, count=0])
    :noindex:
 
    Returns the string obtained by replacing the leftmost non-overlapping

@@ -3549,3 +3549,10 @@ figures.
 | feuilleton
 | Definition: a part of newspaper or magazine devoted to fiction, criticism, or light literature.
 |
+| automaton
+| Plural: automata
+| Definition: An automaton is a small, mechanical figure that can move automatically; machine.
+| Usage: Sophisticated automata continue to run factory assembly line.
+| Definition: used to refer to a person who seems to act in a mechanical or unemotional way.
+| Usage: Like an automaton, she walked to the door.
+| 
