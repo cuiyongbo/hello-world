@@ -97,3 +97,99 @@ strcpy & strncpy
    bcopy(3), memccpy(3), memcpy(3), memmove(3), stpcpy(3),
    stpncpy(3), strdup(3), string(3), wcscpy(3), wcsncpy(3)
 
+
+memcpy & memmove
+================
+
+**NAME**
+
+   memcpy, memmove - copy memory area
+
+**SYNOPSIS**
+
+   .. code-block:: c
+
+      #include <string.h>
+
+      void *memcpy(void *dest, const void *src, size_t n);
+      void *memmove(void *dest, const void *src, size_t n);
+
+**DESCRIPTION**
+
+   The ``memcpy()`` function copies *n* bytes from memory area *src* to memory area *dest*.
+   The memory areas must not overlap. Use ``memmove()`` if the memory areas do overlap.
+
+   The ``memmove()`` function does the same job as ``memcpy()``, except that the memory areas
+   may overlap: copying takes place as though the bytes in *src* are first copied into a
+   temporary array that does not overlap *src* or *dest*, and the bytes are then copied from
+   the temporary array to *dest*. Possible implementation::
+
+      void *memmove(void *dest, const void *src, size_t n)
+      {
+         if (dest <= src) {
+            for (size_t i=0; i != n; i++)
+               dest[i] = src[i];
+         }
+         else
+         {
+            for (size_t i= n-1; i != 0; i--)
+               dest[i] = src[i];
+
+            dest[0] = src[0];
+         }
+
+         return dest;
+      }
+
+   Note that the implementation skips necessary error checkings, which must be done
+   in production code.
+
+**RETURN VALUE**
+   
+   Return a pointer to *dest*.
+
+
+memcmp
+======
+
+**NAME**
+   
+   memcmp - compare memory areas
+
+**SYNOPSIS**
+
+   .. code-block:: c
+
+      #include <string.h>
+      int memcmp(const void *s1, const void *s2, size_t n);
+
+**DESCRIPTION**
+
+   The ``memcmp()`` function compares the first *n* bytes (each interpreted as unsigned char)
+   of the memory areas *s1* and *s2*. Possible implementation::
+
+      int memcmp(const void *s1, const void *s2, size_t n)
+      {
+         unsigned char* p1 = (char*)s1;
+         unsigned char* p2 = (char*)s2;
+         
+         size_t i;
+         for (i=0; i != n-1; i++)
+            if(p1[i] != p2[i])
+               break;
+
+         return p1[i]-p2[i];
+      }
+
+   Note that the implementation skips necessary error checkings, which must be done
+   in production code.
+
+**RETURN VALUE**
+
+   The ``memcmp()`` function returns an integer less than, equal to, or greater than zero
+   if the first *n* bytes of *s1* is found, respectively, to be less than, to match, or
+   be greater than the first *n* bytes of *s2*.
+
+   For a nonzero return value, the sign is determined by the sign of the difference between
+   the first pair of bytes (interpreted as unsigned char) that differ in *s1* and *s2*.
+
