@@ -12,7 +12,7 @@ Intel processors found in desktop and laptop computers are sometimes referred to
 
 .. image:: images/windows_explorer_file.png
 
-Windows 7, 8 and 10 refer to their 32-bit programs with the term “x86” and 64-bit programs (in some contexts) as “x64”. That isn’t strictly accurate. 64-bit-capable processors should be referred to as x86-64, but it’s a lot clunkier.
+Windows refer to their 32-bit programs with the term “x86” and 64-bit programs (in some contexts) as “x64”. That isn’t strictly accurate. 64-bit-capable processors should be referred to as x86-64, but it’s a lot clunkier.
 
 The “x86” name comes from the original 16-bit Intel processors that used the x86 instruction set, the 8086. Future generations that shared the same instruction set also shared the same suffix, like the 80386. This kept on until the Pentium chips, which broke the naming convention, but we still use “x86” to refer to these kinds of chips.
 
