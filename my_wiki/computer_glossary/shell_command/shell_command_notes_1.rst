@@ -60,3 +60,8 @@ System V IPC Status Command
 ===========================
 
    See :doc:`system_v_ipc_facility`.
+
+ls command
+==========
+
+   See :doc:`ls_info`.
