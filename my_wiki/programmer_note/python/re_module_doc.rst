@@ -93,10 +93,8 @@ Some of the functions in this module takes flags as optional parameters::
 
 This module also defines an exception 'error'.
 
-Example
-=======
 
-.. code-block:: python
+Further Information
+===================
 
-   m = re.search(r'background-image:url\((\S*?)\)', data)
-   m.group(1)
+See :doc:`re_module_howto`.

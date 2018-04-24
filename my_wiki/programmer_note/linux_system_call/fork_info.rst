@@ -6,15 +6,12 @@ FORK Manual
 
    fork - create a child process
 
-
 **SYNOPSIS**
 
    .. code-block:: c
    
       #include <unistd.h>
-   
       pid_t fork(void);
-
 
 **DESCRIPTION**
 
@@ -102,12 +99,10 @@ FORK Manual
         POSIX.1 says that the corresponding directory streams in the parent and child may share
         the directory stream positioning; on :file:`Linux/glibc` they do not.
 
-
 **RETURN VALUE**
 
    On success, the PID of the child process is returned in the parent, and 0 is returned in the child. 
    On failure, -1 is returned in the parent, no child process is created, and ``errno`` is set appropriately.
-
 
 **ERRORS**
 
@@ -139,19 +134,14 @@ FORK Manual
    Under Linux, ``fork()`` is implemented using copy-on-write pages, so the only penalty that it incurs is the time and
    memory required to duplicate the parent's page tables, and to create a unique task structure for the child.
 
-
 **EXAMPLE**
 
    See :manpage:`pipe(2)` and :manpage:`wait(2)`.
-
 
 **SEE ALSO**
 
    clone(2), execve(2), exit(2), setrlimit(2), unshare(2), vfork(2), wait(2),
    daemon(3), capabilities(7), credentials(7)
-
-
-.. _zombie-process:
 
 **Zombie Process**
 
