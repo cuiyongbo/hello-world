@@ -21,7 +21,7 @@ Support for unaligned accesses is limited to a sub-set of load/store instruction
    LDRH/LDRSH/STRH
    LDR/STR
 
-Instructions which do NOT support unaligned accesses include::
+Instructions which do **NOT** support unaligned accesses include::
 
    LDM/STM
    LDRD/STRD

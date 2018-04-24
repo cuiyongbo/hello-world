@@ -2,4 +2,4 @@
 Pending tasks
 *************
 
-#. python struct module
+#. review json code

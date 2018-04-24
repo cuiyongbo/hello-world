@@ -93,3 +93,8 @@ Computer Terminology
 
 .. figure:: images/portfolio.png
 
+
+
+Co-Processor
+
+A coprocessor is a computer processor used to supplement the functions of the primary processor (the CPU). Operations performed by the coprocessor may be floating point arithmetic, graphics, signal processing, string processing, encryption or I/O Interfacing with peripheral devices. By offloading processor-intensive tasks from the main processor, coprocessors can accelerate system performance. Coprocessors allow a line of computers to be customized, so that customers who do not need the extra performance don't need to pay for it.
