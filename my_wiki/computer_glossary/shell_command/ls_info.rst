@@ -19,172 +19,87 @@ ls command
 
    Mandatory arguments to long options are mandatory for short options too.
 
-   -a, --all
+   .. option:: -a, --all
+      
       do not ignore entries starting with .
 
-   -A, --almost-all
+   .. option:: -A, --almost-all
+      
       do not list implied . and ..
 
+   .. option:: --color[=WHEN]
+              
+      colorize the output; WHEN can be ``'always'`` 
+      (default if omitted), ``'auto'``, or ``'never'``.
 
-   -b, --escape
-      print C-style escapes for nongraphic characters
+   .. option:: -F, --classify
+      
+      append type indicator (one of '\*/=>@|') to entries.
 
-       --block-size=SIZE
-              scale sizes by SIZE before printing them; e.g., '--block-size=M' prints sizes in units of 1,048,576 bytes; see SIZE format below
+   .. option:: -h, --human-readable
+      
+      with -l and/or -s, print human readable sizes (e.g., 1K 234M 2G).
 
-       -B, --ignore-backups
-              do not list implied entries ending with ~
+   .. option:: -i, --inode
+              
+      print the index number of each file
 
-       -c     with -lt: sort by, and show, ctime (time of last modification of file status information); with -l: show ctime and sort by name; otherwise: sort by ctime, newest first
+   .. option:: -I, --ignore=PATTERN
+         
+      do not list implied entries matching shell PATTERN
 
-       -C     list entries by columns
+   .. option:: -l
 
-       --color[=WHEN]
-              colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more info below
+      use a long listing format.
 
-       -d, --directory
-              list directories themselves, not their contents
+   .. option:: -o     
 
-       -D, --dired
-              generate output designed for Emacs' dired mode
+      like -l, but do not list group information.
 
-       -f     do not sort, enable -aU, disable -ls --color
+   .. option:: -L, --dereference
+              
+      when showing file information for a symbolic link,
+      show information for the file the link references
+      rather than for the link itself.
 
-       -F, --classify
-              append indicator (one of */=>@|) to entries
+   .. option:: -R, --recursive
+      
+      list subdirectories recursively.
 
-       --file-type
-              likewise, except do not append '*'
+   .. option:: -r, --reverse
+              
+      reverse order while sorting.
 
-       --format=WORD
-              across -x, commas -m, horizontal -x, long -l, single-column -1, verbose -l, vertical -C
+   --sort=WORD
+         
+      sort by WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X).
 
-       --full-time
-              like -l --time-style=full-iso
+   .. option:: -c     
 
-       -g     like -l, but do not list owner
+      with -lt: sort by, and show, ctime (time of last modification of file status information);
+      with -l: show ctime and sort by name; otherwise: sort by ctime, newest first.
 
-       --group-directories-first
-              group directories before files;
+   .. option:: -S 
 
-              can be augmented with a --sort option, but any use of --sort=none (-U) disables grouping
+      sort by file size, largest first.
 
-       -G, --no-group
-              in a long listing, don't print group names
+   .. option:: -t     
 
-   -h, --human-readable
-      with -l and/or -s, print human readable sizes (e.g., 1K 234M 2G)
+      sort by modification time, newest first
 
-       --si   likewise, but use powers of 1000 not 1024
+   .. option:: -U     
 
-       -H, --dereference-command-line
-              follow symbolic links listed on the command line
+      do not sort; list entries in directory order.
 
-       --dereference-command-line-symlink-to-dir
-              follow each command line symbolic link
+   .. option:: -v     
 
-              that points to a directory
+      natural sort of (version) numbers within text.
 
-       --hide=PATTERN
-              do not list implied entries matching shell PATTERN (overridden by -a or -A)
+   .. option:: -X     
 
-       --indicator-style=WORD
-              append indicator with style WORD to entry names: none (default), slash (-p), file-type (--file-type), classify (-F)
+      sort alphabetically by entry extension.
 
-       -i, --inode
-              print the index number of each file
+   .. option:: -x     
 
-       -I, --ignore=PATTERN
-              do not list implied entries matching shell PATTERN
-
-       -k, --kibibytes
-              default to 1024-byte blocks for disk usage
-
-       -l     use a long listing format
-
-       -L, --dereference
-              when showing file information for a symbolic link, show information for the file the link references rather than for the link itself
-
-       -m     fill width with a comma separated list of entries
-
-       -n, --numeric-uid-gid
-              like -l, but list numeric user and group IDs
-
-       -N, --literal
-              print raw entry names (don't treat e.g. control characters specially)
-
-       -o     like -l, but do not list group information
-
-       -p, --indicator-style=slash
-              append / indicator to directories
-
-       -q, --hide-control-chars
-              print ? instead of nongraphic characters
-
-       --show-control-chars
-              show nongraphic characters as-is (the default, unless program is 'ls' and output is a terminal)
-
-       -Q, --quote-name
-              enclose entry names in double quotes
-
-       --quoting-style=WORD
-              use quoting style WORD for entry names: literal, locale, shell, shell-always, shell-escape, shell-escape-always, c, escape
-
-       -r, --reverse
-              reverse order while sorting
-
-       -R, --recursive
-              list subdirectories recursively
-
-   -s, --size
-      print the allocated size of each file, in blocks
-
-   -S    
-      sort by file size, largest first
-
-       --sort=WORD
-              sort by WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X)
-
-       --time=WORD
-              with -l, show time as WORD instead of default modification time: atime or access or use (-u); ctime or status (-c); also use specified time as sort key if --sort=time (newest first)
-
-       --time-style=STYLE
-              with  -l, show times using style STYLE: full-iso, long-iso, iso, locale, or +FORMAT; FORMAT is interpreted like in 'date'; if FORMAT is FORMAT1<newline>FORMAT2, then FORMAT1 applies to
-              non-recent files and FORMAT2 to recent files; if STYLE is prefixed with 'posix-', STYLE takes effect only outside the POSIX locale
-
-       -t     sort by modification time, newest first
-
-       -T, --tabsize=COLS
-              assume tab stops at each COLS instead of 8
-
-       -u     with -lt: sort by, and show, access time; with -l: show access time and sort by name; otherwise: sort by access time, newest first
-
-       -U     do not sort; list entries in directory order
-
-       -v     natural sort of (version) numbers within text
-
-       -w, --width=COLS
-              set output width to COLS.  0 means no limit
-
-       -x     list entries by lines instead of by columns
-
-       -X     sort alphabetically by entry extension
-
-       -Z, --context
-              print any security context of each file
-
-       -1     list one file per line.  Avoid '\n' with -q or -b
-
-
-       The SIZE argument is an integer and optional unit (example: 10K is 10*1024).  Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
-
-       Using color to distinguish file types is disabled both by default and with --color=never.  With --color=auto, ls emits color codes only when standard output is connected to a  terminal.   The
-       LS_COLORS environment variable can change the settings.  Use the dircolors command to set it.
-
-   Exit status:
-       0      if OK,
-
-       1      if minor problems (e.g., cannot access subdirectory),
-
-       2      if serious trouble (e.g., cannot access command-line argument).
+      list entries by lines instead of by columns.
 
