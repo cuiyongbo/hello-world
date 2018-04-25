@@ -1,8 +1,11 @@
+:orphan:
+
+***************
 Number's tricks
-===============
+***************
 
 Memory alignment
-----------------
+================
 
 find the least integer *c* to make ``c*b`` no less than *a*::
 
@@ -12,7 +15,7 @@ typically used for memory alignment.
 
 
 Bit tricks
-----------
+==========
 
 Check if an unsigned integer is a power of 2::
 

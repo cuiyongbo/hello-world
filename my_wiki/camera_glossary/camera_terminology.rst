@@ -145,3 +145,16 @@ calculate:
 .. math::
 
    S = \frac{s}{R}
+
+
+Kit lens 套头
+
+A kit lens is a "starter" lens which can be sold with an interchangeable-lens camera
+such as a single-lens reflex camera. It is generally an inexpensive lens priced at the
+lowest end of the manufacturer's range so as to not add much to a camera kit's price.
+The kit consists of the camera body, the lens, and various accessories usually necessary
+to get started in SLR photography. A kit lens can be sold by itself outside of a kit,
+particularly the ones that are moderately expensive; for instance a kit lens included
+in a prosumer SLR kit is often marketed as an upgrade lens for a consumer SLR. In addition,
+retailers often have promotions of standalone low-end SLR bodies without the lens, or a
+package that bundles the SLR body with one or two more expensive lenses.

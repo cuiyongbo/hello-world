@@ -1,5 +1,8 @@
+:orphan:
+
+******************************************
 What is the effect of ``extern C`` in C++?
-==========================================
+******************************************
 
 ``extern C`` makes a function-name in C++ have C linkage (compiler does not mangle the name) 
 so that client C code can link to your function using a C compatible header file that contains 

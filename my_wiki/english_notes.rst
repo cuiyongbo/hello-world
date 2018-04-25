@@ -2142,7 +2142,8 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: It’ll be game-over for all other heavy-lift rockets.
 | 
 | reserve
-| Definition: In sports, a reserve is someone who is available to play as part of a team if one of the members is ill or cannot play. (mainly BRIT; in AM us | substitude) [替补]
+| Definition: In sports, a reserve is someone who is available to play as part of a team if one of the members is ill or cannot play.
+| Synonyms: substitude [替补]
 | Usage: He ended up as a reserve, but still qualified for a team gold medal.
 | Definition: If someone shows reserve, they keep their feeling hidden.
 | Usage: I do hope you’ll overcome your reserve and let me know.

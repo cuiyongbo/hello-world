@@ -1,3 +1,9 @@
+:orphan:
+
+**************************
+C/C++ Miscellaneous Tricks
+**************************
+
 Predefined Macros
 =================
 
@@ -119,4 +125,27 @@ The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C
          #define json_to_integer(json_) container_of(json_, json_integer_t, json)
 
 
+Effect of ``extern C`` in C++
+=============================
+
+See :doc:`extern_c_linkage`.
+
+
+Allocator Examples
+==================
+
+c++ allocator Encapsulates strategies for access/addressing, allocation/deallocation
+and construction/destruction of objects.
+
+Every standard library component that may need to allocate or release storage, from
+``std::string``, ``std::vector``, and every container except ``std::array``,
+to ``std::shared_ptr`` and ``std::function``, does so through an Allocator: an object
+of a class type that satisfies the following requirements.
+
+Some requirements are optional: the template ``std::allocator_traits`` supplies the
+default implementations for all optional requirements, and all standard library
+containers and other allocator-aware classes access the allocator through
+``std::allocator_traits``, not directly.
+
+See some examples in :doc:`container_allocator`.
 
