@@ -3,7 +3,9 @@ The Differences Between ARM and Intel
 
 .. image:: images/x86-vs-arm-hero.jpg
 
-With the ever-present rumor of ARM MacBooks gaining renewed energy, it’s time to get an understanding of the technical differences between ARM processors and the more common x86 processors made by Intel and AMD.
+With the ever-present rumor of ARM MacBooks gaining renewed energy,
+it’s time to get an understanding of the technical differences between
+ARM processors and the more common x86 processors made by Intel and AMD.
 
 What Does x86 Mean Anyway?
 --------------------------

@@ -3,30 +3,78 @@ ARM vs X86 – Key differences explained!
 
 .. image:: images/android_cpus.jpg
 
-Android supports 3 different processor architectures: **ARM, Intel and MIPS**. The most popular and ubiquitous of these three is, without a doubt, ARM. Intel is well known primarily because of its popularity in the desktop and server markets, however on mobile it has had less of an impact. MIPS has a long heritage, and lots of success, for both 32- and 64-bit solutions in a variety of embedded spaces, however it is currently the least popular of the three CPU designs for Android.
-In short, ARM is the current winner and Intel is its big brand rival. So what is the difference between an ARM processor and an Intel processor? Why is ARM the more popular choice? And does it matter what CPU is in your smartphone or tablet?
+Android supports 3 different processor architectures: **ARM, Intel and MIPS**.
+The most popular and ubiquitous of these three is, without a doubt, ARM. Intel
+is well known primarily because of its popularity in the desktop and server markets,
+however on mobile it has had less of an impact. MIPS has a long heritage, and lots
+of success, for both 32-bit and 64-bit solutions in a variety of embedded spaces,
+however it is currently the least popular of the three CPU designs for Android.
+
+In short, ARM is the current winner and Intel is its big brand rival. So what is
+the difference between an ARM processor and an Intel processor? Why is ARM the more
+popular choice? And does it matter what CPU is in your smartphone or tablet?
 
 The CPU
 -------
 
-The :abbr:`CPU (Central Processing Unit)` is the “brains” of your device. Its job is to execute a sequence of instructions to control the hardware on your device (the display, the touch screen, the cellular modem etc.) to turn it from a lump of plastic and metal into a vibrant smartphone or tablet. Mobile devices are complex things and these CPUs need to execute millions of instructions to make them behave as we expect. The **speed and power efficiency** of these CPUs is critical. The speed affects the user experience, while the efficiency affects the battery life. The perfect mobile device is one that has high performance and low power usage.
+The :abbr:`CPU (Central Processing Unit)` is the “brains” of your device. Its job is
+to execute a sequence of instructions to control the hardware on your device (the display,
+the touch screen, the cellular modem etc.) to turn it from a lump of plastic and metal into
+a vibrant smartphone or tablet. Mobile devices are complex things and these CPUs need to
+execute millions of instructions to make them behave as we expect. The **speed and power efficiency**
+of these CPUs is critical. The speed affects the user experience, while the efficiency
+affects the battery life. The perfect mobile device is one that has high performance and
+low power usage.
 
-.. note::
+This is why the choice of CPU is important. A power hungry, hog of a CPU will drain your
+battery fast, however an elegant and efficient CPU will give you both performance and
+battery life.
 
-   Intel is the industry leader in desktops and servers.
+**At the highest level, the first difference between an ARM CPU and an Intel CPU is
+that the former is RISC and the latter is CISC.** 
 
-This is why the choice of CPU is important. A power hungry, hog of a CPU will drain your battery fast, however an elegant and efficient CPU will give you both performance and battery life. **At the highest level, the first difference between an ARM CPU and an Intel CPU is that the former is :abbr:`RISC (Reduced Instruction Set Computing)` and the latter is :abbr:`CISC (Complex Instruction Set Computing)`**. In simplified (and I emphasize , “simplified”) layman’s terms, RISC instructions sets are smaller, more atomic, while CISC instruction sets are larger, more complex. By atomic, I mean that each instruction roughly translates to a single operation that the CPU can perform, e.g. add the contents of two registers together. CISC instructions express a single idea, but the CPU will need to execute 3 or 4 more simplified instructions to perform it. For example a CISC CPU can be told to add together two numbers stored in main memory. To do this, the CPU needs to fetch the number from address-1 (one operation), fetch the number from address-2 (second operation), add the two numbers (third operation) and so on.
+In simplified (and I emphasize , “simplified”) layman’s terms, RISC instructions sets
+are smaller, more atomic, while CISC instruction sets are larger, more complex. By
+atomic, I mean that each instruction roughly translates to a single operation that
+the CPU can perform, e.g. add the contents of two registers together. CISC
+instructions express a single idea, but the CPU will need to execute 3 or 4 more
+simplified instructions to perform it. For example a CISC CPU can be told to add
+together two numbers stored in main memory. To do this, the CPU needs to fetch
+the number from address-1 (one operation), fetch the number from address-2 (second
+operation), add the two numbers (third operation) and so on.
 
 .. image:: images/Intel_CPU_Pentium_4_640_Prescott_bottom.jpg
 
-All modern CPUs use a concept known as **microcode**, an internal instruction set of CPU that describes atomic operations that CPU can perform. It is these smaller (micro) operations that the CPU actually executes. On RISC processors, the instruction set operations and the microcode operations are very close. On CISC, the complex instructions need to be translated into smaller microcode operations (as described above with the CISC add example). This means that the instruction decoder (the bit that works out what CPU actually needs to do) is much simpler on a RISC processor, and simpler means less power and greater efficiency.
+All modern CPUs use a concept known as **microcode**, an internal instruction set
+of CPU that describes atomic operations that CPU can perform. It is these 
+smaller (micro) operations that the CPU actually executes. On RISC processors,
+the instruction set operations and the microcode operations are very close.
+On CISC, the complex instructions need to be translated into smaller microcode
+operations. This means that the instruction decoder (the bit that works out
+what CPU actually needs to do) is much simpler on a RISC processor, and simpler
+means less power and greater efficiency.
 
-Fabs
-----
+Fabrication Process
+-------------------
 
-The next major difference between an ARM processor and an Intel processor is that ARM has only ever designed power efficient processors. Its raison d’être （French, literally ‘reason for being.’） is to design low-power usage processors. That is its expertise. However Intel’s expertise is to design super high performance desktop and server processors. And it has done a good job. Intel is the industry leader in desktops and servers. Every PC, laptop and server I have owned (with the exception of one) in the last 20 years had an Intel processor in it. However to get into mobile, Intel is using the same CISC instruction set architecture that it uses on the desktop, but it is trying to shoehorn it into smaller processors, suitable for mobile devices.
+The next major difference between an ARM processor and an Intel processor is that
+ARM has only ever designed power efficient processors. Its raison d’être （French,
+literally ‘reason for being.’） is to design low-power usage processors. That is
+its expertise. However Intel’s expertise is to design super high performance desktop
+and server processors. And it has done a good job. Intel is the industry leader in
+desktops and servers. Every PC, laptop and server I have owned (with the exception
+of one) in the last 20 years had an Intel processor in it. However to get into mobile,
+Intel is using the same CISC instruction set architecture that it uses on the desktop,
+but it is trying to shoehorn it into smaller processors, suitable for mobile devices.
 
-The average Intel i7 processor produces around 45W of heat. The average ARM based smartphone SoC (including the GPU) has a maximum instantaneous peak power of around 3W, some 15 times less than an Intel i7. Now Intel is a big company and they have lots of smart people working there. Its latest Atom processors have similar thermal designs as ARM based processors, however to do that it has had to use the latest 22m fabrication process. In general the lower the fabrication nanometer number, the better the energy efficiency. ARM processors have similar thermal properties at higher nanometer fabrication processes. For example the Qualcomm Snapdragon 805 uses a 28nm process.
+The average Intel i7 processor produces around 45W of heat. The average ARM based
+smartphone SoC (including the GPU) has a maximum instantaneous peak power of around 3W,
+some 15 times less than an Intel i7. Now Intel is a big company and they have lots of
+smart people working there. Its latest Atom processors have similar thermal designs as
+ARM based processors, however to do that it has had to use the latest 22m fabrication
+process. In general the lower the fabrication nanometer number, the better the energy
+efficiency. ARM processors have similar thermal properties at higher nanometer
+fabrication processes. For example the Qualcomm Snapdragon 805 uses a 28nm process.
 
 .. image:: images/28nm-wafer.jpg
 

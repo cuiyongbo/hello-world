@@ -1464,6 +1464,9 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Defiintion: a curved instrument used to ease one’s heel into a shoe.
 | Definition: force into an inadequate space.
 | Usage: People were shoehorned into cramped corners.
+
+.. image:: images/shoehorn_oxhorn_with_stag_antler_handle.jpg
+
 | 
 | prehensile
 | Definition: (of a part of an animal’s body) able to hold things
