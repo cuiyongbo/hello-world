@@ -4,19 +4,10 @@
 C/C++ Miscellaneous Tricks
 **************************
 
-Predefined Macros
-=================
+Macro
+=====
 
-``__FUNCTION__`` is non standard, ``__func__`` exists in C99 / C++11.
-The others (``__LINE__`` and ``__FILE__``) are just fine. they will always
-report the right file and line. And function if you choose to use ``__FUNCTION__``/``__func__``,
-optimization is a non-factor since it is a compile time macro expansion;
-it will never effect performance in any way.
-
-.. code-block:: c++
-   :caption: Codes taken from Jansson
-
-   #define failhdr fprintf(stderr, "%s:%d: ", __FILE__, __LINE__)
+See :doc:`macro_tricks`.
 
 
 ``inline`` keyword
@@ -67,8 +58,8 @@ which is an array without a given dimension, and it must be the last member of s
 as in the following example::
 
    struct vectord {
-       size_t len;
-       double arr[]; // the flexible array member must be last
+      size_t len;
+      double arr[]; // the flexible array member must be last
    };
 
 The ``sizeof`` operator on such a struct gives the size of the structure as if
@@ -171,6 +162,7 @@ size of the static type of the expression.
 **Example**
 
 .. code-block:: c++
+   :caption: Example 1
 
    #include <iostream>
     
@@ -181,22 +173,95 @@ size of the static type of the expression.
     
    int main()
    {
-       Empty e;
-       Derived d;
-       Base& b = d;
-       Bit bit;
-       int a[10];
-       std::cout << "size of empty class: "              << sizeof e          << '\n'
-                 << "size of pointer : "                 << sizeof &e         << '\n'
-   //            << "size of function: "                 << sizeof(void())    << '\n'  // error
-   //            << "size of incomplete type: "          << sizeof(int[])     << '\n'  // error
-   //            << "size of bit field: "                << sizeof bit.bit    << '\n'  // error
-                 << "size of array of 10 int: "          << sizeof(int[10])   << '\n'
-                 << "size of array of 10 int (2): "      << sizeof a          << '\n'
-                 << "length of array of 10 int: "        << ((sizeof a) / (sizeof *a)) << '\n'
-                 << "length of array of 10 int (2): "    << ((sizeof a) / (sizeof a[0])) << '\n'
-                 << "size of the Derived: "              << sizeof d          << '\n'
-                 << "size of the Derived through Base: " << sizeof b          << '\n'; 
+      Empty e;
+      Derived d;
+      Base& b = d;
+      Bit bit;
+      int a[10];
+      std::cout << "size of empty class: "              << sizeof e          << '\n'
+         << "size of pointer : "                 << sizeof &e         << '\n'
+   //    << "size of function: "                 << sizeof(void())    << '\n'  // error
+   //    << "size of incomplete type: "          << sizeof(int[])     << '\n'  // error
+   //    << "size of bit field: "                << sizeof bit.bit    << '\n'  // error
+         << "size of array of 10 int: "          << sizeof(int[10])   << '\n'
+         << "size of array of 10 int (2): "      << sizeof a          << '\n'
+         << "length of array of 10 int: "        << ((sizeof a) / (sizeof *a)) << '\n'
+         << "length of array of 10 int (2): "    << ((sizeof a) / (sizeof a[0])) << '\n'
+         << "size of the Derived: "              << sizeof d          << '\n'
+         << "size of the Derived through Base: " << sizeof b          << '\n'; 
+   }
+
+.. code-block:: c++
+   :caption: Example 2
+
+   #include <iostream>
+ 
+   // objects of type S can be allocated at any address
+   // because both S.a and S.b can be allocated at any address
+   struct S {
+     char a; // size: 1, alignment: 1
+     char b; // size: 1, alignment: 1
+   }; // size: 2, alignment: 1
+    
+   // objects of type X must be allocated at 4-byte boundaries
+   // because X.n must be allocated at 4-byte boundaries
+   // because int's alignment requirement is (usually) 4
+   struct X {
+     int n;  // size: 4, alignment: 4
+     char c; // size: 1, alignment: 1
+     // three bytes padding
+   }; // size: 8, alignment: 4 
+    
+   int main() {
+      std::cout << "sizeof(S) = " << sizeof(S)
+                  << " alignof(S) = " << alignof(S) << '\n';
+      std::cout << "sizeof(X) = " << sizeof(X)
+                  << " alignof(X) = " << alignof(X) << '\n';
+   }
+
+
+``alignof`` operator
+====================
+
+**Language Support**
+
+.. code-block:: c++
+
+   alignof( type-id )      
+
+Queries alignment requirements of a type. Returns a value of type ``std::size_t``.
+
+Returns the alignment,a value of type ``std::size_t`` in bytes, required for any
+instance of the type indicated by *type-id*, which is either complete type, an
+array type, or a reference type.
+
+If the type is reference type, the operator returns the alignment of referenced type;
+if the type is array type, alignment requirement of the element type is returned.
+
+**Example**
+
+.. code-block:: c++
+
+   #include <iostream>
+ 
+   struct Foo {
+      int   i;
+      float f;
+      char  c;
+      double d;
+   };
+    
+   struct Empty {};
+   struct alignas(64) Empty64 {};
+    
+   int main()
+   {
+      std::cout << "Alignment of"  "\n"
+         "- char             : " << alignof(char)    << "\n"
+         "- pointer          : " << alignof(int*)    << "\n"
+         "- class Foo        : " << alignof(Foo)     << "\n"
+         "- empty class      : " << alignof(Empty)   << "\n"
+         "- alignas(64) Empty: " << alignof(Empty64) << "\n";
    }
 
 
