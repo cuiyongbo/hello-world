@@ -1925,9 +1925,17 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | porcelain [釉，陶瓷]
 | Definition: china 
 | 
-| culmination
+| culmination [结晶，高潮，巅峰]
 | Definition: the highest or climactic point of something, especially as attained after a long time.
 | Usage: The product was the culmination of 13 years of research.
+| 
+| climactic
+| Definition: (of an action, event or scene) exciting or thrilling and acting as a climax to a series of events.
+| 
+| climax
+| Definition: the most intense, exciting or important point of something; a culmination or apex.
+| Usage: A thrilling climax to the game.
+| Definition: an orgasm. [性高潮]
 | 
 | pensive
 | Definition: engaged in, involving, or reflecting deep or serious thought.

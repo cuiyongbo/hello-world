@@ -81,40 +81,98 @@ fabrication processes. For example the Qualcomm Snapdragon 805 uses a 28nm proce
 64-bits
 -------
 
-When it comes to 64-bit computing, there are also some significant differences between ARM and Intel. Did you know that Intel didn’t even invent the 64-bit version of its x86 instruction set. Known as x86-64 (or sometimes just x64), the instruction set was actually designed by AMD. The story goes like this, Intel wanted to move into 64-bit computing, but it knew that to take its current 32-bit x86 architecture and make a 64-bit version would be inefficient. So it started a new 64-bit processor project called IA64. This eventually produced the Itanium range of processors. In the meantime AMD knew it wouldn’t be able to produce IA64 compatible processors, so it went ahead and extended the x86 design to include 64-bit addressing and 64-bit registers. The resulting architecture, known as AMD64, became the de-facto 64-bit standard for x86 processors.
+When it comes to 64-bit computing, there are also some significant differences between
+ARM and Intel. Did you know that Intel didn’t even invent the 64-bit version of its
+x86 instruction set. Known as x86-64 (or sometimes just x64), the instruction set was
+actually designed by AMD. The story goes like this, Intel wanted to move into 64-bit
+computing, but it knew that to take its current 32-bit x86 architecture and make a 64-bit
+version would be inefficient. So it started a new 64-bit processor project called IA64.
+This eventually produced the Itanium range of processors. In the meantime AMD knew it
+wouldn’t be able to produce IA64 compatible processors, so it went ahead and extended
+the x86 design to include 64-bit addressing and 64-bit registers. The resulting architecture,
+known as AMD64, became the de-facto 64-bit standard for x86 processors.
 
 .. image:: images/AMD64-3500.jpg
 
-The IA64 project was never a big success and today is effectively dead. Intel eventually adopted AMD64. Intel’s current mobile offerings are 64-bit processors using the 64-bit instruction set designed by AMD (with a few minor differences).
+The IA64 project was never a big success and today is effectively dead. Intel eventually
+adopted AMD64. Intel’s current mobile offerings are 64-bit processors using the 64-bit
+instruction set designed by AMD (with a few minor differences).
 
-As for ARM, the story is a quite different. Seeing the need for 64-bit computing on mobile, ARM announced its ARMv8 64-bit architecture in 2011. It was the culmination of several years of work on the next generation ARM :abbr:`ISA (Instruction Set Architecture)`. To create a clean 64-bit implementation, but one based on the existing principles and instruction set, the ARMv8 architecture uses two execution states, AArch32 and AArch64.
+As for ARM, the story is a quite different. Seeing the need for 64-bit computing on mobile,
+ARM announced its ARMv8 64-bit architecture in 2011. It was the culmination of several years
+of work on the next generation ARM :abbr:`ISA (Instruction Set Architecture)`. To create a
+clean 64-bit implementation, but one based on the existing principles and instruction set,
+the ARMv8 architecture uses two execution states, AArch32 and AArch64.
 
 .. image:: images/CortexA53andA57Performancechart.png
 
-As the names imply, one is for running 32-bit code and one for 64-bit. The beauty of the ARM design is the processor can seamlessly swap from one mode to the other during its normal execution. The means that the decoder for the 64-bit instructions is a new design that doesn’t need to maintain compatibility with the 32-bit era, yet the processor as a whole remains backwardly compatible.
+As the names imply, one is for running 32-bit code and one for 64-bit. The beauty of the ARM
+design is the processor can seamlessly swap from one mode to the other during its normal execution.
+The means that the decoder for the 64-bit instructions is a new design that doesn’t need to maintain
+compatibility with the 32-bit era, yet the processor as a whole remains backwardly compatible.
+
 
 Heterogeneous Computing
 -----------------------
 
-ARM’s big.LITTLE architecture is an innovation that Intel is nowhere near replicating. In big.LITTLE the cores in the CPU don’t need to be of the same type. Traditionally a dual-core or quad-core processor had 2 or 4 cores of the same type. So a dual-core Atom processor has two identical x86-64 cores, both offering the same performance and using the same amount of power. But with big.LITTLE ARM has introduced heterogeneous computing for mobile devices. This means that the cores can be different in terms of performance and power. When the mobile device is not busy, a low-energy core can be used, but when you start a complex game, the high performance cores are used.
+ARM’s big.LITTLE architecture is an innovation that Intel is nowhere near replicating.
+In big.LITTLE the cores in the CPU don’t need to be of the same type. Traditionally a
+dual-core or quad-core processor had 2 or 4 cores of the same type. So a dual-core
+Atom processor has two identical x86-64 cores, both offering the same performance and
+using the same amount of power. But with big.LITTLE ARM has introduced heterogeneous
+computing for mobile devices. This means that the cores can be different in terms of
+performance and power. When the mobile device is not busy, a low-energy core can be used,
+but when you start a complex game, the high performance cores are used.
 
 .. image:: images/ARMv8-architectue.jpg
 
-But here is the magic. When talking about CPU designs there are a bunch of technical design decision that alter the performance and the energy usage of the processor. When an instruction is decoded and prepared for execution the processor (both Intel and ARM) uses a **pipeline**. That means that each minute aspect of the decoding process is parallelized. So the part to fetch the next instruction from the memory is stage 1, then the type of instruction needs to be examined and decoded - stage 2, then the instruction is actually executed – stage 3, and so on. The beauty of pipelines is that while the first instruction is in stage 2, the next instruction is already in stage 1. When the first instruction is in the execution step (stage 3), the second instruction is now in stage 2 and the third instruction is in stage 1, and so on.
+But here is the magic. When talking about CPU designs there are a bunch of technical design
+decision that alter the performance and the energy usage of the processor. When an instruction
+is decoded and prepared for execution, the processor (both Intel and ARM) uses a **pipeline**.
+That means that each minute aspect of the decoding process is parallelized. So the part to fetch
+the next instruction from the memory is stage 1, then the type of instruction needs to be examined
+and decoded - stage 2, then the instruction is actually executed – stage 3, and so on. The beauty
+of pipelines is that while the first instruction is in stage 2, the next instruction is already in
+stage 1. When the first instruction is in the execution step (stage 3), the second instruction is now
+in stage 2 and the third instruction is in stage 1, and so on.
 
-To make things even faster these pipelines can be built so that instructions can actually be executed in a different order than in the program. There is some clever logic to work out if the next instruction relies on the result of the instruction ahead of it. Both Intel and ARM have out-of-order-execution logic. But as you can imagine that is some really complex technology. Complex means power hungry. On Intel processors the designers choose to implement out-of-order-execution or not. But with heterogeneous computing that isn’t a problem. The ARM Cortex-A53 uses in-order execution, meaning it uses less power. But the Cortex-A57 uses out-of-order-execution, meaning it is faster but uses more power. In an big.LITTLE processor there can be Cortex-A53 and Cortex-A57 cores, and the cores are used according to the demands being made. You don’t need super fast out-of-order execution to background sync your emails, but you do when playing complex games. So the right core is used at the right time.
+To make things even faster these pipelines can be built so that instructions can actually be executed
+in a different order than in the program. There is some clever logic to work out if the next instruction
+relies on the result of the instruction ahead of it. Both Intel and ARM have out-of-order-execution logic.
+But as you can imagine that is some really complex technology. Complex means power hungry. On Intel processors
+the designers choose to implement out-of-order-execution or not. But with heterogeneous computing that isn’t a
+problem. The ARM Cortex-A53 uses in-order execution, meaning it uses less power. But the Cortex-A57 uses
+out-of-order-execution, meaning it is faster but uses more power. In an big.LITTLE processor there can be Cortex-A53
+and Cortex-A57 cores, and the cores are used according to the demands being made. You don’t need super fast out-of-order
+execution to background sync your emails, but you do when playing complex games. So the right core is used at the right time.
 
 .. image:: images/think-big.LITTLE.png
 
-This principle of using more complex logic in the processor for better performance, and less complex logic for high efficiency, doesn’t only apply to the instruction pipeline. It equally applies to the floating point unit, to the SIMD logic (i.e. NEON on ARM and SSE/MMX on Intel), and to the way the L1 and L2 caches work. Intel offers one solution per Atom SoC, ARM, through its silicon partners, offers multiple configurations many of which can be implemented simultaneously in the same silicon.
+This principle of using more complex logic in the processor for better performance, and less complex logic for high efficiency,
+doesn’t only apply to the instruction pipeline. It equally applies to the floating point unit, to the SIMD logic (i.e. NEON
+on ARM and SSE/MMX on Intel), and to the way the L1 and L2 caches work. Intel offers one solution per Atom SoC, ARM, through
+its silicon partners, offers multiple configurations many of which can be implemented simultaneously in the same silicon.
+
 
 Compatibility
 -------------
 
-ARM is the current leader in terms of mobile processors. ARM’s partners have shipped 50 billion chips based on its designs, all for mobile and embedded markets. For Android, ARM is the de-facto standard and this leads to a problem for Intel and MIPS. Although Android uses Java as its principle programming language, it also allows programmers to take their existing code (in C or C++, for example) and create apps. These “native” apps are generally compiled for ARM processors and not always for Intel or MIPS. To get around this Intel and MIPS need to use special translation software which converts the ARM instructions into code for their processors. This of course impacts performance. At the moment MIPS and Intel can claim about a 90% compatibility with all the apps available in the Play Store. That figure is probably closer to 100% when dealing with the top 150 apps. On the one-hand that is a good coverage, but on the other hand it shows ARM’s dominance in that the other processor designers need to offer a compatibility layer.
+ARM is the current leader in terms of mobile processors. ARM’s partners have shipped 50 billion chips based on its designs,
+all for mobile and embedded markets. For Android, ARM is the de-facto standard and this leads to a problem for Intel and MIPS.
+Although Android uses Java as its principle programming language, it also allows programmers to take their existing code
+(in C or C++, for example) and create apps. These “native” apps are generally compiled for ARM processors and not always
+for Intel or MIPS. To get around this Intel and MIPS need to use special translation software which converts the ARM
+instructions into code for their processors. This of course impacts performance. At the moment MIPS and Intel can claim
+about a 90% compatibility with all the apps available in the Play Store. That figure is probably closer to 100% when
+dealing with the top 150 apps. On the one-hand that is a good coverage, but on the other hand it shows ARM’s dominance
+in that the other processor designers need to offer a compatibility layer.
+
 
 Wrap up
 -------
 
-Building a CPU is a complex business. ARM, Intel and MIPS are all working hard to bring the best technology available to mobile devices, however ARM is clearly the leader. With its focus on power efficient processors, its clean 64-bit implementation, its heterogeneous computing, and its role as the de-facto standard for mobile computing, then it looks like ARM is set to remain at the top.
+Building a CPU is a complex business. ARM, Intel and MIPS are all working hard to bring the best technology available to
+mobile devices, however ARM is clearly the leader. With its focus on power efficient processors, its clean 64-bit
+implementation, its heterogeneous computing, and its role as the de-facto standard for mobile computing, then it
+looks like ARM is set to remain at the top.
 

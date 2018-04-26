@@ -43,6 +43,9 @@ Biology Terms
 | masturbation [手淫，自慰]
 | Definition: stimulate one’s own genitals for sexual pleasure.
 | 
+| orgasm [性高潮]
+| Definition: a climax of sexual excitement, characterized by feeling of pleasure centered in the genitals and (in men) experienced as an accompaniment to ejaculation.
+|
 | hectic
 | hectically
 | Definition: (medicine) relating to, affected by, or denoting a regularly recurrent fever typically accompanying tuberculosis(肺炎), with flushed cheeks and hot, | dry skin. [潮红]
