@@ -71,9 +71,9 @@ C++ allocator Example 1: malloc & free
    };
    
    template <typename T, typename U>
-   bool operator==(const Mallocator<T>&, const Mallocator<T>&) { return true; }
+   bool operator==(const Mallocator<T>&, const Mallocator<U>&) { return true; }
    template <typename T, typename U>
-   bool operator!=(const Mallocator<T>&, const Mallocator<T>&) { return false; }
+   bool operator!=(const Mallocator<T>&, const Mallocator<U>&) { return false; }
 
 
 C++ allocator Example 2: operator new & operator delete

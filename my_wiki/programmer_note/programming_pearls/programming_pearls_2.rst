@@ -125,6 +125,81 @@ The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C
          #define json_to_integer(json_) container_of(json_, json_integer_t, json)
 
 
+``sizeof`` operator
+===================
+
+**Concept**
+
+Queries size of the object or type.
+Used when actual size of the object must be known.
+
+**Syntax**
+   
+   .. code-block:: c++
+
+      sizeof( type )   
+      sizeof expression
+
+
+Both versions return a constant of type ``std::size_t``.
+
+1) Returns size in bytes of the object representation of *type*.
+   
+2) Returns size in bytes of the object representation of the type
+   that would be returned by *expression*, if evaluated.
+
+**Notes**
+
+Depending on the computer architecture, a byte may consist of 8 or more bits, 
+the exact number being recorded in ``CHAR_BIT``.
+
+``sizeof(char)``, ``sizeof(signed char)``, and ``sizeof(unsigned char)`` always return 1.
+
+``sizeof`` cannot be used with function types, incomplete types, or bit-field glvalues.
+
+When applied to a reference type, the result is the size of the referenced type.
+
+When applied to a class type, the result is the size of an object of that class
+plus any additional padding required to place such object in an array.
+
+When applied to an empty class type, always returns 1.
+
+When applied to an expression, ``sizeof`` does not evaluate the expression,
+and even if the expression designates a polymorphic object, the result is the
+size of the static type of the expression.
+
+**Example**
+
+.. code-block:: c++
+
+   #include <iostream>
+    
+   struct Empty {};
+   struct Base { int a; };
+   struct Derived : Base { int b; };
+   struct Bit { unsigned bit: 1; };
+    
+   int main()
+   {
+       Empty e;
+       Derived d;
+       Base& b = d;
+       Bit bit;
+       int a[10];
+       std::cout << "size of empty class: "              << sizeof e          << '\n'
+                 << "size of pointer : "                 << sizeof &e         << '\n'
+   //            << "size of function: "                 << sizeof(void())    << '\n'  // error
+   //            << "size of incomplete type: "          << sizeof(int[])     << '\n'  // error
+   //            << "size of bit field: "                << sizeof bit.bit    << '\n'  // error
+                 << "size of array of 10 int: "          << sizeof(int[10])   << '\n'
+                 << "size of array of 10 int (2): "      << sizeof a          << '\n'
+                 << "length of array of 10 int: "        << ((sizeof a) / (sizeof *a)) << '\n'
+                 << "length of array of 10 int (2): "    << ((sizeof a) / (sizeof a[0])) << '\n'
+                 << "size of the Derived: "              << sizeof d          << '\n'
+                 << "size of the Derived through Base: " << sizeof b          << '\n'; 
+   }
+
+
 Effect of ``extern C`` in C++
 =============================
 
@@ -134,7 +209,7 @@ See :doc:`extern_c_linkage`.
 Allocator Examples
 ==================
 
-c++ allocator Encapsulates strategies for access/addressing, allocation/deallocation
+c++ allocator encapsulates strategies for access/addressing, allocation/deallocation
 and construction/destruction of objects.
 
 Every standard library component that may need to allocate or release storage, from
