@@ -247,9 +247,9 @@ English Note
 | Usage: A serious car accident in 1986 ruled out a permanent future for him in football.
 | 
 | rule of thumb
-| Definition: a broadly accurate guide or principle, based on experientce or practice rather than theory.
+| Definition: a broadly accurate guide or principle, based on experience or practice rather than theory.
 | 
-| make it  a rule to do something
+| make it a rule to do something
 | Definition: have as a habit or general principle to do something.
 | Usage: I make it a rule never to mix business with pleasure.
 | 

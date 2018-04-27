@@ -9,4 +9,7 @@ Programming Pearls
    programming_pearls/number_tricks
    programming_pearls/programming_pearls_1
    programming_pearls/programming_pearls_2
+   programming_pearls/programmer_tricks
+   programming_pearls/shell_script_tricks
+
 
