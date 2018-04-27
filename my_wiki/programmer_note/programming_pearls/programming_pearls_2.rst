@@ -17,7 +17,7 @@ In the C and C++ programming languages, an inline function is one qualified with
 
    * Firstly, it serves as a compiler directive that suggests (but does not require) that the compiler substitute
      the body of the function inline by performing inline expansion, i.e. by inserting the function code at
-     the address of each function call, thereby saving the overhead of a function call.
+     the address of each function call, thereby avoiding the overhead of a function call.
      In this respect it is analogous to the register storage class specifier, which similarly provides an optimization hint. 
 
    * The second purpose of inline is to change linkage behavior; the details of this are complicated.
@@ -52,9 +52,9 @@ For code portability, the following preprocessor directives can be used::
 Flexible array member
 =====================
 
-Flexible array member is a feature introduced in the C99 standard of the C programming language
-(in particular, in section §6.7.2.1, item 16, page 103). It is a member of a struct,
-which is an array without a given dimension, and it must be the last member of such a struct,
+Flexible array member is a feature introduced in the C99 standard of the C
+programming language. It is a member of a struct, which is an array without
+a given dimension, and it must be the last member of such a struct,
 as in the following example::
 
    struct vectord {
@@ -92,7 +92,7 @@ some space for the flexible array member,as in the following example::
    }
 
 When using structures with a flexible array member, some convention regarding the actual size of that member should be defined.
-In the example above, the convention is that the member *arr* has len double-precision numbers.
+In the example above, the convention is that the member *arr* has *len* double-precision numbers.
 
 In previous standards of the C language, it was common to declare a zero-sized array member instead of a flexible array member.
 The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C++ does not have flexible array members.
