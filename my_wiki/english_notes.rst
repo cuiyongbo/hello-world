@@ -256,6 +256,8 @@ English Note
 | rule the roost
 | Definition: be in complete control.
 | 
+| I am the one who runs facebook.
+| 
 | as a rule
 | Definition: usually, but not always.
 | 
@@ -3047,12 +3049,16 @@ Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pa
 | 
 | hook
 | Definition: a hook is a bent piece of metal or plastic, used to catch or hold things, or to hang things up.
-| Definition: a short swing punch made with the elbow bent, especially in boxing.
-| Usage: a perfectly timed right hook to the chin.
+| Definition: a short swing punch made with the elbow bent, especially in boxing. 
+| Usage: a perfectly timed right hook to the chin. [右钩拳]
 | Idioms: on the hook
 | Definition: caught in a difficult or dangerous situation.
 | Usage: There I was back on the hook.
 | 
+| Now meat's back on the menu.
+| Tom, can you give me off the hook? for old time's sake. [求情]  
+| Can't do it, Sally.
+|
 | under the hood
 | Definition: a metaphorical area that contains the underlying implementation of something - e.g. a piece of hardware, a piece of software, an idea, etc.
 | Usage: Let's now look under the hood to see how the software goes about transmitting data so quickly.
@@ -3568,3 +3574,6 @@ figures.
 | Definition: used to refer to a person who seems to act in a mechanical or unemotional way.
 | Usage: Like an automaton, she walked to the door.
 | 
+| Tom, can you give me off the hook? for old time's sake. [求情]  
+| Can't do it, Sally.
+|
