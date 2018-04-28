@@ -465,3 +465,8 @@ find Command
       example we do not search project3/src because we already found project3/.svn), but ensures sibling directories
       (project2 and project3) are found.
 
+      find /dev/shm/ -iname "*hashmap" -print0 | xargs -0 rm >/dev/null 2>&1
+      find /dev/shm/ -name "[a-zA-Z]*-[0-9]*" -print0 | xargs -0 rm >/dev/null 2>&1
+      find /dev/shm/ -iname "*hashmap" -delete
+      find /dev/shm/ -name "[a-zA-Z]*-[0-9]*" -delete
+

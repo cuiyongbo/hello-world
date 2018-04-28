@@ -26,68 +26,35 @@ Windows
 VS 2013
 =======
 
-#. 复制/剪切/删除整行代码 
-   
-   - 如果你想复制一整行代码，只需将光标移至该行，再使用组合键“Ctrl+C”来完成复制操作，而无需选择整行. 
-   - 如果你想剪切一整行代码，只需将光标移至该行，再使用组合键“Ctrl+X”来完成剪切操作，而无需选择整行. 
-   - 如果你想删除一整行代码，只需将光标移至该行，再使用组合键“Ctrl+L”来完成剪切操作，而无需选择整行. 
-     
-#. 在光标所在行的上面或下面插入一行 
-
-   - 组合键“Ctrl+Enter”：在当前行的上面插入一个空行.
-   - 组合键“Ctrl+Shift+Enter”：在当前行的下面插入一个空行.
-
-#. 定位到行首与行尾 
-   
-   - home：定位到当前行的行首. 
-   - end：定位到当前行的行尾. 
-   - Ctrl + home：定位到文档头.
-   - Ctrl + end：定位到文档尾.
-     
-#. 调用参数信息提示 - 将光标置于参数名上, 再按组合键"Ctrl+Shif+Space"   
-#. 快速切换窗口 - Ctrl+Tab   
-#. 快速隐藏或显示当前代码段 - “Ctrl+M,M”（记住：要按两次M哦）
-#. 跳转到指定的某一行 - “Ctrl+G”
-#. 注释 - 组合键“Ctrl+K+C”
-#. 取消注释 - 组合键“Ctrl+K+U”
-#. 全屏显示/退出全屏显示 - SHIFT + ALT + ENTER
-
-#. 大小写转换 
-   
-   - 转小写：使用组合键“Ctrl+ U”； 
-   - 转大写：使用组合键“CTRL + SHIFT + U”。
-
-#. 向工程添加文件
-
-   - 添加新项:  Shift + Alt + a
-   - 添加现有项: Ctrl + Shift + a
-     
-#. 保存
-   
-   - 保存当前文档: Ctrl + S
-   - 保存所有文档: Ctrl + Shift + S
-     
-#. 打开工程 ”Property” 窗口: Alt + F7   
+#. Insert line above current line: Ctrl + Enter
+#. Insert line below current line: Ctrl + Shift + Enter
+#. Show parameter information: hover cursor above the parameter, and click Ctrl+Shift+Space   
+#. Switch between window: Ctrl+Tab   
+#. Hide/show current code block: Ctrl+M, M
+#. Go to Line: Ctrl+G
+#. Comment: Ctrl+K+C
+#. Uncomment: Ctrl+K+U
+#. Full screen: SHIFT + ALT + ENTER
+#. To Lowercase：Ctrl + U 
+#. To Uppercase: CTRL + SHIFT + U
+#. Add existing file(s):  Shift + Alt + a
+#. Add new file(s): Ctrl + Shift + a
+#. Save current file: Ctrl + S
+#. Save all open file(s): Ctrl + Shift + S
+#. Open "Property": Alt + F7   
 #. Navigate Backward: Ctrl + -   
 #. Navigate Forward: Shift + Ctrl + -
-   
-#. Breakpoints
-    
-   - Set breakpoints: F9
-   - Enable or disable breakpoints: Ctrl + F9
-   - Delete all breakpoints: Ctrl + Shift + F9
-     
+#. Set breakpoints: F9
+#. Enable or disable breakpoints: Ctrl + F9
+#. Delete all breakpoints: Ctrl + Shift + F9
 #. Build Solution: Alt + B, B    
 #. Rebuild Solution: Alt + B, R    
 #. Build current project: Alt + B, U   
 #. Rebuild current project: Alt + B, E
 #. Highlighten word: Ctrl + W
 #. Threads view: Ctrl + Alt + H
-
-#. Bookmarks
-   
-   - Bookmark Window: Ctrl + K, W
-   - Toggle Bookmark: Ctrl + K, K
+#. Bookmark Window: Ctrl + K, W
+#. Toggle Bookmark: Ctrl + K, K
      
 
 VAssist X

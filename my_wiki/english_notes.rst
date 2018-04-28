@@ -21,9 +21,9 @@ English Note
 | Definition: a word opposite in meaning to another
 | Usage: fast is one of the antonyms of slow.
 | 
-| vowel
+| vowel [元音]
 | Definition: A vowel is a sound such as the ones represented in writing by letters ‘a’, ‘i’, ‘u’, ‘e’, and ‘o’, which  you pronounce with your mouth open, allowing the air flow through it.
-| Antonyms: consonant
+| Antonyms: consonant [浊音]
 | Usage: The vowel in words like ‘my’ and ‘thigh’ is not very difficult.
 | 
 | Notes:
@@ -1987,6 +1987,24 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: If you describe an event or attempt to do something as a fiasco, you are emphasizing that it fails completely.
 | Usage: His plans turned into a fiasco.
 | 
+
+The original Lisa computer, named after Jobs' eldest daughter,
+came out in 1983 and was generally considered to be a flop.
+It was a hard device for consumers to embrace because, at the time,
+it cost approximately $10,000. However, its operating system laid the
+foundation for the macOS we're familiar with today.
+
+Even the name “Lisa” comes with a lot of historic baggage. At the time,
+Apple said the name was an acronym for Local Integrated System Architecture.
+However, many suspected the name was a reference to Jobs’ first daughter Lisa
+Nicole Brennan, who he denied fathering for years. In his later years, Jobs
+admitted the computer was named after his daughter.
+
+| 
+| flop
+| Definition: to be completely unsuccessful.
+| Usage: The film flopped badly at the box office. [票房惨淡]
+| 
 | cumbersome
 | Definition: large and heavy; difficult to carry.
 | Definition: slow and complicated and therefore inefficient.
@@ -2630,7 +2648,7 @@ It is the most popular tea in Japan.
 | 
 | tacit
 | Definition: understood or implied without being stated. [默许]
-| Usage:  Your silence may be taken to mean tacit agreement.
+| Usage: Your silence may be taken to mean tacit agreement.
 | 
 | jar
 | Definition: send a painful or damaging shock through (something, especially a part of body).
@@ -2644,6 +2662,12 @@ It is the most popular tea in Japan.
 | 
 | acronym [首字母缩略词]
 | Definition: an abbreviation formed from the initial letters of others words and pronounced as a word (e.g., ASCII, NASA) 
+|
+
+BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code)
+is a family of general-purpose, high-level programming languages whose
+design philosophy emphasizes ease of use.
+
 | 
 | CV [简历]
 | Full: curriculum vitae
