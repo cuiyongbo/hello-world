@@ -233,7 +233,7 @@ Sublime Text
 #. Vertical Selection:
    
       Ctrl + Alt + Up/Down (Windows/Linux)
-      Ctrl + Shift + Up/Down (Mac) [**not work**]
+      Ctrl + Shift + Up/Down (Mac)
 
    .. note:: 
 
@@ -242,3 +242,13 @@ Sublime Text
       these HotKeys for this to work on Windows.
 
       .. image:: images/intel-graphics-options.png
+
+      The hotkeys may not work because the modifier has been assigned to "Mission Control"
+      and "Application Windows". To get around this, uncheck the options in "System Preference"
+      \- "Keyboad" \- "Shortcuts" \- "Mission Control".
+
+      .. image:: images/Mac-MissionControl-shortcuts-setting.png
+      
+        
+
+      
