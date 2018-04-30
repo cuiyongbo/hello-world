@@ -3601,3 +3601,7 @@ figures.
 | Tom, can you give me off the hook? for old time's sake. [求情]  
 | Can't do it, Sally.
 |
+| avatar
+| Definition: (in Hinduism and Buddhism) a god appearing in a physical form. [化身]
+| Definition: a picture which represents a person on computer screen, especially in a game or chat room. [头像]
+| 

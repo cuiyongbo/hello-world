@@ -79,10 +79,6 @@ Computer Terminology
 |
 | breadth-first traversal 广度优先遍历
 | depth-first traversal 深度优先遍历
-| 
-| 
-| Subscript vs Superscript [上标，下标]
-| Definition: A subscript or superscript is a number, figure, symbol, or indicator that is smaller than the normal line of type and is set slightly below or above it. Subscripts appear at or below the baseline, while superscripts are above.
 |
 | archive
 | Definition: The archive or archives are a collection of documents and records that contain historical information.
@@ -93,8 +89,25 @@ Computer Terminology
 
 .. figure:: images/portfolio.png
 
+Subscript vs Superscript [上标，下标]
 
+A subscript or superscript is a number, figure, symbol, or indicator
+that is smaller than the normal line of type and is set slightly below
+or above it. Subscripts appear at or below the baseline, while
+superscripts are above.
 
 Co-Processor
 
-A coprocessor is a computer processor used to supplement the functions of the primary processor (the CPU). Operations performed by the coprocessor may be floating point arithmetic, graphics, signal processing, string processing, encryption or I/O Interfacing with peripheral devices. By offloading processor-intensive tasks from the main processor, coprocessors can accelerate system performance. Coprocessors allow a line of computers to be customized, so that customers who do not need the extra performance don't need to pay for it.
+A coprocessor is a computer processor used to supplement the functions
+of the primary processor (the CPU). Operations performed by the coprocessor
+may be floating point arithmetic, graphics, signal processing, string processing,
+encryption or I/O Interfacing with peripheral devices. By offloading processor-intensive
+tasks from the main processor, coprocessors can accelerate system performance.
+Coprocessors allow a line of computers to be customized, so that customers who
+do not need the extra performance don't need to pay for it.
+
+Rate limiting
+
+In computer networks, rate limiting is used to control the rate
+of traffic sent or received by a network interface controller
+and is used to prevent :abbr:`DoS (Denial-of-Service)` attacks.

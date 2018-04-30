@@ -248,7 +248,8 @@ Sublime Text
       \- "Keyboad" \- "Shortcuts" \- "Mission Control".
 
       .. image:: images/Mac-MissionControl-shortcuts-setting.png
-      
+
+#. Open package control: Cmd + Shift + P (mac), Ctrl + Shift + P (windows)
         
 
       

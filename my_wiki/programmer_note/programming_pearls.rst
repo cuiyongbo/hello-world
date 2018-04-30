@@ -11,5 +11,6 @@ Programming Pearls
    programming_pearls/programming_pearls_2
    programming_pearls/programmer_tricks
    programming_pearls/shell_script_tricks
+   programming_pearls/reference_count
 
 

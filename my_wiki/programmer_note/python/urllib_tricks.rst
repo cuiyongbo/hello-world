@@ -60,6 +60,9 @@ codes in the 400--599 range.
 response codes in that shows all the response codes used by RFC 2616. The
 dictionary is reproduced here for convenience ::
 
+   import http.server
+   responses = http.server.BaseHTTPRequestHandler.responses
+   pprint(responses)
    # Table mapping response codes to messages; entries have the
    # form {code: (shortmessage, longmessage)}.
    responses = {
@@ -131,7 +134,8 @@ dictionary is reproduced here for convenience ::
 Note: `Quick reference to common Http Status code <https://wiki.apache.org/httpd/CommonHTTPStatusCodes>`_
 
 Another http response code lookup table::
-
+   
+   import requests
    table = requests.codes.__dict__
    pprint(table)
 
