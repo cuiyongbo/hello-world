@@ -3605,3 +3605,15 @@ figures.
 | Definition: (in Hinduism and Buddhism) a god appearing in a physical form. [化身]
 | Definition: a picture which represents a person on computer screen, especially in a game or chat room. [头像]
 | 
+| interlink
+| interlinkage
+| Definition: join or connect (two or more things) together.
+| Usage: Agreement has been reached to interlink the airport's two baggage systems.
+| Usage: The film, Puls Fiction, written and directed by Quentin Tarantino, consists of a series of short interlinking stories.
+| 
+| hoagie
+| Definition: a long piece of bread filled with meat, cheese and salad.
+| Synonyms: submarine sandwich.
+
+.. image:: images/hoagie.jpg
+
