@@ -397,3 +397,53 @@ Git force pull
    
    After this, all of the old commits will be kept in ``new-branch-to-save-current-commits``.
    Uncommitted changes however (even staged), will be lost. Make sure to stash and commit anything you need.
+
+
+Change remote url
+=================
+
+**Syntax**
+
+   .. code-block:: sh
+   
+      git remote get-url [--push] [--all] <name>
+   
+   Retrieves the URLs for a remote. Configurations for insteadOf and pushInsteadOf
+   are expanded here. By default, only the first fetch URL is listed.
+   
+   #. With ``--push``, push URLs are queried rather than fetch URLs.
+   #. With ``--all``, all URLs for the remote will be listed. [only FETCH url]
+   
+   
+   .. code-block:: sh
+   
+      git remote set-url [--push] <name> <newurl> [<oldurl>]
+      git remote set-url --add <name> <newurl>
+      git remote set-url --delete <name> <url>
+   
+   
+   Changes URLs for the remote. Sets first URL for remote *name* (mostly, *name* is ``origin``) that
+   matches regex *oldurl* (first URL if no *oldurl* is given) to  *newurl*. If *oldurl* doesn’t match
+   any URL, an error occurs and nothing is changed.
+   
+   #. With ``--push``, push URLs are manipulated instead of fetch URLs.
+   
+   #. With ``--add``, instead of changing existing URLs, new URL is added.
+   
+   #. With ``--delete``, instead of changing existing URLs, all URLs matching regex *url* are deleted
+      for remote *name*. Trying to delete all non-push URLs is an error.
+   
+   
+   .. note::
+   
+      Note that the push URL and the fetch URL, even though they can be set differently,
+      must still refer to the same place. What you pushed to the push URL should be what
+      you would see if you immediately fetched from the fetch URL. If you are trying to
+      fetch from one place (e.g. your upstream) and push to another (e.g. your publishing
+      repository), use two separate remotes.
+
+**Example**
+
+   .. code-block:: sh
+
+      git remote set-url origin https://github.com/akheron/jansson.git
