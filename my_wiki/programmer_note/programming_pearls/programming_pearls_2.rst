@@ -274,7 +274,7 @@ See :doc:`extern_c_linkage`.
 Allocator Examples
 ==================
 
-c++ allocator encapsulates strategies for access/addressing, allocation/deallocation
+C++ allocator encapsulates strategies for access/addressing, allocation/deallocation
 and construction/destruction of objects.
 
 Every standard library component that may need to allocate or release storage, from
@@ -289,3 +289,78 @@ containers and other allocator-aware classes access the allocator through
 
 See some examples in :doc:`container_allocator`.
 
+
+``#pragma pack(n)`` VS ``#pragma pack(push, n)``
+================================================
+
+``#pragma pack(n)`` sets compiler alignment to n bytes. Calling pack with no arguments
+sets *n* to the value set in the compiler option ``/Zp``. If the compiler option is not
+set, the default value is 8.
+
+``#pragma pack(push[,n])`` pushes the current alignment setting on an internal compiler 
+stack and then optionally sets the new alignment. ``#pragma pack(pop)`` restores the alignment
+setting to the one at the top of the internal compiler stack (and removes that stack entry).
+
+**Note** that ``#paragma pack([n])`` doesn't influence this internal stack; thus it's
+possible to have ``#pragma pack(push)`` followed by multiple ``#pragma pack(n)`` instances
+and finalized by a single ``#pragma pack(pop)``.
+
+See `MSDN pack directive <https://msdn.microsoft.com/en-us/library/2e70t5y1.aspx>`_ for more
+information.
+
+The following sample, taken from MSDN, shows how to use the ``push``, ``pop``,
+and ``show`` syntax.
+
+.. code-block:: c++
+
+   // compile with: /W1 /c  
+   #pragma pack()   // n defaults to 8; equivalent to /Zp8  
+   #pragma pack(show)   // C4810  
+   #pragma pack(4)   // n = 4  
+   #pragma pack(show)   // C4810  
+   #pragma pack(push, r1, 16)   // n = 16, pushed to stack  
+   #pragma pack(show)   // C4810  
+   #pragma pack(pop, r1, 2)   // n = 2 , stack popped  
+   #pragma pack(show)   // C4810  
+
+
+``std::unordered_multimap::equal_range()``
+==========================================
+
+**Language Support**
+
+   .. code-block:: c++
+   
+      //(since C++11)
+      std::pair<iterator,iterator> equal_range( const Key& key ); 
+      std::pair<const_iterator,const_iterator> equal_range( const Key& key ) const;
+
+   Returns a range containing all elements with key *key* in the container. The range
+   is defined by two iterators, the first pointing to the first element of the wanted range
+   and the second pointing past the last element of the range.
+
+   Return a ``std::pair`` containing a pair of iterators defining the wanted range
+   if elements are found. Otherwise, past-the-end (``end()``) iterators are returned
+   as both elements of the pair.
+
+**Complexity**
+
+   Average case linear in the number of elements with the key *key*,
+   worst case linear in the size of the container.
+
+**Example**
+
+   .. code-block:: c++
+      :caption: Example taken from cppreference
+
+      #include <iostream>
+      #include <unordered_map>
+       
+      int main()
+      {  
+         std::unordered_multimap<int,char> map = {{1,'a'},{2,'b'},{1,'d'},{2,'b'}};
+         auto range = map.equal_range(1);
+         for (auto it = range.first; it != range.second; ++it) {
+            std::cout << it->first << ' ' << it->second << '\n';
+         }
+      }

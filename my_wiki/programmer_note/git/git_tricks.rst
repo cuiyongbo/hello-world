@@ -447,3 +447,10 @@ Change remote url
    .. code-block:: sh
 
       git remote set-url origin https://github.com/akheron/jansson.git
+
+
+Clean up project
+================
+
+   See :doc:`git_clean_tricks`.
+
