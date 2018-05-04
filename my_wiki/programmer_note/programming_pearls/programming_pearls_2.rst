@@ -364,3 +364,16 @@ and ``show`` syntax.
             std::cout << it->first << ' ' << it->second << '\n';
          }
       }
+
+
+printf using '/r'
+=================
+
+.. code-block:: c++
+
+   typedef long long int64;
+   typedef unsigned long long uint64;
+   
+   uint64 loaded, total;
+   printf("Loaded: %9llu, total: %9llu\r", loaded, total)
+
