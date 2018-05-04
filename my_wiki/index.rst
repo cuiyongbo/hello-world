@@ -18,6 +18,7 @@ Welcome to My Wiki's documentation!
    mathematics_glossary
    biology_glossary
    english_notes
+   japanese_notes
    steve_jobs_obituary
    stephen_hawking_obituary
 
