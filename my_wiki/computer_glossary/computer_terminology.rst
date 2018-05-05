@@ -25,6 +25,7 @@ Computer Terminology
 | CISC = Complex Instruction Set Computing
 | RISC = Reduced Instruction Set Computing
 | SoC = System on Chip
+| ALU = Arithmetic Logic Unit
 |
 | concatenate
 | concatenation
@@ -111,3 +112,18 @@ Rate limiting
 In computer networks, rate limiting is used to control the rate
 of traffic sent or received by a network interface controller
 and is used to prevent :abbr:`DoS (Denial-of-Service)` attacks.
+
+Octet
+
+The octet is a unit of digital information in computing and telecommunications
+that consists of eight bits. The term is often used when the term **byte** might be
+ambiguous, as the byte has historically been used for storage units of a variety of sizes.
+
+Datapath
+
+A datapath is a collection of functional units such as :abbr:`ALU (Arithmetic Logic Unit)`
+or multipliers, that perform data processing operations, registers, and buses. Along with
+the control unit it composes the :abbr:`CPU (Central Processing Unit)`. A larger datapath
+can be made by joining more than one number of datapaths using multiplexer.
+
+During the late 1990s, there was growing research in the area of reconfigurable datapaths—datapaths that may be re-purposed at run-time using programmable fabric—as such designs may allow for more efficient processing as well as substantial power savings
