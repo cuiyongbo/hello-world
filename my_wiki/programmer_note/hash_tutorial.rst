@@ -12,3 +12,5 @@ Hash Tutorial
    hashTutorial/improved_collision_resolution_methods
    hashTutorial/closed_hashing_analysis
    hashTutorial/deletion
+   hashTutorial/int_hash
+

@@ -3333,9 +3333,9 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 
 .. image:: images/ryton-octagonal-summerhouse.jpg
 
-| panorama
+| panorama [俯瞰]
 | Definition: A panorama is a view in which you can see a long way over a wide area of land, usually because you are on a high ground.
-| Synonyms: vista
+| Synonyms: vista.
 | Usage: Horton looked out over a panorama of fertiile valleys and gentle hills.
 | Definition: A panorama is a broad view of a state of affairs or of a constantly changing series of events.
 | Usage: The play presents a panorama of the history of communism.
