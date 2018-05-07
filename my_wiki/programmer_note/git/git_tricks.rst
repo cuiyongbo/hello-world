@@ -454,3 +454,12 @@ Clean up project
 
    See :doc:`git_clean_tricks`.
 
+
+Cherry-pick one commit
+======================
+
+   .. code-block::
+
+      $ git cherry-pick <commit-id>
+
+

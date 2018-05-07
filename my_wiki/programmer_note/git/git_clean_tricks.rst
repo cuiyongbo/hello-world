@@ -80,3 +80,5 @@ Example
    Would remove MIT6_096IAP11_lec10_C++_File_Handling.pdf
    Would remove hacker's_delight_basics.pdf
 
+   $ git clean -d -ff
+

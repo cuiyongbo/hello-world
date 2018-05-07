@@ -63,6 +63,3 @@ English Notes 2
 | strongbox
 | Definition: a small lockable box, typically made of metal, in which valuables are kept.
 | 
-
-
-
