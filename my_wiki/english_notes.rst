@@ -2308,7 +2308,7 @@ It is the most popular tea in Japan.
 | Definition: dance in a wild or suggestive manner.
 | Usage: Strippers gyrated to rock music on a low stage. [脱衣舞者]
 | 
-| strppergram
+| strippergram
 | Definition: a novelty greetings message dilivered by a person who accompanies it with a striptease act.
 | 
 | striptease [脱衣舞]
@@ -2326,7 +2326,7 @@ It is the most popular tea in Japan.
 | Definition: gradually write off the initial cost of (an asset).
 | Usage: They want to amortize the tooling costs quickly.
 | Definition: redece or extinguish (a debt) by money regularly put aside.
-| Usage: Loan fees can be amortized over the life of the mortage.
+| Usage: Loan fees can be amortized over the life of the mortage. [分期付款]
 | 
 | stride
 | Definition: walk with long, decisive steps in a specific direction.

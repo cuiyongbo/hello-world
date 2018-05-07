@@ -6,6 +6,12 @@ English Notes 2
 | Definition: the space above a driver's head in a vehicle.
 | Definition: the space or clearance between the top of a vehicle and the underside of a bridge.
 | Usage: There's a lot of headroom for such a small car.
+| 
+| subsume
+| subsumable
+| subsumption
+| Definition: include or absorb something in something else.
+| Usage: Most of these phenomenan can be subsumed under two broad catagories.
 |
 | superset
 | Definition: a set that includes another set or sets.
@@ -48,3 +54,15 @@ English Notes 2
 | Definition: a knitted garment with long sleeves worn over the upper body.
 
 .. image:: images/jersey.jpg
+
+| coffer
+| Definition: a strongbox used to store money or valuable things. [保险柜，金库]
+| Definition: the funds or the finacial reserves of an institution or organization.
+| Usage: The ferderal government's empty coffer.
+| 
+| strongbox
+| Definition: a small lockable box, typically made of metal, in which valuables are kept.
+| 
+
+
+
