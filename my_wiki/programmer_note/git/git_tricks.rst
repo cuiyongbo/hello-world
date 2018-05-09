@@ -458,7 +458,7 @@ Clean up project
 Cherry-pick one commit
 ======================
 
-   .. code-block::
+   .. code-block:: sh
 
       $ git cherry-pick <commit-id>
 
