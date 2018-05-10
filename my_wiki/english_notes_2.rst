@@ -63,3 +63,8 @@ English Notes 2
 | strongbox
 | Definition: a small lockable box, typically made of metal, in which valuables are kept.
 | 
+| crimson
+| Definition: something is crimson is deep red in color.
+| Definition: if someone goes crimson, their face becomes red because they are angry or embarrassed.
+| Usage: I used to refuse invitations to parties because I knew I'd go crimson every time someone talked to me.
+| 

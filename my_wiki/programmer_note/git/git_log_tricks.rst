@@ -63,6 +63,9 @@ Options
    # and has %placeholder in it, it acts as if --pretty=tformat:<string> were given
    # When =<format> part is omitted, it defaults to medium.
 
+   git --follow
+   # Continue listing the history of a file beyond renames (works only for a single file).
+
 
 Examples
 --------

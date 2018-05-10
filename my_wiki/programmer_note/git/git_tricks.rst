@@ -463,3 +463,26 @@ Cherry-pick one commit
       $ git cherry-pick <commit-id>
 
 
+Check the history of a specific file
+====================================
+
+   .. code-block:: sh
+
+      # First
+      $ gitk <fileName> 
+
+      # Second
+      $ git log --follow -p  <fileName>
+      # --follow ensures that you see file renames 
+      # -p ensures that you see how the file gets changed
+
+      # Third
+      $ git blame <fileName>
+      cdc116f5 (cuiyb 2018-01-31 11:44:16 +0800  9) .. toctree::
+      cdc116f5 (cuiyb 2018-01-31 11:44:16 +0800 10)    :maxdepth: 2
+      cdc116f5 (cuiyb 2018-01-31 11:44:16 +0800 11)
+      92b6a9e1 (cuiyb 2018-01-31 12:02:43 +0800 12)    introduction
+      3e3f34ff (cuiyb 2018-02-10 10:56:42 +0800 13)    README
+      92b6a9e1 (cuiyb 2018-01-31 12:02:43 +0800 14)    tutorial
+      052012bc (cuiyb 2018-04-02 20:05:21 +0800 15)    faq
+
