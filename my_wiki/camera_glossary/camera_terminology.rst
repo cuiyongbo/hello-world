@@ -19,7 +19,6 @@ Terminology
 | APS - 全画幅
 | APS-C - Advanced Photo System-Classic, 残幅
 | close-up -- a photograph, movie, or video taken at close range and showing the subject on a large scale [写真？？]
-| depth of field - 景深
 | Sharpness - 锐度
 | Blur
 | ISO - 感光度
@@ -64,7 +63,7 @@ Terminology
 | Definition: Focal is used to describe something that is very important.
 | Usage: Now Shanghai is a great metropolis and one of the focal centres of the Far East.
 | 
-| brokeh
+| brokeh 散景，ボケ
 | Definition: the visual quality of the out-of-focus areas of an image, especially as rendered by a particular lens.
 |
 
@@ -158,3 +157,17 @@ particularly the ones that are moderately expensive; for instance a kit lens inc
 in a prosumer SLR kit is often marketed as an upgrade lens for a consumer SLR. In addition,
 retailers often have promotions of standalone low-end SLR bodies without the lens, or a
 package that bundles the SLR body with one or two more expensive lenses.
+
+
+depth of field 景深
+
+当相机的镜头对着某一物体聚焦清晰时，在镜头中心所对的位置垂直镜头轴线的同一平面的点都可以在胶片或者接收器上
+相当清晰的图像，在这个平面沿着镜头轴线的前面和后面一定范围的点也可以结成眼睛可以接受的较清晰的像点，把这个
+平面的前面和后面的所有景物的距离叫做相机的景深。
+
+光轴平行的光线射入凸透镜时，理想的镜头应该是所有的光线聚集在一点后，再以锥状扩散开来，这个聚集所有光线的一点，
+就叫做焦点。当扩散到一定程度时，点扩散为可识别的一个圆，就是弥散圆。景深以外的地方，画面变得模糊。并越远越明显。
+
+拍摄背景虚化照片要领：大光圈，相机距离拍摄主体近。
+
+.. image:: images/depth_of_field.jpg
