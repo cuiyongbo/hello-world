@@ -6,6 +6,7 @@ Python note
 
    python/python_built_in_types
    python/python_built_in_functions
+   python/control_overflow
    python/str_methods
    python/string_format_syntax
    python/urllib_tricks

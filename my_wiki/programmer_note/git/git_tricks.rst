@@ -486,3 +486,17 @@ Check the history of a specific file
       92b6a9e1 (cuiyb 2018-01-31 12:02:43 +0800 14)    tutorial
       052012bc (cuiyb 2018-04-02 20:05:21 +0800 15)    faq
 
+
+Diff two different files
+========================
+
+   .. code-block:: sh
+
+      # First
+      $ git diff --no-index fileA  fileB
+
+      # Second
+      $ diff fileA fileB
+
+      # Third, colorfully diff, side by side comparison.
+      $ vimdiff fileA fileB
