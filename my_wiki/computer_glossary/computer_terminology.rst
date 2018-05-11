@@ -183,3 +183,12 @@ While certain operations for a given algorithm may have a significant cost in re
 may not be as costly. Amortized analysis considers both the costly and less costly operations together over
 the whole series of operations of the algorithm. This may include accounting for different types of input,
 length of the input, and other factors that affect its performance.
+
+
+Concurrence vs Parallelism
+
++-----------------------------------+-----------------------------------+
+| Concurrence                       | Parallelism                       |
++===================================+===================================+
+| .. image:: images/concurrency.jpg | .. image:: images/parallelism.jpg |
++-----------------------------------+-----------------------------------+

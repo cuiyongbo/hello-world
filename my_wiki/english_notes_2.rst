@@ -102,3 +102,16 @@ English Notes 2
 
 .. image:: images/mcintosh_red.jpeg
 
+| clarify
+| clarification
+| Definition: to explain something in detail.
+| Usage: A bank spokeman was unable to clarify the situation.
+| Usage: The union has written to the minister asking for clarification of the government's controversial decision.
+| 
+| bog
+| Definition: a bog is an area of land which is very wet and muddy.
+| Definition: toilet.
+| Phrase: bog down
+| Definition: if a plan or process is bogged down or something bogs it down, it is delayed and no progress is made.
+| Usage: The talk has been bogged down over the issue os military reform.
+| 
