@@ -68,3 +68,37 @@ English Notes 2
 | Definition: if someone goes crimson, their face becomes red because they are angry or embarrassed.
 | Usage: I used to refuse invitations to parties because I knew I'd go crimson every time someone talked to me.
 | 
+| slicker
+| Definition: a raincoat made of smooth material.
+| Definition: a person who is smooth and persuasive but untrustworthy.
+| Usage: A permatanned slicker who involves her in embezzlement and fraud.
+
+.. image:: images/slicker.jpg
+
+| macintosh
+| mackintosh
+| Definition: a full-length waterproof coat.
+| Origin: named after Charles Macintosh (1766–1843), the Scottish inventor who originally patented the cloth.
+| Definition: from Macintosh, the brand name of a range of computers manufactured by Apple Inc.
+
+.. image:: images/macintosh.jpg
+
+| permatanned
+| perma-tanned
+| Definition: permanently suntanned.
+| 
+| suntan
+| suntanned
+| Definition: a browning of skin caused by exposure to the sun. [古铜色肤色]
+| Usage: He had acquired quite a suntan.
+| Usage: A suntanned face.
+
+.. image:: images/suntanned_skin.jpg
+
+| McIntosh
+| McIntosh red
+| Definition: a dessert apple of a variety native to North America, with deep red skin.
+| Origin: named after John McIntosh (1777–1845), the American-born Canadian farmer on whose farm the apple was discovered as a wild variety.
+
+.. image:: images/mcintosh_red.jpeg
+

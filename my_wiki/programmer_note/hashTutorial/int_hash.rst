@@ -1,5 +1,5 @@
-Integer Hash Function
-=====================
+Section 9 - Integer Hash Function
+=================================
 
 Abstract
 --------
