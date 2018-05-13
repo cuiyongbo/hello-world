@@ -59,6 +59,8 @@ Because threads within the same process share resources:
    * Reading and writing to the same memory locations is possible, and therefore requires explicit **synchronization**
      by the programmer.
 
+.. image:: images/single_thread_vs_multithread.png
+
 
 fork vs pthread
 ===============

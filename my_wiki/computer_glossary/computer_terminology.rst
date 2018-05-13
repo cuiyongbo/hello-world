@@ -192,3 +192,5 @@ Concurrence vs Parallelism
 +===================================+===================================+
 | .. image:: images/concurrency.jpg | .. image:: images/parallelism.jpg |
 +-----------------------------------+-----------------------------------+
+
+Associative array： arrays whose indices are arbitrary strings or other complicated objects。

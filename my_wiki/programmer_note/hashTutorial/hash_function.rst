@@ -9,4 +9,5 @@ Section 2 - Hash Function
    hash_function_bin
    hash_function_mid_square
    hash_function_string
+   more_hash_function
    

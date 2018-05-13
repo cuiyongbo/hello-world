@@ -101,6 +101,10 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {
+    'logo_only': True,
+    'collapse_navigation': False
+}
 
 # Path to find HTML templates.
 templates_path = ['tools/templates']
@@ -197,5 +201,5 @@ suppress_warnings = [
 
 
 exclude_patterns = [
-    #"computer_glossary/shell_command/find_command.rst"
+    "programmer_note/gcc/gcc_man_page.rst"
 ]

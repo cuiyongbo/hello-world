@@ -8,6 +8,7 @@ Steps of Programming
    programmer_note/hash_tutorial
    programmer_note/python_note
    programmer_note/git_notes
+   programmer_note/gcc_notes
    programmer_note/gdb_notes
    programmer_note/google_test_notes
    programmer_note/threads_vs_processes

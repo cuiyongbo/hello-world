@@ -13,5 +13,6 @@ Computer Glossary
    computer_glossary/rst_syntax_note
    computer_glossary/install_ubuntu_on_mac
    computer_glossary/unix_configure_file
+   computer_glossary/segment_fault_cracks
    computer_glossary/punctuations
    computer_glossary/software_screenshots

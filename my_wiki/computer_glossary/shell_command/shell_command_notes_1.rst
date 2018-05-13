@@ -72,3 +72,9 @@ crontab Command
 ===============
 
    See :doc:`crontab_info`.
+
+
+chmod Command
+=============
+
+   See :doc:`chmod_info`.

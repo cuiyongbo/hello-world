@@ -1,0 +1,508 @@
+***********
+Basic Usage
+***********
+
+**NAME**
+   
+   gcc - GNU project C and C++ compiler
+
+
+**SYNOPSIS**
+
+   .. code-block:: sh
+
+      gcc [-c|-S|-E] [-std=standard]
+           [-g] [-pg] [-Olevel]
+           [-Wwarn...] [-Wpedantic]
+           [-Idir...] [-Ldir...]
+           [-Dmacro[=defn]...] [-Umacro]
+           [-foption...] [-mmachine-option...]
+           [-o outfile] [@file] infile...
+
+      # Only the most useful options are listed here; see below for the remainder.
+      # g++ accepts mostly the same options as gcc.
+
+
+**DESCRIPTION**
+
+   When you invoke GCC, it normally does preprocessing, compilation, assembly and linking.
+   The **overall options** allow you to stop this process at an intermediate stage.
+   For example, the -c option says not to run the linker. Then the output consists of object
+   files output by the assembler.
+
+
+**OPTIONS Summary**
+
+   Here is a summary of all the options, grouped by type.
+   Explanations are in the following sections.
+
+   Overall Options::
+
+      -c  -S  -E  -o file  -no-canonical-prefixes -pipe  -pass-exit-codes
+      -x language  -v  -###  --help[=class[,...]]  --target-help --version
+      -wrapper @file -fplugin=file -fplugin-arg-name=arg
+      -fdump-ada-spec[-slim] -fada-spec-parent=unit -fdump-go-spec=file
+
+   C Language Options::
+
+         -ansi  -std=standard  -fgnu89-inline -aux-info filename
+         -fallow-parameterless-variadic-functions -fno-asm  -fno-builtin
+         -fno-builtin-function -fhosted -ffreestanding -fopenacc -fopenmp
+         -fopenmp-simd -fms-extensions -fplan9-extensions -trigraphs -traditional
+         -traditional-cpp -fallow-single-precision -fcond-mismatch -flax-vector-conversions
+         -fsigned-bitfields -fsigned-char -funsigned-bitfields -funsigned-char
+
+   C++ Language Options::
+
+      -fabi-version=n -fno-access-control -fcheck-new -fconstexpr-depth=n
+      -ffriend-injection -fno-elide-constructors -fno-enforce-eh-specs -ffor-scope
+      -fno-for-scope -fno-gnu-keywords -fno-implicit-templates -fno-implicit-inline-templates
+      -fno-implement-inlines -fms-extensions -fno-nonansi-builtins -fnothrow-opt
+      -fno-operator-names -fno-optional-diags -fpermissive -fno-pretty-templates -frepo
+      -fno-rtti -fsized-deallocation -fstats -ftemplate-backtrace-limit=n -ftemplate-depth=n
+      -fno-threadsafe-statics -fuse-cxa-atexit -fno-weak -nostdinc++ -fvisibility-inlines-hidden
+      -fvtable-verify=[std|preinit|none] -fvtv-counts -fvtv-debug -fvisibility-ms-compat
+      -fext-numeric-literals -Wabi=n -Wabi-tag  -Wconversion-null -Wctor-dtor-privacy
+      -Wdelete-non-virtual-dtor -Wliteral-suffix -Wnarrowing -Wnoexcept -Wnon-virtual-dtor
+      -Wreorder -Weffc++ -Wstrict-null-sentinel -Wno-non-template-friend -Wold-style-cast
+      -Woverloaded-virtual -Wno-pmf-conversions -Wsign-promo
+
+   Warning Options::
+
+      -fsyntax-only -fmax-errors=n -Wpedantic -pedantic-errors -w -Wextra -Wall
+      -Waddress -Waggregate-return -Waggressive-loop-optimizations -Warray-bounds
+      -Warray-bounds=n -Wbool-compare -Wno-attributes -Wno-builtin-macro-redefined
+      -Wc90-c99-compat -Wc99-c11-compat -Wc++-compat -Wc++11-compat -Wc++14-compat
+      -Wcast-align  -Wcast-qual -Wchar-subscripts -Wclobbered -Wcomment -Wconditionally-supported
+      -Wconversion -Wcoverage-mismatch -Wdate-time -Wdelete-incomplete -Wno-cpp -Wno-deprecated
+      -Wno-deprecated-declarations -Wno-designated-init -Wdisabled-optimization
+      -Wno-discarded-qualifiers -Wno-discarded-array-qualifiers -Wno-div-by-zero -Wdouble-promotion
+      -Wempty-body -Wenum-compare -Wno-endif-labels -Werror -Werror=* -Wfatal-errors -Wfloat-equal
+      -Wformat -Wformat=2 -Wno-format-contains-nul -Wno-format-extra-args -Wformat-nonliteral
+      -Wformat-security -Wformat-signedness -Wformat-y2k -Wframe-larger-than=len -Wno-free-nonheap-object
+      -Wjump-misses-init -Wignored-qualifiers -Wincompatible-pointer-types -Wimplicit
+      -Wimplicit-function-declaration -Wimplicit-int -Winit-self -Winline -Wno-int-conversion
+      -Wno-int-to-pointer-cast -Wno-invalid-offsetof -Winvalid-pch -Wlarger-than=len
+      -Wunsafe-loop-optimizations -Wlogical-op -Wlogical-not-parentheses -Wlong-long
+      -Wmain -Wmaybe-uninitialized -Wmemset-transposed-args -Wmissing-braces -Wmissing-field-initializers
+      -Wmissing-include-dirs -Wno-multichar  -Wnonnull -Wnormalized=[none|id|nfc|nfkc]
+      -Wodr -Wno-overflow -Wopenmp-simd -Woverlength-strings -Wpacked -Wpacked-bitfield-compat
+      -Wpadded -Wparentheses -Wpedantic-ms-format -Wno-pedantic-ms-format -Wpointer-arith
+      -Wno-pointer-to-int-cast -Wredundant-decls -Wno-return-local-addr -Wreturn-type
+      -Wsequence-point -Wshadow -Wno-shadow-ivar -Wshift-count-negative -Wshift-count-overflow
+      -Wsign-compare -Wsign-conversion -Wfloat-conversion -Wsizeof-pointer-memaccess
+      -Wsizeof-array-argument -Wstack-protector -Wstack-usage=len -Wstrict-aliasing
+      -Wstrict-aliasing=n -Wstrict-overflow -Wstrict-overflow=n
+      -Wsuggest-attribute=[pure|const|noreturn|format] -Wsuggest-final-types
+      -Wsuggest-final-methods -Wsuggest-override -Wmissing-format-attribute -Wswitch
+      -Wswitch-default -Wswitch-enum -Wswitch-bool -Wsync-nand -Wsystem-headers -Wtrampolines
+      -Wtrigraphs -Wtype-limits -Wundef -Wuninitialized -Wunknown-pragmas -Wno-pragmas
+      -Wunsuffixed-float-constants -Wunused -Wunused-function -Wunused-label
+      -Wunused-local-typedefs -Wunused-parameter -Wno-unused-result -Wunused-value
+      -Wunused-variable -Wunused-but-set-parameter -Wunused-but-set-variable -Wuseless-cast
+      -Wvariadic-macros -Wvector-operation-performance -Wvla -Wvolatile-register-var
+      -Wwrite-strings -Wzero-as-null-pointer-constant
+
+   Debugging Options::
+
+      -dletters -dumpspecs -dumpmachine -dumpversion -fsanitize=style -fsanitize-recover
+      -fsanitize-recover=style -fasan-shadow-offset=number -fsanitize-undefined-trap-on-error
+      -fcheck-pointer-bounds -fchkp-check-incomplete-type -fchkp-first-field-has-own-bounds
+      -fchkp-narrow-bounds -fchkp-narrow-to-innermost-array -fchkp-optimize -fchkp-use-fast-string-functions
+      -fchkp-use-nochk-string-functions -fchkp-use-static-bounds -fchkp-use-static-const-bounds
+      -fchkp-treat-zero-dynamic-size-as-infinite -fchkp-check-read -fchkp-check-read -fchkp-check-write
+      -fchkp-store-bounds -fchkp-instrument-calls -fchkp-instrument-marked-only -fchkp-use-wrappers -fdbg-cnt-list
+      -fdbg-cnt=counter-value-list -fdisable-ipa-pass_name -fdisable-rtl-pass_name -fdisable-rtl-pass-name=range-list -fdisable-tree-pass_name -fdisable-tree-pass-name=range-list -fdump-noaddr -fdump-unnumbered
+      -fdump-unnumbered-links -fdump-translation-unit[-n] -fdump-class-hierarchy[-n] -fdump-ipa-all
+      -fdump-ipa-cgraph -fdump-ipa-inline -fdump-passes -fdump-statistics -fdump-tree-all
+      -fdump-tree-original[-n] -fdump-tree-optimized[-n] -fdump-tree-cfg -fdump-tree-alias
+      -fdump-tree-ch -fdump-tree-ssa[-n] -fdump-tree-pre[-n] -fdump-tree-ccp[-n] -fdump-tree-dce[-n]
+      -fdump-tree-gimple[-raw] -fdump-tree-dom[-n] -fdump-tree-dse[-n] -fdump-tree-phiprop[-n]
+      -fdump-tree-phiopt[-n] -fdump-tree-forwprop[-n] -fdump-tree-copyrename[-n] -fdump-tree-nrv
+      -fdump-tree-vect -fdump-tree-sink -fdump-tree-sra[-n] -fdump-tree-forwprop[-n] -fdump-tree-fre[-n]
+      -fdump-tree-vtable-verify -fdump-tree-vrp[-n] -fdump-tree-storeccp[-n]
+      -fdump-final-insns=file -fcompare-debug[=opts] -fcompare-debug-second -feliminate-dwarf2-dups
+      -fno-eliminate-unused-debug-types -feliminate-unused-debug-symbols -femit-class-debug-always
+      -fenable-kind-pass -fenable-kind-pass=range-list -fdebug-types-section -fmem-report-wpa
+      -fmem-report -fpre-ipa-mem-report -fpost-ipa-mem-report -fprofile-arcs -fopt-info
+      -fopt-info-options[=file] -frandom-seed=string -fsched-verbose=n -fsel-sched-verbose
+      -fsel-sched-dump-cfg -fsel-sched-pipelining-verbose -fstack-usage  -ftest-coverage  -ftime-report
+      -fvar-tracking -fvar-tracking-assignments -fvar-tracking-assignments-toggle -g -glevel
+      -gtoggle -gcoff -gdwarf-version -ggdb -grecord-gcc-switches -gno-record-gcc-switches -gstabs
+      -gstabs+ -gstrict-dwarf -gno-strict-dwarf -gvms -gxcoff -gxcoff+ -gz[=type]
+      -fno-merge-debug-strings -fno-dwarf2-cfi-asm -fdebug-prefix-map=old=new -femit-struct-debug-baseonly
+      -femit-struct-debug-reduced -femit-struct-debug-detailed[=spec-list] -p -pg -print-file-name=library
+      -print-libgcc-file-name -print-multi-directory -print-multi-lib -print-multi-os-directory
+      -print-prog-name=program -print-search-dirs -Q -print-sysroot -print-sysroot-headers-suffix
+      -save-temps -save-temps=cwd -save-temps=obj -time[=file]
+
+
+**Options Controlling the Kind of Output**
+
+   Compilation can involve up to four stages: preprocessing, compilation proper, assembly and linking,
+   always in that order. GCC is capable of preprocessing and compiling several files either into several
+   assembler input files, or into one assembler input file; then each assembler input file produces an
+   object file, and linking combines all the object files (those newly compiled, and those specified as
+   input) into an executable file.
+
+   For any given input file, the file name suffix determines what kind of compilation is done::
+
+      file.c 
+         C source code that must be preprocessed.
+
+      file.i
+         C source code that should not be preprocessed.
+
+      file.ii
+         C++ source code that should not be preprocessed.
+
+      file.h
+         C, C++, header file to be turned into a precompiled header (default),
+         or C, C++ header file to be turned into an Ada spec (via the -fdump-ada-spec switch).
+
+      file.cc
+      file.cp
+      file.cxx
+      file.cpp
+      file.CPP
+      file.c++
+      file.C
+         C++ source code that must be preprocessed. Note that in .cxx, the last two letters must
+         both be literally x. Likewise, .C refers to a literal capital C.
+
+      file.hh
+      file.H
+      file.hp
+      file.hxx
+      file.hpp
+      file.HPP
+      file.h++
+      file.tcc
+         C++ header file to be turned into a precompiled header or Ada spec.
+
+      file.s
+         Assembler code.
+
+      file.S
+      file.sx
+         Assembler code that must be preprocessed.
+
+
+**OPTIONS**
+
+.. option:: -c  
+
+   Compile or assemble the source files, but do not link.
+   The linking stage simply is not done. The ultimate output
+   is in the form of an object file for each source file.
+
+   By default, the object file name for a source file is
+   made by replacing the suffix .c, .i, .s, etc., with .o.
+   
+   Unrecognized input files, not requiring compilation or
+   assembly, are ignored.
+
+.. option:: -S
+
+   Stop after the stage of compilation proper; do not assemble.
+   The output is in the form of an assembler code file for each
+   non-assembler input file specified.
+
+   By default, the assembler file name for a source file is made
+   by replacing the suffix .c, .i, etc., with .s.
+
+   Input files that don't require compilation are ignored.
+
+.. option:: -E  
+
+   Stop after the preprocessing stage; do not run the compiler proper.
+   The output is in the form of preprocessed source code, which is sent
+   to the standard output.
+
+   Input files that don't require preprocessing are ignored.
+
+.. option:: -o file
+
+   Place output in file file. This applies to whatever sort of output
+   is being produced, whether it be an executable file, an object file,
+   an assembler file or preprocessed C code.
+
+   If -o is not specified, the default is to put an executable file in a.out,
+   the object file for source.suffix in source.o, its assembler file in source.s,
+   a precompiled header file in source.suffix.gch, and all preprocessed C source
+   on standard output.
+
+.. option::  -shared
+           
+   Produce a shared object which can then be linked with other objects to form an executable.
+   Not all systems support this option. For predictable results, you must also specify the same
+   set of options used for compilation (-fpic, -fPIC, or model suboptions) when you specify this
+   linker option.
+
+.. option:: -fpic
+
+   Generate position-independent code (PIC) suitable for use in a shared library,
+   if supported for the target machine. Such code accesses all constant addresses
+   through a global offset table (GOT). The dynamic loader resolves the GOT entries
+   when the program starts (the dynamic loader is not part of GCC; it is part of the
+   operating system). If the GOT size for the linked executable exceeds a machine-specific
+   maximum size, you get an error message from the linker indicating that -fpic does not work;
+   in that case, recompile with -fPIC instead. (These maximums are 8k on the SPARC and 32k on
+   the m68k and RS/6000.  The x86 has no such limit.)
+
+   PIC requires special support, and therefore works only on certain machines. For the x86,
+   GCC supports PIC for System V but not for the Sun 386i. Code generated for the IBM RS/6000
+   is always position-independent.
+
+   When this flag is set, the macros ``__pic__`` and ``__PIC__`` are defined to 1.
+
+.. option:: -fPIC
+
+   If supported for the target machine, emit PIC, suitable for dynamic linking and avoiding any
+   limit on the size of the global offset table.  This option makes a difference on the m68k,
+   PowerPC and SPARC.
+
+   When this flag is set, the macros ``__pic__`` and ``__PIC__`` are defined to 2.
+
+.. option:: -fpie, -fPIE
+
+   These options are similar to -fpic and -fPIC, but generated PIC can be only linked into executables.
+   Usually these options are used when -pie GCC option is used during linking.
+
+   -fpie and -fPIE both define the macros ``__pie__`` and ``__PIE__``. 
+   The macros have the value 1 for -fpie and 2 for -fPIE.
+
+.. option:: -g
+
+   Produce debugging information in the OS's native format (stabs, COFF, XCOFF, or DWARF 2).
+   GDB can work with this debugging information.
+
+   On most systems that use stabs format, -g enables use of extra debugging information that
+   only GDB can use; this extra information makes debugging work better in GDB but probably makes
+   other debuggers crash or refuse to read the program. If you want to control for certain whether
+   to generate the extra information, use -gstabs+, -gstabs, -gxcoff+, -gxcoff, or -gvms.
+
+   GCC allows you to use -g with -O. The shortcuts taken by optimized code may occasionally
+   produce surprising results: some variables you declared may not exist at all; flow of
+   control may briefly move where you did not expect it; some statements may not be executed
+   because they compute constant results or their values are already at hand; some statements
+   may execute in different places because they have been moved out of loops.
+
+   Nevertheless it proves possible to debug optimized output. This makes it reasonable to use
+   the optimizer for programs that might have bugs.
+
+.. option:: -Wall
+
+   Turns on all optional warnings which are desirable for normal code. At present this is
+   -Wcomment, -Wtrigraphs, -Wmultichar and a warning about integer promotion causing a
+   change of sign in "#if" expressions. Note that many of the preprocessor's warnings are
+   on by default and have no options to control them.
+
+.. option:: -w  
+
+   Suppress all warnings, including those which GNU CPP issues by default.
+
+.. option::  -include file
+
+   Process file as if ``#include "file"`` appeared as
+   the first line of the primary source file. However,
+   the first directory searched for file is the preprocessor's
+   working directory instead of the directory containing the
+   main source file. If not found there, it is searched for in
+   the remainder of the ``#include "..."`` search chain as normal.
+
+   If multiple -include options are given, the files are included
+   in the order they appear on the command line.
+
+.. option:: -imacros file
+         
+   Exactly like -include, except that any output produced by scanning
+   *file* is thrown away.  Macros it defines remain defined. This allows
+   you to acquire all the macros from a header without also processing
+   its declarations.
+
+   All files specified by -imacros are processed before all files specified
+   by -include.
+
+.. option:: -I dir
+
+   Add the directory *dir* to the list of directories to be searched for header files.
+   Directories named by -I are searched before the standard system include directories.
+   If the directory *dir* is a standard system include directory, the option is ignored
+   to ensure that the default search order for system directories and the special
+   treatment of system headers are not defeated.
+
+.. option:: -Ldir
+           
+   Add directory *dir* to the list of directories to be searched for -l.
+
+.. option:: -llibrary, -l library
+           
+   Search the library named *library* when linking. (The second alternative with the library
+   as a separate argument is only for POSIX compliance and is not recommended.)
+
+   It makes a difference where in the command you write this option; the linker searches and
+   processes libraries and object files in the order they are specified. Thus, ``foo.o -lz bar.o``
+   searches library *z* after file *foo.o* but before *bar.o*. If *bar.o* refers to functions
+   in *z*, those functions may not be loaded.
+
+   The linker searches a standard list of directories for the library, which is actually a file
+   named ``liblibrary.a``. The linker then uses this file as if it had been specified precisely
+   by name. The directories searched include several standard system directories plus any that
+   you specify with -L.
+
+   Normally the files found this way are library files---archive files whose members are object
+   files. The linker handles an archive file by scanning through it for members which define
+   symbols that have so far been referenced but not defined.  But if the file that is found is
+   an ordinary object file, it is linked in the usual fashion. The only difference between using
+   an -l option and specifying a file name is that -l surrounds library with lib and .a and
+   searches several directories.
+
+.. option:: -Dname, -D name=definition
+      
+   With the first format, predefine *name* as a macro, with definition 1.
+
+   As with the second format, The contents of definition are tokenized
+   and processed as if they appeared during translation phase three in
+   a ``#define`` directive. In particular, the *definition* will be
+   truncated by embedded newline characters.
+
+   If you are invoking the preprocessor from a shell or shell-like
+   program you may need to use the shell's quoting syntax to protect
+   characters such as spaces that have a meaning in the shell syntax.
+
+   If you wish to define a function-like macro on the command line,
+   write its argument list with surrounding parentheses before the
+   equals sign (if any). Parentheses are meaningful to most shells,
+   so you will need to quote the option. 
+   With sh and csh, ``-D'name(args...)=definition'`` works.
+
+   -D and -U options are processed in the order they are given on
+   the command line.  All -imacros file and -include file options
+   are processed after all -D and -U options.
+
+.. option:: -U name
+
+   Cancel any previous definition of name, either built in or provided with a -D option.
+
+.. option:: -M  
+
+   Instead of outputting the result of preprocessing, output a rule suitable for make
+   describing the dependencies of the main source file. The preprocessor outputs one
+   make rule containing the object file name for that source file, a colon, and the
+   names of all the included files, including those coming from -include or -imacros
+   command-line options.
+
+   Unless specified explicitly (with -MT or -MQ), the object file name consists of the
+   name of the source file with any suffix replaced with object file suffix and with
+   any leading directory parts removed. If there are many included files then the rule
+   is split into several lines using \-newline.  The rule has no commands.
+
+   This option does not suppress the preprocessor's debug output, such as -dM. To avoid
+   mixing such debug output with the dependency rules you should explicitly specify the
+   dependency output file with -MF, or use an environment variable like
+   :envvar:`DEPENDENCIES_OUTPUT`. Debug output will still be sent to the regular output
+   stream as normal.
+
+   Passing -M to the driver implies -E, and suppresses warnings with an implicit -w.
+
+.. option:: -MM
+
+   -MM Like -M but do not mention header files that are found in system header directories,
+   nor header files that are included, directly or indirectly, from such a header.
+
+   This implies that the choice of angle brackets or double quotes in an ``#include``
+   directive does not in itself determine whether that header will appear in -MM dependency
+   output. This is a slight change in semantics from GCC versions 3.0 and earlier.
+
+.. option:: -MF file
+
+   When used with -M or -MM, specifies a file to write the dependencies to.
+   If no -MF switch is given the preprocessor sends the rules to the same
+   place it would have sent preprocessed output.
+
+   When used with the driver options -MD or -MMD, -MF overrides the default
+   dependency output file.
+
+.. option:: -MD 
+
+   -MD is equivalent to ``-M -MF`` file, except that -E is not implied. The driver
+   determines file based on whether an -o option is given. If it is, the driver
+   uses its argument but with a suffix of .d, otherwise it takes the name of
+   the input file, removes any directory components and suffix, and applies
+   a .d suffix.
+
+   If -MD is used in conjunction with -E, any -o switch is understood to specify
+   the dependency output file, but if used without -E, each -o is understood to
+   specify a target object file.
+
+   Since -E is not implied, -MD can be used to generate a dependency output file
+   as a side-effect of the compilation process.
+
+.. option:: -MMD
+
+   Like -MD except mention only user header files, not system header files.
+
+.. option:: -MG 
+
+   In conjunction with an option such as -M requesting dependency generation,
+   -MG assumes missing header files are generated files and adds them to the
+   dependency list without raising an error. The dependency filename is taken
+   directly from the ``#include`` directive without prepending any path. 
+
+   -MG also suppresses preprocessed output, as a missing header file renders
+   this useless.
+
+   This feature is used in automatic updating of makefiles.
+
+.. option:: -MP 
+
+   This option instructs CPP to add a phony target for each dependency other
+   than the main file, causing each to depend on nothing. These dummy rules
+   work around errors make gives if you remove header files without updating
+   then :file:`Makefile` to match.
+
+   This is typical output::
+
+      test.o: test.c test.h
+      test.h:
+
+.. option:: -MT target
+
+   Change the target of the rule emitted by dependency generation.
+   By default CPP takes the name of the main input file, deletes
+   any directory components and any file suffix such as .c, and
+   appends the platform's usual object suffix. The result is the
+   target.
+
+   An -MT option will set the target to be exactly the string you specify.
+   If you want multiple targets, you can specify them as a single argument
+   to -MT, or use multiple -MT options.
+
+   For example, ``-MT '$(objpfx)foo.o'`` might give::
+
+      $(objpfx)foo.o: foo.c
+
+.. option:: -MQ target
+
+   Same as -MT, but it quotes any characters which are special to Make.
+   -MQ '$(objpfx)foo.o' gives::
+
+      $$(objpfx)foo.o: foo.c
+
+   The default target is automatically quoted, as if it were given with -MQ.
+
+.. option:: -std=standard, -ansi
+
+   Specify the standard to which the code should conform. 
+   Currently CPP knows about C and C++ standards; others
+   may be added in the future.
+
+   Usual standards::
+
+      "c90"
+         The -ansi option is equivalent to -std=c90.
+
+      "gnu++98"
+         The same as -std=c++98 plus GNU extensions. 
+         This is the default for C++ code.

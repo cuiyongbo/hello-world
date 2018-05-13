@@ -115,3 +115,15 @@ English Notes 2
 | Definition: if a plan or process is bogged down or something bogs it down, it is delayed and no progress is made.
 | Usage: The talk has been bogged down over the issue os military reform.
 | 
+| opportunist
+| opportunity
+| opportunistic [机会主义，投机者]
+| Definition: exploiting chances offered by immediate circumstances without reference to a general plan or moral principle.
+| Usage: The change was cynical and opportunistic.
+| Definition: (of a plan or animal) able to spread quickly in a previously unexploited habit.
+| Definition: (of a microorganism or an infection caused by it) rarely affecting patients except in unusual circumstances, typically when the immuine system is depressed.
+| Usage: Most burglaries are committed by casual opportunists.
+| Usage: The calculating and opportunistic politician.
+| Phrase: opportunity knocks.
+| Definition: a changce for success or advancement occurs.
+| 

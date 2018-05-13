@@ -25,3 +25,9 @@ Ubuntu Problems
 #. Inspect shared memory usage
    
    .. image:: images/ubuntu_view_shared_memory_usage.png
+
+#. Change cursor shape in terminal
+   
+   "Edit" - "Profile Preferences" - "General" - "Cursor Shape".
+
+   .. image:: images/terminal_cursor_shape_configure.png

@@ -180,6 +180,7 @@ Mac OS X
 #. Unfold current directory without subdirectories: Command + right 
 #. Fold current directory with subdirectories: Option + left
 #. Unfold current directory with subdirectories: Option + right 
+#. Show/Hide sidebar: Option + Command + S
 
 
 MacOS Terminal
@@ -188,7 +189,7 @@ MacOS Terminal
 #. New tab – Command + T
 #. Close tab – Command + W
 #. Minimize – Command + M
-#. Zoom in / out – Command + “-” / ”+”
+#. Zoom in/out – Command + “-” / ”+”
 #. Move to left/right – Command + Shift + [ / ] 
 #. Home – Ctrl + A
 #. End – Ctrl + E
@@ -200,6 +201,14 @@ MacOS Terminal
 #. Display next Command – Ctrl + N
 #. Clear screen - Ctrl + L
 #. Move between words - Shift + Left/Right
+
+
+Ubuntu Terminal
+===============
+
+#. New tab – Ctrl + Shift + T
+#. Switch between tabs - Ctrl + PD/PU(linux), Fn + Ctrl + Up/Down (mac)
+#. Close tab – Ctrl + Shift + W
 
 
 Sublime-rst-completion

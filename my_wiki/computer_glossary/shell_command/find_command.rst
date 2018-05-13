@@ -121,13 +121,15 @@ find Command
 
    POSITIONAL OPTIONS
 
-       -regextype type
-         Changes the regular expression syntax understood
-         by -regex and -iregex tests which occur later on
-         the command line.
+   .. option:: -regextype type
 
-       -warn, -nowarn
-         Turn warning messages on or off. 
+      Changes the regular expression syntax understood
+      by -regex and -iregex tests which occur later on
+      the command line.
+
+   .. option:: -warn, -nowarn
+
+      Turn warning messages on or off. 
 
    GLOBAL OPTIONS
 
@@ -135,36 +137,41 @@ find Command
       should specified on the command-line after the list of start points, just
       before the first test, positional option or action::
 
-         -d / -depth
-            Process each directory's contents before the directory itself.
-            The -delete action also implies -depth.
+      .. option:: -d / -depth
+         
+         Process each directory's contents before the directory itself.
+         The -delete action also implies -depth.
 
-         -maxdepth levels
-            Descend at most levels (a non-negative integer) levels of directories
-            below the starting-points. -maxdepth 0 means only apply the tests
-            and actions to the starting-points themselves.
+      .. option:: -maxdepth levels
+         
+         Descend at most levels (a non-negative integer) levels of directories
+         below the starting-points. -maxdepth 0 means only apply the tests
+         and actions to the starting-points themselves.
 
-         -mount / -xdev
-            Don't descend directories on other filesystems. 
+      .. option:: -mount / -xdev
+         
+         Don't descend directories on other filesystems. 
 
-         -noleaf
-            Do not optimize by assuming that directories contain 2 fewer subdirectories than their hard link count.
-            This option is needed when searching filesystems that do not follow the Unix directory-link convention,
-            such as CD-ROM or MS-DOS filesystems or AFS volume mount points. Each directory on a normal Unix filesystem
-            has at least 2 hard links: its name and its '.' entry. Additionally, its subdirectories (if any) each
-            have a '..' entry linked to that directory. When find is examining a directory, after it has statted 2
-            fewer subdirectories than the directory's link count, it knows that the rest of the entries in the
-            directory are non-directories ('leaf' files in the directory tree). If only the files' names need to
-            be examined, there is no need to stat them; this gives a significant increase in search speed.
+      .. option:: -noleaf
 
+         Do not optimize by assuming that directories contain 2 fewer subdirectories than their hard link count.
+         This option is needed when searching filesystems that do not follow the Unix directory-link convention,
+         such as CD-ROM or MS-DOS filesystems or AFS volume mount points. Each directory on a normal Unix filesystem
+         has at least 2 hard links: its name and its '.' entry. Additionally, its subdirectories (if any) each
+         have a '..' entry linked to that directory. When find is examining a directory, after it has statted 2
+         fewer subdirectories than the directory's link count, it knows that the rest of the entries in the
+         directory are non-directories ('leaf' files in the directory tree). If only the files' names need to
+         be examined, there is no need to stat them; this gives a significant increase in search speed.
 
    **TESTS**
 
-      -fstype type
+      .. option:: -fstype type
+         
          File is on a filesystem of type *type*. You can use -printf with the %F
          directive to see the types of your filesystems.
 
-      -name pattern
+      .. option:: -name pattern, -iname pattern
+
          Base of file name (**the path with the leading directories removed**) matches shell pattern pattern. Because
          the leading directories are removed, the file names considered for a match with -name will never include
          a slash, so '-name a/b' will never match anything (you probably need to use -path instead). The metacharacters
@@ -172,18 +179,21 @@ find Command
          use -prune; Braces are not recognised as being special, despite the fact that some shells including Bash imbue
          braces with a special meaning in shell patterns. The filename matching is performed with the use of the
          :manpage:`fnmatch(3)` library function. Don't forget to enclose the pattern in quotes in order to protect
-         it from expansion by the shell.
+         it from expansion by the shell. -iname is case-insensitive counterpart.
 
-      -regex pattern
+      .. option:: -regex pattern, -iregex pattern
+
          File name matches regular expression pattern. **This is a match on the whole path, not a search.**  For
          example, to match a file named './fubar3', you can use the regular expression '.*bar.' or '.*b.*3', but
          not 'f.*r3'. The regular expressions understood by find are by default Emacs Regular Expressions,  but
-         this can be changed with the -regextype option.
+         this can be changed with the -regextype option. -iregex is case-insensitive counterpart.
 
-      -samefile name
+      .. option:: -samefile name
+
          File refers to the same inode as name. When -L is in effect, this can include symbolic links.
 
-      -path pattern
+      .. option:: -path pattern
+
          File name matches shell pattern pattern. The metacharacters do not treat '/' or '.' specially;
          so, for example, ``find . -path "./sr*sc"`` will print an entry for a directory called './src/misc'
          (if one exists). To ignore a whole directory tree, use -prune rather than checking every file in
@@ -195,72 +205,66 @@ find Command
          ``find bar -path /foo/bar/myfile -print``. Find compares the -path argument with the concatenation of
          a directory name and the base name of the file it's examining. Since the concatenation will never end
          with a slash, -path arguments ending in a slash will match nothing (except perhaps a start point
-         specified on the command line).
+         specified on the command line).-ipath is case-insensitive counterpart.
 
-      -iname pattern
-         Like -name, but the match is case insensitive.
+      .. option:: -readable, -writable, -executable
 
-      -ipath pattern
-         Like -path. but the match is case insensitive.
+         Matches files which are readable / writable / excutable.
 
-      -iregex pattern
-         Like -regex, but the match is case insensitive.
+      .. option:: -type c
 
-      -readable
-         Matches  files  which  are  readable.
+         File is of type *c*:
 
-      -writable
-         Matches files which are writable.
+            - b: block (buffered) special
+            - c: character (unbuffered) special
+            - d: directory
+            - p: named pipe (FIFO)
+            - f: regular file
+            - l: symbolic link
+            - s: socket
 
-      -executable
-         Matches files which are executable.
-
-      -type c
-         File is of type c:
-
-            b      block (buffered) special
-            c      character (unbuffered) special
-            d      directory
-            p      named pipe (FIFO)
-            f      regular file
-            l      symbolic link
-            s      socket
-
-      -xtype c
+      .. option:: -xtype c
+      
          The same as -type unless the file is a symbolic link.
          -xtype checks the type of the file that -type does not check.
 
-      -uid n 
-         File's numeric user ID is n.
+      .. option:: -uid n
 
-      -user uname
-         File is owned by user uname (numeric user ID allowed).
+         File's numeric user ID is *n*.
+
+      .. option:: -user uname
+
+         File is owned by user *uname* (numeric user ID allowed).
 
    **ACTIONS**
 
-      -delete
-         Delete files; true if removal succeeded. If the removal failed, an error message is issued. If -delete
-         fails, find's exit status will be nonzero (when it eventually exits). Use of -delete automatically turns
-         on the '-depth' option.
+      .. option:: -delete
+
+         Delete files; true if removal succeeded. If the removal failed, an error message is issued.
+         and find's exit status will be nonzero (when it eventually exits). Use of -delete automatically
+         turns on the :option:`-depth`.
 
          Warnings: Don't forget that the find command line is evaluated as an expression, so putting -delete first
          will make find try to delete everything below the starting points you specified.  When testing a find
          command line that you later intend to use with -delete, you should explicitly specify -depth in order to
          avoid later surprises. Because -delete implies -depth, you cannot usefully use -prune and -delete together.
 
-      -print 
+      .. option:: -print 
+
          True; print the full file name on the standard output, followed by a newline. If you are piping the
          output of find into another program and there is the faintest possibility that the files which you are
          searching for might contain a newline, then you should seriously consider using the -print0 option
          instead of -print.
 
-      -print0
+      .. option:: -print0
+
          True; print the full file name on the standard output, followed by a null character
          (instead of the newline character that -print uses). This allows file names that contain
          newlines or other types of whitespace to be correctly interpreted by programs that process
          the find output. This option corresponds to the -0 option of :command:`xargs`.
 
-      -printf format
+      .. option:: -printf format
+
          True; print format on the standard output, interpreting '\' escapes and '%' directives.  Field widths and
          precisions  can  be  specified  as with the 'printf' C function. Please note that many of the fields are
          printed as %s rather than %d, and this may mean that flags don't work as you might expect. This also
@@ -400,7 +404,8 @@ find Command
             format flag is supported and changes the alignment of a field from right-justified (which is the default)
             to left-justified.
 
-      -prune
+      .. option:: -prune
+
          True; if the file is a directory, do not descend into it. If -depth is given, false; no effect.
          Because -delete implies -depth, you cannot usefully use -prune and -delete together.
 

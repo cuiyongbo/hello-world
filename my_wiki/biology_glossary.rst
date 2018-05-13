@@ -354,6 +354,6 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 .. image:: images/chimera.jpg
 .. image:: images/sea_serpent_by_rusty.jpg
 
-
-
-
+| omnivore [杂食动物]
+| Definition: an animal or person that eats food of both plant and animal origin.
+| 

@@ -56,8 +56,28 @@ Mathematical Terminology
 | polynomial
 | Definition: (mathematics) 多项式的
 |
-| multiplicative inverser
-| Definition: In mathematics, a **multiplicative inverse** or **reciprocal** for a number x, denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction :math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real number, divide 1 by the number. For example, the reciprocal of 5 is one fifth (1/5 or 0.2), and the reciprocal of 0.25 is 4. The reciprocal function, the function f(x) that maps x to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse (an involution).
+| modulus
+| Definition: another term for absolute value.
+| Definition: a constant factor or ratio.
+| Definition: a number used as a divisor for considering numbers in sets, numbers being considered congruent when giving the same remainder when divided by | a particular modulus.| 
+| 
+
+modulo [取余]
+
+(in mathematics) with respect to or using a modulus of a specified number.
+Two numbers are congruent modulo a given number if they give the same remainder
+when divided by that number: 19 and 64 are congruent modulo 5.
+
+multiplicative inverser
+
+In mathematics, a **multiplicative inverse** or **reciprocal** for a number *x*,
+denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied
+by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction
+:math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real
+number, divide 1 by the number. For example, the reciprocal of 5 is one fifth (1/5 or 0.2),
+and the reciprocal of 0.25 is 4. The reciprocal function, the function *f(x)* that maps *x* 
+to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse
+(an involution).
 
 .. figure:: images/one_over_x.png
 
