@@ -139,8 +139,24 @@ English Notes 2
 | Synonyms: fuse.
 | Usage: Darwinian theory has been synthesized with modern genetics.
 | 
-wrap
-Definition: cause (a word or sentence) to be carried over to a new line automatically as the margin is reached, to fit around embedded features such as pictures.
-Usage: Words are wrapped to the next line if they are too long.
-Definition: finish filming or recording. [杀青]
-Usage: We wrapped on schedule three days later.
+| wrap
+| Definition: cause (a word or sentence) to be carried over to a new line automatically as the margin is reached, to fit around embedded features such as pictures.
+| Usage: Words are wrapped to the next line if they are too long.
+| Definition: finish filming or recording. [杀青]
+| Usage: We wrapped on schedule three days later.
+| Definition: a veil of secrecy maintained about something, especially a new project.
+| Usage: Details of the police operation are being kept under wraps.
+| Phrase: wrap something up
+| Definition: win a game or competition.
+| Synonyms: trounce; thrash.
+| Usage: Australia wrapped up the series 4-0.
+| Definition: complete or conclude a discussion or agreement.
+| Usage: They hope to wrap up negotiations within sixty days.
+| Phrase: be wrapped up in.
+| Definition: be so absorbed in (something) that one doesn't notice other people or other things.
+| Usage: He was too wrapped up in the historic importance of his compaign.
+| Phrase: wrap up
+| Definition: (also wrap someone up) put on (or dress someone in) warm clothes.
+| Usage: Tim was well wrapped up against the weather.
+| Definition: (also wrap it up) be quite; stop talking or making a noise. 
+| 

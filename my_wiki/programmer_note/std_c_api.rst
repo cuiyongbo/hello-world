@@ -10,4 +10,5 @@ Std C API
    std_c_api/std_string_api
    std_c_api/std_file_operation_api
    std_c_api/malloc_info
+   std_c_api/sbrk_info
    
