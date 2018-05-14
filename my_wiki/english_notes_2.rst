@@ -127,3 +127,15 @@ English Notes 2
 | Phrase: opportunity knocks.
 | Definition: a changce for success or advancement occurs.
 | 
+| allusion
+| Definition: an indirect reference to somebody or something.
+| Usage: The last point was understood to be an allusion to the long-standing hostility between the two leaders.
+| 
+| synthesize
+| synthesise
+| Definition: to produce something by means of chemical or biological reactions.
+| Synonyms: manufacture.
+| Definition: If you synthesize different ideas, facts, or experiences, you combine them to form a single idea or impression.
+| Synonyms: fuse.
+| Usage: Darwinian theory has been synthesized with modern genetics.
+| 

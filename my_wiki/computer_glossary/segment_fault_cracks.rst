@@ -1,8 +1,8 @@
-*************
-Segment Fault
-*************
+************************
+Insight of Segment Fault
+************************
 
-Linux上开发时最恼火的就是遇到“Segmetation Fault”错误。为什么这么说，
+Linux上开发时最恼火的就是遇到 “Segmetation Fault” 错误。为什么这么说，
 很多人看到这个错误后心里第一反应是程序访问的非法的内存，导致其被操作系统
 强行终止。这固然没错，可这里有个比较模糊的概念了：什么叫“非法”的内存？
 
@@ -57,7 +57,7 @@ Executive View 进行看待。Loader 将以Segment的形式来处理ELF文件。
 存储位置上才是合法有效的，不然操作系统就会用“Segmetation Fault”对你的进程进行宣判，然后将其kill掉。
 那么，问题又来了，到底哪些地址才是合法有效的呢？看一个简单的进程虚拟地址空间的布局：
 
-.. image:: images/program.memory.layout.jpg
+.. image:: images/program.memory.layout.1.jpg
 
 上图是很多资料上说的Linux进程虚拟地址空间的布局结构图，其中 0x0804800 为进程运行时的地址入口。注意，
 这里的入口地址是指你的程序的第一条指令的入口地址，但是当进程运行时，进程环境空间的初始化工作，包括建立
@@ -86,3 +86,115 @@ Executive View 进行看待。Loader 将以Segment的形式来处理ELF文件。
 的值就是它在ELF文件里所指定的值；如果为1，则每次启动时只有栈的装载地址做随机保护；如果为2，表示进程每次
 启动时，进程的装载地址，brk和堆栈地址都会随机变化。看个例子，这是网上流传比较多的一段代码，很具有代表性，
 这里我又站在前人的肩膀上了：
+
+.. code-block:: c
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <unistd.h>
+   
+   int bssvar;
+   
+   int main()
+   {
+      printf("main start point: %p.\n", main);
+      printf("bss end: %ld.\n", (long)&bssvar + 4);
+      void* ptr = sbrk(0);
+      printf("current brk: %p.\n", (long*)ptr);
+      sleep(8);
+      return 0;
+   }
+
+由于全局变量 *bssvar* 未初始化，所以当程序运行时它会被放置在 .bss 段，占4字节。``sbrk(0)``
+会返回当前 *brk* 的值。为了便于观察，我们用了 ``sleep(8)``。下面用 :command:`readelf` 看一下
+可执行文件被装载时，Segement 的情况将会是什么样子:
+
+.. image:: images/memlayout_1.jpg
+
+另一方面，内存分配时是以页为单位，一般页大小为4096字节，所以从0x08048000开始是代码段，
+共占内存0x00628，即1576个字节，不足一个页，但必须以页为单位，所以下一个页，也就是数据
+页必须从0x0804900开始。但上面显示却说数据页从0x08049628开始，但注意最后一列Allign，指
+明了对其方式，正好是4096字节。验证一下:
+
+.. image:: images/memlayout_2.jpg
+
+这里我们看到操作系统确实是以页(4096字节) 为单位进行内存分配。有些人可能觉得奇怪，
+既然 stack 都已经有了，为什么没有 heap 呢？原因是，默认情况，.bss 段结束地址就是 heap
+的开始地址。当源代码中没有诸如 ``malloc()`` 之类的动态内存分配函数时，在查看进程的内存
+映射时是看不到 heap 的。此时的进程空间的布局应该如下:
+
+.. image:: images/program.memory.layout.2.jpg
+
+我们可以知道，当程序访问0x0848000～0x0849FFF之间的所有数据都是OK的，当访问到 0x084A000 
+及其之后的地址就会报“Segmetation Fault”，因为我们的 brk 刚好到这里。不信？？好吧，把上面
+程序简单调整一下：
+
+.. code-block:: c
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <unistd.h>
+   
+   int bssvar;
+   
+   int main(int argc, char* argv[])
+   {
+       printf("main start = %p\n", main);
+       printf("bss end =  %p\n", (long)&bssvar+4);
+       void* ptr = sbrk(0);
+       printf("current brk = %p\n", (long*)ptr);
+       sleep(8);
+   
+       int i=0x08049628;
+       for(;;i++)
+           printf("At:0x%x-0x%x\n",i,*((char*)i));
+       return 0;
+   }
+
+重新编译运行memlayout，最后出现“Segmetation Fault”时应该是下面这个样子：
+
+.. image:: images/program.memory.layout.3.jpg
+
+当你的源代码中有用到诸如 malloc()之类的动态内存申请函数时，*brk* 的值会被相应的往高端内存的位置进行调整，
+这样调整出来的一段内存就被所谓的内存管理器，也就是著名的 buddy system 纳入管理范围了。这样当我们再访问
+这些地址时，就不会报“Segmetation Fault”了。其实如果你看过 Glibc 源码你就会惊奇的发现，``malloc()`` 最终
+也是通过调用 ``brk()`` 系统掉用来实现堆的管理。所以，如果我们把上述代码再做一下简单修改：
+
+.. code-block:: c
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <unistd.h>
+   
+   int bssvar;
+   
+   int main(int argc, char* argv[])
+   {
+      printf("main start = %p\n", main);
+      printf("bss end =  %p\n", (long)&bssvar+4);
+      void* ptr = sbrk(0);
+      printf("current brk = %p\n", (long*)ptr);
+      sleep(8);
+   
+      int i=0x08049628;
+      brk((char*)0x804A123); //注意这行代码
+      for(;;i++)
+          printf("At:0x%x-0x%x\n",i,*((char*)i));
+      return 0;
+   }
+
+
+我们用 ``brk()`` 系统调用，手动把 *brk* 调整到0x804A123处，再编译运行，你就会得到下面这样的结果：
+
+.. image:: images/program.memory.layout.4.jpg
+
+至于是为什么不在0x804A123处报“Segmetation Fault”而是要跑到0x804B000处才报，原因已经不止一次的强调了
+脑袋犯迷糊的童鞋还是从头再认真看一遍吧。[Memory Alignment]
+
+又到了该总结的时候了，可能有些童鞋都忘了这篇博文是要讨论什么话题了：
+程序之所以会时不时的出现“Segmetation Fault”的根本原因是进程访问到了没有访问权限的地方，诸如内核区域
+或者其0x08048000之前的地方，或者由于要访问的内存没有经MMU进行映射所导致。而这种问题比较多的是出在 ``malloc()``
+之类的动态内存申请函数申请完内存，释放后，没有将指针设置为 NULL，而其他地方在继续用先前申请的那块内存时，
+由于内存管理系统已经将其收回，所以才会出现这样的问题。良好的关于指针的使用习惯是，使用之前先判断其是否为 
+NULL，所有已经归还给操作系统的内存，其访问指针都要及时置为 NULL，防止所谓的“野指针”到处飞的情况，不然在大
+型项目里，单是处理“Segmetation Fault”就要消耗不少时间。

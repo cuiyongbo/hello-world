@@ -2,7 +2,12 @@
 Pending tasks
 *************
 
-#. review json code
+#. shared memory support
+   
+   - ti-tile-compiler add shared memory support.
+   - ti-tile-server 
+   
+#. review json code.
 
 #. ti-tile-compiler add fileWatcher to dynamically monitor configure file
    

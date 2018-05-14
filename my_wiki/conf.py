@@ -102,8 +102,8 @@ html_theme = 'sphinx_rtd_theme'
 #
 # html_theme_options = {}
 html_theme_options = {
-    'logo_only': True,
-    'collapse_navigation': False
+    #'logo_only': True,
+    #'collapse_navigation': False
 }
 
 # Path to find HTML templates.

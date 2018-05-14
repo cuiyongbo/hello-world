@@ -910,7 +910,7 @@ English Note
 | Usage: A congenital malformation of the heart.
 | Definition: (of a person) having a particular trait from birth or by firmly estalished habit.
 | Usage: A congenital liar.
-| sponge
+| sponge [海绵]
 | Definition: A piece of a soft, light, porous substance originally consisting of the fibrous skeleton of an invertebrate but now usually  made of synthetic | material. 
 | Usage: Sponges absorb liquid and are used for washing and cleaning.
 | Definition: wipe, rub, or clean with a wet sponge or cloth.
@@ -1660,7 +1660,7 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: the fundamental principles on which something is based.
 | Usage: Honest is the bedrock of a good relationship.
 | 
-| conerstone 奠基石
+| conerstone [奠基石]
 | Definition: a stone that forms the base of a corner of a building, joining two walls.
 | Definition: an important quality or feature on which a particular thing depends or is based.
 | Usage: A national minimum wage remained the cornerstone of policy.
