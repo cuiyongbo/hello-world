@@ -139,3 +139,8 @@ English Notes 2
 | Synonyms: fuse.
 | Usage: Darwinian theory has been synthesized with modern genetics.
 | 
+wrap
+Definition: cause (a word or sentence) to be carried over to a new line automatically as the margin is reached, to fit around embedded features such as pictures.
+Usage: Words are wrapped to the next line if they are too long.
+Definition: finish filming or recording. [杀青]
+Usage: We wrapped on schedule three days later.

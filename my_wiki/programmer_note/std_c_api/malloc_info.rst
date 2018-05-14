@@ -48,8 +48,6 @@ Allocate and free dynamic memory
    returned by a successful call to ``malloc()`` with a size of zero, or by a successful call to ``calloc()``
    with *nmemb* or *size* equal to zero.
 
-   The ``free()`` function returns no value.
-
    The ``realloc()`` function returns a pointer to the newly allocated memory, which is suitably aligned for
    any kind of variable and may be different from *ptr*, or ``NULL`` if the request fails. If *size* was equal
    to 0, either ``NULL`` or a pointer suitable to be passed to ``free()`` is returned. If ``realloc()`` fails
