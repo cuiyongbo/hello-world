@@ -175,9 +175,16 @@ English Notes 2
 | Definition: postpone consideration of or an action on.
 | Usage: A planned test of new ale has been back-burnered.
 | 
-| salvage
 | silver bullet
-| low-hanging fruit
+| Definition: a bullet made of silver, used in fiction as a supposedly magical method of killing werewolves.
+| Definition: a simple and seemingly magical solution to a complicated problem.
+| Usage: There is no silver bullet here that will make the biosimilar market go gangbusters.
+|
+| low-hanging fruit [唾手可得]
+| Definition: a thing or person that can be won, obtained, or persuaded with little effort.
+| Usage: we know mining our own customer base is low-hanging fruit.
+|
+| salvage
 | oxymoron
 | compendium
 | blindside

@@ -3213,11 +3213,6 @@ and pull them out of the sky.
 | Definition: used to convey that there is or was nothing to be said about a matter.
 | Usage: we were arguing about who should pay the bill, but he pulled out a couple of hundreds and that's all she wrote.
 | 
-| top-notch
-| top-notcher
-| Definition: of the highest quality.
-| Usage: a top-notch hotel.
-| 
 | cold-blooded
 | Definition: (of a kind of animal) having a body temperature varing that of the environment.
 | Synonyms: poikilothermic [冷血动物]
