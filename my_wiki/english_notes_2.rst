@@ -160,3 +160,31 @@ English Notes 2
 | Usage: Tim was well wrapped up against the weather.
 | Definition: (also wrap it up) be quite; stop talking or making a noise. 
 | 
+| top-notch
+| top-notcher
+| Definition: of the highest quality.
+| Usage: a top-notch hotel.
+| 
+| atrocious
+| Definition: of a very poor quality; extremely bad or unpleasant.
+| Usage: He attempted an atrocious imitation of my English accent.
+| Definition: horrifyingly wicked.
+| Usage: Atrocious cruelties.
+| 
+| back-burner
+| Definition: postpone consideration of or an action on.
+| Usage: A planned test of new ale has been back-burnered.
+| 
+| salvage
+| silver bullet
+| low-hanging fruit
+| oxymoron
+| compendium
+| blindside
+| stumble
+| extoll
+| one-stop
+| streak
+| show-stopping
+| roadblock
+| 
