@@ -506,3 +506,14 @@ Basic Usage
       "gnu++98"
          The same as -std=c++98 plus GNU extensions. 
          This is the default for C++ code.
+
+.. option:: -rdynamic
+
+   Pass the flag ``-export-dynamic`` to the ELF linker, on targets that support it.
+   This instructs the linker to add all symbols, not only used ones, to the dynamic
+   symbol table. This option is needed for some uses of "dlopen" or to allow obtaining
+   backtraces from within a program.
+
+.. option:: -s 
+
+   Remove all symbol table and relocation information from the executable.

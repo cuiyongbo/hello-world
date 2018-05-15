@@ -25,3 +25,17 @@ Programmer's Tricks
             255
             getconf CHAR_BIT
             8
+
+#. ".infig.status: error: cannot find input file: \ " when execute ``./configure``
+   
+   This happens because of the invalid file format of configure.ac / configure.in,
+   simply execute following commands::
+
+      $ vi congfigure.ac
+         vi > set fileformat=unix
+         vi > wq
+      $ aclocal
+      $ autoconf
+      $ automake -a
+      $ ./configure  
+      

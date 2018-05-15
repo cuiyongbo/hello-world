@@ -185,13 +185,54 @@ English Notes 2
 | Usage: we know mining our own customer base is low-hanging fruit.
 |
 | salvage
-| oxymoron
-| compendium
-| blindside
-| stumble
-| extoll
-| one-stop
-| streak
-| show-stopping
-| roadblock
+| Definition: rescue (a wrecked or disabled ship or its cargo) from loss at sea.
+| Definition: If you manage to salvage a difficult situation, you manage to get something useful from it so that it is not a complete failure.
+| Usage: Diplomats are still hoping to salvage something from the meeting.
 | 
+| oxymoron
+| oxymoronic [自相矛盾]
+| Definition: a figure of speech in which apparently contradictory terms appeared in conjunction.
+| Usage: Faith unfaithful kept him falsely true.
+| 
+| compendium
+| Definition: a short but detailed collection of information, usually in a book.
+| Usage: The Roman Catholic Church has issued a compendium of its teachings.
+| 
+| blindside
+| blind side [盲点]
+| Definition: a direction in which a person has a poor view of approaching traffic or danger.
+| Definition: hit or attack (someone) on their blind side.
+| Usage: A punch delivered on the referee's blind side.
+| Definition: make (someone) unable to perceive the truth of a situation.
+| Usage: We got blindsided by our own government.
+| 
+| stumble
+| Definition: trip or momentarily lose one's balance; almost fall. [蹒跚，踉跄]
+| Usage: I stumbled into the telephone box and dialed 911.
+| Definition: make a mistake or repeated mistakes in speaking.
+| Usage: She stumbled over the words. [结结巴巴]
+| Definition: stumble across/on/upon
+| Usage: A policeman stumbled across a gang of youths.
+| 
+| extol
+| Definition: to praise (someone or something) enthusiastically.
+| Usage: He extolled the virtues of the Russian people.
+| 
+| one-stop
+| Definition: a one-stop shop is a place where you can buy everything you need for a particular purpose.
+| 
+| streak
+| Definition: a long stipe or mark on a surface which contrasts with the surface because it's a different color.
+| Usage: There are dark streaks on the surface of the moon.
+| Usage: A streak of oil. [油迹线]
+| Definition: a narrow line of bacteria smeared on the surface of a solid culture medium. [固态培养基]
+| 
+| show-stopping
+| Definition: a show-stopping performance or product is very impressive.
+| 
+| roadblock [路障]
+| Definition: a barrier or barricade on a road, especially one set up by the authorities to stop and examine traffic.
+| Definition: a hindrance or obstruction.
+| Usage: The biggest roadblock to solar power is its price tag.
+|  
+
