@@ -235,4 +235,10 @@ English Notes 2
 | Definition: a hindrance or obstruction.
 | Usage: The biggest roadblock to solar power is its price tag.
 |  
+| wreak
+| Definition: cause (a large amount of damage or harm).
+| Usage: Torrential rainstorm wreaked havoc yesterday.
+| Definition: inflict (vengeance).
+| Usage: He swore to wreak vengeance on those who had betrayed him.
+| 
 
