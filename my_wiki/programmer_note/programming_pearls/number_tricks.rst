@@ -23,3 +23,8 @@ Check if an unsigned integer is a power of 2::
 
 0 means *x* is a power of 2, otherwise not.
 
+Find the left most 1
+====================
+
+Find the right most 1
+=====================
