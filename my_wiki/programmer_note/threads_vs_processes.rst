@@ -6,7 +6,7 @@ Thread vs Process
 =================
 
 Technically, **a thread is defined as an independent stream of instructions that can
-be scheduled to run as such by the operating system**. But what does this mean?
+be scheduled to run as such by the OS**. But what does this mean?
 
 To the software developer, the concept of a "procedure" that runs independently
 from its main program may best describe a thread. To go one step further, imagine

@@ -7,3 +7,4 @@ Data Structure
    data_structure/stack_note
    data_structure/queue_note
    data_structure/deque_note
+   data_structure/linked_list_note

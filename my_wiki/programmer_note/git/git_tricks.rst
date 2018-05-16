@@ -355,6 +355,7 @@ Git to checkout a new branch and track itself
       $ git checkout -b brach_name
       # perform changing and commit changes
       $ git push -u origin branch_name
+      $ git push -u origin local_branch:remote_branch # remote_branch may be not existing.
 
 
 Git force pull

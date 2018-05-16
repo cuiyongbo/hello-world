@@ -14,5 +14,6 @@ Computer Glossary
    computer_glossary/install_ubuntu_on_mac
    computer_glossary/unix_configure_file
    computer_glossary/segment_fault_cracks
+   computer_glossary/os_lock_mechanisms
    computer_glossary/punctuations
    computer_glossary/software_screenshots
