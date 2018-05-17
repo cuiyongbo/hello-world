@@ -40,7 +40,7 @@ Input format conversion
    pointer *stream*, and ``sscanf()`` reads its input from the character string pointed to by *str*.
 
    The ``vfscanf()`` function is analogous to :manpage:`vfprintf(3)` and reads input from the stream
-   pointer *stream*  using a variable argument list of pointers (see stdarg(3)). The ``vscanf()`
+   pointer *stream*  using a variable argument list of pointers (see stdarg(3)). The ``vscanf()``
    function scans a variable argument list from ``stdin`` and the ``vsscanf()`` function scans
    it from a string; these are analogous to the :manpage:`vprintf(3)` and :manpage:`vsprintf(3)`
    functions respectively.
