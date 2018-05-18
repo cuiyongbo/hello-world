@@ -287,7 +287,13 @@ default implementations for all optional requirements, and all standard library
 containers and other allocator-aware classes access the allocator through
 ``std::allocator_traits``, not directly.
 
-See some examples in :doc:`container_allocator`.
+See some examples in :doc:`cpp_allocator`.
+
+
+Smart Pointer Examples
+======================
+
+See in :doc:`cpp_smart_pointer`.
 
 
 ``#pragma pack(n)`` VS ``#pragma pack(push, n)``

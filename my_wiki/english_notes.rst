@@ -2174,10 +2174,12 @@ admitted the computer was named after his daughter.
 | Synonyms: substitude [替补]
 | Usage: He ended up as a reserve, but still qualified for a team gold medal.
 | Definition: If someone shows reserve, they keep their feeling hidden.
-| Usage: I do hope you’ll overcome your reserve and let me know.
+| Usage: I do hope you’ll overcome your reserve and let me know. [矜持]
 | Definition: If you have something in reserve, you have it available for use when it is needed.
 | Usage: He poked around the top of his cupboard for the bottle of whisky that he kept in reserve.
 | [我有斗酒，藏之久矣，以待子不时之需]
+| Definition: refrain from delivering (a judgment or decision) immediately or without due consideration or evidence.
+| Usage: I'll reserve my views on his ability until he's played again. [对 xx 持保留意见]
 | 
 | die hard
 | Definition: disappear or change very slowly.

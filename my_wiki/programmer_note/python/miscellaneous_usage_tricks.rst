@@ -441,14 +441,15 @@ Uninstall python3::
    $ brew uninstall python3
 
 
-Prohibit generating *.pyc file
-==============================
+Prohibit generating ``*.pyc`` file
+==================================
 
 add this code in your scripts::
 
-  import sys
-  sys.dont_write_bytecode = True
+   import sys
+   sys.dont_write_bytecode = True
 
 The variable must be set before any import.
 you can add it to your :envvar:`PYTHONSTARTUP` or
 :file:`site-packages/usercustomize.py`.
+

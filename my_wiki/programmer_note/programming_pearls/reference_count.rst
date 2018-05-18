@@ -4,6 +4,29 @@
 Reference Count
 ***************
 
+Reference Count - C++
+=====================
+
+Reference counting is not an automatic performance winner. Reference counting,
+execution speed, and resource conservation form a delicate interaction that
+must be evaluated carefully if performance is an important consideration.
+Reference counting may help or hurt performance depending on the usage pattern.
+The case in favor of reference counting is strengthened by any one of
+the following items:
+
+   - The target object is a large resource consumer
+     
+   - The resource in question is expensive to allocate and free
+     
+   - A high degree of sharing; the reference count is likely to be
+     high due to the use of the assignment operator and copy constructor
+
+   - The creation or destruction of a reference is relatively cheap
+
+If you reverse these items, you start leaning towards skipping reference counting
+in favor of the plain uncounted object.
+
+
 Reference Count - JANSSON
 =========================
 

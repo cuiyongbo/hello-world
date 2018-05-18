@@ -19,4 +19,5 @@ Shell Commands
    :maxdepth: 2
 
    shell_command/shell_command_notes_1
+   shell_command/shell_script_tricks
    
