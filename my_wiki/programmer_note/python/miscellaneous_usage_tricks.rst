@@ -452,4 +452,3 @@ add this code in your scripts::
 The variable must be set before any import.
 you can add it to your :envvar:`PYTHONSTARTUP` or
 :file:`site-packages/usercustomize.py`.
-

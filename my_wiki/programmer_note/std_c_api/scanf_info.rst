@@ -32,7 +32,7 @@ Input format conversion
    pointer argument must be of a type that is appropriate for the value returned by the
    corresponding conversion specification.
 
-   If the number of conversion specifications in format exceeds the number of pointer arguments,
+   If the number of conversion specifications in *format* exceeds the number of pointer arguments,
    the results are undefined. If the number of pointer arguments exceeds the number of conversion
    specifications, then the excess pointer arguments are evaluated, but are otherwise ignored.
 
@@ -45,7 +45,7 @@ Input format conversion
    it from a string; these are analogous to the :manpage:`vprintf(3)` and :manpage:`vsprintf(3)`
    functions respectively.
 
-   The format string consists of a sequence of directives which describe how to process the
+   The *format* string consists of a sequence of directives which describe how to process the
    sequence of input characters. If processing of a directive fails, no further input is
    read, and ``scanf()`` returns. A "failure" can be either of the  following: input failure,
    meaning that input characters were unavailable, or matching failure, meaning that the
@@ -59,14 +59,14 @@ Input format conversion
       * An ordinary character (i.e., one other than white space or '%').
         This character must exactly match the next character of input.
 
-      * A conversion specification, which commences with a ``'%'`` character. 
+      * A conversion specification, which commences with a ``%`` character. 
         A sequence of characters from the input is converted according to this specification,
         and the result is placed in the corresponding pointer argument. If the next item of
-        input does not match the conversion specification,
-        the conversion fails—this is a matching failure.
+        input does not match the conversion specification, the conversion fails—this is a
+        matching failure.
 
-   Each conversion specification in format begins with either the character ``'%'`` or the 
-   character sequence ``"%n$"`` (see below for the distinction) followed by:
+   Each conversion specification in format begins with either the character ``%`` or the 
+   character sequence ``%n$`` (see below for the distinction) followed by:
 
       * An optional ``'*'`` assignment-suppression character: ``scanf()`` reads input as
         directed by the conversion specification, but discards the input. No corresponding 

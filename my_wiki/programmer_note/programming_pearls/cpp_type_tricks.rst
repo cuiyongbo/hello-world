@@ -116,4 +116,39 @@ C/C++ int-string Conversion
          ostringstream convert2;
          convert2 << Number;
          Text = convert2.str(); //int to string, Text="456"
+
    
+Character types
+===============
+
+* ``signed char`` - type for signed character representation.
+
+* ``unsigned char`` - type for unsigned character representation.
+  Also used to inspect object representations (raw memory).
+
+* ``char`` - type for character representation which can be most efficiently
+  processed on the target system (has the same representation and alignment
+  as either signed char or unsigned char, but is always a distinct type).
+  Multibyte characters strings use this type to represent code units. The
+  character types are large enough to represent any UTF-8 code unit (since C++14).
+  The signedness of char depends on the compiler and the target platform: the
+  defaults for ARM and PowerPC are typically unsigned, the defaults for x86
+  and x64 are typically signed.
+
+* ``wchar_t`` - type for wide character representation. Required to be large
+  enough to represent any supported character code point (32 bits on systems
+  that support Unicode. A notable exception is Windows, where wchar_t is 16
+  bits and holds UTF-16 code units) It has the same size, signedness, and
+  alignment as one of the integer types, but is a distinct type.
+
+.. note::
+
+   * char16_t - type for UTF-16 character representation, required to be
+     large enough to represent any UTF-16 code unit (16 bits). It has the
+     same size, signedness, and alignment as ``std\:\:uint_least16_t``, but
+     is a distinct type.
+
+   * ``char32_t`` - type for UTF-32 character representation, required to be
+     large enough to represent any UTF-32 code unit (32 bits). It has the same
+     size, signedness, and alignment as ``std\:\:uint_least32_t``, but is a
+     distinct type.
