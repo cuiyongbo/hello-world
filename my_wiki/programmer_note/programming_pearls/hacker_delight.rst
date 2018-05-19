@@ -1,8 +1,8 @@
 :orphan:
 
-***************
-Number's tricks
-***************
+****************
+Hackers' Delight
+****************
 
 Memory alignment
 ================

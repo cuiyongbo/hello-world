@@ -103,7 +103,7 @@ html_theme = 'sphinx_rtd_theme'
 # html_theme_options = {}
 html_theme_options = {
     #'logo_only': True,
-    #'collapse_navigation': False
+    'collapse_navigation': False
 }
 
 # Path to find HTML templates.
@@ -120,7 +120,7 @@ html_sidebars = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['tools/static']
+#html_static_path = ['_static']
 
 
 # -- Options for HTMLHelp output ------------------------------------------
@@ -180,7 +180,7 @@ texinfo_documents = [
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+#intersphinx_mapping = {'https://docs.python.org/': None}
 
 suppress_warnings = [
     "ref.*",

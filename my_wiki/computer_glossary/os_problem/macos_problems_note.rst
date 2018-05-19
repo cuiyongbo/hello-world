@@ -221,4 +221,10 @@ MacOs Problems
 
       hdiutil eject /Volumes/dmg_mount_point #unmount
 
+#. mac to reset network
+   
+   Rename :file:`/Library/Preferences/SystemConfiguration/preferences.plist` and reboot.
 
+   .. note::
+
+      Your customizations, such as hostname, will also be reset.

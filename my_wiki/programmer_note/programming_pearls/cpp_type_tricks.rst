@@ -12,7 +12,7 @@ Concepts
 
    Specifies that the type is :abbr:`POD (Plain Old Data)` type. This means the type is compatible with the types
    used in the C programming language, can be manipulated using C library functions: it can be created with
-   ``std\:\:malloc``, it can be copied with ``std\:\:memmove``, etc, and can be exchanged with C libraries directly,
+   ``std::malloc``, it can be copied with ``std::memmove``, etc, and can be exchanged with C libraries directly,
    in its binary form.
    
    Note that the standard doesn't define a named requirement or concept with this name.
@@ -145,10 +145,10 @@ Character types
 
    * char16_t - type for UTF-16 character representation, required to be
      large enough to represent any UTF-16 code unit (16 bits). It has the
-     same size, signedness, and alignment as ``std\:\:uint_least16_t``, but
+     same size, signedness, and alignment as ``std::uint_least16_t``, but
      is a distinct type.
 
    * ``char32_t`` - type for UTF-32 character representation, required to be
      large enough to represent any UTF-32 code unit (32 bits). It has the same
-     size, signedness, and alignment as ``std\:\:uint_least32_t``, but is a
+     size, signedness, and alignment as ``std::uint_least32_t``, but is a
      distinct type.

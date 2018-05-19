@@ -357,3 +357,17 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | omnivore [杂食动物]
 | Definition: an animal or person that eats food of both plant and animal origin.
 | 
+| medication
+| Definition: a substance used for medicial treatment, especially a medicine or drug.
+| Usage: He'd been taking medication for depression.
+| Definition: treatment using drugs. [药物治疗]
+| Usage: Chronic gastrointestinal symptoms which may require prolonged medication. [慢性胃炎]
+| 
+| gastrointestinal
+| Definiton: realting to the stomach and intestines. [肠胃]
+| 
+| migraine [偏头痛]
+| Definition: a recurrent throbbing headache that typically affects one side of the head and is often accompanied by nausea and disturbed vision.
+| Usage: The FDA just approved a new preventative migraine treatment
+
+.. image:: images/migraine.jpeg
