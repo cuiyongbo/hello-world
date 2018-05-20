@@ -22,6 +22,7 @@ Welcome to My Wiki's documentation!
    japanese_notes
    steve_jobs_obituary
    stephen_hawking_obituary
+   classics
 
 
 Indices and tables

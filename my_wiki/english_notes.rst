@@ -3554,7 +3554,7 @@ figures.
 | supersede
 | Definition: to replace something because it has become old-fashioned or unacceptable.
 | Synonyms: supplant.
-| Usage: Hand tools are relics of the past5 that have now been superseded by the machine.
+| Usage: Hand tools are relics of the past that have now been superseded by the machine.
 |
 | tweet
 | Definition: the chirp of a small or young bird.

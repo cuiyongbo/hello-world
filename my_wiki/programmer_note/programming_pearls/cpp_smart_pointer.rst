@@ -7,7 +7,7 @@ Smart Pointer
 A smart pointer is an object encapsulating a dumb pointer
 by overloading the ``->`` and ``*`` operators.
 
--- effective c++
+-- Scott Meyers *Effective C++*
  
 .. code-block:: c++
    :caption: Example take from *Effective C++*
