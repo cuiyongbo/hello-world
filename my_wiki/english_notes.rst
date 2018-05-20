@@ -2670,6 +2670,10 @@ BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code)
 is a family of general-purpose, high-level programming languages whose
 design philosophy emphasizes ease of use.
 
+| bacronym
+| backronym 
+| Definiton: an acronym deliberately formed from a phrase whose initial letters spell out a particular word or words, either to create a memorable name or | as a fanciful explanation of a word's origin.| 
+| Usage: Biodiversity Serving Our Nation, or BISON (a backronym if ever there was one).
 | 
 | CV [简历]
 | Full: curriculum vitae

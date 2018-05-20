@@ -1,5 +1,5 @@
 ***********
-FORK Manual
+fork Manual
 ***********
 
 **NAME**
@@ -102,7 +102,7 @@ FORK Manual
 **RETURN VALUE**
 
    On success, the PID of the child process is returned in the parent, and 0 is returned in the child. 
-   On failure, -1 is returned in the parent, no child process is created, and ``errno`` is set appropriately.
+   On failure, -1 is returned in the parent, no child process is created, and *errno* is set appropriately.
 
 **ERRORS**
 
@@ -110,8 +110,8 @@ FORK Manual
 
       A system-imposed limit on the number of threads was encountered.  There are a number of limits
       that may trigger this error: the ``RLIMIT_NPROC`` soft resource limit (set via :manpage:`setrlimit(2)`),
-      which limits the number of processes and threads for a real user ID, was reached; the kernel's system-wide limit
-      on the number of processes and threads, :manpage:`/proc/sys/kernel/threads-max`, was reached (see :manpage:`proc(5)`);
+      which limits the number of processes and threads for a real user ID, was reached; the kernel's system-wide
+      limit on the number of processes and threads, :file:`/proc/sys/kernel/threads-max`, was reached;
       or the maximum number of PIDs, :file:`/proc/sys/kernel/pid_max`, was reached (see :manpage:`proc(5)``).
 
    EAGAIN

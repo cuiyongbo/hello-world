@@ -25,7 +25,7 @@ shm_open & shm_unlink
    to :manpage:`mmap(2)` the same region of shared memory. The ``shm_unlink()`` function performs
    the converse operation, removing an object previously created by ``shm_open()``.
 
-   The operation of ``shm_open()`` is analogous to that of :manpage:`open(2)`. name specifies the
+   The operation of ``shm_open()`` is analogous to that of :manpage:`open(2)`. *name* specifies the
    shared memory object to be created or opened. For portable use, a shared memory object should
    be identified by a name of the form */somename*; that is, a null-terminated string of up to
    ``NAME_MAX`` (i.e., 255) characters consisting of an initial slash, followed by one or more
@@ -48,7 +48,7 @@ shm_open & shm_unlink
          effective IDs of the calling process, and the object's permission bits are
          set according to the low-order 9 bits of *mode*, except that those bits set
          in the process file mode creation mask (see umask(2)) are cleared for the new
-         object. A set of macro constants which can be used to define ``mode`` is listed
+         object. A set of macro constants which can be used to define *mode* is listed
          in :manpage:`open(2)`. (Symbolic definitions of these constants can be obtained
          by including :file:`<sys/stat.h>`.)
    
@@ -76,7 +76,7 @@ shm_open & shm_unlink
    the file descriptor may be closed without affecting the memory mapping.
 
    The operation of ``shm_unlink()`` is analogous to ``unlink(2)``: it removes a shared memory
-   object name, and, once all processes have unmapped the object, de-allocates and destroys
+   object *name*, and, once all processes have unmapped the object, deallocates and destroys
    the contents of the associated memory region. After a successful ``shm_unlink()``, attempts
    to `shm_open()` an object with the same name will fail (unless ``O_CREAT`` was specified,
    in which case a new, distinct object is created).

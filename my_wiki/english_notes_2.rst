@@ -241,4 +241,46 @@ English Notes 2
 | Definition: inflict (vengeance).
 | Usage: He swore to wreak vengeance on those who had betrayed him.
 | 
+| kitchen sink
+| Definition: a sink in a kitchen, used for washing dishes and preparing food. [水池]
+| Usage: The traditional view of women as dedicated housewives tied to the kitchen sink is all but extinct.
+| Definition: (in art forms) characterized by great realism in the depiction of drab or sordid subjects.
+| Usage: a kitchen-sink drama. [极端现实主义戏剧]
+| Pharse: everything but the kitchen sink
+| Usage: everything imaginable.
 
+.. sidebar:: Kitchen-sink drama
+
+   .. image:: images/kitchen-sink-drama.jpg
+
+Kitchen sink realism (or kitchen sink drama) is a term coined to describe a British cultural movement
+that developed in the late 1950s and early 1960s in theatre, art, novels, film and television plays,
+whose protagonists usually could be described as "angry young men" who were disillusioned with modern
+society.
+
+|
+| drab [单调乏味]
+| Definition: lacking brightness or interest; drearily dull.
+| Usage: the landscape was drab and gray. 
+| 
+| sordid
+| Definition: involving ignoble actions and motives; arousing moral distaste and contempt.
+| Usage: The story paints a sordid picture of bribes and scams.
+| Definition: very dirty and unpleasant. [污秽不堪]
+| Usage: The overcrowded housing conditions were sordid and degrading.
+| 
+| proverbial
+| Definition: (of a word or phrase) referred to in a proverb or idiom.
+| Usage: I'm going to stick out like the proverbial sore thumb.
+| Definition: well known, especially so as to be stereotypical.
+| Usage: The Welsh people, whose hospitality is proverbial.
+| 
+| stick/stand out like a sore thumb
+| Definition: to be very obvious or noticeable.
+| Usage: Do you think I would stick out like a sore thumb at the party if I wear this coat?
+| 
+| glean 
+| Definition: extract (information) from various sources.
+| Usage: The information is gleaned from press clippings.
+| Definiton: gather (leftover grain or other produce) after a harvest (as noun gleaning). 
+| Usage: The conditions of farm workers in the 1890s made gleaning essential. [捡拾麦穗]

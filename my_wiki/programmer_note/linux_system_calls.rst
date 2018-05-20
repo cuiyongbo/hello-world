@@ -10,4 +10,5 @@ Linux System Call
    linux_system_call/wait_info
    linux_system_call/sigaction_info
    linux_system_call/shm_overview
+   linux_system_call/umask_info
    linux_system_call/helper_functions
