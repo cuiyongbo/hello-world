@@ -284,3 +284,40 @@ society.
 | Usage: The information is gleaned from press clippings.
 | Definiton: gather (leftover grain or other produce) after a harvest (as noun gleaning). 
 | Usage: The conditions of farm workers in the 1890s made gleaning essential. [捡拾麦穗]
+|
+
+Gleaning is the act of collecting leftover crops from farmers' fields
+after they have been commercially harvested or on fields where it is
+not economically profitable to harvest. It is a practice described in
+the Hebrew Bible that became a legally enforced entitlement of the poor
+in a number of Christian kingdoms.
+
+.. figure:: images/Jean-François_Millet_-_Gleaners_-_Google_Art_Project_2.jpg
+   :align: center
+
+   The Gleaners by Jean-François Millet, 1857
+
+| 
+| gyrate
+| gyrator
+| Definition: move or cause to move in a circle or spiral, especially quickly.
+| Usage: Their wings gyrate through the water like paddle wheels.
+| Definition: dance in a wild or suggestive manner.
+| Usage: Strippers gyrated to rock music on a low stage. [脱衣舞]
+| 
+| axiom
+| axiomatic
+| Definition: self-evident or unquestionable.
+| Usage: Tt is axiomatic that dividends have to be financed.
+| Definition: chiefly Mathematics relating to or containing axioms. [公理]
+| 
+| comforter
+| Definition: (North American) a warm quilt. [床被]
+| Definition: a person or thing that provides consolation.
+| 
+| solace
+| Definition: to give comfort or cheer to (a person) in time of sorrow or distress.
+| Usage: His grandchildren were a solace in his old age. [安慰，慰藉]
+| Usage: He sought solace in the whisky bottle. [借酒浇愁]
+
+

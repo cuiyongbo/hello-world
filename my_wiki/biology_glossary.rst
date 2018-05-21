@@ -136,10 +136,17 @@ Biology Terms
 | 
 | ego
 | egoism
-| Definition: (psychology) the part of the mind that responsible for your sense of who you are (you identity). [ 自我 ]
+| Definition: (psychology) the part of the mind that responsible for your sense of your identity). [自我]
 | Definition: a person’s sense of self-esteem or self-importance.
 | Usage: Winning the prize really boosted her ego. [自信，自我认同]
 | Usage: He had the biggest ego of anyone I’ve ever met. [自负]
+| Usage: My ego and my pride have alway been my Achilles heel.
+| egotist
+| Definition: a person who is excessively conceited or self-absorbed; self-seeker.
+| Usage: He is a self-absorbed egotist.
+|
+| conceited [虚荣]
+| Definition: excessively proud of oneself; vain.
 | 
 | superego
 | Definition: the part of a person’s mind that acts as a self-critical conscience, reflecting social standars learned from parents and teachers. [like super() | in Java??]

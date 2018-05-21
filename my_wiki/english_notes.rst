@@ -1943,11 +1943,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: engaged in, involving, or reflecting deep or serious thought.
 | Usage: A pensive mood. [沉重，严肃]
 | 
-| solace
-| Definition: to give comfort or cheer to (a person) in time of sorrow or distress.
-| Usage: His grandchildren were a solace in his old age. [安慰，慰藉]
-| Usage: He sought solace in the whisky bottle. [借酒浇愁]
-| 
 | predecessor
 | Definition: a person who held a job or office before the current holder. 
 | Usage: The new president’s foreign policy is very similar to that of his predecessor.
@@ -3001,8 +2996,6 @@ He was killed by Hermes, and Hera then used his eyes to deck the peacock's tail.
 | Definition: 三色堇
 | Definition: an offensive word for a homosexual man. [娘娘腔，娘炮]
 | 
-
-My ego and my pride have alway been my Achilles heel.
 
 A cenotaph is a lovely rememberance, it's an honor to be invited.
 
