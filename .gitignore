@@ -19,4 +19,7 @@ _build
 /my_wiki/make.bat
 /my_wiki/Makefile
 /my_wiki/tools
+/sphinx-workspace/makefile.custom
+/sphinx-workspace/Makefile
+/sphinx-workspace/make.bat
 
