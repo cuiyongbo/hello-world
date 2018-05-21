@@ -19,10 +19,9 @@ Command line arguments
 
 .. note::
 
-   The difference is subtle; ``"$*"`` creates one argument
-   separated by the :envvar:`IFS` variable, while ``"$@"`` will
-   expand into separate arguments. 
-   Use ``"`` instead of ``'``.
+   The difference between ``$*`` and ``$@``: ``"$*"`` creates one
+   argument separated by the :envvar:`IFS` variable, while ``"$@"``
+   will expand into separate arguments. Use ``"`` instead of ``'``.
 
 Example::
 

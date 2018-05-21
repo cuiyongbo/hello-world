@@ -292,7 +292,7 @@ not economically profitable to harvest. It is a practice described in
 the Hebrew Bible that became a legally enforced entitlement of the poor
 in a number of Christian kingdoms.
 
-.. figure:: images/Jean-François_Millet_-_Gleaners_-_Google_Art_Project_2.jpg
+.. figure:: images/The_Gleaners.jpg
    :align: center
 
    The Gleaners by Jean-François Millet, 1857
@@ -318,6 +318,16 @@ in a number of Christian kingdoms.
 | solace
 | Definition: to give comfort or cheer to (a person) in time of sorrow or distress.
 | Usage: His grandchildren were a solace in his old age. [安慰，慰藉]
-| Usage: He sought solace in the whisky bottle. [借酒浇愁]
-
+| Usage: He tried to seek solace in the whisky bottle. [借酒浇愁]
+|
+| surefire
+| Definition: a surefire thing is something that is certain to succeed or win.
+| Synonyms: guaranteed.
+| Usage: A surefire best seller.
+| 
+| disposition
+| Definition: the way someone tends to behave or feel.
+| Synonyms: character.
+| Usage: The rides are unsuitable for people of a nervous disposition.
+| 
 

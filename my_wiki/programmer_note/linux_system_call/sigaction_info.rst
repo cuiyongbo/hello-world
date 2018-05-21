@@ -179,8 +179,8 @@ sigaction
          void     (*sa_restorer)(void);
       };
 
-   **On some architectures a union is involved: do not assign to both
-   *sa_handler* and *sa_sigaction*.**
+   On some architectures a union is involved: do not assign to both
+   *sa_handler* and *sa_sigaction*.
 
    The *sa_restorer* element is obsolete and should not be used.  POSIX does
    not specify a *sa_restorer* element.
