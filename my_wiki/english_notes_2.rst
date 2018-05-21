@@ -330,4 +330,11 @@ in a number of Christian kingdoms.
 | Synonyms: character.
 | Usage: The rides are unsuitable for people of a nervous disposition.
 | 
-
+| tweak
+| Definition: If you tweak something, especially part of someone's body, you hold it between your finger and thumb and twist it or pull it.
+| Usage: He tweaked Guy's ear roughly. [拧耳朵]
+| Usage: "A handsome offer", she replied, tweaking his cheek. [捏脸颊]
+| Definition: If you tweak such as a system or a design, you improve it by making a slight change.
+| Synonyms: tune.
+| Usage: He expects the system to get even better as the engineers tweak its performance.
+| 

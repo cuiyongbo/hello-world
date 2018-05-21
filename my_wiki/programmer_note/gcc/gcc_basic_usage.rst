@@ -324,6 +324,32 @@ Basic Usage
    All files specified by -imacros are processed before all files specified
    by -include.
 
+.. option:: -isystem dir
+           
+   Search *dir* for header files, after all directories specified by -I but
+   before the standard system directories. Mark it as a system directory,
+   so that it gets the same special treatment as is applied to the standard
+   system directories. If dir begins with "=", then the "=" will be replaced
+   by the sysroot prefix; see --sysroot and -isysroot.
+
+.. option:: --sysroot=dir
+           
+   Use *dir* as the logical root directory for headers and libraries. For example,
+   if the compiler normally searches for headers in :file:`/usr/include` and libraries
+   in :file:`/usr/lib`, it instead searches :file:`dir/usr/include` and :file:`dir/usr/lib`.
+
+   If you use both this option and the -isysroot option, then the --sysroot option applies to
+   libraries, but the -isysroot option applies to header files.
+
+   The GNU linker (beginning with version 2.16) has the necessary support for this option.
+   f your linker does not support this option, the header file aspect of --sysroot still
+   works, but the library aspect does not.
+
+.. option:: -isysroot dir
+           
+   This option is like the --sysroot option, but applies only to header files (except for
+   Darwin targets, where it applies to both header files and libraries).
+
 .. option:: -I dir
 
    Add the directory *dir* to the list of directories to be searched for header files.
@@ -517,3 +543,8 @@ Basic Usage
 .. option:: -s 
 
    Remove all symbol table and relocation information from the executable.
+
+.. option:: -pthread / -pthreads
+           
+   Adds support for multithreading with the pthreads library. This option
+   sets flags for both the preprocessor and linker.

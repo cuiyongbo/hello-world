@@ -22,4 +22,5 @@ _build
 /sphinx-workspace/makefile.custom
 /sphinx-workspace/Makefile
 /sphinx-workspace/make.bat
-
+google_test_framework.pdf
+google_test_note.docx

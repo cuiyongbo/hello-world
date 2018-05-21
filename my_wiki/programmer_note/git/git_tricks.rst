@@ -190,7 +190,6 @@ Combine several commits into one
       a89a0e3 added int, long, float, complex
       
       $ git reset --soft HEAD^
-      
       $ git commit -a --amend
       
       cuiyb@cuiyb MINGW64 /c/VS-Demo/hello-world/my_wiki (test)
@@ -309,6 +308,7 @@ Discard unstaged changes in working directory
       git checkout -- <file>...
 
 
+
 Git customization
 =================
 
@@ -335,6 +335,17 @@ Git customization
    older versions of Git).
 
 
+Git to checkout a new branch and track itself
+=============================================
+
+   .. code-block:: sh
+
+      $ git checkout -b brach_name
+      # perform changing and commit changes
+      $ git push -u origin branch_name
+      $ git push -u origin local_branch:remote_branch # remote_branch may be not existing.
+
+
 Git to abort git pull
 =====================
 
@@ -345,17 +356,6 @@ Git to abort git pull
    .. note:: 
 
       Note that any local changes will be discarded.
-
-
-Git to checkout a new branch and track itself
-=============================================
-
-   .. code-block:: sh
-
-      $ git checkout -b brach_name
-      # perform changing and commit changes
-      $ git push -u origin branch_name
-      $ git push -u origin local_branch:remote_branch # remote_branch may be not existing.
 
 
 Git force pull
@@ -473,7 +473,7 @@ Check the history of a specific file
       $ gitk <fileName> 
 
       # Second
-      $ git log --follow -p  <fileName>
+      $ git log --follow -p  --word-diff=color <fileName>
       # --follow ensures that you see file renames 
       # -p ensures that you see how the file gets changed
 
@@ -501,3 +501,44 @@ Diff two different files
 
       # Third, colorfully diff, side by side comparison.
       $ vimdiff fileA fileB
+
+
+Comparing with arbitrary commits
+================================
+
+   .. code-block:: sh
+
+      # Instead of using the tip of the current branch, compare with the tip of "test" branch
+      git diff test
+   
+      # Compare with the tip of the current branch, but limit the comparison to the file "test"
+      git diff HEAD -- ./test
+   
+      # Compare the version before the last commit and the last commit
+      git diff HEAD^ HEAD
+   
+      # Changes between the tips of the <topic> and the <master> branches
+      git diff topic master
+   
+      # Changes that occurred on the master branch since when the topic branch was started off it
+      git diff topic...master
+
+
+Merge branch
+============
+
+   .. code-block:: sh
+
+      # Merge current branch with <branch>
+      git merge <branch>
+
+
+Remove files and keep local
+===========================
+
+   .. code-block:: sh
+
+      git rm --cached -r file/directory
+
+afterwards add file/directory to :file:`.gitignore` so git doesn't add it back.
+

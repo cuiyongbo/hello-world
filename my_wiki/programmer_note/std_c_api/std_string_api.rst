@@ -223,237 +223,204 @@ memcmp
    the first pair of bytes (interpreted as unsigned char) that differ in *s1* and *s2*.
 
 
-wcstoms
-=======
+char wchar conversion functions
+===============================
+
+See :doc:`char_wchar_conversion`.
+
+
+strtok & strtok_r
+=================
 
 **NAME**
    
-   wcstombs - convert a wide-character string to a multibyte string
+   strtok, strtok_r - extract tokens from strings
 
 **SYNOPSIS**
 
    .. code-block:: c
-   
-      #include <stdlib.h>
-      size_t wcstombs(char *dest, const wchar_t *src, size_t n);
+
+      #include <string.h>
+      char *strtok(char *str, const char *delim);
+      char *strtok_r(char *str, const char *delim, char **saveptr);
 
 **DESCRIPTION**
 
-   If *dest* is not a ``NULL`` pointer, the ``wcstombs()`` function converts
-   the wide-character string *src* to a multibyte string starting at *dest*. 
-   At most *n* bytes are written to *dest*. The conversion starts in the initial
-   state. The conversion can stop for three reasons:
+   The ``strtok()`` function breaks a string into a sequence of zero or more nonempty tokens.
+   On the first call to ``strtok()`` the string to be parsed should be specified in *str*.
+   In each subsequent call that should parse the same string, *str* must be NULL.
 
-      #. A wide character has been encountered that can not be represented
-         as a multibyte sequence (according to the current locale). In this
-         case ``(size_t) -1`` is returned.
+   The *delim* argument specifies a set of bytes that delimit the tokens in the parsed string.
+   The caller may specify different strings in *delim* in successive calls that parse the same string.
 
-      #. The length limit forces a stop. In this case the number of bytes
-         written to *dest* is returned, but the shift state at this point
-         is lost.
+   Each call to ``strtok()`` returns a pointer to a null-terminated string containing the next token.
+   This string does not include the delimiting byte.  If no more tokens are found, ``strtok()`` returns ``NULL``.
 
-      #. The wide-character string has been completely converted, including
-         the terminating null wide character (L'\0'). In this case the
-         conversion ends in the initial state. The number of bytes written
-         to *dest*, excluding the terminating null byte ('\0'),  is returned.
+   A sequence of calls to ``strtok()`` that operate on the same string maintains a pointer
+   that determines the point from which to start searching for the next token. The first
+   call to ``strtok()`` sets this pointer to point to the first byte of the string. The
+   start of the next token is determined by scanning forward for the next nondelimiter byte
+   in *str*. If such a byte is found, it is taken as the start of the next token. If no such
+   byte is found, then there are no more tokens, and ``strtok()`` returns ``NULL``. (A string
+   that is empty or that contains only delimiters will thus cause ``strtok()`` to return ``NULL``
+   on the first call.)
 
-   The programmer must ensure that there is room for at least *n* bytes at *dest*.
+   The end of each token is found by scanning forward until either the next delimiter byte is found
+   or until the terminating null byte ('\0') is encountered. If a delimiter byte is found, it is
+   overwritten with a null byte to terminate the current token, and ``strtok()`` saves a pointer
+   to the following byte, which will be used as the starting point when searching for the
+   next token. In this case, ``strtok()`` returns a pointer to the start of the found token.
 
-   If *dest* is ``NULL``, *n* is ignored, and the conversion proceeds as above,
-   except that the converted bytes are not written out to memory, and that no
-   length limit exists.
+   From the above description, it follows that a sequence of two or more contiguous delimiter bytes
+   in the parsed string is considered to be a single delimiter, and that delimiter bytes at the start
+   or end of the string are ignored. Put another way: the tokens returned by ``strtok()`` are always
+   nonempty strings. Thus, for example, given the string ``"aaa;;bbb,"``, successive calls to ``strtok()``
+   that specify the delimiter string ``";,"`` would return the strings ``"aaa"`` and ``"bbb"``,
+   and then a ``NULL`` pointer.
 
-   In order to avoid the case 2 above, the programmer should make sure *n* is greater
-   or equal to ``wcstombs(NULL,src,0) + 1``.
+   The ``strtok_r()`` function is a reentrant version ``strtok()``.  The *saveptr* argument is a
+   pointer to a ``char*`` variable that is used internally by ``strtok_r()`` in order to maintain
+   context between successive calls that parse the same string.
+
+   On the first call to ``strtok_r()``, *str* should point to the string to be parsed, and the value
+   of *saveptr* is ignored. In subsequent calls, *str* should be ``NULL``, and *saveptr* should be
+   unchanged since the previous call.
+
+   Different strings may be parsed concurrently using sequences of calls to ``strtok_r()`` that specify
+   different *saveptr* arguments.
 
 **RETURN VALUE**
 
-   The ``wcstombs()`` function returns the number of bytes that make up the converted part
-   of multibyte sequence, not including the terminating null byte. If a wide character was
-   encountered which could not be converted, ``(size_t) -1`` is returned.
+   The ``strtok()`` and ``strtok_r()`` functions return a pointer to the next token,
+   or ``NULL`` if there are no more tokens.
 
-**NOTES**
+**ATTRIBUTES**
 
-   The behavior of ``wcstombs()`` depends on the ``LC_CTYPE`` category of the current locale.
+   The ``strtok()`` function is not thread-safe.
+   The ``strtok_r()`` function is thread-safe.
 
-   The function :manpage:`wcsrtombs(3)` provides a thread safe interface to the same functionality.
+**BUGS**
+
+   Be cautious when using these functions. If you do use them, note that:
+
+      * These functions modify their first argument.
+      * These functions cannot be used on constant strings.
+      * The identity of the delimiting byte is lost.
+      * The ``strtok()`` function uses a static buffer while parsing,
+        so it's not thread safe. Use ``strtok_r()`` if this matters to you.
+
+**EXAMPLE**
+
+   The program below uses nested loops that employ ``strtok_r()`` to break a string into
+   a two-level hierarchy of tokens. The first command-line argument specifies the string
+   to be parsed. The second argument specifies the delimiter byte(s) to be used to separate
+   that string into "major" tokens. The third argument specifies the delimiter byte(s) to be
+   used to separate the "major" tokens into subtokens.
+
+   An example of the output produced by this program is the following::
+
+      $ ./a.out "fsdfs,sdf,sdf,fs;dfsdf;sfd,dfas,sdf,sdf;" ";" ","
+      1: fsdfs,sdf,sdf,fs
+       --> fsdfs
+       --> sdf
+       --> sdf
+       --> fs
+      2: dfsdf
+       --> dfsdf
+      3: sfd,dfas,sdf,sdf
+       --> sfd
+       --> dfas
+       --> sdf
+       --> sdf
+
+   Program source::
+
+      #include <stdio.h>
+      #include <stdlib.h>
+      #include <string.h>
+
+      int main(int argc, char *argv[])
+      {
+         char *str1, *str2, *token, *subtoken;
+         char *saveptr1, *saveptr2;
+         int j;
+
+         if (argc != 4) 
+         {
+            fprintf(stderr, "Usage: %s string delim subdelim\n", argv[0]);
+            exit(EXIT_FAILURE);
+         }
+
+         for (j = 1, str1 = argv[1]; ; j++, str1 = NULL)
+         {
+            token = strtok_r(str1, argv[2], &saveptr1);
+            if (token == NULL)
+               break;
+
+            printf("%d: %s\n", j, token);
+
+            for (str2 = token; ; str2 = NULL)
+            {
+               subtoken = strtok_r(str2, argv[3], &saveptr2);
+               if (subtoken == NULL)
+                  break;
+               printf(" --> %s\n", subtoken);
+            }
+         }
+
+         exit(EXIT_SUCCESS);
+      }
+
+   Another example program using ``strtok()`` can be found in :manpage:`getaddrinfo_a(3)`.
+
+**SEE ALSO**
+      
+   index(3), memchr(3), rindex(3), strchr(3), string(3), strpbrk(3),
+   strsep(3), strspn(3), strstr(3), wcstok(3)
+
+
+Duplicate a string
+==================
+
+**NAME**
+   
+   strdup, strndup, strdupa, strndupa - duplicate a string
+
+**SYNOPSIS**
+
+   .. code-block:: c
+
+      #include <string.h>
+      char *strdup(const char *s);
+      char *strndup(const char *s, size_t n);
+      char *strdupa(const char *s);
+      char *strndupa(const char *s, size_t n);
+
+**DESCRIPTION**
+
+   The ``strdup()`` function returns a pointer to a new string which is a duplicate of the string *s*.
+   Memory for the new string is obtained with :manpage:`malloc(3)`, and can be freed with :manpage:`free(3)`.
+
+   The ``strndup()`` function is similar, but copies at most *n* bytes.  If *s* is longer than *n*, only *n*
+   bytes are copied, and a terminating null byte ('\0') is added.
+
+   ``strdupa()`` and ``strndupa()`` are similar, but use :manpage:`alloca(3)` to allocate the buffer.
+   They are available only when using the GNU GCC suite, and suffer from the same limitations described
+   in :manpage:`alloca(3)`.
+
+**RETURN VALUE**
+
+   On success, the **strdup()** function returns a pointer to the duplicated string.
+   It returns ``NULL`` if insufficient memory was available, with *errno* set to
+   indicate the cause of the error.
+
+**ERRORS**
+
+   ENOMEM 
+      Insufficient memory available to allocate duplicate string.
+
 
 **SEE ALSO**
 
-   mbstowcs(3), wcsrtombs(3)
-
-
-wcsrtombs
-=========
-
-**NAME**
-   
-   wcsrtombs - convert a wide-character string to a multibyte string
-
-**SYNOPSIS**
-
-   .. code-block:: c
-
-      #include <wchar.h>
-      size_t wcsrtombs(char *dest, const wchar_t **src, size_t len, mbstate_t *ps);
-
-**DESCRIPTION**
-
-      If *dest* is not a NULL pointer, the ``wcsrtombs()`` function converts the wide-character
-      string *\*src* to a multibyte string starting at *dest*. At most *len* bytes are written to
-      *dest*. The shift state *\*ps* is updated. The conversion is effectively performed by
-      repeatedly calling ``wcrtomb(dest, *src, ps)``, as long as this call succeeds, and then
-      incrementing *dest* by the number of bytes written and *\*src* by one. The conversion can
-      stop for three reasons:
-
-         #. A wide character has been encountered that can not be represented
-            as a multibyte sequence (according to the current locale). In this
-            case *\*src* is left pointing to the invalid wide character,
-            ``(size_t) -1`` is returned, and *errno* is set to ``EILSEQ``.
-
-         #. The length limit forces a stop. In this case *\*src* is left pointing
-            to the next wide character to be converted, and the number of bytes
-            written to *dest* is returned.
-
-         #. The wide-character string has been completely converted, including the
-            terminating null wide character (L'\0'), which has the side effect of
-            bringing back *\*ps* to the initial state. In this case *\*src* is set
-            to ``NULL``, and the number of bytes written to *dest*, excluding the 
-            terminating null byte ('\0'), is returned.
-
-      If *dest* is ``NULL``, len is ignored, and the conversion proceeds as above, except that
-      the converted bytes are not written out to memory, and that no length limit exists.
-
-      In both of the above cases, if *ps* is a ``NULL`` pointer, a static anonymous state known
-      only to the ``wcsrtombs()`` function is used instead.
-
-      The programmer must ensure that there is room for at least *len* bytes at *dest*.
-
-**RETURN VALUE**
-
-   The ``wcsrtombs()`` function returns the number of bytes that make up the converted part
-   of multibyte sequence, not including the terminating null byte. If a wide character was
-   encountered which could not be converted, ``(size_t) -1`` is returned, and *errno* set
-   to ``EILSEQ``.
-
-**NOTES**
-   
-   The behavior of ``wcsrtombs()`` depends on the ``LC_CTYPE`` category of the current locale.
-   Passing ``NULL`` as *ps* is not multithread safe.
-
-
-mbstowcs
-========
-
-**NAME**
-
-   mbstowcs - convert a multibyte string to a wide-character string
-
-**SYNOPSIS**
-
-   .. code-block:: c
-
-      #include <stdlib.h>
-      size_t mbstowcs(wchar_t *dest, const char *src, size_t n);
-
-**DESCRIPTION**
-
-   If *dest* is not a ``NULL`` pointer, the ``mbstowcs()`` function converts
-   the multibyte string *src* to a wide-character string starting at *dest*.
-   At most *n* wide characters are written to *dest*. The conversion starts
-   in the initial state. The conversion can stop for three reasons:
-
-      #. An invalid multibyte sequence has been encountered.
-         In this case ``(size_t) -1`` is returned.
-
-      #. n non-L'\0' wide characters have been stored at *dest*.
-         In this case the number of wide characters written to *dest*
-         is returned, but the shift state at this point is lost.
-
-      #. The multibyte string has been completely converted, including
-         the terminating null wide character ('\0'). In this case the
-         number of wide characters written to *dest*, excluding the
-         terminating null wide character, is returned.
-
-   The programmer must ensure that there is room for at least *n* wide characters at *dest*.
-
-   If dest is ``NULL``, *n* is ignored, and the conversion proceeds as above, except that the
-   converted wide characters are not written out to memory, and that no length limit exists.
-
-   In order to avoid the case 2 above, the programmer should make sure *n* is greater or
-   equal to ``mbstowcs(NULL,src,0) + 1``.
-
-**RETURN VALUE**
-
-   The ``mbstowcs()`` function returns the number of wide characters that make up the converted
-   part of the wide-character string, not including the terminating null wide character. If an
-   invalid multibyte sequence was encountered, ``(size_t) -1`` is returned.
-
-**NOTES**
-
-   The behavior of ``mbstowcs()`` depends on the **LC_CTYPE** category of the current locale.
-   The function :manpage:`mbsrtowcs(3)` provides a better interface to the same functionality.
-
-**SEE ALSO**
-
-   mbsrtowcs(3), wcstombs(3)
-
-
-mbsrtowcs
-=========
-
-**NAME**
-   
-   mbsrtowcs - convert a multibyte string to a wide-character string
-
-**SYNOPSIS**
-
-   .. code-block:: c
-
-      #include <wchar.h>
-      size_t mbsrtowcs(wchar_t *dest, const char **src, size_t len, mbstate_t *ps);
-
-**DESCRIPTION**
-
-   If *dest* is not a *NULL* pointer, the ``mbsrtowcs()`` function converts the multibyte string *\*src*
-   to a wide-character string starting at *dest*. At most *len* wide characters are written to *dest*. 
-   The shift state *\*ps* is updated. The conversion is effectively performed by repeatedly calling
-   ``mbrtowc(dest, *src, n, ps)`` where *n* is some positive number, as long as this call succeeds, and
-   then incrementing *dest* by one and *\*src* by the number of bytes consumed. The conversion can stop
-   for three reasons:
-
-      #. An invalid multibyte sequence has been encountered. In this case *\*src*
-         is left pointing to the invalid multibyte sequence, ``(size_t) -1`` is
-         returned, and *errno* is set to **EILSEQ**.
-
-      #. *len* non-L'\0' wide characters have been stored at *dest*. In this case *\*src*
-         is left pointing to the next multibyte sequence to be converted, and the number
-         of wide characters written to *dest* is returned.
-
-      #. The multibyte string has been completely converted, including the terminating null
-         wide character ('\0'), which has the side effect of bringing back *\*ps* to the
-         initial state.  In this case *\*src* is set to ``NULL``, and the number of wide
-         characters written to *dest*, excluding the terminating null wide character, is
-         returned.
-
-   If *dest* is ``NULL``, len is ignored, and the conversion proceeds as above, except that the converted wide characters
-   are not written out to memory, and that no length limit exists.
-
-   In both of the above cases, if *ps* is a ``NULL`` pointer, a static anonymous state known only to the ``mbsrtowcs()``
-   function is used instead.
-
-   The programmer must ensure that there is room for at least *len* wide characters at ``dest``.
-
-**RETURN VALUE**
-
-   The ``mbsrtowcs()`` function returns the number of wide characters that make up
-   the converted part of the wide-character string, not including the terminating
-   null wide character. If an invalid multibyte sequence was encountered, 
-   ``(size_t) -1`` is returned, and *errno* set to **EILSEQ**.
-
-
-**NOTES**
-
-   The behavior of ``mbsrtowcs()`` depends on the **LC_CTYPE** category of the current locale.
-   Passing ``NULL`` as *ps* is not multithread safe.
-
+   alloca(3), calloc(3), free(3), malloc(3),
+   realloc(3), string(3), wcsdup(3)

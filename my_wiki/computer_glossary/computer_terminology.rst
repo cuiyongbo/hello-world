@@ -26,6 +26,7 @@ Computer Terminology
 | RISC = Reduced Instruction Set Computing
 | SoC = System on Chip
 | ALU = Arithmetic Logic Unit
+| XML = Extensive Markup Language
 |
 | concatenate
 | concatenation

@@ -55,6 +55,8 @@ VS 2013
 #. Threads view: Ctrl + Alt + H
 #. Bookmark Window: Ctrl + K, W
 #. Toggle Bookmark: Ctrl + K, K
+#. Open Performance Tools: Alt + F2
+#. Open Disassembly window: Alt + 8 (stop debugging)
      
 
 VAssist X

@@ -10,7 +10,7 @@ Steps of Programming
    programmer_note/git_notes
    programmer_note/gcc_notes
    programmer_note/gdb_notes
-   programmer_note/google_test_notes
+   programmer_note/gtest_notes
    programmer_note/threads_vs_processes
    programmer_note/pthread_introduction
    programmer_note/std_c_api

@@ -1,7 +1,6 @@
 Google Test Insights
 ====================
 
-
 :class:`::testing::Test`
 ------------------------
 
@@ -47,3 +46,25 @@ Google Test Insights
    
      // ...
    };
+
+
+A test fixture can be viewed as an intergerated test for a specific module. It allows user to customize 
+a specific test. A fixture class should inherit itself from the ``::testing::Test`` class and the specific
+class module class that it is going to test. Note that it uses the ``TEST_F`` macro instead of ``TEST``. and
+Like ``TEST()``, the first argument is the test case name, but for ``TEST_F()`` this must be the name of the
+test fixture class.
+
+For each test defined with TEST_F(), Google Test will:
+
+    #. Create a fresh test fixture at runtime.
+    #. Immediately initialize it via ``SetUp()``.
+    #. Run the test.
+    #. Clean up by calling ``TearDown()``.
+    #. Delete the test fixture. Note that different
+       tests in the same test case have different test
+       fixture objects, and Google Test always deletes
+       a test fixture before it creates the next one.
+       Google Test does not reuse the same test fixture
+       for multiple tests. Any changes one test makes
+       to the fixture do not affect other tests.
+
