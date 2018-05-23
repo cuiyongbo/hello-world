@@ -338,3 +338,8 @@ in a number of Christian kingdoms.
 | Synonyms: tune.
 | Usage: He expects the system to get even better as the engineers tweak its performance.
 | 
+| abhore
+| Definition: If you abhor something, you hate it very much, especially for moral reason.
+| Synonyms: detest.
+| Usage: If nature abhors a vacuum, journalists abhor a transition, when there is little news to cover.
+|

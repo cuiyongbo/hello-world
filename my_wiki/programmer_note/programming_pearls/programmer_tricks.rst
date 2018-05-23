@@ -49,3 +49,14 @@ Programmer's Tricks
 
       find . -exec touch {} +
 
+#. constants in Makefile
+   
+   +-----------+-------------------------------------------+
+   | Constants | Meaning                                   |
+   +===========+===========================================+
+   | $@        | Name of current target                    |
+   +-----------+-------------------------------------------+
+   | $<        | Name of the first prerequisite in depency |
+   +-----------+-------------------------------------------+
+   | $^        | Names of all prerequisites in depency     |
+   +-----------+-------------------------------------------+

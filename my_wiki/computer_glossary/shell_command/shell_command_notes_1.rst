@@ -78,3 +78,15 @@ chmod Command
 =============
 
    See :doc:`chmod_info`.
+
+
+Compress / decompress command
+=============================
+
+   See :doc:`tar_info`.
+
+
+File / directory copy
+=====================
+
+   See :doc:`cp_info`

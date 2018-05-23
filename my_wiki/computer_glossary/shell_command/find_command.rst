@@ -409,6 +409,36 @@ find Command
          True; if the file is a directory, do not descend into it. If -depth is given, false; no effect.
          Because -delete implies -depth, you cannot usefully use -prune and -delete together.
 
+
+      .. option:: -exec command ; / -exec command {} +
+
+         Execute *command*; true if 0 status is returned. All following arguments to find are taken to be arguments
+         to the *command* until an argument consisting of ';' is encountered. The string '{}' is replaced by the
+         current file name being processed everywhere it occurs in the arguments to the *command*, not just in
+         arguments where it is alone, as in some versions of find. Both of these constructions might need to be
+         escaped (with a '\') or quoted to protect them from expansion by the shell. The specified *command* is
+         run once for each matched file. The command is executed in the starting directory. There are unavoidable
+         security problems surrounding use of the -exec action; you should use the -execdir option instead.
+
+         This variant of the -exec action runs the specified command on the selected files, but the command line
+         is built by appending each selected file name at the end; the total number of invocations of the command
+         will be much less than the number of matched files. The command line is built in much the same way that
+         xargs builds its command lines. Only one instance of '{}' is allowed within the command. The command is
+         executed in the starting directory.
+
+      .. option:: -execdir command ; / -execdir command {} +
+
+         Like -exec, but the specified command is run from the subdirectory containing the matched file,
+         which is not normally the directory in which you started find. This a much more secure method
+         for invoking commands, as it avoids race conditions during resolution of the paths to the matched
+         files. As with the -exec action, the '+' form of -execdir will build a command line to process more
+         than one matched file, but any given invocation of command will only list files that exist in the
+         same subdirectory. If you use this option, you must ensure that your :envvar:`PATH` environment
+         variable does not reference '.'; otherwise, an attacker can run any commands they like by leaving
+         an appropriately-named file in a directory in which you will run -execdir. The same applies to having
+         entries in :envvar:`PATH` which are empty or which are not absolute directory names.
+
+
 **EXAMPLES**
 
    Examples::
@@ -474,4 +504,6 @@ find Command
       find /dev/shm/ -name "[a-zA-Z]*-[0-9]*" -print0 | xargs -0 rm >/dev/null 2>&1
       find /dev/shm/ -iname "*hashmap" -delete
       find /dev/shm/ -name "[a-zA-Z]*-[0-9]*" -delete
+
+      find /tmc_backup/tmc_backup/download_tmc/2018/05/15/15/ -name "shanghai.txt.gz" -exec cp --parents \{\} shanghai_tmc/ \;
 
