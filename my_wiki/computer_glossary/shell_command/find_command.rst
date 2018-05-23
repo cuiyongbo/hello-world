@@ -119,7 +119,7 @@ find Command
 
    The -delete action also acts like an option (since it implies -depth).
 
-   POSITIONAL OPTIONS
+   **POSITIONAL OPTIONS**
 
    .. option:: -regextype type
 
@@ -131,7 +131,7 @@ find Command
 
       Turn warning messages on or off. 
 
-   GLOBAL OPTIONS
+   **GLOBAL OPTIONS**
 
       Global options always return true. To prevent confusion, global options
       should specified on the command-line after the list of start points, just
@@ -172,27 +172,27 @@ find Command
 
       .. option:: -name pattern, -iname pattern
 
-         Base of file name (**the path with the leading directories removed**) matches shell pattern pattern. Because
-         the leading directories are removed, the file names considered for a match with -name will never include
+         Base of file name (**the path with the leading directories removed**) matches shell pattern *pattern*.
+         Because the leading directories are removed, the file names considered for a match with -name will never include
          a slash, so '-name a/b' will never match anything (you probably need to use -path instead). The metacharacters
          ('*',  '?', and '[]') match a '.' at the start of the base name . To ignore a directory and the files under it,
          use -prune; Braces are not recognised as being special, despite the fact that some shells including Bash imbue
          braces with a special meaning in shell patterns. The filename matching is performed with the use of the
-         :manpage:`fnmatch(3)` library function. Don't forget to enclose the pattern in quotes in order to protect
-         it from expansion by the shell. -iname is case-insensitive counterpart.
+         :manpage:`fnmatch(3)` library function. Don't forget to enclose the *pattern* in quotes in order to protect
+         it from expansion by the shell. -iname is the case-insensitive counterpart.
 
       .. option:: -regex pattern, -iregex pattern
 
          File name matches regular expression pattern. **This is a match on the whole path, not a search.**  For
          example, to match a file named './fubar3', you can use the regular expression '.*bar.' or '.*b.*3', but
          not 'f.*r3'. The regular expressions understood by find are by default Emacs Regular Expressions,  but
-         this can be changed with the -regextype option. -iregex is case-insensitive counterpart.
+         this can be changed with the -regextype option. -iregex is the case-insensitive counterpart.
 
       .. option:: -samefile name
 
          File refers to the same inode as name. When -L is in effect, this can include symbolic links.
 
-      .. option:: -path pattern
+      .. option:: -path pattern, -ipath pattern
 
          File name matches shell pattern pattern. The metacharacters do not treat '/' or '.' specially;
          so, for example, ``find . -path "./sr*sc"`` will print an entry for a directory called './src/misc'
@@ -205,7 +205,7 @@ find Command
          ``find bar -path /foo/bar/myfile -print``. Find compares the -path argument with the concatenation of
          a directory name and the base name of the file it's examining. Since the concatenation will never end
          with a slash, -path arguments ending in a slash will match nothing (except perhaps a start point
-         specified on the command line).-ipath is case-insensitive counterpart.
+         specified on the command line).-ipath is the case-insensitive counterpart.
 
       .. option:: -readable, -writable, -executable
 

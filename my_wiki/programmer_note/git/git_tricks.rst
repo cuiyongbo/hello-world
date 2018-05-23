@@ -2,6 +2,47 @@
 Git Tricks
 **********
 
+Create a new repository
+=======================
+
+   Start a repository from blank::
+
+      git init projecName
+
+   .. note::
+
+      git will create a directory named *projecName*
+
+
+Remove project from git version control
+=======================================
+
+   Remove :file:`.git` directory from your projects, you may
+   have multi such folders. so try this command::
+      
+      $ cd git-project
+      $ find . -type d -path "*.git" -print0 | xargs -0 rm -rf
+   
+   In addition to the steps above, you may want to also remove
+   the :file:`.gitignore` file(s). Consider removing the :file:`.gitignore`
+   file(s) if you want to remove any trace of Git in your project.
+   Consider keeping the :file:`.gitignore` file(s) if you would ever
+   want reincorporate Git into the project::
+   
+      $ find . -type f -name ".gitignore" -delete
+
+
+Git to checkout a new branch and track itself
+=============================================
+
+   .. code-block:: sh
+
+      $ git checkout -b brach_name
+      # perform changing and commit changes
+      $ git push -u origin branch_name
+      $ git push -u origin local_branch:remote_branch # remote_branch may be not existing.
+
+
 Create a new local branch
 =========================
 
@@ -308,7 +349,6 @@ Discard unstaged changes in working directory
       git checkout -- <file>...
 
 
-
 Git customization
 =================
 
@@ -333,17 +373,6 @@ Git customization
    information. (the ``'simple'`` mode was introduced in Git 1.7.11. Use the
    similar mode ``'current'`` instead of ``'simple'`` if you sometimes use
    older versions of Git).
-
-
-Git to checkout a new branch and track itself
-=============================================
-
-   .. code-block:: sh
-
-      $ git checkout -b brach_name
-      # perform changing and commit changes
-      $ git push -u origin branch_name
-      $ git push -u origin local_branch:remote_branch # remote_branch may be not existing.
 
 
 Git to abort git pull
