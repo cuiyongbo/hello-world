@@ -12,7 +12,6 @@ Gtest Basics
 | Test Case        | A set of several tests related to one component                                      |
 +------------------+--------------------------------------------------------------------------------------+
 
-
 **FRAME WORK**
 
 Typical Usage::
@@ -138,3 +137,30 @@ Assertion Behavior::
    
    ASSERT_DEATH(statement, expected_message)
    ASSERT_EXIT(statement, predicate, expected_message)
+
+
+**TEST FIXTURE**
+
+A test fixture is a place to hold objects and functions shared by
+all tests in a test case.  Using a test fixture avoids duplicating
+the test code necessary to initialize and cleanup those common
+objects for each test.  It is also useful for defining sub-routines
+that your tests need to invoke a lot.
+
+The tests share the test fixture in the sense of code sharing, not
+data sharing.  Each test is given its own fresh copy of the
+fixture.  You cannot expect the data modified by one test to be
+passed on to another test, which is a bad idea.
+
+The reason for this design is that tests should be independent and
+repeatable.  In particular, a test should not fail as the result of
+another test's failure.  If one test depends on info produced by
+another test, then the two tests should really be one big test.
+
+The macros for indicating the success/failure of a test
+(EXPECT_TRUE, FAIL, etc) need to know what the current test is
+(when Google Test prints the test result, it tells you which test
+each failure belongs to).  Technically, these macros invoke a
+member function of the Test class.  Therefore, you cannot use them
+in a global function.  That's why you should put test sub-routines
+in a test fixture.
