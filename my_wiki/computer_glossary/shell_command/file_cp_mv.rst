@@ -1,8 +1,11 @@
 :orphan:
 
-**********
+************************
+File Copy & Move Command
+************************
+
 cp Command
-**********
+==========
 
 **NAME**
 
@@ -13,12 +16,50 @@ cp Command
    .. code-block::sh
 
       cp [OPTION]... [-T] SOURCE DEST
-      cp [OPTION]... SOURCE... DIRECTORY
+      cp [OPTION]... SOURCE... DIRECTORY # Recommended
       cp [OPTION]... -t DIRECTORY SOURCE...
 
 **DESCRIPTION**
 
    Copy *SOURCE* to *DEST*, or multiple *SOURCE*(s) to *DIRECTORY*.
+
+**HOT OPTIONS**
+
+   .. option:: --parents
+      
+      use full source file name under DIRECTORY,
+      **keep file hierarchy**.
+
+   .. option:: -R, -r, --recursive
+
+      copy directories recursively.
+
+   .. option:: --backup[=CONTROL], -b
+
+      make a backup of each existing destination file.
+      -b is like --backup but does not accept an argument.
+
+   .. option:: -S, --suffix=SUFFIX
+
+      override the usual backup suffix.
+      this option is ignored if --backup
+      is **SIMPLE_BACKUP_SUFFIX** described
+      in the following section.
+
+   .. option:: -n, --no-clobber
+         
+      do not overwrite an existing file (overrides a 
+      previous -i option).
+
+   .. option:: -f, --force
+
+      if an existing destination file cannot be opened,
+      remove it and try again (this option is ignored 
+      when the -n option is also used)
+
+
+**OTHER OPTIONS**
+
    Mandatory arguments to long options are mandatory for short 
    options too::
 
@@ -28,20 +69,10 @@ cp Command
       --attributes-only
          don't copy the file data, just the attributes
 
-      --backup[=CONTROL]
-         make a backup of each existing destination file
-
-      -b     like --backup but does not accept an argument
-
       --copy-contents
          copy contents of special files when recursive
 
       -d     same as --no-dereference --preserve=links
-
-      -f, --force
-         if an existing destination file cannot be opened,
-         remove it and try again (this option is ignored 
-         when the -n option is also used)
 
       -i, --interactive
          prompt before overwrite (overrides a previous -n option)
@@ -53,9 +84,6 @@ cp Command
 
       -L, --dereference
          always follow symbolic links in SOURCE
-
-      -n, --no-clobber
-         do not overwrite an existing file (overrides a previous -i option)
 
       -P, --no-dereference
          never follow symbolic links in SOURCE
@@ -69,12 +97,6 @@ cp Command
 
       --no-preserve=ATTR_LIST
          don't preserve the specified attributes
-
-      --parents
-         use full source file name under DIRECTORY, keep file hierarchy.
-
-      -R, -r, --recursive
-         copy directories recursively
 
       --reflink[=WHEN]
          control clone/CoW copies. See below
@@ -91,9 +113,6 @@ cp Command
 
       -s, --symbolic-link
          make symbolic links instead of copying
-
-      -S, --suffix=SUFFIX
-         override the usual backup suffix
 
       -t, --target-directory=DIRECTORY
          copy all SOURCE arguments into DIRECTORY
@@ -146,4 +165,121 @@ cp Command
    As a special case, cp makes a backup of SOURCE when the force and backup 
    options are given and SOURCE and DEST are the same name for an existing, 
    regular file.
+
+
+mv Command
+==========
+
+**NAME**
+   
+   mv - move (rename) files
+
+**SYNOPSIS**
+
+   .. code-block:: sh
+
+      mv [OPTION]... [-T] SOURCE DEST
+      mv [OPTION]... SOURCE... DIRECTORY # Recommended
+      mv [OPTION]... -t DIRECTORY SOURCE...
+
+**DESCRIPTION**
+
+   Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+
+**HOT OPTIONS**
+
+   Hot options::
+
+      --backup[=CONTROL], -b, -S, --suffix=SUFFIX
+         same as cp.
+
+      -i
+         prompt before overwrite.
+
+      -n, --no-clobber
+         do not overwrite an existing file.
+
+      -f, --force
+         do not prompt before overwriting.
+
+   .. note::
+
+      If you specify more than one of -i, -f, -n, 
+      only the final one takes effect.
+
+**OTHER OPTIONS**
+
+   Mandatory arguments to long options are mandatory for 
+   short options too::
+
+      --strip-trailing-slashes
+         remove any trailing slashes from each SOURCE argument
+
+      -t, --target-directory=DIRECTORY
+         move all SOURCE arguments into DIRECTORY
+
+      -T, --no-target-directory
+         treat DEST as a normal file
+
+      -u, --update
+         move only when the SOURCE file is newer than the destination
+         file or when the destination file is missing
+
+      -v, --verbose
+         explain what is being done
+
+      -Z, --context
+         set SELinux security context of destination file to default type
+
+      --help display this help and exit
+
+
+   The  backup  suffix  is  '~',  unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+   The version control method may be selected via the --backup option or through 
+   the VERSION_CONTROL environment variable.  Here are the values::
+
+      none, off
+         never make backups (even if --backup is given)
+
+      numbered, t
+         make numbered backups
+
+      existing, nil
+         numbered if numbered backups exist, simple otherwise
+
+      simple, never
+         always make simple backups
+
+
+**SEE ALSO**
+       
+   rename(2)
+
+
+mkdir Command
+=============
+
+**NAME**
+   
+   mkdir - make directories
+
+**SYNOPSIS**
+
+   mkdir [OPTION]... DIRECTORY...
+
+**DESCRIPTION**
+
+   Create the DIRECTORY(ies), if they do not already exist.
+
+   Mandatory arguments to long options are mandatory for 
+   short options too::
+
+      -m, --mode=MODE
+         set file mode (as in chmod), not a=rwx - umask
+
+      -p, --parents
+         no error if existing, make parent directories as needed
+
+      -v, --verbose
+         print a message for each created directory
 

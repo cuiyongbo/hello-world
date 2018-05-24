@@ -4,6 +4,12 @@
 compress and decompress
 ***********************
 
+.. note::
+
+   打包:将多个文件或目录生成一个文件;
+   压缩:通过压缩算法把一个大文件压缩成一个小文件.
+
+
 tar Command
 ===========
 
@@ -13,7 +19,9 @@ tar Command
 
 **SYNOPSIS**
 
-     tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete 
+   .. code-block:: sh
+
+      tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete 
                         | r --append | t --list | --test-label | u --update 
                         | x --extract --get [options] [pathname ...]
 
@@ -490,6 +498,11 @@ tar Command
 
       -Z, --compress, --uncompress
 
+.. note::
+
+   z 选项表示 tar.gz 是使用 gzip 压缩的文件;
+   j 选项表示 tar.bz2 是使用 bzip2 压缩的文件.
+
 
 **EXAMPLES**
 
@@ -503,6 +516,17 @@ tar Command
       
       # Extract all files from archive.tar.
       $ tar -xf archive.tar
+
+      tar -jcvf filename.tar.bz2  filelist # 压缩文件
+      tar -jtvf filename.tar.bz2 # 查看压缩文件内容
+      tar -jxvf filename.tar.bz2 -C directory # 解压到指定文件目录
+      tar -zcvf b2.tar.gz ./*
+      tar --exclude *.pdf -zcvf b2.tar.gz ./* #排除当前目录下的 pdf 文件
+      tar -ztvf b2.tar.gz
+      tar -zxvf backup.tar.gz -C ./test/
+      tar --newer "2017/01/01" -zcf  photo.tar.gz  ./Desktop/Screenshot/* #压缩比指定日期早的文件
+      tar -zxvf photo.tar.gz *.png #只解压包内的 png 文件
+
 
 **SEE ALSO**
    

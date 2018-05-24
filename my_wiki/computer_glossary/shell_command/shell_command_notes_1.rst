@@ -86,7 +86,7 @@ Compress / decompress command
    See :doc:`tar_info`.
 
 
-File / directory copy
-=====================
+File / directory copy and move
+==============================
 
-   See :doc:`cp_info`
+   See :doc:`file_cp_mv`
