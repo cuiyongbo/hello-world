@@ -343,3 +343,9 @@ in a number of Christian kingdoms.
 | Synonyms: detest.
 | Usage: If nature abhors a vacuum, journalists abhor a transition, when there is little news to cover.
 |
+| by no means
+| Synonyms: not at all; certainly not.
+| Antonyms: by all means.
+| Usage: The result is by no means guaranteed.
+| Usage: "May I make a suggestion?", "By all means." 
+| 
