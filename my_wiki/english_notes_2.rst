@@ -349,3 +349,35 @@ in a number of Christian kingdoms.
 | Usage: The result is by no means guaranteed.
 | Usage: "May I make a suggestion?", "By all means." 
 | 
+| utensil
+| Definition: an implement, container, or other article, especially for household use.
+| Usage: Cooking / kitchen utensils. [炊具；厨房用具]
+
+.. image:: images/utensil.jpg
+
+| pee
+| Definition: urinate.
+| Usage: The puppy was peeing on the caret.
+| Usage: I really need to take a pee.
+| Phrase: pee in one's pants
+| Definition:  Literally, to urinate while still wearing one's clothing. 
+| Usage: I need you to pull over the car right now, or else I'm going to pee my pants!
+| Definition: To be absolutely petrified with terror; to be scared out of one's wits.[吓尿了]
+| Usage: I was peeing my pants when that huge burly guy started threatening me and my girlfriend.
+| Definition: To laugh in a hysterical or uncontrollable manner. [笑尿了]
+| Usage: The joker had the audience peeing their pants!
+|
+| rascal
+| Definition: a mischievous or cheeky person, especially a child or man (typically used in an affectionate way).
+| Usage: Come here, you little rascal. [淘气鬼，捣蛋鬼]
+| 
+| mischievous
+| Definition: (of a person, animal, or their behavior) causing or showing a fondness for causing trouble in a playful way. 
+| Usage: two mischievous kittens had decorated the bed with shredded newspaper.
+| Definition: (of an action or thing) causing or intended to cause harm or trouble. 
+| Usage: a mischievous allegation for which there is not a shred of evidence.
+| 
+| shred
+| Definition: a strip of some material, such as paper, cloth, or food, that has been torn, cut, or scraped from something larger.
+| Usage: Her beautiful dress was torn to shreds.
+| 

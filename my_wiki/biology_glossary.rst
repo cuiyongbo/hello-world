@@ -13,10 +13,14 @@ Biology Terms
 | genital 
 | Synonyms: dick [阴茎]
 | cum [高潮]
-| precum [男性性生活时阴茎的分泌物]
+| precum, pre-seminal fluid [男性性生活时阴茎的分泌物]
 | semen [精液]
 | Definition: the male reproductive fluid, containing spermatozoa in suspension.
-| 
+| Vaginal sex 性交
+| Anal sex 肛交
+| Oral sex 口交
+| blood bank 血库
+|
 | masochist
 | masochism
 | Definition: the tendency to derive pleasure, especially sexual gratification, from one’s own pain or humiliation.
@@ -378,3 +382,14 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | Usage: The FDA just approved a new preventative migraine treatment
 
 .. image:: images/migraine.jpeg
+
+| saliva [唾液]
+| Definition: watery liquid secreted into the mouth by glands, providing lubrication for chewing and swallowing, and aiding digestion.
+| Usage: Getting spit on is unpleasant and messy, but not a danger as far as catching HIV.
+| 
+| gland [腺体]
+| Definition: an organ in the human or animal body that secretes particular chemical substances for use in the body or for discharge into the surroundings.
+| Usage: the thyroid gland. [甲状腺]
+
+
+

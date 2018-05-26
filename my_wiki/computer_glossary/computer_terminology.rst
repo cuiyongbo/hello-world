@@ -186,7 +186,7 @@ the whole series of operations of the algorithm. This may include accounting for
 length of the input, and other factors that affect its performance.
 
 
-Concurrence vs Parallelism
+**Concurrence vs Parallelism**
 
 +-----------------------------------+-----------------------------------+
 | Concurrence                       | Parallelism                       |
@@ -194,4 +194,21 @@ Concurrence vs Parallelism
 | .. image:: images/concurrency.jpg | .. image:: images/parallelism.jpg |
 +-----------------------------------+-----------------------------------+
 
-Associative array： arrays whose indices are arbitrary strings or other complicated objects。
+
+**Histogram**
+
+A histogram is an accurate representation of the distribution of numerical data. 
+It is an estimate of the probability distribution of a continuous variable 
+(quantitative variable) and was first introduced by Karl Pearson. It differs 
+from a bar graph, in the sense that a bar graph relates two variables, but 
+a histogram relates only one. To construct a histogram, the first step is 
+to "bin" the range of values—that is, divide the entire range of values into 
+a series of intervals—and then count how many values fall into each interval. 
+The bins are usually specified as consecutive, non-overlapping intervals of a 
+variable. The bins (intervals) must be adjacent, and are often (but are not 
+required to be) of equal size.
+
+.. image:: images/Histogram_of_arrivals_per_minute.svg
+
+
+Associative array: arrays whose indices are arbitrary strings or other complicated objects。

@@ -7,6 +7,7 @@ Computer Glossary
 
    computer_glossary/computer_terminology
    computer_glossary/shell_commands
+   computer_glossary/algorithm_docs
    computer_glossary/software_shortcuts_note
    computer_glossary/os_problems
    computer_glossary/os_lock_mechanisms
