@@ -139,3 +139,9 @@ or "as the crow flies" distance. The Manhattan distance is the simple sum of the
 horizontal and vertical components, whereas the diagonal distance might be
 computed by applying the Pythagorean theorem. [勾股定理]
 
+| asymptote
+| asymptotic
+| asymptotically
+| Definition: a line that continually approaches a given curve but does not meet it at any finite distance.
+
+.. image:: images/asymptotic_example.svg.png

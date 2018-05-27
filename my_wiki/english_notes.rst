@@ -1108,11 +1108,6 @@ English Note
 | Usage: They were apt to exaggerate any aches and pains.
 | Usage: I couldn’t sleep for three days -- I ‘m not exaggerating.
 | 
-| wistful
-| Definition: having or showing a feeling of vague or regretful longing.
-| Usage: She sighed wistfully.
-| Usage: “If only I had known you then,” he said wistfully.
-| 
 | mediocre
 | mediocrity
 | Definition: of only moderate quality; not very good.
@@ -1526,16 +1521,10 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: a small popular song about love. [情歌]
 | Usage: Here latest single is a ballad.
 | 
-| sidestep
-| Definition: avoid (someone or something) by stepping sideways.
-| Definition: avoid dealing with or discussing (something problematic or disagreeable).
-| Usage: He neatly sidestepped the questions about riots.
-| Usage: He cleverly sidestepped the tackle.
-| 
 | state-of-art
 | Definition: State-of-art (sometimes cutting edge) refers to the highest level of general development, as of a device, technique, or scientific field achieved | at a particular time.
 | 
-| puffery
+| puffery [捧杀]
 | Definition: exaggerated or false praise.
 | 
 | falsework

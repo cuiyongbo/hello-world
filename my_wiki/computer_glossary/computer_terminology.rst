@@ -174,6 +174,7 @@ installed on your computer, typically 4 GB of RAM or more. In such cases, becaus
 can handle large amounts of memory more efficiently than a 32-bit operating system, a 64-bit system can be
 more responsive when running several programs at the same time and switching between them frequently. 
 
+
 **Amortized analysis**
 
 In computer science, amortized analysis is a method for analyzing a given algorithm's complexity,
@@ -184,6 +185,13 @@ While certain operations for a given algorithm may have a significant cost in re
 may not be as costly. Amortized analysis considers both the costly and less costly operations together over
 the whole series of operations of the algorithm. This may include accounting for different types of input,
 length of the input, and other factors that affect its performance.
+
+
+**Asymptotic Computational Complexity**
+
+In computational complexity theory, asymptotic computational complexity is the usage of asymptotic analysis 
+for the estimation of computational complexity of algorithms and computational problems, commonly associated 
+with the usage of the big **O** notation.
 
 
 **Concurrence vs Parallelism**
@@ -211,4 +219,6 @@ required to be) of equal size.
 .. image:: images/Histogram_of_arrivals_per_minute.svg
 
 
-Associative array: arrays whose indices are arbitrary strings or other complicated objects。
+
+
+Associative array: arrays whose indices are arbitrary strings or other complicated objects.

@@ -381,3 +381,26 @@ in a number of Christian kingdoms.
 | Definition: a strip of some material, such as paper, cloth, or food, that has been torn, cut, or scraped from something larger.
 | Usage: Her beautiful dress was torn to shreds.
 | 
+| wistful 
+| Definition: having or showing a feeling of vague or regretful longing.
+| Usage: She sighed wistfully. [伤感地]
+| Usage: “If only I had known you then,” he said wistfully.
+|
+| vague
+| Definition: of uncertain, indefinite, or unclear character or meaning. 
+| Usage: many patients suffer vague symptoms.
+| Definition: thinking or communicating in an unfocused or imprecise way. 
+| Usage: he had been very vague about his activities.
+|
+
+.. figure:: images/sucking_finger.jpeg
+   
+   Sucking finger
+
+| 
+| sidestep
+| Definition: avoid (someone or something) by stepping sideways.
+| Definition: avoid dealing with or discussing (something problematic or disagreeable).
+| Usage: He neatly sidestepped the questions about riots.
+| Usage: He cleverly sidestepped the tackle.
+|
