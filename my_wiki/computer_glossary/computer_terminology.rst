@@ -219,6 +219,71 @@ required to be) of equal size.
 .. image:: images/Histogram_of_arrivals_per_minute.svg
 
 
+**Associative array**
+
+In computer science, an associative array, map, symbol table, or dictionary is 
+an abstract data type composed of a collection of *(key, value)* pairs, such 
+that each possible key appears at most once in the collection.
+
+Operations associated with this data type allow:
+
+   * the addition of a pair to the collection
+   * the removal of a pair from the collection
+   * the modification of an existing pair
+   * the lookup of a value associated with a particular key
+     
+The **dictionary problem** is a classic computer science problem: the task of 
+designing a data structure that maintains a set of data during 'search', 'delete', 
+and 'insert' operations. The two major solutions to the dictionary problem are a 
+**hash table** or a **search tree**. In some cases it is also possible to solve 
+the problem using directly addressed arrays, binary search trees, or other more 
+specialized structures.
+
+Many programming languages include associative arrays as primitive data types, 
+and they are available in software libraries for many others. Content-addressable 
+memory is a form of direct hardware-level support for associative arrays.
 
 
-Associative array: arrays whose indices are arbitrary strings or other complicated objects.
+**Dynamic Array**
+
+.. sidebar:: Dynamic Array
+
+   .. image:: images/Dynamic_array.svg
+
+   Several values are inserted at the end of a dynamic array using geometric expansion. 
+   Grey cells indicate space reserved for expansion. Most insertions are fast (constant 
+   time), while some are slow due to the need for reallocation (Θ(n) time, labelled with 
+   turtles). The logical size and capacity of the final array are shown.
+
+In computer science, a dynamic array, growable array, resizable array, dynamic table, 
+mutable array, or array list is a random access, variable-size list data structure 
+that allows elements to be added or removed. It is supplied with standard libraries 
+in many modern mainstream programming languages. Dynamic arrays overcome a limit of 
+static arrays, which have a fixed capacity that needs to be specified at allocation.
+
+A dynamic array is not the same thing as a dynamically allocated array, which is an 
+array whose size is fixed when the array is allocated, although a dynamic array may 
+use such a fixed-size array as a back end.
+
+
+**Prefix sum**
+
+In computer science, the prefix sum, cumulative sum, inclusive scan, or simply scan 
+of a sequence of numbers :math:`x_0, x_1, x_2, ...` is a second sequence of numbers 
+:math:`y_0, y_1, y_2, ...`, the sums of prefixes (running totals) of the input 
+sequence:
+
+.. math::
+
+   y_0 &= x_0 \\
+   y_1 &= x_0 + x_1 \\
+   y_2 &= x_0 + x_1 + x_2 \\
+   ...
+
+Prefix sums are trivial to compute in sequential models of computation, by using the 
+formula :math:`y_i = y_{i − 1} + x_i` to compute each output value in sequence order. 
+However, despite their ease of computation, prefix sums are a useful primitive in 
+certain algorithms such as counting sort, and they form the basis of the scan 
+higher-order function in functional programming languages. Prefix sums have also 
+been much studied in parallel algorithms, both as a test problem to be solved 
+and as a useful primitive to be used as a subroutine in other parallel algorithms.
