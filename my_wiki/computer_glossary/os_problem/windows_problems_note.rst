@@ -15,11 +15,11 @@ Windows Problems
       For the entire project, you should choose the options "Use Precompiled Header (/Yu)", "stdafx.h", "$(IntDir)\$(TargetName).pch".
       For the stdafx.cpp file , you should specify these options: "Create Precompiled Header (/Yc)",   "stdafx.h", "$(IntDir)\$(TargetName).pch".
 
-#. VS工程环境变量定义
+#. VS 工程环境变量定义
    
    Solution::
 
-      工程 "property"-"C/C++"-"Preprocessor"-"Macros"
+      Project: "property"-"C/C++"-"Preprocessor"-"Macros"
 
 #. VS fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
    
@@ -31,39 +31,39 @@ Windows Problems
    
    Solution::
 
-      工程 "property" - "C/C++" - "All Options" - "Debug information format" : "Program Database (/Zi)"
+      Project: "property" - "C/C++" - "All Options" - "Debug information format" : "Program Database (/Zi)"
 
 #. VS Enable String Pooling
    
    Solution::
 
-      工程 "property" - "C/C++" - "Code Generation" - "Enable String Pooling" - "Yes (/GF)"
+      Project: "property" - "C/C++" - "Code Generation" - "Enable String Pooling" - "Yes (/GF)"
       
 #. VS gtest 选择性运行测试用例
    
    Solution::
 
-      工程 "property" - "Debug" - "Command Arguments"  - "--gtest_filter = MemoryLeak*.*"
+      Project: "property" - "Debug" - "Command Arguments"  - "--gtest_filter = MemoryLeak*.*"
 
 #. VS 不编译指定的源文件
    
    Solution:
 
-      文件 "property" - "General" - "Exclude from build"  - "yes"
+      File: "property" - "General" - "Exclude from build"  - "yes"
 
 #. VS warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF'(or '/OPT:REF') specification
 
    Solution::
 
-      工程 "property" - "Linker" - "All Options" - "References" - "No (/OPT:NOREF)"
-      工程 "property" - "Linker" - "All Options" - "Enable COMDAT Folding" - "No (/OPT:NOICF)"
+      Project: "property" - "Linker" - "All Options" - "References" - "No (/OPT:NOREF)"
+      Project: "property" - "Linker" - "All Options" - "Enable COMDAT Folding" - "No (/OPT:NOICF)"
 
 #. VS warning C4627 and error C1010
 
    Solution::
 
       Solution 1. add '#include "stdafx.h"' to your source
-      Solution 2. 工程 "property" - "C/C++" - "Precompiled Header" - "Not Using Precompiled Headers"
+      Solution 2. Project: "property" - "C/C++" - "Precompiled Header" - "Not Using Precompiled Headers"
 
 #. VS warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
    
@@ -74,12 +74,12 @@ Windows Problems
       versions of the run-time library in the same program. For example, if you compiled one
       file to use one kind of run-time library and another file to use another kind (for example,
       single-threaded versus multithreaded) and tried to link them, you will get this warning.
-      You should compile all source files to use the same run-time library. See the Use
-      `Run-Time Library (/MD, /MT, /LD) compiler options 
-      <https://msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx>`_ for more information.
-   
+      You should compile all source files to use the same run-time library. 
 
-#. VS __debugbreak
+   See the Use `Run-Time Library (/MD, /MT, /LD) compiler options <https://msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx>`_ 
+   for more information.
+   
+#. VS ``__debugbreak()``
    
    Solution::
 
