@@ -16,5 +16,4 @@ Steps of Programming
    programmer_note/std_c_api
    programmer_note/linux_system_calls
    programmer_note/programming_pearls
-   programmer_note/data_structure_note
 

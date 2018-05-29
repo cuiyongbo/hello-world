@@ -7,11 +7,6 @@ Introduction
 
 .. sidebar:: Bucket sort
 
-   Worst-case performance  :math:`O(n^2)`
-   Best-case performance   :math:`\Omega (n+k)`
-   Average performance  :math:`\Theta (n+k)`
-   Worst-case space complexity  :math:`O(n\cdot k)`
-
    .. image:: images/Bucket_sort_1.svg
 
    Elements are distributed among bins
@@ -39,6 +34,17 @@ Bucket sort works as follows:
    * Gather: Visit the buckets in order and put all elements back into the original array.
      
 
+Property
+========
+
+=============================  ======================
+Worst-case performance         :math:`O(n^2)`        
+Best-case performance          :math:`\Omega (n+k)`  
+Average performance            :math:`\Theta (n+k)`  
+Worst-case space complexity    :math:`O(n\cdot k)`   
+=============================  ======================
+
+
 Pseudocode
 ==========
 
@@ -52,7 +58,7 @@ Pseudocode
          nextSort(buckets[i]);
       return the concatenation of buckets[0], ...., buckets[n-1]
 
-Here array is the *array* to be sorted and *n* is the number of buckets to use. 
+Here *array* is the array to be sorted and *n* is the number of buckets to use. 
 The function **msbits(x,k)** returns the **k** most significant bits of *x* 
 (``floor(x/2^(size(x)-k)``)); different functions can be used to translate the 
 range of elements in array to *n* buckets, such as translating the letters ``A–Z`` 

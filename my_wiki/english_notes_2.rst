@@ -2,6 +2,8 @@
 English Notes 2
 ***************
 
+**业精于勤，荒于嬉；行成于思，毁于随。**
+
 | headroom
 | Definition: the space above a driver's head in a vehicle.
 | Definition: the space or clearance between the top of a vehicle and the underside of a bridge.
@@ -367,6 +369,14 @@ in a number of Christian kingdoms.
 | Definition: To laugh in a hysterical or uncontrollable manner. [笑尿了]
 | Usage: The joker had the audience peeing their pants!
 |
+| blister
+| Definition: a small bubble on the skin filled with serum and caused by friction, burning, or other damage. [水泡，瘀伤]
+| Usage: He had blistered feet.
+| Definition: a small bubble or swelling, filled with air or fluid, on the surface of a plant, heated metal, painted wood, or other object.
+| Usage: The surface of the door began to blister.
+| Definition: British informal, dated an annoying person.
+| Usage: the child is a disgusting little blister. [烦人精]
+|
 | rascal
 | Definition: a mischievous or cheeky person, especially a child or man (typically used in an affectionate way).
 | Usage: Come here, you little rascal. [淘气鬼，捣蛋鬼]
@@ -404,3 +414,15 @@ in a number of Christian kingdoms.
 | Usage: He neatly sidestepped the questions about riots.
 | Usage: He cleverly sidestepped the tackle.
 |
+| tartar
+| Definition: a hard calcified deposit that forms on the teeth and contributes to their decay. [齿垢]
+| Definition: a deposit of impure potassium(钾) hydrogen tartrate formed during the fermentation of wine.
+| 
+
+.. figure:: images/tooth_cleaner.jpg
+
+   toothpaste and toothbrush
+
+
+
+   
