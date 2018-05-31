@@ -1,0 +1,15 @@
+**************
+Language Study
+**************
+
+.. toctree::
+
+   languages/greek_alphabet
+   languages/english_notes
+   languages/english_notes_2
+   languages/english_notes_3
+   languages/japanese_notes
+   languages/military_terms
+   languages/steve_jobs_obituary
+   languages/stephen_hawking_obituary
+   
