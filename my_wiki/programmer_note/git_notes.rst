@@ -6,3 +6,4 @@ Git Notes
 
    git/git_tricks
    git/git_log_tricks
+   git/git_clean_tricks

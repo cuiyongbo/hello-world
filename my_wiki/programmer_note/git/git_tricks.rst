@@ -183,6 +183,7 @@ Commit with amendment
       .. code-block:: sh
 
          $ git push origin branch-name --force
+         $ git push --force-with-lease --progress "origin" master:master
 
 
 Stash current changes
@@ -374,6 +375,13 @@ Git customization
    similar mode ``'current'`` instead of ``'simple'`` if you sometimes use
    older versions of Git).
 
+   Add following configure to global :file:`.gitconfig`::
+      
+      [remote "origin"]
+      prune = true
+
+   to remove remote branch(es) that have been deleted.  
+
 
 Git to abort git pull
 =====================
@@ -381,6 +389,8 @@ Git to abort git pull
    .. code-block:: sh
       
          git reset --keep HEAD@{1}
+         # or
+         git reset --hard HEAD^1
 
    .. note:: 
 

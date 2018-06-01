@@ -17,3 +17,85 @@ a single experiment/trial is conducted (*n = 1*). It is also a special case of t
 two-point distribution, for which the outcome need not be a bit, i.e., the two possible 
 outcomes need not be 0 and 1.
 
+
+Properties of the Bernoulli distribution
+========================================
+
+If X is a random variable with this distribution, we have:
+
+.. math::
+
+   Pr(X=1) = p = 1 - Pr(X=0) = 1-q
+
+The probability mass function *f* of this distribution, over 
+possible outcomes *k*, is
+
+.. math::
+
+   f(k; p) = {\begin{cases} p&{\text{if } k=1,}\\1-p&{\text{if }}k=0. \end{cases}}
+
+This can also be expressed as
+
+.. math::
+
+   f(k; p) = p^k (1-p)^{1-k} {\text{ for }} k \in \{0,1\}
+
+The Bernoulli distribution is a special case of the binomial distribution with *n=1*.
+The **kurtosis** goes to infinity for high and low values of *p*, but for *p=1/2* the 
+two-point distributions including the Bernoulli distribution have a lower excess kurtosis 
+than any other probability distribution, namely −2.
+
+The Bernoulli distributions for  :math:`0 \leq p \leq 1` form an exponential family.
+The maximum likelihood estimator of *p* based on a random sample is the sample mean.
+
+
+Mean
+====
+
+The expected value of a Bernoulli random variable X is
+
+.. math::
+
+   {\operatorname {E}[X] = p}
+
+Deduction as Following:
+
+.. math::
+
+   {\Pr(X=1)=p} \\
+   {\Pr(X=0)=q} \\
+   {\operatorname {E}[X] = \Pr(X=1) \cdot 1 + \Pr(X=0) \cdot 0 = p \cdot 1+ q \cdot 0 = p} 
+
+
+Variance
+========
+
+The variance of a Bernoulli distributed X is
+
+.. math::
+
+   {\operatorname {Var}[X] = pq = p(1-p)}
+
+Deduction as Following:
+
+.. math::
+
+   \operatorname {E}[X^{2}] = \Pr(X=1) \cdot 1^{2} + \Pr(X=0) \cdot 0^{2} 
+                                       = p \cdot 1^{2} + q \cdot 0^{2} = p \\
+
+   \operatorname {Var}[X]= \operatorname {E}[X^{2}]- \operatorname {E}[X]^{2}
+                         = p - p^{2} = p(1-p) = pq
+
+
+
+Related distributions
+=====================
+
+If :math:{ X_1, \dots ,X_n} are independent, identically distributed (i.i.d.) random variables, 
+all Bernoulli distributed with success probability *p*, then
+
+.. math::
+
+   { Y=\sum_{k=1}^{n} X_{k} \sim \mathrm {B}(n,p)} {\text{ (binomial distribution)}}.
+
+The Bernoulli distribution is simply :math:`\mathrm {B}(1,p)`.

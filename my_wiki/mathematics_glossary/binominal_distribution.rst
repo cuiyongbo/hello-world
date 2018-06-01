@@ -46,7 +46,7 @@ Probability mass function
 -------------------------
 
 In general, if the random variable *X* follows the binomial distribution with parameters :math:`n \in N` 
-and :math:`p \in [0,1]`, we write **X ~ B(n, p)**. The probability of getting exactly *k* successes 
+and :math:`p \in [0,1]`, we write :math:`X \sim \mathrm {B}(n, p).` The probability of getting exactly *k* successes 
 in *n* trials is given by the probability mass function:
 
 .. math::
@@ -135,7 +135,7 @@ What is the probability of achieving 0, 1,..., 6 heads after six tosses?
 Mean
 ====
 
-If **X ~ B(n, p)**, that is, *X* is a binomially distributed random variable, 
+If :math:`X \sim \mathrm {B}(n, p)`, that is, *X* is a binomially distributed random variable, 
 *n* being the total number of experiments and *p* the probability of each experiment 
 yielding a successful result, then the expected value of *X* is:
 
@@ -285,8 +285,8 @@ The binomial distribution converges towards the Poisson distribution as the numb
 goes to infinity while the product *np* remains fixed or at least *p* tends to zero. Therefore, 
 the Poisson distribution with parameter *λ = np* can be used as an approximation to **B(n, p)** 
 of the binomial distribution if *n* is sufficiently large and *p* is sufficiently small. 
-According to two rules of thumb, this approximation is good if :math:`n \ge 20\ and\ p \le 0.05`, 
-or if :math:`n \ge 100\ and\ np \le 10`.
+According to two rules of thumb, this approximation is good if :math:`n \ge 20` and :math:`p \le 0.05`, 
+or if :math:`n \ge 100` and :math:`np \le 10`.
 
 
 History
