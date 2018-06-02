@@ -287,3 +287,33 @@ certain algorithms such as counting sort, and they form the basis of the scan
 higher-order function in functional programming languages. Prefix sums have also 
 been much studied in parallel algorithms, both as a test problem to be solved 
 and as a useful primitive to be used as a subroutine in other parallel algorithms.
+
+
+**Algorithmic Complexity and Big-O Notation**
+
+Common Big-O notations:
+
+   * Linear -- :math:`O(n)`
+   * Quadratic -- :math:`O(n^2)`
+   * Cubic -- :math:`O(n^3)`
+   * Logarithmic -- :math:`O(\log{n})`
+   * Exponential -- :math:`O(2^n)`
+   * Square root -- :math:`O(\sqrt{n})`
+
+Also note:
+
+   * The basic shape of a polynomial function is determined by the highest 
+     valued exponent in the polynomial (called the **order** of the polynomial).
+
+   * Multiplicative constants do not affect the fundamental shape of a curve.  
+     Only the steepness of the curve is affected. 
+
+   * Polynomial curves will always overtake logarithmic curves eventually, 
+     when the problem size gets big enough, regardless of the multiplicative 
+     constants involved.
+
+   * The superiority of the :math:`O(\log{n})` Fermat prime test over the 
+     :math:`O(\sqrt{n})` prime test becomes clear for really big integers.
+
+   
+

@@ -13,5 +13,3 @@ Pending tasks
    
    - ite - sytle_sheet_notifier
    - file_watcher
-
-#. Big O notation https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
