@@ -2,6 +2,8 @@
 English Notes 3
 ***************
 
+**读未见书，如得良友；见已读书，如逢故人。**
+
 | grain
 | Definition: The longitudinal arrangement or pattern of fibres in wood, paper, etc.
 | Usage: He scored along the grain of the table with the knife.
@@ -38,3 +40,50 @@ English Notes 3
 | Phrase: above (or below or under) par
 | Definitin: better (or worse) than is usual or expected.
 | Usage: poor nutrition can leave you feeling below par.
+| 
+| empty-handed [一无所获]
+| Definition: having failed to obtain or achieve what one wanted.
+| Usage: the burglars fled empty-handed.
+| Usage: They returned from the negotiations empty-handed and frustrated.
+| Usage: She visited every Sunday and never arrived empty-handed.
+| 
+| passel
+| Definition: a large group of people or things; a pack.
+| Usage: a passel of journalists.
+| 
+| puffery [捧杀]
+| Definition: exaggerated commendation especially for promotional purposes
+| Usage: the newspaper's local stories are often thinly disguised puffery for area businesses.
+| 
+| rhapsody
+| Definition: Music a free instrumental composition in one extended movement, typically one that is emotional or exuberant in character.
+| Usage: Liszt's *Hungarian Rhapsodies*. [匈牙利狂想曲]
+| Definition: an effusively enthusiastic or ecstatic expression of feeling.
+| Usage: rhapsodies of praise.
+| 
+| effusive
+| Definition: expressing feelings of gratitude, pleasure, or approval in an unrestrained or heartfelt manner.
+| Usage: an effusive welcome.
+| Definition: (Geology) (of igneous rock) poured out when molten and later solidified.
+| 
+| igneous
+| Definition: (Geology) (of rock) having solidified from lava or magma.
+| Definition: relating to or involving volcanic processes.
+| Usage: igneous activity.
+| 
+| heartfelt 
+| Definition: (of a feeling or its expression) sincere; deeply and strongly felt.
+| Usage: our heartfelt thanks.
+|
+| lullaby [摇篮曲]
+| Definition: A quiet, gentle song sung to send a child to sleep.
+| 
+| ballad
+| Definition: a poem or song narrating a story in short stanzas. 
+| Usage: A medieval ballad about a knight and a lady. [民谣，叙事诗]
+| Definition: a small popular song about love. [情歌]
+| Usage: Here latest single is a ballad.
+| Origin: Traditional ballads are typically of unknown authorship, having been passed on orally from one generation to the next as part of folk culture.
+
+
+

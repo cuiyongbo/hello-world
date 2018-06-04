@@ -92,3 +92,52 @@ function, or it may be a :abbr:`PMF (probability mass function)` rather than the
 
 In general though, the PMF is used in the context of discrete random variables (random variables that 
 take values on a discrete set), while PDF is used in the context of continuous random variables.
+
+
+Probability mass function
+=========================
+
+Introduction
+------------
+
+.. sidebar:: Probability mass function
+
+   .. image:: images/Discrete_probability_distrib.svg
+
+   The graph of a probability mass function. All the values 
+   of this function must be non-negative and sum up to 1.
+
+In probability and statistics, a :abbr:`PMF(probability mass function)` is a function that gives 
+the probability that a discrete random variable is exactly equal to some value. The PMF is often 
+the primary means of defining a discrete probability distribution, and such functions exist for 
+either scalar or multivariate random variables whose domain is discrete.
+
+A PMF differs from a :abbr:`PDF (probability density function)` in that the latter is associated 
+with continuous rather than discrete random variables; the values of the PDF are not probabilities 
+as such: a PDF must be integrated over an interval to yield a probability.
+
+The value of the random variable having the largest probability mass is called the **mode**.
+
+Formal definition
+-----------------
+
+Suppose that :math:`X: S \rightarrow A (A \subseteq R)` is a discrete random variable 
+defined on a sample space S. Then the PMF :math:`f_X: A \rightarrow [0, 1]` for *X* is 
+defined as :math:`f_{X}(x) = \Pr(X=x) = \Pr(\{s \in S:X(s)=x\}).`Thinking of probability 
+as mass helps to avoid mistakes since the physical mass is conserved as is the total 
+probability for all hypothetical outcomes *x*:
+
+.. math::
+
+   \sum_{x \in A} f_{X}(x) = 1
+
+When there is a natural order among the potential outcomes *x*, it may be convenient to assign 
+numerical values to them (or n-tuples in case of a discrete multivariate random variable) and 
+to consider also values not in the image of *X*. That is, :math:`f_X` may be defined for all 
+real numbers and :math:`f_X(x) = 0` for all :math:`x \notin X(S)` as shown in the figure.
+
+Since the image of *X* is countable, the PMF :math:`f_X(x)` is zero for all but a countable number 
+of values of *x*. The discontinuity of PMF is related to the fact that the **cumulative distribution function** 
+of a discrete random variable, when it is meaningful because there is a natural ordering, is also 
+discontinuous. Where it is differentiable, the derivative is zero, just as the PMF is zero at all 
+such points.

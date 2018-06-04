@@ -37,12 +37,17 @@ Bucket sort works as follows:
 Property
 ========
 
-=============================  ======================
-Worst-case performance         :math:`O(n^2)`        
-Best-case performance          :math:`\Omega (n+k)`  
-Average performance            :math:`\Theta (n+k)`  
-Worst-case space complexity    :math:`O(n\cdot k)`   
-=============================  ======================
++-----------------------------+----------------------+
+| Data structure              | Array                |
++-----------------------------+----------------------+
+| Worst-case performance      | :math:`O(n^2)`       |
++-----------------------------+----------------------+
+| Best-case performance       | :math:`\Omega (n+k)` |
++-----------------------------+----------------------+
+| Average performance         | :math:`\Theta (n+k)` |
++-----------------------------+----------------------+
+| Worst-case space complexity | :math:`O(n \cdot k)` |
++-----------------------------+----------------------+
 
 
 Pseudocode
@@ -67,7 +72,7 @@ function *nextSort* is a sorting function; using *bucketSort* itself as *nextSor
 produces a relative of radix sort; in particular, the case n = 2 corresponds to 
 quicksort (although potentially with poor pivot choices).
 
-Note that for bucket sort to be :math:`O(n)` on average, the number of buckets *n* 
+**Note** that for bucket sort to be :math:`O(n)` on average, the number of buckets *n* 
 must be equal to the length of the array being sorted, and the input array must be 
 uniformly distributed across the range of possible bucket values. If these requirements 
 are not met, the performance of bucket sort will be dominated by the running time of 

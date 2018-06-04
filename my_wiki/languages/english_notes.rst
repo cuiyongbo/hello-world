@@ -1511,21 +1511,9 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: 
 | Usage: Complaints about poor food in schools have become a familiar refrain.
 | Usage: “Poor Tom” had become the constant refrain of his friend.
-|
-| lullaby [摇篮曲]
-| Definition: A quiet, gentle song sung to send a child to sleep.
-| 
-| ballad
-| Definition: a poem or song narrating a story in short stanzas. Traditional ballads are typically of unknown authorship, having been passed on orally from one | generation to the next as part of folk culture.
-| Usage: A medieval ballad about a knight and a lady. [民谣，叙事诗]
-| Definition: a small popular song about love. [情歌]
-| Usage: Here latest single is a ballad.
 | 
 | state-of-art
 | Definition: State-of-art (sometimes cutting edge) refers to the highest level of general development, as of a device, technique, or scientific field achieved | at a particular time.
-| 
-| puffery [捧杀]
-| Definition: exaggerated or false praise.
 | 
 | falsework
 | Definitin: temporary framework structures used to support a building during its construction.
