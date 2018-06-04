@@ -13,5 +13,3 @@ Pending tasks
    
    - ite - sytle_sheet_notifier
    - file_watcher
-
-#. https://github.com/AIRTucha/SortVis.git

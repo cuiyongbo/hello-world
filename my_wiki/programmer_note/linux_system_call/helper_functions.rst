@@ -110,8 +110,8 @@ nanosleep
 **DESCRIPTION**
 
    The ``nanosleep()`` function causes the calling thread to sleep for the amount of
-   time specified in *rqtp* (the actual time slept may be longer, due to system laten-
-   cies and possible limitations in the timer resolution of the hardware).  An
+   time specified in *rqtp* (the actual time slept may be longer, due to system 
+   latencies and possible limitations in the timer resolution of the hardware).  An
    unmasked signal will cause ``nanosleep()`` to terminate the sleep early, regardless
    of the ``SA_RESTART`` value on the interrupting signal.
 

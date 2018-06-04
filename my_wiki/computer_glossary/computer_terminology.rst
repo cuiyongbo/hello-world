@@ -27,6 +27,7 @@ Computer Terminology
 | SoC = System on Chip
 | ALU = Arithmetic Logic Unit
 | XML = Extensive Markup Language
+| POSIX = Portable Operating System Interface
 |
 | concatenate
 | concatenation

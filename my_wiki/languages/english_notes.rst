@@ -2152,6 +2152,7 @@ admitted the computer was named after his daughter.
 | [我有斗酒，藏之久矣，以待子不时之需]
 | Definition: refrain from delivering (a judgment or decision) immediately or without due consideration or evidence.
 | Usage: I'll reserve my views on his ability until he's played again. [对 xx 持保留意见]
+| Definition: If you reserver the charges you make a phone call, the person you are phoning pay the cost.
 | 
 | die hard
 | Definition: disappear or change very slowly.

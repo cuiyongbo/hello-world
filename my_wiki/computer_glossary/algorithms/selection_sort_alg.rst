@@ -2,7 +2,7 @@
 Selection Sort
 **************
 
-**Keywords**: in-place sort.
+**Keywords**: in-place sort, quadratic algorithms
 
 Introduction
 ============
