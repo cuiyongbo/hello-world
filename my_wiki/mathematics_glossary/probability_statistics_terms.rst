@@ -123,7 +123,7 @@ Formal definition
 
 Suppose that :math:`X: S \rightarrow A (A \subseteq R)` is a discrete random variable 
 defined on a sample space S. Then the PMF :math:`f_X: A \rightarrow [0, 1]` for *X* is 
-defined as :math:`f_{X}(x) = \Pr(X=x) = \Pr(\{s \in S:X(s)=x\}).`Thinking of probability 
+defined as :math:`f_{X}(x) = \Pr(X=x) = \Pr(\{s \in S:X(s)=x\}).` Thinking of probability 
 as mass helps to avoid mistakes since the physical mass is conserved as is the total 
 probability for all hypothetical outcomes *x*:
 

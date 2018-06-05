@@ -1,188 +1,210 @@
-INOTIFY(7)                                     Linux Programmer's Manual                                     INOTIFY(7)
+**************
+inotify Manual
+**************
 
-NAME
-       inotify - monitoring filesystem events
+**NAME**
 
-DESCRIPTION
-       The  inotify API provides a mechanism for monitoring filesystem events.  Inotify can be used to monitor individ‐
-       ual files, or to monitor directories.  When a directory is monitored, inotify will return events for the  direc‐
-       tory itself, and for files inside the directory.
+   inotify - monitoring filesystem events
 
-       The following system calls are used with this API:
+**DESCRIPTION**
 
-       *  inotify_init(2)  creates an inotify instance and returns a file descriptor referring to the inotify instance.
-          The more recent inotify_init1(2) is like inotify_init(2), but has a flags argument that  provides  access  to
-          some extra functionality.
+   The inotify API provides a mechanism for monitoring filesystem events.  
+   Inotify can be used to monitor individual files, or to monitor directories.  
+   When a directory is monitored, inotify will return events for the  directory 
+   itself, and for files inside the directory.
 
-       *  inotify_add_watch(2)  manipulates  the "watch list" associated with an inotify instance.  Each item ("watch")
-          in the watch list specifies the pathname of a file or directory, along with some set of events that the  ker‐
-          nel  should  monitor  for  the  file referred to by that pathname.  inotify_add_watch(2) either creates a new
-          watch item, or modifies an existing watch.  Each watch has a unique "watch descriptor", an  integer  returned
-          by inotify_add_watch(2) when the watch is created.
+   The following system calls are used with this API:
 
-       *  When  events occur for monitored files and directories, those events are made available to the application as
-          structured data that can be read from the inotify file descriptor using read(2) (see below).
+      *  :manpage:`inotify_init(2)` creates an inotify instance and 
+         returns a file descriptor referring to the inotify instance.
+         The more recent :manpage:`inotify_init1(2)` is like :manpage:`inotify_init(2)`, 
+         but has a *flags* argument that provides access to some extra functionality.
 
-       *  inotify_rm_watch(2) removes an item from an inotify watch list.
+      *  :manpage:`inotify_add_watch(2)` manipulates the "watch list" associated with 
+         an inotify instance. Each item ("watch") in the watch list specifies the 
+         pathname of a file or directory, along with some set of events that the kernel  
+         should monitor for the file referred to by that pathname. :manpage:`inotify_add_watch(2)` 
+         either creates a new watch item, or modifies an existing watch. Each watch has a 
+         unique "watch descriptor", an integer returned by :manpage:`inotify_add_watch(2)` 
+         when the watch is created.
 
-       *  When all file descriptors referring to an inotify instance have been closed (using close(2)), the  underlying
-          object and its resources are freed for reuse by the kernel; all associated watches are automatically freed.
+      *  When events occur for monitored files and directories, those events are made 
+         available to the application as structured data that can be read from the inotify 
+         file descriptor using :manpage:`read(2)`.
 
-       With  careful programming, an application can use inotify to efficiently monitor and cache the state of a set of
-       filesystem objects.  However, robust applications should allow for the fact that bugs in the monitoring logic or
-       races  of  the  kind described below may leave the cache inconsistent with the filesystem state.  It is probably
-       wise to do some consistency checking, and rebuild the cache when inconsistencies are detected.
+      * :manpage:`inotify_rm_watch(2)` removes an item from an inotify watch list.
 
-   Reading events from an inotify file descriptor
-       To determine what events have occurred, an application read(2)s from the inotify file descriptor.  If no  events
-       have  so  far  occurred,  then, assuming a blocking file descriptor, read(2) will block until at least one event
-       occurs (unless interrupted by a signal, in which case the call fails with the error EINTR; see signal(7)).
+      *  When all file descriptors referring to an inotify instance have been closed 
+         (using :manpage:`close(2)`), the  underlying object and its resources are 
+         freed for reuse by the kernel; all associated watches are automatically freed.
 
-       Each successful read(2) returns a buffer containing one or more of the following structures:
+   With careful programming, an application can use *inotify* to efficiently monitor 
+   and cache the state of a set of filesystem objects. However, robust applications 
+   should allow for the fact that bugs in the monitoring logic or races of the kind 
+   described below may leave the cache inconsistent with the filesystem state. It is 
+   probably wise to do some consistency checking, and rebuild the cache when 
+   inconsistencies are detected.
 
-           struct inotify_event {
+   **Reading events from an inotify file descriptor**
+
+      To determine what events have occurred, an application *read(2)s* from the inotify file descriptor.  
+      If no events have so far  occurred, then, assuming a blocking file descriptor, *read(2)* will block 
+      until at least one event occurs (unless interrupted by a signal, in which case the call fails with 
+      the error *EINTR*; see :manpage:`signal(7)`).
+
+      Each successful *read(2)* returns a buffer containing one or more of the following structures::
+
+         struct inotify_event {
                int      wd;       /* Watch descriptor */
                uint32_t mask;     /* Mask describing event */
                uint32_t cookie;   /* Unique cookie associating related
                                      events (for rename(2)) */
                uint32_t len;      /* Size of name field */
                char     name[];   /* Optional null-terminated name */
-           };
+         };
 
-       wd identifies the watch for which this event occurs.  It is one of the watch descriptors returned by a  previous
-       call to inotify_add_watch(2).
+      *wd* identifies the watch for which this event occurs. It is one of the watch descriptors 
+      returned by a previous call to *inotify_add_watch(2)*.
 
-       mask contains bits that describe the event that occurred (see below).
+      *mask* contains bits that describe the event that occurred (see below).
 
-       cookie  is  a  unique  integer that connects related events.  Currently this is used only for rename events, and
-       allows the resulting pair of IN_MOVED_FROM and IN_MOVED_TO events to be connected by the application.   For  all
-       other event types, cookie is set to 0.
+      *cookie* is a unique integer that connects related events. Currently this is used only for 
+      rename events, and allows the resulting pair of *IN_MOVED_FROM* and *IN_MOVED_TO* events to 
+      be connected by the application. For all other event types, *cookie* is set to 0.
 
-       The  name  field  is present only when an event is returned for a file inside a watched directory; it identifies
-       the filename within to the watched directory.  This filename is null-terminated, and may  include  further  null
-       bytes ('\0') to align subsequent reads to a suitable address boundary.
+      The *name* field is present only when an event is returned for a file inside a watched 
+      directory; it identifies the filename within to the watched directory. This filename 
+      is null-terminated, and may include further null bytes ('\0') to align subsequent reads 
+      to a suitable address boundary.
 
-       The len field counts all of the bytes in name, including the null bytes; the length of each inotify_event struc‐
-       ture is thus sizeof(struct inotify_event)+len.
+      The *len* field counts all of the bytes in name, including the null bytes; the length of 
+      each inotify_event structure is thus ``sizeof(struct inotify_event)+len``. (minus sizeof(char*))
 
-       The behavior when the buffer given to read(2) is too small to return information about the next event depends on
-       the  kernel  version:  in  kernels before 2.6.21, read(2) returns 0; since kernel 2.6.21, read(2) fails with the
-       error EINVAL.  Specifying a buffer of size
+      The behavior when the buffer given to *read(2)* is too small to return information about 
+      the next event depends on the kernel version: in  kernels before 2.6.21, *read(2)* returns 0; 
+      since kernel 2.6.21, *read(2)* fails with th error **EINVAL**.  Specifying a buffer of size
+      ``sizeof(struct inotify_event) + NAME_MAX + 1`` will be sufficient to read at least one event.
 
-           sizeof(struct inotify_event) + NAME_MAX + 1
+   **inotify events**
 
-       will be sufficient to read at least one event.
+      The :manpage:`inotify_add_watch(2)` *mask* argument and the *mask* field of the *inotify_event* 
+      structure returned when read(2)ing an inotify file descriptor are both bit masks identifying 
+      inotify events.  The following bits can be specified in *mask* when calling *inotify_add_watch(2)* 
+      and may be returned in the *mask* field returned by *read(2)*::
 
-   inotify events
-       The inotify_add_watch(2) mask argument  and  the  mask  field  of  the  inotify_event  structure  returned  when
-       read(2)ing  an inotify file descriptor are both bit masks identifying inotify events.  The following bits can be
-       specified in mask when calling inotify_add_watch(2) and may be returned in the mask field returned by read(2):
+         IN_ACCESS (+)
+            File was accessed (e.g., read(2), execve(2)).
 
-           IN_ACCESS (+)
-                  File was accessed (e.g., read(2), execve(2)).
+         IN_ATTRIB (*)
+            Metadata changed—for example, permissions (e.g., chmod(2)), 
+            timestamps (e.g., utimensat(2)), extended attributes (setxattr(2)),  
+            link count (since Linux 2.6.25; e.g., for the target of link(2) 
+            and for unlink(2)), and user/group ID (e.g., chown(2)).
 
-           IN_ATTRIB (*)
-                  Metadata changed—for example, permissions (e.g., chmod(2)), timestamps (e.g., utimensat(2)), extended
-                  attributes  (setxattr(2)),  link  count  (since Linux 2.6.25; e.g., for the target of link(2) and for
-                  unlink(2)), and user/group ID (e.g., chown(2)).
+         IN_CLOSE_WRITE (+)
+            File opened for writing was closed.
 
-           IN_CLOSE_WRITE (+)
-                  File opened for writing was closed.
+         IN_CLOSE_NOWRITE (*)
+            File or directory not opened for writing was closed.
 
-           IN_CLOSE_NOWRITE (*)
-                  File or directory not opened for writing was closed.
+         IN_CREATE (+)
+            File/directory created in watched directory (e.g., open(2) O_CREAT,  
+            mkdir(2), link(2), symlink(2), bind(2) on a UNIX domain socket).
 
-           IN_CREATE (+)
-                  File/directory created in watched directory (e.g., open(2) O_CREAT,  mkdir(2),  link(2),  symlink(2),
-                  bind(2) on a UNIX domain socket).
+         IN_DELETE (+)
+            File/directory deleted from watched directory.
 
-           IN_DELETE (+)
-                  File/directory deleted from watched directory.
+         IN_DELETE_SELF
+            Watched file/directory was itself deleted. (This event also occurs 
+            if an object is moved to another filesystem, since mv(1) in effect 
+            copies the file to the other filesystem and then deletes it from the 
+            original filesystem.) In addition, an IN_IGNORED event will subsequently 
+            be generated for the watch descriptor.
 
-           IN_DELETE_SELF
-                  Watched  file/directory was itself deleted.  (This event also occurs if an object is moved to another
-                  filesystem, since mv(1) in effect copies the file to the other filesystem and then  deletes  it  from
-                  the  original  filesystem.)   In addition, an IN_IGNORED event will subsequently be generated for the
-                  watch descriptor.
+         IN_MODIFY (+)
+            File was modified (e.g., write(2), truncate(2)).
 
-           IN_MODIFY (+)
-                  File was modified (e.g., write(2), truncate(2)).
+         IN_MOVE_SELF
+            Watched file/directory was itself moved.
 
-           IN_MOVE_SELF
-                  Watched file/directory was itself moved.
+         IN_MOVED_FROM (+)
+            Generated for the directory containing the old filename when a file is renamed.
 
-           IN_MOVED_FROM (+)
-                  Generated for the directory containing the old filename when a file is renamed.
+         IN_MOVED_TO (+)
+            Generated for the directory containing the new filename when a file is renamed.
 
-           IN_MOVED_TO (+)
-                  Generated for the directory containing the new filename when a file is renamed.
+         IN_OPEN (*)
+            File or directory was opened.
 
-           IN_OPEN (*)
-                  File or directory was opened.
+      When monitoring a directory:
 
-       When monitoring a directory:
+         * the events marked above with an asterisk (*) can occur 
+           both for the directory itself and for objects inside 
+           the directory.
 
-       *  the events marked above with an asterisk (*) can occur both for the directory itself and for  objects  inside
-          the directory; and
+         * the events marked with a plus sign (+) occur only for objects 
+           inside the directory (not for the directory itself).
 
-       *  the  events  marked  with  a plus sign (+) occur only for objects inside the directory (not for the directory
-          itself).
+      When events are generated for objects inside a watched directory, the *name* field in the 
+      returned *inotify_event* structure identifies the *name* of the file within the directory.
 
-       When events are generated for objects inside a watched directory, the name field in the  returned  inotify_event
-       structure identifies the name of the file within the directory.
+      The *IN_ALL_EVENTS* macro is defined as a bit mask of all of the above events. 
+      This macro can be used as the mask argument when calling *inotify_add_watch(2)*.
 
-       The IN_ALL_EVENTS macro is defined as a bit mask of all of the above events.  This macro can be used as the mask
-       argument when calling inotify_add_watch(2).
+      Two additional convenience macros are defined::
 
-       Two additional convenience macros are defined:
+         IN_MOVE
+            Equates to IN_MOVED_FROM | IN_MOVED_TO.
 
-           IN_MOVE
-                  Equates to IN_MOVED_FROM | IN_MOVED_TO.
+         IN_CLOSE
+            Equates to IN_CLOSE_WRITE | IN_CLOSE_NOWRITE.
 
-           IN_CLOSE
-                  Equates to IN_CLOSE_WRITE | IN_CLOSE_NOWRITE.
+      The following further bits can be specified in *mask* 
+      when calling *inotify_add_watch(2)* ::
 
-       The following further bits can be specified in mask when calling inotify_add_watch(2):
+         IN_DONT_FOLLOW (since Linux 2.6.15)
+            Don't dereference pathname if it is a symbolic link.
 
-           IN_DONT_FOLLOW (since Linux 2.6.15)
-                  Don't dereference pathname if it is a symbolic link.
+         IN_EXCL_UNLINK (since Linux 2.6.36)
+            By default, when watching events on the children of a directory, events are  generated  for  children
+            even after they have been unlinked from the directory.  This can result in large numbers of uninter‐
+            esting events for some applications (e.g., if watching /tmp, in which many applications create tempo‐
+            rary  files  whose  names  are  immediately unlinked).  Specifying IN_EXCL_UNLINK changes the default
+            behavior, so that events are not generated for children  after  they  have  been  unlinked  from  the
+            watched directory.
 
-           IN_EXCL_UNLINK (since Linux 2.6.36)
-                  By default, when watching events on the children of a directory, events are  generated  for  children
-                  even  after they have been unlinked from the directory.  This can result in large numbers of uninter‐
-                  esting events for some applications (e.g., if watching /tmp, in which many applications create tempo‐
-                  rary  files  whose  names  are  immediately unlinked).  Specifying IN_EXCL_UNLINK changes the default
-                  behavior, so that events are not generated for children  after  they  have  been  unlinked  from  the
-                  watched directory.
+         IN_MASK_ADD
+            If a watch instance already exists for the filesystem object corresponding to pathname, add (OR) the
+            events in mask to the watch mask (instead of replacing the mask).
 
-           IN_MASK_ADD
-                  If  a watch instance already exists for the filesystem object corresponding to pathname, add (OR) the
-                  events in mask to the watch mask (instead of replacing the mask).
+         IN_ONESHOT
+            Monitor the filesystem object corresponding to pathname for one event, 
+            then remove from watch list.
 
-           IN_ONESHOT
-                  Monitor the filesystem object corresponding to pathname for one event, then remove from watch list.
+         IN_ONLYDIR (since Linux 2.6.15)
+            Only watch pathname if it is a directory. Using this flag provides an 
+            application with a race-free way of ensuring that the monitored object 
+            is a directory.
 
-           IN_ONLYDIR (since Linux 2.6.15)
-                  Only watch pathname if it is a directory.  Using this flag provides an application with  a  race-free
-                  way of ensuring that the monitored object is a directory.
+      The following bits may be set in the *mask* field returned by *read(2)* ::
 
-       The following bits may be set in the mask field returned by read(2):
+         IN_IGNORED
+            Watch was removed explicitly (inotify_rm_watch(2)) or automatically 
+            (file was deleted, or filesystem was unmounted).  See also BUGS.
 
-           IN_IGNORED
-                  Watch  was removed explicitly (inotify_rm_watch(2)) or automatically (file was deleted, or filesystem
-                  was unmounted).  See also BUGS.
+         IN_ISDIR
+            Subject of this event is a directory.
 
-           IN_ISDIR
-                  Subject of this event is a directory.
+         IN_Q_OVERFLOW
+            Event queue overflowed (wd is -1 for this event).
 
-           IN_Q_OVERFLOW
-                  Event queue overflowed (wd is -1 for this event).
+         IN_UNMOUNT
+            Filesystem containing watched object was unmounted.  
+            In addition, an IN_IGNORED event will subsequently 
+            be generated for the watch descriptor.
 
-           IN_UNMOUNT
-                  Filesystem containing watched object was unmounted.  In addition, an  IN_IGNORED  event  will  subse‐
-                  quently be generated for the watch descriptor.
+**Examples**
 
-   Examples
        Suppose an application is watching the directory dir and the file dir/myfile for all events.  The examples below
        show some events that will be generated for these two objects.
 
@@ -243,13 +265,6 @@ DESCRIPTION
 
        /proc/sys/fs/inotify/max_user_watches
               This specifies an upper limit on the number of watches that can be created per real user ID.
-
-VERSIONS
-       Inotify was merged into the 2.6.13 Linux kernel.  The required library interfaces were added to glibc in version
-       2.4.  (IN_DONT_FOLLOW, IN_MASK_ADD, and IN_ONLYDIR were added in glibc version 2.5.)
-
-CONFORMING TO
-       The inotify API is Linux-specific.
 
 NOTES
        Inotify file descriptors can be monitored using select(2), poll(2), and epoll(7).  When an event  is  available,
@@ -331,55 +346,60 @@ NOTES
        tion of the IN_MOVED_FROM-IN_MOVED_TO event pair is not atomic, and also the possibility that there may  not  be
        any IN_MOVED_TO event.
 
-BUGS
-       Before Linux 3.19, fallocate(2) did not create any inotify events.  Since Linux 3.19, calls to fallocate(2) gen‐
-       erate IN_MODIFY events.
+**BUGS**
 
-       In kernels before 2.6.16, the IN_ONESHOT mask flag does not work.
+   Before Linux 3.19, fallocate(2) did not create any inotify events. Since Linux 3.19, 
+   calls to fallocate(2) generate IN_MODIFY events.
 
-       As originally designed and implemented, the IN_ONESHOT flag did not cause an IN_IGNORED event  to  be  generated
-       when  the  watch  was  dropped  after one event.  However, as an unintended effect of other changes, since Linux
-       2.6.36, an IN_IGNORED event is generated in this case.
+   In kernels before 2.6.16, the IN_ONESHOT mask flag does not work.
 
-       Before kernel 2.6.25, the kernel code that was intended to coalesce successive identical events (i.e.,  the  two
-       most  recent  events  could  potentially be coalesced if the older had not yet been read) instead checked if the
-       most recent event could be coalesced with the oldest unread event.
+   As originally designed and implemented, the IN_ONESHOT flag did not cause an IN_IGNORED event  
+   to be generated when the watch was dropped after one event. However, as an unintended effect of 
+   other changes, since Linux 2.6.36, an IN_IGNORED event is generated in this case.
 
-       When a watch descriptor is removed by calling inotify_rm_watch(2) (or because a watch file  is  deleted  or  the
-       filesystem  that contains it is unmounted), any pending unread events for that watch descriptor remain available
-       to read.  As watch descriptors are subsequently allocated with inotify_add_watch(2), the kernel  cycles  through
-       the  range of possible watch descriptors (0 to INT_MAX) incrementally.  When allocating a free watch descriptor,
-       no check is made to see whether that watch descriptor number has any pending unread events in the inotify queue.
-       Thus,  it can happen that a watch descriptor is reallocated even when pending unread events exist for a previous
-       incarnation of that watch descriptor number, with the result that the application might then read  those  events
-       and  interpret  them as belonging to the file associated with the newly recycled watch descriptor.  In practice,
-       the likelihood of hitting this bug may be extremely low, since it requires that  an  application  cycle  through
-       INT_MAX  watch  descriptors, release a watch descriptor while leaving unread events for that watch descriptor in
-       the queue, and then recycle that watch descriptor.  For this reason, and because there have been no  reports  of
-       the  bug  occurring in real-world applications, as of Linux 3.15, no kernel changes have yet been made to elimi‐
-       nate this possible bug.
+   Before kernel 2.6.25, the kernel code that was intended to coalesce successive identical events 
+   (i.e., the two most recent events could potentially be coalesced if the older had not yet been 
+   read) instead checked if the most recent event could be coalesced with the oldest unread event.
 
-EXAMPLE
-       The following program demonstrates the usage of the inotify API.  It marks the directories passed as a  command-
-       line arguments and waits for events of type IN_OPEN, IN_CLOSE_NOWRITE and IN_CLOSE_WRITE.
+   When a watch descriptor is removed by calling inotify_rm_watch(2) (or because a watch file is deleted  
+   or the filesystem that contains it is unmounted), any pending unread events for that watch descriptor 
+   remain available to read. As watch descriptors are subsequently allocated with inotify_add_watch(2), 
+   the kernel cycles through the range of possible watch descriptors (0 to INT_MAX) incrementally. When 
+   allocating a free watch descriptor, no check is made to see whether that watch descriptor number has 
+   any pending unread events in the inotify queue. Thus, it can happen that a watch descriptor is reallocated 
+   even when pending unread events exist for a previous incarnation of that watch descriptor number, with the 
+   result that the application might then read those events and interpret them as belonging to the file associated 
+   with the newly recycled watch descriptor. In practice, the likelihood of hitting this bug may be extremely low, 
+   since it requires that an application cycle through INT_MAX watch descriptors, release a watch descriptor while 
+   leaving unread events for that watch descriptor in the queue, and then recycle that watch descriptor. For this 
+   reason, and because there have been no reports of the bug occurring in real-world applications, as of Linux 3.15, 
+   no kernel changes have yet been made to eliminate this possible bug.
 
-       The following output was recorded while editing the file /home/user/temp/foo and listing directory /tmp.  Before
-       the file and the directory were opened, IN_OPEN events occurred.  After the file was closed,  an  IN_CLOSE_WRITE
-       event  occurred.   After the directory was closed, an IN_CLOSE_NOWRITE event occurred.  Execution of the program
-       ended when the user pressed the ENTER key.
+**EXAMPLE**
 
-   Example output
-           $ ./a.out /tmp /home/user/temp
-           Press enter key to terminate.
-           Listening for events.
-           IN_OPEN: /home/user/temp/foo [file]
-           IN_CLOSE_WRITE: /home/user/temp/foo [file]
-           IN_OPEN: /tmp/ [directory]
-           IN_CLOSE_NOWRITE: /tmp/ [directory]
+   The following program demonstrates the usage of the inotify API. It marks the directories 
+   passed as a command line arguments and waits for events of type IN_OPEN, IN_CLOSE_NOWRITE 
+   and IN_CLOSE_WRITE.
 
-           Listening for events stopped.
+   The following output was recorded while editing the file */home/user/temp/foo* and listing 
+   directory /*tmp*. Before the file and the directory were opened, IN_OPEN events occurred.  
+   After the file was closed, an IN_CLOSE_WRITE event occurred. After the directory was closed, 
+   an IN_CLOSE_NOWRITE event occurred. Execution of the program ended when the user pressed 
+   the ENTER key.
 
-   Program source
+   Example output::
+
+      $ ./a.out /tmp /home/user/temp
+      Press enter key to terminate.
+      Listening for events.
+      IN_OPEN: /home/user/temp/foo [file]
+      IN_CLOSE_WRITE: /home/user/temp/foo [file]
+      IN_OPEN: /tmp/ [directory]
+      IN_CLOSE_NOWRITE: /tmp/ [directory]
+      Listening for events stopped.
+
+   Program source::
+
        #include <errno.h>
        #include <poll.h>
        #include <stdio.h>
@@ -393,8 +413,7 @@ EXAMPLE
           argv is the list of watched directories.
           Entry 0 of wd and argv is unused. */
 
-       static void
-       handle_events(int fd, int *wd, int argc, char* argv[])
+       static void handle_events(int fd, int *wd, int argc, char* argv[])
        {
            /* Some systems cannot read integer variables if they are not
               properly aligned. On other systems, incorrect alignment may
@@ -411,19 +430,16 @@ EXAMPLE
 
            /* Loop while events can be read from inotify file descriptor. */
 
-           for (;;) {
+           for (;;) 
+           {
 
                /* Read some events. */
 
-               len = read(fd, buf, sizeof buf);
+               len = read(fd, buf, sizeof(buf));
                if (len == -1 && errno != EAGAIN) {
                    perror("read");
                    exit(EXIT_FAILURE);
                }
-
-               /* If the nonblocking read() found no events to read, then
-                  it returns -1 with errno set to EAGAIN. In that case,
-                  we exit the loop. */
 
                if (len <= 0)
                    break;
@@ -431,11 +447,10 @@ EXAMPLE
                /* Loop over all events in the buffer */
 
                for (ptr = buf; ptr < buf + len;
-                       ptr += sizeof(struct inotify_event) + event->len) {
+                       ptr += sizeof(struct inotify_event) + event->len) 
+               {
 
                    event = (const struct inotify_event *) ptr;
-
-                   /* Print event type */
 
                    if (event->mask & IN_OPEN)
                        printf("IN_OPEN: ");
@@ -444,21 +459,16 @@ EXAMPLE
                    if (event->mask & IN_CLOSE_WRITE)
                        printf("IN_CLOSE_WRITE: ");
 
-                   /* Print the name of the watched directory */
-
-                   for (i = 1; i < argc; ++i) {
+                   for (i = 1; i < argc; ++i) 
+                   {
                        if (wd[i] == event->wd) {
                            printf("%s/", argv[i]);
                            break;
                        }
                    }
 
-                   /* Print the name of the file */
-
                    if (event->len)
                        printf("%s", event->name);
-
-                   /* Print type of filesystem object */
 
                    if (event->mask & IN_ISDIR)
                        printf(" [directory]\n");
@@ -468,15 +478,8 @@ EXAMPLE
            }
        }
 
-       int
-       main(int argc, char* argv[])
+       int main(int argc, char* argv[])
        {
-           char buf;
-           int fd, i, poll_num;
-           int *wd;
-           nfds_t nfds;
-           struct pollfd fds[2];
-
            if (argc < 2) {
                printf("Usage: %s PATH [PATH ...]\n", argv[0]);
                exit(EXIT_FAILURE);
@@ -485,16 +488,14 @@ EXAMPLE
            printf("Press ENTER key to terminate.\n");
 
            /* Create the file descriptor for accessing the inotify API */
-
-           fd = inotify_init1(IN_NONBLOCK);
+           int fd = inotify_init1(IN_NONBLOCK);
            if (fd == -1) {
                perror("inotify_init1");
                exit(EXIT_FAILURE);
            }
 
            /* Allocate memory for watch descriptors */
-
-           wd = calloc(argc, sizeof(int));
+           int* wd = (int*)calloc(argc, sizeof(int));
            if (wd == NULL) {
                perror("calloc");
                exit(EXIT_FAILURE);
@@ -503,10 +504,10 @@ EXAMPLE
            /* Mark directories for events
               - file was opened
               - file was closed */
-
-           for (i = 1; i < argc; i++) {
-               wd[i] = inotify_add_watch(fd, argv[i],
-                                         IN_OPEN | IN_CLOSE);
+           int i;
+           for (i = 1; i < argc; i++) 
+           {
+               wd[i] = inotify_add_watch(fd, argv[i], IN_OPEN | IN_CLOSE);
                if (wd[i] == -1) {
                    fprintf(stderr, "Cannot watch '%s'\n", argv[i]);
                    perror("inotify_add_watch");
@@ -516,45 +517,44 @@ EXAMPLE
 
            /* Prepare for polling */
 
-           nfds = 2;
+           const nfds_t nfds = 2;
+           struct pollfd fds[nfds];
 
            /* Console input */
-
            fds[0].fd = STDIN_FILENO;
            fds[0].events = POLLIN;
 
            /* Inotify input */
-
            fds[1].fd = fd;
            fds[1].events = POLLIN;
 
            /* Wait for events and/or terminal input */
 
+           char buf;
+           int poll_num;
            printf("Listening for events.\n");
-           while (1) {
+           while (1) 
+           {
                poll_num = poll(fds, nfds, -1);
-               if (poll_num == -1) {
+               if (poll_num == -1) 
+               {
                    if (errno == EINTR)
                        continue;
                    perror("poll");
                    exit(EXIT_FAILURE);
                }
 
-               if (poll_num > 0) {
-
-                   if (fds[0].revents & POLLIN) {
-
-                       /* Console input is available. Empty stdin and quit */
-
+               if (poll_num > 0) 
+               {
+                   if (fds[0].revents & POLLIN) 
+                   {
                        while (read(STDIN_FILENO, &buf, 1) > 0 && buf != '\n')
                            continue;
                        break;
                    }
 
-                   if (fds[1].revents & POLLIN) {
-
-                       /* Inotify events are available */
-
+                   if (fds[1].revents & POLLIN) 
+                   {
                        handle_events(fd, wd, argc, argv);
                    }
                }
@@ -562,10 +562,7 @@ EXAMPLE
 
            printf("Listening for events stopped.\n");
 
-           /* Close inotify file descriptor */
-
            close(fd);
-
            free(wd);
            exit(EXIT_SUCCESS);
        }
