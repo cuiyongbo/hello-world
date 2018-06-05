@@ -2,6 +2,17 @@
 inotify Manual
 **************
 
+.. toctree::
+   :caption: API List
+
+   inotify_init
+   inotify_add_watch
+   inotify_rm_watch
+
+
+Overview
+========
+
 **NAME**
 
    inotify - monitoring filesystem events
@@ -578,9 +589,4 @@ inotify Manual
            exit(EXIT_SUCCESS);
        }
 
-
-**SEE ALSO**
-
-   inotifywait(1), inotifywatch(1), inotify_add_watch(2), inotify_init(2),  
-   inotify_init1(2),  inotify_rm_watch(2), read(2), stat(2), fanotify(7)
 

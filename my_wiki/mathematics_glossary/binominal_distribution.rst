@@ -16,7 +16,7 @@ Property      Mathematic Notation
 ============  ===============================================================================================================
 Notation      :math:`B(n, p)`                                                                                                
 Parameters    :math:`n \in N_0` — number of trial, :math:`p \in [0,1]` — success probability in each trial                   
-pmf           :math:`{\displaystyle \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}} \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}`  
+PMF           :math:`{\displaystyle \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}} \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}`  
 CDF           :math:`{\displaystyle \textstyle I_{1-p}(n-k,1+k)} \textstyle I_{1-p}(n-k,1+k)`                                
 Mean          :math:`{\displaystyle np}`                                                                                     
 Variance      :math:`{\displaystyle np(1-p)}`                                                                                
