@@ -28,6 +28,7 @@ Computer Terminology
 | ALU = Arithmetic Logic Unit
 | XML = Extensive Markup Language
 | POSIX = Portable Operating System Interface
+| UTC = Coordinated Universal Time
 |
 | concatenate
 | concatenation
@@ -317,4 +318,31 @@ Also note:
      :math:`O(\sqrt{n})` prime test becomes clear for really big integers.
 
    
+**Seconds Since the Epoch**
 
+A value that approximates the number of seconds that have elapsed since the Epoch. 
+A Coordinated Universal Time name (specified in terms of seconds (tm_sec), minutes (tm_min), hours (tm_hour), 
+days since January 1 of the year (tm_yday), and calendar year minus 1900 (tm_year)) is related to a time 
+represented as seconds since the Epoch, according to the expression below.
+
+If the year is <1970 or the value is negative, the relationship is undefined. If the year is >=1970 and the 
+value is non-negative, the value is related to a Coordinated Universal Time name according to the C-language 
+expression, where tm_sec, tm_min, tm_hour, tm_yday, and tm_year are all integer types::
+
+   tm_sec + tm_min*60 + tm_hour*3600 + tm_yday*86400 +
+       (tm_year-70)*31536000 + ((tm_year-69)/4)*86400 -
+       ((tm_year-1)/100)*86400 + ((tm_year+299)/400)*86400
+
+The relationship between the actual time of day and the current value for seconds since the Epoch is unspecified.
+
+How any changes to the value of seconds since the Epoch are made to align to a desired relationship with the current 
+actual time is implementation-defined. As represented in seconds since the Epoch, each and every day shall be accounted 
+for by exactly 86400 seconds.
+
+.. note::
+
+   The last three terms of the expression add in a day for each year that follows a leap year 
+   starting with the first leap year since the Epoch. The first term adds a day every 4 years 
+   starting in 1973, the second subtracts a day back out every 100 years starting in 2001, and 
+   the third adds a day back in every 400 years starting in 2001. The divisions in the formula 
+   are integer divisions; that is, the remainder is discarded leaving only the integer quotient.

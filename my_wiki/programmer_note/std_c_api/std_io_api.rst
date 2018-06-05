@@ -156,3 +156,95 @@ Output API
    write(2), ferror(3), fgets(3), fopen(3), fputwc(3), fputws(3),
    fseek(3), fwrite(3), putwchar(3), scanf(3), unlocked_stdio(3)
 
+
+Buffer Control
+==============
+
+**Language Support**
+
+.. code-block:: c++
+
+   #include <stdio.h>
+
+   int setvbuf( std::FILE* stream, char* buffer, int mode, std::size_t size );
+
+Changes the the buffering mode of the given file stream *stream* as indicated by 
+the argument *mode*. In addition,
+
+   * If *buffer* is a null pointer, resizes the internal buffer to *size*.
+
+   * If buffer is not a null pointer, instructs the *stream* to use the 
+     user-provided buffer of size *size* beginning at *buffer*. 
+
+The *stream* must be closed (with fclose) before the lifetime of the array pointed to by *buffer* ends. 
+The contents of the array after a successful call to *setvbuf* are indeterminate and any attempt to use 
+it is undefined behavior.
+
+*mode* can be one of the following values:
+
+   +--------+----------------+
+   | _IOFBF | full buffering |
+   +--------+----------------+
+   | _IOLBF | line buffering |
+   +--------+----------------+
+   | _IONBF | no buffering   |
+   +--------+----------------+
+
+**Return value**
+
+​  0​ on success or nonzero on failure.
+
+**Notes**
+
+This function may only be used after *stream* has been associated with an open file, 
+but before any other operation (other than a failed call to ``std::setbuf/std::setvbuf``).
+
+Not all *size* bytes will necessarily be used for buffering: the actual buffer size is usually 
+rounded down to a multiple of 2, a multiple of page size, etc.
+
+On many implementations, line buffering is only available for terminal input streams.
+
+A common error is setting the buffer of *stdin* or *stdout* to an array whose lifetime ends 
+before the program terminates:
+
+   int main() {
+       char buf[BUFSIZ];
+       std::setbuf(stdin, buf);
+   } // lifetime of buf ends, undefined behavior
+
+The default buffer size *BUFSIZ* is expected to be the most efficient buffer size for file I/O 
+on the implementation, but POSIX *fstat* often provides a better estimate.
+
+**Example**
+
+.. code-block:: sh
+
+   #include <iostream>
+   #include <cstdio>
+   #include <stdlib.h>
+   #include <sys/stat.h>
+    
+   int main()
+   {
+       std::FILE* fp = std::fopen("test.txt", "r");
+       if(!fp) {
+          std::perror("fopen"); return 1;
+       }
+    
+       struct stat stats;
+       if(fstat(fileno(fp), &stats) == -1) { // POSIX only
+           std::perror("fstat"); return 1;
+       }
+    
+       std::cout << "BUFSIZ is " << BUFSIZ << ", but optimal block size is "
+                 << stats.st_blksize << '\n';
+       if(std::setvbuf(fp, NULL, _IOFBF, stats.st_blksize) != 0) {
+          perror("setvbuf"); // POSIX version sets errno
+          return 1;
+       }
+    
+       int ch;
+       while((ch=std::fgetc(fp)) != EOF); // read entire file: use truss/strace to
+                                          // observe the read(2) syscalls used
+       std::fclose(fp);
+   }

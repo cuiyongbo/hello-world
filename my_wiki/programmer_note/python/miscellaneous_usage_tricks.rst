@@ -227,39 +227,6 @@ You can also encode strings as big or little endian this way if you are using UT
 UTF-8, ASCII do not have endianness since it is 1 byte per character.
 
 
-time Module Tricks
-==================
-
-+-------------------------------+------------------------------------------------------------------------------------------+
-| Function                      | Description                                                                              |
-+===============================+==========================================================================================+
-| ``sleep(seconds)``            | Delay execution for a given number of seconds.                                           |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``time()``                    | Return the current time in seconds since the Epoch.                                      |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``clock()``                   | Return the CPU time or real time since the start                                         |
-|                               | of the process or since the first call to ``clock()``.                                   |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``gmtime([seconds])``         | Convert seconds since the Epoch to a time tuple expressing UTC(a.k.a. GMT).              |
-|                               | When 'seconds' is not passed in, convert the current time instead.                       |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``localtime([seconds])``      | Ditto, but convert to a time tuple expressing local time.                                |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``mktime(tuple)``             | Convert a time tuple in local time to seconds since the Epoch.                           |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``ctime(seconds)``            | Convert a time in seconds since the Epoch to a string in local time.                     |
-|                               | This is equivalent to ``asctime(localtime(seconds))``.                                   |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``asctime([tuple])``          | Convert a time tuple to a string. When the time tuple is not present,                    |
-|                               | current time as returned by ``localtime()`` is used.                                     |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``strftime(format[, tuple])`` | Convert a time tuple to a string according to a format specification.                    |
-|                               | When the time tuple is not present, current time as returned by ``localtime()`` is used. |
-+-------------------------------+------------------------------------------------------------------------------------------+
-| ``strptime(string, format)``  | Parse a string to a time tuple according to a format specification.                      |
-+-------------------------------+------------------------------------------------------------------------------------------+
-
-
 sys Module Tricks
 =================
 
@@ -402,7 +369,7 @@ executed every time the interpreter is started. You can do this by setting an en
 variable named :envvar:`PYTHONSTARTUP` to the name of a file containing your start-up commands.
 This is similar to the :file:`.profile` feature of the Unix shells.
 
-This file is only read in interactive sessions, not when Python reads commands from a script,
+**This file is only read in interactive sessions**, not when Python reads commands from a script,
 and not when :file:`/dev/tty` is given as the explicit source of commands (which otherwise behaves
 like an interactive session). It is executed in the same namespace where interactive commands are executed,
 so that objects that it defines or imports can be used without qualification in the interactive session.
@@ -424,6 +391,17 @@ you must do this explicitly in the script::
          startup_file = fobj.read()
       exec(startup_file)
 
+
+Add follow codes to :file:`.bashrc`::
+  
+    PYTHONSTARTUP=~/.pythonrc
+    export PYTHONSTARTUP
+
+Add command(s) you want to execute in :file:`~/.pythonrc`. like::
+
+  import math, time, re
+  import os, sys
+  from pprint import pprint
 
 Python3
 =======
