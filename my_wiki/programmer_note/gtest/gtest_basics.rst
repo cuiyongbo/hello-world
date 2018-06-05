@@ -164,3 +164,15 @@ each failure belongs to).  Technically, these macros invoke a
 member function of the Test class.  Therefore, you cannot use them
 in a global function.  That's why you should put test sub-routines
 in a test fixture.
+
+When you define a test fixture, you specify the name of the test
+case that will use this fixture. Therefore, a test fixture can
+be used by only one test case.
+
+Sometimes, more than one test cases may want to use the same or
+slightly different test fixtures. For example, you may want to
+make sure that all tests for a GUI library don't leak important
+system resources like fonts and brushes. In Google Test, you do
+this by putting the shared logic in a super (as in "super class")
+test fixture, and then have each test case use a fixture derived
+from this super fixture.

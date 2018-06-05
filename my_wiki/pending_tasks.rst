@@ -6,7 +6,7 @@ Pending tasks
 
 #. ti-tile-compiler add fileWatcher to dynamically monitor configure file
    
-   - ite - sytle_sheet_notifier
+   - ite - style_sheet_notifier
 
 #. algorithm to decide if a point is inside a polygon.
    

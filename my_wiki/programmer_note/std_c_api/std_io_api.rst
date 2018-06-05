@@ -205,7 +205,7 @@ rounded down to a multiple of 2, a multiple of page size, etc.
 On many implementations, line buffering is only available for terminal input streams.
 
 A common error is setting the buffer of *stdin* or *stdout* to an array whose lifetime ends 
-before the program terminates:
+before the program terminates::
 
    int main() {
        char buf[BUFSIZ];

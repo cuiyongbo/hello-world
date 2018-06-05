@@ -84,6 +84,14 @@ English Notes 3
 | Definition: a small popular song about love. [情歌]
 | Usage: Here latest single is a ballad.
 | Origin: Traditional ballads are typically of unknown authorship, having been passed on orally from one generation to the next as part of folk culture.
-
-
+|
+| coalesce
+| Definition: combine (elements) in a mass or whole.
+| Synonyms:  amalgamate.
+| Usage: the puddles had coalesced into shallow streams.
+| Usage: his idea served to coalesce all that happened into one connected whole.
+| 
+| caveat
+| Definition: a warning that particular things need to be considered before something can be done.
+| 
 

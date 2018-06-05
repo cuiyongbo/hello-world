@@ -203,148 +203,159 @@ inotify Manual
             In addition, an IN_IGNORED event will subsequently 
             be generated for the watch descriptor.
 
-**Examples**
+   **Examples**
 
-       Suppose an application is watching the directory dir and the file dir/myfile for all events.  The examples below
-       show some events that will be generated for these two objects.
+      Suppose an application is watching the directory *dir* and the file* dir/myfile* 
+      for all events. The examples below show some events that will be generated for 
+      these two objects::
 
-           fd = open("dir/myfile", O_RDWR);
-                  Generates IN_OPEN events for both dir and dir/myfile.
+         fd = open("dir/myfile", O_RDWR);
+         Generates IN_OPEN events for both dir and dir/myfile.
 
-           read(fd, buf, count);
-                  Generates IN_ACCESS events for both dir and dir/myfile.
+         read(fd, buf, count);
+         Generates IN_ACCESS events for both dir and dir/myfile.
 
-           write(fd, buf, count);
-                  Generates IN_MODIFY events for both dir and dir/myfile.
+         write(fd, buf, count);
+         Generates IN_MODIFY events for both dir and dir/myfile.
 
-           fchmod(fd, mode);
-                  Generates IN_ATTRIB events for both dir and dir/myfile.
+         fchmod(fd, mode);
+         Generates IN_ATTRIB events for both dir and dir/myfile.
 
-           close(fd);
-                  Generates IN_CLOSE_WRITE events for both dir and dir/myfile.
+         close(fd);
+         Generates IN_CLOSE_WRITE events for both dir and dir/myfile.
 
-       Suppose an application is watching the directories dir1 and dir2, and the file dir1/myfile.  The following exam‐
-       ples show some events that may be generated.
+      Suppose an application is watching the directories *dir1* and *dir2*, and the file *dir1/myfile*.
+      The following examples show some events that may be generated::
 
-           link("dir1/myfile", "dir2/new");
-                  Generates an IN_ATTRIB event for myfile and an IN_CREATE event for dir2.
+         link("dir1/myfile", "dir2/new");
+         Generates an IN_ATTRIB event for myfile and an IN_CREATE event for dir2.
 
-           rename("dir1/myfile", "dir2/myfile");
-                  Generates  an  IN_MOVED_FROM event for dir1, an IN_MOVED_TO event for dir2, and an IN_MOVE_SELF event
-                  for myfile.  The IN_MOVED_FROM and IN_MOVED_TO events will have the same cookie value.
+         rename("dir1/myfile", "dir2/myfile");
+         Generates an IN_MOVED_FROM event for dir1, an IN_MOVED_TO event for dir2, 
+         and an IN_MOVE_SELF event for myfile. The IN_MOVED_FROM and IN_MOVED_TO events 
+         will have the same cookie value.
 
-       Suppose that dir1/xx and dir2/yy are (the only) links to the same file, and an  application  is  watching  dir1,
-       dir2,  dir1/xx, and dir2/yy.  Executing the following calls in the order given below will generate the following
-       events:
+      Suppose that *dir1/xx* and *dir2/yy* are (the only) links to the same file, and an application 
+      is watching *dir1, dir2, dir1/xx, and dir2/yy*. Executing the following calls in the order given 
+      below will generate the following events::
 
-           unlink("dir2/yy");
-                  Generates an IN_ATTRIB event for xx (because its link count changes) and an IN_DELETE event for dir2.
+         unlink("dir2/yy");
+         Generates an IN_ATTRIB event for xx (because its link count changes) and an IN_DELETE event for dir2.
 
-           unlink("dir1/xx");
-                  Generates IN_ATTRIB, IN_DELETE_SELF, and IN_IGNORED events for xx, and an IN_DELETE event for dir1.
+         unlink("dir1/xx");
+         Generates IN_ATTRIB, IN_DELETE_SELF, and IN_IGNORED events for xx, and an IN_DELETE event for dir1.
 
-       Suppose an application is watching the directory dir and (the empty) directory dir/subdir.  The following  exam‐
-       ples show some events that may be generated.
+      Suppose an application is watching the directory dir and (the empty) directory dir/subdir. 
+      The following examples show some events that may be generated::
 
-           mkdir("dir/new", mode);
-                  Generates an IN_CREATE | IN_ISDIR event for dir.
+         mkdir("dir/new", mode);
+         Generates an IN_CREATE | IN_ISDIR event for dir.
 
-           rmdir("dir/subdir");
-                  Generates IN_DELETE_SELF and IN_IGNORED events for subdir, and an IN_DELETE | IN_ISDIR event for dir.
+         rmdir("dir/subdir");
+         Generates IN_DELETE_SELF and IN_IGNORED events for subdir, 
+         and an IN_DELETE | IN_ISDIR event for dir.
 
-   /proc interfaces
-       The following interfaces can be used to limit the amount of kernel memory consumed by inotify:
+   **/proc interfaces**
+       
+       The following interfaces can be used to limit the amount 
+       of kernel memory consumed by inotify::
 
-       /proc/sys/fs/inotify/max_queued_events
-              The  value  in  this  file is used when an application calls inotify_init(2) to set an upper limit on the
-              number of events that can be queued to the corresponding inotify instance.   Events  in  excess  of  this
-              limit are dropped, but an IN_Q_OVERFLOW event is always generated.
+         /proc/sys/fs/inotify/max_queued_events
+         
+         The value in this file is used when an application calls inotify_init(2) to set an upper limit on the
+         number of events that can be queued to the corresponding inotify instance. Events in excess of this 
+         limit are dropped, but an IN_Q_OVERFLOW event is always generated.
 
-       /proc/sys/fs/inotify/max_user_instances
-              This specifies an upper limit on the number of inotify instances that can be created per real user ID.
+         /proc/sys/fs/inotify/max_user_instances
+              
+         This specifies an upper limit on the number of inotify instances that can be created per real user ID.
 
-       /proc/sys/fs/inotify/max_user_watches
-              This specifies an upper limit on the number of watches that can be created per real user ID.
+         /proc/sys/fs/inotify/max_user_watches
 
-NOTES
-       Inotify file descriptors can be monitored using select(2), poll(2), and epoll(7).  When an event  is  available,
-       the file descriptor indicates as readable.
+         This specifies an upper limit on the number of watches that can be created per real user ID.
 
-       Since Linux 2.6.25, signal-driven I/O notification is available for inotify file descriptors; see the discussion
-       of F_SETFL (for setting the O_ASYNC  flag),  F_SETOWN,  and  F_SETSIG  in  fcntl(2).   The  siginfo_t  structure
-       (described  in  sigaction(2)) that is passed to the signal handler has the following fields set: si_fd is set to
-       the inotify file descriptor number; si_signo is set to the signal number; si_code is set to POLL_IN; and  POLLIN
-       is set in si_band.
+**NOTES**
 
-       If  successive  output  inotify  events  produced  on  the inotify file descriptor are identical (same wd, mask,
-       cookie, and name), then they are coalesced into a single event if the older event has not yet been read (but see
-       BUGS).   This  reduces the amount of kernel memory required for the event queue, but also means that an applica‐
-       tion can't use inotify to reliably count file events.
+   Inotify file descriptors can be monitored using select(2), poll(2), and epoll(7).  
+   When an event is available, the file descriptor indicates as readable.
 
-       The events returned by reading from an inotify file descriptor form an ordered queue.  Thus, for example, it  is
-       guaranteed that when renaming from one directory to another, events will be produced in the correct order on the
-       inotify file descriptor.
+   Since Linux 2.6.25, signal-driven I/O notification is available for inotify file descriptors; 
+   see the discussion of F_SETFL (for setting the O_ASYNC flag), F_SETOWN, and F_SETSIG in fcntl(2).   
+   The *siginfo_t* structure (described in sigaction(2)) that is passed to the signal handler has 
+   the following fields set: *si_fd* is set to the inotify file descriptor number; *si_signo* is 
+   set to the signal number; *si_code* is set to POLL_IN; and POLLIN is set in *si_band*.
 
-       The FIONREAD ioctl(2) returns the number of bytes available to read from an inotify file descriptor.
+   If successive output inotify events produced on the inotify file descriptor are identical (same wd, mask, 
+   cookie, and name), then they are coalesced into a single event if the older event has not yet been read (but see
+   BUGS). This reduces the amount of kernel memory required for the event queue, but also means that an application 
+   can't use inotify to reliably count file events.
 
-   Limitations and caveats
-       The inotify API provides no information about the user or process that triggered the inotify event.  In particu‐
-       lar,  there  is  no  easy  way for a process that is monitoring events via inotify to distinguish events that it
-       triggers itself from those that are triggered by other processes.
+   The events returned by reading from an inotify file descriptor form an ordered queue. Thus, for example, it is
+   guaranteed that when renaming from one directory to another, events will be produced in the correct order on 
+   the inotify file descriptor.
 
-       Inotify reports only events that a user-space program triggers through the filesystem API.  As a result, it does
-       not catch remote events that occur on network filesystems.  (Applications must fall back to polling the filesys‐
-       tem to catch such events.)  Furthermore, various pseudo-filesystems such as /proc, /sys, and  /dev/pts  are  not
-       monitorable with inotify.
+   The FIONREAD ioctl(2) returns the number of bytes available to read from an inotify file descriptor.
 
-       The inotify API does not report file accesses and modifications that may occur because of mmap(2), msync(2), and
-       munmap(2).
+   **Limitations and caveats**
 
-       The inotify API identifies affected files by filename.  However, by the time an application processes an inotify
-       event, the filename may already have been deleted or renamed.
+      The inotify API provides no information about the user or process that triggered the inotify event. 
+      In particular, there is no easy way for a process that is monitoring events via inotify to distinguish 
+      events that it triggers itself from those that are triggered by other processes.
 
-       The inotify API identifies events via watch descriptors.  It is the application's responsibility to cache a map‐
-       ping (if one is needed) between watch descriptors and pathnames.  Be aware that directory renamings  may  affect
-       multiple cached pathnames.
+      Inotify reports only events that a user-space program triggers through the filesystem API.  As a result, it does
+      not catch remote events that occur on network filesystems.  (Applications must fall back to polling the filesys‐
+      tem to catch such events.)  Furthermore, various pseudo-filesystems such as /proc, /sys, and  /dev/pts  are  not
+      monitorable with inotify.
 
-       Inotify  monitoring  of  directories  is  not recursive: to monitor subdirectories under a directory, additional
-       watches must be created.  This can take a significant amount time for large directory trees.
+      The inotify API does not report file accesses and modifications that may occur because of mmap(2), msync(2), and
+      munmap(2).
 
-       If monitoring an entire directory subtree, and a new subdirectory is created in that tree or an existing  direc‐
-       tory is renamed into that tree, be aware that by the time you create a watch for the new subdirectory, new files
-       (and subdirectories) may already exist inside the subdirectory.  Therefore, you may want to scan the contents of
-       the  subdirectory immediately after adding the watch (and, if desired, recursively add watches for any subdirec‐
-       tories that it contains).
+      The inotify API identifies affected files by filename.  However, by the time an application processes an inotify
+      event, the filename may already have been deleted or renamed.
 
-       Note that the event queue can overflow.  In this case, events are lost.  Robust applications should  handle  the
-       possibility  of lost events gracefully.  For example, it may be necessary to rebuild part or all of the applica‐
-       tion cache.  (One simple, but possibly expensive, approach is to close the inotify file  descriptor,  empty  the
-       cache,  create a new inotify file descriptor, and then re-create watches and cache entries for the objects to be
-       monitored.)
+      The inotify API identifies events via watch descriptors.  It is the application's responsibility to cache a map‐
+      ping (if one is needed) between watch descriptors and pathnames.  Be aware that directory renamings  may  affect
+      multiple cached pathnames.
 
-   Dealing with rename() events
-       As noted above, the IN_MOVED_FROM and IN_MOVED_TO event pair that is generated by rename(2) can  be  matched  up
-       via their shared cookie value.  However, the task of matching has some challenges.
+      Inotify  monitoring  of  directories  is  not recursive: to monitor subdirectories under a directory, additional
+      watches must be created.  This can take a significant amount time for large directory trees.
 
-       These  two  events  are  usually  consecutive  in  the event stream available when reading from the inotify file
-       descriptor.  However, this is not guaranteed.   If  multiple  processes  are  triggering  events  for  monitored
-       objects,  then  (on rare occasions) an arbitrary number of other events may appear between the IN_MOVED_FROM and
-       IN_MOVED_TO events.  Furthermore, it is not guaranteed that the event  pair  is  atomically  inserted  into  the
-       queue: there may be a brief interval where the IN_MOVED_FROM has appeared, but the IN_MOVED_TO has not.
+      If monitoring an entire directory subtree, and a new subdirectory is created in that tree or an existing  direc‐
+      tory is renamed into that tree, be aware that by the time you create a watch for the new subdirectory, new files
+      (and subdirectories) may already exist inside the subdirectory.  Therefore, you may want to scan the contents of
+      the  subdirectory immediately after adding the watch (and, if desired, recursively add watches for any subdirec‐
+      tories that it contains).
 
-       Matching up the IN_MOVED_FROM and IN_MOVED_TO event pair generated by rename(2) is thus inherently racy.  (Don't
-       forget that if an object is renamed outside of a monitored directory, there  may  not  even  be  an  IN_MOVED_TO
-       event.)   Heuristic approaches (e.g., assume the events are always consecutive) can be used to ensure a match in
-       most cases, but will inevitably miss some cases, causing the  application  to  perceive  the  IN_MOVED_FROM  and
-       IN_MOVED_TO  events  as  being  unrelated.   If watch descriptors are destroyed and re-created as a result, then
-       those watch descriptors will be inconsistent with the watch descriptors in any pending events.  (Re-creating the
-       inotify file descriptor and rebuilding the cache may be useful to deal with this scenario.)
+      Note that the event queue can overflow.  In this case, events are lost.  Robust applications should  handle  the
+      possibility  of lost events gracefully.  For example, it may be necessary to rebuild part or all of the applica‐
+      tion cache.  (One simple, but possibly expensive, approach is to close the inotify file  descriptor,  empty  the
+      cache,  create a new inotify file descriptor, and then re-create watches and cache entries for the objects to be
+      monitored.)
 
-       Applications  should  also  allow for the possibility that the IN_MOVED_FROM event was the last event that could
-       fit in the buffer returned by the current call to read(2), and  the  accompanying  IN_MOVED_TO  event  might  be
-       fetched  only on the next read(2), which should be done with a (small) timeout to allow for the fact that inser‐
-       tion of the IN_MOVED_FROM-IN_MOVED_TO event pair is not atomic, and also the possibility that there may  not  be
-       any IN_MOVED_TO event.
+   **Dealing with rename() events**
+
+      As noted above, the IN_MOVED_FROM and IN_MOVED_TO event pair that is generated by rename(2) can  be  matched  up
+      via their shared cookie value.  However, the task of matching has some challenges.
+
+      These  two  events  are  usually  consecutive  in  the event stream available when reading from the inotify file
+      descriptor.  However, this is not guaranteed.   If  multiple  processes  are  triggering  events  for  monitored
+      objects,  then  (on rare occasions) an arbitrary number of other events may appear between the IN_MOVED_FROM and
+      IN_MOVED_TO events.  Furthermore, it is not guaranteed that the event  pair  is  atomically  inserted  into  the
+      queue: there may be a brief interval where the IN_MOVED_FROM has appeared, but the IN_MOVED_TO has not.
+
+      Matching up the IN_MOVED_FROM and IN_MOVED_TO event pair generated by rename(2) is thus inherently racy.  (Don't
+      forget that if an object is renamed outside of a monitored directory, there  may  not  even  be  an  IN_MOVED_TO
+      event.)   Heuristic approaches (e.g., assume the events are always consecutive) can be used to ensure a match in
+      most cases, but will inevitably miss some cases, causing the  application  to  perceive  the  IN_MOVED_FROM  and
+      IN_MOVED_TO  events  as  being  unrelated.   If watch descriptors are destroyed and re-created as a result, then
+      those watch descriptors will be inconsistent with the watch descriptors in any pending events.  (Re-creating the
+      inotify file descriptor and rebuilding the cache may be useful to deal with this scenario.)
+
+      Applications  should  also  allow for the possibility that the IN_MOVED_FROM event was the last event that could
+      fit in the buffer returned by the current call to read(2), and  the  accompanying  IN_MOVED_TO  event  might  be
+      fetched  only on the next read(2), which should be done with a (small) timeout to allow for the fact that inser‐
+      tion of the IN_MOVED_FROM-IN_MOVED_TO event pair is not atomic, and also the possibility that there may  not  be
+      any IN_MOVED_TO event.
 
 **BUGS**
 
@@ -567,7 +578,9 @@ NOTES
            exit(EXIT_SUCCESS);
        }
 
-SEE ALSO
-       inotifywait(1), inotifywatch(1), inotify_add_watch(2), inotify_init(2),  inotify_init1(2),  inotify_rm_watch(2),
-       read(2), stat(2), fanotify(7)
+
+**SEE ALSO**
+
+   inotifywait(1), inotifywatch(1), inotify_add_watch(2), inotify_init(2),  
+   inotify_init1(2),  inotify_rm_watch(2), read(2), stat(2), fanotify(7)
 

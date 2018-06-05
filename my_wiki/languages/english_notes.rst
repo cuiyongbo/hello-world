@@ -177,9 +177,6 @@ English Note
 | monition
 | Definition:  A warning or an initimation of something imminent, especially of impending danger.
 | 
-| caveat
-| Definition: a warning that particular things need to be considered before something can be done.
-| 
 | frisson
 | Definition: (noun)  A sudden strong feeling of excitement or fear; a thrill
 | Usage: A frisson of excitement.
