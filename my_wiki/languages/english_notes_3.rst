@@ -94,4 +94,8 @@ English Notes 3
 | caveat
 | Definition: a warning that particular things need to be considered before something can be done.
 | 
-
+| gotcha
+| Definition: (non-standard) the written form of the way some people pronounce ‘I’ve got you’, which is not considered to be correct.
+| Usage: ‘Gotcha!’ the child yelled as he grabbed his mother by the leg.
+| Definition: (programming), a counter-intuitive, but documented, behavior in a computer system (as opposed to a bug)
+| 

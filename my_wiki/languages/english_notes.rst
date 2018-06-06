@@ -1889,10 +1889,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: (with negative) at all (used for emphasis)
 | Usage: I have no doubt whatsoever.
 | 
-| gotcha
-| Definition: (non-standard) the written form of the way some people pronounce ‘I’ve got you’, which is not considered to be correct
-| Usage: ‘Gotcha!’ the child yelled as he grabbed his mother by the leg.
-| 
 | vintage
 | Definition: a wine of high quality made from the crop of a single identified district in a good year.
 | Definition: denoting something of high quality, especially something from the past or characteristic of the best period of a person’s work.
