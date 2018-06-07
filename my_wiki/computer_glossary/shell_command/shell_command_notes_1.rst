@@ -10,6 +10,11 @@ ps Command
    See :doc:`ps_command`.
 
 
+smem Command
+============
+
+   See :doc:`smem_man_doc`.
+
 kill & killall Command
 ======================
 
@@ -90,3 +95,4 @@ File / directory copy and move
 ==============================
 
    See :doc:`file_cp_mv`
+
