@@ -80,3 +80,8 @@ Use the formula to isolate the rightmost 1-bit::
 return 0 if none.
 
 
+Negation
+========
+
+the negation of a number a can be computed by ``~a + 1``.
+

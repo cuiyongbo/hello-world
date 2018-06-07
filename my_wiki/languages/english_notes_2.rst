@@ -327,6 +327,13 @@ in a number of Christian kingdoms.
 | Synonyms: guaranteed.
 | Usage: A surefire best seller.
 | 
+| backfire
+| Definition: (of an engine) undergo a mistimed explosion in the cylinder or exhaust
+| Usage: a car backfired in the road. [抛锚]
+| Definition: (of a plan or action) rebound adversely on the originator; have the opposite effect to what was intended.
+| Usage: overzealous publicity backfired on her. [适得其反]
+| Definition: a fire set intentionally to arrest the progress of an approaching fire by creating a burned area in its path, thus depriving the fire of fuel.
+| 
 | disposition
 | Definition: the way someone tends to behave or feel.
 | Synonyms: character.

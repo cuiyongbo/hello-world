@@ -114,3 +114,15 @@ Windows Problems
 #. Inspect shared memory usage
    
    .. image:: images/windows_view_shared_memory_usage.png
+
+#. Sublime Text "git_binary" setting problem.
+   
+   ..image:: images/sublime_text_git_binary_setting.png
+
+   Set git_binary setting to your full git path in user profile.
+   for example::
+
+      "git_binary": "C:/Program Files/Git/bin/git.exe"
+
+
+

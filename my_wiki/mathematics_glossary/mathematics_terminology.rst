@@ -146,3 +146,11 @@ computed by applying the Pythagorean theorem. [勾股定理]
 
 .. image:: images/asymptotic_example.svg.png
 
+
+**Additive inverse**
+ 
+In mathematics, the additive inverse of a number *a* is the number that, 
+when added to *a*, yields zero. This number is also known as the opposite (number), 
+sign change, and negation. For a real number, it reverses its sign: the opposite to 
+a positive number is negative, and the opposite to a negative number is positive.
+

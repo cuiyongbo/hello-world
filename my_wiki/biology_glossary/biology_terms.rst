@@ -390,6 +390,18 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | gland [腺体]
 | Definition: an organ in the human or animal body that secretes particular chemical substances for use in the body or for discharge into the surroundings.
 | Usage: the thyroid gland. [甲状腺]
+| 
+| viviparous
+| Definition: (of an animal) bringing forth live young that have developed inside the body of the parent. [胎生]Compare with oviparous and ovoviviparous.
+| Definition: Botany (of a plant) reproducing from buds that form plantlets while still attached to the parent plant, or from seeds that germinate within the fruit.
+| 
+| oviparous
+| Definition: (of a bird, etc.) producing young by means of eggs that are hatched after they have been laid by the parent. [卵生]
+| 
+| ovoviviparous
+| Definition: (of an animal) producing young by means of eggs that are hatched within the body of the parent, as in some snakes. [卵胎生]
 
-
+.. image:: images/dolphin_baby.jpg
+.. image:: images/chick.jpg
+.. image:: images/american_reptiles.jpg
 

@@ -99,3 +99,40 @@ English Notes 3
 | Usage: ‘Gotcha!’ the child yelled as he grabbed his mother by the leg.
 | Definition: (programming), a counter-intuitive, but documented, behavior in a computer system (as opposed to a bug)
 | 
+| severance
+| Definition: the action of ending a connection or relationship. 
+| Usage: a complete severance of links with the Republic.
+| Definition: dismissal or discharge from employment. 
+| Usage: employees were offered severance terms.
+| 
+| unassailable
+| Definition: unable to be attacked, questioned, or defeated.
+| Usage: an unassailable lead.
+| Usage: Their ten-point lead puts the team in an almost unassailable position. 
+| 
+| compendious [简明扼要]
+| Definition: containing or presenting the essential facts of something in a comprehensive but concise way.
+| Usage: a compendious study.
+| 
+| unbending [固执，不屈]
+| Definition: strict and austere in one's behavior or attitudes.
+| Usage: they were unbending in their demands 
+| Usage: his unbending iron will.
+| Definition: (often disapproving) unwilling to changed one's opinions, decisions, etc.
+| 
+| austere
+| Definition; severe or strict in manner, attitude, or appearance. [庄重严肃]
+| Usage: an austere man, with a rigidly puritanical outlook.
+| Usage: an austere expression.
+| Definition: (of living conditions or a way of life) having no comforts or luxuries; harsh or ascetic.
+| Usage: conditions in the prison could hardly be more austere. [简陋]
+| Definition: having an extremely plain and simple style or appearance; unadorned.
+| Usage: the cathedral is impressive in its austere simplicity. [朴实无华]
+| Definition: (of an economic policy or measure) designed to reduce a budget deficit, especially by cutting public expenditure. [财政紧缩]
+| 
+| sabotage
+| saboteur
+| Definition: a person who engages in sabotage.
+| Usage: Saboteurs blew up a small section of the track. 
+| Definition: deliberately destroy, damage, or obstruct (something), especially for political or military advantage.
+| 

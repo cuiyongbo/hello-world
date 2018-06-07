@@ -11,4 +11,5 @@ Programming Pearls
    programming_pearls/miscellaneous_tricks
    programming_pearls/programmer_tricks
    programming_pearls/reference_count
+   programming_pearls/function_recursion_examples
 
