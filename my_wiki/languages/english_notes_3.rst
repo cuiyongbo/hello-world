@@ -140,3 +140,19 @@ English Notes 3
 | hall of fame
 | Definition: If you say that someone is a member of a particular hall of fame, you mean that they are one of the most famous people in that area of activity.
 | Usage: Yao Ming enters Hall of Fame as global ambassador of basketball.
+| 
+| orchestrate
+| Definition: arrange or score (music) for orchestral performance.
+| Definition: arrange or direct the elements of (a situation) to produce a desired effect, especially surreptitiously.
+| Usage: the developers were able to orchestrate a favorable media campaign.
+| 
+| surreptitious
+| surreptitiously
+| Definition: in a way that attempts to avoid notice or attention; secretively.
+| Usage: Mary surreptitiously slipped from the room.
+| Usage: surreptitiously recorded conversations.
+| Usage: they carried on a surreptitious affair.
+| 
+| itinerary 
+| Definition: An itinerary is a plan of journery, including the route an the places you will visit. 
+| Usage: the next place on our itinerary was Silistra. 

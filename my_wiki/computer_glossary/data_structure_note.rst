@@ -2,6 +2,8 @@
 Data Structure
 **************
 
+**晴天不肯去，只待雨淋头**
+
 .. toctree::
 
    data_structure/stack_note

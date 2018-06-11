@@ -259,7 +259,7 @@ Military Terms
 | Antonym: counter-espionage
 | Usage: Some of the commercial activities were a cover for espionage.
 | 
-| scaffold  [断头台]
+| scaffold  [断头台， 绞刑架]
 | Definition: A scaffold is a raised platform where criminals were hanged or had their head cut off.
 | Usage: Ascending the shaky ladder to the scaffold, More addressed the executioner.
 | Definition: A scaffold is a temporary raised platform on which workers stand to paint, repair, or build high parts of a building.

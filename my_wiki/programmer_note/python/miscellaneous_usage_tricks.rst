@@ -251,26 +251,6 @@ sys Module Tricks
 +---------------+------------------------------------------------------------------+
 
 
-unittest Module Tricks
-======================
-
-#. run test cases only interested
-   
-   .. code-block:: python
-   
-      suite = unittest.TestSuite()
-      suite.addTest(Test("test_dynamic_adjustment_no_better_route"))
-      suite.addTest(Test("test_dynamic_adjustment_new_better_route"))
-      result = unittest.TextTestRunner(verbosity=2).run(suite)
-
-#. run all tests from a test suite
-   
-   .. code-block:: python
-
-      suite = unittest.TestLoader().loadTestsFromTestCase(Test)
-      result = unittest.TextTestRunner(verbosity=2).run(suite)
-
-
 json Module Tricks
 ==================
 

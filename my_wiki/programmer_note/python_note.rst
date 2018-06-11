@@ -14,6 +14,7 @@ Python note
    python/re_module_doc
    python/time_module_note
    python/struct_module_doc
+   python/unittest_module_note
    python/os_module_tricks
    python/miscellaneous_usage_tricks
    python/application_examples

@@ -10,4 +10,3 @@ Pending tasks
 
 #. awk and xargs command
    
-#. Answers to *introduction to algorithms* : https://github.com/gzc/CLRS.git

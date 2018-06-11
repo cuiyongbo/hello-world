@@ -46,7 +46,7 @@ The running time for LIST-PUSHFRONT and LIST-PUSHBACK on a list of n elements is
 
 **IMPLEMENTATION: Circular, doubly linked list with a sentinel**
 
-.. code-block::
+.. code-block:: none
 
    LIST-SEARCH'(L, k):
       x = L.nil.next
