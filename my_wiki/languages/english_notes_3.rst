@@ -136,3 +136,7 @@ English Notes 3
 | Usage: Saboteurs blew up a small section of the track. 
 | Definition: deliberately destroy, damage, or obstruct (something), especially for political or military advantage.
 | 
+| 
+| hall of fame
+| Definition: If you say that someone is a member of a particular hall of fame, you mean that they are one of the most famous people in that area of activity.
+| Usage: Yao Ming enters Hall of Fame as global ambassador of basketball.
