@@ -54,7 +54,8 @@ Here is a C++ implementation::
       ElementType popFront();
    
    private:
-      bool isFull() { (m_tail + 1) % m_capacity == m_head; }
+      // bool isFull() { (m_tail + 1) % m_capacity == m_head; }
+      bool isFull() { (m_tail + 1) & capacityMask(capacity) == m_head; }
       bool isEmpty() { return m_tail == m_head; }
       void expand();
       

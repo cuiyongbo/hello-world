@@ -155,4 +155,22 @@ English Notes 3
 | 
 | itinerary 
 | Definition: An itinerary is a plan of journery, including the route an the places you will visit. 
-| Usage: the next place on our itinerary was Silistra. 
+| Usage: the next place on our itinerary was Silistra.
+| 
+| persona
+| Definition: the aspect of someone's character that is presented to or perceived by others. In psychology, often contrasted with anima。
+| Usage: His public persona is quite different from the family man described in the book. [持家男人]
+| Definition: role or character adopted by an author or an actor.
+| 
+| anima
+| Definition: (Psychology) Jung's term for the feminine part of a man's personality. Often contrasted with animus (sense 3).
+| Definition: the part of the psyche that is directed inward, and is in touch with the subconscious. Often contrasted with persona.
+| Origin: 1920s: from Latin, literally ‘mind, soul.’
+| 
+| animus
+| Definition: hostility or ill feeling
+| Definition: Psychology Jung's term for the masculine part of a woman's personality. Often contrasted with anima.
+| Usage: the author's animus toward her.
+| Definition: motivation to do something.
+| Usage: the reformist animus came from within the Party.
+| Origin: early 19th century: from Latin, ‘spirit, mind.’
