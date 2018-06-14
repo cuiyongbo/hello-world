@@ -174,3 +174,23 @@ English Notes 3
 | Definition: motivation to do something.
 | Usage: the reformist animus came from within the Party.
 | Origin: early 19th century: from Latin, ‘spirit, mind.’
+|
+| spawn
+| Definition: when fish or animals such as frogs spawn, they lay eggs. [产卵]
+| Usage: the fish spawn among fine-leaved plants.
+| Usage: why had she married a man who could spawn a boy like that?
+| Definition: the eggs of fish.
+| Usage: The fish covers its spawn with gravel.
+| Definition: produce or generate, especially in large numbers.
+| Usage: the decade spawned a bewildering variety of books on the forces.
+| Definition: (computing) generate (a dependent or subordinate computer process).
+| 
+| gravel
+| Definition: a loose aggregation of small water-worn or pounded stones.
+| Synonyms: pepple. [鹅卵石]
+| Definition: a mixture of small stones with coarse sand, used for paths and roads and as an aggregate.
+| Definition: make (someone) angry or annoyed.
+| Usage: this was a bad strike, and it graveled him to involve himself in it.
+
+.. image:: images/gravel_1.jpg
+.. image:: images/gravel_2.jpg

@@ -507,5 +507,8 @@ not become complacent about its development.
 | Definition: a note or record made for future use.
 | Usage: The two countries signed a memorandum of understanding on economic cooperation. [备忘录]
 | 
-
-
+| veteran
+| Definition: someone who has served in the millitary, especially during a war.
+| Definition: a person who has had long experience in a particular field.
+| Usage: An attempt of computer graphics veterans to trace the history of the problem and some tricks for its solution can be found in an issue of the *Ray Tracing News*
+| 

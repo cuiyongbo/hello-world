@@ -18,6 +18,19 @@ Shell Commands
 .. toctree::
    :maxdepth: 2
 
-   shell_command/shell_command_notes_1
    shell_command/shell_script_tricks
+   shell_command/ls_info
+   shell_command/tar_info
+   shell_command/chmod_info
+   shell_command/ps_command
+   shell_command/find_command
+   shell_command/grep_command
+   shell_command/kill_command
+   shell_command/file_cp_mv
+   shell_command/file_inspectors
+   shell_command/crontab_info
+   shell_command/smem_man_doc
+   shell_command/nohup_command
+   shell_command/uptime_manual
+   shell_command/system_v_ipc_facility
    
