@@ -9,3 +9,4 @@ Algorithms
    algorithms/bucket_sort_alg
    algorithms/selection_sort_alg
    algorithms/insertion_sort_alg
+   algorithms/hot_gis_algs

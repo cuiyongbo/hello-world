@@ -154,3 +154,7 @@ when added to *a*, yields zero. This number is also known as the opposite (numbe
 sign change, and negation. For a real number, it reverses its sign: the opposite to 
 a positive number is negative, and the opposite to a negative number is positive.
 
+
+An acute angle is less than :math:`90^\circ`.
+An right angle is exactly :math:`90^\circ`.
+An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.
