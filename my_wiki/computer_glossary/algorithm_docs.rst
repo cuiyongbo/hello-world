@@ -10,3 +10,4 @@ Algorithms
    algorithms/selection_sort_alg
    algorithms/insertion_sort_alg
    algorithms/hot_gis_algs
+   algorithms/point_in_polygon
