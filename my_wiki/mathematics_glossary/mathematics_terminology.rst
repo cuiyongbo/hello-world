@@ -38,13 +38,18 @@ Mathematical Terminology
 | exponential distribution
 | uniform distribution
 | normal distribution
-| standard deviation   σ
-| mean  μ
+| standard deviation   :math:`/sigma`
+| mean  :math:`/mu`
 | 
 | divergent  发散
 | convergent 收敛
 | permutation 排列
 | combination 组合
+|
+| determinant 行列式
+| parallelepiped 平行六面体
+| parallelogram 平行四边形
+| colinear 共线
 | 
 | asymptote
 | Definition: a line that continually approaches a given curve but doesn’t meet it at any finite length.
