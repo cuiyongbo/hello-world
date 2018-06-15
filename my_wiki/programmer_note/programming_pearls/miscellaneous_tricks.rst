@@ -52,6 +52,9 @@ For code portability, the following preprocessor directives can be used::
 Flexible array member
 =====================
 
+Introduction
+------------
+
 Flexible array member is a feature introduced in the C99 standard of the C
 programming language. It is a member of a struct, which is an array without
 a given dimension, and it must be the last member of such a struct,
@@ -114,6 +117,45 @@ The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C
          #define json_to_string(json_)  container_of(json_, json_string_t, json)
          #define json_to_real(json_)    container_of(json_, json_real_t, json)
          #define json_to_integer(json_) container_of(json_, json_integer_t, json)
+
+More examples
+-------------
+
+.. code-block:: c++
+
+   #pragma warning(disable: 4200)
+
+   struct inotify_event {
+      int      wd;       /* Watch descriptor */
+      uint32_t mask;     /* Mask describing event */
+      uint32_t cookie;   /* Unique cookie associating related
+                  events (for rename(2)) */
+      uint32_t len;      /* Size of name field */
+      char     name[];   /* Optional null-terminated name */
+   };
+
+   int main()
+   {
+      const char* str = "hello world";
+      uint32 len = (uint32)strlen(str) + 1;
+      inotify_event* event = (inotify_event*)malloc(sizeof(inotify_event) + len);
+      event->wd = 2;
+      event->mask = 7;
+      event->cookie = 0;
+      event->len = len;
+      strcpy(event->name, str);
+   
+      FILE* fp = fopen("test", "wb");
+      fwrite(event, sizeof(inotify_event) + len, 1, fp);
+      fclose(fp);
+      free(event);
+   
+      fp = fopen("test", "rb");
+      char buffer[1024];
+      fread(buffer, 1, sizeof(buffer), fp);
+      event = (inotify_event*)buffer;
+      fclose(fp);
+   }
 
 
 ``sizeof`` operator

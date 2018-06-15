@@ -2,7 +2,88 @@
 Point in Polygon
 ****************
 
+Overview
+========
 
+In computational geometry, the :abbr:`PIP (point-in-polygon)` problem asks whether a given point 
+in the plane lies inside, outside, or on the boundary of a polygon. It is a special case of point 
+location problems and finds applications in areas that deal with processing geometrical data, 
+such as computer graphics, computer vision, :abbr:`GIS (geographical information systems)`, motion 
+planning, and CAD.
+
+An early description of the problem in computer graphics shows two common approaches (*ray casting 
+and angle summation*) in use as early as 1974.
+
+An attempt of computer graphics veterans to trace the history of the problem and some tricks for its 
+solution can be found in an issue of the Ray Tracing News.
+
+
+Ray casting algorithm
+=====================
+
+.. sidebar:: Ray casting algorithm
+
+   .. image:: images/RecursiveEvenPolygon.svg.png
+
+   The number of intersections for a ray passing from the exterior of the polygon 
+   to any point; if odd, it shows that the point lies inside the polygon. If it is 
+   even, the point lies outside the polygon; this test also works in three dimensions.
+
+One simple way of finding whether the point is inside or outside a simple polygon is 
+to test how many times a ray, starting from the point and going in any fixed direction, 
+intersects the edges of the polygon. If the point is on the outside of the polygon the ray 
+will intersect its edge an even number of times. If the point is on the inside of the polygon 
+then it will intersect the edge an odd number of times. Unfortunately, this method won't work 
+if the point is on the edge of the polygon.
+
+This algorithm is sometimes also known as the crossing number algorithm or the even–odd rule algorithm, 
+and is known as early as 1962. The algorithm is based on a simple observation that if a point moves along 
+a ray from infinity to the probe point and if it crosses the boundary of a polygon, possibly several times, 
+then it alternately goes from the outside to inside, then from the inside to the outside, etc. As a result, 
+after every two "border crossings" the moving point goes outside. This observation may be mathematically 
+proved using the **Jordan curve theorem**.
+
+If implemented on a computer with finite precision arithmetics, the results may be incorrect if the point 
+lies very close to that boundary, because of rounding errors. This is not normally a concern, as speed is 
+much more important than complete accuracy in most applications of computer graphics. However, for a formally 
+correct computer program, one would have to introduce a numerical tolerance :math:`\epsilon` and test in line 
+whether P (the point) lies within :math:`\epsilon` of L (the Line), in which case the algorithm should stop 
+and report "P lies very close to the boundary."
+
+
+Winding number algorithm
+========================
+
+Another algorithm is to compute the given point's winding number with respect to the polygon. 
+If the winding number is non-zero, the point lies inside the polygon. One way to compute the 
+winding number is to sum up the angles subtended by each side of the polygon. However, this 
+involves costly inverse trigonometric functions, which generally makes this algorithm slower 
+than the ray casting algorithm. Luckily, these inverse trigonometric functions do not need to 
+be computed. Since the result, the sum of all angles, can add up to 0 or :math:`2\pi` (or multiples 
+of :math:`2\pi`) only, it is sufficient to track through which quadrants the polygon winds, as 
+it turns around the test point, which makes the winding number algorithm comparable in speed to 
+counting the boundary crossings.
+
+There is a significant speed-up (known since 2001) of the winding number algorithm. It uses signed 
+crossings, based on whether each crossing is left-to-right or right-to-left. Details and C++ code 
+are given at `here <http://geomalgorithms.com/a03-_inclusion.html>`_. Angles are not used, and no 
+trigonometry is involved. The code is as fast as the simple boundary crossing algorithm. Further, 
+it gives the correct answer for nonsimple polygons, whereas the boundary crossing algorithm fails 
+in this case.
+
+
+Comparison
+==========
+
+For simple polygons, both algorithms will always give the same results for all points. 
+However, for complex polygons, the algorithms may give different results for points in 
+the regions where the polygon intersects itself, where the polygon does not have a clearly 
+defined inside and outside. In this case, the former algorithm is called the even-odd rule. 
+One solution is to transform (complex) polygons in simpler, but even-odd-equivalent ones 
+before the intersection check. This, however, is computationally expensive. It is better 
+to use the fast "signed crossings" winding number algorithm which gives the correct result, 
+even when the polygon overlaps itself. The point is then inside the polygon whenever the 
+winding number is nonzero.
 
 
 Example
@@ -70,8 +151,11 @@ Example
            double d=(y - y1) * (x2 - x1) - (x - x1) * (y2 - y1);
    
            if ((y1 >= y) != (y2 >= y)) {
-               crossings +=y2 - y1 >= 0 ? d >= 0 : d <= 0;
+               crossings += y2 - y1 >= 0 ? d >= 0 : d <= 0;
            }
+
+           // if test point lies on a polygon side or very close to a polygon side.
+           // always view as if it were inside the the polygone.  
            if (!d && fmin(x1,x2) <= x && x <= fmax(x1,x2)
                && fmin(y1,y2) <= y && y <= fmax(y1,y2)) {
                return 1;
