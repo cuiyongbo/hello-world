@@ -5,6 +5,7 @@ Language Study
 .. toctree::
 
    languages/greek_alphabet
+   languages/punctuations
    languages/english_notes
    languages/english_notes_2
    languages/english_notes_3

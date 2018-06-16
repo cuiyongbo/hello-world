@@ -57,7 +57,7 @@ Introduction
 
 Flexible array member is a feature introduced in the C99 standard of the C
 programming language. It is a member of a struct, which is an array without
-a given dimension, and it must be the last member of such a struct,
+a given dimension, and **it must be the last member of such a struct**,
 as in the following example::
 
    struct vectord {

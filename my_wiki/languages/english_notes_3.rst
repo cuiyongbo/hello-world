@@ -38,7 +38,7 @@ English Notes 3
 | Phrase: up to par [差不多？]
 | Definition: at an expected or usual level or quality.
 | Phrase: above (or below or under) par
-| Definitin: better (or worse) than is usual or expected.
+| Definitin: better (or worse) than what is usual or expected.
 | Usage: poor nutrition can leave you feeling below par.
 | 
 | empty-handed [一无所获]
