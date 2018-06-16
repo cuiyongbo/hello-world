@@ -206,3 +206,10 @@ English Notes 3
 | Usage: a blizzard of legal forms.
 
 .. image:: images/WinterBlizzard.png
+
+| when it rains it pours [祸不单行]
+| Definition: proverb misfortunes or difficult situations tend to follow each other in rapid succession or to arrive all at the same time.
+| 
+| when it comes to
+| Definition: used to identify the specific topic that is being talked about.
+| Usage: When it comes to playing chess, he's the best I know.
