@@ -89,7 +89,7 @@ Overview
       to a suitable address boundary.
 
       The *len* field counts all of the bytes in name, including the null bytes; the length of 
-      each inotify_event structure is thus ``sizeof(struct inotify_event)+len``. (minus sizeof(char*))
+      each inotify_event structure is thus ``sizeof(struct inotify_event)+len``.
 
       The behavior when the buffer given to *read(2)* is too small to return information about 
       the next event depends on the kernel version: in  kernels before 2.6.21, *read(2)* returns 0; 

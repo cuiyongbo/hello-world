@@ -33,4 +33,5 @@ Shell Commands
    shell_command/nohup_command
    shell_command/uptime_manual
    shell_command/system_v_ipc_facility
+   shell_command/awk_manual
    

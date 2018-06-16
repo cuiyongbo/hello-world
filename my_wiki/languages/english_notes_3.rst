@@ -194,3 +194,15 @@ English Notes 3
 
 .. image:: images/gravel_1.jpg
 .. image:: images/gravel_2.jpg
+
+| whiteout
+| Definition: a blizzard, especially in polar regions, that reduces visibilities to near zero.
+| Definition: white correction fluid for covering typing or writing mistakes. [涂改液]
+| Definition: a loss of color vision due to rapid acceleration, often before a loss of consciousness. [眩晕]
+| 
+| blizzard
+| Definition: a severe snowstorm with high winds and low visibility.
+| Definition: an overabundance; a deluge. [臃肿庞杂]
+| Usage: a blizzard of legal forms.
+
+.. image:: images/WinterBlizzard.png
