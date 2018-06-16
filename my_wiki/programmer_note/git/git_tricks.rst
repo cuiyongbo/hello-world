@@ -579,5 +579,61 @@ Remove files and keep local
 
       git rm --cached -r file/directory
 
-afterwards add file/directory to :file:`.gitignore` so git doesn't add it back.
+   afterwards add file/directory to :file:`.gitignore` so git doesn't add it back.
 
+   .. note::
+
+      gitignore - Specifies intentionally untracked files to ignore
+
+      The purpose of gitignore files is to ensure that certain files 
+      not tracked by Git remain untracked.
+
+      To stop tracking a file that is currently tracked, 
+      use **git rm --cached**.
+
+   One Example::
+
+      $ git status
+      [...]
+      # Untracked files:
+      [...]
+      #       Documentation/foo.html
+      #       Documentation/gitignore.html
+      #       file.o
+      #       lib.a
+      #       src/internal.o
+      [...]
+      $ cat .git/info/exclude
+      # ignore objects and archives, anywhere in the tree.
+      *.[oa]
+      $ cat Documentation/.gitignore
+      # ignore generated html files,
+      *.html
+      # except foo.html which is maintained by hand
+      !foo.html
+      $ git status
+      [...]
+      # Untracked files:
+      [...]
+      #       Documentation/foo.html
+      [...]
+
+   Another example::
+
+      $ cat .gitignore
+      vmlinux*
+      $ ls arch/foo/kernel/vm*
+      arch/foo/kernel/vmlinux.lds.S
+      $ echo '!/vmlinux*' >arch/foo/kernel/.gitignore
+
+   The second *.gitignore* prevents Git from ignoring *arch/foo/kernel/vmlinux.lds.S*.
+
+   Example to exclude everything except a specific directory *foo/bar* (note the ``/*`` - without 
+   the slash, the wildcard would also exclude everything within *foo/bar*)::
+
+      $ cat .gitignore
+      # exclude everything except directory foo/bar
+      /*
+      !/foo
+      /foo/*
+      !/foo/bar
