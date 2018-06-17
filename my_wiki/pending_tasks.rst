@@ -7,5 +7,3 @@ Pending tasks
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
    
 #. http://geomalgorithms.com/a03-_inclusion.html
-      
-#. https://en.wikipedia.org/wiki/Copy-on-write

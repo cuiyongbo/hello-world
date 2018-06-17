@@ -31,12 +31,11 @@ in both single- and multithreaded systems.
 
 The string class provided by the C++ standard library was specifically designed to allow 
 copy-on-write implementations in the initial C++98 standard, but not in the newer 
-C++11 standard:：
+C++11 standard::
 
    std::string x("Hello");
    std::string y = x;  // x and y use the same buffer
-   y += ", World!";    // now y uses a different buffer
-                       // x still uses the same old buffer
+   y += ", World!";    // now y uses a different buffer while x still uses the same old buffer
 
 In the PHP programming language, all types except references are implemented as copy-on-write. 
 For example, strings and arrays are passed by reference, but when modified, they are duplicated 
@@ -85,8 +84,8 @@ a computer running this system can fail, and then, when it starts again, the sof
 and operating system resume operation. Only small amounts of work can be lost.
 
 The basic approach is that all program data are kept in virtual memory. On some schedule, 
-a summary of all software data are written to virtual memory（not disk ??）, forming a log 
-that tracks the current value and location of each value.
+a summary of all software data are written to disk storage, forming a log that tracks 
+the current value and location of each value.
 
 When the computer fails, a recent copy of the log and other data remain safe on disk. When 
 operation resumes, operating system software reads the log to restore consistent copies of 
