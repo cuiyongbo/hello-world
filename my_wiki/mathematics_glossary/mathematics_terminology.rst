@@ -51,6 +51,10 @@ Mathematical Terminology
 | parallelogram 平行四边形
 | colinear 共线
 | 
+| significant digits 有效数字
+| scientific notation 科学计数法
+| trigonometic function 三角函数
+| 
 | asymptote
 | Definition: a line that continually approaches a given curve but doesn’t meet it at any finite length.
 | 
