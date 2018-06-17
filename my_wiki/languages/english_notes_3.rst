@@ -213,3 +213,9 @@ English Notes 3
 | when it comes to
 | Definition: used to identify the specific topic that is being talked about.
 | Usage: When it comes to playing chess, he's the best I know.
+|
+| underdog
+| Definition: a competitor thought to have little chance of winning a fight or contest.
+| Definition: a person who has little status in society.
+| Origin: late 19th century: with reference to the beaten dog in a dogfight.
+| 

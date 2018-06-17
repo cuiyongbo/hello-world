@@ -50,6 +50,7 @@ Mathematical Terminology
 | parallelepiped 平行六面体
 | parallelogram 平行四边形
 | colinear 共线
+| polyheron 多面体
 | 
 | significant digits 有效数字
 | scientific notation 科学计数法
