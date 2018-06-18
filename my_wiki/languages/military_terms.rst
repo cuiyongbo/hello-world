@@ -512,3 +512,16 @@ not become complacent about its development.
 | Definition: a person who has had long experience in a particular field.
 | Usage: An attempt of computer graphics veterans to trace the history of the problem and some tricks for its solution can be found in an issue of the *Ray Tracing News*
 | 
+| chauvinism
+| Definition: exaggerated or aggressive patriotism. [沙文主义]
+| Usage: public opinion was easily moved to chauvinism and nationalism.
+| Definition: excessive or prejudiced loyalty or support for one's own cause, group, or gender. [左翼?]
+| Usage: a bastion of male chauvinism.
+| 
+| bastion [掩体，堡垒，碉堡]
+| Definition: a projecting part of a fortification built at an angle to the line of a wall, so as to allow defensive fire in several directions.
+| Definition: an institution, place, or person strongly defending or upholding particular principles, attitudes, or activities.
+| Usage: the last bastion of male privilege.
+
+.. image:: images/bastion_1.jpg
+.. image:: images/bastion_2.jpg

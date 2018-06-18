@@ -219,3 +219,19 @@ English Notes 3
 | Definition: a person who has little status in society.
 | Origin: late 19th century: with reference to the beaten dog in a dogfight.
 | 
+| leave-taking
+| Definition: an act of saying goodbye.
+| Synonyms: farewell.
+| Usage: the leave-taking was restrained, with none of her earlier displays of emotion.
+| 
+| earsplitting
+| Definition: extremely loud. [震耳欲聋]
+| Usage: an ear-splitting crack of thunder.
+| 
+| insufferable
+| Definition: too extreme to bear; intolerable.
+| Usage: the heat would be insufferable by July.
+| Definition: having or showing unbearable arrogance or conceit.
+| Usage: an insufferable bully.
+| Usage: insufferable French chauvinism.
+

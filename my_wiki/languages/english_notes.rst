@@ -2321,7 +2321,7 @@ It is the most popular tea in Japan.
 | 
 | hair of the dog
 | Definition: (informal) an alcoholic drink taken to cure a hangover [宿醉].
-| Origin: from hair of the dog that bit you, formerly recommended as a remedy for | the bit of a mad dog.
+| Origin: from hair of the dog that bit you, formerly recommended as a remedy for the bit of a mad dog.
 | 
 | put hair on one's chest
 | Definition: (of an alcoholic drink) be very strong.
