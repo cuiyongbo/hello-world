@@ -234,4 +234,10 @@ English Notes 3
 | Definition: having or showing unbearable arrogance or conceit.
 | Usage: an insufferable bully.
 | Usage: insufferable French chauvinism.
-
+| 
+| interwine
+| Definition: twist or twin together.
+| Synonyms: entwine.
+| Definition: connect or link (two or more things) closely.
+| Usage: Dickens has been very clever to intertwine all these aspects and ideas.
+| Usage: Our fates have been entwined, Elizabeth, but never joined.

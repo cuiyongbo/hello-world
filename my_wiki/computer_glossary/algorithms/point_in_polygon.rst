@@ -86,8 +86,8 @@ even when the polygon overlaps itself. The point is then inside the polygon when
 winding number is nonzero.
 
 
-Example
-=======
+Implementation Example
+======================
 
 .. code-block:: c
    :caption: Sample taken from apache project [*httpd-2.4.33/modules/mappers/mod_imagemap.c*]
@@ -130,6 +130,8 @@ Example
        return (radius2 <= radius1);
    }
    
+   #define X 0
+   #define Y 1
    #define fmin(a,b) (((a)>(b))?(b):(a))
    #define fmax(a,b) (((a)>(b))?(a):(b))
    
@@ -138,10 +140,22 @@ Example
        int i, numverts, crossings = 0;
        double x = point[X], y = point[Y];
    
+       double maxX, minX, maxY, minY.
+       maxX = minX = pgon[0][X];
+       maxY = minY = pgon[0][Y];
        for (numverts = 0; numverts < MAXVERTS && pgon[numverts][X] != -1;
            numverts++) {
            /* just counting the vertexes */
+           maxX = fmax(maxX, pgon[numverts][X]);
+           minX = fmin(minX, pgon[numverts][X]);
+           maxY = fmax(maxY, pgon[numverts][Y]);
+           minY = fmin(minY, pgon[numverts][Y]);
        }
+
+       // outside the bounding box
+       if (x < minX || x > maxX
+            || y < minY || y > maxY)
+         return 0;
    
        for (i = 0; i < numverts; i++) {
            double x1=pgon[i][X];

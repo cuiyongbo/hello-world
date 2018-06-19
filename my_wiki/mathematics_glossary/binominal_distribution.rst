@@ -51,13 +51,13 @@ in *n* trials is given by the probability mass function:
 
 .. math::
 
-   {\displaystyle Pr(k;n,p)=\Pr(X=k)={n \choose k}p^{k}(1-p)^{n-k}} 
+   {Pr(k;n,p)=\Pr(X=k)={n \choose k}p^{k}(1-p)^{n-k}} 
 
 for :math:`k = 0, 1, 2, ..., n`, where
 
 .. math::
 
-   {\displaystyle {\binom {n}{k}}={\frac {n!}{k!(n-k)!}}} 
+   {{\binom {n}{k}}={\frac {n!}{k!(n-k)!}}} 
 
 
 is the *binomial coefficient*, hence the name of the distribution. The formula can be understood as follows. 
@@ -70,7 +70,7 @@ values. This is because for :math:`k > n/2`, the probability can be calculated b
 
 .. math::
 
-   {\displaystyle f(k,n,p)=f(n-k,n,1-p).}
+   {f(k,n,p)=f(n-k,n,1-p).}
 
 Looking at the expression *ƒ(k, n, p)* as a function of *k*, there is a *k* value that maximizes it. This *k* 
 value can be found by calculating

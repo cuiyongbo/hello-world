@@ -16,6 +16,7 @@ Computer Glossary
    computer_glossary/unix_configure_file
    computer_glossary/cpu_docs
    computer_glossary/segment_fault_cracks
+   computer_glossary/memory_alignment
    computer_glossary/copy_on_write_tech
    computer_glossary/compare_and_swap_tech
    computer_glossary/install_ubuntu_on_mac

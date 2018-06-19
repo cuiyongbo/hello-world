@@ -11,4 +11,5 @@ Algorithms
    algorithms/insertion_sort_alg
    algorithms/hot_gis_algs
    algorithms/point_in_polygon
+   algorithms/point_in_polygon_2
    algorithms/single_precision_floating_point_format

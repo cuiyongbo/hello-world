@@ -168,3 +168,17 @@ a positive number is negative, and the opposite to a negative number is positive
 An acute angle is less than :math:`90^\circ`.
 An right angle is exactly :math:`90^\circ`.
 An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.
+
+
+**Homotopy**
+
+A continuous transformation from one function to another. 
+A homotopy between two functions **f** and **g** from a space **X** to a space **Y** 
+is a continuous map **G** from :math:`X \times [0,1]| \mapsto Y` such that **G(x,0)=f(x)** 
+and **G(x,1)=g(x)**, where :math:`\times` denotes set pairing. Another way of saying this 
+is that a homotopy is a path in the mapping space **Map(X,Y)** from the first function to 
+the second.
+
+Two mathematical objects are said to be homotopic if one can be continuously deformed into the other. 
+The concept of homotopy was first formulated by *Poincaré* around 1900.
+
