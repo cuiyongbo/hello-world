@@ -14,3 +14,7 @@ Pending tasks
 #. C++ server design - interfaces
    
 #. http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
+   
+#. https://en.wikipedia.org/wiki/Mode_(statistics)
+#. https://en.wikipedia.org/wiki/Normal_distribution
+#. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
