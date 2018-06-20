@@ -204,3 +204,34 @@ are perpendicular and 1 if the unit vectors are parallel.
 Unit vectors enable two convenient identities: the dot product of two unit vectors yields the cosine 
 (which may be positive or negative) of the angle between the two unit vectors. The magnitude of the 
 cross product of the two unit vectors yields the sine (which will always be positive).
+
+
+Applications
+============
+
+Computational geometry
+----------------------
+
+The cross product appears in the calculation of the distance of two skew lines (lines not in the same plane) 
+from each other in three-dimensional space.
+
+The cross product can be used to calculate the normal for a triangle or polygon, an operation frequently performed 
+in computer graphics. For example, the winding of a polygon (clockwise or anticlockwise) about a point within the 
+polygon can be calculated by triangulating the polygon (like spoking a wheel) and summing the angles (between the 
+spokes) using the cross product to keep track of the sign of each angle.
+
+In computational geometry of the plane, the cross product is used to determine the sign of the acute angle defined 
+by three points :math:`{p_{1}=(x_{1},y_{1}),p_{2}=(x_{2},y_{2}),p_{3}=(x_{3},y_{3})}`. It corresponds to the direction 
+of the cross product of the two coplanar vectors defined by the pairs of points :math:`{p_{1},p_{2}}` and 
+:math:`{p_{1},p_{3}}`, i.e., by the sign of the expression.
+
+.. math::
+
+   {P=(x_{2}-x_{1})(y_{3}-y_{1})-(y_{2}-y_{1})(x_{3}-x_{1}).}
+
+In the "right-handed" coordinate system, if the result is 0, the points are collinear; 
+if it is positive, the three points constitute a positive angle of rotation around :math:`p_1` 
+from :math:`p_2` to :math:`p_3`, otherwise a negative angle. From another point of view, 
+the sign of P tells whether :math:`p_3` lies to the left or to the right of line :math:`p_1, p_2.`
+
+The cross product is used in calculating the volume of a polyhedron such as a tetrahedron or parallelepiped.

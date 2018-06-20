@@ -1,6 +1,10 @@
 Mathematical Terminology
 ========================
 
+I think, therefore I am
+
+-- *Descartes*
+
 | algebra
 | algebraic
 | Definition: the part of mathematics in which letters and other general symbols are used to represent numbers and quantities in formulae and equations.
@@ -181,4 +185,11 @@ the second.
 
 Two mathematical objects are said to be homotopic if one can be continuously deformed into the other. 
 The concept of homotopy was first formulated by *Poincaré* around 1900.
+
+|
+| Cartesian
+| Cartesianism
+| Definition: relating to Descartes and his ideas.
+| Definition: a follower of Descartes.
+| Origin: mid 17th century: from modern Latin Cartesianus, from Cartesius, Latinized form of the name of Descartes.
 

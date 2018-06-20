@@ -2,14 +2,12 @@
 Memory Alignment
 ****************
 
-
 "X bytes aligned" means that the base address of your data must be a multiple of X. 
 It can be used for using some special hardware like a DMA in some special hardware, 
 for a faster access by the cpu, etc...
 
 It is the case of the Cell Processor where data must be 16 bytes aligned in order to 
 be copied to/from the co-processor.
-
 
 An object that is "8 bytes aligned" is stored at a memory address that is a multiple of 8.
 
@@ -30,7 +28,6 @@ beginning at address 9, the CPU must fetch the 8 bytes beginning at address 8 as
 beginning at address 16, then mask out the bytes you wanted. On the other hand, if you ask for the 8 
 bytes beginning at address 8, then only a single fetch is needed. Some CPUs will not even perform such 
 a misaligned load - they will simply raise an exception (or even silently load the wrong data!).
-
 
 .. code-block:: cpp
    :caption: testimony

@@ -717,8 +717,8 @@ TestLoader objects have the following methods:
 
    A basic test runner implementation which prints results on standard error. 
    It has a few configurable parameters, but is essentially very simple.
-    Graphical applications which run test suites should provide alternate 
-    implementations.
+   Graphical applications which run test suites should provide alternate 
+   implementations.
 
 .. function:: unittest.main([module[, defaultTest[, argv[, testRunner[, testLoader[, exit[, verbosity[, failfast[, catchbreak[, buffer]]]]]]]]]])
 

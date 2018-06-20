@@ -124,5 +124,14 @@ Windows Problems
 
       "git_binary": "C:/Program Files/Git/bin/git.exe"
 
+#. xShell get frozen after accidently typing "Ctrl - S"
+   
+   Solution::
 
+      Press "Ctrl - Q" to unfreeze.
+
+      To disable this altogether, stick ``stty -ixon`` in a startup script. 
+      To allow any key to get things flowing again, use ``stty ixany``.
+
+      PS: It's neither the terminal nor the shell that does this, but the OS's terminal driver.
 
