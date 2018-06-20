@@ -162,7 +162,7 @@ Implementation Example
            double y1=pgon[i][Y];
            double x2=pgon[(i + 1) % numverts][X];
            double y2=pgon[(i + 1) % numverts][Y];
-           double d=(y - y1) * (x2 - x1) - (x - x1) * (y2 - y1);
+           double d=(y - y1) * (x2 - x1) - (x - x1) * (y2 - y1); // vector product of PiPi+1 and PiP0
    
            if ((y1 >= y) != (y2 >= y)) {
                crossings += y2 - y1 >= 0 ? d >= 0 : d <= 0;
