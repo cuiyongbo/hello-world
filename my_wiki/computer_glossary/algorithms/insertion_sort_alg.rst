@@ -342,3 +342,37 @@ can use **O(n)** stack space.
    
      return pSorted;
    }
+
+.. code-block:: cpp
+   :caption: std implementation taken from MSVC
+
+   template<class BinPred, class BidIterator, class ElementType>
+   void insertionSort(BidIterator first, BidIterator last, BinPred pred)
+   {
+      if(first != last)
+      {
+         for (BidIterator next=first; ++next != last; )
+         {
+            BidIterator next1 = next;
+            ElementType tmpVal = move(next)
+            
+            // avoid worst case 
+            if(pred(tmpVal, *first))
+            {
+               count = next - first;
+               ++next1;
+               memmove(next1-count, first, count*sizeof(ElementType));
+               *first = move(tmpVal);
+            }
+            else
+            {
+               for(BidIterator first1 = next1; pred(val, *(--first1)); next1=first1)
+               {
+                  *next1 = move(*first1)
+               }
+               *next1 = move(tmpVal);
+            }
+         }
+      }
+   }
+  

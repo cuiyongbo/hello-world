@@ -5,7 +5,8 @@ Pending tasks
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
-   
+
+#. http://geomalgorithms.com/
 #. http://geomalgorithms.com/a08-_containers.html
 
 #. introduction to algorithm - data structure

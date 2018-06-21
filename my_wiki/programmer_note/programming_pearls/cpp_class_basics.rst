@@ -122,6 +122,28 @@ C++ class example
    
       return 0;
    }
+
+
+   class Base
+   {
+   public:
+      Base() { a = 1; printf("Base()\n"); }
+      Base(int x) : a(x) { printf("Base(int)\n"); }
+   
+   protected:
+      int a;
+   };
+   
+   class Derived : public Base
+   {
+   public:
+      Derived(int x) : /*Base(x),*/b(x) {}
+      void func() { printf("a = %d, b = %d\n", a, b); }
+   
+   private:
+      int b;
+   };
+
    
 
 C++ enumerator example
