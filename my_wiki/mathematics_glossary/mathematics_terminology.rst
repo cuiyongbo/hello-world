@@ -53,6 +53,7 @@ I think, therefore I am
 | determinant 行列式
 | parallelepiped 平行六面体
 | parallelogram 平行四边形
+| quadrilateral 四边形
 | colinear 共线
 | polyheron 多面体
 | 
@@ -192,4 +193,7 @@ The concept of homotopy was first formulated by *Poincaré* around 1900.
 | Definition: relating to Descartes and his ideas.
 | Definition: a follower of Descartes.
 | Origin: mid 17th century: from modern Latin Cartesianus, from Cartesius, Latinized form of the name of Descartes.
+
+normal
+Definition: [technical] a line at right angles to a given line or surface.
 

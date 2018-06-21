@@ -241,3 +241,25 @@ English Notes 3
 | Definition: connect or link (two or more things) closely.
 | Usage: Dickens has been very clever to intertwine all these aspects and ideas.
 | Usage: Our fates have been entwined, Elizabeth, but never joined.
+| 
+| parenthesis
+| Definition: an interlude or interval.
+| Usage: the three months of coalition government were a lamentable political parenthesis.
+| Phrase: in parenthesis
+| Definition: as a digression or afterthought.
+| Usage: In parenthesis I should say that I am passing quickly over the significance of these matters.
+| 
+| Phrase: the new normal
+| Definition: a previously unfamiliar or atypical situation that has become standard, usual, or expected.
+| Usage: 32% of Americans say spending less is the new normal, according to a recent poll.
+| 
+| attypical [非典型的，反常的]
+| Definition: not representative of a type, group, or class.
+| Usage: a sample of people who are rather atypical of the target audience.
+| 
+| evocation
+| Definition: the action of invoking a spirit or deity.
+| Usage: the evocation of wandering spirits. [召唤]
+| Definition: the act of bringing or recalling a feeling, memory, or image to the conscious mind. [共鸣]
+| Usage: his 560-page epic is a detailed, moving evocation of childhood.
+| 
