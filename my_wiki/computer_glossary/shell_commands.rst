@@ -14,7 +14,6 @@ Shell Commands
    所以，``ps –u`` 和 ``ps u`` 查询结果会不同.
 
 
-
 .. toctree::
    :maxdepth: 2
 
@@ -35,4 +34,5 @@ Shell Commands
    shell_command/system_v_ipc_facility
    shell_command/awk_manual
    shell_command/xargs_manual
+   shell_command/du_manual
    

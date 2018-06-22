@@ -321,6 +321,7 @@ like shell scripts, by putting the line
 .. code-block:: sh
 
    #!/usr/bin/env python
+   # coding: utf-8 # source code encoding
 
 (assuming that the interpreter is on the user’s :envvar:`PATH`) at the beginning of the script
 and giving the file an executable mode. The ``#!`` must be the first two characters of the file.
@@ -410,3 +411,12 @@ add this code in your scripts::
 The variable must be set before any import.
 you can add it to your :envvar:`PYTHONSTARTUP` or
 :file:`site-packages/usercustomize.py`.
+
+
+Convert uncode string to Chinese characters
+===========================================
+
+.. code-block:: python
+
+   >>> print '\u5f53\u524d\u9053\u8def\u56e0\u9053\u8def\u65bd\u5de5\u7981\u6b62\u901a\u884c'.decode('unicode-escape')
+   当前道路因道路施工禁止通行

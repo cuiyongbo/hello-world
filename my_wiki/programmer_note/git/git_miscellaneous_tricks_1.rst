@@ -42,6 +42,11 @@ Git to checkout a new branch and track itself
       $ git push -u origin branch_name
       $ git push -u origin local_branch:remote_branch # remote_branch may be not existing.
 
+      # second solution
+      $ git branch enroute_ti_server_add_traffic_event origin/enroute_ti_server_add_traffic_event
+      Branch enroute_ti_server_add_traffic_event set up to track remote branch enroute_ti_server_add_traffic_event from origin.
+
+
 
 Create a new local branch
 =========================
