@@ -293,3 +293,11 @@ English Notes 3
 | Usage: a tenuous cloud.
 | Definition: very weak or slight.
 | Usage: the tenuous link between interest rates and investment.
+| 
+| triangular
+| Definition: shaped like a triangle; having three sides and three corners.
+| Usage: dainty triangular sandwiches.
+| Definition: involving three people or parties.
+| Usage: a triangular relationship.
+
+.. image:: images/triangular_sanwitch.jpg

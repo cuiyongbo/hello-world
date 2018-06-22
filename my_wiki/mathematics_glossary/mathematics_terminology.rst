@@ -193,7 +193,8 @@ The concept of homotopy was first formulated by *Poincaré* around 1900.
 | Definition: relating to Descartes and his ideas.
 | Definition: a follower of Descartes.
 | Origin: mid 17th century: from modern Latin Cartesianus, from Cartesius, Latinized form of the name of Descartes.
-
-normal
-Definition: [technical] a line at right angles to a given line or surface.
+| 
+| normal
+| Definition: [technical] a line at right angles to a given line or surface.
+| Usage: unit normal. [单位法向量]
 
