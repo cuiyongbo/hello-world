@@ -1,4 +1,3 @@
-
 **************
 Shell Commands
 **************
@@ -35,4 +34,5 @@ Shell Commands
    shell_command/awk_manual
    shell_command/xargs_manual
    shell_command/du_manual
+   shell_command/cal_manual
    
