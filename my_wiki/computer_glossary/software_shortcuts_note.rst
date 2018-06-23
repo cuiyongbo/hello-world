@@ -261,6 +261,7 @@ Sublime Text
       .. image:: images/Mac-MissionControl-shortcuts-setting.png
 
 #. Open package control: Cmd + Shift + P (mac), Ctrl + Shift + P (windows)
+#. Move backward/forward: Ctrl + - / Shift + Ctrl + -
         
 
       

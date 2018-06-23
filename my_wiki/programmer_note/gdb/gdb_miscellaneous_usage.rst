@@ -59,3 +59,39 @@ Gdb Tricks
    +------------------+----------------------------------------------------------------------+
    | watch condition  | Set a watchpoint for given condition, suspend when condition is true |
    +------------------+----------------------------------------------------------------------+
+
+#. show fields of a struct
+ 
+   .. code-block:: sh
+      :caption: Solution
+
+      (gdb) help ptype
+      Print definition of type TYPE.
+      Usage: ptype[/FLAGS] TYPE | EXPRESSION
+      Argument may be any type (for example a type name defined by typedef,
+      or "struct STRUCT-TAG" or "class CLASS-NAME" or "union UNION-TAG"
+      or "enum ENUM-TAG") or an expression.
+      The selected stack frame's lexical context is used to look up the name.
+      Contrary to "whatis", "ptype" always unrolls any typedefs.
+   
+      Available FLAGS are:
+        /r    print in "raw" form; do not substitute typedefs
+        /m    do not print methods defined in a class
+        /M    print methods defined in a class
+        /t    do not print typedefs defined in a class
+        /T    print typedefs defined in a class
+   
+      (gdb) ptype object
+      type = struct {
+          json_t json;
+          hashtable_t hashtable;
+          int visited;
+      } *
+   
+      (gdb) print object->json
+      $3 = {type = JSON_OBJECT, refcount = 1}
+      (gdb) ptype json_t
+      type = struct json_t {
+          json_type type;
+          size_t refcount;
+      }
