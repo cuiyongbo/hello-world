@@ -301,3 +301,19 @@ English Notes 3
 | Usage: a triangular relationship.
 
 .. image:: images/triangular_sanwitch.jpg
+
+| déjà vu [既视感]
+| Definition: the illusion of remembering scenes and events when experienced for the first time
+| Definition: a feeling that one has seen or heard something before
+| Definition: something overly or unpleasantly familiar.
+| Usage: The team's poor start to the season was déjà vu for its long-suffering fans.
+
+.. image:: images/DejaVu_1.jpg
+.. image:: images/DejaVu_2.jpg
+.. image:: images/DejaVu_3.jpg
+
+| degenerate
+| degeneracy
+| Definition: the state or property of being degenerate.
+| Usage: the ills of society, from sexual degeneracy to political corruption.
+| 
