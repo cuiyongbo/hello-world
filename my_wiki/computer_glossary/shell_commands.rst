@@ -35,4 +35,5 @@ Shell Commands
    shell_command/xargs_manual
    shell_command/du_manual
    shell_command/cal_manual
+   shell_command/sort_manual
    
