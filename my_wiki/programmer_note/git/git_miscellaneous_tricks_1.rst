@@ -1,11 +1,13 @@
-**********
-Git Tricks
-**********
+************
+Git Tricks 1
+************
 
-Create a new repository
-=======================
+#. Create a new repository
 
    Start a repository from blank::
+
+      $ cd projectDir
+      $ git init
 
       git init projecName
 

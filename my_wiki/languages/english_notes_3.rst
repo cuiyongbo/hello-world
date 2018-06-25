@@ -302,7 +302,7 @@ English Notes 3
 
 .. image:: images/triangular_sanwitch.jpg
 
-| déjà vu [既视感]
+| déjà vu [デジャヴ　既視感]
 | Definition: the illusion of remembering scenes and events when experienced for the first time
 | Definition: a feeling that one has seen or heard something before
 | Definition: something overly or unpleasantly familiar.
@@ -311,6 +311,11 @@ English Notes 3
 .. image:: images/DejaVu_1.jpg
 .. image:: images/DejaVu_2.jpg
 .. image:: images/DejaVu_3.jpg
+.. image:: images/steinsgate-okabe-rintarou-makise-kurisu.jpg
+
+.. figure:: images/Gekijōban_Shutainzu_Gēto_Fuka_Ryōiki_no_Dejavu.jpg
+
+   劇場版　シュタインズ•ゲート：負荷領域のデジャヴ
 
 | degenerate
 | degeneracy
