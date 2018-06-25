@@ -313,7 +313,7 @@ English Notes 3
 .. image:: images/DejaVu_3.jpg
 .. image:: images/steinsgate-okabe-rintarou-makise-kurisu.jpg
 
-.. figure:: images/Gekijōban_Shutainzu_Gēto_Fuka_Ryōiki_no_Dejavu.jpg
+.. figure:: images/Gekijōban_Shutainzu_Gēto_Fuka_Ryōiki_no_Dejavu.jpg
 
    劇場版　シュタインズ•ゲート：負荷領域のデジャヴ
 

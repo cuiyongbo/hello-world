@@ -1,0 +1,39 @@
+**************
+connect Manual
+**************
+
+**NAME**
+       
+   connect - initiate a connection on a socket
+
+**SYNOPSIS**
+
+   .. code-block:: c
+
+      #include <sys/types.h>
+      #include <sys/socket.h>
+      int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+
+**DESCRIPTION**
+
+   The *connect()* system call connects the socket referred to by the file descriptor **sockfd** 
+   to the address specified by *addr*. The *addrlen* argument specifies the size of *addr*.  
+   The format of the address in *addr* is determined by the address space of the socket *sockfd*; 
+   see *socket(2)* for further details.
+
+   If the socket sockfd is of type *SOCK_DGRAM* then *addr* is the address to which datagrams are sent 
+   by default, and the only address from which datagrams are received. If the socket is of type *SOCK_STREAM* 
+   or *SOCK_SEQPACKET*, this call attempts to make a connection to the socket that is bound to the address 
+   specified by *addr*.
+
+   Generally, connection-based protocol sockets may successfully *connect()* only once; connectionless protocol 
+   sockets may use *connect()* multiple times to change their association. Connectionless sockets may dissolve 
+   the association by connecting to an address with the *sa_family* member of sockaddr set to AF_UNSPEC.
+
+**RETURN VALUE**
+   
+   If the connection or binding succeeds, zero is returned. On error, -1 is returned, and *errno* is set appropriately.
+
+**EXAMPLE**
+   
+   An example of the use of connect() is shown in getaddrinfo(3).
