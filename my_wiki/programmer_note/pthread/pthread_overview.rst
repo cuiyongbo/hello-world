@@ -2,18 +2,17 @@
 Pthread Overview
 ****************
 
-
 What is a Thread?
 =================
 
 Technically, **a thread is defined as an independent stream of instructions that can
 be scheduled to run as such by the OS**. But what does this mean?
 
-To the software developer, the concept of a "procedure" that runs independently
+To the software developer, the concept of a **procedure** that runs independently
 from its main program may best describe a thread. To go one step further, imagine
 a program that contains a number of procedures. Then imagine all of these procedures
 being able to be scheduled to run simultaneously and/or independently by OS. That
-would describe a "multithreaded" program. But how is this accomplished?
+would describe a multithreaded program. But how is this accomplished?
   
 Before understanding a thread, one first needs to understand a UNIX **process**.
 A process is created by OS, and requires a fair amount of "overhead". Processes
@@ -64,22 +63,6 @@ Because threads within the same process share resources:
    * Reading and writing to the same memory locations is possible, and therefore requires explicit **synchronization**
      by the programmer.
 
-Historically, hardware vendors have implemented their own proprietary versions of threads. These implementations
-differed substantially from each other making it difficult for programmers to develop portable threaded applications.
-In order to take full advantage of the capabilities provided by threads, a standardized programming interface was required.
-For UNIX systems, this interface has been specified by the IEEE POSIX 1003.1c standard (1995). Implementations adhering to
-this standard are referred to as POSIX threads, or Pthreads. Most hardware vendors now offer Pthreads in addition to their
-proprietary API's.
-
-The POSIX standard has continued to evolve and undergo revisions, including the Pthreads specification. Some useful links:
-  
-   * https://standards.ieee.org/findstds/standard/1003.1-2008.html
-   * https://www.opengroup.org/austin/papers/posix_faq.html
-   * https://www.unix.org/version3/ieee_std.html
-
-Pthreads are defined as a set of C language programming types and procedure calls, implemented with a ``pthread.h`` header/include
-file and a thread library - though this library may be part of another library, such as ``libc``, in some implementations.
-  
 
 Designing Threaded Programs
 ===========================
@@ -156,7 +139,7 @@ Thread-safeness
 In a nutshell, refers an application's ability to execute multiple
 threads simultaneously without "clobbering" shared data or creating "race" conditions.  
 For example, suppose that your application creates several threads, each of which makes
-a call to the same library routine; his library routine accesses/modifies a global
+a call to the same library routine; this library routine accesses/modifies a global
 structure or location in memory. As each thread calls this routine it is possible
 that they may try to modify this global structure/memory location at the same time.
 If the routine does not employ some sort of synchronization constructures to prevent
@@ -171,16 +154,54 @@ don't explicitly guarantee thread-safeness. When in doubt, assume that they are 
 thread-safe until proven otherwise. This can be done by "serializing" the calls to
 the uncertain routine, etc.
 
-  
-Thread Limits
-^^^^^^^^^^^^^
+.. note::
 
-Although the Pthreads API is an ANSI/IEEE standard, implementations can,
-and usually do, vary in ways not specified by the standard. Because of
-this, a program that runs fine on one platform, may fail or produce wrong
-results on another platform. For example, the maximum number of threads
-permitted, and the default thread stack size are two important limits to
-consider when designing your program.
+   #. Pthreads
+         
+      *POSIX.1* specifies a set of interfaces (functions, header files) for threaded programming 
+      commonly known as POSIX threads, or Pthreads. A single process can contain multiple threads, 
+      all of which are executing the same program. These threads share the same global memory (data 
+      and heap segments), but each thread has its own stack (automatic variables).
 
-Several thread limits are discussed in more detail later in this tutorial.
-  
+      POSIX.1 also requires that threads share a range of other attributes (i.e., these attributes 
+      are process-wide rather than per-thread):
+
+         -  process ID
+         -  parent process ID
+         -  process group ID and session ID
+         -  controlling terminal
+         -  user and group IDs
+         -  open file descriptors
+         -  record locks (see fcntl(2))
+         -  signal dispositions
+         -  file mode creation mask (umask(2))
+         -  current directory (chdir(2)) and root directory (chroot(2))
+         -  interval timers (setitimer(2)) and POSIX timers (timer_create(2))
+         -  nice value (setpriority(2))
+         -  resource limits (setrlimit(2))
+         -  measurements of the consumption of CPU time (times(2)) and resources (getrusage(2))
+
+      As well as the stack, *POSIX.1* specifies that various other attributes are distinct 
+      for each thread, including:
+
+         -  thread ID (the pthread_t data type)
+         -  signal mask (pthread_sigmask(3))
+         -  the errno variable
+         -  alternate signal stack (sigaltstack(2))
+         -  real-time scheduling policy and priority (sched_setscheduler(2) and sched_setparam(2))
+
+      The following Linux-specific features are also per-thread:
+
+         -  capabilities (see capabilities(7))
+         -  CPU affinity (sched_setaffinity(2))
+
+   #. Pthreads function return values
+      
+      Most pthreads functions return 0 on success, and an error number of failure.  
+      **Note that the pthreads functions do not set errno.** For each of the pthreads 
+      functions that can return an error, *POSIX.1-2001* specifies that the function 
+      can never fail with the error *EINTR*.
+
+   #. Compiling on Linux
+
+      On Linux, programs that use the Pthreads API should be compiled using ``cc -pthread``.

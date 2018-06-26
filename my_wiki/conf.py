@@ -202,6 +202,5 @@ suppress_warnings = [
 
 exclude_patterns = [
     "programmer_note/gcc/gcc_man_page.rst",
-    "programmer_note/gdb/gdb_man_page.rst",
-    "programmer_note/pthread/pthread_safety_concepts.rst"
+    "programmer_note/gdb/gdb_man_page.rst"
 ]

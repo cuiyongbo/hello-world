@@ -196,15 +196,6 @@ for the estimation of computational complexity of algorithms and computational p
 with the usage of the big **O** notation.
 
 
-**Concurrence vs Parallelism**
-
-+-----------------------------------+-----------------------------------+
-| Concurrence                       | Parallelism                       |
-+===================================+===================================+
-| .. image:: images/concurrency.jpg | .. image:: images/parallelism.jpg |
-+-----------------------------------+-----------------------------------+
-
-
 **Histogram**
 
 A histogram is an accurate representation of the distribution of numerical data. 
