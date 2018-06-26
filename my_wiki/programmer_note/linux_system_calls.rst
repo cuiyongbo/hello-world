@@ -12,5 +12,6 @@ Linux System Call
    linux_system_call/shm_overview
    linux_system_call/inotify_overview
    linux_system_call/socket_overview
+   linux_system_call/poll_manual
    linux_system_call/umask_info
    linux_system_call/helper_functions
