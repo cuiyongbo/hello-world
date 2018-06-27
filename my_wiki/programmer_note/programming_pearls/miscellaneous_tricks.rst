@@ -411,6 +411,7 @@ and ``show`` syntax.
          for (auto it = range.first; it != range.second; ++it) {
             std::cout << it->first << ' ' << it->second << '\n';
          }
+         std::cout << std::distance(range.first, range.second) << "\n"; 
       }
 
 
