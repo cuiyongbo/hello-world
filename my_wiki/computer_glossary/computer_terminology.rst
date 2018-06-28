@@ -354,3 +354,10 @@ for by exactly 86400 seconds.
    #define __LITTLE_ENDIAN 1234
    #define __BIG_ENDIAN    4321
    #define __PDP_ENDIAN    3412
+
+
+**Overclocking**
+
+Overclocking is the process making a computer component run at a higher speed 
+than that specified by the manufacturer. The components that can be overclocked 
+include the CPU, the memory and the video cards.

@@ -18,7 +18,7 @@ Shell Commands
 
    shell_command/shell_script_tricks
    shell_command/ls_info
-   shell_command/tar_info
+   shell_command/tar_manual
    shell_command/chmod_info
    shell_command/ps_command
    shell_command/find_command

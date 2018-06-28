@@ -534,8 +534,8 @@ tar Command
 gzip/gunzip command
 ===================
 
-
 .. code-block:: sh
+   :caption: Usage
 
    $ gzip -h
    Usage: gzip [OPTION]... [FILE]...
@@ -566,3 +566,22 @@ gzip/gunzip command
    
    With no FILE, or when FILE is -, read standard input.
    
+.. code-block:: sh
+   :caption: Examples
+
+   $ gunzip -nk 05nanjing.txt.gz  # use the name of zip file
+   $ gunzip -Nk 06nanjing.txt.gz  # use the original file name in the zip file
+
+   $ ll *.gz
+   -rw-r--r-- 1 cuiyb 1049089 424943 Jun 28 14:56 06nanjing.txt.gz
+   -rw-r--r-- 1 cuiyb 1049089 424716 Jun 28 14:56 07nanjing.txt.gz
+   -rw-r--r-- 1 cuiyb 1049089 423827 Jun 28 14:56 08nanjing.txt.gz
+   -rw-r--r-- 1 cuiyb 1049089 422795 Jun 28 14:56 09nanjing.txt.gz
+
+   $ find . -type f -name "*.gz" -exec gunzip -nk \{\} \;
+
+   $ ll *.txt
+   -rw-r--r-- 1 cuiyb 1049089 1955776 Jun 28 14:56 06nanjing.txt
+   -rw-r--r-- 1 cuiyb 1049089 1952338 Jun 28 14:56 07nanjing.txt
+   -rw-r--r-- 1 cuiyb 1049089 1949276 Jun 28 14:56 08nanjing.txt
+   -rw-r--r-- 1 cuiyb 1049089 1944800 Jun 28 14:56 09nanjing.txt

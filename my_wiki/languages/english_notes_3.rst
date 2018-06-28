@@ -322,3 +322,14 @@ English Notes 3
 | Definition: the state or property of being degenerate.
 | Usage: the ills of society, from sexual degeneracy to political corruption.
 | 
+| soul-searching
+| Definition: involving or expressing deep consideration.
+| Usage: long, soul-searching conversations about religion.
+| 
+| overrun
+| Definition: spread over or occupy (a place) in large numbers.
+| Usage: the Mediterranean has been overrun by tourists.
+| Definition: continue beyond or above an expected or allowed time or cost.
+| Usage: he mustn't overrun his budget.
+| Definition: the movement of a vehicle at a speed greater than is imparted by the engine. [类似CPU超频]
+| 

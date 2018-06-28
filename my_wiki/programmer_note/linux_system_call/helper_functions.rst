@@ -1,3 +1,11 @@
+***********************
+Miscellaneous Functions
+***********************
+
+.. contents::
+   :local:
+
+
 getpid & getppid
 ================
 
