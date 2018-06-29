@@ -333,3 +333,7 @@ English Notes 3
 | Usage: he mustn't overrun his budget.
 | Definition: the movement of a vehicle at a speed greater than is imparted by the engine. [类似CPU超频]
 | 
+| deranged
+| Definition: mad; insane.
+| Usage: Three years ago today a deranged man shot and killed 14 people in the main square.
+| 

@@ -372,9 +372,7 @@ grep Command
    syntaxes. In other implementations, basic regular expressions are less
    powerful. The following description applies to extended regular
    expressions; differences for basic regular expressions are summarized
-   afterwards. Perl regular expressions give additional functionality,
-   and are documented in :manpage:`pcresyntax(3)` and :manpage:`pcrepattern(3)`,
-   but only work if pcre is available in the system.
+   afterwards. 
 
    The fundamental building blocks are the regular expressions that match
    a single character. Most characters, including all letters and digits,
@@ -494,9 +492,10 @@ grep Command
    If an error occurred the exit status is ``2``. (Note: POSIX error handling
    code should check for ``'2'`` or greater.)
 
-**SEE ALSO**
 
-   Regular Manual Pages
-      awk(1),  cmp(1),  diff(1),  find(1), gzip(1), perl(1), sed(1), sort(1),
-      xargs(1), zgrep(1), read(2),  pcre(3),  pcresyntax(3),  pcrepattern(3),
-      terminfo(5), glob(7), regex(7).
+**EXAMPLE**
+
+.. code-block:: sh
+
+   $ grep -o -E ".{100,100}801857" event.json  # output the matched and the 100 characters before it.
+

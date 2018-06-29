@@ -30,6 +30,7 @@ Shell Commands
    shell_command/smem_man_doc
    shell_command/nohup_command
    shell_command/uptime_manual
+   shell_command/ulimit_manual
    shell_command/system_v_ipc_facility
    shell_command/awk_manual
    shell_command/xargs_manual

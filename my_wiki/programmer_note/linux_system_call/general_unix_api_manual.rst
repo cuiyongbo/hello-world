@@ -91,7 +91,6 @@ open
    use fcntl(2) to enable this flag.
 
 
-
 read Manual
 ===========
 
