@@ -67,6 +67,9 @@ select Manual
    the set; this is useful after *select()* returns.
 
    *nfds* is the highest-numbered file descriptor in any of the three sets, plus 1.
+   i.e., the descriptors from 0 through *nfds-1* in the descriptor sets are examined.  
+   (Example: If you have set two file descriptors "4" and "17", nfds should not be "2", 
+   but rather "17 + 1" or "18".)
 
    The *timeout* argument specifies the interval that *select()* should block waiting for a file descriptor to 
    become ready. This interval will be rounded up to the system clock granularity, and kernel scheduling delays 

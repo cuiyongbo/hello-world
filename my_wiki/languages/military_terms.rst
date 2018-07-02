@@ -525,3 +525,10 @@ not become complacent about its development.
 
 .. image:: images/bastion_1.jpg
 .. image:: images/bastion_2.jpg
+
+| annihilate
+| annihilator
+| annihilative
+| Definition: destroy utterly; obliterate, defeat utterly.
+| Usage: a simple bomb of this type could annihilate them all.
+| Usage: the stronger force annihilated its opponent virtually without loss.

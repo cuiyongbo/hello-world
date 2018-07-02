@@ -8,7 +8,7 @@ poll Manual
 
 **SYNOPSIS**
 
-   .. code-block::c
+   .. code-block:: c
 
       #include <poll.h>
       int poll(struct pollfd *fds, nfds_t nfds, int timeout);
