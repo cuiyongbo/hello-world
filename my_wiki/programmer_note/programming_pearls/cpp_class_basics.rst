@@ -4,13 +4,16 @@
 C++ Class Tricks
 ****************
 
+.. contents::
+   :local:
+
 ``delete this`` in c++
 ======================
 
 Basically you are not advised to do ``delete this`` operation unless
 
    * The class you delete was allocated on heap or free store.
-   * You will ``NEVER`` use the pointer again after you delete it.
+   * You will **NEVER** use the pointer again after you delete it.
 
 
 Declare class constructor as private
@@ -208,3 +211,42 @@ Reference count example
 
    int ControlPanel::m_refCount = 0;
    ControlPanel* ControlPanel::m_instance = NULL;
+
+
+Friendship
+==========
+
+Friendship is neither inherited nor transive. For example::
+
+   class A
+   {
+      friend class B;
+      int a;
+
+      void f(B* p)
+      {
+         p->b++; // error: A is not a friend of B, despite B is a friend of A
+      }
+   };
+
+   class B
+   {
+      friend class C;
+      int b;
+   };
+
+   class C
+   {
+      void f(A* p)
+      {
+         p->a++; // error: C is not a friend of A, despite being a friend of a friend of A
+      }
+   };
+
+   class D: public B
+   {
+      void f(A* p)
+      {
+         p->a++; // error: D is not a friend of A, despite being derived from a friend of A
+      }
+   };

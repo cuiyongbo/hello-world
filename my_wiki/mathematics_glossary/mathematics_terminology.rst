@@ -105,11 +105,11 @@ to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is i
 | Synonyms: apex, peak, pinnacle
 | 
 | decimal
-| Definition: (decimal fraction) a fraction whose denominator is a power of ten | and whose numerator is expressed by figures placed to the right of a decimal | point.
+| Definition: (decimal fraction) a fraction whose denominator is a power of ten and whose numerator is expressed by figures placed to the right of a decimal point.
 | Usage: The decimal 0.61 stands for 61 hundredths.
 | 
 | denominator
-| Definition: (mathematics) the number below the line in a fraction showing how | many parts the whole is divided into, for example in :math:`\frac{3}{4}`.
+| Definition: (mathematics) the number below the line in a fraction showing how many parts the whole is divided into, for example in :math:`\frac{3}{4}`.
 | Synonyms: numerator
 | Usage: common denominator. [公分母]
 | 
