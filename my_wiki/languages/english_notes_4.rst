@@ -4,7 +4,6 @@ English Notes 4
 
 **Open your mind**
 
-| 
 | head/top the bill [领衔主演]
 | Definition: be the main performer or act int the show, or play, etc.
 | Usage: Topping the bill tonight will be Robbie Williams.
