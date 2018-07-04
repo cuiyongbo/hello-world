@@ -7,6 +7,12 @@ C++ Class Tricks
 .. contents::
    :local:
 
+Access control
+==============
+
+.. image:: images/cpp_class_access_control.png
+
+
 ``delete this`` in c++
 ======================
 

@@ -2,13 +2,18 @@
 C/C++ Miscellaneous Tricks
 **************************
 
+.. toctree::
+
+   addressof_manual
+   macro_tricks
+   extern_c_linkage
+   cpp_smart_pointer
+   cpp_allocator
+   pointer_to_function_demo
+   flexible_array_tricks
+
 .. contents::
    :local:
-
-Macro
-=====
-
-See :doc:`macro_tricks`.
 
 
 ``inline`` keyword
@@ -48,115 +53,6 @@ For code portability, the following preprocessor directives can be used::
    #else
    #define forceinline inline
    #endif
-
-
-Flexible array member
-=====================
-
-Introduction
-------------
-
-Flexible array member is a feature introduced in the C99 standard of the C
-programming language. It is a member of a struct, which is an array without
-a given dimension, and **it must be the last member of such a struct**,
-as in the following example::
-
-   struct vectord {
-      size_t len;
-      double arr[]; // the flexible array member must be last
-   };
-
-The ``sizeof`` operator on such a struct gives the size of the structure as if
-the flexible array member had been omitted except that it may have more trailing
-padding than the omission would imply. As such it is preferable to use ``offsetof``
-when determining size for dynamic allocation, as in the following example::
-
-   size = offsetof(struct vectord, arr) + nr_entries * sizeof(double);
-
-When allocating such structures on the heap, it is generally required to reserve
-some space for the flexible array member,as in the following example::
-
-   struct vectord *allocate_vectord (size_t len) 
-   {
-   
-      struct vectord *vec = malloc(offsetof(struct vectord, arr) 
-                                          + len * sizeof(vec->arr[0]));
-   
-      if (!vec) {
-         perror("malloc vectord failed");
-         exit(EXIT_FAILURE);
-      }
-   
-      vec->len = len;
-   
-      for (size_t i = 0; i < len; i++)
-         vec->arr[i] = 0;
-   
-      return vec;
-   }
-
-When using structures with a flexible array member, some convention regarding the actual size of that member should be defined.
-In the example above, the convention is that the member *arr* has *len* double-precision numbers.
-
-In previous standards of the C language, it was common to declare a zero-sized array member instead of a flexible array member.
-The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C++ does not have flexible array members.
-
-.. note::
-
-   ``offsetof`` is a macro defined in :file:`stddef.h`, typically like this::
-
-      #define offsetof(TYPE, MEMBER) ((size_t) &(((TYPE*)0)->MEMBER))
-
-   .. code-block:: c
-      :caption: code block taken from Jansson
-
-         #define container_of(ptr_, type_, member_)  \
-                              ((type_ *)((char *)ptr_ - offsetof(type_, member_)))
-
-         #define json_to_object(json_)  container_of(json_, json_object_t, json)
-         #define json_to_array(json_)   container_of(json_, json_array_t, json)
-         #define json_to_string(json_)  container_of(json_, json_string_t, json)
-         #define json_to_real(json_)    container_of(json_, json_real_t, json)
-         #define json_to_integer(json_) container_of(json_, json_integer_t, json)
-
-More examples
--------------
-
-.. code-block:: c++
-
-   #pragma warning(disable: 4200)
-
-   struct inotify_event {
-      int      wd;       /* Watch descriptor */
-      uint32_t mask;     /* Mask describing event */
-      uint32_t cookie;   /* Unique cookie associating related
-                  events (for rename(2)) */
-      uint32_t len;      /* Size of name field */
-      char     name[];   /* Optional null-terminated name */
-   };
-
-   int main()
-   {
-      const char* str = "hello world";
-      uint32 len = (uint32)strlen(str) + 1;
-      inotify_event* event = (inotify_event*)malloc(sizeof(inotify_event) + len);
-      event->wd = 2;
-      event->mask = 7;
-      event->cookie = 0;
-      event->len = len;
-      strcpy(event->name, str);
-   
-      FILE* fp = fopen("test", "wb");
-      fwrite(event, sizeof(inotify_event) + len, 1, fp);
-      fclose(fp);
-      free(event);
-   
-      fp = fopen("test", "rb");
-      char buffer[1024];
-      fread(buffer, 1, sizeof(buffer), fp);
-      event = (inotify_event*)buffer;
-      fclose(fp);
-   }
 
 
 ``sizeof`` operator
@@ -308,37 +204,6 @@ if the type is array type, alignment requirement of the element type is returned
    }
 
 
-Effect of ``extern C`` in C++
-=============================
-
-See :doc:`extern_c_linkage`.
-
-
-Allocator Examples
-==================
-
-C++ allocator encapsulates strategies for access/addressing, allocation/deallocation
-and construction/destruction of objects.
-
-Every standard library component that may need to allocate or release storage, from
-``std::string``, ``std::vector``, and every container except ``std::array``,
-to ``std::shared_ptr`` and ``std::function``, does so through an Allocator: an object
-of a class type that satisfies the following requirements.
-
-Some requirements are optional: the template ``std::allocator_traits`` supplies the
-default implementations for all optional requirements, and all standard library
-containers and other allocator-aware classes access the allocator through
-``std::allocator_traits``, not directly.
-
-See some examples in :doc:`cpp_allocator`.
-
-
-Smart Pointer Examples
-======================
-
-See in :doc:`cpp_smart_pointer`.
-
-
 ``#pragma pack(n)`` VS ``#pragma pack(push, n)``
 ================================================
 
@@ -416,6 +281,48 @@ and ``show`` syntax.
       }
 
 
+vector::reserve
+===============
+
+.. function:: vector::reserve(size_type new_cap)
+
+   Increase the capacity of the vector to a value that's greater or equal to *new_cap*.
+   If *new_cap* is greater than the current ``capacity()``, new storage is allocated,
+   otherwise the method does nothing.
+
+   If *new_cap* is greater than ``capacity()``, all iterators, including the past-the-end
+   iterator, and all references to the elements are invalidated. Otherwise, no iterators
+   or references are invalidated.
+
+   .. note::
+
+      Correctly using ``reserve()`` can prevent unnecessary reallocations, but inappropriate
+      uses of ``reserve()`` (for instance, calling it before every ``push_back()`` call) may
+      actually increase the number of reallocations (by causing the capacity to grow linearly
+      rather than exponentially) and result in increased computational complexity and decreased
+      performance. For example, a function that receives an arbitrary vector by reference and
+      appends elements to it should usually not call ``reserve()`` on the vector, since it does
+      not know of the vector's usage characteristics.
+
+      When inserting a range, the range version of ``insert()`` is generally preferable as it
+      preserves the correct capacity growth behavior, unlike ``reserve()`` followed by a series
+      of ``push_back()``.
+
+      ``reserve()`` cannot be used to reduce the capacity of the container,
+      to that end ``shrink_to_fit()`` is provided.
+
+
+.. function:: vector::shrink_to_fit()
+
+   Requests the removal of unused capacity.
+
+   It is a non-binding request to reduce ``capacity()`` to ``size()``. 
+   It depends on the implementation whether the request is fulfilled.
+
+   If reallocation occurs, all iterators, including the past the end iterator, and all references to
+   the elements are invalidated. If no reallocation takes place, no iterators or references are invalidated.
+
+
 printf using '/r'
 =================
 
@@ -426,126 +333,3 @@ printf using '/r'
    
    uint64 loaded, total;
    printf("Loaded: %9llu, total: %9llu\r", loaded, total)
-
-
-Pointer to functions
-====================
-
-.. code-block:: cpp
-
-   typedef void (*sig_t) (int);
-   sig_t signal(int sig, sig_t func);
-
-   typedef void(*PF)();
-
-   // array of pointers to functions
-   PF edit_ops[] = { 
-      // edit operations 
-      &cut, &paste, &copy, &search
-   };
-
-   PF file_ops[] = { 
-      // file management 
-      &open, &append, &close, &write
-   };
-
-   PF* button2 = edit_ops; 
-   PF* button3 = file_ops;
-
-   button2[2]();  // call button2’s 3rd function
-
-
-.. code-block:: c
-   :caption: Shell sort (Knuth, Vol3)
-
-   #include <iostream>
-   #include <string.h>
-
-   #define element_of(a) (sizeof(a)/sizeof(a[0]))
-   
-   struct User {
-       const char* name;
-       const char* id;
-       int dept;
-   };
-   
-   User heads[] = {
-       {"Ritchie D.M", "dmr", 11271},
-       {"Sethi R.", "ravi", 11272},
-       {"Szymanski T.G.", "tgs", 11273},
-       {"Schryer N.L.", "nls", 11274},
-       {"Schryer N.L.", "nls", 11275},
-       {"Kernighan B.W.", "bwk", 11276},
-   };
-
-   void print_id(User* v,int n)
-   {
-       for(int i=0;i<n;i++)
-           std::cout << v[i].name << '\t' << v[i].id << '\t' << v[i].dept << '\n';
-   }
-
-   typedef int (*CMP)(const void*, const void*);
-   
-   // not stable
-   void shellSort(void* base, size_t count, size_t elementSize, CMP cmp)
-   {
-       for(int gap= (int)count/2; gap>0; gap /= 2)
-       {
-           for(int i=gap; i<count; i++)
-           {
-               for(int j=i-gap; j>=0; j -= gap)
-               {
-                   char* b = static_cast<char*>(base);
-                   char* pj = b + j*elementSize; // &base[j]
-                   char* pjg = b + (j+gap)*elementSize; // &base[j+gap]
-                   if(cmp(pj, pjg)>0)
-                   {
-                       // swap base[j] and base[j+gap]
-                       for(size_t k=0; k<elementSize; k++)
-                       {
-                           char temp = pj[k];
-                           pj[k] = pjg[k];
-                           pjg[k] = temp;
-                       }
-                   }
-               }
-           }
-       }
-   }
-   
-   int intCmp(const void* l, const void* r)
-   {
-       int a = *(int*)l;
-       int b = *(int*)r;
-       return a==b ? 0 : (a>b) ? 1 : -1;
-   }
-   
-   int cmpByName(const void* l, const void* r)
-   {
-       return strcmp(static_cast<const User*>(l)->name, static_cast<const User*>(r)->name);
-   }
-   
-   int cmpByDepartmentId(const void* l, const void* r)
-   {
-       return static_cast<const User*>(l)->dept - static_cast<const User*>(r)->dept;
-   }
-      
-   int main(int argc, const char * argv[]) {
-       int a[] = {5,4,3,2,1};
-       shellSort(a, element_of(a), sizeof(a[0]), intCmp);
-       std::cout << "original order:\n";
-       print_id(heads, element_of(heads));
-       std::cout << '\n';
-       
-       std::cout << "order by name in alphabatical order:\n";
-       shellSort(heads, element_of(heads), sizeof(heads[0]), cmpByName);
-       print_id(heads, element_of(heads));
-       std::cout << '\n';
-       
-       std::cout << "order by department id:\n";
-       shellSort(heads, element_of(heads), sizeof(heads[0]), cmpByDepartmentId);
-       print_id(heads, element_of(heads));
-       std::cout << '\n';
-       
-       return 0;
-   }  
