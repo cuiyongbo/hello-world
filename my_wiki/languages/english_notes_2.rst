@@ -52,10 +52,13 @@ English Notes 2
 | Definition: a sudden arrival or occurrence of something in overwhelming quantities.
 | Usage: We received an avalanche of letters to replay our advertisement.
 | 
-| jersey [ジャージー服]
+| jersey [ジャージー服] [运动服]
 | Definition: a knitted garment with long sleeves worn over the upper body.
+| camisole [キャミソール] [(背心式)女内衣]
+| Definition: a short piece of women's underwear that is worn on the top half of the body and is held up with narrow strips of material over the shoulders.
 
 .. image:: images/jersey.jpg
+.. image:: images/camisole.jpeg
 
 | coffer
 | Definition: a strongbox used to store money or valuable things. [保险柜，金库]

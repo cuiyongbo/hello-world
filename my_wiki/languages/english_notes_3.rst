@@ -153,14 +153,14 @@ English Notes 3
 | Usage: surreptitiously recorded conversations.
 | Usage: they carried on a surreptitious affair.
 | 
-| itinerary 
+| itinerary [日程，行程]
 | Definition: An itinerary is a plan of journery, including the route an the places you will visit. 
 | Usage: the next place on our itinerary was Silistra.
 | 
 | persona
 | Definition: the aspect of someone's character that is presented to or perceived by others. In psychology, often contrasted with anima。
 | Usage: His public persona is quite different from the family man described in the book. [持家男人]
-| Definition: role or character adopted by an author or an actor.
+| Definition: role or character adopted by an author or an actor. [形象]
 | 
 | anima
 | Definition: (Psychology) Jung's term for the feminine part of a man's personality. Often contrasted with animus (sense 3).

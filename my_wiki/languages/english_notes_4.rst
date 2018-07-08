@@ -173,32 +173,35 @@ English Notes 4
 .. image:: images/hoagie.jpg
 .. image:: images/triangular_sanwitch.jpg
 
-powder
-powdery
-Definition: consisting of or resembling powder.
-Usage: powdery snow.
-Definition: covered with powder.
-Usage: her pale powdery cheeks.
-
-commiserate
-commiserative
-Definition: express or feel sympathy or pity; sympathize.
-Usage: she went over to commiserate with Rose on her unfortunate circumstances.
-Definition: archaic feel, show, or express pity for (someone).
-Usage: she did not exult in her rival's fall, but, on the contrary, commiserated her.
-
-refurbish
-Definition: renovate and redecorate (something, especially a building).
-Usage: the premises have been completely refurbished in our corporate style.
-
-premise
-Definition: an assertion or proposition which forms the basis for a work or theory.
-Usage: the fundamental premise of the report.
-Definition: base an argument, theory, or undertaking on. 
-Usage: the reforms were premised on our findings.
-Definition: a house or building, together with its land and outbuildings, occupied by a business or considered in an official context.
-Usage: business premises.
-Usage: supplying alcoholic liquor for consumption on the premises.
+| powder
+| powdery
+| Definition: consisting of or resembling powder.
+| Usage: powdery snow.
+| Definition: covered with powder.
+| Usage: her pale powdery cheeks.
+| 
+| commiserate
+| commiserative
+| Definition: express or feel sympathy or pity; sympathize.
+| Usage: she went over to commiserate with Rose on her unfortunate circumstances.
+| Definition: archaic feel, show, or express pity for (someone).
+| Usage: she did not exult in her rival's fall, but, on the contrary, commiserated her.
+| 
+| refurbish
+| Definition: renovate and redecorate (something, especially a building).
+| Usage: the premises have been completely refurbished in our corporate style.
+| 
+| tavern [小卖部]
+| Definition: an establishment for the sale of beer and other drinks to be consumed on the premises, sometimes also serving food.
+| 
+| premise
+| Definition: an assertion or proposition which forms the basis for a work or theory.
+| Usage: the fundamental premise of the report.
+| Definition: base an argument, theory, or undertaking on. 
+| Usage: the reforms were premised on our findings.
+| Definition: a house or building, together with its land and outbuildings, occupied by a business or considered in an official context.
+| Usage: business premises.
+| Usage: supplying alcoholic liquor for consumption on the premises.
 
 .. image:: images/business_premises_1.jpg
 .. image:: images/business_premises_2.jpg
@@ -230,3 +233,97 @@ Usage: supplying alcoholic liquor for consumption on the premises.
 | Definition: show surprise, disbelief, or mild disapproval.
 | Phrase: be up to one's eyebrow in sth.
 | Definition: to have a lot of thing to deal with.
+| 
+| hoister
+| Definition: raise (something) by means of ropes and pulleys.
+| Usage: high overhead great cranes hoisted girders.
+| Definition: raise or haul up.
+| Usage: she hoisted her backpack onto her shoulder.
+| Phrase: hoist one's flag [接任]
+| Definition: (of an admiral) take up command. 
+| Phrase: hoist the flag [宣示主权]
+| Definition: stake one's claim to discovered territory by displaying a flag. 
+| Phrase: hoist with (or by) one's own petard [机关算尽太聪明，反误了卿卿性命]
+| Definition: have one's plans to cause trouble for others backfire on one. [from Shakespeare's Hamlet]
+| Usage: He has no one to blame but himself; he was hoisted by his own petard. [自食其果]
+| 
+| petard
+| Definition: a small bomb made of a metal or wooden box filled with powder, used to blast down a door or to make a hole in a wall.
+| Definition: a kind of firework that explodes with a sharp report.
+
+.. image:: images/petard-confetti-flapper.jpg
+
+| scythe
+| Definition: a tool used for cutting crops such as wheat or grass, with a long cruved blade at the end of a long pole attached to which are one or two | short handles.
+
+.. image:: images/Scythe_against_hedge.jpg
+.. image:: images/Scythe_blade.jpg
+.. image:: images/Scythe_user.png
+.. figure:: images/Scythe.svg.png
+   
+   Parts of a scythe:：
+
+      1. Toe               2. Chine
+      3. Beard             4. Heel
+      5. Tang              6. Ring
+      7. Snath or snaith   8. Grips
+
+| gaff
+| Definition: a stick with a hook, or a barbed spear, for landing large fish.
+
+.. image:: images/gaff.jpeg
+.. image:: images/skiff_from_above.jpg
+.. figure:: images/Parts-of-a-canoe.png
+
+   Parts of a canoe::
+
+      gunwale [船舷] stern [船尾]
+
+   在西洋航海史中，有一段时期是让海员站在船体右舷一块名为「Starboard」的板子上驾驶船舶，
+   因此后人便延用「Starboard」一语称呼右舷；反之，位於船体左舷（Port）一块名为「Larboard」
+   的板子则是专用於装卸货物，因此以「Larboard」称呼左舷，但在船舶货物装卸方式改变后，便将它
+   舍弃不用，改以「Port」一语称呼左舷。 也正因为有前述的历史，后来才进一步形成「右舷为尊」的观念，
+   更造成船体右舷结构有一段时期是由资深木工师傅（Shipwright）负责施工。
+
+| treachery
+| treacherous
+| treacherousness
+| Definition: betrayal of trust; deceptive action or nature.
+| Usage: his resignation was perceived as an act of treachery.
+| Usage: memory is particularly treacherous.
+| Definition: (of ground, water, conditions, etc.) hazardous because of presenting hidden or unpredictable dangers.
+| Usage: a vacationer was swept away by treacherous currents. [暗流]
+| 
+| coagulate
+| Definition: (of a fluid, especially blood) change to a solid or semisolid state.
+| Usage: blood had coagulated around the edges of the wound.
+| 
+| slant
+| Definition: slope or lean in a particular direction; diverge or cause to diverge from the vertical or horizontal.
+| Usage: slant your skis as you turn to send up a curtain of water.
+| 
+| teeter
+| Definition: move or balance unsteadily; sway back and forth.
+| Usage: she teetered after him in her high-heeled sandals.
+| Phrase: teeter on the brink (or edge) [处于...边缘]
+| Definition: be very close to a difficult or dangerous situation.
+| Usage: the country teetered on the brink of civil war.
+| 
+| debauch 
+| Definition: destroy or debase the moral purity of; corrupt.
+| Definition: (dated) seduce (a woman).
+| Usage: he debauched sixteen schoolgirls.
+| 
+| conscientious
+| conscientiously [兢兢业业，一丝不苟]
+| Definition: taking care to do things carefully and correctly.
+| Usage: She performed all her duties conscientiously.
+| 
+| laden
+| Definition: heavily loaded or weighed down.
+| Usage: a tree laden with apples.
+| Usage: a heavily / fully laden truck.
+
+.. image:: images/laden-apple-tree.jpg
+.. image:: images/laden_bus.jpg
+

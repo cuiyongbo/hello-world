@@ -36,7 +36,6 @@ I think, therefore I am
 
    :math:`f(x) = tan x`
 
-| convex polygon [凸多边形]
 | similar triangle [相似三角形]
 | corresponding side [对应边] 
 | exponential distribution
@@ -56,6 +55,7 @@ I think, therefore I am
 | quadrilateral 四边形
 | colinear 共线
 | polyheron 多面体
+| convex polygon [凸多边形]
 | 
 | significant digits 有效数字
 | scientific notation 科学计数法

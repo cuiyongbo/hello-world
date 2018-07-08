@@ -746,37 +746,6 @@ English Note
 | Synonyms: yardstick
 | Usage: The truck industry  is a benchmark for the economy.
 | 
-| sulfurous 
-| Definition: (chiefly of vapor or smoke) containing or derived from sulfur. [硫磺味]
-| Definition: Marked by bad temper, anger, or profanity.
-| Usage: A sulfurous glance.
-| 
-| profanity
-| Definition: blasphemous or obscene language.
-| Usage: An outburst of profanity.
-| 
-| blasphemous
-| Definition: Sacrilegious against God or sacred things; profane.
-| usage: Blasphemous and heretical talk.
-| 
-| sacrilege
-| sacrilegious
-| Definition: Violation or misuse of what is regarded as sacred.
-| Definition: Involving or committing sacrilege.
-| Usage: It seems sacrilegious to say this, but it’s really not that great a movie.
-| 
-| piety 虔诚
-| Definition: the state of having or showing a deep respect for somebody or something, especially for God and religion; the state of being pious.
-| Usage: Act of piety and charity.
-| 
-| begrime
-| Definition: make soiled, filthy or dirty.
-| Usage: Paint flaking from begrimed walls.
-| 
-| flake
-| Definition: a small, flat, thin piece of something, typically one that has broken away or | been peeled off a larger piece. 
-| Usage: Paint peeling off the walls in unsightly flakes.
-| 
 | violate
 | violation
 | Definition: If someone violates an agreement, law, or promise, they break it.
@@ -1171,10 +1140,8 @@ English Note
 | 
 | versatile
 | Definition: able to adapt or be adapted to many diferent functions or activities.
-| Synonyms: all-round
-| Usage: A versatile fight jet.
-| Usage: He’s a very versatile actor who has player a wide variety of parts.
-| Definition: (archaic) chageable; inconstant
+| Usage: A versatile fighter.
+| Usage: He’s a very versatile actor who has played a wide variety of parts.
 | 
 | volatile
 | Definition: A volatile liquid or substance is one that will quickly change into a gas.
@@ -1734,11 +1701,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: a person or thing whose presence or behavior is likely to cause embarassment or put one at a disadvantage.
 | Usage: He has become a political liability.
 | 
-| absolve
-| Definition: set or declare (someone) free from blame, guilty, or responsibility.
-| Usage: The pardon absolved them of any crimes. [赦免令]
-| Usage: The court absolved him of all responsibility for the accident. [豁免]
-| 
 | succinct
 | Definition: expressed clearly and in a few words.
 | Synonyms: concise
@@ -2195,13 +2157,6 @@ admitted the computer was named after his daughter.
 | Definition: a lack of compatibility or similarity between two or more facts.
 | Definition: There's a discrepancy between your account and his.
 | 
-| dietary
-| Usage: Animal research showed that breast tumours struggled without the dietary nutrient asparagine.
-| 
-| culinary
-| Definition: culinary means concerned with cooking.
-| Usage: She was keen to acquire more advanced culinary skills.
-| 
 | concoct
 | Definition: make (a dish or meal) by combining various ingredients.
 | Usage: They concocted relish from corn that is so naturally sweet no extra sugar is needed.
@@ -2220,28 +2175,7 @@ admitted the computer was named after his daughter.
 | Usage: He didn't much care for the stuffed animal heads that hung on the walls.
 | Definition: If you stuff yourself, you eat a lot of food.
 | Usage: But you're just so stuffed you won't be able to drink anything.
-| 
-| char
-| Definiton: partially burn (an object) so as to blacken its surface.
-| Usage: Their bodies were badly charred in the fire.
-| 
-| Profiterole 泡芙
-| Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
-| choux  高麗萊
-| Definition: very light pastry made with egg, typically used for eclairs and profiteroles.
-| pastry [油酥麪团，油酥麪皮]
-| Definition: a dough of flour, and water, used as a base and covering in baked dishes such as pies.
-
-.. image:: images/Pastry_with_Azuki_beans.jpg
-
-Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) which is prepared
-by infusing the processed whole tea leaves in hot water.
-It is the most popular tea in Japan.
-
-.. figure:: images/sencha_green_tea.jpg
-
-   sancha green tea
-
+|
 | bland
 | Definition: lacking strong features or characteristics and therefore uninteresting.
 | Usage: Rebelling against the bland uniformity.
@@ -2250,18 +2184,7 @@ It is the most popular tea in Japan.
 | 
 | insipid
 | Definition: lacking flavor.
-| Definition: lacking vigor or interest.
 | Usgae: a cup of insipid coffee.
-| Usge: many artists continued to churn out insipid, shallow works.
-| 
-| churn
-| Definition: a machine or container in which butter is made by agitating mild or cream.
-
-.. image:: images/butter_churn.png
-
-| 
-| churn something out
-| Definition: produce something routinely or mechanically, especially in large quantities.
 | 
 | brag
 | Definition: say in a boastful manner.
@@ -3326,28 +3249,6 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 | Usage: The urgency of his voice galvanized them into action.
 | Definition: (often as adjective galvanized) coat (iron or steel) with a protective layer of zince. [镀锌]
 | Usage: An old galvanized bucket.
-| 
-| colophon
-| Definition: a publisher's emblem or imprint, especially one on the title page or spine of a book. [书脊]
-| Definition: a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing.
-| 
-| emblem [国徽，徽章，象征]
-| Definition: a heraldic device or symbolic object as a distinctive badge of a nation, organization, or family.
-| Usage: America's national emblem, the bald eagle. 
-| Usage: The dove is an emblem of peace.
-| Definition: (emblem of) a thing serving as a symbolic representation of a particular quality or concept.
-| Usage: Our child would be a dazzling emblem of our love. [结晶]
-| 
-| imprint
-| Definition: the name of the publisher of a book, usually printed below the title on the first page.
-| Definition: a mark made by pressing something onto a softer substance so that its outline is reproduced.
-| Usage: He made imprints of the keys in the bars of soap.
-| Usage: Tire marks were imprinted in the snow. [车辙印]
-| Usage: Clothes imprinted with the logos of sports teams.
-| Definition: a lasting impression or effect.
-| Usage: Years in the colonies had left their imprint.
-| Usage: He would always have this ghastly image imprinted on his mind. [久久不能释怀]
-| Definition: (of a young animal) come to recognize (another animal, person, or thing) as a parent or other object of habitual trust. [印随]
 |
 | fitful
 | Definition: something that is fitful happens for irregular periods of time or occurs at irregular times, rather than being continous.
@@ -3359,12 +3260,12 @@ just hours before a whistleblower's revelations to the Observer
 newspaper triggered the current scandal over improper use of data.
 
 | whistleblower
-| whistle-blower
+| whistle-blower [告密者，揭发者]
 | Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
 | 
 | corollary
 | Definition: a corollary of something is an idea, argument, or fact that results directly from it.
-| Synonyms: consequence.
+| Synonyms: consequence; result.
 | Usage: The number of prisoners increased as a corollary of the government's determination to combat violent crime.
 |
 

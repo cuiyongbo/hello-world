@@ -532,3 +532,20 @@ not become complacent about its development.
 | Definition: destroy utterly; obliterate, defeat utterly.
 | Usage: a simple bomb of this type could annihilate them all.
 | Usage: the stronger force annihilated its opponent virtually without loss.
+| 
+| absolve
+| Definition: set or declare (someone) free from blame, guilty, or responsibility.
+| Usage: The pardon absolved them of any crimes. [赦免令]
+| Usage: The court absolved him of all responsibility for the accident. [豁免]
+| 
+| exempt
+| exemption
+| Definition: free from an obligation or liability imposed on others.
+| Usage: these patients are exempt from all charges.
+| Usage: they were exempted from paying the tax.
+| Usage: the act does not provide exemption from service on the basis of personal conscientious beliefs.
+| 
+| massacre
+| Definition: an indiscriminate and brutal slaughter of people.
+| Usage: the attack was described as a cold-blooded massacre.
+| 

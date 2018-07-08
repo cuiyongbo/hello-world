@@ -405,3 +405,37 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 .. image:: images/chick.jpg
 .. image:: images/american_reptiles.jpg
 
+| phosphorescent
+| phosphorescence
+| Definition: light emitted by a substance without combustion or perceptible heat. [荧光]
+| Usage: the stones overhead gleamed with phosphorescence.
+| Physics the emission of radiation in a similar manner to fluorescence but on a longer timescale, so that emission continues after excitation ceases.
+| 
+| fluorescence 
+| Definition: the visible or invisible radiation emitted by certain substances as a result of incident radiation of a shorter wavelength such as X-rays or ultraviolet light.
+
+.. image:: images/fluorescence.jpeg
+.. image:: images/phorsphorescence_1.jpg
+.. image:: images/phorsphorescence_2.jpg
+.. image:: images/phorsphorescence_3.jpg
+.. image:: images/phorsphorescence_4.jpg
+
+.. figure:: images/Warbler.jpg
+
+   Warbler [黄莺]
+
+.. figure:: images/elk.jpg
+
+   Elk [麋鹿]
+
+.. figure:: images/hare.jpg
+
+   Hare [野兔]
+
+.. figure:: images/tuna.jpg
+   
+   Tuan [金枪鱼]
+
+.. figure:: images/bonito.jpeg
+   
+   Bontino
