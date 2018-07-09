@@ -170,7 +170,34 @@ It is the most popular tea in Japan.
 | fillet
 | Definition: a piece of meat or fish that has no bones in it.
 | Usage: a fillet of cod. [鳕鱼片]
+| 
+| commiserate
+| commiserative
+| commiseration
+| Definition: an expression of sympathy for sb who has had sth unpleasant happen to them, especially not winning a competition.
+| Usage: Commiserations to the losing team! 
+| Usage: she went over to commiserate with Rose on her unfortunate circumstances.
+| 
+| futile
+| Definition: incapable of producing any useful result; pointless. [徒劳，徒然]
+| Usage: a futile attempt to keep fans from mounting the stage.
+| 
+| protrude
+| Definition: to stick out from a place or a surface.
+| Usage: Protruding teeth. [龅牙]
+| Usage: He hung his coat on a nail protruding from the wall.
+| 
+| convent
+| Definition: a Christian community under monastic vows, especially one of nuns. [修道院]
+| Definition: (also convent school) a school, especially one for girls, attached to and run by convent. [教会学校]
+
+.. image:: images/convent.jpeg
+
+.. figure:: images/glade.jpg
+
+   Glade : an open space in a forest
 
 .. figure:: images/japanese_swords.jpg
 
    Japanese Sword
+

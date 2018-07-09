@@ -451,3 +451,7 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 +--------------------------------+-------------------------------------+
 | .. image:: images/stallion.jpg | .. image:: images/mare-and-foal.jpg |
 +--------------------------------+-------------------------------------+
+
+.. figure:: images/steer.jpg
+   
+   Steer [肉用牛]

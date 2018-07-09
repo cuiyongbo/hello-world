@@ -106,10 +106,13 @@ Military Terms
 | Definition: a constellation of similar things is a group of them.
 | Usage: Most patients have a constellation of diseases, with few clear-up distinctions between them. 
 | 
-| Solar system
-|
+| mercury
+| Definition: the smallest planet in the solar system , nearest to the sun. [水星]
+| Definition: (symb Hg) a chemical element. which is a poisonous silver liquid metal, used in thermometers. [汞]
 
-.. image:: images/solar_system.png
+.. figure:: images/solar_system.png
+
+   Solar system
 
 | Falcon heavy
 | Delta IV Heavy
@@ -549,3 +552,6 @@ not become complacent about its development.
 | Definition: an indiscriminate and brutal slaughter of people.
 | Usage: the attack was described as a cold-blooded massacre.
 | 
+| squadron
+| Definition: a group of military aircraft or ships forming a section of a military force.
+| usage: A bomber / flighter squadron. [轰炸机／战斗机中队]

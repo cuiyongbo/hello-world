@@ -11,6 +11,7 @@ Language Study
    languages/english_notes_3
    languages/english_notes_4
    languages/english_notes_5
+   languages/english_notes_6
    languages/japanese_notes
    languages/military_terms
    languages/steve_jobs_obituary
