@@ -440,6 +440,14 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
    
    Bontino
 
+.. figure:: images/harbor-porpoise.jpg
+
+   Harbor Porpoise
+
 +----------------------------------+----------------------------------+
 | .. image:: images/lavender_1.jpg | .. image:: images/lavender_2.jpg |
 +----------------------------------+----------------------------------+
+
++--------------------------------+-------------------------------------+
+| .. image:: images/stallion.jpg | .. image:: images/mare-and-foal.jpg |
++--------------------------------+-------------------------------------+

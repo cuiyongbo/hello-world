@@ -132,5 +132,45 @@ It is the most popular tea in Japan.
 | flake [剥落]
 | Definition: a small, flat, thin piece of something, typically one that has broken away or been peeled off a larger piece. 
 | Usage: Paint peeling off the walls in unsightly flakes.
+| 
+| etch
+| Definition: to cut lines into a piece of glass, metal etc. in order to make words or a picture.
+| Usage: a glass tankard etched with his initials.
+| Usage: Tiredness was etched on his face. 
+| Usage: his name is etched in baseball history.
+| Definition: be permanently fixed in someone's memory.
+| Usage: the events remain etched in the minds of all who witnessed them.
 
++-----------------------------------------+-----------------------------------------+
+| .. image:: images/etched_utensils_1.jpg | .. image:: images/etched_utensils_1.jpg |
++-----------------------------------------+-----------------------------------------+
 
+| cumulous
+| cumulus [积云]
+| Plural: cumuli
+| Definition: a type of thick white cloud.
+| 
+| cirrus
+| Definition: a type of light cloud that forms high in the sky. [卷云]
+
++---------------------------------+---------------------------------+
+| .. image:: images/cumulus_1.jpg | .. image:: images/cumulus_2.jpg |
++---------------------------------+---------------------------------+
+
+.. image:: images/cirrus_clouds.jpg
+
+| bet
+| bettor / better [赌徒]
+| Definition: a person who bets, typically regularly or habitually.
+| 
+| rig
+| Definition: to provide a ship or boat with ropes, sails, etc.; to fit the sails, etc. in position [(给船只)装帆,提供索具]
+| Definition: a large piece of equipment that is used for taking oil or gas from the ground or the bottom of the sea. [钻井设备；钻塔]
+| 
+| fillet
+| Definition: a piece of meat or fish that has no bones in it.
+| Usage: a fillet of cod. [鳕鱼片]
+
+.. figure:: images/japanese_swords.jpg
+
+   Japanese Sword
