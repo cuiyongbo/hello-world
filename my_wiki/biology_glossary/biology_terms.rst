@@ -439,3 +439,7 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 .. figure:: images/bonito.jpeg
    
    Bontino
+
++----------------------------------+----------------------------------+
+| .. image:: images/lavender_1.jpg | .. image:: images/lavender_2.jpg |
++----------------------------------+----------------------------------+
