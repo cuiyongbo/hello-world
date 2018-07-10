@@ -7,8 +7,8 @@ Python note
    python/python_built_in_types
    python/python_built_in_functions
    python/control_overflow
-   python/str_methods
-   python/string_format_syntax
+   python/function_basics
+   python/string_notes
    python/urllib_tricks
    python/sort_tricks
    python/re_module_doc

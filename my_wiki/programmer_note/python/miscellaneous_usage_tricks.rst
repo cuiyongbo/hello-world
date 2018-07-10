@@ -1,97 +1,3 @@
-Built-in Types Tricks
-=====================
-
-Long Strings
-------------
-   
-If you want to write a really long string, one that spans several lines, you can use **triple quotes**
-instead of ordinary quotes:
-
-.. code-block:: python
-
-   print '''This is a very long string.
-      It continues here.
-      And it's not over yet.
-      "Hello, world!"
-      Still here.'''
-
-   this is very long.
-   It continues here.
-   and it's not over yet.
-   "Hello, world!"
-   Still here.
-
-You can also use triple double quotes, ``"""like this"""``. 
-
-.. note::
-
-   Note that because of the distinctive enclosing quotes, both single and double quotes are allowed inside, without being backslashescaped. 
-
-Ordinary strings can also span several lines. If the last character on a line is a backslash, the line break itself is “escaped” and ignored. For example:
-
-.. code-block:: python
-
-   >>> print "Hello \
-   ... world!"
-
-   Hello world!
-
-
-Raw Strings
------------
-   
-raw strings are prefixed with an ``r``. It would seem that you can put anything
-inside a raw string, and that is almost true. Quotes must be escaped as usual, although that
-means that you get a backslash in your final string, too:
-
-.. code-block:: python
-
-   >>> print r'let\'s go!'
-   let\'s go!
-
-The one thing you can’t have in a raw string is an alone, final backslash. In other words, the
-last character in a raw string cannot be a backslash unless you escape it (and then the backslash
-you use to escape it will be part of the string, too).
-
-.. code-block:: python
-
-   >>> print r'This is illegal\'
-     File "<stdin>", line 1
-       print r'This is illegal\'
-                               ^
-   SyntaxError: EOL while scanning string literal
-
-Okay, so it’s reasonable, but what if you want the last character in your raw string to be a
-backslash? (Perhaps it’s the end of a DOS path, for example.) A simple way of doing that is the following:
-
-.. code-block:: python
-
-   >>> print r'C:\VS-Demo\hello-world\my_wiki' '\\'
-   C:\VS-Demo\hello-world\my_wiki\
-
-.. note::
-
-   Raw strings can be especially useful when writing regular expressions.
-
-
-Unicode Strings
----------------
-   
-Normal strings in Python are stored internally as 8-bit ASCII, while
-Unicode strings are stored as 16-bit Unicode. This allows for a more varied set of characters, including special characters from most languages in the world. for example:
-
-.. code-block:: python
-
-   >>> u'Hello world!'
-   u'Hello world!'
-
-As you can see, Unicode strings use the prefix ``u``, just as raw strings use the prefix ``r``.
-
-.. note::
-
-   Unicode string or Unicode object—they don’t really belong to the same type as strings. 
-
-
 Built-in Functions Tricks
 =========================
 
@@ -409,8 +315,7 @@ add this code in your scripts::
    sys.dont_write_bytecode = True
 
 The variable must be set before any import.
-you can add it to your :envvar:`PYTHONSTARTUP` or
-:file:`site-packages/usercustomize.py`.
+you can add it to your :envvar:`PYTHONSTARTUP`.
 
 
 Convert uncode string to Chinese characters
@@ -420,3 +325,25 @@ Convert uncode string to Chinese characters
 
    >>> print '\u5f53\u524d\u9053\u8def\u56e0\u9053\u8def\u65bd\u5de5\u7981\u6b62\u901a\u884c'.decode('unicode-escape')
    当前道路因道路施工禁止通行
+
+
+Source Code Encoding
+====================
+
+By default, Python source files are treated as encoded in ASCII. 
+To declare an encoding other than the default one, a special comment 
+line should be added as the first line of the file. The syntax is 
+as follows ``#coding: encoding``　where *encoding* is one of the 
+valid codecs supported by Python.
+
+For example, to declare that Windows-1252 encoding is to be used, the 
+first line of your source code file should be::
+
+   #coding: cp1252
+
+One exception to the first line rule is when the source code starts with 
+a UNIX “shebang” line. In this case, the encoding declaration should be 
+added as the second line of the file. For example::
+
+   #!/usr/bin/env python
+   #coding: cp1252
