@@ -231,6 +231,7 @@ the variable number of arguments, zero or more normal arguments may occur::
    def write_multiple_items(file, separator, *args):
        file.write(separator.join(args))
 
+
 Unpacking Argument Lists
 ========================
 

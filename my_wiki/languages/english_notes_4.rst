@@ -22,7 +22,7 @@ English Notes 4
 | 
 | nausea
 | Definiton: the felling that you have when you want to vomit, for example because you are ill or are disgusted by something.
-| Usage: Nausea and vomitingare common symptoms.
+| Usage: Nausea and vomitingare are common symptoms.
 | Definiton: loathing; revulsion; intented to induced a feeling of nostalgia.
 | Usage: It only induces in me a feeling of nausea.
 | 
@@ -272,7 +272,6 @@ English Notes 4
 | Definition: a stick with a hook, or a barbed spear, for landing large fish.
 
 .. image:: images/gaff.jpeg
-.. image:: images/skiff_from_above.jpg
 .. figure:: images/Parts-of-a-canoe.png
 
    Parts of a canoe::
@@ -284,6 +283,20 @@ English Notes 4
    的板子则是专用於装卸货物，因此以「Larboard」称呼左舷，但在船舶货物装卸方式改变后，便将它
    舍弃不用，改以「Port」一语称呼左舷。 也正因为有前述的历史，后来才进一步形成「右舷为尊」的观念，
    更造成船体右舷结构有一段时期是由资深木工师傅（Shipwright）负责施工。
+
+.. figure:: images/mast.jpg
+
+   Mast 桅杆，船桅
+
+   Phrase: half mast [降半旗,下半旗(以示哀悼)] 
+   Usage: Flags were flown at half mast on the day of his funeral. 
+
+.. figure:: images/skiff.jpg
+
+   skiff 小艇
+   
+   Tiller 舵柄
+   A bar that is used to turn the rudder of a small boat in order to steer it。
 
 | treachery
 | treacherous

@@ -1,13 +1,12 @@
 Built-in Functions Tricks
 =========================
 
-input vs. raw_input
--------------------
+input vs raw_input
+------------------
 
-``input`` assumes that what you enter is a valid Python expression (it’s
-more or less the inverse of ``repr``). If you write your name as a string, that’s no problem:
-
-.. code-block:: python
+``input()`` assumes that what you enter is a valid Python expression (it’s
+more or less the inverse of ``repr``). If you write your name as a string, 
+that’s no problem::
 
    >>> name = input("name:")
    name:'nihao'
@@ -23,14 +22,13 @@ However, it’s just a bit too much to ask that users write their name in quotes
      File "<string>", line 1, in <module>
    NameError: name 'nihao' is not defined
 
-Therefore, we use ``raw_input``, which treats all input as raw data and puts it into a string:
-
-.. code-block:: python
+Therefore, we use ``raw_input()``, which treats all input as raw data 
+and puts it into a string::
 
    >>> name = raw_input("name:")
    name:nihao
 
-Unless you have a special need for ``input``, you should probably use ``raw_input``.
+Unless you have a special need for ``input()``, you should probably use ``raw_input()``.
 
 
 floor vs ceil
@@ -106,7 +104,6 @@ Binary to Decimal
 Python ByteOrder
 ================
 
-
 For multibyte data, It follows the architecture of the machine by default. If you need it to work cross-platform, then you'll want to force it.
 
 ASCII and UTF-8 are encoded as a single byte per character, so is it affected by the byte ordering? No.
@@ -180,44 +177,6 @@ json null       None
       '/usr/lib/python2.7/json/__init__.pyc'
 
 
-string Module Tricks
-====================
-
-Public module variables::
-
-   whitespace -- a string containing all characters considered whitespace
-   lowercase -- a string containing all characters considered lowercase letters
-   uppercase -- a string containing all characters considered uppercase letters
-   letters -- a string containing all characters considered letters
-   digits -- a string containing all characters considered decimal digits
-   hexdigits -- a string containing all characters considered hexadecimal digits
-   octdigits -- a string containing all characters considered octal digits
-   punctuation -- a string containing all characters considered punctuation
-   printable -- a string containing all characters considered printable
-
-.. code-block:: python
-
-   >>> import string
-   >>> string.whitespace
-   '\t\n\x0b\x0c\r '
-   >>> string.punctuation
-   '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
-   >>> string.lowercase
-   'abcdefghijklmnopqrstuvwxyz'
-   >>> string.uppercase
-   'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-   >>> string.letters
-   'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-   >>> string.digits
-   '0123456789'
-   >>> string.octdigits
-   '01234567'
-   >>> string.hexdigits
-   '0123456789abcdefABCDEF'
-   >>> string.printable
-   '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c'
-
-
 Executable Python Scripts
 =========================
 
@@ -246,6 +205,26 @@ On Windows systems, there is no notion of an “executable mode”.
 The Python installer automatically associates ``.py`` files with :command:`python.exe`
 so that a double-click on a Python file will run it as a script. The extension can also be ``.pyw``,
 in that case, the console window that normally appears is suppressed.
+
+
+Source Code Encoding
+====================
+
+By default, Python source files are treated as encoded in ASCII. 
+To declare an encoding other than the default one, a special comment 
+line should be added as the first line of the file. The syntax is 
+as follows ``#coding: encoding`` where *encoding* is one of the 
+valid codecs supported by Python.
+
+For example, to declare that Windows-1252 encoding is to be used, the 
+first line of your source code file should be ``#coding: cp1252.``
+
+One exception to the first line rule is when the source code starts with 
+a UNIX “shebang” line. In this case, the encoding declaration should be 
+added as the second line of the file. For example::
+
+   #!/usr/bin/env python
+   #coding: cp1252
 
 
 The Interactive Startup File
@@ -290,6 +269,7 @@ Add command(s) you want to execute in :file:`~/.pythonrc`. like::
   import os, sys
   from pprint import pprint
 
+
 Python3
 =======
 
@@ -309,7 +289,7 @@ Uninstall python3::
 Prohibit generating ``*.pyc`` file
 ==================================
 
-add this code in your scripts::
+Add this code in your scripts::
 
    import sys
    sys.dont_write_bytecode = True
@@ -325,25 +305,3 @@ Convert uncode string to Chinese characters
 
    >>> print '\u5f53\u524d\u9053\u8def\u56e0\u9053\u8def\u65bd\u5de5\u7981\u6b62\u901a\u884c'.decode('unicode-escape')
    当前道路因道路施工禁止通行
-
-
-Source Code Encoding
-====================
-
-By default, Python source files are treated as encoded in ASCII. 
-To declare an encoding other than the default one, a special comment 
-line should be added as the first line of the file. The syntax is 
-as follows ``#coding: encoding``　where *encoding* is one of the 
-valid codecs supported by Python.
-
-For example, to declare that Windows-1252 encoding is to be used, the 
-first line of your source code file should be::
-
-   #coding: cp1252
-
-One exception to the first line rule is when the source code starts with 
-a UNIX “shebang” line. In this case, the encoding declaration should be 
-added as the second line of the file. For example::
-
-   #!/usr/bin/env python
-   #coding: cp1252

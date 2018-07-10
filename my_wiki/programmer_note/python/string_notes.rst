@@ -370,3 +370,41 @@ expression support in the :mod:`re` module).
       ...
       >>> titlecase("they're bill's friends from the UK")
       "They're Bill's Friends From The Uk"
+
+
+string Module Tricks
+====================
+
+Public module variables::
+
+   whitespace -- a string containing all characters considered whitespace
+   lowercase -- a string containing all characters considered lowercase letters
+   uppercase -- a string containing all characters considered uppercase letters
+   letters -- a string containing all characters considered letters
+   digits -- a string containing all characters considered decimal digits
+   hexdigits -- a string containing all characters considered hexadecimal digits
+   octdigits -- a string containing all characters considered octal digits
+   punctuation -- a string containing all characters considered punctuation
+   printable -- a string containing all characters considered printable
+
+.. code-block:: python
+
+   >>> import string
+   >>> string.whitespace
+   '\t\n\x0b\x0c\r '
+   >>> string.punctuation
+   '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+   >>> string.lowercase
+   'abcdefghijklmnopqrstuvwxyz'
+   >>> string.uppercase
+   'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+   >>> string.letters
+   'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+   >>> string.digits
+   '0123456789'
+   >>> string.octdigits
+   '01234567'
+   >>> string.hexdigits
+   '0123456789abcdefABCDEF'
+   >>> string.printable
+   '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c'

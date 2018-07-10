@@ -197,7 +197,73 @@ It is the most popular tea in Japan.
 
    Glade : an open space in a forest
 
+| pectoral
+| Definition: relating to the breast or chest.
+| Usage: a pectoral shield. [护胸]
+
+.. image:: images/armor.jpeg
 .. figure:: images/japanese_swords.jpg
 
    Japanese Sword
 
+| stoop
+| Definition: to bend your body forwards and downwards.
+| Usage: She stooped down to pick up the child. 
+| Usage: He tends to stoop because he's so tall. [弓背]
+| Phrase: stoop so low (as to do sth) 
+| Definition: (formal) to drop your moral standards far enough to do sth bad or unpleasant [卑鄙(或堕落)到…地步]
+| Usage: She was unwilling to believe anyone would stoop so low as to steal a ring from a dead woman's finger. 
+| 
+| swain [情郎]
+| Definition: a young man who is in love.
+| 
+| coil
+| Definition: a length of something wound or arranged in a spiral or sequence of rings.
+| Usage: a coil of rope.
+| Usage: the snake wrapped its coils around her.
+| Usage: he coiled a lock of her hair around his finger.
+| 
+| plank
+| Definition: a long narrow flat piece of wood that is used for making floors, etc.
+| Definition: a fundamental point of a political or other program.
+| Usage: the central plank of the bill is the curb on industrial polluters.
+| Definition: walk the plank
+| Definition: (formerly) be forced by pirates to walk blindfold along a plank over the side of a ship to one's death in the sea.
+| Definition: (informal) lose one's job or position.
+| Usage: the manager should be made to walk the plank for not insisting Bream be re-signed.
+| 
+| spray
+| Definition: very small drops of a liquid that are sent through the air, for example by the wind. [浪花；水花；飞沫]
+| Usage: A cloud of fine spray came up from the waterfall. 
+| Usage: a spray of machine-gun bullets. [机枪雨点般地扫射]
+| 
+| shoal
+| Definition: an area of shallow water, especially as a navigational hazard. [浅滩]
+| Definition: a large number of fish swimming together. [鱼群]
+| Definition: (informal) a large number of people
+| Usage: a rock star's entrance, first proceeding with his shoal of attendants.
+| 
+| shaft
+| Definition: a long, narrow part or section forming the handle of a tool or club, the body of a spear or arrow.
+| Usage: the shaft of a golf club.
+| Usage: the shaft of a feather.
+| 
+| lash
+| Definition: strike (someone) with a whip or stick. [敲打，鞭打]
+| Usage: they lashed him repeatedly about the head.
+| Usage: waves lashed the coast.
+| Definition: (lash someone into) drive someone into (a particular state or condition).
+| Usage: fear lashed him into a frenzy.
+| 
+| hide
+| Definition:  an animal's skin, especially when it is bought or sold or used for leather. [兽皮]
+| Usgae: boots made from buffalo hide.
+| Phrase: hide one's head
+| Definition: cover up one's face or keep out of sight, especially from shame.
+| Phrase: hide one's light under a bushel
+| Definition: keep quiet about one's talents or accomplishments.
+
+.. image:: images/trough.jpg
+.. figure:: images/plastic-hanging-trough.jpg
+
+   trough 水槽，饲料槽

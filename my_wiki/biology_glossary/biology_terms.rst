@@ -455,3 +455,11 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 .. figure:: images/steer.jpg
    
    Steer [肉用牛]
+
+.. figure:: images/shark_gill.jpeg
+
+   Gill 腮
+
+   The paired respiratory organ of fishes and some amphibians, 
+   by which oxygen is extracted from water flowing over surfaces 
+   within or attached to the walls of the pharynx.

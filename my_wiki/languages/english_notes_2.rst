@@ -360,13 +360,16 @@ in a number of Christian kingdoms.
 | Antonyms: by all means.
 | Usage: The result is by no means guaranteed.
 | Usage: "May I make a suggestion?", "By all means." 
-| 
+|
 | utensil
 | Definition: an implement, container, or other article, especially for household use.
 | Usage: Cooking / kitchen utensils. [炊具；厨房用具]
 
 .. image:: images/utensil.jpg
+.. figure:: images/aluminum-scoop.jpg
 
+   Scoop
+   
 | pee
 | Definition: urinate.
 | Usage: The puppy was peeing on the caret.
