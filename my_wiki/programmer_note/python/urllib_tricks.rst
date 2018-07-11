@@ -1,8 +1,16 @@
+*************
 urllib tricks
-=============
+*************
+
+.. toctree::
+
+   urllib_apis
+
+.. contents::
+   :local:
 
 Quick Reference to HTTP Headers
--------------------------------
+===============================
 
 Typical headers include 'Content-length', 'Content-type', and so on. See the
 `Quick Reference to HTTP Headers <http://jkorpela.fi/http.html>`_
@@ -44,7 +52,7 @@ and use.
 
 
 Quick reference to http response codes
---------------------------------------
+======================================
 
 Because the default handlers handle redirects (codes in the 300 range), and
 codes in the 100--299 range indicate success, you will usually only see error

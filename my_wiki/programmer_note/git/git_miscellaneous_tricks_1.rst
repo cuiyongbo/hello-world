@@ -241,7 +241,6 @@ Combine several commits into one
       $ git reset --soft HEAD^
       $ git commit -a --amend
       
-      cuiyb@cuiyb MINGW64 /c/VS-Demo/hello-world/my_wiki (test)
       $ git log --oneline -5
       ded0055 Added boolean functions
       d404925 Added iterator functions

@@ -1,8 +1,12 @@
+*****************
 Unix config files
-=================
+*****************
+
+.. contents::
+   :local:
 
 bashrc
-------
+======
 
 System-wide :file:`.bashrc` file for interactive bash(1) shells lies at :file:`/etc/bashrc`,
 while user-specific one lies at :file:`$HOME/.bashrc`. 
@@ -129,7 +133,7 @@ while user-specific one lies at :file:`$HOME/.bashrc`.
 
 
 profile
--------
+=======
 
 System-wide :file:`.profile` file for interactive bash(1) shells lies at :file:`/etc/profile`,
 while user-specific one lies at :file:`$HOME/.profile`. 
@@ -159,3 +163,22 @@ while user-specific one lies at :file:`$HOME/.profile`.
    if [ -d "$HOME/bin" ] ; then
        PATH="$HOME/bin:$PATH"
    fi
+
+
+Case Study: Mac OS X does not read .bashrc for interactive shell
+================================================================
+
+Been there, done that. What I came aware of, OS X doesn't read *.bashrc* file on bash start. 
+Instead, it reads the following files (in the following order)::
+
+   /etc/profile
+   ~/.bash_profile
+   ~/.bash_login
+   ~/.profile
+
+
+By default, Terminal starts the shell via */usr/bin/login*, which makes the shell a login shell. 
+On every platform (not just Mac OS X) bash does not use *.bashrc* for login shells (only */etc/profile*
+and the first of *.bash_profile*, *.bash_login*, *.profile* that exists and is readable). 
+This is why "put source ~/.bashrc in your .bash_profile" is standard advice.
+

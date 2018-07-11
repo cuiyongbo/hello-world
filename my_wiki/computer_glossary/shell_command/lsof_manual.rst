@@ -8,6 +8,9 @@ The Linux lsof command lists information about files that are open by processes 
 (The lsof command itself stands for “list of open files.”) 
 
 
+**Hot Options**
+
+
 **Example**
 
 #. Basic usage
@@ -89,3 +92,90 @@ The Linux lsof command lists information about files that are open by processes 
    running out of the same directory and has its standard output (file descriptor 1) 
    redirected to a file called output. To successfully unmount /export/home, these 
    processes must be stopped.
+
+
+#. Listen on internet
+   
+   .. code-block:: sh
+   
+      $ lsof -i :52976
+      COMMAND    PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+      com.apple 4596 cherry   10u  IPv4 0x760f571332c5b2c5      0t0  TCP macbook-pro.lan:52976->120.92.73.215:xtgui (ESTABLISHED)
+      com.apple 4596 cherry   12u  IPv4 0x760f571332c5b2c5      0t0  TCP macbook-pro.lan:52976->120.92.73.215:xtgui (ESTABLISHED)
+   
+      $ lsof -i :0-1024
+      COMMAND    PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+      loginwind  111 cherry    8u  IPv4 0x760f57132b6a315d      0t0  UDP *:*
+      UserEvent  275 cherry    5u  IPv4 0x760f57132b6a503d      0t0  UDP *:*
+      SystemUIS  283 cherry   11u  IPv4 0x760f57132b6a199d      0t0  UDP *:*
+      SystemUIS  283 cherry   12u  IPv4 0x760f57132b6a173d      0t0  UDP *:*
+      SystemUIS  283 cherry   16u  IPv4 0x760f57132b6a4b7d      0t0  UDP *:*
+      SystemUIS  283 cherry   19u  IPv4 0x760f57132b6a101d      0t0  UDP *:*
+      identitys  315 cherry   20u  IPv4 0x760f571329c34f7d      0t0  UDP *:*
+      sharingd   333 cherry    4u  IPv4 0x760f57132b1b259d      0t0  UDP *:*
+      sharingd   333 cherry    8u  IPv4 0x760f57132b1b27fd      0t0  UDP *:*
+      sharingd   333 cherry    9u  IPv4 0x760f571329c3861d      0t0  UDP *:*
+      sharingd   333 cherry   10u  IPv4 0x760f571329c38add      0t0  UDP *:*
+      sharingd   333 cherry   15u  IPv4 0x760f57132b6a3add      0t0  UDP *:*
+      cloudd     346 cherry   12u  IPv4 0x760f5713356ff6a5      0t0  TCP 192.168.199.169:53150->17.248.158.181:https (ESTABLISHED)
+      WiFiAgent  400 cherry    5u  IPv4 0x760f57132b6a60dd      0t0  UDP *:*
+      com.apple  505 cherry    6u  IPv4 0x760f57133a5150d5      0t0  TCP 192.168.199.169:49477->111.206.76.49:https (ESTABLISHED)
+      Python    2041 cherry    5u  IPv4 0x760f571336b290d5      0t0  TCP 192.168.199.169:50896->202.89.233.100:https (ESTABLISHED)
+      Python    2662 cherry    5u  IPv4 0x760f5713372a40d5      0t0  TCP 192.168.199.169:51361->202.89.233.101:https (ESTABLISHED)
+      Python    4322 cherry    5u  IPv4 0x760f5713331ec2c5      0t0  TCP 192.168.199.169:53144->202.89.233.100:https (SYN_SENT)
+      Python    4828 cherry    5u  IPv4 0x760f57133a4e44b5      0t0  TCP 192.168.199.169:53152->202.89.233.100:https (ESTABLISHED)
+
+      # List open files with udp connection
+      $ lsof -i udp
+      COMMAND   PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+      loginwind 111 cherry    8u  IPv4 0x760f57132b6a315d      0t0  UDP *:*
+      UserEvent 275 cherry    5u  IPv4 0x760f57132b6a503d      0t0  UDP *:*
+      SystemUIS 283 cherry   11u  IPv4 0x760f57132b6a199d      0t0  UDP *:*
+      SystemUIS 283 cherry   12u  IPv4 0x760f57132b6a173d      0t0  UDP *:*
+      SystemUIS 283 cherry   15u  IPv4 0x760f57132b6a491d      0t0  UDP *:59531
+      SystemUIS 283 cherry   16u  IPv4 0x760f57132b6a4b7d      0t0  UDP *:*
+      SystemUIS 283 cherry   19u  IPv4 0x760f57132b6a101d      0t0  UDP *:*
+      identitys 315 cherry   20u  IPv4 0x760f571329c34f7d      0t0  UDP *:*
+      sharingd  333 cherry    4u  IPv4 0x760f57132b1b259d      0t0  UDP *:*
+      sharingd  333 cherry    8u  IPv4 0x760f57132b1b27fd      0t0  UDP *:*
+      sharingd  333 cherry    9u  IPv4 0x760f571329c3861d      0t0  UDP *:*
+      sharingd  333 cherry   10u  IPv4 0x760f571329c38add      0t0  UDP *:*
+      sharingd  333 cherry   15u  IPv4 0x760f57132b6a3add      0t0  UDP *:*
+      WiFiAgent 400 cherry    5u  IPv4 0x760f57132b6a60dd      0t0  UDP *:*
+
+      # List open files with tcp connection
+      $ lsof -i tcp 
+      COMMAND    PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+      com.apple  505 cherry    4u  IPv4 0x760f57133427dbbd      0t0  TCP macbook-pro.lan:53165->203.208.40.77:https (ESTABLISHED)
+      com.apple  505 cherry    6u  IPv4 0x760f57133a5150d5      0t0  TCP macbook-pro.lan:49477->111.206.76.49:https (ESTABLISHED)
+      Python    2041 cherry    5u  IPv4 0x760f571336b290d5      0t0  TCP macbook-pro.lan:50896->202.89.233.100:https (ESTABLISHED)
+      Python    2662 cherry    5u  IPv4 0x760f5713372a40d5      0t0  TCP macbook-pro.lan:51361->202.89.233.101:https (ESTABLISHED)
+      plugin_ho 3145 cherry   23u  IPv4 0x760f5713372a6dad      0t0  TCP localhost:51004 (LISTEN)
+      Python    4322 cherry    5u  IPv4 0x760f5713343264b5      0t0  TCP macbook-pro.lan:53182->202.89.233.101:https (ESTABLISHED)
+      com.apple 4596 cherry   10u  IPv4 0x760f571332cbe0d5      0t0  TCP macbook-pro.lan:53166->120.92.73.9:xtgui (ESTABLISHED)
+      com.apple 4596 cherry   12u  IPv4 0x760f571332cbe0d5      0t0  TCP macbook-pro.lan:53166->120.92.73.9:xtgui (ESTABLISHED)
+
+      # List open files with IPV4 address
+      c$ lsof -i 4
+      COMMAND    PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+      loginwind  111 cherry    8u  IPv4 0x760f57132b6a315d      0t0  UDP *:*
+      UserEvent  275 cherry    5u  IPv4 0x760f57132b6a503d      0t0  UDP *:*
+      SystemUIS  283 cherry   11u  IPv4 0x760f57132b6a199d      0t0  UDP *:*
+      SystemUIS  283 cherry   12u  IPv4 0x760f57132b6a173d      0t0  UDP *:*
+      SystemUIS  283 cherry   15u  IPv4 0x760f57132b6a491d      0t0  UDP *:59531
+      SystemUIS  283 cherry   16u  IPv4 0x760f57132b6a4b7d      0t0  UDP *:*
+      SystemUIS  283 cherry   19u  IPv4 0x760f57132b6a101d      0t0  UDP *:*
+      identitys  315 cherry   20u  IPv4 0x760f571329c34f7d      0t0  UDP *:*
+      sharingd   333 cherry    4u  IPv4 0x760f57132b1b259d      0t0  UDP *:*
+      sharingd   333 cherry    8u  IPv4 0x760f57132b1b27fd      0t0  UDP *:*
+      sharingd   333 cherry    9u  IPv4 0x760f571329c3861d      0t0  UDP *:*
+      sharingd   333 cherry   10u  IPv4 0x760f571329c38add      0t0  UDP *:*
+      sharingd   333 cherry   15u  IPv4 0x760f57132b6a3add      0t0  UDP *:*
+      WiFiAgent  400 cherry    5u  IPv4 0x760f57132b6a60dd      0t0  UDP *:*
+      com.apple  505 cherry    4u  IPv4 0x760f57133427dbbd      0t0  TCP macbook-pro.lan:53165->203.208.40.77:https (ESTABLISHED)
+      com.apple  505 cherry    6u  IPv4 0x760f57133a5150d5      0t0  TCP macbook-pro.lan:49477->111.206.76.49:https (ESTABLISHED)
+      Python    2041 cherry    5u  IPv4 0x760f571336b290d5      0t0  TCP macbook-pro.lan:50896->202.89.233.100:https (ESTABLISHED)
+      Python    2662 cherry    5u  IPv4 0x760f5713372a40d5      0t0  TCP macbook-pro.lan:51361->202.89.233.101:https (ESTABLISHED)
+      plugin_ho 3145 cherry   23u  IPv4 0x760f5713372a6dad      0t0  TCP localhost:51004 (LISTEN)
+      com.apple 4596 cherry   10u  IPv4 0x760f571332cbe0d5      0t0  TCP macbook-pro.lan:53166->120.92.73.9:xtgui (ESTABLISHED)
+      com.apple 4596 cherry   12u  IPv4 0x760f571332cbe0d5      0t0  TCP macbook-pro.lan:53166->120.92.73.9:xtgui (ESTABLISHED)

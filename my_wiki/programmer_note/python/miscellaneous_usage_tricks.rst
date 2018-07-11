@@ -1,8 +1,10 @@
-Built-in Functions Tricks
-=========================
+********************
+Miscellaneous Usages
+********************
+
 
 input vs raw_input
-------------------
+==================
 
 ``input()`` assumes that what you enter is a valid Python expression (it’s
 more or less the inverse of ``repr``). If you write your name as a string, 

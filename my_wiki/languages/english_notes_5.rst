@@ -262,6 +262,11 @@ It is the most popular tea in Japan.
 | Definition: cover up one's face or keep out of sight, especially from shame.
 | Phrase: hide one's light under a bushel
 | Definition: keep quiet about one's talents or accomplishments.
+|
+| demographic
+| Definition: relating to the structure of populations.
+| Usage: the demographic trend is toward an older population.
+| Usage: the drink is popular with a young demographic.
 
 .. image:: images/trough.jpg
 .. figure:: images/plastic-hanging-trough.jpg

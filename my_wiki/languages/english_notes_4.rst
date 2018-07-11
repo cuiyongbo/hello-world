@@ -268,10 +268,11 @@ English Notes 4
       5. Tang              6. Ring
       7. Snath or snaith   8. Grips
 
-| gaff
-| Definition: a stick with a hook, or a barbed spear, for landing large fish.
+.. figure:: images/gaff.jpeg
 
-.. image:: images/gaff.jpeg
+   Gaff: a stick with a hook, or a barbed spear, for landing large fish.
+
+.. image:: images/zhenghexiaxiyang.jpg
 .. figure:: images/Parts-of-a-canoe.png
 
    Parts of a canoe::
