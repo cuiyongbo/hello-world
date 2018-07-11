@@ -37,4 +37,5 @@ Shell Commands
    shell_command/du_manual
    shell_command/cal_manual
    shell_command/sort_manual
+   shell_command/lsof_manual
    

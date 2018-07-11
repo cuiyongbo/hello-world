@@ -90,3 +90,26 @@ Examples
       #done | 
       #  sort -r
 
+
+#. git log graph example
+   
+   .. code-block:: sh
+
+   $ git log --graph --oneline master
+   * fb11f8a change project configure
+   *   3e7203e Merge branch 'ti_style_bug'
+   |\
+   | * 95b8386 Fixed day ti style not changed when route removed or created.
+   |/
+   *   b866f8c Merge branch 'add_routing_cases'
+   |\
+   | * 06dee2f Add TEST_F(RoutingRationalityTest, badCaseNaviCore3265)
+   | * 3957e89 Add TEST_F(RoutingRationalityTest, badCaseNaviCore3263)
+   | * a1ab2c3 Add TEST_F(RoutingRationalityTest, trafficLight6)
+   |/
+   *   673e8f1 Merge branch 'support_prefer_online'
+   |\
+   | * 41db56c refactor
+   | * 50aba92 support prefer online
+   |/
+   *   3c5de50 Merge branch 'real3d-broken'

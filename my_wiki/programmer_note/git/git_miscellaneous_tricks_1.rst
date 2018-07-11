@@ -79,7 +79,7 @@ Find the information about branchs
       git branch -v
         master b351f2e [ahead 1] Added git to delete a remote branch
       * test   40eebf1 Reviewed git note
-      git branch -vv
+      git branch -vv # attach upstream branch
         master b351f2e [origin/master: ahead 1] Added git to delete a remote branch
       * test   40eebf1 [origin/test] Reviewed git note
       
