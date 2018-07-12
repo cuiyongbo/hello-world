@@ -2,6 +2,8 @@
 std::allocator
 **************
 
+**Overview**
+
 C++ allocator encapsulates strategies for access/addressing, allocation/deallocation
 and construction/destruction of objects.
 
@@ -27,6 +29,139 @@ allocator is provided. The default allocator is stateless,
 that is, all instances of the given allocator are interchangeable,
 compare equal and can deallocate memory allocated by any other
 instance of the same allocator type.
+
+**Implementation**
+
+.. code-block:: cpp
+   :caption: MSVC std::allocator implementation
+
+   template<class _Ty>
+   struct _Allocator_base
+   {  // base class for generic allocators
+      typedef _Ty value_type;
+   };
+   
+   template<class _Ty>
+   struct _Allocator_base<const _Ty>
+   {  // base class for generic allocators for const _Ty
+      typedef _Ty value_type;
+   };
+
+   template<class _Ty>
+   class allocator : public _Allocator_base<_Ty>
+   {  // generic allocator for objects of class _Ty
+   public:
+   
+      typedef _Allocator_base<_Ty> _Mybase;
+      typedef typename _Mybase::value_type value_type;
+   
+      typedef value_type *pointer;
+      typedef const value_type *const_pointer;
+      typedef void *void_pointer;
+      typedef const void *const_void_pointer;
+   
+      typedef value_type& reference;
+      typedef const value_type& const_reference;
+   
+      typedef size_t size_type;
+      typedef ptrdiff_t difference_type;
+   
+      pointer address(reference _Val) const _NOEXCEPT
+      {  // return address of mutable _Val
+         return (_STD addressof(_Val));
+      }
+   
+      allocator() _THROW0()
+      {  // construct default allocator (do nothing)
+      }
+   
+      template<class _Other>
+      allocator<_Ty>& operator=(const allocator<_Other>&)
+      {  // assign from a related allocator (do nothing)
+         return (*this);
+      }
+   
+      void deallocate(pointer _Ptr, size_type)
+      {  // deallocate object at _Ptr, ignore size
+         ::operator delete(_Ptr);
+      }
+   
+      pointer allocate(size_type _Count)
+      {  // allocate array of _Count elements
+         return (_Allocate(_Count, (pointer)0));
+      }
+   
+      void construct(_Ty *_Ptr)
+      {  // default construct object at _Ptr
+         ::new ((void *)_Ptr) _Ty();
+      }
+   
+      template<class _Uty>
+      void destroy(_Uty *_Ptr)
+      {  // destroy object at _Ptr
+         _Ptr->~_Uty();
+      }
+   
+      size_t max_size() const _THROW0()
+      {  // estimate maximum array size
+         return ((size_t)(-1) / sizeof (_Ty));
+      }
+   
+      // ....
+   };
+
+   template<class _Ty, class _Other> inline
+   bool operator==(const allocator<_Ty>&, const allocator<_Other>&) _THROW0()
+   {  // test for allocator equality
+      return (true);
+   }
+
+   template<class _Ty, class _Other> inline
+   bool operator!=(const allocator<_Ty>& _Left, const allocator<_Other>& _Right) _THROW0()
+   {  // test for allocator inequality
+      return (!(_Left == _Right));
+   }
+
+.. code-block:: cpp
+   :caption: MSVC std::allocator_traits implementation
+
+   template<class _Ty>
+   struct allocator_traits<allocator<_Ty> >
+   {  // defines traits for allocators (increases compiler speed)
+   
+      static pointer allocate(_Alloc& _Al, size_type _Count)
+      {  // allocate array of _Count elements
+         return (_Al.allocate(_Count));
+      }
+   
+      static pointer allocate(_Alloc& _Al, size_type _Count, const_void_pointer _Hint)
+      {  // allocate array of _Count elements, with hint
+         return (_Al.allocate(_Count, _Hint));
+      }
+   
+      template<class _Objty, class... _Types>
+      static void construct(_Alloc& _Al, _Objty *_Ptr, _Types&&... _Args)
+      {  // construct _Objty(_Types...) at _Ptr
+         _Al.construct(_Ptr, _STD forward<_Types>(_Args)...);
+      }
+   
+   
+      template<class _Uty>
+      static void destroy(_Alloc& _Al, _Uty *_Ptr)
+      {  // destroy object at _Ptr
+         _Al.destroy(_Ptr);
+      }
+   
+      static size_type max_size(const _Alloc& _Al)
+      {  // get maximum size
+         return (_Al.max_size());
+      }
+   };
+
+
+
+
+
 
 **Example**
 

@@ -10,6 +10,90 @@ The Linux lsof command lists information about files that are open by processes 
 
 **Hot Options**
 
+   If any list request option is specified, other list requests must be specifically requested - e.g., 
+   if -U is specified for the listing of UNIX socket files, NFS files won't be listed unless -N is also 
+   specified; or if a user list is specified with the -u option, UNIX domain socket files, belonging 
+   to users not in the list, won't be listed unless the -U option is also specified.
+
+   Normally list options that are specifically stated are ORed - i.e., specifying the ``-i -ufoo`` options 
+   produces a listing of all network files OR files belonging to processes owned by user 'foo'.  
+   The exceptions are::
+
+      1) the '^' (negated) login name or user ID (UID), specified with the -u option;
+
+      2) the '^' (negated) process ID (PID), specified with the -p option;
+
+      3) the '^' (negated) process group ID (PGID), specified with the -g option;
+
+      4) the '^' (negated) command, specified with the -c option;
+
+      5) the ('^') negated TCP or UDP protocol state names, specified with the -s [p:s] option.
+
+   Since they represent exclusions, they are applied without ORing or ANDing and take effect 
+   before any other selection criteria are applied.
+
+   The -a option may be used to AND the selections.  For example, specifying ``-a -U -ufoo`` 
+   produces a listing of only UNIX socket files that belong to processes owned by user 'foo'.
+
+   **Caution**: the -a option causes all list selection options to be ANDed; it can't be used to cause ANDing 
+   of selected pairs of selection options by placing it between them, even though its placement there is 
+   acceptable.  Wherever -a is placed, it causes the ANDing of all selection options.
+
+   .. option:: -i [i]   
+
+      selects the listing of files any of whose Internet address matches the address specified in i.  
+      If no address is specified, this option selects the listing of all Internet and x.25 (HP-UX) network files.
+
+      If -i4 or -i6 is specified with no following address, only files of the indicated IP version, 
+      IPv4 or IPv6, are displayed. 
+
+      An Internet address is specified in the form (Items in square brackets are optional.)::
+
+         [46][protocol][@hostname|hostaddr][:service|port]
+
+      where::
+
+         46 specifies the IP version, If neither '4' nor
+            '6' is specified, the following address
+            applies to all IP versions.
+         
+         protocol is a protocol name - TCP, UDP
+
+         hostname is an Internet host name.
+
+         hostaddr is a numeric Internet IPv4 address in
+              dot form; or an IPv6 numeric address in
+              colon form, enclosed in brackets, if the
+              UNIX dialect supports IPv6.  When an IP
+              version is selected, only its numeric
+              addresses may be specified.
+
+         service is an /etc/services name - e.g., smtp or a list of them.
+
+         port is a port number, or a list of them.
+
+         At least one address component - 4, 6, protocol, hostname, hostaddr, or service - must be supplied.  
+         The '@' character, leading the host specification, is always required; as is the ':', leading the 
+         port specification. 
+
+         Service names and port numbers may be combined in a list whose entries are separated by commas 
+         and whose numeric range entries are separated by minus signs. There may be no embedded spaces, 
+         and all service names must belong to the specified protocol.  Since service names may contain 
+         embedded minus signs, the starting entry of a range can't be a service name; it can be a port 
+         number, however.
+
+      Here are some sample addresses::  
+
+         -i6 - IPv6 only
+         TCP:25 - TCP and port 25
+         @1.2.3.4 - Internet IPv4 host address 1.2.3.4
+         @[3ffe:1ebc::1]:1234 - Internet IPv6 host address [3ffe:1ebc::1], port 1234
+         UDP:who - UDP who service port
+         TCP@lsof.itap:513 - TCP, port 513 and host name lsof.itap
+         tcp@foo:1-10,smtp,99 - TCP, ports 1 through 10, service name smtp, port 99, host name foo
+         tcp@bar:1-smtp - TCP, ports 1 through smtp, host bar
+         :time - either TCP, UDP or UDPLITE time service port
+
 
 **Example**
 

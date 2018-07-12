@@ -42,15 +42,46 @@ Declare class destructor as ``private/protected``
 Basically, any time you want some other class to be responsible for the life cycle of your class' objects,
 or you have reason to prevent the destruction of an object, you can make the destructor private.
 
-For instance, if you're doing some sort of reference counting thing, you can have the object
+For instance, if you're doing some sort of **reference counting** thing, you can have the object
 (or manager that has been "friend"ed) responsible for counting the number of references to itself
 and delete it when the number hits zero. A private destructor would prevent anybody else from
 deleting it when there were still references to it.
 
 .. code-block:: c++
 
+   class Water
+   {
+      // ...
+   protected:
+      ~Water() {}
+   };
    delete w;
    // error C2248: 'Water::~Water' : cannot access protected member declared in class 'Water'
+
+
+Declare class destructor as ``virtual``
+=======================================
+
+Many classes require some form of cleanup for an object before it goes away. Since the abstract
+class Ival_box cannot know if a derived class requires such cleanup, it must assume that it does
+require some. We ensure proper cleanup by defining a virtual destructor Ival_box::~Ival_box()
+in the base and overriding it suitably in derived classes. For example::
+
+   class Ival_box
+   {
+      // ...
+      virtual ~Ival_box() {}
+   };
+
+   void f(Ival_box* p)
+   {
+      // ...
+      delete p;
+   }
+
+The ``delete`` operator explicitly destroys the object pointed to by *p*. We have no way of knowing
+exactly to which class the object pointed to by *p* belongs, but thanks to Ival_box’s virtual
+destructor, proper cleanup as (optionally) defined by that class’ destructor will be called.
 
 
 C++ class example

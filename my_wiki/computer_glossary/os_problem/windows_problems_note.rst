@@ -124,7 +124,7 @@ Windows Problems
 
       "git_binary": "C:/Program Files/Git/bin/git.exe"
 
-#. xShell get frozen after accidently typing "Ctrl - S"
+#. xShell gets frozen after accidently typing "Ctrl - S"
    
    Solution::
 
