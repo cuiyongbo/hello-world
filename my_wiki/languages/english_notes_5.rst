@@ -59,10 +59,41 @@ It is the most popular tea in Japan.
 
 | cramp
 | Definition: a painful, involuntary contraction of a muscle or muscles, typically caused by fatigue or strain.
-| Usage: he suffered severe cramps in his foot.
+| Usage: he suffered severe cramps in his foot. [痉挛]
 | Phrase: cramp someone's style
 | Definition: prevent a person from acting freely or naturally.
 | Usage: You two relax and celebrate on your own. You don't want us oldies cramping your style. [扫兴，不自在]
+|
+| flex
+| Definition: bend (a limb or joint).
+| Usage: she saw him flex his ankle and wince.
+| Definition: cause (a muscle) to stand out by contracting or tensing it.
+| Usage: bodybuilders flexing their muscles.
+| 
+| wince
+| Definition: (at sth) to suddenly make an expression with your face that shows that you are feeling pain or embarrassment.
+| Usage: He winced as a sharp pain shot through his left leg. [龇牙咧嘴,皱眉蹙额]
+| Usage: I still wince when I think about that stupid thing I said. [懊悔不已]
+| 
+| wrench
+| Definition: a sudden violent twist or pull.
+| Definition: a feeling of sadness or distress caused by one's own or another's departure. [心如刀绞]
+| Usage: it will be a real wrench to leave after eight years.
+| Definition: a tool used for gripping and turning nuts, bolts, pipes, etc. [扳手]
+
+.. image:: images/wrenches.png
+
+| rigid
+| rigidify
+| rigidness
+| rigidity
+| Definition: (of a person or part of the body) stiff and unmoving, especially as a result of shock or fear.
+| Usage: his face grew rigid with fear.
+| Definition: inability to be to bent or be forced out of shape.
+| Definition: inability to be changed or adapted.
+| Usage: the rigidity of the school system.
+| Definition: unwillingness to be adaptable in outlook, belief, or response.
+| Usage: there was a regrettable rigidity in this decision.
 | 
 | colophon [版权页, 版本记录]
 | Definition: a publisher's emblem or imprint, especially one on the title page or spine of a book.

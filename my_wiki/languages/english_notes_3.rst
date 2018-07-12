@@ -187,13 +187,17 @@ English Notes 3
 | 
 | gravel
 | Definition: a loose aggregation of small water-worn or pounded stones.
-| Synonyms: pepple. [鹅卵石]
+| Synonyms: pebbles; shingle. [鹅卵石]
 | Definition: a mixture of small stones with coarse sand, used for paths and roads and as an aggregate.
 | Definition: make (someone) angry or annoyed.
 | Usage: this was a bad strike, and it graveled him to involve himself in it.
 
 .. image:: images/gravel_1.jpg
 .. image:: images/gravel_2.jpg
+
+.. figure:: images/boulder.jpeg
+
+   Boulder: a large rock, typically one that has been worn smooth by erosion.
 
 | whiteout
 | Definition: a blizzard, especially in polar regions, that reduces visibilities to near zero.

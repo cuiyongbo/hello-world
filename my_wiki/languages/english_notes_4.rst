@@ -164,6 +164,11 @@ English Notes 4
 | hoagie
 | Definition: a long piece of bread filled with meat, cheese and salad.
 | Synonyms: submarine sandwich.
+| 
+| bun
+| Definition: a bread roll of various shapes and flavorings, typically sweetened and often containing dried fruit.
+| Definition: a hairstyle in which the hair is drawn back into a tight coil at the back of the head.
+|
 | triangular
 | Definition: shaped like a triangle; having three sides and three corners.
 | Usage: dainty triangular sandwiches.
@@ -172,6 +177,9 @@ English Notes 4
 
 .. image:: images/hoagie.jpg
 .. image:: images/triangular_sanwitch.jpg
+.. image:: images/Plain-Baby-Bun.jpg
+.. image:: images/messy-bun-hairstyles.jpg
+
 
 | powder
 | powdery
