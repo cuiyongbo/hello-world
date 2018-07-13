@@ -59,6 +59,24 @@ Create a new local branch
       git checkout -B branch_name origin/branch_name
       git checkout -b branch_name # branch_name doesn't exist.
 
+   .. code-block:: none
+      :caption: Manual
+
+      git checkout -b|-B <new_branch> [<start point>]
+      
+      Specifying -b causes a new branch to be created as if git-branch(1) were called 
+      and then checked out. In this case you can use the --track or --no-track options, 
+      which will be passed to git branch. As a convenience, --track without -b implies 
+      branch creation; see the description of --track below. 
+
+      If -B is given, <new_branch> is created if it doesn’t exist; otherwise, it is reset. 
+      This is the transactional equivalent of
+
+         $ git branch -f <branch> [<start point>]
+         $ git checkout <branch>
+
+      that is to say, the branch is not reset/created unless "git checkout" is successful.
+
 
 Find the information about branchs
 ==================================

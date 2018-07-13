@@ -29,16 +29,80 @@ English Note 6
 | Definition: a tube or case containing explosive and a bullet or shot , for shooting from a gun. [弹药筒；弹夹]
 | Definition: a case containing sth that is used in a machine, for example film for a camera, ink for a printer, etc. Cartridges are put into the machine | and can be removed and replaced when they are finished or empty. [胶片盒；暗盒；墨盒]
 | Definition: a thin tube containing ink which you put inside a pen [(钢笔的)笔芯,墨水囊]
-
-.. figure:: images/artillery.jpg
-
-   Artillery 炮击，炮兵
-
-.. figure:: images/Modern-tractor.jpg
-
-   Tractor 拖拉机
-
-.. figure:: images/camion.jpg
-
-   Camion 大卡车，军用卡车
+|
+| conceal
+| Definition: keep from sight; hide.
+| Usage: a line of sand dunes concealed the distant sea.
+| Definition: keep (something) secret; prevent from being known or noticed. [秘而不宣]
+| Usage: love that they had to conceal from others.
+| 
+| succumb
+| Definition: fail to resist (pressure, temptation, disease, injure or some other negative force).
+| Usage: he has become the latest to succumb to the strain.
+| Usage: He finally succumbed to Lucy's charms and agreed to her request. 
+| Usage: His career was cut short when he succumbed to lung cancer.
+| 
+| myopic
+| myopically
+| Synonyms: short-sighted; nearsighted.
+| Definition: lacking imagination, foresight, or intellectual insight.
+| Usage: the government still has a myopic attitude to public spending.
+| 
+| stifle
+| Synonyms: supress; hamper
+| Definition: restrain (a reaction) or stop oneself acting on (an emotion). [克制]
+| Usage: she stifled a giggle。
+| Usage: she stifled a desire to turn and flee.
+| Definition: prevent or constrain (an activity or idea).
+| Usage: high taxes were stifling private enterprise.
+| 
+| cut
+| Phrase: cut both ways
+| Definition: (of a point or statement) serve both sides of an argument.
+| Definition: (of an action or process) have both good and bad effects
+| Usage: the triumphs of civilization cut both ways.
+| Phrase: cut the corner
+| Definition: take the shortest course by going across and not around a corner.
+| Phrase: cut corners [破例]
+| Definition: undertake something in what appears to be the easiest, quickest, or cheapest way, especially by omitting to do something important or ignoring rules.
+|
+| state-of-art
+| Definition: State-of-art (sometimes cutting edge) refers to the highest level of general development, as of a device, technique, or scientific field achieved at a particular time.
+|
+| grubby
+| Definition: rather dirty, usually because it has not been washed or cleaned. [邋遢]
+| Usage: grubby hands / clothes 
+| Definition:  unpleasant because it involves activities that are dishonest or immoral. [卑鄙]
+| Usage: a grubby scandle.
+| 
+| bawdy house
+| Synonyms: brothel. [妓院]
+| Definition: a house where men can visit prostitutes. [妓女]
+| 
+| latrine [(营地等的)厕所；(尤指)茅坑,便坑]
+| Definition: a toilet in a camp, etc., especially one made by digging a hole in the ground. 
+| 
+| strand
+| Definition: drive or leave (a boat, sailor, or sea creature) aground on a shore. [搁浅]
+| Usage: the ships were stranded in shallow water. 
+| Definition: a single thin length of something such as thread, fiber, or wire, especially as twisted together with others.
+| Usage: a strand of cotton.
+| 
+| slush
+| Definition: partially melted snow or ice.
+| Definition: watery mud. [泥浆，泥泞的街道]
+| 
+| bellow
+| Definition: (of a person or animal) emit a deep loud roar, typically in pain or anger. [怒吼，咆哮]
+| Usage: he bellowed in agony.
+| Usage: the bellowing of a bull.
+| 
+| picturesque
+| Definition: visually attractive, especially in a quaint or pretty style. [如画般的]
+| Usage: the picturesque covered bridges of New England.
+| Definition: (of language) unusual and vivid. [生动活泼]
+| Usage: his picturesque speech contrasted with his rough appearance.
+| 
+| shamble
+| Definition: to walk in an awkward or lazy way, as if dragging your feet along the ground. [拖着脚走；蹒跚]
 

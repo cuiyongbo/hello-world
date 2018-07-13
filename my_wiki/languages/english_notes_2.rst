@@ -59,6 +59,17 @@ English Notes 2
 
 .. image:: images/jersey.jpg
 .. image:: images/camisole.jpeg
+.. figure:: images/Red-Velvet-Skater-Dress.jpg
+
+   Velvet 天鹅绒
+
+.. figure:: images/scarlett_coat.jpg
+
+   Scarlet 猩红色
+
+.. figure:: images/balenciaga-red-suspended-tunic.jpg
+
+   Tunic 女士的束腰外衣
 
 | coffer
 | Definition: a strongbox used to store money or valuable things. [保险柜，金库]

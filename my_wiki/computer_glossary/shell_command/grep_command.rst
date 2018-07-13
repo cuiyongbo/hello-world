@@ -499,3 +499,7 @@ grep Command
 
    $ grep -o -E ".{100,100}801857" event.json  # output the matched and the 100 characters before it.
 
+   $ grep -E ^-?33615290, SWID.txt
+   33615290,140
+   -33615290,140
+

@@ -132,6 +132,9 @@ It is the most popular tea in Japan.
 | Definition: blasphemous or obscene language.
 | Usage: An outburst of profanity.
 | 
+| atheist [无神论者]
+| Definition: a person who believes that God does not exist.
+| 
 | blasphemy
 | blasphemous
 | Definition: Sacrilegious against God or sacred things; profane.
@@ -303,3 +306,14 @@ It is the most popular tea in Japan.
 .. figure:: images/plastic-hanging-trough.jpg
 
    trough 水槽，饲料槽
+
+.. code-block:: none
+   :caption: Back of the envelope calculation
+
+   A back-of-the-envelope calculation is an informal mathematical computation, 
+   often performed on a scrap of paper such as an envelope. A back-of-the-envelope 
+   calculation uses estimated or rounded numbers to quickly develop a ballpark figure.
+
+| ballpark
+| Definition: (of prices or costs) approximate; rough.
+| Usage: The ballpark figure is $400-500.

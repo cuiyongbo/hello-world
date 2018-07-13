@@ -580,10 +580,6 @@ English Note
 | sluggard
 | Definition: a lazy, slgguish person.
 | 
-| consigliere [顾问，军师，智囊]
-| Definition: an adviser, especially to a crime boss.
-| Plural: consiglieri
-| 
 | antsy
 | Definition: Agitated, impatient, or restless.
 | Usage: He was too antsy to stay in one place for long.
@@ -1459,10 +1455,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: If something makes a comeback, it becomes fashionable again.
 | Usage: Loose fitting pants are making a comeback.
 | 
-| ballpark
-| Definition: (of prices or costs) approximate; rough.
-| Usage: The ballpark figure is $400-500.
-| 
 | retrofit
 | Definition: add (a component or accessory) to something that did not having it when manufactured.
 | Usage: Bus have been retroffited with easy-access feature.
@@ -1475,9 +1467,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: 
 | Usage: Complaints about poor food in schools have become a familiar refrain.
 | Usage: “Poor Tom” had become the constant refrain of his friend.
-| 
-| state-of-art
-| Definition: State-of-art (sometimes cutting edge) refers to the highest level of general development, as of a device, technique, or scientific field achieved | at a particular time.
 | 
 | falsework
 | Definitin: temporary framework structures used to support a building during its construction.
@@ -1662,7 +1651,7 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | spectrum
 | Definition: The entire range of wavelengths of electromagnetic radiation.
 | Definition: An image or distribution of components of sound, particles, etc., arranged according to such characteristics as frequency, charge and energy.
-| Usage: A spectrum is formed by a ray of light passing through a prism.
+| Usage: A spectrum is formed by a ray of light passing through a prism. [光谱]
 | Definition: A complete or wide range of related qualities, ideas, etc.
 | Usage: Self-help books are covering a broader and broader spectrum.
 | 

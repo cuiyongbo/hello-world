@@ -18,6 +18,9 @@ English Notes 3
 
 .. image:: images/wood-grain.jpg
 .. image:: images/Brown-wood-grain.jpg
+.. figure:: images/stump.jpg
+
+   Stump 树桩
 
 | 
 | quibble
@@ -198,6 +201,11 @@ English Notes 3
 .. figure:: images/boulder.jpeg
 
    Boulder: a large rock, typically one that has been worn smooth by erosion.
+
+.. image:: images/rubble_1.JPG
+.. figure:: images/rubble_2.JPG
+
+   Rubble 乱石，废墟
 
 | whiteout
 | Definition: a blizzard, especially in polar regions, that reduces visibilities to near zero.

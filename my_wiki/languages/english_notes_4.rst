@@ -305,7 +305,12 @@ English Notes 4
    skiff 小艇
    
    Tiller 舵柄
-   A bar that is used to turn the rudder of a small boat in order to steer it。
+   A bar that is used to turn the rudder of a small boat in order to steer it.
+
+.. image:: images/dugout_2.jpg
+.. figure:: images/dugout_1.jpg
+
+   Dugout 独木舟
 
 | treachery
 | treacherous

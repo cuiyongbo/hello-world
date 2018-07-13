@@ -29,6 +29,8 @@ Computer Terminology
 | XML = Extensive Markup Language
 | POSIX = Portable Operating System Interface
 | UTC = Coordinated Universal Time
+| synchronous vs asynchronous
+| BOM = Bill of Materials
 |
 | concatenate
 | concatenation

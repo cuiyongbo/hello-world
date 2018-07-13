@@ -555,3 +555,29 @@ not become complacent about its development.
 | squadron
 | Definition: a group of military aircraft or ships forming a section of a military force.
 | usage: A bomber / flighter squadron. [轰炸机／战斗机中队]
+| 
+| consigliere [顾问，军师，智囊]
+| Definition: an adviser, especially to a crime boss.
+| Plural: consiglieri
+|
+| signor 先生 [意大利语]
+| monsieur 先生 [法语]
+| sergent 中士
+| lieutenant 中尉
+
+.. figure:: images/artillery.jpg
+
+   Artillery 炮击，炮兵
+
+.. figure:: images/Infantry_Regiment_on_Patrol.jpg
+
+   Infrantry 步兵
+   Infrantry division 步兵师
+
+.. figure:: images/Modern-tractor.jpg
+
+   Tractor 拖拉机
+
+.. figure:: images/camion.jpg
+
+   Camion 大卡车，军用卡车
