@@ -25,7 +25,7 @@ Basic Usage
 
 **DESCRIPTION**
 
-   When you invoke GCC, it normally does preprocessing, compilation, assembly and linking.
+   When you invoke GCC, it normally does **preprocessing, compilation, assembly and linking.**
    The **overall options** allow you to stop this process at an intermediate stage.
    For example, the -c option says not to run the linker. Then the output consists of object
    files output by the assembler.
@@ -232,6 +232,11 @@ Basic Usage
    a precompiled header file in source.suffix.gch, and all preprocessed C source
    on standard output.
 
+
+.. option:: -static
+
+   Force compile to link with static library(*.a). By default, gcc link with shared object (*.so).
+
 .. option::  -shared
            
    Produce a shared object which can then be linked with other objects to form an executable.
@@ -291,12 +296,32 @@ Basic Usage
    Nevertheless it proves possible to debug optimized output. This makes it reasonable to use
    the optimizer for programs that might have bugs.
 
+.. option:: -ggdb
+           
+   Produce debugging information for use by GDB. This means to use the most expressive format 
+   available (DWARF 2, stabs, or the native format if neither of those are supported), including
+   GDB extensions if at all possible.
+
 .. option:: -Wall
 
    Turns on all optional warnings which are desirable for normal code. At present this is
    -Wcomment, -Wtrigraphs, -Wmultichar and a warning about integer promotion causing a
    change of sign in "#if" expressions. Note that many of the preprocessor's warnings are
    on by default and have no options to control them.
+
+.. option:: -Werror
+   
+   Make all warnings into hard errors.  Source code which triggers warnings will be rejected.
+
+.. option::  -Wpedantic, -pedantic
+
+   Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use 
+   forbidden extensions, and some other programs that do not follow ISO C and ISO C++. 
+   For ISO C, follows the version of the ISO C standard specified by any -std option used.
+
+.. option:: -pedantic-errors
+          
+   Give an error whenever the base standard (see -Wpedantic) requires a diagnostic.
 
 .. option:: -w  
 
@@ -533,6 +558,8 @@ Basic Usage
          The same as -std=c++98 plus GNU extensions. 
          This is the default for C++ code.
 
+      c++11
+
 .. option:: -rdynamic
 
    Pass the flag ``-export-dynamic`` to the ELF linker, on targets that support it.
@@ -548,3 +575,18 @@ Basic Usage
            
    Adds support for multithreading with the pthreads library. This option
    sets flags for both the preprocessor and linker.
+
+.. option:: -Olevel
+
+   set code optimization level, -O2 is usual.
+   Note: don't turn on this optimization when you are programming, 
+   debugging, or with limited resources such as on embedded devices. 
+
+.. option:: -pipe
+           
+   Use pipes rather than temporary files for communication between the various stages of 
+   compilation. This fails to work on some systems where the assembler is unable to read 
+   from a pipe; but the GNU assembler has no trouble.
+
+   **Note:** this option can speed up compilation when building a huge project, but will
+   consume more memory in return. 

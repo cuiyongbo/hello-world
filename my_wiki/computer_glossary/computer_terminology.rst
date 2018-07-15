@@ -363,3 +363,18 @@ for by exactly 86400 seconds.
 Overclocking is the process making a computer component run at a higher speed 
 than that specified by the manufacturer. The components that can be overclocked 
 include the CPU, the memory and the video cards.
+
+**Golden hammer syndrome**
+
+do not go into the "Golden hammer" syndrome, or what some would describe as 
+"When you have a hammer, everything else looks like a nail". 
+
+A problem afflicting many IT projects which are constrained within a set of standardized tools. 
+Over-simplified statements like "All data storage will go on the SQL database server", 
+"Only vendor-supported, closed source software will be used" and so on.
+
+Vendors are the major perpetuators of this flawed idea, they sell their products under 
+the promise that it can do anthing, will magically adapt to whatever customer sitting in 
+front of them. This narrow-minded [狭隘] line of thinking prevents the discovery of creative, 
+think-outside-of-the-box [打破常规，打破思维定势] solutions who unfortunately become burdened by 
+the limitations of the imposed 'tools of choice'.

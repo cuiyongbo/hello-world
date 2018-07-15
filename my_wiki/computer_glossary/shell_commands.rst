@@ -16,26 +16,27 @@ Shell Commands
 .. toctree::
    :maxdepth: 2
 
-   shell_command/shell_script_tricks
-   shell_command/ls_info
-   shell_command/tar_manual
+   shell_command/awk_manual
+   shell_command/cal_manual
    shell_command/chmod_info
-   shell_command/ps_command
+   shell_command/crontab_info
+   shell_command/du_manual
+   shell_command/file_cp_mv
+   shell_command/file_inspectors
    shell_command/find_command
    shell_command/grep_command
    shell_command/kill_command
-   shell_command/file_cp_mv
-   shell_command/file_inspectors
-   shell_command/crontab_info
-   shell_command/smem_man_doc
-   shell_command/nohup_command
-   shell_command/uptime_manual
-   shell_command/ulimit_manual
-   shell_command/system_v_ipc_facility
-   shell_command/awk_manual
-   shell_command/xargs_manual
-   shell_command/du_manual
-   shell_command/cal_manual
-   shell_command/sort_manual
+   shell_command/ls_info
    shell_command/lsof_manual
+   shell_command/nohup_command
+   shell_command/ps_command
+   shell_command/shell_script_tricks
+   shell_command/smem_man_doc
+   shell_command/sort_manual
+   shell_command/system_v_ipc_facility
+   shell_command/tar_manual
+   shell_command/time_manual
+   shell_command/ulimit_manual
+   shell_command/uptime_manual
+   shell_command/xargs_manual
    

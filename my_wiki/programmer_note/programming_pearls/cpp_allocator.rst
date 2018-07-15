@@ -30,6 +30,25 @@ that is, all instances of the given allocator are interchangeable,
 compare equal and can deallocate memory allocated by any other
 instance of the same allocator type.
 
+As mentioned, *allocate* and *deallocate* are simply low level memory management 
+and do not play a part in object construction and destruction. This would mean 
+that the default usage of the keywords ``new`` and ``delete`` would not apply in 
+these functions. As any intermediate C++ programmer should know, the following 
+code::
+
+   A* a = new A;
+   delete a;
+
+is actually 1interpreted by the compiler as::
+
+   // assuming new throws std::bad_alloc upon failure
+   A* a = ::operator new(sizeof(A)); 
+   a->A::A();
+   if ( a != 0 ) {  // a check is necessary for delete
+       a->~A();
+       ::operator delete(a);
+   }
+
 **Implementation**
 
 .. code-block:: cpp
@@ -57,8 +76,6 @@ instance of the same allocator type.
    
       typedef value_type *pointer;
       typedef const value_type *const_pointer;
-      typedef void *void_pointer;
-      typedef const void *const_void_pointer;
    
       typedef value_type& reference;
       typedef const value_type& const_reference;
@@ -157,10 +174,6 @@ instance of the same allocator type.
          return (_Al.max_size());
       }
    };
-
-
-
-
 
 
 **Example**

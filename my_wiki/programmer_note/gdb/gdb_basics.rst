@@ -2,6 +2,43 @@
 Gdb Basics
 **********
 
+Hot Points
+==========
+
+Here are some of the most frequently needed GDB commands::
+
+   help [name]
+      Show information about GDB command name, or general information about using GDB.
+  
+   break [file:]functiop
+   Set a breakpoint at function (in file).
+
+   run [arglist]
+   Start your program (with arglist, if specified).
+
+   c   Continue running your program (after stopping, e.g. at a breakpoint).
+
+   bt  Backtrace: display the program stack.
+
+   print expr
+   Display the value of an expression.
+
+   edit [file:]function
+      look at the program line where it is presently stopped.
+
+   list [file:]function
+      type the text of the program in the vicinity of where it is presently stopped.
+
+   next
+      Execute next program line (after stopping); step over any function calls in the line.
+
+   step
+      Execute next program line (after stopping); step into any function calls in the line.
+
+   quit
+      Exit from GDB.
+
+
 breakpoint howto
 ================
 
@@ -12,7 +49,7 @@ breakpoint howto
 +---------------------+--------------------------------------------------------------+
 | b file.c: funcname  | Set a breakpoint at funcname of file “file.c”                |
 +---------------------+--------------------------------------------------------------+
-| b Class\:\:function | Set a breakpoint at Class\:\:function                        |
+| b class\:\:function | Set a breakpoint at class\:\:function                        |
 +---------------------+--------------------------------------------------------------+
 | b N if condition    | Set a conditional breakpoint at line N of the current file   |
 +---------------------+--------------------------------------------------------------+
@@ -26,4 +63,4 @@ breakpoint howto
 +---------------------+--------------------------------------------------------------+
 | d N                 | Remove breakpoint number N                                   |
 +---------------------+--------------------------------------------------------------+
-
+43e
