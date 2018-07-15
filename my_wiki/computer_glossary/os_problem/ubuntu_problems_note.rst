@@ -31,3 +31,10 @@ Ubuntu Problems
    "Edit" - "Profile Preferences" - "General" - "Cursor Shape".
 
    .. image:: images/terminal_cursor_shape_configure.png
+
+#. Show current time
+   
+   .. code-block:: sh
+   
+      $ date
+      Sun Jul 15 23:07:11 CST 2018

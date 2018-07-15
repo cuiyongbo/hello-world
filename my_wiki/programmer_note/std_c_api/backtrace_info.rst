@@ -26,8 +26,8 @@ Backtrace Utilities
 
    Given the set of addresses returned by ``backtrace()`` in *buffer*, ``backtrace_symbols()`` translates the addresses
    into an array of strings that describe the addresses symbolically.  The *size* argument specifies the number of addresses
-   in *buffer*. The symbolic representation of each address consists of the function name (if this can be determined), a
-   hexadecimal offset into the function, and the actual return address (in hexadecimal). The address of the array of string
+   in *buffer*. **The symbolic representation of each address consists of the function name (if this can be determined), a
+   hexadecimal offset into the function, and the actual return address (in hexadecimal).** The address of the array of string
    pointers is returned as the function result of ``backtrace_symbols()``. This array is malloc(3)ed by ``backtrace_symbols()``,
    and must be freed by the caller. (The strings pointed to by the array of pointers need not and should not be freed.)
 
@@ -66,7 +66,7 @@ Backtrace Utilities
    The program below demonstrates the use of ``backtrace()`` and ``backtrace_symbols()``.
    The following shell session shows what we might see when running the program::
 
-      $ gcc -rdynamic -o prog backtrace_demo.c
+      $ gcc -rdynamic -g -o prog backtrace_demo.c
       $ ./prog 4
       backtrace() returned 9 address(es).
       Frame 0: ./prog(myFunc3+0x93) [0x400a30]
@@ -78,6 +78,10 @@ Backtrace Utilities
       Frame 6: ./prog(main+0x52) [0x400b53]
       Frame 7: /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf5) [0x7f4edaa20f45]
       Frame 8: ./prog() [0x4008d9]
+
+      $ addr2line 0x4008d5
+      /home/cherry/program-demo/cpp-demo/backtrace_demo.c:43
+
 
    Program source::
 

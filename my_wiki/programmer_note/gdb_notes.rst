@@ -8,4 +8,5 @@ Gdb Notes
    gdb/gdb_tutorial
    gdb/gdb_basics
    gdb/gdb_miscellaneous_usage
+   gdb/gdb_miscellaneous_usage_2
    

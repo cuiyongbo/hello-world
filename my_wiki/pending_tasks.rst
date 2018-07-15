@@ -13,7 +13,3 @@ Pending tasks
    
 #. https://en.wikipedia.org/wiki/Normal_distribution
 #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
-   
-#. from core dump offset to localize error in code files.
-   
-#. quick find file in sublime.

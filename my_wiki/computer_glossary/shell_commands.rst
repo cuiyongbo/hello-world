@@ -16,6 +16,7 @@ Shell Commands
 .. toctree::
    :maxdepth: 2
 
+   shell_command/addr2line_note
    shell_command/awk_manual
    shell_command/cal_manual
    shell_command/chmod_info

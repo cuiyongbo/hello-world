@@ -2,6 +2,9 @@
 Shell Script
 ************
 
+.. contents::
+  :local:
+
 Pipe & Redirect
 ===============
 
