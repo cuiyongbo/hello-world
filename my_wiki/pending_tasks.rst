@@ -2,9 +2,6 @@
 Pending tasks
 *************
 
-#. traffic data updater integration
-#. implement brief route on logic
-
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
@@ -17,8 +14,6 @@ Pending tasks
 #. https://en.wikipedia.org/wiki/Normal_distribution
 #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
    
-#. epoll interface
-
 #. from core dump offset to localize error in code files.
    
 #. quick find file in sublime.

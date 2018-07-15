@@ -54,166 +54,182 @@ epoll Manual
    By contrast, when used as a LT interface (the default, when EPOLLET is not specified), epoll is simply 
    a faster poll(2), and can be used wherever the latter is used since it shares the same semantics.
 
-   Since even with edge-triggered epoll, multiple events can be generated upon receipt of multiple chunks of data, the caller has the option to specify the EPOLLONESHOT flag, to tell epoll to
-       disable the associated file descriptor after the receipt of an event with epoll_wait(2).  When the EPOLLONESHOT flag is specified, it is the caller's responsibility to rearm the file descrip‐
-       tor using epoll_ctl(2) with EPOLL_CTL_MOD.
+   Since even with ET epoll, multiple events can be generated upon receipt of multiple chunks of data, 
+   the caller has the option to specify the EPOLLONESHOT flag, to tell epoll to disable the associated 
+   file descriptor after the receipt of an event with epoll_wait(2). When the EPOLLONESHOT flag is specified, 
+   it is the caller's responsibility to rearm the file descriptor using epoll_ctl(2) with EPOLL_CTL_MOD.
 
-   Interaction with autosleep
-       If  the  system  is  in  autosleep  mode via /sys/power/autosleep and an event happens which wakes the device from sleep, the device driver will keep the device awake only until that event is
-       queued.  To keep the device awake until the event has been processed, it is necessary to use the epoll(7) EPOLLWAKEUP flag.
 
-       When the EPOLLWAKEUP flag is set in the events field for a struct epoll_event, the system will be kept awake from the moment the event is queued, through the epoll_wait(2) call which  returns
-       the event until the subsequent epoll_wait(2) call.  If the event should keep the system awake beyond that time, then a separate wake_lock should be taken before the second epoll_wait(2) call.
+   The following interfaces can be used to limit the amount of kernel memory consumed by epoll:
 
-   /proc interfaces
-       The following interfaces can be used to limit the amount of kernel memory consumed by epoll:
+      /proc/sys/fs/epoll/max_user_watches (since Linux 2.6.28)
+      This  specifies a limit on the total number of file descriptors that a user can register 
+      across all epoll instances on the system. The limit is per real user ID. Each registered file
+      descriptor costs roughly 90 bytes on a 32-bit kernel, and roughly 160 bytes on a 64-bit kernel.  
+      Currently, the default value for max_user_watches is 1/25 (4%) of the available low memory, 
+      divided by the registration cost in bytes.
 
-       /proc/sys/fs/epoll/max_user_watches (since Linux 2.6.28)
-              This  specifies a limit on the total number of file descriptors that a user can register across all epoll instances on the system.  The limit is per real user ID.  Each registered file
-              descriptor costs roughly 90 bytes on a 32-bit kernel, and roughly 160 bytes on a 64-bit kernel.  Currently, the default value for max_user_watches is 1/25 (4%)  of  the  available  low
-              memory, divided by the registration cost in bytes.
+**Example for suggested usage**
 
-   Example for suggested usage
-       While  the  usage  of  epoll  when employed as a level-triggered interface does have the same semantics as poll(2), the edge-triggered usage requires more clarification to avoid stalls in the
-       application event loop.  In this example, listener is a nonblocking socket on which listen(2) has been called.  The function do_use_fd() uses the new ready file  descriptor  until  EAGAIN  is
-       returned  by  either  read(2) or write(2).  An event-driven state machine application should, after having received EAGAIN, record its current state so that at the next call to do_use_fd() it
-       will continue to read(2) or write(2) from where it stopped before.
+   While the usage of epoll when employed as a LT interface does have the same semantics as poll(2), 
+   the edge-triggered usage requires more clarification to avoid stalls in the application event loop.  
+   In this example, listener is a nonblocking socket on which listen(2) has been called. The function 
+   *do_use_fd()* uses the new ready file descriptor until EAGAIN is returned by either read(2) or write(2).  
+   An event-driven state machine application should, after having received EAGAIN, record its current state 
+   so that at the next call to **do_use_fd()** it will continue to read(2) or write(2) from where it stopped before.
 
-           #define MAX_EVENTS 10
-           struct epoll_event ev, events[MAX_EVENTS];
-           int listen_sock, conn_sock, nfds, epollfd;
+   .. code-block:: sh
 
-           /* Code to set up listening socket, 'listen_sock',
-              (socket(), bind(), listen()) omitted */
+      #define MAX_EVENTS 10
 
-           epollfd = epoll_create1(0);
-           if (epollfd == -1) {
-               perror("epoll_create1");
-               exit(EXIT_FAILURE);
-           }
+      int listen_sock;
 
-           ev.events = EPOLLIN;
-           ev.data.fd = listen_sock;
-           if (epoll_ctl(epollfd, EPOLL_CTL_ADD, listen_sock, &ev) == -1) {
-               perror("epoll_ctl: listen_sock");
-               exit(EXIT_FAILURE);
-           }
+      /* Code to set up listening socket, 'listen_sock',
+         (socket(), bind(), listen()) omitted */
 
-           for (;;) {
-               nfds = epoll_wait(epollfd, events, MAX_EVENTS, -1);
-               if (nfds == -1) {
-                   perror("epoll_wait");
-                   exit(EXIT_FAILURE);
-               }
+      int epollfd = epoll_create1(0);
+      if (epollfd == -1) {
+          perror("epoll_create1");
+          exit(EXIT_FAILURE);
+      }
 
-               for (n = 0; n < nfds; ++n) {
-                   if (events[n].data.fd == listen_sock) {
-                       conn_sock = accept(listen_sock,
-                                       (struct sockaddr *) &local, &addrlen);
-                       if (conn_sock == -1) {
-                           perror("accept");
-                           exit(EXIT_FAILURE);
-                       }
-                       setnonblocking(conn_sock);
-                       ev.events = EPOLLIN | EPOLLET;
-                       ev.data.fd = conn_sock;
-                       if (epoll_ctl(epollfd, EPOLL_CTL_ADD, conn_sock,
-                                   &ev) == -1) {
-                           perror("epoll_ctl: conn_sock");
-                           exit(EXIT_FAILURE);
-                       }
-                   } else {
-                       do_use_fd(events[n].data.fd);
-                   }
-               }
-           }
+      struct epoll_event ev;
+      ev.events = EPOLLIN;
+      ev.data.fd = listen_sock;
+      if (epoll_ctl(epollfd, EPOLL_CTL_ADD, listen_sock, &ev) == -1) 
+      {
+          perror("epoll_ctl: listen_sock");
+          exit(EXIT_FAILURE);
+      }
 
-       When used as an edge-triggered interface, for performance reasons, it is possible to add the file descriptor inside the epoll interface (EPOLL_CTL_ADD) once by specifying  (EPOLLIN|EPOLLOUT).
-       This allows you to avoid continuously switching between EPOLLIN and EPOLLOUT calling epoll_ctl(2) with EPOLL_CTL_MOD.
+      struct epoll_event events[MAX_EVENTS];
+      for (;;) 
+      {
+          int nfds = epoll_wait(epollfd, events, MAX_EVENTS, -1);
+          if (nfds == -1) 
+          {
+              perror("epoll_wait");
+              exit(EXIT_FAILURE);
+          }
 
-   Questions and answers
-       Q0  What is the key used to distinguish the file descriptors registered in an epoll set?
+         for (n = 0; n < nfds; ++n) 
+         {
+             if (events[n].data.fd != listen_sock) 
+             {
+                 do_use_fd(events[n].data.fd);
+             }
+             else
+             {
+                 int conn_sock = accept(listen_sock, (struct sockaddr *) &local, &addrlen);
+                 if (conn_sock == -1) 
+                 {
+                     perror("accept");
+                     exit(EXIT_FAILURE);
+                 }
+                 setnonblocking(conn_sock);
+                 ev.events = EPOLLIN | EPOLLET;
+                 ev.data.fd = conn_sock;
+                 if (epoll_ctl(epollfd, EPOLL_CTL_ADD, conn_sock, &ev) == -1) 
+                 {
+                     perror("epoll_ctl: conn_sock");
+                     exit(EXIT_FAILURE);
+                 }
+             } 
+         }
+      }
 
-       A0  The key is the combination of the file descriptor number and the open file description (also known as an "open file handle", the kernel's internal representation of an open file).
+   When used as an ET interface, for performance reasons, it is possible to add the file descriptor 
+   inside the epoll interface (EPOLL_CTL_ADD) once by specifying  (EPOLLIN|EPOLLOUT). This allows 
+   you to avoid continuously switching between EPOLLIN and EPOLLOUT calling epoll_ctl(2) with EPOLL_CTL_MOD.
 
-       Q1  What happens if you register the same file descriptor on an epoll instance twice?
+**Questions and answers**
 
-       A1  You  will  probably  get EEXIST.  However, it is possible to add a duplicate (dup(2), dup2(2), fcntl(2) F_DUPFD) descriptor to the same epoll instance.  This can be a useful technique for
-           filtering events, if the duplicate file descriptors are registered with different events masks.
+   Q0  What is the key used to distinguish the file descriptors registered in an epoll set?
 
-       Q2  Can two epoll instances wait for the same file descriptor?  If so, are events reported to both epoll file descriptors?
+   A0  The key is the combination of the file descriptor number and the open file description 
+   (also known as an "open file handle", the kernel's internal representation of an open file).
 
-       A2  Yes, and events would be reported to both.  However, careful programming may be needed to do this correctly.
+   Q1  What happens if you register the same file descriptor on an epoll instance twice?
 
-       Q3  Is the epoll file descriptor itself poll/epoll/selectable?
+   A1 You will probably get EEXIST. However, it is possible to add a duplicate (dup(2), dup2(2), 
+   fcntl(2) F_DUPFD) descriptor to the same epoll instance. This can be a useful technique for
+   filtering events, if the duplicate file descriptors are registered with different events masks.
 
-       A3  Yes.  If an epoll file descriptor has events waiting, then it will indicate as being readable.
+   Q2  Can two epoll instances wait for the same file descriptor? If so, are events reported to both epoll file descriptors?
 
-       Q4  What happens if one attempts to put an epoll file descriptor into its own file descriptor set?
+   A2  Yes, and events would be reported to both. However, careful programming may be needed to do this correctly.
 
-       A4  The epoll_ctl(2) call will fail (EINVAL).  However, you can add an epoll file descriptor inside another epoll file descriptor set.
+   Q3  Is the epoll file descriptor itself poll/epoll/selectable?
 
-       Q5  Can I send an epoll file descriptor over a UNIX domain socket to another process?
+   A3  Yes.  If an epoll file descriptor has events waiting, then it will indicate as being readable.
 
-       A5  Yes, but it does not make sense to do this, since the receiving process would not have copies of the file descriptors in the epoll set.
+   Q4  What happens if one attempts to put an epoll file descriptor into its own file descriptor set?
 
-       Q6  Will closing a file descriptor cause it to be removed from all epoll sets automatically?
+   A4  The epoll_ctl(2) call will fail (EINVAL). However, you can add an epoll file descriptor inside another epoll file descriptor set.
 
-       A6  Yes, but be aware of the following point.  A file descriptor is a reference to an open file description (see open(2)).  Whenever a descriptor is duplicated via dup(2),  dup2(2),  fcntl(2)
-           F_DUPFD,  or fork(2), a new file descriptor referring to the same open file description is created.  An open file description continues to exist until all file descriptors referring to it
-           have been closed.  A file descriptor is removed from an epoll set only after all the file descriptors referring to the underlying open file description have been closed (or before if  the
-           descriptor  is explicitly removed using epoll_ctl(2) EPOLL_CTL_DEL).  This means that even after a file descriptor that is part of an epoll set has been closed, events may be reported for
-           that file descriptor if other file descriptors referring to the same underlying file description remain open.
+   Q5  Can I send an epoll file descriptor over a UNIX domain socket to another process?
 
-       Q7  If more than one event occurs between epoll_wait(2) calls, are they combined or reported separately?
+   A5  Yes, but it does not make sense to do this, since the receiving process would not have copies of the file descriptors in the epoll set.
 
-       A7  They will be combined.
+   Q6  Will closing a file descriptor cause it to be removed from all epoll sets automatically?
 
-       Q8  Does an operation on a file descriptor affect the already collected but not yet reported events?
+   A6  Yes, but be aware of the following point. A file descriptor is a reference to an open file 
+      description (see open(2)).  Whenever a descriptor is duplicated via dup(2),  dup2(2),  fcntl(2)
+      F_DUPFD,  or fork(2), a new file descriptor referring to the same open file description is created.  
+      An open file description continues to exist until all file descriptors referring to it have been closed. 
+      A file descriptor is removed from an epoll set only after all the file descriptors referring to the 
+      underlying open file description have been closed (or before if the descriptor is explicitly removed using 
+      epoll_ctl(2) EPOLL_CTL_DEL). This means that even after a file descriptor that is part of an epoll set has 
+      been closed, events may be reported for that file descriptor if other file descriptors referring to the same 
+      underlying file description remain open.
 
-       A8  You can do two operations on an existing file descriptor.  Remove would be meaningless for this case.  Modify will reread available I/O.
+   Q7  If more than one event occurs between epoll_wait(2) calls, are they combined or reported separately?
 
-       Q9  Do I need to continuously read/write a file descriptor until EAGAIN when using the EPOLLET flag (edge-triggered behavior) ?
+   A7  They will be combined.
 
-       A9  Receiving an event from epoll_wait(2) should suggest to you that such file descriptor is ready for the requested I/O operation.  You must consider it ready until  the  next  (nonblocking)
-           read/write yields EAGAIN.  When and how you will use the file descriptor is entirely up to you.
+   Q8  Does an operation on a file descriptor affect the already collected but not yet reported events?
 
-           For packet/token-oriented files (e.g., datagram socket, terminal in canonical mode), the only way to detect the end of the read/write I/O space is to continue to read/write until EAGAIN.
+   A8  You can do two operations on an existing file descriptor.  Remove would be meaningless for this case.  Modify will reread available I/O.
 
-           For stream-oriented files (e.g., pipe, FIFO, stream socket), the condition that the read/write I/O space is exhausted can also be detected by checking the amount of data read from / writ‐
-           ten to the target file descriptor.  For example, if you call read(2) by asking to read a certain amount of data and read(2) returns a lower number of bytes, you  can  be  sure  of  having
-           exhausted the read I/O space for the file descriptor.  The same is true when writing using write(2).  (Avoid this latter technique if you cannot guarantee that the monitored file descrip‐
-           tor always refers to a stream-oriented file.)
+   Q9  Do I need to continuously read/write a file descriptor until EAGAIN when using the EPOLLET flag ?
 
-   Possible pitfalls and ways to avoid them
-       o Starvation (edge-triggered)
+   A9  Receiving an event from epoll_wait(2) should suggest to you that such file descriptor is ready 
+      for the requested I/O operation. You must consider it ready until the next (nonblocking)
+      read/write yields EAGAIN. When and how you will use the file descriptor is entirely up to you.
 
-       If there is a large amount of I/O space, it is possible that by trying to drain it the other files will not get processed causing starvation.  (This problem is not specific to epoll.)
+      For packet/token-oriented files (e.g., datagram socket, terminal in canonical mode), the only way 
+      to detect the end of the read/write I/O space is to continue to read/write until EAGAIN.
 
-       The solution is to maintain a ready list and mark the file descriptor as ready in its associated data structure, thereby allowing the application to remember which files need to be  processed
-       but still round robin amongst all the ready files.  This also supports ignoring subsequent events you receive for file descriptors that are already ready.
+      For stream-oriented files (e.g., pipe, FIFO, stream socket), the condition that the read/write I/O space 
+      is exhausted can also be detected by checking the amount of data read from / written to the target file 
+      descriptor. For example, if you call read(2) by asking to read a certain amount of data and read(2) returns 
+      a lower number of bytes, you can be sure of having exhausted the read I/O space for the file descriptor. 
+      The same is true when writing using write(2). Avoid this latter technique if you cannot guarantee that the 
+      monitored file descriptor always refers to a stream-oriented file.
 
-       o If using an event cache...
+**Possible pitfalls and ways to avoid them**
 
-       If  you  use  an event cache or store all the file descriptors returned from epoll_wait(2), then make sure to provide a way to mark its closure dynamically (i.e., caused by a previous event's
-       processing).  Suppose you receive 100 events from epoll_wait(2), and in event #47 a condition causes event #13 to be closed.  If you remove the structure and close(2) the file descriptor  for
-       event #13, then your event cache might still say there are events waiting for that file descriptor causing confusion.
+   #. Starvation (edge-triggered)
 
-       One solution for this is to call, during the processing of event 47, epoll_ctl(EPOLL_CTL_DEL) to delete file descriptor 13 and close(2), then mark its associated data structure as removed and
-       link it to a cleanup list.  If you find another event for file descriptor 13 in your batch processing, you will discover the file descriptor had been previously removed and there will  be  no
-       confusion.
+      If there is a large amount of I/O space, it is possible that by trying to drain it 
+      the other files will not get processed causing starvation. 
 
-VERSIONS
-       The epoll API was introduced in Linux kernel 2.5.44.  Support was added to glibc in version 2.3.2.
+      The solution is to maintain a ready list and mark the file descriptor as ready in its 
+      associated data structure, thereby allowing the application to remember which files 
+      need to be processed but still round robin amongst all the ready files. This also 
+      supports ignoring subsequent events you receive for file descriptors that are already ready.
 
-CONFORMING TO
-       The epoll API is Linux-specific.  Some other systems provide similar mechanisms, for example, FreeBSD has kqueue, and Solaris has /dev/poll.
+   #. If using an event cache...
 
-SEE ALSO
-       epoll_create(2), epoll_create1(2), epoll_ctl(2), epoll_wait(2), poll(2), select(2)
+      If you use an event cache or store all the file descriptors returned from epoll_wait(2), 
+      then make sure to provide a way to mark its closure dynamically (i.e., caused by a previous 
+      event's processing). Suppose you receive 100 events from epoll_wait(2), and in event #47 a 
+      condition causes event #13 to be closed. If you remove the structure and close(2) the file 
+      descriptor for event #13, then your event cache might still say there are events waiting 
+      for that file descriptor causing confusion.
 
-COLOPHON
-       This  page  is  part  of  release  4.04  of  the Linux man-pages project.  A description of the project, information about reporting bugs, and the latest version of this page, can be found at
-       http://www.kernel.org/doc/man-pages/.
-
-Linux                                                                                         2015-04-19                                                                                      EPOLL(7)
+      One solution for this is to call, during the processing of event 47, epoll_ctl(EPOLL_CTL_DEL) 
+      to delete file descriptor 13 and close(2), then mark its associated data structure as removed 
+      and link it to a cleanup list. If you find another event for file descriptor 13 in your batch 
+      processing, you will discover the file descriptor had been previously removed and there will  
+      be no confusion.                                                                      

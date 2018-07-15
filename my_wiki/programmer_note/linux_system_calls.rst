@@ -15,6 +15,7 @@ Linux System Call
    linux_system_call/socket_overview
    linux_system_call/select_manual
    linux_system_call/poll_manual
+   linux_system_call/epoll_manual
    linux_system_call/pipe_manual
    linux_system_call/fcntl_manual
    linux_system_call/umask_info

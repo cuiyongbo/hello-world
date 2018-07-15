@@ -105,4 +105,7 @@ English Note 6
 | 
 | shamble
 | Definition: to walk in an awkward or lazy way, as if dragging your feet along the ground. [拖着脚走；蹒跚]
-
+| 
+| speed up
+| Definition: move or work more quickly.
+| Usage: you force yourself to speed up because you don't want to keep others waiting.
