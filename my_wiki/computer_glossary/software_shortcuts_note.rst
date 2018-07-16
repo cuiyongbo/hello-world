@@ -87,7 +87,7 @@ Chrome
 #. Alt + Left Arrow: Open last place
 #. Alt + Right Arrow: Open next place
 #. Show History: Ctrl + H
-
+#. Search with default engine: Ctrl + L
 
 FireFox
 =======

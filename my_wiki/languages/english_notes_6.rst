@@ -109,3 +109,24 @@ English Note 6
 | speed up
 | Definition: move or work more quickly.
 | Usage: you force yourself to speed up because you don't want to keep others waiting.
+
+clean slate
+Definition: an absence of existing restraints or commitments.
+Usage: no government starts with a clean slate.
+
+inevitable
+Synonyms: unavoidable.
+Usage: War was inevitable.
+
+ripple effect
+
+out of hand
+Definition: no under control
+
+falter [窝囊]
+corporate
+
+tangible
+Antonyms: intangible
+Definition: perceptible by touch.
+

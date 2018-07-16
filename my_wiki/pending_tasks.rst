@@ -2,6 +2,10 @@
 Pending tasks
 *************
 
+#. speed up ti tile compilation
+   - extract PointMap building
+   - Grid splitting
+
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
