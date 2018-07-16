@@ -109,24 +109,73 @@ English Note 6
 | speed up
 | Definition: move or work more quickly.
 | Usage: you force yourself to speed up because you don't want to keep others waiting.
+| 
+| clean slate
+| Definition: an absence of existing restraints or commitments.
+| Usage: no government starts with a clean slate.
+| 
+| inevitable
+| Synonyms: unavoidable.
+| Usage: War was inevitable.
+| 
+| out of hand
+| Definition: not under control
+| Definition: without taking time to think.
+| Usage: She's so stubborn that she just rejected my suggestion out of hand.
+| 
+| falter [窝囊]
+| Definition: start to lose strength or momentum.
+| Usage: her smile faltered and then faded.
+| Definition: speak in a hesitant or unsteady voice.
+| Usage: “I c-c-can't,” he faltered. [结巴]
+| Definition: move unsteadily or in a way that shows lack of confidence.
+| Usage: the baby's first faltering steps. [蹒跚学步]
+| 
+| stammer [结巴，打颤]
+| Definition: speak with sudden involuntary pauses and a tendency to repeat the initial letters of words.
+| Usage: “I … I can’t,” Isabel stammered.
+| 
+| corporate
+| corporation
+| Definition: relating to a corporation.
+| Usage: airlines are very keen on their corporate identity. [公司形象]
+| 
+| tangiblei
+| tangiblity
+| Antonyms: intangible
+| Definition: perceptible by touch.
+| Usage: the atmosphere of neglect and abandonment was almost tangible.
+| 
+| curare
+| Definition: 箭毒 (马鞍子的毒素，南美洲印地安人用以浸制毒箭).
+| 
+| comeuppance
+| Definition: a punishment or fate that someone deserves. [报应]
+| Usage: I was glad to see that the bad guy got his comeuppance at the end.
+|
+| hard-pressed
+| Definition: closely pursued.
+| Usage: the hard-pressed French infantry. [紧追不舍]
+| Definition: burdened with urgent business.
+| Usage: training centers are hard-pressed and insufficient in numbers.
+| Definition: in difficulties.
+| Usage: many families will be hard pressed to support their elderly relations.
 
-clean slate
-Definition: an absence of existing restraints or commitments.
-Usage: no government starts with a clean slate.
+.. figure:: images/ripple-effect.jpg
 
-inevitable
-Synonyms: unavoidable.
-Usage: War was inevitable.
+   Ripple effect
 
-ripple effect
-
-out of hand
-Definition: no under control
-
-falter [窝囊]
-corporate
-
-tangible
-Antonyms: intangible
-Definition: perceptible by touch.
+   A ripple effect is a situation in which, like ripples expanding across the water 
+   when an object is dropped into it, an effect from an initial state can be followed 
+   outwards incrementally.
+   
+   Ripple effect is often used colloquially to mean a multiplier (economics).
+   
+   In sociology, it can be observed how social interactions can affect situations 
+   not directly related to the initial interaction, and in charitable activities 
+   where information can be disseminated and passed from community to community 
+   to broaden its impact.
+   
+   The concept has been applied in computer science within the field of software 
+   metrics as a complexity measure.
 

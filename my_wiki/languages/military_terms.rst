@@ -581,3 +581,8 @@ not become complacent about its development.
 .. figure:: images/camion.jpg
 
    Camion 大卡车，军用卡车
+
+
+.. figure:: images/nonviolence_banner.jpg
+
+   nonviolence: the use of peaceful means, not force, to bring about political or social change.

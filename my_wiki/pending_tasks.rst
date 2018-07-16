@@ -17,3 +17,5 @@ Pending tasks
    
 #. https://en.wikipedia.org/wiki/Normal_distribution
 #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
+
+#. https://en.wikipedia.org/wiki/Cohen–Sutherland_algorithm

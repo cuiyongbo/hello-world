@@ -1100,10 +1100,6 @@ English Note
 | hobgoblin [哥布林]
 | Defintion: (in stories) a small ugly creature that likes to trick people or cause trouble.
 | 
-| stammer [结巴，打颤]
-| Definition: speak with sudden involuntary pauses and a tendency to repeat the initial letters of words.
-| Usage: “I … I can’t,” Isabel stammered.
-| 
 | inadvertent
 | Definition: An inadvertent action is one that you do without realizing what you are doing.
 | Synonyms: unintentional, not deliberate
