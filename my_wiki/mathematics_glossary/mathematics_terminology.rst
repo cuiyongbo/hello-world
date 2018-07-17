@@ -55,7 +55,8 @@ I think, therefore I am
 | quadrilateral 四边形
 | colinear 共线
 | polyheron 多面体
-| convex polygon [凸多边形]
+| convex polygon 凸多边形
+| diagonal 对角线
 | 
 | significant digits 有效数字
 | scientific notation 科学计数法

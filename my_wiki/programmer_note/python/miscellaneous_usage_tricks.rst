@@ -156,29 +156,6 @@ sys Module Tricks
 +---------------+------------------------------------------------------------------+
 
 
-json Module Tricks
-==================
-
-==============  =============
-json type       python type  
-==============  =============
-json array      list         
-json object     dict         
-json string     str          
-json integer    int, float   
-json true       True         
-json fase       False        
-json null       None         
-==============  =============
-
-.. note:: 
-  
-   Locate module::
-
-      >>> json.__file__
-      '/usr/lib/python2.7/json/__init__.pyc'
-
-
 Executable Python Scripts
 =========================
 
