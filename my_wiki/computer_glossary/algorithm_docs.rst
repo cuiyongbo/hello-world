@@ -14,4 +14,5 @@ Algorithms
    algorithms/point_in_polygon_2
    algorithms/distance_of_a_point_to_line
    algorithms/triangle_polygon_area
+   algorithms/line_splitting_alg
    algorithms/single_precision_floating_point_format
