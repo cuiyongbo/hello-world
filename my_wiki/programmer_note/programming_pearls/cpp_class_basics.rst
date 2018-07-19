@@ -22,8 +22,8 @@ Basically you are not advised to do ``delete this`` operation unless
    * You will **NEVER** use the pointer again after you delete it.
 
 
-Declare class constructor as private
-====================================
+Declare class constructor as ``private/protected``
+==================================================
 
 Here are some of the uses of private constructor :
 
@@ -32,7 +32,7 @@ Here are some of the uses of private constructor :
    * To limit the number of instance creation
    * To give meaningful name for object creation using static factory method
    * Static Utility Class or Constant Class
-   * To prevent Subclassing (lose the chance to be inherited)
+   * To prevent Subclassing (lose the chance to be inherited) [private only]
    * Builder Design Pattern and thus for creating immutable classes
 
 
@@ -287,3 +287,64 @@ Friendship is neither inherited nor transive. For example::
          p->a++; // error: D is not a friend of A, despite being derived from a friend of A
       }
    };
+
+
+Design pattern - Lazy loading
+=============================
+
+Lazy loading is a design pattern commonly used in computer programming to defer initialization of an object 
+until the point at which it is needed. It can contribute to efficiency in the program's operation if properly 
+and appropriately used.
+
+.. code-block:: cpp
+   :caption: a common sample implementation
+
+
+   // widget.h
+   class Widget
+   {
+   public:
+      void setOpts(Options opts);
+      void setNeedUpdate(bool enabled) { m_needUpdate = enabled;}
+      App mostOftenUsed();
+
+   protected:
+      void updateIfNeeded();
+      void update();
+
+   private:
+      bool m_needUpdate;
+      Options m_opts;
+      App m_mostOftenUsedItem;
+      // ...
+   };
+
+   // widget.cpp
+   void Widget::setOpts(Options opts)
+   {
+      if(m_opts != opts)
+      {
+         m_opts = opts;
+         setNeedUpdate(true);
+      }
+   }
+
+   App widget::mostOftenUsed()
+   {
+      updateIfNeeded();
+      return m_mostOftenUsedItem;
+   }
+
+   void updateIfNeeded()
+   {
+      if(m_needUpdate)
+      {
+         m_needUpdate = false;
+         update();
+      }
+   }
+
+   void Widget::update()
+   {
+      // perform some works
+   }

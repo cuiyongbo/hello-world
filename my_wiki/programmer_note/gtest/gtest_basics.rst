@@ -101,6 +101,13 @@ Assertion Behavior::
       Do not report exceptions as test failures. Instead, allow them
       to crash the program or throw a pop-up (on Windows).
 
+Skip certain tests::
+
+   add DISABLED_ before the test you wish to skip.
+   for example, change TEST_F(AutomationCarTester, inhibitSAutoSleep)
+   to TEST_F(AutomationCarTester, DISABLED_inhibitSAutoSleep) to skip
+   AutomationCarTester.inhibitSAutoSleep test.
+
 
 **ASSERT MACROS**
 
