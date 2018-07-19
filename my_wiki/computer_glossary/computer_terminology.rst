@@ -10,7 +10,6 @@ Computer Terminology
 | two’s complement [二进制补码]
 | backward compatibility [向下兼容]
 | regression test [回归测试]
-| divide-and-conquer [分而治之]
 | compile time
 | run-time
 | predecessor [前驱]
@@ -31,6 +30,7 @@ Computer Terminology
 | UTC = Coordinated Universal Time
 | synchronous vs asynchronous
 | BOM = Bill of Materials
+| IOPS = Input / Output Per Second
 |
 | concatenate
 | concatenation
@@ -378,3 +378,8 @@ the promise that it can do anthing, will magically adapt to whatever customer si
 front of them. This narrow-minded [狭隘] line of thinking prevents the discovery of creative, 
 think-outside-of-the-box [打破常规，打破思维定势] solutions who unfortunately become burdened by 
 the limitations of the imposed 'tools of choice'.
+
+| divide-and-rule
+| divide-and-conquer [分而治之]
+| Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.
+|

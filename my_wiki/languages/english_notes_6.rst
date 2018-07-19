@@ -160,6 +160,12 @@ English Note 6
 | Usage: training centers are hard-pressed and insufficient in numbers.
 | Definition: in difficulties.
 | Usage: many families will be hard pressed to support their elderly relations.
+| 
+| dissent
+| Defintion: the fact of having or expressing opinions that are different from those that are officially accepted.
+| Usage: political/ religious dissent. [异议]
+| Usage: Only two ministers dissented from the official view. 
+|
 
 .. figure:: images/ripple-effect.jpg
 
