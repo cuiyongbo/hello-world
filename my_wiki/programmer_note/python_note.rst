@@ -2,6 +2,7 @@ Python note
 ===========
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 2
 
    python/python_built_in_types

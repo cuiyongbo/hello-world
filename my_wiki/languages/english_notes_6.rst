@@ -166,6 +166,13 @@ English Note 6
 | Usage: political/ religious dissent. [异议]
 | Usage: Only two ministers dissented from the official view. 
 |
+| implicit
+| implicitation
+| Antonyms: explicit.
+| Definition: implied though not plainly expressed.
+| Usage: comments seen as implicit criticism of the policies. [暗讽]
+| Usage: the implication is that no one person at the bank is responsible.
+|
 
 .. figure:: images/ripple-effect.jpg
 
@@ -184,4 +191,5 @@ English Note 6
    
    The concept has been applied in computer science within the field of software 
    metrics as a complexity measure.
+
 

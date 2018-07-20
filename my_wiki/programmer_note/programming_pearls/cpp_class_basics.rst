@@ -88,6 +88,29 @@ exactly to which class the object pointed to by *p* belongs, but thanks to Ival_
 destructor, proper cleanup as (optionally) defined by that class’ destructor will be called.
 
 
+Difference between assignment and copy constructor
+==================================================
+
+Copy constructor initializes an uninitialized object with an initialized one;
+while assignment re-initilizes an initialized object with another initialized one.
+
+You could replace copy construction by default construction plus assignment, 
+but that would be less efficient.
+
+.. code-block:: cpp
+
+   A(const A& other): m_data(other.m_data) {}
+   A& operator=(const A& other) 
+   {
+      if(this != &other)
+      {
+         cleanup(m_data);
+         m_data = other.m_data;
+      }
+      return *this;
+   }
+
+
 C++ class example
 =================
 

@@ -117,12 +117,12 @@ Windows Problems
 
 #. Sublime Text "git_binary" setting problem.
    
-   ..image:: images/sublime_text_git_binary_setting.png
+   .. image:: images/sublime_text_git_binary_setting.png
 
    Set git_binary setting to your full git path in user profile.
    for example::
 
-      "git_binary": "C:/Program Files/Git/bin/git.exe"
+      "git_binary": "C:/Program Files/Git/cmd/git.exe"
 
 #. xShell gets frozen after accidently typing "Ctrl - S"
    
