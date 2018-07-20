@@ -4,6 +4,10 @@
 C++ Class Tricks
 ****************
 
+.. toctree::
+   
+   cpp_operator_overloading
+
 .. contents::
    :local:
 
@@ -184,7 +188,6 @@ C++ class example
       int b;
    };
 
-   
 
 C++ enumerator example
 ======================
