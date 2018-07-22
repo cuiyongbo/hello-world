@@ -2,6 +2,9 @@
 C++ Operator overloading
 ************************
 
+.. [MSDN]   https://msdn.microsoft.com/en-us/library/5tk49fh2.aspx
+.. [Cppreference]  https://en.cppreference.com/w/cpp/language/operators
+
 .. contents::
    :local:
 
@@ -192,4 +195,3 @@ Output::
    custom new for size 8
    global op new called, size = 8
    global op delete called
-

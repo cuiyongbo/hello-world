@@ -5,6 +5,7 @@ C++ Class Tricks
 ****************
 
 .. toctree::
+   :titlesonly:
    
    cpp_operator_overloading
 

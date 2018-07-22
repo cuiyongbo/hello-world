@@ -121,3 +121,6 @@ xargs Manual
       # Mostly use -exec option instead when coming to find command
       find . -type f -name "*.rst" -exec wc -l {} \; | sort
       find . -type f -name "*.log"  -delete
+
+      # Delete all the excutables except scripts in current directory.
+      file * | grep executable | grep -v script | xargs rm -f

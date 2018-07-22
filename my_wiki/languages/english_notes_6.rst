@@ -173,6 +173,16 @@ English Note 6
 | Usage: comments seen as implicit criticism of the policies. [暗讽]
 | Usage: the implication is that no one person at the bank is responsible.
 |
+| morgue
+| Definition: a place where bodies are kept, especially to be identified or claimed.
+| Synonyms: mortuary 霊安室  太平间，停尸间
+| Usage: the cadavers were bagged and removed to the city morgue.
+| Definition: used metaphorically to refer to a place that is quiet, gloomy, or cold.
+| Usage: she put us in that drafty morgue of a sitting room.
+| 
+| cadaver
+| Synonyms: corpse
+| 
 
 .. figure:: images/ripple-effect.jpg
 
