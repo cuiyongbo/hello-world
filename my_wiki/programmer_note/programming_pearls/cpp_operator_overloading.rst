@@ -195,3 +195,37 @@ Output::
    custom new for size 8
    global op new called, size = 8
    global op delete called
+
+
+Pointer-to-member operator howto
+================================
+
+**Not suggested to use.**
+
+.. code-block:: cpp
+
+   struct  Integer
+   {
+       int f() {printf("f()\n");}
+       int a;
+   };
+   
+   int main()
+   {
+       Integer tt;
+       int (Integer::*intMemPtr);
+       intMemPtr = &Integer::a;
+       tt.*intMemPtr = 123;
+       printf("tt.a = %d\n", tt.a);
+   
+       int (Integer::*intFunc)();
+       intFunc = &Integer::f;
+       (tt.*intFunc)();
+   
+       return 0;
+   }
+
+Output::
+
+   tt.a = 123
+   f()
