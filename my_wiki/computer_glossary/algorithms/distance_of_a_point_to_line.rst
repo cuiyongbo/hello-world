@@ -23,13 +23,13 @@ and for two points :math:`P=(p_1,...,p_n) \text{ and } Q=(q_1,...,q_n)`, the dis
 Line Equations
 ==============
 
-=============  ===========================  ===========================
-Type           Equation                     Usage                      
-=============  ===========================  ===========================
-Explicit 2D    :math:`y=f(x)=mx+b`          a non-vertical 2D line     
-Implicit 2D    :math:`f(x,y)=ax+by+c=0`     any 2D line                
-Parametric     :math:`P(t) = P_0 + tv_L`    any line in any dimension  
-=============  ===========================  ===========================
+======================  ===========================  ===========================
+Type                    Equation                     Usage                      
+======================  ===========================  ===========================
+Explicit 2D Equation    :math:`y=f(x)=mx+b`          a non-vertical 2D line     
+Implicit 2D Equation    :math:`f(x,y)=ax+by+c=0`     any 2D line                
+Parametric Equation     :math:`P(t) = P_0 + tv_L`    any line in any dimension  
+======================  ===========================  ===========================
 
 PS: :math:`v_L` is the unit directional vector.
 

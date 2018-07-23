@@ -9,6 +9,7 @@ Algorithms
    algorithms/bucket_sort_alg
    algorithms/selection_sort_alg
    algorithms/insertion_sort_alg
+   algorithms/quick_sort_alg
    algorithms/hot_gis_algs
    algorithms/point_in_polygon
    algorithms/point_in_polygon_2

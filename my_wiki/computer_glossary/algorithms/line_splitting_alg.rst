@@ -4,7 +4,7 @@ Cohen–Sutherland algorithm
 
 The Cohen–Sutherland algorithm is a computer-graphics algorithm used for line clipping. 
 The algorithm divides a two-dimensional space into 9 regions and then efficiently determines 
-the lines and portions of lines that are visible in the central region of interest (the viewport).
+the lines and portions of lines that are visible in the viewport.
 
 The algorithm was developed in 1967 during flight-simulator work by Danny Cohen and Ivan Sutherland.
 

@@ -105,6 +105,7 @@ English Note 6
 | 
 | shamble
 | Definition: to walk in an awkward or lazy way, as if dragging your feet along the ground. [拖着脚走；蹒跚]
+| Usage: he shambled off down the corridor.
 | 
 | speed up
 | Definition: move or work more quickly.
@@ -183,6 +184,13 @@ English Note 6
 | cadaver
 | Synonyms: corpse
 | 
+| devoid
+| Definition: entirely lacking or free from.
+| Usage: Lisa kept her voice devoid of emotion.
+| 
+| taxonomy [分类]
+| Definition: the branch of science concerned with classification, especially of organisms; systematics.
+|
 
 .. figure:: images/ripple-effect.jpg
 
