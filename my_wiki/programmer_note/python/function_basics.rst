@@ -155,7 +155,7 @@ Keyword Arguments
 =================
 
 Functions can also be called using keyword arguments of the form ``kwarg=value``. 
-For instance, the following function:
+For instance, the following function::
 
    def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
        print "-- This parrot wouldn't", action,

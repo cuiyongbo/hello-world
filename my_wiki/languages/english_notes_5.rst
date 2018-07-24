@@ -24,6 +24,13 @@ English Notes 5
 | condiment [调料，酱汁]
 | Definition: a substance such as salt or ketchup(番茄酱) that is used to add flavor to food.
 | 
+| pickle
+| Definition: to keep vegetables or fruites in vinegar or salt water so that it doesn't go bad and it develops a strong, sharp taste.
+| Usage: Herrings can be salted, smoked and pickled. [腌制]
+| Phrase: in a pickle
+| Definition: in a difficult and awkward situation.
+| Usage: Caroline had sure as hell got herself into a pickle this time.
+| 
 | churn
 | Definition: a machine or container in which butter is made by agitating milk or cream.
 | Phrase: churn something out

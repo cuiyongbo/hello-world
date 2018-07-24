@@ -9,6 +9,9 @@ Python note
    python/python_built_in_functions
    python/control_overflow
    python/function_basics
+   python/builtin_set_notes
+   python/builtin_dict_notes
+   python/builtin_file_notes
    python/string_notes
    python/urllib_tricks
    python/sort_tricks
@@ -18,5 +21,5 @@ Python note
    python/unittest_module_note
    python/os_module_tricks
    python/json_module_tricks
-   python/miscellaneous_usage_tricks
+   python/miscellaneous_tricks
    python/application_examples

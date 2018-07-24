@@ -2,7 +2,6 @@
 Miscellaneous Usages
 ********************
 
-
 input vs raw_input
 ==================
 
@@ -92,15 +91,6 @@ Useful Function List
 +------------------------------+------------------------------------------------------------------------+
 | ``len(object)``              | Return the number of items of a sequence or collection.                |
 +------------------------------+------------------------------------------------------------------------+
-   
-    
-Binary to Decimal
-=================
-
-.. code-block:: python
-
-  >>> int("1111", 2)
-  15
 
 
 Python ByteOrder
@@ -154,6 +144,22 @@ sys Module Tricks
 +---------------+------------------------------------------------------------------+
 | byteorder     | system byteorder                                                 |
 +---------------+------------------------------------------------------------------+
+
+.. code-block:: py
+
+   >>> import sys
+   >>> dir(sys)
+   ['api_version', 'argv', 'builtin_module_names', 'byteorder', 'call_tracing', 'callstats', 'copyright', 'displayhook', 
+   'dont_write_bytecode', 'exc_clear', 'exc_info', 'exc_type', 'excepthook', 'exec_prefix', 'executable', 'exit', 'flags', 
+   'float_info', 'float_repr_style', 'getcheckinterval', 'getdefaultencoding', 'getdlopenflags', 'getfilesystemencoding', 
+   'getprofile', 'getrecursionlimit', 'getrefcount', 'getsizeof', 'gettrace', 'hexversion', 'long_info', 'maxint', 'maxsize', 
+   'maxunicode', 'meta_path', 'modules', 'path', 'path_hooks', 'path_importer_cache', 'platform', 'prefix', 'ps1', 'ps2', 'py3kwarning', 
+   'pydebug', 'setcheckinterval', 'setdlopenflags', 'setprofile', 'setrecursionlimit', 'settrace', 'stderr', 'stdin', 'stdout', 
+   'subversion', 'version', 'version_info', 'warnoptions']
+   >>> sys.version
+   '2.7.6 (default, Oct 26 2016, 20:30:19) \n[GCC 4.8.4]'
+   >>> sys.version_info
+   sys.version_info(major=2, minor=7, micro=6, releaselevel='final', serial=0)
 
 
 Executable Python Scripts
@@ -249,8 +255,8 @@ Add command(s) you want to execute in :file:`~/.pythonrc`. like::
   from pprint import pprint
 
 
-Python3
-=======
+Python3 install/uninstall
+=========================
 
 Install python3::
 
@@ -284,3 +290,18 @@ Convert uncode string to Chinese characters
 
    >>> print '\u5f53\u524d\u9053\u8def\u56e0\u9053\u8def\u65bd\u5de5\u7981\u6b62\u901a\u884c'.decode('unicode-escape')
    当前道路因道路施工禁止通行
+
+
+Binary to Decimal
+=================
+
+.. code-block:: py
+
+   >>> int("1111", 2)
+   15
+   
+   >>> def get_int_big_endian(data):
+   ...     return int(data.encode('hex'), 16)
+   ...
+   >>> def get_int_little_endian(data):
+   ...     return int(data[::-1].encode('hex'), 16)

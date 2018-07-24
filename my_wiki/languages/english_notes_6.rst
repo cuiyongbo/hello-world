@@ -217,6 +217,11 @@ English Note 6
 | Synonyms: make-shift.
 | Usage: the group was constituted ad hoc
 | Definition: ad hoc committees to examine specific problems. [临时委员]
+|
+| preclude
+| Definition: to prevent something from happening.
+| Usage: At 84, Jone feels his age precludes too much travel.
+| Usage: In some cases poor English precludes them from ever finding a job.
 | 
 | android
 | Definition: (in science fiction) a robot with a human appearance.
