@@ -191,6 +191,39 @@ English Note 6
 | taxonomy [分类]
 | Definition: the branch of science concerned with classification, especially of organisms; systematics.
 |
+| meteorology [气象学]
+| meteorological
+| Definition: relating to the branch of science concerned with the processes and phenomena of the atmosphere, especially as a means of forecasting the weather.
+| Usage: the effect of global warming on meteorological conditions.
+| 
+| introspection
+| introspective
+| Definition: the examination or observation of one's own mental and emotional processes.
+| Usage: quiet introspection can be extremely valuable. [冥想，内省]
+| Usage: he grew withdrawn and introspective.
+| 
+| dictrum
+| Definition: a formal pronouncement from an authoritative source.
+| Usage: the First Amendment dictum that “Congress shall make no law ... abridging the freedom of speech."
+| 
+| abridge
+| Definition: shorten (a piece of writing) without losing the sense.
+| Usage: the introduction is abridged from the author's afterword to the novel.
+| Definition: curtail (a right or privilege).
+| Usage: even the right to free speech can be abridged.
+| 
+| ad-hoc
+| Definition: when necessary or needed.
+| Synonyms: make-shift.
+| Usage: the group was constituted ad hoc
+| Definition: ad hoc committees to examine specific problems. [临时委员]
+| 
+| android
+| Definition: (in science fiction) a robot with a human appearance.
+| Usage: a space station inhabited only by androids.
+| Definition: an OS developed by Google running on mobile phones.
+
+.. image:: images/android.jpg
 
 .. figure:: images/ripple-effect.jpg
 
