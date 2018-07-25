@@ -38,9 +38,7 @@ Make Manual
 
    Normally you should call your makefile either makefile or Makefile. (We recommend Makefile because 
    it appears prominently near the beginning of a directory listing, right near other important files 
-   such as README.)  The first name checked, GNUmakefile, is not recommended for most makefiles. You 
-   should use this name if you have a makefile that is specific to GNU  make, and will not be understood 
-   by other versions of make.  If makefile is '-', the standard input is read.
+   such as README.) 
 
    make updates a target if it depends on prerequisite files that have been modified since the target was 
    last modified, or if the target does not exist.

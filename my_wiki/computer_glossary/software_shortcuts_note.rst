@@ -89,6 +89,7 @@ Chrome
 #. Show History: Ctrl + H
 #. Search with default engine: Ctrl + L
 
+
 FireFox
 =======
 
@@ -166,9 +167,9 @@ Mac OS X
 #. Force Close: Command＋Q
 #. Force quit: Command＋option＋ESC
 #. Open SpotLight: Command＋空格
-#. 截取全屏幕: Command＋shift＋3
-#. 选定区域截图: Command+shift+4
-#. 截取单个窗口: Command＋shift＋4+空格
+#. Print Screen: Command＋shift＋3
+#. Screen shot selected area: Command+shift+4
+#. Screen certain window: Command＋shift＋4+空格
 #. clip screeshot to clipboard:  control +上述截图命令可将截图复制到剪贴板而不是保存到桌面
 #. Open Dock: Command＋option＋D(not in fullscreen)
 #. Empty Trash: Shift + CMD + Del
@@ -211,6 +212,28 @@ Ubuntu Terminal
 #. New tab – Ctrl + Shift + T
 #. Switch between tabs - Ctrl + PD/PU(linux), Fn + Ctrl + Up/Down (mac)
 #. Close tab – Ctrl + Shift + W
+
+
+Vim
+===
+
+#. Search and find - Shift + # (vim)
+#. Show Current Line in bottom - Ctrl + G
+#. Completion - Ctrl + N / P
+#. Jump to line n - n, gg
+#. Jump to the begin - gg
+#. Jump to the end - Shift + G
+#. Jump to the begin of current line - Shift + ^
+#. Jump to the end of current line - Shift + $
+#. x 删除光标下的字符 ("dl" 的缩写)
+#. X 删除光标前的字符 ("dh" 的缩写)
+#. D 从当前位置删除到行尾 ("d$" 的缩写) 
+#. dw 从当前位置删除到下一个单词开头
+#. db 从当前位置删除到前一个单词的开头 
+#. diw 删除光标上的单词 (不包括空白字符) 
+#. daw 删除光标上的单词 (包括空白字符)
+#. dG 删除到文件末
+#. dgg 删除到文件首
 
 
 Sublime-rst-completion

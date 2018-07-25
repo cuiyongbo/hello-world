@@ -45,8 +45,6 @@ Property
 +-----------------------------+--------------------------------------+
 | Worst-case performance      | :math:`О(n^2)` comparisons, swaps    |
 +-----------------------------+--------------------------------------+
-| Best-case performance       | **O(n)** comparisons, **O(1)** swaps |
-+-----------------------------+--------------------------------------+
 | Average performance         | :math:`О(n^2)` comparisons, swaps    |
 +-----------------------------+--------------------------------------+
 | Worst-case space complexity | **О(n)** total, **O(1)** auxiliary   |
@@ -101,9 +99,9 @@ The most common variant of insertion sort, which operates on arrays, can be desc
      into which the element is inserted is stored at the beginning of the array in the set of 
      indices already examined. Each insertion overwrites a single value: the value being inserted.
 
-
 Pseudocode of the complete algorithm follows, where the arrays are zero-based::
 
+   # Solution 1
    i <-- 1
    while i < length(A)
        j <-- i
@@ -114,17 +112,7 @@ Pseudocode of the complete algorithm follows, where the arrays are zero-based::
        i <-- i + 1
    end while
 
-The outer loop runs over all the elements except the first one, because the single-element 
-prefix *A[0:1]* is trivially sorted, so the invariant that the first *i+1* entries are sorted 
-is true from the start. The inner loop moves element *A[i]* to its correct place so that after 
-the loop, the first *i+2* elements are sorted. Note that the and-operator in the test must use 
-short-circuit evaluation, otherwise the test might get stuck with an array bounds error, when 
-*j=0* and it tries to evaluate ``A[j-1] > A[j]`` (i.e. accessing *A[-1]* fails).
-
-After expanding the swap operation in-place as ``x <-- A[j]; A[j] <-- A[j-1]; A[j-1] <--- x`` 
-(where *x* is a temporary variable), a slightly faster version can be produced that moves *A[i]* 
-to its position in one go and only performs one assignment in the inner loop body::
-
+   # Solution 2
    i <-- 1
    while i < length(A)
       x = A[i]
@@ -136,8 +124,6 @@ to its position in one go and only performs one assignment in the inner loop bod
        A[j] <-- x
        i <-- i + 1
    end while
-
-The new inner loop shifts elements to the right to clear a spot for ``x = A[i]``.
 
 The algorithm can also be implemented in a recursive way. The recursion just replaces the outer loop, 
 calling itself and storing successively smaller values of *n* on the stack until *n* equals 0, where 

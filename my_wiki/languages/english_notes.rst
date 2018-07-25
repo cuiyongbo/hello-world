@@ -35,11 +35,7 @@ English Note
 | Definition: An encyclopedia is a book or set of books in which facts about many different subjects or about one particular subject are arranged for reference, usually in alphabetical order.
 | 
 | glossary
-| Definition: A glossary of special, unusual, or technical words or expressions is an alphabatical list of them giving their meanings, for example at the end of | a book on a particular subject.
-| 
-| nomenclature [命名法]
-| Definition: The nomenclature of a particular set of things is the system of naming those things.
-| Usage: Mistakes arising from ignorance of the nomenclature of the  woody plants.
+| Definition: A glossary of special, unusual, or technical words or expressions is an alphabatical list of them giving their meanings, for example at the end of a book on a particular subject.
 | 
 | terminology
 | Definition: The terminology of a subject is the set of special words and expressions used in connecting with it.

@@ -31,6 +31,10 @@ Computer Terminology
 | synchronous vs asynchronous
 | BOM = Bill of Materials
 | IOPS = Input / Output Per Second
+| CRC card = Class, Responsibility, and Collaborators card
+|
+| divide-and-rule / divide-and-conquer [分而治之]
+| Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.
 |
 | concatenate
 | concatenation
@@ -351,7 +355,8 @@ for by exactly 86400 seconds.
       significant byte, '2' in the second least significant byte, and '1'
       in the least significant byte, and then writing down one digit for
       each byte, starting with the byte at the lowest address at the left,
-      and proceeding to the byte with the highest address at the right.  */
+      and proceeding to the byte with the highest address at the right.  
+   */
    
    #define __LITTLE_ENDIAN 1234
    #define __BIG_ENDIAN    4321
@@ -379,7 +384,14 @@ front of them. This narrow-minded [狭隘] line of thinking prevents the discove
 think-outside-of-the-box [打破常规，打破思维定势] solutions who unfortunately become burdened by 
 the limitations of the imposed 'tools of choice'.
 
-| divide-and-rule
-| divide-and-conquer [分而治之]
-| Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.
-|
+
+UUID
+
+A :abbr:`UUID (universally unique identifier)`, also known as :abbr:`GUID (globally unique identifier)`, 
+is a 128-bit number used to identify information in computer systems.
+
+When generated according to the standard methods, UUIDs are for practical purposes unique, without depending 
+for their uniqueness on a central registration authority or coordination between the parties generating them, 
+unlike most other numbering schemes. While the probability that a UUID will be duplicated is not zero, it is 
+close enough to zero to be negligible.
+

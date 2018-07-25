@@ -57,6 +57,8 @@ I think, therefore I am
 | polyheron 多面体
 | convex polygon 凸多边形
 | diagonal 对角线
+| ellipse 椭圆
+| perimeter 周长
 | 
 | significant digits 有效数字
 | scientific notation 科学计数法
@@ -155,6 +157,11 @@ or "as the crow flies" distance. The Manhattan distance is the simple sum of the
 horizontal and vertical components, whereas the diagonal distance might be
 computed by applying the Pythagorean theorem. [勾股定理]
 
+| orthognal
+| Definition: of or involving right angles; at right angles. [正交]
+| Definition: (statistics) of variates statistically independent. [相互独立]
+| Definition: (of an experiment) having variates which can be treated as statistically independent.
+| 
 | asymptote
 | asymptotic
 | asymptotically

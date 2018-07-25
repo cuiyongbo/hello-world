@@ -279,7 +279,7 @@ Add this code in your scripts::
    import sys
    sys.dont_write_bytecode = True
 
-The variable must be set before any import.
+The variable must be set **BEFORE** any import.
 you can add it to your :envvar:`PYTHONSTARTUP`.
 
 

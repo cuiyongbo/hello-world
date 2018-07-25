@@ -31,6 +31,10 @@ cp Command
    .. option:: -R, -r, --recursive
 
       copy directories recursively.
+      If SOURCE designates a directory, cp copies the directory 
+      and the entire subtree connected at that point.  If the SOURCE 
+      ends in a /, the contents of the directory are copied rather 
+      than the directory itself.
 
    .. option:: --backup[=CONTROL], -b
 

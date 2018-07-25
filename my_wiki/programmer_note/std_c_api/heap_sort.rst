@@ -49,7 +49,7 @@ range ``[first, last-1).``
 
    *comp* returns ``​true`` if the first argument is less than the second. 
    The signature of the comparison function should be equivalent to the following:
-   `` bool cmp(const Type1 &a, const Type2 &b);`` The signature does not need to 
+   ``bool cmp(const Type1 &a, const Type2 &b);`` The signature does not need to 
    have ``const &``, but the function object must not modify the objects passed to it.
    The types *Type1* and *Type2* must be such that an object of type *RandomIt* can be 
    dereferenced and then implicitly converted to both of them. ​

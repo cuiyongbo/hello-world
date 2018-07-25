@@ -4,13 +4,14 @@ Language Study
 
 .. toctree::
 
-   languages/greek_alphabet
    languages/punctuations
+   languages/greek_alphabet
    languages/english_notes
    languages/english_notes_2
    languages/english_notes_3
    languages/english_notes_4
    languages/english_notes_5
+   languages/english_notes_7
    languages/english_notes_6
    languages/japanese_notes
    languages/military_terms

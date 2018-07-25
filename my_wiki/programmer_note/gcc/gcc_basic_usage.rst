@@ -309,6 +309,19 @@ Basic Usage
    change of sign in "#if" expressions. Note that many of the preprocessor's warnings are
    on by default and have no options to control them.
 
+.. option:: -Wextra
+   
+   This enables some extra warning flags that are not enabled by -Wall. 
+
+   The option -Wextra also prints warning messages for the following cases:
+
+      *   A pointer is compared against integer zero with "<", "<=", ">", or ">=".
+      *   (C++ only) An enumerator and a non-enumerator both appear in a conditional expression.
+      *   (C++ only) Ambiguous virtual bases.
+      *   (C++ only) Subscripting an array that has been declared "register".
+      *   (C++ only) Taking the address of a variable that has been declared "register".
+      *   (C++ only) A base class is not initialized in a derived class's copy constructor.
+
 .. option:: -Werror
    
    Make all warnings into hard errors.  Source code which triggers warnings will be rejected.

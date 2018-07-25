@@ -190,6 +190,10 @@ English Note 6
 | 
 | taxonomy [分类]
 | Definition: the branch of science concerned with classification, especially of organisms; systematics.
+| 
+| nomenclature [命名法]
+| Definition: The nomenclature of a particular set of things is the system of naming those things.
+| Usage: Mistakes arising from ignorance of the nomenclature of the  woody plants.
 |
 | meteorology [气象学]
 | meteorological
@@ -222,6 +226,20 @@ English Note 6
 | Definition: to prevent something from happening.
 | Usage: At 84, Jone feels his age precludes too much travel.
 | Usage: In some cases poor English precludes them from ever finding a job.
+|
+| grandiose
+| Definition: impressive and imposing in appearance or style, especially pretentiously so.
+| Usage: the court's grandiose facade. [冠冕堂皇]
+| Definition: excessively grand or ambitious.
+| Usage: grandiose plans to reform the world. [华而不实]
+| 
+| catch short
+| Definition: Found to be lacking something one needs, especially money.
+| Usage: I'm caught a little short. Can I borrow a few bucks? [手头紧]
+| Definition: Pregnant when one is not married. [未婚先育] 
+| Usage: I think that Heather has missed so much school because she's caught short.
+| Definition: Having an urgent need to use the toilet. [内急] 
+| Usage: I always go to the bathroom before a long drive, to avoid being caught short.
 | 
 | android
 | Definition: (in science fiction) a robot with a human appearance.
@@ -248,4 +266,6 @@ English Note 6
    The concept has been applied in computer science within the field of software 
    metrics as a complexity measure.
 
+.. figure:: images/HomerWatercolor.jpg
 
+   Watercolor painting 水彩画

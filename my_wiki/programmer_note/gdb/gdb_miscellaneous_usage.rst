@@ -226,6 +226,16 @@ Gdb Tricks
       $8 = 9
       (gdb) print input
       $9 = 9
+      
+      (gdb) ptype p
+      type = struct Node {
+          int data;
+          struct Node *next;
+      } *
+      (gdb) print p
+      $6 = (Node *) 0x100200240
+      (gdb) print {Node}p
+      $7 = {data = 35, next = 0x0}
 
 #. list command
    

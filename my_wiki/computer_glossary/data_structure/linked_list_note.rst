@@ -69,7 +69,7 @@ The gain from using sentinels within loops is usually a matter of clarity of cod
 
 **EXERCISES**
 
-# Give a :math:`\Theta(n)` time nonrecursive procedure that reverses a singly linked list of n elements.
+#. Give a :math:`\Theta(n)` time nonrecursive procedure that reverses a singly linked list of n elements.
    The procedure should use no more than constant storage beyond that needed for the list itself.
 
 .. code-block:: cpp
