@@ -2326,10 +2326,6 @@ admitted the computer was named after his daughter.
 | Synonyms: claim
 | Usage: A book that purports to tell the whole truth.
 | 
-| superfluous
-| Definition: more than you need or want; unnecessary.
-| Usage: She gave him a look that made words superfluous.
-| 
 | imbue
 | Definition: (often be imbued with) inspire or permeate with a strong feeling or quality.
 | Usage: Her voice was imbued with an unusual seriousness.

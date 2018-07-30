@@ -2,6 +2,8 @@
 Merge sort
 **********
 
+**Keyword:** stable, O(n log n)
+
 .. sidebar:: Merge sort
 
    .. image:: images/Merge_sort_2.gif
@@ -208,3 +210,14 @@ Conceptually, a merge sort works as follows:
            }
        } 
    }
+
+
+**Analysis**
+
+In sorting n objects, merge sort has an average and worst-case performance of **O(n log n).** 
+If the running time of merge sort for a list of length n is T(n), then the recurrence **T(n) = 2T(n/2) + n** 
+follows from the definition of the algorithm (apply the algorithm to two lists of half the size of the original 
+list, and add the n steps taken to merge the resulting two lists). The closed form follows from the master 
+theorem for divide-and-conquer recurrences.
+
+.. image:: images/Merge_sort_algorithm_diagram.svg.png

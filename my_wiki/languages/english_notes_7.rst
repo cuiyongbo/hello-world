@@ -18,4 +18,13 @@ English Note 7
 | 
 | curriculum [课程]
 | Definition: the subjects comprising a course of study in a school or college.
+| 
+| superfluous
+| Definition: more than you need or want; unnecessary.
+| Usage: She gave him a look that made words superfluous.
 |
+| mitigate
+| mitigation
+| Definition: make less severe, serious, or painful.
+| Usage: he wanted to mitigate misery in the world.
+| 
