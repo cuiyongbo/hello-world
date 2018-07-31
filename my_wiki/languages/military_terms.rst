@@ -253,9 +253,12 @@ Military Terms
 | Definition: Extortion is the crime of obtaining something from someone, especially money, by using force or threats.
 | Usage: He has been charged with extortion and abusing his power.
 | 
-| coercion [政治高压]
-| Definition: Coercion is the act or process of persuading someone forcefully to do something that they did not want to do.
-| Usage: It was vital that the elections should be free of coercion or intimidation.
+| coerce
+| coercison
+| Definition: persuade (an unwilling person) to do something by using force or threats.
+| Usage: they were coerced into silence.
+| Usage: their confessions were allegedly coerced by torture.
+| Usage: It was vital that elections be free of coercison or intimidations. [政治高压]
 | 
 | espionage [谍报活动]
 | Definition: The practice of spying or of using spies, typically by governments to obtain political and military information.

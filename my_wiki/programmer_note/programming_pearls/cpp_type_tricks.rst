@@ -152,3 +152,44 @@ Character types
      large enough to represent any UTF-32 code unit (32 bits). It has the same
      size, signedness, and alignment as ``std::uint_least32_t``, but is a
      distinct type.
+
+Pointer
+=======
+
+.. code-block:: c
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <string.h>
+   
+   int main()
+   {
+       int count = 4;
+       char** strArr = (char**)malloc(sizeof(char*)*count);
+      
+       char* str = "hello";
+       size_t len = strlen(str) + 1;
+       int i;
+       for(i=0; i<count; i++)
+       {   
+           strArr[i] = (char*)malloc(len);    
+           strcpy(strArr[i], str);
+       }   
+   
+       for(i=0; i<count; i++)
+       {   
+           printf("%d: %s\n", i, strArr[i]);
+           free(strArr[i]);
+       }   
+   
+       free(strArr);
+   
+       return 0;
+   }
+
+Output::
+
+   0: hello
+   1: hello
+   2: hello
+   3: hello

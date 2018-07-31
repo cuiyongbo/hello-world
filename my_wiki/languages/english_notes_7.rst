@@ -81,3 +81,11 @@ English Note 7
 | saltpeter [硝酸钾]
 | Definition: another term for potassium nitrate (:math:`KNO_3`), used expecially as a fertillizer or explosive.
 | 
+| exhilarating
+| making one feel very happy, animated, or elated; thrilling.
+| Usage: It was exhilarating to be on the road again and his spirits rose.
+| 
+| drunkard [醉汉]
+| 
+| typo [笔误]
+| a typographical error.

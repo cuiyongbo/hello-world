@@ -227,6 +227,8 @@ Gdb Tricks
       (gdb) print input
       $9 = 9
       
+      # view struct
+         
       (gdb) ptype p
       type = struct Node {
           int data;
@@ -236,6 +238,82 @@ Gdb Tricks
       $6 = (Node *) 0x100200240
       (gdb) print {Node}p
       $7 = {data = 35, next = 0x0}
+
+      # view simple array
+
+      (gdb) l
+      1  #include <stdio.h>
+      2  #include <stdlib.h>
+      3  #include <string.h>
+      4  
+      5  int main()
+      6  {
+      7      const int n = 5;
+      8      int b[] = {1,2,3,4};
+      9      int* a = (int*)malloc(sizeof(int)*n);
+      10     int i;
+      11     for(i=0; i<n; i++)
+      12         a[i] = i;
+      13     free(a);
+      14     return 0;
+      15 }
+      16 
+      (gdb) b 13
+      Breakpoint 1 at 0x4005eb: file test.c, line 13.
+      (gdb) r
+      13     free(a);
+      (gdb) ptype a
+      type = int *
+      (gdb) pt b
+      type = int [4]
+      (gdb) p b
+      $2 = {1, 2, 3, 4}
+      (gdb) p a
+      $3 = (int *) 0x602010
+      (gdb) p *a@n
+      $4 = {0, 1, 2, 3, 4}
+
+      # view struct array
+      
+      (gdb) l
+      5  typedef struct Node
+      6  {
+      7      int key;
+      8      int value;
+      9  } Node;
+      10 
+      11 
+      12 int main()
+      13 {
+      14     const int n = 5;
+      15     Node* nodes = (Node*)malloc(n*sizeof(Node));
+      16     int i;
+      17     for(i=0; i<n; i++)
+      18     {
+      19         nodes[i].key = i;
+      20         nodes[i].value = i*10;
+      21     }
+      22     free(nodes);
+      23     return 0;
+      24 }
+      (gdb) b 22
+      Breakpoint 1 at 0x4005f3: file test.c, line 22.
+      (gdb) r
+      22     free(nodes);
+      (gdb) p {Node}nodes@5
+      $2 = {{key = 0, value = 0}, {key = 1, value = 10}, {key = 2, value = 20}, {key = 3, value = 30}, {key = 4, value = 40}}
+      (gdb) set $i=0
+      (gdb) p nodes[$i++].key
+      $3 = 0
+      (gdb) 
+      $4 = 1
+      (gdb) 
+      $5 = 2
+      (gdb) 
+      $6 = 3
+      (gdb) 
+      $7 = 4
+
 
 #. list command
    

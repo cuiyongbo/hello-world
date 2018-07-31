@@ -2,9 +2,6 @@
 os Module
 *********
 
-Frequently Used Methods
-=======================
-
 .. method:: getcwd()
    
    Return a string representing the current working directory.
@@ -198,46 +195,27 @@ Frequently Used Methods
       '/ljklfs/sdf\\\\sdf\\\\sdf'
 
 
-******************************
-Python to traverse a directory
-******************************
+#. Python to traverse a directory
 
-basically, there are two ways to traverse a specific directory:
-
-   #. Using ``os.listdir()``.
-      
-   #. Using ``os.path.walk()``. (It will walk subdirectories recursively.)
-      
-
-Example
-
-.. code-block:: python
-   :caption: Traversing directory using ``os.listdir()``
-
-   files = os.listdir(".")
-   for file in files:
-      doWork(file)
-
-
-.. code-block:: python
-   :caption: Traversing directory using ``os.path.walk()``
-
-   def printFile(arg, dirname, fnames):
-      print arg
-      print dirname
-      print fnames
-
-   os.path.walk(".", printFile, None)
-
-
-*************************
-Python to traverse a file
-*************************
-
-.. code-block:: python
-   :caption: Sample code
-
-   with open(file) as src:
-      for line in src:
-         doWork(line)
-      src.close()
+   basically, there are two ways to traverse a specific directory:
+   
+      #. Using ``os.listdir()``.
+      #. Using ``os.path.walk()``. (It will walk subdirectories recursively.)
+         
+   
+   .. code-block:: python
+     
+      # Traversing directory using ``os.listdir()``
+   
+      files = os.listdir(".")
+      for file in files:
+         doWork(file)
+   
+      # Traversing directory using ``os.path.walk()``
+   
+      def printFile(arg, dirname, fnames):
+         print arg
+         print dirname
+         print fnames
+   
+      os.path.walk(".", printFile, None)
