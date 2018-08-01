@@ -89,3 +89,8 @@ English Note 7
 | 
 | typo [笔误]
 | a typographical error.
+| 
+| crux
+| Plural: cruces [关键，症结]
+| Definition: the decisive or most important point at issue.
+| Usage: He said the crux of the matter is enconomic policy.

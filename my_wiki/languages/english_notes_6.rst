@@ -269,3 +269,25 @@ English Note 6
 .. figure:: images/HomerWatercolor.jpg
 
    Watercolor painting 水彩画
+
+| 
+| Terrain 地形
+| Definition: a stretch of land, especially with regard to its physical features.
+| Usage: they were delayed by rough terrain.
+|
+| watershed
+| Definition: an area or ridge of land that separates waters flowing to different rivers, basins, or seas.
+| Definition: an area or region drained by a river, river system, or other body of water.
+| Definition: an event or period marking a turning point in a situation. [分水岭]
+| Usage: The election of Mary Robinson in 1990 was a watershed in Irish politics.
+| Definition: The time after which programmes that are regarded as unsuitable for children are broadcast on television.
+| Usage: The 9 p.m. watershed.
+
+.. image:: images/terrain.jpg
+.. figure:: images/watershed-diagram.jpg
+
+   Watershed diagram
+
+.. figure:: images/basin.jpg
+
+   Basin Geology

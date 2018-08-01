@@ -32,6 +32,8 @@ Computer Terminology
 | BOM = Bill of Materials
 | IOPS = Input / Output Per Second
 | CRC card = Class, Responsibility, and Collaborators card
+| CDN = Content Delivery Network
+| locality of reference
 |
 | divide-and-rule / divide-and-conquer [分而治之]
 | Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.

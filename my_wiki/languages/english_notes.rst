@@ -3279,19 +3279,10 @@ figures.
 | 
 | silage [干草，饲料]
 | Definiton: Silage is food for cattle that is made by cutting a crop such as grass or corn when it is green and then keeping it covered.
-| 
-| watershed
-| Definition: an area or ridge of land that separates waters flowing to different rivers, basins, or seas.
-| Definition: an area or region drained by a river, river system, or other body of water.
-| Definition: an event or period marking a turning point in a situation. [分水岭]
-| Usage: The election of Mary Robinson in 1990 was a watershed in Irish politics.
-| Definition: The time after which programmes that are regarded as unsuitable for children are broadcast on television.
-| Usage: The 9 p.m. watershed.
-
-.. figure:: images/watershed-diagram.jpg
-
-   Watershed diagram
-
-.. figure:: images/basin.jpg
-
-   Basin Geology
+|
+| Transit 
+| Definition: a transit system is a system for moving people or goods from one place to another.
+| Usage: rapid transit.
+| Phrase: in transit
+| Definition: If people or things are in transit, they are travelling or being taken from one place to another. 
+| Usage: a painting was damaged in transit.

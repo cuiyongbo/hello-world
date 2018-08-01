@@ -13,6 +13,7 @@ Python note
    python/builtin_dict_notes
    python/builtin_file_notes
    python/string_notes
+   python/list_tricks
    python/urllib_tricks
    python/sort_tricks
    python/re_module_doc

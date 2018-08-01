@@ -2,7 +2,7 @@
 Merge sort
 **********
 
-**Keyword:** stable, O(n log n)
+**Keyword:** stable, O(n log n), locality of reference.
 
 .. sidebar:: Merge sort
 

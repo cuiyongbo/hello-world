@@ -65,7 +65,7 @@ Note that during the sort, the largest element is at the root of the heap at ``a
 while at the end of the sort, the largest element is in ``a[end].``
 
 .. code-block:: none
-   :caption: pseudo code
+   :caption: pseudocode
 
    procedure heapsort(a, count) is
        input: an unordered array a of length count
@@ -117,3 +117,14 @@ while at the end of the sort, the largest element is in ``a[end].``
            else
                swap(a[root], a[swap])
                root := swap            (repeat to continue sifting down the child now)
+
+
+**Example**
+
+Let ``{ 6, 5, 3, 1, 8, 7, 2, 4 }`` be the list that we want to sort from the smallest to the largest. 
+(NOTE, for 'Building the Heap' step: Larger nodes don't stay below smaller node parents. They are swapped 
+with parents, and then recursively checked if another swap is needed, to keep larger numbers above smaller 
+numbers on the heap binary tree.)
+
+.. image:: images/heapsort-example.gif
+
