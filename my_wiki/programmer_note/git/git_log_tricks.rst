@@ -1,8 +1,7 @@
 Git log
 =======
 
-Options
--------
+**Options**
 
 .. code-block:: sh
    :caption: Hot hits options 
@@ -67,8 +66,7 @@ Options
    # Continue listing the history of a file beyond renames (works only for a single file).
 
 
-Examples
---------
+**Examples**
 
 #. git log pretty example
    

@@ -101,3 +101,30 @@ ls command
 
       list entries by lines instead of by columns.
 
+
+**Example**
+
+.. code-block:: sh
+
+   $ ls -l
+   -rwxrw-r--    10    root   root 2048    Jan 13 07:11 afile.exe
+   ?UUUGGGOOOS   00  UUUUUU GGGGGG ####    ^-- date modified and file name)
+   ^ ^  ^  ^ ^    ^      ^      ^    ^
+   | |  |  | |    |      |      |    \--- File Size
+   | |  |  | |    |      |      \-------- Group Name (for example, Users, Administrators, etc)
+   | |  |  | |    |      \--------------- Owner Acct
+   | |  |  | |    \---------------------- Link count (what constitutes a "link" here varies)
+   | |  |  | \--------------------------- Alternative Access (blank means none defined, anything else varies)
+   | \--\--\----------------------------- Read, Write and Special access modes for [U]ser, [G]roup, and [O]thers (everyone else)
+   \------------------------------------- File type flag
+
+
+   # find -type c
+   # File is of type *c*:
+   #    - b: block (buffered) special
+   #    - c: character (unbuffered) special
+   #    - d: directory
+   #    - p: named pipe (FIFO)
+   #    - f: regular file
+   #    - l: symbolic link
+   #    - s: socket
