@@ -124,6 +124,12 @@ Windows Problems
 
       "git_binary": "C:/Program Files/Git/cmd/git.exe"
 
+#. Sublime Text "ignore_vcs_packages" setting.
+   
+   .. image:: images/sublime_ignore_vcs_packages_error.png
+
+   added ``"ignore_vcs_packages":true`` to user settings.
+
 #. xShell gets frozen after accidently typing "Ctrl - S"
    
    Solution::
@@ -135,3 +141,6 @@ Windows Problems
 
       PS: It's neither the terminal nor the shell that does this, but the OS's terminal driver.
 
+#. VS disable spelling check
+   
+   .. image:: images/disable_spelling_check.png

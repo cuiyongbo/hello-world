@@ -19,9 +19,4 @@ Pending tasks
 #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
 #. https://en.wikipedia.org/wiki/Selection_algorithm
-#. https://en.wikipedia.org/wiki/Merge_sort
-#. https://en.wikipedia.org/wiki/Heapsort
 
-
-single_linked_list.c:76:56: error: C does not support default arguments
-void LinkedList_insert(LinkedList l, Node* p, int hint = 1)

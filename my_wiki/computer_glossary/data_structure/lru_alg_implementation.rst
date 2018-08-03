@@ -2,8 +2,7 @@
 LRU Algorithm
 *************
 
-DESIGN
-======
+**DESIGN**
    
    * double linked list
       - LIST-ADD
@@ -17,8 +16,7 @@ DESIGN
      - m_prev, m_next
        
 
-IMPLEMENTATION
-==============
+**IMPLEMENTATION**
 
    .. code-block:: c++
 

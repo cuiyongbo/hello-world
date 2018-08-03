@@ -11,4 +11,5 @@ Data Structure
    data_structure/deque_note
    data_structure/linked_list_note
    data_structure/free_list
+   data_structure/heap_note
    data_structure/lru_alg_implementation
