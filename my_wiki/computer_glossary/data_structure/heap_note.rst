@@ -2,6 +2,8 @@
 Heap
 ****
 
+**举一隅不以三隅反，则不复也。**
+
 **Introduction**
 
 .. sidebar:: Max Heap
@@ -103,3 +105,54 @@ positions 2n and 2n + 1 in a one-based array, or 2n + 1 and 2n + 2 in a zero-bas
 down the tree by doing simple index computations. Balancing a heap is done by sift-up or sift-down operations (swapping 
 elements which are out of order). As we can build a heap from an array without requiring extra memory (for the nodes, 
 for example), heapsort can be used to sort an array in-place.
+
+
+.. code-block:: none
+
+   Parent(i):
+      return i/2;
+
+   Left(i):
+      return 2*i;
+
+   Right(i):
+      return 2*i + 1;
+
+   Max-heapify(A, i):
+      l = Left(i)
+      r = Right(i)
+
+      if l <= A.heap_size and A[l] > A[i]
+         largest = l
+      else largest = i
+
+      if r <= A.heap_size and A[r] > A[i]
+         largest = r
+
+      if largest != i
+         swap(A[i], A[largest])
+         Max-heapify(A, largest)
+
+   Max-heapify-loop(A, i)
+      largest = i
+      while largest < heap_size
+         tmp = largest
+
+         l = Left(largest)
+         r = Right(largest)
+         if l <= A.heap_size and A[l] > A[largest]
+            largest = l
+         if r <= A.heap_size and A[r] > A[largest]
+            largest = r
+         
+         if tmp == largest
+            break
+         
+         swap(A[tmp], A[largest])
+
+   Build-max-heap(A)
+      A.heap-size = A.length
+      for i = A.length/2 downto 1
+         Max-heapify(A, i)
+   
+
