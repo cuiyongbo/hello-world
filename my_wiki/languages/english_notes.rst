@@ -711,20 +711,12 @@ English Note
 | Definition: If one event is a prologue to another, it leads to it. [序曲]
 | Usage: Civil unrest in a few isolated villages became the prologue to widerspread rebellion.
 | 
-| cartography
-| Definition: The activity of making map.
-| 
 | elide
 | Definition: If you elide something, especially a distinction, you leave it out or ignore it.
 | Usage: These habits of thinking elide the difference between what is common and what is normal.
 | Definition: In linguistics, if you elide a word, you do not pronounce or write fully.
 | Usage: He complained about BBC announcers eliding their words.
 | Synonyms: omit, ignore, contract
-| 
-| on the fly
-| Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
-| Definition: If you do something on the fly, you do it quickly, without thinking about it or planning it in advance.
-| Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
 | 
 | repository
 | Definition: A repository is a place where something is kept safely.
@@ -2290,22 +2282,6 @@ admitted the computer was named after his daughter.
 | Definition: disagreeable to taste, smell, or look at.
 | Definition: disagreeable and unpleasant because morally disreputable.
 | Usage: an unsavory reputation.
-|
-| notorious
-| Definition: famous or well known, typically for some bad quality or deed.
-| Usage: Los Angeles is notorious for its smog.
-| Usage: He was a notorious drinker and womanizer.
-| 
-| womanizer [滥交者]
-| Definition: a man who engages in numerous casual sexual affairs with women.
-| 
-| playboy
-| Definition: a wealthy man who spends his time enjoying himself, especially | one who behaves irresponsibly or is sexually promiscuous.
-| 
-| promiscuity
-| promiscuous
-| Definition: having or characterized by many transient sexual relationships.
-| Usage: They ran wild, indulging in promiscuous sex and experimenting with | drugs. 
 | 
 | rigmarole
 | Definition: a lengthy and complicated procedure.
@@ -2541,11 +2517,6 @@ design philosophy emphasizes ease of use.
 | Definiton: an acronym deliberately formed from a phrase whose initial letters spell out a particular word or words, either to create a memorable name or | as a fanciful explanation of a word's origin.| 
 | Usage: Biodiversity Serving Our Nation, or BISON (a backronym if ever there was one).
 | 
-| CV [简历]
-| Full: curriculum vitae
-| Plural: curricula vitae
-| Definition: a brief account of a person’s education, qualifications, and previous experience, typically send with a job application.
-| 
 | Epiphany 主显节
 | Definition: a Christian festival, held on the 6 January, in memory of the time when Magi came to see the baby jesus at Bethlehem.
 | Usage: The festival commemorating the Epiphany is on January 6.
@@ -2574,7 +2545,6 @@ design philosophy emphasizes ease of use.
 | Definition: the two hundredth anniversay of a significant event.
 | Usage: Last year saw the bicentennial of Mozart’s birth.
 | 
-| 
 | overhead
 | Definition: above the level of the head; in the sky.
 | Definition: (of a cost or expense) incurred in the general upkeep or running of a plant, premises, or business, and not attributable to specific products or items.
@@ -2595,11 +2565,7 @@ design philosophy emphasizes ease of use.
 | Definition: a detailed analysis and assessment of something, especially a literary, philosophical, or political theory.
 | Definition: to write or give your opinion of, or reaction to, a set of idea, a work of art, etc.
 | Usage: A feminist critique of Freud’s theories.
-| 
-| lattice
-
-.. image:: images/lattice.png
-
+|
 | slice
 | Definition: a thin, broad piece of food, such as bread, meat, or cake, cut from a larger portion.
 | Usage: Four slices of bread.

@@ -15,8 +15,10 @@ English Note 7
 | polymathic 
 | Definition: a person of wide-ranging knowledge or learning.
 | 
-| curriculum vitae (CV) [简历]
+| CV [简历]
+| Full: curriculum vitae
 | Plural: curricula vitae
+| Definition: a brief account of a person’s education, qualifications, and previous experience, typically send with a job application.
 | 
 | curriculum [课程]
 | Definition: the subjects comprising a course of study in a school or college.
@@ -87,10 +89,52 @@ English Note 7
 | 
 | drunkard [醉汉]
 | 
-| typo [笔误]
-| a typographical error.
+| typo: a typographical error. [笔误]
 | 
 | crux
 | Plural: cruces [关键，症结]
 | Definition: the decisive or most important point at issue.
 | Usage: He said the crux of the matter is enconomic policy.
+|
+| notorious
+| Definition: famous or well known, typically for some bad quality or deed.
+| Usage: Los Angeles is notorious for its smog.
+| Usage: He was a notorious drinker and womanizer.
+| 
+| womanizer: a man who engages in numerous casual sexual affairs with women. [滥交者]
+| 
+| playboy: a wealthy man who spends his time enjoying himself, especially one who behaves irresponsibly or is sexually promiscuous. [花花公子]
+| 
+| promiscuity
+| promiscuous
+| Definition: having or characterized by many transient sexual relationships.
+| Usage: they ran wild, indulging in promiscuous sex and experimenting with drugs.
+| Definition: demonstrating or implying an undiscriminating or unselective approach; indiscriminate or casual.
+| Usage: the city fathers were promiscuous with their honors.
+| Usage: Americans are free to pick and choose from a promiscuous array of values and behavior.
+| 
+| derogatory
+| showing a critical or disrespectful attitude.
+| Usage: she tells me I'm fat and is always making derogatory remarks.
+| 
+| abrogate
+| Definition: repeal or do away with (a law, right, or formal agreement).
+| Usage: a proposal to abrogate temporarily the right to strike.
+| Definition: evade (a responsibility or duty).
+| Usage: we believe the board is abrogating its responsibilities to its shareholders.
+| 
+| arrogate
+| Definition: take or claim (something) for oneself without justification.
+| Usage: in the emergency committee arrogated to itself whatever powers it chose. [便宜行事]
+|
+| on the fly
+| Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
+| Definition: If you do something on the fly, you do it quickly, without thinking about it or planning it in advance.
+| Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
+
+platinum [铂金]
+
+a precious silvery-white metal, the chemical element of atomic number 78. 
+It was first encountered by the Spanish in South America in the 16th century, 
+and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
+catalysts.

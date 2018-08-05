@@ -345,6 +345,10 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | Synonyms: cold-blooded.
 | Antonyms: homeotherm [恒温动物]
 | 
+| stasis
+| Definition: a period or state of inactivity or equilibrium.
+| Definition: (Medicine) a stoppage of flow of a body fluid.
+| 
 | imprint
 | Definition: (of a young animal) come to recognize (another animal, person, or thing) as a parent or other object of habitual trust. [印随]
 
@@ -463,3 +467,9 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
    The paired respiratory organ of fishes and some amphibians, 
    by which oxygen is extracted from water flowing over surfaces 
    within or attached to the walls of the pharynx.
+
+.. image:: images/paramecium-diagram-detailed.jpg
+.. image:: images/paramecium_1.jpg
+.. figure:: images/Paramecium-Teilung.jpg
+
+   Paramecium [草履虫]

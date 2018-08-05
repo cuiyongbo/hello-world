@@ -270,6 +270,13 @@ English Note 6
 
    Watercolor painting 水彩画
 
+.. figure:: images/lattice.png
+
+   Lattice [百叶窗]
+
+| 
+| cartography [制图]
+| Definition: The activity of making map.
 | 
 | Terrain 地形
 | Definition: a stretch of land, especially with regard to its physical features.
