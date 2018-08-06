@@ -172,3 +172,17 @@ Makefile Basics
 
       %.o: %.c
          $(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+
+#. Continue after a command failed
+   
+   Basically, you can use -i or -k flags, as documented in :doc:`make Manual <make_basic_usage>.`
+   However, you can achieve this alternatively by add "-" before a command line. The "-" is discarded 
+   before the command is passed to the shell for execution. For example::
+
+      clean:
+         -rm -f *.o
+
+#. Suppress command output
+   
+   By adding a "@" to the front of a command, the command line string is suppressed. 
+   However, you can still get stderr messages.

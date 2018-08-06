@@ -19,4 +19,6 @@ Pending tasks
 #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
 #. https://en.wikipedia.org/wiki/Selection_algorithm
+   
+#. http://www.kohala.com/start/
 

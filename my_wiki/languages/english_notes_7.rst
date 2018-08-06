@@ -132,7 +132,7 @@ English Note 7
 | Definition: If you do something on the fly, you do it quickly, without thinking about it or planning it in advance.
 | Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
 
-platinum [铂金]
+platinum [铂金 ]
 
 a precious silvery-white metal, the chemical element of atomic number 78. 
 It was first encountered by the Spanish in South America in the 16th century, 

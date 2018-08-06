@@ -74,6 +74,22 @@ tar Command
          
          extract files from an archive
 
+      .. option:: -v, --verbose
+           
+         verbosely list files processed
+
+      .. option:: -f, --file ARCHIVE
+           
+         use archive file or device ARCHIVE
+
+      .. option:: -C, --directory DIR
+           
+         change to directory DIR
+
+      .. option:: -j, --bzip2
+      .. option:: -z, --gzip, --gunzip --ungzip
+      .. option:: -Z, --compress, --uncompress
+
    **OTHER OPTIONS**
 
    Operation modifiers::
@@ -113,9 +129,6 @@ tar Command
 
       --backup
            backup before removal, choose version CONTROL
-
-      -C, --directory DIR
-           change to directory DIR
 
       --check-device
            check device numbers when creating incremental archives (default)
@@ -161,9 +174,6 @@ tar Command
 
       --exclude-vcs
            exclude version control system directories
-
-      -f, --file ARCHIVE
-           use archive file or device ARCHIVE
 
       -F, --info-script, --new-volume-script NAME
            run script at end of each tape (implies -M)
@@ -234,11 +244,7 @@ tar Command
       --index-file=FILE
            send verbose output to FILE
 
-      -j, --bzip2
-
-
       -J, --xz
-
 
       -k, --keep-old-files
            don't replace existing files when extracting,
@@ -446,9 +452,6 @@ tar Command
       --utc
            print file modification times in UTC
 
-      -v, --verbose
-           verbosely list files processed
-
       -V, --label TEXT
            create archive with volume name TEXT; at list/extract time, use TEXT as a globbing pattern for volume name
 
@@ -490,11 +493,6 @@ tar Command
 
       --no-xattrs
            Disable extended attributes support
-
-      -z, --gzip, --gunzip --ungzip
-
-
-      -Z, --compress, --uncompress
 
 .. note::
 
