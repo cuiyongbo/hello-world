@@ -10,3 +10,4 @@ Socket Overview
    accept_manual
    connect_manual
    getaddrinfo_manual
+   shutdown_manual
