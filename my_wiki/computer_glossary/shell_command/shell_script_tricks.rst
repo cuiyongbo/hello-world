@@ -567,3 +567,35 @@ a complete list::
    fi
    
    export PYTHONPATH=$PYTHONPATH:~/workspace/bin
+
+
+#. loop throgh array of strings in Bash
+   
+   .. code-block:: sh
+
+      ## declare an array variable
+      declare -a arr=("element1" 
+                "element2" "element3"
+                "element4"
+                )
+      
+      ## now loop through the above array
+      for i in "${arr[@]}"
+      do
+         echo "$i"
+         # or do whatever with individual element of the array
+      done
+
+#. concate string in Bash
+   
+   .. code-block:: sh
+
+      # there is no space between variable and operator
+
+      $ foo="hello"
+      $ foo="$foo world"
+      $ echo $foo
+      hello world
+      $ foo+=" nice to meet you"
+      $ echo $foo
+      hello world nice to meet you
