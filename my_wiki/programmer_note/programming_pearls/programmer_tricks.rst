@@ -1,13 +1,6 @@
 Programmer's Tricks
 ===================
 
-#. GCC to produce ASM
-
-   .. code-block:: sh
-
-      gcc -S test.c # then you will see test.s in current directory
-
-
 #. See the default system page size
 
    .. code-block:: sh

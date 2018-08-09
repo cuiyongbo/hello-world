@@ -22,3 +22,4 @@ Pending tasks
    
 #. http://www.kohala.com/start/
 
+#. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768
