@@ -186,3 +186,20 @@ Makefile Basics
    
    By adding a "@" to the front of a command, the command line string is suppressed. 
    However, you can still get stderr messages.
+
+#. Use environment variable
+   
+   If you've exported the environment variable: ``export demoPath=/usr/local/demo``
+   you can simply refer to it by name in the makefile (make imports all the environment 
+   variables you have set)::
+
+      DEMOPATH = ${demoPath}    # Or $(demoPath) if you prefer.
+
+   If you've not exported the environment variable, it is not accessible until you do export it, 
+   or unless you pass it explicitly on the command line::
+
+      make DEMOPATH="${demoPath}" ...
+
+   .. code-block:: sh
+
+       GTEST_DIR = $(HOME)/googletest/googletest # ~ doesn't work here.

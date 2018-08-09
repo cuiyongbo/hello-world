@@ -22,3 +22,4 @@ Algorithms
    algorithms/alg_analysis_and_design
    algorithms/complexity_summary
    algorithms/single_precision_floating_point_format
+   algorithms/algorithms_cpp

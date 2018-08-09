@@ -228,3 +228,21 @@ MacOs Problems
    .. note::
 
       Your customizations, such as hostname, will also be reset.
+
+
+#. mac to restart network
+   
+   .. code-block:: sh
+
+      sudo killall -HUP mDNSResponder
+
+
+#. mac to block software autoupdate
+   
+   added software websites to your **hosts** file.
+   such as::
+
+      0.0.0.0 www.sublimetext.com
+      0.0.0.0 liveupdate.mac.sandai.net
+      0.0.0.0 www.parallels.com
+      0.0.0.0 www.piriform.com

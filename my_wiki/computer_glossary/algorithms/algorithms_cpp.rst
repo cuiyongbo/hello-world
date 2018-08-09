@@ -1,5 +1,3 @@
-:orphan:
-
 *************************
 Frquently Used Algorithms
 *************************
