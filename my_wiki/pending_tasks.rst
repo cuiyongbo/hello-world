@@ -22,4 +22,6 @@ Pending tasks
    
 #. http://www.kohala.com/start/
 
-#. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768
+#. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768 (about float point number)
+    
+#. http://faculty.cs.niu.edu/~mcmahon/CS241/c241man/node83.html (C++ Input/Output)

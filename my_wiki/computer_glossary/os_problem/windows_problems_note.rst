@@ -144,3 +144,16 @@ Windows Problems
 #. VS disable spelling check
    
    .. image:: images/disable_spelling_check.png
+
+#. Windows 10 to disable hibernation
+   
+   .. code-block:: none
+
+      > powercfg /hibernate off
+
+      > powercfg /?
+      POWERCFG /COMMAND [ARGUMENTS]
+      Description:
+        Enables users to control power settings on a local system.
+        For detailed command and option information, run "POWERCFG /? <COMMAND>"
+
