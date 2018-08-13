@@ -34,6 +34,8 @@ Computer Terminology
 | CRC card = Class, Responsibility, and Collaborators card
 | CDN = Content Delivery Network
 | locality of reference
+| RTT = Round Trip Time
+| SPT = Server Process Time
 |
 | divide-and-rule / divide-and-conquer [分而治之]
 | Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.
@@ -110,13 +112,13 @@ superscripts are above.
 
 **Co-Processor**
 
-A coprocessor is a computer processor used to supplement the functions
-of the primary processor (the CPU). Operations performed by the coprocessor
-may be floating point arithmetic, graphics, signal processing, string processing,
-encryption or I/O Interfacing with peripheral devices. By offloading processor-intensive
-tasks from the main processor, coprocessors can accelerate system performance.
-Coprocessors allow a line of computers to be customized, so that customers who
-do not need the extra performance don't need to pay for it.
+A co-processor is a computer processor used to supplement the functions
+of CPU. Operations performed by the co-processor may be floating point arithmetic, 
+graphics, signal processing, string processing, encryption or I/O Interfacing with 
+peripheral devices. By offloading processor-intensive tasks from CPU, co-processors 
+can accelerate system performance. Co-processors allow a line of computers to be 
+customized, so that customers who do not need the extra performance don't need to 
+pay for it.
 
 **Rate limiting**
 

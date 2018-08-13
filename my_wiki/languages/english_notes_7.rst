@@ -131,10 +131,7 @@ English Note 7
 | Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
 | Definition: If you do something on the fly, you do it quickly, without thinking about it or planning it in advance.
 | Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
-
-platinum [铂金 ]
-
-a precious silvery-white metal, the chemical element of atomic number 78. 
-It was first encountered by the Spanish in South America in the 16th century, 
-and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
-catalysts.
+| 
+| garrulity [话痨]
+| Definition: excessive talkativeness, especially on trivial matters.
+| Usage: the character's comic garrulity.

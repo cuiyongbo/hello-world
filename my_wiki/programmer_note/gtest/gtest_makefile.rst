@@ -2,6 +2,8 @@
 Gtest Makefile
 **************
 
+**管住嘴，守住心。一句话，耐得住寂寞。**
+
 Directory structure::
 
    $ ls

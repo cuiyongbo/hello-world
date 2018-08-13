@@ -297,8 +297,18 @@ English Notes 4
 
    Mast 桅杆，船桅
 
-   Phrase: half mast [降半旗,下半旗(以示哀悼)] 
-   Usage: Flags were flown at half mast on the day of his funeral. 
+   | Phrase: half mast [降半旗,下半旗(以示哀悼)] 
+   | Synonyms: half-staff
+   | Definition: the position of a flag which is being flown below the top of its staff as a mark of respect for a person who has died.
+   | Usage: Flags were flown at half mast on the day of his funeral. 
+   | 
+   | staff
+   | Definition: a long stick used as a support when walking or climbing or as a weapon.
+   | Synonyms: flagstaff; flagpole 
+   | Definition: a pole used for flying a flag.
+   | Phrase: run something up the flagpole (to see who salutes)
+   | Definition: test the popularity of a new idea or proposal.
+   | Usage: the idea was first run up the flagpole in 1997.
 
 .. figure:: images/skiff.jpg
 
@@ -354,3 +364,9 @@ English Notes 4
 .. image:: images/laden-apple-tree.jpg
 .. image:: images/laden_bus.jpg
 
+| rappel
+| Definition: descend a rock face or other near-vertical surface by using a doubled rope coiled around the body and fixed at a higher point.
+| Usage: they had to rappel down a long steep ice face.
+
+.. image:: images/Rappel1.jpg
+.. image:: images/rappel-silhouette-vector.png

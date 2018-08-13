@@ -447,6 +447,17 @@ in a number of Christian kingdoms.
 
    toothpaste and toothbrush
 
+morganatic
+
+of or denoting a marriage between a person of royal or noble birth and 
+a partner of lower rank, in which neither the spouse of lower rank nor 
+any children have any claim to the possessions or title of the spouse of higher rank.
 
 
+platinum [铂金]
+
+a precious silvery-white metal, the chemical element of atomic number 78. 
+It was first encountered by the Spanish in South America in the 16th century, 
+and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
+catalysts.
    
