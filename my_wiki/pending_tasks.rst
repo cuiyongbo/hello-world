@@ -2,10 +2,6 @@
 Pending tasks
 *************
 
-#. speed up ti tile compilation
-   - extract PointMap building
-   - Grid splitting
-
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
@@ -24,5 +20,4 @@ Pending tasks
 
 #. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768 (about float point number)
     
-#. http://faculty.cs.niu.edu/~mcmahon/CS241/c241man/node83.html (C++ Input/Output)
-   
+#. 不同层级下瓦片的时间戳不一致的问题

@@ -4,6 +4,7 @@ Programming Pearls
 
 .. toctree::
 
+   programming_pearls/cpp_output_format
    programming_pearls/cpp_class_basics
    programming_pearls/cpp_type_tricks
    programming_pearls/cpp_string_literal
