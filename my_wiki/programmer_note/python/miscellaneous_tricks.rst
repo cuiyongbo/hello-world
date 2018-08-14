@@ -73,6 +73,10 @@ Miscellaneous Usages
    +------------------------------+------------------------------------------------------------------------+
    | ``bin(number)``              | Return the binary representation of an integer or long integer.        |
    +------------------------------+------------------------------------------------------------------------+
+   | ``hex(number)``              | Return the hexadecimal representation of an integer or long integer.   |
+   +------------------------------+------------------------------------------------------------------------+
+   | ``oct(num)``                 | Return the octal representation of an integer or long integer.         |
+   +------------------------------+------------------------------------------------------------------------+
    | ``integer.bit_length()``     | Return the number of bits necessary to represent an integer in binary, |
    |                              | excluding the sign and leading zeros                                   |
    +------------------------------+------------------------------------------------------------------------+

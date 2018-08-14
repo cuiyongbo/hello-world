@@ -12,13 +12,13 @@ To the software developer, the concept of a **procedure** that runs independentl
 from its main program may best describe a thread. To go one step further, imagine
 a program that contains a number of procedures. Then imagine all of these procedures
 being able to be scheduled to run simultaneously and/or independently by OS. That
-would describe a multithreaded program. But how is this accomplished?
+would describe a **multithreaded** program. But how is this accomplished?
   
-Before understanding a thread, one first needs to understand a UNIX **process**.
-A process is created by OS, and requires a fair amount of "overhead". Processes
+Before understanding a thread, one first needs to understand a **UNIX process**.
+A process is created by OS, and requires a fair amount of "overhead." Processes
 contain information about program resources and program execution state, including:
 
-   - Process ID, process group ID, user ID, and group ID
+   - Process ID, user ID, and group ID
    - Environment
    - Working directory
    - Program instructions
@@ -45,23 +45,22 @@ is accomplished because a thread maintains its own:
    - Registers
    - Scheduling properties (such as policy or priority)
    - Set of pending and blocked signals
-   - Thread specific data.
+   - Thread specific data
 
 So, in summary, in the UNIX environment a thread:
 
    * Exists within a process and uses the process resources
-   * Has its own independent flow of control as long as its parent process exists and the OS supports it
-   * Duplicates only the essential resources it needs to be independently schedulable
-   * May share the process resources with other threads that act equally independently (and dependently)
-   * Dies if the parent process dies - or something similar
+   * Has its own independent flow of control as long as its parent process exists and OS supports it.
+   * Duplicates only the essential resources it needs to be independently schedulable.
+   * May share the process resources with other threads that act equally independently (and dependently).
+   * Dies if the parent process dies - or something similar.
    * Is "lightweight" because most of the overhead has already been accomplished through the creation of its process.
 
 Because threads within the same process share resources:
 
    * Changes made by one thread to shared system resources (such as closing a file) will be seen by all other threads.
    * Two pointers having the same value point to the same data.
-   * Reading and writing to the same memory locations is possible, and therefore requires explicit **synchronization**
-     by the programmer.
+   * Reading and writing to the same memory locations is possible, but requires explicit **synchronization** by the programmer.
 
 
 Designing Threaded Programs
@@ -76,7 +75,7 @@ programs.
 
 There are many considerations for designing parallel programs, such as:
   
-   * What type of parallel programming model to use?
+   * What type of **parallel programming model** to use?
    * Problem partitioning
    * Load balancing
    * Communications
