@@ -87,9 +87,6 @@ There are many considerations for designing parallel programs, such as:
    * Programmer effort/costs/time
    * ...
 
-Covering these topics is beyond the scope of this tutorial, however interested readers
-can obtain a quick overview in the *Introduction to Parallel Computing tutorial*.
-
 In general though, in order for a program to take advantage of Pthreads, it must be able
 to be organized into discrete, independent tasks which can execute concurrently. For example,
 if *routine1* and *routine2* can be interchanged, interleaved and/or overlapped in real time,
@@ -97,14 +94,6 @@ they are candidates for threading.
   
 .. image:: images/concurrent.png
 
-Programs having the following characteristics may be well suited for pthreads:
-  
-   * Work that can be executed, or data that can be operated on by multiple tasks simultaneously
-   * Block for potentially long I/O waits
-   * Use many CPU cycles in some places but not others
-   * Must respond to asynchronous events
-   * Some work is more important than other work (priority interrupts)
-     
 Several common models for threaded programs exist:
   
    * **Manager/worker**: a single thread, the manager assigns work to other threads,
@@ -124,9 +113,7 @@ Shared Memory Model
 -------------------
 
 * All threads have access to the same global, shared memory
-  
-* Threads also have their own private data
-  
+* Threads also have their own private data (Thread specific data)
 * Programmers are responsible for synchronizing access (protecting) globally shared data.
   
 .. image:: images/sharedMemoryModel.png
