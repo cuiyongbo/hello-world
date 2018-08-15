@@ -30,7 +30,6 @@ bytes beginning at address 8, then only a single fetch is needed. Some CPUs will
 a misaligned load - they will simply raise an exception (or even silently load the wrong data!).
 
 .. code-block:: cpp
-   :caption: testimony
    
    srand((unsigned int)time(NULL));
    uint8* ptr = NULL;

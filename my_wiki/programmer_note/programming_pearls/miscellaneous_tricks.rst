@@ -3,6 +3,7 @@ C/C++ Miscellaneous Tricks
 **************************
 
 .. toctree::
+   :titlesonly:
 
    addressof_manual
    macro_tricks

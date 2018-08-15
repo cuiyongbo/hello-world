@@ -2,68 +2,25 @@
 What is a Thread?
 *****************
 
-Thread vs Process
-=================
+**Thread vs Process**
 
-Technically, **a thread is defined as an independent stream of instructions that can
-be scheduled to run as such by the OS**. But what does this mean?
+The UNIX standards, specifically *IEEE Std 1003.1, 2004 Edition,* defines a process as 
+“an address space with one or more threads executing within that address space, and
+the required system resources for those threads."
 
-To the software developer, the concept of a "procedure" that runs independently
-from its main program may best describe a thread. To go one step further, imagine
-a program that contains a number of procedures. Then imagine all of these procedures
-being able to be scheduled to run simultaneously and/or independently by OS. That
-would describe a "multithreaded" program. But how is this accomplished?
-  
-Before understanding a thread, one first needs to understand a UNIX **process**.
-A process is created by OS, and requires a fair amount of "overhead". Processes
-contain information about program resources and program execution state, including:
+See :doc:`fork man page <linux_system_call/fork_info>`.
 
-   - Process ID, process group ID, user ID, and group ID
-   - Environment
-   - Working directory
-   - Program instructions
-   - Registers
-   - Stack
-   - Heap
-   - File descriptors
-   - Signal actions
-   - Shared libraries
-   - IPC tools (such as message queues, pipes, semaphores, or shared memory).
+Multiple strands of execution in a single program are called threads.
+A more precise definition is that a thread is a sequence of control
+within a process.
 
-.. image:: images/process_vs_thread.png
+See :doc:`Pthread API Introduction <pthread/pthread_api>`.
 
-Threads use and exist within these process resources, yet are able to be scheduled by OS
-and run as independent entities largely because they duplicate only the bare essential
-resources that enable them to exist as executable code. This independent flow of control
-is accomplished because a thread maintains its own:
-
-   - Stack pointer
-   - Registers
-   - Scheduling properties (such as policy or priority)
-   - Set of pending and blocked signals
-   - Thread specific data.
-
-So, in summary, in the UNIX environment a thread:
-
-   * Exists within a process and uses the process resources
-   * Has its own independent flow of control as long as its parent process exists and the OS supports it
-   * Duplicates only the essential resources it needs to be independently schedulable
-   * May share the process resources with other threads that act equally independently (and dependently)
-   * Dies if the parent process dies - or something similar
-   * Is "lightweight" because most of the overhead has already been accomplished through the creation of its process.
-
-Because threads within the same process share resources:
-
-   * Changes made by one thread to shared system resources (such as closing a file) will be seen by all other threads.
-   * Two pointers having the same value point to the same data.
-   * Reading and writing to the same memory locations is possible, and therefore requires explicit **synchronization**
-     by the programmer.
-
+.. image:: pthread/images/process_vs_thread.png
 .. image:: images/single_thread_vs_multithread.png
 
 
-fork vs pthread
-===============
+**fork vs pthread**
 
 Just in case you don’t know about forking or threads, here is a little clarification. Forking
 is a UNIX term. When you fork a process, you basically duplicate it, and both resulting processes
@@ -78,7 +35,7 @@ really? Both processes would do the same job, and you would just bog down your c
 In a forking server, a child is forked off for every client connection. The parent process keeps
 listening for new connections, while the child deals with the client. When the client is satisfied,
 the child process simply exits. Because the forked processes run in parallel, the clients don’t need
-to wait for each other. Because forking can be a bit resource intensive (each forked process needs its
+to wait for each other. However, forking can be a bit resource intensive (each forked process needs its
 own memory), an alternative exists: threading. Threads are lightweight processes, or subprocesses, all
 of them existing within the same (real) process, sharing the same memory. This reduction in resource
 consumption comes with a downside, though. Because threads share memory, you must make sure they don’t
@@ -89,32 +46,3 @@ With modern operating systems (except Microsoft Windows, which doesn’t support
 is actually quite fast, and modern hardware can deal with the resource consumption much better
 than before. If you don’t want to bother with synchronization issues, then forking may be a
 good alternative.
-
-
-fork
-====
-
-The UNIX standards, specifically IEEE Std 1003.1, 2004 Edition, defines a process as 
-“an address space with one or more threads executing within that address space, and
-the required system resources for those threads."
-
-See :doc:`fork man page <linux_system_call/fork_info>`
-
-
-Pthread API
-===========
-
-Multiple strands of execution in a single program are called threads.
-A more precise definition is that a thread is a sequence of control
-within a process.
-
-See :doc:`Pthread API Introduction <pthread/pthread_api>`.
-
-
-Reentry Routines vs Thread-safe Routines
-========================================
-
-Re-entrant code can be called more than once, whether by different threads
-or by nested invocations in some way, and still function correctly. Thus,
-the re-entrant section of code usually must use local variables only in such
-a way that each and every call to the code gets its own unique copy of the data.

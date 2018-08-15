@@ -135,3 +135,53 @@ English Note 7
 | garrulity [话痨]
 | Definition: excessive talkativeness, especially on trivial matters.
 | Usage: the character's comic garrulity.
+| 
+| reentrant
+| Definition: (of an angle) pointing inward.The opposite of salient.
+| Definition: a re-entrant angle.
+| Usage: a sharp re-entrant in a material causes a local increase in stress.
+| Definition: an indentation or depression in terrain.
+| Usage: they edged up a deep re-entrant to the top of the ridge.
+| Definition: a person who has re-entered something, especially the labor force.
+| Usage: re-entrants who left to raise a family and are now seeking to get back in.
+|
+| salient
+| Definition: most noticeable or important.
+| Usage: it succinctly covered all the salient points of the case.
+| Usage: it was always the salient object in my view.
+| Definition: (of an angle) pointing outward.The opposite of re-entrant.
+| Definition: (of an animal) standing on its hind legs with the forepaws raised, as if leaping.
+|
+| allot
+| Definition: give or apportion (something) to someone as a share or task.
+| Synonyms: allocate; grant.
+| Usage: I was allotted a little room in the servants' block.
+| 
+| incarnate
+| incarnation
+| Definition: (especially of a deity or spirit) embodied in flesh; in human form. [附身，凭依]
+| Usage: God incarnate.
+| Definition: represented in the ultimate or most extreme form.
+| Usage: here is capitalism incarnate.
+| Definition: embody or represent (a deity or spirit) in human form.
+| Usage: the idea that God incarnates himself in man.
+| Definition: put (an idea or other abstract concept) into concrete form.
+| Usage: a desire to make things which will incarnate their personality.
+| Definition: (of a person) be the living embodiment of (a quality).
+| Usage: the man who incarnates the suffering which has affected every single Mozambican. [莫桑比克人]
+| 
+| traction
+| Definition: the action of drawing or pulling something over a surface, especially a road or track.
+| Usage: a primitive vehicle used in animal traction.
+| Definition: motive power provided for movement, especially on a railroad. [动力，牵引]
+| Usage: the changeover to diesel and electric traction.
+| Definition: the grip of a tire on a road or a wheel on a rail.
+| Usage: his car hit a patch of ice and lost traction.
+| Definition: analysts predicted that the technology would rapidly gain traction in the corporate market.
+| Definition: the application of a sustained pull on a limb or muscle, especially in order to maintain the position of a fractured bone or to correct a deformity.
+| Usage: his leg is in traction.
+|
+| as yet
+| Definition: until now or a particular time in the past.
+| Synonyms: so far.
+| Usage: the damage is as yet undetermined.

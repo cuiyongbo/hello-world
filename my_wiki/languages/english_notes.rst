@@ -3,8 +3,23 @@ English Note
 
 **学而不思则罔， 思而不学则殆**
 
-.. image:: images/names.png
++--------+-----------+--------+
+| Johann | Sebastian | Bach   |
++--------+-----------+--------+
+| First  | Middle    | Last   |
++--------+-----------+--------+
+| Given  | Middle    | Family |
++--------+-----------+--------+
 
+J. S. Bach shares his given name with six immediate family
+members and many extended family members. He shares his family
+name, also known as surname, with most family members.
+
+| past tense 过去式
+| past participle 过去分词
+| present participle 现在进行时
+| third person present 第三人称单数
+| 
 | mass noun
 | Definition: a noun denoting something that cannot be counted(e.g., a substance or quality), in English usually a noun that lacks a plural in ordinary usage and is not used with the indefinite article, e.g., luggage, china, happiness.
 | Antonyms: count noun

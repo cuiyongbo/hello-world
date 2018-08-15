@@ -8,4 +8,5 @@ Gcc Notes
    gcc/gcc_basic_usage
    gcc/makefile_basics
    gcc/make_basic_usage
+   gcc/cmakelist_note
    

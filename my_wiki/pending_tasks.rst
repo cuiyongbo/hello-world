@@ -19,5 +19,5 @@ Pending tasks
 #. http://www.kohala.com/start/
 
 #. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768 (about float point number)
-    
-#. 不同层级下瓦片的时间戳不一致的问题
+
+#. https://github.com/alxn/ppearls.git (programming pearls solutions)

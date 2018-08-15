@@ -10,6 +10,12 @@ POSIX concepts
    | .. image:: images/concurrency.jpg | .. image:: images/parallelism.jpg |
    +-----------------------------------+-----------------------------------+
 
+#. Reentry Routines vs Thread-safe Routines
+
+   Re-entrant code can be called more than once, whether by different threads
+   or by nested invocations in some way, and still function correctly. Thus,
+   the re-entrant section of code usually must use local variables only in such
+   a way that each and every call to the code gets its own unique copy of the data.
 
 #. MT-Safe vs MT-Unsafe
 
@@ -97,24 +103,24 @@ POSIX concepts
    Once the interruption completes, the previous invocations will resume correct execution.
 
    This definition originates from single-threaded programming environments where the flow of control 
-   could be interrupted by an interrupt and transferred to an :abbr:`ISR (interrupt service routine).` 
-   Any subroutine used by the ISR that could potentially have been executing when the interrupt was 
+   could be interrupted by an interruption and transferred to an :abbr:`ISR (interrupt service routine).` 
+   Any subroutine used by the ISR that could potentially have been executing when the interruption was 
    triggered should be reentrant.
 
    Reentrancy is distinct from, but closely related to, thread-safety. A function can be thread-safe 
-   and still not reentrant. For example, a function could be wrapped all around with a mutex (which 
-   avoids problems in multithreading environments), but, if that function were used in an ISR, it 
-   could starve waiting for the first execution to release the mutex. The key for avoiding confusion 
-   is that **reentrant refers to only one thread executing. It is a concept from the time when no 
-   multitasking operating systems existed.** Rules for reentrancy come following:
+   and still not reentrant. For example, a function could be wrapped all around with a mutex, 
+   but, if that function were used in an ISR, it could starve waiting for the first execution 
+   to release the mutex. The key for avoiding confusion is that **reentrant refers to only one thread 
+   executing. It is a concept from the time when no multitasking operating systems existed.** 
+   Rules for reentrancy come following:
 
       - Reentrant code may not hold any static or global non-constant data.
       - Reentrant code may not modify itself.
-      - Reentrant code may not call non-reentrant computer programs or routines.
+      - Reentrant code may not call non-reentrant routines.
 
    .. note::
 
-      The operating system might allow a process to modify its code. 
+      The OS might allow a process to modify its code. 
       There are various reasons for this (e.g., blitting graphics quickly) 
       but this would cause a problem with reentrancy, since the code might 
       not be the same next time. It may, however, modify itself if it resides 

@@ -125,8 +125,8 @@ fork Manual
 
    ENOSYS 
 
-      ``fork()`` is not supported on this platform
-      (for example, hardware without a :abbr:`MMU (Memory-Management Unit)`).
+      ``fork()`` is not supported on this platform where, 
+      for example, hardware without a :abbr:`MMU (Memory-Management Unit).`
 
 
 **NOTES**
@@ -137,22 +137,3 @@ fork Manual
 **EXAMPLE**
 
    See :manpage:`pipe(2)` and :manpage:`wait(2)`.
-
-**SEE ALSO**
-
-   clone(2), execve(2), exit(2), setrlimit(2), unshare(2), vfork(2), wait(2),
-   daemon(3), capabilities(7), credentials(7)
-
-**Zombie Process**
-
-   Using ``fork`` to create processes can be very useful, but you must keep track of child processes. When a
-   child process terminates, an association with its parent survives until the parent in turn either terminates
-   normally or calls ``wait``. The child process entry in the process table is therefore not freed up immediately.
-   Although no longer active, the child process is still in the system because its exit code needs to be stored
-   in case the parent subsequently calls **wait**. It becomes what is known as **defunct**, or a **zombie process**.
-
-   If the parent then terminates abnormally, the child process automatically gets the process with PID ``1``
-   (``init``) as parent. The child process is now a zombie that is no longer running but has been inherited by
-   ``init`` because of the abnormal termination of the parent process. The zombie will remain in the process
-   table until collected by the ``init`` process. The bigger the table, the slower this procedure. You need to
-   avoid zombie processes, because they consume resources until ``init`` cleans them up.

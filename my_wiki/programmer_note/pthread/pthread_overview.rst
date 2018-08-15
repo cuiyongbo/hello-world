@@ -30,11 +30,7 @@ contain information about program resources and program execution state, includi
    - Shared libraries
    - IPC tools (such as message queues, pipes, semaphores, or shared memory).
 
-+-----------------------------------------+----------------------------------------+
-| process structure                       | thread structure                       |
-+=========================================+========================================+
-| .. image:: images/process_structure.png | .. image:: images/thread_structure.png |
-+-----------------------------------------+----------------------------------------+
+.. image:: images/process_vs_thread.png
 
 Threads use and exist within these process resources, yet are able to be scheduled by OS
 and run as independent entities largely because they duplicate only the bare essential
@@ -152,11 +148,9 @@ the uncertain routine, etc.
       POSIX.1 also requires that threads share a range of other attributes (i.e., these attributes 
       are process-wide rather than per-thread):
 
-         -  process ID
-         -  parent process ID
-         -  process group ID and session ID
+         -  process ID, parent process ID, and process group ID
+         -  session ID, user and group IDs
          -  controlling terminal
-         -  user and group IDs
          -  open file descriptors
          -  record locks (see fcntl(2))
          -  signal dispositions
@@ -184,9 +178,9 @@ the uncertain routine, etc.
    #. Pthreads function return values
       
       Most pthreads functions return 0 on success, and an error number of failure.  
-      **Note that the pthreads functions do not set errno.** For each of the pthreads 
-      functions that can return an error, *POSIX.1-2001* specifies that the function 
-      can never fail with the error *EINTR*.
+      **Note that the pthreads functions do not set the global errno.** For each of 
+      the pthreads functions that can return an error, *POSIX.1-2001* specifies that 
+      the function can never fail with the error *EINTR*.
 
    #. Compiling on Linux
 
