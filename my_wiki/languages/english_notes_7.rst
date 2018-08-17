@@ -185,3 +185,17 @@ English Note 7
 | Definition: until now or a particular time in the past.
 | Synonyms: so far.
 | Usage: the damage is as yet undetermined.
+|
+| sponge [海绵]
+| spongy [膨软疏松]
+| Usage: Sponges absorb liquid and are used for washing and cleaning.
+| Usage: I like nothing better than butter on a slice of freshly baked, spongy white bread. 
+| Usage: She sponged him down in an attempt to cool his fever. [用抹布擦拭身体]
+| Definition: Obtain or accept money or food from other people without doing or intending to do anything in return. [揩油？乞讨？]
+| Usage: They found they could earn a perfectly good living by sponging off others.
+| Usage: He edged closer, clearly intending to sponge money from her.
+| Definition: a drunkard.
+| Phrase: throw in the sponge
+| Definition: (informal) to concede defeat; yield; give up:
+| Usage: The early election returns were heavily against him, but he wasn't ready to throw in the sponge.
+|

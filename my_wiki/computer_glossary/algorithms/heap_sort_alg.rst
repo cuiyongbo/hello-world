@@ -67,56 +67,53 @@ while at the end of the sort, the largest element is in ``a[end].``
 .. code-block:: none
    :caption: pseudocode
 
-   procedure heapsort(a, count) is
-       input: an unordered array a of length count
-    
-       (Build the heap in array a so that largest value is at the root)
+   function heapsort(a, count)
+
        heapify(a, count)
    
-       (The following loop maintains the invariants that a[0:end] is a heap 
-       and a[end:count] is in sorted order)
        end := count - 1
        while end > 0 do
-           (a[0] is the root and largest value.)
            swap(a[end], a[0])
-           (the heap size is reduced by one)
            end := end - 1
-           (the swap ruined the heap property, so restore it)
            siftDown(a, 0, end)
    
-   (Put elements of 'a' in heap order, in-place)
-   procedure heapify(a, count) is
-       (find the parent of the last element in 'a')
-       start := iParent(count-1)
-       
-       while start ≥ 0 do
-           (sift down the node at index 'start' to the proper place 
-           such that all nodes below the start index are in heap order)
+   function heapify-siftDown(a, count)
+       start = Parent(count-1)
+       while start >= 0 do
            siftDown(a, start, count - 1)
-           (go to the next parent node)
            start := start - 1
 
    
-   (Repair the heap whose root element is at index 'start', assuming the heaps rooted at its children are valid)
-   procedure siftDown(a, start, end) is
+   function siftDown(a, start, end)
        root := start
-   
-       while iLeftChild(root) ≤ end do    (While the root has at least one child)
-           child := iLeftChild(root)   (Left child of root)
-           swap := root                (Keeps track of child to swap with)
-   
+       while LeftChild(root) <= end do   
+           child := LeftChild(root)  
+           swap := root            
            if a[swap] < a[child]
                swap := child
-           (If there is a right child and that child is greater)
            if child+1 ≤ end and a[swap] < a[child+1]
                swap := child + 1
            if swap = root
-               (The root holds the largest element. Since we assume the heaps rooted at the
-                children are valid, this means that we are done.)
                return
            else
                swap(a[root], a[swap])
-               root := swap            (repeat to continue sifting down the child now)
+               root := swap           
+
+   function heapify-siftUp(a,count)
+    end := 1
+    while end < count
+        siftUp(a, 0, end)
+        end := end + 1
+ 
+   function siftUp(a, start, end)
+       child := end 
+       while child > start
+           parent := Parent(child)
+           if a[parent] < a[child] then (out of max-heap order)
+               swap(a[parent], a[child])
+               child := parent
+           else
+               return
 
 
 **Example**
@@ -127,84 +124,3 @@ with parents, and then recursively checked if another swap is needed, to keep la
 numbers on the heap binary tree.)
 
 .. image:: images/heapsort-example.gif
-
-
-#. Build the heap
-
-   +------------------------+---------------------+---------------+
-   | Heap                   | newly added element | swap elements |
-   +========================+=====================+===============+
-   | null                   | 6                   |               |
-   +------------------------+---------------------+---------------+
-   | 6                      | 5                   |               |
-   +------------------------+---------------------+---------------+
-   | 6, 5                   | 3                   |               |
-   +------------------------+---------------------+---------------+
-   | 6, 5, 3                | 1                   |               |
-   +------------------------+---------------------+---------------+
-   | 6, 5, 3, 1             | 8                   |               |
-   +------------------------+---------------------+---------------+
-   | 6, 5, 3, 1, 8          |                     | 5, 8          |
-   +------------------------+---------------------+---------------+
-   | 6, 8, 3, 1, 5          |                     | 6, 8          |
-   +------------------------+---------------------+---------------+
-   | 8, 6, 3, 1, 5          | 7                   |               |
-   +------------------------+---------------------+---------------+
-   | 8, 6, 3, 1, 5, 7       |                     | 3, 7          |
-   +------------------------+---------------------+---------------+
-   | 8, 6, 7, 1, 5, 3       | 2                   |               |
-   +------------------------+---------------------+---------------+
-   | 8, 6, 7, 1, 5, 3, 2    | 4                   |               |
-   +------------------------+---------------------+---------------+
-   | 8, 6, 7, 1, 5, 3, 2, 4 |                     | 1, 4          |
-   +------------------------+---------------------+---------------+
-   | 8, 6, 7, 4, 5, 3, 2, 1 |                     |               |
-   +------------------------+---------------------+---------------+
-  
-#. Sorting
-
-   +------------------------+---------------+------------------------+
-   | Heap                   | swap elements | sorted array           |
-   +========================+===============+========================+
-   | 8, 6, 7, 4, 5, 3, 2, 1 | 8, 1          | null                   |
-   +------------------------+---------------+------------------------+
-   | 1, 6, 7, 4, 5, 3, 2    |               | 8                      |
-   +------------------------+---------------+------------------------+
-   | 7, 6, 3, 4, 5, 1, 2    |               | 8                      |
-   +------------------------+---------------+------------------------+
-   | 7, 6, 3, 4, 5, 1, 2    | 7, 2          | 8                      |
-   +------------------------+---------------+------------------------+
-   | 2, 6, 3, 4, 5, 1       |               | 7, 8                   |
-   +------------------------+---------------+------------------------+
-   | 6, 5, 3, 4, 2, 1       |               | 7, 8                   |
-   +------------------------+---------------+------------------------+
-   | 6, 5, 3, 4, 2, 1       | 6, 1          | 7, 8                   |
-   +------------------------+---------------+------------------------+
-   | 1, 5, 3, 4, 2          |               | 6, 7, 8                |
-   +------------------------+---------------+------------------------+
-   | 5, 4, 3, 1, 2          |               | 6, 7, 8                |
-   +------------------------+---------------+------------------------+
-   | 5, 4, 3, 1, 2          | 5, 2          | 6, 7, 8                |
-   +------------------------+---------------+------------------------+
-   | 2, 4, 3, 1             |               | 5, 6, 7, 8             |
-   +------------------------+---------------+------------------------+
-   | 4, 2, 3, 1             |               | 5, 6, 7, 8             |
-   +------------------------+---------------+------------------------+
-   | 4, 2, 3, 1             | 4, 1          | 5, 6, 7, 8             |
-   +------------------------+---------------+------------------------+
-   | 1, 2, 3                |               | 4, 5, 6, 7, 8          |
-   +------------------------+---------------+------------------------+
-   | 3, 2, 1                |               | 4, 5, 6, 7, 8          |
-   +------------------------+---------------+------------------------+
-   | 3, 2, 1                | 3, 1          | 4, 5, 6, 7, 8          |
-   +------------------------+---------------+------------------------+
-   | 1, 2                   |               | 3, 4, 5, 6, 7, 8       |
-   +------------------------+---------------+------------------------+
-   | 2, 1                   |               | 3, 4, 5, 6, 7, 8       |
-   +------------------------+---------------+------------------------+
-   | 2, 1                   | 2, 1          | 3, 4, 5, 6, 7, 8       |
-   +------------------------+---------------+------------------------+
-   | 1                      |               | 2, 3, 4, 5, 6, 7, 8    |
-   +------------------------+---------------+------------------------+
-   |                        |               | 1, 2, 3, 4, 5, 6, 7, 8 |
-   +------------------------+---------------+------------------------+

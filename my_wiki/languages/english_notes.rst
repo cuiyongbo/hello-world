@@ -874,16 +874,7 @@ name, also known as surname, with most family members.
 | Definition: (especially of a disease or physical abnormality) present from birth.
 | Usage: A congenital malformation of the heart.
 | Definition: (of a person) having a particular trait from birth or by firmly estalished habit.
-| Usage: A congenital liar.
-| sponge [海绵]
-| Definition: A piece of a soft, light, porous substance originally consisting of the fibrous skeleton of an invertebrate but now usually  made of synthetic | material. 
-| Usage: Sponges absorb liquid and are used for washing and cleaning.
-| Definition: wipe, rub, or clean with a wet sponge or cloth.
-| Usage: She sponged him down in an attempt to cool his fever.
-| Definition: a heavy drinker.
-| Definition: Obtain or accept money or food from other people without doing or intending to do anything in return.
-| Usage: They found they could earn a perfectly good living by sponging off others.
-| Usage: He edged closer, clearly intending to sponge money from her.
+| Usage: A congenital liar. [天生的骗子]
 | 
 | edge
 | Definition: A quality or factor that gives superiority over close rivals or competitor.

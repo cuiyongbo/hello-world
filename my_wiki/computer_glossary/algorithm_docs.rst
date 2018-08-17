@@ -3,6 +3,7 @@ Algorithms
 **********
 
 .. toctree:: 
+   :titlesonly:
 
    algorithms/binary_search_alg
    algorithms/counting_sort_alg
