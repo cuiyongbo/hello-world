@@ -286,6 +286,6 @@ Sublime Text
 #. Open package control: Cmd + Shift + P (mac), Ctrl + Shift + P (windows)
 #. Move backward/forward: Ctrl + - / Shift + Ctrl + -
 #. Quick open file - Cmd + P / Cmd + T (mac)
-        
+#. Preview markdown file: install markdown html preview, then "Ctrl + shift + m"        
 
       
