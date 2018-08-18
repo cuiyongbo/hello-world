@@ -59,8 +59,6 @@ Priority Queue
       #     2   3  7   8
       # If you want to delete key 2, the A[A.heap-size] is 8. But 8 should climb up to the position of 5.
 
-
-
 #. Implement a min-priority queue with min-heap
    
    .. code-block:: none

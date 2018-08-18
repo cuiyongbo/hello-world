@@ -5,6 +5,7 @@ Algorithms
 .. toctree:: 
    :titlesonly:
 
+   algorithms/pseudocode_introduction
    algorithms/binary_search_alg
    algorithms/counting_sort_alg
    algorithms/comparison_sort_alg
