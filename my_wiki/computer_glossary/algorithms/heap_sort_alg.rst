@@ -68,7 +68,7 @@ while at the end of the sort, the largest element is in ``a[end].``
    :caption: pseudocode
 
    function heapsort(a, count)
-
+   {
        heapify(a, count)
    
        end := count - 1
@@ -76,15 +76,18 @@ while at the end of the sort, the largest element is in ``a[end].``
            swap(a[end], a[0])
            end := end - 1
            siftDown(a, 0, end)
+   }
    
    function heapify-siftDown(a, count)
+   {
        start = Parent(count-1)
        while start >= 0 do
            siftDown(a, start, count - 1)
            start := start - 1
-
+   }
    
    function siftDown(a, start, end)
+   {
        root := start
        while LeftChild(root) <= end do   
            child := LeftChild(root)  
@@ -98,14 +101,18 @@ while at the end of the sort, the largest element is in ``a[end].``
            else
                swap(a[root], a[swap])
                root := swap           
+   }
 
    function heapify-siftUp(a,count)
-    end := 1
-    while end < count
-        siftUp(a, 0, end)
-        end := end + 1
+   {
+       end := 1
+       while end < count
+           siftUp(a, 0, end)
+           end := end + 1
+   }
  
    function siftUp(a, start, end)
+   {
        child := end 
        while child > start
            parent := Parent(child)
@@ -114,6 +121,7 @@ while at the end of the sort, the largest element is in ``a[end].``
                child := parent
            else
                return
+   }
 
 
 **Example**

@@ -11,7 +11,6 @@ Steps of Programming
    programmer_note/gcc_notes
    programmer_note/gdb_notes
    programmer_note/gtest_notes
-   programmer_note/threads_vs_processes
    programmer_note/pthread_introduction
    programmer_note/std_c_api
    programmer_note/linux_system_calls

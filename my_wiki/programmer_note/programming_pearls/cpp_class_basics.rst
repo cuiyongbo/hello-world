@@ -7,109 +7,103 @@ C++ Class Tricks
    
    cpp_operator_precedence
    cpp_operator_overloading
+   cpp_preprocessor_symbol_notes
 
 .. contents::
    :local:
 
-Access control
-==============
+#. Access control
 
-.. image:: images/cpp_class_access_control.png
-
-
-``delete this`` in c++
-======================
-
-Basically you are not advised to do ``delete this`` operation unless
-
-   * The class you delete was allocated on heap or free store.
-   * You will **NEVER** use the pointer again after you delete it.
+   .. image:: images/cpp_class_access_control.png
 
 
-Declare class constructor as ``private/protected``
-==================================================
+#. ``delete this`` in cpp
 
-Here are some of the uses of private constructor :
-
-   * Objects can only be created on heap
-   * Singleton Design Pattern
-   * To limit the number of instance creation
-   * To give meaningful name for object creation using static factory method
-   * Static Utility Class or Constant Class
-   * To prevent Subclassing (lose the chance to be inherited) [private only]
-   * Builder Design Pattern and thus for creating immutable classes
+   Basically you are not advised to do ``delete this`` operation unless
+   
+      * The object you delete was allocated on heap or free store.
+      * You will **NEVER** use the pointer again after you delete it.
 
 
-Declare class destructor as ``private/protected``
-=================================================
+#. Declare class constructor as ``private/protected``
 
-Basically, any time you want some other class to be responsible for the life cycle of your class' objects,
-or you have reason to prevent the destruction of an object, you can make the destructor private.
-
-For instance, if you're doing some sort of **reference counting** thing, you can have the object
-(or manager that has been "friend"ed) responsible for counting the number of references to itself
-and delete it when the number hits zero. A private destructor would prevent anybody else from
-deleting it when there were still references to it.
-
-.. code-block:: c++
-
-   class Water
-   {
-      // ...
-   protected:
-      ~Water() {}
-   };
-   delete w;
-   // error C2248: 'Water::~Water' : cannot access protected member declared in class 'Water'
+   Here are some of the uses of private constructor :
+   
+      * Objects can only be created on heap
+      * Singleton Design Pattern
+      * To limit the number of instance creation
+      * To give meaningful name for object creation using static factory method
+      * Static Utility Class or Constant Class
+      * Lose the chance to be inherited [private only]
+      * Builder Design Pattern and thus for creating immutable classes
 
 
-Declare class destructor as ``virtual``
-=======================================
+#. Declare class destructor as ``private/protected``
 
-Many classes require some form of cleanup for an object before it goes away. Since the abstract
-class Ival_box cannot know if a derived class requires such cleanup, it must assume that it does
-require some. We ensure proper cleanup by defining a virtual destructor Ival_box::~Ival_box()
-in the base and overriding it suitably in derived classes. For example::
-
-   class Ival_box
-   {
-      // ...
-      virtual ~Ival_box() {}
-   };
-
-   void f(Ival_box* p)
-   {
-      // ...
-      delete p;
-   }
-
-The ``delete`` operator explicitly destroys the object pointed to by *p*. We have no way of knowing
-exactly to which class the object pointed to by *p* belongs, but thanks to Ival_box’s virtual
-destructor, proper cleanup as (optionally) defined by that class’ destructor will be called.
-
-
-Difference between assignment and copy constructor
-==================================================
-
-Copy constructor initializes an uninitialized object with an initialized one;
-while assignment re-initilizes an initialized object with another initialized one.
-
-You could replace copy construction by default construction plus assignment, 
-but that would be less efficient.
-
-.. code-block:: cpp
-
-   A(const A& other): m_data(other.m_data) {}
-   A& operator=(const A& other) 
-   {
-      if(this != &other)
+   Basically, any time you want some other class to be responsible for the life cycle of your class' objects,
+   or you have reason to prevent the destruction of an object, you can make the destructor private.
+   
+   For instance, if you're doing some sort of **reference counting** thing, you can have the object
+   (or manager that has been "friend"ed) responsible for counting the number of references to itself
+   and delete it when the number hits zero. A private destructor would prevent anybody else from
+   deleting it when there were still references to it.
+   
+   .. code-block:: cpp
+   
+      class Water
       {
-         cleanup(m_data);
-         m_data = other.m_data;
-      }
-      return *this;
-   }
+         // ...
+      protected:
+         ~Water() {}
+      };
+      delete w;
+      // error C2248: 'Water::~Water' : cannot access protected member declared in class 'Water'
 
+
+#. Declare class destructor as ``virtual``
+
+   Many classes require some form of cleanup for an object before it goes away. Since the abstract
+   class Ival_box cannot know if a derived class requires such cleanup, it must assume that it does
+   require some. We ensure proper cleanup by defining a virtual destructor Ival_box::~Ival_box()
+   in the base and overriding it suitably in derived classes. For example::
+   
+      class Ival_box
+      {
+         // ...
+         virtual ~Ival_box() {}
+      };
+   
+      void f(Ival_box* p)
+      {
+         // ...
+         delete p;
+      }
+   
+   The ``delete`` operator explicitly destroys the object pointed to by *p.* We have no way of knowing
+   exactly to which class the object pointed to by *p* belongs, but thanks to Ival_box’s virtual
+   destructor, proper cleanup as (optionally) defined by that class’ destructor will be called.
+
+#. Difference between assignment and copy constructor
+
+   Copy constructor initializes an uninitialized object with an initialized one;
+   while assignment re-initilizes an initialized object with another initialized one.
+   
+   You could replace copy construction by default construction plus assignment, 
+   but that would be less efficient.
+   
+   .. code-block:: cpp
+   
+      A(const A& other): m_data(other.m_data) {}
+      A& operator=(const A& other) 
+      {
+         if(this != &other)
+         {
+            cleanup(m_data);
+            m_data = other.m_data;
+         }
+         return *this;
+      }
+   
 
 C++ class example
 =================

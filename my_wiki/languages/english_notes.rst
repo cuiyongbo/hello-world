@@ -848,16 +848,9 @@ name, also known as surname, with most family members.
 | Idiom: talk (or speak) in riddles.
 | Definition: express oneself in an ambiguous or puzzling manner.
 | 
-| 
 | meek
 | Definition: quiet, gentle, and easily imposed on; submissive.
 | Usage: I used to call her Miss Mouse because she was so meek and mild.
-| 
-| forbear
-| Definition: politely or patiently restrain an impulse to do something.
-| Usage: The boy forbore from touching anything.
-| Definition: refrain from doing or using something.
-| Usage: Rebecca could not forbear a smile.
 | 
 | dumb
 | Definition:temporarily unable or unwilling to speak.

@@ -49,13 +49,21 @@ English Note 6
 | Usage: the government still has a myopic attitude to public spending.
 | 
 | stifle
-| Synonyms: supress; hamper
 | Definition: restrain (a reaction) or stop oneself acting on (an emotion). [克制]
-| Usage: she stifled a giggle。
+| Synonyms: forbear.
+| Usage: she stifled a giggle.
 | Usage: she stifled a desire to turn and flee.
 | Definition: prevent or constrain (an activity or idea).
+| Synonyms: supress; hamper
 | Usage: high taxes were stifling private enterprise.
 | 
+| forbear
+| Definition: politely or patiently restrain an impulse to do something.
+| Synonyms: self-restrain; self-control.
+| Usage: The boy forbore from touching anything.
+| Definition: refrain from doing or using something.
+| Usage: Rebecca could not forbear a smile. [忍俊不禁]
+|
 | cut
 | Phrase: cut both ways
 | Definition: (of a point or statement) serve both sides of an argument.

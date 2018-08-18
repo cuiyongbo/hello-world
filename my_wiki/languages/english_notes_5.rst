@@ -21,6 +21,13 @@ English Notes 5
 | Definition: culinary means concerned with cooking.
 | Usage: She was keen to acquire more advanced culinary skills.
 | 
+| concoct
+| Definition: make (a dish or meal) by combining various ingredients. [杂烩？]
+| Usage: they concoct relish from corn that is so naturally sweet no extra sugar is needed.
+| Definition: create or devise (said especially of a story or plan). [杜撰，编造事实]
+| Synonyms: make up.
+| Usage: She concocted some elaborate story to explain her absence.
+| 
 | condiment [调料，酱汁]
 | Definition: a substance such as salt or ketchup(番茄酱) that is used to add flavor to food.
 | 

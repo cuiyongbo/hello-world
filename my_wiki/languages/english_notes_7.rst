@@ -199,3 +199,12 @@ English Note 7
 | Definition: (informal) to concede defeat; yield; give up:
 | Usage: The early election returns were heavily against him, but he wasn't ready to throw in the sponge.
 |
+| transliterate
+| transliteration
+| Definition: write or print (a letter or word) using the closest corresponding letters of a different alphabet or language.
+| Usage: names from one language are often transliterated into another. [音译]
+| 
+| disburse
+| disbursement [拨款，支出]
+| Definition: pay out (money from a fund).
+| Usage: $67 million of the pledged aid had already been disbursed.| 

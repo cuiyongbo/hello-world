@@ -14,6 +14,7 @@ Computer Glossary
    computer_glossary/os_problems
    computer_glossary/os_lock_mechanisms
    computer_glossary/special_process_type
+   computer_glossary/thread_vs_process
    computer_glossary/linux_filesystem_hierarchy
    computer_glossary/unix_configure_file
    computer_glossary/cpu_docs

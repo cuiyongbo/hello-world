@@ -1,5 +1,5 @@
 *****************
-What is a Thread?
+Thread vs Process
 *****************
 
 **Thread vs Process**
@@ -8,16 +8,16 @@ The UNIX standards, specifically *IEEE Std 1003.1, 2004 Edition,* defines a proc
 “an address space with one or more threads executing within that address space, and
 the required system resources for those threads."
 
-See :doc:`fork man page <linux_system_call/fork_info>`.
+See :doc:`fork man page <../programmer_note/linux_system_call/fork_info>`.
 
 Multiple strands of execution in a single program are called threads.
 A more precise definition is that a thread is a sequence of control
 within a process.
 
-See :doc:`Pthread API Introduction <pthread/pthread_api>`.
+See :doc:`Pthread API Introduction <../programmer_note/pthread/pthread_api>`.
 
-.. image:: pthread/images/process_vs_thread.png
-.. image:: images/single_thread_vs_multithread.png
+.. image:: ../programmer_note/pthread/images/process_vs_thread.png
+.. image:: ../programmer_note/images/single_thread_vs_multithread.png
 
 
 **fork vs pthread**
@@ -29,7 +29,7 @@ One process (the original one) will be the parent process, while the other (the 
 If you’re a science fiction fan, you might think of parallel universes; the forking operation creates a fork
 in the timeline, and you end up with two universes (the two processes) existing independently. Luckily,
 the processes are able to determine whether they are the original or the child (by looking at the return
-value of the :meth:`fork` function), so they can act differently. (If they couldn’t, what would be the point,
+value of the fork function), so they can act differently. (If they couldn’t, what would be the point,
 really? Both processes would do the same job, and you would just bog down your computer.)
 
 In a forking server, a child is forked off for every client connection. The parent process keeps

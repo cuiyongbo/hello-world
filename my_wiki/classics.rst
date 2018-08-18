@@ -3,6 +3,7 @@ Classics
 ********
 
 .. toctree::
+   :titlesonly:
 
    classics/zengguangxianwen
    classics/19_poems
