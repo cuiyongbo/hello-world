@@ -22,4 +22,3 @@ Computer Glossary
    computer_glossary/compare_and_swap_tech
    computer_glossary/install_ubuntu_on_mac
    computer_glossary/rst_syntax_note
-   computer_glossary/software_screenshots

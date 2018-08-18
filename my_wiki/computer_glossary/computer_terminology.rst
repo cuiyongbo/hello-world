@@ -36,6 +36,7 @@ Computer Terminology
 | locality of reference
 | RTT = Round Trip Time
 | SPT = Server Process Time
+| NaN = not-a-number
 |
 | divide-and-rule / divide-and-conquer [分而治之]
 | Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.

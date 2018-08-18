@@ -3,6 +3,7 @@ Linux System Call
 *****************
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 2
 
    linux_system_call/general_unix_api_manual

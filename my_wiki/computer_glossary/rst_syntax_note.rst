@@ -1,6 +1,6 @@
-*******
-rst FAQ
-*******
+**********************
+reStructure Syntax FAQ
+**********************
 
 #. Preserve line breaks while generating docs using Sphinx
 

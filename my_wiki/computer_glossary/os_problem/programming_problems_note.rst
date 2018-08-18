@@ -1,5 +1,6 @@
-Programmer's Tricks
-===================
+*****************************
+Programming Problem Solutions
+*****************************
 
 #. See the default system page size
 
@@ -40,4 +41,4 @@ Programmer's Tricks
    recently than its object file, this situation can cause unnecessary files to be built,
    or worse, necessary files to not be built. you can fix it by executing::
 
-      find . -exec touch {} +
+      find . -exec touch \{\} \+

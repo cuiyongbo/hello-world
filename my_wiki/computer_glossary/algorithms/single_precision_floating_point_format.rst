@@ -2,27 +2,20 @@
 Single-precision floating-point format
 **************************************
 
-Overview
-========
-
 Single-precision floating-point format is a computer number format, 
 usually occupying 32 bits in computer memory; it represents a wide 
 dynamic range of numeric values by using a floating radix point.
 
 A floating point variable can represent a wider range of numbers than 
 a fixed point variable of the same bit width at the cost of precision. 
-A signed 32-bit integer variable has a maximum value of :math:`2^31 − 1 = 2,147,483,647`, 
+A signed 32-bit integer variable has a maximum value of :math:`2^{31} − 1 = 2,147,483,647`, 
 whereas an IEEE 754 32-bit base-2 floating-point variable has a maximum value of 
 :math:`(2 − 2^{−23}) \times 2^{127} \approx 3.402823 \times 10^{38}`. All integers 
 with 6 or fewer significant decimal digits, and any number that can be written as 
 :math:`2^n` such that n is a whole number from -126 to 127, can be converted into 
 an IEEE 754 floating-point value without loss of precision.
 
-
-IEEE 754 single-precision binary floating-point format: binary32
-================================================================
-
-The IEEE 754 standard specifies a binary32 as having:
+The IEEE 754 standard specifies a **binary32** as having:
 
    * Sign bit: 1 bit
    * Exponent width: 8 bits
@@ -47,13 +40,20 @@ value of 127 represents the actual zero (i.e. for 2^{e − 127} to be one, e mus
 be 127). Exponents range from −126 to +127 because exponents of −127 (all 0s) 
 and +128 (all 1s) are reserved for special numbers.
 
-The true significand includes 23 **fraction bits** to the right of the binary point 
+The true **significand** includes 23 fraction bits to the right of the binary point 
 and an implicit leading bit (to the left of the binary point) with value 1, unless 
 the exponent is stored with all zeros. Thus only 23 fraction bits of the significand 
 appear in the memory format, but the total precision is 24 bits (equivalent to 
 :math:`\log_{10}(2^{24}) \approx 7.225` decimal digits). The bits are laid out as follows:
 
 .. image:: images/Float_example.svg
+
+.. note::
+
+   The significand (also mantissa or coefficient, sometimes also argument or fraction) 
+   is part of a number in scientific notation or a floating-point number, consisting 
+   of its significant digits[有效数字]. Depending on the interpretation of the exponent, 
+   the significand may represent an integer or a fraction. 
 
 The real value assumed by a given 32-bit binary32 data with a given biased sign, 
 exponent e (the 8-bit unsigned integer), and a 23-bit fraction is
@@ -76,7 +76,7 @@ In this example:
    & {(-1)^{\text{sign}} = (-1)^{0}=+1 \in \{-1,+1\}}, \\
    & {e = \sum_{i=0}^{7}b_{23+i}2^{+i} = 124 \in \{1,\ldots ,(2^{8}-1)-1\}=\{1,\ldots ,254\}}, \\
    & {2^{(e-127)} = 2^{124-127} = 2^{-3} \in \{2^{-126},\ldots ,2^{127}\}}, \\
-   & {1 + \sum_{i=1}^{23}b_{23-i}2^{-i} = 1 + 2^{-2} = 1.25 \in \{1,1+2^{-23},\ldots ,2-2^{-23}\} \subset [1;2)}.
+   & {1 + \sum_{i=1}^{23}b_{23-i}2^{-i} = 1 + 2^{-2} = 1.25 \in \{1,1+2^{-23},\ldots ,2-2^{-23}\} \subset [1,2)}.
 
 thus:
 

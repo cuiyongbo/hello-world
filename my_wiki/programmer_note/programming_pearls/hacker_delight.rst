@@ -66,7 +66,7 @@ Hackers' Delight
    The negation of a number a can be computed by ``~a + 1``.
 
 
-#. Check NAN
+#. Check :abbr:`NAN (not-a-number)`
    
    According to the *IEEE standard,* NaN values have the odd property that comparisons involving 
    them are always false. That is, for a float f, ``f != f`` will be true only if f is ``NaN.``
@@ -87,7 +87,7 @@ Hackers' Delight
 #. Comparison of float or double numbers
 
    .. code-block:: cpp
-      :caption: taken from *The art of computer programming*
+      :caption: Taken from *The art of computer programming*
 
       bool approximatelyEqual(float a, float b, float epsilon)
       {
