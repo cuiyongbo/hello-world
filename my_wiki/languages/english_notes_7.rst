@@ -207,4 +207,11 @@ English Note 7
 | disburse
 | disbursement [拨款，支出]
 | Definition: pay out (money from a fund).
-| Usage: $67 million of the pledged aid had already been disbursed.| 
+| Usage: $67 million of the pledged aid had already been disbursed.
+|
+| elicit
+| elicitation
+| Definition: evoke or draw out (a response, answer, or fact) from someone in reaction to one's own actions or questions.
+| Usage: I could elicit no response from him. [打探，套话]
+| Usage: Her tears elicited great sympathy from her audience. [博取]
+| 

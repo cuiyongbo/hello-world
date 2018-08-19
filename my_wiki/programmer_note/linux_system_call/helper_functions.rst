@@ -201,11 +201,6 @@ sleep & usleep
    the time actually slept) in seconds.
 
 
-**SEE ALSO**
-
-   :manpage:`nanosleep(2)`, :manpage:`usleep(3)`
-
-
 pause
 =====
 
@@ -222,6 +217,8 @@ pause
 
 **DESCRIPTION**
 
+   **Note** that ``pause()`` is made obsolete by :manpage:`sigsuspend(2).`
+
    The ``pause()`` function forces a process to pause until a signal is received from
    either the :manpage:`kill(2)` function or an interval timer. (See :manpage:`setitimer(2)`.)  
    Upon termination of a signal handler started during a ``pause()``, the ``pause()`` call will
@@ -229,22 +226,37 @@ pause
 
 **RETURN VALUES**
 
-   Always returns -1.
+   Always returns -1. and set errno to ``EINTR.``
 
-**ERRORS**
 
-   The ``pause()`` function always returns:
+alarm
+=====
 
-   EINTR
-      The call was interrupted.
+**NAME**
 
-**SEE ALSO**
+   .. code-block:: c
 
-   :manpage:`kill(2)`, :manpage:`select(2)`, :manpage:`sigsuspend(2)`
+      /*alarm -- set signal timer alarm*/
 
-.. note::
+      #include <unistd.h>
+      unsigned alarm(unsigned seconds);
 
-   ``pause()`` is made obsolete by :manpage:`sigsuspend(2)`.
+**DESCRIPTION**
+
+   **Note** that This interface is made obsolete by setitimer(2).
+
+   The ``alarm()`` function sets a timer to deliver the signal ``SIGALRM`` 
+   to the calling process after the specified number of *seconds.*  If
+   an alarm has already been set with ``alarm()`` but has not been delivered, 
+   another call to ``alarm()`` will supersede the prior call. The request ``alarm(0)`` 
+   voids the current alarm and the signal ``SIGALRM`` will not be delivered.
+
+   Due to **setitimer(2)** restriction the maximum number of *seconds* allowed is 100000000.
+
+**RETURN VALUES**
+
+   The return value of ``alarm()`` is the amount of time left on the timer from 
+   a previous call to ``alarm().`` If no alarm is currently set, the return value is 0.
 
 
 kill
@@ -252,16 +264,16 @@ kill
 
 **NAME**
 
-   kill -- send signal to a process
-
-
-**SYNOPSIS**
-
    .. code-block:: c
+      :caption: SYNOPSIS
 
       #include <signal.h>
       
+      /*kill -- send signal to a process*/
       int kill(pid_t pid, int sig);
+      
+      /*killpg -- send signal to a process group*/
+      int killpg(pid_t pgrp, int sig);
 
 
 **DESCRIPTION**
@@ -321,71 +333,3 @@ kill
    [ESRCH]
       The process id was given as ``0``, but the sending process does
       not have a process group.
-
-
-**SEE ALSO**
-   :manpage:`getpgrp(2)`, :manpage:`getpid(2)`,
-   :manpage:`killpg(2)`, :manpage:`sigaction(2)`.
-
-
-killpg
-======
-
-**NAME**
-
-   killpg -- send signal to a process group
-
-
-**SYNOPSIS**
-
-   .. code-block:: c
-   
-      #include <signal.h>
-   
-      int killpg(pid_t pgrp, int sig);
-
-
-**DESCRIPTION**
-
-   The ``killpg()`` function sends the signal *sig* to the process group *pgrp*.
-   See :manpage:`sigaction(2)` for a list of signals. If *pgrp* is ``0``,
-   ``killpg()`` sends the signal to the sending process's process group.
-
-   The sending process and members of the process group must have the same effective
-   user ID, or the sender must be the super-user.  As a single special case the con-
-   tinue signal ``SIGCONT`` may be sent to any process with the same session ID
-   as the caller.
-
-
-**RETURN VALUES**
-   
-   The ``killpg()`` function returns the value ``0`` if successful;
-   otherwise the value ``-1`` is returned and the global variable
-   ``errno`` is set to indicate the error.
-
-
-**ERRORS**
-
-   The ``killpg()`` function will fail and no signal will be sent if:
-
-     [EINVAL]
-         The *sig* argument is not a valid signal number.
-
-     [EPERM]
-         The sending process is not the super-user and one or more of
-         the target processes has an effective user ID different from
-         that of the sending process.
-
-     [ESRCH]
-         No process can be found in the process group
-         specified by *pgrp*.
-
-     [ESRCH]
-         The process group was given as ``0`` but the sending process
-         does not have a process group.
-
-
-**SEE ALSO**
-
-   :manpage:`getpgrp(2)`, :manpage:`kill(2)`,
-   :manpage:`sigaction(2)`, :manpage:`compat(5)`.

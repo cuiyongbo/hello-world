@@ -204,7 +204,14 @@ MacOS Terminal
 #. Display next Command – Ctrl + N
 #. Clear screen - Ctrl + L
 #. Move between words - Shift + Left/Right
+   
 
+MacOS Preview
+=============
+
+#. Add bookmark - Cmd + D
+#. Show / Hide sidebar - Option + Cmd + 1
+#. Bookmark sidebar - Option + Cmd + 5
 
 Ubuntu Terminal
 ===============
@@ -287,5 +294,7 @@ Sublime Text
 #. Move backward/forward: Ctrl + - / Shift + Ctrl + -
 #. Quick open file - Cmd + P / Cmd + T (mac)
 #. Preview markdown file: install markdown html preview, then "Ctrl + shift + m"        
-
+#. Find in files - Cmd + shift + F (mac)
+#. Insert Line After - Cmd + Enter
+#. Insert Line Before - Shift + Cmd + Enter
       

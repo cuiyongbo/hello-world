@@ -62,8 +62,8 @@ socket Manual
    cessfully transmitted within a reasonable length of time, then the connection is considered
    broken and calls will indicate an error with -1 returns and with *ETIMEDOUT* as the specific
    code in the global variable *errno*. The protocols optionally keep sockets "warm" by forcing
-   transmissions roughly every minute in the absence of other activity. An error is then indi-
-   cated if no response can be elicited on an otherwise idle connection for a extended period
+   transmissions roughly every minute in the absence of other activity. An error is then 
+   indicated if no response can be elicited on an otherwise idle connection for a extended period
    (e.g. 5 minutes). A *SIGPIPE* signal is raised if a process sends on a broken stream; this
    causes naive processes, which do not handle the signal, to exit.
 

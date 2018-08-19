@@ -86,9 +86,9 @@ WAIT Mannual
      (for ``wait()``) The calling process does not have any unwaited-for children.
 
    ECHILD 
-      (for ``waitpid()`` or ``waitid()``) The process specified by *pid* (``waitpid()``)
-      or *idtype* and *id* (``waitid()``) does not exist or is not a child of the calling process. 
-      (This can happen or one's own child if the action for ``SIGCHLD`` is set to ``SIG_IGN``. )
+      The process specified by *pid* (``waitpid()``) does not exist or is not a child 
+      of the calling process. This can happen for one's own child if the action for 
+      ``SIGCHLD`` is set to ``SIG_IGN``.
 
    EINTR
       ``WNOHANG`` was not set and an unblocked signal or a ``SIGCHLD`` was caught;

@@ -173,15 +173,4 @@ SEE ALSO
 
        Using GDB: A Guide to the GNU Source-Level Debugger, Richard M. Stallman and Roland H. Pesch, July 1991.
 
-COPYRIGHT
-       Copyright (c) 1988-2016 Free Software Foundation, Inc.
-
-       Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free
-       Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with the
-       Invariant Sections being "Free Software" and "Free Software Needs Free Documentation", with the Front-Cover
-       Texts being "A GNU Manual," and with the Back-Cover Texts as in (a) below.
-
-       (a) The FSF's Back-Cover Text is: "You are free to copy and modify this GNU Manual.  Buying copies from GNU
-       Press supports the FSF in developing GNU and promoting software freedom."
-
 gdb-7.11.1                                             2017-06-09                                                GDB(1)

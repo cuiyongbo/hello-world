@@ -1,8 +1,10 @@
 *********
 Quicksort
 *********
-Keyword: in-place, not stable, divide-and-conquer
 
+**不看不顾，心无旁骛。**
+
+Keyword: in-place, not stable, divide-and-conquer
 
 .. sidebar:: QuickSort
 
@@ -12,8 +14,7 @@ Keyword: in-place, not stable, divide-and-conquer
    The red pillars are pivot values.
 
 
-Introduction
-============
+**Introduction**
 
 Quicksort is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. 
 Developed by *Tony Hoare* in 1959 and published in 1961, it is still a commonly used algorithm for sorting. When implemented well, 
@@ -27,24 +28,20 @@ Mathematical analysis of quicksort shows that, on average, the algorithm takes *
 In the worst case, it makes :math:`O(n^2)` comparisons, though this behavior is rare.
 
 
-Property
-========
+**Property**
 
 +-----------------------------+----------------------------------------+
 | Data structure              | Array                                  |
 +=============================+========================================+
 | Worst-case performance      | :math:`O(n^2)`                         |
 +-----------------------------+----------------------------------------+
-| Best-case performance       | :math:` O(n log n)` (simple partition) |
-+-----------------------------+----------------------------------------+
-| Average performance         | :math:`O(n log n)`                     |
+| Average performance         | :math:`O(n \log n)`                    |
 +-----------------------------+----------------------------------------+
 | Worst-case space complexity | :math:`O(n)`                           |
 +-----------------------------+----------------------------------------+
 
 
-Algorithm
-=========
+**Algorithm**
 
 Quicksort is a **divide and conquer** algorithm. Quicksort first divides a large array into two smaller 
 sub-arrays: the low elements and the high elements. Quicksort can then recursively sort the sub-arrays.
@@ -62,6 +59,87 @@ The steps are:
    
 The base case of the recursion is arrays of size zero or one, 
 which are in order by definition, so they never need to be sorted.
+
+.. code-block:: none
+   :caption: Taken from *Introduction to algorithms*
+
+   QuickSort(A, p, r)
+      if(p<r)
+         q = Partition(A, p, r)
+         Quicksort(A, p, q-1)
+         Quicksort(A, q+1, r)
+
+   Partition(A, p, r)
+      x = A[r]
+      i = p-1
+      for j=p to r-1
+         if(A[j] < x)
+            i = i + 1
+            swap(A[i], A[j])
+      swap(A[i+1], A[r])
+      return i+1
+
+   Partition-Randomized(A, p, r)
+      i = Random(p, r)
+      swap(A[r], A[i])
+      return Partition(A, p, r)
+
+   QuickSort-Randomized(A, p, r)
+      if p < r
+         q = Partition-Randomized(A, p, r)
+         QuickSort-Randomized(A, p, q-1)
+         QuickSort-Randomized(A, q+1, r)
+
+   Partition-Hoare(A, p, r)
+      x = A[p]
+      i = p-1
+      j = r+1
+      while True
+         while True
+            j = j-1
+            if A[j] <= x
+               break
+         while True
+            i = i+1
+            if A[i] >= x
+               break
+         if i<j
+            swap(A[i], A[j])
+         else return j
+
+   QuickSort-Hoare(A, p, r)
+      if p < r
+         q = Partition-Hoare(A, p, r)
+         QuickSort-Hoare(A, p, q)
+         QuickSort-Hoare(A, q+1, r)
+
+   # To sort the entire array A, call QuickSort(A, 1, A.length)
+
+.. code-block:: py
+
+   # return [low, high] element indices with the same value
+   def threeWayPartition(items, p, r):
+    pivot = items[p]
+    i = p + 1
+    low, high = p, r
+    while i<=high:
+        if items[i] < pivot:
+            items[i], items[low] = items[low], items[i]
+            i = i + 1
+            low = low + 1
+        elif items[i] > pivot:
+            items[i], items[high] = items[high], items[i]
+            high = high - 1
+        else:
+            i = i + 1
+    return low, high 
+
+   def quick_sort_three_way_partition(items, p, r):
+       if p < r:
+           low, high = threeWayPartition(items, p, r)
+           quick_sort_three_way_partition(items, p, low-1)
+           quick_sort_three_way_partition(items, high+1, r)
+
 
 The pivot selection and partitioning steps can be done in several different ways; 
 the choice of specific implementation schemes greatly affects the algorithm's performance.
@@ -186,7 +264,7 @@ The entire array is sorted by ``quicksort(A, 0, length(A)-1).``
          if (i >= j)
             return j;
    
-         swapWithType(int, a[i], a[j]);
+         swapWith(a[i], a[j]);
       }
    }
    

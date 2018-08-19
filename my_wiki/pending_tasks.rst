@@ -21,3 +21,10 @@ Pending tasks
 #. http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.22.6768 (about float point number)
 
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
+   
+#. logic implement enroute traffic event (refer to Camera)\
+#. ti-servers implements new ti tile grid
+   
+#. https://www.quora.com/On-a-64-bit-machine-are-reads-and-writes-to-uint64_ts-atomic
+   
+#. \# _CS

@@ -79,3 +79,15 @@ Gdb Tricks 2
       /home/cherry/program-demo/cpp-demo/core_dump_demo.c:9
 
 
+#. Gdb to debug a running process
+   
+   .. code-block:: sh
+
+      # Solution one
+      gdb -p PID
+
+      # Solution two
+      gdb attach pid
+
+      # Solution three
+      gdb program_name program_pid

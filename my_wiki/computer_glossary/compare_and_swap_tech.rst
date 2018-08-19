@@ -16,8 +16,8 @@ can be done either with a simple boolean response (this variant is often
 called *compare-and-set*), or by returning the previous value read from the 
 memory location.
 
-A CAS operation is an atomic version of the following pseudocode, 
-where * denotes access through a pointer::
+.. code-block:: none
+   :caption: Pseudocode
 
    function cas(p : pointer to int, old : int, new : int) returns bool 
    {
@@ -31,24 +31,11 @@ where * denotes access through a pointer::
 **This operation is used to implement synchronization primitives like semaphores and mutexes**, 
 as well as more sophisticated lock-free and wait-free algorithms. 
 
-Algorithms built around CAS typically read some key memory location and remember the old value. 
-Based on that old value, they compute some new value. Then they try to swap in the new value using CAS, 
-where the comparison checks for the location still being equal to the old value. If CAS indicates that 
-the attempt has failed, it has to be repeated from the beginning: the location is re-read, a new value 
-is re-computed and the CAS is tried again.
-
 Instead of immediately retrying after a CAS fails, researchers have found that total system performance 
-can be improved—in multiprocessor systems where many threads constantly update some particular shared 
-variable—if threads that see their CAS fail use exponential backoff—in other words, wait a little before 
-retrying the CAS.
+can be improved if threads that see their CAS fail wait a little before retrying the CAS.
 
-
-**Example application: atomic adder**
-
-As an example use case of CAS, here is an algorithm for atomically incrementing or decrementing an integer. 
-This is useful in a variety of applications that use counters. The function add performs the action 
-``*p <-- *p + a``, atomically and returns the final value stored in the counter. Unlike in the *cas* pseudocode 
-above, there is no requirement that any sequence of operations is atomic except for *cas* ::
+.. code-block:: none
+   :caption: Atomic adder
 
    function add(p : pointer to int, a : int) returns int 
    {
@@ -63,9 +50,8 @@ above, there is no requirement that any sequence of operations is atomic except 
 
 **Implementation in C**
 
-Many C compilers support using CAS either with the C11 *stdatomic.h* functions, 
-or some non-standard C extension of that particular C compiler, or by calling a function 
-written directly in assembly language using the CAS instruction.
+Many C compilers support using CAS either with the C++11 *<stdatomic.h>* functions, 
+or by calling a function written directly in assembly language using the CAS instruction.
 
 The following C function shows the basic behavior of a CAS variant that returns the old value 
 of the specified memory location; however, this version does not provide the crucial guarantees 
