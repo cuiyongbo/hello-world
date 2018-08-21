@@ -12,6 +12,7 @@ C/C++ Miscellaneous Tricks
    cpp_allocator
    pointer_to_function_demo
    flexible_array_tricks
+   cpp_std_map_notes
 
 .. contents::
    :local:
@@ -238,49 +239,6 @@ and ``show`` syntax.
    #pragma pack(show)   // C4810  
    #pragma pack(pop, r1, 2)   // n = 2 , stack popped  
    #pragma pack(show)   // C4810  
-
-
-``std::unordered_multimap::equal_range()``
-==========================================
-
-**Language Support**
-
-   .. code-block:: c++
-   
-      //(since C++11)
-      std::pair<iterator,iterator> equal_range( const Key& key ); 
-      std::pair<const_iterator,const_iterator> equal_range( const Key& key ) const;
-
-   Returns a range containing all elements with key *key* in the container. The range
-   is defined by two iterators, the first pointing to the first element of the wanted range
-   and the second pointing past the last element of the range.
-
-   Return a ``std::pair`` containing a pair of iterators defining the wanted range
-   if elements are found. Otherwise, past-the-end (``end()``) iterators are returned
-   as both elements of the pair.
-
-**Complexity**
-
-   Average case linear in the number of elements with the key *key*,
-   worst case linear in the size of the container.
-
-**Example**
-
-   .. code-block:: c++
-      :caption: Example taken from cppreference
-
-      #include <iostream>
-      #include <unordered_map>
-       
-      int main()
-      {  
-         std::unordered_multimap<int,char> map = {{1,'a'},{2,'b'},{1,'d'},{2,'b'}};
-         auto range = map.equal_range(1);
-         for (auto it = range.first; it != range.second; ++it) {
-            std::cout << it->first << ' ' << it->second << '\n';
-         }
-         std::cout << std::distance(range.first, range.second) << "\n"; 
-      }
 
 
 vector::reserve

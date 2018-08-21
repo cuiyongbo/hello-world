@@ -76,7 +76,8 @@ Computer Terminology
 | Definition: (Computing) cause (a set of data or files) to remain identical in more than one location.
 | Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
 | 
-| prefix  VS suffix 
+| simplex: allowing telecommunication in only one direction
+| prefix VS suffix 
 | prepend VS append
 | implicit    explicit
 | modularity
