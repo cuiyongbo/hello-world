@@ -928,25 +928,6 @@ name, also known as surname, with most family members.
 | Definition: to take drugs by breathing them in through  nose.
 | Usage: To snort cocaine. [嗑药]
 | 
-| pane [橱柜]
-| Definition: A single sheet of glass in a window or door.
-| 
-| mannequin
-| Definition: A mannequin is a life-sized model of a person which is used to display clothes, especiall in shop windows.
-| Definition: A mannequin is a person who displays clothes, hats, or shoes by wearing them, especially in fashion shows or in fashion photographs.
-| Synonyms: model
-
-.. image:: images/mannequin.png
-
-| hakama
-| Definition: loose trousers with many pleats in the front, forming part of Japaness formal dress.
-
-.. image:: images/hakama.png
-
-| mattress 床垫
-
-.. image:: images/mattress.png
-
 | Zen
 | Definition: a Japanese form of Buddhism. [禅宗]
 |

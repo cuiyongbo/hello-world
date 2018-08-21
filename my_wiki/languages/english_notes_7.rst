@@ -215,3 +215,9 @@ English Note 7
 | Usage: I could elicit no response from him. [打探，套话]
 | Usage: Her tears elicited great sympathy from her audience. [博取]
 | 
+| espouse
+| Definition: adopt or support (a cause, belief, or way of life).
+| Usage: he turned his back on the modernism he had espoused in his youth.
+| Definition: (be espoused to) (of a woman) be engaged to (a particular man).
+| 
+

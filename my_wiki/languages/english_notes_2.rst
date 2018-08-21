@@ -56,9 +56,16 @@ English Notes 2
 | Definition: a knitted garment with long sleeves worn over the upper body.
 | camisole [キャミソール] [(背心式)女内衣]
 | Definition: a short piece of women's underwear that is worn on the top half of the body and is held up with narrow strips of material over the shoulders.
+| hakama
+| Definition: loose trousers with many pleats in the front, forming part of Japaness formal dress.
+| button-down
+| Definition: (of a collar) having points that are buttoned to the garment.
+| Definition: (of a person) conservative or unimaginative.
 
+.. image:: images/hakama.png
 .. image:: images/jersey.jpg
 .. image:: images/camisole.jpeg
+.. image:: images/difference-between-a-button-up-and-a-button-down-shirt.jpg
 .. figure:: images/Red-Velvet-Skater-Dress.jpg
 
    Velvet 天鹅绒
@@ -71,6 +78,22 @@ English Notes 2
 
    Tunic 女士的束腰外衣
 
+.. figure:: images/mattress.png
+   
+   Mattress 床垫
+
+|
+| pane [橱柜]
+| Definition: A single sheet of glass in a window or door.
+| mannequin
+| Definition: A mannequin is a life-sized model of a person which is used to display clothes, especiall in shop windows.
+| Definition: A mannequin is a person who displays clothes, hats, or shoes by wearing them, especially in fashion shows or in fashion photographs.
+| Synonyms: model
+
+.. image:: images/isabelle-daeron-window-display.jpg
+.. image:: images/mannequin.png
+
+|
 | coffer
 | Definition: a strongbox used to store money or valuable things. [保险柜，金库]
 | Definition: the funds or the finacial reserves of an institution or organization.
