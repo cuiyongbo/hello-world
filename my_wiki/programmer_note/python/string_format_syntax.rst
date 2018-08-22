@@ -2,8 +2,8 @@
 String format syntax
 ********************
 
-print
-=====
+print format syntax
+===================
 
 String and Unicode objects have one unique built-in operation: the ``%`` operator (modulo).
 (a.k.a string formatting or interpolation operator). Given ``format % values`` ,

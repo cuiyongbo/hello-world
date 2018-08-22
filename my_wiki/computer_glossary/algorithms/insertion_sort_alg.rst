@@ -4,8 +4,7 @@ Insertion Sort
 
 **KeyWords**: Stable, In-place, quadratic algorithms
 
-Introduction
-============
+**Introduction**
 
 .. sidebar:: Insertion Sort
 
@@ -15,14 +14,8 @@ Insertion sort is a simple sorting algorithm that builds the final sorted array 
 one item at a time. It is much less efficient on large lists than more advanced algorithms 
 such as quicksort, heapsort, or merge sort. However, insertion sort provides several advantages:
 
-   * Simple implementation: Jon Bentley shows a three-line C version, 
-     and a five-line optimized version.
-
    * Efficient for (quite) small data sets, much like other quadratic 
      sorting algorithms.
-   
-   * More efficient in practice than most other simple quadratic 
-     algorithms such as selection sort or bubble sort
    
    * Adaptive, i.e., efficient for data sets that are already substantially 
      sorted: the time complexity is **O(nk)** when each element in the input 
@@ -37,8 +30,7 @@ such as quicksort, heapsort, or merge sort. However, insertion sort provides sev
 When people manually sort cards in a bridge hand, most use a method that is similar to insertion sort.
 
 
-Property
-========
+**Property**
 
 +-----------------------------+--------------------------------------+
 | Data structure              | Array                                |
@@ -51,8 +43,7 @@ Property
 +-----------------------------+--------------------------------------+
 
 
-Algorithm for insertion sort
-============================
+**Algorithm for insertion sort**
 
 .. sidebar:: Insertion sort example
 
@@ -98,6 +89,19 @@ The most common variant of insertion sort, which operates on arrays, can be desc
      *Insert* to insert each element encountered into its correct position. The ordered sequence 
      into which the element is inserted is stored at the beginning of the array in the set of 
      indices already examined. Each insertion overwrites a single value: the value being inserted.
+
+
+.. code-block:: none
+   :caption: Taken from **Introduction to algorithms**
+
+   Insertion-Sort(A)
+      for j=2 to A.length
+         key = A[j]
+         i = j-1
+         for i>0 and A[i] > key
+            A[i+1] = A[i]
+            i = i - 1
+         A[i+1] = key
 
 Pseudocode of the complete algorithm follows, where the arrays are zero-based::
 

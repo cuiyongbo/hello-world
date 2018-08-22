@@ -9,11 +9,7 @@ I think, therefore I am
 | algebraic
 | Definition: the part of mathematics in which letters and other general symbols are used to represent numbers and quantities in formulae and equations.
 | 
-| quadratic
-| Definition: (mathmatics) involving an unknown quantity that is multiplied by itself once only
-| usage: a quadratic equation. [二次方程]
-| 
-| congruent
+| congruent 
 | Definition: (geometry) having the same size and shape.
 | Usage: congruent triangles. [全等三角形]
 | 
@@ -48,6 +44,10 @@ I think, therefore I am
 | convergent 收敛
 | permutation 排列
 | combination 组合
+| combinatorics 组合数学
+| probability theory 概率论
+| algebraic dexterity 代数手算？--> 精通代数
+| quadratic function: :math:`an^2 + bn +c`
 |
 | determinant 行列式
 | parallelepiped 平行六面体
@@ -80,7 +80,7 @@ I think, therefore I am
 | Definition: a number used as a divisor for considering numbers in sets, numbers being considered congruent when giving the same remainder when divided by | a particular modulus.| 
 | 
 
-modulo [取余]
+modulo/remainder [取余]
 
 (in mathematics) with respect to or using a modulus of a specified number.
 Two numbers are congruent modulo a given number if they give the same remainder

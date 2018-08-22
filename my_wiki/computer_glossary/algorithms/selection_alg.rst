@@ -7,8 +7,8 @@ Partial selection sort
 
 A simple example of selection by partial sorting is to use the partial selection sort.
 
-The obvious linear time algorithm to find the minimum (resp. maximum) – iterating over 
-the list and keeping track of the minimum (resp. maximum) element so far – can be seen 
+The obvious linear time algorithm to find the minimum (or maximum) – iterating over 
+the list and keeping track of the minimum (or maximum) element so far – can be seen 
 as a partial selection sort that selects the 1 smallest element. However, many other 
 partial sorts also reduce to this algorithm for the case k = 1, such as a partial heap sort.
 
@@ -23,12 +23,10 @@ partial selection sort-based algorithm:
    function select(list[1..n], k)
        for i from 1 to k
            minIndex = i
-           minValue = list[i]
            for j from i+1 to n
-               if list[j] < minValue
+               if list[j] < list[minIndex]
                    minIndex = j
-                   minValue = list[j]
-           swap list[i] and list[minIndex]
+           swap(list[i], list[minIndex])
        return list[k]
 
 

@@ -4,8 +4,7 @@ Selection Sort
 
 **Keywords**: in-place sort, quadratic algorithms
 
-Introduction
-============
+**Introduction**
 
 In computer science, selection sort is a sorting algorithm, specifically an in-place 
 comparison sort. It has :math:`O(n^2)` time complexity, making it inefficient on large 
@@ -14,16 +13,13 @@ noted for its simplicity, and it has performance advantages over more complicate
 algorithms in certain situations, particularly where auxiliary memory is limited.
 
 The algorithm divides the input list into two parts: the sublist of items already sorted, 
-which is built up from left to right at the front (left) of the list, and the sublist of 
-items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist 
+which is built up from left to right at the front of the list, and the sublist of items 
+remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist 
 is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding 
 the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging 
-(swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist 
-boundaries one element to the right.
+it with the leftmost unsorted element, and moving the sublist boundaries one element to the right.
 
-
-Property 
-========
+**Property **
 
 .. figure:: images/Selection_sort_animation.gif
    :align: center
@@ -42,11 +38,22 @@ Property
 | Worst-case space complexity | **O(1)** auxiliary           |
 +-----------------------------+------------------------------+
 
+**Algorithms**
 
-C++ implementation
-==================
+.. code-block:: none
+   :caption: Pseudocode
+
+   function selectionSort(A)
+      for i=1 to A.length-1
+         pos = i
+         for j=i+1 to A.length
+            if (A[j] < A[pos])
+               pos = j
+         if pos != i
+            swap(A[pos], A[j])
 
 .. code-block:: cpp
+   :caption: C++ implementation
 
    template<typename T, BinPre BinCmp>
    void selectionSort(T* array, size_t count, BinCmp cmp)
@@ -62,9 +69,7 @@ C++ implementation
          }
 
          if(pos != i)
-         {
             swap(arr[pos], arr[i]);
-         }
       }
    }
 

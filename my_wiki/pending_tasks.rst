@@ -21,5 +21,8 @@ Pending tasks
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
    
 #. ti-servers implements new ti tile grid
+   - remove duplicate links
+
+
 #. logic implement enroute traffic event (refer to Camera)
    

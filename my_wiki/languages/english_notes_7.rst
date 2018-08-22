@@ -220,4 +220,15 @@ English Note 7
 | Usage: he turned his back on the modernism he had espoused in his youth.
 | Definition: (be espoused to) (of a woman) be engaged to (a particular man).
 | 
-
+| dexteriy
+| Definition: skill in performing tasks, especially with the hands.
+| Usage: her dexterity with chopsticks· 
+| Usage: his record testifies to a certain dexterity in politics. [政治手腕]
+| 
+| motif 
+| Definition: a design or a pattern used as a decoration [装饰图案]
+| Usage: wallpaper with a flower motif. 
+| Definition: a subject, an idea or a phrase that is repeated and developed in a work of literature or a piece of music.
+| Synonyms: theme. [主题, 主旨]
+| Usage: The nautical motif of the poetry during the late East Han Dynasty. [厌世]
+|
