@@ -13,16 +13,18 @@ Pending tasks
    
 #. https://en.wikipedia.org/wiki/Normal_distribution
 #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
-
-#. https://en.wikipedia.org/wiki/Selection_algorithm
    
 #. http://www.kohala.com/start/
 
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
    
-#. ti-servers implements new ti tile grid
-   - remove duplicate links
+#. ti-servers implements new ti tile grid [stopped]
 
+   - remove duplicate links (solved)
+   - fix packing bug (solved)
+   - compare the difference between grid size of different formats (solved)
 
 #. logic implement enroute traffic event (refer to Camera)
+   
+   - add parsing in EnrouteTiResponse 
    

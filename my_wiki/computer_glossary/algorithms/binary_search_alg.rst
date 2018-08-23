@@ -13,12 +13,12 @@ Given an array A of n elements with values or records :math:`A_0, A_1, ..., A_{n
 :math:`A_0 \le A_1 \le ... \le A_{n−1},` and target value T, the following subroutine uses binary search 
 to find the index of T in A.
 
-   - Set L to 0 and R to n − 1.
-   - If L > R, the search terminates as unsuccessful.
-   - Set m (the position of the middle element) to the ``floor((L + R)/2).``
-   - If A[m] < T, set L to m + 1 and go to step 2.
-   - If A[m] > T, set R to m − 1 and go to step 2.
-   - Now A[m] = T, the search is done; return m.
+   #. Set L to 0 and R to n − 1.
+   #. If L > R, the search terminates as unsuccessful.
+   #. Set m (the position of the middle element) to the ``floor((L + R)/2).``
+   #. If A[m] < T, set L to m + 1 and go to step 2.
+   #. If A[m] > T, set R to m − 1 and go to step 2.
+   #. Now A[m] = T, the search is done; return m.
 
 .. code-block:: none
    :caption: Pseudocode
@@ -40,19 +40,19 @@ The procedure may return any index whose element is equal to the target value,
 even if there are duplicate elements in the array. For example, if the array to 
 be searched was ``[1, 2, 3, 4, 4, 5, 6, 7]`` and the target was 4, then it would 
 be correct for the algorithm to either return the 4th (index 3) or 5th (index 4) element. 
-The regular procedure would return the 4th element (index 3). However, it is sometimes necessary 
-to find the leftmost element or the rightmost element if the target value is duplicated in the array. 
+The regular procedure would return the 4th element (index 3). However, **it is sometimes necessary 
+to find the leftmost element or the rightmost element if the target value is duplicated in the array.** 
 
 **Procedure for finding the leftmost element**
 
 To find the leftmost element, the following procedure can be used:
 
-   - Set L to 0 and R to n.
-   - If L >= R, go to step 6.
-   - Set m (the position of the middle element) to ``floor((L + R)/2).``
-   - If A[m] < T, set L to m + 1 and go to step 2.
-   - Otherwise, if A[m] >= T, set R to m and go to step 2.
-   - Now L = R, the search is done, return L.
+   #. Set L to 0 and R to n.
+   #. If L >= R, go to step 6.
+   #. Set m (the position of the middle element) to ``floor((L + R)/2).``
+   #. If A[m] < T, set L to m + 1 and go to step 2.
+   #. Otherwise, if A[m] >= T, set R to m and go to step 2.
+   #. Now L = R, the search is done, return L.
 
 If L < n and A[L] = T, then A[L] is the leftmost element that equals T. 
 Even if T is not in the array, L is the rank of T in the array, or the 
@@ -76,12 +76,12 @@ number of elements in the array that are less than T.
 
 To find the rightmost element, the following procedure can be used:
 
-   - Set L to 0 and R to n.
-   - If L >= R, go to step 6.
-   - Set m (the position of the middle element) to ``floor((L + R)/2).``
-   - If A[m] > T, set R to m and go to step 2.
-   - Otherwise, if A[m] <= T, set L to m + 1 and go to step 2.
-   - Now L = R, the search is done, return L - 1.
+   #. Set L to 0 and R to n.
+   #. If L >= R, go to step 6.
+   #. Set m (the position of the middle element) to ``floor((L + R)/2).``
+   #. If A[m] > T, set R to m and go to step 2.
+   #. Otherwise, if A[m] <= T, set L to m + 1 and go to step 2.
+   #. Now L = R, the search is done, return L - 1.
 
 If L > 0 and A[L-1] = T, then A[L-1] is the rightmost element that equals T. 
 Even if T is not in the array, n - L is the number of elements in the array 

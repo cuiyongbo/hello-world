@@ -221,3 +221,54 @@ list, and add the n steps taken to merge the resulting two lists). The closed fo
 theorem for divide-and-conquer recurrences.
 
 .. image:: images/Merge_sort_algorithm_diagram.svg.png
+
+
+.. code-block:: none
+   :caption: Pseudocode taken from *Introduction to algorithms*
+
+   MergeSort(A, p, r)
+      if p < r
+         q = floor((p+r)/2)
+         MergeSort(A, p, q)
+         MergeSort(A, q+1, r)
+         Merge(A, p, q, r)
+
+   Merge-with-sentinel(A, p, q, r)
+      n1 = q-p+1
+      n2 = r-q
+      L = Array[n1+1]
+      R = Array[n2+1]
+      for i=1 to n1
+         L[i] = A[p+i]
+      for j=1 to n2
+         R[j] = A[q+j]
+      L[n1+1] = inf
+      R[n2+1] = inf
+      i = 1
+      j = 1
+      for k=p to r
+         if L[i] <= R[j]
+            A[k] = L[i]
+            i = i + 1
+         else 
+            A[k] = R[j]
+            j = j + 1
+
+   Merge(A, p, q, r)
+      n1 = q-p+1
+      n2 = r-q
+      L = Array[n1]
+      R = Array[n2]
+      for i=1 to n1
+         L[i] = A[p+i]
+      for j=1 to n2
+         R[j] = A[q+j]
+      i = 1
+      j = 1
+      for k=p to r
+         if (i <= n1 and L[i] <= R[j]) || j>n2  
+            A[k] = L[i]
+            i = i + 1
+         else 
+            A[k] = R[j]
+            j = j + 1
