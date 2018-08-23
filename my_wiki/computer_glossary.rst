@@ -2,6 +2,8 @@
 Computer Glossary
 *****************
 
+**近水识鱼性，近山识鸟音。**
+
 .. toctree::
    :titlesonly:
    :maxdepth: 2

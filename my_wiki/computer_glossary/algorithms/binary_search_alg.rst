@@ -95,10 +95,10 @@ that are greater than T.
        R := n
        while L < R:
            m := floor((L + R) / 2)
-           if A[m] > T:
-               R := m
-           else:
+           if A[m] <= T:
                L := m + 1
+           else:
+               R := m
        return L - 1
 
 

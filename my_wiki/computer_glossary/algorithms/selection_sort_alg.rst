@@ -2,6 +2,8 @@
 Selection Sort
 **************
 
+**酒逢知己饮，诗向会人吟。**
+
 **Keywords**: in-place sort, quadratic algorithms
 
 **Introduction**
@@ -19,7 +21,7 @@ is empty and the unsorted sublist is the entire input list. The algorithm procee
 the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging 
 it with the leftmost unsorted element, and moving the sublist boundaries one element to the right.
 
-**Property **
+**Property**
 
 .. figure:: images/Selection_sort_animation.gif
    :align: center
