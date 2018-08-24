@@ -239,15 +239,12 @@ Input format conversion
 
 **ATTRIBUTES**
 
-   For an explanation of the terms used in this section, see
-   :manpage:`attributes(7)`.
-
-   +--------------------------------+---------------+---------+
-   | Iterface                       | Atrribute     | Value   |
-   +================================+===============+=========+
-   | scanf(), fscanf(), sscanf(),   | Thread safety | MT-Safe |
-   | vscanf(), vsscanf(), vfscanf() |               |         |
-   +--------------------------------+---------------+---------+
+   +---------------+---------+
+   | Atrribute     | Value   |
+   +===============+=========+
+   | Thread safety | MT-Safe |
+   |               |         |
+   +---------------+---------+
 
 
 **EXAMPLE**
@@ -271,8 +268,3 @@ Input format conversion
 
    As shown in the above example, it is necessary to call :manpage:`free(3)` 
    only if the ``scanf()`` call successfully read a string.
-
-**SEE ALSO**
-
-   getc(3), printf(3), setlocale(3), strtod(3), strtol(3), strtoul(3)
-

@@ -27,4 +27,17 @@ Pending tasks
 #. logic implement enroute traffic event (refer to Camera)
    
    - add parsing in EnrouteTiResponse 
+   - add getter in RouteBase (solved)
    
+
+#. Advanced Programming in the UNIX Environment 
+   
+   - Process
+   - Pthread
+
+   
+#. 2.3-7 P39
+ 
+   Describe a :math:`\Theta(n lg n) \text{-time}` algorithm that, 
+   given a set S of n integers and another integer x, determines 
+   whether or not there exist two elements in S whose sum is exactly x.

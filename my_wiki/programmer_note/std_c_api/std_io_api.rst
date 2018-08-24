@@ -2,28 +2,26 @@
 Std C I/O API
 *************
 
+.. contents::
+   :local:
+
+
 Input API
 =========
 
-**NAME**
+.. code-block:: c
 
-   fgetc, fgets, getc, getchar, ungetc - input of characters and strings
+   #include <stdio.h>
 
-**SYNOPSIS**
+   int fgetc(FILE *stream);
+   char *fgets(char *s, int size, FILE *stream);
+   int getc(FILE *stream);
+   int getchar(void);
+   int ungetc(int c, FILE *stream);
 
-   .. code-block:: c
-
-      #include <stdio.h>
-
-      int fgetc(FILE *stream);
-      char *fgets(char *s, int size, FILE *stream);
-      int getc(FILE *stream);
-      int getchar(void);
-      int ungetc(int c, FILE *stream);
-
-      /*Windows implementation*/
-      #define getc(_stream) fgetc(_stream)
-      #define getchar() getc(stdin)
+   /*Windows implementation*/
+   #define getc(_stream) fgetc(_stream)
+   #define getchar() getc(stdin)
 
 **DESCRIPTION**
 
@@ -35,8 +33,8 @@ Input API
 
    ``getchar()`` is equivalent to ``getc(stdin)``.
 
-   fgets() reads in at most one less than size characters from stream and
-   stores them into the buffer pointed to by *s*. Reading stops after an
+   ``fgets()`` reads in at most one less than *size* characters from *stream* 
+   and stores them into the buffer pointed to by *s*. Reading stops after an
    ``EOF`` or a newline. If a newline is read, it is stored into the buffer.
    A terminating null byte (``'\0'``) is stored after the last character in
    the buffer.
@@ -64,21 +62,12 @@ Input API
 
 **ATTRIBUTES**
 
-   For an explanation of the terms used in this section, see
-   :manpage:`attributes(7)`.
-
-   +--------------------------+---------------+---------+
-   | Iterface                 | Atrribute     | Value   |
-   +==========================+===============+=========+
-   | fgetc(), fgets(), getc() | Thread safety | MT-Safe |
-   | getchar(), ungetc()      |               |         |
-   +--------------------------+---------------+---------+
-
-**SEE ALSO**
-
-   read(2), write(2), ferror(3), fgetwc(3), fgetws(3), fopen(3), fread(3),
-   fseek(3),  getline(3), gets(3), getwchar(3), puts(3), scanf(3),
-   ungetwc(3), unlocked_stdio(3), feature_test_macros(7)
+   +---------------+---------+
+   | Atrribute     | Value   |
+   +===============+=========+
+   | Thread safety | MT-Safe |
+   |               |         |
+   +---------------+---------+
 
 
 Input format conversion
@@ -90,24 +79,18 @@ Input format conversion
 Output API
 ==========
 
-**NAME**
-   
-   fputc, fputs, putc, putchar, puts - output of characters and strings
+.. code-block:: c
 
-**SYNOPSIS**
-   
-   .. code-block:: c
+   #include <stdio.h>
 
-      #include <stdio.h>
+   int fputc(int c, FILE *stream);
+   int putc(int c, FILE *stream);
+   int putchar(int c);
+   int puts(const char *s);
+   int fputs(const char *s, FILE *stream);
 
-      int fputc(int c, FILE *stream);
-      int putc(int c, FILE *stream);
-      int putchar(int c);
-      int puts(const char *s);
-      int fputs(const char *s, FILE *stream);
-
-      /*Windows implementation*/
-      #define putchar(_c) putc((_c),stdout)
+   /*Windows implementation*/
+   #define putchar(_c) putc((_c),stdout)
 
 **DESCRIPTION**
 
@@ -141,20 +124,12 @@ Output API
 
 **ATTRIBUTES**
 
-   For an explanation of the terms used in this section, see
-   :manpage:`attributes(7)`.
-
-   +--------------------------+---------------+---------+
-   | Iterface                 | Atrribute     | Value   |
-   +==========================+===============+=========+
-   | fputc(), fputs(), putc() | Thread safety | MT-Safe |
-   | putchar(), puts()        |               |         |
-   +--------------------------+---------------+---------+
-
-**SEE ALSO**
-
-   write(2), ferror(3), fgets(3), fopen(3), fputwc(3), fputws(3),
-   fseek(3), fwrite(3), putwchar(3), scanf(3), unlocked_stdio(3)
+   +---------------+---------+
+   | Atrribute     | Value   |
+   +===============+=========+
+   | Thread safety | MT-Safe |
+   |               |         |
+   +---------------+---------+
 
 
 Buffer Control
