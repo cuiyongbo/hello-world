@@ -134,6 +134,9 @@ to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is i
 | Definition: In mathematics, power is used in expressions such as 2 to the power of 4 or 2 to the 4th power to indicate that 2 must be multiplied by itself 4 times.
 | Usage: Any number to the power of nought is equal to one.
 | 
+| cardinality
+| Definition: the number of elements in a set or other grouping, as a property of that grouping.
+| 
 | cardinal, ordinal, nominal number
 | A cardinal number says how many of something there are, such as one, two, three; [基数词]
 | An ordinal number tells us the position of something in a list; [序数词]

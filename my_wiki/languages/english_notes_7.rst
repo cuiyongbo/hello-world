@@ -232,3 +232,25 @@ English Note 7
 | Synonyms: theme. [主题, 主旨]
 | Usage: The nautical motif of the poetry during the late East Han Dynasty. [厌世]
 |
+| self-abasement
+| Definition: Degradation or humiliation of oneself, especially because of feelings of guilt or inferiority.
+| Usage: "Let them break my heart if they like," she had thought to herself, in the self-abasement of that bitter moment; "it will be no more than I have deserved."
+| 
+| effulgent
+| effulgence
+| Definition: shining brightly.
+| Definition: (of a person or their expression) emanating joy or goodness.
+| Usage: standing there was my father with the most effulgent smile on his face.
+| 
+| reflexive
+| relexivity
+| Definition:(Grammar) denoting a pronoun that refers back to the subject of the clause in which it is used, e.g., myself, themselves.
+| Definition: (of a verb or clause) having a reflexive pronoun as its object, e.g., wash oneself.
+| Definition: (Logic) (of a relation) always holding between a term and itself.
+| Definition: (of an action) performed as a reflex, without conscious thought.
+| Usage: at concerts like this one, standing ovations have become reflexive.
+| 
+| ovation
+| Definition: a sustained and enthusiastic show of appreciation from an audience, especially by means of applause.
+| Usage: the performance received a thundering ovation. [掌声雷动]
+| 

@@ -5,7 +5,9 @@ Algorithms
 .. toctree:: 
    :titlesonly:
 
+   algorithms/alg_analysis_and_design
    algorithms/pseudocode_introduction
+   algorithms/complexity_summary
    algorithms/binary_search_alg
    algorithms/counting_sort_alg
    algorithms/comparison_sort_alg
@@ -22,7 +24,5 @@ Algorithms
    algorithms/distance_of_a_point_to_line
    algorithms/triangle_polygon_area
    algorithms/line_splitting_alg
-   algorithms/alg_analysis_and_design
-   algorithms/complexity_summary
    algorithms/single_precision_floating_point_format
    algorithms/algorithms_cpp

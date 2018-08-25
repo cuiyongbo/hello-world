@@ -41,3 +41,5 @@ Pending tasks
    Describe a :math:`\Theta(n lg n) \text{-time}` algorithm that, 
    given a set S of n integers and another integer x, determines 
    whether or not there exist two elements in S whose sum is exactly x.
+
+#. how to solve :math:`an^2 + bn + c = 0`
