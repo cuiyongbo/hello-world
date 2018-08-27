@@ -27,6 +27,11 @@ Preprocessor symbols
           return 0;
       }
 
+   .. code-block:: c
+
+      static void pr_limits(char*, int);
+      #define doit(name) pr_limits(#name, name)
+
 
 #. Preprocessor concatenate(##)
    

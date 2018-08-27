@@ -34,7 +34,7 @@ Pending tasks
    
    - Process
      
-      - Ch7 Process environment
+      - Ch7 Process environment (Finished)
       - Ch8 Process control
       - Ch9 Process relationship
 
@@ -51,3 +51,7 @@ Pending tasks
    whether or not there exist two elements in S whose sum is exactly x.
 
 #. how to solve :math:`an^2 + bn + c = 0`
+   
+#. setjmp, longjmp
+
+#. getrlimit, setlimit

@@ -180,10 +180,16 @@ On many implementations, line buffering is only available for terminal input str
 A common error is setting the buffer of *stdin* or *stdout* to an array whose lifetime ends 
 before the program terminates::
 
-   int main() {
-       char buf[BUFSIZ];
-       std::setbuf(stdin, buf);
-   } // lifetime of buf ends, undefined behavior
+   FILE * open_data(void)
+   {
+       FILE    *fp;
+       char    databuf[BUFSIZ];  /* setvbuf makes this the stdio buffer */
+       if ((fp = fopen("datafile", "r")) == NULL)
+           return(NULL);
+       if (setvbuf(fp, databuf, _IOLBF, BUFSIZ) != 0)
+           return(NULL);
+       return(fp);     /* error */
+   }
 
 The default buffer size *BUFSIZ* is expected to be the most efficient buffer size for file I/O 
 on the implementation, but POSIX *fstat* often provides a better estimate.
