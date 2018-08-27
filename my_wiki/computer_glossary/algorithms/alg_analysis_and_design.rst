@@ -46,7 +46,7 @@ Algorithm analysis and design
       in f(n)=O(g(n)), the bound :math:`0 \le f(n) \le cg(n)` holds
       true for some constant c > 0. but in f(n)=o(g(n)), the bound 
       :math:`0 \le f(n) \lt cg(n)` holds true for all constants c > 0.
-      that is, :math:`\lim_{n \rightarrow \inf} \frac{f(n)}{g(n)} = 0`
+      that is, :math:`\lim \limits_{n \to \infty} \frac{f(n)}{g(n)} = 0.`
 
 #. :math:`\omega \text{-notation}` - lower bound
 
@@ -56,9 +56,9 @@ Algorithm analysis and design
 
    .. note::
 
-      By analogy, :math:`\omega-notation` is to `\Omega-notation` as
+      By analogy, :math:`\omega-notation` is to :math:`\Omega-notation` as
       o-notation is to O-notation, the relation :math:`f(n) = \omega(g(n))`
-      implies that :math:`\lim_{n \rightarrow \inf} \frac{f(n)}{g(n)} = inf`
+      implies that :math:`\lim \limits_{n \to \infty} \frac{f(n)}{g(n)} = \infty.`
 
 #. Fibonacci series
 
