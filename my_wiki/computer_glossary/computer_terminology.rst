@@ -16,6 +16,7 @@ Computer Terminology
 | successor  [后继]
 | spam email [垃圾邮件]
 | implementation-dependent
+| ELF = Executable and Linking Format
 |
 | PEP -- python enhancement proposal
 | DoS  -- Denial-of-Service

@@ -128,7 +128,8 @@ Basic Usage
 
 .. option:: -static
 
-   Force compile to link with static library(*.a). By default, gcc link with shared object (*.so).
+   Prevent gcc from using shared libraries, force compile to link with static library(*.a). 
+   By default, gcc link with shared object (*.so).
 
 .. option::  -shared
            

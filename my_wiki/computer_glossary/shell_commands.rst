@@ -14,11 +14,13 @@ Shell Commands
 
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 2
 
    shell_command/addr2line_note
    shell_command/awk_manual
    shell_command/cal_manual
+   shell_command/binary_executable_inspectors
    shell_command/chmod_info
    shell_command/crontab_info
    shell_command/du_manual

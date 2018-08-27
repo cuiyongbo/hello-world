@@ -135,8 +135,6 @@ Output API
 Buffer Control
 ==============
 
-**Language Support**
-
 .. code-block:: c++
 
    #include <stdio.h>

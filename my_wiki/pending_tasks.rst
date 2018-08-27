@@ -26,14 +26,22 @@ Pending tasks
 
 #. logic implement enroute traffic event (refer to Camera)
    
-   - add parsing in EnrouteTiResponse 
+   - add parsing in EnrouteTiResponse (solved)
    - add getter in RouteBase (solved)
    
 
 #. Advanced Programming in the UNIX Environment 
    
    - Process
+     
+      - Ch7 Process environment
+      - Ch8 Process control
+      - Ch9 Process relationship
+
    - Pthread
+     
+      - Ch11 Threads
+      - Ch12 Thread control
 
    
 #. 2.3-7 P39

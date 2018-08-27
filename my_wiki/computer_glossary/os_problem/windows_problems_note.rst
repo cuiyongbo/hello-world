@@ -83,7 +83,7 @@ Windows Problems
    
    Solution::
 
-      This work even in Release
+      This works even in Release
 
 #. VS Error C2220
 
