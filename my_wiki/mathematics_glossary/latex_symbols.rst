@@ -38,6 +38,8 @@ Binary Operation/Relation Symbols
 +----------------+--------+-------------------+-----------+
 | :math:`\times` | \times | :math:`\otimes`   | \otimes   |
 +----------------+--------+-------------------+-----------+
+| :math:`\pm`    | \pm    | :math:`\mp`       | \mp       |
++----------------+--------+-------------------+-----------+
 | :math:`\div`   | \div   | :math:`\cap`      | \cap      |
 +----------------+--------+-------------------+-----------+
 | :math:`\cup`   | \cup   | :math:`\neq`      | \neq      |
@@ -112,3 +114,19 @@ Miscellaneous symbols
 +----------------------+--------------+---------------------+-------------+
 
 
+Special Functions
+=================
+
+#. Radical signs
+   
+   Radical signs Use sqrt, which adjusts to the size of its argument: 
+   \sqrt{x^3} --> :math:`\sqrt{x^3};`
+   \sqrt[3]{\frac xy} --> :math:`\sqrt[3]{\frac xy}.`
+   For complicated expressions, consider using ``{...}^{1/2}`` instead.
+
+#. limit
+   
+   Some special functions such as "lim", "sin", "max", "ln", and so on are normally 
+   set in roman font instead of italic font. Use \lim, \sin, etc. to make these: 
+   \sin x  --> :math:`\sin x.` Use subscripts to attach a notation to \lim: 
+   \lim_{x \to 0} --> :math:`\lim \limits_{x \to 0}`

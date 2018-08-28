@@ -55,8 +55,11 @@ Pending tasks
    given a set S of n integers and another integer x, determines 
    whether or not there exist two elements in S whose sum is exactly x.
 
-#. how to solve :math:`an^2 + bn + c = 0`
+#. how to solve :math:`ax^2 + bx + c = 0` (solved)
+   
+   .. math::
+
+      x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
    
 #. setjmp, longjmp
-
 #. getrlimit, setlimit
