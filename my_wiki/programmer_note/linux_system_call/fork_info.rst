@@ -2,16 +2,13 @@
 fork Manual
 ***********
 
-**NAME**
+.. code-block:: c
+   :caption: Language support
 
-   fork - create a child process
-
-**SYNOPSIS**
-
-   .. code-block:: c
+   /* fork - create a child process */
    
-      #include <unistd.h>
-      pid_t fork(void);
+   #include <unistd.h>
+   pid_t fork(void);
 
 **DESCRIPTION**
 
@@ -104,36 +101,57 @@ fork Manual
    On success, the PID of the child process is returned in the parent, and 0 is returned in the child. 
    On failure, -1 is returned in the parent, no child process is created, and *errno* is set appropriately.
 
-**ERRORS**
-
-   EAGAIN
-
-      A system-imposed limit on the number of threads was encountered.  There are a number of limits
-      that may trigger this error: the ``RLIMIT_NPROC`` soft resource limit (set via :manpage:`setrlimit(2)`),
-      which limits the number of processes and threads for a real user ID, was reached; the kernel's system-wide
-      limit on the number of processes and threads, :file:`/proc/sys/kernel/threads-max`, was reached;
-      or the maximum number of PIDs, :file:`/proc/sys/kernel/pid_max`, was reached (see :manpage:`proc(5)``).
-
-   EAGAIN
-
-      The caller is operating under the ``SCHED_DEADLINE`` scheduling policy and does not have the 
-      reset-on-fork flag set.  See :manpage:`sched(7)`.
-
-   ENOMEM 
-
-      ``fork()`` failed to allocate the necessary kernel structures because memory is tight.
-
-   ENOSYS 
-
-      ``fork()`` is not supported on this platform where, 
-      for example, hardware without a :abbr:`MMU (Memory-Management Unit).`
-
-
 **NOTES**
 
-   Under Linux, ``fork()`` is implemented using copy-on-write pages, so the only penalty that it incurs is the time and
+   Under Linux, ``fork()`` is implemented using **copy-on-write** pages, so the only penalty that it incurs is the time and
    memory required to duplicate the parent's page tables, and to create a unique task structure for the child.
 
-**EXAMPLE**
 
-   See :manpage:`pipe(2)` and :manpage:`wait(2)`.
+**Examples**
+
+.. code-block:: c
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <string.h>
+   #include <unistd.h>
+   
+   int g_var=6;
+   char g_buf[] = "hello world!\n";
+   
+   int main()
+   {
+       int var = 88;
+       fputs(g_buf, stdout);
+       puts("before fork");
+   
+       pid_t pid = fork();
+       if(pid < 0)
+       {
+           perror("fork");
+           exit(EXIT_FAILURE);
+       }
+       else if(pid == 0)
+       {
+           g_var++;
+           var++;
+       }        
+       else
+       {
+           sleep(2);
+       }
+   
+       printf("pid = %ld, global = %d, local = %d\n",
+           (long)getpid(), g_var, var);
+   
+       return 0;
+   }
+
+Output::
+
+   $ ./a.out 
+   hello world!
+   before fork
+   pid = 11136, global = 7, local = 89 # child's variable were changed
+   pid = 11135, global = 6, local = 88 # parent's copy remain unchanged.
+   

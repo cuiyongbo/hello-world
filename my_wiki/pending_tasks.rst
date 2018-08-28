@@ -29,6 +29,11 @@ Pending tasks
    - add parsing in EnrouteTiResponse (solved)
    - add getter in RouteBase (solved)
    
+#. added ti diff tools
+   
+   - add project structure (solved)
+   - inspect apis in util (solved)
+   - rearrange realtime.data ordered by naviLinkId (solved)
 
 #. Advanced Programming in the UNIX Environment 
    

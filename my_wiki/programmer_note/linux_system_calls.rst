@@ -20,4 +20,5 @@ Linux System Call
    linux_system_call/pipe_manual
    linux_system_call/fcntl_manual
    linux_system_call/umask_info
+   linux_system_call/exit_system_calls_note
    linux_system_call/helper_functions

@@ -111,6 +111,13 @@ Windows Problems
       File: HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\FileMRUList
       Project: HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\ProjectMRUList
 
+#. VS Cannot step into function when debugging
+   
+   Solution::
+
+      Remove the solution's suo file (contains debug information, user settings such as break points, 
+      bookmarks, and other user settings.), and rebuild the project.
+
 #. Inspect shared memory usage
    
    .. image:: images/windows_view_shared_memory_usage.png
