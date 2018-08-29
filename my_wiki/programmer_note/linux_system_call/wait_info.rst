@@ -183,3 +183,77 @@ WAIT Mannual
          }
       }
 
+.. code-block:: c
+   :caption: Taken from Advanced Programming in UNIX Environment
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <string.h>
+   #include <unistd.h>
+   #include <sys/wait.h>
+   
+   void pr_exit(int status)
+   {
+       if(WIFEXITED(status))
+       {
+           printf("normal termination, exit status = %d\n", WEXITSTATUS(status));
+       }
+       else if(WIFSIGNALED(status))
+       {
+           printf("abnormal termination, signal number = %d%s\n",
+               WTERMSIG(status),
+   #ifdef WCOREDUMP
+               WCOREDUMP(status) ? " (core file dumped)" : "");
+   #else
+               "");
+   #endif
+       }
+       else if(WIFSTOPPED(status))
+       {
+           printf("child stopped, signal number = %d\n", WSTOPSIG(status));
+       }
+   } 
+   
+   void err_sys(const char* msg)
+   {
+       perror(msg);
+       exit(EXIT_FAILURE);
+   }
+
+   int main(void)
+   {
+       int status;
+       pid_t pid;
+   
+       if ((pid = fork()) < 0)
+          err_sys("fork error");
+       else if (pid == 0) /* child */
+           exit(7);
+   
+       if (wait(&status) != pid) /* wait for child */
+           err_sys("wait error");
+   
+       pr_exit(status); /* and print its status */
+   
+       if ((pid = fork()) < 0)
+           err_sys("fork error");
+       else if (pid == 0) /* child */
+           abort(); /* generates SIGABRT */
+   
+       if (wait(&status) != pid) /* wait for child */
+           err_sys("wait error");
+           
+       pr_exit(status); /* and print its status */
+   
+       if ((pid = fork()) < 0)
+           err_sys("fork error");
+       else if (pid == 0) /* child */
+           status /= 0; /* divide by 0 generates SIGFPE */
+   
+       if (wait(&status) != pid) /* wait for child */
+           err_sys("wait error");
+       
+       pr_exit(status); /* and print its status */
+   
+       exit(0);
+   }

@@ -254,3 +254,12 @@ English Note 7
 | Definition: a sustained and enthusiastic show of appreciation from an audience, especially by means of applause.
 | Usage: the performance received a thundering ovation. [掌声雷动]
 | 
+| clog
+| Definition: a shoe with a thick wooden sole [鞋底]. [木底鞋，不是木屐]
+| Definition: an encumbrance or impediment.
+| Usage: a clog in the system. [系统冗余]
+| Definition: block or become blocked with an accumulation of thick, wet matter.
+| Usage: the gutters were clogged up with leaves. [下水道]
+| Usage: too much fatty food makes your arteries clog up.
+| Definition: fill up or crowd (something) so as to obstruct passage.
+| Usage: tourists clog the roads in summer.

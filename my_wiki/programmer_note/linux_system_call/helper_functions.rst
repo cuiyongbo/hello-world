@@ -6,15 +6,10 @@ Miscellaneous Functions
    :local:
 
 
-getpid & getppid
-================
+getpid, getppid -- get parent or calling process identification
+===============================================================
 
-**NAME**
-
-   getpid, getppid -- get parent or calling process identification
-
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
@@ -23,9 +18,6 @@ getpid & getppid
       pid_t getpid(void);
       pid_t getppid(void);
 
-
-**DESCRIPTION**
-
    ``getpid()`` returns the process ID of the calling process. 
    The ID is guaranteed to be unique and is useful for
    constructing temporary file names.
@@ -33,36 +25,22 @@ getpid & getppid
    ``getppid()`` returns the process ID of the parent
    of the calling process.
 
-
 **ERRORS**
 
    The ``getpid()`` and ``getppid()`` functions are always successful,
    and no return value is reserved to indicate an error.
 
 
-**SEE ALSO**
+gethostname, sethostname -- get/set name of current host
+========================================================
 
-   :manpage:`gethostid(2)`, :manpage:`compat(5)`
-
-
-gethostname & sethostname
-=========================
-
-**NAME**
-
-   gethostname, sethostname -- get/set name of current host
-
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <unistd.h>
       int gethostname(char *name, size_t namelen);
       int sethostname(const char *name, int namelen);
-
-
-**DESCRIPTION**
 
    The ``gethostname()`` function returns the standard host name for the current processor,
    as previously set by ``sethostname()``.  The *namelen* argument specifies the size of the
@@ -75,54 +53,27 @@ gethostname & sethostname
    Host names are limited in length to {``sysconf(_SC_HOST_NAME_MAX)``} characters, not
    including the trailing null, currently 255.
 
-
 **RETURN VALUES**
 
    Upon successful completion, the value ``0`` is returned; otherwise the value ``-1`` is
    returned and the global variable ``errno`` is set to indicate the error.
 
 
-**ERRORS**
+nanosleep -- suspend thread execution for an interval measured in nanoseconds
+=============================================================================
 
-   [EFAULT]           
-      The *name* or *namelen* argument gave an invalid address.
-
-   [ENAMETOOLONG]     
-      The current host name is longer than namelen.  (For ``gethostname()`` only.)
-
-   [EPERM]            
-      The caller tried to set the host name and was not the super-user.
-
-
-**SEE ALSO**
-
-   :manpage:`sysconf(3)`, :manpage:`sysctl(3)`
-
-
-nanosleep
-=========
-
-**NAME**
-   
-   nanosleep -- suspend thread execution for an interval measured in nanoseconds
-
-
-**SYNOPSIS**
+**DESCRIPTION**
    
    .. code-block:: c
 
       #include <time.h>
       int nanosleep(const struct timespec *rqtp, struct timespec *rmtp);
 
-
-**DESCRIPTION**
-
    The ``nanosleep()`` function causes the calling thread to sleep for the amount of
    time specified in *rqtp* (the actual time slept may be longer, due to system 
    latencies and possible limitations in the timer resolution of the hardware).  An
    unmasked signal will cause ``nanosleep()`` to terminate the sleep early, regardless
    of the ``SA_RESTART`` value on the interrupting signal.
-
 
 **RETURN VALUES**
 
@@ -136,36 +87,10 @@ nanosleep
    (the request time minus the time actually slept).
 
 
-**ERRORS**
+sleep, usleep -- suspend thread execution for an interval measured in seconds/microseconds
+==========================================================================================
 
-   The ``nanosleep()`` call fails if:
-
-   [EINTR]            
-
-      ``nanosleep()`` was interrupted by the delivery of a signal.
-
-   [EINVAL]           
-
-      *rqtp* specified a nanosecond value less than zero or greater
-      than or equal to 1000 million.
-
-
-**SEE ALSO**
-
-   :manpage:`sigsuspend(2)`, :manpage:`sleep(3)`
-
-
-sleep & usleep
-==============
-
-**NAME**
-
-   sleep -- suspend thread execution for an interval measured in seconds
-
-   usleep -- suspend thread execution for an interval measured in microseconds
-
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
@@ -174,8 +99,6 @@ sleep & usleep
       unsigned int sleep(unsigned int seconds);
       int usleep(useconds_t microseconds); 
 
-
-**DESCRIPTION**
 
    The ``sleep()`` function suspends execution of the calling thread until either
    *seconds* seconds have elapsed or a signal is delivered to the thread and its
@@ -201,21 +124,15 @@ sleep & usleep
    the time actually slept) in seconds.
 
 
-pause
-=====
+pause -- stop until signal
+==========================
 
-**NAME**
-     
-   pause -- stop until signal
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <unistd.h>
       int pause(void);
-
-**DESCRIPTION**
 
    **Note** that ``pause()`` is made obsolete by :manpage:`sigsuspend(2).`
 
@@ -229,19 +146,57 @@ pause
    Always returns -1. and set errno to ``EINTR.``
 
 
-alarm
-=====
+abort - cause abnormal process termination
+==========================================
 
-**NAME**
+**DESCRIPTION**
+
+   .. code-block:: c
+      :caption: SYNOPSIS
+   
+          #include <stdlib.h>
+          void abort(void);
+
+   The abort() first unblocks the SIGABRT signal, and then raises that signal for the calling process.  
+   This results in the abnormal termination of the process unless the SIGABRT signal is caught 
+   and the signal handler does not return (see longjmp(3)).
+
+   If the abort() function causes process termination, all open streams are closed and flushed.
+   If the SIGABRT signal is ignored, or caught by a handler that returns, the abort() function 
+   will still terminate the process. It does this by restoring the default disposition for SIGABRT 
+   and then raising the signal for a second time.
+
+**Example**
 
    .. code-block:: c
 
-      /*alarm -- set signal timer alarm*/
+      #include <stdio.h>
+      #include <stdlib.h>
+      #include <string.h>
+      #include <unistd.h>
+      #include <signal.h>
+      
+      int main()
+      {
+          signal(SIGABRT, SIG_IGN);
+      
+          abort();
+      
+          return 0;
+      }
+
+   // Ubuntu output: Aborted (core dumped)
+
+
+alarm -- set signal timer alarm
+===============================
+
+**DESCRIPTION**
+
+   .. code-block:: c
 
       #include <unistd.h>
       unsigned alarm(unsigned seconds);
-
-**DESCRIPTION**
 
    **Note** that This interface is made obsolete by setitimer(2).
 
@@ -259,24 +214,20 @@ alarm
    a previous call to ``alarm().`` If no alarm is currently set, the return value is 0.
 
 
-kill
-====
+kill -- send signal to a process
+================================
 
-**NAME**
+**DESCRIPTION**
 
    .. code-block:: c
       :caption: SYNOPSIS
 
       #include <signal.h>
       
-      /*kill -- send signal to a process*/
       int kill(pid_t pid, int sig);
       
       /*killpg -- send signal to a process group*/
       int killpg(pid_t pgrp, int sig);
-
-
-**DESCRIPTION**
 
    The ``kill()`` function sends the signal specified by *sig* to *pid*, a process
    or a group of processes.  Typically, *Sig* will be one of the signals specified
@@ -311,25 +262,3 @@ kill
 
    Upon successful completion, a value of ``0`` is returned. Otherwise,
    a value of ``-1`` is returned and ``errno`` is set to indicate the error.
-
-
-**ERRORS**
-
-   ``kill()`` will fail and no signal will be sent if:
-
-   [EINVAL]
-      *Sig* is not a valid, supported signal number.
-
-   [EPERM]
-      The sending process is not the super-user and its effective
-      user id does not match the effective user-id of the receiving
-      process.  When signaling a process group, this error is returned
-      if any members of the group could not be signaled.
-
-   [ESRCH]
-      No process or process group can be found corresponding to that
-      specified by pid.
-
-   [ESRCH]
-      The process id was given as ``0``, but the sending process does
-      not have a process group.

@@ -16,7 +16,7 @@ system – processes that stay zombies for a long time are generally an error an
 
 The term zombie process derives from the common definition of zombie — an undead person. 
 In the term's metaphor, the child process has "died" but has not yet been "reaped". 
-Also, unlike normal processes, the kill command has no effect on a zombie process.
+Also, unlike normal processes, **the kill command has no effect on a zombie process.**
 
 Zombie processes should not be confused with **orphan processes:** an orphan process 
 is a process that is still executing, but whose parent has died. These do not remain 
@@ -53,6 +53,32 @@ will be reaped automatically.
          waitpid(pids[i], NULL, 0);
    
       return 0;
+   }
+
+.. code-block:: c
+   :caption: Taken from Advanced Programming in UNIX Environment
+
+   #include <stdio.h>
+   #include <stdlib.h>
+   #include <string.h>
+   #include <unistd.h>
+   
+   int main()
+   {
+       pid_t pid = fork();
+       if(pid < 0)
+       {
+           perror("fork");
+           exit(EXIT_FAILURE);
+       }
+       else if(pid == 0)
+       {
+           exit(EXIT_SUCCESS);
+       }
+   
+       sleep(4);
+       system("ps -o pid,ppid,status,tty,command");
+       exit(EXIT_SUCCESS);
    }
 
 

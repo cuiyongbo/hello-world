@@ -296,5 +296,5 @@ Sublime Text
 #. Preview markdown file: install markdown html preview, then "Ctrl + shift + m"        
 #. Find in files - Cmd + shift + F (mac)
 #. Insert Line After - Cmd + Enter
-#. Insert Line Before - Shift + Cmd + Enter
+#. Insert Line Before - Shift + Cmd + Enter (replace Cmd with Ctrl on windows)
       

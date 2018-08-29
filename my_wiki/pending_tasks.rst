@@ -5,6 +5,7 @@ Pending tasks
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
+#. https://en.wikipedia.org/wiki/Bayes%27_theorem
 
 #. introduction to algorithm - data structure
    
@@ -17,6 +18,7 @@ Pending tasks
 #. http://www.kohala.com/start/
 
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
+#. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
    
 #. ti-servers implements new ti tile grid [stopped]
 
@@ -34,6 +36,7 @@ Pending tasks
    - add project structure (solved)
    - inspect apis in util (solved)
    - rearrange realtime.data ordered by naviLinkId (solved)
+   - implement bsdiff (solved)
 
 #. Advanced Programming in the UNIX Environment 
    

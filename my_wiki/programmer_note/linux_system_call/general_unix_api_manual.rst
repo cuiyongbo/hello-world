@@ -159,15 +159,6 @@ write Manual
    On success, the number of bytes written is returned (zero indicates nothing was written).  
    On error, -1 is returned, and *errno* is set appropriately.
 
-**ERRORS**
-
-   EPIPE  
-   
-   fd is connected to a pipe or socket whose reading end is closed. 
-   When this happens the writing process will also receive a SIGPIPE signal.
-   Thus, the write return value is seen only if the program catches, blocks 
-   or ignores this signal.
-
 **NOTES**
 
    A successful return from **write()** does not make any guarantee that data has been committed to disk.  
