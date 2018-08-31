@@ -118,6 +118,12 @@ Windows Problems
       Remove the solution's suo file (contains debug information, user settings such as break points, 
       bookmarks, and other user settings.), and rebuild the project.
 
+#. VS console app exits without pause even running with Ctrl + F5
+   
+   Solution::
+
+      Settings - Linker - SubSystem - Console (/SUBSYSTEM:CONSOLE)
+
 #. Inspect shared memory usage
    
    .. image:: images/windows_view_shared_memory_usage.png
