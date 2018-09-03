@@ -27,7 +27,7 @@ WAIT Mannual
    or the child was resumed by a signal. In the case of a terminated
    child, performing a wait allows the system to release the resources
    associated with the child; if a wait is not performed, then the
-   terminated child remains in a "zombie" state (see NOTES below).
+   terminated child remains in a "zombie" state.
 
    If a child has already changed state, then these calls return immediately.
    Otherwise, they block until either a child changes state or a signal handler
@@ -51,9 +51,14 @@ WAIT Mannual
       > 0    meaning wait for the child whose process ID is equal to the value of pid.
 
    The value of *options* is an OR of zero or more of the following
-   constants: ``WNOHANG``, ``WUNTRACED,`` ``WCONTINUED.``
+   constants: ``WNOHANG, WUNTRACED, WCONTINUED.``
 
-   If *status* is not NULL,* wait()* and *waitpid()* store status information in the integer 
+   The WNOHANG option is used to indicate that the call should not block if there are
+   no processes that wish to report status. If the WUNTRACED option is set, children of 
+   the current process that are stopped due to a SIGTTIN, SIGTTOU, SIGTSTP, or SIGSTOP signal 
+   also have their status reported.
+
+   If *status* is not NULL, *wait()* and *waitpid()* store status information in the integer 
    to which it points. This integer can be inspected with the following macros::
 
       WIFEXITED(status)
@@ -78,24 +83,6 @@ WAIT Mannual
       but have not yet changed state, then ``0`` is returned. On error, ``-1`` is return.
 
    Each of these calls sets ``errno`` to an appropriate value in the case of an error.
-
-
-**ERRORS**
-
-   ECHILD
-     (for ``wait()``) The calling process does not have any unwaited-for children.
-
-   ECHILD 
-      The process specified by *pid* (``waitpid()``) does not exist or is not a child 
-      of the calling process. This can happen for one's own child if the action for 
-      ``SIGCHLD`` is set to ``SIG_IGN``.
-
-   EINTR
-      ``WNOHANG`` was not set and an unblocked signal or a ``SIGCHLD`` was caught;
-      see :manpage:`signal(7)`.
-
-   EINVAL
-      The options argument was invalid.
 
 
 **NOTES**
