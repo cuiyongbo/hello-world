@@ -23,3 +23,17 @@ Binary diff and patch tools
 
    bspatch uses memory equal to the size of *oldfile* plus the size of *newfile,* 
    but can tolerate a very small working set without a dramatic loss of performance.
+
+
+#. Complexity
+   
+   bsdiff is quite memory-hungry. It requires **max(17*n, 9*n+m) + O(1)** bytes of memory, 
+   where n is the size of the old file and m is the size of the new file. bspatch requires 
+   **n+m+O(1)** bytes.
+
+   bsdiff runs in :math:`O((n+m) \log n)` time; bspatch runs in **O(n+m)** time;
+   Providing that ``off_t`` is defined properly, bsdiff and bspatch support files 
+   of up to :math:`2^{61}-1` bytes.
+
+   See `Naïve Differences of Executable Code <http://www.daemonology.net/papers/bsdiff.pdf>`_ 
+   for further information.

@@ -263,3 +263,15 @@ English Note 7
 | Usage: too much fatty food makes your arteries clog up.
 | Definition: fill up or crowd (something) so as to obstruct passage.
 | Usage: tourists clog the roads in summer.
+| 
+| naive
+| Definition: (of a person or action) showing a lack of experience, wisdom, or judgment.
+| Usage: the rather naive young man had been totally misled.
+| Definition: (of a person) natural and unaffected; innocent.
+| Usage: Andy had a sweet, naive look when he smiled.
+| Definition: of or denoting art produced in a straightforward style that deliberately rejects sophisticated artistic techniques and has a bold directness resembling a child's work, typically in bright colors with little or no perspective.
+| 
+| obviate
+| Definition: remove (a need or difficulty).
+| Synonyms: get rid of; avoid; prevent.
+| Usage: the Venetian blinds obviated the need for curtains.
