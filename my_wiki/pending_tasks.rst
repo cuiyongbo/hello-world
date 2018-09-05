@@ -38,6 +38,7 @@ Pending tasks
    - rearrange realtime.data ordered by naviLinkId (solved)
    - implement bsdiff (solved)
    - add command line argument parser (solved)
+   - tune create patch performance (solved)
    - add patch data tar
 
 #. Advanced Programming in the UNIX Environment 

@@ -3,13 +3,13 @@ English Note
 
 **学而不思则罔， 思而不学则殆**
 
-+--------+-----------+--------+
-| Johann | Sebastian | Bach   |
-+--------+-----------+--------+
-| First  | Middle    | Last   |
-+--------+-----------+--------+
-| Given  | Middle    | Family |
-+--------+-----------+--------+
++-------------+-------------+-------------+
+| Johann      | Sebastian   | Bach        |
++-------------+-------------+-------------+
+| First name  | Middle name | Last name   |
++-------------+-------------+-------------+
+| Given  name | Middle name | Family name |
++-------------+-------------+-------------+
 
 J. S. Bach shares his given name with six immediate family
 members and many extended family members. He shares his family
@@ -2245,7 +2245,7 @@ admitted the computer was named after his daughter.
 | Usage: Infants were exorcised prior to baptism.
 | 
 | long pig
-| Definition: obsolete human flesh eaten by cannibals.
+| Definition: [obsolete] human flesh eaten by cannibals.
 |
 | cannibal
 | cannibalize

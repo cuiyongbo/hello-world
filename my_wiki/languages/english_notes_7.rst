@@ -275,3 +275,20 @@ English Note 7
 | Definition: remove (a need or difficulty).
 | Synonyms: get rid of; avoid; prevent.
 | Usage: the Venetian blinds obviated the need for curtains.
+| 
+| blemish
+| Definition: a small mark or flaw which spoils the appearance of something.
+| Usage: the merest blemish on a Rolls Royce might render it unsalable.
+| Definition:spoil the appearance of (something) that is otherwise aesthetically perfect.
+| Usage: thousands of Web pages are blemished with embarrassing typos.
+| Definition: a moral defect or fault. [污点，瑕疵]
+| Usage: local government is not without blemish.
+| 
+| obsolete
+| obsolescent
+| Synonyms: out-dated
+| 
+| bare-bones
+| Definition: reduced to or comprising only the basic or essential elements of something.
+| Usage: a bare-bones version of the story. [主干，基础]
+| 

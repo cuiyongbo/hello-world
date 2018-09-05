@@ -8,3 +8,4 @@ Advanced Programming in UNIX Programming
 
 .. image:: images/relationship_of_exec_functions.png
 
+.. image:: images/logic_picture_of_a_terminal_device.png

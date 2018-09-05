@@ -2,12 +2,8 @@
 File Operations
 ***************
 
-fopen
-=====
-
-**NAME**
-   
-   fopen, fdopen, freopen - stream open functions
+fopen, fdopen, freopen - stream open functions
+==============================================
 
 **SYNOPSIS**
 
@@ -100,24 +96,6 @@ fopen
    is set to indicate the error.
 
 
-**ERRORS**
-
-   EINVAL
-      The *mode* provided to ``fopen()``, ``fdopen()``, or ``freopen()`` was invalid.
-
-   The ``fopen()``, ``fdopen()`` and ``freopen()`` functions may also fail and set *errno*
-   for any of the errors specified for the routine :manpage:`malloc(3)`.
-
-   The ``fopen()`` function may also fail and set *errno* for any of the errors specified
-   for the routine :manpage:`open(2)`.
-
-   The ``fdopen()`` function may also fail and set *errno* for any of the errors specified
-   for the routine :manpage:`fcntl(2)`.
-
-   The ``freopen()`` function may also fail and set *errno* for any of the errors specified
-   for the routines :manpage:`open(2)`, :manpage:`fclose(3)`, and :manpage:`fflush(3)`.
-
-
 **ATTRIBUTES**
 
    For an explanation of the terms used in this section, 
@@ -129,17 +107,9 @@ fopen
    | fopen(), fdopen(), freopen() | Thread safety | MT-Safe |
    +------------------------------+---------------+---------+
 
-**SEE ALSO**
 
-   open(2), fclose(3), fileno(3), fmemopen(3), fopencookie(3)
-
-
-fclose
-======
-
-**NAME**
-
-   fclose - close a stream
+fclose - close a stream
+=======================
 
 **SYNOPSIS**
 
@@ -191,17 +161,9 @@ fclose
    To ensure that the data is physically stored on disk the kernel buffers must
    be flushed too, for example, with :manpage:`sync(2)` or :manpage:`fsync(2)`.
 
-**SEE ALSO**
 
-   close(2), fcloseall(3), fflush(3), fopen(3), setbuf(3)
-
-
-fread & fwrite
-==============
-
-**NAME**
-
-   fread, fwrite - binary stream input/output
+fread, fwrite - binary stream input/output
+==========================================
 
 **SYNOPSIS**
    
@@ -245,17 +207,9 @@ fread & fwrite
    | fread(), fwrite() | Thread safety | MT-Safe |
    +-------------------+---------------+---------+
 
-**SEE ALSO**
 
-   read(2), write(2), feof(3), ferror(3), unlocked_stdio(3)
-
-
-Check and reset stream status
-=============================
-
-**NAME**
-
-   clearerr, feof, ferror, fileno - check and reset stream status
+clearerr, feof, ferror, fileno - check and reset stream status
+==============================================================
 
 **SYNOPSIS**
 
@@ -304,17 +258,9 @@ Check and reset stream status
    | fileno(), clearerr() |               |         |
    +----------------------+---------------+---------+
 
-**SEE ALSO**
 
-   open(2), fdopen(3), stdio(3), unlocked_stdio(3)
-
-
-Reposition a stream
-===================
-
-**NAME**
-
-   fgetpos, fseek, fsetpos, ftell, rewind - reposition a stream
+fgetpos, fseek, fsetpos, ftell, rewind - reposition a stream
+============================================================
 
 **SYNOPSIS**
 
@@ -362,21 +308,6 @@ Reposition a stream
    returns the current offset. Otherwise, ``-1`` is returned and *errno*
    is set to indicate the error.
 
-**ERRORS**
-
-   EBADF
-      The stream specified is not a seekable stream.
-
-   EINVAL
-      The *whence* argument to ``fseek()`` was not ``SEEK_SET``,
-      ``SEEK_END``, or ``SEEK_CUR``. Or the resulting file
-      offset would be negative.
-
-   The functions ``fgetpos()``, ``fseek()``, ``fsetpos()``, and ``ftell()``
-   may also fail and set *errno* for any of the errors specified for the
-   routines :manpage:`fflush(3)`, :manpage:`fstat(2)`, :manpage:`lseek(2)`,
-   and :manpage:`malloc(3)`.
-
 **ATTRIBUTES**
 
    For an explanation of the terms used in this section, 
@@ -389,17 +320,9 @@ Reposition a stream
    | fsetpos(), fgetpos()       |               |         |
    +----------------------------+---------------+---------+
 
-**SEE ALSO**
 
-   lseek(2), fseeko(3)
-
-
-fflush
-======
-
-**NAME**
-
-   fflush - flush a stream
+fflush - flush a stream
+=======================
 
 **SYNOPSIS**
 
@@ -424,15 +347,8 @@ fflush
 
 **RETURN VALUE**
 
-   Upon successful completion 0 is returned.  Otherwise, EOF is returned and errno is set to indicate the error.
-
-**ERRORS**
-
-   EBADF
-      stream is not an open stream, or is not open for writing.
-
-   The function ``fflush()`` may also fail and set *errno* for
-   any of the errors specified for :manpage:`write(2)`.
+   Upon successful completion 0 is returned.  
+   Otherwise, EOF is returned and errno is set to indicate the error.
 
 **ATTRIBUTES**
 
@@ -451,6 +367,3 @@ fflush
    To ensure that the data is physically stored on disk the kernel buffers must
    be flushed too, for example, with :manpage:`sync(2)` or :manpage:`fsync(2)`.
 
-**SEE ALSO**
-
-   fsync(2), sync(2), write(2), fclose(3), fopen(3), setbuf(3), unlocked_stdio(3)

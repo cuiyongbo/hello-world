@@ -385,3 +385,18 @@ When generated according to the standard methods, UUIDs are for practical purpos
 for their uniqueness on a central registration authority or coordination between the parties generating them, 
 unlike most other numbering schemes. While the probability that a UUID will be duplicated is not zero, it is 
 close enough to zero to be negligible.
+
+
+**What does VI stand for?**
+
+Pronounced (vee-aye), vi stands for **visual instrument.** It is a widely-used default text editor 
+for Unix-based systems and is shipped with virtually all versions of Unix. It exclusively uses 
+the keyboard and provides a very efficient interface for editing programs and scripts.
+
+
+**What does Vim stand for?**
+
+The name Vim is an acronym for** Vi IMproved** because Vim is an extended version of the vi editor, 
+with many additional features designed to be helpful in editing program source code. Originally, 
+the acronym stood for Vi IMitation, but that was changed with the release of Vim 2.0 in December 1993.
+

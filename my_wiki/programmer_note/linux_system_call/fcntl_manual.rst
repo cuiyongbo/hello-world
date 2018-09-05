@@ -38,7 +38,7 @@ fcntl Manual
 
       Each open file description has certain associated status flags, initialized by *open(2)* 
       and possibly modified by *fcntl()*. The file status flags and their semantics are described 
-      in open*(2)* ::
+      in *open(2)* ::
 
          F_GETFL (void)
          Get the file access mode and the file status flags; arg is ignored.

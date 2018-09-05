@@ -317,7 +317,13 @@ society.
 | stick/stand out like a sore thumb
 | Definition: to be very obvious or noticeable.
 | Usage: Do you think I would stick out like a sore thumb at the party if I wear this coat?
-| 
+|
+| bale
+| Definition: a bundle of paper, hay, cotton, etc., tightly wrapped and bound with cords or hoops.
+| Usage: the fire destroyed 500 bales of hay. [麦秸垛，干草堆]
+| make (something) into bales.
+| Definition: they baled a lot of good hay.
+|
 | glean 
 | Definition: extract (information) from various sources.
 | Usage: The information is gleaned from press clippings.
@@ -331,6 +337,7 @@ not economically profitable to harvest. It is a practice described in
 the Hebrew Bible that became a legally enforced entitlement of the poor
 in a number of Christian kingdoms.
 
+.. image:: images/hay_bales.jpg 
 .. figure:: images/The_Gleaners.jpg
    :align: center
 
