@@ -77,3 +77,24 @@ Preprocessor symbols
       void VectorName##_resize(VectorName* o, size_t size); \
       void VectorName##_push_back(VectorName* o, Type obj);
 
+#. Preprocessor Macros
+   
+   .. code-block:: cpp
+
+      int main()
+      {
+         std::cout << "File: " << __FILE__ << '\n';
+         std::cout << "Function: " << __FUNCTION__ << '\n';
+         std::cout << "Line No: " << __LINE__ << '\n';
+          std::cout << "Date: " << __DATE__ << '\n';
+         std::cout << "Time: " << __TIME__ << '\n';
+         return 0;
+      }
+
+   Output::
+
+      File: test.cpp
+      Function: main
+      Line No: 28
+      Date: Sep  4 2018
+      Time: 23:06:22
