@@ -39,7 +39,8 @@ Pending tasks
    - implement bsdiff (solved)
    - add command line argument parser (solved)
    - tune create patch performance (solved)
-   - add patch data tar
+   - add multi-thread support (solved)
+   - merging patch files (solved)
 
 #. Advanced Programming in the UNIX Environment 
    
@@ -69,3 +70,4 @@ Pending tasks
    
 #. setjmp, longjmp
 #. getrlimit, setlimit
+#. python random module

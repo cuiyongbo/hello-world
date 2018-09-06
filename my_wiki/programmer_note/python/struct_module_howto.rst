@@ -319,7 +319,6 @@ Either 0 or 1 in the native or standard bool representation will be packed, and
 any non-zero value will be ``True`` when unpacking.
 
 
-
 .. _struct-examples:
 
 Examples
@@ -446,3 +445,40 @@ The :mod:`struct` module also defines the following type:
 .. _half precision format: https://en.wikipedia.org/wiki/Half-precision_floating-point_format
 
 .. _ieee 754 standard: https://en.wikipedia.org/wiki/IEEE_floating_point#IEEE_754-2008
+
+
+.. code-block:: py
+
+   #!/usr/bin/env python
+
+   import struct, random
+   
+   glob_unit_record_size = 8
+   
+   def gen_header(timestamp, recored_count):
+       header = struct.pack(">QII", timestamp, recored_count, glob_unit_record_size)
+       return header
+   
+   def gen_ti_infos(recored_count, max):
+       link_ids = random.sample(xrange(max), recored_count)
+       ti_infos = random.sample(xrange(max), recored_count)
+       link_ti_infos = bytearray(recored_count * glob_unit_record_size)
+       offset = 0
+       fomatter = struct.Struct(">II")
+       for i in range(recored_count):
+           fomatter.pack_into(link_ti_infos, offset, link_ids[i], ti_infos[i])
+           offset = offset + glob_unit_record_size
+       return link_ti_infos
+   
+   
+   def gen_data_file(file_name, timestamp):
+       with open(file_name, "wb") as f:
+           header = gen_header(timestamp, 100)
+           f.write(header)
+           link_ti_infos = gen_ti_infos(100, 2**8-1)
+           f.write(link_ti_infos)
+           f.close()
+   
+   if __name__ == "__main__":
+       gen_data_file("old.data", 201809061932)
+       gen_data_file("new.data", 201809061933)  
