@@ -106,10 +106,15 @@ Military Terms
 | Definition: a constellation of similar things is a group of them.
 | Usage: Most patients have a constellation of diseases, with few clear-up distinctions between them. 
 | 
+| sirius [天狼星]
+| Definition: the brightest star in the sky, south of the celestial equator in the constellation Canis Major. 
+| It is a binary star with a dim companion, which is a white dwarf. Also called Dog Star.
+| 
 | mercury
 | Definition: the smallest planet in the solar system , nearest to the sun. [水星]
 | Definition: (symb Hg) a chemical element. which is a poisonous silver liquid metal, used in thermometers. [汞]
 
+.. image:: images/Sirius.jpg
 .. figure:: images/solar_system.png
 
    Solar system

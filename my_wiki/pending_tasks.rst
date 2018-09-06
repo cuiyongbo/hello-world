@@ -70,4 +70,4 @@ Pending tasks
    
 #. setjmp, longjmp
 #. getrlimit, setlimit
-#. python random module
+#. python random module (solved)

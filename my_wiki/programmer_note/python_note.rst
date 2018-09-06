@@ -5,10 +5,10 @@ Python note
    :titlesonly:
    :maxdepth: 2
 
-   python/python_built_in_types
-   python/python_built_in_functions
-   python/control_overflow
+   python/built_in_types
    python/function_basics
+   python/built_in_functions
+   python/control_flow_overview
    python/builtin_set_notes
    python/builtin_dict_notes
    python/builtin_file_notes
@@ -22,5 +22,6 @@ Python note
    python/unittest_module_note
    python/os_module_tricks
    python/json_module_tricks
+   python/random_module_note
    python/miscellaneous_tricks
    python/application_examples
