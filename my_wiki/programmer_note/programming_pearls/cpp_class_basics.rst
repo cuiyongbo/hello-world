@@ -8,6 +8,7 @@ C++ Class Tricks
    cpp_operator_precedence
    cpp_operator_overloading
    cpp_preprocessor_symbol_notes
+   cpp_abstract_class_note
 
 .. contents::
    :local:
