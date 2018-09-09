@@ -390,11 +390,6 @@ name, also known as surname, with most family members.
 | Definition: (of a person or their clothes) unfashionable and without style in appearance (typically used for a woman)
 | Usage: She could achieve the kind of casual chic that made every other woman around her look dowdy.
 | 
-| hoodwink
-| Definition: to deceive or swindle by deception.
-| Synonyms: trick, fool, cheat, con
-| Usage: You don’t understand that what imposes on common folks would never hoodwind an editor.
-| 
 | aborigine
 | Definition: a person, animal, or plant that has been in a country or region from the earliest times.
 | Usage: An aboriginal inhabitant of Australia.

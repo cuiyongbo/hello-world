@@ -292,3 +292,50 @@ English Note 7
 | Definition: reduced to or comprising only the basic or essential elements of something.
 | Usage: a bare-bones version of the story. [主干，基础]
 | 
+| hoodwink
+| Definition: to deceive or swindle by deception.
+| Synonyms: trick, fool, cheat, con
+| Usage: You don’t understand that what imposes on common folks would never hoodwind an editor.
+| 
+| swindle
+| swindler [骗子]
+| Definition: use deception to deprive (someone) of money or possessions.
+| Usage: a businessman swindled investors out of millions of dollars.
+| Usage: he was said to have swindled $62.5 million from the pension fund.
+| 
+| disbelieve
+| Definition: reject as false; refuse to accept.
+| Definition: be unable to believe (someone or something).
+| Usage: he seemed to disbelieve her.
+| Definition: have no faith in God, spiritual beings, or a religious system.
+| Usage: to disbelieve is as much an act of faith as belief.
+| 
+| subtitle
+| Definition: captions displayed at the bottom of a movie or television screen that translate or transcribe the dialogue or narrative.
+| Definition: a subordinate title of a published work or article giving additional information about its content.
+| Usage: much of the film is subtitled. [字幕，旁白]
+| 
+| remunerate
+| remunerative
+| Definition: financially rewarding; lucrative.
+| Usage: highly remunerative activities.
+| Definition: earning a salary; paid.
+| Usage: since June 2003 he has not had any remunerative employment.
+| 
+| mislay
+| Definition: unintentionally put (an object) where it cannot readily be found and so lose it temporarily.
+| Usage: I seem to have mislaid my car keys.
+| 
+| misapply
+| Definition: use (something) for the wrong purpose or in the wrong way.
+| Usage: once new technology is adopted, it is often underused or misapplied.
+| 
+| iridescent
+| Definition: showing many bright colours that seem to change in different lights [色彩斑斓]
+| Usage: a bird with iridescent blue feathers.
+| 
+| sprain
+| Definition: to injure a joint in your body, especially your wrist or ankle, by suddenly twisting it. [崴脚，扭伤]
+| Usage: I stumbled and sprained my ankle. 
+| Usage: a bad ankle sprain 
+|
