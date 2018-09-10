@@ -248,11 +248,12 @@ It is the most popular tea in Japan.
 | pectoral
 | Definition: relating to the breast or chest.
 | Usage: a pectoral shield. [护胸]
+| buckler
+| Definition: a small, round shield held by a handle or worn on the forearm.
 
+.. image:: images/armored_soldier.jpg
 .. image:: images/armor.jpeg
-.. figure:: images/japanese_swords.jpg
-
-   Japanese Sword
+.. image:: images/japanese_swords.jpg
 
 | stoop
 | Definition: to bend your body forwards and downwards.

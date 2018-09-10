@@ -31,6 +31,62 @@ getpid, getppid -- get parent or calling process identification
    and no return value is reserved to indicate an error.
 
 
+geteuid, getuid -- get user identification
+==========================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <unistd.h>
+      #include <sys/types.h>
+      uid_t geteuid(void);
+      uid_t getuid(void);
+
+
+   The ``getuid()`` function returns the real user ID of the calling process.  
+   The ``geteuid()`` function returns the effective user ID of the calling process.
+
+   The real user ID is that of the user who has invoked the program. 
+   As the effective user ID gives the process additional permissions 
+   during execution of **set-user-ID** mode processes, ``getuid()`` 
+   is used to determine the **real-user-id** of the calling process.
+
+**ERRORS**
+
+   The ``getuid()`` and ``geteuid()`` functions are always successful, 
+   and no return value is reserved to indicate an error.
+
+
+getegid, getgid -- get group process identification
+===================================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <unistd.h>
+      #include <sys/types.h>
+      gid_t getegid(void);
+      gid_t getgid(void);
+      
+   The ``getgid()`` function returns the real group ID of the calling process, 
+   ``getegid()`` returns the effective group ID of the calling process.
+
+   The real group ID is specified at login time.
+
+   The real group ID is the group of the user who invoked the program.  
+   As the effective group ID gives the process additional permissions 
+   during the execution of **set-group-ID** mode processes, 
+   ``getgid()`` is used to determine the **real-user-id** (still eal-user-id??)
+   of the calling process.
+
+**ERRORS**
+     
+   The ``getgid()`` and ``getegid()`` functions are always successful; 
+   no return value is reserved to indicate an error.
+
+
 gethostname, sethostname -- get/set name of current host
 ========================================================
 
@@ -59,46 +115,29 @@ gethostname, sethostname -- get/set name of current host
    returned and the global variable ``errno`` is set to indicate the error.
 
 
-nanosleep -- suspend thread execution for an interval measured in nanoseconds
-=============================================================================
+sleep functions
+===============
 
 **DESCRIPTION**
    
    .. code-block:: c
 
+      /*
+         suspend thread execution for an interval 
+         measured in nanoseconds/seconds/microseconds
+      */
       #include <time.h>
       int nanosleep(const struct timespec *rqtp, struct timespec *rmtp);
+
+      #include <unistd.h>
+      unsigned int sleep(unsigned int seconds);
+      int usleep(useconds_t microseconds); 
 
    The ``nanosleep()`` function causes the calling thread to sleep for the amount of
    time specified in *rqtp* (the actual time slept may be longer, due to system 
    latencies and possible limitations in the timer resolution of the hardware).  An
    unmasked signal will cause ``nanosleep()`` to terminate the sleep early, regardless
    of the ``SA_RESTART`` value on the interrupting signal.
-
-**RETURN VALUES**
-
-   If ``nanosleep()`` returns because the requested time has elapsed,
-   the value returned will be zero.
-
-   If ``nanosleep()`` returns due to the delivery of a signal, the value
-   returned will be the ``-1``, and the global variable **errno** will be
-   set to indicate the interruption. If *rmtp* is non-NULL, the ``timespec``
-   structure it references is updated to contain the unslept amount
-   (the request time minus the time actually slept).
-
-
-sleep, usleep -- suspend thread execution for an interval measured in seconds/microseconds
-==========================================================================================
-
-**DESCRIPTION**
-
-   .. code-block:: c
-
-      #include <unistd.h>
-   
-      unsigned int sleep(unsigned int seconds);
-      int usleep(useconds_t microseconds); 
-
 
    The ``sleep()`` function suspends execution of the calling thread until either
    *seconds* seconds have elapsed or a signal is delivered to the thread and its
@@ -115,13 +154,20 @@ sleep, usleep -- suspend thread execution for an interval measured in seconds/mi
       The ``usleep()`` function is obsolescent. 
       Use :manpage:`nanosleep(2)` instead.
 
-
 **RETURN VALUES**
+
+   If ``nanosleep()`` returns because the requested time has elapsed,
+   the value returned will be zero.
+
+   If ``nanosleep()`` returns due to the delivery of a signal, the value
+   returned will be the ``-1``, and the global variable **errno** will be
+   set to indicate the interruption. If *rmtp* is non-NULL, the ``timespec``
+   structure it references is updated to contain the unslept amount
+   (the request time minus the time actually slept).
 
    If the **sleep()** function returns because the requested time has elapsed, the value
    returned will be zero.  If the ``sleep()`` function returns due to the delivery of a
-   signal, the value returned will be the unslept amount (the requested time minus
-   the time actually slept) in seconds.
+   signal, the value returned will be the unslept amount in seconds.
 
 
 pause -- stop until signal

@@ -14,6 +14,7 @@ Computer Glossary
    computer_glossary/algorithm_docs
    computer_glossary/software_shortcuts_note
    computer_glossary/os_problems
+   computer_glossary/unix_concepts_note
    computer_glossary/os_lock_mechanisms
    computer_glossary/special_process_type
    computer_glossary/thread_vs_process

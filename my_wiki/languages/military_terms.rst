@@ -590,7 +590,6 @@ not become complacent about its development.
 
    Camion 大卡车，军用卡车
 
-
 .. figure:: images/nonviolence_banner.jpg
 
    nonviolence: the use of peaceful means, not force, to bring about political or social change.
@@ -601,3 +600,4 @@ Dead Reckoning
 In navigation, dead reckoning or dead-reckoning (also ded for deduced reckoning or DR) 
 is the process of calculating one's current position by using a previously determined position, 
 or fix, and advancing that position based upon known or estimated speeds over elapsed time and course.
+

@@ -203,6 +203,7 @@ suppress_warnings = [
 exclude_patterns = [
     "programmer_note/gcc/gcc_man_page.rst",
     "programmer_note/gcc/gun_make_manual.rst",
-    "programmer_note/gdb/gdb_man_page.rst"
+    "programmer_note/gdb/gdb_man_page.rst",
+	"computer_glossary/unix_concepts_intro_manual.rst"
     #"programmer_note/linux_system_call/open_manual.rst"
 ]

@@ -2,6 +2,9 @@
 Special Process
 ***************
 
+.. contents::
+   :local:
+
 Zombie process
 ==============
 
@@ -120,3 +123,11 @@ process problem:
    - Expiration is a technique where each process is allotted a certain amount of time 
      to finish before being killed. If need be a process may "ask" for more time to finish 
      before the allotted time expires.
+
+.. note::
+
+   The processes with process IDs of 0, 1, and 2 are special.
+   Process 0 is the scheduler. Process 1 is the initialization
+   process launchd(8), and is the ancestor of every other process 
+   in the system. It is used to control the process structure.
+   Process 2 is the paging daemon.
