@@ -5,7 +5,6 @@ Pending tasks
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
-#. https://en.wikipedia.org/wiki/Bayes%27_theorem (solved)
 
 #. introduction to algorithm - data structure
    
@@ -70,7 +69,5 @@ Pending tasks
    
 #. setjmp, longjmp
 #. getrlimit, setlimit
-
-#. python random module (solved)
 
 #. `A Simple Introduction to Compressed Suffix Arrays <http://www.cs.cmu.edu/~dga/csa.pdf>`_

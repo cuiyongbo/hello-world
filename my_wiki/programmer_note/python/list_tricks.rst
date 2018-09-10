@@ -2,6 +2,17 @@
 List tricks
 ***********
 
+#. Set list elements to value
+   
+   .. code-block:: py
+
+      >>> l = range(1, 13)
+      >>> for i in xrange(len(l)):
+      ...     l[i] = 0
+      ... 
+      >>> l
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 #. Using Lists as Stacks
 
    The list methods make it very easy to use a list as a stack, where the last element 
@@ -11,7 +22,7 @@ List tricks
    
    .. code-block:: py
 
-      >>> stack = [3, 4,5]
+      >>> stack = [3, 4, 5]
       >>> stack.append(6)
       >>> stack.append(7)
       >>> stack
