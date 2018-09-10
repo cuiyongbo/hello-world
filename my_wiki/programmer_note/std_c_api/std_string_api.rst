@@ -2,12 +2,16 @@
 Std C String API
 ****************
 
-strcpy & strncpy
-================
+.. toctree::
+   :titlesonly:
+   
+   char_wchar_conversion
 
-**NAME**
+.. contents::
+   :local:
 
-   strcpy, strncpy - copy a string
+strcpy, strncpy - copy a string
+===============================
 
 **SYNOPSIS**
 
@@ -92,18 +96,9 @@ strcpy & strncpy
    overflow is impossible, but be careful: programs can get changed over time, in ways that may
    make the impossible possible.
 
-**SEE ALSO**
 
-   bcopy(3), memccpy(3), memcpy(3), memmove(3), stpcpy(3),
-   stpncpy(3), strdup(3), string(3), wcscpy(3), wcsncpy(3)
-
-
-strcmp & strncmp
-================
-
-**NAME**
-   
-   strcmp, strncmp - compare two strings
+strcmp, strncmp - compare two strings
+=====================================
 
 **SYNOPSIS**
 
@@ -127,12 +122,8 @@ strcmp & strncmp
    than *s2*.
 
 
-memcpy & memmove
-================
-
-**NAME**
-
-   memcpy, memmove - copy memory area
+memcpy, memmove - copy memory area
+==================================
 
 **SYNOPSIS**
 
@@ -178,12 +169,8 @@ memcpy & memmove
    Return a pointer to *dest*.
 
 
-memcmp
-======
-
-**NAME**
-   
-   memcmp - compare memory areas
+memcmp - compare memory areas
+=============================
 
 **SYNOPSIS**
 
@@ -223,18 +210,8 @@ memcmp
    the first pair of bytes (interpreted as unsigned char) that differ in *s1* and *s2*.
 
 
-char wchar conversion functions
-===============================
-
-See :doc:`char_wchar_conversion`.
-
-
-strtok & strtok_r
-=================
-
-**NAME**
-   
-   strtok, strtok_r - extract tokens from strings
+strtok, strtok_r - extract tokens from strings
+==============================================
 
 **SYNOPSIS**
 
@@ -373,18 +350,9 @@ strtok & strtok_r
 
    Another example program using ``strtok()`` can be found in :manpage:`getaddrinfo_a(3)`.
 
-**SEE ALSO**
-      
-   index(3), memchr(3), rindex(3), strchr(3), string(3), strpbrk(3),
-   strsep(3), strspn(3), strstr(3), wcstok(3)
-
 
 Duplicate a string
 ==================
-
-**NAME**
-   
-   strdup, strndup, strdupa, strndupa - duplicate a string
 
 **SYNOPSIS**
 
@@ -414,13 +382,3 @@ Duplicate a string
    It returns ``NULL`` if insufficient memory was available, with *errno* set to
    indicate the cause of the error.
 
-**ERRORS**
-
-   ENOMEM 
-      Insufficient memory available to allocate duplicate string.
-
-
-**SEE ALSO**
-
-   alloca(3), calloc(3), free(3), malloc(3),
-   realloc(3), string(3), wcsdup(3)

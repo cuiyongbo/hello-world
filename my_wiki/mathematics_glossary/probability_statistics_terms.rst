@@ -2,6 +2,9 @@
 Probability and Statistics Terms
 ********************************
 
+.. contents::
+   :local:
+
 mean, median and mode
 =====================
 
@@ -89,7 +92,7 @@ Variance
 
 In probability theory and statistics, variance is the expectation of the squared 
 deviation of a random variable from its mean. Informally, it measures how far a 
-set of (random) numbers are spread out from their average value. Variance has a 
+set of numbers are spread out from their average value. Variance has a 
 central role in statistics, where some ideas that use it include descriptive 
 statistics, statistical inference, hypothesis testing, goodness of fit, and Monte 
 Carlo sampling. Variance is an important tool in the sciences, where statistical 
@@ -259,3 +262,12 @@ of values of *x*. The discontinuity of PMF is related to the fact that the **cum
 of a discrete random variable, when it is meaningful because there is a natural ordering, is also 
 discontinuous. Where it is differentiable, the derivative is zero, just as the PMF is zero at all 
 such points.
+
+
+Permutation and Combination
+===========================
+   
+.. math::
+
+   C_n^m &= \frac{n(n-1) \cdots (n-m+1)}{m!}  \\
+   A_n^m &=  n(n-1) \ldots (n-m+1)

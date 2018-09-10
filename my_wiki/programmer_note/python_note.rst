@@ -23,5 +23,6 @@ Python note
    python/os_module_tricks
    python/json_module_tricks
    python/random_module_note
+   python/subprocess_module_note
    python/miscellaneous_tricks
    python/application_examples

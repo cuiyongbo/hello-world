@@ -4,12 +4,11 @@
 char wchar conversion functions
 *******************************
 
-wcstoms
-=======
+.. contents::
+   :local:
 
-**NAME**
-   
-   wcstombs - convert a wide-character string to a multibyte string
+wcstombs - convert a wide-character string to a multibyte string
+================================================================
 
 **SYNOPSIS**
 
@@ -59,17 +58,9 @@ wcstoms
 
    The function :manpage:`wcsrtombs(3)` provides a thread safe interface to the same functionality.
 
-**SEE ALSO**
 
-   mbstowcs(3), wcsrtombs(3)
-
-
-wcsrtombs
-=========
-
-**NAME**
-   
-   wcsrtombs - convert a wide-character string to a multibyte string
+wcsrtombs - convert a wide-character string to a multibyte string
+=================================================================
 
 **SYNOPSIS**
 
@@ -123,12 +114,8 @@ wcsrtombs
    Passing ``NULL`` as *ps* is not multithread safe.
 
 
-mbstowcs
-========
-
-**NAME**
-
-   mbstowcs - convert a multibyte string to a wide-character string
+mbstowcs - convert a multibyte string to a wide-character string
+================================================================
 
 **SYNOPSIS**
 
@@ -174,18 +161,10 @@ mbstowcs
 
    The behavior of ``mbstowcs()`` depends on the **LC_CTYPE** category of the current locale.
    The function :manpage:`mbsrtowcs(3)` provides a better interface to the same functionality.
-
-**SEE ALSO**
-
-   mbsrtowcs(3), wcstombs(3)
-
-
-mbsrtowcs
-=========
-
-**NAME**
    
-   mbsrtowcs - convert a multibyte string to a wide-character string
+
+mbsrtowcs - convert a multibyte string to a wide-character string
+=================================================================
 
 **SYNOPSIS**
 

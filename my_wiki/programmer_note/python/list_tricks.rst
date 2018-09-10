@@ -2,7 +2,7 @@
 List tricks
 ***********
 
-#. Set list elements to value
+#. Set list elements to 0
    
    .. code-block:: py
 

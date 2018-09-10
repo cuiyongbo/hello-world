@@ -12,7 +12,6 @@ Pending tasks
 #. http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
    
 #. https://en.wikipedia.org/wiki/Normal_distribution
-#. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
    
 #. http://www.kohala.com/start/
 

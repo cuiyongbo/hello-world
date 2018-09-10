@@ -63,6 +63,7 @@ I think, therefore I am
 | significant digits 有效数字
 | scientific notation 科学计数法
 | trigonometic function 三角函数
+| factorial 阶乘
 | 
 | asymptote
 | Definition: a line that continually approaches a given curve but doesn’t meet it at any finite length.

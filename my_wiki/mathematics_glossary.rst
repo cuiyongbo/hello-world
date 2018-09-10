@@ -2,6 +2,7 @@ Mathematics
 ===========
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 2
 
    mathematics_glossary/mathematics_terminology
