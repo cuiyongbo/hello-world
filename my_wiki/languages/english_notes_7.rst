@@ -339,3 +339,7 @@ English Note 7
 | Usage: I stumbled and sprained my ankle. 
 | Usage: a bad ankle sprain 
 |
+| recapitulate
+| Definition: summarize and state again the main points of.
+| Usage: he began to recapitulate his argument with care.
+| Definition: (biology) repeat (an evolutionary or other process) during development and growth.

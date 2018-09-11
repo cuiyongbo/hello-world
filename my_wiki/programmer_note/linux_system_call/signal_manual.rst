@@ -42,9 +42,9 @@ signal
    the status of child processes changes, or when input is ready at the control terminal.
    Most signals result in the termination of the process receiving them, if no action is taken;
    some signals instead cause the process receiving them to be stopped, or are simply discarded
-   if the process has not requested otherwise. Except for the ``SIGKILL`` and ``SIGSTOP`` signals,
+   if the process has not requested otherwise. **Except for the SIGKILL and SIGSTOP signals,**
    the ``signal()`` function allows for a signal to be caught, to be ignored, or to generate an interrupt.
-   These signals are defined in the file :file:`signal.h`:
+   These signals are defined in the file **signal.h:**
 
    ====  ===========  ===================  ==========================================
    No    Name         Default Action       Description                               
@@ -82,17 +82,12 @@ signal
    31    SIGUSR2      terminate process    User defined signal 2                     
    ====  ===========  ===================  ==========================================
 
-   The *sig* argument specifies which signal was received. The *func* procedure allows
-   a user to choose the action upon receipt of a signal. To set the default action
-   of the signal to occur as listed above, *func* should be ``SIG_DFL``. A ``SIG_DFL`` 
-   resets the default action. To ignore the signal, *func* should be ``SIG_IGN``. This
-   will cause subsequent instances of the signal to be ignored and pending instances
-   to be discarded. If ``SIG_IGN`` is not used, further occurrences of the signal are
-   automatically blocked and *func* is called.
+   The *sig* argument specifies which signal was received. 
+   The operation is determined by *func*::
 
-   The handled signal is unblocked when the function returns and the process continues
-   from where it left off when the signal occurred. Unlike previous signal facilities,
-   the handler ``func()`` remains installed after a signal has been delivered.
+      SIG_DFL --  set the default action of the signal to occur.
+      SIG_IGN -- ignore the signal
+      handler -- user-define operation
 
    For some system calls, if a signal is caught while the call is executing and the
    call is prematurely terminated, the call is automatically restarted. Any handler

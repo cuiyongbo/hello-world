@@ -42,6 +42,8 @@ Pending tasks
 
 #. Advanced Programming in the UNIX Environment 
    
+   - Ch 1 Unix system overview (Finished)
+   
    - Process
      
       - Ch7 Process environment (Finished)
@@ -68,5 +70,3 @@ Pending tasks
    
 #. setjmp, longjmp
 #. getrlimit, setlimit
-
-#. `A Simple Introduction to Compressed Suffix Arrays <http://www.cs.cmu.edu/~dga/csa.pdf>`_

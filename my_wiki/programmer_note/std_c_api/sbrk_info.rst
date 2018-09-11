@@ -1,20 +1,14 @@
-**********
-brk & sbrk
-**********
+************************************
+brk, sbrk - change data segment size
+************************************
 
-**NAME**
-
-   brk, sbrk - change data segment size
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <unistd.h>
       int brk(void *addr);
       void *sbrk(intptr_t increment);
-
-**DESCRIPTION**
 
    ``brk()`` and ``sbrk()`` change the location of the program break,
    which defines the end of the process's data segment (i.e., the program
@@ -60,8 +54,3 @@ brk & sbrk
       On Linux, ``sbrk()`` is implemented as a library function that uses the ``brk()``
       system call, and does some internal bookkeeping so that it can return the old
       break value.
-
-**SEE ALSO**
-
-   execve(2), getrlimit(2), end(3), malloc(3)
-

@@ -13,7 +13,6 @@ Binary diff and patch tools
    and requires an absolute minimum working set size of 8 times 
    the size of *oldfile.*
 
-
 #. bspatch — apply a patch built with **bsdiff(1)**
 
    Usage: ``bspatch oldfile newfile patchfile``
@@ -23,7 +22,6 @@ Binary diff and patch tools
 
    bspatch uses memory equal to the size of *oldfile* plus the size of *newfile,* 
    but can tolerate a very small working set without a dramatic loss of performance.
-
 
 #. Complexity
    
@@ -37,3 +35,9 @@ Binary diff and patch tools
 
    See `Naïve Differences of Executable Code <http://www.daemonology.net/papers/bsdiff.pdf>`_ 
    for further information.
+
+#. qsufsort
+   
+   - `paper <http://www.larsson.dogma.net/ssrev-tr.pdf>`_
+   - `code  <http://www.larsson.dogma.net/qsufsort.c>`_
+   - `Go example <https://golang.org/src/index/suffixarray/qsufsort.go>`_
