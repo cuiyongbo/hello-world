@@ -111,13 +111,9 @@ English Note 6
 | Definition: (of language) unusual and vivid. [生动活泼]
 | Usage: his picturesque speech contrasted with his rough appearance.
 | 
-| shamble
-| Definition: to walk in an awkward or lazy way, as if dragging your feet along the ground. [拖着脚走；蹒跚]
+| shamble [拖着脚走；蹒跚] [类似僵尸片里的僵尸的走法]
+| Definition: to walk in an awkward or lazy way, as if dragging your feet along the ground. 
 | Usage: he shambled off down the corridor.
-| 
-| speed up
-| Definition: move or work more quickly.
-| Usage: you force yourself to speed up because you don't want to keep others waiting.
 | 
 | clean slate
 | Definition: an absence of existing restraints or commitments.

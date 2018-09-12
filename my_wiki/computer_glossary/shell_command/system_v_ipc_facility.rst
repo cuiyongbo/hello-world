@@ -2,12 +2,19 @@
 System V IPC Status Command
 ***************************
 
-ipcs command
-============
+.. contents::
+   :local:
 
-**NAME**
+.. note::
 
-   ipcs - show information on IPC facilities
+   Unix System V, commonly abbreviated SysV (and usually pronounced—though rarely written—as "System Five"), 
+   is one of the first commercial versions of the Unix operating system. It was originally developed by 
+   :abbr:`AT&T (American Telephone & Telegraph)` and first released in 1983.
+   While :abbr:`POSIX (Portable Operating System Interface)` is the name of a family of related standards 
+   specified by the IEEE to define the API.
+
+ipcs - show information on IPC facilities
+=========================================
 
 **SYNOPSIS**
 
@@ -80,20 +87,8 @@ ipcs command
 
          Print sizes in human-readable format.
 
-**CONFORMING TO**
-
-   The Linux ipcs utility is not fully compatible to the POSIX ipcs utility.
-   The Linux version does not support the POSIX -a, -b and -o options, but
-   does support the -l and -u options not defined by POSIX. A portable
-   application shall not use the -a, -b, -o, -l, and -u options.
-
-
-ipcrm command
-=============
-
-**NAME**
-   
-   ipcrm - remove certain IPC resources
+ipcrm - remove certain IPC resources
+====================================
 
 **SYNOPSIS**
 

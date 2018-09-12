@@ -7,11 +7,18 @@ List tricks
    .. code-block:: py
 
       >>> l = range(1, 13)
+      
+      # solution one
       >>> for i in xrange(len(l)):
       ...     l[i] = 0
       ... 
       >>> l
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+      # solution two
+      >>> l[:] = map(lambda x: x*0, l)
+      >>> l
+      [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 #. Using Lists as Stacks
 
