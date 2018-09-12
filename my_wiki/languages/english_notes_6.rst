@@ -228,7 +228,7 @@ English Note 6
 | Definition: when necessary or needed.
 | Synonyms: make-shift.
 | Usage: the group was constituted ad hoc
-| Definition: ad hoc committees to examine specific problems. [临时委员]
+| Usage: ad hoc committees to examine specific problems. [临时委员]
 |
 | preclude
 | Definition: to prevent something from happening.

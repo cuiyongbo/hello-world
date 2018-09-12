@@ -42,7 +42,7 @@ Pending tasks
 
 #. Advanced Programming in the UNIX Environment 
    
-   - Ch 1 Unix system overview (Finished)
+   - Ch1 Unix system overview (Finished)
    
    - Process
      

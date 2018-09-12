@@ -78,6 +78,16 @@ Gdb Tricks 2
       $ addr2line 0x0000000000400594
       /home/cherry/program-demo/cpp-demo/core_dump_demo.c:9
 
+   .. note::
+        
+      For Macos, the core file was in **/cores/**::
+
+         cherry@MacBook-Pro scaffold$ ll /cores/
+         total 8712904
+         -r--------  1 cherry  admin   718M Sep 11 22:33 core.1038
+         -r--------  1 cherry  admin   701M Jul 15 21:37 core.3379
+         -r--------  1 cherry  admin   701M Jul 15 21:40 core.3424
+
 
 #. Gdb to debug a running process
    

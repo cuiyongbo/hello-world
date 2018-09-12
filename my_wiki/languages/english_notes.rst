@@ -1565,9 +1565,8 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | 
 | surmise
 | Definition: If you surmise that something is true, you guess it from the available evidence, although you do not know for certain.
-| Synonyms: infer
+| Synonyms: infer; conjecture. [推断]
 | Usage: There’s little to go on, we can only surmise what happened.
-| Synonyms: conjecture
 | Usage: His surmise proved correct.
 | 
 | exploit

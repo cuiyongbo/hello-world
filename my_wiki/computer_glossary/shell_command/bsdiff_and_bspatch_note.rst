@@ -41,3 +41,7 @@ Binary diff and patch tools
    - `paper <http://www.larsson.dogma.net/ssrev-tr.pdf>`_
    - `code  <http://www.larsson.dogma.net/qsufsort.c>`_
    - `Go example <https://golang.org/src/index/suffixarray/qsufsort.go>`_
+     
+#. bsdiff at github
+   
+   - `bsdiff repository <https://github.com/mendsley/bsdiff.git>`_

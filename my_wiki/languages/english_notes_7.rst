@@ -343,3 +343,11 @@ English Note 7
 | Definition: summarize and state again the main points of.
 | Usage: he began to recapitulate his argument with care.
 | Definition: (biology) repeat (an evolutionary or other process) during development and growth.
+| 
+| superimpose
+| superimposable
+| superimposition
+| Definition: place or lay (one thing) over another, typically so that both are still evident.
+| Usage: the number will appear on the screen, superimposed on a flashing button.
+| Usage: different stone tools were found in superimposed layers.
+| Usage: She has tried to superimpose her own attitudes onto this ancient story. [重叠，附加于]

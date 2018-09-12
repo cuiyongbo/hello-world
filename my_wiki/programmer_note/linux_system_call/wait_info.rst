@@ -55,8 +55,8 @@ WAIT Mannual
 
    The WNOHANG option is used to indicate that the call should not block if there are
    no processes that wish to report status. If the WUNTRACED option is set, children of 
-   the current process that are stopped due to a SIGTTIN, SIGTTOU, SIGTSTP, or SIGSTOP signal 
-   also have their status reported.
+   the current process that are stopped due to a SIGTTIN, SIGTTOU, SIGTSTP, or SIGSTOP 
+   signal also have their status reported.
 
    If *status* is not NULL, *wait()* and *waitpid()* store status information in the integer 
    to which it points. This integer can be inspected with the following macros::
