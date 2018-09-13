@@ -54,7 +54,6 @@ Pending tasks
      
       - Ch11 Threads
       - Ch12 Thread control
-
    
 #. 2.3-7 P39
  

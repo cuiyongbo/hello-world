@@ -40,6 +40,9 @@ Subprocess note
                                  stderr=subprocess.STDOUT)
       'ls: cannot access non_existent_file: No such file or directory\n'
 
+.. note:: 
+
+   pass the arguments as a list.
 
 .. code-block:: py
 

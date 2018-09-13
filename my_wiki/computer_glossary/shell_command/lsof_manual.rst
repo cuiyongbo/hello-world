@@ -39,6 +39,11 @@ The Linux lsof command lists information about files that are open by processes 
    of selected pairs of selection options by placing it between them, even though its placement there is 
    acceptable.  Wherever -a is placed, it causes the ANDing of all selection options.
 
+   .. option::  -p s     
+
+      excludes or selects the listing of files for the processes whose PID are in the comma-separated set 
+      s - e.g., "123" or "123,^456". (There should be no spaces in the set.)
+
    .. option:: -i [i]   
 
       selects the listing of files any of whose Internet address matches the address specified in i.  

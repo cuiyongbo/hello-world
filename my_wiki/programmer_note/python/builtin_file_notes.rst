@@ -119,16 +119,8 @@ File notes
       #. speed up ti tile compilation
          - extract PointMap building
          - Grid splitting
-      #. review json code.
-      #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
-      #. introduction to algorithm - data structure
-      #. http://geomalgorithms.com/
-      #. http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
-      #. https://en.wikipedia.org/wiki/Normal_distribution
-      #. https://en.wikipedia.org/wiki/Discrete_uniform_distribution
-      #. https://en.wikipedia.org/wiki/Selection_algorithm
          
-#. python file.read() return less data than it have read
+#. ``file.read()`` return less data than it have read
    
    .. code-block:: py
 
@@ -149,3 +141,12 @@ File notes
       64L
 
       # Indeed, append "b" to mode when you open a binary file.
+
+#. check if a file exists
+   
+   .. code-block:: py
+
+      os.path.isfile(path)
+
+      # isfile(path)
+      # Test whether a path is a regular file

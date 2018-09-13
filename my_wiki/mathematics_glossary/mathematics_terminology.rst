@@ -210,3 +210,10 @@ The concept of homotopy was first formulated by *Poincaré* around 1900.
 | Definition: [technical] a line at right angles to a given line or surface.
 | Usage: unit normal. [单位法向量]
 
+Lemma
+
+In mathematics, a "helping theorem" or lemma (plural lemmata or lemmas) 
+from the Ancient Greek λῆμμα (lemma, "anything which is received, such as 
+a gift, profit, or a bribe”) is a proven proposition which is used as a 
+stepping stone to a larger result rather than as a statement of interest 
+by itself.

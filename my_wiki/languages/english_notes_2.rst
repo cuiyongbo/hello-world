@@ -61,6 +61,18 @@ English Notes 2
 | button-down
 | Definition: (of a collar) having points that are buttoned to the garment.
 | Definition: (of a person) conservative or unimaginative.
+| 
+| toggle
+| Definition: a short rod of wood or plastic sewn to one side of a coat or other garment, pushed through a hole or loop on the other side and twisted so as to act as a fastener.
+| Definition: a pin or other crosspiece put through the eye of a rope or a link of a chain to keep it in place.
+| Definition: (computing) a key or command that toggles between two modes, such as the caps lock key.
+| Definition: (computing) switch from one effect, feature, or state to another by using a toggle. [切换，开关]
+| Usage: the play/pause button toggles between those functions.
+| Usage: there are a number of attributes which can be toggled on or off.
+
+.. image:: images/toggle.jpg
+.. image:: images/clothe_toggle.jpg
+.. image:: images/Wool-Toggle-Coat.jpeg
 
 .. image:: images/hakama.png
 .. image:: images/jersey.jpg

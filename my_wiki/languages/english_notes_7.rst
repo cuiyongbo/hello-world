@@ -351,3 +351,25 @@ English Note 7
 | Usage: the number will appear on the screen, superimposed on a flashing button.
 | Usage: different stone tools were found in superimposed layers.
 | Usage: She has tried to superimpose her own attitudes onto this ancient story. [重叠，附加于]
+| 
+| gist
+| Definition: the substance or essence of a speech or text.
+| Usage: she noted the gist of each message. [关键，要点]
+| Definition: (law) the real point of an action.
+| Usage: damage is the gist of the action and without it the plaintiff must fail.
+| 
+| plaintiff [原告]
+| Definition: a person who brings a case against another in a court of law. Compare with defendant.
+| Usage: the plaintiff commenced an action for damages.
+| 
+| defendant [被告]
+| Definition: an individual, company, or institution sued or accused in a court of law.
+| Usage: the defendant tried to claim that it was self-defense.
+| 
+| grasp
+| Definition: a firm hold or grip.
+| Usage: the child slipped from her grasp.
+| Definition: a person's power or capacity to attain something.
+| Usage: he knew success was within his grasp. [近在咫尺，唾手可得]
+| Definition: a person's understanding.
+| Usage: meanings that are beyond my grasp.
