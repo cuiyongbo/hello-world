@@ -373,3 +373,8 @@ English Note 7
 | Usage: he knew success was within his grasp. [近在咫尺，唾手可得]
 | Definition: a person's understanding.
 | Usage: meanings that are beyond my grasp.
+| 
+| karma
+| Definition: (in Hinduism and Buddhism) the sum of a person's actions in this and previous states of existence, viewed as deciding their fate in future existences. [业]
+| Definition: destiny or fate, following as effect from cause. [因果报应]
+| Usage: That guy has good karma, so the girls just like to spend time with him.

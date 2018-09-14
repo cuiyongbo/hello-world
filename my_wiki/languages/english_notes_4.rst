@@ -87,10 +87,31 @@ English Notes 4
 | Definition: a device that measures and records the quantity, degree, or rate of something.
 | Usage: an electricity meter. [电流表/电压表]
 
+barometer [气压表]
+
+A barometer is a scientific instrument used in meteorology to measure atmospheric pressure. 
+Pressure tendency can forecast short term changes in the weather. Numerous measurements of 
+air pressure are used within surface weather analysis to help find surface troughs, 
+high pressure systems and frontal boundaries.
+
+proximity sensor
+
+A proximity sensor is a sensor able to detect the presence of nearby objects without any physical contact. 
+A proximity sensor often emits an electromagnetic field or a beam of electromagnetic radiation 
+(infrared , for instance), and looks for changes in the field or return signal. 
+The object being sensed is often referred to as the proximity sensor's target.
+
 .. image:: images/meter_0.png
 .. image:: images/meter_1.jpg
 .. image:: images/meter_2.png
+.. image:: images/Barometer.jpg
 
+| 
+| barometer
+| Definition: something which reflects changes in circumstances or opinions.
+| Synonyms: indicator.
+| Usage: furniture is a barometer of changing tastes. [晴雨表]
+| Usage: Opinion polls serve as a barometer of the public mood.
 | 
 | mensurable
 | mensurability

@@ -53,6 +53,24 @@ Exception Handling
      e = sys.exc_info()[0]
      write_to_page( "<p>Error: %s</p>" % e )
 
+.. code-block:: py
+   :caption: Example 4
+
+   #!/usr/bin/env python
+   import sys, subprocess
+
+   if __name__ == "__main__":
+       if(len(sys.argv) < 2):
+           print "Usage: %s file1 file2 ...", sys.argv[0]
+           exit(1)
+   
+       for i in range(1, len(sys.argv)):
+           try:
+               s = subprocess.check_output(["lsof", sys.argv[i]], stderr=subprocess.STDOUT)
+               print s
+           except subprocess.CalledProcessError as e:
+               print e.returncode, ": ", e.output
+               print "%s: not in use" % sys.argv[i]
 
 If it's a matter of cleanup that should be run regardless of success or failure, 
 then you would do::
