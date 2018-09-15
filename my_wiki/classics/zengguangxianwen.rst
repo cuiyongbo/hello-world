@@ -22,7 +22,6 @@
 
 .. image:: Illustration/old_timing.jpg
 
-
 上篇
 ====
 

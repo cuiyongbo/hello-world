@@ -1,23 +1,16 @@
-**********
-ps Command
-**********
+********************
+ps -- process status
+********************
 
-**NAME**
+**DESCRIPTION**
 
-   ps -- process status
-   
-
-**SYNOPSIS**
-
-   .. code-block:: sh
+   .. code-block:: none
+      :caption: SYNOPSIS
 
       ps [-AaCcEefhjlMmrSTvwXx] [-O fmt | -o fmt] [-G gid[,gid...]]
          [-g grp[,grp...]] [-u uid[,uid...]] [-p pid[,pid...]] [-t tty[,tty...]]
          [-U user[,user...]]
       ps [-L]
-
-
-**DESCRIPTION**
 
    The :command:`ps` utility displays a header line, followed by lines containing
    information about all of your processes that have controlling terminals.
@@ -73,6 +66,17 @@ ps Command
 
       Display information about processes which match the specified process IDs.
 
+   .. option: -q pidlist
+              
+      Select by PID (quick mode). This selects the processes 
+      whose process ID numbers appear in pidlist. With this 
+      option ps reads the necessary info only for the pids 
+      listed in the pidlist and doesn't apply additional 
+      filtering rules. The order of pids is unsorted and 
+      preserved. No additional selection options, sorting 
+      and forest type listings are allowed in this mode.  
+      Identical to q and --quick-pid.
+
    .. option:: -G
 
       Display information about processes which are running with the specified real group IDs.
@@ -99,6 +103,11 @@ ps Command
       Display the environment as well. This does not reflect changes
       in the environment after process launch.
       Don't mix it with :option:`-c`.
+
+   .. option:: -C cmdlist
+      
+      Select by command name. This selects the processes 
+      whose executable name is given in cmdlist.
 
    .. option:: -f
 
@@ -134,7 +143,7 @@ ps Command
    .. option:: -O   
 
       Add the information associated with the space or comma separated list of keywords specified,
-      after the process ID, in the default information display.  Keywords may be appended with an
+      after the process ID, in the default information display. Keywords may be appended with an
       equals ('=') sign and a string. This causes the printed header to use the specified string
       instead of the standard header.
 
@@ -143,7 +152,7 @@ ps Command
       Display information associated with the space or comma separated list of keywords specified.
       Multiple keywords may also be given in the form of more than one :option:`-o` option.
       Keywords may be appended with an equals ('=') sign and a string. This causes the printed header
-      to use the specified string instead of the standard header.  If all keywords have empty header
+      to use the specified string instead of the standard header. If all keywords have empty header
       texts, no header line is written.
 
    .. option:: -r    
@@ -153,20 +162,6 @@ ps Command
    .. option:: -m 
 
       Sort by memory usage.
-
-   .. option:: -X  
-
-      When displaying processes matched by other options, skip any
-      processes which do not have a controlling terminal.
-
-   .. option:: -x 
-
-      Opposite of the :option:`-X` option.
-
-   .. option:: -T
-   .. option:: -t
-
-      see :manpage:`grep(1)`
 
 
 **Keywords**
@@ -268,4 +263,61 @@ xstat       exit or stop status (valid only for stopped or zombie process)
    $ ps -fc
    UID   PID  PPID   C STIME   TTY           TIME CMD
    501   435   433   0 24Mar18 ttys000    0:00.88 -bash
+
+   # To see every process on the system using standard syntax:
+   ps -e
+   ps -ef
+   ps -eF
+   ps -ely
+
+   # To see every process on the system using BSD syntax:
+   ps ax
+   ps axu
+
+   # To print a process tree:
+   ps -ejH
+   ps axjf
+
+   # To get info about threads:
+   ps -eLf
+   ps axms
+
+   # To get security info:
+   ps -eo euser,ruser,suser,fuser,f,comm,label
+   ps axZ
+   ps -eM
+
+   # To see every process running as root (real & effective ID) in user format:
+   ps -U root -u root u
+
+   # To see every process with a user-defined format:
+   ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+   ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm
+   ps -Ao pid,tt,user,fname,tmout,f,wchan
+
+   # Print only the process IDs of syslogd:
+   ps -C syslogd -o pid=
+
+   # Print only the name of PID 42:
+   ps -q 42 -o comm=
+
+   $ ps -a -C httpd -o pid=
+     564
+   29647
+   29659
+   $ ps -a -C httpd -o pid
+     PID
+     600
+   29647
+   29659
+   $ ps -q 1 -o comm
+   COMMAND
+   systemd
+   $ ps -q 1 -o comm=
+   systemd
+   $ ps -a -C pager -o user,pid
+   USER       PID
+   cherry    1360
+   cherry   29647
+   cherry   29659
 

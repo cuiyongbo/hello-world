@@ -78,13 +78,43 @@ getegid, getgid -- get group process identification
    The real group ID is the group of the user who invoked the program.  
    As the effective group ID gives the process additional permissions 
    during the execution of **set-group-ID** mode processes, 
-   ``getgid()`` is used to determine the **real-user-id** (still eal-user-id??)
+   ``getgid()`` is used to determine the **real-user-id** (still real-user-id??)
    of the calling process.
 
 **ERRORS**
      
    The ``getgid()`` and ``getegid()`` functions are always successful; 
    no return value is reserved to indicate an error.
+
+
+getpgid, getpgrp -- get process group
+=====================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+      :caption: SYNOPSIS
+        
+         #include <unistd.h>
+         pid_t getpgrp(void);
+         pid_t getpgid(pid_t pid);
+   
+   The process group of the current process is returned by *getpgrp().*  
+   The process group of the process identified by *pid* is returned by *getpgid().*  
+   If *pid* is zero, *getpgid()* returns the process group of the current process.
+   
+   Process groups are used for distribution of signals, and by terminals 
+   to arbitrate requests for their input: processes that have the same 
+   process group as the terminal are foreground and may read, 
+   while others will block with a signal if they attempt to read.
+
+**RETURN VALUES**
+
+   The **getpgrp()** call always succeeds.  
+   Upon successful completion, the **getpgid()** call 
+   returns the process group of the specified process; 
+   otherwise, it returns a value of -1 and sets errno to 
+   indicate the error.
 
 
 gethostname, sethostname -- get/set name of current host

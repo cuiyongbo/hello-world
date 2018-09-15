@@ -48,7 +48,7 @@ Pending tasks
      
       - Ch7 Process environment (Finished)
       - Ch8 Process control (Finished, but skipped several sections)
-      - Ch9 Process relationship
+      - Ch9 Process relationship (Finished)
 
    - Pthread
      

@@ -90,3 +90,25 @@ Unix Concepts
       but the permissions for **other users** allow access.
 
       Otherwise, permission is denied.
+
+#. Session
+             
+   A session is a set of one or more process groups.  
+   A session is created by a successful call to setsid(2), 
+   which causes the caller to become the only member of the 
+   only process group in the new session.
+
+#. Session leader
+        
+   A process that has created a new session by a successful call to setsid(2), 
+   is known as a session leader. Only a session leader may acquire a terminal 
+   as its controlling terminal (see termios(4)).
+
+#. Controlling process
+   
+   A session leader with a controlling terminal is a controlling process.
+
+#. Controlling terminal
+   
+   A terminal that is associated with a session is known as the 
+   controlling terminal for that session and its members.
