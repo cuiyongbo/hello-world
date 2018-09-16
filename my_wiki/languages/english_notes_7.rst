@@ -378,3 +378,25 @@ English Note 7
 | Definition: (in Hinduism and Buddhism) the sum of a person's actions in this and previous states of existence, viewed as deciding their fate in future existences. [业]
 | Definition: destiny or fate, following as effect from cause. [因果报应]
 | Usage: That guy has good karma, so the girls just like to spend time with him.
+| 
+| apocryphal
+| Definition: (of a story or statement) of doubtful authenticity, although widely circulated as being true. [杜撰，轶事]
+| Usage: an apocryphal story about a former president
+| 
+| apocrypha
+| Definition: biblical or related writings not forming part of the accepted canon of Scripture. [稗官野史]
+| Definition: (apocrypha) writings or reports not considered genuine.
+| 
+| apocalypse
+| Definition: the complete final destruction of the world, as described in the biblical book of Revelation.
+| Usage: the Apocalypse [世界末日，审判日，天变地异]
+| Definition: (especially in the Vulgate Bible) the book of Revelation. [天启，启示录]
+| Definition: an event involving destruction or damage on an awesome or catastrophic scale.
+| Usage: a stock market apocalypse.
+| Usage: an era of ecological apocalypse.
+| 
+| apostle [使徒]
+| Definition: each of the twelve chief disciples of Jesus Christ.
+| Definition: the first successful Christian missionary in a country or to a people.
+| Definition: a vigorous and pioneering advocate or supporter of a particular policy, idea, or cause.
+| Usage: Leo Buscaglia, leading apostle of love and okayness.
