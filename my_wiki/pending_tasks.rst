@@ -69,3 +69,5 @@ Pending tasks
    
 #. setjmp, longjmp
 #. getrlimit, setlimit
+
+#. `suffix sorting <https://sites.google.com/site/yuta256/sais>`_

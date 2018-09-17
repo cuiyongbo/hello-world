@@ -359,6 +359,18 @@ Miscellaneous Usages
 
       sys.stdout = Unbuffered(sys.stdout)
 
+#. difference between ``/`` and ``//.`` 
+     
+   In Python 3.0, 5 / 2 will return 2.5 and 5 // 2 will return 2. 
+   The former is floating point division, and the latter is floor 
+   division, sometimes also called integer division.
 
+   In Python 2.2 or later in the 2.x line, there is no difference for integers 
+   unless you perform a ``from __future__ import division,`` which causes 
+   Python 2.x to adopt the behavior of 3.0
+
+   Refer to 
+   `PEP 238: Changing the Division Operator <https://docs.python.org/whatsnew/2.2.html#pep-238-changing-the-division-operator>`_
+   for more information.
 
       

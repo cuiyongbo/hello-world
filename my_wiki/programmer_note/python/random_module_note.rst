@@ -46,7 +46,7 @@ random - Random variable generators
 
 **Examples**
 
-#. generate a number in a certain list
+#. return a number in a certain list
  
    .. code-block:: py
    
@@ -55,6 +55,19 @@ random - Random variable generators
       
       # randint(self, a, b)
       #  Return random integer in range [a, b], including both end points.
+
+#. return a random member from a sequence
+   
+   .. code-block:: py
+
+      >>> random.choice(xrange(1, 100))
+      60
+      >>> random.choice("hello world")
+      'o'
+      
+      # choice(self, seq)
+      #  Return a random element from the non-empty sequence seq. 
+      #  If seq is empty, raises IndexError.
 
 #. generate a list in a certain range
    
@@ -76,19 +89,6 @@ random - Random variable generators
    #  To choose a sample in a range of integers, use xrange as an argument.
    #  This is especially fast and space efficient for sampling from a
    #  large population:  sample(xrange(10000000), 60)
-
-#. return a random member from a sequence
-   
-   .. code-block:: py
-
-      >>> random.choice(xrange(1, 100))
-      60
-      >>> random.choice("hello world")
-      'o'
-      
-      # choice(self, seq)
-      #  Return a random element from the non-empty sequence seq. 
-      #  If seq is empty, raises IndexError.
 
 #. shuffle a sequence
    
