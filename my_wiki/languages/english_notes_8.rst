@@ -41,3 +41,11 @@ what is called a reason for living also the excellent one for dying.
 | Usage: The parent idolize the kids. [宠爱，溺爱]
 
 .. image:: images/Michael-Jackson.jpg
+
+| penultimate
+| Definition: last but one in a series of things; second last.
+| Usage: the penultimate chapter of the book.
+| 
+| colloquially
+| Definition: in the language of ordinary or familiar conversation; informally.
+| Usage: the storms hit several states along a corridor colloquially referred to as “tornado alley”

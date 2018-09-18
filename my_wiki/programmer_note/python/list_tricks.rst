@@ -24,6 +24,11 @@ List tricks
       >>> l
       [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+      # solution four
+      >>> bins = [0]*10
+      >>> bins
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
 #. Using Lists as Stacks
 
    The list methods make it very easy to use a list as a stack, where the last element 

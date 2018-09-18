@@ -31,9 +31,8 @@ Git Tricks 2
    my_wiki/programmer_note/gcc/makefile_basics.rst    | 14 +++++++++
    4 files changed, 33 insertions(+), 19 deletions(-)
 
-#. git to automatically prunes non-existent remote branch
+#. git to automatically prunes deleted remote branch
    
-
    Without ``git fetch --prune,`` remote-tracking branches for a branch the other side 
    already has removed will stay forever. Some people want to always run ``git fetch --prune.``
 
@@ -58,3 +57,9 @@ Git Tricks 2
       git config --list
       # delete
       $ git config --global --unset fetch.prune
+
+      # see the result without actually running it
+      $ git fetch --prune --dry-run 
+      From gitlab.mapbar.com:server/route-server
+       x [deleted]         (none)     -> origin/add_auto_test
+       x [deleted]         (none)     -> origin/better_detail

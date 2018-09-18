@@ -45,3 +45,10 @@ Binary diff and patch tools
 #. bsdiff at github
    
    - `bsdiff repository <https://github.com/mendsley/bsdiff.git>`_
+     
+#. other suffix sorting algorithms
+   
+   - `suffix array <https://en.wikipedia.org/wiki/Suffix_array>`_
+   - `SA-IS algorithm <https://sites.google.com/site/yuta256/sais>`_ 
+   - `A walk through the SA-IS Suffix Array Construction Algorithm <http://zork.net/~st/jottings/sais.html>`_
+   - `Linear time suffix sorting <https://code.google.com/archive/p/ge-nong/downloads>`_

@@ -601,3 +601,8 @@ In navigation, dead reckoning or dead-reckoning (also ded for deduced reckoning 
 is the process of calculating one's current position by using a previously determined position, 
 or fix, and advancing that position based upon known or estimated speeds over elapsed time and course.
 
+mus·ter
+Definition: assemble (troops), especially for inspection or in preparation for battle.
+Usage: Call out the troops to stand muster. [集结军队]
+Definition: collect or assemble (a number or amount).
+Usage: he could fail to muster a majority.

@@ -14,7 +14,19 @@ English Note 7
 | polymath
 | polymathic 
 | Definition: a person of wide-ranging knowledge or learning.
+
+.. figure:: images/Von_Noyman_and_Computer.jpg
+
+   John Von Neumann
+
+   A polymath and pioneer of the application of operator theory 
+   to quantum mechanics, in the development of functional analysis.
+   
 | 
+| Well-versed 
+| Definition: highly experienced, practiced, or skilled; very knowledgeable; learned.
+| Usage: He is a well-versed scholar on the subject of biblical literature.
+|
 | CV [简历]
 | Full: curriculum vitae
 | Plural: curricula vitae
