@@ -6,16 +6,20 @@ List tricks
    
    .. code-block:: py
 
-      >>> l = range(1, 13)
-      
       # solution one
+      >>> l = [0 for x in range(10)]
+      >>> l
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+      # solution two
+      >>> l = range(1, 13)
       >>> for i in xrange(len(l)):
       ...     l[i] = 0
       ... 
       >>> l
       [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-      # solution two
+      # solution three
       >>> l[:] = map(lambda x: x*0, l)
       >>> l
       [0, 0, 0, 0, 0, 0, 0, 0, 0]
