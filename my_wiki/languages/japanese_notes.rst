@@ -44,3 +44,11 @@ Janpanese Note
 #. how to type romanji letters in little-case
    
    First type "l" then romaji as usual. for example, "lyu", "lyo" would be ゅ、ょ.
+
+#. 膝枕
+   
+   子供は母親の膝を枕に寝ている。
+
+   .. image:: images/hizamakura_1.jpg
+   .. image:: images/hizamakura_2.jpg
+   .. image:: images/hizamakura_3.jpg
