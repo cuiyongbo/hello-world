@@ -4,6 +4,7 @@ Language Study
 
 .. toctree::
 
+   languages/ascii_chart
    languages/punctuations
    languages/greek_alphabet
    languages/english_notes
