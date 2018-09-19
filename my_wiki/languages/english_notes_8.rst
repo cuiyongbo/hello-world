@@ -49,3 +49,16 @@ what is called a reason for living also the excellent one for dying.
 | colloquially
 | Definition: in the language of ordinary or familiar conversation; informally.
 | Usage: the storms hit several states along a corridor colloquially referred to as “tornado alley”
+| 
+| ludicrous
+| Definition: so foolish, unreasonable, or out of place as to be amusing; ridiculous.
+| Usage: it's ludicrous that I have been fined.
+|
+| facepalm
+| Definition: a gesture in which the palm of one's hand is brought to one's face, as an expression of disbelief, shame, or exasperation.
+| Usage: I'm pretty sure said friend now thinks Anne and I are dating—facepalm!" 
+| 
+
+.. image:: images/facepalm.png
+
+
