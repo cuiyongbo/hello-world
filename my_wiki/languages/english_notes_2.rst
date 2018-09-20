@@ -382,18 +382,14 @@ in a number of Christian kingdoms.
 | Definition: a surefire thing is something that is certain to succeed or win.
 | Synonyms: guaranteed.
 | Usage: A surefire best seller.
-| 
+| Usage: The reason these two signals can’t be ignored is to provide the kernel and the superuser with a surefire way of either killing or stopping any process.
+|
 | backfire
 | Definition: (of an engine) undergo a mistimed explosion in the cylinder or exhaust
 | Usage: a car backfired in the road. [抛锚]
 | Definition: (of a plan or action) rebound adversely on the originator; have the opposite effect to what was intended.
 | Usage: overzealous publicity backfired on her. [适得其反]
 | Definition: a fire set intentionally to arrest the progress of an approaching fire by creating a burned area in its path, thus depriving the fire of fuel.
-| 
-| disposition
-| Definition: the way someone tends to behave or feel.
-| Synonyms: character.
-| Usage: The rides are unsuitable for people of a nervous disposition.
 | 
 | tweak
 | Definition: If you tweak something, especially part of someone's body, you hold it between your finger and thumb and twist it or pull it.

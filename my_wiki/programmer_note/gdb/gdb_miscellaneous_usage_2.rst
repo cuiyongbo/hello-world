@@ -32,17 +32,7 @@ Gdb Tricks 2
       7f66ac000000-7f66ac021000 rw-p 00000000 00:00 0 
       7f66ac021000-7f66b0000000 ---p 00000000 00:00 0 
       7f66b09bb000-7f66b09d1000 r-xp 00000000 08:01 1840155                    /lib/x86_64-linux-gnu/libgcc_s.so.1
-      7f66b09d1000-7f66b0bd0000 ---p 00016000 08:01 1840155                    /lib/x86_64-linux-gnu/libgcc_s.so.1
-      7f66b0bd0000-7f66b0bd1000 rw-p 00015000 08:01 1840155                    /lib/x86_64-linux-gnu/libgcc_s.so.1
-      7f66b0bd1000-7f66b0d91000 r-xp 00000000 08:01 1836539                    /lib/x86_64-linux-gnu/libc-2.23.so
-      7f66b0d91000-7f66b0f91000 ---p 001c0000 08:01 1836539                    /lib/x86_64-linux-gnu/libc-2.23.so
-      7f66b0f91000-7f66b0f95000 r--p 001c0000 08:01 1836539                    /lib/x86_64-linux-gnu/libc-2.23.so
-      7f66b0f95000-7f66b0f97000 rw-p 001c4000 08:01 1836539                    /lib/x86_64-linux-gnu/libc-2.23.so
-      7f66b0f97000-7f66b0f9b000 rw-p 00000000 00:00 0 
-      7f66b0f9b000-7f66b0fc1000 r-xp 00000000 08:01 1836537                    /lib/x86_64-linux-gnu/ld-2.23.so
       7f66b11a7000-7f66b11aa000 rw-p 00000000 00:00 0 
-      7f66b11bf000-7f66b11c0000 rw-p 00000000 00:00 0 
-      7f66b11c0000-7f66b11c1000 r--p 00025000 08:01 1836537                    /lib/x86_64-linux-gnu/ld-2.23.so
       7f66b11c1000-7f66b11c2000 rw-p 00026000 08:01 1836537                    /lib/x86_64-linux-gnu/ld-2.23.so
       7f66b11c2000-7f66b11c3000 rw-p 00000000 00:00 0 
       7fffc3a94000-7fffc3ab5000 rw-p 00000000 00:00 0                          [stack]
@@ -80,7 +70,9 @@ Gdb Tricks 2
 
    .. note::
         
-      For Macos, the core file was in **/cores/**::
+      Most implementations leave the core file in the current working directory 
+      of the corresponding process; Mac OS X places all core files 
+      in **/cores** instead::
 
          cherry@MacBook-Pro scaffold$ ll /cores/
          total 8712904

@@ -64,7 +64,7 @@ Suffix sort by induced sorting
        print("".join(
                "^" if isLMSChar(i, typeMap) else " "
                for i in range(len(typeMap)) 
-           ))
+       ))
    
    def cmpLMSChar(string, typeMap, offsetA, offsetB):
        """
@@ -117,10 +117,10 @@ Suffix sort by induced sorting
        induceSortL(string, guessedSuffixArray, bucketSizes, typeMap)
        induceSortS(string, guessedSuffixArray, bucketSizes, typeMap)
    
-       summaryString, summaryAlphaBetSize, summarySuffixOffsets = \
+       summaryString, summaryAlphabetSize, summarySuffixOffsets = \
            summariseSuffixArray(string, guessedSuffixArray, typeMap)
    
-       summarySuffixArray = makeSummarySuffixArray(summaryString, summaryAlphaBetSize)
+       summarySuffixArray = makeSummarySuffixArray(summaryString, summaryAlphabetSize)
    
        result = accurateLMSSort(string, bucketSizes, typeMap, 
                            summarySuffixArray, summarySuffixOffsets)
@@ -155,7 +155,7 @@ Suffix sort by induced sorting
    
    def induceSortL(string, guessedSuffixArray, bucketSizes, typeMap):
        bucketHeads = findBucketHeads(bucketSizes)
-       print bucketHeads
+       #print bucketHeads
        for i in range(len(guessedSuffixArray)):
            if guessedSuffixArray[i] == -1:
                continue 
@@ -169,12 +169,115 @@ Suffix sort by induced sorting
            bucketHeads[bucketIndex] += 1
            showSuffixArray(guessedSuffixArray, i)
    
-   showTypeMapWithLMSChar("cabbage")
-   cabbage_buckets = findBucketSizes(b"cabbage")
-   cabbage_types = buildTypeMap(b"cabbage")
-   #print cabbage_buckets
-   #print cabbage_types
-   cabbage_guess = guessLMSSort(b"cabbage", cabbage_buckets, cabbage_types)
-   induceSortL(b"cabbage", cabbage_guess, cabbage_buckets, cabbage_types)
-   showSuffixArray(naivelyMakeSuffixArray(b"cabbage"))
+   
+   def induceSortS(string, guessedSuffixArray, bucketSizes, typeMap):
+       bucketTails = findBucketTails(bucketSizes)
+       for i in range(len(guessedSuffixArray)-1, -1, -1):
+           j = guessedSuffixArray[i] - 1
+           if j < 0:
+               continue
+           if typeMap[j] != S_TYPE:
+               continue
+           bucketIndex = ord(string[j])
+           guessedSuffixArray[bucketTails[bucketIndex]] = j
+           bucketTails[bucketIndex] -= 1
+           showSuffixArray(guessedSuffixArray, i)
+   
+   
+   def summariseSuffixArray(string, guessedSuffixArray, typeMap):
+       currentName = 0
+       lastLMSSuffixOffset = None
+       lmsNames = [-1] * (len(string) + 1)
+       lmsNames[guessedSuffixArray[0]] = currentName
+       lastLMSSuffixOffset = guessedSuffixArray[0]
+       showSuffixArray(lmsNames)
+   
+       for i in range(1, len(guessedSuffixArray)):
+           suffixOffset = guessedSuffixArray[i]
+           if not isLMSChar(suffixOffset, typeMap):
+               continue
+           if not cmpLMSChar(string, typeMap, lastLMSSuffixOffset, suffixOffset):
+               currentName += 1
+           lastLMSSuffixOffset = suffixOffset
+           lmsNames[suffixOffset] = currentName
+           showSuffixArray(lmsNames)
+   
+       summaryString = []
+       summarySuffixOffsets = []
+       for index, name in enumerate(lmsNames):
+           if name == -1:
+               continue
+           summaryString.append(name)
+           summarySuffixOffsets.append(index)
+   
+       summaryAlphabetSize = currentName + 1
+       return summaryString, summaryAlphabetSize, summarySuffixOffsets
+   
+   def makeSummarySuffixArray(summaryString, summaryAlphabetSize):
+       if summaryAlphabetSize == len(summaryString):
+           summarySuffixArray = [-1] * (len(summaryString) + 1)
+           summarySuffixArray[0] = len(summaryString)
+           for x in range(len(summaryString)):
+               y = summaryString[x]
+               summarySuffixArray[y+1] = x
+       else:
+           summarySuffixArray = makeSuffixArrayByInducedSorting(summaryString, summaryAlphabetSize)
+       return summarySuffixArray
+   
+   
+   def accurateLMSSort(string, bucketSizes, typeMap, summarySuffixArray, summarySuffixOffsets):
+       suffixOffsets = [-1] * (len(string) + 1)
+       bucketTails = findBucketTails(bucketSizes)
+       for i in range(len(summarySuffixArray)-1, 1, -1):
+           stringIndex = summarySuffixOffsets[summarySuffixArray[i]]
+           bucketIndex = ord(string[stringIndex])
+           suffixOffsets[bucketTails[bucketIndex]] = stringIndex
+           bucketTails[bucketIndex] -= 1
+           showSuffixArray(suffixOffsets)
+       suffixOffsets[0] = len(string)
+       showSuffixArray(suffixOffsets)
+       return suffixOffsets
+   
+   cabbage = b"cabbage"
+   cabbage_buckets = findBucketSizes(cabbage)
+   cabbage_types = buildTypeMap(cabbage)
+   cabbage_guess = guessLMSSort(cabbage, cabbage_buckets, cabbage_types)
+   induceSortL(cabbage, cabbage_guess, cabbage_buckets, cabbage_types)
+   (
+       cabbage_summary, 
+       cabbage_alphabet_size, 
+       cabbage_summary_suffix_offsets
+   ) = summariseSuffixArray(cabbage, cabbage_guess, cabbage_types)
+   showTypeMapWithLMSChar(cabbage)
+   print cabbage_alphabet_size
+   print cabbage_summary
+   print cabbage_summary_suffix_offsets
+   cabbage_summary_suffix_array = makeSummarySuffixArray(cabbage_summary, cabbage_alphabet_size)
+   showSuffixArray(cabbage_summary_suffix_array)
+   showSuffixArray(naivelyMakeSuffixArray(cabbage_summary))
+   cabbage_real = accurateLMSSort(cabbage, cabbage_buckets,
+       cabbage_types, 
+       cabbage_summary_suffix_array,
+       cabbage_summary_suffix_offsets)
+   
+   showSuffixArray(makeSuffixArrayByInducedSorting(cabbage, 256))
+   showSuffixArray(naivelyMakeSuffixArray(cabbage))
+   
+   #baa = b"baabaabac"
+   #baa_types = buildTypeMap(baa)
+   #baa_buckets = findBucketSizes(baa)
+   #baa_guess = guessLMSSort(baa, baa_buckets, baa_types)
+   #induceSortL(baa, baa_guess, baa_buckets, baa_types)
+   #induceSortS(baa, baa_guess, baa_buckets, baa_types)
+   #showSuffixArray(naivelyMakeSuffixArray(baa))
+   #showTypeMap(baa)
+   #(
+   #    baa_summary,
+   #    baa_alphabet_size,
+   #    baa_summar_suffix_offsets
+   #) = summariseSuffixArray(baa, baa_guess, baa_types)
+   #showTypeMapWithLMSChar(baa)
+   #print baa_summary
+   #print baa_summar_suffix_offsets
+   #print cabbage_alphabet_size
    

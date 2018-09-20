@@ -302,6 +302,7 @@ The object being sensed is often referred to as the proximity sensor's target.
    Gaff: a stick with a hook, or a barbed spear, for landing large fish.
 
 .. image:: images/zhenghexiaxiyang.jpg
+.. image:: images/DriftwoodPirate.jpg
 .. figure:: images/Parts-of-a-canoe.png
 
    Parts of a canoe::

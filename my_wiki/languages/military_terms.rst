@@ -563,11 +563,18 @@ not become complacent about its development.
 | squadron
 | Definition: a group of military aircraft or ships forming a section of a military force.
 | usage: A bomber / flighter squadron. [轰炸机／战斗机中队]
+|
+| muster
+| Definition: assemble (troops), especially for inspection or in preparation for battle.
+| Usage: Call out the troops to stand muster. [集结军队]
+| Definition: collect or assemble (a number or amount).
+| Usage: he could fail to muster a majority.
 | 
 | consigliere [顾问，军师，智囊]
 | Definition: an adviser, especially to a crime boss.
 | Plural: consiglieri
 |
+| Decision-making 决策
 | signor 先生 [意大利语]
 | monsieur 先生 [法语]
 | sergent 中士
@@ -600,9 +607,3 @@ Dead Reckoning
 In navigation, dead reckoning or dead-reckoning (also ded for deduced reckoning or DR) 
 is the process of calculating one's current position by using a previously determined position, 
 or fix, and advancing that position based upon known or estimated speeds over elapsed time and course.
-
-mus·ter
-Definition: assemble (troops), especially for inspection or in preparation for battle.
-Usage: Call out the troops to stand muster. [集结军队]
-Definition: collect or assemble (a number or amount).
-Usage: he could fail to muster a majority.

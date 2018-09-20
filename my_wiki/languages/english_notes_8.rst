@@ -19,6 +19,8 @@ what is called a reason for living also the excellent one for dying.
 | Definition: the natural qualities of a person's character. [性格，性情]
 | Synonyms: temperament.
 | Usage: people of a nervous disposition. [神经质的人]
+| Definition: the way someone tends to behave or feel.
+| Usage: The rides are unsuitable for people of a nervous disposition.
 | Definition: (formal) the way something is placed or arranged. [处置，安排]
 | Synonyms: arrangement.
 | 
@@ -61,4 +63,11 @@ what is called a reason for living also the excellent one for dying.
 
 .. image:: images/facepalm.png
 
-
+| top up
+| Definition: to raise the level of (a liquid, powder, etc) in (a container), usually bringing it to the brim of the container.
+| Usage: top up the sugar in those bowls.
+| Usage: Let me top up your glass. [加酒]
+| Definition: an amount added to something in order to raise it to or maintain it at a desired level.
+| Usage: a top-up loan.
+| Usage: Top Up Mobile Phone International. [手机充值]
+|

@@ -60,6 +60,7 @@
    夕阳西下，断肠人在天涯。
 
 .. image:: Illustration/home.jpg
+.. image:: Illustration/bridge.jpg
 
 .. code-block:: none
 
@@ -152,6 +153,8 @@
    生涯一片青山。
    空山有雪相待，
    夜路无人自还。
+
+.. image:: Illustration/mountain.jpg 
 
 .. code-block:: none
 
