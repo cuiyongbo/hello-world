@@ -25,3 +25,7 @@ Mottoes
 -- 米开朗琪罗
 
 .. image:: images/Michelangelo-Buonarroti.jpg
+
+.. figure:: images/Michelangelo's_Pieta.jpg
+
+   米开朗琪罗 - 哀悼基督

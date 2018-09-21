@@ -37,7 +37,39 @@ The Linux lsof command lists information about files that are open by processes 
 
    **Caution**: the -a option causes all list selection options to be ANDed; it can't be used to cause ANDing 
    of selected pairs of selection options by placing it between them, even though its placement there is 
-   acceptable.  Wherever -a is placed, it causes the ANDing of all selection options.
+   acceptable. ** Wherever -a is placed, it causes the ANDing of all selection options.**
+
+   .. option:: -U       
+
+      selects the listing of UNIX domain socket files.
+
+   .. option:: -c c     
+
+      selects the listing of files for processes executing the command 
+      that begins with the characters of c. Multiple commands may be 
+      specified, using multiple -c options. They are joined in a single ORed set 
+      before participating in AND option selection.
+
+      If c begins with a '^', then the following characters specify a command name 
+      whose processes are to be ignored (excluded.)
+
+   .. option:: +c w     
+
+      defines the maximum number of initial characters of the name, 
+      supplied by the UNIX dialect, of the UNIX command associated 
+      with a process to be printed in the COMMAND column. (The lsof default is nine.)
+
+      Note that many UNIX dialects do not supply all command name characters 
+      to lsof in the files and structures from which lsof obtains command name.
+      Often dialects limit the number of characters supplied in those sources.  
+      For example, Linux 2.4.27 and Solaris 9 both limit command name length
+      to 16 characters.
+
+      If w is zero ('0'), all command characters supplied to lsof 
+      by the UNIX dialect will be printed.
+
+      If w is less than the length of the column title, "COMMAND", 
+      it will be raised to that length.
 
    .. option::  -p s     
 
@@ -198,12 +230,6 @@ The Linux lsof command lists information about files that are open by processes 
       UserEvent  275 cherry    5u  IPv4 0x760f57132b6a503d      0t0  UDP *:*
       SystemUIS  283 cherry   11u  IPv4 0x760f57132b6a199d      0t0  UDP *:*
       SystemUIS  283 cherry   12u  IPv4 0x760f57132b6a173d      0t0  UDP *:*
-      SystemUIS  283 cherry   16u  IPv4 0x760f57132b6a4b7d      0t0  UDP *:*
-      SystemUIS  283 cherry   19u  IPv4 0x760f57132b6a101d      0t0  UDP *:*
-      identitys  315 cherry   20u  IPv4 0x760f571329c34f7d      0t0  UDP *:*
-      sharingd   333 cherry    4u  IPv4 0x760f57132b1b259d      0t0  UDP *:*
-      sharingd   333 cherry    8u  IPv4 0x760f57132b1b27fd      0t0  UDP *:*
-      sharingd   333 cherry    9u  IPv4 0x760f571329c3861d      0t0  UDP *:*
       sharingd   333 cherry   10u  IPv4 0x760f571329c38add      0t0  UDP *:*
       sharingd   333 cherry   15u  IPv4 0x760f57132b6a3add      0t0  UDP *:*
       cloudd     346 cherry   12u  IPv4 0x760f5713356ff6a5      0t0  TCP 192.168.199.169:53150->17.248.158.181:https (ESTABLISHED)
@@ -250,15 +276,6 @@ The Linux lsof command lists information about files that are open by processes 
       loginwind  111 cherry    8u  IPv4 0x760f57132b6a315d      0t0  UDP *:*
       UserEvent  275 cherry    5u  IPv4 0x760f57132b6a503d      0t0  UDP *:*
       SystemUIS  283 cherry   11u  IPv4 0x760f57132b6a199d      0t0  UDP *:*
-      SystemUIS  283 cherry   12u  IPv4 0x760f57132b6a173d      0t0  UDP *:*
-      SystemUIS  283 cherry   15u  IPv4 0x760f57132b6a491d      0t0  UDP *:59531
-      SystemUIS  283 cherry   16u  IPv4 0x760f57132b6a4b7d      0t0  UDP *:*
-      SystemUIS  283 cherry   19u  IPv4 0x760f57132b6a101d      0t0  UDP *:*
-      identitys  315 cherry   20u  IPv4 0x760f571329c34f7d      0t0  UDP *:*
-      sharingd   333 cherry    4u  IPv4 0x760f57132b1b259d      0t0  UDP *:*
-      sharingd   333 cherry    8u  IPv4 0x760f57132b1b27fd      0t0  UDP *:*
-      sharingd   333 cherry    9u  IPv4 0x760f571329c3861d      0t0  UDP *:*
-      sharingd   333 cherry   10u  IPv4 0x760f571329c38add      0t0  UDP *:*
       sharingd   333 cherry   15u  IPv4 0x760f57132b6a3add      0t0  UDP *:*
       WiFiAgent  400 cherry    5u  IPv4 0x760f57132b6a60dd      0t0  UDP *:*
       com.apple  505 cherry    4u  IPv4 0x760f57133427dbbd      0t0  TCP macbook-pro.lan:53165->203.208.40.77:https (ESTABLISHED)
