@@ -22,6 +22,8 @@ Mottoes
 
 千万的欢乐不值一单独的烦恼。
 
+多么想望而来得多么迟的死，因为，对于不幸的人，死是懒惰的。
+
 -- 米开朗琪罗
 
 .. image:: images/Michelangelo-Buonarroti.jpg
