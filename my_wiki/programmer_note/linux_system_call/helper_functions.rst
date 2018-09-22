@@ -230,8 +230,8 @@ abort - cause abnormal process termination
    .. code-block:: c
       :caption: SYNOPSIS
    
-          #include <stdlib.h>
-          void abort(void);
+         #include <stdlib.h>
+         void abort(void);
 
    The abort() first unblocks the SIGABRT signal, and then raises that signal for the calling process.  
    This results in the abnormal termination of the process unless the SIGABRT signal is caught 
@@ -308,8 +308,7 @@ kill -- send signal to a process
    The ``kill()`` function sends the signal specified by *sig* to *pid*, a process
    or a group of processes.  Typically, *Sig* will be one of the signals specified
    in :manpage:`sigaction(2)`.  A value of ``0``, however, will cause error checking
-   to be performed (with no signal being sent). This can be used to check
-   the validity of *pid*.
+   to be performed (with no signal being sent). This can be used to check the validity of *pid*.
 
    For a process to have permission to send a signal to a process designated by *pid*,
    the real or effective user ID of the receiving process must match that of the
@@ -326,6 +325,11 @@ kill -- send signal to a process
       group ID of the sender, and for which the process has permission;
       this is a variant of :manpage:`killpg(2)`.
 
+   if *pid* is negative:
+
+      *Sig* is sent to all processes whose process group ID equals the absolute
+      value of *pid* and for which the sender has permission to send the signal.
+
    If *pid* is -1:
       If the user has super-user privileges, the signal is sent to all pro-
       cesses excluding system processes and the process sending the signal.  If
@@ -338,3 +342,26 @@ kill -- send signal to a process
 
    Upon successful completion, a value of ``0`` is returned. Otherwise,
    a value of ``-1`` is returned and ``errno`` is set to indicate the error.
+
+
+raise - send a signal to the caller
+===================================
+
+**DESCRIPTION**
+   
+   .. code-block:: c
+      :caption: SYNOPSIS
+         
+      #include <signal.h>
+      int raise(int sig);
+   
+   The *raise()* function sends a signal to the calling process or thread.  
+   In a single-threaded program it is equivalent to ``kill(getpid(), sig);``
+   In a multithreaded program it is equivalent to ``pthread_kill(pthread_self(), sig);``
+   
+   If the signal causes a handler to be called, *raise()* will 
+   return only after the signal handler has returned.
+   
+**RETURN VALUE**
+
+   *raise()* returns 0 on success, and nonzero for failure.

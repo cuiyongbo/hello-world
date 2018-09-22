@@ -71,3 +71,19 @@ what is called a reason for living also the excellent one for dying.
 | Usage: a top-up loan.
 | Usage: Top Up Mobile Phone International. [手机充值]
 |
+| perplex
+| perplexed
+| Definition: (of something complicated or unaccountable) cause (someone) to feel completely baffled.
+| Usage: she was perplexed by her husband's moodiness. [抓狂]
+| 
+| baffle
+| Definition: totally bewilder or perplex.
+| Usage: an unexplained occurrence that baffled everyone.
+| Definition: restrain or regulate (a fluid, sound, etc.). [隔音]
+| Usage: to baffle the noise further, I pad the gunwales. [船舷]
+| 
+| cognizant
+| Definition: having knowledge or being aware of.
+| Usage: statesmen must be cognizant of the political boundaries within which they work.
+| 
+| 

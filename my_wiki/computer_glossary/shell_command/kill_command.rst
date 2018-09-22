@@ -2,39 +2,25 @@
 kill & killall Command
 **********************
 
-kill Command
-============
+kill -- terminate or signal a process
+=====================================
 
-**NAME**
-   
-   kill -- terminate or signal a process
-
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: sh
+      :caption: SYNOPSIS
 
       kill [-s signal_name] pid ...
       kill -l [exit_status]
       kill -signal_name pid ...
       kill -signal_number pid ...
 
-
-**DESCRIPTION**
-
    The **kill** utility sends a signal to the processes
-   specified by the *pid* operands.
-
-   Only the super-user may send signals to
-   other users' processes.
+   specified by the *pid* operands. Only the super-user 
+   may send signals to other users' processes.
 
 
 **OPTIONS**
-
-   .. option:: kill -s signal_name
-      
-      A symbolic signal name specifying the signal to be sent
-      instead of the default TERM.
 
    .. option:: -signal_name
 
@@ -46,10 +32,10 @@ kill Command
       A non-negative decimal integer,
       specifying the signal to be sent instead of the default TERM.
 
-   .. option:: -l [exit_status]
+   .. option:: -l signale_number
       
       If no operand is given, list the signal names;
-      otherwise, write the signal name corresponding to exit_status.
+      otherwise, write the signal name corresponding to signal_number.
 
 
 **EXAMPLES**
@@ -64,8 +50,6 @@ kill Command
 
       $ kill -l 3
       QUIT
-      $ kill -l 1
-      HUP
       $ kill -l 15
       TERM
 
@@ -80,33 +64,23 @@ kill Command
       29) SIGINFO    30) SIGUSR1    31) SIGUSR2 
 
 
-killall command
-===============
-
-
-**NAME**
-
-   killall -- kill processes by name
-
-**SYNOPSIS**
-
-   .. code-block:: sh
-
-      killall [-delmsvz] [-help] [-u user] [-t tty] [-c procname] [-SIGNAL] [procname ...]
+killall -- kill processes by name
+=================================
 
 **DESCRIPTION**
 
-     The **killall** utility kills processes selected by name,
-     as opposed to the selection by pid as done by :manpage:`kill(1)`.
-     By default, it will send a TERM signal to all processes with a
-     real UID identical to the caller of **killall** that match
-     the name procname. The super-user is allowed to kill any process.
+   .. code-block:: sh
+      :caption: SYNOPSIS
+
+      killall [-delmsvz] [-help] [-u user] [-t tty] [-c procname] [-SIGNAL] [procname ...]
+
+   The **killall** utility kills processes selected by name,
+   as opposed to the selection by pid as done by :manpage:`kill(1)`.
+   By default, it will send a TERM signal to all processes with a
+   real UID identical to the caller of **killall** that match
+   the name procname. The super-user is allowed to kill any process.
 
 **OPTIONS**
-
-   .. option:: -v  
-
-      Be more verbose about what will be done.
 
    .. option:: -d          
 
@@ -139,20 +113,9 @@ killall command
       Limit potentially matching processes to those
       running on the specified *tty*.
 
-   .. option:: killall -l          
-
-      List the names of the available signals and exit,
-      like in :command:`kill -l`.
-
-   .. option:: -m          
-
-      Match the argument procname as a (case sensitive) regular expression against the names
-      of processes found.  CAUTION!  This is dangerous, a single dot will match any process
-      running under the real UID of the caller.
-
    .. option::  -z          
 
-      Do not skip zombies.  This should not have any effect
+      Do not skip zombies. This should not have any effect
       except to print a few error messages if there are
       zombie processes that match the specified pattern.
       See more about :doc:`Zombie Process </programmer_note/linux_system_call/fork_info>`.
@@ -165,9 +128,6 @@ killall command
       HUP INT QUIT ILL TRAP ABRT EMT FPE KILL BUS SEGV SYS PIPE ALRM TERM URG STOP 
       TSTP CONT CHLD TTIN TTOU IO XCPU XFSZ VTALRM PROF WINCH INFO USR1 USR2 
 
-      $ kill -l 3
-      QUIT
-      
       $ killall -s -c Thunder
       kill -TERM 31416
       
