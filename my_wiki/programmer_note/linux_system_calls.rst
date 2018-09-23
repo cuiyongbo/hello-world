@@ -22,4 +22,5 @@ Linux System Call
    linux_system_call/umask_info
    linux_system_call/exit_system_calls_note
    linux_system_call/process_shedule_apis
+   linux_system_call/nonlocal_jumps_note
    linux_system_call/helper_functions

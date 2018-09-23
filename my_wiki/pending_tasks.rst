@@ -67,7 +67,6 @@ Pending tasks
 
       x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
    
-#. setjmp, longjmp
 #. getrlimit, setlimit
 
 #. `suffix sorting <https://sites.google.com/site/yuta256/sais>`_
