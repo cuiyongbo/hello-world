@@ -143,7 +143,7 @@ Windows Problems
 
    added ``"ignore_vcs_packages":true`` to user settings.
 
-#. xShell gets frozen after accidently typing "Ctrl - S"
+#. XShell gets frozen after accidently typing "Ctrl - S"
    
    Solution::
 
@@ -170,3 +170,8 @@ Windows Problems
         Enables users to control power settings on a local system.
         For detailed command and option information, run "POWERCFG /? <COMMAND>"
 
+#. windows10 to prohibite hiberfil.sys from generating
+   
+   .. code-block:: none
+
+      > powercfg -h off

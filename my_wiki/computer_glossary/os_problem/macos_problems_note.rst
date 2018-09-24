@@ -246,3 +246,9 @@ MacOs Problems
       0.0.0.0 liveupdate.mac.sandai.net
       0.0.0.0 www.parallels.com
       0.0.0.0 www.piriform.com
+
+#. mac to prohibit Parallel Desktop from generating virtual machines' Applications folders 
+   
+   .. image:: images/parallel_desktop_appication_folder.png
+   .. image:: images/parallel_desktop_appication_folder_setting.png
+   .. image:: images/parallel_desktop_appication_folder_warnning.png
