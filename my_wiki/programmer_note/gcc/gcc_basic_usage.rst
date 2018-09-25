@@ -1,11 +1,6 @@
-***********
-Basic Usage
-***********
-
-**NAME**
-   
-   gcc - GNU project C and C++ compiler
-
+************************************
+gcc - GNU project C and C++ compiler
+************************************
 
 **SYNOPSIS**
 
@@ -497,3 +492,11 @@ Basic Usage
 
    **Note:** this option can speed up compilation when building a huge project, but will
    consume more memory in return. 
+
+
+**TRICKS**
+
+#. Set -std default to c99
+   
+   For bash only, add ``alias gcc='gcc -Wall -std=c99'`` to **.bashrc** in HOME directory.
+   To check the shell you currently use, type ``echo $SHELL``. 

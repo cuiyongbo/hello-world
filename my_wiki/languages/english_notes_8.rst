@@ -86,4 +86,11 @@ what is called a reason for living also the excellent one for dying.
 | Definition: having knowledge or being aware of.
 | Usage: statesmen must be cognizant of the political boundaries within which they work.
 | 
+| rationale
+| Definition: a set of reasons or logical basis for a course of action or a particualr belief.
+| Usage: He explained the rationale behind the change.
 | 
+
+.. figure:: images/windsurfing.jpg
+
+   Windsurfing 帆板運動

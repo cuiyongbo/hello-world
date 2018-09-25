@@ -2508,13 +2508,6 @@ design philosophy emphasizes ease of use.
 | Definition: a strong feeling of suitability for a particular career or occupation.
 | Usage: Not all of us have a vocation to be nurses or doctors.
 | 
-| rationale
-| Definition: a set of reasons or logical basis for a course of action or a particualr belief.
-| Usage: He explained the rationale behind the change.
-| 
-| windsurfing 帆板運動, 也是水上運動
-| Usage: Go windsurfing.
-| 
 | bicentennial
 | Definition: the two hundredth anniversay of a significant event.
 | Usage: Last year saw the bicentennial of Mozart’s birth.
