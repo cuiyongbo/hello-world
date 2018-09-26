@@ -26,5 +26,6 @@ Algorithms
    algorithms/distance_of_a_point_to_line
    algorithms/triangle_polygon_area
    algorithms/line_splitting_alg
+   algorithms/gzip_alg_note
    algorithms/single_precision_floating_point_format
    algorithms/algorithms_cpp

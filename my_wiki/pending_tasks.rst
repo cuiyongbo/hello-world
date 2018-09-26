@@ -50,6 +50,8 @@ Pending tasks
       - Ch8 Process control (Finished, but skipped several sections)
       - Ch9 Process relationship (Finished)
 
+   - Ch10 Signal (Finished)
+     
    - Pthread
      
       - Ch11 Threads

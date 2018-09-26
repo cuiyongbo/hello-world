@@ -473,3 +473,14 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 .. figure:: images/Paramecium-Teilung.jpg
 
    Paramecium [草履虫]
+
+.. figure:: images/giant_sequoia.jpg
+
+   Sequoia 红杉树
+   
+   Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at, 
+   some trees in the giant sequoia grove had called this home for thousands of years before they were given the 
+   protection of a national park. The Giant Forest in Sequoia National Park is where **General Sherman,** the largest 
+   tree in the world, stands. It is estimated to be 2,300 to 2,700 years old—a silent witness to both natural and human 
+   history. By the time Spanish explorer Vasco Núñez de Balboa ‘found’ the Pacific Ocean in 1513, General Sherman had 
+   been growing for more than 1,500 years.

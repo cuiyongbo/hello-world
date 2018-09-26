@@ -12,3 +12,5 @@ Advanced Programming in UNIX Programming
 
 .. image:: images/session.png
 .. image:: images/freebsd_session_implementation.png
+
+.. image:: images/unix_system_signals.png
