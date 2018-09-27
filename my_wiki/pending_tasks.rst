@@ -18,17 +18,6 @@ Pending tasks
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
 #. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
    
-#. ti-servers implements new ti tile grid [stopped]
-
-   - remove duplicate links (solved)
-   - fix packing bug (solved)
-   - compare the difference between grid size of different formats (solved)
-
-#. logic implement enroute traffic event (refer to Camera)
-   
-   - add parsing in EnrouteTiResponse (solved)
-   - add getter in RouteBase (solved)
-   
 #. added ti diff tools
    
    - add project structure (solved)
@@ -62,12 +51,6 @@ Pending tasks
    Describe a :math:`\Theta(n lg n) \text{-time}` algorithm that, 
    given a set S of n integers and another integer x, determines 
    whether or not there exist two elements in S whose sum is exactly x.
-
-#. how to solve :math:`ax^2 + bx + c = 0` (solved)
-   
-   .. math::
-
-      x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
    
 #. getrlimit, setlimit
 
