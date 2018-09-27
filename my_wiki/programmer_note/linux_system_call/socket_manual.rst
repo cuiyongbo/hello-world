@@ -20,19 +20,15 @@ socket Manual
 
    The *domain* parameter specifies a communications domain within which communication will take
    place; this selects the protocol family which should be used. These families are defined in
-   the include file <*sys/socket.h*>.  The currently understood formats are::
+   the include file **sys/socket.h**.  The currently understood formats are::
 
-      PF_LOCAL        Host-internal protocols, formerly called PF_UNIX,
-      PF_UNIX         Host-internal protocols, deprecated, use PF_LOCAL,
-      PF_INET         Internet version 4 protocols,
-      PF_ROUTE        Internal Routing protocol,
-      PF_KEY          Internal key-management function,
-      PF_INET6        Internet version 6 protocols,
-      PF_SYSTEM       System domain,
-      PF_NDRV         Raw access to network device
+      AF_LOCAL        Host-internal protocols, formerly called AF_UNIX,
+      AF_UNIX         Host-internal protocols, deprecated, use AF_LOCAL,
+      AF_INET         Internet version 4 protocols,
+      AF_INET6        Internet version 6 protocols,
 
-   The socket has the indicated *type*, which specifies the semantics of communication. Currently
-   defined types are::
+   The socket has the indicated *type*, which specifies the semantics of communication. 
+   Currently defined types are::
 
       SOCK_STREAM
       SOCK_DGRAM
@@ -44,11 +40,8 @@ socket Manual
    *SOCK_RAW* sockets provide access to internal network protocols and interfaces. The type
    *SOCK_RAW*, which is available only to the super-user.
 
-   The *protocol* specifies a particular protocol to be used with the socket. Normally only a
-   single protocol exists to support a particular socket type within a given protocol family.
-   However, it is possible that many protocols may exist, in which case a particular protocol
-   must be specified in this manner. The protocol number to use is particular to the 
-   communication domain in which communication is to take place; see *protocols(5)*.
+   The *protocol* specifies a particular protocol to be used with the socket. 
+   **It is usually zero, to select the default protocol for the given domain and socket type.**
 
    Sockets of type *SOCK_STREAM* are full-duplex byte streams, similar to pipes. A stream socket
    must be in a connected state before any data may be sent or received on it. A connection to
@@ -83,20 +76,3 @@ socket Manual
 
    A -1 is returned if an error occurs, otherwise the return value is a descriptor referencing
    the socket.
-
-**ERRORS**
-
-   The socket() system call fails if::
-
-      [EACCES]           Permission to create a socket of the specified type and/or protocol is denied.
-      [EAFNOSUPPORT]     The specified address family is not supported.
-      [EMFILE]           The per-process descriptor table is full.
-      [ENFILE]           The system file table is full.
-      [ENOBUFS]          Insufficient buffer space is available. The socket cannot be created
-                         until sufficient resources are freed.
-      [ENOMEM]           Insufficient memory was available to fulfill the request.
-      [EPROTONOSUPPORT]  The protocol type or the specified protocol is not supported within this domain.
-      [EPROTOTYPE]       The socket type is not supported by the protocol.
-
-   If a new protocol family is defined, the socreate process is free to return any desired error
-   code. The *socket()* system call will pass this error code along (even if it is undefined).
