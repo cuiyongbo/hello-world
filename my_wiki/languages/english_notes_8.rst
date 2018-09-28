@@ -94,3 +94,19 @@ what is called a reason for living also the excellent one for dying.
 .. figure:: images/windsurfing.jpg
 
    Windsurfing 帆板運動
+
+| stupefy
+| Definition: to surprise or shock sb; to make sb unable to think clearly。
+| Usage: He was stupefied by the amount they had spent. 
+| Usage: She was stupefied with cold. [神志不清, 冻迷糊了]
+| 
+| southpaw [左撇子]
+| 
+| half-baked
+| Definition: not well planned or considered.
+| Usage: a half-baked idea.
+| 
+| dilatory [拖延]
+| Definition: not acting quickly enough; causing delay.
+| Usage: they resorted to dilatory procedural tactics, forcing a postponement of peace talks.
+

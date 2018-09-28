@@ -69,7 +69,7 @@ Nature Lifes
 
 .. figure:: images/shark_gill.jpeg
 
-   Gill 腮
+   Gill [腮]
 
    The paired respiratory organ of fishes and some amphibians, 
    by which oxygen is extracted from water flowing over surfaces 
@@ -83,7 +83,7 @@ Nature Lifes
 
 .. figure:: images/giant_sequoia.jpg
 
-   Sequoia 红杉树
+   Sequoia [红杉树]
    
    Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at, 
    some trees in the giant sequoia grove had called this home for thousands of years before they were given the 
@@ -94,15 +94,15 @@ Nature Lifes
 
 .. figure:: images/spotted-hyena-kenya.jpg
 
-   Hyena 鬣狗
+   Hyena [鬣狗]
 
 .. figure:: images/nile-crocodile.jpg
 
-   crocodile 尼罗鳄
+   crocodile [尼罗鳄]
 
 .. figure:: images/alligator_american.jpg
 
-   Alligator 短吻鳄
+   Alligator [短吻鳄]
 
 .. figure:: images/rhino.jpg
 
@@ -110,14 +110,20 @@ Nature Lifes
 
 .. figure:: images/spotted-house-gecko.jpg
 
-   Gecko 壁虎
+   Gecko [壁虎]
 
 .. figure:: images/chameleon.jpg
 
-   Chameleon 变色龙
+   Chameleon [变色龙]
 
-   A person who changes their opinions or behavior according to the situation. [墙头草]
+   A person who changes their opinions 
+   or behavior according to the situation. [墙头草]
 
+| krait 环蛇
+| corba 眼镜蛇
+| viper 蝮蛇
+| rattlesnake 响尾蛇
+| gopher 囊地鼠
 |
 | hock
 | Definition: A hock is a piece of meat from above the foot of an animal, especially a pig.
@@ -125,3 +131,41 @@ Nature Lifes
 
 .. image:: images/pork-cut-diagram.jpg
 .. image:: images/horse_hock-knee.jpg
+
+.. figure:: images/scorpion.png
+
+   Scorpion 蝎子
+
+.. figure:: images/cicada.png
+
+   Cicada  [知了，蝉]
+
+.. figure:: images/hoverfly.jpg
+   
+   Hoverfly [蝇虎]
+
+.. figure:: images/wasp.jpg
+
+   wasp [黄蜂]
+
+.. figure:: images/gull.jpeg
+
+   Gull [海鸥]
+
+.. figure:: images/eel.png
+
+   Eel [鳗鱼]
+
+   Given recent weather events in Texas, however, 
+   it's possible that rought winds and strong currents 
+   played a part in the animal's demise. The eels do 
+   occasionally venture into the shallows, so it's hard 
+   to say for sure.
+
+.. figure:: images/brown-cockroach.jpg
+
+   Cockroach [蟑螂] 
+
+.. figure:: images/penguin_regurgitation.jpg
+
+   Penguin regurgitation [反刍喂食]

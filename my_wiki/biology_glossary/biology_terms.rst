@@ -171,23 +171,9 @@ Biology Terms
 | Forensic 法醫
 | Definition: relating to or denoting the application of scientific methods and techniques to the investigation of crime.
 | Usage: Forensic evidence.
-|
-| krait 环蛇
-| corba 眼镜蛇
-| viper 蝮蛇
-| rattlesnake 响尾蛇
-| gopher 囊地鼠
-| scorpion 蝎子
-
-.. image:: images/scorpion.png
-
-| cicada  [知了，蝉]
-
-.. image:: images/cicada.png
-
+| 
 | decomposition
 | Definition: Decomposition is the process of decay when a living thing changes chemically after dying.
-| 
 | 
 | pollen [花粉]
 | pollinate
@@ -195,16 +181,7 @@ Biology Terms
 | Definition: to pollinate a plant or tree means to fertilize it with pollen. this is often done by insects.
 | Usage: Without sufficient pollination, the growth of the corn is stunted.
 | 
-| hoverfly
-| Definition: many hoverflies have strips and resemble bees and wasps.
 
-.. figure:: images/hoverfly.jpg
-   
-   hoverfly
-
-.. figure:: images/wasp.jpg
-
-   wasp
 
 New clues to decline to of bees and other pollinators.
 
@@ -226,12 +203,6 @@ It remains to be seen how the virus may affect the ability to hoverflies to unde
 | Usage: The motif of these volume is that 'solitude is the richness of the soul, loneliness is its poverty.'
 | Definition: A motif is a desigh which is used as a decoration or as part of an artistic pattern.
 | 
-| cockroach [蟑螂]
-| Definition: A cockroach is a large brown insect that is sometimes found in warm places or where food is kept.
-
-.. figure:: images/brown-cockroach.jpg
-
-   cockroach
 
 hemorrhoid 痔疮
 
@@ -262,28 +233,7 @@ tit
 | Definition: bring (swallowed food) up again to the mouth.
 | Usage: Gulls regurgitate food for the chicks.
 | Definition: repeat (information) without analysing or comprehending it.
-
-.. figure:: images/penguin_regurgitation.jpg
-
-   Penguin regurgitation
-
-
-.. figure:: images/gull.jpeg
-
-   Gull 
-
-Given recent weather events in Texas, however, it's possible that rought winds and strong currents played a part
-in the animal's demise. The eels do occasionally venture into the shallows, so it's hard to say for sure.
-
-.. figure:: images/eel.png
-
-   eel
-
-| demise
-| Definition: an animal's death.
-| Definition: the end or failure of an enterprise or institution.
-
-
+|
 | collagen [胶原蛋白]
 | Definition: the main structural protein found in animal connective tissue, yielding gelatin when boiled.
 | 
@@ -359,4 +309,10 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | gland [腺体]
 | Definition: an organ in the human or animal body that secretes particular chemical substances for use in the body or for discharge into the surroundings.
 | Usage: the thyroid gland. [甲状腺]
+| 
+| scurvy [坏血病]
+| Definition: a disease caused by a lack of vitamin C from not eating enough fruit and vegetables
+| 
+| neoplasm [肿瘤]
+| Definition: a new and abnormal growth of tissue in some part of the body, especially as a characteristic of cancer.
 | 

@@ -52,3 +52,10 @@ Janpanese Note
    .. image:: images/hizamakura_1.jpg
    .. image:: images/hizamakura_2.jpg
    .. image:: images/hizamakura_3.jpg
+
+#. 空耳
+   
+   空耳来源于日语词语“そらみみ”，在日语中是“幻听”的意思，但后来渐渐转义为将歌词中的一句话（或一个字）的读音，
+   造出发音相似的另一句话，常用在歌词和鬼畜中，是一种在文字领域进行恶搞娱乐的方式。
+
+#. 取引先　「とりひきさき」
