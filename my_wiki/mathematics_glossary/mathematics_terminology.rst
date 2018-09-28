@@ -29,6 +29,14 @@ I think, therefore I am
 
    :math:`f(x) = tan x`
 
+
+.. figure:: images/superlinear_fig.jpg
+
+   Superlinear
+
+   (mathematics) Describing a function 
+   that eventually grows faster than any linear one
+
 | similar triangle [相似三角形]
 | corresponding side [对应边] 
 | exponential distribution
