@@ -30,3 +30,9 @@ take years or even centuries of sustained inquiry.
    In number theory Fermat's Last Theorem (sometimes called Fermat's conjecture, 
    especially in older texts) states that no three positive integers a, b, and c 
    satisfy the equation :math:`a^n + b^n = c^n` for any integer value of **n > 2.** 
+
+.. figure:: images/pythagorean_theorem.gif
+
+   Pythagorean Theorem [勾股定理]
+
+   :math:`a^2 + b^2 = c^2`

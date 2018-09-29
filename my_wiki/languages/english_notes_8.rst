@@ -95,6 +95,14 @@ what is called a reason for living also the excellent one for dying.
 
    Windsurfing 帆板運動
 
+.. image:: images/car-hailing_1.jpg
+.. figure:: images/car-hailing.jpg
+
+   Car-hailing [打车] 
+
+   E-hailing is a process of ordering a car, taxi, limousine [豪华轿车], 
+   or any other form of transportation pick up via a computer or mobile device.
+
 | stupefy
 | Definition: to surprise or shock sb; to make sb unable to think clearly。
 | Usage: He was stupefied by the amount they had spent. 
@@ -109,4 +117,24 @@ what is called a reason for living also the excellent one for dying.
 | dilatory [拖延]
 | Definition: not acting quickly enough; causing delay.
 | Usage: they resorted to dilatory procedural tactics, forcing a postponement of peace talks.
+| 
+| more bang for the buck [物超所值]
+| Definition: Having greater value for the amount of money one is spending.
+| Usage: It’s not one of the most popular brands, but this :abbr:`HD (high-definition)` TV will give you away more bang for your buck.
+| Usage: While desktop computers still give you more bang for your buck, today's notebooks are capable of more than just basic office work. 
+|
+| DINK = Double Income and No Kid [丁克人群]
+| 
+| throttle
+| Definition: a device controlling the flow of fuel or power to an engine.
+| Usage: the engines were at full throttle.
+| Definition: attack or kill (someone) by choking or strangling them.
+| Usage: she was sorely tempted to throttle him.
+|
+
+the Core i9 laptop is now much faster than it was before and, crucially, 
+faster than its Core i7 predecessor MacBook Pros, as per MacRumors. 
+It also remains quiet, which is a major selling point [卖点] of the 
+MacBook Pro — though the thicker, louder Core i9 laptops from other 
+manufacturers do offer much greater performance.
 

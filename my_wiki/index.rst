@@ -11,6 +11,7 @@ Welcome to My Wiki's documentation!
    :caption: Contents:
 
    pending_tasks
+   book_reading_progress_note
    computer_glossary
    programmer_note
    camera_glossary

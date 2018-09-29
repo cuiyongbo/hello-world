@@ -145,14 +145,6 @@ name, also known as surname, with most family members.
 | Definition: (of literature or behavior) weakly or foolishly sentimental
 | Usage: Lovers of sloppy romance.
 | 
-| more bang for the buck
-| Definition: Having greater value for the amount of money one is spending.
-| Usage: It’s not one of the most popular brands, but this :abbr:`HD (high-definition)` TV will give you away more bang for your buck.
-| Definition: If you get more bang for your buck or more bang for the buck, you get a bigger quantity or better quality of something for the same amount of | money. You can also say that someone gets a bigger bang for their buck or a bigger bang for the buck. You can also say that someone gets little bang for the | buck, when they get less than they expected for the amount of money they spent.
-| Usage: While desktop computers still give you more bang for your buck, today's notebooks are capable of more than just basic office work. 
-| Usage: Companies are scrambling to find new ways of delivering more bang for the client's buck. 
-| Usage: The company is getting little bang for its buck.
-| 
 | etiquette [礼仪，职业操守]
 | Definition: (noun) The customary of polite behavior in society or among members of a particular profession or group.
 | Usage: Advice on etiquette.

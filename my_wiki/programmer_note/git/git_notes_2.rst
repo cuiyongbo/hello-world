@@ -22,14 +22,14 @@ Git Tricks 2
    
    .. code-block:: sh
 
-   $ git pull -ff
-   Updating ed2f9a2..d1f3dc1
-   Fast-forward
-   .../computer_glossary/shell_command/tar_manual.rst | 34 ++++++++++------------
-   my_wiki/languages/english_notes_7.rst              |  2 +-
-   my_wiki/pending_tasks.rst                          |  2 ++
-   my_wiki/programmer_note/gcc/makefile_basics.rst    | 14 +++++++++
-   4 files changed, 33 insertions(+), 19 deletions(-)
+      $ git pull -ff
+      Updating ed2f9a2..d1f3dc1
+      Fast-forward
+      .../computer_glossary/shell_command/tar_manual.rst | 34 ++++++++++------------
+      my_wiki/languages/english_notes_7.rst              |  2 +-
+      my_wiki/pending_tasks.rst                          |  2 ++
+      my_wiki/programmer_note/gcc/makefile_basics.rst    | 14 +++++++++
+      4 files changed, 33 insertions(+), 19 deletions(-)
 
 #. git to automatically prunes deleted remote branch
    

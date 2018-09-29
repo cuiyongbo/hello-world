@@ -29,22 +29,6 @@ Pending tasks
    - add multi-thread support (solved)
    - merging patch files (solved)
 
-#. Advanced Programming in the UNIX Environment 
-   
-   - Ch1 Unix system overview (Finished)
-   
-   - Process
-     
-      - Ch7 Process environment (Finished)
-      - Ch8 Process control (Finished, but skipped several sections)
-      - Ch9 Process relationship (Finished)
-
-   - Ch10 Signal (Finished)
-     
-   - Pthread
-     
-      - Ch11 Threads
-      - Ch12 Thread control
    
 #. 2.3-7 P39
  
