@@ -35,6 +35,7 @@ Shell Commands
    shell_command/lsof_manual
    shell_command/nohup_command
    shell_command/ps_command
+   shell_command/top_manual
    shell_command/shell_script_tricks
    shell_command/smem_man_doc
    shell_command/sort_manual

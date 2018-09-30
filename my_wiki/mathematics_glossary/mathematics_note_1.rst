@@ -74,3 +74,18 @@ Mathematics Notes 1
    :math:`a \equiv b \pmod n` if a and b have the same remainder when 
    divided by n. Equivalently, :math:`a \equiv b \pmod n` if and only if 
    n is a divisor of b - a.
+
+#. multiplicative inverse [倒数]
+
+In mathematics, a **multiplicative inverse** or **reciprocal** for a number x, as
+denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied
+by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction
+:math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real
+number, divide 1 by the number. The reciprocal function, the function *f(x)* that maps *x* 
+to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse
+(an involution).
+
+.. figure:: images/one_over_x.png
+
+   The reciprocal function: :math:`y = \frac{1}{x}`. 
+   For every x except 0, y represents its multiplicative inverse.

@@ -36,6 +36,10 @@ I think, therefore I am
    (mathematics) Describing a function 
    that eventually grows faster than any linear one
 
+.. figure:: images/exponent-8-2.svg
+
+   Exponent Arithmetic notatiion
+
 | similar triangle [相似三角形]
 | corresponding side [对应边] 
 | exponential distribution
@@ -67,44 +71,14 @@ I think, therefore I am
 | scientific notation 科学计数法
 | trigonometic function 三角函数
 | factorial 阶乘
+| polynomial 多项式的
 | 
 | asymptote
 | Definition: a line that continually approaches a given curve but doesn’t meet it at any finite length.
 | 
-| prime number
+| prime number [素数]
 | Definition: (mathematics) a number that can be divided exactly only by itself and 1, for example 7, 17 and 41.
 | Antonyms: composite number [质数]
-| 
-| polynomial
-| Definition: (mathematics) 多项式的
-|
-| modulus
-| Definition: another term for absolute value.
-| Definition: a constant factor or ratio.
-| Definition: a number used as a divisor for considering numbers in sets, numbers being considered congruent when giving the same remainder when divided by | a particular modulus.| 
-| 
-
-modulo/remainder [取余]
-
-(in mathematics) with respect to or using a modulus of a specified number.
-Two numbers are congruent modulo a given number if they give the same remainder
-when divided by that number: 19 and 64 are congruent modulo 5.
-
-multiplicative inverser
-
-In mathematics, a **multiplicative inverse** or **reciprocal** for a number *x*,
-denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied
-by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction
-:math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real
-number, divide 1 by the number. For example, the reciprocal of 5 is one fifth (1/5 or 0.2),
-and the reciprocal of 0.25 is 4. The reciprocal function, the function *f(x)* that maps *x* 
-to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse
-(an involution).
-
-.. figure:: images/one_over_x.png
-
-   The reciprocal function: :math:`y = \frac{1}{x}`. For every x except 0, y represents its multiplicative inverse.
-
 |
 | vertex [顶点]
 | Definition: Each angular point of a polygon, polyhedron, or other figure.
@@ -115,23 +89,20 @@ to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is i
 | Definition: (decimal fraction) a fraction whose denominator is a power of ten and whose numerator is expressed by figures placed to the right of a decimal point.
 | Usage: The decimal 0.61 stands for 61 hundredths.
 | 
-| denominator
-| Definition: (mathematics) the number below the line in a fraction showing how many parts the whole is divided into, for example in :math:`\frac{3}{4}`.
-| Synonyms: numerator
+| denominator [分母]
+| Definition: (mathematics) the number below the line in a fraction showing how many parts the whole is divided into.
+| Antonyms: numerator [分子]
 | Usage: common denominator. [公分母]
-| 
+| Least common multiple [最小公倍数]
 | 
 | mantissa
-| Definition: (MATHEMATICS) the part of a logarithm after the decimal point.
-| Definition: (COMPUTING) the part of a floating-point number which represents the significant digits of that number.
-| 
-| Least common multiple 最小公倍数
+| Definition: (mathematics) the part of a logarithm after the decimal point.
+| Definition: (computing) the part of a floating-point number which represents the significant digits of that number.
 |
-| quotient 商
+| quotient [商]
 | Definition: In arithmetic, a quotient (from Latin: quotiens "how many times", pronounced /ˈkwoʊʃənt/) is the quantity produced by the division of two numbers. The quotient has widespread use throughout mathematics, and is commonly referred to as a fraction or a ratio. For example, when dividing twenty (the dividend) by three (the divisor), the quotient is six and two thirds. In this sense, a quotient is the ratio of a dividend to its divisor.
 
 .. image:: images/quotient.png
-
 .. image:: images/arithmetic_operations.png
 
 | power
