@@ -2,8 +2,8 @@
 Reading Progress
 ****************
 
-.. content::
-   :localonly:
+.. contents::
+   :local:
 
 
 Introduction To Algorithm

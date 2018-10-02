@@ -29,7 +29,6 @@ Pending tasks
    - add multi-thread support (solved)
    - merging patch files (solved)
 
-   
 #. 2.3-7 P39
  
    Describe a :math:`\Theta(n lg n) \text{-time}` algorithm that, 

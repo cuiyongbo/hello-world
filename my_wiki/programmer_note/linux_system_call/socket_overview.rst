@@ -11,3 +11,4 @@ Socket Overview
    connect_manual
    getaddrinfo_manual
    shutdown_manual
+   socket_helper_apis

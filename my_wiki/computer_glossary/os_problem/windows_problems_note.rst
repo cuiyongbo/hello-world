@@ -175,3 +175,7 @@ Windows Problems
    .. code-block:: none
 
       > powercfg -h off
+
+#. windows10 to turn off Windows Defender
+   
+   Open Regedit, Modify entry ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService`` value to 4.
