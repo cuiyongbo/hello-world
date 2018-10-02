@@ -17,6 +17,7 @@ English Notes 5
 | Definiton: partially burn (an object) so as to blacken its surface.
 | Usage: Their bodies were badly charred in the fire.
 | 
+| cuisine
 | culinary [烹饪]
 | Definition: culinary means concerned with cooking.
 | Usage: She was keen to acquire more advanced culinary skills.
@@ -65,11 +66,23 @@ It is the most popular tea in Japan.
 
 .. figure:: images/sencha_green_tea.jpg
 
-   sancha green tea
+   Sancha green tea
 
-.. figure:: images/jetfire-transformer.jpeg
+.. figure:: images/omlet.jpg
 
-   I'm too old for this carp. [老骨头不中用了]
+   Omelette 煎蛋卷,摊鸡蛋(常加入奶酪、肉和蔬菜)
+
+   In cuisine, an omelette or omelet is a dish made from beaten eggs 
+   fried with butter or oil in a frying pan. It is quite common for 
+   the omelette to be folded around a filling such as cheese, chives, 
+   vegetables, mushrooms, meat, or some combination of the above.
+
+.. figure:: images/Slow-Cooker-Homemade-Beef-Stew.jpg
+   
+   stew [炖汤]
+
+   A dish of meat and vegetables cooked 
+   slowly in liquid in a closed dish or pan. 
 
 | cramp
 | Definition: a painful, involuntary contraction of a muscle or muscles, typically caused by fatigue or strain.

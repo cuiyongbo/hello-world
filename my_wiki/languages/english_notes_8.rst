@@ -90,19 +90,6 @@ what is called a reason for living also the excellent one for dying.
 | Definition: a set of reasons or logical basis for a course of action or a particualr belief.
 | Usage: He explained the rationale behind the change.
 | 
-
-.. figure:: images/windsurfing.jpg
-
-   Windsurfing 帆板運動
-
-.. image:: images/car-hailing_1.jpg
-.. figure:: images/car-hailing.jpg
-
-   Car-hailing [打车] 
-
-   E-hailing is a process of ordering a car, taxi, limousine [豪华轿车], 
-   or any other form of transportation pick up via a computer or mobile device.
-
 | stupefy
 | Definition: to surprise or shock sb; to make sb unable to think clearly。
 | Usage: He was stupefied by the amount they had spent. 
@@ -131,10 +118,215 @@ what is called a reason for living also the excellent one for dying.
 | Definition: attack or kill (someone) by choking or strangling them.
 | Usage: she was sorely tempted to throttle him.
 |
+| bust
+| Defintion: raid or search (premises where illegal activity is suspected)
+| Usage: their house got busted.
+| Usage: he was busted for drugs. [被捕]
+| Definition: (be/get busted) be caught in the act of doing something wrong.
+| Usage: I sneaked up on them and told them they were busted.
+| Definition: [chiefly US] reduce (a soldier) to a lower rank; demote.
+| Usage: he was busted to private. [降为普通士兵]
+| 
+| private
+| Definition: a soldier of the lowest rank, in particular an enlisted person in the US Army or Marine Corps ranking below private first class.
+| Phrase: in private.
+| Definition: with no one else present.
+| Usage: I've got to talk to you in private.
+|
+| caliber [Britain calibre]
+| Definition: the internal diameter or bore of a gun barrel.
+| Usage: a .22 caliber repeater rifle. [口径]
+| 
+| straggle
+| straggler
+| Definition: to move slowly behind a group of people that you are with so that you become separated from them. [落伍，掉队]
+| Usage: On the way the kids straggled behind us. 
+| Definition: grow, spread, or be laid out in an irregular, untidy way.
+| Usage: her hair was straggling over her eyes.
+| Usage: the town straggled to an end and the fields began.
+| Usage: a straggle of cottages. [散落的村落]
+| 
+| rupture
+| Definition: (especially of a pipe, a vessel, or a bodily part such as an organ or membrane) break or burst suddenly.
+| Usage: if the main artery ruptures he could die. [大动脉]
+| Usage: it was her first match since rupturing an Achilles tendon. [肌腱]
+| Phrase: be ruptured or rupture oneself
+| Definition: suffer an abdominal hernia.
+| Usage: one of the boys was ruptured and needed to be fitted with a truss[夹板固定]. [和肠道有关]
+| Definition: breach or disturb (a harmonious feeling or situation).
+| Usage: once trust has been ruptured it can be difficult to regain.
+| 
+| foul
+| Definition: offensive to the senses, especially through having a disgusting smell or taste or being unpleasantly soiled.
+| Definition: (of language) obscene or profane. [污言秽语]
+| 
+| stew
+| Definition: a dish of meat and vegetables cooked slowly in liquid in a closed dish or pan. [炖汤]
+| Definition: a state of great anxiety or agitation.
+| Usage: I suppose he's all in a stew. [焦头烂额]
+| 
+| dugout
+| Definition: a shelter that is dug in the ground and roofed over, especially one used by troops in warfare. [战壕]
+| Definition: a low shelter with seating from which a team's coaches and players not taking part can watch the game. [教练席]
+| Definition: a canoe made from a hollowed tree trunk. [独木舟]
+| 
+| oven
+| Definition: an enclosed compartment, as in a kitchen range, for cooking and heating food. [炉灶]
+| Usage: the house was like an oven when I came in.
+| 
+| sheen
+| Definition: a soft luster on a surface.
+| Usage: black crushed velvet with a slight sheen.
+| Usage: he seemed to shine with that unmistakable showbiz sheen.
+| Usage: men entered with rain sheening their steel helms.
+| Usage: her black hair sheened in the sun.
+| 
+| worrywart [爱操心的人]
+| Definition: a person who tends to dwell unduly on difficulty or troubles.
+| 
+| meddlesome
+| Definition: enjoying getting involved in situations that do not concern them
+| Usage: a gaggle of meddlesome politicians.
+| 
+| errand
+| Definition: a short journey undertaken in order to deliver or collect something, often on someone else's behalf.
+| Usage: she asked Tim to run an errand for her. [跑腿，差事]
+| Usage: he often run errands for his grandma.
+| Phrase: errand of mercy
+| Definition: a mission carried out to help someone in difficulty.
+| 
+| protagonist [主人公，主角]
+| Definition: the leading character or one of the major characters in a drama, movie, novel, or other fictional text.
+| 
+| plastered
+| Definition: very drunk.
+| Usage: I went out and got totally plastered.
+| 
+| steep
+| Definition: soak (food or tea) in water or other liquid so as to extract its flavor or to soften it.
+| Usage: the noodles should be left to steep for 3–4 minutes. [浸泡]
+| Definition: (usually be steeped in) surround or fill with a quality or influence.
+| Usage: a city steeped in history. [沧桑古城]
+| Usage: they spent a month steeping themselves in Chinese culture. 
+| 
+| nether
+| Defintion:  (literary or humorous)  lower
+| Usage: a person's nether regions (= their genitals ) [下半身]
+| 
+| crotch
+| Definition: the part of the human body between the legs where they join the torso.
+| Definition: the part of a garment that passes between the legs. [裆部]
+| Definition: a fork in a tree, road, or river.
+| 
+| piss
+| Definition: an act of urinating.
+| Usage: take a piss.
+| Phrase: not have a pot to piss in
+| Definition: be very poor.
+| Phrase: piss in the wind
+| Definition: do something that is ineffective or a waste of time.
+| Phrase: piss something away
+| Definition: waste something, especially money or time.
+| Phrase: piss someone off
+| Definition: annoy someone.
+| Phrase: piss on
+| Definition: show complete contempt for. 
+| 
+| proprietress [老板娘]
+| zodiac [星座]
+| aries [白羊座]
+| dunno = (I) do not know
+| moron: a stupid person
+| 
+| gargle
+| Definition: wash one's mouth and throat with a liquid kept in motion by exhaling through it.
+| Usage: instruct patients to gargle with warm water. [漱口]
+| 
+| grudge
+| Definition: a persistent feeling of ill will or resentment resulting from a past insult or injury.
+| Usage: she held a grudge against her former boss.
+| Phrase: bear someone a grudge (also bear a grudge)
+| Definition: maintain a feeling of ill will or resentment toward someone.
+| Usage: I hope you will not bear me a grudge. [记仇]
+| 
+| retard
+| Definition: delay or hold back in terms of progress, development, or accomplishment
+| Usage: his progress was retarded by his limp.
+| Definition: a mentally handicapped person (often used as a general term of abuse). [智障]
+| 
+| jackass
+| Definition: a stupid person.
+| Definition: a male ass or donkey.
+| 
+| nonchalant
+| Definition: (of a person or manner) feeling or appearing casually calm and relaxed; not displaying anxiety, interest, or enthusiasm.
+| Usage: she gave a nonchalant shrug.
+| 
+| asphyxiation
+| Definition: the state or process of being deprived of oxygen, which can result in unconsciousness or death; suffocation.
+| Usage: the cause of death was asphyxiation.
+| 
+| hyperventilate
+| hyperventilation
+| Definition: breathe or cause to breathe at an abnormally rapid rate, so increasing the rate of loss of carbon dioxide.
+| Definition: be or become overexcited.
+| Usage: it was one less thing to hyperventilate about.
+| 
+| lewd
+| Definition: crude and offensive in a sexual way.
+| Usage: she began to gyrate to the music and sing a lewd song.
+| 
+| budge
+| Definition: make or cause to make the slightest movement.
+| Usage: the line in the bank hasn't budged.
+| Usage: budge over, boys, make room for your uncle.
+| Definition: change or make (someone) change an opinion.
+| Usage: I tried to persuade him, but he wouldn't budge.
+| Usage: neither bribe nor threat will budge him.
+| 
+| nefarious
+| Definition: (typically of an action or activity) wicked or criminal.
+| Usage: the nefarious activities of the organized-crime syndicates.
+| 
+| freak
+| Definition: a very unusual and unexpected event or situation. [反常]
+| Usage: the teacher says the accident was a total freak. 
+| Definition: (also freak of nature) a person, animal, or plant with an unusual physical abnormality. [怪胎]
+| Definition: behave or cause to behave in a wild and irrational way, typically because of the effects of extreme emotion, mental illness, or drugs.
+| Definition: My parents really freaked when they saw my hair. 
+| Usage: Snakes really freak me out. 
 
-the Core i9 laptop is now much faster than it was before and, crucially, 
-faster than its Core i7 predecessor MacBook Pros, as per MacRumors. 
-It also remains quiet, which is a major selling point [卖点] of the 
-MacBook Pro — though the thicker, louder Core i9 laptops from other 
-manufacturers do offer much greater performance.
+.. figure:: images/candelabrum.jpg
+
+   Candelabrum (pl. candelabra) [灯座，烛台] 
+   
+   A large branched candlestick or holder for several candles or lamps.
+
+.. figure:: images/fez.png
+
+   Fez
+
+   A flat-topped conical red hat with a black tassel on top, 
+   worn by men in some Muslim countries.
+
+.. image:: images/Last-Judgement-Aunt-Heather-Piper.jpg
+.. figure:: images/Vatican-ChapelleSixtine-Plafond.jpg
+
+   Fresco [壁画]
+
+   A painting done rapidly in watercolor on wet plaster on a wall or ceiling, 
+   so that the colors penetrate the plaster and become fixed as it dries.
+
+.. figure:: images/windsurfing.jpg
+
+   Windsurfing 帆板運動
+
+.. image:: images/car-hailing_1.jpg
+.. figure:: images/car-hailing.jpg
+
+   Car-hailing [打车] 
+
+   E-hailing is a process of ordering a car, taxi, limousine [豪华轿车], 
+   or any other form of transportation pick up via a computer or mobile device.
+
 

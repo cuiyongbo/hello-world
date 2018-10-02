@@ -2,6 +2,21 @@
 Nature Lifes
 ************
 
+| peg
+| Definition: a short cylindrical piece of wood, metal, or plastic, typically tapered at one end, 
+| that is used for holding things together, hanging things on, or marking a position.
+| Definition: drape individual plants with nets, pegging down the edges.
+| Usage: I have otoya-kun pegged down as a herbivore.
+| Phrase: a peg to hang a matter on
+| Definition: something used as a pretext or occasion for the discussion or treatment of a wider subject.
+| Phrase: a square peg in a round hole
+| Definition: a person in a situation unsuited to their abilities or character.
+| Phrase: take someone down a peg or two
+| Definition: make someone realize that they are less talented or important than they think are.
+| 
+| herbivore
+| Definition: an animal that feeds on plants
+| 
 | viviparous
 | Definition: (of an animal) bringing forth live young that have developed inside the body of the parent. [胎生]Compare with oviparous and ovoviviparous.
 | Definition: Botany (of a plant) reproducing from buds that form plantlets while still attached to the parent plant, or from seeds that germinate within the fruit.

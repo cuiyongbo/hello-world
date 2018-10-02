@@ -106,7 +106,13 @@ Computer Terminology
 | Definition: a large, thin, flat case for loose sheets of paper such as drawing or maps.
 | Definition: a portfolio is a set of pictures by someone, or photographs of examples of their work, which they use when entering competitions or applying for work.
 
-.. figure:: images/portfolio.png
+.. image:: images/portfolio.png
+
+The Core i9 laptop is now much faster than it was before and, crucially, 
+faster than its Core i7 predecessor MacBook Pros, as per MacRumors. 
+It also remains quiet, which is a major selling point [卖点] of the 
+MacBook Pro — though the thicker, louder Core i9 laptops from other 
+manufacturers do offer much greater performance.
 
 **Subscript vs Superscript [上标，下标]**
 

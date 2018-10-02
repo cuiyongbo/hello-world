@@ -56,8 +56,16 @@ Military Terms
 | Definition: a violent uprising against the current authority or government.
 | Usage: Opposition to the new regime lead to armed insurrection.
 | 
-| regime
+| regime [政权]
 | Definition: a government, especially an authoritarian one.
+| 
+| mutiny [兵变，暴动]
+| Definition: an open rebellion against the proper authorities, especially by soldiers or sailors against their officers.
+| Usage: a mutiny by those manning the weapons could trigger a global war.
+| 
+| coup [政变]
+| Definition: a sudden, violent, and illegal seizure of power from a government.
+| Usage: he was overthrown in an army coup. [军事政变]
 | 
 | mass grave [万人坑]
 | Definition: a pit dug in the ground to receive a large number of corpses.
@@ -119,30 +127,32 @@ Military Terms
 
    Solar system
 
-| Falcon heavy
-| Delta IV Heavy
-| Proton M
-| Falcon 9
-| Atlas V 551
-| Ariane 5 ES
-|
+.. figure:: images/heavy_rockets.png
 
-.. image:: images/heavy_rockets.png
+   Heavy rockets [重型火箭]
 
-| Space shuttle
-|
+   | Falcon heavy
+   | Delta IV Heavy
+   | Proton M
+   | Falcon 9
+   | Atlas V 551
+   | Ariane 5 ES
 
-.. image:: images/spaceshuttle.png
+.. figure:: images/jetfire-transformer.jpeg
 
-| booster
-|
+   I'm too old for this carp. [老骨头不中用了]
 
-.. image:: images/booster.png
+.. figure:: images/spaceshuttle.png
 
-| parachute
-|
+   Space shuttle
 
-.. image:: images/parachute.png
+.. figure:: images/booster.png
+
+   Booster
+
+.. figure:: images/parachute.png
+
+   Parachute
 
 |
 | rendezvous
@@ -250,9 +260,6 @@ Military Terms
 | vandalism
 | Definition: action involving deliberate destruction of damage to public or private property.
 | Usage: Stations have been wrecked and vandalized beyond recognition.
-| 
-| sentinel
-| Synonyms: sentry
 | 
 | extortion [勒索，恐吓]
 | Definition: Extortion is the crime of obtaining something from someone, especially money, by using force or threats.
@@ -436,6 +443,7 @@ Military Terms
 | cruise missile 巡航导弹
 | torpedo 鱼雷
 | 
+| NPC (National People's Congress) 人民代表大会
 | the Cold War 冷战
 | the White house 白宫
 | The Kremlin 克里姆林宫
@@ -451,37 +459,43 @@ The Pentagon was designed by American architect George Bergstrom (1876–1955), 
 
 The Pentagon is one of the world's largest office buildings。 It has five sides, five floors above ground, two basement levels, and five ring corridors per floor with a total of 17.5 mi (28.2 km) of corridors. The Pentagon includes a five-acre central plaza, which is shaped like a pentagon and informally known as "ground zero," a nickname originating during the Cold War on the presumption that it would be targeted by the Soviet Union at the outbreak of nuclear war.
 
-
 US Central Command
 
 US Central Command, also known as Centcom, is the headquater at MacDill Air Base in Tampa.
-It is responsible for the operational theatre spanning parts of the Middle Ease, Central Asia, and North Africa.
+It is responsible for the operational theatre spanning parts of the Middle East, Central Asia, and North Africa.
 
 This isn't a warfighting strategy, to have a video of attacking Florida. Ths a message. The symbolism is in the video itself. It's a rhetorical flourish.
 
 utopia
 
-乌托邦（英语：utopia，国际音标：/juˈtoʊpiə/）也稱理想國（和製漢語，曾為魯迅《華蓋集》中使用），無何有之鄉（源于《庄子》），是一个理想的群体和社会的构想，名字由托马斯·摩尔的《乌托邦》一书中所写的完全理想的共和国“乌托邦”而来。意指理想完美的境界，特別是用於表示法律、政府及社會情況。托马斯·摩尔在书中虚构了一个大西洋上的小岛，小岛上的国家拥有完美的社会、政治和法制体系。这个词用来描述一种被称为“意向社群”的理想社会和文学虚构的社会。这个概念也引出了其他的概念，最突出的概念就是反乌托邦。
+乌托邦也稱理想國（曾為魯迅《華蓋集》中使用），無何有之鄉（源于《庄子》），
+是一个理想的群体和社会的构想，名字由托马斯·摩尔的《乌托邦》一书中所写的
+完全理想的共和国“乌托邦”而来。意指理想完美的境界，特別是用於表示法律、政府及社會情況。
+托马斯·摩尔在书中虚构了一个大西洋上的小岛，小岛上的国家拥有完美的社会、政治和法制体系。
+这个词用来描述一种被称为“意向社群”的理想社会和文学虚构的社会。这个概念也引出了其他的概念，
+最突出的概念就是反乌托邦。
 
 Dystopia
 
-反乌托邦（英语：Dystopia、Cacotopia、kakotopia或anti-utopia，中文又稱反面乌托邦、敌托邦、惡托邦、絕望鄉或废托邦）是烏托邦（utopia）的反義語，希臘語字面意思是「不好的地方」（not-good place），它是一種不得人心、令人恐懼的假想社群或社會，是与理想社会相反的，一种极端恶劣的社会最终形态。反烏托邦常常表徵爲反人类、極權政府、生態災難或其他社會性的灾難性衰敗。這種社會出現在許多藝術作品中，特別是設定在未來的故事。反烏托邦出現在許多虛構作品的亞流派中，常被用於提醒人們注意現實世界中的有關環境、政治、經濟、宗教、心理學、道德倫理、科學技術方面的問題，這些問題如果被人們忽略，有可能導致出現反烏托邦的狀况。
+反乌托邦是烏托邦（utopia）的反義語，希臘語字面意思是「不好的地方」（not-good place），
+它是一種不得人心、令人恐懼的假想社群或社會，是与理想社会相反的，一种极端恶劣的社会最终形态。
+反烏托邦常常表徵爲反人类、極權政府、生態災難或其他社會性的灾難性衰敗。這種社會出現在許多藝術作品中，
+特別是設定在未來的故事。反烏托邦出現在許多虛構作品的亞流派中，常被用於提醒人們注意現實世界中的有關
+環境、政治、經濟、宗教、心理學、道德倫理、科學技術方面的問題，這些問題如果被人們忽略，
+有可能導致出現反烏托邦的狀况。
 
-cyberpunk
+.. figure:: images/Tokyo_Shibuya_Night.jpg
 
-赛博朋克（英语：cyberpunk，是cybernetics与punk的结合词），又称数位庞克、赛博庞克、电脑叛客、网路叛客、电驭叛客，是科幻小说的一个分支，以计算机或信息技术为主题，小说中通常有社会秩序高度控管下存在弱点受破坏的情节。现在赛博朋克的情节通常围绕骇客、人工智能及大型企业之间的矛盾而展开，背景设在不远的将来的一个反乌托邦地球，而不像早期科幻（如太空歌剧）时空背景多在遥远未来的外太空殖民地。它的出现是对科幻小说一贯忽略信息技术高速发展的一种自我修正。
+   Cyberpunk [赛博朋克]
 
-.. image:: images/Tokyo_Shibuya_Night.jpg
+   Cyberpunk，是cybernetics与punk的结合词，又称数位庞克、赛博庞克、电脑叛客、网路叛客、电驭叛客，
+   是科幻小说的一个分支，以计算机或信息技术为主题，小说中通常有社会秩序高度控管下存在弱点受破坏的情节。
+   现在赛博朋克的情节通常围绕骇客、人工智能及大型企业之间的矛盾而展开，背景设在不远的将来的一个反乌托邦地球，
+   而不像早期科幻（如太空歌剧）时空背景多在遥远未来的外太空殖民地。
+   它的出现是对科幻小说一贯忽略信息技术高速发展的一种自我修正。
 
-Tudor
 
-Relating to the English royal dynasty which held the throne from 
-the accession of Henry VII in 1485 until the death of Elizabeth I in 1603.
-
-The cannonballs crack and corrode when exposed to air.
-
-chlorine - Cl - the chemical element of atomic number 17.
-
+| chlorine - Cl - the chemical element of atomic number 17. [氯]
 | 
 | corrode
 | corrosion
@@ -497,11 +511,6 @@ chlorine - Cl - the chemical element of atomic number 17.
 | annexation
 | Definition: If a country annexes another country or an area of land, it seizes it and take control of it.
 | Usage: Indonesia's annexation of East Timor has never won the acceptance of the UN.
-|
-
-Chinese President Xi Jinping has told the :abbr:`NPC (National People's Congress)` that China must
-not become complacent about its development.
-
 | 
 | complacent
 | complacency
@@ -529,14 +538,6 @@ not become complacent about its development.
 | Definition: excessive or prejudiced loyalty or support for one's own cause, group, or gender. [左翼?]
 | Usage: a bastion of male chauvinism.
 | 
-| bastion [掩体，堡垒，碉堡]
-| Definition: a projecting part of a fortification built at an angle to the line of a wall, so as to allow defensive fire in several directions.
-| Definition: an institution, place, or person strongly defending or upholding particular principles, attitudes, or activities.
-| Usage: the last bastion of male privilege.
-
-.. image:: images/bastion_1.jpg
-.. image:: images/bastion_2.jpg
-
 | annihilate
 | annihilator
 | annihilative
@@ -574,11 +575,19 @@ not become complacent about its development.
 | Definition: an adviser, especially to a crime boss.
 | Plural: consiglieri
 |
+| regiment [团]
+| Definition: a permanent unit of an army typically commanded by a colonel 
+| and divided into several companies, squadrons, or batteries 
+| and often into two battalions
+| Usage: two or three miles inland a highly experienced artillery regiment had established a defensive position.
+|
 | Decision-making 决策
 | signor 先生 [意大利语]
 | monsieur 先生 [法语]
 | sergent 中士
 | lieutenant 中尉
+| colonel 上校
+| sentinel 哨兵
 
 .. figure:: images/artillery.jpg
 
@@ -601,6 +610,17 @@ not become complacent about its development.
 
    nonviolence: the use of peaceful means, not force, to bring about political or social change.
 
+.. figure:: images/dugout.jpg
+
+   Dugout 战壕
+   
+.. image:: images/bastion_1.jpg
+.. figure:: images/bastion_2.jpg
+
+   Bastion [掩体，堡垒，碉堡]
+
+   An institution, place, or person strongly defending 
+   or upholding particular principles, attitudes, or activities.
 
 Dead Reckoning
 

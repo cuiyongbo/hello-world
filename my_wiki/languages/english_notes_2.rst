@@ -39,6 +39,11 @@ English Notes 2
 | imposter
 | Definition: a person who pretends to be someone else so as to deceive others, especially for fraudulent gain.
 | 
+| feign
+| Definition: pretend to be affected by (a feeling, state, or injury). [假装，佯装]
+| Usage: He survived the massacre by feigning death. [装死]
+| Usage: 'Who cares?' said Alex, feigning indifference. 
+| 
 | margin
 | marginal
 | Definition: relating to or suited at the edge or margin of something.
@@ -69,6 +74,11 @@ English Notes 2
 | Definition: (computing) switch from one effect, feature, or state to another by using a toggle. [切换，开关]
 | Usage: the play/pause button toggles between those functions.
 | Usage: there are a number of attributes which can be toggled on or off.
+| 
+| attire
+| Definition: clothes, especially fine or formal ones.
+| Usage: holiday attire.
+| Usage: Donna was attired in an elaborate evening gown.
 
 .. image:: images/toggle.jpg
 .. image:: images/clothe_toggle.jpg

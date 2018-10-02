@@ -87,6 +87,12 @@ English Note 6
 | Synonyms: brothel. [妓院]
 | Definition: a house where men can visit prostitutes. [妓女]
 | 
+| prostitute
+| Definition: a person who has sex for money, especially a woman. [卖淫]
+| Synonyms: whore.
+| Definition: a person who misuses their talents or who sacrifices their self-respect for the sake of personal or financial gain.
+| Usage: Many felt he was prostituting himself by writing Hollywood scripts. [糟蹋自己，浪费才华]
+| 
 | latrine [(营地等的)厕所；(尤指)茅坑,便坑]
 | Definition: a toilet in a camp, etc., especially one made by digging a hole in the ground. 
 | 
