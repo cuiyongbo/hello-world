@@ -39,21 +39,21 @@ Input format conversion
    The ``scanf()`` function reads input from ``stdin``, ``fscanf()`` reads input from the stream
    pointer *stream*, and ``sscanf()`` reads its input from the character string pointed to by *str*.
 
-   The ``vfscanf()`` function is analogous to :manpage:`vfprintf(3)` and reads input from the stream
+   The ``vfscanf()`` function is analogous to **vfprintf(3)** and reads input from the stream
    pointer *stream*  using a variable argument list of pointers (see stdarg(3)). The ``vscanf()``
    function scans a variable argument list from ``stdin`` and the ``vsscanf()`` function scans
-   it from a string; these are analogous to the :manpage:`vprintf(3)` and :manpage:`vsprintf(3)`
+   it from a string; these are analogous to the **vprintf(3)** and **vsprintf(3).**
    functions respectively.
 
    The *format* string consists of a sequence of directives which describe how to process the
    sequence of input characters. If processing of a directive fails, no further input is
-   read, and ``scanf()`` returns. A "failure" can be either of the  following: input failure,
+   read, and ``scanf()`` returns. A "failure" can be either of the following: input failure,
    meaning that input characters were unavailable, or matching failure, meaning that the
-   input was inappropriate (see below).
+   input was inappropriate.
 
    A directive is one of the following:
 
-      * A sequence of white-space characters (space, tab, newline, etc.; see :manpage:`isspace(3)`).
+      * A sequence of white-space characters (space, tab, newline, etc.).
         This directive matches any amount of white space, including none, in the input.
 
       * An ordinary character (i.e., one other than white space or '%').
@@ -66,27 +66,26 @@ Input format conversion
         matching failure.
 
    Each conversion specification in format begins with either the character ``%`` or the 
-   character sequence ``%n$`` (see below for the distinction) followed by:
+   character sequence ``%n$`` followed by:
 
-      * An optional ``'*'`` assignment-suppression character: ``scanf()`` reads input as
+      * An optional ``*`` assignment-suppression character: ``scanf()`` reads input as
         directed by the conversion specification, but discards the input. No corresponding 
         pointer argument is required, and this specification is not included in the count
         of successful assignments returned by ``scanf()``.
 
-      * An optional ``'m'`` character.  This is used with string conversions (``%s, %c, %[``),
+      * An optional ``m`` character.  This is used with string conversions (``%s, %c, %[``),
         and relieves the caller of the need to allocate a corresponding buffer to hold the 
         input: instead, ``scanf()`` allocates a buffer of sufficient size, and assigns the 
         address of this buffer to the corresponding pointer argument, which should be a 
         pointer to a ``char*`` variable (this variable does not need to be initialized before
-        the call). The caller should subsequently free(3) this buffer when it is no longer required.
+        the call). **The caller should subsequently free(3) this buffer when it is no longer required.**
 
-      * An optional decimal integer which specifies the maximum field width. Reading of 
+      * An optional decimal integer which specifies the maximum **field width**. Reading of 
         characters stops either when this maximum is reached or when a nonmatching character
-        is found, whichever happens first.  Most conversions discard initial whitespace
-        characters (the exceptions are noted below), and these discarded characters
-        don't count toward the maximum field width.  String input conversions store a
-        terminating null byte ('\0') to mark the end of the input; the maximum field width
-        does not include this terminator.
+        is found, whichever happens first. Most conversions discard initial whitespace
+        characters, and these discarded characters don't count toward the maximum field width.  
+        String input conversions store a terminating null byte ('\0') to mark the end of the 
+        input; the maximum field width does not include this terminator.
 
       * An optional type modifier character. For example, the ``l`` type modifier is used
         with integer conversions  such as ``%ld`` to specify that the corresponding pointer
@@ -157,7 +156,6 @@ Input format conversion
 
       E     Equivalent to f.
 
-
       s     Matches a sequence of non-white-space characters; the next pointer must be a
             pointer to the initial element of a character array that is long enough to hold the
             input sequence and the terminating null byte ('\0'), which is added automatically.
@@ -207,44 +205,6 @@ Input format conversion
    conversion or a matching failure occurs. ``EOF`` is also returned if a read error occurs,
    in which case the error indicator for the stream (see :manpage:`ferror(3)`) is set,
    and *errno* is set to indicate the error.
-
-
-**ERRORS**
-
-   EAGAIN
-      The file descriptor underlying stream is marked nonblocking,
-      and the read operation would block.
-
-   EBADF
-      The file descriptor underlying stream is invalid,
-      or not open for reading.
-
-   EILSEQ 
-      Input byte sequence does not form a valid character.
-
-   EINTR
-      The read operation was interrupted by a signal;
-      see :manpage:`signal(7)`.
-
-   EINVAL
-      Not enough arguments; or format is ``NULL``.
-
-   ENOMEM
-      Out of memory.
-
-   ERANGE 
-      The result of an integer conversion would exceed the size
-      that can be stored in the corresponding integer type.
-
-
-**ATTRIBUTES**
-
-   +---------------+---------+
-   | Atrribute     | Value   |
-   +===============+=========+
-   | Thread safety | MT-Safe |
-   |               |         |
-   +---------------+---------+
 
 
 **EXAMPLE**

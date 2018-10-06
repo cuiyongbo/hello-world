@@ -296,14 +296,10 @@ Military Terms
 | Usage: The councilor who sued two national newspaper for libel.
 | 
 | precinct
-| Definition: a commercial area in a town  where cars cannot go. [步行街]
 | Definition: one of the parts into which a town or city is divided in order to organize elections. [选区]
 | Definition: a part of a city that has its own police station. [派出所]
 | Usage: The murder occurred just a block from the precinct.
 | Usage: With 35% of the precincts declaring, he had 51% of the vote.
-| 
-| cadet [军官候补生]
-| Definition: a young person who is training to become an officer in the police or armed force. 
 | 
 | arbiter 仲裁
 | Definition: a person who settles a dispute or has ultimate authority in a matter.
@@ -588,6 +584,7 @@ Dystopia
 | lieutenant 中尉
 | colonel 上校
 | sentinel 哨兵
+| cadet [军官候补生]
 
 .. figure:: images/artillery.jpg
 

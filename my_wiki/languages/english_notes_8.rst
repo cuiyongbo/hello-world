@@ -233,10 +233,7 @@ what is called a reason for living also the excellent one for dying.
 | Definition: show complete contempt for. 
 | 
 | proprietress [老板娘]
-| zodiac [星座]
-| aries [白羊座]
 | dunno = (I) do not know
-| moron: a stupid person
 | 
 | gargle
 | Definition: wash one's mouth and throat with a liquid kept in motion by exhaling through it.
@@ -256,6 +253,7 @@ what is called a reason for living also the excellent one for dying.
 | 
 | jackass
 | Definition: a stupid person.
+| Synonyms: moron.
 | Definition: a male ass or donkey.
 | 
 | nonchalant
@@ -295,6 +293,51 @@ what is called a reason for living also the excellent one for dying.
 | Definition: behave or cause to behave in a wild and irrational way, typically because of the effects of extreme emotion, mental illness, or drugs.
 | Definition: My parents really freaked when they saw my hair. 
 | Usage: Snakes really freak me out. 
+| 
+| armageddon
+| Definition: (in the New Testament) the last battle between good and evil before the Day of Judgment.
+| Definition: a dramatic and catastrophic conflict, typically seen as likely to destroy the world or the human race.
+| Usage: nuclear Armageddon.
+| 
+| Jerusalem 耶路撒冷
+| 
+| monkey
+| Definition: behave in a silly or playful way.
+| Phrase: make a monkey of (or out of) someone [捉弄]
+| Definition: humiliate someone by making them appear ridiculous.
+| Phrase: a monkey on one's back
+| Definition: a burdensome problem.
+| Definition: a dependence on drugs.
+| 
+| parody 
+| Definition: an imitation of the style of a particular writer, artist, or genre with deliberate exaggeration for comic effect.
+| Usage: the movie is a parody of the horror genre. [恶搞]
+| Usage: his specialty was parodying schoolgirl fiction.
+| Definition: an imitation or a version of something that falls far short of the real thing; a travesty.
+| Usage: he seems like a parody of an educated Englishman.
+| 
+| travesty
+| Definition: a false, absurd, or distorted representation of something.
+| Usage: the absurdly lenient sentence is a travesty of justice.
+| Usage: Michael has betrayed the family by travestying them in his plays.
+| 
+| lenity
+| lenient
+| Definition: (of punishment or a person in authority) permissive, merciful, or tolerant.
+| Usage: Judges were far too lenient with petty criminals.
+| 
+| petty
+| Definition: of little importance; trivial.
+| Usage: The petty divisions of party politics.
+| 
+| trivial
+| Definition: If you describe something as trivial, you think that it is unimportant and not serious.
+| Synonyms: insignificant.
+| Usage: I don't like to visit the doctor just for something trivial.
+
+.. figure:: images/zodiac-signs.jpg
+
+   Zodiac [十二星座]
 
 .. figure:: images/candelabrum.jpg
 

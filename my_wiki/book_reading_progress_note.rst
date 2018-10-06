@@ -33,3 +33,9 @@ Advanced Programming in UNIX Environment
       - Ch12 Thread control
 
    - Ch 16 Network IPC: Sockets(2018-09-27 -- )
+ 
+    
+Programming Pearls
+==================
+
+   - Column 15 (2018-10-01 -- 2018-10-06)

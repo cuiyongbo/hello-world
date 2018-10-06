@@ -4,21 +4,9 @@ Binary search
 
 **Algorithm**
 
-Binary search works on **sorted arrays.** Binary search begins by comparing the middle element of the array with the target value. 
-If the target value matches the middle element, its position in the array is returned. If the target value is less than or greater 
-than the middle element, the search continues in the lower or upper half of the array, respectively, eliminating the other half 
-from consideration.
-
 Given an array A of n elements with values or records :math:`A_0, A_1, ..., A_{n−1},` sorted such that 
 :math:`A_0 \le A_1 \le ... \le A_{n−1},` and target value T, the following subroutine uses binary search 
 to find the index of T in A.
-
-   #. Set L to 0 and R to n − 1.
-   #. If L > R, the search terminates as unsuccessful.
-   #. Set m (the position of the middle element) to the ``floor((L + R)/2).``
-   #. If A[m] < T, set L to m + 1 and go to step 2.
-   #. If A[m] > T, set R to m − 1 and go to step 2.
-   #. Now A[m] = T, the search is done; return m.
 
 .. code-block:: none
    :caption: Pseudocode
@@ -49,7 +37,7 @@ To find the leftmost element, the following procedure can be used:
 
    #. Set L to 0 and R to n.
    #. If L >= R, go to step 6.
-   #. Set m (the position of the middle element) to ``floor((L + R)/2).``
+   #. Set m to ``floor((L + R)/2).``
    #. If A[m] < T, set L to m + 1 and go to step 2.
    #. Otherwise, if A[m] >= T, set R to m and go to step 2.
    #. Now L = R, the search is done, return L.
@@ -102,14 +90,14 @@ that are greater than T.
        return L - 1
 
 
-.. sidebar:: Performance Analysis
+**Performance**
 
-   .. image:: images/Binary_search_complexity.svg.png
+.. figure:: images/Binary_search_complexity.svg.png
 
+   Performance Analysis
+      
    The worst case is reached when the search reaches the deepest level of the tree, 
    while the best case is reached when the target value is the middle element.
-
-**Performance**
 
 The performance of binary search can be analyzed by reducing the procedure to 
 a binary comparison tree, where the root node is the middle element of the array. 
@@ -119,16 +107,24 @@ built in a similar fashion. This model represents binary search; starting from t
 node, the left or right subtrees are traversed depending on whether the target value is less 
 or more than the node under consideration, representing the successive elimination of elements.
 
-The worst case is :math:`{ \lfloor \log _{2}(n)+1\rfloor }` iterations of the comparison loop, 
+The worst case is :math:`{ \lfloor \log _{2}(n)+1 \rfloor }` iterations of the comparison loop, 
 The worst case is reached when the search reaches the deepest level of the tree, equivalent to 
 a binary search that has reduced to one element and, in each iteration, always eliminates the 
 smaller subarray out of the two if they are not of equal size.
+
+**Linear search**
+
+Linear search is a simple search algorithm that checks every record until it finds the target value. 
+Linear search can be done on a linked list, which allows for faster insertion and deletion than an array. 
+Binary search is faster than linear search for sorted arrays except if the array is short, 
+although the array needs to be sorted beforehand. Comparison sorting algorithms, such as quicksort 
+and merge sort, require at least :math:`O(n\log n)` comparisons in the worst case. 
 
 **Hashing**
 
 For implementing associative arrays, **hash tables,** a data structure that maps keys to records using a hash function, 
 are generally faster than binary search on a sorted array of records; most implementations require only amortized constant 
-time on average. However, hashing is not useful for approximate matches, such as computing the next-smallest, next-largest, 
+time on average. **However, hashing is not useful for approximate matches,** such as computing the next-smallest, next-largest, 
 and nearest key, as the only information given on a failed search is that the target is not present in any record. Binary 
 search is ideal for such matches, performing them in logarithmic time. Binary search also supports approximate matches. 
 Some operations, like finding the smallest and largest element, can be done efficiently on sorted arrays but not on hash tables.
@@ -145,22 +141,9 @@ possible on a sorted array, including range and approximate queries.
 
 However, binary search is usually more efficient for searching as binary search trees will most likely be 
 imperfectly balanced, resulting in slightly worse performance than binary search. This even applies to balanced 
-binary search trees, binary search trees that balance their own nodes, because they rarely produce optimally-balanced 
-trees. Although unlikely, the tree may be severely imbalanced with few internal nodes with two children, resulting in 
-the average and worst-case search time approaching n comparisons. Binary search trees take more space than sorted arrays.
-
-Binary search trees lend themselves to fast searching in external memory stored in hard disks, as binary search trees 
-can efficiently be structured in filesystems. The B-tree generalizes this method of tree organization; B-trees are frequently 
-used to organize long-term storage such as databases and filesystems.
-
-**Linear search**
-
-Linear search is a simple search algorithm that checks every record until it finds the target value. Linear search can be done on 
-a linked list, which allows for faster insertion and deletion than an array. Binary search is faster than linear search for sorted 
-arrays except if the array is short, although the array needs to be sorted beforehand. All sorting algorithms based on comparing elements, 
-such as quicksort and merge sort, require at least :math:`O(n\log n)` comparisons in the worst case. Unlike linear search, binary search can 
-be used for efficient approximate matching. There are operations such as finding the smallest and largest element that can be done efficiently 
-on a sorted array but not on an unsorted array.
+binary search trees, because they rarely produce optimally-balanced trees. Although unlikely, the tree may be 
+severely imbalanced with few internal nodes with two children, resulting in the average and worst-case search 
+time approaching n comparisons. Besides, Binary search trees take more space than sorted arrays.
 
 **Set membership algorithms**
 

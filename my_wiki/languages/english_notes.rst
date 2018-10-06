@@ -3088,20 +3088,6 @@ his is able to return to duty. [缝了九针]
 | Definition: (of a tumor) tending to invade normal tissue or recur after removal; cancerous.
 | Antonyms: benign.
 | Usage: A malignant tumor.
-| 
-| lenity
-| lenient
-| Definition: (of punishment or a person in authority) permissive, merciful, or tolerant.
-| Usage: Judges were far too lenient with petty criminals.
-| 
-| petty
-| Definition: of little importance; trivial.
-| Usage: The petty divisions of party politics.
-| 
-| trivial
-| Definition: If you describe something as trivial, you think that it is unimportant and not serious.
-| Synonyms: insignificant.
-| Usage: I don't like to visit the doctor just for something trivial.
 |
 | stoicism
 | Definition: An indifference to pleasure or pain.

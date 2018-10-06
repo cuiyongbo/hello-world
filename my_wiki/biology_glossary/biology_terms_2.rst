@@ -184,3 +184,11 @@ Nature Lifes
 .. figure:: images/penguin_regurgitation.jpg
 
    Penguin regurgitation [反刍喂食]
+
+.. figure:: images/skunk.jpg
+
+   Skunk [美洲臭鼬]
+
+.. figure:: images/wolverine-walking.jpg
+
+   Wolverine [狼獾，金刚狼]
