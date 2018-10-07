@@ -203,7 +203,7 @@ It is the most popular tea in Japan.
 | Usage: the events remain etched in the minds of all who witnessed them.
 
 +-----------------------------------------+-----------------------------------------+
-| .. image:: images/etched_utensils_1.jpg | .. image:: images/etched_utensils_1.jpg |
+| .. image:: images/etched_utensils_1.jpg | .. image:: images/etched_utensils_2.jpg |
 +-----------------------------------------+-----------------------------------------+
 
 | cumulous

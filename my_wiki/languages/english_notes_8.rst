@@ -334,6 +334,32 @@ what is called a reason for living also the excellent one for dying.
 | Definition: If you describe something as trivial, you think that it is unimportant and not serious.
 | Synonyms: insignificant.
 | Usage: I don't like to visit the doctor just for something trivial.
+| 
+| fall in / into line
+| Definition: conform with others or with accepted behavior.
+| 
+| exploit
+| exploitation
+| Definition: to treat a person or situation as an opportunity to gain an advantage for yourself.
+| Usage: She realized that her youth and inexperience were being exploited.
+| Usage: What is being done to stop employers from exploiting young people?
+| Usage: She fully exploits the humor of her role in the play.
+| Usgae: No minerals have yet been exploited in Antarctia.
+| 
+| enunciate
+| enunciative
+| enunciation
+| Definition: say or pronounce clearly.
+| Usage: she enunciated each word slowly.
+| Definition: express (a proposition or theory) in clear or definite terms.
+| Usage: a written document enunciating this policy.
+| Usage: He enunciated his vision of the future. 
+| 
+| hunker
+| Definition: to sit on your heels with your knees bent up in front of you.
+| Usage: He hunkered down beside her. 
+| Definition: (hunker down) apply oneself seriously to a task.
+| Usage: students hunkered down to prepare for the examinations.
 
 .. figure:: images/zodiac-signs.jpg
 
@@ -371,5 +397,3 @@ what is called a reason for living also the excellent one for dying.
 
    E-hailing is a process of ordering a car, taxi, limousine [豪华轿车], 
    or any other form of transportation pick up via a computer or mobile device.
-
-

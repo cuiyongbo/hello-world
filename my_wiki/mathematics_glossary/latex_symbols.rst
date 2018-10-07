@@ -2,6 +2,12 @@
 Latex Symbols
 *************
 
+Refer to `Mathjax Basic <https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference>`_
+for further information.
+
+.. contents::
+   :local:
+
 Greek Letters
 =============
 
@@ -65,29 +71,31 @@ Binary Operation/Relation Symbols
 Arrows
 ======
 
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\leftarrow`       | \leftarrow       | :math:`\Leftarrow`         | \Leftarrow         |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\rightarrow`      | \rightarrow      | :math:`\Rightarrow`        | \Rightarrow        |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\leftrightarrow`  | \leftrightarrow  | :math:`\rightleftharpoons` | \rightleftharpoons |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\uparrow`         | \uparrow         | :math:`\downarrow`         | \downarrow         |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\Uparrow`         | \Uparrow         | :math:`\Downarrow`         | \Downarrow         |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\Leftrightarrow`  | \Leftrightarrow  | :math:`\Updownarrow`       | \Updownarrow       |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\mapsto`          | \mapsto          | :math:`\longmapsto`        | \longmapsto        |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\nearrow`         | \nearrow         | :math:`\searrow`           | \searrow           |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\swarrow`         | \swarrow         | :math:`\nwarrow`           | \nwarrow           |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\leftharpoonup`   | \leftharpoonup   | :math:`\rightharpoonup`    | \rightharpoonup    |
-+--------------------------+------------------+----------------------------+--------------------+
-| :math:`\leftharpoondown` | \leftharpoondown | :math:`\rightharpoondown`  | \rightharpoondown  |
-+--------------------------+------------------+----------------------------+--------------------+
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\leftarrow`        | \leftarrow       | :math:`\Leftarrow`         | \Leftarrow         |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\rightarrow`       | \rightarrow      | :math:`\Rightarrow`        | \Rightarrow        |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\leftrightarrow`   | \leftrightarrow  | :math:`\rightleftharpoons` | \rightleftharpoons |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\uparrow`          | \uparrow         | :math:`\downarrow`         | \downarrow         |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\Uparrow`          | \Uparrow         | :math:`\Downarrow`         | \Downarrow         |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\Leftrightarrow`   | \Leftrightarrow  | :math:`\Updownarrow`       | \Updownarrow       |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\mapsto`           | \mapsto          | :math:`\longmapsto`        | \longmapsto        |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\nearrow`          | \nearrow         | :math:`\searrow`           | \searrow           |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\swarrow`          | \swarrow         | :math:`\nwarrow`           | \nwarrow           |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\leftharpoonup`    | \leftharpoonup   | :math:`\rightharpoonup`    | \rightharpoonup    |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\leftharpoondown`  | \leftharpoondown | :math:`\rightharpoondown`  | \rightharpoondown  |
++---------------------------+------------------+----------------------------+--------------------+
+| :math:`\lfloor x \rfloor` |                  | :math:`\lceil x \rceil`    |                    |
++---------------------------+------------------+----------------------------+--------------------+
 
 
 Miscellaneous symbols

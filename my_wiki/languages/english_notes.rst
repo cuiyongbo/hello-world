@@ -1561,18 +1561,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: There’s little to go on, we can only surmise what happened.
 | Usage: His surmise proved correct.
 | 
-| exploit
-| Definition: to treat a person or situation as an opportunity to gain an advantage for yourself
-| Usage: She realized that her youth and inexperience were being exploited.
-| Definition: to treat somebody unfaily by making them work and not giving them much in return
-| Usage: What is being done to stop employers from exploiting young people?
-| Definition: to use something or somebody well  to gain as much from it as possible
-| Usage: She fully exploits the humor of her role in the play.
-| Usgae: No minerals have yet been exploited in Antarctia.
-| 
-| fall in / into line
-| Definition: conform with others or with accepted behavior.
-| 
 | circumvent [绕行]
 | Definition: find a way around (an obstacle).
 | Usage: They found a way of circumventing the law. [钻空子]

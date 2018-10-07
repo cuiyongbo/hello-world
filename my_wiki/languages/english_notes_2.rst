@@ -57,6 +57,9 @@ English Notes 2
 | Definition: a sudden arrival or occurrence of something in overwhelming quantities.
 | Usage: We received an avalanche of letters to replay our advertisement.
 | 
+| svelte
+| Definition: (of a person) slender and elegant.
+| 
 | jersey [ジャージー服] [运动服]
 | Definition: a knitted garment with long sleeves worn over the upper body.
 | camisole [キャミソール] [(背心式)女内衣]

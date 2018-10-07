@@ -38,4 +38,6 @@ Advanced Programming in UNIX Environment
 Programming Pearls
 ==================
 
+   - Column 04 (reviewed, 2018-10-07)
+   - Column 09 (reviewed, 2018-10-06 - 10-07)
    - Column 15 (2018-10-01 -- 2018-10-06)
