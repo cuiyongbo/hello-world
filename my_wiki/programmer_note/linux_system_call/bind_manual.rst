@@ -1,20 +1,15 @@
-***********
-bind Manual
-***********
-
-**NAME**
-    
-   bind - bind a name to a socket
-
-**SYNOPSIS**
-
-   .. code-block:: c
-
-      #include <sys/types.h>          /* See NOTES */
-      #include <sys/socket.h>
-      int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
+******************************
+bind - bind a name to a socket
+******************************
 
 **DESCRIPTION**
+
+   .. code-block:: c
+      :caption: SYNOPSIS
+
+      #include <sys/types.h>
+      #include <sys/socket.h>
+      int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
 
    When a socket is created with *socket(2)*, it exists in a name space (address family) but has no address 
    assigned to it. *bind()* assigns the address specified by *addr* to the socket referred to by the file 
@@ -25,8 +20,7 @@ bind Manual
    receive connections (see accept(2)).
 
    The rules used in name binding vary between address families. Consult the manual entries in Section 7 
-   for detailed information. For *AF_INET* see *ip(7)*, for AF_INET6 see ipv6(7), for AF_UNIX see unix(7), 
-   for AF_APPLETALK see ddp(7), for AF_PACKET see packet(7), for AF_X25 see x25(7) and for AF_NETLINK see netlink(7).
+   for detailed information. For *AF_INET* see *ip(7)*, for AF_INET6 see ipv6(7), for AF_UNIX see unix(7).
 
    The actual structure passed for the *addr* argument will depend on the address family.  
    The *sockaddr* structure is defined as something like::
@@ -44,30 +38,6 @@ bind Manual
    
    On success, zero is returned.  On error, -1 is returned, 
    and *errno* is set appropriately.
-
-**ERRORS**
-
-    *bind()* will fail if::
-
-      EACCES The address is protected, and the user is not the superuser.
-      EADDRINUSE The given address is already in use.
-      EBADF  sockfd is not a valid descriptor.
-      EINVAL The socket is already bound to an address.
-      ENOTSOCK sockfd is a descriptor for a file, not a socket.
-
-   The following errors are specific to UNIX domain (AF_UNIX) sockets::
-
-      EACCES         Search permission is denied on a component of the path prefix.  (See also path_resolution(7).)
-      EADDRNOTAVAIL  A nonexistent interface was requested or the requested address was not local.
-      EFAULT         addr points outside the user's accessible address space.
-      EINVAL         The addrlen is wrong, or the socket was not in the AF_UNIX family.
-      ELOOP          Too many symbolic links were encountered in resolving addr.
-      ENAMETOOLONG   addr is too long.
-      ENOENT         The file does not exist.
-      ENOMEM         Insufficient kernel memory was available.
-      ENOTDIR        A component of the path prefix is not a directory.
-      EROFS          The socket inode would reside on a read-only filesystem.
-
 
 **EXAMPLE**
 

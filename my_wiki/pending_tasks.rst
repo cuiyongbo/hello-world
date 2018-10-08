@@ -38,3 +38,9 @@ Pending tasks
 #. getrlimit, setlimit
 
 #. `suffix sorting <https://sites.google.com/site/yuta256/sais>`_
+
+#. traffic data updater add historical eta
+   
+   - save ti-time.dat to disk and load to shared memory every half hour
+   - add filter to ti-time.dat    
+   

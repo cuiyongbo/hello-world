@@ -28,6 +28,7 @@ Computer Terminology
 | ALU = Arithmetic Logic Unit
 | XML = Extensive Markup Language
 | POSIX = Portable Operating System Interface
+| XSI = X/Open System Interface
 | BSD = Berkeley Software Distribution
 | UTC = Coordinated Universal Time
 | HDR = high dynamic range
