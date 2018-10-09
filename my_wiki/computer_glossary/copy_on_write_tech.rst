@@ -59,13 +59,15 @@ Some Live CDs (and Live USBs) use copy-on-write techniques to give the impressio
 of being able to add and delete files in any directory, without actually making 
 any changes to the CD (or USB flash drive).
 
-Phantom OS uses CoW at all levels, not just a database or file system. At any time, 
-a computer running this system can fail, and then, when it starts again, the software 
-and OS resume operation. Only small amounts of work can be lost.
-
 The basic approach is that all program data are kept in virtual memory. On some schedule, 
 a summary of all software data are written to disk storage, forming a log that tracks 
 the current value and location of each value.
 
 When the computer fails, a recent copy of the log and other data remain safe on disk. When 
 operation resumes, OS software reads the log to restore consistent copies of all the programs and data.
+
+
+#. Example of COW
+
+   - fork
+   - mmap(MAP_PRIVATE)

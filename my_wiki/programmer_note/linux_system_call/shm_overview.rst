@@ -2,10 +2,6 @@
 POSIX shared memory overview
 ****************************
 
-**NAME**
-
-   shm_overview - overview of POSIX shared memory
-
 **DESCRIPTION**
 
    The POSIX shared memory API allows processes to communicate information
@@ -72,5 +68,5 @@ POSIX shared memory overview
    
    shm_open
    ftruncate_info
-   mmap_info
+   memory_mapped_io_note
    fstat_info

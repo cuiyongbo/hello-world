@@ -3,6 +3,14 @@ Advanced Programming in UNIX Programming
 ****************************************
 
 .. image:: images/program_memory_arrangement.png
+.. figure:: images/fig_14_26.png
+
+   Memory-mapped file example
+
+   .. code-block::c
+
+      void *mmap(void *addr, size_t len, int prot, int flag, int fd, off_t off );
+      // start addr is the return value of mmap
 
 .. image:: images/c_program_execution.png
 

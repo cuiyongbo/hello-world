@@ -1,23 +1,25 @@
-*************
-mmap & munmap
-*************
+**********************
+Memory-Mapped I/O APIs
+**********************
 
-**NAME**
+.. contents::
+   :local:
 
-   mmap, munmap - map or unmap files or devices into memory
+map or unmap files or devices into memory
+=========================================
 
-**SYNOPSIS**
+.. image:: ../images/fig_14_26.png
+
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <sys/mman.h>
-      int munmap(void *addr, size_t length);
-      void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset);
-
-**DESCRIPTION**
+      int munmap(void *addr, size_t len);
+      void *mmap(void *addr, size_t len, int prot, int flags, int fd, off_t offset);
 
    ``mmap()`` creates a new mapping in the virtual address space of the calling process.
-   The starting address for the new mapping is specified in *addr*. The *length* argument
+   The starting address for the new mapping is specified in *addr*. The *len* argument
    specifies the length of the mapping.
 
    If *addr* is NULL, then the kernel chooses the address at which to create the mapping;
@@ -27,7 +29,7 @@ mmap & munmap
    as the result of the call.
 
    The contents of a file mapping (as opposed to an anonymous mapping; see ``MAP_ANONYMOUS`` below),
-   are initialized using *length* bytes starting at offset *offset* in the file (or other object)
+   are initialized using *len* bytes starting at offset *offset* in the file (or other object)
    referred to by the file descriptor ``fd``. *offset* must be a multiple of the page size as
    returned by ``sysconf(_SC_PAGE_SIZE)``.
 
@@ -144,61 +146,6 @@ mmap & munmap
    is returned, and *errno* is set appropriately. On success, ``munmap()`` returns ``0``, on  failure  ``-1``, and errno is set
    (probably to ``EINVAL``).
 
-
-**ERRORS**
-
-   EACCES
-      A file descriptor refers to a non-regular file. Or ``MAP_PRIVATE`` was requested, but *fd* is not open for reading.
-      Or ``MAP_SHARED`` was requested and ``PROT_WRITE`` is set, but *fd* is not open in read/write (``O_RDWR``) mode. Or
-      ``PROT_WRITE`` is set, but the file is append-only.
-
-   EAGAIN
-      The file has been locked, or too much memory has been locked (see :manpage:`setrlimit(2)`).
-
-   EBADF  
-      *fd* is not a valid file descriptor (and ``MAP_ANONYMOUS`` was not set).
-
-   EINVAL
-      We don't like *addr*, *length*, or *offset* (e.g., they are too large, or not aligned on a page boundary).
-
-   EINVAL (since Linux 2.6.12) 
-      *length* was 0.
-
-   EINVAL
-      flags contained neither ``MAP_PRIVATE`` or ``MAP_SHARED``, or contained both of these values.
-
-   ENFILE
-      The system limit on the total number of open files has been reached.
-
-   ENODEV
-      The underlying filesystem of the specified file does not support memory mapping.
-
-   ENOMEM
-      No memory is available, or the process's maximum number of mappings would have been exceeded.
-
-   EPERM 
-      The *prot* argument asks for ``PROT_EXEC`` but the mapped area belongs to a file on a filesystem
-      that was mounted no-exec.
-
-   ETXTBSY
-      ``MAP_DENYWRITE`` was set but the object specified by *fd* is open for writing.
-
-   EOVERFLOW
-      On 32-bit architecture together with the large file extension (i.e., using 64-bit off_t): 
-      the number of pages used for *length* plus number of pages used for ``offset`` would
-      overflow unsigned long (32 bits).
-
-   Use of a mapped region can result in these signals:
-
-      SIGSEGV
-         Attempted write into a region mapped as read-only.
-
-      SIGBUS
-         Attempted access to a portion of the buffer that doesn‘t
-         correspond to the file (for example, beyond the end of the file,
-         including the case where another process has truncated the file).
-
-
 **NOTES**
 
    This page describes the interface provided by the glibc ``mmap()`` wrapper function.
@@ -304,11 +251,101 @@ mmap & munmap
       }
 
 
-**SEE ALSO**
+msync - synchronize a file with a memory map
+============================================
 
-   getpagesize(2), mincore(2), mlock(2), mmap2(2), mprotect(2), mremap(2),
-   msync(2), remap_file_pages(2), setrlimit(2), shmat(2), shm_open(3), shm_overview(7)
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <sys/mman.h>
+      int msync(void *addr, size_t length, int flags);
+
+   msync() flushes changes made to the in-core copy of a file 
+   that was mapped into memory using mmap(2) back to the filesystem.  
+   Without use of this call, there is no guarantee that changes are 
+   written back before munmap(2) is called. To be more precise, 
+   the part of the file that corresponds to the memory area starting 
+   at *addr* and having length *length* is updated.
+
+   The flags argument should specify exactly one of **MS_ASYNC** and **MS_SYNC,**
+   and may additionally include the MS_INVALIDATE bit. 
+   These bits have the following meanings::
+
+      MS_ASYNC
+      Specifies that an update be scheduled, but the call returns immediately.
+
+      MS_SYNC
+      Requests an update and waits for it to complete.
+
+      MS_INVALIDATE
+      Asks to invalidate other mappings of the same file 
+      (so that they can be updated with the fresh values just written).
+
+**RETURN VALUE**
+
+   On success, zero is returned.  On error, -1 is returned, and errno is set appropriately.
+
+
+mprotect - set protection on a region of memory
+===============================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <sys/mman.h>
+      int mprotect(void *addr, size_t len, int prot);
+
+   mprotect() changes protection for the calling process's memory page(s) 
+   containing any part of the address range in the interval ``[addr, addr+len-1].``  
+   *addr* must be aligned to a page boundary.
+
+   If the calling process tries to access memory in a manner that violates the protection, 
+   then the kernel generates a **SIGSEGV** signal for the process.
+
+   prot is either PROT_NONE or a bitwise-or of the other values in the following list::
+
+      PROT_NONE  The memory cannot be accessed at all.
+      PROT_READ  The memory can be read.
+      PROT_WRITE The memory can be modified.
+      PROT_EXEC  The memory can be executed.
+
+**RETURN VALUE**
+
+   On success, mprotect() returns zero.  
+   On error, -1 is returned, and errno is set appropriately.
+
+.. code-block:: c
+  
+   #include "apue.h"
+   #include <sys/mman.h>
+   #include <sys/stat.h>
+
+   int main(int argc, char* argv[])
+   {
+      if(argc != 2)
+         err_quit("Usage: %s file", argv[0]);
    
-   The descriptions of the following files in proc(5): /proc/[pid]/maps, /proc/[pid]/map_files,
-   and /proc/[pid]/smaps.
-
+      int fd = open(argv[1], O_RDONLY);
+      if(fd < 0)
+         err_sys("open(%s) error", argv[1]);
+   
+      struct stat sbuf;
+      if(fstat(fd, &sbuf) < 0)
+         err_sys("fstat error");
+   
+      void* addr = mmap(0, sbuf.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
+      if(addr == MAP_FAILED)
+         err_sys("mmap failed");
+      
+      // not work as expected when mmap using MAP_PRIVATE
+      if(mprotect(addr, sbuf.st_size, PROT_READ|PROT_WRITE) < 0) 
+         err_sys("mprotect failed");
+      
+      if(munmap(addr, sbuf.st_size)<0)
+         err_sys("munmap error");
+      
+      return 0;
+   }
+   

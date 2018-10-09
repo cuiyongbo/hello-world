@@ -32,6 +32,10 @@ Advanced Programming in UNIX Environment
       - Ch11 Threads
       - Ch12 Thread control
 
+   - Ch14 Advanced I/O
+     
+     - Memory-mapped I/O (2018-10-09, finished)
+
    - Ch15 Interprocess Communication
      
       - Shared memory (2018-10-08, finished)

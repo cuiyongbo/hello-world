@@ -5,15 +5,10 @@ General Unix API
 .. contents::
    :local:
 
+open and possibly create a file or device
+=========================================
 
-open
-====
-
-**NAME**
-
-   open, creat - open and possibly create a file or device
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: sh
 
@@ -24,20 +19,18 @@ open
       int open(const char *pathname, int flags, mode_t mode);
       int creat(const char *pathname, mode_t mode);
 
-**DESCRIPTION**
-
    Given a pathname for a file, *open()* returns a file descriptor, 
    a small, nonnegative integer for use in subsequent system calls.  
    The file descriptor returned by a successful call will be the 
    lowest-numbered file descriptor not currently open for the process.
 
    By default, the new file descriptor is set to remain open across an execve(2) 
-   (i.e., the FD_CLOEXEC file descriptor flag described in fcntl(2) is initially disabled; 
+   (the FD_CLOEXEC file descriptor flag described in fcntl(2) is initially disabled; 
    the O_CLOEXEC flag can be used to change this default). The file offset is set to the 
-   beginning of the file (see lseek(2)).
+   beginning of the file.
 
    A call to open() creates a new open file description, an entry in the system-wide table of open files.  
-   This entry records the file offset and the file status flags (modifiable via the fcntl(2) F_SETFL operation).  
+   **This entry records the file offset and the file status flags (modifiable via the fcntl(2) F_SETFL operation).**  
    A file descriptor is a reference to one of these entries; this reference is unaffected if *pathname* is 
    subsequently removed or modified to refer to a different file. The new open file description is initially not 
    shared with any other process, but sharing may arise via fork(2).
@@ -46,12 +39,9 @@ open
 
    In addition, zero or more file creation flags and file status flags can be bitwise-or'd in flags. 
    The **file creation flags** are O_CLOEXEC, O_CREAT, O_DIRECTORY, O_EXCL, O_NOCTTY, O_NOFOLLOW, O_TRUNC, 
-   and O_TTY_INIT. The **file status flags** are all of the remaining flags listed below. The distinction 
-   between these two groups of flags is that the file status flags can be retrieved and (in some cases) 
-   modified using *fcntl(2)*. For the full list of file creation flags and file status flags, refer 
-   to *open(2)* man page.
-
-   Some of these optional flags can be altered using *fcntl(2)* after the file has been opened.
+   and O_TTY_INIT. The **file status flags** are all of the remaining flags. 
+   **The distinction between these two groups of flags is that the file status flags can be retrieved and modified using fcntl().** 
+   For the full list of file creation flags and file status flags, refer to *open(2)* man page.
 
    *creat()* is equivalent to *open()* with flags equal to O_CREAT|O_WRONLY|O_TRUNC.
 

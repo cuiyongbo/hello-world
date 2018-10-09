@@ -42,5 +42,5 @@ Pending tasks
 #. traffic data updater add historical eta
    
    - save ti-time.dat to disk and load to shared memory every half hour
-   - add filter to ti-time.dat    
+   - add filter to ti-time.dat (finished)  
    
