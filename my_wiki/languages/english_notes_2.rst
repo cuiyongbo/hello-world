@@ -2,7 +2,9 @@
 English Notes 2
 ***************
 
-**业精于勤，荒于嬉；行成于思，毁于随。**
+业精于勤，荒于嬉；行成于思，毁于随。
+
+--  韩愈
 
 | headroom
 | Definition: the space above a driver's head in a vehicle.

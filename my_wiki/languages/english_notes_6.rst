@@ -2,7 +2,9 @@
 English Note 6
 **************
 
-**同情自己是懦夫的勾当**
+同情自己是懦夫的勾当。
+
+-- 村上春树《挪威的森林》
 
 | butt 
 | Definition: (of a person or animal) hit (someone or something) with the head or horns.

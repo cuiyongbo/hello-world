@@ -163,3 +163,24 @@ for the FHS, and are not considered authoritative for platforms other than Linux
 
    :file:`/var/tmp`
       Temporary files to be preserved between reboots.
+
+#. /dev/null
+   
+   In some operating systems, the null device is a device file that 
+   discards all data written to it but reports that the write operation 
+   succeeded. The null device is typically used for disposing of unwanted 
+   output streams of a process, or as a convenient empty file for input 
+   streams. This is usually done by redirection.
+
+#. /dev/zero
+   
+   /dev/zero is a special file in Unix-like operating systems that provides as 
+   many null characters (ASCII NUL, 0x00) as are read from it. One of the typical 
+   uses is to provide a character stream for initializing data storage.
+
+   Unlike /dev/null, /dev/zero may be used as a source, not only as a sink for data. 
+   All write operations to /dev/zero succeed with no other effects. 
+   However, /dev/null is more commonly used for this purpose.
+
+   When /dev/zero is memory-mapped, e.g., with mmap, to the virtual address space, 
+   it is equivalent to using anonymous memory; i.e. memory not connected to any file.

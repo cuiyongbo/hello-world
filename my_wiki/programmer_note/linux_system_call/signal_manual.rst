@@ -22,8 +22,6 @@ signal -- simplified software signal facilities
       typedef void (*sig_t) (int);
       sig_t signal(int sig, sig_t func);
 
-
-
    This ``signal()`` facility is a simplified interface to the more
    general :manpage:`sigaction(2)` facility.
 
@@ -400,10 +398,11 @@ sigaction - examine and change a signal action
 POSIX signal set operations
 ===========================
 
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
-
+      :caption: SYNOPSIS  
+       
       #include <signal.h>
 
       int sigemptyset(sigset_t *set);
@@ -411,11 +410,6 @@ POSIX signal set operations
       int sigaddset(sigset_t *set, int signum);
       int sigdelset(sigset_t *set, int signum);
       int sigismember(const sigset_t *set, int signum);
-
-
-**DESCRIPTION**
-
-   These functions allow the manipulation of POSIX signal sets.
 
    ``sigemptyset()`` initializes the signal set given by set to empty,
    with all signals excluded from the set.
@@ -467,14 +461,13 @@ POSIX signal set operations
 sigprocmask - examine and change blocked signals
 ================================================
 
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
+      :caption: SYNOPSIS
 
       #include <signal.h>
       int sigprocmask(int how, const sigset_t *set, sigset_t *oldset);
-
-**DESCRIPTION**
 
    *sigprocmask()* is used to fetch and/or change the signal mask of the calling thread.  
    The signal mask is the set of signals whose delivery is currently blocked for the caller.
@@ -521,14 +514,13 @@ sigprocmask - examine and change blocked signals
 sigsuspend -- atomically release blocked signals and wait for interrupt
 =======================================================================
 
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
+      :caption: SYNOPSIS
 
       #include <signal.h>
       int sigsuspend(const sigset_t *sigmask);
-
-**DESCRIPTION**
 
    ``sigsuspend()`` temporarily changes the blocked signal mask to the set to which
    *sigmask* points, and then waits for a signal to arrive; on return the previous set
@@ -549,15 +541,14 @@ sigsuspend -- atomically release blocked signals and wait for interrupt
 strsignal - return string describing signal
 ===========================================
 
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
+      :caption: SYNOPSIS
 
       #include <string.h>
       char *strsignal(int sig);
       extern const char * const sys_siglist[];
-
-**DESCRIPTION**
 
    The *strsignal()* function returns a string describing the signal number passed in the argument *sig*.  
    The string can be used only until the next call to *strsignal().*

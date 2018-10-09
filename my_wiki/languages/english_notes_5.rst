@@ -4,7 +4,6 @@ English Notes 5
 
 **What's important is finding that one thing that will truly put your heart at rest.**
 
-| 
 | diet
 | dietary
 | Definition: relating to diets or dieting.
@@ -51,6 +50,12 @@ English Notes 5
 
    Salt, pepper, and sugar are commonly placed on Western restaurant tables.
 
+.. figure:: images/escargot.jpg
+   
+   Escargot [蜗牛]
+
+   A snail, especially as an item on a menu.
+
 | Profiterole 泡芙
 | Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
 | choux  高麗萊
@@ -60,14 +65,14 @@ English Notes 5
 
 .. image:: images/Pastry_with_Azuki_beans.jpg
 
-Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) which is prepared
-by infusing the processed whole tea leaves in hot water.
-It is the most popular tea in Japan.
-
 .. figure:: images/sencha_green_tea.jpg
 
    Sancha green tea
 
+   Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) 
+   which is prepared by infusing the processed whole tea leaves 
+   in hot water. It is the most popular tea in Japan.
+   
 .. figure:: images/omlet.jpg
 
    Omelette 煎蛋卷,摊鸡蛋(常加入奶酪、肉和蔬菜)

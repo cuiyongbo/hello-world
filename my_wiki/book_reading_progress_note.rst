@@ -32,12 +32,16 @@ Advanced Programming in UNIX Environment
       - Ch11 Threads
       - Ch12 Thread control
 
-   - Ch 16 Network IPC: Sockets (2018-09-27 -- 2018-10-08)
+   - Ch15 Interprocess Communication
+     
+      - Shared memory (2018-10-08, finished)
+
+   - Ch16 Network IPC: Sockets (2018-09-27 -- 2018-10-08)
    
-   - Ch 17 Advanced IPC
+   - Ch17 Advanced IPC
      
 
-   - Ch 18 Terminal I/O
+   - Ch18 Terminal I/O
    
       - Overview (finished)
       - Special Input Characters (finished)
