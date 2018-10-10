@@ -1240,7 +1240,9 @@ Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime b
 | Definition: realize (the present value of an income); convert into capital.
 |
 
-Tottenham appeared to be in control until Gonzalo Higuain turned in Sami Khedira's flick to give Juventus a 64th-minute lifeline - which they capitalised on ruthlessly and Paulo Dybala raced clear for the decisive goal three minutes later.
+Tottenham appeared to be in control until Gonzalo Higuain turned in Sami Khedira's flick to 
+give Juventus a 64th-minute lifeline - which they capitalised on ruthlessly and Paulo Dybala 
+raced clear for the decisive goal three minutes later.
 
 |
 | back-to-back
@@ -1267,6 +1269,7 @@ they were held to a derby [德比] draw by Atletico Madrid.
 | semi-final  半决赛
 | final       决赛
 | defending champion   卫冕冠军
+| grand slam 大满贯
 | 
 
 Italy and  Argentina observed a minute's silence as a mark

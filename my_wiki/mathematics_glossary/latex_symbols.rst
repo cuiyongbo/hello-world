@@ -138,3 +138,9 @@ Special Functions
    set in roman font instead of italic font. Use \lim, \sin, etc. to make these: 
    \sin x  --> :math:`\sin x.` Use subscripts to attach a notation to \lim: 
    \lim_{x \to 0} --> :math:`\lim \limits_{x \to 0}`
+
+#. degree and radian
+   
+   An acute angle is less than :math:`90^\circ`.
+   An right angle is exactly :math:`90^\circ`.
+   An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.

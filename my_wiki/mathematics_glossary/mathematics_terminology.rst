@@ -147,41 +147,6 @@ computed by applying the Pythagorean theorem. [勾股定理]
 
 .. image:: images/asymptotic_example.svg.png
 
-
-**Additive inverse**
- 
-In mathematics, the additive inverse of a number *a* is the number that, 
-when added to *a*, yields zero. This number is also known as the opposite (number), 
-sign change, and negation. For a real number, it reverses its sign: the opposite to 
-a positive number is negative, and the opposite to a negative number is positive.
-
-
-An acute angle is less than :math:`90^\circ`.
-An right angle is exactly :math:`90^\circ`.
-An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.
-
-
-**Homotopy**
-
-A continuous transformation from one function to another. 
-A homotopy between two functions **f** and **g** from a space **X** to a space **Y** 
-is a continuous map **G** from :math:`X \times [0,1]| \mapsto Y` such that **G(x,0)=f(x)** 
-and **G(x,1)=g(x)**, where :math:`\times` denotes set pairing. Another way of saying this 
-is that a homotopy is a path in the mapping space **Map(X,Y)** from the first function to 
-the second.
-
-Two mathematical objects are said to be homotopic if one can be continuously deformed into the other. 
-The concept of homotopy was first formulated by *Poincaré* around 1900.
-
-
-**Lemma**
-
-In mathematics, a "helping theorem" or lemma (plural lemmata or lemmas) 
-from the Ancient Greek λῆμμα (lemma, "anything which is received, such as 
-a gift, profit, or a bribe”) is a proven proposition which is used as a 
-stepping stone to a larger result rather than as a statement of interest 
-by itself.
-
 |
 | Cartesian
 | Cartesianism
@@ -210,3 +175,7 @@ by itself.
 | Usage: “I dare say,” interpolated her employer
 | Definition: (mathematics) insert (an intermediate value or term) into a series 
 | by estimating or calculating it from surrounding known values.
+| 
+| symmetric
+| Definition: made up of exactly similar parts facing each other or around an axis; symmetrical.
+| Usage: The structure is completely sysmetric.

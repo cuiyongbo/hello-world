@@ -77,15 +77,42 @@ Mathematics Notes 1
 
 #. multiplicative inverse [倒数]
 
-In mathematics, a **multiplicative inverse** or **reciprocal** for a number x, as
-denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied
-by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction
-:math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real
-number, divide 1 by the number. The reciprocal function, the function *f(x)* that maps *x* 
-to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse
-(an involution).
+   In mathematics, a **multiplicative inverse** or **reciprocal** for a number x, as
+   denoted by :math:`\frac{1}{x}` or :math:`x^{−1}`, is a number which when multiplied
+   by x yields the multiplicative identity, 1. The multiplicative inverse of a fraction
+   :math:`\frac{a}{b}` is :math:`\frac{b}{a}`. For the multiplicative inverse of a real
+   number, divide 1 by the number. The reciprocal function, the function *f(x)* that maps *x* 
+   to :math:`\frac{1}{x}`, is one of the simplest examples of a function which is its own inverse
+   (an involution).
+   
+   .. figure:: images/one_over_x.png
+   
+      The reciprocal function: :math:`y = \frac{1}{x}`. 
+      For every x except 0, y represents its multiplicative inverse.
 
-.. figure:: images/one_over_x.png
+#. Additive inverse [相反数]
+ 
+   In mathematics, the additive inverse of a number *a* is the number that, 
+   when added to *a*, yields zero. This number is also known as the opposite (number), 
+   sign change, and negation. For a real number, it reverses its sign: the opposite to 
+   a positive number is negative, and the opposite to a negative number is positive.
 
-   The reciprocal function: :math:`y = \frac{1}{x}`. 
-   For every x except 0, y represents its multiplicative inverse.
+#. Lemma
+
+   In mathematics, a "helping theorem" or lemma (plural lemmata or lemmas) 
+   from the Ancient Greek λῆμμα (lemma, "anything which is received, such as 
+   a gift, profit, or a bribe”) is a proven proposition which is used as a 
+   stepping stone to a larger result rather than as a statement of interest 
+   by itself.  
+
+#. Homotopy
+
+   A continuous transformation from one function to another. 
+   A homotopy between two functions **f** and **g** from a space **X** to a space **Y** 
+   is a continuous map **G** from :math:`X \times [0,1]| \mapsto Y` such that **G(x,0)=f(x)** 
+   and **G(x,1)=g(x)**, where :math:`\times` denotes set pairing. Another way of saying this 
+   is that a homotopy is a path in the mapping space **Map(X,Y)** from the first function to 
+   the second.
+   
+   Two mathematical objects are said to be homotopic if one can be continuously deformed 
+   into the other. The concept of homotopy was first formulated by *Poincaré* around 1900. 
