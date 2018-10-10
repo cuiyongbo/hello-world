@@ -12,6 +12,22 @@ Binary Tree
          print x.key
          Inorder-Tree-Walk(x.right)
 
+   Tree-Search(x, k)
+      if x == NIL or x.key == k
+         return x
+      if x.key > k
+         Tree-Search(x.left, k)
+      else
+         Tree-Search(x.right. k)
+
+   Iterative-Tree-Search(x, k)
+      while(x != NIL and x.key != k)
+         if x.key > k
+            x = x.left
+         else
+            x = x.right
+      return x
+
 
 #. Full v.s. Complete binary trees
 

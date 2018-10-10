@@ -18,11 +18,16 @@ what is called a reason for living also the excellent one for dying.
 | disposition
 | Definition: the natural qualities of a person's character. [性格，性情]
 | Synonyms: temperament.
-| Usage: people of a nervous disposition. [神经质的人]
+| Usage: people of a nervous disposition. [歇斯底里，神经质的人]
 | Definition: the way someone tends to behave or feel.
 | Usage: The rides are unsuitable for people of a nervous disposition.
 | Definition: (formal) the way something is placed or arranged. [处置，安排]
 | Synonyms: arrangement.
+| 
+| unnerve
+| Definition: to make sb feel nervous or frightened or lose confidence
+| Usage: His silence unnerved us. [他的沉默令我们心里发慌]
+| Usage: She appeared strained and a little unnerved. 
 | 
 | embitter
 | Definition: cause (someone) to feel bitter or resentful.

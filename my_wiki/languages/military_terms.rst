@@ -556,6 +556,13 @@ Dystopia
 | massacre
 | Definition: an indiscriminate and brutal slaughter of people.
 | Usage: the attack was described as a cold-blooded massacre.
+| Definition: a total failure.
+| Usage: The game was a 10–0 massacre for our team. 
+| 
+| exterminate
+| extermination
+| Definition: to kill all the members of a group of people or animals.
+| Usage: they use poison to exterminate moles.
 | 
 | squadron
 | Definition: a group of military aircraft or ships forming a section of a military force.

@@ -26,7 +26,9 @@ Mottoes
 
 -- 米开朗琪罗
 
-.. image:: images/Michelangelo-Buonarroti.jpg
+.. figure:: images/Michelangelo-Buonarroti.jpg
+
+   Michelangelo Buonarroti
 
 .. figure:: images/Michelangelo's_Pieta.jpg
 
@@ -45,3 +47,12 @@ Mottoes
 .. figure:: images/Lev_Nikolaevich_Tolstoy.jpg
 
    Лев Николаевич Толстой
+
+
+生而为人，我很抱歉。
+
+-- 太宰治 《人间失格》
+
+.. figure:: images/Osamu_Dazai.jpg
+
+   太宰治

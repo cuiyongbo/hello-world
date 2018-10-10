@@ -1687,30 +1687,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: The band is currently on a nine-day tour of France.
 | Usage: The Prince will visit Boston on the last leg of his American tour.
 | 
-| hog
-| Definition: keep or use all of (something) for oneself in an unfair or selfish way.
-| Usage: He never hogged the limelight.
-| Idiom: go (the) whole hog
-| Definition: do something completely or thoroughly.
-| Idiom: live high on (or off) the hog
-| Definition: have a luxurious lifestyle.
-| 
-| the lion’s share
-| Definition: the idiomatic expression of the major share of something.
-| Synonyms: the main hog
-| 
-| limelight
-| Definition: intense white light obtained by heating a cylinder of lime [石灰], formerly used in theaters.
-| Definiton: (the limelight) the focuse of public attention.
-| Usage: The work that brought the artists into the limelight.
-| Idiom: steal / hog the limelight
-| Definition: take attention away from other people.
-| 
-| the limelight [聚光灯]
-| the silver screen [银幕]
-| Definition: the movie industry
-| Usage: Stars of the silver screen. 
-| 
 | regress 
 | Definition:  return to a former or less developed state.
 | Definition: return mentally to a former stage of life or a supposed previous life, especially through hypnosis or mental illness.
