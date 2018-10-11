@@ -77,3 +77,6 @@ English Note 9
 | Definition: the idiomatic expression of the major share of something.
 | Synonyms: the main hog
 | 
+| all-embracing
+| Definition: including or covering everything or everyone; comprehensive. [包罗万象]
+| usage: the goal is not one all-embracing religion.

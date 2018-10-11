@@ -139,7 +139,7 @@ Git Tricks 1
       git checkout -b test1 # swith to a test branch, create test branch if it doesn't exist
       git push --set-upstream origin test1 # push the current branch and set the remote as upstream
       git branch -m test # rename branch name to the desired one
-      git push origin :test1 test # delete the old-name remote branch and push the new-name local branch
+      git push origin :test1 # delete the old-name remote branch
       git push --set-upstream origin test # reset the upstream branch for the new branch
 
 

@@ -192,3 +192,12 @@ Nature Lifes
 .. figure:: images/wolverine-walking.jpg
 
    Wolverine [狼獾，金刚狼]
+
+
+#. taxonomy
+   
+   Taxonomy is the science of defining groups of biological organisms 
+   on the basis of shared characteristics and giving names to those groups. 
+   Organisms are grouped together into taxa (singular: taxon) and these groups 
+   are given a taxonomic rank; groups of a given rank can be aggregated 
+   to form a super group of higher rank, thus creating a taxonomic hierarchy.

@@ -60,3 +60,75 @@ Janpanese Note
 
 #. 取引先　「とりひきさき」
 #. 後輩　vs 先輩
+
+
+#. Seasons
+
+   +--------+--------+--------+--------+
+   | Spring | Summer | Autumn | Winter |
+   +--------+--------+--------+--------+
+   | 春     | 夏     | 秋     | 冬     |
+   +--------+--------+--------+--------+
+   | haru   | natsu  | aki    | fuyu   |
+   +--------+--------+--------+--------+
+
+#. Weeks
+   
+   +------------+------------+----------+------------+------------+------------+----------+
+   | Sunday     | Monday     | Tuesday  | Wednesday  | Thursday   | Friday     | Saturday |
+   +------------+------------+----------+------------+------------+------------+----------+
+   | 日曜日     | 月曜日     | 火曜日   | 水曜日     | 木曜日     | 金曜日     | 土曜日   |
+   +------------+------------+----------+------------+------------+------------+----------+
+   | にちようび | げつようび | かようび | すいようび | もくようび | きんようび | どようび |
+   +------------+------------+----------+------------+------------+------------+----------+
+   | Sun        | Moon       | Mars     | Mercury    | Jupitor    | Venus      | Saturn   |
+   +------------+------------+----------+------------+------------+------------+----------+
+
+#. Months
+
+   .. code-block:: none
+
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | January      | 一月 (ichigatsu)     | Mutsuki (睦月, "Month of Love alternatively Affection").               |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | February     | 二月 (nigatsu)       | Kisaragi (如月) or Kinusaragi (衣更着, "Changing Clothes").            |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | March        | 三月 (sangatsu)      | Yayoi (弥生, "New Life").                                              |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | April        | 四月 (shigatsu)      | Uzuki (卯月, "u-no-hana month"). The u-no-hana (卯の花)                |
+      |              |                      | is a flower, of the genus Deutzia.                                     |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | May          | 五月 (gogatsu)       | Satsuki (皐月) or Sanaetsuki (早苗月, "Early-rice-planting Month").    |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | June         | 六月 (rokugatsu)     | Minazuki (水無月, "Month of Water"). The 無 character,which normally   |
+      |              |                      | means "absent" or "there is no", is here ateji, that is, used only for |
+      |              |                      | the sound "na". In this name the na is actually a possessive particle, |
+      |              |                      | so 'minazuki' means "month of water", not "month without water" , and  |
+      |              |                      | this is in reference to the flooding of the rice fields,               |
+      |              |                      | which require large quantities of water.                               |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | July         | 七月 (shichigatsu)   | Fumizuki (文月, "Month of Erudition").                                 |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | August       | 八月 (hachigatsu)    | Hazuki (葉月, "Month of Leaves"). In old Japanese, the month           |
+      |              |                      | was called 葉落ち月 (Haochizuki, or "Month of Falling Leaves").        |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | September    | 九月 (kugatsu)       | Nagatsuki (長月, "The Long Month").                                    |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | October      | 十月 (jūgatsu)       | Kannazuki or Kaminazuki (神無月, Month of the Gods), which means       |
+      |              |                      | "Month of the Gods", not "Month without Gods" (Kaminakizuki),          |
+      |              |                      | similarly to Minatsuki, the "Month of Water". However,                 |
+      |              |                      | by false etymology this became commonly interpreted to                 |
+      |              |                      | mean that because in that month all the Shinto kami gather             |
+      |              |                      | at Izumo shrine in Izumo Province (modern-day Shimane Prefecture),     |
+      |              |                      | there are no gods in the rest of the country. Thus in Izumo            |
+      |              |                      | Province, the month is called Kamiarizuki (神有月 or 神在月,           |
+      |              |                      | "Month with Gods"). This interpretation is the one commonly            |
+      |              |                      | cited in western works. Various other etymologies have also            |
+      |              |                      | been suggested from time to time.                                      |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | November     | 十一月 (jūichigatsu) | Shimotsuki (霜月, "Month of Frost").                                   |
+      +--------------+----------------------+------------------------------------------------------------------------+
+      | December     | 十二月 (jūnigatsu)   | Shiwasu (師走, "Priests Running"). This is in reference to priests     |
+      |              |                      | being busy at the end of the year for New Year's preparations          |
+      |              |                      | and blessings.                                                         |
+      +--------------+----------------------+------------------------------------------------------------------------+

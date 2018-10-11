@@ -25,3 +25,4 @@ Pending tasks
    - save ti-time.dat to disk and load to shared memory every half hour (finished)
    - add filter to ti-time.dat (finished)  
    - add historical eta data loader from disk (finished)
+   - add past ti shared memory update

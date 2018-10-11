@@ -316,3 +316,12 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | neoplasm [肿瘤]
 | Definition: a new and abnormal growth of tissue in some part of the body, especially as a characteristic of cancer.
 | 
+| genus
+| Plural: genera
+| Definition: a principal taxonomic category that ranks above species and below family, and is denoted by a capitalized Latin name, e.g. Leo. [属]
+| Definition: (in philosophical and general use) a class of things that have common characteristics and that can be divided into subordinate kinds.
+| 
+| taxonomy
+| taxonomic 
+| Definition: concerned with the classification of things, especially organisms.
+| Usage: the taxonomic diversity of bees.
