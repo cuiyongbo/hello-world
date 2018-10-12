@@ -77,6 +77,8 @@ against its own PID (= *newval*). The winning process finds the *compare_and_swa
 
    bool compare_and_swap(int *accum, int *dest, int newval)
    {
+     // so dest store PID of winning process,
+     // and accum store the previous value of dest.
      if (*accum == *dest) {
          *dest = newval;
          return true;
@@ -85,5 +87,3 @@ against its own PID (= *newval*). The winning process finds the *compare_and_swa
          return false;
      }
    }
-
-This is the logic in the Intel Software Manual Vol 2A.

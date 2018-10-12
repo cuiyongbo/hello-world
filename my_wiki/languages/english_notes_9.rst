@@ -80,3 +80,15 @@ English Note 9
 | all-embracing
 | Definition: including or covering everything or everyone; comprehensive. [包罗万象]
 | usage: the goal is not one all-embracing religion.
+| 
+| obstruct
+| obstruction
+| Definition: block (an opening, path, road, etc.); be or get in the way of.
+| Usage: she was obstructing the entrance.
+| Definition: prevent or hinder (movement or someone or something in motion).
+| Usage: they had to alter the course of the stream and obstruct the natural flow of the water.
+| Definition: deliberately make (something) difficult.
+| Usage: fears that the regime would obstruct the distribution of food.
+| Definition: commit the offense of intentionally hindering (a legal process).
+| Definition: (in various sports) impede (a player in the opposing team) in a manner which constitutes an offense.
+| 

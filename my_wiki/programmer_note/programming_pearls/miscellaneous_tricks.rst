@@ -13,6 +13,7 @@ C/C++ Miscellaneous Tricks
    pointer_to_function_demo
    flexible_array_tricks
    cpp_std_map_notes
+   cpp_atomic_note
 
 .. contents::
    :local:

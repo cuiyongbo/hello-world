@@ -383,6 +383,7 @@ what is called a reason for living also the excellent one for dying.
    A flat-topped conical red hat with a black tassel on top, 
    worn by men in some Muslim countries.
 
+.. image:: images/LascauxCavePainting_fresco.jpg
 .. image:: images/Last-Judgement-Aunt-Heather-Piper.jpg
 .. figure:: images/Vatican-ChapelleSixtine-Plafond.jpg
 
@@ -406,4 +407,3 @@ what is called a reason for living also the excellent one for dying.
 .. figure:: images/slam_dunk.jpg
 
    Slam dunk 灌篮高手
-
