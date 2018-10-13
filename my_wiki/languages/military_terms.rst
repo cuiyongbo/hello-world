@@ -163,8 +163,7 @@ Military Terms
 
 |
 | rendezvous
-| Definition: (noun) A rendevous is a meeting, often a secret one, that you have arranged with someone for a particular time and place.
-| Definition: (verb) If you rendezvous with someone or if the two of you rendezvous, you meet them at a time and place that you have arraged.
+| Definition: A rendevous is a meeting, often a secret one, that you have arranged with someone for a particular time and place.
 | Usage: I had almost decided to keep my rendezvous with Tony.
 | Usage: Their rendezvous would be the Penta Hotel at Heathrow Airport.
 | Usage: The plan was to rendezvous with him on Sunday afternoon.

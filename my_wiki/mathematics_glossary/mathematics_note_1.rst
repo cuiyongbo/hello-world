@@ -2,6 +2,9 @@
 Mathematics Notes 1
 *******************
 
+An amateur practices until he can get it right. 
+A professional practices until he cannot get it wrong.
+
 #. how to solve quardratic equation :math:`ax^2 + bx + c = 0` (solved)
    
    .. math::

@@ -2,6 +2,10 @@
 Programming Pearls
 ******************
 
+Simple, few parts, easy to maintain, and very strong.
+
+-- General Chuck Yeager
+
 .. toctree::
    :titlesonly:
 

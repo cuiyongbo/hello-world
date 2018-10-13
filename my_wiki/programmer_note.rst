@@ -1,5 +1,12 @@
+********************
 Steps of Programming
-====================
+********************
+
+A designer knows he has arrived at perfection not when 
+there is no longer anything to add, but when there is 
+no longer anything to take away.
+
+-- Antonie de Saint-Exupery
 
 .. toctree::
    :maxdepth: 2

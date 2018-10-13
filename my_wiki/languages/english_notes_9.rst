@@ -92,3 +92,24 @@ English Note 9
 | Definition: commit the offense of intentionally hindering (a legal process).
 | Definition: (in various sports) impede (a player in the opposing team) in a manner which constitutes an offense.
 | 
+| folklore
+| Definition: the traditional beliefs, customs, and stories of a community, passed through the generations by word of mouth.
+| Usage: Indian folklore. [民俗风情]
+| Usage: The story rapidly became part of family folklore. [家族传说]
+| Definition: a body of popular myth and beliefs relating to a particular place, activity, or group of people.
+| Usage: programming folklore.
+|
+| tractable
+| Definition: (of a person or animal) easy to control or influence. [驯服，温顺]
+| Usage: tractable dogs that have had some obedience training. 
+| Definition: (of a situation or problem) easy to deal with. [容易驾驭]
+| Usage: trying to make the mathematics tractable.
+| Antonyms: intractable.
+| 
+| advertise
+| Definition: draw attention to (a product, service, or event) in a public medium in order to promote sales or attendance.
+| Definition: make (a quality or fact) known.
+| Usage: Meryl coughed briefly to advertise her presence.
+| Usage: some prisoners advertised the French of this terrible danger.
+| Usage: I wouldn't advertise the fact that you don't have a work permit. [声张]
+| 

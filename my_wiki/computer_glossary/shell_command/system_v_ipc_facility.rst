@@ -16,10 +16,6 @@ System V IPC Status Command
 ipcs - show information on IPC facilities
 =========================================
 
-**SYNOPSIS**
-
-   ipcs [options]
-
 **DESCRIPTION**
        
    ipcs shows information on the inter-process communication facilities for which
@@ -90,10 +86,6 @@ ipcs - show information on IPC facilities
 ipcrm - remove certain IPC resources
 ====================================
 
-**SYNOPSIS**
-
-   ipcrm [options]
-
 **DESCRIPTION**
 
    ipcrm removes System V IPC objects and associated data structures from the system.
@@ -104,18 +96,7 @@ ipcrm - remove certain IPC resources
    Deletion of a message queue or semaphore object is immediate (regardless of whether any
    process still holds an IPC identifier for the object). A shared memory object is only
    removed after all currently attached processes have detached (:manpage:`shmdt(2)`)
-   the object from their virtual address space.
-
-   Two syntax styles are supported. The old Linux historical syntax specifies a three-letter
-   keyword indicating which class of object is to be deleted, followed by one or more IPC
-   identifiers for objects of this type.
-
-   The SUS-compliant syntax allows the specification of zero or more objects of all three
-   types in a single command line, with objects specified either by key or by identifier.
-   Both keys and identifiers may be specified in decimal, hexadecimal (specified with an
-   initial '0x' or '0X'), or octal (specified with an initial '0').
-
-**OPTIONS**
+   the object from their virtual address space.**OPTIONS**
 
    Option::
 

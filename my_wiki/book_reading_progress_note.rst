@@ -12,6 +12,7 @@ Introduction To Algorithm
    - Ch3 Growth of Functions ()
    - Ch10 Elementary Data Structures (Finished before 2018-09)
    - Ch11 Hash tables (Finished before 2018-10)
+   - Ch12 Binary search tree (Finished 2018-10-13)
 
 
 Advanced Programming in UNIX Environment

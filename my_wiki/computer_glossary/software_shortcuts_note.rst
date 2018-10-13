@@ -219,7 +219,7 @@ Ubuntu Terminal
 #. New tab – Ctrl + Shift + T
 #. Switch between tabs - Ctrl + PD/PU(linux), Fn + Ctrl + Up/Down (mac)
 #. Close tab – Ctrl + Shift + W
-
+#. Switch to textual mode - Ctrl + alt + F1
 
 Vim
 ===
