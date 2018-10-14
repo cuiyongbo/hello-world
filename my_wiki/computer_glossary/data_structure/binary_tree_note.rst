@@ -2,6 +2,8 @@
 Binary Tree
 ***********
 
+Thinking for an hour and coding for an hour.
+
 **Implementation**
 
 .. code-block:: none

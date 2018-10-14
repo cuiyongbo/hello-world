@@ -38,3 +38,9 @@ Ubuntu Problems
    
       $ date
       Sun Jul 15 23:07:11 CST 2018
+
+#. Terminal switch to root.
+      
+   .. code-block:: sh
+
+      sudo -i 

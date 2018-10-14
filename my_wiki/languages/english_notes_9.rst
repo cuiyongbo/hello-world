@@ -113,3 +113,26 @@ English Note 9
 | Usage: some prisoners advertised the French of this terrible danger.
 | Usage: I wouldn't advertise the fact that you don't have a work permit. [声张]
 | 
+| thrash
+| Definition: beat (a person or animal) repeatedly and violently with a stick or whip.
+| Usage: she thrashed him across the head and shoulders.
+| Usage: what he needs is a good thrashing.
+| Definition: move in a violent and convulsive way.
+| Usage: he lay on the ground thrashing around in pain.
+| Phrase: thrash around 
+| Definition: struggle in a wild or desperate way to do something.
+| Usage: two months of thrashing around on my own have produced nothing.
+| 
+| convulsion
+| convulsive
+| Definition: a sudden, violent, irregular movement of a limb or of the body, caused by involuntary contraction of muscles. [抽搐，痉挛]
+| Definition: a violent social or political upheaval.
+| Usage: the convulsions of 1939–45.
+| 
+| wily
+| wilily
+| wiliness
+| Definition: skilled at gaining an advantage, especially deceitfully.
+| Synonyms: cunning.
+| Usage: The boss is a wily old fox. 
+| 

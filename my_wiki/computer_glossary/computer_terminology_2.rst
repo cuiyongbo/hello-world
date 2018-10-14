@@ -281,4 +281,6 @@ Computer Terminology 2
    with many additional features designed to be helpful in editing program source code. Originally, 
    the acronym stood for **Vi IMitation,** but that was changed with the release of Vim 2.0 in December 1993.
    
-   学園
+#. cryptography
+   
+   The art of writing or solving codes.
