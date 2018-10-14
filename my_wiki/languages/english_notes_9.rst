@@ -136,3 +136,7 @@ English Note 9
 | Synonyms: cunning.
 | Usage: The boss is a wily old fox. 
 | 
+| hoop
+| Definition: a circular band of metal, wood, or similar material, especially one used for binding the staves of barrels or forming part of a framework. [箍]
+| Definition: the round metal rim from which a basketball net is suspended. [球筐]
+| Usage: hula hoop. [呼啦圈]

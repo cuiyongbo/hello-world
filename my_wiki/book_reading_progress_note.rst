@@ -9,7 +9,8 @@ Reading Progress
 Introduction To Algorithm
 =========================
 
-   - Ch3 Growth of Functions ()
+   - Ch03 Growth of Functions (Finished 2018-10-13)
+   - Ch04 Divide-and-conquer (2018-10-13 --)
    - Ch10 Elementary Data Structures (Finished before 2018-09)
    - Ch11 Hash tables (Finished before 2018-10)
    - Ch12 Binary search tree (Finished 2018-10-13)
@@ -22,9 +23,9 @@ Advanced Programming in UNIX Environment
    
    - Process (Finished before 2018-09)
      
-      - Ch7 Process environment (Finished)
-      - Ch8 Process control (Finished, but skipped several sections)
-      - Ch9 Process relationship (Finished)
+      - Ch07 Process environment (Finished)
+      - Ch08 Process control (Finished, but skipped several sections)
+      - Ch09 Process relationship (Finished)
 
    - Ch10 Signal (Finished before 2018-10)
      
@@ -45,6 +46,10 @@ Advanced Programming in UNIX Environment
    
    - Ch17 Advanced IPC
      
+     - Introduction (Finished, 2018-10-13)
+     - Unix Domain Sockets (Finished, 2018-10-13)
+     - Unique connections (Finished, 2018-10-14)
+     - Passing File Descriptors (Finished, 2018-10-14)
 
    - Ch18 Terminal I/O
    
@@ -57,4 +62,5 @@ Programming Pearls
 
    - Column 04 (reviewed, 2018-10-07)
    - Column 09 (reviewed, 2018-10-06 - 10-07)
+   - Column 12 (reviewed, 2018-10-14)
    - Column 15 (2018-10-01 -- 2018-10-06)
