@@ -404,6 +404,9 @@ what is called a reason for living also the excellent one for dying.
    E-hailing is a process of ordering a car, taxi, limousine [豪华轿车], 
    or any other form of transportation pick up via a computer or mobile device.
 
+.. image:: images/sportsman_01.jpg
+.. image:: images/sportsman_05.png
+.. image:: images/sportsman_02.jpg
 .. figure:: images/slam_dunk.jpg
 
    Slam dunk 灌篮高手
