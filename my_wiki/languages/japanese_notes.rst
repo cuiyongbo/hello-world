@@ -132,3 +132,16 @@ Janpanese Note
       |              |                      | being busy at the end of the year for New Year's preparations          |
       |              |                      | and blessings.                                                         |
       +--------------+----------------------+------------------------------------------------------------------------+
+
+#. Japanese Expressions: Ittekimasu いってきます
+   
+   Ittekimasu means “I’m leaving.” it is actually made up of two parts, itte (I’m going) and kimasu (I will come). 
+   Therefore, a more full translation might be “I’m leaving, and I will come back.” A more casual way to say 
+   is ittekuru (いってくる).
+
+   Itterasshai means “Have a safe trip.” which literally means, “Go and come back.” The nuance 
+   is that they will come home safely, hence “have a safe trip” is the best English translation.
+
+   Ittekimasu and Itterasshai are most often used with family members or people you live with. 
+   It doesn’t matter which one is said first, but both expressions are usually exchanged 
+   when someone leaves the house.

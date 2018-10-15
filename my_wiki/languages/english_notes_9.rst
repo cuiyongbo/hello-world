@@ -140,3 +140,10 @@ English Note 9
 | Definition: a circular band of metal, wood, or similar material, especially one used for binding the staves of barrels or forming part of a framework. [箍]
 | Definition: the round metal rim from which a basketball net is suspended. [球筐]
 | Usage: hula hoop. [呼啦圈]
+| 
+| demarcate
+| Definition: set the boundaries or limits of.
+| Usage: plots of land demarcated by barbed wire.
+| Definition: separate or distinguish from.
+| Usage: art was being demarcated from the more objective science.
+|
