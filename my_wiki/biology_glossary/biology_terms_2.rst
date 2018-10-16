@@ -193,6 +193,13 @@ Nature Lifes
 
    Wolverine [狼獾，金刚狼]
 
+.. figure:: images/buffalo.jpg
+
+   Buffalo
+
+.. figure:: images/redwood.jpg
+
+   Redwood [红树林]
 
 #. taxonomy
    

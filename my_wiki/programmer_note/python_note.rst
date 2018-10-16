@@ -5,6 +5,7 @@ Python note
    :titlesonly:
    :maxdepth: 2
 
+   python/python_operator_precedence
    python/built_in_types
    python/function_basics
    python/built_in_functions

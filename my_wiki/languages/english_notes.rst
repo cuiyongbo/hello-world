@@ -333,28 +333,6 @@ name, also known as surname, with most family members.
 | Definition: Denoting a point in a network or diagram at which lines or pathways intersect or branch.
 | Usage: It’s a nodal point for the railway, connecting all the major cities in Poland.
 | 
-| Play down
-| Definition: If you play down something, you try to make people believe that it is  not particularly important.
-| Usage: He plays down rumors that he aims to become a Labour MP.
-| 
-| Underplay
-| Definition: If you underplay something, you make it seem less important than it really is.
-| Usage: We often underplay the skills we have.
-| Usage: The problem of alcoholism was, and still is, often underplayed. 
-| 
-| Dwonplay
-| Definition: If you downplay a fact or feature, you try to make people believe that it is less important or serious than it really is.
-| Usage: The government and the press are trying to downplay the violence which broke out yesterday.
-| 
-| Play up
-| Synonyms: emphasize, accentuate, highlight, stress, underline.
-| 
-| Underestimate
-| Definition: If you underestimate something, you do not realize how large or great it is or will be.
-| Usage: Never underestimate what you can learn from a group of like-minded people.
-| Definition: If you underestimate someone, you do not realize what they are capable of doing.
-| Usage: I think a lot of people still underestimate him.
-| 
 | Opaque
 | Definition: If an object or substance is opaque, you cannot see though it.
 | Usage: You can always use opaque glass if you need to block a street view.
@@ -965,10 +943,6 @@ name, also known as surname, with most family members.
 | thrift
 | Definition: The quality of using money and other resources carefully and not wastefully.
 | Usage: The value of thrift and self-reliance.
-| 
-| belittle  be little
-| Definition: make (sb or sth) seem unimportant.
-| Usage: She felt belittled.
 | 
 | reproach
 | Definition: address (someone) in such a way as to express disapproval or disappointment.
@@ -2621,10 +2595,6 @@ design philosophy emphasizes ease of use.
 | Definition: a long deep track made by the repeated passage of the wheels of vehicles.
 | Definition: a habit or pattern of behavior that has become dull and unproductive but is hard to change.
 | Usage: The administration was stuck in a rut and losing the direction.
-| 
-| subsume
-| Definition: include or absorb (something) in something else.
-| Usage: Most of these phenomena can be subsumed into two categories.
 | 
 | orthodox
 | Definition: (especially of beliefs or behavior) generally accepted or approved of; following generally accepted beliefs.

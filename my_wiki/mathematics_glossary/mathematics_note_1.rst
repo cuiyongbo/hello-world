@@ -158,3 +158,51 @@ A professional practices until he cannot get it wrong.
       A few steps of the bisection method applied over 
       the starting range :math:`[a_1, b_1].` 
       The bigger red dot is the root of the function.
+
+#. Matrix multiplication
+   
+   if :math:`A=(a_{ij})` and :math:`B=(b_{ij})` are square :math:`n \times n` matrices,
+   then :math:`C = A \cdot B,` we define the entry :math:`c_{ij}, \text{ for } i,j = 1,2, \ldots, n,`
+
+   .. math::
+
+      c_{ij} = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}
+
+#. Fibonacci series
+
+   We define the **Fibonacci numbers** by the following recurrence:
+
+   .. math::
+
+      F_0 &= 0, \\
+      F_1 &= 1, \\
+      F_i &= F_{i-1} + F_{i-2}
+
+   
+   .. code-block:: python
+   
+      # exponential complexity O(2^n)
+      def recursive_fibnacci(n):
+         """return the nth element in fibonacci series."""
+         if n < 2:
+            return n
+         else:
+            return fibnacci_1(n-1) + fibnacci_1(n-2) 
+   
+      # linear complexity O(n)
+      def iterative_fibonacci(n):
+         """Return a list containing the Fibonacci series up to n."""
+         result = []
+         a, b = 0, 1
+         while a<n:
+            result.append(a)
+            a, b = b, b+a
+         return result
+
+      def trick_fibonacci(n)
+         a = math.sqrt(5)
+         phy = (1 + a)/2 // called golden ratio
+         result = []
+         for i in range(n)
+            result.append(math.floor(phy**i + 0.5))
+         return return

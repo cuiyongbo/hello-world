@@ -19,7 +19,7 @@ English Note 9
 | Usage: she thought Tom a bit of a country bumpkin. [多贬义]
 | 
 | unsophisticated
-| Definition: not complicated or highly developed; basic: unsophisticated computer software.
+| Definition: not complicated or highly developed; basic.
 | Definition: not artificial.
 | Usage: the village has remained unspoiled and unsophisticated.
 | Definition: lacking refined worldly knowledge or tastes. [单纯的；阅历浅的；涉世不深的；不谙世故的]
@@ -167,6 +167,30 @@ English Note 9
 | Definition: an external form, appearance, or manner of presentation, typically concealing the true nature of something.
 | Usage: he visited in the guise of an inspector.
 | Usage: telemarketing and selling under the guise of market research.
+| 
+| belittle  (also be little)
+| Definition: make (sb or sth) seem unimportant.
+| Usage: She felt belittled.
+| 
+| play down
+| Definition: If you play down something, you try to make people believe that it is  not particularly important.
+| Antonyms: downplay; underpaly.
+| Antonyms: play up; highlight; stress.
+| Usage: He plays down rumors that he aims to become a Labour MP.
+| Usage: We often underplay the skills we have.
+| Usage: The problem of alcoholism was, and still is, often underplayed. 
+| Usage: The government and the press are trying to downplay the violence which broke out yesterday.
+| 
+| understatement
+| Definition: the presentation of something as being smaller, worse, or less important than it actually is.
+| Antonyms: overstatement; exaggeration.
+| Usage: to say I am delighted is an understatement. 
+| 
+| underestimate
+| Definition: If you underestimate something, you do not realize how large or great it is or will be.
+| Usage: Never underestimate what you can learn from a group of like-minded people.
+| Definition: If you underestimate someone, you do not realize what they are capable of doing.
+| Usage: I think a lot of people still underestimate him.
 
 .. figure:: images/embroidery.jpg
 
