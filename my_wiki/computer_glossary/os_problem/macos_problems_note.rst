@@ -1,5 +1,6 @@
-MacOs Problems
-============== 
+**************
+MacOS Problems
+**************
 
 #.  You have not agreed to the Xcode license
    
@@ -252,3 +253,9 @@ MacOs Problems
    .. image:: images/parallel_desktop_appication_folder.png
    .. image:: images/parallel_desktop_appication_folder_setting.png
    .. image:: images/parallel_desktop_appication_folder_warnning.png
+
+#. mac to stop "take control" when running gdb.
+   
+   .. image:: images/gdb_take_control_notification.png
+
+   Solution: ``sudo security authorizationdb write system.privilege.taskport allow`` 

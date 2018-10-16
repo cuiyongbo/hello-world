@@ -44,3 +44,12 @@ Ubuntu Problems
    .. code-block:: sh
 
       sudo -i 
+
+#. Ubuntu to disable system failure reporting.
+   
+   .. image:: images/ubuntu_system_failure_report.png
+   
+   .. code-block:: sh
+
+      $ sudo gpedit /etc/default/apport
+      # set enable to 0
