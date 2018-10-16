@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="218.539"
+   height="110.39063"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(12.69729,-372.8622)"
+     id="layer1">
+    <path
+       d="M -0.94414544,422.45479 L 198.23979,422.45479 L 198.23979,422.45479"
+       style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:0.81482911px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path1872" />
+    <text
+       x="-3.2363541"
+       y="421.51648"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text2764"
+       xml:space="preserve"><tspan
+         x="-3.2363541"
+         y="421.51648"
+         style="font-size:14px"
+         id="tspan2766">A</tspan></text>
+    <text
+       x="197.22842"
+       y="420.93741"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text2768"
+       xml:space="preserve"><tspan
+         x="197.22842"
+         y="420.93741"
+         style="font-size:14px"
+         id="tspan2770">B</tspan></text>
+    <text
+       x="50.247059"
+       y="419.74988"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text2772"
+       xml:space="preserve"><tspan
+         x="50.247059"
+         y="419.74988"
+         style="font-size:14px"
+         id="tspan2774">C</tspan></text>
+    <text
+       x="109.39358"
+       y="420.17075"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text2798"
+       xml:space="preserve"><tspan
+         x="109.39358"
+         y="420.17075"
+         style="font-size:14px"
+         id="tspan2800">D</tspan></text>
+    <text
+       x="50.03516"
+       y="383.06827"
+       style="font-size:12px;font-style:normal;font-weight:normal;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text2802"
+       xml:space="preserve"><tspan
+         x="50.03516"
+         y="383.06827"
+         style="font-size:14px"
+         id="tspan2804">F</tspan></text>
+    <text
+       x="49.63184"
+       y="483.25284"
+       style="font-size:12px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:black;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       id="text2806"
+       xml:space="preserve"><tspan
+         x="49.63184"
+         y="483.25284"
+         style="font-size:14px"
+         id="tspan2808">E</tspan></text>
+    <path
+       d="M 60,161 L 60,71 L 60,71"
+       transform="translate(-11.35156,311.8622)"
+       style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2818" />
+    <path
+       d="M 49.14844,472.3622 L 99.14844,422.3622 L 99.14844,422.3622 L 99.14844,422.3622"
+       style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2820" />
+    <path
+       d="M 10,111 L 60,161"
+       transform="translate(-11.35156,311.8622)"
+       style="fill:none;fill-rule:evenodd;stroke:black;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path2822" />
+  </g>
+</svg>

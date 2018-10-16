@@ -2761,6 +2761,10 @@ He was killed by Hermes, and Hera then used his eyes to deck the peacock's tail.
 | Definition: 三色堇
 | Definition: an offensive word for a homosexual man. [娘娘腔，娘炮]
 | 
+| be nuts about
+| Definition: like very much.
+| Usage: He's absolutely nuts about her.
+| 
 
 A cenotaph is a lovely rememberance, it's an honor to be invited.
 
@@ -2772,8 +2776,6 @@ she is having a rough day.
 
 On behalf of The United states Government, I'm commandeering your churro cart and all its cooking oil.
 
-Super Fun Guy is gonna take it in the tokus. [捅菊花]
-
 casanova 情圣
 
 con woman 女骗子
@@ -2784,21 +2786,14 @@ Tobby: two rolls of pennies? you shouldn't have.
 
 Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pay for weddings in old country.
 
-| be nuts about
-| Definition: like very much.
-| Usage: He's absolutely nuts about her.
-| 
-| blackjack
-| Definition: a leather-covered bludgeon with short, flexible shaft or strip, used as a hand weapon.
 
 .. figure:: images/blackjack.jpg
 
-   blackjack
+   Blackjack
 
-| ornament
-| unornamented
-| ornamentation
-| Definition: lacking embellishment or ornamentation.
+   A leather-covered bludgeon with short, 
+   flexible shaft or strip, used as a hand weapon.
+
 | 
 | habit-forming [上瘾]
 | Definition: capable of leading to physilogical or psychological dependence.

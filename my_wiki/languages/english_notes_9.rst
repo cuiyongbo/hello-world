@@ -146,4 +146,28 @@ English Note 9
 | Usage: plots of land demarcated by barbed wire.
 | Definition: separate or distinguish from.
 | Usage: art was being demarcated from the more objective science.
+| 
+| culprit
+| Definition: a person who is responsible for a crime or other misdeed. [元凶]
+| Definition: the cause of a problem or defect.
+| Usage: viruses could turn out to be the culprit.
 |
+| ornament
+| unornamented
+| Definition: lacking embellishment or ornamentation.
+| 
+| embellish
+| embellishment
+| Definition: make (something) more attractive by the addition of decorative details or features.
+| Usage: blue silk embellished with golden embroidery.
+| Definition: make (a statement or story) more interesting or entertaining by adding extra details, especially ones that are not true.
+| Usage: she had real difficulty telling the truth because she liked to embellish things.
+| 
+| guise
+| Definition: an external form, appearance, or manner of presentation, typically concealing the true nature of something.
+| Usage: he visited in the guise of an inspector.
+| Usage: telemarketing and selling under the guise of market research.
+
+.. figure:: images/embroidery.jpg
+
+   Embroidery [刺绣]

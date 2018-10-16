@@ -119,3 +119,42 @@ A professional practices until he cannot get it wrong.
    
    Two mathematical objects are said to be homotopic if one can be continuously deformed 
    into the other. The concept of homotopy was first formulated by *Poincaré* around 1900. 
+
+#. Bisection
+   
+   In geometry, bisection is the division of something into two equal or congruent parts, 
+   usually by a line, which is then called a bisector. The most often considered types 
+   of bisectors are the segment bisector (a line that passes through the midpoint of 
+   a given segment) and the angle bisector (a line that passes through the apex of an 
+   angle, that divides it into two equal angles).
+
+   In three-dimensional space, bisection is usually done by a plane, 
+   also called the bisector or bisecting plane.
+
+   .. figure:: images/Bisectors.svg
+
+      Bisection
+
+      Line DE bisects line AB at D, 
+      line EF is a perpendicular bisector 
+      of segment AD at C, and line EF is 
+      the interior bisector of right angle AED
+
+#. Bisection method
+   
+   The bisection method in mathematics is a *root-finding method* 
+   that repeatedly bisects an interval and then selects a subinterval 
+   in which a root must lie for further processing. It is a very simple 
+   and robust method, but it is also relatively slow. Because of this, 
+   it is often used to obtain a rough approximation to a solution 
+   which is then used as a starting point for more rapidly converging methods. 
+   The method is also called the interval halving method, the binary search method,
+   or the dichotomy method.
+
+   .. figure:: images/Bisection_method.svg
+
+      Bisection method
+
+      A few steps of the bisection method applied over 
+      the starting range :math:`[a_1, b_1].` 
+      The bigger red dot is the root of the function.

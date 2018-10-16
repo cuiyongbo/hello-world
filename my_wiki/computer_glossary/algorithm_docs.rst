@@ -21,6 +21,7 @@ Algorithms
    algorithms/merge_sort_alg
    algorithms/heap_sort_alg
    algorithms/selection_alg
+   algorithms/euclidean_alg
    algorithms/hot_gis_algs
    algorithms/point_in_polygon
    algorithms/point_in_polygon_2
