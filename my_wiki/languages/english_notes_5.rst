@@ -4,6 +4,14 @@ English Notes 5
 
 **What's important is finding that one thing that will truly put your heart at rest.**
 
+.. image:: images/cookbook_01.png
+.. image:: images/cookbook_02.jpg
+
+| cookbook
+| Definition: a book of cooking directions and recipes. [食谱，菜谱]
+| Definition: a book of detailed instructions. [工具书]
+| Usage: Python cookbooks
+| 
 | diet
 | dietary
 | Definition: relating to diets or dieting.

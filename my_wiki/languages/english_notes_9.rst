@@ -191,6 +191,10 @@ English Note 9
 | Usage: Never underestimate what you can learn from a group of like-minded people.
 | Definition: If you underestimate someone, you do not realize what they are capable of doing.
 | Usage: I think a lot of people still underestimate him.
+| 
+| memorize
+| Definition: learn by heart.
+| Usage: He studied the map, trying to memorize the way to Rose's street.
 
 .. figure:: images/embroidery.jpg
 

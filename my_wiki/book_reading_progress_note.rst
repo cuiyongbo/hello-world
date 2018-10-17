@@ -15,7 +15,9 @@ Introduction To Algorithm
      
      - The maximum-subarray problem (finished)
      - Strassen’s algorithm for matrix multiplication (finished)
-     - The substitution method for solving recurrences
+     - The substitution method for solving recurrences (finished)
+     - The recursion-tree method for solving recurrences (finished)
+     - 
 
    - Ch10 Elementary Data Structures (Finished before 2018-09)
    - Ch11 Hash tables (Finished before 2018-10)

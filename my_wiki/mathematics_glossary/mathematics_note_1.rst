@@ -206,3 +206,44 @@ A professional practices until he cannot get it wrong.
          for i in range(n)
             result.append(math.floor(phy**i + 0.5))
          return return
+
+#. Geometric series [等比数列]
+   
+   .. image:: images/GeometricSquares.svg.png
+
+   In mathematics, a geometric series is a series with a constant ratio 
+   between successive terms. For example, the series
+
+   .. math::
+
+      {\frac {1}{2}}\,+\,{\frac {1}{4}}\,+\,{\frac {1}{8}}\,+\,{\frac {1}{16}}\,+\,\cdots 
+
+   is geometric, because each successive term can be obtained by multiplying the previous term by 1/2.
+
+   Geometric series are among the simplest examples of infinite series with finite sums, 
+   although not all of them have this property. Historically, geometric series played an 
+   important role in the early development of calculus, and they continue to be central 
+   in the study of convergence of series. Geometric series are used throughout mathematics, 
+   and they have important applications in physics, engineering, biology, economics, 
+   computer science, queueing theory, and finance. 
+   specifically, when the coefficient q < 1, then
+
+   .. math::
+
+      \lim \limits_{i \to \infty} {\sum_{i=0}^{n} q^n} = \frac {a_0}{1-q}
+
+#. Caculus [微积分]
+   
+   .. image:: images/Integral_as_region_under_curve.svg
+
+   the branch of mathematics that deals with the finding and properties of derivatives 
+   and integrals of functions, by methods originally based on the summation of 
+   infinitesimal differences. The two main types are differential calculus and integral calculus.
+
+   .. figure:: images/Gottfried_Wilhelm_Leibniz.jpg
+
+      Gottfried Wilhelm Leibniz was the first to state clearly the rules of calculus.
+
+   .. figure:: images/IsaacNewton.jpg
+
+      Isaac Newton developed the use of calculus in his laws of motion and gravitation.
