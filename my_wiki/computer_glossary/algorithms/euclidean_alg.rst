@@ -70,3 +70,138 @@ This led to modern abstract algebraic notions such as Euclidean domains.
          else
             b = b - a
       return a
+
+**Application**
+
+#. Find LCM - solution one
+   
+   In arithmetic and number theory, the :abbr:`LCM (least common multiple)` of two integers a and b, 
+   usually denoted by **LCM(a, b),** is the smallest positive integer that is divisible by both a and b.
+   
+   The following formula reduces the problem of computing the LCM to the problem of computing the GCD:
+   
+   .. math::
+   
+      \operatorname {lcm}(a,b)=\frac{|a\cdot b|}{\operatorname {gcd}(a,b)}
+   
+   This formula is also valid when exactly one of a and b is 0, since ``gcd(a, 0) = |a|.`` 
+   However, if both a and b are 0, this formula would cause division by zero; 
+   ``lcm(0, 0) = 0`` is a special case.
+   
+   Because ``gcd(a, b)`` is a divisor of both a and b, it is more efficient to compute the LCM 
+   by dividing before multiplying:
+   
+   .. math::
+   
+      \operatorname {lcm}(a,b) = \left({|a| \over \operatorname{gcd} (a,b)}\right)\cdot |b|
+                               = \left({|b| \over \operatorname{gcd} (a,b)}\right)\cdot |a|
+       
+   
+   This reduces the size of one input for both the division and the multiplication, 
+   and reduces the required storage needed for intermediate results (overflow in the ``a*b`` computation). 
+   Because ``gcd(a, b)`` is a divisor of both a and b, the division is guaranteed to yield an integer, 
+   so the intermediate result can be stored in an integer. 
+   
+   Proof
+   
+   According to the fundamental theorem of arithmetic a positive integer is the product of prime numbers, 
+   and, except for their order, this representation is unique:
+   
+   .. math::
+   
+      n = 2^{n_{2}}3^{n_{3}}5^{n_{5}}7^{n_{7}} \cdots = \prod_{p} p^{n_{p}}
+   
+   where the exponents :math:`n_2, n_3, \ldots` are non-negative integers; 
+   for example, :math:`84 = 2^2 \times 3^1 \times 5^0 \times 7^1 \times 11^0 \ldots`
+   
+   Given two positive integers: :math:`{a=\prod_{p} p^{a_{p}}}` and :math:`{b=\prod_{p} p^{b_{p}}},` 
+   their LCM and GCD are given by the formulas:
+   
+   .. math::
+   
+      \operatorname {gcd}(a,b) &= \prod_{p} p^{\min(a_{p},b_{p})} \\
+      \operatorname {lcm}(a,b) &= \prod_{p} p^{\max(a_{p},b_{p})}
+   
+   Since :math:`{\min(x,y)+\max(x,y)=x+y,}` this gives :math:`{\operatorname {gcd}(a,b) \operatorname {lcm}(a,b) = ab.}`
+
+   Refer to `Least Common Multiple <https://en.wikipedia.org/wiki/Least_common_multiple>`_ for further information.
+   
+
+#. Find LCM - solution two
+   
+   This method works as easily for finding the LCM of several integers.
+
+   Let there be a finite sequence of positive integers :math:`X = (x_1, x_2, ..., x_n), n > 1.` 
+   The algorithm proceeds in steps as follows: on each step m it examines and updates the sequence 
+   :math:`X^{m} = (x_1^{(m)}, x_2^{(m)}, ..., x_n^{(m)}), X^{(1)} = X,` where :math:`X^{(m)}` is 
+   the mth iteration of X, The purpose of the examination is to pick the least element of the 
+   sequence :math:`X^{(m)}.` Assuming :math:`x_{k_0}^{(m)}` is the selected element, 
+   the sequence :math:`X^{(m+1)}` is defined as
+
+   .. math::
+
+      x_k^{(m+1)} &= x_k^{(m)}, k \ne k_0  \\
+      x_{k_0}^{(m+1)} &= x_{k_0}^{(m)} + x_{k_0}^{(1)}
+
+   The algorithm stops when all elements in sequence :math:`X^{(m)}` are equal. 
+   Their common value is exactly ``LCM(X).``
+
+   .. code-block:: c
+   
+      #include <stdio.h>
+      
+      void printArray(int* a, int count, int i)
+      {
+          printf("%03d iteration: ", i);
+          for(int j=0; j<count; j++)
+              printf("%03d ", a[j]);
+          printf("\n");
+      }
+      
+      int isAllEqual(int*a, int count)
+      {
+          int yes = 1;
+          for(int i=1; i<count; i++) 
+          {
+              if(a[i] != a[i-1])
+              {
+                  yes = 0;
+                  break;
+              }
+          }
+          return yes;
+      }
+      
+      int findMin(int* a, int count)
+      {
+          int idx = 0;
+          int bmin = a[idx];
+          for(int i=1; i<count; i++)
+          {
+              if(a[i] < bmin)
+              {
+                  idx = i;
+                  bmin = a[i];
+              }
+          }
+          return idx;
+      }
+      
+      int main()
+      {
+          int a[] = {1,2,3,4,5,6};
+          int b[] = {1,2,3,4,5,6};
+          int n = sizeof(a)/sizeof(a[0]);
+          
+          int idx, loop = 0;
+          while(!isAllEqual(a, n))
+          {
+              loop++;
+              printArray(a, n, loop);
+              idx = findMin(a, n);
+              a[idx] += b[idx];
+          } 
+         
+          return 0;
+      }
+   

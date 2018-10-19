@@ -76,10 +76,6 @@ I think, therefore I am
 | asymptote
 | Definition: a line that continually approaches a given curve but doesn’t meet it at any finite length.
 | 
-| prime number [素数]
-| Definition: (mathematics) a number that can be divided exactly only by itself and 1, for example 7, 17 and 41.
-| Antonyms: composite number [质数]
-|
 | vertex [顶点]
 | Definition: Each angular point of a polygon, polyhedron, or other figure.
 | Plural: vertices

@@ -281,7 +281,6 @@ Vim - Vi IMproved
        -lacl -lattr -lgpm -ldl     -L/usr/lib/python3.5/config-3.5m-i386-linux-gnu -lpython3.5m -lpthread -ldl -lutil -lm
    
 
-
 Sublime-rst-completion
 ======================
 
@@ -336,4 +335,3 @@ Sublime Text
 #. Find in files - Cmd + shift + F (mac)
 #. Insert Line After - Cmd + Enter
 #. Insert Line Before - Shift + Cmd + Enter (replace Cmd with Ctrl on windows)
-      

@@ -11,16 +11,16 @@ Probability mass function                          Cumulative distribution funct
 .. image:: images/Binomial_distribution_pmf.svg    .. image:: images/Binomial_distribution_cdf.svg  
 =================================================  =================================================
 
-============  ===============================================================================================================
-Property      Mathematic Notation                                                                                            
-============  ===============================================================================================================
-Notation      :math:`B(n, p)`                                                                                                
-Parameters    :math:`n \in N_0` — number of trial, :math:`p \in [0,1]` — success probability in each trial                   
-PMF           :math:`{\displaystyle \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}} \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}`  
-CDF           :math:`{\displaystyle \textstyle I_{1-p}(n-k,1+k)} \textstyle I_{1-p}(n-k,1+k)`                                
-Mean          :math:`{\displaystyle np}`                                                                                     
-Variance      :math:`{\displaystyle np(1-p)}`                                                                                
-============  ===============================================================================================================
+============  =================================================================================================
+Property      Mathematic Notation                                                                              
+============  =================================================================================================
+Notation      :math:`B(n, p)`                                                                                  
+Parameters    :math:`n \in N_0` — number of trial, :math:`p \in [0,1]` — success probability in each trial     
+PMF           :math:`{\textstyle {n \choose k}\,p^{k}(1-p)^{n-k}} \textstyle {n \choose k}\,p^{k}(1-p)^{n-k}`  
+CDF           :math:`{\displaystyle \textstyle I_{1-p}(n-k,1+k)} \textstyle I_{1-p}(n-k,1+k)`                  
+Mean          :math:`{\displaystyle np}`                                                                       
+Variance      :math:`{\displaystyle np(1-p)}`                                                                  
+============  =================================================================================================
 
 In probability theory and statistics, the binomial distribution with parameters *n* and *p* 
 is the discrete probability distribution of the number of successes in a sequence of *n* 

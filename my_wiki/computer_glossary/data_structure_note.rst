@@ -18,3 +18,4 @@ Data Structure
    data_structure/priority_queue_note
    data_structure/hash_table_note
    data_structure/binary_tree_note
+   data_structure/red_black_tree_note

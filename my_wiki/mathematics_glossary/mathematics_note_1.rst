@@ -247,3 +247,56 @@ A professional practices until he cannot get it wrong.
    .. figure:: images/IsaacNewton.jpg
 
       Isaac Newton developed the use of calculus in his laws of motion and gravitation.
+
+#. Prime number versus Composite number
+   
+   .. image:: images/Primes-vs-composites.svg.png
+
+   A prime number is a natural number greater than 1 that cannot be formed 
+   by multiplying two smaller natural numbers. A natural number greater 
+   than 1 that is not prime is called a composite number.
+
+   The simplest primality test is **trial division:** Given an input number n, 
+   check whether any prime integer m from 2 to :math:`\sqrt n` evenly divides. 
+   If n is divisible by any m then n is composite, otherwise it is prime. 
+   Thus, its running time is polynomial in the size of the input.
+
+   .. code-block:: cpp
+      :caption: Trival Division
+
+      bool isPrime(int n)
+      {
+         if (n != 2)
+         {
+             if (n < 2 || n % 2 == 0) 
+             {
+                 return false;
+             }
+             for(int i=3; (i*i)<=n; i+=2)
+             {
+                 if(n % i == 0 )
+                     return false;
+             }
+         }
+         return true;
+      } 
+
+      bool isPrime_02(int n)
+      {
+         if(n <= 1)
+            return false;
+         else if(n <= 3)
+            return true;
+         else if( n%2 == 0 || n%3 == 0)
+            return false;
+
+         for(int i=5; i*i <= n; i+=6)
+         {
+            if((i%n == 0) || ((i+2)%n == 0))
+               return false;
+         }
+         return true;
+      }
+
+   More sophisticated methods described below are much faster for large n.
+   Refer to `Primality test <https://en.wikipedia.org/wiki/Primality_test>`_ for further information.
