@@ -2,19 +2,13 @@
 grep Command
 ************
 
-**NAME**
-   
-   grep, egrep, fgrep, rgrep - print lines matching a pattern
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: sh
 
       grep [OPTIONS] PATTERN [FILE...]
       grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...]
 
-**DESCRIPTION**
- 
    :command:`grep` searches the named input *FILEs* (or standard input if no files are
    named, or if a single hyphen-minus (-) is given as file name) for lines
    containing a match to the given *PATTERN*. By default, :command:`grep` prints the
@@ -502,4 +496,7 @@ grep Command
    $ grep -E ^-?33615290, SWID.txt
    33615290,140
    -33615290,140
+
+   $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
+   ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/
 
