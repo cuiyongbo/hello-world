@@ -152,3 +152,15 @@ Special Functions
 
    ``\ldots`` is the dots in :math:`a_1,a_2, \ldots ,a_n`. 
    ``\cdots`` is the dots in :math:`a_1+a_2+ \cdots +a_n`. 
+
+#. Arbitrary operators
+
+   If an operator is not available as a built-in command, use ``\operatorname{…}.`` 
+   So for things like :math:`\operatorname{arsinh}(x)` write ``\operatorname{arsinh}(x).`` 
+   
+   For operators which need limits above and below the operator, use ``\operatorname*{…},`` 
+   as in 
+
+   .. math::
+
+      \operatorname*{Res}_{z=1}^{n} \left(\frac {1}{z^2-1}\right) = 1

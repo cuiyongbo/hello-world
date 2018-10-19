@@ -72,6 +72,7 @@ Programming Pearls
    - Column 02 (reviewed, 2018-10-15)
    - Column 04 (reviewed, 2018-10-07)
    - Column 09 (reviewed, 2018-10-06 - 10-07)
-   - Column 11 
+   - Column 11 (reviewed, 2018-10-19)
    - Column 12 (reviewed, 2018-10-14)
+   - Column 13
    - Column 15 (2018-10-01 -- 2018-10-06)

@@ -134,6 +134,15 @@ For safety reasons, floating point precisions are clipped to ``50``;
 ``%f`` conversions for numbers whose absolute value is over ``1e25`` 
 are replaced by ``%g`` conversions. All other errors raise exceptions.
 
+.. code-block:: cpp
+   :caption: printf using '/r'
+
+   typedef long long int64;
+   typedef unsigned long long uint64;
+   
+   uint64 loaded, total;
+   printf("Loaded: %9llu, total: %9llu\r", loaded, total)
+
 
 Built-in string: str
 ====================

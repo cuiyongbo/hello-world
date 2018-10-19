@@ -13,7 +13,6 @@ Keyword: in-place, not stable, divide-and-conquer
    Animated visualization of the quicksort algorithm. 
    The red pillars are pivot values.
 
-
 **Introduction**
 
 Quicksort is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. 
@@ -171,7 +170,6 @@ Sorting the entire array is accomplished by ``quicksort(A, 0, length(A) - 1).``
    #include <stdio.h>
 
    #define swapWithType(Type, a, b) {if(a != b) {Type tmp = a; a=b; b=tmp;}}
-   #define element_of(a) sizeof(a)/sizeof(a[0])
 
    int partition(int* a, int lo, int hi)
    {
@@ -198,21 +196,6 @@ Sorting the entire array is accomplished by ``quicksort(A, 0, length(A) - 1).``
       quickSort(a, lo, p-1);
       quickSort(a, p+1, hi);
    }
-   
-   int main()
-   {
-      int a[] = {3, 7, 8, 5 ,2, 1, 9, 5, 4}; 
-   
-      quickSort(a, 0, element_of(a)-1);
-      
-      for(int i=0; i<element_of(a); i++)
-         printf("%d ", a[i]);
-      printf("\n");
-   
-      return 0;
-   }
-
-
 
 .. code-block:: none
    :caption: Hoare partition scheme

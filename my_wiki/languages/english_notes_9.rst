@@ -195,6 +195,14 @@ English Note 9
 | memorize
 | Definition: learn by heart.
 | Usage: He studied the map, trying to memorize the way to Rose's street.
+| 
+| monument
+| monumental
+| Definition: great in importance, extent, or size.
+| Synonyms: historic.
+| Usage: it's been a monumental effort.
+| Definition: of or serving as a monument.
+| Usage: additional details are found in monumental inscriptions.
 
 .. figure:: images/embroidery.jpg
 
