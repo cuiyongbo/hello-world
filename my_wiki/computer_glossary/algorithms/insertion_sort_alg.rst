@@ -2,6 +2,8 @@
 Insertion Sort
 **************
 
+Easy to gain, easy to forget.
+
 **KeyWords**: Stable, In-place, quadratic algorithms
 
 **Introduction**

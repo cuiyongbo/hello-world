@@ -2,28 +2,31 @@
 Std C I/O API
 *************
 
+.. toctree::
+  
+   scanf_info
+
 .. contents::
    :local:
-
 
 Input API
 =========
 
-.. code-block:: c
-
-   #include <stdio.h>
-
-   int fgetc(FILE *stream);
-   char *fgets(char *s, int size, FILE *stream);
-   int getc(FILE *stream);
-   int getchar(void);
-   int ungetc(int c, FILE *stream);
-
-   /*Windows implementation*/
-   #define getc(_stream) fgetc(_stream)
-   #define getchar() getc(stdin)
-
 **DESCRIPTION**
+
+   .. code-block:: c
+   
+      #include <stdio.h>
+   
+      int fgetc(FILE *stream);
+      char *fgets(char *s, int size, FILE *stream);
+      int getc(FILE *stream);
+      int getchar(void);
+      int ungetc(int c, FILE *stream);
+   
+      /*Windows implementation*/
+      #define getc(_stream) fgetc(_stream)
+      #define getchar() getc(stdin)
 
    ``fgetc()`` reads the next character from stream and returns it as an
    unsigned char cast to an int, or ``EOF`` on end of file or error.
@@ -60,39 +63,25 @@ Input API
 
    ``ungetc()`` returns *c* on success, or ``EOF`` on error.
 
-**ATTRIBUTES**
-
-   +---------------+---------+
-   | Atrribute     | Value   |
-   +===============+=========+
-   | Thread safety | MT-Safe |
-   |               |         |
-   +---------------+---------+
-
-
-Input format conversion
-=======================
-
-   See :doc:`scanf_info`
-   
 
 Output API
 ==========
 
-.. code-block:: c
-
-   #include <stdio.h>
-
-   int fputc(int c, FILE *stream);
-   int putc(int c, FILE *stream);
-   int putchar(int c);
-   int puts(const char *s);
-   int fputs(const char *s, FILE *stream);
-
-   /*Windows implementation*/
-   #define putchar(_c) putc((_c),stdout)
-
 **DESCRIPTION**
+
+   .. code-block:: c
+   
+      #include <stdio.h>
+   
+      int fputc(int c, FILE *stream);
+      int putc(int c, FILE *stream);
+      int putchar(int c);
+      int puts(const char *s);
+      int fputs(const char *s, FILE *stream);
+   
+      /*Windows implementation*/
+      #define putchar(_c) putc((_c),stdout)
+
 
    ``fputc()`` writes the character *c*, cast to an unsigned char, to *stream*.
 
@@ -120,16 +109,6 @@ Output API
 
    ``puts()`` and ``fputs()`` return a nonnegative number on success,
    or ``EOF`` on error.
-
-
-**ATTRIBUTES**
-
-   +---------------+---------+
-   | Atrribute     | Value   |
-   +===============+=========+
-   | Thread safety | MT-Safe |
-   |               |         |
-   +---------------+---------+
 
 
 Buffer Control

@@ -58,6 +58,7 @@ Advanced Programming in UNIX Environment
      - Unix Domain Sockets (Finished, 2018-10-13)
      - Unique connections (Finished, 2018-10-14)
      - Passing File Descriptors (Finished, 2018-10-14)
+     - Open Server(Finished, 2018-10-13 -- 10-20)
 
    - Ch18 Terminal I/O
    

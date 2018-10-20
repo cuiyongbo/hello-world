@@ -11,6 +11,13 @@ A professional practices until he cannot get it wrong.
 
       x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
+#. Permutation and Combination
+
+   .. math::
+   
+      C_n^m &= \frac{n(n-1) \cdots (n-m+1)}{m!}  \\
+      A_n^m &=  n(n-1) \ldots (n-m+1)
+
 #. Combination 
    
    In mathematics, a combination is a selection of items from a collection, 

@@ -20,18 +20,13 @@ mean, median and mode
    Geometric visualisation of the mode, median and mean 
    of an arbitrary probability density function.
 
-Comparison of the arithmetic mean, median and mode 
-of two skewed (log-normal) distributions.
-
-Geometric visualisation of the mode, median and mean 
-of an arbitrary probability density function. In 
-descriptive statistics, the mean may be confused with 
+In descriptive statistics, the mean may be confused with 
 the median, mode or mid-range, as any of these may be 
 called an "average" (more formally, a measure of central 
-tendency). The mean of a set of observations is the arithmetic 
+tendency). The **mean** of a set of observations is the arithmetic 
 average of the values; however, for skewed distributions, the 
-mean is not necessarily the same as the middle value (median), 
-or the most likely value (mode). For example, mean income is 
+mean is not necessarily the same as the middle value (**median**), 
+or the most likely value (**mode**). For example, mean income is 
 typically skewed upwards by a small number of people with very 
 large incomes, so that the majority have an income lower than the mean. 
 By contrast, the median income is the level at which half the population 
@@ -262,12 +257,3 @@ of values of *x*. The discontinuity of PMF is related to the fact that the **cum
 of a discrete random variable, when it is meaningful because there is a natural ordering, is also 
 discontinuous. Where it is differentiable, the derivative is zero, just as the PMF is zero at all 
 such points.
-
-
-Permutation and Combination
-===========================
-   
-.. math::
-
-   C_n^m &= \frac{n(n-1) \cdots (n-m+1)}{m!}  \\
-   A_n^m &=  n(n-1) \ldots (n-m+1)

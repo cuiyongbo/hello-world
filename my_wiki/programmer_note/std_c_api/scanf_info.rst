@@ -1,12 +1,6 @@
-:orphan:
-
 ***********************
 Input format conversion
 ***********************
-
-**NAME**
-   
-   scanf, fscanf, sscanf, vscanf, vsscanf, vfscanf - input format conversion
 
 **SYNOPSIS**
 
@@ -17,12 +11,6 @@ Input format conversion
       int scanf(const char *format, ...);
       int fscanf(FILE *stream, const char *format, ...);
       int sscanf(const char *str, const char *format, ...);
-
-      #include <stdarg.h>
-
-      int vscanf(const char *format, va_list ap);
-      int vsscanf(const char *str, const char *format, va_list ap);
-      int vfscanf(FILE *stream, const char *format, va_list ap);
 
 **DESCRIPTION**
 
@@ -38,12 +26,6 @@ Input format conversion
 
    The ``scanf()`` function reads input from ``stdin``, ``fscanf()`` reads input from the stream
    pointer *stream*, and ``sscanf()`` reads its input from the character string pointed to by *str*.
-
-   The ``vfscanf()`` function is analogous to **vfprintf(3)** and reads input from the stream
-   pointer *stream*  using a variable argument list of pointers (see stdarg(3)). The ``vscanf()``
-   function scans a variable argument list from ``stdin`` and the ``vsscanf()`` function scans
-   it from a string; these are analogous to the **vprintf(3)** and **vsprintf(3).**
-   functions respectively.
 
    The *format* string consists of a sequence of directives which describe how to process the
    sequence of input characters. If processing of a directive fails, no further input is
