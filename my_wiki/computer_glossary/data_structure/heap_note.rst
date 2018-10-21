@@ -81,8 +81,6 @@ The common operations involving heaps are:
    - sift-down: move a node down in the tree, similar to sift-up; used to restore heap condition 
      after deletion or replacement.
 
-
-
 ..sidebar:: Heap as array
 
    .. image:: images/Heap-as-array.svg.png
@@ -94,17 +92,19 @@ The common operations involving heaps are:
 
 **Implementation**
 
-Heaps are usually implemented in an array (fixed size or dynamic array), and do not require pointers between elements. 
-After an element is inserted into or deleted from a heap, the heap property may be violated and the heap must be balanced 
-by internal operations.
+Heaps are usually implemented in an array (fixed size or dynamic array), 
+and do not require pointers between elements. After an element is inserted 
+into or deleted from a heap, the heap property may be violated and the heap 
+must be balanced by internal operations.
 
-Binary heaps may be represented in a very space-efficient way (as an implicit data structure) using an array alone. 
-The first (or last) element will contain the root. The next two elements of the array contain its children. The next 
-four contain the four children of the two child nodes, etc. **Thus the children of the node at position n would be at 
-positions 2n and 2n + 1 in a one-based array, or 2n + 1 and 2n + 2 in a zero-based array.** This allows moving up or 
-down the tree by doing simple index computations. Balancing a heap is done by sift-up or sift-down operations (swapping 
-elements which are out of order). As we can build a heap from an array without requiring extra memory (for the nodes, 
-for example), heapsort can be used to sort an array in-place.
+Binary heaps may be represented in a very space-efficient way using an array alone. 
+The first element will contain the root. The next two elements of the array contain 
+its children. The next four contain the four children of the two child nodes, etc. 
+**Thus the children of the node at position n would be at positions 2n and 2n + 1 
+in a one-based array, or 2n + 1 and 2n + 2 in a zero-based array.** This allows moving up 
+or down the tree by doing simple index computations. Balancing a heap is done by sift-up 
+or sift-down operations. As we can build a heap from an array without requiring extra memory, 
+heapsort can be used to sort an array in-place.
 
 
 .. code-block:: none
@@ -168,10 +168,69 @@ for example), heapsort can be used to sort an array in-place.
       for i = 2 upto A.length
          siftUp(A, i)
 
-
    HeapSort(A)
       Build-max-heap(A)
       for i=A.length downto 2
          swap(A[1], A[i])
          A.heap_size = A.heap_size -1
          siftDown(A, 1)
+
+.. code-block:: none
+   :caption: Take from *Programming pearls*
+
+   root = 1
+   value(i) = x[i]
+   leftchild(i) = 2*i
+   rightchild(i) = 2*i + 1
+   parent(i) = i/2
+   null(i) = (i<1) or (i>n)
+
+   siftup(n)
+   /*
+      pre n>0 && heap(1, n-1)
+      post heap(1, n)
+   */
+      i=n
+      loop
+      /* invariant: heap(1, n) except perhaps between i and its parents */
+         if i==1
+            break
+         p=i/2
+         if x[p] <= x[i]
+            break
+         swap(i, p)
+         i=p
+
+   siftdown(n)
+   /*
+      pre n>0 && heap(2, n)
+      post heap(1, n)
+   */
+   i=1
+   loop
+   /* invariant: heap(1, n) except perhaps between i and its children */
+      c=2*i
+      if c>n 
+         break
+      if c+1 < n
+         if x[c+1] < x[c]
+            c++
+      if x[i] <= x[c]
+         break
+      swap(i, c)
+      i=c
+
+   insert(t)
+      if n>maxsize
+         error("heap overflow")
+      n++
+      x[n] = t
+      siftup(n)
+
+   extractmin()
+      if n < 1
+         error("heap underflow")
+      t = x[1]
+      n--
+      x[1] = x[n]
+      siftdown(n)

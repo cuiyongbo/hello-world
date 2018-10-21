@@ -203,6 +203,14 @@ English Note 9
 | Usage: it's been a monumental effort.
 | Definition: of or serving as a monument.
 | Usage: additional details are found in monumental inscriptions.
+| 
+| lax
+| Definition: not sufficiently strict, severe, or careful.
+| Usage: he'd been a bit lax about discipline in school lately.
+| 
+| wellspring
+| Definition: an original and bountiful source of something.
+| Usage: sadness is the wellspring of creativity.
 
 .. figure:: images/embroidery.jpg
 
