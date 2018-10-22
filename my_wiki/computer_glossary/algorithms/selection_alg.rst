@@ -33,21 +33,17 @@ partial selection sort-based algorithm:
 .. code-block:: cpp
    :caption: a c++ implementation
 
-   #define swapWithType(Type, a, b) {if(a != b){Type tmp = a; a = b; b = tmp;}}
+   #define swapWithType(Type, a, b) {Type tmp = a; a = b; b = tmp;}
 
    void local_kth_element(int* a, int n, int k)
    {
        for(int i=0; i<k; i++)
        {
            int minIdx=i;
-           int minVal=a[i];
            for(int j=i+1; j<n; j++)
            {
-               if(a[j] < minVal)
-               {
+               if(a[j] < a[minIdx])
                    minIdx=j;
-                   minVal = a[j];
-               }
            }
            swapWithType(int, a[i], a[minIdx]);
        }
@@ -74,6 +70,28 @@ Output::
    5 6 4 3 2 6 7 9 3 
    local_kth_element(3)
    2 3 3 6 5 7 4 6 9 
+
+.. code-block:: none
+   :caption: Taken from *More Programming Pearls*
+
+   void select(arr, l, u, k)
+      if(l < u)
+      {
+
+         swap(a[l], arr[randint(l, )])
+         m = l
+         pivot = arr[m]
+         for(i=l+1; i<=u; i++)
+            if (arr[i] < pivot)
+               swap(arr[++m], arr[i])
+         swap(arr[l], arr[m])
+         if(m<k)
+            select(arr, m+1, u, k)
+         else if(m>k)
+            select(arr, l , m-1, k)
+         else // no need, just for verification
+            return;
+      }
 
 
 Introselect

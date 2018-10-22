@@ -87,6 +87,8 @@ More Programming Pearls
 =======================
 
    - Column 01 (finished, 2018-10-21)
+   - Column 03 (finished, 2018-10-22)
    - Column 05 (finished, 2018-10-21)
    - Column 07 (finished, 2018-10-21)
    - Column 14 (finished, 2018-10-21)
+   - Column 15

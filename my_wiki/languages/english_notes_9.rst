@@ -211,6 +211,72 @@ English Note 9
 | wellspring
 | Definition: an original and bountiful source of something.
 | Usage: sadness is the wellspring of creativity.
+| 
+| inadvertent
+| Definition: An inadvertent action is one that you do without realizing what you are doing.
+| Synonyms: unintentional, not deliberate
+| Usage: The government has said it was an inadvertent error.
+| Usage: You may have inadvertently pressed the wrong button.
+|
+| sprinkle
+| Definition: scatter or pour small drops or particles of a substance over (an object or surface).
+| Usage: I sprinkled the floor with water.
+| Definition: rain very lightly.
+| Usage: it began to sprinkle. 
+| 
+| hem and haw
+| Definition: hesitate; be indecisive.
+| Usage: I waste a lot of time hemming and hawing before going into action.
+| 
+| ridicule
+| ridiculous
+| Definition: the subjection of someone or something to contemptuous and dismissive language or behavior.
+| Usage: he is held up as an object of ridicule.
+| Usage: his theory was ridiculed and dismissed.
+| 
+| glee
+| Definition: great delight.
+| Usage: his face lit up with impish glee.
+| 
+| cruncher
+| Defintion: a critical or vital point; a crucial or difficult question.
+| Defintion: a computer, system, or person able to perform operations of great complexity or to process large amounts of information.
+| Usage: a global information cruncher.
+| 
+| Gordian knot
+| Definition: an extremely difficult or involved problem. associated with Alexandar the Creat.
+| 
+| Achilles heels 
+| Definition: a weakness or vulnerable point.
+| Usage: the Achilles heel of the case for nuclear power remains the issue of the disposal of waste.
+| Usage: My ignorance is always my achilles hells.
+| 
+| classify
+| classified
+| Definition: arranged in classes or categories.
+| Usage: a classified catalog of books.
+| Definition: (of information or documents) designated as officially secret and to which only authorized people may have access.
+| Usage: classified information on nuclear experiments.
+| Usage: government officials classified 6.3 million documents in 1992.
+| 
+| self-describing
+| self-explanatory
+| 
+| ironclad
+| Definition: covered or protected with iron.
+| Definition: a 19th-century warship with armor plating.
+| Definition: impossible to contradict, weaken, or change.
+| Usage: an ironclad guarantee.
+| 
+| a grain of salt
+| Defintion: to view something with scepticism or not to interpret something literally.
+| 
+| ostensible
+| Definition: stated or appearing to be true, but not necessarily so.
+| Usage: the delay may have a deeper cause than the ostensible reason.
+| 
+| bumper sticker
+| Definition: a label carrying a slogan or advertisement fixed to a vehicle's bumper [保险杠]. 
 
 .. figure:: images/embroidery.jpg
 

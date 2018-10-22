@@ -360,7 +360,7 @@ what is called a reason for living also the excellent one for dying.
 | Usage: a written document enunciating this policy.
 | Usage: He enunciated his vision of the future. 
 | 
-| hunker
+| hunker [蹲坐，踞]
 | Definition: to sit on your heels with your knees bent up in front of you.
 | Usage: He hunkered down beside her. 
 | Definition: (hunker down) apply oneself seriously to a task.

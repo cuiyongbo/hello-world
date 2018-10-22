@@ -1008,7 +1008,7 @@ name, also known as surname, with most family members.
 | Usage: Hero rises above the mediocrity that surrounds him.
 | 
 | bigot
-| Definition: a person who is intolerant toward those holding different opinions.
+| Definition: a person who is intolerant towards those holding different opinions.
 | Usage: Don’t let a few small-minded bigots destroy the good image of the city.
 | 
 | all-inclusive
@@ -1028,14 +1028,8 @@ name, also known as surname, with most family members.
 | Usage: She could discourse at great length on the history of Europe.
 | 
 | elf [精灵]
-| hobgoblin [哥布林]
+| goblin (also hobgoblin) [哥布林]
 | Defintion: (in stories) a small ugly creature that likes to trick people or cause trouble.
-| 
-| inadvertent
-| Definition: An inadvertent action is one that you do without realizing what you are doing.
-| Synonyms: unintentional, not deliberate
-| Usage: The government has said it was an inadvertent error.
-| Usage: You may have inadvertently pressed the wrong button.
 | 
 | smell a rat [猫腻]
 | Definition: suspect trickery or deception.
