@@ -103,26 +103,6 @@ name, also known as surname, with most family members.
 | Synonym: intimidating
 | Usage: a daunting task.
 | 
-| take stock
-| Definition: Review or make an overall assessment of a particular situation, typically as prelude to make a decision
-| Usage: He needed a period of peace and quiet in order to take stock of his life.
-| 
-| prelude
-| Definition: An action or event serving as an introduction to something more important
-| Usage: Education cannot simply be a prelude to a career.
-| 
-| put stock in
-| Definition: [often with negative] have a specific amount of belief or faith in.
-| Usage: I don’t put much stock in traditional Chinese medicine.
-| 
-| in (or out of) stock
-| Definition: (of goods) available (or unavailable) for immediate sale in store.
-| Usage: The new Iphone8 is out of stock at the present.
-| 
-| on the stocks
-| Definition: in construction or preparation
-| Usage: Also on the stocks is a bill to bring about tax relief for these business. 
-| 
 | up one’s sleeve
 | Definition: (of a strategy, idea, or resource) kept secret and in reserve for use when needed.
 | Usage: He was new to the game but had a few tricks up his sleeve.

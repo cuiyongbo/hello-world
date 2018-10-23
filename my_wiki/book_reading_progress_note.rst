@@ -92,9 +92,10 @@ More Programming Pearls
 
    - Column 01 (finished, 2018-10-21)
    - Column 03 (finished, 2018-10-22)
-   - Column 04 (finished, 2018-10-22 --)
+   - Column 04 (finished, 2018-10-22 -- 10-23)
    - Column 05 (finished, 2018-10-21)
    - Column 06 (finished, 2018-10-22)
    - Column 07 (finished, 2018-10-21)
+   - Column 13 (finished, 2018-10-23)
    - Column 14 (finished, 2018-10-21)
-   - Column 15 (finished, 2018-10-22 -- )
+   - Column 15 (finished, 2018-10-22 -- 10-23)

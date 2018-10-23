@@ -56,3 +56,7 @@ Mottoes
 .. figure:: images/Osamu_Dazai.jpg
 
    太宰治
+
+这个世界没有奇迹，有的只是偶然和必然，以及人的所作所为，仅此而已。
+
+-- EF - A tale of melodies

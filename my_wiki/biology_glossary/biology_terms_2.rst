@@ -201,6 +201,11 @@ Nature Lifes
 
    Redwood [红树林]
 
+
+.. figure:: images/wombat.jpg
+
+   Wombat [袋熊]
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

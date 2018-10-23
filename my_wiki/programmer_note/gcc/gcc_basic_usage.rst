@@ -500,3 +500,11 @@ gcc - GNU project C and C++ compiler
    
    For bash only, add ``alias gcc='gcc -Wall -std=c99'`` to **.bashrc** in HOME directory.
    To check the shell you currently use, type ``echo $SHELL``. 
+
+#. Using g++ with template class
+   
+   **Solution one:** It's possible to put all the code in the class declaration, in essence making all member functions inline. 
+   Inline functions don't cause conflicts with multiple definitions when linking. This is the solution used in the ``std::vector.``
+
+   **Solution two:** when the declaration and definition are separated in two files, just #include the source code/implementation/definition 
+   of the templated class. although some compiler may complain about multiple definitions of the same functions. 

@@ -277,6 +277,47 @@ English Note 9
 | 
 | bumper sticker
 | Definition: a label carrying a slogan or advertisement fixed to a vehicle's bumper [保险杠]. 
+| 
+| prelude
+| Definition: An action or event serving as an introduction to something more important.
+| Usage: Education cannot simply be a prelude to a career.
+| 
+| take stock
+| Definition: Review or make an overall assessment of a particular situation, typically as prelude to make a decision.
+| Usage: He needed a period of peace and quiet in order to take stock of his life.
+| 
+| put stock in
+| Definition: [often with negative] have a specific amount of belief or faith in.
+| Usage: I don’t put much stock in traditional Chinese medicine.
+| 
+| in (or out of) stock
+| Definition: (of goods) available (or unavailable) for immediate sale in store.
+| Usage: The new Iphone8 is out of stock at the present.
+| 
+| on the stocks
+| Definition: in construction or preparation.
+| Usage: Also on the stocks is a bill to bring about tax relief for these business. 
+| 
+| provenance
+| Definition: the place of origin or earliest known history of something.
+| Usage: an orange rug of Iranian provenance
+| Definition: the beginning of something's existence; something's origin. [起源]
+| Usage: they try to understand the whole universe, its provenance and fate. 
+| Definition: a record of ownership of a work of art or an antique, used as a guide to authenticity or quality.
+| Usage: the manuscript has a distinguished provenance. [博物馆中艺术品的标签]
+| 
+| pedigrees
+| Definition: the record of descent of an animal, showing it to be purebred（pure + breed 纯种？？）.
+| Definition: the recorded ancestry, especially upper-class ancestry, of a person or family. [谱系]
+| 
+| scratch the surface
+| Definition: deal with a matter only in the most superficial way.
+| Usage: research has only scratched the surface of the paranormal. [蜻蜓点水]
+| Definition: initiate the briefest investigation to discover something concealed.
+| Usage: they have a boring image but scratch the surface and it's fascinating. [咋看无聊，实则有趣]
+| 
+| byline
+| Definition: a line in a newspaper naming the writer of an article.
 
 .. figure:: images/embroidery.jpg
 
