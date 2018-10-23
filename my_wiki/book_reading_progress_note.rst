@@ -4,6 +4,10 @@ Reading Progress
 
 Sometimes to love someone, you gotta to be a stranger.
 
+To be or not to be, this is a question.
+
+-- William Shakespeare
+
 .. contents::
    :local:
 
@@ -79,7 +83,7 @@ Programming Pearls
    - Column 11 (reviewed, 2018-10-19)
    - Column 12 (reviewed, 2018-10-14)
    - Column 13
-   - Column 14 (reviewed, )
+   - Column 14 (reviewed, 2018-10-22)
    - Column 15 (2018-10-01 -- 2018-10-06)
      
 
@@ -88,7 +92,9 @@ More Programming Pearls
 
    - Column 01 (finished, 2018-10-21)
    - Column 03 (finished, 2018-10-22)
+   - Column 04 (finished, 2018-10-22 --)
    - Column 05 (finished, 2018-10-21)
+   - Column 06 (finished, 2018-10-22)
    - Column 07 (finished, 2018-10-21)
    - Column 14 (finished, 2018-10-21)
-   - Column 15
+   - Column 15 (finished, 2018-10-22 -- )
