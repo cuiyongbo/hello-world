@@ -15,6 +15,10 @@ English Notes 3
 | Definition: contrary to the natural inclination or feeling of someone or something.
 | Usage: It goes against the grain to tell outright lies.
 | Origin: From the fact that wood is easier to cut along the line of the grain.
+| Phrase: a grain of salt
+| Defintion: to view something with scepticism or not to interpret something literally.
+| Usage: You must take anything she says with a grain of salt. She doesn't always tell the truth.
+| Usage: Take whatever that paper publishes with a pinch of salt—it's really a tabloid.
 
 .. image:: images/wood-grain.jpg
 .. image:: images/Brown-wood-grain.jpg

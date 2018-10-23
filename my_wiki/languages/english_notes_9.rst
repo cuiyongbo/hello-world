@@ -268,9 +268,6 @@ English Note 9
 | Definition: impossible to contradict, weaken, or change.
 | Usage: an ironclad guarantee.
 | 
-| a grain of salt
-| Defintion: to view something with scepticism or not to interpret something literally.
-| 
 | ostensible
 | Definition: stated or appearing to be true, but not necessarily so.
 | Usage: the delay may have a deeper cause than the ostensible reason.
@@ -318,6 +315,18 @@ English Note 9
 | 
 | byline
 | Definition: a line in a newspaper naming the writer of an article.
+| 
+| opaque
+| Definition: not able to be seen through; not transparent.
+| Usage: the windows were opaque with steam.
+| Definition: (especially of language) hard or impossible to understand.
+| Usage: technical jargon that was opaque to her.
+| 
+| contrived
+| Definition: deliberately created rather than arising naturally or spontaneously.
+| Definition: created or arranged in a way that seems artificial and unrealistic.
+| Usage: the ending of the novel is too pat and contrived.
+
 
 .. figure:: images/embroidery.jpg
 

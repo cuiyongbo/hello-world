@@ -46,6 +46,13 @@ Advanced Programming in UNIX Environment
    - Pthread
      
       - Ch11 Threads
+        
+        - Introduction (finished, 2018-10-23)
+        - Thread concepts (finished, 2018-10-23)
+        - Thread identification (finished, 2018-10-23)
+        - Thread creation (finished, 2018-10-23)
+        - Thread termination (finished, 2018-10-23)
+
       - Ch12 Thread control
 
    - Ch14 Advanced I/O

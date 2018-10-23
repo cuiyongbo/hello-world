@@ -302,7 +302,7 @@ name, also known as surname, with most family members.
 | 
 | onerous
 | Definition: troublesome or oppressive
-| Synonyms: burdensome, taxing
+| Synonyms: burdensome, taxing.
 | Usage: Preparing income tax returns is an onerous task, and many people resort to hiring professional accountants during tax season.
 | 
 | ideate
@@ -312,13 +312,6 @@ name, also known as surname, with most family members.
 | nodal
 | Definition: Denoting a point in a network or diagram at which lines or pathways intersect or branch.
 | Usage: It’s a nodal point for the railway, connecting all the major cities in Poland.
-| 
-| Opaque
-| Definition: If an object or substance is opaque, you cannot see though it.
-| Usage: You can always use opaque glass if you need to block a street view.
-| Definition: If you say something is opaque, you mean that it is difficult to understand.
-| Synonyms: obscure
-| Usage: The opaque language of the inspector’s reports.
 | 
 | Breach
 | Definition: If you breach an agreement, a law, or a promise, you break it.
