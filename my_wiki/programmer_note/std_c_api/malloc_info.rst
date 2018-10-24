@@ -2,11 +2,7 @@
 Allocate and free dynamic memory
 ********************************
 
-**NAME**
-   
-   malloc, free, calloc, realloc - allocate and free dynamic memory
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
@@ -16,8 +12,6 @@ Allocate and free dynamic memory
       void free(void *ptr);
       void *calloc(size_t nmemb, size_t size);
       void *realloc(void *ptr, size_t size);
-
-**DESCRIPTION**
 
    The ``malloc()`` function allocates *size* bytes and returns a pointer to the allocated memory.
    The memory is not initialized. If *size* is 0, then ``malloc()`` returns either ``NULL``, or
@@ -75,21 +69,8 @@ Allocate and free dynamic memory
    Each arena is a large region of memory that is internally allocated by the system (using :manpage:`brk(2)` or
    :manpage:`mmap(2)``), and managed with its own mutexes.
 
-   The UNIX98 standard requires ``malloc()``, ``calloc()``, and ``realloc()`` to set *errno* to ``ENOMEM`` upon failure.
-   Glibc assumes that this is done (and the glibc versions of these routines do this); if you use a private malloc
-   implementation that does not set *errno*, then certain library routines may fail without having a reason in *errno*.
-
    Crashes in ``malloc()``, ``calloc()``, ``realloc()``, or ``free()`` are almost always related to heap corruption,
    such as overflowing an allocated chunk or freeing the same pointer twice.
-
-   Recent versions of Linux libc (later than 5.4.23) and glibc (2.x) include a ``malloc()`` implementation which is tunable
-   via environment variables. For details, see :manpage:`mallopt(3)`.
-
-**SEE ALSO**
-
-   brk(2), mmap(2), alloca(3), malloc_get_state(3), malloc_info(3), malloc_trim(3),
-   malloc_usable_size(3), mallopt(3), mcheck(3), mtrace(3), posix_memalign(3)
-
 
 **Advanced topics**
 

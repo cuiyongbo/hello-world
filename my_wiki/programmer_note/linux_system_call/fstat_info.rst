@@ -2,11 +2,7 @@
 Get file status
 ***************
 
-**NAME**
-  
-  stat, fstat, lstat, fstatat - get file status
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
@@ -22,8 +18,6 @@ Get file status
       #include <sys/stat.h>
 
       int fstatat(int dirfd, const char *pathname, struct stat *buf, int flags);
-
-**DESCRIPTION**
 
    These functions return information about a file, in the buffer pointed to by *buf*.
    No permissions are required on the file itself, but—in the case of ``stat()``,
@@ -384,21 +378,11 @@ Get file status
       }
 
 
-**SEE ALSO**
-
-   ls(1), stat(1), access(2), chmod(2), chown(2),
-   readlink(2), utime(2), capabilities(7), symlink(7)
-
-
 **********************
 Manage a device number
 **********************
 
-**NAME**
-   
-   makedev, major, minor - manage a device number
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
@@ -409,7 +393,6 @@ Manage a device number
       unsigned int major(dev_t dev);
       unsigned int minor(dev_t dev);
 
-**DESCRIPTION**
 
    A device ID consists of two parts: a major ID, identifying the class of the device,
    and a minor ID, identifying a specific instance of a device in that class.
@@ -427,7 +410,3 @@ Manage a device number
    These interfaces are defined as macros.  Since glibc 2.3.3, they have been aliases for three
    GNU-specific functions: ``gnu_dev_makedev()``, ``gnu_dev_major()``, and ``gnu_dev_minor()``. 
    The latter names are exported, but the traditional names are more portable.
-
-**SEE ALSO**
-
-   mknod(2), stat(2)

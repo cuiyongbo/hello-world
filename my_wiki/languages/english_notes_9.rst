@@ -326,7 +326,39 @@ English Note 9
 | Definition: deliberately created rather than arising naturally or spontaneously.
 | Definition: created or arranged in a way that seems artificial and unrealistic.
 | Usage: the ending of the novel is too pat and contrived.
-
+| 
+| drastic
+| Definition: likely to have a strong or far-reaching effect; radical and extreme.
+| Usage: a drastic reduction of staffing levels.
+| 
+| paradigm
+| Definition: a typical example or pattern of something; a model.
+| Usage: there is a new paradigm for public art in this country.
+| Definition: a worldview underlying the theories and methodology of a particular scientific subject.
+| Usage: the discovery of universal gravitation became the paradigm of successful science.
+| 
+| deterministic
+| Definition: relating to the philosophical doctrine that all events, including human action, are ultimately determined by causes regarded as external to the will.
+| Usage: a deterministic history. [客观]
+| 
+| complement
+| complementary
+| Definition: add to (something) in a way that enhances or improves it; make perfect.
+| Usage: a classic blazer complements a look that's stylish or casual.
+| Usage: the proposals complement the incentives already available.
+| 
+| preclude
+| Definition: prevent from happening; make impossible.
+| Usage: the secret nature of his work precluded official recognition.
+| Usage: his difficulties preclude him from leading a normal life.
+| 
+| exclude
+| Definition: deny (someone) access to or bar (someone) from a place, group, or privilege.
+| Usage: women had been excluded from many scientific societies.
+| 
+| inculcate
+| Definition: instill (an attitude, idea, or habit) by persistent instruction.
+| Usage: they will try to inculcate you with a respect for culture.
 
 .. figure:: images/embroidery.jpg
 

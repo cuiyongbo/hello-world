@@ -5,6 +5,29 @@ Mathematics Notes 1
 An amateur practices until he can get it right. 
 A professional practices until he cannot get it wrong.
 
+#. Lemma
+
+   In mathematics, a "helping theorem" or lemma (plural lemmata or lemmas) 
+   from the Ancient Greek λῆμμα (lemma, "anything which is received, such as 
+   a gift, profit, or a bribe”) is a proven proposition which is used as a 
+   stepping stone to a larger result rather than as a statement of interest 
+   by itself.  
+
+#. theorem [定理]
+
+   In mathematics, a theorem is a statement that has been proven on the basis 
+   of previously established statements, such as other theorems—and generally 
+   accepted statements, such as axioms. A theorem is a logical consequence of 
+   the axioms. The proof of a mathematical theorem is a logical argument for 
+   the theorem statement given in accord with the rules of a deductive system.
+
+#. axiom [公理]
+   
+   An axiom or postulate is a statement that is taken to be true, to serve as 
+   a premise or starting point for further reasoning and arguments. The word 
+   comes from the Greek axíōma (ἀξίωμα) 'that which is thought worthy or fit' 
+   or 'that which commends itself as evident'
+
 #. how to solve quardratic equation :math:`ax^2 + bx + c = 0` (solved)
    
    .. math::
@@ -63,7 +86,7 @@ A professional practices until he cannot get it wrong.
    
    These numbers are also known as binomial coefficients and denoted :math:`{\binom {n}{k}}.`
    
-#. Natural Exponent
+#. Natural Exponent and natural logarithm
    
    The real exponential function :math:`{\exp :\mathbb {R} \to \mathbb {R} }` 
    can be characterized in a variety of equivalent ways. Most commonly, 
@@ -75,7 +98,13 @@ A professional practices until he cannot get it wrong.
 
    Since the radius of convergence of this power series is infinite, 
    this definition is, in fact, applicable to all complex numbers :math:`z\in\mathbb{C}`. 
-   The constant :math:`e` can then be defined as :math:`{\textstyle e=\exp(1)=\sum_{k=0}^{\infty}(1/k!).}`
+   The constant :math:`e` can then be defined as :math:`{e=\exp(1)=\sum_{k=0}^{\infty}(1/k!).}`
+
+   The natural logarithm of t equals the integral of 1/x from 1 to t:
+
+   .. math::
+
+      \ln(t) = \int_{1}^{t} {\frac{1}{x}}\,dx.
    
 #. Modular arithmetic
    
@@ -106,14 +135,6 @@ A professional practices until he cannot get it wrong.
    when added to *a*, yields zero. This number is also known as the opposite (number), 
    sign change, and negation. For a real number, it reverses its sign: the opposite to 
    a positive number is negative, and the opposite to a negative number is positive.
-
-#. Lemma
-
-   In mathematics, a "helping theorem" or lemma (plural lemmata or lemmas) 
-   from the Ancient Greek λῆμμα (lemma, "anything which is received, such as 
-   a gift, profit, or a bribe”) is a proven proposition which is used as a 
-   stepping stone to a larger result rather than as a statement of interest 
-   by itself.  
 
 #. Homotopy
 

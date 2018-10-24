@@ -1,6 +1,6 @@
-**********
-File notes
-**********
+************************
+Python File module notes
+************************
 
 #. File Object
    

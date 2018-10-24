@@ -17,13 +17,17 @@ Introduction To Algorithm
 
    - Ch03 Growth of Functions (Finished 2018-10-13)
      
-   - Ch04 Divide-and-conquer (2018-10-13 --)
+   - Ch04 Divide-and-conquer (2018-10-13 -- 10-24)
      
      - The maximum-subarray problem (finished)
      - Strassen’s algorithm for matrix multiplication (finished)
      - The substitution method for solving recurrences (finished)
      - The recursion-tree method for solving recurrences (finished)
-     - 
+     - The master method for solving recurrences (finished)
+   
+   - Ch05 Probabilistic Analysis and Randomized Algorithms (2018-10-24 -- )
+
+      - 
 
    - Ch10 Elementary Data Structures (Finished before 2018-09)
    - Ch11 Hash tables (Finished before 2018-10)

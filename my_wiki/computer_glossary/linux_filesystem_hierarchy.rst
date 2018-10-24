@@ -2,8 +2,8 @@
 Filesystem Hierarchy Standard
 *****************************
 
-The :abbr:`FHS (Filesystem Hierarchy Standard)` defines the directory structure
-and directory contents in Linux distributions. It is maintained by the Linux Foundation.
+The :abbr:`FHS (Filesystem Hierarchy Standard)` defines the directory structure and directory 
+contents in Linux distributions. For further information, see :manpage:`hier(7).`
 
 **Directory structure**
 
@@ -43,9 +43,6 @@ for the FHS, and are not considered authoritative for platforms other than Linux
    :file:`/etc/opt`
       Configuration files for add-on packages that are stored in :file:`/opt`.
 
-   :file:`/etc/X11`
-      Configuration files for the X Window System, version 11.
-
    :file:`/home`
       Users' home directories, containing saved files, personal settings, etc.
 
@@ -68,7 +65,7 @@ for the FHS, and are not considered authoritative for platforms other than Linux
    :file:`/proc`
       Virtual filesystem providing process and kernel information as files.
       In Linux, corresponds to a procfs mount. Generally automatically generated
-      and populated by the system, on the fly.
+      and populated by the system, on the fly. for further information, see :manpage:`proc(5).`
 
    :file:`/root`
       Home directory for the root user.
