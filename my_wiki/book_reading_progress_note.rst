@@ -56,6 +56,7 @@ Advanced Programming in UNIX Environment
         - Thread identification (finished, 2018-10-23)
         - Thread creation (finished, 2018-10-23)
         - Thread termination (finished, 2018-10-23)
+        - Mutex and rwlock (finished, 2018-10-24 -- 10-25)
 
       - Ch12 Thread control
 

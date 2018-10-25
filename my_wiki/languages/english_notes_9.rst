@@ -359,6 +359,29 @@ English Note 9
 | inculcate
 | Definition: instill (an attitude, idea, or habit) by persistent instruction.
 | Usage: they will try to inculcate you with a respect for culture.
+| 
+| mold
+| Definition: a hollow container used to give shape to molten liquid material when it cools and hardens. [模具]
+| Definition: a distinctive and typical style, form, or character.
+| Usage: he planned to conquer the world as a roving reporter in the mold of his hero.
+| Definition: influence the formation or development of.
+| Usage: the professionals who were helping to mold US policy.
+| 
+| granular
+| granularity
+| Definition: consisting of small grains or particles.
+| Definition: the scale or level of detail present in a set of data or other phenomenon.
+| Usage: the granularity of this war is not the sand that covers most of the country, but these details that have proved so elusive.
+| 
+| elusive
+| Definition: difficult to find, catch, or achieve.
+| Usage: success will become ever more elusive.
+| Definition: difficult to remember or recall.
+| Usage: the elusive thought he had had moments before.
+| 
+| escapse/slip one's mind
+| Usage: I was supposed to go to the dentist today, but it completely slipped my mind.
+|
 
 .. figure:: images/embroidery.jpg
 
