@@ -381,8 +381,33 @@ English Note 9
 | 
 | escapse/slip one's mind
 | Usage: I was supposed to go to the dentist today, but it completely slipped my mind.
+| 
+| interfere
+| interference
+| Definition: the action of interfering or the process of being interfered with.
+| Usage: an unwarranted interference with personal liberty.
+| Definition: the action of illegally interfering with an opponent's ability to catch a passed or kicked ball. [犯规]
+| 
+| intervene
+| intervention
+| Definition: come between so as to prevent or alter a result or course of events.
+| Usage: they are plants that grow naturally without human intervention.
+| Usage: he acted outside his authority when he intervened in the dispute.
+| Usage: the administration was reported to be considering military intervention. [干预]
+| Definition: (of an event or circumstance) occur as a delay or obstacle to something being done.
+| Usage: Christmas intervened and the investigation was suspended.
+| Definition: interrupt verbally.
+| Usage: “It's true!” he intervened.
 |
 
 .. figure:: images/embroidery.jpg
 
    Embroidery [刺绣]
+
+.. figure:: images/water_waves.jpg
+
+   Interference [波的干涉]
+
+   the combination of two or more electromagnetic waveforms 
+   to form a resultant wave in which the displacement is
+   either reinforced or canceled.

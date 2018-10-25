@@ -53,3 +53,20 @@ Random generator
    Like *srand(3),* *srandom()* sets the initial seed value for future calls to *random().*  
    Like *rand(3),* *random()* will by default produce a sequence of numbers that can be 
    duplicated by calling *srandom()* with the same seed.
+
+#. Randomly permuting arrays
+   
+   .. code-block:: none
+      :caption: Take from *An introduction to algorithms*
+
+      Permute-by-sort(A)
+         n = A.length
+         let P[1, n] be a new array
+         for i=1 to n
+            P[i] = Random(1, n^3)
+         sort A, Using P as sorting keys
+
+      Randomize-in-place(A)
+         n = A.length
+         for i=1 to n
+            swap(A[i], A[Random(i, n)])

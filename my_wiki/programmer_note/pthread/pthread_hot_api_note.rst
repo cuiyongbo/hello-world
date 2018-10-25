@@ -37,3 +37,24 @@ Hot APIs
    int pthread_rwlock_unlock(pthread_rwlock_t *lock);
    int pthread_rwlock_timedrdlock(pthread_rwlock_t *restrict rwlock, const struct timespec *restrict tsptr);
    int pthread_rwlock_timedwrlock(pthread_rwlock_t *restrict rwlock, const struct timespec *restrict tsptr);
+
+   int pthread_spin_destroy(pthread_spinlock_t *lock);
+   int pthread_spin_init(pthread_spinlock_t *lock, int pshared);
+   int pthread_spin_lock(pthread_spinlock_t *lock);
+   int pthread_spin_trylock(pthread_spinlock_t *lock);
+   int pthread_spin_unlock(pthread_spinlock_t *lock);
+
+   int pthread_cond_destroy(pthread_cond_t *cond);
+   int pthread_cond_init(pthread_cond_t *restrict cond, const pthread_condattr_t *restrict attr);
+   pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
+   int pthread_cond_timedwait(pthread_cond_t *restrict cond, 
+            pthread_mutex_t *restrict mutex,
+           const struct timespec *restrict abstime);
+   int pthread_cond_wait(pthread_cond_t *restrict cond, pthread_mutex_t *restrict mutex);
+   int pthread_cond_broadcast(pthread_cond_t *cond);
+   int pthread_cond_signal(pthread_cond_t *cond);
+
+   int pthread_barrier_destroy(pthread_barrier_t *barrier);
+   int pthread_barrier_init(pthread_barrier_t *restrict barrier,
+                           const pthread_barrierattr_t *restrict attr, unsigned count);
+   int pthread_barrier_wait(pthread_barrier_t *barrier);
