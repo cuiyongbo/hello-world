@@ -108,6 +108,10 @@ English Note 7
 | Definition: the decisive or most important point at issue.
 | Usage: He said the crux of the matter is enconomic policy.
 |
+| renowned
+| Definition: known or talked about by many people; famous.
+| Usage: a restaurant renowned for its Southwestern-style food.
+| 
 | notorious
 | Definition: famous or well known, typically for some bad quality or deed.
 | Usage: Los Angeles is notorious for its smog.

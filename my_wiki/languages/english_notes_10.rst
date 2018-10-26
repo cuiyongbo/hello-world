@@ -23,3 +23,9 @@ English Note 10
 | Definition: attractive additional features or trimmings.
 | Usage: an advocate of more bells and whistles on the income tax code. [美化 ]
 | 
+| fathom
+| Definition: understand (a difficult problem or an enigmatic person) after much thought.
+| Usage: he couldn't fathom why she was being so anxious.
+| Definition: measure the depth of (water).
+| Usage: an attempt to fathom the ocean.
+| Usage: sonar says that we're in eighteen fathoms. [a unit of depth]
