@@ -213,3 +213,10 @@ Nature Lifes
    Organisms are grouped together into taxa (singular: taxon) and these groups 
    are given a taxonomic rank; groups of a given rank can be aggregated 
    to form a super group of higher rank, thus creating a taxonomic hierarchy.
+
+#. Biosimilar 
+   
+   Biosimilars also known as follow-on biologics are biologic medical products 
+   whose active drug substance is made by a living organism or derived from 
+   a living organism by means of recombinant DNA or controlled gene expression 
+   methods.

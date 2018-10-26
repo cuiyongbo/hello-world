@@ -1603,12 +1603,12 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | 
 | bug
 | Definition: conceal a miniature microphone in a room or telephone in order to monitor or record someone’s conversation.
-| Usage: The phones in the presidential palace were bugged.
+| Usage: The phones in the presidential palace were bugged. [监听]
 | Usage: They bugged her hotel room.
 | Definition: irritate, annoy or bother someone
 | Usage: A persistent reporter was bugging me.
-| Definition: an enthusiastic interest in something as a sport or a hobby
-| Usage: A travel bug.
+| Definition: an enthusiastic interest in something as a sport or a hobby.
+| Usage: A travel bug. [驴友]
 | Idiom: bug off
 | Definition: leave quickly, go off; a rude way of telling someone to go away.
 | Usage: If you see the enemy troop, bug off.
