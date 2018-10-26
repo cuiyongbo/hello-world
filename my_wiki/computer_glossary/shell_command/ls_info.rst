@@ -1,14 +1,6 @@
-**********
-ls command
-**********
-
-**NAME**
-
-   ls - list directory contents
-
-**SYNOPSIS**
-
-   ls [OPTION]... [FILE]...
+****************************
+ls - list directory contents
+****************************
 
 **DESCRIPTION**
 
@@ -32,7 +24,14 @@ ls command
 
    .. option:: -F, --classify
       
-      append type indicator (one of '\*/=>@|') to entries.
+      append type indicator (one of '\*/=>@|') to entries::
+
+         @ means symbolic link (or that the file has extended attributes).
+         * means executable.
+         = means socket.
+         | means named pipe.
+         > means door.
+         / means directory.
 
    .. option:: -h, --human-readable
       

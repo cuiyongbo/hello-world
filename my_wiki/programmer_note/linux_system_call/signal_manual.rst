@@ -2,6 +2,18 @@
 SIGNAL Manual
 *************
 
+.. note::
+
+   We need to define some of the terms used throughout our discussion of signals. 
+   First, a signal is **generated** for a process (or sent to a process) when 
+   the event that causes the signal occurs. The event could be a hardware 
+   exception (e.g., divide by 0), a software condition (e.g., an alarm timer expiring), 
+   a terminal-generated signal, or a call to the kill function. When the signal 
+   is generated, the kernel usually sets a flag of some form in the process table.
+   We say that a signal is **delivered** to a process when the action for a signal 
+   is taken. During the time between the generation of a signal and its delivery, 
+   the signal is said to be **pending.**
+
 .. contents::
    :local:
 
@@ -537,6 +549,35 @@ sigsuspend -- atomically release blocked signals and wait for interrupt
    The ``sigsuspend()`` function always terminates by being interrupted,
    returning ``-1`` with *errno* set to ``EINTR``.
 
+
+sigpending - examine pending signals
+====================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <signal.h>
+      int sigpending(sigset_t *set);
+
+   ``sigpending()`` returns the set of signals that are pending for 
+   delivery to the calling thread (i.e., the signals which have been 
+   raised while blocked). The mask of pending signals is returned in *set.*
+
+**RETURN VALUE**
+
+   **sigpending()** returns 0 on success and -1 on error.  
+   In the event of an error, *errno* is set to indicate the cause.
+
+**NOTE**
+
+   If a signal is both blocked and has a disposition of "ignored", 
+   it is not added to the mask of pending signals when generated.
+
+   The set of signals that is pending for a thread is the union 
+   of the set of signals that is pending for that thread and 
+   the set of signals that is pending for the process as a whole.
+   
 
 strsignal - return string describing signal
 ===========================================

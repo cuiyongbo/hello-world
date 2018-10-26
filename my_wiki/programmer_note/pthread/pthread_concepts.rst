@@ -103,7 +103,7 @@ POSIX concepts
    Once the interruption completes, the previous invocations will resume correct execution.
 
    This definition originates from single-threaded programming environments where the flow of control 
-   could be interrupted by an interruption and transferred to an :abbr:`ISR (interrupt service routine).` 
+   could be interrupted by an interruption and transferred to an :abbr:`ISR (interrupt service routine)`. 
    Any subroutine used by the ISR that could potentially have been executing when the interruption was 
    triggered should be reentrant.
 

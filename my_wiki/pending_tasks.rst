@@ -21,5 +21,4 @@ Pending tasks
 #. getrlimit, setlimit
 
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
-#. https://github.com/goodfeli/dlbook_exercises
-#. https://www.tensorflow.org/tutorials/
+#. https://github.com/goodfeli/dlbook_exercises.git

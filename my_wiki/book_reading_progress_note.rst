@@ -57,7 +57,18 @@ Advanced Programming in UNIX Environment
         - Mutex and rwlock (finished, 2018-10-24 -- 10-25)
         - Condition variable, spin locks, barrier (finished,  2018-10-25)
 
-      - Ch12 Thread control
+      - Ch12 Thread control (2018-10-26 -- 10-28)
+        
+        - Introduction (finished)
+        - Thread Limits (finished)
+        - Thread Attributes (finished)
+        - Sychronization Attributes (finished)
+        - Reentrancy (finished)
+        - Thread-specific data (finished)
+        - Cancle option (finished)
+        - Threads and signal (finished)
+        - Threads and fork (finished)
+        - Threads and IO (finished)
 
    - Ch14 Advanced I/O
      

@@ -81,21 +81,15 @@ open and possibly create a file or device
    use fcntl(2) to enable this flag.
 
 
-read Manual
-===========
+read - read from a file descriptor
+==================================
 
-**NAME**
-   
-   read - read from a file descriptor
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <unistd.h>
       ssize_t read(int fd, void *buf, size_t count);
-
-**DESCRIPTION**
 
    *read()* attempts to read up to *count* bytes from file descriptor *fd* into the buffer starting at *buf*.
 
@@ -116,21 +110,15 @@ read Manual
    left unspecified whether the file position (if any) changes.
 
 
-write Manual
-============
+write - write to a file descriptor
+========================================
 
-**NAME**
-   
-   write - write to a file descriptor
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <unistd.h>
       ssize_t write(int fd, const void *buf, size_t count);
-
-**DESCRIPTION**
 
    *write()* writes up to *count* bytes from the buffer pointed *buf* to the file 
    referred to by the file descriptor *fd*.
@@ -160,21 +148,60 @@ write Manual
    and returns the number of bytes written.
 
 
-close Manual
-============
+pread, pwrite - read from or write to a file descriptor at a given offset
+=========================================================================
 
-**NAME**
-       
-   close - close a file descriptor
+**DESCRIPTION**
 
-**SYNOPSIS**
+   .. code-block:: c
+      #include <unistd.h>
+      ssize_t pread(int fd, void *buf, size_t count, off_t offset);
+      ssize_t pwrite(int fd, const void *buf, size_t count, off_t offset);
+
+   *pread()* reads up to *count* bytes from file descriptor *fd* at offset *offset* 
+   (**from the start of the file**) into the buffer starting at *buf*. 
+   **The file offset is not changed.**
+
+   *pwrite()* writes up to *count* bytes from the buffer starting at *buf* 
+   to the file descriptor fd at offset *offset*. **The file offset is not changed.**
+
+   The file referenced by fd must be capable of seeking.
+
+**RETURN VALUE**
+
+   On success, *pread()* returns the number of bytes read 
+   (a return of zero indicates end of file) and 
+   *pwrite()* returns the number of bytes written.
+
+   Note that is not an error for a successful call to 
+   transfer fewer bytes than requested.
+
+   On error, -1 is returned and *errno* is set to indicate the cause of the error.
+
+**NOTES**
+
+   The *pread()* and *pwrite()* system calls are especially 
+   useful in multithreaded applications. They allow multiple 
+   threads to perform I/O on the same file descriptor without  
+   being affected by changes to the file offset by other threads.
+
+**BUGS**
+
+   POSIX requires that opening a file with the ``O_APPEND`` flag 
+   should have no effect on the location at which *pwrite()* writes data.  
+   However, on Linux, if a file is opened with ``O_APPEND``,  ``pwrite()``
+   appends data to the end of the file, regardless of the value of offset.
+
+
+close - close a file descriptor
+===============================
+
+**DESCRIPTION**
 
    .. code-block:: c
 
       #include <unistd.h>
       int close(int fd);
-
-**DESCRIPTION**
 
    *close()* closes a file descriptor, so that it no longer refers to any file and may be reused.  
    Any record locks (see *fcntl(2)*) held on the file it was associated with, and owned by the process, 
@@ -203,3 +230,5 @@ close Manual
    It is probably unwise to close file descriptors while they may be in use by system calls in other 
    threads in the same process. Since a file descriptor may be reused, there are some obscure race 
    conditions that may cause unintended side effects.
+
+

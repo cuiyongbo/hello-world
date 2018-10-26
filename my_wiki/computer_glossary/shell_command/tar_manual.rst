@@ -7,23 +7,21 @@ compress and decompress
    打包:将多个文件或目录生成一个文件;
    压缩:通过压缩算法把一个大文件压缩成一个小文件.
 
+.. contents::
+   :local:
+
 
 tar Command
 ===========
 
-**NAME**
-
-   tar — The GNU version of the tar archiving utility
-
-**SYNOPSIS**
-
+**DESCRIPTION**
+   
    .. code-block:: sh
 
       tar [-] A --catenate --concatenate | c --create | d --diff --compare | --delete 
                         | r --append | t --list | --test-label | u --update 
                         | x --extract --get [options] [pathname ...]
 
-**DESCRIPTION**
 
    Tar stores and extracts files from a tape or disk archive.
 
@@ -524,11 +522,6 @@ tar Command
       tar -zxvf photo.tar.gz *.png #只解压包内的 png 文件
 
 
-**SEE ALSO**
-   
-   tar(5), symlink(7), rmt(8)
-
-
 gzip/gunzip command
 ===================
 
@@ -583,3 +576,47 @@ gzip/gunzip command
    -rw-r--r-- 1 cuiyb 1049089 1952338 Jun 28 14:56 07nanjing.txt
    -rw-r--r-- 1 cuiyb 1049089 1949276 Jun 28 14:56 08nanjing.txt
    -rw-r--r-- 1 cuiyb 1049089 1944800 Jun 28 14:56 09nanjing.txt
+
+unzip command
+=============
+
+.. code-block:: sh
+
+   $ unzip -h
+      UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+      
+      Usage: unzip [-Z] [-opts[modifiers]] file[.zip] [list] [-x xlist] [-d exdir]
+        Default action is to extract files in list, except those in xlist, to exdir;
+        file[.zip] may be a wildcard.  -Z => ZipInfo mode ("unzip -Z" for usage).
+      
+        -p  extract files to pipe, no messages     -l  list files (short format)
+        -f  freshen existing files, create none    -t  test compressed archive data
+        -u  update files, create if necessary      -z  display archive comment only
+        -v  list verbosely/show version info       -T  timestamp archive to latest
+        -x  exclude files that follow (in xlist)   -d  extract files into exdir
+      modifiers:
+        -n  never overwrite existing files         -q  quiet mode (-qq => quieter)
+        -o  overwrite files WITHOUT prompting      -a  auto-convert any text files
+        -j  junk paths (do not make directories)   -aa treat ALL files as text
+        -U  use escapes for all non-ASCII Unicode  -UU ignore any Unicode fields
+        -C  match filenames case-insensitively     -L  make (some) names lowercase
+        -X  restore UID/GID info                   -V  retain VMS version numbers
+        -K  keep setuid/setgid/tacky permissions   -M  pipe through "more" pager
+        -O CHARSET  specify a character encoding for DOS, Windows and OS/2 archives
+        -I CHARSET  specify a character encoding for UNIX and other archives
+      
+      See "unzip -hh" or unzip.txt for more help.  Examples:
+        unzip data1 -x joe   => extract all files except joe from zipfile data1.zip
+        unzip -p foo | more  => send contents of foo.zip via pipe into program more
+        unzip -fo foo ReadMe => quietly replace existing ReadMe if archive file newer
+
+.. code-block:: sh
+   :caption: Examples
+
+   $ unzip -l Windows系列跟苹果系列.zip 
+   Archive:  Windows系列跟苹果系列.zip
+     Length      Date    Time    Name
+   ---------  ---------- -----   ----
+      766780  2018-09-22 22:01   hosts
+   ---------                     -------
+      766780                     1 file

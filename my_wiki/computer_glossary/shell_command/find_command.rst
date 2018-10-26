@@ -1,18 +1,12 @@
-************
-find Command
-************
+************************************************
+find - search for files in a directory hierarchy
+************************************************
 
-**NAME**
-
-   find - search for files in a directory hierarchy
-
-**SYNOPSIS**
+**DESCRIPTION**
 
    .. code-block:: sh
 
       find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]
-
-**DESCRIPTION**
 
    This manual page documents the GNU version of :command:`find`. GNU :command:`find` searches the directory tree
    rooted at each given *starting-point* by evaluating the given expression from left to right, according to the

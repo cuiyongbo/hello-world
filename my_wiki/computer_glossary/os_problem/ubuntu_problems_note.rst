@@ -53,3 +53,14 @@ Ubuntu Problems
 
       $ sudo gpedit /etc/default/apport
       # set enable to 0
+
+#. Ubuntu to change docker location
+   
+   .. code-block:: sh
+
+      ~$ gsettings set com.canonical.Unity.Launcher launcher-position Left
+      ~$ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+
+#. Ubuntu to install pthread manual
+   
+   Run ``sudo apt-get install manpages-posix manpages-posix-dev``.
