@@ -399,6 +399,32 @@ English Note 9
 | Definition: interrupt verbally.
 | Usage: “It's true!” he intervened.
 |
+| makeshift
+| Definition: serving as a temporary substitute; sufficient for the time being.
+| Usage: A few cushions formed a makeshift bed.
+| 
+| interim
+| Definition: the intervening time.
+| Usage: in the interim I'll just keep my fingers crossed/
+| Definition: in or for the intervening period; provisional or temporary.
+| Usage: an interim arrangement. [临时安排]
+|
+| vile
+| Definition: extremely unpleasant.
+| Usage: he has a vile temper.
+| Definition: morally bad; wicked.
+| Usage: as vile a rogue as ever lived.
+| 
+| rogue [流氓/垃圾]
+| Definition: a person or thing that behaves in an aberrant or unpredictable way. typicall with damaging or dangerous effect.
+| Usage: He hacked into data and ran rogue programs. [流氓应用]
+
+.. figure:: images/harpoon.jpg
+
+   Big harpoon is 'Solution to space junk'
+
+   Airbus is testing a big harpoon to snare rouge 
+   or redundant satellites and pull them out of the sky.
 
 .. figure:: images/embroidery.jpg
 
@@ -411,3 +437,7 @@ English Note 9
    the combination of two or more electromagnetic waveforms 
    to form a resultant wave in which the displacement is
    either reinforced or canceled.
+
+.. figure:: images/Metronome_Nikko.jpg
+
+   Metronome [节拍器]

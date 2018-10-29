@@ -2,6 +2,9 @@
 Divide and Conquer Design
 *************************
 
+.. contents:
+   :local:
+
 Case 1: Maximum subarray problem
 ================================
 
@@ -25,7 +28,7 @@ Case 1: Maximum subarray problem
             max-right = j
       return (max-left, max-right, left-sum + right-sum)
 
-   // O(n)
+   // O(n log n)
    Find-Max-SubArray(A, low, high)
       if high == low
          return (low, high, A[low])
@@ -33,7 +36,7 @@ Case 1: Maximum subarray problem
          (left-low, left-high, left-sum) = 
             Find-Max-SubArray(A, low, mid)
          (right-low, right-hight, right-sum) = 
-            Find-Max-SubArray(A, mid, high)
+            Find-Max-SubArray(A, mid+1, high)
          (cross-low, cross-high, cross-sum) = 
             Find-Max-Crossing-SubArray(A, low, mid, high)
       if left-sum >= right-sum and left-sum >= cross-sum
@@ -54,7 +57,7 @@ Case 1: Maximum subarray problem
             sum += A[j]
             if sum > max-i-sum
                max-i-sum = sum
-               max-i-right = i
+               max-i-right = j
          if max-i-sum > max-sum
             max-sum = max-i-sum
             max-left = max-i-left
@@ -63,6 +66,22 @@ Case 1: Maximum subarray problem
 
    // The initial call Find-Max-SubArray(A, 1, A.length) 
    // will find a maximum subarray of A[1...n]
+
+   // O(n)
+   // Assume the sum of zero-element subarray is zero
+   // and the sum of max subarray has to be nonnegative. 
+   Linear-Find-Max-SubArray(A, low, high)
+      max-sum = 0
+      max-sofar = 0
+      max-left = max-right = low
+      for i=low to high
+         max-sofar = max(max-sofar+A[i], 0)
+         if max-sofar == 0
+            max-left = i
+         if max-sofar > max-sum
+            max-sum = max-sofar
+            max-right = i
+      return (max-left, max-right, max-sum)
 
 
 case 2: Strassen's algorithm for matrix multiplication

@@ -212,11 +212,6 @@ name, also known as surname, with most family members.
 | Definition: (verb) to make (a hole, cavity, or tunnel by hollowing or removing the centre of inner part) 
 | Usage: The cheapest way of doing this was to excavate a long trench.
 | 
-| agonistic
-| Definition: (adjective) Striving to overcome in argument
-| Synonyms: combative
-| Usage: The incumbent’s aggressive, agonistic approach to the debate alienated many of his supporters.
-| 
 | dumbstruck
 | Definition: (adjective) So shocked or astonished as to be rendered speechless
 | Synonyms: dumbfounded, thunderstruck, flabbergastered, stupefied
@@ -2232,10 +2227,6 @@ admitted the computer was named after his daughter.
 | workaround [应变方法，变通]
 | Definition: a way in which you can solve or avoid a problem when the most | obvious solution is not possible.
 | 
-| makeshift
-| Definition: serving as a temporary substitute; sufficient for the time being.
-| Usage: A few cushions formed a makeshift bed.
-| 
 | confer
 | Definition: have discussions; exchange opinions.
 | Usage: The officials  were conferring with allies.
@@ -2298,16 +2289,12 @@ admitted the computer was named after his daughter.
 | Definition: extremely, very.
 | Usage: I was thrice blessed.
 | 
-| metronome 节拍器
 | Guinness world records 吉尼斯世界纪录
-| 
 | seven sin: gluttony, greed, sloth, wrath, pride, lust, envy
-| the eight year itch [七年之痒]
-| Definition: the desire for new sexual experience that is thought to be felt after eight years of marriage.
 | 
 | Dante 但丁
 | Purgatory
-| Definition: (in Roman Catholic doctrine) a place or state of suffering inhabited by the souls of sinners who are expiating their sins before going to heaven. [| 炼狱]
+| Definition: (in Roman Catholic doctrine) a place or state of suffering inhabited by the souls of sinners who are expiating their sins before going to heaven. [炼狱]
 | Usage: Getting up at five o’clock every morning is sheer purgatory. [活受罪]
 | 
 | permute
@@ -2874,17 +2861,6 @@ subjected to verbal and physical abuse over a period of years.
 | Definition: in a group; all together.
 | Usage: The Cabinet immediately resigned en masse. 
 | 
-
-Airbus is testing a big harpoon to snare rouge or redundant satellites
-and pull them out of the sky.
-
-.. figure:: images/harpoon.jpg
-
-   Big harpoon is 'Solution to space junk' 
-
-| rogue
-| Definition: a person or thing that behaves in an aberrant or unpredictable way. typicall with damaging or dangerous effect.
-| Usage: He hacked into data and ran rogue programs.
 | 
 | tether
 | Definition: a rope or chain with which an animal is tied to restrict its movement.

@@ -239,6 +239,7 @@ English Note 6
 | Usage: At 84, Jone feels his age precludes too much travel.
 | Usage: In some cases poor English precludes them from ever finding a job.
 |
+| grandeur
 | grandiose
 | Definition: impressive and imposing in appearance or style, especially pretentiously so.
 | Usage: the court's grandiose facade. [冠冕堂皇]

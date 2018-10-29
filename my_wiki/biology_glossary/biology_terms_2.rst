@@ -201,10 +201,15 @@ Nature Lifes
 
    Redwood [红树林]
 
-
 .. figure:: images/wombat.jpg
 
    Wombat [袋熊]
+
+.. figure:: images/CommonPipistrelle.jpg
+
+   Pipistrelle bat
+
+   a small insectivorous Old World bat with jerky, erratic flight.
 
 #. taxonomy
    

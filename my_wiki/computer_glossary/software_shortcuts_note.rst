@@ -88,6 +88,7 @@ Chrome
 #. Alt + Right Arrow: Open next place
 #. Show History: Ctrl + H
 #. Search with default engine: Ctrl + L
+#. Force Reload contents from server: Ctrl + F5
 
 
 FireFox
