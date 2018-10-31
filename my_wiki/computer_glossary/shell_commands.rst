@@ -31,6 +31,7 @@ Shell Commands
    shell_command/find_command
    shell_command/grep_command
    shell_command/kill_command
+   shell_command/ln_manual_note
    shell_command/ls_info
    shell_command/lsof_manual
    shell_command/nohup_command

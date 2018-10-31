@@ -233,3 +233,55 @@ close - close a file descriptor
    conditions that may cause unintended side effects.
 
 
+link - make a new name for a file
+=================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <unistd.h>
+      int link(const char *oldpath, const char *newpath);
+
+   *link()* creates a new link (also known as a hard link) to an existing file.
+   If *newpath* exists it will not be overwritten.
+
+   This new name may be used exactly as the old one for any operation; 
+   both names refer to the same file (and so have the same permissions 
+   and ownership) and it is impossible to tell which name was the "original".
+
+**RETURN VALUE**
+
+   On success, zero is returned. 
+   On error, -1 is returned, and **errno** is set appropriately.
+
+
+unlink - delete a name and possibly the file it refers to
+=========================================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <unistd.h>
+      int unlink(const char *pathname);
+
+   *unlink()* deletes a name from the filesystem.  
+   If that name was the last link to a file and 
+   no processes have the file open the file is 
+   deleted and the space it was using is made 
+   available for reuse.
+
+   If the name was the last link to a file but any processes 
+   still have the file open the file will remain in existence 
+   until the last file descriptor referring to it is closed.
+
+   If the name referred to a symbolic link the link is removed.
+   If the name referred to a socket, fifo or device the name 
+   for it is removed but processes which have the object open 
+   may continue to use it.
+
+**RETURN VALUE**
+
+   On success, zero is returned.  
+   On error, -1 is returned, and *errno* is set appropriately.
