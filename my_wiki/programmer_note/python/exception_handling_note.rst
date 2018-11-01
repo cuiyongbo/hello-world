@@ -1,6 +1,6 @@
-******************
-Exception Handling
-******************
+*************************
+Python Exception Handling
+*************************
 
 .. code-block:: py
    :caption: Syntax 1

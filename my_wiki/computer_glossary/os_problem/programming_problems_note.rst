@@ -33,6 +33,10 @@ Programming Problem Solutions
       $ automake -a
       $ ./configure  
 
+      $ ./test.py # also the same problem
+      : No such file or directory
+
+
 #. make: warning: Clock skew detected. Your build may be incomplete.
    
    That message is usually an indication that some of your files have modification times
@@ -42,3 +46,5 @@ Programming Problem Solutions
    or worse, necessary files to not be built. you can fix it by executing::
 
       find . -exec touch \{\} \+
+
+
