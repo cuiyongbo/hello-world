@@ -2,6 +2,9 @@
 Function Basics
 ***************
 
+.. contents::
+   :local:
+
 Defining Functions
 ==================
 
@@ -105,9 +108,7 @@ This function can be called in several ways:
    - or even giving all arguments: ``ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')``
 
 The default values are evaluated at the point of function definition in the defining scope, 
-so that
-
-.. code-block:: python
+so that::
 
    i = 5
    def f(arg=i):
@@ -144,12 +145,31 @@ this instead::
       L.append(a)
       return L
    
-   >>> f(1)
+   >>> f(1) # every time a new list is created since you passed the default None 
    [1]
    >>> f(2)
    [2]
    >>> f(3)
+   [3]
    
+
+.. code-block:: py
+
+   >>> def func(l):
+   ...     l[0] = 5
+   ... 
+   >>> l = [0]
+   >>> func(l)
+   >>> l
+   [5]
+   >>> def f2(a):
+   ...     a = a*2
+   ... 
+   >>> a=4
+   >>> f2(a)
+   >>> a
+   4
+
 
 Keyword Arguments
 =================

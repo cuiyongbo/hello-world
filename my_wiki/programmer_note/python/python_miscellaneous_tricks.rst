@@ -1,6 +1,6 @@
-********************
-Miscellaneous Usages
-********************
+***************************
+Python Miscellaneous Usages
+***************************
 
 #. input vs raw_input
 
@@ -265,6 +265,19 @@ Miscellaneous Usages
    
    The variable must be set **BEFORE** any import.
    you can add it to your :envvar:`PYTHONSTARTUP`.
+
+   To speed up loading modules, Python caches the compiled version 
+   of each module in the __pycache__ directory under the name 
+   ``module.version.pyc,`` where the version encodes the format 
+   of the compiled file; it generally contains the Python version 
+   number. This naming convention allows compiled modules from 
+   different releases and different versions of Python to coexist.
+
+   .. note::
+
+      A program doesn’t run any faster when it is read from a ``.pyc`` 
+      file than when it is read from a ``.py`` file; the only thing 
+      that’s faster about ``.pyc`` files is the speed with which they are loaded.
 
 
 #. Convert uncode string to Chinese characters

@@ -123,3 +123,13 @@ English Note 10
 | Definition: exist or occur at a date earlier than (something).
 | Usage: this letter predates her illness.
 | Definition: (of an animal) act as a predator of; catch and eat (prey).
+|
+| rummage
+| Definition: search unsystematically and untidily through a mass or receptacle.
+| Usage: he rummaged in his pocket for a handkerchief.
+| 
+| receptacle
+| Definition: an object or space used to contain something.
+| Usage: trash receptacles.
+| Definition: an electrical outlet into which the plug of an electrical device may be inserted. [插排]
+| 

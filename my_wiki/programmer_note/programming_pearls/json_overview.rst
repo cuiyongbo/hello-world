@@ -93,6 +93,31 @@ It makes sense that a data format that is interchangeable with programming langu
 .. image:: images/json_number.gif
 
 
+#. Python JSONEncoder 
 
+   +-------------------+---------------+
+   | Python            | JSON          |
+   +===================+===============+
+   | dict              | object        |
+   +-------------------+---------------+
+   | list, tuple       | array         |
+   +-------------------+---------------+
+   | str, unicode      | string        |
+   +-------------------+---------------+
+   | int, long, float  | number        |
+   +-------------------+---------------+
+   | True              | true          |
+   +-------------------+---------------+
+   | False             | false         |
+   +-------------------+---------------+
+   | None              | null          |
+   +-------------------+---------------+
+
+   .. note:: 
+  
+      Locate module::
+
+         >>> json.__file__
+         '/usr/lib/python2.7/json/__init__.pyc'
 
 
