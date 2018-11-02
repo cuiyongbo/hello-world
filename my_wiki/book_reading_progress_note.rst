@@ -35,8 +35,20 @@ Introduction To Algorithm
 Advanced Programming in UNIX Environment
 ========================================
 
-   - Ch1 Unix system overview (Finished before 2018-09)
+   - Ch01 Unix system overview (Finished before 2018-09)
    
+   - Ch03 File I/O
+     
+      - Atomic operations
+        
+   - Ch04 Files and directories
+     
+      - stat, fstat, and lstat function (finished, 2018-11-02)
+      - File types (finished, 2018-11-01)
+      - Sticky bit (finished, 2018-11-01)
+      - File systems (finished, 2018-11-01)
+      - link, unlink and remove functions (finished, 2018-11-01)
+
    - Process (Finished before 2018-09)
      
       - Ch07 Process environment (Finished)
@@ -49,30 +61,30 @@ Advanced Programming in UNIX Environment
 
       - Ch11 Threads (finished)
         
-        - Introduction (finished, 2018-10-23)
-        - Thread concepts (finished, 2018-10-23)
-        - Thread identification (finished, 2018-10-23)
-        - Thread creation (finished, 2018-10-23)
-        - Thread termination (finished, 2018-10-23)
-        - Mutex and rwlock (finished, 2018-10-24 -- 10-25)
-        - Condition variable, spin locks, barrier (finished,  2018-10-25)
+         - Introduction (finished, 2018-10-23)
+         - Thread concepts (finished, 2018-10-23)
+         - Thread identification (finished, 2018-10-23)
+         - Thread creation (finished, 2018-10-23)
+         - Thread termination (finished, 2018-10-23)
+         - Mutex and rwlock (finished, 2018-10-24 -- 10-25)
+         - Condition variable, spin locks, barrier (finished,  2018-10-25)
 
       - Ch12 Thread control (2018-10-26 -- 10-28)
         
-        - Introduction (finished)
-        - Thread Limits (finished)
-        - Thread Attributes (finished)
-        - Sychronization Attributes (finished)
-        - Reentrancy (finished)
-        - Thread-specific data (finished)
-        - Cancle option (finished)
-        - Threads and signal (finished)
-        - Threads and fork (finished)
-        - Threads and IO (finished)
+         - Introduction (finished)
+         - Thread Limits (finished)
+         - Thread Attributes (finished)
+         - Sychronization Attributes (finished)
+         - Reentrancy (finished)
+         - Thread-specific data (finished)
+         - Cancle option (finished)
+         - Threads and signal (finished)
+         - Threads and fork (finished)
+         - Threads and IO (finished)
 
    - Ch14 Advanced I/O
      
-     - Memory-mapped I/O (2018-10-09, finished)
+      - Memory-mapped I/O (2018-10-09, finished)
 
    - Ch15 Interprocess Communication
      

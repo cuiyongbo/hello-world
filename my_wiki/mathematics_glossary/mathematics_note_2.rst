@@ -2,6 +2,10 @@
 Mathematics Notes 2
 *******************
 
+生而为人，我很抱歉。
+
+-- 太宰治
+
 #. Sums of squares and cubes
    
    .. math::

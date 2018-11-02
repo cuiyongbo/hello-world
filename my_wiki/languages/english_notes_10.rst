@@ -119,3 +119,7 @@ English Note 10
 | Definition: (of an asset or benefit) not constituting or represented by a physical object and of a value not precisely measurable.
 | Usage: intangible business property like trademarks and patents.
 | 
+| predate
+| Definition: exist or occur at a date earlier than (something).
+| Usage: this letter predates her illness.
+| Definition: (of an animal) act as a predator of; catch and eat (prey).

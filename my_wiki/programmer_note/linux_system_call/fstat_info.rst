@@ -39,12 +39,12 @@ Get file status
       struct stat {
          dev_t     st_dev;         /* ID of device containing file */
          ino_t     st_ino;         /* inode number */
-         mode_t    st_mode;        /* protection */
+         mode_t    st_mode;        /* protection & file type */
          nlink_t   st_nlink;       /* number of hard links */
          uid_t     st_uid;         /* user ID of owner */
          gid_t     st_gid;         /* group ID of owner */
          dev_t     st_rdev;        /* device ID (if special file) */
-         off_t     st_size;        /* total size, in bytes */
+         off_t     st_size;        /* total size, in bytes, for regular file */
          blksize_t st_blksize;     /* blocksize for filesystem I/O */
          blkcnt_t  st_blocks;      /* number of 512B blocks allocated */
 
@@ -219,112 +219,6 @@ Get file status
 
    On success, zero is returned.  On error, -1 is returned,
    and *errno* is set appropriately.
-
-**ERRORS**
-
-   EACCES
-      Search permission is denied for one of the directories
-      in the path prefix of *pathname*. (See also path_resolution(7).)
-
-   EBADF  
-      fd is bad.
-
-   EFAULT 
-      Bad address.
-
-   ELOOP  
-      Too many symbolic links encountered while traversing the path.
-
-   ENAMETOOLONG
-      *pathname* is too long.
-
-   ENOENT 
-      A component of pathname does not exist, or *pathname* is an empty string.
-
-   ENOMEM
-      Out of memory (i.e., kernel memory).
-
-   ENOTDIR
-      A component of the path prefix of pathname is not a directory.
-
-   EOVERFLOW
-      *pathname* or *fd* refers to a file whose size, inode number,
-      or number of blocks cannot be represented in, respectively,
-      the types off_t, ino_t, or blkcnt_t. This error can occur when,
-      for example, an application compiled on a 32-bit platform without
-      ``-D_FILE_OFFSET_BITS=64`` calls ``stat()`` on a file whose size exceeds
-      ``INT32_MAX`` bytes.
-
-   The following additional errors can occur for ``fstatat()``:
-
-      EBADF  
-         *dirfd* is not a valid file descriptor.
-
-      EINVAL 
-         Invalid flag specified in *flags*.
-
-      ENOTDIR
-         *pathname* is relative and *dirfd* is a file descriptor referring
-         to a file other than a directory.
-
-**NOTES**
-
-   On Linux, ``lstat()`` will generally not trigger automounter action,
-   whereas ``stat()`` will (but see fstatat(2)).
-
-   For most files under the :file:`/proc` directory, ``stat()`` does not
-   return the file size in the *st_size* field; instead the field is returned
-   with the value 0.
-
-   Timestamp fields
-      Older kernels and older standards did not support nanosecond timestamp fields.
-      Instead, there were three timestamp fields—*st_atime*, *st_mtime*, and *st_ctime*—typed
-      as ``time_t`` that recorded timestamps with one-second precision.
-
-      Since kernel 2.5.48, the stat structure supports nanosecond resolution for the
-      three file timestamp fields. The nanosecond components of each timestamp are available
-      via names of the form *st_atim.tv_nsec* if the ``_BSD_SOURCE`` or ``_SVID_SOURCE`` feature
-      test macro is defined. Nanosecond timestamps are nowadays standardized, starting with POSIX.1-2008,
-      and, starting with version 2.12, glibc also exposes the nanosecond component names if ``_POSIX_C_SOURCE``
-      is defined with the value ``200809L`` or greater, or ``_XOPEN_SOURCE`` is defined with the value ``700`` 
-      or greater. If none of the aforementioned macros are defined, then the nanosecond values are exposed
-      with names of the form *st_atimensec*.
-
-      Nanosecond timestamps are supported on XFS, JFS, Btrfs, and ext4 (since Linux 2.6.23).
-      Nanosecond timestamps are not supported in ext2, ext3, and Reiserfs. On filesystems that
-      do not support subsecond timestamps, the nanosecond fields are returned with the value 0.
-
-   C library/kernel differences
-      Over time, increases in the size of the stat structure have led to three successive versions of ``stat()``:
-      sys_stat() (slot __NR_oldstat), sys_newstat() (slot __NR_stat), and sys_stat64() (slot  __NR_stat64) on 32-bit
-      platforms such as i386. The first two versions were already present in Linux 1.0 (albeit with different names);
-      the last was added in Linux 2.4. Similar remarks apply for ``fstat()`` and ``lstat()``.
-
-      The kernel-internal versions of the stat structure dealt with by the different versions are, respectively:
-
-         __old_kernel_stat
-            The original structure, with rather narrow fields, and no padding.
-
-         stat
-            Larger *st_ino* field and padding added to various parts of the structure
-            to allow for future expansion.
-
-         stat64 
-            Even larger *st_ino* field, larger *st_uid* and *st_gid* fields to accommodate
-            the Linux-2.4 expansion of UIDs and GIDs to 32 bits, and various other enlarged
-            fields and further padding in the structure. (Various padding bytes were eventually
-            consumed in Linux 2.6, with the advent of 32-bit device IDs and nanosecond components
-            for the timestamp fields.)
-
-      The glibc ``stat()`` wrapper function hides these details from applications, invoking the most
-      recent version of the system call provided by the kernel, and repacking the returned information
-      if required for old binaries.
-
-      On modern 64-bit systems, life is simpler: there is a single ``stat()`` system call and the kernel
-      deals with a stat structure that contains fields of a sufficient size.
-
-      The underlying system call employed by the glibc ``fstatat()`` wrapper function is actually called
-      ``fstatat64()`` or, on some architectures, ``newfstatat()``.
 
 **EXAMPLE**
 

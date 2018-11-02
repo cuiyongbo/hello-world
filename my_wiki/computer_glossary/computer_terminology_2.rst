@@ -284,22 +284,3 @@ Computer Terminology 2
 #. cryptography
    
    The art of writing or solving codes.
-
-#. Extended file attributes 
-   
-   Extended file attributes are file system features that enable users to associate computer files 
-   with metadata not interpreted by the filesystem, whereas regular attributes have a purpose strictly 
-   defined by the filesystem (such as permissions or records of creation and modification times). 
-   Unlike forks, which can usually be as large as the maximum file size, extended attributes are 
-   usually limited in size to a value significantly smaller than the maximum file size. 
-   Typical uses include storing the author of a document, the character encoding of a plain-text document, 
-   or a checksum, cryptographic hash or digital certificate, and discretionary access control information.
-
-   On macOS, these attributes are exposed through the ``xattr`` utility from the command line::
-
-      $ xattr hosts-bak 
-      com.apple.quarantine
-
-   And on Linux, use ``attr`` command. 
-   Refer to `Extended file attributes <https://en.wikipedia.org/wiki/Extended_file_attributes>`_ 
-   for more information
