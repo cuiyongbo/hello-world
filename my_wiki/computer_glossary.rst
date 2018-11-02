@@ -10,7 +10,6 @@ Computer Glossary
 
    computer_glossary/computer_terminology
    computer_glossary/computer_terminology_2
-   computer_glossary/shell_commands
    computer_glossary/data_structure_note
    computer_glossary/algorithm_docs
    computer_glossary/software_shortcuts_note

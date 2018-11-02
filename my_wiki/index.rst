@@ -13,6 +13,7 @@ Welcome to My Wiki's documentation!
    pending_tasks
    book_reading_progress_note
    computer_glossary
+   shell_commands
    programmer_note
    camera_glossary
    mathematics_glossary
