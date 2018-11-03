@@ -11,7 +11,6 @@ To be or not to be, this is a question.
 .. contents::
    :local:
 
-
 Introduction To Algorithm
 =========================
 
@@ -39,7 +38,8 @@ Advanced Programming in UNIX Environment
    
    - Ch03 File I/O
      
-      - Atomic operations
+      - Atomic operations (finished, 2018-11-02)
+      - /dev/fd
         
    - Ch04 Files and directories
      
@@ -132,6 +132,10 @@ More Programming Pearls
    - Column 05 (finished, 2018-10-21)
    - Column 06 (finished, 2018-10-22)
    - Column 07 (finished, 2018-10-21)
+   - Column 08 (finished, 2018-10-31)
+   - Column 09 (finished, 2018-11-03)
+   - Column 10 ()
+   - Column 11 (finished, 2018-11-03)
    - Column 12 (finished, 2018-10-30)
    - Column 13 (finished, 2018-10-23)
    - Column 14 (finished, 2018-10-21)

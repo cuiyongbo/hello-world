@@ -19,6 +19,8 @@ Language Study
    languages/english_notes_10
    languages/english_notes_11
    languages/japanese_notes
+   languages/song_lyric_collection_01
+   languages/song_lyric_collection_02
    languages/military_terms
    languages/steve_jobs_obituary
    languages/stephen_hawking_obituary

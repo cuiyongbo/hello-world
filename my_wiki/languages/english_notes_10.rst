@@ -133,3 +133,26 @@ English Note 10
 | Usage: trash receptacles.
 | Definition: an electrical outlet into which the plug of an electrical device may be inserted. [插排]
 | 
+| kludge
+| Definition: an ill-assorted collection of parts assembled to fulfill a particular purpose.
+| Definition: [Computing] a machine, system, or program that has been badly put together.
+| Usage: Hugh had to kludge something together.
+| 
+| ill-assorted
+| Definition: not well matched.
+| Usage: ill-assorted furniture.
+| Usage: an ill-assorted pair. [夫妻不和]
+| 
+| standstill
+| Definition: a situation or condition in which there is no movement or activity at all.
+| Usage: the traffic came to a standstill.
+| 
+| creep
+| Definition: move slowly and carefully, especially in order to avoid being heard or noticed.
+| Usage: I crept up the stairs, trying not to wake my parents. [蹑手蹑脚]
+| Usage: A slight feeling of suspicion crept over me. 
+| Usage: errors crept into his game.
+|
+| skin-deep
+| Definition: not deep or lasting; superficial.
+| Usage: their left-wing attitudes were only skin-deep.
