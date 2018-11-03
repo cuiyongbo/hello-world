@@ -7,7 +7,7 @@ Language Study
    languages/ascii_chart
    languages/punctuations
    languages/greek_alphabet
-   languages/english_notes
+   languages/english_notes_1
    languages/english_notes_2
    languages/english_notes_3
    languages/english_notes_4

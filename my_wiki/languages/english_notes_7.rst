@@ -10,22 +10,6 @@ English Note 7
 | 
 | ascend the throne
 | Definition: become king or queen.
-| 
-| polymath
-| polymathic 
-| Definition: a person of wide-ranging knowledge or learning.
-
-.. figure:: images/Von_Noyman_and_Computer.jpg
-
-   John Von Neumann
-
-   A polymath and pioneer of the application of operator theory 
-   to quantum mechanics, in the development of functional analysis.
-   
-| 
-| Well-versed 
-| Definition: highly experienced, practiced, or skilled; very knowledgeable; learned.
-| Usage: He is a well-versed scholar on the subject of biblical literature.
 |
 | CV [简历]
 | Full: curriculum vitae
@@ -102,6 +86,16 @@ English Note 7
 | drunkard [醉汉]
 | 
 | typo: a typographical error. [笔误]
+| typography
+| typographical
+| Definition: the art or procedure of arranging type or processing data and printing from it. [印刷工艺]
+| Usage: the bibliography contains many typographical errors.
+| 
+| typeset
+| Definition: arrange the type or process the data for (text that is to be printed).
+| Usage: the magazine is now typeset in New York.
+| Usage: professional-looking typeset material.
+| Usage: I’m quite a fast typist. [打字员]
 | 
 | crux
 | Plural: cruces [关键，症结]
@@ -416,3 +410,19 @@ English Note 7
 | Definition: the first successful Christian missionary in a country or to a people.
 | Definition: a vigorous and pioneering advocate or supporter of a particular policy, idea, or cause.
 | Usage: Leo Buscaglia, leading apostle of love and okayness.
+| 
+| purgatory [炼狱]
+| Definition: a place or state of suffering inhabited by the souls of sinners who are expiating their sins before going to heaven. 
+| Usage: Getting up at five o’clock every morning is sheer purgatory. [活受罪]
+| 
+| Well-versed 
+| Definition: highly experienced, practiced, or skilled; very knowledgeable; learned.
+| Usage: He is a well-versed scholar on the subject of biblical literature.
+| 
+| polymath
+| polymathic 
+| Definition: a person of wide-ranging knowledge or learning.
+
+.. figure:: images/Von_Noyman_and_Computer.jpg
+
+   John Von Neumann

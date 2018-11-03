@@ -103,12 +103,6 @@ Military Terms
 | sierra
 | Definition: a long jagged mountain chain.
 |
-| workhorse
-| Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
-| Definition: If you describe a person or machine as a workhorse, you mean that they can be relied upon to do a large amount of work, especiall work that is dull or routine.
-| Usage: My husband nerver even looked at me. I was just a workhorse bring up three children.
-| Usage: Falcon 9, the workhorse of SpaceX.
-| 
 | constellation
 | Definition: a constellation is a group of stars which form a pattern and have a name. [星系]
 | Definition: a constellation of similar things is a group of them.

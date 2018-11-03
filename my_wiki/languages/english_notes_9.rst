@@ -441,3 +441,12 @@ English Note 9
 .. figure:: images/Metronome_Nikko.jpg
 
    Metronome [节拍器]
+
+.. figure:: images/vertigo.png
+
+   Vertigo [眩晕]
+
+   a sensation of whirling and loss of balance, 
+   associated particularly with looking down from 
+   a great height, or caused by disease affecting 
+   the inner ear or the vestibular nerve. 

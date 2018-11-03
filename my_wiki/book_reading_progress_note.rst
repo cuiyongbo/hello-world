@@ -134,7 +134,7 @@ More Programming Pearls
    - Column 07 (finished, 2018-10-21)
    - Column 08 (finished, 2018-10-31)
    - Column 09 (finished, 2018-11-03)
-   - Column 10 ()
+   - Column 10 (finished, 2018-11-03)
    - Column 11 (finished, 2018-11-03)
    - Column 12 (finished, 2018-10-30)
    - Column 13 (finished, 2018-10-23)
@@ -149,5 +149,3 @@ Marked Books
 .. figure:: images/marked_books_01.jpg
 
    海怪 : 中世纪与文艺复兴时期地图中的海洋异兽
-
-

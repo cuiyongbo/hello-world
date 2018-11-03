@@ -1,5 +1,6 @@
-English Note
-============
+**************
+English Note 1
+**************
 
 学而不思则罔， 思而不学则殆。
 
@@ -1433,17 +1434,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | definiton: (of a person or their behavior) unconventional and slightly strange.
 | Usage: My favorite aunt is very eccentric.
 | 
-| bread-and-butter
-| Definition: a person’s livelihood or main source of income, typically as earned by routine work.
-| Definition: An everyday or ordinary person or thing.
-| Usage: Their bread and butter is reporting local events.
-| Usage: a good bread-and-butter player.
-| 
-| workhorse
-| Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
-| Definition: If you describe a person or machine as a workhorse, you mean that they can be relied upon to do a large amount of work, especiall work that is | dull or routine.
-| Usage: My husband nerver even looked at me. I was just a workhorse bring up three children.
-| 
 | almanac [年鉴]
 | Defininiton: a book that is pulished every year giving information for that year about a particular subject or activity. [年鉴]
 | 
@@ -1457,9 +1447,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | spellbinding
 | Definition: holding the complete attention of (someone) as though by magic; fascinating.
 | Usage: She told the spellbinding story of the legend’s life.
-| 
-| typist
-| Usage: I’m quite a fast typist. [打字员]
 | 
 | astray
 | Definition: away from the correct path or direction.
@@ -1619,21 +1606,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: used as a very polite word for royal people or their action.
 | Usage: Her gracious Majesty the Queen.
 | 
-| bug
-| Definition: conceal a miniature microphone in a room or telephone in order to monitor or record someone’s conversation.
-| Usage: The phones in the presidential palace were bugged. [监听]
-| Usage: They bugged her hotel room.
-| Definition: irritate, annoy or bother someone
-| Usage: A persistent reporter was bugging me.
-| Definition: an enthusiastic interest in something as a sport or a hobby.
-| Usage: A travel bug. [驴友]
-| Idiom: bug off
-| Definition: leave quickly, go off; a rude way of telling someone to go away.
-| Usage: If you see the enemy troop, bug off.
-| 
-| bug the heck out of
-| Definition: heck is a polite way of saying hell, to bug the heck out of is to be so irritating that even hell would complain.
-| 
 | apiary
 | apiarist [养蜂人]
 | Definition: a place where bees are kept; a collection of beehives.
@@ -1751,11 +1723,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | 
 | risible
 | Definition: such as to provoke laughter.
-| 
-| ludicrous
-| Definition: so foolish, unreasonable, or out of place as to be amusing.
-| Usage: It’s ludicrous that I have been fined for riding bicycle on the lane.
-| Synonyms: ridiculous
 | 
 | checkmate
 | Definition: a position in which one player cannot prevent his or her king being captured and therefore loses the game. [将军]
@@ -2237,12 +2204,6 @@ admitted the computer was named after his daughter.
 | Usage: No amount of exhortation had any effect.
 | Usge: The media have been exhorting people to turn out for the demonstration. | [游行]
 | 
-| glutton
-| Definition: a person who eats too much. [饕餮]
-| Definition: a person who is excessively fond of or always eager for somthing.
-| Synonyms: mania
-| Usage: A glutton of adventure.
-| 
 | malediction [咒语，诅咒]
 | Definition: a magical word or phrase uttered with the intention of bring | about evil or destruction.
 | Synonyms: curse 
@@ -2299,13 +2260,9 @@ admitted the computer was named after his daughter.
 | 
 | anomaly
 | anomalous
-| Definition: something that deviates from what is standard, normal, or | expected.
+| Definition: something that deviates from what is standard, normal, or expected.
 | Usage: There are a number of anomalies in the present system.
-| 
-| novice
-| Synonyms: beginner
-| Usage: He was a complete novice in foreign affairs.
-| 
+|
 | thrice
 | Definition: three times.
 | Usage: A dose of 25mg thrice daily.
@@ -2313,12 +2270,7 @@ admitted the computer was named after his daughter.
 | Usage: I was thrice blessed.
 | 
 | Guinness world records 吉尼斯世界纪录
-| seven sin: gluttony, greed, sloth, wrath, pride, lust, envy
-| 
 | Dante 但丁
-| Purgatory
-| Definition: (in Roman Catholic doctrine) a place or state of suffering inhabited by the souls of sinners who are expiating their sins before going to heaven. [炼狱]
-| Usage: Getting up at five o’clock every morning is sheer purgatory. [活受罪]
 | 
 | permute
 | permutable
@@ -2732,7 +2684,6 @@ knockoff 山寨货
 Tobby: two rolls of pennies? you shouldn't have.
 
 Cave: Shut up, it's a Scottish tradition, Townsfork used to cllect pennies to pay for weddings in old country.
-
 
 .. figure:: images/blackjack.jpg
 

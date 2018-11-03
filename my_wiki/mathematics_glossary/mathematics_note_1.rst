@@ -28,6 +28,10 @@ A professional practices until he cannot get it wrong.
    comes from the Greek axíōma (ἀξίωμα) 'that which is thought worthy or fit' 
    or 'that which commends itself as evident'
 
+#. differentials [微分]
+   
+   An infinitesimal difference between successive values of a variable.
+
 #. how to solve quardratic equation :math:`ax^2 + bx + c = 0` (solved)
    
    .. math::

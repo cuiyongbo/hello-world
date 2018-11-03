@@ -1,16 +1,12 @@
-***********
-sort Manual
-***********
-
-**NAME**
-   
-   sort - sort lines of text files
-
-**SYNOPSIS**
-
-   sort [OPTION]... [FILE]...
+*******************************
+sort - sort lines of text files
+*******************************
 
 **DESCRIPTION**
+
+   .. code-block:: sh
+   
+      sort [OPTION]... [FILE]...
 
    Write sorted concatenation of all FILE(s) to standard output.
 

@@ -67,6 +67,22 @@ English Note 10
 | au pair [保姆，月嫂？？]
 | Definition: a young foreign person, typically a woman, who helps with housework or child care in exchange for room and board.
 | 
+| bread and butter
+| Definition: a person’s livelihood or main source of income, typically as earned by routine work.
+| Definition: An everyday or ordinary person or thing.
+| Usage: Their bread and butter is reporting local events.
+| Usage: a good bread-and-butter player.
+| 
+| meat and potatoes
+| Definition: ordinary but fundamental things; basic ingredients.
+| Usage: the club's meat and potatoes remains blues performers.
+| 
+| workhorse
+| Definition: a workhorse is a horse is used to do a job, for example to pull a plough.
+| Definition: a person or machine that you can rely on to do hard or boring work.
+| Usage: My husband nerver even looked at me. I was just a workhorse bring up three children.
+| Usage: Falcon 9, the workhorse of SpaceX. [主力]
+| 
 | Versailles 凡尔赛宫
 | 
 | the eight year itch [七年之痒]
@@ -156,3 +172,56 @@ English Note 10
 | skin-deep
 | Definition: not deep or lasting; superficial.
 | Usage: their left-wing attitudes were only skin-deep.
+| 
+| hard-core
+| Definition: highly committed in one's support for or dedication to something.
+| Usage: the party still has a hard core of supporters that will always vote for them. [铁杆支持者]
+| Usage: hardcore gamers. [硬核玩家, 多代指愣头青]
+| 
+| junkie
+| Definition: a drug addict. [瘾君子]
+| Definition: a person with a compulsive habit or obsessive dependency on something.
+| Usage: a hard-core code junkie.
+| 
+| glutton
+| gluttony
+| Definition: a person who eats too much. [饕餮]
+| Definition: a person who is excessively fond of or always eager for somthing.
+| Synonyms: mania.
+| Usage: A glutton of adventure. [冒险狂]
+| **Seven sin**: gluttony, greed, sloth, wrath, pride, lust, envy [七宗罪]
+| 
+| bug
+| Definition: conceal a miniature microphone in a room or telephone in order to monitor or record someone’s conversation.
+| Usage: The phones in the presidential palace were bugged. [监听]
+| Usage: They bugged her hotel room.
+| Definition: irritate, annoy or bother someone
+| Usage: A persistent reporter was bugging me.
+| Definition: an enthusiastic interest in something as a sport or a hobby.
+| Usage: A travel bug. [驴友]
+| Idiom: bug off
+| Definition: leave quickly, go off; a rude way of telling someone to go away.
+| Usage: If you see the enemy troop, bug off.
+| Idiom: bug the heck out of
+| Definition: heck is a polite way of saying hell, to bug the heck out of is to be so irritating that even hell would complain.
+| 
+| garish
+| Definition: very brightly coloured in an unpleasant way.
+| Usage: garish clothes. [衣服花里胡哨]
+| 
+| novice
+| Synonyms: beginner
+| Usage: He was a complete novice in foreign affairs.
+| 
+| neophyte
+| Definition: a person who is new to a subject, skill, or belief.
+| Usage: four-day cooking classes are offered to neophytes and experts.
+| 
+| ransom
+| Definition: a sum of money or other payment demanded or paid for the release of a prisoner.
+| Definition: obtain the release of (a prisoner) by making a payment demanded.
+| Usage: the lord was captured in war and had to be ransomed. [赎金]
+| 
+| pet peeve
+| Definition: something that a particular person finds especially annoying.
+| Usage: one of my biggest pet peeves is poor customer service.
