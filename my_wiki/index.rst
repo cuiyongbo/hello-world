@@ -15,11 +15,12 @@ Welcome to My Wiki's documentation!
    computer_glossary
    shell_commands
    programmer_note
-   camera_glossary
+   machine_learning_note
    mathematics_glossary
    biology_glossary
    language_study_notes
    classics
+   camera_glossary
 
 
 Indices and tables

@@ -211,6 +211,10 @@ Nature Lifes
 
    a small insectivorous Old World bat with jerky, erratic flight.
 
+.. figure:: images/bison_day.jpg
+
+   Bison day 11-03
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 
