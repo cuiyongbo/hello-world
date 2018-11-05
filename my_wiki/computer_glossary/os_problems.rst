@@ -4,7 +4,8 @@ Problems about OS
 .. toctree::
    :maxdepth: 2
 
-   os_problem/programming_problems_note
    os_problem/macos_problems_note
    os_problem/ubuntu_problems_note
    os_problem/windows_problems_note
+   os_problem/programming_problems_note
+   os_problem/vim_configure_note

@@ -82,9 +82,7 @@ Computer Terminology
 | Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
 | 
 | simplex: allowing telecommunication in only one direction
-| prefix VS suffix 
 | prepend VS append
-| implicit    explicit
 | modularity
 | data hiding
 | data corruption

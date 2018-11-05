@@ -1309,8 +1309,16 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: An acrobatic dive.
 | 
 | net profit [净利润]
-| Definition: the actual profit after working expenses not included in the calculation of gross profit have been paid.
+| Definition: the actual profit after working expenses not included in the calculation of gross profit.
 | Usage: Twitter has posted its first quarter net profit, help by video advert sales growth.
+| 
+| net effect
+| Definition: a net effect or result is the final one, after everything has been considered.
+| Usage: The net effect of this policy has been higher employment but lower wages.
+| 
+| net weight [净重]
+| Definition: the net weight of something is its weight without its container。
+| Usage: a box of sweets weighing 500 grams net。
 | 
 | meager
 | Definition: Deficient in amount  or quality or extent.
