@@ -38,15 +38,16 @@ Advanced Programming in UNIX Environment
    
    - Ch03 File I/O
      
+      - File descriptor (finished, 2018-11-06)
       - Atomic operations (finished, 2018-11-02)
-      - /dev/fd
+      - /dev/fd (finished, 2018-11-03)
         
    - Ch04 Files and directories
      
       - stat, fstat, and lstat function (finished, 2018-11-02)
       - File types (finished, 2018-11-01)
       - Sticky bit (finished, 2018-11-01)
-      - File systems (finished, 2018-11-01)
+      - File systems (finished, 2018-11-01) [i-node]
       - link, unlink and remove functions (finished, 2018-11-01)
 
    - Process (Finished before 2018-09)

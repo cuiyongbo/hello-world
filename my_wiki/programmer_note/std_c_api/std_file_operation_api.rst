@@ -2,8 +2,12 @@
 File Operations
 ***************
 
-fopen, fdopen, freopen - stream open functions
-==============================================
+.. contents::
+   :local:
+
+
+stream open functions
+=====================
 
 **SYNOPSIS**
 
@@ -14,7 +18,6 @@ fopen, fdopen, freopen - stream open functions
       FILE *fopen(const char *path, const char *mode);
       FILE *fdopen(int fd, const char *mode);
       FILE *freopen(const char *path, const char *mode, FILE *stream);
-
 
 **DESCRIPTION**
 
@@ -88,7 +91,6 @@ fopen, fdopen, freopen - stream open functions
    The primary use of the ``freopen()`` function is to change the file associated with a
    standard text stream (``stderr``, ``stdin``, or ``stdout``).
 
-
 **RETURN VALUE**
 
    Upon successful completion ``fopen()``, ``fdopen()`` and ``freopen()``
@@ -96,20 +98,8 @@ fopen, fdopen, freopen - stream open functions
    is set to indicate the error.
 
 
-**ATTRIBUTES**
-
-   For an explanation of the terms used in this section, 
-   see :manpage:`attributes(7)`.
-
-   +------------------------------+---------------+---------+
-   | Interface                    | Attribute     | Value   |
-   +==============================+===============+=========+
-   | fopen(), fdopen(), freopen() | Thread safety | MT-Safe |
-   +------------------------------+---------------+---------+
-
-
-fclose - close a stream
-=======================
+close a stream
+==============
 
 **SYNOPSIS**
 
@@ -144,17 +134,6 @@ fclose - close a stream
    for any of the errors specified for the routines
    :manpage:`close(2)`, :manpage:`write(2)` or :manpage:`fflush(3)`.
 
-**ATTRIBUTES**
-
-   For an explanation of the terms used in this section, 
-   see :manpage:`attributes(7)`.
-
-   +-----------+---------------+---------+
-   | Interface | Attribute     | Value   |
-   +===========+===============+=========+
-   | fclose()  | Thread safety | MT-Safe |
-   +-----------+---------------+---------+
-
 **NOTES**
    
    Note that ``fclose()`` flushes only the user-space buffers provided by the C library. 
@@ -162,8 +141,8 @@ fclose - close a stream
    be flushed too, for example, with :manpage:`sync(2)` or :manpage:`fsync(2)`.
 
 
-fread, fwrite - binary stream input/output
-==========================================
+binary stream input/output
+==========================
 
 **SYNOPSIS**
    
@@ -196,20 +175,9 @@ fread, fwrite - binary stream input/output
    ``fread()`` does not distinguish between end-of-file and error, and callers must
    use :manpage:`feof(3)` and :manpage:`ferror(3)` to determine which occurred.
 
-**ATTRIBUTES**
 
-   For an explanation of the terms used in this section, 
-   see :manpage:`attributes(7)`.
-
-   +-------------------+---------------+---------+
-   | Interface         | Attribute     | Value   |
-   +===================+===============+=========+
-   | fread(), fwrite() | Thread safety | MT-Safe |
-   +-------------------+---------------+---------+
-
-
-clearerr, feof, ferror, fileno - check and reset stream status
-==============================================================
+check and reset stream status
+=============================
 
 **SYNOPSIS**
 
@@ -246,21 +214,9 @@ clearerr, feof, ferror, fileno - check and reset stream status
    (However, in case ``fileno()`` detects that its argument is not a valid stream,
    it must return ``-1`` and set *errno* to ``EBADF``.)
 
-**ATTRIBUTES**
 
-   For an explanation of the terms used in this section, 
-   see :manpage:`attributes(7)`.
-
-   +----------------------+---------------+---------+
-   | Interface            | Attribute     | Value   |
-   +======================+===============+=========+
-   | feof(), ferror()     | Thread safety | MT-Safe |
-   | fileno(), clearerr() |               |         |
-   +----------------------+---------------+---------+
-
-
-fgetpos, fseek, fsetpos, ftell, rewind - reposition a stream
-============================================================
+reposition a stream
+===================
 
 **SYNOPSIS**
 
@@ -279,11 +235,11 @@ fgetpos, fseek, fsetpos, ftell, rewind - reposition a stream
 
    The ``fseek()`` function sets the file position indicator for the stream
    pointed to by *stream*. The new position, measured in bytes, is obtained
-   by adding *offset* bytes to the position specified by *whence*. If *whence*
-   is set to ``SEEK_SET``, ``SEEK_CUR``, or ``SEEK_END``, the *offset* is relative
-   to the start of the file, the current position indicator, or end-of-file, respectively. 
-   A successful call to the ``fseek()`` function clears the end-of-file indicator for the
-   stream and undoes any effects of the :manpage:`ungetc(3)` function on the same stream.
+   by adding *offset* bytes to the position specified by whence::
+
+      # define SEEK_SET  0  /* Seek from beginning of file.  */
+      # define SEEK_CUR  1  /* Seek from current position.  */
+      # define SEEK_END  2  /* Seek from end of file.  */
 
    The ``ftell()`` function obtains the current value of the file position indicator for
    the stream pointed to by *stream*.
@@ -308,21 +264,9 @@ fgetpos, fseek, fsetpos, ftell, rewind - reposition a stream
    returns the current offset. Otherwise, ``-1`` is returned and *errno*
    is set to indicate the error.
 
-**ATTRIBUTES**
 
-   For an explanation of the terms used in this section, 
-   see :manpage:`attributes(7)`.
-
-   +----------------------------+---------------+---------+
-   | Interface                  | Attribute     | Value   |
-   +============================+===============+=========+
-   | ftell(), fseek(), rewind() | Thread safety | MT-Safe |
-   | fsetpos(), fgetpos()       |               |         |
-   +----------------------------+---------------+---------+
-
-
-fflush - flush a stream
-=======================
+flush a stream
+==============
 
 **SYNOPSIS**
 
@@ -350,20 +294,8 @@ fflush - flush a stream
    Upon successful completion 0 is returned.  
    Otherwise, EOF is returned and errno is set to indicate the error.
 
-**ATTRIBUTES**
-
-   For an explanation of the terms used in this section, 
-   see :manpage:`attributes(7)`.
-
-   +-----------+---------------+---------+
-   | Interface | Attribute     | Value   |
-   +===========+===============+=========+
-   | fflush()  | Thread safety | MT-Safe |
-   +-----------+---------------+---------+
-
 **NOTES**
    
    Note that ``fclose()`` flushes only the user-space buffers provided by the C library. 
    To ensure that the data is physically stored on disk the kernel buffers must
    be flushed too, for example, with :manpage:`sync(2)` or :manpage:`fsync(2)`.
-

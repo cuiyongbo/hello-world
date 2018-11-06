@@ -173,10 +173,8 @@ pread, pwrite - read from or write to a file descriptor at a given offset
    On success, *pread()* returns the number of bytes read 
    (a return of zero indicates end of file) and 
    *pwrite()* returns the number of bytes written.
-
    Note that is not an error for a successful call to 
    transfer fewer bytes than requested.
-
    On error, -1 is returned and *errno* is set to indicate the cause of the error.
 
 **NOTES**

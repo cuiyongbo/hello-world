@@ -118,6 +118,15 @@ Windows Problems
       Remove the solution's suo file (contains debug information, user settings such as break points, 
       bookmarks, and other user settings.), and rebuild the project.
 
+   **NOTE:** The :abbr:`.suo (solution user options)` file contains per-user solution options. 
+   This file should not be checked in to source code control. The suo file is a structured storage, 
+   or compound, file stored in a binary format. You save user information into streams with the name 
+   of the stream being the key that will be used to identify the information in the suo file. The file 
+   is used to store user preference settings, and is created automatically when Visual Studio saves 
+   a solution. Refer to 
+   `Solution User Options File <https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/solution-user-options-dot-suo-file?view=vs-2017>`_
+   for more information.
+
 #. VS console app exits without pause even running with Ctrl + F5
    
    Solution::

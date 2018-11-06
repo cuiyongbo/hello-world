@@ -386,4 +386,19 @@ Python Miscellaneous Usages
    `PEP 238: Changing the Division Operator <https://docs.python.org/whatsnew/2.2.html#pep-238-changing-the-division-operator>`_
    for more information.
 
-      
+#. python interpreter to suppress startup message.
+   
+   For python 2.x, you can do around with ``python -ic ""``.
+   But with python 3.x, ``python3 -q`` would suffice.
+
+   Note::
+
+      -c command
+      Specify the command to execute. This terminates the option list, 
+      following options are passed as arguments to the command.
+
+      -i     
+      When a script is passed as first argument or the -c option is used, 
+      enter interactive mode after executing the script or the  command.  
+      It  does not read the $PYTHONSTARTUP file. This can be useful to 
+      inspect global variables or a stack trace when a script raises an exception.

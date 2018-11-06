@@ -225,3 +225,10 @@ English Note 10
 | pet peeve
 | Definition: something that a particular person finds especially annoying.
 | Usage: one of my biggest pet peeves is poor customer service.
+| 
+| nevertheless
+| Definition: in spite of that; notwithstanding; all the same.
+| Synonyms: nonetheless.
+| Usage: statements which, although literally true, are nevertheless misleading.
+| Usage: it was the barest of welcomes, but it was a welcome nonetheless.
+| 

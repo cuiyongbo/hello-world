@@ -15,7 +15,7 @@ Python note
    python/builtin_dict_notes
    python/builtin_file_notes
    python/string_notes
-   python/python_complex_type_notes
+   python/python_complex_type_note
    python/list_tricks
    python/urllib_tricks
    python/sort_tricks

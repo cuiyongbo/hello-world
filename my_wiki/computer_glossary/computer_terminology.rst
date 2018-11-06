@@ -42,6 +42,7 @@ Computer Terminology
 | SPT = Server Process Time
 | NaN = not-a-number
 | BSS = Block Started by Symbol
+| SCM = Source Code Management
 |
 | divide-and-rule / divide-and-conquer [分而治之]
 | Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.
