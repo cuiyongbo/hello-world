@@ -43,6 +43,7 @@ Shell Commands
    shell_command/system_v_ipc_facility
    shell_command/tar_manual
    shell_command/time_manual
+   shell_command/tr_manual
    shell_command/ulimit_manual
    shell_command/uniq_manual
    shell_command/uptime_manual

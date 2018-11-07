@@ -9,30 +9,13 @@ grep Command
       grep [OPTIONS] PATTERN [FILE...]
       grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...]
 
-   :command:`grep` searches the named input *FILEs* (or standard input if no files are
+   grep searches the named input *FILEs* (or standard input if no files are
    named, or if a single hyphen-minus (-) is given as file name) for lines
-   containing a match to the given *PATTERN*. By default, :command:`grep` prints the
+   containing a match to the given *PATTERN*. By default, grep prints the
    matching lines.
 
-   In addition, three variant programs :command:`egrep`, :command:`fgrep` and :command:`rgrep` are
-   available.  :command:`egrep`  is the same as ``grep -E``. :command:`fgrep` is the same as
-   ``grep -F``. :command:`rgrep` is the same as ``grep -r``. Direct invocation as either
-   *egrep* or *fgrep* is deprecated, but is provided to allow historical
-   applications that rely on them to run unmodified.
 
 **OPTIONS**
-
-   #. Generic Program Information
-      
-      .. option:: --help 
-
-         Print a usage message briefly summarizing these command-line
-         options and the bug-reporting address, then exit.
-
-      .. option:: -V, --version
-
-         Print the version number of grep to the standard output stream.
-         This version number should be included in all bug reports.
 
    #. Matcher Selection
       
@@ -384,22 +367,14 @@ grep Command
       digit.
 
       Within a bracket expression, a range expression consists of two characters
-      separated by a hyphen (``-``).  It matches any single character that
-      sorts between the two characters, inclusive, using the locale's collating
-      sequence and character set. For example, in the default C locale, ``[a-d]``
-      is equivalent to ``[abcd]``.  Many locales sort characters in dictionary
-      order, and in these locales ``[a-d]`` is typically not equivalent to ``[abcd]``;
-      it might be equivalent to ``[aBbCcDd]``, for example. To obtain the traditional
-      interpretation of bracket expressions, you can use the C locale by setting
-      the :envvar:`LC_ALL` environment variable to the value ``C``.
+      separated by a hyphen (``-``).  For example, in the default C locale, ``[a-d]``
+      is equivalent to ``[abcd]``.  
 
       Finally, certain named classes of characters are predefined within bracket
       expressions, as follows. Their names are self explanatory, and
       they are [:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:],
       [:lower:], [:print:], [:punct:], [:space:], [:upper:], and [:xdigit:].
-      For example, [[:alnum:]] means the character class of numbers and
-      letters in the current locale. In the C locale and ASCII character set
-      encoding, this is the same as ``[0-9A-Za-z]``. (Note that the brackets in
+      For example, [[:alnum:]] means ``[0-9A-Za-z]``. (Note that the brackets in
       these class names are part of the symbolic names, and must be included
       in addition to the brackets delimiting the bracket expression.) 
 
@@ -421,7 +396,8 @@ grep Command
       beginning and end of a word. The symbol ``\b`` matches the empty string at
       the edge of a word, and ``\B`` matches the empty string provided it's not
       at the edge of a word. The symbol ``\w`` is a synonym for ``[_[:alnum:]]``
-      and ``\W`` is a synonym for ``[^_[:alnum:]]``.
+      and ``\W`` is a synonym for ``[^_[:alnum:]]``. for more information refer
+      to **re_format(7)** [macOS], or **regex(7)** [ubntu].
 
    #. Repetition
       
@@ -438,53 +414,11 @@ grep Command
          {n,m}  The preceding item is matched at least n times, but not more
                 than m times.
 
-   #. Concatenation
-      
-      Two regular expressions may be concatenated; the resulting regular
-      expression matches any string formed by concatenating two substrings
-      that respectively match the concatenated expressions.
-
    #. Alternation
       
       Two regular expressions may be joined by the infix operator (|); the
       resulting regular expression matches any string matching either
       alternate expression.
-
-   #. Precedence
-      
-      Repetition takes precedence over concatenation, which in turn takes precedence
-      over alternation. A whole expression may be enclosed in parentheses to override
-      these precedence rules and form a subexpression.
-
-   #. Back References and Subexpressions
-      
-      The back-reference ``\n``, where ``n`` is a single digit, matches the substring
-      previously matched by the nth parenthesized subexpression of the regular expression.
-
-   #. Basic vs Extended Regular Expressions
-      
-      lose their special meaning; instead use the backslashed versions,
-      In basic regular expressions the meta-characters ``?, +, {, |, (, and )``
-      ``\?, \+, \{, \|, \(, and \)``.
-
-      Traditional :command:`egrep` did not support the ``{`` meta-character,
-      and some :command:`egrep` implementations support ``\{`` instead,
-      so portable scripts should avoid ``{`` in ``grep -E`` patterns and
-      should use ``[{]`` to match a literal ``{``.
-
-      GNU ``grep -E`` attempts to support traditional usage by assuming
-      that ``{`` is not special if it would be the start of an invalid interval
-      specification. For example, the command ``grep -E '{1'`` searches for the
-      two-character string ``{1`` instead of reporting a syntax error in the
-      regular expression. POSIX allows this behavior as an extension, but
-      portable scripts should avoid it.
-
-
-**EXIT STATUS**
-
-   The exit status is ``0`` if selected lines are found, and ``1`` if not found.
-   If an error occurred the exit status is ``2``. (Note: POSIX error handling
-   code should check for ``'2'`` or greater.)
 
 
 **EXAMPLE**
@@ -499,4 +433,10 @@ grep Command
 
    $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
    ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/
+
+   # non-empty line count
+   $ grep -Hcve "^\s*$" fig_03_05.c
+   fig_03_05.c:14
+   $ wc -l fig_03_05.c
+         17 fig_03_05.c
 

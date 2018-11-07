@@ -43,7 +43,7 @@ du Manual
 
    .. option:: -s, --summarize
             
-      display only a total for each argument.
+      display only a total for each argument. equivalent to ``-d 0``.
 
    .. option:: -t, --threshold=SIZE
          
@@ -92,4 +92,12 @@ du Manual
       138M    2018-06-22 16:39        total
 
       $ du -h -t 8K | sort -rh
+
+      $ du -sch
+      298M  .
+      298M  total
+      $ du -sh
+      298M  .
+      $ du -sh -I"_build"
+      123M  .
       
