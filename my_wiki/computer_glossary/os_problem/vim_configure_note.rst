@@ -24,6 +24,9 @@ VIM Note
 
       "set tab width, there is some problem with makefile
       set tabstop=4
+
+      "indent automatically
+      set autoindent
       
       "mark syntax with different colors
       syntax on 

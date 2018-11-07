@@ -39,7 +39,12 @@ Advanced Programming in UNIX Environment
    - Ch03 File I/O
      
       - File descriptor (finished, 2018-11-06)
+      - I/O efficiency (finished, 2018-11-07)
+      - File sharing (finished, 2018-11-06)
       - Atomic operations (finished, 2018-11-02)
+      - dup and dup2 function (finished, 2018-11-07)
+      - sync, fsync and fdatasync functions (finished, 2018-11-07)
+      - fcntl function (finished, 2018-11-07)
       - /dev/fd (finished, 2018-11-03)
         
    - Ch04 Files and directories

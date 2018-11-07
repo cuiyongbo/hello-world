@@ -23,6 +23,14 @@ fcntl Manual
    The required argument type is indicated in parentheses after each cmd name (in most cases, the required type is *int*, 
    and we identify the argument using the name *arg*), or void is specified if the argument is not required.
 
+   The fcntl function is used for five different purposes::
+
+      * Duplicate an existing descriptor (cmd = F_DUPFD or F_DUPFD_CLOEXEC)
+      * Get/set file descriptor flags (cmd = F_GETFD or F_SETFD)
+      * Get/set file status flags (cmd = F_GETFL or F_SETFL)
+      * Get/set asynchronous I/O ownership (cmd = F_GETOWN or F_SETOWN)
+      * Get/set record locks (cmd = F_GETLK, F_SETLK, or F_SETLKW)
+
    **File descriptor flags**
 
       The following commands manipulate the flags associated with a file descriptor. 
