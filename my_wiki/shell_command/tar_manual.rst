@@ -60,10 +60,6 @@ tar Command
          
          list the contents of an archive
 
-      .. option:: --test-label
-         
-         test the archive volume label and exit
-
       .. option:: -u, --update
          
          only append files newer than copy in archive
@@ -115,15 +111,19 @@ tar Command
       # Extract all files from archive.tar.
       $ tar -xf archive.tar
 
-      tar -jcvf filename.tar.bz2  filelist # 压缩文件
-      tar -jtvf filename.tar.bz2 # 查看压缩文件内容
-      tar -jxvf filename.tar.bz2 -C directory # 解压到指定文件目录
-      tar -zcvf b2.tar.gz ./*
-      tar --exclude *.pdf -zcvf b2.tar.gz ./* #排除当前目录下的 pdf 文件
-      tar -ztvf b2.tar.gz
-      tar -zxvf backup.tar.gz -C ./test/
-      tar --newer "2017/01/01" -zcf  photo.tar.gz  ./Desktop/Screenshot/* #压缩比指定日期早的文件
-      tar -zxvf photo.tar.gz *.png #只解压包内的 png 文件
+      $ tar -jcvf filename.tar.bz2  filelist # 压缩文件
+      $ tar -jtvf filename.tar.bz2 # 查看压缩文件内容
+      $ tar -jxvf filename.tar.bz2 -C directory # 解压到指定文件目录
+      $ tar -zcvf b2.tar.gz ./*
+      $ tar --exclude *.pdf -zcvf b2.tar.gz ./* #排除当前目录下的 pdf 文件
+      $ tar -ztvf b2.tar.gz
+      $ tar -zxvf backup.tar.gz -C ./test/
+      $ tar --newer "2017/01/01" -zcf  photo.tar.gz  ./Desktop/Screenshot/* #压缩比指定日期早的文件
+      $ tar -zxvf photo.tar.gz *.png #只解压包内的 png 文件
+      
+      $ tar -zcf traffic-data-updater.tar.gz traffic-data-updater/* # pack and compress traffic-data-updater/ into traffic-data-updater.tar.gz
+      $ rm -rf traffic-data-updater/
+      $ tar -xf traffic-data-updater.tar.gz # uncompress traffic-data-updater.tar.gz into traffic-data-updater
 
 
 gzip/gunzip command
