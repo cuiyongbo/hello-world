@@ -215,6 +215,10 @@ Nature Lifes
 
    Bison day 11-03
 
+.. figure:: images/fungi.jpg
+
+   Fungi
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

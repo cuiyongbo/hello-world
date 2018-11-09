@@ -272,3 +272,14 @@ Computer Terminology 2
 #. cryptography
    
    The art of writing or solving codes.
+
+#. Hard coding
+
+   Hard coding is the software development practice of embedding data directly into the source code of a program 
+   or other executable object, as opposed to obtaining the data from external sources or generating it at run-time. 
+   Hard-coded data typically can only be modified by editing the source code and recompiling the executable, 
+   although it can be changed in memory or on disk using a debugger or hex editor. Data that are hard-coded usually 
+   represent unchanging pieces of information, such as physical constants, version numbers and static text elements. 
+   Softcoded data, on the other hand, encode arbitrary information like user input, HTTP server responses, 
+   or configuration files, and are determined at runtime.
+   
