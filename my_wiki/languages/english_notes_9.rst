@@ -351,6 +351,7 @@ English Note 9
 | Definition: prevent from happening; make impossible.
 | Usage: the secret nature of his work precluded official recognition.
 | Usage: his difficulties preclude him from leading a normal life.
+| Usage: At 84, Jone feels his age precludes too much travel. [力不从心]
 | 
 | exclude
 | Definition: deny (someone) access to or bar (someone) from a place, group, or privilege.

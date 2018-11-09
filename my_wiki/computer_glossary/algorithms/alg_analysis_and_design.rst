@@ -59,3 +59,36 @@ Algorithm analysis and design
       By analogy, :math:`\omega-notation` is to :math:`\Omega-notation` as
       o-notation is to O-notation, the relation :math:`f(n) = \omega(g(n))`
       implies that :math:`\lim \limits_{n \to \infty} \frac{f(n)}{g(n)} = \infty.`
+
+#. Randomized algorithms - hiring problem
+   
+   .. code-block:: none
+
+      Hire-assistant(n)
+         best = 0 // candicate 0 is the least-qualified dummy one
+         for i=1 to n
+            interview candicate i
+            if candicate i is better than best
+               hire candicate i
+               best = i
+
+      Randomized-hire-assistant(n)
+         // radomly permute the list of candicates
+         best = 0 // candicate 0 is the least-qualified dummy one
+         for i=1 to n
+            interview candicate i
+            if candicate i is better than best
+               hire candicate i
+               best = i
+
+#. Randomized algorithms - randomly permuting arrays
+   
+   .. code-block:: none
+
+      Permute-by-sorting(A)
+         n = A.length
+         let P be a new array with length n
+         for i=1 to n
+            P[i] = Random(1, n^3)
+         sort A, using P as sorting keys
+         

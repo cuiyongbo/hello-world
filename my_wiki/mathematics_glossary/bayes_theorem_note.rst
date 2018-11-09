@@ -8,8 +8,9 @@ Bayes Theorem
 
    .. math::
 
-     {P(A\mid B)={\frac {P(B\mid A)\,P(A)}{P(B)}},}
-     \text{where A and B are events and } { P(B)\neq 0}.
+     & P(A \mid B) = {\frac {P(B \mid A)\,P(A)}{P(B)}}
+                 = {\frac {P(B \mid A)\,P(A)}{P(A)P(B \mid A) + P(\bar A)P(B \mid \bar A)}} \\
+     & \text{where A and B are events and } { P(B)\neq 0}.
       
    
 .. note::
