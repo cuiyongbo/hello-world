@@ -2,7 +2,7 @@
 Hash Tutorial
 *************
 
-**Section 1 - Introduction**
+**Introduction**
 
 Hashing is a method for storing and retrieving records from a database.
 It lets you insert, delete, and search for records based on a search
@@ -50,7 +50,7 @@ Another introduction to hash table, see :download:`Introduction to hash table <h
 
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
 
    hashTutorial/hash_function
    hashTutorial/open_hashing
