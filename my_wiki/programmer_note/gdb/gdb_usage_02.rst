@@ -1,6 +1,6 @@
-************
-Gdb Tricks 2
-************
+*************
+Gdb Tricks 02
+*************
 
 **You force yourself to speed up because you don't want to keep others waitting.**
 
@@ -93,3 +93,20 @@ Gdb Tricks 2
 
       # Solution three
       gdb program_name program_pid
+
+#. Gdb to peek all methods in a class
+   
+   .. code-block:: sh
+
+      (gdb) ptype PastTiCompiler
+      type = class PastTiCompiler {
+        private:
+          int64 m_lastTiUpdateTime;
+        public:
+          PastTiCompiler(void);
+          bool prepare(void);
+          void finalize(void);
+        private:
+          void initPast7TiSharedMem(void);
+          void loadPast7TiFromDisk(int64);
+      }

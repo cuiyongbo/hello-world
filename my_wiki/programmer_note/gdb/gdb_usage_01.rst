@@ -1,6 +1,6 @@
-**********
-Gdb Tricks
-**********
+*************
+Gdb Tricks 01
+*************
 
 #. select executable file
    
