@@ -36,9 +36,13 @@ urllib APIS
         
    Raises :exc:`URLError` on errors.
 
-   Note that ``None`` may be returned if no handler handles the request (though the default installed 
-   global OpenerDirector uses ``UnknownHandler`` to ensure this never happens).
+   .. note::
 
+      *timeout* is not a time limit on the entire response download;
+      rather, an exception is raised if the server has not issued a
+      response for *timeout* seconds (more precisely, if no bytes
+      have been received on the underlying socket for *timeout* seconds).
+      If no *timeout* is specified explicitly, requests do not time out.
 
 .. function:: urllib.urlencode(query[, doseq])
 

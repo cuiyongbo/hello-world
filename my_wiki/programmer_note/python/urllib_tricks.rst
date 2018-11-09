@@ -9,13 +9,12 @@ urllib tricks
 .. contents::
    :local:
 
-Quick Reference to HTTP Headers
-===============================
+HTTP Headers
+============
 
-Typical headers include 'Content-length', 'Content-type', and so on. See the
-`Quick Reference to HTTP Headers <http://jkorpela.fi/http.html>`_
-for a useful listing of HTTP headers with brief explanations of their meaning
-and use.
+Typical headers include 'Content-length', 'Content-type', and so on. 
+See Quick Reference to HTTP Headers [#]_ for a useful listing 
+of HTTP headers with brief explanations of their meaning and use.
 
 .. code-block:: python
 
@@ -51,8 +50,8 @@ and use.
     ('Via', '1.1 vegur')]
 
 
-Quick reference to http response codes
-======================================
+HTTP response codes
+===================
 
 Because the default handlers handle redirects (codes in the 300 range), and
 codes in the 100--299 range indicate success, you will usually only see error
@@ -139,8 +138,6 @@ dictionary is reproduced here for convenience ::
       505: ('HTTP Version Not Supported', 'Cannot fulfill request.'),
    }
 
-Note: `Quick reference to common Http Status code <https://wiki.apache.org/httpd/CommonHTTPStatusCodes>`_
-
 Another http response code lookup table::
    
    import requests
@@ -149,11 +146,8 @@ Another http response code lookup table::
 
 4XX was a client error and 5XX a server one.
 
-.. note::
+.. rubric:: Footnotes
 
-   *timeout* is not a time limit on the entire response download;
-   rather, an exception is raised if the server has not issued a
-   response for *timeout* seconds (more precisely, if no bytes
-   have been received on the underlying socket for *timeout* seconds).
-   If no *timeout* is specified explicitly, requests do not time out.
+.. [#] `Quick Reference to HTTP Headers <http://jkorpela.fi/http.html>`_
+.. [#] `Quick reference to common Http Status code <https://wiki.apache.org/httpd/CommonHTTPStatusCodes>`_
 
