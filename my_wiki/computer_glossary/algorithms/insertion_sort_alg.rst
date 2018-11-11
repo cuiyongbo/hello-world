@@ -99,11 +99,11 @@ The most common variant of insertion sort, which operates on arrays, can be desc
    Insertion-Sort(A)
       for j=2 to A.length
          key = A[j]
-         i = j-1
-         for i>0 and A[i] > key
-            A[i+1] = A[i]
-            i = i - 1
-         A[i+1] = key
+         i = j
+         for i>1 and A[i] > key
+            A[i] = A[i-1]
+            i--
+         A[i] = key
 
 Pseudocode of the complete algorithm follows, where the arrays are zero-based::
 

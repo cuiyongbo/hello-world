@@ -70,3 +70,8 @@ Random generator
          n = A.length
          for i=1 to n
             swap(A[i], A[Random(i, n)])
+
+.. rubric:: Footnotes
+
+.. [#] `Monte Carlo method <https://en.wikipedia.org/wiki/Monte_Carlo_method>`_
+.. [#] `Monte Carlo algorithm <https://en.wikipedia.org/wiki/Monte_Carlo_algorithm>`_

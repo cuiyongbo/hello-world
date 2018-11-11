@@ -63,3 +63,10 @@ the longest key for the purpose of determining sorted order.
    print "Before sorting: ", array
    sorted_array = radix_sort(array)
    print "After sorting: ", sorted_array
+
+.. code-block:: none
+   :caption: Taken from **Introduction to algorithm**
+
+   Radix-Sort(A, d)
+      for i=1 to d
+         use a stable sort to sort array A on digit i

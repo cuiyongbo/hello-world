@@ -54,8 +54,8 @@ items have the same key as each other, they should have the same relative positi
 in the output as they did in the input.
 
 
-The algorithm
-=============
+Algorithm implementation
+========================
 
 In summary, the algorithm loops over the items, computing a histogram of the number 
 of times each key occurs within the input collection. It then performs a prefix sum 
@@ -100,6 +100,24 @@ the output array. Throughout the third loop, *count[i]* always stores the next p
 in the output array into which an item with key *i* should be stored, so each item is 
 moved into its correct position in the output array. The relative order of items with 
 equal keys is preserved here; i.e., **this is a stable sort**.
+
+
+.. code-block:: none
+   :caption: Take from *Introduction to algorithms*
+
+   Counting-Sort(A, B, k)
+      let C[0, k] be a new array
+      for i=0 to k
+         C[i] = 0
+      for j=1 to A.length
+         C[A[j]] = C[A[j]] + 1
+      // C[i] contains the number of elements equal to i
+      for i=1 to k
+         C[i] = C[i] + C[i-1]
+      // C[i] contains the number of elements less than or equal to i
+      for j=A.length downto 1 // for a stable-sort
+         B[C[A[j]]] = A[j]
+         C[A[j]] = C[A[j]] - 1
 
 
 Complexity analysis

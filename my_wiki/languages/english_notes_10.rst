@@ -232,3 +232,30 @@ English Note 10
 | Usage: statements which, although literally true, are nevertheless misleading.
 | Usage: it was the barest of welcomes, but it was a welcome nonetheless.
 | 
+| highbrow
+| Definition: scholarly or rarefied in taste. [曲高和寡]
+| Usage: innovatory art had a small, mostly highbrow following.
+| 
+| annotate
+| annotation
+| Definition: add notes to (a text or diagram) giving explanation or comment.
+| Usage: documentation should be annotated with explanatory notes.
+| 
+| entail
+| Definition: involve (something) as a necessary or inevitable part or consequence.
+| Usage: a situation that entails considerable risks.
+| 
+| resuscitate
+| resuscitation
+| Definition: revive (someone) from unconsciousness or apparent death.
+| Usage: an ambulance crew tried to resuscitate him.
+| Definition: make (something such as an idea or enterprise) active or vigorous again.
+| Usage: measures to resuscitate the ailing Japanese economy. [复苏]
+
+.. figure:: images/artifical_respiration.png
+
+   Artificial respiration/ventilation [人工呼吸]
+
+   artificial respiration. the stimulation of natural respiratory functions 
+   in persons whose breathing has failed or in newborn infants by artificially 
+   forcing air into and out of the lungs.

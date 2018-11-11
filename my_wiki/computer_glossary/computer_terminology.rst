@@ -114,3 +114,7 @@ faster than its Core i7 predecessor MacBook Pros, as per MacRumors.
 It also remains quiet, which is a major selling point [卖点] of the 
 MacBook Pro — though the thicker, louder Core i9 laptops from other 
 manufacturers do offer much greater performance.
+
+BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code)
+is a family of general-purpose, high-level programming languages whose
+design philosophy emphasizes ease of use.

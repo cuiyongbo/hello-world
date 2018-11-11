@@ -62,6 +62,14 @@ name, also known as surname, with most family members.
 | Definition: a word opposite in meaning to another
 | Usage: fast is one of the antonyms of slow.
 | 
+| acronym [首字母缩略词]
+| Definition: an abbreviation formed from the initial letters of others words and pronounced as a word (e.g., ASCII, NASA) 
+|
+| bacronym
+| backronym 
+| Definiton: an acronym deliberately formed from a phrase whose initial letters spell out a particular word or words, either to create a memorable name.
+| Usage: Biodiversity Serving Our Nation, or BISON (a backronym if ever there was one).
+|
 | vowel [元音]
 | Definition: A vowel is a sound such as the ones represented in writing by letters ‘a’, ‘i’, ‘u’, ‘e’, and ‘o’, which  you pronounce with your mouth open, allowing the air flow through it.
 | Antonyms: consonant [浊音]
@@ -787,7 +795,7 @@ name, also known as surname, with most family members.
 | Usage: Arm helicopters hovered overhead.
 | Definition: remain at or near  a particular level.
 | Usage: Inflation will hover around the 4% mark.
-| Definition: [Computing] use a mouse or other device to position the cursor over a particular area of a computer screen so as to cause a program to respond, | without clicking a button on the device.
+| Definition: [Computing] use a mouse or other device to position the cursor over a particular area of a computer screen so as to cause a program to respond, without clicking a button on the device.
 | Usage: You can hover your cursor over any button to see an explanation.
 | 
 | wondrous
@@ -1169,6 +1177,7 @@ Luis Suarez's header set Barca on their way before Philippe Coutinho's sublime b
 | 
 | impeccable
 | Definition: in accordance with the highest standards; faultless.
+|
 | sublime
 | Definition: of very great excellence or beauty,
 | Usage: Experiences that ranged from the sublime to the ridiculous.
@@ -2350,20 +2359,7 @@ admitted the computer was named after his daughter.
 | Definition: expert
 | Usage: One of the luminaries of child psychiatry.
 | 
-| acronym [首字母缩略词]
-| Definition: an abbreviation formed from the initial letters of others words and pronounced as a word (e.g., ASCII, NASA) 
-|
-
-BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code)
-is a family of general-purpose, high-level programming languages whose
-design philosophy emphasizes ease of use.
-
-| bacronym
-| backronym 
-| Definiton: an acronym deliberately formed from a phrase whose initial letters spell out a particular word or words, either to create a memorable name or | as a fanciful explanation of a word's origin.| 
-| Usage: Biodiversity Serving Our Nation, or BISON (a backronym if ever there was one).
-| 
-| Epiphany 主显节
+| Epiphany [主显节]
 | Definition: a Christian festival, held on the 6 January, in memory of the time when Magi came to see the baby jesus at Bethlehem.
 | Usage: The festival commemorating the Epiphany is on January 6.
 | 
@@ -3006,6 +3002,10 @@ It was three weeks ago that Facebook suspended Cambridge Analytica
 just hours before a whistleblower's revelations to the Observer
 newspaper triggered the current scandal over improper use of data.
 
+The death toll on Scottish sheep farms has seen a sharp increase
+following spells of heavy snow this winter, according to official
+figures.
+
 | whistleblower
 | whistle-blower [告密者，揭发者]
 | Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
@@ -3015,16 +3015,10 @@ newspaper triggered the current scandal over improper use of data.
 | Synonyms: consequence; result.
 | Usage: The number of prisoners increased as a corollary of the government's determination to combat violent crime.
 |
-
-Heavy snow takes toll on Scotland's lambs
-
-THe death toll on Scottish sheep farms has seen a sharp increase
-following spells of heavy snow this winter, according to official
-figures.
-
 | take (quite) a toll / tolls on (somebody or something)
-| Definition: to cause damage or wear by using something or by hard living.
+| Definition: to cause damage by hard living.
 | Usage: Drug abuse takes quite a toll on the lives of people.
+| Usage: Heavy snow takes toll on Scotland's lambs.
 | 
 | attrition
 | Definition: The process of reducing something's strength or effectiveness through sustained attack or pressure.

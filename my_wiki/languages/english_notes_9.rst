@@ -419,6 +419,10 @@ English Note 9
 | rogue [流氓/垃圾]
 | Definition: a person or thing that behaves in an aberrant or unpredictable way. typicall with damaging or dangerous effect.
 | Usage: He hacked into data and ran rogue programs. [流氓应用]
+|
+| Russian roulette
+| Definition: an activity that is potentially very dangerous.
+| Usage: we can't afford to play Russian Roulette with our existing antibiotics.
 
 .. figure:: images/harpoon.jpg
 
@@ -451,3 +455,23 @@ English Note 9
    associated particularly with looking down from 
    a great height, or caused by disease affecting 
    the inner ear or the vestibular nerve. 
+
+.. figure:: images/dart.jpg
+
+   Dart [飞镖]
+
+.. figure:: images/roulette.jpg
+
+   Roulette
+
+   a gambling game in which a ball is dropped onto a revolving wheel 
+   with numbered compartments, the players betting on the number at 
+   which the ball will come to rest.
+
+.. figure:: images/russian_roulette.jpg
+
+   Russian roulette
+
+   the practice of loading a bullet into one chamber of a revolver, 
+   spinning the cylinder, and then pulling the trigger while pointing 
+   the gun at one's own head.

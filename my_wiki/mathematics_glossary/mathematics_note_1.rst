@@ -7,11 +7,14 @@ A professional practices until he cannot get it wrong.
 
 #. Lemma
 
-   In mathematics, a "helping theorem" or lemma (plural lemmata or lemmas) 
-   from the Ancient Greek λῆμμα (lemma, "anything which is received, such as 
-   a gift, profit, or a bribe”) is a proven proposition which is used as a 
-   stepping stone to a larger result rather than as a statement of interest 
-   by itself.  
+   In mathematics, a helping theorem or lemma from the Ancient Greek λῆμμα 
+   (lemma, "anything which is received, such as a gift, profit, or a bribe”) 
+   is a proven proposition which is used as a stepping stone to a larger result 
+   rather than as a statement of interest by itself.  
+
+#. corollary [推论]
+   
+   a proposition that follows from (and is often appended to) one already proved.
 
 #. theorem [定理]
 

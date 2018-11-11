@@ -20,3 +20,16 @@ Mathematics Notes 2
    .. math:: 
 
       \sum_{k=0}^{n} \frac{1}{k} = \ln n + O(1)
+
+#. Identity function
+   
+   In mathematics, an identity function, also called an identity relation 
+   or identity transformation, is a function that always returns the same 
+   value that was used as its argument. In equations, the function is 
+   given by :math:`f(x) = x`.
+
+#. Idempotence
+   
+   In mathematics, a number that is idempotent keeps the same value when multiplied by itself, 
+   no matter how many times the function is applied. The word idempotent comes from the Latin 
+   words idem, which means "the same," and potent, from potentem, which means "power."
