@@ -245,6 +245,10 @@ English Note 10
 | Definition: involve (something) as a necessary or inevitable part or consequence.
 | Usage: a situation that entails considerable risks.
 | 
+| vendor
+| Definition: a person or company offering something for sale, especially a trader in the street. [商贩，路边摊]
+| Usage: an Italian ice cream vendor.
+| 
 | resuscitate
 | resuscitation
 | Definition: revive (someone) from unconsciousness or apparent death.

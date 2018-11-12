@@ -2,6 +2,8 @@
 Merge sort
 **********
 
+**不能把这个世界让给你所鄙视的人。**
+
 **Keyword:** stable, O(n log n), locality of reference.
 
 .. sidebar:: Merge sort

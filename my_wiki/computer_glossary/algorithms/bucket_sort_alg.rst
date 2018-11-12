@@ -50,6 +50,21 @@ Pseudocode
 ==========
 
 .. code-block:: none
+   :caption: Taken from *Introduction to Algorithms*
+
+   Bucket-Sort(A)
+      n = A.length
+      let B[0, n-1] be a new array
+      for i=0 to n-1
+         make B[i] an empty list
+      for i=1 to n
+         insert A[i] into list B[floor(10*A[i])]
+      for i=0 to n-1
+         sort list B[i] with insertion sort
+      concatenate the lists B[0, n-1] together in order
+
+
+.. code-block:: none
 
    function bucketSort(array, n) is
       buckets <-- new array of n empty lists

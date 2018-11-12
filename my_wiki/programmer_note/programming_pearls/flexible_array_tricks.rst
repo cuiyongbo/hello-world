@@ -1,15 +1,15 @@
+*********************
 Flexible array member
-=====================
+*********************
 
-Introduction
-------------
 
 Flexible array member is a feature introduced in the C99 standard of the C
 programming language. It is a member of a struct, which is an array without
 a given dimension, and **it must be the last member of such a struct**,
 as in the following example::
 
-   struct vectord {
+   struct vectord 
+   {
       size_t len;
       double arr[]; // the flexible array member must be last
    };
@@ -26,28 +26,19 @@ some space for the flexible array member,as in the following example::
 
    struct vectord *allocate_vectord (size_t len) 
    {
-   
       struct vectord *vec = malloc(offsetof(struct vectord, arr) 
                                           + len * sizeof(vec->arr[0]));
-   
       if (!vec) {
          perror("malloc vectord failed");
          exit(EXIT_FAILURE);
       }
    
       vec->len = len;
-   
       for (size_t i = 0; i < len; i++)
          vec->arr[i] = 0;
    
       return vec;
    }
-
-When using structures with a flexible array member, some convention regarding the actual size of that member should be defined.
-In the example above, the convention is that the member *arr* has *len* double-precision numbers.
-
-In previous standards of the C language, it was common to declare a zero-sized array member instead of a flexible array member.
-The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C++ does not have flexible array members.
 
 .. note::
 
@@ -70,12 +61,9 @@ The GCC compiler explicitly accepts zero-sized arrays for such purposes. while C
          #define json_to_real(json_)    container_of(json_, json_real_t, json)
          #define json_to_integer(json_) container_of(json_, json_integer_t, json)
 
-More examples
--------------
+#. Examples
 
-.. code-block:: c++
-
-   #pragma warning(disable: 4200)
+.. code-block:: c
 
    struct inotify_event {
       int      wd;       /* Watch descriptor */
@@ -108,3 +96,27 @@ More examples
       event = (inotify_event*)buffer;
       fclose(fp);
    }
+
+.. code-block:: c++
+   :caption: Taken from Jansson library
+
+   struct hashtable_pair 
+   {
+       struct hashtable_list list;
+       struct hashtable_list ordered_list;
+       size_t hash;
+       json_t *value;
+       char key[1]; // also a flexible array member
+   };
+
+   typedef hashtable_pair pair_t;
+
+   {
+      // ...
+      size_t len = strlen(key);
+      pair = jsonp_malloc(offsetof(pair_t, key) + len + 1);
+      if(!pair)
+         return -1;  
+      // ...
+   }
+      
