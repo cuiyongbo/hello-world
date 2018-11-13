@@ -2,6 +2,9 @@
 String format syntax
 ********************
 
+.. contents::
+   :local:
+
 print format syntax
 ===================
 
@@ -49,66 +52,69 @@ to be formatted from the mapping. For example::
    ... {"name":"cherry", "sex":"man", "age":25}
    cherry is a man, 25 years old.
 
-The conversion flag characters are:
+   >>> "%s %d" % ("hello world", 6)
+   'hello world 6'
 
-+------+-----------------------------------------------------------+
-| Flag | Meaning                                                   |
-+======+===========================================================+
-| #    | The value conversion will use the "alternate form".       |
-+------+-----------------------------------------------------------+
-| 0    | The conversion will be zero padded for numeric values.    |
-+------+-----------------------------------------------------------+
-| \+   | A sign character ("+" or "-") will precede the conversion |
-|      | (overrides a "space" flag).                               |
-+------+-----------------------------------------------------------+
-| \-   | The converted value is left adjusted (overrides the "0"   |
-|      | conversion if both are given).                            |
-|      | a space should be left before a positive number           |
-|      | (or empty string) produced by a signed conversion.        |
-+------+-----------------------------------------------------------+
+The conversion flag characters are::
+
+   +------+-----------------------------------------------------------+
+   | Flag | Meaning                                                   |
+   +======+===========================================================+
+   | #    | The value conversion will use the "alternate form".       |
+   +------+-----------------------------------------------------------+
+   | 0    | The conversion will be zero padded for numeric values.    |
+   +------+-----------------------------------------------------------+
+   | \+   | A sign character ("+" or "-") will precede the conversion |
+   |      | (overrides a "space" flag).                               |
+   +------+-----------------------------------------------------------+
+   | \-   | The converted value is left adjusted (overrides the "0"   |
+   |      | conversion if both are given).                            |
+   |      | a space should be left before a positive number           |
+   |      | (or empty string) produced by a signed conversion.        |
+   +------+-----------------------------------------------------------+
 
 A length modifier (h, l, or L) may be present, but is ignored
 as it is not necessary for Python.
 
-The conversion types are:
+The conversion types are::
 
-+------------+--------------------------------------------------------------------+-------+
-| Conversion | Meaning                                                            | Notes |
-+============+====================================================================+=======+
-| d          | Signed integer decimal                                             |       |
-+------------+--------------------------------------------------------------------+-------+
-| i          | Signed integer decimal                                             |       |
-+------------+--------------------------------------------------------------------+-------+
-| o          | Unsigned octal                                                     | \(1)  |
-+------------+--------------------------------------------------------------------+-------+
-| u          | Unsigned decimal                                                   |       |
-+------------+--------------------------------------------------------------------+-------+
-| x          | Unsigned hexadecimal (lowercase)                                   | \(2)  |
-+------------+--------------------------------------------------------------------+-------+
-| X          | Unsigned hexadecimal (uppercase)                                   | \(2)  |
-+------------+--------------------------------------------------------------------+-------+
-| e          | Floating point exponential format (lowercase)                      |       |
-+------------+--------------------------------------------------------------------+-------+
-| E          | Floating point exponential format (uppercase)                      |       |
-+------------+--------------------------------------------------------------------+-------+
-| f          | Floating point decimal format                                      |       |
-+------------+--------------------------------------------------------------------+-------+
-| F          | Floating point decimal format                                      |       |
-+------------+--------------------------------------------------------------------+-------+
-| g          | Same as "e" if exponent is greater than -4                         |       |
-|            | or less than precision, "f" otherwise                              |       |
-+------------+--------------------------------------------------------------------+-------+
-| G          | Same as "E" if exponent is greater than -4                         |       |
-|            | or less than precision, "F" otherwise                              |       |
-+------------+--------------------------------------------------------------------+-------+
-| c          | Single character (accepts integer or single character string)      |       |
-+------------+--------------------------------------------------------------------+-------+
-| r          | String (converts any python object using ``repr()``)               |       |
-+------------+--------------------------------------------------------------------+-------+
-| s          | String (converts any python object using ``str()``)                | \(3)  |
-+------------+--------------------------------------------------------------------+-------+
-| %          | No argument is converted, results in a "%" character in the result | \(4)  |
-+------------+--------------------------------------------------------------------+-------+
+   +------------+--------------------------------------------------------------------+-------+
+   | Conversion | Meaning                                                            | Notes |
+   +============+====================================================================+=======+
+   | d          | Signed integer decimal                                             |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | i          | Signed integer decimal                                             |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | o          | Unsigned octal                                                     | \(1)  |
+   +------------+--------------------------------------------------------------------+-------+
+   | u          | Unsigned decimal                                                   |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | x          | Unsigned hexadecimal (lowercase)                                   | \(2)  |
+   +------------+--------------------------------------------------------------------+-------+
+   | X          | Unsigned hexadecimal (uppercase)                                   | \(2)  |
+   +------------+--------------------------------------------------------------------+-------+
+   | e          | Floating point exponential format (lowercase)                      |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | E          | Floating point exponential format (uppercase)                      |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | f          | Floating point decimal format                                      |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | F          | Floating point decimal format                                      |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | g          | Same as "e" if exponent is greater than -4                         |       |
+   |            | or less than precision, "f" otherwise                              |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | G          | Same as "E" if exponent is greater than -4                         |       |
+   |            | or less than precision, "F" otherwise                              |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | c          | Single character (accepts integer or single character string)      |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | r          | String (converts any python object using ``repr()``)               |       |
+   +------------+--------------------------------------------------------------------+-------+
+   | s          | String (converts any python object using ``str()``)                | \(3)  |
+   +------------+--------------------------------------------------------------------+-------+
+   | %          | No argument is converted, results in a "%" character in the result | \(4)  |
+   +------------+--------------------------------------------------------------------+-------+
 
 Notes:
 
@@ -180,42 +186,42 @@ standard format specifier::
    If you need to include a brace character in the literal text,
    it can be escaped by doubling: ``{{`` and ``}}``.
 
-The meaning of the various alignment options is as follows:
+The meaning of the various alignment options is as follows::
 
-+--------+--------------------------------------------------------------------------------+
-| Option | Meaning                                                                        |
-+========+================================================================================+
-| '<'    | Forces the field to be left-aligned within the available space                 |
-|        | (this is the default for most objects).                                        |
-+--------+--------------------------------------------------------------------------------+
-| '>'    | Forces the field to be right-aligned within the available space                |
-|        | (this is the default for numbers).                                             |
-+--------+--------------------------------------------------------------------------------+
-| '^'    | Forces the field to be centered within the available space.                    |
-+--------+--------------------------------------------------------------------------------+
-| '='    | Forces the padding to be placed after the sign (if any) but before the digits. |
-|        | This is used for printing fields in the form ``‘+000000120’``. This alignment  |
-|        | option is only valid for numeric types. It becomes the default when ‘0’        |
-|        | immediately precedes the field width.                                          |
-+--------+--------------------------------------------------------------------------------+
+   +--------+--------------------------------------------------------------------------------+
+   | Option | Meaning                                                                        |
+   +========+================================================================================+
+   | '<'    | Forces the field to be left-aligned within the available space                 |
+   |        | (this is the default for most objects).                                        |
+   +--------+--------------------------------------------------------------------------------+
+   | '>'    | Forces the field to be right-aligned within the available space                |
+   |        | (this is the default for numbers).                                             |
+   +--------+--------------------------------------------------------------------------------+
+   | '^'    | Forces the field to be centered within the available space.                    |
+   +--------+--------------------------------------------------------------------------------+
+   | '='    | Forces the padding to be placed after the sign (if any) but before the digits. |
+   |        | This is used for printing fields in the form ``‘+000000120’``. This alignment  |
+   |        | option is only valid for numeric types. It becomes the default when ‘0’        |
+   |        | immediately precedes the field width.                                          |
+   +--------+--------------------------------------------------------------------------------+
 
 Note that unless a minimum field width is defined, the field width will always be the same size
 as the data to fill it, so that the alignment option has no meaning in this case.
 
-The sign option is only valid for number types, and can be one of the following:
+The sign option is only valid for number types, and can be one of the following::
 
-+--------+-----------------------------------------------------------+
-| Option | Meaning                                                   |
-+========+===========================================================+
-| '+'    | indicates that a sign should be used for                  |
-|        | both positive as well as negative numbers.                |
-+--------+-----------------------------------------------------------+
-| '-'    | indicates that a sign should be used                      |
-|        | only for negative numbers (this is the default behavior). |
-+--------+-----------------------------------------------------------+
-| space  | indicates that a leading space should be used on          |
-|        | positive numbers, and a minus sign on negative numbers.   |
-+--------+-----------------------------------------------------------+
+   +--------+-----------------------------------------------------------+
+   | Option | Meaning                                                   |
+   +========+===========================================================+
+   | '+'    | indicates that a sign should be used for                  |
+   |        | both positive as well as negative numbers.                |
+   +--------+-----------------------------------------------------------+
+   | '-'    | indicates that a sign should be used                      |
+   |        | only for negative numbers (this is the default behavior). |
+   +--------+-----------------------------------------------------------+
+   | space  | indicates that a leading space should be used on          |
+   |        | positive numbers, and a minus sign on negative numbers.   |
+   +--------+-----------------------------------------------------------+
 
 The ``'#'`` option causes the “alternate form” to be used for the conversion.
 The alternate form is defined differently for different types.

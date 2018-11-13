@@ -264,23 +264,13 @@ English Notes 5
 | convent
 | Definition: a Christian community under monastic vows, especially one of nuns. [修道院]
 | Definition: (also convent school) a school, especially one for girls, attached to and run by convent. [教会学校]
-
-.. image:: images/convent.jpeg
-
-.. figure:: images/glade.jpg
-
-   Glade : an open space in a forest
-
+|
 | pectoral
 | Definition: relating to the breast or chest.
 | Usage: a pectoral shield. [护胸]
 | buckler
 | Definition: a small, round shield held by a handle or worn on the forearm.
-
-.. image:: images/armored_soldier.jpg
-.. image:: images/armor.jpeg
-.. image:: images/japanese_swords.jpg
-
+|
 | stoop
 | Definition: to bend your body forwards and downwards.
 | Usage: She stooped down to pick up the child. 
@@ -338,6 +328,10 @@ English Notes 5
 | Phrase: hide one's light under a bushel
 | Definition: keep quiet about one's talents or accomplishments.
 |
+| ballpark
+| Definition: (of prices or costs) approximate; rough.
+| Usage: The ballpark figure is $400-500.
+|
 | demographic
 | Definition: relating to the structure of populations.
 | Usage: the demographic trend is toward an older population.
@@ -348,13 +342,15 @@ English Notes 5
 
    trough 水槽，饲料槽
 
-.. code-block:: none
-   :caption: Back of the envelope calculation
+.. figure:: images/glade.jpg
 
-   A back-of-the-envelope calculation is an informal mathematical computation, 
-   often performed on a scrap of paper such as an envelope. A back-of-the-envelope 
-   calculation uses estimated or rounded numbers to quickly develop a ballpark figure.
+   Glade : an open space in a forest
 
-| ballpark
-| Definition: (of prices or costs) approximate; rough.
-| Usage: The ballpark figure is $400-500.
+.. image:: images/armored_soldier.jpg
+.. image:: images/armor.jpeg
+.. image:: images/japanese_swords.jpg
+.. figure:: images/claymore.png
+
+   Claymore [西洋剑]
+
+.. image:: images/convent.jpeg

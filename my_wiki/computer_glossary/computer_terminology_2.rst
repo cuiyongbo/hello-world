@@ -282,4 +282,9 @@ Computer Terminology 2
    represent unchanging pieces of information, such as physical constants, version numbers and static text elements. 
    Softcoded data, on the other hand, encode arbitrary information like user input, HTTP server responses, 
    or configuration files, and are determined at runtime.
-   
+  
+#. Back-of-the-envelope calculation
+      
+   A back-of-the-envelope calculation is an informal mathematical computation, 
+   often performed on a scrap of paper such as an envelope. A back-of-the-envelope 
+   calculation uses estimated or rounded numbers to quickly develop a ballpark figure.
