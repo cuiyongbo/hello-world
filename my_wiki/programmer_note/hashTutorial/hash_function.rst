@@ -1,6 +1,6 @@
-*************
-Hash Function
-*************
+**************
+Hash Functions
+**************
 
 Hashing generally takes records whose key values come from a large range
 and stores those records in a table with a relatively small number of slots.
@@ -35,13 +35,12 @@ Next, you will see several examples of hash functions that illustrate these poin
 
 .. toctree::
 
-   hash_function_mid_square
    hash_function_string
    more_hash_function
    
 
-Simple Modulus Function
-=======================
+Simple Modulus Method
+=====================
 
 Consider the following hash function used to hash integers to a table of sixteen slots:
 
@@ -59,8 +58,8 @@ percentage of the keys might be even numbers, which means that the low order bit
 the result will also be poorly distributed.
 
 
-Binning
-=======
+Binning Method
+==============
 
 Say we are given keys in the range 0 to 999, and have a hash table of size 10. 
 In this case, a possible hash function might simply divide the key value by 100. 
@@ -89,3 +88,18 @@ a series of thin slices in steps of 16. In the normal distribution, some of thes
 associated with any given slot are near the tails, and some are near the center. 
 Thus, each table slot is equally likely (roughly) to get a key value.
 
+
+Mid-Square Method
+=================
+
+A good hash function to use with integer key values is the **mid-square** method. The mid-square method
+squares the key value, and then takes out the middle r bits of the result, giving a value in the range 0 
+to :math:`2^r - 1`. This works well because most of all bits of the key value contribute to the result. 
+For example, consider records whose keys are 4-digit numbers in base 10. The goal is to hash these key 
+values to a table of size 100 (i.e., a range of 0 to 99). This range is equivalent to 2 digits in base 10.
+That is, r = 2. If the input is the number 4567, squaring yields an 8-digit number, 20857489. The middle 
+two digits of this result are 57. All digits of the original key value (equivalently, all bits when the 
+number is viewed in binary) contribute to the middle two digits of the squared value. Thus, the result 
+is not dominated by the distribution of the bottom digit or the top digit of the original key value. 
+Of course, if the key values all tend to be small numbers, then their squares will only affect the 
+low-order digits of the hash value.
