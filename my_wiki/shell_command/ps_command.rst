@@ -47,6 +47,10 @@ ps -- process status
 
       Print the threads corresponding to each task.
 
+   .. option::  -T     
+
+      Show threads, possibly with SPID column.
+
    .. option:: -A / -e    
 
       Display information about other users' processes,
@@ -277,10 +281,23 @@ xstat       exit or stop status (valid only for stopped or zombie process)
    # To print a process tree:
    ps -ejH
    ps axjf
+   
+   $ ps -ejH | grep a.out
+   16225 16225 15569 pts/2    00:00:00           a.out
+   16226 16225 15569 pts/2    00:00:00             a.out
 
    # To get info about threads:
    ps -eLf
    ps axms
+
+   # threads in a process
+   $ ps -T -p16206
+     PID  SPID TTY          TIME CMD
+   16206 16206 pts/2    00:00:00 a.out
+   16206 16208 pts/2    00:00:00 a.out
+   16206 16209 pts/2    00:00:00 a.out
+   16206 16210 pts/2    00:00:00 a.out
+
 
    # To get security info:
    ps -eo euser,ruser,suser,fuser,f,comm,label

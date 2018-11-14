@@ -5,7 +5,6 @@ Miscellaneous Functions
 .. contents::
    :local:
 
-
 getpid, getppid -- get parent or calling process identification
 ===============================================================
 
@@ -62,8 +61,7 @@ gettid - get thread identification
       #error "SYS_gettid unavailable on this system"
       #endif
 
-   The PID column in top / htop for a thread refers to this TID.
-    
+   The PID column in top / htop, the SPID in ps for a thread refers to this TID.
 
 geteuid, getuid -- get user identification
 ==========================================

@@ -33,18 +33,11 @@ When designing hash functions, we are generally faced with one of two situations
      
 Next, you will see several examples of hash functions that illustrate these points.
 
-.. toctree::
-
-   hash_function_string
-   more_hash_function
-   
 
 Simple Modulus Method
 =====================
 
-Consider the following hash function used to hash integers to a table of sixteen slots:
-
-.. code-block:: c
+Consider the following hash function used to hash integers to a table of 16 slots::
 
    int hash(int x) 
    {
@@ -103,3 +96,64 @@ number is viewed in binary) contribute to the middle two digits of the squared v
 is not dominated by the distribution of the bottom digit or the top digit of the original key value. 
 Of course, if the key values all tend to be small numbers, then their squares will only affect the 
 low-order digits of the hash value.
+
+
+Hash Functions for Strings
+==========================
+
+Now we will examine some hash functions suitable for storing strings of characters. 
+We start with a simple summation function::
+
+   int hashForString(string x, int M) 
+   {
+      int i, sum;
+      for (sum=0, i=0; i < x.length(); i++) sum += x[i];
+      return sum % M;
+   }
+
+This function sums the ASCII values of the letters in a string. If the hash table size **M** is small 
+compared to the resulting summations, then this hash function should do a good job of distributing 
+strings evenly among the hash table slots, because it gives equal weight to all characters in the 
+string.  **Note that the order of the characters in the string has no effect on the result**. 
+A similar method for integers would add the digits of the key value, assuming that there are enough 
+digits to keep any one or two digits with bad distribution from skewing the results of the process 
+and generate a sum much larger than **M**.
+
+As with many other hash functions, the final step is to apply the modulus operator to the result, 
+using table size **M** to generate a value within the table range. If the sum is not sufficiently 
+large, then the modulus operator will yield a poor distribution. For example, because the ASCII 
+value for "A" is 65 and "Z" is 90, sum will always be in the range 650 to 900 for a string of 10 
+upper case letters. For a hash table of size 100 or less, a reasonable distribution results. 
+For a hash table of size 1000, the distribution is terrible because only slots 650 to 900 can 
+possibly be the home slot for some key value, and the values are not evenly distributed even 
+within those slots.
+
+Here is a much better hash function for strings:
+
+.. code-block:: java
+
+   // Use folding on a string, summed 4 bytes at a time
+   long hashForStringWithFolding(string s, int M) 
+   {
+      long sum = 0;
+      int intLength = s.length() / 4;
+      for (int j = 0; j < intLength; j++) 
+      {
+          long mult = 1;
+          char c[] = s.substring(j * 4, (j * 4) + 4).toCharArray();
+          for (int k = 0; k < c.length; k++) 
+          {
+            sum += c[k] * mult;
+            mult <<= 8;
+          }
+      }
+      return(Math.abs(sum) % M);
+   }
+
+For example, if the string "aaaabbbb" is passed to *hashForStringWithFolding*, then the first four bytes ("aaaa") 
+will be interpreted as the integer value ``416,611,827,615``, and the next four bytes ("bbbb") will be interpreted 
+as the integer value ``420,906,794,910``. Their sum is ``837,518,622,525`` (when treated as an unsigned integer). 
+If the table size is 101 then the modulus function will cause this key to hash to
+slot 36 in the table. Note that for any sufficiently long string, the sum for the integer quantities will
+typically cause a 32-bit integer to overflow (thus losing some of the high-order bits) because the 
+resulting values are so large. But this causes no problems when the goal is to compute a hash function.

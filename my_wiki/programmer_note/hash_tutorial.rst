@@ -53,6 +53,7 @@ Another introduction to hash table, see :download:`Introduction to hash table <h
    :titlesonly:
 
    hashTutorial/hash_function
+   hashTutorial/more_hash_function
    hashTutorial/open_hashing
    hashTutorial/bucket_hashing
    hashTutorial/collision_resolution

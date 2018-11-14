@@ -2,6 +2,9 @@
 Miscellaneous Hash Functions
 ****************************
 
+.. contents::
+   :local:
+
 Multiplicative hashing
 ======================
 

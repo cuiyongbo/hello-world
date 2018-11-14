@@ -4,7 +4,6 @@ Linux System Call
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 2
 
    linux_system_call/general_unix_api_manual
    linux_system_call/fork_info
@@ -23,4 +22,4 @@ Linux System Call
    linux_system_call/exit_system_calls_note
    linux_system_call/process_shedule_apis
    linux_system_call/nonlocal_jumps_note
-   linux_system_call/helper_functions
+   linux_system_call/unix_helper_functions
