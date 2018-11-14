@@ -101,3 +101,11 @@ du Manual
       $ du -sh -I"_build"
       123M  .
       
+      # GUN shell
+      $ du -sh .
+      307M    .
+      $ du -sh _build/
+      182M    _build/
+      $ du -sh --exclude="_build"
+      126M    .
+

@@ -626,8 +626,14 @@ Dystopia
    An institution, place, or person strongly defending 
    or upholding particular principles, attitudes, or activities.
 
-Dead Reckoning
+.. image:: images/tupolev-tu-160-blackjack_1.jpg
+.. figure:: images/tupolev-tu-160-blackjack_2.png
 
-In navigation, dead reckoning or dead-reckoning (also ded for deduced reckoning or DR) 
-is the process of calculating one's current position by using a previously determined position, 
-or fix, and advancing that position based upon known or estimated speeds over elapsed time and course.
+   Tupolev Tu-160
+
+#. Dead Reckoning
+
+   In navigation, dead reckoning or dead-reckoning (also ded for deduced reckoning or DR) 
+   is the process of calculating one's current position by using a previously determined position, 
+   or fix, and advancing that position based upon known or estimated speeds over elapsed time and course.
+   

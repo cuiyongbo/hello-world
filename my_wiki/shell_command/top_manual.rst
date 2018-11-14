@@ -13,12 +13,25 @@ top - display Linux processes
    It can display system summary information as well as a list of processes 
    or threads currently being managed by the Linux kernel.
 
+**Hot Options**
+
+   .. option:: -H,  Threads-mode operation
+      
+      Instructs top to display individual threads.
+
 .. code-block:: sh
    :caption: Example
 
-   $top -p15702
-   PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND                                                                                                                                                                                                   
-   15702 cuiyb  20   0  293516  73948   3784 S  1.0  3.6   0:29.73 traffic_data_up   
+   $ top -p15702
+   PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND
+   
+   15702 cuiyb  20   0  293516  73948   3784 S  1.0  3.6   0:29.73 traffic_data_up 
+
+   $ top -H -p15813 
+   PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND
+
+   15813 cuiyb     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out
+   15815 cuiyb     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out  
 
 .. code-block:: none
    :caption: Press "f" to enter Fields Management

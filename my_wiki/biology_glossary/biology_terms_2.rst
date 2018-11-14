@@ -219,6 +219,11 @@ Nature Lifes
 
    Fungi
 
+.. image:: images/black_swan.jpg
+.. figure:: images/tundra_swan.jpg
+
+   Swan
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

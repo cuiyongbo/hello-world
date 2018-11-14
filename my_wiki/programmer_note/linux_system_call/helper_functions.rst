@@ -30,6 +30,40 @@ getpid, getppid -- get parent or calling process identification
    The ``getpid()`` and ``getppid()`` functions are always successful,
    and no return value is reserved to indicate an error.
 
+gettid - get thread identification
+==================================
+
+**DESCRIPTION**
+
+   .. code-block:: c
+
+      #include <sys/types.h>
+      pid_t gettid(void);
+
+      // Note: There is no glibc wrapper for this system call; see NOTES.
+
+   **gettid()** returns the caller's thread ID (TID).  In a single-threaded process, 
+   the thread ID is equal to the process ID (PID, as returned by **getpid(2)**).  
+   In a multithreaded process, all threads have the same PID, but each one has a 
+   unique TID.  For further details, see the discussion of CLONE_THREAD in clone(2).
+
+**NOTES**
+
+   * Glibc does not provide a wrapper for this system call; call it using **syscall(2)**.
+
+   * The thread ID returned by this call is not the same thing as a POSIX thread ID 
+     (as returned by **pthread_self(3)**).
+
+   .. code-block:: c
+
+      #ifdef SYS_gettid
+      printf("thread PID: %ld\n", (long)syscall(SYS_gettid));
+      #else
+      #error "SYS_gettid unavailable on this system"
+      #endif
+
+   The PID column in top / htop for a thread refers to this TID.
+    
 
 geteuid, getuid -- get user identification
 ==========================================
