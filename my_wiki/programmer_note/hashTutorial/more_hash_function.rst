@@ -52,7 +52,6 @@ many of those collisions but takes longer to compute. Multiplicative hashing is 
 to a "common mistake" that leads to poor diffusion—higher-value input bits do not affect
 lower-value output bits.
 
-
 Perfect hashing
 ===============
 
@@ -63,7 +62,6 @@ table, without any additional searching.
 Minimal perfect hashing
 =======================
 
-A minimal perfect hash function for the four names shown
 A perfect hash function for *n* keys is said to be minimal if its range consists of *n* consecutive
 integers, usually from 0 to n−1. Besides providing single-step lookup, a minimal perfect hash function
 also yields a compact hash table, without any vacant slots. Minimal perfect hash functions are much
@@ -74,7 +72,6 @@ harder to find than perfect ones with a wider range.
 +=======================================+===============================================+
 | .. image:: images/perfect_hashing.svg | .. image:: images/minimal_perfect_hashing.svg |
 +---------------------------------------+-----------------------------------------------+
-
 
 Universal hashing
 =================
@@ -103,14 +100,12 @@ is to use a :abbr:`CRC (Cyclic redundancy check)` of the string to compute a 32-
 possible that two different strings will have the same CRC, the likelihood is very small and only requires that
 one check the actual string found to determine whether one has an exact match. CRCs will be different for strings
 such as ``"Aaaaaaaaaa"`` and ``"Aaaaaaaaab"``. Although CRC codes can be used as hash values, they are not
-cryptographically secure, because they are not collision-resistant.
+cryptographically secure, because they are not **collision-resistant**.
 
 .. note::
 
    Collision resistance is a property of cryptographic hash functions: a hash function *H*
-   is collision resistant if it is hard to find two inputs that hash to the same output;
-   that is, two inputs a and b such that :math:`H(a) = H(b), and a \neq b`.
-
+   is collision resistant if it is hard to find two inputs that hash to the same output.
 
 Hashing with cryptographic hash functions
 =========================================
@@ -121,4 +116,3 @@ than checksums or fingerprints, and thus can provide very good general-purpose h
 In ordinary applications, this advantage may be too small to offset their much higher cost.
 However, this method can provide uniformly distributed hashes even when the keys are chosen
 by a malicious agent. This feature may help to protect services against :abbr:`DoS (denial of service attacks)`.
-

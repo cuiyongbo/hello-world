@@ -203,7 +203,6 @@ Iterator functions
          for line in iter(fp.readline, ''):
             process_line(line)
 
-
 .. function:: next(iterator[, default])
 
    Retrieve the next item from the *iterator* by calling its
@@ -216,7 +215,6 @@ Iterator functions
    a :meth:`__reversed__` method or supports the sequence protocol (the
    :meth:`__len__` method and the :meth:`__getitem__` method with integer
    arguments starting at ``0``).
-
 
 .. function:: sorted(iterable, *, key=None, reverse=False)
 

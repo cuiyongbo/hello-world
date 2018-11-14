@@ -39,15 +39,16 @@ suitable for both in-memory and disk-based searching and is one of the two most
 widely used methods for organizing large databases stored on disk (the other is the **B-tree**).
 
 In most applications, there are many more values in the key range than there are
-slots in the hash table, and we must devise a hash function that allows us to store the records in a much smaller table.
+slots in the hash table, and we must devise a hash function that allows us to store 
+the records in a much smaller table.
+
 Because the key range is larger than the size of the table, at least some of the
-slots must be mapped to from multiple key values. Given a hash function *h* and
-two keys *k1* and *k2*, if :math:`h(k1) = β = h(k2)` where *β* is a slot in the
-table, then we say that *k1* and *k2* have a **collision** at slot *β* under
-hash function *h*.
+slots must be mapped to from multiple key values. Given a hash function and two keys, 
+if :math:`h(k_1) = \beta = h(k_2)` where :math:`\beta` is a slot in the table, then we 
+say that :math:`k_1 \text { and } k_2` have a **collision** at slot :math:`\beta` 
+under hash function *h*.
 
 Another introduction to hash table, see :download:`Introduction to hash table <hashTutorial/docs/hashing_introduction.pdf>`.
-
 
 .. toctree::
    :titlesonly:
@@ -61,4 +62,3 @@ Another introduction to hash table, see :download:`Introduction to hash table <h
    hashTutorial/closed_hashing_analysis
    hashTutorial/deletion
    hashTutorial/int_hash
-
