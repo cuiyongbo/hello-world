@@ -32,13 +32,6 @@ Gdb Tricks 02
       7f66ac000000-7f66ac021000 rw-p 00000000 00:00 0 
       7f66ac021000-7f66b0000000 ---p 00000000 00:00 0 
       7f66b09bb000-7f66b09d1000 r-xp 00000000 08:01 1840155                    /lib/x86_64-linux-gnu/libgcc_s.so.1
-      7f66b11a7000-7f66b11aa000 rw-p 00000000 00:00 0 
-      7f66b11c1000-7f66b11c2000 rw-p 00026000 08:01 1836537                    /lib/x86_64-linux-gnu/ld-2.23.so
-      7f66b11c2000-7f66b11c3000 rw-p 00000000 00:00 0 
-      7fffc3a94000-7fffc3ab5000 rw-p 00000000 00:00 0                          [stack]
-      7fffc3b4a000-7fffc3b4d000 r--p 00000000 00:00 0                          [vvar]
-      7fffc3b4d000-7fffc3b4f000 r-xp 00000000 00:00 0                          [vdso]
-      ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
       Aborted (core dumped)
       $ ls
       a.out  core  core_dump_demo.c
@@ -110,3 +103,46 @@ Gdb Tricks 02
           void initPast7TiSharedMem(void);
           void loadPast7TiFromDisk(int64);
       }
+
+      (gdb) info functions PastTiCompiler
+      All functions matching regular expression "PastTiCompiler":
+      
+      File /past_ti_compiler/src/past_ti_compiler.cpp:
+      void PastTiCompiler::PastTiCompiler();
+      TiLinkMap *PastTiCompiler::allocFilteredMap(TiData*);
+      void PastTiCompiler::finalize();
+      void PastTiCompiler::initPast7TiSharedMem();
+      void PastTiCompiler::initWeeklyPastTiSharedMem();
+      bool PastTiCompiler::prepare();
+
+
+
+#. Gdb to print all function names
+   
+   .. code-block:: sh
+
+      (gdb) file a.out
+      (gdb) info function
+      All defined functions:
+      
+      File selection_partial_sort_alg.c:
+      int main();
+      int randint(int, int);
+      void select_nthElement(int *, int, int, int);
+      void select_nthElement_2(int *, int, int, int);
+      void select_nthElement_loop(int *, int, int, int);
+      
+      Non-debugging symbols:
+      0x0000000000400460  _init
+      0x0000000000400490  putchar@plt
+      0x00000000004004a0  __stack_chk_fail@plt
+      0x00000000004004b0  printf@plt
+      0x00000000004004c0  __libc_start_main@plt
+      0x00000000004004e0  _start
+      0x0000000000400510  deregister_tm_clones
+      0x0000000000400550  register_tm_clones
+      0x0000000000400590  __do_global_dtors_aux
+      0x00000000004005b0  frame_dummy
+      0x0000000000400cc0  __libc_csu_init
+      0x0000000000400d30  __libc_csu_fini
+      0x0000000000400d34  _fini

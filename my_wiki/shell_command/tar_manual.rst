@@ -10,7 +10,6 @@ compress and decompress
 .. contents::
    :local:
 
-
 tar Command
 ===========
 
@@ -93,6 +92,10 @@ tar Command
            
            exclude patterns listed in FILE
 
+      .. option:: --exclude pattern
+
+         exclude files, given as a PATTERN
+         
 .. note::
 
    z 选项表示 tar.gz 是使用 gzip 压缩的文件;

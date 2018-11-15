@@ -263,3 +263,16 @@ English Note 10
    artificial respiration. the stimulation of natural respiratory functions 
    in persons whose breathing has failed or in newborn infants by artificially 
    forcing air into and out of the lungs.
+
+.. figure:: images/monet_the_forest.jpg
+
+   Monet still makes an impression
+   
+   Was there frost in your neighborhood this morning? More than 100 years ago, 
+   impressionist painter **Claude Monet** painted this wintry scene, called **The Frost,** 
+   in the French commune of Vétheuil, where he lived from 1878 to 1881. We’re showing 
+   it today in honor of his birthday. Monet is considered a father of **impressionism,** 
+   the artistic movement characterized by thin brushstrokes and depicting the visual 
+   impression of the moment–especially in terms of light and color. The term impressionism 
+   derives from a review of Monet’s painting ‘Impression, Sunrise,’ which he exhibited in 1874. 
+   Happy birthday, Claude! 

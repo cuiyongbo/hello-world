@@ -81,3 +81,139 @@ Gdb Basics
    +------------------+----------------------------------------------------------------------+
    | watch condition  | Set a watchpoint for given condition, suspend when condition is true |
    +------------------+----------------------------------------------------------------------+
+
+#. Gdb info command
+   
+   .. code-block:: sh
+
+      (gdb) help info
+      Generic command for showing things about the program being debugged.
+
+      List of info subcommands:
+
+      info address -- Describe where symbol SYM is stored
+      info args -- Argument variables of current stack frame
+      info auto-load -- Print current status of auto-loaded files
+      info auto-load-scripts -- Print the list of automatically loaded Python scripts
+      info breakpoints -- Status of specified breakpoints (all user-settable breakpoints if no argument)
+      info extensions -- All filename extensions associated with a source language
+      info files -- Names of targets and files being debugged
+      info frame -- All about selected stack frame
+      info frame-filter -- List all registered Python frame-filters
+      info functions -- All function names
+      info line -- Core addresses of the code for a source line
+      info locals -- Local variables of current stack frame
+      info macro -- Show the definition of MACRO
+      info macros -- Show the definitions of all macros at LINESPEC
+      info mem -- Memory region attributes
+      info os -- Show OS data ARG
+      info proc -- Show /proc process information about any running process
+      info program -- Execution status of the program
+      info sharedlibrary -- Status of loaded shared object libraries
+      info source -- Information about the current source file
+      info sources -- Source files in the program
+      info stack -- Backtrace of the stack
+      info symbol -- Describe what symbol is at location ADDR
+      info target -- Names of targets and files being debugged
+      info threads -- Display currently known threads
+      info types -- All type names
+      info variables -- All global and static variable names
+      info vtbl -- Show the virtual function table for a C++ object
+      info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
+
+#. Gdb info example
+   
+   .. code-block:: sh
+
+      (gdb) info proc
+      process 16918
+      cmdline = '/past_ti_compiler'
+      cwd = '/past_ti_compiler'
+      exe = '/past_ti_compiler/past_ti_compiler'
+
+      (gdb) info program
+         Using the running image of child Thread 0x7ffff7fdd780 (LWP 16918).
+      Program stopped at 0x44685d.
+      It stopped after being stepped.
+      $ addr2line -f -e past_ti_compiler 0x44685d
+      main
+      /ti-servers/past_ti_compiler/src/main.cpp:104
+
+      (gdb) info target
+      Symbols from "/past_ti_compiler/past_ti_compiler".
+      Unix child process:
+         Using the running image of child Thread 0x7ffff7fdd780 (LWP 16918).
+         While running this, GDB does not access memory from...
+      Local exec file:
+         `/past_ti_compiler/past_ti_compiler', file type       elf64-x86-64.
+         Entry point: 0x446a46
+
+      (gdb) info line 78
+      Line 78 of "/ti-servers/past_ti_compiler/src/main.cpp" starts at address 0x446782 <main()+2> and ends at 0x44678c <main()+12>.
+      $ addr2line -f -e past_ti_compiler 0x446782
+      main
+      /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:78
+
+      (gdb) info sharedlibrary
+      From                To                  Syms Read   Shared Object Library
+      0x00007ffff7ddab00  0x00007ffff7df5660  Yes         /lib64/ld-linux-x86-64.so.2
+      0x00007ffff7bd4350  0x00007ffff7bd733c  Yes         /lib/x86_64-linux-gnu/librt.so.1
+      0x00007ffff79ceed0  0x00007ffff79cf9ce  Yes         /lib/x86_64-linux-gnu/libdl.so.2
+      0x00007ffff77709b0  0x00007ffff77b6ac5  Yes (*)     /usr/lib/x86_64-linux-gnu/libcurl.so.4
+      0x00007ffff754e9f0  0x00007ffff755b471  Yes         /lib/x86_64-linux-gnu/libpthread.so.0
+      0x00007ffff72a0620  0x00007ffff7303803  Yes (*)     /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+
+      (gdb) info source
+      Current source file is /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp
+      Compilation directory is /home/cuiyb/workspace/projects/ti-servers/tmp/tmp/past_ti_compiler
+      Located in /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp
+      Contains 131 lines.
+      Source language is c++.
+      Compiled with DWARF 2 debugging format.
+      Does not include preprocessor macro info.
+      $ wc -l past_ti_compiler/src/main.cpp 
+      131 past_ti_compiler/src/main.cpp
+
+      (gdb) info stack
+      #0  main () at /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:104
+
+      (gdb) info threads
+        Id   Target Id         Frame 
+        3    Thread 0x7ffff2008700 (LWP 16923) "fileWatchThread" 0x00007ffff6a50c5d in poll () at ../sysdeps/unix/syscall-template.S:81
+        2    Thread 0x7ffff7fdb700 (LWP 16922) "timerSysThread" 0x00007ffff7558b9d in nanosleep () at ../sysdeps/unix/syscall-template.S:81
+      * 1    Thread 0x7ffff7fdd780 (LWP 16918) "past_ti_compile" main () at /past_ti_compiler/src/main.cpp:104
+        
+     (gdb) info types Past
+     All types matching regular expression "Past":
+
+     File /past_ti_compiler/src/past_ti_compiler.h:
+     PastTiCompiler;
+     File /past_ti_compiler/src/past_ti_shared_data.h:
+     PastTiSharedData;
+     PastTiSharedData::PastTiElement;
+     File /past_ti_compiler/src/past_ti_trait.h:
+     PastTiFestival;
+
+     (gdb) ptype PastTiFestival
+     type = enum PastTiFestival {PastTiFestival_none, PastTiFestival_newYearDay, PastTiFestival_springFestival, 
+     PastTiFestival_qingmingFestival, PastTiFestival_mayDay, PastTiFestival_dragonBoatFestival, 
+     PastTiFestival_midAutumnDay, PastTiFestival_nationalDay, PastTiFestival_max} 
+
+     (gdb) info variables g_isRunning
+      All variables matching regular expression "g_isRunning":
+      
+      File /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:
+      static std::atomic_bool g_isRunning;
+
+      (gdb) info vtbl s
+      vtable for 'EnrouteTiServer' @ 0x6091f0 (subobject @ 0x8a53f0):
+      [0]: 0x451ce4 <EnrouteTiServer::~EnrouteTiServer()>
+      [1]: 0x451d52 <EnrouteTiServer::~EnrouteTiServer()>
+      [2]: 0x451bf2 <ncserver::NcServer::prepareProcess()>
+      [3]: 0x451c02 <ncserver::NcServer::initUnforkableResources()>
+      [4]: 0x451c12 <ncserver::NcServer::startService()>
+      [5]: 0x451c22 <ncserver::NcServer::stopService()>
+      [6]: 0x451c32 <ncserver::NcServer::cleanupUnforkableResources()>
+      [7]: 0x451c42 <ncserver::NcServer::finalizeProcess()>
+      [8]: 0x451468 <EnrouteTiServer::query(ncserver::ServiceIo*, ncserver::Request*)>
+      

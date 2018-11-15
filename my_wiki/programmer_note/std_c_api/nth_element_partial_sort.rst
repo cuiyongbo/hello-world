@@ -17,7 +17,7 @@ std\:\:nth_element
 The element pointed at by nth is changed to whatever element would occur in that position 
 if ``[first, last)`` were sorted. All of the elements before this new nth element are less 
 than or equal to the elements after the new nth element. More formally, nth_element partially 
-sorts the range [first, last) in ascending order so that the condition ``comp(*i, *j) == true`` 
+sorts the range ``[first, last)`` in ascending order so that the condition ``comp(*i, *j) == true`` 
 is met for any i in the range ``[first, nth)`` and for any j in the range ``[nth, last).``
 The element placed in the nth position is exactly the element that would occur in this position 
 if the range was fully sorted.
