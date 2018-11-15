@@ -24,6 +24,12 @@ English Note 9
 | Usage: the village has remained unspoiled and unsophisticated.
 | Definition: lacking refined worldly knowledge or tastes. [单纯的；阅历浅的；涉世不深的；不谙世故的]
 | 
+| pristine
+| Definition: in its original condition; unspoiled.
+| Usage: pristine copies of an early magazine.
+| Definition: clean and fresh as if new; spotless.
+| Usage: a pristine white shirt.
+| 
 | quaint
 | Definition: attractively unusual or old-fashioned.
 | Usage: quaint country cottages.
