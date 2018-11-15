@@ -9,16 +9,6 @@ Computer Terminology 2
    or above it. Subscripts appear at or below the baseline, while
    superscripts are above.
 
-#. Co-Processor
-
-   A co-processor is a computer processor used to supplement the functions
-   of CPU. Operations performed by the co-processor may be floating point arithmetic, 
-   graphics, signal processing, string processing, encryption or I/O Interfacing with 
-   peripheral devices. By offloading processor-intensive tasks from CPU, co-processors 
-   can accelerate system performance. Co-processors allow a line of computers to be 
-   customized, so that customers who do not need the extra performance don't need to 
-   pay for it.
-
 #. Rate limiting
 
    In computer networks, rate limiting is used to control the rate
@@ -164,7 +154,6 @@ Computer Terminology 2
    and they are available in software libraries for many others. Content-addressable 
    memory is a form of direct hardware-level support for associative arrays.
 
-
 #. Dynamic Array
 
    .. figure:: images/Dynamic_array.svg
@@ -237,12 +226,6 @@ Computer Terminology 2
       starting in 1973, the second subtracts a day back out every 100 years starting in 2001, and 
       the third adds a day back in every 400 years starting in 2001. The divisions in the formula 
       are integer divisions; that is, the remainder is discarded leaving only the integer quotient.
-   
-#. Overclocking [超频]
-
-   Overclocking is the process making a computer component run at a higher speed 
-   than that specified by the manufacturer. The components that can be overclocked 
-   include the CPU, the memory and the video cards.
 
 #. Golden hammer syndrome
 
@@ -288,3 +271,13 @@ Computer Terminology 2
    A back-of-the-envelope calculation is an informal mathematical computation, 
    often performed on a scrap of paper such as an envelope. A back-of-the-envelope 
    calculation uses estimated or rounded numbers to quickly develop a ballpark figure.
+
+#. Rat’s nest
+
+   A situation or condition that is characterized by messiness, disorder, disarray, 
+   or confusion. Commonly used in the technology sector to refer to a software design 
+   or implementation that is hopelessly convoluted and difficult to understand, analogous 
+   to how a rat might construct its nest (haphazardly and hastily thrown together from 
+   whatever materials happended to be readily available at the time). For example, "I tried 
+   to figure out which wire was causing the problem, but there’s a veritable rat’s nest of wires, 
+   chords, and cables down there."

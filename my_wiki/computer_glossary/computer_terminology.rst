@@ -1,10 +1,8 @@
+********************
 Computer Terminology
-====================
+********************
 
-| Rat’s nest
-| Definition: A situation or condition that is characterized by messiness, disorder, disarray, or confusion. Commonly used in the technology sector to refer to a software design or implementation that is hopelessly convoluted and difficult to understand, analogous to how a rat might construct its nest (haphazardly and hastily thrown together from whatever materials happended to be readily available at the time).
-| Usage: I tried to figure out which wire was causing the problem, but there’s a veritable rat’s nest of wires, chords, and cables down there.
-| 
+
 | Type coercison and conversion 
 | Automatic coercison [强制转换]
 | two’s complement [二进制补码]
@@ -110,10 +108,9 @@ Computer Terminology
 .. image:: images/portfolio.png
 
 The Core i9 laptop is now much faster than it was before and, crucially, 
-faster than its Core i7 predecessor MacBook Pros, as per MacRumors. 
-It also remains quiet, which is a major selling point [卖点] of the 
-MacBook Pro — though the thicker, louder Core i9 laptops from other 
-manufacturers do offer much greater performance.
+faster than its Core i7 predecessor MacBook Pros, and it also remains quiet, 
+which is a major selling point [卖点] of the MacBook Pro — though the thicker, 
+louder Core i9 laptops from other manufacturers do offer much greater performance.
 
 BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code)
 is a family of general-purpose, high-level programming languages whose

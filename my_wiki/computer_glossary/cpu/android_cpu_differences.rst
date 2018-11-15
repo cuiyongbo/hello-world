@@ -1,6 +1,6 @@
-**************************************
-ARM vs X86 – Key differences explained
-**************************************
+****************************
+ARM vs X86 – Key differences
+****************************
 
 .. image:: images/android_cpus.jpg
 
