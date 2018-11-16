@@ -55,23 +55,6 @@ find - search for files in a directory hierarchy
       If more than one of -H, -L and -P is specified, each overrides the others; the last one appearing on
       the command line takes effect. 
 
-   .. option:: -D debugoptions
-
-      Print diagnostic information; this can be helpful to diagnose problems with why find is not doing what
-      you want. The list of debug options should be comma separated. Following show a complete list of valid
-      debug options::
-      
-         $ find -D help
-         Valid debug options include:
-         help       Explain the various -D options
-         tree       Display the expression tree
-         search     Navigate the directory tree verbosely
-         stat       Trace calls to stat(2) and lstat(2)
-         rates      Indicate how often each predicate succeeded
-         opt        Show diagnostic information relating to optimisation
-         exec       Show diagnostic information relating to -exec, -execdir, -ok and -okdir
-         time       Show diagnostic information relating to time-of-day and timestamp comparisons
-
 
 **EXPRESSION**
 
@@ -255,152 +238,10 @@ find - search for files in a directory hierarchy
          newlines or other types of whitespace to be correctly interpreted by programs that process
          the find output. This option corresponds to the -0 option of :command:`xargs`.
 
-      .. option:: -printf format
-
-         True; print format on the standard output, interpreting '\' escapes and '%' directives.  Field widths and
-         precisions  can  be  specified  as with the 'printf' C function. Please note that many of the fields are
-         printed as %s rather than %d, and this may mean that flags don't work as you might expect. This also
-         means that the '-' flag does work (it forces fields to be left-aligned). Unlike -print, -printf does not
-         add a newline at the end of the string. The escapes and directives are::
-
-            \a     Alarm bell.
-            \b     Backspace.
-            \c     Stop printing from this format immediately and flush the output.
-            \f     Form feed.
-            \n     Newline.
-            \r     Carriage return.
-            \t     Horizontal tab.
-            \v     Vertical tab.
-            \0     ASCII NUL.
-            \\     A literal backslash ('\').
-            \NNN   The character whose ASCII code is NNN (octal).
-
-            A '\' character followed by any other character is treated as an ordinary character,
-            so they both are printed.
-
-            %%     A literal percent sign.
-
-            %a     File's last access time in the format returned by the C 'ctime' function.
-            %Ak    File's last access time in the format specified by k, which is either '@'
-                   or a directive for the C 'strftime' function. The possible values for k
-                   are listed below; some of them might not be available on all systems, due
-                   to differences in 'strftime' between systems.
-
-                     @      seconds since Jan. 1, 1970, 00:00 GMT, with fractional part.
-
-                     Time fields:
-
-                     H      hour (00..23)
-
-                     I      hour (01..12)
-
-                     k      hour ( 0..23)
-
-                     l      hour ( 1..12)
-
-                     M      minute (00..59)
-
-                     p      locale's AM or PM
-
-                     r      time, 12-hour (hh:mm:ss [AP]M)
-
-                     S      Second (00.00 .. 61.00).  There is a fractional part.
-
-                     T      time, 24-hour (hh:mm:ss.xxxxxxxxxx)
-
-                     +      Date and time, separated by `+', for example `2004-04-28+22:22:05.0'.  This is a GNU exten‐
-                            sion.  The time is given in the current timezone (which may be affected by setting  the  TZ
-                            environment variable).  The seconds field includes a fractional part.
-
-                     X      locale's time representation (H:M:S).  The seconds field includes a fractional part.
-
-                     Z      time zone (e.g., EDT), or nothing if no time zone is determinable
-
-                     Date fields:
-
-                     a      locale's abbreviated weekday name (Sun..Sat)
-                     A      locale's full weekday name, variable length (Sunday..Saturday)
-                     b      locale's abbreviated month name (Jan..Dec)
-                     B      locale's full month name, variable length (January..December)
-                     c      locale's  date  and  time  (Sat  Nov  04 12:02:33 EST 1989).  The format is the same as for
-                            ctime(3) and so to preserve compatibility with that format, there is no fractional part  in
-                            the seconds field.
-                     d      day of month (01..31)
-                     D      date (mm/dd/yy)
-                     h      same as b
-                     j      day of year (001..366)
-                     m      month (01..12)
-                     U      week number of year with Sunday as first day of week (00..53)
-                     w      day of week (0..6)
-                     W      week number of year with Monday as first day of week (00..53)
-                     x      locale's date representation (mm/dd/yy)
-                     y      last two digits of year (00..99)
-                     Y      year (1970...)
-
-            %c     File's last status change time in the format returned by the C 'ctime' function.
-            %Ck    File's last status change time in the format specified by k, which is the same as for %A.
-            %t     File's last modification time in the format returned by the C 'ctime' function.
-            %Tk    File's last modification time in the format specified by k, which is the same as for %A.
-
-            %b     The  amount of disk space used for this file in 512-byte blocks.  Since disk space is allocated in
-                   multiples of the filesystem block size this is usually greater than %s/512, but  it  can  also  be
-                   smaller if the file is a sparse file.
-           
-            %s     File's size in bytes.
-            %k     The amount of disk space used for this file in 1K blocks. 
-
-            %d     File's depth in the directory tree; 0 means the file is a starting-point.
-            %D     The device number on which the file exists (the st_dev field of struct stat), in decimal.
-            %F     Type of the filesystem the file is on; this value can be used for -fstype.
-            %g     File's group name, or numeric group ID if the group has no name.
-            %G     File's numeric group ID.
-
-            %f     File's name with any leading directories removed (only the last element).
-            %h     Leading directories of file's name (all but the last element). If the file name contains no
-                   slashes (since it is in the current directory) the %h specifier expands to ".".
-
-            %p     File's name.
-            %P     File's name with the name of the starting-point under which it was found removed.
-
-            %H     Starting-point under which file was found.
-            %i     File's inode number (in decimal).
-
-            %n     Number of hard links to file.
-            %l     Object of symbolic link (empty string if file is not a symbolic link).
-
-            %M     File's permissions (in symbolic form, as for ls). 
-            %m     File's permission bits (in octal). 
-                   Normally  you will want to have a leading zero on this number,
-                   and to do this, you should use the # flag (as in, for example, `%#m').
-
-            %S     File's  sparseness. This is calculated as (BLOCKSIZE*st_blocks / st_size). The exact value you
-                   will get for an ordinary file of a certain length is system-dependent. However, normally sparse
-                   files  will have values less than 1.0, and files which use indirect blocks may have a value which
-                   is greater than 1.0. The value used for BLOCKSIZE is system-dependent, but is usually 512 bytes.
-                   If the file size is zero, the value printed is undefined. On systems which lack support for
-                   st_blocks, a file's sparseness is assumed to be 1.0.
-
-            %u     File's user name, or numeric user ID if the user has no name.
-            %U     File's numeric user ID.
-
-            %y     File's type (like in ls -l), U=unknown type (shouldn't happen)
-            %Y     File's type (like %y), plus follow symlinks: L=loop, N=nonexistent
-
-            A '%' character followed by any other character is discarded, but the other character is printed (don't
-            rely on this, as further format characters may be introduced). A '%' at the end of the format argument
-            causes undefined behaviour since there is no following character. In some locales, it may hide your door
-            keys, while in others it may remove the final page from the novel you are reading.
-
-            The %m and %d directives support the # , 0 and + flags, but the other directives do not, even if they
-            print numbers. Numeric directives that do not support these flags include G, U, b, D, k and n. The '-'
-            format flag is supported and changes the alignment of a field from right-justified (which is the default)
-            to left-justified.
-
       .. option:: -prune
 
          True; if the file is a directory, do not descend into it. If -depth is given, false; no effect.
          Because -delete implies -depth, you cannot usefully use -prune and -delete together.
-
 
       .. option:: -exec command ; / -exec command {} +
 
@@ -499,3 +340,7 @@ find - search for files in a directory hierarchy
 
       find /tmc_backup/tmc_backup/download_tmc/2018/05/15/15/ -name "shanghai.txt.gz" -exec cp --parents \{\} shanghai_tmc/ \;
 
+      $ find /run/shm/ | grep -E "idListHashMap|teHashMap"
+      /run/shm/idListHashMap
+      /run/shm/teHashMap
+      

@@ -440,3 +440,6 @@ grep Command
    $ wc -l fig_03_05.c
          17 fig_03_05.c
 
+   $ find /run/shm/ | grep -E "idListHashMap|teHashMap"
+   /run/shm/idListHashMap
+   /run/shm/teHashMap

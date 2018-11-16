@@ -97,3 +97,16 @@ curl - transfer a URL
       they will only mess things up for you.
 
       This option can be used multiple times to add/replace/remove multiple headers.
+
+**EXAMPLE**
+
+.. code-block:: sh
+
+   # HTTP GET 
+   $  curl  http://w.mapbar.com/nc/v1/tile/tmc/fastTimestamp -s
+   {"nextUpdateTime":15,"updateTime":1542364560}
+   
+   # HTTP POST 
+   $ curl -s -d '{"linkIds":"0", "flags":"speeds"}' http://116.213.115.77:81/nc/v1/nav2tmc?ver=2.1
+   {"timestamp": 1542364620, "trafficColors": "4", "trafficSpeeds": "0.50"}
+   

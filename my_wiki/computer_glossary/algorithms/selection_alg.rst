@@ -106,6 +106,19 @@ Selection Algorithm
          else
             return Randomized-Select(A, q+1, r, i-k)
 
+      Iterative-Randomized-Partition(A, p, r, i)
+         if p==r
+            return A[p]
+         while p < r
+            q = Randomized-Partition(A, p, r)
+            k = q-p+1
+            if i == q
+               return A[q]
+            else if i < q
+               r = q-1
+            else
+               p = q+1
+               i = i-k
 
 #. Introselect
 
