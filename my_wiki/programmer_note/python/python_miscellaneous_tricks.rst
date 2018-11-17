@@ -240,6 +240,10 @@ Python Miscellaneous Usages
      import os, sys
      from pprint import pprint
 
+   .. note::
+
+      On windows, add an environmental variable named **PYTHONSTARTUP**, and fill its value
+      with the script's full path. (the lettercase doesn't matter)
 
 #. Python3 install/uninstall
 

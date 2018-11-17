@@ -54,8 +54,6 @@ VIM Note
 
 #. vim search
    
-   ** Type  /  followed by a phrase to search for the phrase. **
-
    * In Normal mode type the  ``/``  character. 
 
    * Now type 'errroor' <ENTER>.  This is the word you want to search for.

@@ -82,3 +82,7 @@ System requirements::
       
       model.fit(x_train, y_train, epochs=5)
       model.evaluate(x_test, y_test)
+
+.. rubric:: Footnotes
+
+.. [#] `Install tensorflow <https://www.tensorflow.org/install/pip>`_
