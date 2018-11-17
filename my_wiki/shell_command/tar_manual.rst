@@ -128,6 +128,8 @@ tar Command
       $ rm -rf traffic-data-updater/
       $ tar -xf traffic-data-updater.tar.gz # uncompress traffic-data-updater.tar.gz into traffic-data-updater
 
+      $ tar -czvf past_ti_helper.tar.gz past_ti_helper/ --exclude "past_ti_helper/config"
+
 
 gzip/gunzip command
 ===================

@@ -188,3 +188,17 @@ Windows Problems
 #. windows10 to turn off Windows Defender
    
    Open Regedit, Modify entry ``HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SecurityHealthService`` value to 4.
+
+#. windows10 to hide ESP Partition
+   
+   .. image:: images/remove_esp_partition.PNG
+
+#. windows10 to remove EFI partition
+   
+   .. image:: images/clean_efi_partition.PNG
+
+#. windows10 to view installed product key
+   
+   Open **regedit** and locate to 
+   ``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\BackupProductKeyDefault``.
+
