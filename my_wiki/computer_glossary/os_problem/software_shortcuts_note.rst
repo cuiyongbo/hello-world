@@ -2,6 +2,9 @@
 Software Shotcuts
 *****************
 
+.. contents::
+   :local:
+
 Windows
 =======
 

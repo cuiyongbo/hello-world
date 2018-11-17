@@ -2,6 +2,13 @@
 Unix Concepts
 *************
 
+.. toctree::
+   
+   linux_filesystem_hierarchy
+   unix_configure_file
+   special_process_type
+   thread_vs_process
+
 #. Real User ID and Real Group ID
    
    Each user on the system is identified by a positive integer

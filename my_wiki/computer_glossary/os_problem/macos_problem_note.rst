@@ -8,20 +8,17 @@ MacOS Problems
 
       sudo xcodebuild -license accept
 
-
 #. 显示隐藏文件和文件夹
    
    .. code-block:: sh
 
       defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder
 
-
 #. 不显示隐藏文件和文件夹
    
    .. code-block:: sh
 
       defaults write com.apple.finder AppleShowAllFiles -boolean false; killall Finder
-
 
 #. 更改文件的显示属性
    
@@ -31,13 +28,18 @@ MacOS Problems
       chflags nohidden filename
       e.g. sudo chflags nohidden /Applications/Parallels\ Desktop.app
 
-
 #. Itunes下載的 app 目錄
 
    Location:: 
 
       /Users/cherry/Music/iTunes/iTunes Media/Mobile Applications/
 
+#. Mac 图片目录
+   
+   Location::
+
+      /Library/User Pictures
+      /Library/Desktop Pictures
 
 #. 编辑环境变量
 
@@ -211,7 +213,7 @@ MacOS Problems
       sudo diskutil mountDisk device
 
 
-#. mac to mount a dmg file manually
+#. Mac to mount a dmg file manually
    
    In order to manually mount DMG file, you'll need to use :command:`hdiutil` command. 
    You don't have to be a privileged user, so can do it as your own user.
@@ -222,7 +224,7 @@ MacOS Problems
 
       hdiutil eject /Volumes/dmg_mount_point #unmount
 
-#. mac to reset network
+#. Mac to reset network
    
    Rename :file:`/Library/Preferences/SystemConfiguration/preferences.plist` and reboot.
 
@@ -230,13 +232,11 @@ MacOS Problems
 
       Your customizations, such as hostname, will also be reset.
 
-
-#. mac to restart network
+#. Mac to restart network
    
    .. code-block:: sh
 
       sudo killall -HUP mDNSResponder
-
 
 #. mac to block software autoupdate
    
@@ -259,3 +259,8 @@ MacOS Problems
    .. image:: images/gdb_take_control_notification.png
 
    Solution: ``sudo security authorizationdb write system.privilege.taskport allow`` 
+
+#. mac to view connected wifi password
+   
+   .. image:: images/keychain_to_view_wifi_passwd.png
+   
