@@ -2,8 +2,7 @@
 Pthread Overview
 ****************
 
-What is a Thread?
-=================
+**What is a Thread**
 
 Technically, **a thread is defined as an independent stream of instructions that can
 be scheduled to run as such by the OS**. But what does this mean?
@@ -59,11 +58,9 @@ Because threads within the same process share resources:
    * Reading and writing to the same memory locations is possible, but requires explicit **synchronization** by the programmer.
 
 
-Designing Threaded Programs
-===========================
+**Designing Threaded Programs**
 
-Parallel Programming
---------------------
+**Parallel Programming**
 
 On modern multi-core machines, pthreads are ideally suited for parallel programming,
 and whatever applies to parallel programming in general, applies to parallel pthreads
@@ -105,8 +102,7 @@ Several common models for threaded programs exist:
      creates other threads, it participates in the work.
      
 
-Shared Memory Model
--------------------
+**Shared Memory Model**
 
 * All threads have access to the same global, shared memory
 * Threads also have their own private data (Thread specific data)
@@ -115,8 +111,7 @@ Shared Memory Model
 .. image:: images/sharedMemoryModel.png
 
 
-Thread-safeness
----------------
+**Thread-safeness**
 
 In a nutshell, refers an application's ability to execute multiple
 threads simultaneously without "clobbering" shared data or creating "race" conditions.  
@@ -136,52 +131,53 @@ don't explicitly guarantee thread-safeness. When in doubt, assume that they are 
 thread-safe until proven otherwise. This can be done by "serializing" the calls to
 the uncertain routine, etc.
 
-.. note::
 
-   #. Pthreads
+#. Pthreads
          
-      *POSIX.1* specifies a set of interfaces (functions, header files) for threaded programming 
-      commonly known as POSIX threads, or Pthreads. A single process can contain multiple threads, 
-      all of which are executing the same program. These threads share the same global memory (data 
-      and heap segments), but each thread has its own stack (automatic variables).
+   *POSIX.1* specifies a set of interfaces (functions, header files) for threaded programming 
+   commonly known as POSIX threads, or Pthreads. A single process can contain multiple threads, 
+   all of which are executing the same program. These threads share the same global memory (data 
+   and heap segments), but each thread has its own stack (automatic variables).
 
-      POSIX.1 also requires that threads share a range of other attributes (i.e., these attributes 
-      are process-wide rather than per-thread):
+   POSIX.1 also requires that threads share a range of other attributes (i.e., these attributes 
+   are process-wide rather than per-thread):
 
-         -  process ID, parent process ID, and process group ID
-         -  session ID, user and group IDs
-         -  controlling terminal
-         -  open file descriptors
-         -  record locks (see fcntl(2))
-         -  signal dispositions
-         -  file mode creation mask (umask(2))
-         -  current directory (chdir(2)) and root directory (chroot(2))
-         -  interval timers (setitimer(2)) and POSIX timers (timer_create(2))
-         -  nice value (setpriority(2))
-         -  resource limits (setrlimit(2))
-         -  measurements of the consumption of CPU time (times(2)) and resources (getrusage(2))
+      -  process ID, parent process ID, and process group ID
+      -  session ID, user and group IDs
+      -  controlling terminal
+      -  open file descriptors
+      -  record locks (see fcntl(2))
+      -  signal dispositions
+      -  file mode creation mask (umask(2))
+      -  current directory (chdir(2)) and root directory (chroot(2))
+      -  interval timers (setitimer(2)) and POSIX timers (timer_create(2))
+      -  nice value (setpriority(2))
+      -  resource limits (setrlimit(2))
+      -  measurements of the consumption of CPU time (times(2)) and resources (getrusage(2))
 
-      As well as the stack, *POSIX.1* specifies that various other attributes are distinct 
-      for each thread, including:
+   As well as the stack, *POSIX.1* specifies that various other attributes are distinct 
+   for each thread, including:
 
-         -  thread ID (the pthread_t data type)
-         -  signal mask (pthread_sigmask(3))
-         -  the errno variable
-         -  alternate signal stack (sigaltstack(2))
-         -  real-time scheduling policy and priority (sched_setscheduler(2) and sched_setparam(2))
+      -  thread ID (the pthread_t data type)
+      -  signal mask (pthread_sigmask(3))
+      -  the errno variable
+      -  alternate signal stack (sigaltstack(2))
+      -  real-time scheduling policy and priority (sched_setscheduler(2) and sched_setparam(2))
 
-      The following Linux-specific features are also per-thread:
+   The following Linux-specific features are also per-thread:
 
-         -  capabilities (see capabilities(7))
-         -  CPU affinity (sched_setaffinity(2))
+      -  capabilities (see capabilities(7))
+      -  CPU affinity (sched_setaffinity(2))
+   
+   Refer to **pthreads(7)** for further information.
 
-   #. Pthreads function return values
+#. Pthreads function return values
       
-      Most pthreads functions return 0 on success, and an error number of failure.  
-      **Note that the pthreads functions do not set the global errno.** For each of 
-      the pthreads functions that can return an error, *POSIX.1-2001* specifies that 
-      the function can never fail with the error *EINTR*.
+   Most pthreads functions return 0 on success, and an error number of failure.  
+   **Note that the pthreads functions do not set the global errno.** For each of 
+   the pthreads functions that can return an error, *POSIX.1-2001* specifies that 
+   the function can never fail with the error *EINTR*.
 
-   #. Compiling on Linux
+#. Compiling on Linux
 
-      On Linux, programs that use the Pthreads API should be compiled using ``cc -pthread``.
+   On Linux, programs that use the Pthreads API should be compiled using ``cc -pthread``.

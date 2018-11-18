@@ -1,9 +1,9 @@
+********************
 Pthread Introduction
-====================
+********************
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 2
 
    pthread/pthread_overview
    pthread/pthread_concepts

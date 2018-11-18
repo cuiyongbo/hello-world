@@ -1,5 +1,6 @@
+****************
 The Pthreads API
-================
+****************
 
 .. toctree::
 
@@ -56,15 +57,3 @@ The concept of **opaque objects** pervades the design of the API.
 The basic calls work to create or destroy opaque objects, and the 
 opaque objects can be modified by calls to attribute functions, 
 which deal with opaque attributes.
-
-.. note::
-
-   For portability, the ``pthread.h`` header file should be included 
-   in each source file using the Pthreads library ,and link pthread 
-   library with ``-lpthread.``
-
-   pthread_** functions, is among the few Linux functions that do not follow
-   the convention of using a return value of ``1`` for errors. Unless you are
-   very sure, it’s always safest to double-check the manual before checking
-   the return code.
-

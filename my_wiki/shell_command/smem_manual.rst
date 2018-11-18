@@ -14,16 +14,9 @@ smem Manual
    as the :abbr:`PSS (Proportional Set Size)`. The USS and PSS only include physical memory usage.
    They do not include memory that has been swapped out to disk.
 
-   Memory can be reported by process, by user, by mapping, or systemwide. Both text mode and 
-   graphical output are available.
-
 **OPTIONS**
 
    **Hot Options**
-
-      .. option:: -h, --help
-              
-         Show help.
 
       .. option:: -H, --no-header
               
@@ -32,7 +25,6 @@ smem Manual
       .. option:: -p, --percent
 
          Show percentages.
-
 
       .. option:: -r, --reverse
          
@@ -114,28 +106,6 @@ smem Manual
       .. option:: -c COLUMNS, --columns=COLUMNS
          
          Columns to show.
-
-   **OUTPUT TYPE**
-
-      These options specify graphical output styles.
-
-         .. option:: --bar=BAR
-              
-            Show bar graph.
-
-         .. option:: --pie=PIE
-              
-            Show pie graph.
-
-
-**REQUIREMENTS**
-
-   smem requires:
-
-      * Linux kernel providing 'Pss' metric in /proc/<pid>/smaps (generally 2.6.27 or newer).
-      * Python 2.x (at least 2.4 or so).
-      * The matplotlib library (only if you want to generate graphical charts).
-
 
 **FILES**
 

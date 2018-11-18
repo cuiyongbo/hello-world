@@ -16,12 +16,9 @@ Most of these directories exist in all UNIX operating systems and are generally
 used in much the same way; however, the descriptions here are those used specifically
 for the FHS, and are not considered authoritative for platforms other than Linux.
 
-   :file:`/`
-      Primary hierarchy root and root directory of the entire file system hierarchy.
-
    :file:`/bin`
-      Essential command binaries that need to be available in single user mode;
-      for all users, e.g., :command:`cat`, :command:`ls`, :command:`cp`.
+      Essential command binaries that need to be available to all users, 
+      e.g., :command:`cat`, :command:`ls`, :command:`cp`.
 
    :file:`/boot`
       Boot loader files, e.g., kernels, initrd.

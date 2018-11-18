@@ -1,5 +1,6 @@
+****************
 Windows Problems
-================
+****************
 
 #. Windows 10 锁屏壁纸位置
    
@@ -181,9 +182,7 @@ Windows Problems
 
 #. windows10 to prohibite hiberfil.sys from generating
    
-   .. code-block:: none
-
-      > powercfg -h off
+   Run ``powercfg -h off``.
 
 #. windows10 to turn off Windows Defender
    
@@ -202,3 +201,6 @@ Windows Problems
    Open **regedit** and locate to 
    ``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\BackupProductKeyDefault``.
 
+#. windows10 to refresh DNS cache.
+   
+   Run ``ipconfig /flushdns``.

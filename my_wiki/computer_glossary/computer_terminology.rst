@@ -2,7 +2,6 @@
 Computer Terminology
 ********************
 
-
 | Type coercison and conversion 
 | Automatic coercison [强制转换]
 | two’s complement [二进制补码]

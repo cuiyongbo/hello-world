@@ -249,6 +249,24 @@ English Note 10
 | Definition: a person or company offering something for sale, especially a trader in the street. [商贩，路边摊]
 | Usage: an Italian ice cream vendor.
 | 
+| alchemy [炼金术]
+| alchemist
+| Definition: a person who practices alchemy.
+| Usage: phosphorus [磷] was discovered by German alchemist Hennig Brand in 1669.
+| Definition:  a person who transforms or creates something through a seemingly magical process.
+| Usage: some highly imaginative tax shelters [避税天堂] dreamed up by the accounting alchemists.
+| 
+| dispense
+| Definition: distribute or provide (a service or information) to a number of people.
+| Usage: he dispensed a gentle pat on Claude's back.
+| Definition: (of a machine) supply (a product or cash).
+| Usage: the machines dispense a range of drinks and snacks.
+| Definition: (of a pharmacist) make up and give out (medicine) according to a doctor's prescription. [按处方配药]
+| Definition: (dispense with) manage without; get rid of.
+| Usage: let's dispense with the formalities, shall we? [免去客套]
+| Phrase: dispense with someone's services
+| Definition: dismiss someone from a job.
+| 
 | resuscitate
 | resuscitation
 | Definition: revive (someone) from unconsciousness or apparent death.

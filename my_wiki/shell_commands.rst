@@ -15,7 +15,6 @@ Shell Commands
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 2
 
    shell_command/addr2line_note
    shell_command/awk_manual
@@ -39,7 +38,7 @@ Shell Commands
    shell_command/ps_command
    shell_command/top_manual
    shell_command/shell_script_tricks
-   shell_command/smem_man_doc
+   shell_command/smem_manual
    shell_command/sort_manual
    shell_command/system_v_ipc_facility
    shell_command/tar_manual

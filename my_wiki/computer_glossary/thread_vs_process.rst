@@ -14,11 +14,10 @@ Multiple strands of execution in a single program are called threads.
 A more precise definition is that a thread is a sequence of control
 within a process.
 
-See :doc:`Pthread API Introduction <../programmer_note/pthread/pthread_api>`.
+See :doc:`Pthread API Introduction <../programmer_note/pthread/pthread_overview>`.
 
 .. image:: ../programmer_note/pthread/images/process_vs_thread.png
 .. image:: ../programmer_note/images/single_thread_vs_multithread.png
-
 
 **fork vs pthread**
 
@@ -36,13 +35,13 @@ In a forking server, a child is forked off for every client connection. The pare
 listening for new connections, while the child deals with the client. When the client is satisfied,
 the child process simply exits. Because the forked processes run in parallel, the clients don’t need
 to wait for each other. However, forking can be a bit resource intensive (each forked process needs its
-own memory), an alternative exists: threading. Threads are lightweight processes, or subprocesses, all
-of them existing within the same (real) process, sharing the same memory. This reduction in resource
+own memory), an alternative exists: threading. Threads are lightweight processes, all
+of them existing within the same process, sharing the same memory. This reduction in resource
 consumption comes with a downside, though. Because threads share memory, you must make sure they don’t
 interfere with the variables for each other, or try to modify the same things at the same time, creating
 a mess. These issues fall under the heading of **synchronization**.
 
-With modern operating systems (except Microsoft Windows, which doesn’t support forking), forking
+With modern OS (except Microsoft Windows, which doesn’t support forking), forking
 is actually quite fast, and modern hardware can deal with the resource consumption much better
 than before. If you don’t want to bother with synchronization issues, then forking may be a
 good alternative.
