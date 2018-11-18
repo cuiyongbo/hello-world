@@ -16,6 +16,7 @@ Shell Commands
 .. toctree::
    :titlesonly:
 
+   shell_command/shell_script_tricks
    shell_command/addr2line_note
    shell_command/awk_manual
    shell_command/cal_manual
@@ -37,7 +38,6 @@ Shell Commands
    shell_command/nohup_command
    shell_command/ps_command
    shell_command/top_manual
-   shell_command/shell_script_tricks
    shell_command/smem_manual
    shell_command/sort_manual
    shell_command/system_v_ipc_facility
