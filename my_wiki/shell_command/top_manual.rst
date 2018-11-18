@@ -33,6 +33,12 @@ top - display Linux processes
    15813 cuiyb     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out
    15815 cuiyb     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out  
 
+   # press "e" to change memory unit cycle from KB to EB
+   $ top  -p10016
+   PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND
+
+   10016 cuiyb     20   0  241.7m  19.4m   3.0m S   1.7  0.0   0:11.11 past_ti_compile  
+
 .. code-block:: none
    :caption: Press "f" to enter Fields Management
    
