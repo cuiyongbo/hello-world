@@ -61,13 +61,6 @@ what is called a reason for living also the excellent one for dying.
 | Definition: so foolish, unreasonable, or out of place as to be amusing; ridiculous.
 | Usage: it's ludicrous that I have been fined.
 |
-| facepalm
-| Definition: a gesture in which the palm of one's hand is brought to one's face, as an expression of disbelief, shame, or exasperation.
-| Usage: I'm pretty sure said friend now thinks Anne and I are dating—facepalm!" 
-| 
-
-.. image:: images/facepalm.png
-
 | top up
 | Definition: to raise the level of (a liquid, powder, etc) in (a container), usually bringing it to the brim of the container.
 | Usage: top up the sugar in those bowls.
@@ -256,6 +249,12 @@ what is called a reason for living also the excellent one for dying.
 | Usage: his progress was retarded by his limp.
 | Definition: a mentally handicapped person (often used as a general term of abuse). [智障]
 | 
+| handicap
+| Definition: act as an impediment to.
+| Usage: lack of funding has handicapped the development of research.
+| Usage: without a good set of notes you will handicap yourself when it comes to exams.
+| Usage: a criminal conviction is a handicap and a label that may stick forever. [一日为贼,终生为贼]
+| 
 | jackass
 | Definition: a stupid person.
 | Synonyms: moron.
@@ -365,6 +364,13 @@ what is called a reason for living also the excellent one for dying.
 | Usage: He hunkered down beside her. 
 | Definition: (hunker down) apply oneself seriously to a task.
 | Usage: students hunkered down to prepare for the examinations.
+|
+| facepalm
+| Definition: a gesture in which the palm of one's hand is brought to one's face, as an expression of disbelief, shame, or exasperation.
+| Usage: I'm pretty sure said friend now thinks Anne and I are dating—facepalm!" 
+| 
+
+.. image:: images/facepalm.png
 
 .. figure:: images/zodiac-signs.jpg
 

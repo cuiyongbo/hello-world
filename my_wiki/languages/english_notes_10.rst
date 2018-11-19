@@ -267,6 +267,11 @@ English Note 10
 | Phrase: dispense with someone's services
 | Definition: dismiss someone from a job.
 | 
+| acyclic
+| Definition: not displaying or forming part of a cycle.
+| Definition: (of a woman) not having a menstrual cycle. [月经]
+| Definition: (chemistry) (of a compound or molecule) containing no rings of atoms.
+| 
 | resuscitate
 | resuscitation
 | Definition: revive (someone) from unconsciousness or apparent death.

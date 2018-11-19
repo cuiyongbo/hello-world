@@ -33,3 +33,10 @@ Mathematics Notes 2
    In mathematics, a number that is idempotent keeps the same value when multiplied by itself, 
    no matter how many times the function is applied. The word idempotent comes from the Latin 
    words idem, which means "the same," and potent, from potentem, which means "power."
+
+#. Radix point
+   
+   In mathematics and computing, a radix point is the symbol used in numerical representations 
+   to separate the integer part of a number from its fractional part. "Radix point" applies to 
+   all number bases. In base 10 notation, the radix point is more commonly called the **decimal point,** 
+   Similarly, the term **binary point** is used for base 2.
