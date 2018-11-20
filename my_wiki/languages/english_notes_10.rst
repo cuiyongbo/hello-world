@@ -272,6 +272,12 @@ English Note 10
 | Definition: (of a woman) not having a menstrual cycle. [月经]
 | Definition: (chemistry) (of a compound or molecule) containing no rings of atoms.
 | 
+| descendant
+| Definition: a person, plant, or animal that is descended from a particular ancestor.
+| Usage: Shakespeare's last direct descendant. [直系，嫡系]
+| Antonyms: ancestor
+| Definition: a machine, artifact, system, etc., that has developed from an earlier, more rudimentary version. [次世代]
+| 
 | resuscitate
 | resuscitation
 | Definition: revive (someone) from unconsciousness or apparent death.

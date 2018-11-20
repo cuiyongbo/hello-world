@@ -508,3 +508,14 @@ gcc - GNU project C and C++ compiler
 
    **Solution two:** when the declaration and definition are separated in two files, just #include the source code/implementation/definition 
    of the templated class. although some compiler may complain about multiple definitions of the same functions. 
+
+#. check the builtin library search paths
+
+   .. code-block:: sh
+   
+      $ gcc --print-search-dirs
+      install: /usr/lib/gcc/x86_64-linux-gnu/4.8/
+      programs: =/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:
+      : ...
+      :/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+   
