@@ -278,6 +278,30 @@ English Note 10
 | Antonyms: ancestor
 | Definition: a machine, artifact, system, etc., that has developed from an earlier, more rudimentary version. [次世代]
 | 
+| deadpan
+| deliberately impassive or expressionless.
+| Definition: answers his phone in a deadpan tone. [面无表情]
+| 
+| supernumerary
+| Definition: present in excess of the normal or requisite number.
+| Definition: not wanted or needed; redundant.
+| Usage: books were obviously supernumerary, and he began jettisoning them.
+| 
+| jettison
+| Definition: abandon or discard (someone or something that is no longer wanted).
+| Usage: individuals are often forced to jettison certain attitudes and behaviors.
+| 
+| open-eyed
+| Definition: carefully obervant or attensive, on the lookout for possible danger.
+| Usage: an open-eyed approach to political manipulation.
+| 
+| constrict
+| Definition: make narrower, especially by encircling pressure..
+| Usage: chemicals that constrict the blood vessels.
+| Usage: he felt his throat constrict.
+| Definition: inhibit or restrict.
+| Usage: the fear and the reality of crime constrict many people's lives.
+| 
 | resuscitate
 | resuscitation
 | Definition: revive (someone) from unconsciousness or apparent death.
