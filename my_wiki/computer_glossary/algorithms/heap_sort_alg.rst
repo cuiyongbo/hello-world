@@ -24,7 +24,7 @@ extracting the largest element and moving that to the sorted region. The improve
 rather than a linear-time search to find the maximum.
 
 Although somewhat slower in practice on most machines than a well-implemented quicksort, it has the advantage of a more favorable 
-worst-case :math:`O(n log n)` runtime. Heapsort is an **in-place** algorithm, but it is **not a stable sort.**
+worst-case :math:`O(n\log n)` runtime. Heapsort is an **in-place** algorithm, but it is **not a stable sort.**
 
 Heapsort was invented by *J. W. J. Williams* in 1964. This was also the birth of the heap, presented already by Williams as a useful 
 data structure in its own right.
@@ -124,7 +124,43 @@ Movement 'down' means from the root towards the leaves.
 .. code-block:: none
    :caption: Taken from **Introduction to algorithms**
 
-   
+   Parent(i)
+      return i>>1
+
+   Left(i)
+      return 2*i
+
+   Right(i)
+      return 2*i+1
+
+   Max-Heapify(A, i)
+      l = Left(i)
+      r = Right(i)
+      largest = i
+      if l <= A.heap_size and A[l] > A[largest]
+         largest = l
+      if r <= A.heap_size and A[r] > A[largest]
+         largest = r
+      if largest != i
+         swap(A[i], A[largest])
+         Max-Heapify(A, largest)
+
+   Iterative-Max -Heapify(A, i)
+      p = i
+      while p < A.heap_size
+         l = Left(i)
+         largest = i
+         r = Right(i)
+         if l <= A.heap_size and A[l] > A[largest]
+            largest = l
+         if r <= A.heap_size and A[r] > A[largest]
+            largest = r
+
+         if largest == i
+            break
+      
+         swap(A[i], A[largest])
+         p = largest
 
 
 **Example**

@@ -28,6 +28,7 @@ Computer Terminology
 | XSI = X/Open System Interface
 | BSD = Berkeley Software Distribution
 | UTC = Coordinated Universal Time
+| GMT = Greenwich Mean Time (that is UTC)
 | HDR = high dynamic range
 | synchronous vs asynchronous
 | BOM = Bill of Materials
