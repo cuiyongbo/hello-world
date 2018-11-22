@@ -162,6 +162,12 @@ Movement 'down' means from the root towards the leaves.
          swap(A[i], A[largest])
          p = largest
 
+   Build-Max-Heap(A)
+      A.heap_size = A.length
+      for i=A.length/2 downto 1
+         Max-Heapify(A, i)
+
+
 
 **Example**
 

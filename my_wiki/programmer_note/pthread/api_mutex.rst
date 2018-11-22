@@ -1,21 +1,21 @@
+***************
 Mutex Variables
-===============
+***************
 
-Overview
---------
+**Overview**
 
 :abbr:`Mutex (mutual exclusion)` variables are one of the primary means
 of implementing thread synchronization and for protecting shared data
 when multiple writes occur. 
 
 A mutex variable acts like a "lock" protecting access to a shared data resource.
-The basic concept of a mutex as used in Pthreads is that only one thread can lock
-(or own) a mutex variable at any given time. Thus, even if several threads try to
+**The basic concept of a mutex as used in Pthreads is that only one thread can lock
+a mutex variable at any given time.** Thus, even if several threads try to
 lock a mutex only one thread will be successful. No other thread can own that mutex
 until the owning thread unlocks that mutex. Threads must "take turns" accessing 
 protected data.
 
-Mutexes can be used to prevent "race" conditions. An example of a race condition
+Mutexes can be used to prevent race conditions. An example of a race condition
 involving a bank transaction is shown below:
   
    +---------------------------+---------------------------+---------+
@@ -40,8 +40,7 @@ a thread is using this shared data resource.
 Very often the action performed by a thread owning a mutex is the updating
 of global variables. This is a safe way to ensure that when several threads
 update the same variable, the final value is the same as what it would be
-if only one thread performed the update. The variables being updated belong
-to a "critical section".
+if only one thread performed the update. 
 
 A typical sequence in the use of a mutex is as follows:
   
@@ -54,7 +53,7 @@ A typical sequence in the use of a mutex is as follows:
    * Finally the mutex is destroyed
      
 When several threads compete for a mutex, the losers block at that call - an
-unblocking call is available with "trylock" instead of the "lock" call.
+unblocking call is available with trylock instead of the lock call.
  
 When protecting shared data, it is the programmer's responsibility to make
 sure every thread that needs to use a mutex does so. For example, if 4 threads
@@ -62,34 +61,18 @@ are updating the same data, but only one uses a mutex, the data can still be
 corrupted.
   
 
-Creating and Destroying Mutexes
--------------------------------
+**Creating and Destroying Mutexes**
 
-Routines
-^^^^^^^^
-
-.. code-block:: c
-
-   pthread_mutex_init (mutex,attr)
-   pthread_mutex_destroy (mutex)
-   pthread_mutexattr_init (attr)
-   pthread_mutexattr_destroy (attr)
-
-
-Usage
-^^^^^
 
 Mutex variables must be declared with type ``pthread_mutex_t``, and must be initialized
 before they can be used. There are two ways to initialize a mutex variable:
    
-   * Statically, when it is declared. For example: 
+   * Statically, when it is declared. For example::
       
-      .. code-block:: c
-
-         pthread_mutex_t mymutex = PTHREAD_MUTEX_INITIALIZER;
+      pthread_mutex_t mymutex = PTHREAD_MUTEX_INITIALIZER;
 
    * Dynamically, with the ``pthread_mutex_init()`` routine.
-     This method permits setting mutex object attributes, ``attr``.
+     This method permits setting mutex object attributes, ``attr.``
 
 The mutex is initially unlocked. The ``attr`` object is used to establish properties for 
 the mutex object, and must be of type ``pthread_mutexattr_t`` if used (may be specified
@@ -104,26 +87,7 @@ attributes:
 
    Note that not all implementations may provide the three optional mutex attributes.
 
-The ``pthread_mutexattr_init()`` and ``pthread_mutexattr_destroy()`` routines are used to
-create and destroy mutex attribute objects respectively. ``pthread_mutex_destroy()`` should
-be used to free a mutex object which is no longer needed.
-
-
-Locking and Unlocking Mutexes
------------------------------
-
-Routines
-^^^^^^^^
-
-.. code-block:: c
-
-   pthread_mutex_lock (mutex)
-   pthread_mutex_trylock (mutex)
-   pthread_mutex_unlock (mutex)
-
-
-Usage
-^^^^^
+**Locking and Unlocking Mutexes**
 
 The ``pthread_mutex_lock()`` routine is used by a thread to acquire a lock
 on the specified mutex variable. If the mutex is already locked by another
@@ -142,7 +106,7 @@ data. An error will be returned:
    * If the mutex was already unlocked (call it multi-times)
    * If the mutex is owned by another thread (a thread doesn't own the mutex)
 
-There is nothing "magical" about mutexes...in fact they are akin to a "gentlemen's agreement"
+There is nothing "magical" about mutexes, in fact they are akin to a "gentlemen's agreement"
 between participating threads. It is up to the code writer to ensure that the necessary threads
 all make the the mutex lock and unlock calls correctly. The following scenario demonstrates a
 logical error:
@@ -159,18 +123,14 @@ logical error:
 
 .. note::
 
-   Question: When more than one thread is waiting for a locked mutex,
+   QUESTION: When more than one thread is waiting for a locked mutex,
    which thread will be granted the lock first after it is released? 
 
-   |
+   ANSWER: Unless thread priority scheduling is used, the assignment 
+   will be left to the native system scheduler and may appear to be 
+   more or less random.
 
-   ANSWER: Unless thread priority scheduling (not covered) is used,
-   the assignment will be left to the native system scheduler and
-   may appear to be more or less random.
-
-
-Example: Using Mutexes
-----------------------
+**Example: Using Mutexes**
 
 This example program illustrates the use of mutex variables in a threads
 program that performs a dot product. The main data is made available to 

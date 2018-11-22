@@ -44,7 +44,7 @@ Hot APIs
    // ubuntu
    int pthread_mutexattr_setpshared(pthread_mutexattr_t *attr, int pshared);
    int pthread_mutexattr_getpshared(const pthread_mutexattr_t *restrict attr, int *restrict pshared);
-
+   
    int pthread_mutexattr_settype(pthread_mutexattr_t *attr, int type);
    int pthread_mutexattr_gettype(pthread_mutexattr_t *attr, int *type);
 
