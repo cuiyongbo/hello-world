@@ -110,3 +110,8 @@ curl - transfer a URL
    $ curl -s -d '{"linkIds":"0", "flags":"speeds"}' http://116.213.115.77:81/nc/v1/nav2tmc?ver=2.1
    {"timestamp": 1542364620, "trafficColors": "4", "trafficSpeeds": "0.50"}
    
+   # HTTP HEAD
+   $ curl -sI file:///C:/WorkSpace/Work-Project/RouteData/data/realtime.data
+   Content-Length: 4706728
+   Accept-ranges: bytes
+   Last-Modified: Thu, 22 Nov 2018 05:45:08 GMT

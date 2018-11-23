@@ -57,16 +57,9 @@ POSIX shared memory overview
    hand POSIX shared memory is somewhat less widely available (especially on older systems)
    than System V shared memory.
 
-**SEE ALSO**
-
-   fchmod(2), fchown(2), fstat(2), ftruncate(2), mmap(2),
-   mprotect(2), munmap(2), shmget(2), shmop(2),  shm_open(3),
-   shm_unlink(3), sem_overview(7)
-
-
 .. toctree::
    
-   shm_open
+   posix_shm_management_api
    ftruncate_info
    memory_mapped_io_note
    fstat_info

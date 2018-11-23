@@ -58,13 +58,6 @@ map or unmap files or devices into memory
 
    In addition, zero or more of the following values can be ORed in flags:
 
-      MAP_32BIT (since Linux 2.4.20, 2.6)
-         Put the mapping into the first 2 Gigabytes of the process address space. This flag is supported **only** on x86-64,
-         for 64-bit programs. It was added to allow thread stacks to be allocated somewhere in the first 2GB of memory,
-         so as to improve context-switch performance on some early 64-bit processors. Modern x86-64 processors no longer
-         have this performance problem, so use of this flag is not required on those systems. The ``MAP_32BIT`` flag is
-         ignored when ``MAP_FIXED`` is set.
-
       MAP_ANONYMOUS
          The mapping is not backed by any file; its contents are initialized to zero. The *fd* and *offset* arguments
          are ignored; however, some implementations require *fd* to be *-1* if ``MAP_ANONYMOUS`` is specified, and
@@ -81,10 +74,6 @@ map or unmap files or devices into memory
       MAP_GROWSDOWN
          Used for stacks. Indicates to the kernel virtual memory system that the mapping should extend downward in memory.
 
-      MAP_HUGETLB (since Linux 2.6.32)
-         Allocate the mapping using "huge pages." See the Linux kernel source file :file:`Documentation/vm/hugetlbpage.txt`
-         for further information.
-
       MAP_LOCKED (since Linux 2.5.37)
          Lock the pages of the mapped region into memory in the manner of :manpage:`mlock(2)`. This flag is ignored in older kernels.
 
@@ -94,34 +83,10 @@ map or unmap files or devices into memory
          available. See also the discussion of the file :file:`/proc/sys/vm/overcommit_memory` in :manpage:`proc(5)`.
          In kernels before 2.6, this flag had effect only for private writable mappings.
 
-      MAP_POPULATE (since Linux 2.5.46)
-         Populate  (prefault)  page tables for a mapping. For a file mapping, this causes read-ahead on the file.
-         Later accesses to the mapping will not be blocked by page faults. ``MAP_POPULATE`` is supported for private
-         mappings only since Linux 2.6.23.
-
-      MAP_NONBLOCK (since Linux 2.5.46)
-         **Only** meaningful in conjunction with ``MAP_POPULATE``. Don't perform read-ahead: create page tables entries only
-         for pages that are already present in RAM.  Since Linux 2.6.23, this flag causes ``MAP_POPULATE`` to do nothing.
-         One day the combination of ``MAP_POPULATE`` and ``MAP_NONBLOCK`` may be reimplemented.
-
-      MAP_STACK (since Linux 2.6.27)
-         Allocate the mapping at an address suitable for a process or thread stack. This flag is currently a no-op,
-         but is used in the glibc threading implementation so that if some architectures require special treatment
-         for stack allocations, support can later be transparently implemented for glibc.
-
-      MAP_UNINITIALIZED (since Linux 2.6.33)
-         Don't clear anonymous pages. This flag is intended to improve performance on embedded devices.
-         This flag is honored ``only`` if the kernel was configured with the ``CONFIG_MMAP_ALLOW_UNINITIALIZED``
-         option. Because of the security implications, that option is normally enabled only on embedded devices
-         (i.e., devices where one has complete control of the contents of user memory).
-
-   Of the above flags, only ``MAP_FIXED`` is specified in POSIX.1-2001. However, most systems also support ``MAP_ANONYMOUS``.
-   Some systems document the additional flags ``MAP_AUTOGROW``, ``MAP_AUTORESRV``, ``MAP_COPY``, and ``MAP_LOCAL``.
-
    Memory mapped by ``mmap()`` is preserved across :manpage:`fork(2)`, with the same attributes.
    A file is mapped in multiples of the page size. For a file that is not a multiple of the page size,
    the remaining memory is zeroed when mapped, and writes to that region are not written out to the file.
-   The effect of changing he size of the underlying file of a mapping on the pages that correspond to
+   The effect of changing the size of the underlying file of a mapping on the pages that correspond to
    added or removed regions of the file is unspecified.
 
    The :manpage:`munmap()` system call deletes the mappings for the specified address range, and causes further references to addresses
@@ -148,28 +113,15 @@ map or unmap files or devices into memory
 
 **NOTES**
 
-   This page describes the interface provided by the glibc ``mmap()`` wrapper function.
-   Originally, this function invoked a system call of the same name. Since kernel 2.4,
-   that system call has been superseded by :manpage:`mmap2(2)`, and nowadays the glibc ``mmap()``
-   wrapper function invokes :manpage:`mmap2(2)` with a suitably adjusted value for *offset*.
-
    On some hardware architectures (e.g., i386), ``PROT_WRITE`` implies ``PROT_READ``. It is
    architecture dependent whether ``PROT_READ`` implies ``PROT_EXEC`` or not. Portable programs
    should always set ``PROT_EXEC`` if they intend to execute code in the new mapping.
 
    The portable way to create a mapping is to specify *addr* as 0 (``NULL``), and omit ``MAP_FIXED`` from flags.
    In this case, the system chooses the address for the mapping; the address is chosen so as not to conflict with
-   any existing mapping, and will not be 0. If the ``MAP_FIXED`` flag is specified, and addr is 0 (``NULL``),
-   then the mapped address will be 0 (``NULL``).
-
+   any existing mapping, and will not be 0. 
 
 **BUGS**
-   
-   On Linux there are no guarantees like those suggested above under ``MAP_NORESERVE``.
-   By default, any process can be killed at any moment when the system runs out of memory.
-
-   In kernels before 2.6.7, the ``MAP_POPULATE`` flag has effect only if *prot* is specified
-   as ``PROT_NONE``.
 
    POSIX specifies that the system shall always zero fill any partial page at the end of the object
    and that system will never write any modification of the object beyond its end. On Linux, when

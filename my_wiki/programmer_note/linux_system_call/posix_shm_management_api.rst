@@ -131,8 +131,3 @@ shm_open & shm_unlink
 
    The POSIX shared memory object implementation on Linux 2.4 makes use of a dedicated filesystem,
    which is normally mounted under :file:`/dev/shm`.
-
-**SEE ALSO**
-
-   close(2), fchmod(2), fchown(2), fcntl(2), fstat(2),
-   ftruncate(2), mmap(2), open(2), umask(2), shm_overview(7)

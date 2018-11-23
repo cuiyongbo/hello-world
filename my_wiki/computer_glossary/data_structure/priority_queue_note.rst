@@ -6,6 +6,12 @@ Priority Queue
 
    .. code-block:: none
    
+      Max-Heapify(A, i)
+         largest = i
+         l = Left(i)
+         r = Right(i)
+         if l < A.le
+
       Heap-Maximum(A)
          return A[1]
    
