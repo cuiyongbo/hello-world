@@ -1,17 +1,15 @@
+*******************
 Condition Variables
-===================
-
-Overview
---------
+*******************
 
 Condition variables provide yet another way for threads to synchronize. While mutexes 
 implement synchronization by controlling thread access to data, condition variables allow 
 threads to synchronize based upon the actual value of data.
 
 Without condition variables, the programmer would need to have threads continually polling 
-(possibly in a critical section), to check if the condition is met. This can be very resource 
-consuming since the thread would be continuously busy in this activity. A condition variable 
-is a way to achieve the same goal without polling.
+to check if the condition is met. This can be very resource consuming since the thread would 
+be continuously busy in this activity. A condition variable is a way to achieve the same goal 
+without polling.
   
 A condition variable is always used in conjunction with a mutex lock.
 
@@ -19,19 +17,14 @@ A representative sequence for using condition variables is shown below:
 
    * Main Thread
      
-      * Declare and initialize global data/variables which require 
-        synchronization (such as "count").
-
+      * Declare and initialize global data which requires synchronization.
       * Declare and initialize a condition variable object.
-        
       * Declare and initialize an associated mutex.
-        
       * Create threads A and B to do work.
    
    * Thread A
      
-      * Do work up to the point where a certain condition must occur 
-        (such as "count" must reach a specified value).
+      * Do work up to the point where a certain condition must occur. 
 
       * Lock associated mutex and check value of a global variable.
         
@@ -49,16 +42,10 @@ A representative sequence for using condition variables is shown below:
    * Thread B
      
       * Do work.
-        
       * Lock associated mutex.
-        
       * Change the value of the global variable that Thread-A is waiting upon.
-        
-      * Check value of the global Thread-A wait variable. If it fulfills the 
-        desired condition, signal Thread-A.
-
+      * Check the value. If it fulfills the desired condition, signal Thread-A.
       * Unlock mutex.
-        
       * Continue.
         
    * Main Thread
@@ -66,31 +53,14 @@ A representative sequence for using condition variables is shown below:
       * Join / Continue
  
 
-Creating and Destroying Condition Variables
--------------------------------------------
+**Creating and Destroying Condition Variables**
 
-Routines
-^^^^^^^^
-
-.. code-block:: c
-
-   pthread_cond_init (condition,attr)
-   pthread_cond_destroy (condition)
-   pthread_condattr_init (attr)
-   pthread_condattr_destroy (attr)
-
-Usage
-^^^^^
-
-Condition variables must be declared with type ``pthread_cond_t``, and must be 
-initialized before they can be used. There are two ways to initialize a 
-condition variable:
+Condition variables must be declared with type ``pthread_cond_t``, 
+There are two ways to initialize a condition variable:
   
-   * Statically, when it is declared. For example: 
+   * Statically, when it is declared. For example:: 
      
-      .. code-block:: c
-
-         pthread_cond_t myconvar = PTHREAD_COND_INITIALIZER;
+      pthread_cond_t myconvar = PTHREAD_COND_INITIALIZER;
 
    * Dynamically, with the ``pthread_cond_init()`` routine. The ID of the created 
      condition variable is returned to the calling thread through the ``condition`` parameter. 
@@ -103,26 +73,7 @@ as ``NULL`` to accept defaults).
   
 **Note** that not all implementations may provide the process-shared attribute.
 
-The ``pthread_condattr_init()`` and ``pthread_condattr_destroy()`` routines are used to 
-create and destroy condition variable attribute objects. ``pthread_cond_destroy()`` should 
-be used to free a condition variable that is no longer needed.
-
-
-Waiting and Signaling on Condition Variables
---------------------------------------------
-
-Routines
-^^^^^^^^
-
-.. code-block:: c
-
-   pthread_cond_wait (condition,mutex)
-   pthread_cond_signal (condition)
-   pthread_cond_broadcast (condition)
-
-
-Usage
-^^^^^
+**Waiting and Signaling on Condition Variables**
 
 ``pthread_cond_wait()`` blocks the calling thread until the specified condition is signalled. 
 This routine should be called while mutex is locked, and it will automatically release the 
@@ -142,8 +93,8 @@ can help deal with several potential problems, such as:
    * The Pthreads library is permitted to issue spurious wake ups 
      to a waiting thread without violating the standard.
 
-The ``pthread_cond_signal()`` routine is used to signal (or wake up) another thread 
-which is waiting on the condition variable. It should be called after mutex is locked, 
+The ``pthread_cond_signal()`` is used to signal another thread which is waiting on 
+the condition variable. It should be called after mutex is locked, 
 and must unlock mutex in order for ``pthread_cond_wait()`` routine to complete.
   
 The ``pthread_cond_broadcast()`` routine should be used instead of ``pthread_cond_signal()`` 
@@ -158,10 +109,8 @@ For example:
      
    * Failing to unlock the mutex after calling ``pthread_cond_signal()`` may not allow a matching 
      ``pthread_cond_wait()`` routine to complete (it will remain blocked).
-     
 
-Example: Using Condition Variables
-----------------------------------
+**Example**
 
 This simple example code demonstrates the use of several 
 Pthread condition variable routines:
