@@ -56,6 +56,8 @@ Advanced Programming in UNIX Environment
       - File systems (finished, 2018-11-01) [i-node]
       - link, unlink and remove functions (finished, 2018-11-01)
 
+   - Ch06 System data file and information (finished, 2018-11-24)
+
    - Process (Finished before 2018-09)
      
       - Ch07 Process environment (Finished)
