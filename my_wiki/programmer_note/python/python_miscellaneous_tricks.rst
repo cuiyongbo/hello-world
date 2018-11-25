@@ -29,21 +29,7 @@ Python Miscellaneous Usages
       name:nihao
    
    Unless you have a special need for ``input()``, you should probably use ``raw_input()``.
-
-
-#. floor vs ceil
-
-   .. code-block:: python
-   
-      >>> help(math.floor)
-          Return the floor of x as a float.
-          This is the largest integral value <= x.
       
-      >>> help(math.ceil)
-          Return the ceiling of x as a float.
-          This is the smallest integral value >= x.
-      
-
 #. Useful Function List
 
    +------------------------------+------------------------------------------------------------------------+
@@ -404,5 +390,17 @@ Python Miscellaneous Usages
       -i     
       When a script is passed as first argument or the -c option is used, 
       enter interactive mode after executing the script or the  command.  
-      It  does not read the $PYTHONSTARTUP file. This can be useful to 
+      It does not read the $PYTHONSTARTUP file. This can be useful to 
       inspect global variables or a stack trace when a script raises an exception.
+
+#. python assert usage
+   
+   Syntax: ``assert Expression[, Arguments]``
+   
+   If the assertion fails, Python uses *ArgumentExpression* as the argument for the *AssertionError*,
+   which can be caught and handled like any other exception using the try-except statement, 
+   but if not handled, they will terminate the program and produce a traceback. for example::
+
+      def max_heapify_siftdown(array, i):
+         assert (i < len(array)),"index out of range"
+         # ...

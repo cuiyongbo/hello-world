@@ -6,11 +6,20 @@ Priority Queue
 
    .. code-block:: none
    
-      Max-Heapify(A, i)
+      Max-Heapify-siftDown(A, i)
          largest = i
          l = Left(i)
          r = Right(i)
-         if l < A.le
+         if l < A.length and A[l] < A[largest]
+            largest = l
+         if r < A.length and A[r] < A[largest]
+            largest = r
+
+         if largest == i
+            break
+
+         swap(A[i], A[largest])
+         Max-Heapify(A, largest)
 
       Heap-Maximum(A)
          return A[1]
@@ -33,10 +42,9 @@ Priority Queue
             swap(A[i], A[Parent(i)])
             i = Parent(i)
 
-      Heap-Increase-to-Key(A, i, key)
+      Heap-Increase-to-Key_2(A, i, key)
          if key < A[i]
             error "new key is smaller than current key"
-         A[i] = key
          # A[i, A.heap_size] maintains the heap property
          while i > 1 and A[Parent(i)] < key
             A[i] = A[Parent(i)]
@@ -48,13 +56,18 @@ Priority Queue
          A[A.heap_size] = -inf
          Heap-Increase-to-Key(A, A.heap_size, key)
 
+      Heap-Delete_2(A, i)
+         A.heap_size = i-1
+         for j=i+1 to A.length
+            Max-Heap-Insert(A, A[j])
+
       Heap-Delete(A, i)
          if A[i] < A[A.heap_size]
             Heap-Increase-to-Key(A, i, A[A.heap_size])
             A.heap_size = A.heap_size - 1
          else
             A[i] = A[A.heap_size]
-            A.heap_size = A.heap_size - 1]
+            A.heap_size = A.heap_size - 1
             Max-Heapify-siftDown(A, i)
 
       # You can't assume there always be A[i] > A[A.heap-size]. For example:
@@ -109,3 +122,78 @@ Priority Queue
          A.heap_size = A.heap_size + 1
          A[A.heap_size] = +inf
          Heap-Decrease-to-key(A, A.heap_size, key)
+
+#. python max priority queue toy
+   
+   .. code-block:: py
+
+      #!/usr/bin/env python
+      import sys, random
+
+      def parent(i):
+         return (i-1)/2
+      
+      def left(i):
+         return i*2+1
+      
+      def right(i):
+         return i*2+2
+      
+      def max_heapify_siftdown(array, i):
+         assert i<len(array), "index out of range"
+         while i < len(array):
+            largest = i
+            l = left(i)
+            r = right(i)
+            if l<len(array) and array[l] > array[largest]:
+               largest = l
+            if r<len(array) and array[r] > array[largest]:
+               largest = r
+            if largest == i:
+               break
+            else:
+               array[largest], array[i] = array[i], array[largest]
+               i = largest
+      
+      def maximum(array):
+         return array[0]
+      
+      def extract_maximum(array):
+         assert len(array) > 0, "underflow"
+         max = array[0]
+         array[0] = array[-1]
+         array.pop() # decrease heap size by one
+         if len(array) > 1:
+            max_heapify_siftdown(array, 0)
+         return max
+      
+      def increase_to_key(array, i, key):
+         assert i<len(array), "index out of range"
+         assert array[i]<key, "new key must be larger than current key"
+         while i>0 and array[parent(i)] < key:
+            array[i] = array[parent(i)]
+            i = parent(i)
+         array[i] = key
+      
+      def insert_new_key(array, key):
+         array.append(-sys.maxint)
+         increase_to_key(array, len(array)-1, key)
+      
+      def heap_delete(array, i):
+         assert i<len(array), "index out of range"
+         tmp = array[:i]
+         for x in array[i+1:]:
+            insert_new_key(tmp, x)
+         return tmp
+      
+      a = random.sample(range(1, 1000), 10)
+      array = []
+      for i in a:
+         insert_new_key(array, i)
+      print array
+      
+      array = heap_delete(array, random.choice(range(10)))
+      print array
+      
+      while len(array)>0:
+         print extract_maximum(array)

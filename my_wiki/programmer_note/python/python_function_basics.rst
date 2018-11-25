@@ -40,9 +40,8 @@ global variables cannot be directly assigned a value within a function (unless n
 in a ``global`` statement), although they may be referenced.
 
 The actual parameters (arguments) to a function call are introduced in the local symbol 
-table of the called function when it is called; thus, arguments are passed using call **by value** 
-(where the value is always an object reference, not the value of the object). When a function calls 
-another function, a new local symbol table is created for that call.
+table of the called function when it is called; thus, **arguments are passed using call by value.** 
+When a function calls another function, a new local symbol table is created for that call.
 
 A function definition introduces the function name in the current symbol table. The value 
 of the function name has a type that is recognized by the interpreter as a user-defined 
