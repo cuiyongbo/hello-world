@@ -109,3 +109,8 @@ du Manual
       $ du -sh --exclude="_build"
       126M    .
 
+      $ du -h -t 1M
+      3.4G  ./past7/2018-11-26-Mon
+      15G   ./past7
+      15G   
+

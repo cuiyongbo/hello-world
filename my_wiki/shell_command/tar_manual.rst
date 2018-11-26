@@ -130,6 +130,21 @@ tar Command
 
       $ tar -czvf past_ti_helper.tar.gz past_ti_helper/ --exclude "past_ti_helper/config"
 
+   .. code-block:: sh
+      :caption: tarAndRemove.sh
+      
+      #!/usr/bin/env bash
+      echo "Program name: $0"
+      echo "PID: $$"
+      echo "Parameter count: $#"
+      for i in $@
+      do 
+          echo "taring $i.tar.gz ..."
+          tar -czf $i.tar.gz $i 
+          echo "rm $i ..." 
+          rm -rf $i
+      done
+
 
 gzip/gunzip command
 ===================

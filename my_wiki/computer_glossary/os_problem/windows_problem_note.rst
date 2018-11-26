@@ -204,3 +204,10 @@ Windows Problems
 #. windows10 to refresh DNS cache.
    
    Run ``ipconfig /flushdns``.
+
+#. vs cannot pass argument to python script in custom build tool
+   
+   Add ``"%*"`` to following regedit table entry:
+
+   .. image:: images/vs_py_argument_passing_custom_build_tool_01.jpg
+   .. image:: images/vs_py_argument_passing_custom_build_tool_02.jpg
