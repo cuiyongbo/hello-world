@@ -21,11 +21,6 @@ arbitrary boundary::
    >>> fib(2000)
    0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
 
-The keyword ``def`` introduces a function definition. It must be followed by 
-the function name and the parenthesized list of formal parameters. The 
-statements that form the body of the function start at the next line, 
-and **MUST** be indented.
-
 The first statement of the function body can optionally be a string literal; 
 this string literal is the function’s documentation string, or **docstring**. 
 it’s good practice to include docstrings in code that you write, so make a 
@@ -40,7 +35,7 @@ global variables cannot be directly assigned a value within a function (unless n
 in a ``global`` statement), although they may be referenced.
 
 The actual parameters (arguments) to a function call are introduced in the local symbol 
-table of the called function when it is called; thus, **arguments are passed using call by value.** 
+table of the called function when it is called; thus, **arguments are passed by value.** 
 When a function calls another function, a new local symbol table is created for that call.
 
 A function definition introduces the function name in the current symbol table. The value 
@@ -53,16 +48,6 @@ function. This serves as a general renaming mechanism::
    >>> f = fib
    >>> f(100)
    0 1 1 2 3 5 8 13 21 34 55 89
-
-Coming from other languages, you might object that *fib* is not a function but a procedure 
-since it doesn’t return a value. In fact, even functions without a ``return`` statement do 
-return a value, albeit a rather boring one. This value is called ``None`` (it’s a built-in name).
-Writing the value None is normally suppressed by the interpreter if it would be the only value 
-written. You can see it if you really want to using ``print`` ::
-
-   >>> fib(0)
-   >>> print fib(0)
-   None
 
 The ``return`` statement returns with a value from a function. ``return`` without an expression 
 argument returns ``None``. It is simple to write a function that returns a list of the numbers 
@@ -109,14 +94,13 @@ This function can be called in several ways:
 The default values are evaluated at the point of function definition in the defining scope, 
 so that::
 
-   i = 5
-   def f(arg=i):
-       print arg
-   
-   i = 6
-   f()
-
-will print 5.
+   >>> i=5
+   >>> def f(arg=i):
+   ...     print arg
+   ... 
+   >>> i=6
+   >>> f()
+   5
 
 **Important warning**: The default value is evaluated only once. This makes a difference when 
 the default is a mutable object such as a list, dictionary, or instances of most classes. 

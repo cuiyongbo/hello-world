@@ -72,7 +72,7 @@ which are in order by definition, so they never need to be sorted.
       x = A[r]
       i = p-1
       for j=p to r-1
-         if(A[j] < x)
+         if(A[j] <= x)
             i = i + 1
             swap(A[i], A[j])
       swap(A[i+1], A[r])

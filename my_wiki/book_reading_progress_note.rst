@@ -25,6 +25,8 @@ Introduction To Algorithm
      - The master method for solving recurrences (finished)
    
    - Ch05 Probabilistic Analysis and Randomized Algorithms (2018-10-24 -- )
+   - Ch06 Heapsort (reviewed, 2018-11-20 -- 2018-11-25)
+   - Ch07 Quicksort (reviewed, 2018-11-25)
    - Ch08 Sorting in linear time (Finished, 2018-11-11 -- 2018-11-12)
    - Ch09 Medians and order statistics (Finished, 2018-11-12 -- 2018-11-18)
    - Ch10 Elementary Data Structures (Finished before 2018-09)
