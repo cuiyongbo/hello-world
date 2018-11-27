@@ -224,6 +224,8 @@ Nature Lifes
 
    Swan
 
+.. image:: images/arctic_fox.jpg
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

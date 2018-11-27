@@ -130,6 +130,10 @@ tar Command
 
       $ tar -czvf past_ti_helper.tar.gz past_ti_helper/ --exclude "past_ti_helper/config"
 
+      $ tar -zxf traffic-data-updater.tar.gz --wildcards "*.cpp" # only extract cpp files
+      $ tar -zxf traffic-data-updater.tar.gz --wildcards "*stdafx.cpp"
+
+
    .. code-block:: sh
       :caption: tarAndRemove.sh
       
