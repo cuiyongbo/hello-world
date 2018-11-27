@@ -226,6 +226,16 @@ Nature Lifes
 
 .. image:: images/arctic_fox.jpg
 
+.. image:: images/walnut_01.jpg
+.. figure:: images/walnut_open_husk.jpg
+
+   Walnut [核桃]
+
+.. image:: images/Chestnut_01.jpg
+.. figure:: images/Chestnut_02.jpg
+
+   Chestnut [板栗]
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

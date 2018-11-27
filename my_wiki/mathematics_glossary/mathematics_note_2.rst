@@ -40,3 +40,11 @@ Mathematics Notes 2
    to separate the integer part of a number from its fractional part. "Radix point" applies to 
    all number bases. In base 10 notation, the radix point is more commonly called the **decimal point,** 
    Similarly, the term **binary point** is used for base 2.
+
+   
+#. Tensor
+   
+   a mathematical object analogous to but more general than a vector, 
+   represented by an array of components that are functions of the 
+   coordinates of a space.
+
