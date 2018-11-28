@@ -211,3 +211,10 @@ Windows Problems
 
    .. image:: images/vs_py_argument_passing_custom_build_tool_01.jpg
    .. image:: images/vs_py_argument_passing_custom_build_tool_02.jpg
+
+#. note pad++ change tab to space
+   
+   Solution: ``Settings`` - ``Preferences``
+
+   .. image:: images/note_pad_tab_to_space_01.jpg
+   .. image:: images/note_pad_tab_to_space_02.jpg

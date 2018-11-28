@@ -49,6 +49,15 @@ CMakeList Howto
    The remaining arguments specify library names or flags. Repeated calls 
    for the same ``target`` append items in the order called.
 
+#. add_definitions
+   
+   Syntax: ``add_definitions(-DFOO -DBAR ...)``
+
+   Adds ``-D`` define flags to the compilation of source files.
+
+   Adds definitions to the compiler command line for sources in the current directory and below. 
+   This command can be used to add any flags, but it is intended to add preprocessor definitions. 
+
 .. code-block:: sh
    :caption: tip_radar project structure
 
