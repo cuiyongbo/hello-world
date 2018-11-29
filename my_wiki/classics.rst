@@ -12,3 +12,4 @@ Classics
    classics/daiyuzanghua
    classics/nostalgia
    classics/depression
+   classics/baorenanshu

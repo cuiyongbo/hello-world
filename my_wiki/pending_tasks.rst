@@ -22,5 +22,7 @@ Pending tasks
 
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. https://github.com/goodfeli/dlbook_exercises.git
-   
 
+#. send an email to 624610164@qq.com with software
+   
+#. https://misc.flogisoft.com/bash/tip_colors_and_formatting
