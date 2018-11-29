@@ -1,9 +1,9 @@
+***********
 Python note
-===========
+***********
 
 .. toctree::
    :titlesonly:
-   :maxdepth: 2
 
    python/pip_manual
    python/python_operator_precedence
@@ -27,5 +27,6 @@ Python note
    python/random_module_note
    python/subprocess_module_note
    python/python_exception_handling_note
+   python/python_argparse_module_note
    python/python_miscellaneous_tricks
    python/python_application_examples
