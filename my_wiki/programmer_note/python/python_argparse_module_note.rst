@@ -90,4 +90,3 @@ Python argparse note
        print "%d to the power of %d equals %d" % (args.x, args.y, answer)
    else:
        print "%d^%d = %d" % (args.x, args.y, answer)
-

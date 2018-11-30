@@ -71,17 +71,16 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
    RB-Insert-Fixup(T, z)
       while z.p.color == RED
          if z.p == z.p.p.left
-            y = z.p.p.right
+            y = z.p.p.right   // z's uncle   
             if y.color == RED      // case 1
                z.p.color = BlACK
                y.color = BLACK
                z.p.p.color = RED
                z = z.p.p
-            else if z == z.p.right  // case 2
-               z = z.p
-               Left-Rotate(T, z)
-            else                    // case 3
-               z.p.color = BLACK
+            else if z == z.p.right  
+                  z = z.p            // case 2
+                  Left-Rotate(T, z)
+               z.p.color = BLACK      // case 3
                z.p.p.color = RED
                Right-Rotate(T, z.p.p)
          else
