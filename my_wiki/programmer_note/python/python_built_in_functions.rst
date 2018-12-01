@@ -720,10 +720,7 @@ str-int conversion functions
 
 .. function:: ord(c)
 
-   Given a string of length one, return an integer representing the Unicode code point of the character when the argument is a unicode object, 
-   or the value of the byte when the argument is an 8-bit string. This is the inverse of :func:`chr` for 8-bit strings and of :func:`unichr` for unicode objects. 
-   If a unicode argument is given and Python was built with UCS2 Unicode, then the character’s code point must be in the range [0..65535]; 
-   otherwise the string length is two, and a ``TypeError`` will be raised.
+   Inverse of :func:`chr` for 8-bit strings and of :func:`unichr` for unicode objects. 
    
    .. code-block:: python
    
