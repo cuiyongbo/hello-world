@@ -663,9 +663,7 @@ name, also known as surname, with most family members.
 | mooring
 | Definition: A place where a boat or ship is moored.
 | Usage: The boat had been at its usual moorings immediately prior to the storm.
-| 
-| dog-ear [书页折角做标记]
-| Definition: Fold down the corner of (a book or magazine), typically to mark a place.
+|
 | 
 | interpolation
 | Definition: An interpolation is an addition to a piece of writing.

@@ -10,7 +10,7 @@ Only paranoid can surrive.
 | Definition: an unpleasant or painful necessity (to accept).
 | 
 | sugar
-| Definition: sweeten, sprinkle, or coat with sugar.
+| Definition: sweeten, sprinkle, or coat with sugar. [糖衣]
 | Usage: she absentmindedly sugared her tea.
 | Usage: sugared walnut. [琥珀核桃]
 | Definition: make more agreeable or palatable.
@@ -21,3 +21,15 @@ Only paranoid can surrive.
 | Usage: a very palatable local red wine.
 | Definition: (of an action or proposal) acceptable or satisfactory.
 | Usage: Some of the dialogue has been changed to make it more palatable to an American audience. 
+| 
+| tricky
+| Definition: (of a person or act) deceitful, crafty, or skillful.
+| Definition: (of a task, problem, or situation) requiring care and skill because difficult or awkward.
+| Usage: applying eyeliner can be a tricky business.
+| 
+| dog-ear [书页折角做标记]
+| Definition: Fold down the corner of (a book or magazine), typically to mark a place.
+
+.. figure:: images/Alan_Turing_Notebook.jpg
+
+   Notes from a genius 

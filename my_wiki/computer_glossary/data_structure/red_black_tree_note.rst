@@ -8,7 +8,7 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
 
    #. Every node is either red or black.
    #. The root is black.
-   #. Every leaf (NIL) is black.
+   #. Every leaf (nil) is black.
    #. If a node is red, then both its children are black.
    #. For each node, all simple paths from the node to descendant leaves 
       contain the same number of black nodes.
@@ -21,10 +21,10 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
    Left-Rotate(T, x)
       y = x.right
       x.right = y.left
-      if y.left != T.NIL
+      if y.left != T.nil
          y.left.p = x
       y.p = x.p
-      if x.p == T.NIL
+      if x.p == T.nil
          T.root = y
       else if x == x.p.left
          x.p.left = y
@@ -36,10 +36,10 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
    Right-Rotate(T, x)
       y = x.left
       x.left = y.right
-      if y.right != T.NIL
+      if y.right != T.nil
          y.right.p = x
       y.p = x.p
-      if x.p == T.NIL
+      if x.p == T.nil
          T.root = y
       else if x == x.p.left
          x.p.left = y
@@ -49,22 +49,22 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
       x.p = y
    
    RB-Insert(T, z)
-      y = T.NIL
+      y = T.nil
       x = T.root
-      while x != T.NIL
+      while x != T.nil
          y = x
          if z.key < x.key
             x = x.left
          else
             x = x.right
       z.p = y
-      if y == T.NIL
+      if y == T.nil
          T.root = z
       else if z.key < y.key
          y.left = z
       else
          y.right = z
-      z.left = z.right = T.NIL
+      z.left = z.right = T.nil
       z.color = RED
       RB-Insert-Fixup(T, z)
 
@@ -86,3 +86,63 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
          else
             same as then clause with right and left exchanged
       T.root.color = BLACK
+
+   RB-Transplant(T, u, v)
+      if u.p = T.nil
+         T.root = v
+      else if u = u.p.left
+         u.p.left = v
+      else 
+         u.p.right = v
+      v.p = u.p 
+
+   RB-Delete(T, z)
+      y = z
+      y-original-color = y.color
+      if z.left = T.nil
+         x = z.right
+         RB-Transplant(T, z, z.right)
+      else if z.right = T.nil
+         x = z.left
+         RB-Transplant(T, z, z.left)
+      else
+         y = Tree-Minimum(z.right)
+         y-original-color = y.color
+         x = y.right
+         if y.p == z
+            x.p = y
+         else 
+            RB-Transplant(T, y, y.right)
+            y.right = z.right
+            y.right.p = y
+         RB-Transplant(T, z, y)
+         y.left = z.left
+         y.left.p = y
+         y.color = z.color
+      if y-original-color == BLACK
+         RB-Delete-Fixup(T, x)
+
+   RB-Delete-Fixup(T, x)
+      while x != T.root and x.color == BLACK
+         if x == x.p.left
+            w = x.p.right  // x's sibling                  
+            if w.color == RED
+               w.color = BLACK               // case 1
+               x.p.color = RED
+               Left-Rotate(T, x.p)
+               w = x.p.right
+            if w.left.color == BLACK and w.right.color == BLACK
+               w.color = RED                 // case 2
+               x = x.p
+            else if w.right.color == BLACK
+                  w.left.color == BLACK     // case 3
+                  w.color = RED
+                  Right-Rotate(T, w)
+                  w = x.p.right
+               w.color = x.p.color          // case 4
+               x.p.color = BLACK
+               w.right.color = BLACK
+               Left-Rotate(T, x.p)
+               x = T.root
+         else (same as then clause with right and left exchanged)
+      x.color = BLACK

@@ -99,16 +99,6 @@ Thinking for an hour and coding for an hour.
       else
          Recursive-Tree-Insert(x.left, z)
 
-   Translate(T, u, v)
-      if u.p = NIL
-         T.root = v
-      else if u == u.p.left
-         u.p.left = v
-      else
-         u.p.right = v
-      if v != NIL
-         v.p = u.p
-
    Tree-Delete(T, z)
       if z.left == NIL
          Translate(T, z, z.right)
@@ -123,6 +113,16 @@ Thinking for an hour and coding for an hour.
          Translate(T, z, y)
          z.left.p = y
          y.left = z.left
+
+   Translate(T, u, v)
+      if u.p = NIL
+         T.root = v
+      else if u == u.p.left
+         u.p.left = v
+      else
+         u.p.right = v
+      if v != NIL
+         v.p = u.p
 
 #. Full v.s. Complete binary trees
 

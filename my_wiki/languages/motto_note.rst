@@ -79,3 +79,4 @@ Mottoes
 .. figure:: images/pushkin.jpg
 
    Александр Сергеевич Пушкин
+
