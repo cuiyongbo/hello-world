@@ -32,6 +32,8 @@ Introduction To Algorithm
    - Ch10 Elementary Data Structures (Finished before 2018-09)
    - Ch11 Hash tables (Finished before 2018-10)
    - Ch12 Binary search tree (Finished 2018-10-13)
+   - Ch13 Red black tree (Finished 2018-12-04)
+   - Ch14 Augmenting data structure ()
 
 
 Advanced Programming in UNIX Environment

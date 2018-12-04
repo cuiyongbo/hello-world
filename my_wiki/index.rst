@@ -15,6 +15,7 @@ Welcome to My Wiki's documentation!
    computer_glossary
    shell_commands
    programmer_note
+   more_cpp_idioms_note
    machine_learning_note
    mathematics_glossary
    biology_glossary

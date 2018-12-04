@@ -208,6 +208,23 @@ C/C++ Miscellaneous Tricks
    
    .. code-block:: c
 
+      // math.h
       #define M_PI        3.14159265358979323846264338327950288
       #define M_PI_2      1.57079632679489661923132169163975144
       #define M_PI_4      0.785398163397448309615660845819875721
+
+#. Disable compiler warnings
+
+   .. code-block:: c
+
+      #if defined(__clang__)
+      // disable warning about "this != NULL"
+      #  pragma clang diagnostic ignored "-Wtautological-undefined-compare"
+      // disabled warning "delete called on non-final 'XXX' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]"
+      #  pragma clang diagnostic ignored "-Wdelete-non-virtual-dtor"
+      #elif defined(__GNUC__)
+      #  pragma GCC diagnostic ignored "-Wunknown-pragmas"
+      #endif
+      #if defined(_MSC_VER)
+      #  pragma warning(disable: 4068)
+      #endif

@@ -26,6 +26,56 @@ Agumenting Data Structure
          y = y.p
       return r
 
+   OS-Insert(T, z)
+      y = T.nil
+      x = T.root
+      while x != T.nil
+         y = x
+         if z.key < x.key
+            x = x.left
+         else 
+            x = x.right
+      z.p = y
+      if y == T.nil
+         T.root = z
+      else if y.key > z.key
+         y.left = z
+      else
+         y.right = z
+      z.left = z.right = T.nil
+      z.color = RED
+      OS-Insert-Fixup(T, z)
+
+   OS-Insert-Fixup(T, z)
+      while z.p.color == RED
+         if z.p == z.p.p.left
+            y = z.p.p.right   // z's uncle   
+            if y.color == RED      // case 1
+               z.p.color = BlACK
+               y.color = BLACK
+               z.p.p.color = RED
+               z = z.p.p
+            else if z == z.p.right  
+                  z = z.p            // case 2
+                  OS-Left-Rotate(T, z)
+               z.p.color = BLACK      // case 3
+               z.p.p.color = RED
+               OS-Right-Rotate(T, z.p.p)
+         else
+            y = z.p.p.left
+            if y.color = RED
+               z.p.color = BLACK
+               y.color = BLACK
+               z.p.p.color = RED
+               z = z.p.p
+            else if z == z.p.left
+                  z = z.p
+                  OS-Right-Rotate(T, z)
+               z.p.color = BLACK
+               z.p.p.color = RED
+               OS-Left-Rotate(T, z.p.p)
+      T.root.color = BLACK 
+      
    OS-Left-Rotate(T, x)
       y = x.right
       x.right = y.left
@@ -60,6 +110,37 @@ Agumenting Data Structure
       y.size = x.size
       x.size = x.left.size + x.right + 1
 
+  OS-Transplant(T, u, v)
+      if u.p = T.nil
+         T.root = v
+      else if u = u.p.left
+         u.p.left = v
+      else 
+         u.p.right = v
+      v.p = u.p 
 
-
-
+   OS-Delete(T, z)
+      y = z
+      y-original-color = y.color
+      if z.left = T.nil
+         x = z.right
+         OS-Transplant(T, z, z.right)
+      else if z.right = T.nil
+         x = z.left
+         OS-Transplant(T, z, z.left)
+      else
+         y = Tree-Minimum(z.right)
+         y-original-color = y.color
+         x = y.right
+         if y.p == z
+            x.p = y
+         else 
+            OS-Transplant(T, y, y.right)
+            y.right = z.right
+            y.right.p = y
+         OS-Transplant(T, z, y)
+         y.left = z.left
+         y.left.p = y
+         y.color = z.color
+      if y-original-color == BLACK
+         OS-Delete-Fixup(T, x)

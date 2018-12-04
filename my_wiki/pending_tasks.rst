@@ -20,3 +20,5 @@ Pending tasks
 
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. https://github.com/goodfeli/dlbook_exercises.git
+
+#. https://en.wikibooks.org/wiki/Category:Book:More_C%2B%2B_Idioms

@@ -1,8 +1,9 @@
-:orphan:
-
 ***************
 Reference Count
 ***************
+
+.. contents::
+   :local:
 
 Reference Count - C++
 =====================

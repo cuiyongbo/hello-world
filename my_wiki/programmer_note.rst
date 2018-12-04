@@ -9,8 +9,7 @@ no longer anything to take away.
 -- Antonie de Saint-Exupery
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :titlesonly:
 
    programmer_note/hash_tutorial
    programmer_note/python_note
@@ -24,4 +23,3 @@ no longer anything to take away.
    programmer_note/apue_note
    programmer_note/control_characters_note
    programmer_note/programming_pearls
-
