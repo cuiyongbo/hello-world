@@ -26,6 +26,8 @@ Agumenting Data Structure
          y = y.p
       return r
 
+.. code-block:: none
+
    OS-Insert(T, z)
       y = T.nil
       x = T.root
@@ -109,6 +111,8 @@ Agumenting Data Structure
       x.p = y
       y.size = x.size
       x.size = x.left.size + x.right + 1
+
+.. code-block:: none
 
   OS-Transplant(T, u, v)
       if u.p = T.nil
