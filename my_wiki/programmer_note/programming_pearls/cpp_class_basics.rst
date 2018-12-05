@@ -161,30 +161,6 @@ C++ class example
       int size;
       int* data;
    };
-   
-   
-   int main()
-   {
-      Integer a(2);
-   
-      a.data[0] = 123456;
-      a.data[1] = 11;
-   
-      if(true)
-      {
-         Integer b = a;
-         printf("%p\n", a.data);
-         printf("%p\n", b.data);
-      }
-   
-      Integer c(3);
-      c = a;
-   
-      printf("%d\n", c.data[0]);
-   
-      return 0;
-   }
-
 
    class Base
    {

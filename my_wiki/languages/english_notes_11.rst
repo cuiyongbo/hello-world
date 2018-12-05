@@ -29,6 +29,11 @@ Only paranoid can surrive.
 | 
 | dog-ear [书页折角做标记]
 | Definition: Fold down the corner of (a book or magazine), typically to mark a place.
+| 
+| rectify
+| Definition: put (something) right; correct. [澄清，修正]
+| Usage: mistakes made now cannot be rectified later
+
 
 .. figure:: images/Alan_Turing_Notebook.jpg
 
