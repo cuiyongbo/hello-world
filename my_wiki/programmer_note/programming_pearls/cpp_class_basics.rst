@@ -25,19 +25,17 @@ C++ Class Tricks
       * The object you delete was allocated on heap or free store.
       * You will **NEVER** use the pointer again after you delete it.
 
-
 #. Declare class constructor as ``private/protected``
 
    Here are some of the uses of private constructor :
    
-      * Objects can only be created on heap
+      * Objects can only be created on heap [heap-based object]
       * Singleton Design Pattern
       * To limit the number of instance creation
-      * To give meaningful name for object creation using static factory method
+      * To give meaningful name for object creation using static factory method [named constructor]
       * Static Utility Class or Constant Class
       * Lose the chance to be inherited [private only]
       * Builder Design Pattern and thus for creating immutable classes
-
 
 #. Declare class destructor as ``private/protected``
 

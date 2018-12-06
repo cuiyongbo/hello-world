@@ -5,6 +5,8 @@ Agumenting Data Structure
 .. code-block:: none
    :caption: Taken from *Introduction to Algorithms*
 
+   x.size = x.left.size + x.right.size + 1
+
    // OS stands for order-statistic tree
    // Retrieving an element with a given rank
    OS-Select(x, i)
@@ -15,6 +17,18 @@ Agumenting Data Structure
          return OS-Select(x.left, i)
       else
          return OS-Select(x.right, i-r)
+
+   OS-Select-Recursive(x, i)
+      while x != T.nil
+         r = x.left.size + 1
+         if i == r
+            break
+         else if i < r
+            x = x.left
+         else
+            x = x.right
+            i = i - r
+      return x            
 
    // Determining the rank of an element
    OS-Rank(T, x)

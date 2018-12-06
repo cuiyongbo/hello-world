@@ -1,6 +1,6 @@
-*************************************
-Require or prohibit heap-based object
-*************************************
+*****************
+heap-based object
+*****************
 
 .. code-block:: cpp
 

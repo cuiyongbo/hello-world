@@ -120,3 +120,190 @@ other. Moreover, trying to encode the values with any of the encoding
 functions will fail. The encoder detects circular references and
 returns an error status.
 
+
+Reference count - MSVC implementation
+=====================================
+
+.. code-block:: cpp
+
+   class _Ref_count_base
+   { // common code for reference counting
+   private:
+     virtual void _Destroy() = 0;
+     virtual void _Delete_this() = 0;
+   
+   private:
+     _Atomic_counter_t _Uses;
+     _Atomic_counter_t _Weaks;
+   
+   protected:
+     _Ref_count_base()
+       { // construct
+       _Init_atomic_counter(_Uses, 1);
+       _Init_atomic_counter(_Weaks, 1);
+       }
+   
+   public:
+     virtual ~_Ref_count_base() _NOEXCEPT
+       { // ensure that derived classes can be destroyed properly
+       }
+   
+     bool _Incref_nz()
+       { // increment use count if not zero, return true if successful
+       for (; ; )
+         { // loop until state is known
+         _Atomic_integral_t _Count =
+           _Load_atomic_counter(_Uses);
+   
+         if (_Count == 0)
+           return (false);
+   
+         if (_Compare_increment_atomic_counter(_Uses, _Count))
+           return (true);
+         }
+       }
+   
+     unsigned int _Get_uses() const
+       { // return use count
+       return (_Get_atomic_count(_Uses));
+       }
+   
+     void _Incref()
+       { // increment use count
+       _MT_INCR(_Mtx, _Uses);
+       }
+   
+     void _Incwref()
+       { // increment weak reference count
+       _MT_INCR(_Mtx, _Weaks);
+       }
+   
+     void _Decref()
+       { // decrement use count
+       if (_MT_DECR(_Mtx, _Uses) == 0)
+         { // destroy managed resource, decrement weak reference count
+         _Destroy();
+         _Decwref();
+         }
+       }
+   
+     void _Decwref()
+       { // decrement weak reference count
+       if (_MT_DECR(_Mtx, _Weaks) == 0)
+         _Delete_this();
+       }
+   
+     long _Use_count() const
+       { // return use count
+       return (_Get_uses());
+       }
+   
+     bool _Expired() const
+       { // return true if _Uses == 0
+       return (_Get_uses() == 0);
+       }
+   
+     virtual void *_Get_deleter(const _XSTD2 type_info&) const
+       { // return address of deleter object
+       return (0);
+       }
+   };
+
+.. code-block:: cpp
+
+   template<class _Ty>
+     class _Ref_count
+     : public _Ref_count_base
+     { // handle reference counting for object without deleter
+   public:
+     _Ref_count(_Ty *_Px)
+       : _Ref_count_base(), _Ptr(_Px)
+       { // construct
+       }
+   
+   private:
+     virtual void _Destroy()
+       { // destroy managed resource
+       delete _Ptr;
+       }
+   
+     virtual void _Delete_this()
+       { // destroy self
+       delete this;
+       }
+   
+     _Ty * _Ptr;
+     };
+
+.. code-block:: cpp
+
+   template<class _Ty,
+     class _Dx>
+     class _Ref_count_del
+     : public _Ref_count_base
+     { // handle reference counting for object with deleter
+   public:
+     _Ref_count_del(_Ty *_Px, _Dx _Dt)
+       : _Ref_count_base(), _Ptr(_Px), _Dtor(_Dt)
+       { // construct
+       }
+   
+     virtual void *_Get_deleter(const _XSTD2 type_info& _Typeid) const
+       { // return address of deleter object
+       return ((void *)(_Typeid == typeid(_Dx) ? &_Dtor : 0));
+       }
+   
+   private:
+     virtual void _Destroy()
+       { // destroy managed resource
+       _Dtor(_Ptr);
+       }
+   
+     virtual void _Delete_this()
+       { // destroy self
+       delete this;
+       }
+   
+     _Ty * _Ptr;
+     _Dx _Dtor;  // the stored destructor for the controlled object
+     };
+
+.. code-block:: cpp
+
+   template<class _Ty,
+     class _Dx,
+     class _Alloc>
+     class _Ref_count_del_alloc
+     : public _Ref_count_base
+     { // handle reference counting for object with deleter and allocator
+   public:
+     typedef _Ref_count_del_alloc<_Ty, _Dx, _Alloc> _Myty;
+     typedef typename _Alloc::template rebind<_Myty>::other _Myalty;
+   
+     _Ref_count_del_alloc(_Ty *_Px, _Dx _Dt, _Myalty _Al)
+       : _Ref_count_base(), _Ptr(_Px), _Dtor(_Dt), _Myal(_Al)
+       { // construct
+       }
+   
+     virtual void *_Get_deleter(const _XSTD2 type_info& _Typeid) const
+       { // return address of deleter object
+       return ((void *)(_Typeid == typeid(_Dx) ? &_Dtor : 0));
+       }
+   
+   private:
+     virtual void _Destroy()
+       { // destroy managed resource
+       _Dtor(_Ptr);
+       }
+   
+     virtual void _Delete_this()
+       { // destroy self
+       _Myalty _Al = _Myal;
+       _Al.destroy(this);
+       _Al.deallocate(this, 1);
+       }
+   
+     _Ty * _Ptr;
+     _Dx _Dtor;  // the stored destructor for the controlled object
+     _Myalty _Myal;  // the stored allocator for this
+     };
