@@ -2084,45 +2084,6 @@ admitted the computer was named after his daughter.
 | A Winter Break For English Football: whats All the Fuss About?
 | Over a year ago, England were extraordinarily knocked out of Euro 2016 at the | hands of Iceland. To highlight the sheer weight of the upset Iceland caused, | over 10% of their population were at the champions, in the form of fans, players | and staff.
 | 
-| make someone's hair stand on end
-| make (one's) / the hair stand up on the back of (one's) neck
-| Definition: to scare or horrify someone. [毛骨悚然]
-| Usage: Walking past the cemetery alone at night made Mary's hair stand up on the | back of her neck.
-| Usage: Just the thought of going into that abandoned building makes the hair | stand up on the back of my neck.
-| Usage: The hairs stand up on the back of your neck when you realise you have | discovered something as astonishing as these boxing gloves.
-| 
-| hair of the dog
-| Definition: (informal) an alcoholic drink taken to cure a hangover [宿醉].
-| Origin: from hair of the dog that bit you, formerly recommended as a remedy for the bit of a mad dog.
-| 
-| put hair on one's chest
-| Definition: (of an alcoholic drink) be very strong.
-| 
-| in (or out of) one's hair
-| Definition: annoying (or ceasing to annoy someone).
-| Usage: I'm glad he's out of my hair.
-| 
-| let one's hair down
-| Definition: (informal) behave in an uninhibited or relaxed manner.
-| Usage: Let you hair down and just have some fun.
-| 
-| not a hair out of place
-| Definition: used to convey that a person is extremely neat and tidy in | appearance.
-| 
-| not turn a hair
-| Definition: remain apparently unmoved or unaffected.
-| Usage: The old womal didn't turn a hair; she just sat quietly rocking.
-| 
-| split hair
-| Definition: If you say that someone is splitting hairs, you mean that they are | making unnecessary distinctions between things when the differences are almost | negligible.
-| Synonyms: find fault.
-| Usage: Don't split hairs. You know what I'm getting at.
-| 
-| hair
-| Usage: A woman with shoulder-length fair hair. [披肩发] 
-| Defintion: (a hair) a very small quantity or extent.
-| Usage: His magic takes hime a hair above the competition.
-| 
 | verdant
 | verdancy
 | Definition: (of countryside) green with grass or other rich vegetation.
@@ -2132,13 +2093,6 @@ admitted the computer was named after his daughter.
 | Usage: She inhaled deeply on another cigarette.
 | Definition: eat (food) greedily or rapidly.
 | Usage: Later on I inhaled a box of chocolate cookies while watching TV.
-| 
-| exorcism
-| exorcist
-| exorcise
-| Definition: drive out or attempt to drive out (an evil | spirit) from a person or place.
-| Usage: blue exorcist (青のエクソシスト).
-| Usage: Infants were exorcised prior to baptism.
 | 
 | long pig
 | Definition: [obsolete] human flesh eaten by cannibals.
