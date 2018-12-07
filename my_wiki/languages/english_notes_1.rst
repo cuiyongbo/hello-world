@@ -2575,9 +2575,6 @@ admitted the computer was named after his daughter.
 | Usage: You can spent beaucoup bucks on software.
 | Usage: beaucoup fraud.
 |
-
-Well I appreciate it, but I prefer to win fair and square.
-
 | verisimilar
 | verisimilitude
 | Definition: The appearance of being true or real.

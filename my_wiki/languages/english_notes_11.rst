@@ -86,6 +86,11 @@ Only paranoid can surrive.
 | trichotomy
 | Definition: a division into three categories.
 | Usage: the pragmatics–semantics–syntax trichotomy.
+| 
+| fair and square
+| Definition: honestly and straightforwardly.
+| Usage: Well I appreciate it, but I prefer to win fair and square.
+
 
 
 .. figure:: images/Alan_Turing_Notebook.jpg
