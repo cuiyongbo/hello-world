@@ -79,7 +79,7 @@ C/C++ Miscellaneous Tricks
    and even if the expression designates a polymorphic object, the result is the
    size of the static type of the expression.
    
-   .. code-block:: c++
+   .. code-block:: cpp
       :caption: Example 1
    
       #include <iostream>
@@ -176,6 +176,29 @@ C/C++ Miscellaneous Tricks
             "- alignas(64) Empty: " << alignof(Empty64) << "\n";
       }
    
+#. ``offsetof`` macro
+   
+   ``offsetof`` is a macro defined in :file:`stddef.h`, typically like this::
+   .. code-block:: cpp
+
+      // offsetof is a macro defined in stddef.h
+
+      #define offsetof(TYPE, MEMBER) ((size_t) &(((TYPE*)0)->MEMBER))
+
+      // MSVC implementation
+      #define offsetof(s,m)   (size_t)( (ptrdiff_t)&reinterpret_cast<const volatile char&>((((s *)0)->m)) )
+
+   .. code-block:: c
+      :caption: Taken from Jansson
+
+         #define container_of(ptr_, type_, member_)  \
+                              ((type_ *)((char *)ptr_ - offsetof(type_, member_)))
+
+         #define json_to_object(json_)  container_of(json_, json_object_t, json)
+         #define json_to_array(json_)   container_of(json_, json_array_t, json)
+         #define json_to_string(json_)  container_of(json_, json_string_t, json)
+         #define json_to_real(json_)    container_of(json_, json_real_t, json)
+         #define json_to_integer(json_) container_of(json_, json_integer_t, json)
 
 #. ``#pragma pack(n)`` VS ``#pragma pack(push, n)``
 
@@ -229,9 +252,9 @@ C/C++ Miscellaneous Tricks
       #  pragma warning(disable: 4068)
       #endif
 
-#. explicit keyword
+#. ``explicit`` keyword
    
-  The explicit specifier specifies that a constructor or conversion function is explicit, 
+  The ``explicit`` specifier specifies that a constructor or conversion function is explicit, 
   that is, it cannot be used for implicit conversions and copy-initialization.
 
    A constructor with a single non-default parameter that is declared without 

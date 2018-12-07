@@ -63,3 +63,33 @@ String Literal
        std::cout << s1;
        std::cout << s2;
    }  
+
+#. Difference between ``char* s`` and ``char s[]``
+   
+   The difference here is that ``char *s = "Hello world";``
+   will place ``"Hello world"`` in the read-only parts of the memory, 
+   and making s a pointer to that makes any writing operation on this
+   memory illegal, generating ``SIGSEGV`` signal.
+
+   While ``char s[] = "Hello world";`` puts the literal string in read-only memory and 
+   copies the string to newly allocated memory on the stack. Thus making ``s[0] = 'J';`` legal.
+
+   .. code-block:: c
+
+      #include <stdio.h>
+      int main()
+      {
+          char* s1 = "Hello world";
+          char s2[] = "Hello world";
+          printf("s1: %p, s2: %p\n", s1, s2);
+      
+          s1[0] = "s";
+          
+          return 0;
+      }
+      
+      // Output
+      // $ ./a.out 
+      // s1: 0x4006a4, s2: 0x7fffaa8fdf90
+      // Segmentation fault (core dumped)
+      

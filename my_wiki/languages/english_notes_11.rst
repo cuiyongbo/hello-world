@@ -87,6 +87,12 @@ Only paranoid can surrive.
 | Definition: a division into three categories.
 | Usage: the pragmatics–semantics–syntax trichotomy.
 | 
+| quirk
+| quirky
+| Definition: a peculiar behavioral habit.
+| Usage: his distaste for travel is an endearing quirk.
+| Usage: her sense of humor was decidedly quirky.
+| 
 | fair and square
 | Definition: honestly and straightforwardly.
 | Usage: Well I appreciate it, but I prefer to win fair and square.

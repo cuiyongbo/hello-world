@@ -18,7 +18,7 @@ Agumenting Data Structure
       else
          return OS-Select(x.right, i-r)
 
-   OS-Select-Recursive(x, i)
+   OS-Select-Loop(x, i)
       while x != T.nil
          r = x.left.size + 1
          if i == r
@@ -28,7 +28,7 @@ Agumenting Data Structure
          else
             x = x.right
             i = i - r
-      return x            
+      return x
 
    // Determining the rank of an element
    OS-Rank(T, x)
@@ -40,6 +40,15 @@ Agumenting Data Structure
          y = y.p
       return r
 
+   OS-Rank-Recursive(T, x)
+      r = T.root.left.size + 1
+      if x.key == T.root.key
+         return r
+      else if x.key > T.root.key
+         return r + OS-Rank-Recursive(T.root.right, x)
+      else
+         return OS-Rank-Recursive(T.root.left, x.p)
+
 .. code-block:: none
 
    OS-Insert(T, z)
@@ -47,6 +56,7 @@ Agumenting Data Structure
       x = T.root
       while x != T.nil
          y = x
+         x.size = x.size + 1
          if z.key < x.key
             x = x.left
          else 
@@ -60,6 +70,7 @@ Agumenting Data Structure
          y.right = z
       z.left = z.right = T.nil
       z.color = RED
+      z.size = 1
       OS-Insert-Fixup(T, z)
 
    OS-Insert-Fixup(T, z)
@@ -140,6 +151,10 @@ Agumenting Data Structure
    OS-Delete(T, z)
       y = z
       y-original-color = y.color
+      x = y.p
+      while x != T.nil
+         x.size = x.size - 1
+         x = x.p
       if z.left = T.nil
          x = z.right
          OS-Transplant(T, z, z.right)

@@ -39,6 +39,17 @@ top - display Linux processes
 
    10016 cuiyb     20   0  241.7m  19.4m   3.0m S   1.7  0.0   0:11.11 past_ti_compile  
 
+   # view process status according to name
+   # press 'o' then enter COMMAND=process_name [could be a re pattern]
+   # COMMAND=past
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+   9251 cuiyb     20   0  247912  20672   3440 S   1.0  0.1   1:19.13 past_ti_compile
+   4523 cuiyb     20   0   98676   3448   2516 S   0.0  0.0   0:28.74 past_ti_fetcher
+   4525 cuiyb     20   0   98676    988     56 S   0.0  0.0   0:33.66 past_ti_fetcher
+   4526 cuiyb     20   0   98884   1772    632 S   0.0  0.0   0:00.00 past_ti_fetcher
+   4527 cuiyb     20   0   98912   1732    572 S   0.0  0.0   0:00.00 past_ti_fetcher 
+
 .. code-block:: none
    :caption: Press "f" to enter Fields Management
    

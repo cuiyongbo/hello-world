@@ -2,7 +2,6 @@
 Flexible array member
 *********************
 
-
 Flexible array member is a feature introduced in the C99 standard of the C
 programming language. It is a member of a struct, which is an array without
 a given dimension, and **it must be the last member of such a struct**,
@@ -40,30 +39,8 @@ some space for the flexible array member,as in the following example::
       return vec;
    }
 
-.. note::
-
-   ``offsetof`` is a macro defined in :file:`stddef.h`, typically like this::
-
-      #define offsetof(TYPE, MEMBER) ((size_t) &(((TYPE*)0)->MEMBER))
-
-      // MSVC implementation
-      #define offsetof(s,m)   (size_t)( (ptrdiff_t)&reinterpret_cast<const volatile char&>((((s *)0)->m)) )
-
-   .. code-block:: c
-      :caption: code block taken from Jansson
-
-         #define container_of(ptr_, type_, member_)  \
-                              ((type_ *)((char *)ptr_ - offsetof(type_, member_)))
-
-         #define json_to_object(json_)  container_of(json_, json_object_t, json)
-         #define json_to_array(json_)   container_of(json_, json_array_t, json)
-         #define json_to_string(json_)  container_of(json_, json_string_t, json)
-         #define json_to_real(json_)    container_of(json_, json_real_t, json)
-         #define json_to_integer(json_) container_of(json_, json_integer_t, json)
-
-#. Examples
-
 .. code-block:: c
+   :caption: Taken from linux manual
 
    struct inotify_event {
       int      wd;       /* Watch descriptor */
@@ -119,4 +96,8 @@ some space for the flexible array member,as in the following example::
          return -1;  
       // ...
    }
-      
+
+
+.. rubric:: Footnotes
+
+.. [#] `Arrays of Length Zero <http://gcc.gnu.org/onlinedocs/gcc/Zero-Length.html>`_ 
