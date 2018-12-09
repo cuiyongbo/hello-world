@@ -629,9 +629,7 @@ str-int conversion functions
 
 .. function:: bin(x)
 
-   Convert an integer number to a binary string. The result is a valid Python expression. 
-   If x is not a Python :class:`int` object, it has to define an :meth:`__index__` method 
-   that returns an integer. some examples::
+   Convert an integer number to a binary string::
 
       >>> bin(14)
       '0b1110'
@@ -643,18 +641,13 @@ str-int conversion functions
       >>> format(14, '#b'), format(14, 'b')
       ('0b1110', '1110')
 
-  See also :func:`format` for more information.
-
-
 .. function:: oct(x)
 
-   Convert an integer number (of any size) to an octal string. The result is a valid Python expression.
-
+   Convert an integer number (of any size) to an octal string. 
 
 .. function:: hex(x)
 
    Convert an integer number (of any size) to a lowercase hexadecimal string prefixed with “0x”
-
 
 .. function:: ascii(object)
 
@@ -662,26 +655,25 @@ str-int conversion functions
    object, but escape the non-ASCII characters in the string returned by
    :func:`repr` using ``\x``, ``\u`` or ``\U`` escapes. 
 
-
 .. function:: chr(i)
 
-   Return a string of one character whose ASCII code is the integer ``i``. This is the inverse of :func:`ord`. 
-   The argument must be in the range [0..255]; ``ValueError`` will be raised if i is outside that range. 
-   See also :func:`unichr`.
+   Return a string of one character whose ASCII code is the integer ``i``. 
+   This is the inverse of :func:`ord`. The argument must be in the range [0..255]; 
+   ``ValueError`` will be raised if i is outside that range. 
    
-   .. code-block:: python
+   .. code-block:: py
    
       >>> chr(97)
       'a'
 
-
 .. function:: unichr(i)
 
-   Return the Unicode string of one character whose Unicode code is the integer ``i``.This is the inverse of :func:`ord` for Unicode strings. 
-   The valid range for the argument depends how Python was configured – it may be either UCS2 [0..0xFFFF] or UCS4 [0..0x10FFFF]. 
-   ``ValueError`` is raised otherwise. For ASCII and 8-bit strings see :func:`chr`.
+   Return the Unicode string of one character whose Unicode code is the integer ``i``.
+   This is the inverse of :func:`ord` for Unicode strings. The valid range for the 
+   argument depends how Python was configured – it may be either UCS2 ``[0..0xFFFF]`` 
+   or UCS4 ``[0..0x10FFFF]``. ``ValueError`` is raised otherwise. 
    
-   .. code-block:: python
+   .. code-block:: py
    
       >>> unichr(97)
       u'a'

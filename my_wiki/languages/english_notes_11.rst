@@ -96,6 +96,12 @@ Only paranoid can surrive.
 | fair and square
 | Definition: honestly and straightforwardly.
 | Usage: Well I appreciate it, but I prefer to win fair and square.
+| 
+| ephemeral
+| ephemerality
+| Definition: lasting for a very short time.
+| Usage: fashions are ephemeral.
+| Definition: (chiefly of plants) having a very short life cycle. [寄蜉蝣于天地，渺沧海之一粟]
 
 
 

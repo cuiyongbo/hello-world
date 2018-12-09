@@ -159,7 +159,7 @@ More Programming Pearls
 TCP/IP Illustrated Volume one
 =============================
 
-   - Ch01 Introduction (2018-12-09 )
+   - Ch01 Introduction (Finished, 2018-12-08 - 2018-12-09)
    - Ch04 and Ch05 ARP and RARP
    - Ch14 the Domain Name System
    - Ch15 the Trivial File Transfer Protocol
