@@ -178,7 +178,6 @@ C/C++ Miscellaneous Tricks
    
 #. ``offsetof`` macro
    
-   ``offsetof`` is a macro defined in :file:`stddef.h`, typically like this::
    .. code-block:: cpp
 
       // offsetof is a macro defined in stddef.h

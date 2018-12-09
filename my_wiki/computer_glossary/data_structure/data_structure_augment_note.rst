@@ -18,7 +18,7 @@ Agumenting Data Structure
       else
          return OS-Select(x.right, i-r)
 
-   OS-Select-Loop(x, i)
+   Iterative-OS-Select(x, i)
       while x != T.nil
          r = x.left.size + 1
          if i == r
@@ -40,14 +40,14 @@ Agumenting Data Structure
          y = y.p
       return r
 
-   OS-Rank-Recursive(T, x)
+   Recursive-OS-Rank(T, x)
       r = T.root.left.size + 1
       if x.key == T.root.key
          return r
       else if x.key > T.root.key
-         return r + OS-Rank-Recursive(T.root.right, x)
+         return r + Recursive-OS-Rank(T.root.right, x)
       else
-         return OS-Rank-Recursive(T.root.left, x.p)
+         return Recursive-OS-Rank(T.root.left, x.p)
 
 .. code-block:: none
 

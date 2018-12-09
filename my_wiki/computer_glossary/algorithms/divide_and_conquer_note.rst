@@ -2,11 +2,7 @@
 Divide and Conquer Design
 *************************
 
-.. contents:
-   :local:
-
-Case 1: Maximum subarray problem
-================================
+**Maximum subarray problem**
 
 .. code-block:: none
    :caption: Implementation
@@ -84,8 +80,7 @@ Case 1: Maximum subarray problem
       return (max-left, max-right, max-sum)
 
 
-case 2: Strassen's algorithm for matrix multiplication
-======================================================
+**Strassen's algorithm for matrix multiplication**
 
 .. code-block:: none
    :caption: Brute version implementation

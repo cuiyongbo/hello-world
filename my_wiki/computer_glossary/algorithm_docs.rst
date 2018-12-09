@@ -6,6 +6,7 @@ Algorithms
    :titlesonly:
 
    algorithms/alg_analysis_and_design
+   algorithms/dynamic_programming_note
    algorithms/pseudocode_introduction
    algorithms/complexity_summary
    algorithms/divide_and_conquer_note

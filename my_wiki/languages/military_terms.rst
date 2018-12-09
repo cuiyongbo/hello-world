@@ -1,8 +1,10 @@
+**************
 Military Terms
-==============
+**************
 
 | MIA -- missing-in-action [失踪]
 | KIA -- killed-in-action [阵亡]
+| DOA -- dead on arrival [不治身亡]
 | Allied Powers [盟军]
 | Axis Powers [轴心国]
 | United Nations [联合国]

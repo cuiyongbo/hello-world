@@ -4,6 +4,12 @@ Binary Tree
 
 Thinking for an hour and coding for an hour.
 
+**binary-search-tree property**
+
+Let x be a node in a binary search tree. If y is a node in the left subtree
+of x, then :math:`y.key \leq x.key`. If y is a node in the right subtree of x, 
+then :math:`y.key \geq x.key`.
+
 **Implementation**
 
 .. code-block:: none

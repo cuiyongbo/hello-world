@@ -13,3 +13,4 @@ Classics
    classics/nostalgia
    classics/depression
    classics/baorenanshu
+   classics/francis_bacon_of_studies

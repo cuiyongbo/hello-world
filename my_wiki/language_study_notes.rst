@@ -21,6 +21,7 @@ Language Study
    languages/japanese_notes
    languages/song_lyric_collection_01
    languages/song_lyric_collection_02
+   languages/song_lyric_collection_03
    languages/military_terms
    languages/steve_jobs_obituary
    languages/stephen_hawking_obituary

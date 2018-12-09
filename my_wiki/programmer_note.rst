@@ -17,7 +17,8 @@ no longer anything to take away.
    programmer_note/gcc_notes
    programmer_note/gdb_notes
    programmer_note/gtest_notes
-   programmer_note/pthread_introduction
+   programmer_note/pthread_notes
+   programmer_note/tcp_ip_notes
    programmer_note/std_c_api
    programmer_note/linux_system_calls
    programmer_note/apue_note
