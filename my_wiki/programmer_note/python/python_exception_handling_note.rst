@@ -15,7 +15,9 @@ Python Exception Handling
       If there is ExceptionII, ExceptionIII or ExceptionIV, then execute this block.
       ......................
    else:
-      If there is no exception then execute this block.
+      If there is no exception then execute this block. 
+   finally:
+      cleanup_stuff() # execute always no matter whether there is an exception or not
 
 .. code-block:: py
    :caption: Example 1
@@ -69,14 +71,6 @@ Python Exception Handling
            except subprocess.CalledProcessError as e:
                print e.returncode, ": ", e.output
                print "%s: not in use" % sys.argv[i]
-
-If it's a matter of cleanup that should be run regardless of success or failure, 
-then you would do::
-
-   try:
-      do_some_stuff()
-   finally:
-      cleanup_stuff()
 
 .. code-block:: py
    :caption: More examples
@@ -212,6 +206,41 @@ then you would do::
      File "<stdin>", line 3, in divide
    TypeError: unsupported operand type(s) for /: 'str' and 'str'
    
+
+When the ``with`` statement is executed, Python evaluates the expression, 
+calls the ``__enter__`` method on the resulting value (which is called a “context guard”), 
+and assigns whatever ``__enter__`` returns to the variable given by ``as``. Python will then 
+execute the code body, and no matter what happens in that code, call the guard 
+object’s ``__exit__`` method.
+
+As an extra bonus, the ``__exit__`` method can look at the exception, 
+if any, and suppress it or act on it as necessary. To suppress the exception, 
+just return a true value. For example, the following ``__exit__`` method 
+swallows any ``TypeError``, but lets all other exceptions through::
+
+    def __exit__(self, type, value, traceback):
+        return isinstance(value, TypeError)
+
+In Python 2.5, the file object has been equipped with ``__enter__`` and ``__exit__`` methods; 
+the former simply returns the file object itself, and the latter closes the file::
+
+    >>> f = open("x.txt")
+    >>> f
+    <open file 'x.txt', mode 'r' at 0x00AE82F0>
+    >>> f.__enter__()
+    <open file 'x.txt', mode 'r' at 0x00AE82F0>
+    >>> f.read(1)
+    'X'
+    >>> f.__exit__(None, None, None)
+    >>> f.read(1)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    ValueError: I/O operation on closed file
+
+so to open a file, process its contents, and make sure to close it, 
+you can simply do::
+
    with open("myfile.txt") as f:
        for line in f:
            print line,  
+

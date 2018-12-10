@@ -2,8 +2,8 @@
 time Module
 ***********
 
-APIs
-====
+Hot APIs
+========
 
 .. class:: time.struct_time
 
@@ -233,3 +233,11 @@ Notes:
        
    (3) When used with the *strptime()* function, ``%U`` and ``%W`` are only used in calculations when the 
        day of the week and the year are specified.
+
+#. Convert DateTime to timestamp
+   
+   .. code-block:: py
+
+      >>> dt = datetime.datetime(2018, 12, 10, 17, 38, 0, 0)
+      >>> time.mktime(dt.timetuple())
+      1544434680.0      

@@ -11,9 +11,9 @@ Python note
    python/python_function_basics
    python/python_built_in_functions
    python/python_control_flow_overview
-   python/builtin_set_notes
-   python/builtin_dict_notes
-   python/builtin_file_notes
+   python/python_set_notes
+   python/python_dict_notes
+   python/python_file_notes
    python/string_notes
    python/python_complex_type_note
    python/list_tricks

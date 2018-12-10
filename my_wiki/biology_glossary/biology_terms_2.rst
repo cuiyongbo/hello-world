@@ -14,9 +14,13 @@ Nature Lifes
 | Phrase: take someone down a peg or two
 | Definition: make someone realize that they are less talented or important than they think are.
 | 
-| herbivore
+| herbivore [食草动物]
 | Definition: an animal that feeds on plants
+| Synonyms: planteater
 | 
+| carnivore [食肉动物]
+| Definition: an animal that feeds on flesh.
+|
 | viviparous
 | Definition: (of an animal) bringing forth live young that have developed inside the body of the parent. [胎生]Compare with oviparous and ovoviviparous.
 | Definition: Botany (of a plant) reproducing from buds that form plantlets while still attached to the parent plant, or from seeds that germinate within the fruit.
