@@ -113,6 +113,8 @@ Only paranoid can surrive.
 | Definition: move (data or a task) from one processor to another in order to free the first processor for other tasks.
 | Usage: a system designed to offload the text on to a host computer.
 
+
+
 .. figure:: images/Alan_Turing_Notebook.jpg
 
    Notes from a genius 
