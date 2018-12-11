@@ -29,6 +29,10 @@ what is called a reason for living also the excellent one for dying.
 | Usage: His silence unnerved us. [他的沉默令我们心里发慌]
 | Usage: She appeared strained and a little unnerved. 
 | 
+| sane
+| Definition: (of a person) of sound mind; not mad or mentally ill.
+| Usage: hard work kept me sane.
+| 
 | embitter
 | Definition: cause (someone) to feel bitter or resentful.
 | Usage: he died an embittered man.

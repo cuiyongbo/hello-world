@@ -20,7 +20,7 @@ Python note
    python/urllib_tricks
    python/sort_tricks
    python/re_module_doc
-   python/time_module_note
+   python/python_time_module_note
    python/struct_module_doc
    python/unittest_module_note
    python/os_module_tricks

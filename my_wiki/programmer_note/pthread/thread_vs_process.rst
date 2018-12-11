@@ -14,10 +14,10 @@ Multiple strands of execution in a single program are called threads.
 A more precise definition is that a thread is a sequence of control
 within a process.
 
-See :doc:`Pthread API Introduction <../programmer_note/pthread/pthread_overview>`.
+See :doc:`Pthread API Introduction <pthread_overview>`.
 
-.. image:: ../programmer_note/pthread/images/process_vs_thread.png
-.. image:: ../programmer_note/images/single_thread_vs_multithread.png
+.. image:: images/process_vs_thread.png
+.. image:: ../images/single_thread_vs_multithread.png
 
 **fork vs pthread**
 

@@ -6,8 +6,6 @@ Unix Concepts
    
    linux_filesystem_hierarchy
    unix_configure_file
-   special_process_type
-   thread_vs_process
 
 #. Real User ID and Real Group ID
    

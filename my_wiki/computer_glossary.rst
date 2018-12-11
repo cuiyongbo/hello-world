@@ -16,6 +16,4 @@ Computer Glossary
    computer_glossary/unix_concepts_note
    computer_glossary/segmentation_fault_cracks
    computer_glossary/os_lock_mechanisms
-   computer_glossary/copy_on_write_tech
-   computer_glossary/compare_and_swap_tech
    computer_glossary/rst_syntax_note

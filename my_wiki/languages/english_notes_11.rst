@@ -102,8 +102,16 @@ Only paranoid can surrive.
 | Definition: lasting for a very short time.
 | Usage: fashions are ephemeral.
 | Definition: (chiefly of plants) having a very short life cycle. [寄蜉蝣于天地，渺沧海之一粟]
-
-
+| 
+| offload
+| Definition: unload (a cargo).
+| Usage: men were offloading bags of salt.
+| Definition: rid oneself of (something) by selling or passing it on to someone else.
+| Usage: a dealer offloaded 5,000 of these shares on a client.
+| Definition: relieve oneself of (a problem or worry) by talking to someone else.
+| Usage: it would be nice to have been able to offload your worries onto someone.
+| Definition: move (data or a task) from one processor to another in order to free the first processor for other tasks.
+| Usage: a system designed to offload the text on to a host computer.
 
 .. figure:: images/Alan_Turing_Notebook.jpg
 

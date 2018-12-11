@@ -2,11 +2,7 @@
 Special Process
 ***************
 
-.. contents::
-   :local:
-
-Zombie process
-==============
+**Zombie process**
 
 On Unix and Unix-like computer operating systems, a **zombie process or defunct process** is a process 
 that has completed execution (via the exit system call) but still has an entry in the process table: 
@@ -85,8 +81,7 @@ will be reaped automatically.
    }
 
 
-Orphan process
-==============
+**Orphan process**
 
 In a Unix-like operating system any orphaned process will be immediately adopted by the special init system process: 
 the kernel sets the parent to init. This operation is called re-parenting and occurs automatically. Even though technically 

@@ -46,7 +46,7 @@ Dynamic Programming
       return r[n]
 
 
-Matrix-chain multiplication problem
+**Matrix-chain multiplication problem**
 
 .. code-block:: none
 
@@ -61,3 +61,4 @@ Matrix-chain multiplication problem
                for k=1 to A.columns
                   c[i][j] = c[i][j] + a[i][k] * b[k][j]
          return C
+
