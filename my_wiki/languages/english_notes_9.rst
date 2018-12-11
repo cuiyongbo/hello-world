@@ -429,6 +429,14 @@ English Note 9
 | Russian roulette
 | Definition: an activity that is potentially very dangerous.
 | Usage: we can't afford to play Russian Roulette with our existing antibiotics.
+| 
+| oscillate 
+| oscillatory
+| Definition: (Physics) vary in magnitude or position in a regular manner around a central point.
+| Definition: move or swing back and forth at a regular speed.
+| Usage: a pendulum oscillates about its lowest point.
+| Definition: waver between extremes of opinion, action, or quality.
+| Usage: he was oscillating between fear and bravery. [摇摆不定]
 
 .. figure:: images/harpoon.jpg
 
@@ -452,6 +460,10 @@ English Note 9
 .. figure:: images/Metronome_Nikko.jpg
 
    Metronome [节拍器]
+
+.. figure:: images/Pendulum.gif
+
+   Pendulum [钟摆]
 
 .. figure:: images/vertigo.png
 

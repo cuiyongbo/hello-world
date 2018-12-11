@@ -136,9 +136,9 @@ Unix config files
      fi
 
 
-#. Case Study: Mac OS X does not read .bashrc for interactive shell
+#. Case Study: Mac OS X does not read **.bashrc** for interactive shell
 
-   Been there, done that. What I came aware of, OS X doesn't read *.bashrc* file on bash start. 
+   Been there, done that. What I came aware of, OS X doesn't read **.bashrc** file on bash start. 
    Instead, it reads the following files (in the following order)::
    
       /etc/profile
@@ -146,8 +146,9 @@ Unix config files
       ~/.bash_login
       ~/.profile
    
-   By default, Terminal starts the shell via */usr/bin/login*, which makes the shell a login shell. 
-   On every platform (not just Mac OS X) bash does not use *.bashrc* for login shells (only */etc/profile*
-   and the first of *.bash_profile*, *.bash_login*, *.profile* that exists and is readable). 
-   This is why "put source ~/.bashrc in your .bash_profile" is standard advice.
+   By default, Terminal starts the shell via **/usr/bin/login**, which makes the shell a login shell. 
+   On every platform (not just Mac OS X) bash does not use **.bashrc** for login shells 
+   (only **/etc/profile** and the first of **.bash_profile, .bash_login, .profile** that 
+   exists and is readable). This is why **put source ~/.bashrc in your .bash_profile** is 
+   standard advice.
 

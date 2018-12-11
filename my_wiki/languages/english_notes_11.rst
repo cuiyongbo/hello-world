@@ -112,8 +112,11 @@ Only paranoid can surrive.
 | Usage: it would be nice to have been able to offload your worries onto someone.
 | Definition: move (data or a task) from one processor to another in order to free the first processor for other tasks.
 | Usage: a system designed to offload the text on to a host computer.
-
-
+| 
+| berserk
+| berserker [狂战士]
+| Defintion: out of control with anger or excitement; wild or frenzied.
+| Usage: after she left him, he went berserk, throwing things around the apartment.
 
 .. figure:: images/Alan_Turing_Notebook.jpg
 

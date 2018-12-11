@@ -168,7 +168,7 @@ computed by applying the Pythagorean theorem. [勾股定理]
 | Definition: insert (something of a different nature) into something else.
 | Usage: illustrations were interpolated in the text.
 | Definition: interject (a remark) in a conversation.
-| Usage: “I dare say,” interpolated her employer
+| Usage: “I dare say,” interpolated her employer.
 | Definition: (mathematics) insert (an intermediate value or term) into a series 
 | by estimating or calculating it from surrounding known values.
 | 
