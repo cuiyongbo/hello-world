@@ -12,6 +12,7 @@ More C++ Idioms
    more_cpp_idioms/move_constructor
    more_cpp_idioms/named_constructor
    more_cpp_idioms/nifty_counter
+   more_cpp_idioms/non_throwing_swap
 
 
 .. rubric:: Footnotes

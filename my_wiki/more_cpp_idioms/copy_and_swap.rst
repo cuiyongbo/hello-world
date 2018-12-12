@@ -94,3 +94,6 @@ a copy of the right hand side String object. To implement this optimization, one
 custom assignment operator. Since a new String copy would nullify the memory allocation optimization, 
 this custom assignment operator would have to avoid copying its argument to any temporary Strings, 
 and in particular would need to accept its parameter by const reference.
+
+
+http://navicore.mapbar.com/nc/v1/toy/pastti?dt=201901011230

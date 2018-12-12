@@ -281,3 +281,17 @@ Computer Terminology 2
    whatever materials happended to be readily available at the time). For example, "I tried 
    to figure out which wire was causing the problem, but there’s a veritable rat’s nest of wires, 
    chords, and cables down there."
+
+#. BOM
+
+   The :abbr:`BOM (Byte Order Marker)` is a Unicode character, ``U+FEFF``, 
+   whose appearance as a magic number at the start of a text stream can signal 
+   several things to a program reading the text:
+
+      * The byte order, or endianness, of the text stream;
+      * The fact that the text stream's encoding is Unicode, to a high level of confidence;
+      * Which Unicode encoding the text stream is encoded as.
+
+   BOM use is optional. Its presence interferes with the use of UTF-8 by software 
+   that does not expect non-ASCII bytes at the start of a file but that could 
+   otherwise handle the text stream.

@@ -118,6 +118,7 @@ Only paranoid can surrive.
 | Defintion: out of control with anger or excitement; wild or frenzied.
 | Usage: after she left him, he went berserk, throwing things around the apartment.
 
+
 .. figure:: images/Alan_Turing_Notebook.jpg
 
    Notes from a genius 
