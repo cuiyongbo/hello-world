@@ -117,6 +117,21 @@ Only paranoid can surrive.
 | berserker [狂战士]
 | Defintion: out of control with anger or excitement; wild or frenzied.
 | Usage: after she left him, he went berserk, throwing things around the apartment.
+| 
+| bite (someone) in the ass / butt
+| Definition: To punish or take revenge on someone for their misjudgment or misdeed(s). 
+| Usage: Your poor treatment of your employees might come back to bite you in the ass some day. 
+| Usage: I got too greedy with my gambling, and now it has bitten me in the ass.
+| 
+| get-go
+| Definition: the very beginning.
+| Usage: Lawrence knew from the get-go that he could count on me to tell him the truth.
+| 
+| inflection 
+| Grammar: a change in the form of a word (typically the ending) to express a grammatical function or attribute such as tense, mood, person, number, case, and gender.
+| Mathematics: a change of curvature from convex to concave at a particular point on a curve.
+
+.. image:: images/convex-vs-concave-lens.jpg
 
 
 .. figure:: images/Alan_Turing_Notebook.jpg

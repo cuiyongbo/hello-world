@@ -404,3 +404,29 @@ Python Miscellaneous Usages
       def max_heapify_siftdown(array, i):
          assert (i < len(array)),"index out of range"
          # ...
+
+#. python to collect code running time
+   
+   .. code-block:: py
+
+      >>> import timeit
+
+      # timeit.timeit(stmt='pass', setup='pass', 
+      #   timer=<default timer>, number=1000000)
+      #
+      # Create a Timer instance with the given statement, 
+      # setup code and timer function and run its timeit() 
+      # method with number executions.
+      
+      >>> timeit.timeit('"-".join(map(str, range(100)))', number=10000)
+      0.14010405540466309
+      >>> timeit.timeit('"-".join(map(str, range(100)))', number=1000)
+      0.016650915145874023
+      >>> timeit.timeit('"-".join(map(str, range(100)))', number=100)
+      0.0018639564514160156
+
+      # from command-line
+      $ python -m timeit '"-".join(map(str, range(100)))'
+      100000 loops, best of 3: 12.2 usec per loop
+
+   Refer to `timeit docs <https://docs.python.org/2/library/timeit.html>`_ for further information.
