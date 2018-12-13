@@ -44,13 +44,6 @@ shm_open & shm_unlink
    
       O_CREAT    
          Create the shared memory object if it does not exist.
-         The user and group ownership of the object are taken from the corresponding
-         effective IDs of the calling process, and the object's permission bits are
-         set according to the low-order 9 bits of *mode*, except that those bits set
-         in the process file mode creation mask (see umask(2)) are cleared for the new
-         object. A set of macro constants which can be used to define *mode* is listed
-         in :manpage:`open(2)`. (Symbolic definitions of these constants can be obtained
-         by including :file:`<sys/stat.h>`.)
    
          A new shared memory object initially has zero length—the size of the object can
          be set using :manpage:`ftruncate(2)`. The newly allocated bytes of a shared memory

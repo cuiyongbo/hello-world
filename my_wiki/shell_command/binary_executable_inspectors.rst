@@ -30,7 +30,9 @@ Binary executable inspectors
         -h        --help                    Display this information
         -v        --version                 Display the program's version
    
-      size: supported targets: elf64-x86-64 elf32-i386 elf32-x86-64 a.out-i386-linux pei-i386 pei-x86-64 elf64-l1om elf64-k1om elf64-little elf64-big elf32-little elf32-big pe-x86-64 pe-i386 plugin srec symbolsrec verilog tekhex binary ihex
+      size: supported targets: elf64-x86-64 elf32-i386 elf32-x86-64 a.out-i386-linux pei-i386 
+      pei-x86-64 elf64-l1om elf64-k1om elf64-little elf64-big elf32-little elf32-big pe-x86-64 
+      pe-i386 plugin srec symbolsrec verilog tekhex binary ihex
 
       $ size /bin/ls /usr/bin/cc
       text     data      bss      dec      hex  filename
@@ -42,7 +44,8 @@ Binary executable inspectors
    .. code-block:: sh
 
       $ file a.out 
-      a.out: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=221dd2443eaa05493fc2d2861c09551676ba60dc, not stripped
+      a.out: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), 
+      for GNU/Linux 2.6.24, BuildID[sha1]=221dd2443eaa05493fc2d2861c09551676ba60dc, not stripped
       $ file test.c
       test.c: C source, ASCII text
 
@@ -80,3 +83,29 @@ Binary executable inspectors
       ferror(0x7f6c978bf1c0)                                                                                                                                                 = 0
       fclose(0x7f6c978bf1c0)                                                                                                                                                 = 0
       +++ exited (status 0) +++
+
+
+#. peek fuction list in a ``*.so`` object
+   
+   .. code-block:: sh
+
+      $ nm -D  libfcgi.so | grep FCG
+      0000000000005bf0 T FCGI_Accept
+      0000000000006520 T FCGI_clearerr
+      0000000000005db0 T FCGI_fclose
+      00000000000065c0 T FCGI_fdopen
+      00000000000064c0 T FCGI_feof
+      00000000000064f0 T FCGI_ferror
+      0000000000005e20 T FCGI_fflush
+      0000000000006010 T FCGI_fgetc
+      0000000000005fb0 T FCGI_fgetpos
+      0000000000006080 T FCGI_fgets
+      00000000000065a0 T FCGI_fileno
+      0000000000005b90 T FCGI_Finish
+      0000000000005d60 T FCGI_fopen
+      0000000000006210 T FCGI_fprintf
+      0000000000006100 T FCGI_fputc
+      0000000000006140 T FCGI_fputs
+      0000000000006420 T FCGI_fread
+      0000000000005e50 T FCGI_freopen
+      0000000000005f10 T FCGI_fseek

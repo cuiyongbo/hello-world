@@ -13,7 +13,7 @@ POSIX shared memory overview
 
       ftruncate(2)
          Set the size of the shared memory object. (A newly created shared memory object has
-         a length of zero.)
+         a length of zero)
 
       mmap(2)        
          Map the shared memory object into the virtual address space of the calling process.
@@ -43,9 +43,7 @@ POSIX shared memory overview
    has been deleted with :manpage:`shm_unlink(3)`.
 
    On Linux, shared memory objects are created in a (*tmpfs*) virtual filesystem,
-   normally mounted under :file:`/dev/shm`. Since kernel 2.6.19, Linux supports
-   the use of access control lists (ACLs) to control the permissions of objects
-   in the virtual filesystem.
+   normally mounted under :file:`/dev/shm` or :file:`/run/shm`.
 
 **NOTES**
        

@@ -104,31 +104,33 @@ then :math:`y.key \geq x.key`.
          Recursive-Tree-Insert(x.right, z) 
       else
          Recursive-Tree-Insert(x.left, z)
-
+   
+   Translate(T, u, v)
+      if u.p == NIL
+         T.root = v
+      else if u = u.p.left
+         u.p.left = v
+      else
+         u.p.right = v
+   
+      if v != NIL
+         v.p = u.p
+   
    Tree-Delete(T, z)
       if z.left == NIL
          Translate(T, z, z.right)
       else if z.right == NIL
          Translate(T, z, z.left)
       else
-         y = Tree-Minimum(z.right)
-         if y.p != z
+         y = Tree-Minimum(z.righ)
+         if y != z.right
             Translate(T, y, y.right)
-            z.right.p = y
             y.right = z.right
+            z.right.p = y
          Translate(T, z, y)
-         z.left.p = y
          y.left = z.left
-
-   Translate(T, u, v)
-      if u.p = NIL
-         T.root = v
-      else if u == u.p.left
-         u.p.left = v
-      else
-         u.p.right = v
-      if v != NIL
-         v.p = u.p
+         z.left.p = y
+   
 
 #. Full v.s. Complete binary trees
 

@@ -74,20 +74,16 @@ map or unmap files or devices into memory
       MAP_GROWSDOWN
          Used for stacks. Indicates to the kernel virtual memory system that the mapping should extend downward in memory.
 
-      MAP_LOCKED (since Linux 2.5.37)
-         Lock the pages of the mapped region into memory in the manner of :manpage:`mlock(2)`. This flag is ignored in older kernels.
-
       MAP_NORESERVE
-         Do not reserve swap space for this mapping. When swap space is reserved, one has the guarantee that it is possible to
-         modify the mapping. When swap space is not reserved one might get ``SIGSEGV`` upon a write if no physical memory is
-         available. See also the discussion of the file :file:`/proc/sys/vm/overcommit_memory` in :manpage:`proc(5)`.
-         In kernels before 2.6, this flag had effect only for private writable mappings.
+         Do not reserve swap space for this mapping. When swap space is reserved, 
+         one has the guarantee that it is possible to modify the mapping. 
+         When swap space is not reserved one might get ``SIGSEGV`` upon a write 
+         if no physical memory is available. 
 
    Memory mapped by ``mmap()`` is preserved across :manpage:`fork(2)`, with the same attributes.
    A file is mapped in multiples of the page size. For a file that is not a multiple of the page size,
    the remaining memory is zeroed when mapped, and writes to that region are not written out to the file.
-   The effect of changing the size of the underlying file of a mapping on the pages that correspond to
-   added or removed regions of the file is unspecified.
+   The effect of changing the size of the underlying file is unspecified.
 
    The :manpage:`munmap()` system call deletes the mappings for the specified address range, and causes further references to addresses
    within the range to generate invalid memory references. The region is also automatically unmapped when the process is terminated.
