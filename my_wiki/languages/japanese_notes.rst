@@ -145,3 +145,15 @@ Janpanese Note
    Ittekimasu and Itterasshai are most often used with family members or people you live with. 
    It doesn’t matter which one is said first, but both expressions are usually exchanged 
    when someone leaves the house.
+
+#. 手品　手品師　[魔术师，障眼法]
+   
+#. 専務　専務取締役
+   
+  　
+.. figure:: images/teruterubouzu.jpg
+
+   照る照る坊主　[晴天娃娃]
+
+.. image:: images/kyoto-cherry-blossom.jpg
+
