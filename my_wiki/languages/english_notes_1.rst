@@ -1958,21 +1958,6 @@ admitted the computer was named after his daughter.
 | Usage: I'll reserve my views on his ability until he's played again. [对 xx 持保留意见]
 | Definition: If you reserver the charges you make a phone call, the person you are phoning pay the cost.
 | 
-| die hard
-| Definition: disappear or change very slowly.
-| Usage: old habits die hard.
-| Usage: old soldiers never die, they just fade away.
-| 
-| die on the vine
-| Definition: be unsuccessful at an early stage.
-| 
-| never say die
-| Definition: used to encourage someone in a difficult situation.
-| 
-| to die for
-| Definition: extremely good or desirable.
-| Usage: The ice cream is to die for.
-| 
 | punctuation
 | Definition: punctuation is the use of symbols such as full stops or periods, commas, or question marks to divide written words into sentences and clauses.
 | Usage: He was known for his poor grammer and punctuation.

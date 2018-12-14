@@ -204,3 +204,27 @@ Shell Script
       $ foo+=" nice to meet you"
       $ echo $foo
       hello world nice to meet you
+
+#. comparison with ``test "x$SHELL_VAR" = "xyes"``
+   
+   If you're using a shell that does simple substitution and the ``SHELL_VAR`` variable 
+   does not exist (or is blank), then you need to watch out for the **edge cases**. 
+   The following translations will happen::
+
+      if test $SHELL_VAR = yes; then        -->  if test = yes; then
+      if test x$SHELL_VAR = xyes; then      -->  if test x = xyes; then
+
+   The first of these will generate an error since the fist argument to **test** 
+   has gone missing. The second does not have that problem.
+
+   Your case translates as follows::
+
+      if test "x$SHELL_VAR" = "xyes"; then  -->  if test "x" = "xyes"; then
+
+   It may seem a bit redundant since it has both the quotes and the ``x`` 
+   but it will also handle a variable with spaces in it.
+
+   The other reason (other than empty variables) has to do with option processing. 
+   If you write ``if test "$1" = "abc" ; then ...`` and ``$1`` has the value ``-n`` 
+   or ``-z`` or any other valid options to the ``test`` command, the syntax is ambiguous. 
+   The ``x`` at the front prevents a leading dash from being picked up as an option to ``test``.

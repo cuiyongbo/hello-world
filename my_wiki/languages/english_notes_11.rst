@@ -130,6 +130,28 @@ Only paranoid can surrive.
 | inflection 
 | Grammar: a change in the form of a word (typically the ending) to express a grammatical function or attribute such as tense, mood, person, number, case, and gender.
 | Mathematics: a change of curvature from convex to concave at a particular point on a curve.
+| 
+| die hard
+| Definition: disappear or change very slowly.
+| Usage: old habits die hard. [百足之虫，死而不僵]
+| 
+| never say die
+| Definition: used to encourage someone in a difficult situation.
+| Usage: old soldiers never die, they just fade away.
+| 
+| to die for
+| Definition: extremely good or desirable.
+| Usage: The ice cream is to die for.
+| 
+| die on the vine
+| Definition: be unsuccessful at an early stage.
+| Usage: Many of the resources for students with learning disabilities have died on the vine following the school board's budget cuts.
+| 
+| vine
+| Definition: a climbing or trailing woody-stemmed plant of the grape family.
+| Definition: the slender stem of a trailing or climbing plant. [藤本科植物]
+
+
 
 .. image:: images/convex-vs-concave-lens.jpg
 
