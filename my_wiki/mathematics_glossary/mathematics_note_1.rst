@@ -112,6 +112,12 @@ A professional practices until he cannot get it wrong.
    .. math::
 
       \ln(t) = \int_{1}^{t} {\frac{1}{x}}\,dx.
+
+#. Harmonic Series
+   
+   .. math:: 
+
+      \sum_{k=0}^{n} \frac{1}{k} = \ln n + O(1)
    
 #. Modular arithmetic
    
@@ -266,22 +272,6 @@ A professional practices until he cannot get it wrong.
    .. math::
 
       \lim \limits_{i \to \infty} {\sum_{i=0}^{n} q^n} = \frac {a_0}{1-q}
-
-#. Caculus [微积分]
-   
-   .. image:: images/Integral_as_region_under_curve.svg
-
-   the branch of mathematics that deals with the finding and properties of derivatives 
-   and integrals of functions, by methods originally based on the summation of 
-   infinitesimal differences. The two main types are differential calculus and integral calculus.
-
-   .. figure:: images/Gottfried_Wilhelm_Leibniz.jpg
-
-      Gottfried Wilhelm Leibniz was the first to state clearly the rules of calculus.
-
-   .. figure:: images/IsaacNewton.jpg
-
-      Isaac Newton developed the use of calculus in his laws of motion and gravitation.
 
 #. Prime number versus Composite number
    

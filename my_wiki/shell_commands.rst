@@ -26,6 +26,7 @@ Shell Commands
    shell_command/chmod_info
    shell_command/crontab_info
    shell_command/curl_manual
+   shell_command/cut_manual
    shell_command/diff_and_patch_note
    shell_command/du_manual
    shell_command/file_cp_mv

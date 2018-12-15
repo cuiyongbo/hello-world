@@ -36,3 +36,19 @@ take years or even centuries of sustained inquiry.
    Pythagorean Theorem [勾股定理]
 
    :math:`a^2 + b^2 = c^2`
+
+.. figure:: images/Integral_as_region_under_curve.svg
+
+   Caculus [微积分]
+
+   The branch of mathematics that deals with the finding and properties of derivatives 
+   and integrals of functions, by methods originally based on the summation of infinitesimal 
+   differences. The two main types are differential calculus and integral calculus.
+
+.. figure:: images/Gottfried_Wilhelm_Leibniz.jpg
+
+   Gottfried Wilhelm Leibniz was the first to state clearly the rules of calculus.
+
+.. figure:: images/IsaacNewton.jpg
+
+   Isaac Newton developed the use of calculus in his laws of motion and gravitation.

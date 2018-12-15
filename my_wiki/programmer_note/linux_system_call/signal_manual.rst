@@ -42,15 +42,14 @@ signal -- simplified software signal facilities
    are two general types of signals: those that cause termination of a process and
    those that do not. Signals which cause termination of a program might result
    from an irrecoverable error or might be the result of a user at a terminal typing
-   the 'interrupt' character. Signals are used when a process is stopped because it
-   wishes to access its control terminal while in the background (see :manpage:`tty(4)`).
+   the interrupt character. Signals are used when a process is stopped because it
+   wishes to access its control terminal while in the background.
    Signals are optionally generated when a process resumes after being stopped, when
    the status of child processes changes, or when input is ready at the control terminal.
    Most signals result in the termination of the process receiving them, if no action is taken;
    some signals instead cause the process receiving them to be stopped, or are simply discarded
-   if the process has not requested otherwise. **Except for the SIGKILL and SIGSTOP signals,**
-   the ``signal()`` function allows for a signal to be caught, to be ignored, or to generate an interrupt.
-   These signals are defined in the file **signal.h:**
+   if the process has not requested otherwise. **Except for the SIGKILL and SIGSTOP signals, 
+   which can neither be caught nor ignored.**
 
    ====  ===========  ===================  ============================================
    No    Name         Default Action       Description                                 
@@ -89,7 +88,7 @@ signal -- simplified software signal facilities
    ====  ===========  ===================  ============================================
 
    The *sig* argument specifies which signal was received. 
-   The operation is determined by *func*::
+   The operation (also known as signal disposition) is determined by *func*::
 
       SIG_DFL --  set the default action of the signal to occur.
       SIG_IGN -- ignore the signal

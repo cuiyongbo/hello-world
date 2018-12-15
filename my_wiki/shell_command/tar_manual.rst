@@ -53,7 +53,8 @@ tar Command
 
       .. option:: -r, --append
          
-         append files to the end of an archive
+         append files to the end of an archive.
+         **Note:** You CANN'T update compressed file in-place.
 
       .. option:: -t, --list
          
@@ -82,7 +83,6 @@ tar Command
       .. option:: -j, --bzip2
       .. option:: -z, --gzip, --gunzip --ungzip
       .. option:: -Z, --compress, --uncompress
-
 
       .. option:: --skip-old-files
            
@@ -134,6 +134,20 @@ tar Command
       $ tar -zxf traffic-data-updater.tar.gz --wildcards "*stdafx.cpp"
 
 
+      $ tar -tf log.tar 
+      traffic-data-updater.log.1
+      traffic-data-updater.log.2
+      $ tar -rf log.tar traffic_data_updater_cfg.ini 
+      $ tar -tf log.tar 
+      traffic-data-updater.log.1
+      traffic-data-updater.log.2
+      traffic_data_updater_cfg.ini
+      $ tar -f log.tar --delete traffic_data_updater_cfg.ini 
+      $ tar -tf log.tar 
+      traffic-data-updater.log.1
+      traffic-data-updater.log.2
+      
+      
    .. code-block:: sh
       :caption: tarAndRemove.sh
       

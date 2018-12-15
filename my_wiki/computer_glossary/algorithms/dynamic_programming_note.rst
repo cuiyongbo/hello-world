@@ -16,13 +16,13 @@ Dynamic Programming
       return q
    
    // Top-down implementation, take O(n^2)
-   Memorized-Cut-Rod(p, n)
+   Top-Down-Cut-Rod(p, n)
       let r[0, n] be a new array
       for i=0 to n
          r[i] = -inf
-      return Memorized-Cut-Rod-Aux(p, n, r)
+      return Top-Down-Cut-Rod-Aux(p, n, r)
    
-   Memorized-Cut-Rod-Aux(p, n, r)
+   Top-Down-Cut-Rod-Aux(p, n, r)
       if r[n] >= 0
          return r[n]
       if n == 0
@@ -30,7 +30,7 @@ Dynamic Programming
       else
          q = -inf
          for i=1 to n
-            q = max(q, p[i] + Memorized-Cut-Rod-Aux(p, n-i, r))
+            q = max(q, p[i] + Top-Down-Cut-Rod-Aux(p, n-i, r))
       r[n] = q
       return q
    

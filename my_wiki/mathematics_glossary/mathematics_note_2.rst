@@ -15,12 +15,6 @@ Mathematics Notes 2
       \sum_{k=0}^{n} {x^k} &= \frac {x^{n+1}-1}{x-1} \\
       \sum_{k=0}^{\infty} {kx^k} &= \frac {x}{(1-x)^2} \text{ for } \lvert x \rvert < 1
 
-#. Harmonic Series
-   
-   .. math:: 
-
-      \sum_{k=0}^{n} \frac{1}{k} = \ln n + O(1)
-
 #. Identity function
    
    In mathematics, an identity function, also called an identity relation 
@@ -38,13 +32,32 @@ Mathematics Notes 2
    
    In mathematics and computing, a radix point is the symbol used in numerical representations 
    to separate the integer part of a number from its fractional part. "Radix point" applies to 
-   all number bases. In base 10 notation, the radix point is more commonly called the **decimal point,** 
-   Similarly, the term **binary point** is used for base 2.
-
-   
+   all number bases. In base 10 notation, the radix point is more commonly called the 
+   **decimal point,** Similarly, the term **binary point** is used for base 2.
+ 
 #. Tensor
    
    a mathematical object analogous to but more general than a vector, 
    represented by an array of components that are functions of the 
    coordinates of a space.
 
+
+#. Mathematical induction 
+
+   .. figure:: images/Domino_effect.png
+
+      Domino effect [多米诺骨牌效应]
+
+   Mathematical induction proves that we can climb as high as we like on a ladder, 
+   by proving that we can climb onto the bottom rung (the basis) and that from each 
+   rung we can climb up to the next one (the step).
+
+   -- Concrete Mathematics, page 3 margins.
+
+   Mathematical induction is a mathematical proof technique. which requires two cases to be proved. 
+   The first case, called the base case, proves that the property holds for the number 0. 
+   The second case, called the induction step, proves that, if the property holds for one 
+   natural number n, then it holds for the next natural number n+1. These two steps establish 
+   the property P(n) for every natural number n = 0, 1, 2, 3, ... The base step need not begin with zero. 
+   Often it begins with the number one, and it can begin with any natural number, establishing the truth 
+   of the property for all natural numbers greater than or equal to the starting number.

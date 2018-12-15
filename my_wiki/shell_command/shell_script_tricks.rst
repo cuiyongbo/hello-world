@@ -35,7 +35,6 @@ Shell Script
    .. code-block:: sh
 
       rm -- -bar
-      
 
 #. Command line arguments
 
@@ -44,7 +43,7 @@ Shell Script
       $0  # script name.
       $$  # script process PID.
       $n  # the nth argument of script.
-      $#  # the number of arguments.
+      $#  # the number of arguments. NOT include $0
       $*  # all the arguments
       $@  # all the arguments
       $?  # return code of last command, return 0 on success.
@@ -228,3 +227,25 @@ Shell Script
    If you write ``if test "$1" = "abc" ; then ...`` and ``$1`` has the value ``-n`` 
    or ``-z`` or any other valid options to the ``test`` command, the syntax is ambiguous. 
    The ``x`` at the front prevents a leading dash from being picked up as an option to ``test``.
+
+#. split string by space
+   
+   .. code-block:: sh
+
+      $ cat test.sh
+      #!/usr/bin/env bash
+      
+      if [ $# -ne 1 ]; then
+              echo "Usage: $0 proc"
+              exit 1
+      fi
+      
+      proc_info=`ps -ef | grep -i $1 | grep -v grep`
+      if [ -z '${proc_info}' ]; then
+              echo "$1 is not running"
+              exit 2
+      fi
+      info_array=(${proc_info})
+      echo "$1's PID: ${info_array[1]}"
+
+
