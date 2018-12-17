@@ -42,7 +42,7 @@ POSIX shared memory overview
    until the system is shutdown, or until all processes have unmapped the object and it
    has been deleted with :manpage:`shm_unlink(3)`.
 
-   On Linux, shared memory objects are created in a (*tmpfs*) virtual filesystem,
+   On Linux, shared memory objects are created in a virtual filesystem(*tmpfs*),
    normally mounted under :file:`/dev/shm` or :file:`/run/shm`.
 
 **NOTES**

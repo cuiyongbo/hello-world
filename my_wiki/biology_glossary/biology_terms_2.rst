@@ -240,6 +240,15 @@ Nature Lifes
 
    Chestnut [板栗]
 
+.. figure:: images/dna-structure.png
+
+   DNA Structure
+
+   | adenine [腺嘌呤]
+   | guanine  [鸟嘌呤]
+   | cytosine [胞嘧啶]
+   | thymine [胸腺嘧啶]
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 
