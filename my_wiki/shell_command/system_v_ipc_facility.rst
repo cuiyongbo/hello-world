@@ -22,66 +22,24 @@ ipcs - show information on IPC facilities
    the calling process has read access. By default it shows information about all
    three resources: shared memory segments, message queues, and semaphore arrays.
 
-**OPTIONS**
+   The -i option allows a specific resource id to be specified.  
+   Only information on this id will be printed.
 
-   .. option:: -i, --id id
+   Resources may be specified as follows::
 
-      Show full details on just the one resource element identified by id.
-      This option needs to be combined with one of the three resource
-      options: -m, -q or -s.
+      -m     shared memory segments
+      -q     message queues
+      -s     semaphore arrays
+      -a     all (this is the default)
 
-   .. option:: -m, --shmems
+   The output format may be specified as follows::
 
-      Write information about active shared memory segments.
+      -t     time
+      -p     pid
+      -c     creator
+      -l     limits
+      -u     summary
 
-   .. option:: -q, --queues
-
-      Write information about active message queues.
-
-   .. option:: -s, --semaphores
-
-      Write information about active semaphore sets.
-
-   .. option:: -a, --all
-
-      Write information about all three resources (default).
-
-   The following options controle output formats, and of these
-   options only one takes effect: the last one specified.
-
-      .. option:: -c, --creator
-
-         Show creator and owner.
-   
-      .. option:: -l, --limits
-
-         Show resource limits.
-   
-      .. option:: -p, --pid
-
-         Show PIDs of creator and last operator.
-   
-      .. option:: -t, --time
-
-         Write time information. The time of the last control operation that changed
-         the access permissions for all facilities, the time of the last ``msgsnd()``
-         and ``msgrcv()`` operations on message queues, the time of the last ``shmat()``
-         and ``shmdt()`` operations on shared memory, and the time of the last ``semop()``
-         operation on semaphores.
-   
-      .. option:: -u, --summary
-
-         Show status summary.
-
-   The following options affect only the -l (--limits) option
-
-      .. option:: -b, --bytes
-
-         Print sizes in bytes.
-
-      .. option:: --human
-
-         Print sizes in human-readable format.
 
 ipcrm - remove certain IPC resources
 ====================================
@@ -96,9 +54,11 @@ ipcrm - remove certain IPC resources
    Deletion of a message queue or semaphore object is immediate (regardless of whether any
    process still holds an IPC identifier for the object). A shared memory object is only
    removed after all currently attached processes have detached (:manpage:`shmdt(2)`)
-   the object from their virtual address space.**OPTIONS**
+   the object from their virtual address space.
 
-   Option::
+**OPTIONS**
+
+   options::
 
       -M, --shmem-key shmkey
          Remove the shared memory segment created with shmkey

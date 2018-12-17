@@ -150,7 +150,19 @@ Only paranoid can surrive.
 | vine
 | Definition: a climbing or trailing woody-stemmed plant of the grape family.
 | Definition: the slender stem of a trailing or climbing plant. [藤本科植物]
-
+| 
+| attribute
+| attributable
+| Definition: regarded as being caused by.
+| Usage: 43% of all deaths in Ireland were attributable to cardiovascular disease.
+| Definition: (of a work or remark) able to be ascribed to a particular author, artist, or speaker.
+| Usage: some 50 liturgical works by or attributable to him have survived.
+| Usage: this may be Leonardo 's earliest securely attributable painting.
+| 
+| corpus
+| Definition: a collection of written texts, especially the entire works of a particular author or a body of writing on a particular subject.
+| Usage: the Darwinian corpus. 
+| Definition: a collection of written or spoken material in machine-readable form, assembled for the purpose of studying linguistic structures, frequencies, etc.
 
 
 .. image:: images/convex-vs-concave-lens.jpg

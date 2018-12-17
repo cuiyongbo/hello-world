@@ -8,7 +8,7 @@ Algorithms
    algorithms/alg_analysis_and_design
    algorithms/dynamic_programming_note
    algorithms/pseudocode_introduction
-   algorithms/complexity_summary
+   algorithms/alg_complexity_summary
    algorithms/divide_and_conquer_note
    algorithms/binary_search_alg
    algorithms/counting_sort_alg
