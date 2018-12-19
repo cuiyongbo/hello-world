@@ -31,6 +31,7 @@ Shell Commands
    shell_command/du_manual
    shell_command/file_cp_mv
    shell_command/file_inspectors
+   shell_command/file_path_parser
    shell_command/find_command
    shell_command/grep_command
    shell_command/kill_command

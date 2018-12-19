@@ -248,4 +248,28 @@ Shell Script
       info_array=(${proc_info})
       echo "$1's PID: ${info_array[1]}"
 
+#. Space in variable assignment
+   
+   ``var=23`` assigns ``23`` to the variable ``var``.
 
+   ``var =23`` tries to run command (or alias, or function) var with argument ``=23``
+
+   ``var = 23`` ditto, but arguments ``=`` and ``23``
+
+   ``var= 23`` sets ``var`` to blank string, then runs command ``23``
+
+   **Note:** In comparison, ``[ (/usr/bin/[)`` is the command and it requires 
+   ``var1, != and var2`` to be 3 separate arguments. ``var1!=var2`` is a single argument
+
+#. Extract file path
+   
+   .. code-block:: sh
+
+      $ readlink -f start.sh | xargs -0 dirname
+      /etc/ncserver/traffic-data-updater
+      $ readlink -f start.sh 
+      /etc/ncserver/traffic-data-updater/start.sh
+      $ dirname start.sh
+      .
+      $ dirname /etc/ncserver/start.sh
+      /etc/ncserver

@@ -89,7 +89,7 @@ a complete list::
       false or an invalid argument is given.
 
 .. code-block:: sh
-   :caption: Linux .bashrc
+   :caption: Linux **.bashrc**
 
    # ~/.bashrc: executed by bash(1) for non-login shells.
    # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)

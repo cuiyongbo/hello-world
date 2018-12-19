@@ -82,6 +82,18 @@ Shell flow control
          [ -z "$result" ]
       do :; done
 
+   .. code-block:: sh
+
+      i=16
+      start=$i
+      while
+         [ "$i" -lt 20 ]     # test the limit of the loop.
+      do 
+         echo "this command is executed at least once $i"
+         i="$((i+1))"               # increment the variable of the loop.
+      done
+      echo "Final value of $i"
+      echo "The loop was executed $(( i - start )) times "
 
 #. Flow Control: case
 

@@ -295,3 +295,9 @@ Computer Terminology 2
    BOM use is optional. Its presence interferes with the use of UTF-8 by software 
    that does not expect non-ASCII bytes at the start of a file but that could 
    otherwise handle the text stream.
+
+#. Canonicalization
+
+   In computer science, canonicalization (sometimes standardization or normalization) 
+   is a process for converting data that has more than one possible representation 
+   into a "standard", "normal", or canonical form.
