@@ -169,7 +169,7 @@ English Note 7
 | 
 | incarnate
 | incarnation
-| Definition: (especially of a deity or spirit) embodied in flesh; in human form. [附身，凭依]
+| Definition: (especially of a deity or spirit) embodied in flesh; in human form. [附身，凭依，化身]
 | Usage: God incarnate.
 | Definition: represented in the ultimate or most extreme form.
 | Usage: here is capitalism incarnate.
@@ -177,7 +177,7 @@ English Note 7
 | Usage: the idea that God incarnates himself in man.
 | Definition: put (an idea or other abstract concept) into concrete form.
 | Usage: a desire to make things which will incarnate their personality.
-| Definition: (of a person) be the living embodiment of (a quality).
+| Definition: (of a person) be the living embodiment of (a quality). [**的真实写照]
 | Usage: the man who incarnates the suffering which has affected every single Mozambican. [莫桑比克人]
 | 
 | traction

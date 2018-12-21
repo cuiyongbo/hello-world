@@ -36,19 +36,3 @@ inotify_init & inotify_init1
 
    On success, these system calls return a new file descriptor.  
    On error, -1 is returned, and *errno* is set to indicate the error.
-
-**ERRORS**
-
-   EINVAL (inotify_init1()) 
-
-      An invalid value was specified in flags.
-
-   EMFILE 
-
-      - The user limit on the total number of inotify instances has been reached.
-      - The per-process limit on the number of open file descriptors has been reached.
-      - The system-wide limit on the total number of open files has been reached.
-
-   ENOMEM 
-
-      Insufficient kernel memory is available.

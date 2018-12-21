@@ -3,7 +3,6 @@ inotify Manual
 **************
 
 .. toctree::
-   :caption: API List
 
    inotify_init
    inotify_add_watch
@@ -216,7 +215,7 @@ Overview
 
    **Examples**
 
-      Suppose an application is watching the directory *dir* and the file* dir/myfile* 
+      Suppose an application is watching the directory *dir* and the file *dir/myfile* 
       for all events. The examples below show some events that will be generated for 
       these two objects::
 
@@ -265,25 +264,6 @@ Overview
          rmdir("dir/subdir");
          Generates IN_DELETE_SELF and IN_IGNORED events for subdir, 
          and an IN_DELETE | IN_ISDIR event for dir.
-
-   **/proc interfaces**
-       
-       The following interfaces can be used to limit the amount 
-       of kernel memory consumed by inotify::
-
-         /proc/sys/fs/inotify/max_queued_events
-         
-         The value in this file is used when an application calls inotify_init(2) to set an upper limit on the
-         number of events that can be queued to the corresponding inotify instance. Events in excess of this 
-         limit are dropped, but an IN_Q_OVERFLOW event is always generated.
-
-         /proc/sys/fs/inotify/max_user_instances
-              
-         This specifies an upper limit on the number of inotify instances that can be created per real user ID.
-
-         /proc/sys/fs/inotify/max_user_watches
-
-         This specifies an upper limit on the number of watches that can be created per real user ID.
 
 **NOTES**
 
@@ -369,15 +349,6 @@ Overview
       any IN_MOVED_TO event.
 
 **BUGS**
-
-   Before Linux 3.19, fallocate(2) did not create any inotify events. Since Linux 3.19, 
-   calls to fallocate(2) generate IN_MODIFY events.
-
-   In kernels before 2.6.16, the IN_ONESHOT mask flag does not work.
-
-   As originally designed and implemented, the IN_ONESHOT flag did not cause an IN_IGNORED event  
-   to be generated when the watch was dropped after one event. However, as an unintended effect of 
-   other changes, since Linux 2.6.36, an IN_IGNORED event is generated in this case.
 
    Before kernel 2.6.25, the kernel code that was intended to coalesce successive identical events 
    (i.e., the two most recent events could potentially be coalesced if the older had not yet been 
@@ -590,3 +561,6 @@ Overview
        }
 
 
+.. rubric:: Footnotes
+
+.. [#] `inotify FAQ <http://inotify.aiken.cz/?section=inotify&page=faq&lang=en>`_
