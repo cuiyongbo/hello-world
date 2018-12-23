@@ -149,11 +149,18 @@ Janpanese Note
 #. 手品　手品師　[魔术师，障眼法]
    
 #. 専務　専務取締役
-   
-  　
+
+#. 桜日和　[风和日丽，樱花绽放]
+
+.. figure:: images/itodenwa.jpg
+
+   糸電話
+
 .. figure:: images/teruterubouzu.jpg
 
    照る照る坊主　[晴天娃娃]
 
 .. image:: images/kyoto-cherry-blossom.jpg
+.. figure:: images/sakurafubuki.jpg
 
+   桜吹雪
