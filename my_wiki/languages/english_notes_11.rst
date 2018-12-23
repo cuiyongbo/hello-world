@@ -163,7 +163,14 @@ Only paranoid can surrive.
 | Definition: a collection of written texts, especially the entire works of a particular author or a body of writing on a particular subject.
 | Usage: the Darwinian corpus. 
 | Definition: a collection of written or spoken material in machine-readable form, assembled for the purpose of studying linguistic structures, frequencies, etc.
-
+| 
+| desist
+| Definition: cease; abstain.
+| Usage: each pledged to desist from acts of sabotage.
+| 
+| lame
+| unable to walk well because of an injury to the leg or foot.
+| Definition: His horse went lame.
 
 .. image:: images/convex-vs-concave-lens.jpg
 
@@ -171,3 +178,4 @@ Only paranoid can surrive.
 .. figure:: images/Alan_Turing_Notebook.jpg
 
    Notes from a genius 
+
