@@ -19,4 +19,5 @@ Data Structure
    data_structure/hash_table_note
    data_structure/binary_tree_note
    data_structure/red_black_tree_note
+   data_structure/optimal_binary_search_tree_note
    data_structure/data_structure_augment_note
