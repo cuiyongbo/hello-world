@@ -178,7 +178,23 @@ Only paranoid can surrive.
 | Usage: the termination of a contract.
 | Definition: an act of dismissing someone from employment. 
 | Usage: termination letter. [解雇信]
-
+| 
+| nitty-gritty
+| Definition: the most important aspects or practical details of a subject or situation.
+| Usage: Time ran out before we could get down to the real nitty-gritty.
+| 
+| overkill
+| Definition: too much of sth that reduces the effect it has. [过犹不及]
+| Usage: There is a danger of overkill if you plan everything too carefully.
+| 
+| gory
+| Definition: involving or showing violence and bloodshed.
+| Usage: a gory horror film. [恐怖电影]
+| Usage: a gory accident. [流血事件]
+| Usgae: a gory figure. [血迹斑斑的人]
+| Phrase: the gory details
+| Definition: the explicit details of something
+| Usage: she told him the gory details of her past.[往事不堪回首]
 
 .. image:: images/convex-vs-concave-lens.jpg
 

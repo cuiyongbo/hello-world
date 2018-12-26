@@ -12,7 +12,15 @@ Now Let's start it.
    machine_learning/blp_note
    
 
+**Workflow**
+
+* Reading in the data
+* Preprocessing and cleaning the data
+* Choosing the right model and learning algorithm
+* Training and testing
+
 .. rubric:: Footnotes
 
 .. [#] `NumPy and SciPy doc <https://docs.scipy.org/doc/>`_
 .. [#] `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_
+.. [#] `Machine Learning Dataset sources <http://archive.ics.uci.edu/ml/index.php>`_
