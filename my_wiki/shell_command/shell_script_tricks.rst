@@ -273,3 +273,13 @@ Shell Script
       .
       $ dirname /etc/ncserver/start.sh
       /etc/ncserver
+
+#. Get program uid and gid
+   
+   $ pidof traffic_data_updater 
+   5094
+   >>> import os
+   >>> proc_stat = os.stat("/proc/5094")
+   >>> proc_stat
+   posix.stat_result(st_mode=16749, st_ino=180056677, st_dev=3L, st_nlink=9, st_uid=1013, 
+   st_gid=1015, st_size=0, st_atime=1545814746, st_mtime=1545814746, st_ctime=1545814746)

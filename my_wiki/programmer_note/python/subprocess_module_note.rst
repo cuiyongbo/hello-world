@@ -71,3 +71,22 @@ Subprocess note
    >>> msg
    'chenbw   28484     1 27 14:16 pts/4    00:13:44 /etc/ncserver/traffic-data-updater/traffic_data_updater\n'
 
+.. code-block:: sh
+
+   def start_process(program_name):
+       print("Starting %s" % program_name)
+       try:
+           cmd = "nohup %s >/dev/null 2>&1 &" % program_name
+           subprocess.check_output(cmd, shell=True)
+       except subprocess.CalledProcessError as e:
+           print("Failed to start %s, return code: %d, message: %s" % (program_name, e.returncode, e.output))
+           return e.returncode
+       else:
+           time.sleep(5)
+           if is_process_running(program_name):
+               print("Succeeded in starting %s" % program_name)
+               return 0
+           else:
+               print("Failed to start %s" % program_name)
+               return 1
+   
