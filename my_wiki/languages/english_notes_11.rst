@@ -171,6 +171,14 @@ Only paranoid can surrive.
 | lame
 | unable to walk well because of an injury to the leg or foot.
 | Definition: His horse went lame.
+| 
+| terminate
+| termination
+| Definition: the action of bringing something or coming to an end.
+| Usage: the termination of a contract.
+| Definition: an act of dismissing someone from employment. 
+| Usage: termination letter. [解雇信]
+
 
 .. image:: images/convex-vs-concave-lens.jpg
 

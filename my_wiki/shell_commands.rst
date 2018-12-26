@@ -39,6 +39,7 @@ Shell Commands
    shell_command/ls_info
    shell_command/lsof_manual
    shell_command/nohup_command
+   shell_command/pidof_manual
    shell_command/ps_command
    shell_command/top_manual
    shell_command/smem_manual

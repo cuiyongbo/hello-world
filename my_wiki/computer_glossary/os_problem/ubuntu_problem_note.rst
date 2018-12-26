@@ -77,3 +77,13 @@ Ubuntu Problems
 #. Ubuntu to remove Amazon from Launcher.
    
    Run ``sudo find /usr/share/applications/ -iname "*amazon*" -delete``.
+
+#. Reinstall Vmware Tool
+   
+   .. code-block:: sh
+
+      $ tar -zxf vmware-tool.tar.gz --directory ~/Desktop/
+      $ cd ~/Desktop/vmware-tool
+      $ sudo ./vmware-tool-install.pl
+
+      
