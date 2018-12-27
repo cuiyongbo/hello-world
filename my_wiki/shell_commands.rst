@@ -12,11 +12,10 @@ Shell Commands
         
    所以，``ps –u`` 和 ``ps u`` 查询结果会不同.
 
-
 .. toctree::
    :titlesonly:
 
-   shell_command/shell_script_tricks
+   shell_command/shell_script_notes
    shell_command/addr2line_note
    shell_command/awk_manual
    shell_command/cal_manual
@@ -28,7 +27,7 @@ Shell Commands
    shell_command/curl_manual
    shell_command/cut_manual
    shell_command/diff_and_patch_note
-   shell_command/du_manual
+   shell_command/disk_usage_inspector
    shell_command/file_cp_mv
    shell_command/file_inspectors
    shell_command/file_path_parser

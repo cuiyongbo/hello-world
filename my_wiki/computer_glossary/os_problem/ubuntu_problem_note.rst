@@ -82,8 +82,16 @@ Ubuntu Problems
    
    .. code-block:: sh
 
-      $ tar -zxf vmware-tool.tar.gz --directory ~/Desktop/
+      $ tar -zxf VMwareTools-10.1.6-5214329.tar.gz --directory ~/Desktop/
       $ cd ~/Desktop/vmware-tool
-      $ sudo ./vmware-tool-install.pl
+      $ sudo ./vmware-install.pl
 
-      
+#. Ubuntu to show shortcut panel
+   
+   Press super key and hold it.
+
+   .. image:: images/dash_home_shortcuts.png
+
+#. Ubuntu to disable update popup
+
+   .. image:: images/disable_ubuntu_update_popup.jpg

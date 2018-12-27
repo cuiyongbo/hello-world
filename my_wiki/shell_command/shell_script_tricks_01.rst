@@ -1,14 +1,6 @@
-************
-Shell Script
-************
-
-.. toctree::
-
-   shell_flow_control_note
-   shell_conditional_evaluation_note
-
-.. contents::
-  :local:
+**********************
+Shell Script Tricks 01
+**********************
 
 #. Pipe & Redirect
 
@@ -276,10 +268,30 @@ Shell Script
 
 #. Get program uid and gid
    
-   $ pidof traffic_data_updater 
-   5094
-   >>> import os
-   >>> proc_stat = os.stat("/proc/5094")
-   >>> proc_stat
-   posix.stat_result(st_mode=16749, st_ino=180056677, st_dev=3L, st_nlink=9, st_uid=1013, 
-   st_gid=1015, st_size=0, st_atime=1545814746, st_mtime=1545814746, st_ctime=1545814746)
+   .. code-block:: sh
+
+      $ pidof traffic_data_updater 
+      5094
+      >>> import os
+      >>> proc_stat = os.stat("/proc/5094")
+      >>> proc_stat
+      posix.stat_result(st_mode=16749, st_ino=180056677, st_dev=3L, st_nlink=9, st_uid=1013, 
+      st_gid=1015, st_size=0, st_atime=1545814746, st_mtime=1545814746, st_ctime=1545814746)
+
+#. Call python script from shell script
+   
+   .. code-block:: sh
+
+      #. Call shell script from another shell script
+      source `pwd`/reload.sh
+
+      # Call python script from shell script
+      python `pwd`/reload.py
+
+      # Call python script from another python script
+      import start # import start.py as module
+      def main():
+          if is_process_stopped(program_name):
+              return start.main() # call start.py function
+          else:
+              return reload_process(program_name)

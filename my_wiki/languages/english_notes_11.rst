@@ -195,9 +195,20 @@ Only paranoid can surrive.
 | Phrase: the gory details
 | Definition: the explicit details of something
 | Usage: she told him the gory details of her past.[往事不堪回首]
+| 
+| azure
+| Definition: bright blue in color like a cloudless sky.
+| Usage: white beaches surrounded by azure seas.
 
 .. image:: images/convex-vs-concave-lens.jpg
 
+.. figure:: images/VioletMagenta.png
+
+   Magenta 品红
+
+.. figure:: images/cyan.jpg
+
+   Cyan 青色
 
 .. figure:: images/Alan_Turing_Notebook.jpg
 
