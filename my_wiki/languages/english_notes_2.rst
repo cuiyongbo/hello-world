@@ -425,15 +425,6 @@ in a number of Christian kingdoms.
 | Usage: The result is by no means guaranteed.
 | Usage: "May I make a suggestion?", "By all means." 
 |
-| utensil
-| Definition: an implement, container, or other article, especially for household use.
-| Usage: Cooking / kitchen utensils. [炊具；厨房用具]
-
-.. image:: images/utensil.jpg
-.. figure:: images/aluminum-scoop.jpg
-
-   Scoop
-   
 | pee
 | Definition: urinate.
 | Usage: The puppy was peeing on the caret.
@@ -479,12 +470,6 @@ in a number of Christian kingdoms.
 | Definition: thinking or communicating in an unfocused or imprecise way. 
 | Usage: he had been very vague about his activities.
 |
-
-.. figure:: images/sucking_finger.jpeg
-   
-   Sucking finger
-
-| 
 | sidestep
 | Definition: avoid (someone or something) by stepping sideways.
 | Definition: avoid dealing with or discussing (something problematic or disagreeable).
@@ -496,21 +481,24 @@ in a number of Christian kingdoms.
 | Definition: a deposit of impure potassium(钾) hydrogen tartrate formed during the fermentation of wine.
 | 
 
+.. figure:: images/sucking_finger.jpeg
+   
+   Sucking finger
+
 .. figure:: images/tooth_cleaner.jpg
 
    toothpaste and toothbrush
 
-morganatic
+#. morganatic
 
-of or denoting a marriage between a person of royal or noble birth and 
-a partner of lower rank, in which neither the spouse of lower rank nor 
-any children have any claim to the possessions or title of the spouse of higher rank.
+   of or denoting a marriage between a person of royal or noble birth and 
+   a partner of lower rank, in which neither the spouse of lower rank nor 
+   any children have any claim to the possessions or title of the spouse of higher rank.
 
+#. platinum [铂金]
 
-platinum [铂金]
-
-a precious silvery-white metal, the chemical element of atomic number 78. 
-It was first encountered by the Spanish in South America in the 16th century, 
-and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
-catalysts.
+   a precious silvery-white metal, the chemical element of atomic number 78. 
+   It was first encountered by the Spanish in South America in the 16th century, 
+   and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
+   catalysts.
    

@@ -210,6 +210,11 @@ Only paranoid can surrive.
 
    Cyan 青色
 
+.. image:: images/wood_wedge.jpg
+.. figure:: images/wood-splitting-wedge-feature.jpg
+
+   Wedge 楔子
+
 .. figure:: images/Alan_Turing_Notebook.jpg
 
    Notes from a genius 

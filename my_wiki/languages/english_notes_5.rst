@@ -58,20 +58,34 @@ English Notes 5
 
    Salt, pepper, and sugar are commonly placed on Western restaurant tables.
 
+.. figure:: images/utensil.jpg
+
+   Cooking / kitchen utensils. [炊具；厨房用具]
+
+.. figure:: images/aluminum-scoop.jpg
+
+   Scoop
+   
 .. figure:: images/escargot.jpg
    
    Escargot [蜗牛]
 
    A snail, especially as an item on a menu.
 
-| Profiterole 泡芙
-| Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
-| choux  高麗萊
-| Definition: very light pastry made with egg, typically used for eclairs and profiteroles.
-| pastry [油酥麪团，油酥麪皮]
-| Definition: a dough of flour, and water, used as a base and covering in baked dishes such as pies.
+.. figure:: images/Pastry_with_Azuki_beans.jpg
 
-.. image:: images/Pastry_with_Azuki_beans.jpg
+   Profiterole 泡芙
+
+   | Profiterole 泡芙
+   | Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
+   | choux  高麗萊
+   | Definition: very light pastry made with egg, typically used for eclairs and profiteroles.
+   | pastry [油酥麪团，油酥麪皮]
+   | Definition: a dough of flour, and water, used as a base and covering in baked dishes such as pies.
+
+.. figure:: images/donut.jpg
+  
+   Doughnut / donut 甜甜圈
 
 .. figure:: images/sencha_green_tea.jpg
 

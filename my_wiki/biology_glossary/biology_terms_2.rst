@@ -249,6 +249,17 @@ Nature Lifes
    | cytosine [胞嘧啶]
    | thymine [胸腺嘧啶]
 
+.. figure:: images/Petal-sepal.jpg
+
+   Flower
+
+   | Petal 花瓣
+   | Sepal 花萼
+
+.. figure:: images/iris_plant.jpg
+
+   Iris 虹膜，鸢尾
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 
