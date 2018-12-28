@@ -64,3 +64,8 @@ pip usage note
       adium-theme-ubuntu==0.3.4
       unity-lens-photos==1.0
       virtualenv==16.1.0
+
+#. Permission denied while ``pip install ***``
+   
+   Using the `--user` option: ``pip install --user sphinx``.
+

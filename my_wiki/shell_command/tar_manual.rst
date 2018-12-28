@@ -146,6 +146,9 @@ tar Command
       $ tar -tf log.tar 
       traffic-data-updater.log.1
       traffic-data-updater.log.2
+
+      # remove file after added to archive file
+      tar -rf log.tar --remove-files traffic-data-updater.log.7
       
       
    .. code-block:: sh

@@ -49,9 +49,18 @@ Binary executable inspectors
       $ file test.c
       test.c: C source, ASCII text
 
+#. ldd - Print shared library dependencies
+
+   .. code-block:: sh
+
+      $ ldd Shadowsocks.exe
+        ntdll.dll => /c/WINDOWS/SYSTEM32/ntdll.dll (0x7ffe1ab80000)
+        wow64win.dll => /c/WINDOWS/System32/wow64win.dll (0x7ffe18c50000)
+        wow64cpu.dll => /c/WINDOWS/System32/wow64cpu.dll (0x77c70000)
+        ...
+
 #. readelf
    
-
 #. strace and ltrace
 
    .. code-block:: sh
