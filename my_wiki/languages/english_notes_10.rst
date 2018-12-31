@@ -66,6 +66,8 @@ English Note 10
 | 
 | au pair [保姆，月嫂？？]
 | Definition: a young foreign person, typically a woman, who helps with housework or child care in exchange for room and board.
+| Synonyms: babysitter
+| Usage: he couldn't find a babysitter 
 | 
 | bread and butter
 | Definition: a person’s livelihood or main source of income, typically as earned by routine work.

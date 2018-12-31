@@ -34,7 +34,8 @@ Introduction To Algorithm
    - Ch12 Binary search tree (Finished 2018-10-13, Reviewed)
    - Ch13 Red black tree (Finished 2018-12-04)
    - Ch14 Augmenting data structure (Finished 2018-12-05)
-   - Ch15 Dynamic programming (2018-12-08 -- )
+   - Ch15 Dynamic programming (2018-12-08 -- 2018-12-31)
+   - Ch16 Greedy Algorithms (2018-12-31 -- )
 
 
 Advanced Programming in UNIX Environment

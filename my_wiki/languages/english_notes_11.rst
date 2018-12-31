@@ -196,6 +196,16 @@ Only paranoid can surrive.
 | Definition: the explicit details of something
 | Usage: she told him the gory details of her past.[往事不堪回首]
 | 
+| hallmark
+| Definition: a mark stamped on articles of gold, silver, or platinum in Britain, certifying their standard of purity.
+| Definition: a distinctive feature, especially one of excellence.
+| Usage: the tiny bubbles are the hallmark of fine champagnes.
+| Usage: Police said the explosion bore all the hallmarks of a terrorist attack.
+| 
+| benchmark
+| Definition: a standard or point of reference against which things may be compared or assessed.
+| Usage: we are benchmarking our performance against external criteria.
+| 
 | azure
 | Definition: bright blue in color like a cloudless sky.
 | Usage: white beaches surrounded by azure seas.

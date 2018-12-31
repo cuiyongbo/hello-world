@@ -705,11 +705,6 @@ name, also known as surname, with most family members.
 | Definition: A repository of information is a person or group of people who know a lot of information about a particular place or subject.
 | Usage: The repository of all important knowledge in a small town was the chief barman of the local pub.
 | 
-| benchmark
-| Definition: A benchmark is something whose quality or quantity is known and which can therefore be used as a standard with which other things can be compared.
-| Synonyms: yardstick
-| Usage: The truck industry  is a benchmark for the economy.
-| 
 | violate
 | violation
 | Definition: If someone violates an agreement, law, or promise, they break it.

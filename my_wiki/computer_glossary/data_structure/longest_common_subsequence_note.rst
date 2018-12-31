@@ -46,6 +46,26 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
                b[i][j] = LEFT
       return (c, b)
    
+   Memorized-LCS-Length(x, y)
+      m = x.length
+      n = y.length
+      let c[0..m,0..n] be new tables
+      for i=1 to m
+         for j=1 to n
+            c[i][j] = -1
+      return Lookup-Length(c, x, y, m, n)
+
+   Lookup-Length(c, x, y, i, j)
+      if c[i][j] != -1 
+         return c[i][j]
+      if i==0 || j == 0
+         c[i][j] = 0
+      else if x[i] == y[j]
+         c[i][j] = Lookup-Length(c, x, y, i-1, j-1) + 1
+      else
+         c[i][j] = max(Lookup-Length(c, x, y, i, j-1), Lookup-Length(c, x, y, i-1, j)) 
+      return c[i][j]
+      
    // O(m+n)
    Print-LCS(b, x, i, j)
       if i==0 || j==0
@@ -57,3 +77,14 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
          Print-LCS(b, x, i-1, j)
       else
          Print-LCS(b, x, i, j-1)
+
+   Memorized-Print-LCS(c, x, y, i, j)
+      if i==0 || j==0
+         return
+      if x[i] == y[j]
+         Memorized-Print-LCS(c, x, y, i-1, j-1)
+         print x[i]
+      else if c[i-1][j] >= c[i][j-1]
+         Memorized-Print-LCS(c, x, y, i-1, j)
+      else
+         Memorized-Print-LCS(c, x, y, i, j-1)
