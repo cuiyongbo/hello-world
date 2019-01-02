@@ -115,4 +115,17 @@ curl - transfer a URL
    Content-Length: 4706728
    Accept-ranges: bytes
    Last-Modified: Thu, 22 Nov 2018 05:45:08 GMT
+  
+#. Download Http directiory with all files and subdirectories
    
+   Example: ``wget -r -np -nH --cut-dirs=3 -e robots=off -R index.html http://hostname/aaa/bbb/ccc/ddd/``
+
+   Explanation::
+
+      It will download all files and subfolders in ddd directory
+      -r : recursively
+      -np : not going to upper directories, like ccc/…
+      -nH : not saving files to hostname folder
+      --cut-dirs=3 : but saving it to ddd by omitting first 3 folders aaa, bbb, ccc
+      -e robots=off: disable robot check if there exists a robot.txt
+      -R index.html : excluding index.html files

@@ -20,6 +20,10 @@ Now Let's start it.
 * Choosing the right model and learning algorithm
 * Training and testing
 
+**Preparation**
+
+* Download all datasets: ``wget -r -np -nH --cut-dirs=1 -R index.html -e robots=off http://archive.ics.uci.edu/ml/machine-learning-databases/``.
+
 .. rubric:: Footnotes
 
 .. [#] `Matplotlib <https://matplotlib.org/#>`_

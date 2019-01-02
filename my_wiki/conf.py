@@ -199,11 +199,10 @@ suppress_warnings = [
 # • 'library/xml*' – ignores all files and directories starting with library/xml
 # • '**/.svn' – ignores all .svn directories (replaces entry in exclude_dirnames)
 
-
 exclude_patterns = [
     "programmer_note/gcc/gcc_man_page.rst",
     "programmer_note/gcc/gun_make_manual.rst",
     "programmer_note/gdb/gdb_man_page.rst",
-	"computer_glossary/unix_concepts_intro_manual.rst"
-    #"programmer_note/linux_system_call/open_manual.rst"
+	"computer_glossary/unix_concepts_intro_manual.rst",
+    "shell_command/wget_manual.rst"
 ]
