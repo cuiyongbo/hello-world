@@ -1,5 +1,5 @@
 ************
-grep Command
+grep Manual
 ************
 
 **DESCRIPTION**
@@ -35,12 +35,6 @@ grep Command
          Interpret *PATTERN* as a basic regular expression (BRE, see
          below). This is the default.
 
-      .. option:: -P, --perl-regexp
-              
-         Interpret *PATTERN* as a Perl regular expression (PCRE, see
-         below). This is highly experimental and ``grep -P``  may warn of
-         unimplemented features.
-
    #. Matching Control
        
       .. option:: -e PATTERN, --regexp=PATTERN
@@ -48,12 +42,6 @@ grep Command
          Use *PATTERN* as the pattern. This can be used to specify
          multiple search patterns, or to protect a pattern beginning
          with a hyphen (-). (:option:`-e` is specified by POSIX.)
-
-      .. option:: -f FILE, --file=FILE
-         
-         Obtain patterns from *FILE*, one per line. The empty file
-         contains zero patterns, and therefore matches nothing.
-         (:option:`-f` is specified by POSIX.)
 
       .. option:: -i, --ignore-case
          
@@ -443,3 +431,4 @@ grep Command
    $ find /run/shm/ | grep -E "idListHashMap|teHashMap"
    /run/shm/idListHashMap
    /run/shm/teHashMap
+
