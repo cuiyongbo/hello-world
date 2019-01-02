@@ -70,6 +70,14 @@ addr2line
    Make the output more human friendly: each location are printed on one line.  
    If option -i is specified, lines for all enclosing scopes are prefixed with (inlined by).
 
+.. option:: -C, --demangle[=style]
+
+   Decode (demangle) low-level symbol names into user-level names. 
+   Besides removing any initial underscore prepended by the system,
+   this makes C++ function names readable. Different compilers have 
+   different mangling styles. The optional demangling style argument 
+   can be used to choose an appropriate demangling style for your compiler.
+
 
 **EXAMPLE**
 
@@ -100,4 +108,9 @@ addr2line
 
    $ addr2line -a -f -s -p  0x4008d5
    0x00000000004008d5: myFunc1 at backtrace_demo.c:43
+
+   $ addr2line -fsC -e route_server 0x594274
+   TurnIconModel::_setExits(signed char const*, int)
+
+
 
