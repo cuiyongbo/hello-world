@@ -42,7 +42,30 @@ Subprocess note
 
 .. note:: 
 
-   pass the arguments as a list.
+   *args* is required for all calls and should be a string, or a sequence of program arguments. 
+   Providing a sequence of arguments is generally preferred, as it allows the module to take care 
+   of any required escaping and quoting of arguments (e.g. to permit spaces in file names). 
+   If passing a single string, either shell must be ``True`` or else the string must simply 
+   name the program to be executed without specifying any arguments.
+
+.. warning::
+
+   Executing shell commands that incorporate unsanitized input from an
+   untrusted source makes a program vulnerable to `shell injection
+   <http://en.wikipedia.org/wiki/Shell_injection#Shell_injection>`_,
+   a serious security flaw which can result in arbitrary command execution.
+   For this reason, the use of ``shell=True`` is **strongly discouraged**
+   in cases where the command string is constructed from external input::
+
+      >>> from subprocess import call
+      >>> filename = input("What file would you like to display?\n")
+      What file would you like to display?
+      non_existent; rm -rf / #
+      >>> call("cat " + filename, shell=True) # Uh-oh. This will end badly...
+
+   When using ``shell=True``, :func:`pipes.quote` can be used to properly
+   escape whitespace and shell metacharacters in strings that are going to
+   be used to construct shell commands.
 
 .. code-block:: py
 

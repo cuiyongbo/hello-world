@@ -175,3 +175,7 @@ computed by applying the Pythagorean theorem. [勾股定理]
 | symmetric
 | Definition: made up of exactly similar parts facing each other or around an axis; symmetrical.
 | Usage: The structure is completely sysmetric.
+
+.. figure:: images/crossover-point.jpg
+
+   Crossover point [交点]
