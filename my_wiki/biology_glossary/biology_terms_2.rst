@@ -260,6 +260,10 @@ Nature Lifes
 
    Iris 虹膜，鸢尾
 
+.. figure:: images/winter_time.jpg
+
+   A Ladybird [七星瓢虫] hibernates in Tewin, England
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

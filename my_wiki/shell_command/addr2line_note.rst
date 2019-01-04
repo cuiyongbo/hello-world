@@ -109,8 +109,6 @@ addr2line
    $ addr2line -a -f -s -p  0x4008d5
    0x00000000004008d5: myFunc1 at backtrace_demo.c:43
 
-   $ addr2line -fsC -e route_server 0x594274
-   TurnIconModel::_setExits(signed char const*, int)
-
-
-
+   $ addr2line -fsC -e ti_tile_compiler 0x44d7e9
+   _genStatisticsTable
+   ti_tile_compiler.cpp:229

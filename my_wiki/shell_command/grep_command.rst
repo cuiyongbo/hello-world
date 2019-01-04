@@ -37,37 +37,19 @@ grep Manual
 
    #. Matching Control
        
-      .. option:: -e PATTERN, --regexp=PATTERN
-         
-         Use *PATTERN* as the pattern. This can be used to specify
-         multiple search patterns, or to protect a pattern beginning
-         with a hyphen (-). (:option:`-e` is specified by POSIX.)
-
       .. option:: -i, --ignore-case
          
-         Ignore case distinctions in both the *PATTERN* and the input
-         files. (:option:`-i` is specified by POSIX.)
+         Ignore case distinctions in both the *PATTERN* and the input files.
 
       .. option:: -v, --invert-match
               
          Invert the sense of matching, to select non-matching lines.
-         (:option:`-v` is specified by POSIX.)
-
-      .. option:: -w, --word-regexp
-         
-         Select only those lines containing matches that form whole
-         words. The test is that the matching substring must either be
-         at the beginning of the line, or preceded by a non-word
-         constituent character. Similarly, it must be either at the end
-         of the line or followed by a non-word constituent character.
-         Word-constituent characters are letters, digits, and the
-         underscore.
 
       .. option:: -x, --line-regexp
          
          Select only those matches that exactly match the whole line.
          This option has the same effect as anchoring the expression with
-         ``^`` and ``$``. (:option:`-x` is specified by POSIX.)
+         ``^`` and ``$``.
 
    #. General Output Control
 
@@ -75,7 +57,7 @@ grep Manual
               
          Suppress normal output; instead print a count of matching lines
          for each input file. With the ``-v, --invert-match`` option,
-         count non-matching lines.  (:option:`-c` is specified by POSIX.)
+         count non-matching lines. 
 
       .. option:: --color[=WHEN], --colour[=WHEN]
          
@@ -85,30 +67,21 @@ grep Manual
          display them in color on the terminal. *WHEN* is ``never``, ``always``,
          or ``auto``.
 
-      .. option:: -L, --files-without-match
-         
-         Suppress normal output; instead print the name of each input
-         file from which no output would normally have been printed. The
-         scanning will stop on the first match.
-
-      .. option:: -l, --files-with-matches
-         
-         Suppress normal output; instead print the name of each input file
-         from which output would normally have been printed. The scanning
-         will stop on the first match. (:option:`-l`  is specified by POSIX.)
+       .. option:: -L, --files-without-match
+          
+          Suppress normal output; instead print the name of each input
+          file from which no output would normally have been printed. The
+          scanning will stop on the first match.
+ 
+       .. option:: -l, --files-with-matches
+          
+          Suppress normal output; instead print the name of each input file
+          from which output would normally have been printed. The scanning
+          will stop on the first match. (:option:`-l`  is specified by POSIX.)
 
       .. option:: -m NUM, --max-count=NUM
          
-         Stop reading a file after *NUM* matching lines. If the input is
-         standard input from a regular file, and *NUM* matching lines are
-         output, :command:`grep` ensures that the standard input is positioned
-         to just after the last matching line before exiting, regardless of
-         the presence of trailing context lines. This enables a calling
-         process to resume a search. When :command:`grep` stops after *NUM* matching
-         lines, it outputs any trailing context lines. When the ``-c, --count``
-         option is also used, :command:`grep` does not output a count greater than *NUM*.
-         When the ``-v, --invert-match`` option is also used, :command:`grep`
-         stops after outputting *NUM* non-matching lines.
+         Stop reading a file after *NUM* matching lines.
 
       .. option:: -o, --only-matching
 
@@ -119,27 +92,18 @@ grep Manual
               
          Quiet; do not write anything to standard output. Exit immediately with
          zero status if any match is found, even if an error was detected.
-         Also see the :option:`-s` or :option:`--no-messages` option.
-         (:option:`-q` is specified by POSIX.)
 
       .. option:: -s, --no-messages
          
          Suppress error messages about nonexistent or unreadable files.
-         Portability note: unlike GNU *grep*, 7th Edition Unix *grep* did not
-         conform to POSIX, because it lacked :option:`-q` and its :option:`-s`
-         option behaved like GNU grep's :option:`-q` option. USG-style *grep*
-         also lacked :option:`-q` but its :option:`-s` option behaved like GNU
-         *grep*. Portable shell scripts should avoid both :option:`-q` and
-         :option:`-s` and should redirect standard and error output to
-         :file:`/dev/null` instead.  (:option:`-s` is specified by POSIX.)
 
    #. Output Line Prefix Control
       
       .. option:: -b, --byte-offset
          
          Print the 0-based byte offset within the input file before each
-         line of output. If :option:`-o, --only-matching` is specified, print the
-         offset of the matching part itself.
+         line of output. If :option:`-o, --only-matching` is specified, 
+         print the offset of the matching part itself.
 
       .. option:: -H, --with-filename
 
@@ -148,41 +112,14 @@ grep Manual
 
       .. option:: -h, --no-filename
 
-         Suppress  the  prefixing  of  file names on output. This is the
+         Suppress the prefixing of file names on output. This is the
          default when there is only one file (or only standard input) to
          search.
-
-      .. option:: --label=LABEL
-         
-         Display input actually coming from standard input as input
-         coming from file *LABEL*. This is especially useful  when
-         implementing  tools  like :command:`zgrep`, e.g.,
-         ``gzip -cd foo.gz | grep --label=foo -H`` something.
-         See also the :option:`-H` option.
 
       .. option:: -n, --line-number
          
          Prefix each line of output with the 1-based line number within
          its input file. (:option:`-n` is specified by POSIX.)
-
-      .. option:: -T, --initial-tab
-
-         Make sure that the first character of actual line content lies
-         on a tab stop, so that the alignment of tabs looks normal. This
-         is useful with options that prefix their output to the actual
-         content: :option:`-H, -n, -b`. In order to improve the probability
-         that lines from a single file will all start at the same column,
-         this also causes the line number and byte offset (if present) to
-         be printed in a minimum size field width.
-
-      .. option:: -u, --unix-byte-offsets
-              
-         Report Unix-style byte offsets. This switch causes :command:`grep` to
-         report byte offsets as if the file were a Unix-style text file,
-         i.e., with CR characters stripped off. This will produce
-         results identical to running :command:`grep` on a Unix  machine.
-         **This option has no effect unless :option:`-b` option is also used;
-         it has no effect on platforms other than MS-DOS and MS-Windows.**
 
       .. option:: -Z, --null
          
@@ -432,3 +369,35 @@ grep Manual
    /run/shm/idListHashMap
    /run/shm/teHashMap
 
+   $ grep -A 5 -B 2 20181111142200_6802_43145_56_458_2 formatted_event.json
+   "eventStartTime": "2018-11-12 00:30:00",
+   "reasonTmcCode": "740",
+   "eventId": "20181111142200_6802_43145_56_458_2",
+   "forbid": "0",
+   "eventReason": "14",
+   "roadName": "当前道路",
+   "eventRestrictType": "0",
+   "roadDirection": "东向西",
+
+   $ grep -C 2 20181111142200_6802_43145_56_458_2 formatted_event.json
+   "eventStartTime": "2018-11-12 00:30:00",
+   "reasonTmcCode": "740",
+   "eventId": "20181111142200_6802_43145_56_458_2",
+   "forbid": "0",
+   "eventReason": "14",
+
+   $ grep 20181111142200_6802_43145_56_458_2 event.json -o
+   20181111142200_6802_43145_56_458_2
+   
+   $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
+   61391497:20181111142200_6802_43145_56_458_2
+
+   $ find shell_command/ -name "*.rst" -exec grep -l grep {} \;
+   shell_command//awk_manual.rst
+   shell_command//binary_executable_inspectors.rst
+   ...
+
+   $ find shell_command/ -name "*.rst" -exec grep -L grep {} \;
+   shell_command//addr2line_note.rst
+   shell_command//binary_file_viewer.rst
+   ...
