@@ -206,6 +206,18 @@ Only paranoid can surrive.
 | Definition: a standard or point of reference against which things may be compared or assessed.
 | Usage: we are benchmarking our performance against external criteria.
 | 
+| fabrication
+| Definition: the action or process of manufacturing or inventing something.
+| Usage: The assembly and fabrication of electronic products.
+| Definition: an invention; a lie.
+| Usage: The story was a complete fabrication. [本故事纯属虚构]
+| 
+| built-in
+| Definition: forming an integral part of a structure or device.
+| Usage: a camera with a built-in zoom lens. [内置镜头]
+| Definition: (of a characteristic) inherent; innate.
+| Usage: the system has a built-in resistance to change.
+| 
 | azure
 | Definition: bright blue in color like a cloudless sky.
 | Usage: white beaches surrounded by azure seas.

@@ -1,5 +1,6 @@
-Built-in Functions
-==================
+*************************
+Python Built-in Functions
+*************************
 
 Python interpreter has many functions built into it that are always available, They are listed in alphabatical order.
 
@@ -1098,15 +1099,6 @@ Miscellaneous utilities
       True
 
 
-.. function:: map(function, iterable, ...)
-
-   Return an iterator that applies *function* to every item of *iterable*,
-   yielding the results.  If additional *iterable* arguments are passed,
-   *function* must take that many arguments and is applied to the items from all
-   iterables in parallel.  With multiple iterables, the iterator stops when the
-   shortest iterable is exhausted.  For cases where the function inputs are
-   already arranged into argument tuples, see :func:`itertools.starmap`.
-
 .. function:: reduce(function, iterable[, initializer])
 
    Apply function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
@@ -1142,18 +1134,19 @@ Miscellaneous utilities
       >>> sum(nums, 10)
       55
 
-
 .. function:: zip([iterable, ...])
 
-   This function returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables. 
-   The returned list is truncated in length to the length of the shortest argument sequence. 
-   When there are multiple arguments which are all of the same length, ``zip()`` is similar to ``map()`` with an initial argument of ``None``. 
-   With a single sequence argument, it returns a list of 1-tuples. With no arguments, it returns an empty list.
-   
-   The left-to-right evaluation order of the iterables is guaranteed. This makes possible an idiom for clustering a data series into n-length groups using ``zip(*[iter(s)]*n)``.
-   
-   ``zip()`` in conjunction with the ``*`` operator can be used to unzip a list::
+   Return a list of tuples, where each tuple contains the i-th element
+   from each of the argument sequences. The returned list is truncated
+   in length to the length of the shortest argument sequence.
 
+   ``zip()`` in conjunction with the ``*`` operator can be used to 
+   unzip a list::
+
+      >>> zip('rgb')
+      [('r',), ('g',), ('b',)]
+      >>> zip()
+      []
       >>> x = [1,2,3]
       >>> y = [4,5,6]
       >>> zipped = zip(x, y)
@@ -1162,10 +1155,24 @@ Miscellaneous utilities
       >>> x1, y1 = zip(*zipped)
       >>> x == list(x1) and y == list(y1)
       True 
+      
       >>> mapped = map(None, x, y)
       >>> mapped
       [(1, 4), (2, 5), (3, 6)]
+      >>> map(None, xrange(3), xrange(4))
+      [(0, 0), (1, 1), (2, 2), (None, 3)]
+      >>> help(map)
+      >>> map(None, xrange(4))
+      [0, 1, 2, 3]
 
+.. function:: map(function, iterable, ...)
+
+   Return a list of the results of applying the function to the items of
+   the argument sequence(s). If more than one sequence is given, the
+   function is called with an argument list consisting of the corresponding
+   item of each sequence, substituting None for missing values when not all
+   sequences have the same length.  If the function is None, return a list of
+   the items of the sequence (or a list of tuples if more than one sequence).
 
 .. function:: repr(object)
 

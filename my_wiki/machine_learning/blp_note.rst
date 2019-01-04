@@ -5,8 +5,10 @@ Build Machine Learning System With Python
 .. toctree::
 
    build_machine_learning_system_with_py/blp_ch01_note
+   build_machine_learning_system_with_py/blp_ch02_note
 
 
 Progress:
 
-   - Ch01 Getting started (Finished, 2018-12-11 -- 2012-12-13)
+   - Ch01 Getting started (Finished, 2018-12-11 -- 2018-12-13)
+   - Ch02 Learning How to Classify with Real-world Examples (Finished, 2018-12-14 -- 2019-01-01)

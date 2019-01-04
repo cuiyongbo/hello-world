@@ -7,9 +7,9 @@ Python note
 
    python/pip_manual
    python/python_operator_precedence
-   python/python_built_in_types
+   python/python_builtin_types
    python/python_function_basics
-   python/python_built_in_functions
+   python/python_builtin_functions
    python/python_control_flow_overview
    python/python_set_notes
    python/python_dict_notes

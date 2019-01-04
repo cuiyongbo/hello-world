@@ -325,3 +325,8 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 | taxonomic 
 | Definition: concerned with the classification of things, especially organisms.
 | Usage: the taxonomic diversity of bees.
+| 
+| morphology
+| morphologist
+| Definition: the form and structure of animals and plants, studied as a science.
+| Definition: the forms of words, studied as a branch of linguistics 

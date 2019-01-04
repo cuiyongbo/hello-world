@@ -2230,12 +2230,6 @@ admitted the computer was named after his daughter.
 | entropy
 | Definiiton: (physics) a thermodynamic quantity representing the unavailability of a system’s thermal energy for conversion into mechinical work, often interpreted | as the degree of disorder or randomness in the system. [熵]
 | Usage: In the business world, Entropy rules.
-| 
-| fabrication
-| Definition: the action or process of manufacturing or inventing something.
-| Usage: The assembly and fabrication of electronic products.
-| Definition: an invention; a lie.
-| Usage: The story was a complete fabrication. [本故事纯属虚构]
 |  
 | ulterior
 | Definition: existing beyond what is obvious or admitted; internally hidden.

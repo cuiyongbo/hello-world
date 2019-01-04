@@ -1,8 +1,8 @@
-Built-in Types
-==============
+*********************
+Python Built-in Types
+*********************
 
 The principal built-in types are numerics, sequences, mappings, files, classes, instances and exceptions.
-
 
 Truth Value Testing
 -------------------
@@ -36,8 +36,6 @@ Truth Value Testing
       True
       >>> 0  or 3
       3
-
-
 
 Boolean Operations — and, or, not
 ---------------------------------
