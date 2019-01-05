@@ -115,6 +115,33 @@ Python argparse note
    elif args.subcommand_name == "reload":
        pass
 
+.. function:: ArgumentParser.add_argument(name or flags...[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])
+
+   Define how a single command-line argument should be parsed. 
+   Each parameter has its own more detailed description below, 
+   but in short they are:
+
+   * name or flags - Either a name or a list of option strings.
+   * action - The basic type of action to be taken when this argument is encountered at the command line.
+   * nargs - The number of command-line arguments that should be consumed.
+   * const - A constant value required by some action and nargs selections.
+   * default - The value produced if the argument is absent from the command line.
+   * type - The type to which the command-line argument should be converted.
+   * choices - A container of the allowable values for the argument.
+   * required - Whether or not the command-line option may be omitted (optionals only).
+   * help - A brief description of what the argument does.
+   * metavar - A name for the argument in usage messages.
+   * dest - The name of the attribute to be added to the object returned by ``parse_args()``.
+
+.. function:: ArgumentParser.parse_args(args=None, namespace=None)
+
+   Convert argument strings to objects and assign them as attributes of the namespace. 
+   Return the populated namespace. Previous calls to ``add_argument()`` determine exactly 
+   what objects are created and how they are assigned.
+
+   * args - List of strings to parse. The default is taken from ``sys.argv``.
+   * namespace - An object to take the attributes. The default is a new empty Namespace object.
+
 .. function:: ArgumentParser.add_mutually_exclusive_group(required=False)
 
    Create a mutually exclusive group. argparse will make sure that only one 
@@ -154,4 +181,14 @@ Python argparse note
    with the ``add_subparsers()`` method, which is normally called with no arguments and 
    returns a special action object. This object has a single method, ``add_parser()``, 
    which takes a command name and any ArgumentParser constructor arguments, and returns 
-   an ArgumentParser object that can be modified as usual.
+   an ArgumentParser object that can be modified as usual. 
+   Description of parameters:
+
+   * title - title for the sub-parser group in help output; by default “subcommands” if description is provided, otherwise uses title for positional arguments
+   * description - description for the sub-parser group in help output, by default None
+   * prog - usage information that will be displayed with sub-command help, by default the name of the program and any positional arguments before the subparser argument
+   * parser_class - class which will be used to create sub-parser instances, by default the class of the current parser (e.g. ArgumentParser)
+   * action - the basic type of action to be taken when this argument is encountered at the command line
+   * dest - name of the attribute under which sub-command name will be stored; by default None and no value is stored
+   * help - help for sub-parser group in help output, by default None
+   * metavar - string presenting available sub-commands in help; by default it is None and presents sub-commands in form {cmd1, cmd2, ..}
