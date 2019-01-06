@@ -67,17 +67,17 @@ grep Manual
          display them in color on the terminal. *WHEN* is ``never``, ``always``,
          or ``auto``.
 
-       .. option:: -L, --files-without-match
+      .. option:: -L, --files-without-match
           
-          Suppress normal output; instead print the name of each input
-          file from which no output would normally have been printed. The
-          scanning will stop on the first match.
+         Suppress normal output; instead print the name of each input
+         file from which no output would normally have been printed. The
+         scanning will stop on the first match.
  
-       .. option:: -l, --files-with-matches
+      .. option:: -l, --files-with-matches
           
-          Suppress normal output; instead print the name of each input file
-          from which output would normally have been printed. The scanning
-          will stop on the first match. (:option:`-l`  is specified by POSIX.)
+         Suppress normal output; instead print the name of each input file
+         from which output would normally have been printed. The scanning
+         will stop on the first match. (:option:`-l`  is specified by POSIX.)
 
       .. option:: -m NUM, --max-count=NUM
          
@@ -144,18 +144,6 @@ grep Manual
          
          Print *NUM* lines of output context.
 
-      .. code-block:: sh
-   
-         grep -n "\-\-color" --color=auto -A 2 -B 2 grep_command.rst
-         grep -n "\-\-color" --color=auto -C 2 grep_command.rst
-
-      .. note::
-
-         Places a line containing a group separator (--) between contiguous
-         groups of matches. With the :option:`-o, --only-matching` option,
-         this has no effect and a warning is given.
-
-
    #. File and Directory Selection
       
       .. option:: -a, --text
@@ -178,27 +166,6 @@ grep Manual
             ``grep --binary-files=text`` might output binary garbage, which can have
             nasty side effects if the output is a terminal and if the terminal driver
             interprets some of it as commands.
-
-      .. option:: -I
-
-         Process a binary file as if it did not contain matching data;
-         this is equivalent to the ``--binary-files=without-match`` option.
-
-      .. option:: -D ACTION, --devices=ACTION
-              
-         If an input file is a device, FIFO or socket, use *ACTION* to
-         process it. By default, *ACTION* is ``read``, which means that
-         devices are read just as if they were ordinary files. If *ACTION*
-         is skip, devices are silently skipped.
-
-      .. option:: -d ACTION, --directories=ACTION
-
-         If an input file is a directory, use *ACTION* to process it. By
-         default, *ACTION* is ``read``, i.e., read directories just as if they
-         were ordinary files. If *ACTION* is skip, silently skip directories.
-         If *ACTION* is ``recurse``, read all files under each directory,
-         recursively, following symbolic links only if they are on the
-         command line. This is equivalent to the :option:`-r` option.
 
       .. option:: -r, --recursive
 

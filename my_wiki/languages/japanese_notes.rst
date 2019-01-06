@@ -132,7 +132,7 @@ Janpanese Note
       |              |                      | and blessings.                                                         |
       +--------------+----------------------+------------------------------------------------------------------------+
 
-#. Japanese Expressions: Ittekimasu いってきます
+#. Ittekimasu いってきます　vs　Itterasshai　いってらしゃい
    
    Ittekimasu means “I’m leaving.” it is actually made up of two parts, itte (I’m going) and kimasu (I will come). 
    Therefore, a more full translation might be “I’m leaving, and I will come back.” A more casual way to say 
@@ -145,9 +145,46 @@ Janpanese Note
    It doesn’t matter which one is said first, but both expressions are usually exchanged 
    when someone leaves the house.
 
-#. 手品　手品師　[魔术师，障眼法]
+＃. itadakimasu (いただきます)
+
+   .. image:: images/itadakimasu.jpg
+
+   いただく (Itadaku) is a phrase that is very polite with the meaning “to take.”
+
+   Traditionally itadakimasu is used when taking something from someone with higher 
+   authority or position than oneself.
+
+   Itadaku comes from one of the three types of 敬語 (keigo, “polite language”). 
+   Specifically, this is 謙譲語 (kenjougo), “the humble form,” which is used to 
+   figuratively lower oneself.
+
+   The origins of this are based on Buddhism and the belief that everything 
+   has a spirit that guides it. By taking spirits from their origins and 
+   using them to replenish yourself, you are giving honor and gratitude 
+   to the organisms that originally housed those spirits.
+
+   It is very disrespectful to eat someone else’s meal without properly 
+   giving thanks to them for making such food. Even if you made the meal 
+   yourself, you are still giving respect to the lives used in its creation.
+
+#. Gochisousama (御馳走様)
    
+   * Gochisousama (Thanks for the Meal!) 
+   * Okawari (Second Please!)
+     
+   By saying that, you show your appreciation again 
+   to the person who serves, cooks, or provides the food.
+
+#. 手品　手品師　[魔术师，障眼法]　「てじなし」
 #. 専務　専務取締役
+#. 君　「くん」
+#. ありがとう
+#. さよなら
+   
+#. 付き合い
+   
+   * 彼とは古いつきあいだ。
+   * 女性との付き合いはありない。
 
 #. 桜日和　[风和日丽，樱花绽放]
 
