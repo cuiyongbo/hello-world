@@ -15,41 +15,50 @@ d.copy()         new set with a shallow copy of d
 
 .. code-block:: py
 
-   >>> dir(dict)
-   ['clear', 'copy', 'fromkeys', 'get', 'has_key', 'items', 'iteritems', 
-   'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 
-   'values', 'viewitems', 'viewkeys', 'viewvalues']
+    >>> dir(dict)
+    ['clear', 'copy', 'fromkeys', 'get', 'has_key', 'items', 'iteritems', 
+    'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 
+    'values', 'viewitems', 'viewkeys', 'viewvalues']
 
-   >>> a = dict(one=1, two=2, three=3)
-   >>> b = {'one':1, "two":2, "three":3}
-   >>> c = dict(zip(['one', 'two', 'three'], [1,2,3]))
-   >>> d = dict([("one", 1), ("two", 2), ('three', 3)])
-   >>> a == b == c == d
-   True
+    >>> a = dict(one=1, two=2, three=3)
+    >>> b = {'one':1, "two":2, "three":3}
+    >>> c = dict(zip(['one', 'two', 'three'], [1,2,3]))
+    >>> d = dict([("one", 1), ("two", 2), ('three', 3)])
+    >>> a == b == c == d
+    True
 
-   >>> for item in a.items():
-   ...     print "key: ", item[0], " value: ", item[1]
-   ... 
-   key:  three  value:  3
-   key:  two  value:  2
-   key:  one  value:  1
-   >>> for k in iter(a):
-   ...     print "key: ", k, " value: ", a[k]
-   ... 
-   key:  three  value:  3 
-   key:  two  value:  2 
-   key:  one  value:  1
+    >>> for item in a.items():
+    ...     print "key: ", item[0], " value: ", item[1]
+    ... 
+    key:  three  value:  3
+    key:  two  value:  2
+    key:  one  value:  1
+    >>> for k in iter(a):
+    ...     print "key: ", k, " value: ", a[k]
+    ... 
+    key:  three  value:  3 
+    key:  two  value:  2 
+    key:  one  value:  1
 
-   >>> e = {"four": 4}
-   >>> a.update(e)
-   >>> a
-   {'four': 4, 'three': 3, 'two': 2, 'one': 1}
-   >>> e["four"] = 40
-   >>> a.update(e)
-   >>> a
-   {'four': 40, 'three': 3, 'two': 2, 'one': 1}
+    >>> e = {"four": 4}
+    >>> a.update(e)
+    >>> a
+    {'four': 4, 'three': 3, 'two': 2, 'one': 1}
+    >>> e["four"] = 40
+    >>> a.update(e)
+    >>> a
+    {'four': 40, 'three': 3, 'two': 2, 'one': 1}
 
-   >>> del e['four']
-   >>> e.fromkeys(["1", "2", "3"], [1,2,3])
-   {'1': [1, 2, 3], '3': [1, 2, 3], '2': [1, 2, 3]}
+    >>> del e['four']
+    >>> e.fromkeys(["1", "2", "3"], [1,2,3])
+    {'1': [1, 2, 3], '3': [1, 2, 3], '2': [1, 2, 3]}
 
+    >>> d=dict([("name", "cyb"), ("age", 12), ("gender", "male")])
+    >>> list(enumerate(d))
+    [(0, 'gender'), (1, 'age'), (2, 'name')]
+    >>> list(enumerate(d.keys()))
+    [(0, 'gender'), (1, 'age'), (2, 'name')]
+    >>> list(enumerate(d.values()))
+    [(0, 'male'), (1, 12), (2, 'cyb')]
+    >>> list(enumerate(d.items()))
+    [(0, ('gender', 'male')), (1, ('age', 12)), (2, ('name', 'cyb'))]

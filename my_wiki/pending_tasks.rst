@@ -20,3 +20,5 @@ Pending tasks
 
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. https://github.com/goodfeli/dlbook_exercises.git
+   
+#. matplotlib to draw the cover of murphy's machine learning

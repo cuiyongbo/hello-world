@@ -368,3 +368,11 @@ grep Manual
    shell_command//addr2line_note.rst
    shell_command//binary_file_viewer.rst
    ...
+
+   $ grep -rIH label .
+   ./nan_test.py:plt.xlabel('time (s)')
+   ./nan_test.py:plt.ylabel('voltage (mV)')
+   ./nan_test.py:plt.xlabel('time (s)')
+   ./nan_test.py:plt.ylabel('more nans')
+   ./simple_plot.py: xlabel="time (s)", 
+   ./simple_plot.py: ylabel="voltage (mV)",

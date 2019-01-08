@@ -300,30 +300,6 @@ Iterator functions
       If a larger range is needed, an alternate version can be crafted using 
       the :mod:`itertools` module: ``islice(count(start, step), (stop-start+step-1+2*(step<0))//step)``.
 
-
-.. function:: enumerate(iterable, start=0)
-
-   Return an enumerate object. *iterable* must be a sequence, an
-   :term:`iterator`, or some other object which supports iteration.
-   The :meth:`~iterator.__next__` method of the iterator returned by
-   :func:`enumerate` returns a tuple containing a count (from *start* which
-   defaults to 0) and the values obtained from iterating over *iterable*.
-
-      >>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
-      >>> list(enumerate(seasons))
-      [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
-      >>> list(enumerate(seasons, start=1))
-      [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
-
-   Equivalent to::
-
-      def enumerate(sequence, start=0):
-          n = start
-          for elem in sequence:
-              yield n, elem
-              n += 1
-
-
 .. function:: filter(function, iterable)
 
    Construct an iterator from those elements of *iterable* for which *function*
@@ -1173,6 +1149,28 @@ Miscellaneous utilities
    item of each sequence, substituting None for missing values when not all
    sequences have the same length.  If the function is None, return a list of
    the items of the sequence (or a list of tuples if more than one sequence).
+
+.. function:: enumerate(iterable, start=0)
+
+   Return an enumerate object. *iterable* must be a sequence, an
+   :term:`iterator`, or some other object which supports iteration.
+   The :meth:`~iterator.__next__` method of the iterator returned by
+   :func:`enumerate` returns a tuple containing a count (from *start* which
+   defaults to 0) and the values obtained from iterating over *iterable*.
+
+      >>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+      >>> list(enumerate(seasons))
+      [(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+      >>> list(enumerate(seasons, start=1))
+      [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
+
+   Equivalent to::
+
+      def enumerate(sequence, start=0):
+          n = start
+          for elem in sequence:
+              yield n, elem
+              n += 1
 
 .. function:: repr(object)
 

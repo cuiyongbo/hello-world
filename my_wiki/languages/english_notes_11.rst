@@ -218,6 +218,14 @@ Only paranoid can surrive.
 | Definition: (of a characteristic) inherent; innate.
 | Usage: the system has a built-in resistance to change.
 | 
+| 
+| default
+| Definition: failure to fulfill an obligation, especially to repay a loan or appear in a court of law.
+| Usage: it will have to restructure its debts to avoid default.
+| Usage: some had defaulted on student loans
+| Definition: (of a computer program or other mechanism) revert automatically to (a preselected option).
+| Usage: when you start a fresh letter the system will default to its own style.
+| 
 | azure
 | Definition: bright blue in color like a cloudless sky.
 | Usage: white beaches surrounded by azure seas.
