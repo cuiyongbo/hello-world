@@ -53,14 +53,6 @@ such as quicksort, heapsort, or merge sort. However, insertion sort provides sev
     one element (red) is removed from the input data and inserted in-place into 
     the sorted list.
 
-The resulting array after k iterations has the property where the first *k + 1* entries are sorted ("+1" because 
-the first entry is skipped). In each iteration the first remaining entry of the input is removed, and inserted 
-into the result at the correct position, thus extending the result:
-
-+--------------------------------------------+-------------------------------------------+
-| .. image:: images/Insertionsort-before.png | .. image:: images/Insertionsort-after.png |
-+--------------------------------------------+-------------------------------------------+
-
 .. code-block:: none
     :caption: Taken from **Introduction to algorithms**
 
