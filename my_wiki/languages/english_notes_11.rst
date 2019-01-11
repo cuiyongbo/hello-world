@@ -218,6 +218,23 @@ Only paranoid can surrive.
 | Definition: (of a characteristic) inherent; innate.
 | Usage: the system has a built-in resistance to change.
 | 
+| spleen
+| splenic
+| spleenful
+| Definition: an abdominal organ involved in the production and removal of blood cells in most vertebrates and forming part of the immune system. [脾脏]
+| Definition: bad temper; spite.
+| Usage: he could vent his spleen on the institutions that had duped him.[from the earlier belief that the spleen was the seat of such emotions.]
+| Usage: He vented his spleen on the assembled crowd.
+| 
+| dupe
+| Definition: deceive; trick.
+| Usage: the newspaper was duped into publishing an untrue story.
+| 
+| seat
+| Definition: a place in an elected legislative or other body.
+| Usage: he lost his seat in the 1998 election.
+| Definition: a site or location of something specified.
+| Usage: Washington, the seat of the federal government.
 | 
 | default
 | Definition: failure to fulfill an obligation, especially to repay a loan or appear in a court of law.
