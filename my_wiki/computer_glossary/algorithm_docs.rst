@@ -6,6 +6,7 @@ Algorithms
    :titlesonly:
 
    algorithms/alg_analysis_and_design
+   algorithms/amortized_analysis_note
    algorithms/dynamic_programming_note
    algorithms/pseudocode_introduction
    algorithms/alg_complexity_summary

@@ -36,6 +36,7 @@ Introduction To Algorithm
    - Ch14 Augmenting data structure (Finished 2018-12-05)
    - Ch15 Dynamic programming (2018-12-08 -- 2018-12-31)
    - Ch16 Greedy Algorithms (2018-12-31 -- )
+   - Ch17 Amortized Analysis (Finished, 2019-01-14)
 
 
 Advanced Programming in UNIX Environment
