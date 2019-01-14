@@ -80,26 +80,18 @@ map or unmap files or devices into memory
          When swap space is not reserved one might get ``SIGSEGV`` upon a write 
          if no physical memory is available. 
 
-   Memory mapped by ``mmap()`` is preserved across :manpage:`fork(2)`, with the same attributes.
+   **Memory mapped by mmap() is preserved across fork(2), with the same attributes.**
    A file is mapped in multiples of the page size. For a file that is not a multiple of the page size,
    the remaining memory is zeroed when mapped, and writes to that region are not written out to the file.
    The effect of changing the size of the underlying file is unspecified.
 
    The :manpage:`munmap()` system call deletes the mappings for the specified address range, and causes further references to addresses
    within the range to generate invalid memory references. The region is also automatically unmapped when the process is terminated.
-   On the other hand, closing the file descriptor does not unmap the region.
+   On the other hand, **closing the file descriptor does not unmap the region.**
 
    The address *addr* must be a multiple of the page size. All pages containing a part of the indicated range are unmapped,
    and subsequent references to these pages will generate ``SIGSEGV``. It is not an error if the indicated range does not
-   containnany mapped pages.
-
-   For file-backed mappings, the *st_atime* field for the mapped file may be updated at any time between the ``mmap()``
-   and the corresponding unmapping; the first reference to a mapped page will update the field if it has not been already.
-
-   The *st_ctime* and *st_mtime* field for a file mapped with ``PROT_WRITE`` and ``MAP_SHARED`` will be updated after
-   a write to the mapped region, and before a subsequent :manpage:`msync(2)` with the ``MS_SYNC`` or ``MS_ASYNC`` flag,
-   if one occurs.
-
+   contain any mapped pages.
 
 **RETURN VALUE**
 

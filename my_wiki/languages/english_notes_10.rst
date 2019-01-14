@@ -308,11 +308,6 @@ English Note 10
 | Definition: impose on (someone) an excessive burden of work or commitments.
 | Usage: he should not overextend himself on the mortgage.
 | 
-| forfeit
-| Definition: lose or be deprived of (property or a right or privilege) as a penalty for wrongdoing.
-| Usage: those unable to meet their taxes were liable to forfeit their property.
-| Definition: a fine or penalty for wrongdoing or for a breach of the rules in a club or game.
-| 
 | shelf
 | Usage: The book I wanted was on the top shelf. 
 | Phrase: off the shelf

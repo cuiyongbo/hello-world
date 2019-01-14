@@ -231,7 +231,7 @@ Only paranoid can surrive.
 | Usage: the newspaper was duped into publishing an untrue story.
 | 
 | seat
-| Definition: a place in an elected legislative or other body.
+| Definition: a place in an elected legislative or other body. [席位]
 | Usage: he lost his seat in the 1998 election.
 | Definition: a site or location of something specified.
 | Usage: Washington, the seat of the federal government.
@@ -243,6 +243,28 @@ Only paranoid can surrive.
 | Definition: (of a computer program or other mechanism) revert automatically to (a preselected option).
 | Usage: when you start a fresh letter the system will default to its own style.
 | 
+| deposit
+| Definition: a sum of money placed or kept in a bank account, usually to gain interest.
+| Definition: pay (a sum) as a first installment or as a pledge for a contract.
+| Definition: a returnable sum payable on the rental of something, to cover any possible loss or damage. [押金]
+| Usage: we've saved enough for a deposit on a house. [首付]
+| Usage: I had to deposit 10% of the price of the house.
+| 
+| down payment [首付]
+| Definition: an initial payment made when something is bought on credit. 
+| Usage: it had taken their savings to make the down payment on a house.
+| 
+| pledge
+| Definition: a solemn promise or undertaking.
+| Usage: the conference ended with a joint pledge to limit pollution。
+| Definition: a thing that is given as security for the fulfillment of a contract or the payment of a debt and is liable to forfeiture in the event of failure. [押金，抵押物]
+| 
+| forfeit
+| forfeiture
+| Definition: lose or be deprived of (property or a right or privilege) as a penalty for wrongdoing.
+| Usage: those unable to meet their taxes were liable to forfeit their property.
+| Definition: a fine or penalty for wrongdoing or for a breach of the rules in a club or game.
+|
 | azure
 | Definition: bright blue in color like a cloudless sky.
 | Usage: white beaches surrounded by azure seas.
