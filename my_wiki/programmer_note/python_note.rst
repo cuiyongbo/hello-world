@@ -24,10 +24,12 @@ Python note
     python/struct_module_doc
     python/unittest_module_note
     python/os_module_tricks
+    python/python_sys_module_note
     python/random_module_note
     python/subprocess_module_note
     python/python_exception_handling_note
     python/python_argparse_module_note
+    python/python_imp_module_note
     python/python_miscellaneous_tricks
     python/python_miscellaneous_tricks_02
     python/python_miscellaneous_tricks_03

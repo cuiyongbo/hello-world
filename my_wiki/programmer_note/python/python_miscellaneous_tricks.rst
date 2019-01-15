@@ -97,46 +97,6 @@ Python Miscellaneous Usages
    
    UTF-8, ASCII do not have endianness since it is 1 byte per character.
 
-
-#. sys Module Tricks
-
-   +---------------+------------------------------------------------------------------+
-   | Attribute     | Description                                                      |
-   +===============+==================================================================+
-   | argv          | command line arguments; argv[0] is the script pathname if known  |
-   +---------------+------------------------------------------------------------------+
-   | modules       | dictionary of loaded modules                                     |
-   +---------------+------------------------------------------------------------------+
-   | getsizeof()   | return the size of an object in bytes                            |
-   +---------------+------------------------------------------------------------------+
-   | getrefcount() | return the reference count for an object (plus one :-)           |
-   +---------------+------------------------------------------------------------------+
-   | gettrace()    | get the global debug tracing function                            |
-   +---------------+------------------------------------------------------------------+
-   | platform      | platform identifier                                              |
-   +---------------+------------------------------------------------------------------+
-   | executable    | absolute path of the executable binary of the Python interpreter |
-   +---------------+------------------------------------------------------------------+
-   | byteorder     | system byteorder                                                 |
-   +---------------+------------------------------------------------------------------+
-   
-   .. code-block:: py
-   
-      >>> import sys
-      >>> dir(sys)
-      ['api_version', 'argv', 'builtin_module_names', 'byteorder', 'call_tracing', 'callstats', 'copyright', 'displayhook', 
-      'dont_write_bytecode', 'exc_clear', 'exc_info', 'exc_type', 'excepthook', 'exec_prefix', 'executable', 'exit', 'flags', 
-      'float_info', 'float_repr_style', 'getcheckinterval', 'getdefaultencoding', 'getdlopenflags', 'getfilesystemencoding', 
-      'getprofile', 'getrecursionlimit', 'getrefcount', 'getsizeof', 'gettrace', 'hexversion', 'long_info', 'maxint', 'maxsize', 
-      'maxunicode', 'meta_path', 'modules', 'path', 'path_hooks', 'path_importer_cache', 'platform', 'prefix', 'ps1', 'ps2', 'py3kwarning', 
-      'pydebug', 'setcheckinterval', 'setdlopenflags', 'setprofile', 'setrecursionlimit', 'settrace', 'stderr', 'stdin', 'stdout', 
-      'subversion', 'version', 'version_info', 'warnoptions']
-      >>> sys.version
-      '2.7.6 (default, Oct 26 2016, 20:30:19) \n[GCC 4.8.4]'
-      >>> sys.version_info
-      sys.version_info(major=2, minor=7, micro=6, releaselevel='final', serial=0)
-
-
 #. Executable Python Scripts
 
    On BSD’ish Unix systems, Python scripts can be made directly executable,
@@ -183,92 +143,6 @@ Python Miscellaneous Usages
    
       #!/usr/bin/env python
       #coding: cp1252
-
-
-#. The Interactive Startup File
-
-   When you use Python interactively, it is frequently handy to have some standard commands
-   executed every time the interpreter is started. You can do this by setting an environment
-   variable named :envvar:`PYTHONSTARTUP` to the name of a file containing your start-up commands.
-   This is similar to the :file:`.profile` feature of the Unix shells.
-   
-   **This file is only read in interactive sessions**, not when Python reads commands from a script,
-   and not when :file:`/dev/tty` is given as the explicit source of commands (which otherwise behaves
-   like an interactive session). It is executed in the same namespace where interactive commands are executed,
-   so that objects that it defines or imports can be used without qualification in the interactive session.
-   You can also change the prompts ``sys.ps1`` and ``sys.ps2`` in this file.
-   
-   If you want to read an additional start-up file from the current directory,
-   you can program this in the global start-up file using code like::
-   
-      if os.path.isfile('.pythonrc.py'):
-         exec(open('.pythonrc.py').read())
-   
-   If you want to use the startup file in a script,
-   you must do this explicitly in the script::
-   
-      import os
-      filename = os.environ.get('PYTHONSTARTUP')
-      if filename and os.path.isfile(filename):
-         with open(filename) as fobj:
-            startup_file = fobj.read()
-         exec(startup_file)
-   
-   
-   Add follow codes to :file:`.bashrc`::
-     
-       PYTHONSTARTUP=~/.pythonrc
-       export PYTHONSTARTUP
-   
-   Add command(s) you want to execute in :file:`~/.pythonrc`. like::
-   
-     import math, time, re
-     import os, sys
-     from pprint import pprint
-
-   .. note::
-
-      On windows, add an environmental variable named **PYTHONSTARTUP**, and fill its value
-      with the script's full path. (the lettercase doesn't matter)
-
-#. Python3 install/uninstall
-
-   Install python3::
-   
-      $ brew install python3
-   
-   Install packages for python3::
-   
-      $ pip3 install <package>
-   
-   Uninstall python3::
-   
-      $ brew uninstall python3
-
-
-#. Prohibit generating ``*.pyc`` file
-
-   Add this code in your scripts::
-   
-      import sys
-      sys.dont_write_bytecode = True
-   
-   The variable must be set **BEFORE** any import.
-   you can add it to your :envvar:`PYTHONSTARTUP`.
-
-   To speed up loading modules, Python caches the compiled version 
-   of each module in the __pycache__ directory under the name 
-   ``module.version.pyc,`` where the version encodes the format 
-   of the compiled file; it generally contains the Python version 
-   number. This naming convention allows compiled modules from 
-   different releases and different versions of Python to coexist.
-
-   .. note::
-
-      A program doesn’t run any faster when it is read from a ``.pyc`` 
-      file than when it is read from a ``.py`` file; the only thing 
-      that’s faster about ``.pyc`` files is the speed with which they are loaded.
-
 
 #. Convert uncode string to Chinese characters
 
