@@ -233,6 +233,9 @@ English Notes 3
 | underdog
 | Definition: a competitor thought to have little chance of winning a fight or contest.
 | Definition: a person who has little status in society.
+| Usage: we go into this game as underdog.
+| Usage: what is it like to be an underdog in America?
+| Synonyms: loser
 | Origin: late 19th century: with reference to the beaten dog in a dogfight.
 | 
 | leave-taking

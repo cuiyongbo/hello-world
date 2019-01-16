@@ -282,7 +282,7 @@ Shell Script Tricks 01
    
    .. code-block:: sh
 
-      #. Call shell script from another shell script
+      # Call shell script from another shell script
       source `pwd`/reload.sh
 
       # Call python script from shell script

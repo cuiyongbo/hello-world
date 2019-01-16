@@ -129,3 +129,8 @@ curl - transfer a URL
       --cut-dirs=3 : but saving it to ddd by omitting first 3 folders aaa, bbb, ccc
       -e robots=off: disable robot check if there exists a robot.txt
       -R index.html : excluding index.html files
+
+#. wget error: Unable to establish SSL connection.
+   
+   To connect to ndownloader.figshare.com insecurely, use ``--no-check-certificate``.
+   e.g. ``wget --no-check-certificate https://ndownloader.figshare.com/files/5975967``

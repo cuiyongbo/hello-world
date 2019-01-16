@@ -233,13 +233,8 @@ Iterator functions
    Use :func:`functools.cmp_to_key` to convert an old-style *cmp* function to a
    *key* function.
 
-   The built-in :func:`sorted` function is guaranteed to be stable. A sort is
-   stable if it guarantees not to change the relative order of elements that
-   compare equal --- this is helpful for sorting in multiple passes (for
-   example, sort by department, then by salary grade).
-
+   The built-in :func:`sorted` function is guaranteed to be stable.
    For sorting examples and a brief sorting tutorial, see :doc:`Sorting HOW TO <sort_tricks>`.
-
 
 .. class:: slice(stop)
 .. class:: slice(start, stop[, step])

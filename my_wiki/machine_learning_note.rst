@@ -36,3 +36,4 @@ Now Let's start it.
 .. [#] `NumPy and SciPy doc <https://docs.scipy.org/doc/>`_
 .. [#] `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_
 .. [#] `Machine Learning Dataset sources <http://archive.ics.uci.edu/ml/index.php>`_
+.. [#] `AI Google <https://ai.google/>`_

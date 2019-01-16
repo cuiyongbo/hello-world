@@ -13,3 +13,4 @@ Progress:
 
     - Ch01 Getting started (Finished, 2018-12-11 -- 2018-12-13)
     - Ch02 Learning How to Classify with Real-world Examples (Finished, 2018-12-14 -- 2019-01-01)
+    - Ch03 Clustering - find related posts (Finished, 2019-01-14 - 2019-01-16)
