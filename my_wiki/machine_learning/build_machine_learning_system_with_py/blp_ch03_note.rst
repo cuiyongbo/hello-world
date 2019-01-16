@@ -5,9 +5,36 @@ Clustering - Find related posts
 .. code-block:: py
 
     from sklearn.feature_extraction.text import CountVectorizer
+    import scipy as sp
     import nltk.stem
     
     posts = [open(os.path.join(".", f)).read() for f in os.listdir(".")]
+
+    posts = 
+    [
+        '''
+This is a toy post about machine learning. Actually, 
+it contains not much interesting stuff.
+        ''',
+        '''
+Imaging databases can get huge.
+        ''',
+'''
+Most imaging databases safe images permanently.
+''',
+'''
+Imaging databases store images.
+''',
+
+'''
+Imaging databases store images.
+Imaging databases store images.
+Imaging databases store images.
+'''
+    ]
+
+
+
     vectorizer = CountVectorizer(min_df=1, stop_words="english")
     
     # vectorizer.get_stop_words()
@@ -51,4 +78,16 @@ Clustering - Find related posts
             return lambda doc: (english_stemmer.stem(w) for w in analyzer(doc))
     
     vectorizer = StemmedCountVectorizer(min_df=1, stop_words="english")
+
+    def tfidf(term, doc, docset):
+        tf = float(doc.count(term))/sum(doc.count(w) for w in set(doc))
+        idf = sp.log(float(len(docset))/len([d for d in docset if term in d]))
+        return tf * idf
     
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    class StemmedTfidfVectorizer(TfidfVectorizer):
+        def build_analyzer(self):
+            analyzer = super(TfidfVectorizer, self).build_analyzer()
+            return lambda doc: (english_stemmer.stem(w) for w in analyzer(doc))
+
+    vectorizer = StemmedTfidfVectorizer(min_df=1, stop_words="english", charset_error="ignore")
