@@ -27,6 +27,7 @@ Python note
     python/python_sys_module_note
     python/random_module_note
     python/subprocess_module_note
+    python/python_psutil_module_note
     python/python_exception_handling_note
     python/python_argparse_module_note
     python/python_imp_module_note
