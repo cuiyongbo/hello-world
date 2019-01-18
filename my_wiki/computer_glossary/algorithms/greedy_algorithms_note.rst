@@ -2,6 +2,12 @@
 Greedy algorithms
 *****************
 
+**Greedy-choice property**: we can assemble a globally optimal solution 
+by making locally optimal (greedy) choices. 
+
+A problem exhibits **optimal substructure** if an optimal solution 
+to the problem contains within it optimal solutions to subproblems.
+
 **Problem definition:** Suppose we have a set :math:`S={a_1,a_2, \ldots,a_n}` of n proposed 
 activities that wish to use a resource, such as a lecture hall, which can serve only one activity at a time. 
 Each activity :math:`a_i` has a start time :math:`s_i` and a finish time :math:`f_i` ,
@@ -31,3 +37,6 @@ In the **activity-selection problem**, we wish to select a maximum-size subset o
                 result-set.append(a[i])
                 j = i
         return result-set
+
+* The 0-1 knapsack problem
+* The fractional knapsack problem

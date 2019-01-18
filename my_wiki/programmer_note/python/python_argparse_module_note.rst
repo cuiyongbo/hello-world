@@ -190,13 +190,13 @@ Python argparse note
 
 #. get/set/ default argument
    
-   * ArgumentParser.get_default(dest)
-   * ArgumentParser.set_defaults(**kwargs)
+    * ArgumentParser.get_default(dest)
+    * ArgumentParser.set_defaults(\*\*kwargs)
     
-   Most of the time, the attributes of the object returned by ``parse_args()`` 
-   will be fully determined by inspecting the command-line arguments and the argument actions. 
-   ``set_defaults()`` allows some additional attributes that are determined without any inspection 
-   of the command line to be added:
+    Most of the time, the attributes of the object returned by ``parse_args()`` 
+    will be fully determined by inspecting the command-line arguments and the argument actions. 
+    ``set_defaults()`` allows some additional attributes that are determined without any inspection 
+    of the command line to be added:
 
         >>> parser = argparse.ArgumentParser()
         >>> parser.add_argument('foo', type=int)
