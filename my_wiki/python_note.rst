@@ -2,6 +2,9 @@
 Python note
 ***********
 
+**Keep this under your pillow**
+
+
 .. toctree::
     :titlesonly:
 

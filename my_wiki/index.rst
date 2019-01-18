@@ -7,21 +7,22 @@ Welcome to My Wiki's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 2
+    :caption: Contents:
 
-   pending_tasks
-   book_reading_progress_note
-   computer_glossary
-   shell_commands
-   programmer_note
-   more_cpp_idioms_note
-   machine_learning_note
-   mathematics_glossary
-   biology_glossary
-   language_study_notes
-   classics
-   camera_glossary
+    pending_tasks
+    book_reading_progress_note
+    computer_glossary
+    shell_commands
+    programmer_note
+    python_note
+    more_cpp_idioms_note
+    machine_learning_note
+    mathematics_glossary
+    biology_glossary
+    language_study_notes
+    classics
+    camera_glossary
 
 
 Indices and tables

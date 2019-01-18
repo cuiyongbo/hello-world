@@ -147,6 +147,14 @@ Python File module notes
    .. code-block:: py
 
       os.path.isfile(path)
+      os.path.ispath(path) # check if directory exists
+      os.path.exists(path) # file + directory
 
-      # isfile(path)
-      # Test whether a path is a regular file
+#. python to implement unix touch
+   
+   .. code-block:: py
+      
+      import os
+      def touch(fname, times=None):
+          with open(fname, 'a'):
+              os.utime(fname, times)

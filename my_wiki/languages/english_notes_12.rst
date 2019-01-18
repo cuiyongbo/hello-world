@@ -18,3 +18,6 @@ English Note 12
 | Definition: to support or form the basis of an argument, a claim, etc.
 | Usage: the theme of honor underpinning the two books.
 | 
+
+.. image:: images/mist_on_moors.jpg
+

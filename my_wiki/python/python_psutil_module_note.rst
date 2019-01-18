@@ -2,7 +2,48 @@
 Python psutil note
 ******************
 
-..function:: class psutil.Process(pid=None)
+.. function:: psutil.pid_exists(pid)
+
+    Check whether the given PID exists in the current process list. 
+    This is faster than doing ``pid in psutil.pids()`` and should be preferred.
+
+.. function:: psutil.wait_procs(procs, timeout=None, callback=None)
+
+    Convenience function which waits for a list of processes to
+    terminate.
+    
+    Return a ``(gone, alive)`` tuple indicating which processes
+    are gone and which ones are still alive.
+    
+    The gone ones will have a new *returncode* attribute indicating
+    process exit status (may be None).
+    
+    *callback* is a function which gets called every time a process
+    terminates (a Process instance is passed as callback argument).
+    
+    Function will return as soon as all processes terminate or when
+    *timeout* occurs. Differently from Process.wait() it will not raise 
+    ``TimeoutExpired`` if *timeout* occurs.
+    
+    Typical use case is:
+    
+        - send SIGTERM to a list of processes
+        - give them some time to terminate
+        - send SIGKILL to those ones which are still alive
+    
+    Example::
+
+        def on_terminate(proc):
+            print("process {} terminated with exit code {}".format(proc, proc.returncode))
+
+        procs = psutil.Process().children()
+        for p in procs:
+            p.terminate()
+        gone, alive = psutil.wait_procs(procs, timeout=3, callback=on_terminate)
+        for p in alive:
+            p.kill()
+
+.. function:: class psutil.Process(pid=None)
 
     Represents an OS process with the given pid. If pid is omitted current process pid (``os.getpid()``) is used. 
     Raise ``NoSuchProcess`` if pid does not exist. On Linux pid can also refer to a thread ID (the id field returned 
