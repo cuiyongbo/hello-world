@@ -81,3 +81,45 @@ Python Miscellaneous Tricks 03
 
         On windows, add an environmental variable named **PYTHONSTARTUP**, 
         and fill its value with the script's full path. (the lettercase doesn't matter)
+
+#. python convert between uid and username
+   
+    .. code-block:: py
+
+        import pwd, grp
+        pprint([p for p in dir(os) if 'uid' in p])
+        ['geteuid', 'getuid', 'seteuid', 'setreuid', 'setuid']
+        dir(pwd)
+        [..., 'getpwall', 'getpwnam', 'getpwuid', 'struct_passwd', 'struct_pwent']
+
+        pwd.getpwuid(os.getuid())
+        pwd.struct_passwd(pw_name='cherry', pw_passwd='********', pw_uid=501, pw_gid=20, pw_gecos='cherry', pw_dir='/Users/cherry', pw_shell='/bin/bash')
+        pwd.getpwnam('root')
+        pwd.struct_passwd(pw_name='root', pw_passwd='********', pw_uid=0, pw_gid=0, pw_gecos='System Administrator', pw_dir='/var/root', pw_shell='/bin/sh')
+        pwd.getpwnam('cherry')
+        pwd.struct_passwd(pw_name='cherry', pw_passwd='********', pw_uid=501, pw_gid=20, pw_gecos='cherry', pw_dir='/Users/cherry', pw_shell='/bin/bash')
+
+        # another way to get username
+        import getpass
+        getpass.getuser()
+        'cherry'
+
+#. python convert between gid and group name
+   
+    .. code-block:: py
+
+        import pwd, grp
+        pprint([p for p in dir(os) if 'gid' in p])
+        ['getegid', 'getgid', 'getpgid', 'setegid', 'setgid', 'setpgid', 'setregid']
+        dir(grp)
+        [..., 'getgrall', 'getgrgid', 'getgrnam', 'struct_group']
+
+        # get group information from gid
+        grp.getgrgid(os.getgid())
+        grp.struct_group(gr_name='staff', gr_passwd='*', gr_gid=20, gr_mem=['root', 'cherry'])
+
+        # get group information from groupname
+        grp.getgrnam('staff')
+        grp.struct_group(gr_name='staff', gr_passwd='*', gr_gid=20, gr_mem=['root', 'cherry'])
+
+

@@ -4,7 +4,6 @@ Python note
 
 **Keep this under your pillow**
 
-
 .. toctree::
     :titlesonly:
 
@@ -14,6 +13,7 @@ Python note
     python/python_function_basics
     python/python_builtin_functions
     python/python_control_flow_overview
+    python/python_constant_flags
     python/python_set_notes
     python/python_dict_notes
     python/python_file_notes

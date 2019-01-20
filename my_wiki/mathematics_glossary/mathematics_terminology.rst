@@ -39,7 +39,12 @@ I think, therefore I am
 .. figure:: images/exponent-8-2.svg
 
    Exponent Arithmetic notatiion
-
+   
+|
+| power
+| Definition: in mathematics, power is used in expressions such as 2 to the power of 4 or 2 to the 4th power to indicate ``2^4``.
+| Usage: Any number to the power of nought is equal to one.
+|
 | similar triangle [相似三角形]
 | corresponding side [对应边] 
 | exponential distribution
@@ -94,19 +99,6 @@ I think, therefore I am
 | mantissa
 | Definition: (mathematics) the part of a logarithm after the decimal point.
 | Definition: (computing) the part of a floating-point number which represents the significant digits of that number.
-|
-| quotient [商]
-| Definition: In arithmetic, a quotient (from Latin: quotiens "how many times", pronounced /ˈkwoʊʃənt/) is the quantity produced by the division of two numbers. The quotient has widespread use throughout mathematics, and is commonly referred to as a fraction or a ratio. For example, when dividing twenty (the dividend) by three (the divisor), the quotient is six and two thirds. In this sense, a quotient is the ratio of a dividend to its divisor.
-
-.. image:: images/quotient.png
-.. image:: images/arithmetic_operations.png
-
-| power
-| Definition: In mathematics, power is used in expressions such as 2 to the power of 4 or 2 to the 4th power to indicate that 2 must be multiplied by itself 4 times.
-| Usage: Any number to the power of nought is equal to one.
-| 
-| cardinality
-| Definition: the number of elements in a set or other grouping, as a property of that grouping.
 | 
 | cardinal, ordinal, nominal number
 | A cardinal number says how many of something there are, such as one, two, three; [基数词]
