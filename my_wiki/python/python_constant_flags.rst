@@ -34,10 +34,11 @@ Python Constant Flags
     The following flags can also be used in the mode argument of ``os.chmod()``::
     
         stat.S_ISUID
-        Set UID bit.
+        Set UID bit (short for "set user ID upon execution").
     
         stat.S_ISGID
-        S_ISGIDet-group-ID bit. This bit has several special uses. 
+        S_ISGIDet-group-ID bit (short for "set group ID upon execution"). 
+        This bit has several special uses. 
         For a directory it indicates that BSD semantics is to be used 
         for that directory: files created there inherit their gid from 
         the directory, not from the effective gid of the creating process, 
@@ -49,3 +50,28 @@ Python Constant Flags
         Sticky bit. When this bit is set on a directory it means that 
         a file in that directory can be renamed or deleted only by the 
         owner of the file, by the owner of the directory, or by a privileged process.
+
+        stat.S_ENFMT
+        stat.S_IREAD
+        stat.S_IWRITE
+        stat.S_IEXEC
+        stat.S_IRWXU
+        stat.S_IRUSR
+        stat.S_IWUSR
+        stat.S_IXUSR
+        stat.S_IRWXG
+        stat.S_IRGRP
+        stat.S_IWGRP
+        stat.S_IXGRP
+        stat.S_IRWXO
+        stat.S_IROTH
+        stat.S_IWOTH
+        stat.S_IXOTH
+
+    .. Note:: 
+
+        While the setuid feature is very useful in many cases, 
+        its improper use can pose a security risk if the setuid attribute 
+        is assigned to executable programs that are not carefully designed. 
+        Due to potential security issues, **many OS ignore the setuid attribute 
+        when applied to executable shell scripts**.

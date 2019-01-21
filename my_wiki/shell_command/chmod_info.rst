@@ -128,6 +128,3 @@ chmod command
    .. option:: -R, --recursive
               
       change files and directories recursively
-
-
-

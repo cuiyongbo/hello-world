@@ -40,3 +40,20 @@ In the **activity-selection problem**, we wish to select a maximum-size subset o
 
 * The 0-1 knapsack problem
 * The fractional knapsack problem
+  
+
+#. Huffman code
+   
+    .. code-block:: none
+    
+        // O(n log n)
+        Huffman(C)
+            n = C.alphabetSize
+            Q = C // build a min-priority queue from input in O(n)
+            for i=1 to n-1
+                allocate a new node z
+                z.left = Extract-Min(Q) // O(log n)
+                z.right = Extract-Min(Q) 
+                z.freq = z.left.freq + z.right.freq
+                insert(Q, z)
+            return Extract-Min(Q) // return the root of the tree

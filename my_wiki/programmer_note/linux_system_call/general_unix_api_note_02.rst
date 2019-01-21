@@ -1,6 +1,6 @@
-***********************
-Miscellaneous Functions
-***********************
+*******************
+General Unix API 02
+*******************
 
 .. contents::
    :local:
@@ -358,23 +358,27 @@ kill -- send signal to a process
       this is a variant of :manpage:`killpg(2)`.
 
    if *pid* is negative:
-
       *Sig* is sent to all processes whose process group ID equals the absolute
       value of *pid* and for which the sender has permission to send the signal.
 
    If *pid* is -1:
-      If the user has super-user privileges, the signal is sent to all pro-
-      cesses excluding system processes and the process sending the signal.  If
+      If the user has super-user privileges, the signal is sent to all processes 
+      excluding system processes and the process sending the signal. If
       the user is not the super user, the signal is sent to all processes with
       the same uid as the user, excluding the process sending the signal. No
       error is returned if any process could be signaled.
-
 
 **RETURN VALUES**
 
    Upon successful completion, a value of ``0`` is returned. Otherwise,
    a value of ``-1`` is returned and ``errno`` is set to indicate the error.
 
+.. note::
+
+   A process needs permission to send a signal to another process. 
+   The superuser can send a signal to any process. For other users, 
+   the basic rule is that the real or effective user ID of the sender 
+   has to equal the real or effective user ID of the receiver.
 
 raise - send a signal to the caller
 ===================================

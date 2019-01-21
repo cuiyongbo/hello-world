@@ -1,7 +1,6 @@
-*********
-os Module
-*********
-
+****************
+Python os Module
+****************
 
 .. code-block:: none
     :caption: Hot Methods

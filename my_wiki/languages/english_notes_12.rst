@@ -18,6 +18,11 @@ English Note 12
 | Definition: to support or form the basis of an argument, a claim, etc.
 | Usage: the theme of honor underpinning the two books.
 | 
+| pun [双关语]
+| Definition: a joke exploiting the different possible meanings of a word or the fact that there are words which sound alike but have different meanings.
+| Usage: the pigs were a squeal (if you'll forgive the pun) [not got it]
+|
+
 
 .. image:: images/mist_on_moors.jpg
 
