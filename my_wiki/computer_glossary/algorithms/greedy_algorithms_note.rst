@@ -41,7 +41,6 @@ In the **activity-selection problem**, we wish to select a maximum-size subset o
 * The 0-1 knapsack problem
 * The fractional knapsack problem
   
-
 #. Huffman code
    
     .. code-block:: none

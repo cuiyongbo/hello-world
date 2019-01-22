@@ -4,7 +4,6 @@ The Pthreads API
 
 .. toctree::
 
-   pthread_hot_api_note
    api_creating_and_terminating
    api_thread_management
    api_mutex

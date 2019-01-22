@@ -376,3 +376,8 @@ grep Manual
    ./nan_test.py:plt.ylabel('more nans')
    ./simple_plot.py: xlabel="time (s)", 
    ./simple_plot.py: ylabel="voltage (mV)",
+
+   # in ubuntu, you don't need add '-r' option when searching a directory
+   $ grep "uint8" /usr/include/*.h
+   /usr/include/stdint.h:typedef unsigned char     uint8_t;
+

@@ -264,6 +264,10 @@ Nature Lifes
 
    A Ladybird [七星瓢虫] hibernates in Tewin, England
 
+.. figure:: images/european_goldfinch.jpg
+
+   Red in the face
+
 #. taxonomy
    
    Taxonomy is the science of defining groups of biological organisms 

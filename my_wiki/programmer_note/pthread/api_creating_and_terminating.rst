@@ -81,8 +81,7 @@ However, local implementations may include this functionality - such as providin
 non-standard ``pthread_setaffinity_np`` routine. Note that "_np" in the name stands 
 for "non-portable".
 
-Also, the local operating system may provide a way to do this. 
-For example, Linux provides the ``sched_setaffinity`` routine.
+Also, the local OS may provide a way to do this. e.g. Linux provides the ``sched_setaffinity`` routine.
 
 **Terminating Threads**
 

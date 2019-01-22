@@ -206,8 +206,6 @@ It remains to be seen how the virus may affect the ability to hoverflies to unde
 
 hemorrhoid 痔疮
 
-finch
-
 dove
 
 pigeon
