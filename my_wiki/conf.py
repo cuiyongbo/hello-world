@@ -205,5 +205,5 @@ exclude_patterns = [
     "programmer_note/gdb/gdb_man_page.rst",
 	"computer_glossary/unix_concepts_intro_manual.rst",
     "shell_command/wget_manual.rst",
-    "machine_learning/matplotlib_scaffold_01.rst"
+    "machine_learning/matplotlib_note/matplotlib_scaffold_01.rst"
 ]
