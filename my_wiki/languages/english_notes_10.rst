@@ -233,6 +233,8 @@ English Note 10
 | Synonyms: nonetheless.
 | Usage: statements which, although literally true, are nevertheless misleading.
 | Usage: it was the barest of welcomes, but it was a welcome nonetheless.
+| Usage: Notwithstanding that Sir Henry had sold much land, his debts were still on the increase.
+| Usage: I didn't like it. Notwithstanding, I remained calm.
 | 
 | highbrow
 | Definition: scholarly or rarefied in taste. [曲高和寡]

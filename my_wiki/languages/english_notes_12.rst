@@ -22,7 +22,9 @@ English Note 12
 | Definition: a joke exploiting the different possible meanings of a word or the fact that there are words which sound alike but have different meanings.
 | Usage: the pigs were a squeal (if you'll forgive the pun) [not got it]
 |
-
+| wont
+| Definition: (of a person) in the habit of doing something; accustomed.
+| Usage: he was wont to arise at 5.30 every morning.
 
 .. image:: images/mist_on_moors.jpg
 

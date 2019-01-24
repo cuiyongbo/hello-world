@@ -16,3 +16,8 @@ Mathematics
     mathematics_glossary/bernoulli_distribution
     mathematics_glossary/cross_product
     mathematics_glossary/bayes_theorem_note
+
+
+.. rubric:: Footnotes
+
+.. [#] `Integral Calculator <https://www.integral-calculator.com/>`_

@@ -104,6 +104,49 @@ Python Miscellaneous Tricks 03
         getpass.getuser()
         'cherry'
 
+#. python to add an additional directory to search path
+   
+    Augment the default search path for module files. The format is the same as the shell’s **PATH**: 
+    one or more directory pathnames separated by ``os.pathsep`` (e.g. colons on Unix or semicolons on Windows). 
+    Non-existent directories are silently ignored.
+
+    In addition to normal directories, individual **PYTHONPATH** entries may refer to zipfiles containing 
+    pure Python modules (in either source or compiled form). Extension modules cannot be imported from zipfiles.
+
+    The default search path is installation dependent, but generally begins with ``prefix/lib/pythonversion``. 
+    It is always appended to **PYTHONPATH**.
+
+    The search path can be manipulated from within a Python program as the variable ``sys.path``.
+
+#. sys.path
+
+    A list of strings that specifies the search path for modules. 
+    Initialized from the environment variable **PYTHONPATH**, plus an installation-dependent default.
+
+    As initialized upon program startup, the first item of this list, ``path[0]``, is the directory 
+    containing the script that was used to invoke the Python interpreter. If the script directory is 
+    not available (e.g. if the interpreter is invoked interactively or if the script is read 
+    from standard input), ``path[0]`` is the empty string, which directs Python to search modules 
+    in the current directory first. Notice that the script directory is inserted before the entries 
+    inserted as a result of ``PYTHONPATH``::
+
+        >>> pprint(sys.path)
+        ['',
+         '/usr/lib/python2.7',
+         '/usr/lib/python2.7/plat-x86_64-linux-gnu',
+         '/usr/lib/python2.7/lib-tk',
+         '/usr/lib/python2.7/lib-old',
+         '/usr/lib/python2.7/lib-dynload',
+         '/usr/local/lib/python2.7/dist-packages',
+         '/usr/lib/python2.7/dist-packages',
+         '/usr/lib/python2.7/dist-packages/PILcompat',
+         '/usr/lib/python2.7/dist-packages/gtk-2.0',
+         '/usr/lib/pymodules/python2.7']
+        >>> os.getenv('PYTHONPATH')
+        >>> 
+
+    A program is free to modify this list for its own purposes.
+
 #. python convert between gid and group name
    
     .. code-block:: py

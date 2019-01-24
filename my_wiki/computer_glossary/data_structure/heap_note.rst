@@ -30,41 +30,6 @@ Note that, as shown in the graphic, there is no implied ordering between sibling
 an in-order traversal (as there would be in, e.g., a binary search tree). The heap relation mentioned above applies only between 
 nodes and their parents, grandparents, etc.
 
-**Operations**
-
-The common operations involving heaps are:
-
-#. Basic
-
-    - find-max [or find-min]
-    - insert
-    - extract-max [or extract-min]
-    - delete-max [or delete-min]
-    - replace: pop root and push a new key
-
-#. Creation
-   
-    - create-heap: create an empty heap.
-    - heapify: create a heap out of given array of elements.
-
-    - merge (union): joining two heaps to form a valid new heap 
-      containing all the elements of both, preserving the original heaps.
-
-    - meld: joining two heaps to form a valid new heap containing all the 
-      elements of both, destroying the original heaps.
-
-#. Inspection
-
-    - size
-    - is-empty
-
-#. Internal
-   
-    - increase-key or decrease-key
-    - delete: delete an arbitrary node (followed by moving last node and sifting to maintain heap).
-    - sift-up: move a node up in the tree, as long as needed; used to restore heap condition after insertion. 
-    - sift-down: move a node down in the tree, similar to sift-up; used to restore heap condition after deletion or replacement.
-
 ..sidebar:: Heap as array
 
     .. image:: images/Heap-as-array.svg.png
@@ -89,130 +54,66 @@ or sift-down operations. As we can build a heap from an array without requiring 
 heapsort can be used to sort an array **in-place.**
 
 .. code-block:: none
-   :caption: Taken from **Introduction to Algorithms**
+    :caption: Taken from **Introduction to Algorithms**
 
-   Parent(i):
-      return i/2
+    Parent(i):
+        return i/2
 
-   Left(i):
-      return 2*i
+    Left(i):
+        return 2*i
 
-   Right(i):
-      return 2*i + 1
- 
-   # pre: [i-1, n] is a heap
-   # post: [i, n] is a heap
-   siftDown(A, i):
-      l = Left(i)
-      r = Right(i)
-
-      if l <= A.heap_size and A[l] > A[i]
-         largest = l
-      else largest = i
-
-      if r <= A.heap_size and A[r] > A[i]
-         largest = r
-
-      if largest != i
-         swap(A[i], A[largest])
-         siftDown(A, largest)
-
-   siftDown-loop(A, i)
-      largest = i
-      while largest < heap_size
-         tmp = largest
-         l = Left(largest)
-         r = Right(largest)
-         if l <= A.heap_size and A[l] > A[largest]
+    Right(i):
+        return 2*i + 1
+    
+    siftDown(A, i):
+        l, r = Left(i), Right(i)
+        largest = i
+        if l <= A.heap_size and A[l] > A[i]
             largest = l
-         if r <= A.heap_size and A[r] > A[largest]
-            largest = r
-         
-         if tmp == largest
-            break
-         
-         swap(A[tmp], A[largest])
+        if r <= A.heap_size and A[r] > A[i]
+           largest = r
+        if largest != i
+            swap(A[i], A[largest])
+            siftDown(A, largest)
 
-   Build-max-heap-siftDown(A)
-      A.heap_size = A.length
-      for i = A.length/2 downto 1
-         Max-heapify(A, i)
+    # pre: [i-1, n] is a heap
+    # post: [i, n] is a heap
+    siftDown-loop(A, i)
+        largest = i
+        while largest < A.heap_size
+            tmp = largest
+            l, r = Left(largest), Right(largest)
+            if l <= A.heap_size and A[l] > A[largest]
+                largest = l
+            if r <= A.heap_size and A[r] > A[largest]
+                largest = r
+            if tmp == largest
+                break
+            swap(A[tmp], A[largest])
+
+    Build-max-heap-siftDown(A)
+        A.heap_size = A.length
+        for i = A.length/2 downto 1
+            siftDown(A, i)
    
-   # pre: [1, i-1] is a heap 
-   # post: [1, i] is a heap
-   siftUp(A, i):
-      p = Parent(child)
-      if A[p] < A[child]
-         swap(A[p], A[child])
+    # pre: [1, i-1] is a heap 
+    # post: [1, i] is a heap       
+    siftUp(A, i)
+        while i>1
+            p = Parent(i)
+            if A[p] >= A[i]
+                break
+            swap(A[p], A[i])
+            i = p
 
-   Build-max-heap-siftUp(A)
-      A.heap_size = A.length
-      for i = 2 upto A.length
-         siftUp(A, i)
+    Build-max-heap-siftUp(A)
+        A.heap_size = A.length
+        for i = 2 upto A.length
+            siftUp(A, i)
 
-   HeapSort(A)
-      Build-max-heap(A)
-      for i=A.length downto 2
-         swap(A[1], A[i])
-         A.heap_size = A.heap_size -1
-         siftDown(A, 1)
-
-.. code-block:: none
-   :caption: Take from *Programming pearls*
-
-   root = 1
-   value(i) = x[i]
-   leftchild(i) = 2*i
-   rightchild(i) = 2*i + 1
-   parent(i) = i/2
-   null(i) = (i<1) or (i>n)
-
-   siftup(n)
-   /*
-      pre n>0 && heap(1, n-1)
-      post heap(1, n)
-   */
-      i=n
-      loop
-      /* invariant: heap(1, n) except perhaps between i and its parents */
-         if i==1
-            break
-         p=i/2
-         if x[p] <= x[i]
-            break
-         swap(i, p)
-         i=p
-
-   siftdown(n)
-   /*
-      pre n>0 && heap(2, n)
-      post heap(1, n)
-   */
-   i=1
-   loop
-   /* invariant: heap(1, n) except perhaps between i and its children */
-      c=2*i
-      if c>n 
-         break
-      if c+1 < n
-         if x[c+1] < x[c]
-            c++
-      if x[i] <= x[c]
-         break
-      swap(i, c)
-      i=c
-
-   insert(t)
-      if n>maxsize
-         error("heap overflow")
-      n++
-      x[n] = t
-      siftup(n)
-
-   extractmin()
-      if n < 1
-         error("heap underflow")
-      t = x[1]
-      n--
-      x[1] = x[n]
-      siftdown(n)
+    HeapSort(A)
+        Build-max-heap(A)
+        for i=A.length downto 2
+            swap(A[1], A[i])
+            A.heap_size--
+            siftDown(A, 1)
