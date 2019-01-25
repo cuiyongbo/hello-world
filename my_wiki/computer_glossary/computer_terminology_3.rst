@@ -37,3 +37,21 @@ Computer Terminology 3
     Memory barriers are typically used when implementing low-level machine code that operates on memory 
     shared by multiple devices. Such code includes synchronization primitives and lock-free data structures 
     on multiprocessor systems, and device drivers that communicate with computer hardware.
+
+#. Mutex vs spinlock
+
+    +-------------+---------------------------------------+--------------------------------------+
+    | Criteria    | Mutex                                 | Spinlock                             |
+    +-------------+---------------------------------------+--------------------------------------+
+    | Mechanism   | Test for lock.                        | Test for lock.                       |
+    |             | If available, use the resource.       | If available, use the resource.      |
+    |             | Otherwise, go to wait queue.          | Otherwise, keep busy polling.        |
+    +-------------+---------------------------------------+--------------------------------------+
+    | When to use | Used when putting process to sleep is | Used when process should not be      |
+    |             | not harmful like user space programs, | put to sleep like Interrupt service  |
+    |             | and there will be considerable        | routines, and lock will be           |
+    |             | time before process gets the lock.    | granted in reasonably short time.    |
+    +-------------+---------------------------------------+--------------------------------------+
+    | Drawbacks   | Incur process context switch          | Processor is busy doing nothing till |
+    |             | and scheduling cost.                  | lock is granted, wasting CPU cycles. |
+    +-------------+---------------------------------------+--------------------------------------+
