@@ -25,6 +25,16 @@ English Note 12
 | wont
 | Definition: (of a person) in the habit of doing something; accustomed.
 | Usage: he was wont to arise at 5.30 every morning.
+| 
+| heretofore
+| Definition: before now.
+| Usage: diseases that heretofore were usually confined to rural areas.
+| 
+| hereafter
+| Definition: from now on, in the future.
+| Usage: Nothing I say hereafter is intended to offend.
+| Definition: life after death.
+| Usage: suffering is part of our preparation for the hereafter.
 
 .. image:: images/mist_on_moors.jpg
 

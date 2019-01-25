@@ -2,7 +2,7 @@
 Semaphore note
 **************
 
-.. cdoe-block:: c
+.. code-block:: c
     :caption: POSIX Semaphore APIs
 
     #include <semaphore.h>
