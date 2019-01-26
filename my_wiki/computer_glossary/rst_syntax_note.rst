@@ -4,64 +4,59 @@ reStructure Syntax FAQ
 
 #. Preserve line breaks while generating docs using Sphinx
 
-   Line blocks are a way of preserving line breaks::
+    Line blocks are a way of preserving line breaks.
    
-   | These lines are
-   | broken exactly like in
-   | the source file.
+    | These lines are
+    | broken exactly like in
+    | the source file.
    
-   Line blocks are useful for address blocks, verse (poetry, song lyrics),
-   and unadorned lists, where the structure of lines is significant. Line
-   blocks are groups of lines beginning with vertical bar ("|") prefixes. 
-   Each vertical bar prefix indicates a new line, so line breaks are preserved.
-   Initial indents are also significant, resulting in a nested structure.
-   Inline markup is supported. Continuation lines are wrapped portions of long lines;
-   they begin with a space in place of the vertical bar. The left edge of a continuation
-   line must be indented, but need not be aligned with the left edge of the text above it.
-   A line block ends with a blank line.
-   
-   This example illustrates continuation lines::
-   
-      | Lend us a couple of bob till Thursday.
-      | I'm absolutely skint.
-      | But I'm expecting a postal order and I can pay you back
-        as soon as it comes.
-      | Love, Ewan.
-   
-   This example illustrates the nesting of line blocks,
-   indicated by the initial indentation of new lines::
-   
-      Take it away, Eric the Orchestra Leader!
-      
-         | A one, two, a one two three four
-         |
-         | Half a bee, philosophically,
-         |     must, *ipso facto*, half not be.
-         | But half the bee has got to be,
-         |     *vis a vis* its entity.  D'you see?
-         |
-         | But can a bee be said to be
-         |     or not to be an entire bee,
-         |         when half the bee is not a bee,
-         |             due to some ancient injury?
-         |
-         | Singing...
-
-
 #. Suppress WARNING: document isn't included in any toctree
 
-   Add ``:orphan:`` directive before the titile.
+    Add ``:orphan:`` directive before the titile.
 
 #. Suppress WARNING: unknown option
    
-   add ``suppress_warnings`` build configure
-   to :file:`conf.py` ::
+    Add ``suppress_warnings`` build configure to :file:`conf.py`::
 
-      suppress_warnings = [
-         "ref.option"
-      ]
+        suppress_warnings = [
+           "ref.option"
+        ]
 
 #. Exclude certain file(s) from building
    
-   add file or file patterns to *exclude_patterns* in :file:`conf.py`.
+    Add file or file patterns to *exclude_patterns* in :file:`conf.py`.
+
+#. Write Makefile for documentation
    
+    Basically, Use python and sphinx, and set sphinx options::
+
+        # Minimal makefile for Sphinx documentation
+
+        # You can set these variables from the command line.
+        #SPHINXOPTS    = -W # treat warnings as errors
+        #SPHINXOPTS    = --keep-going # ignore error
+        SPHINXBUILD   = python -msphinx
+        SPHINXPROJ    = MyWiki
+        SOURCEDIR     = .
+        BUILDDIR      = build
+        
+        # Put it first so that "make" without argument is like "make help".
+        help:
+            @$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+        
+        .PHONY: help Makefile
+        
+        # workaround because sphinx does not completely clean up (#11139)
+        clean:
+            @$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+            rm -rf "$(SOURCEDIR)/build"
+            rm -rf "$(SOURCEDIR)/api/_as_gen"
+            rm -rf "$(SOURCEDIR)/gallery"
+            rm -rf "$(SOURCEDIR)/tutorials"
+            rm -rf "$(SOURCEDIR)/savefig"
+            rm -rf "$(SOURCEDIR)/sphinxext/__pycache__"
+        
+        # Catch-all target: route all unknown targets to Sphinx using the new
+        # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+        %: Makefile
+            @$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
