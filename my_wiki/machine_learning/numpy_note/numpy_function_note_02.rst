@@ -41,3 +41,28 @@ numpy Function Note 02
     Draw samples from a standard Normal distribution (mean=0, stdev=1).
 
     Same as `numpy.random.randn` but take tuple as input.
+
+.. function:: numpy.sum(a, axis=None, dtype=None, out=None, keepdims=<no value>, initial=<no value>)
+
+    Sum of array elements over a given axis.
+
+
+    .. code-block:: py
+
+        >>> np.sum([[0, 1], [0, 5]])
+        6
+        >>> np.sum([[0, 1], [0, 5]], axis=0)
+        array([0, 6])
+        >>> np.sum([[0, 1], [0, 5]], axis=1)
+        array([1, 5])
+        >>> np.sum([10], initial=5)
+        15
+        >>> np.sum([10], dtype=np.float32)
+        10.0
+
+
+.. function:: numpy.argmax(a, axis=None, out=None)
+.. function:: numpy.argmin(a, axis=None, out=None)
+
+    Returns the indices of the maximum/minimum values along an axis.
+    Same as `ndarray.argmax, argmin`.

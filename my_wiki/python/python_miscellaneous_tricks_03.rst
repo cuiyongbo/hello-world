@@ -165,4 +165,38 @@ Python Miscellaneous Tricks 03
         grp.getgrnam('staff')
         grp.struct_group(gr_name='staff', gr_passwd='*', gr_gid=20, gr_mem=['root', 'cherry'])
 
+#. python to list all submodules in a module
+   
+
+    .. code-block:: py
+
+
+        >>> import types
+        >>> for key, obj in sp.__dict__.items():
+        ...     if type(obj) is types.ModuleType:
+        ...         print(key)
+        ... 
+        char
+        rec
+        emath
+        math
+        random
+        ctypeslib
+        ma
+        _distributor_init
+        __config__
+        version
+        _lib
+        sparse
+        linalg
+        special
+        spatial
+        interpolate
+        misc
+        optimize
+        integrate
+        stats
+        fftpack
+        ndimage
+        signal
 
