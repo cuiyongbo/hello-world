@@ -4,10 +4,12 @@
 # You can set these variables from the command line.
 #SPHINXOPTS    = -W
 #SPHINXOPTS    = --keep-going
-SPHINXBUILD   = python -msphinx
+SPHINXOPTS    = 
+#SPHINXBUILD   = python -msphinx
+SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = MyWiki
 SOURCEDIR     = .
-BUILDDIR      = build
+BUILDDIR      = _build
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -18,7 +20,7 @@ help:
 # workaround because sphinx does not completely clean up (#11139)
 clean:
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	rm -rf "$(SOURCEDIR)/build"
+	rm -rf "$(SOURCEDIR)/_build"
 	rm -rf "$(SOURCEDIR)/api/_as_gen"
 	rm -rf "$(SOURCEDIR)/gallery"
 	rm -rf "$(SOURCEDIR)/tutorials"

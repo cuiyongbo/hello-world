@@ -6,7 +6,7 @@ Refer to `Mathjax Basic <https://math.meta.stackexchange.com/questions/5020/math
 for further information.
 
 .. contents::
-   :local:
+    :local:
 
 Greek Letters
 =============
@@ -37,7 +37,6 @@ Greek Letters
 | :math:`M \mu`             | mu      | :math:`\Omega \omega`     | omega   |
 +---------------------------+---------+---------------------------+---------+
 
-
 Binary Operation/Relation Symbols
 =================================
 
@@ -66,7 +65,6 @@ Binary Operation/Relation Symbols
 +----------------+--------+-------------------+-----------+
 | :math:`\equiv` | \equiv | :math:`\cong`     | \cong     |
 +----------------+--------+-------------------+-----------+
-
 
 Arrows
 ======
@@ -97,7 +95,6 @@ Arrows
 | :math:`\lfloor x \rfloor` |                  | :math:`\lceil x \rceil`    |                    |
 +---------------------------+------------------+----------------------------+--------------------+
 
-
 Miscellaneous symbols
 =====================
 
@@ -121,46 +118,44 @@ Miscellaneous symbols
 | :math:`\blacksquare` | \blacksquare | :math:`\triangle`   | \triangle   |
 +----------------------+--------------+---------------------+-------------+
 
-
 Special Functions
 =================
 
 #. Radical signs
    
-   Radical signs Use sqrt, which adjusts to the size of its argument: 
-   \sqrt{x^3} --> :math:`\sqrt{x^3};`
-   \sqrt[3]{\frac xy} --> :math:`\sqrt[3]{\frac xy}.`
-   For complicated expressions, consider using ``{...}^{1/2}`` instead.
+    Radical signs Use sqrt, which adjusts to the size of its argument: 
+    \sqrt{x^3} --> :math:`\sqrt{x^3};`
+    \sqrt[3]{\frac xy} --> :math:`\sqrt[3]{\frac xy}.`
+    For complicated expressions, consider using ``{...}^{1/2}`` instead.
 
 #. limit
    
-   Some special functions such as "lim", "sin", "max", "ln", and so on are normally 
-   set in roman font instead of italic font. Use ``\lim, \sin,`` etc. to make these: 
-   \sin x  --> :math:`\sin x.` Use subscripts to attach a notation to \lim: 
-   \lim_{x \to 0} --> :math:`\lim \limits_{x \to 0}`
+    Some special functions such as "lim", "sin", "max", "ln", and so on are normally 
+    set in roman font instead of italic font. Use ``\lim, \sin,`` etc. to make these: 
+    \sin x  --> :math:`\sin x.` Use subscripts to attach a notation to \lim: 
+    \lim_{x \to 0} --> :math:`\lim \limits_{x \to 0}`
 
 #. degree and radian
    
-   An acute angle is less than :math:`90^\circ`.
-   An right angle is exactly :math:`90^\circ`.
-   An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.
+    An acute angle is less than :math:`90^\circ`.
+    An right angle is exactly :math:`90^\circ`.
+    An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.
 
 #. dot sign
    
-   ``\cdot`` is a centered dot: :math:`x \cdot y` while ``\dot``, ``\ddot`` is used 
-   in deriatives: :math:`\dot x \ddot x`. 
+    ``\cdot`` is a centered dot: :math:`x \cdot y` while ``\dot``, ``\ddot`` is used 
+    in deriatives: :math:`\dot x \ddot x`. 
 
-   ``\ldots`` is the dots in :math:`a_1,a_2, \ldots ,a_n`. 
-   ``\cdots`` is the dots in :math:`a_1+a_2+ \cdots +a_n`. 
+    ``\ldots`` is the dots in :math:`a_1,a_2, \ldots ,a_n`. 
+    ``\cdots`` is the dots in :math:`a_1+a_2+ \cdots +a_n`. 
 
 #. Arbitrary operators
 
-   If an operator is not available as a built-in command, use ``\operatorname{…}.`` 
-   So for things like :math:`\operatorname{arsinh}(x)` write ``\operatorname{arsinh}(x).`` 
+    If an operator is not available as a built-in command, use ``\operatorname{…}.`` 
+    So for things like :math:`\operatorname{arsinh}(x)` write ``\operatorname{arsinh}(x).`` 
    
-   For operators which need limits above and below the operator, use ``\operatorname*{…},`` 
-   as in 
+    For operators which need limits above and below the operator, use ``\operatorname*{…},`` as in 
 
-   .. math::
+    .. math::
 
-      \operatorname*{Res}_{z=1}^{n} \left(\frac {1}{z^2-1}\right) = 1
+        \operatorname*{Res}_{z=1}^{n} \left(\frac {1}{z^2-1}\right) = 1
