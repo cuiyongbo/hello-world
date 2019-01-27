@@ -8,7 +8,7 @@ Memory-Mapped I/O APIs
 map or unmap files or devices into memory
 =========================================
 
-.. image:: ../images/fig_14_26.png
+.. image:: images/fig_14_26.png
 
 **DESCRIPTION**
 

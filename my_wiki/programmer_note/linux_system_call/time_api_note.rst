@@ -2,7 +2,7 @@
 Time APIs
 *********
 
-.. image:: ../images/fig_06_09.png
+.. image:: images/fig_06_09.png
 
 #. time - get time in seconds
 

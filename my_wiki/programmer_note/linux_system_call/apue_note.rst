@@ -1,6 +1,6 @@
-****************************************
-Advanced Programming in UNIX Programming
-****************************************
+*********
+APUE Note
+*********
 
 .. image:: images/program_memory_arrangement.png
 .. figure:: images/fig_14_26.png

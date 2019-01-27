@@ -4,7 +4,7 @@ Latex Symbol Note 02
 
 #. Radical signs
    
-    Radical signs Use sqrt, which adjusts to the size of its argument: 
+    Radical signs use sqrt, which adjusts to the size of its argument: 
     \sqrt{x^3} --> :math:`\sqrt{x^3};`
     \sqrt[3]{\frac xy} --> :math:`\sqrt[3]{\frac xy}.`
     For complicated expressions, consider using ``{...}^{1/2}`` instead.
@@ -63,6 +63,34 @@ Latex Symbol Note 02
         | ``\mathring``: :math:`\mathring{A}` 
 
 #. bracket and parenthesis
+   
+   ``\left`` and ``\right`` apply to all the following sorts of parentheses: ``(), [], \{\}, \|`` :math:`\{x\}` :math:`|y|` , 
+   ``\vert`` :math:`\vert x \vert`, ``\Vert`` :math:`\Vert x \Vert`, ``\langle`` and ``\rangle`` :math:`\langle x \rangle`, 
+   \lceil and \rceil :math:`\lceil x \rceil`, and \lfloor and \rfloor :math:`\lfloor x \rfloor`.
+   ``\middle`` can be used to add additional dividers. There are also invisible parentheses,
+   denoted by ``.``: :math:`\left.\frac12\right\rbrace`.
+
+   If manual size adjustments are required:
+    ``\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`` 
+    gives :math:`\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`
 
 #. matrix
    
+    Use ``\begin{matrix}...\end{matrix}`` in between the ``\begin`` and ``\end``, 
+    put the matrix elements, End each each matrix rou with ``\\``, and separate matrix 
+    elements with ``&``. e.g.
+
+    .. math::
+    
+        \begin{matrix}
+        1 & x & x^2 \\
+        1 & y & y^2 \\
+        1 & z & z^2 \\
+        \end{matrix}
+
+    To add brackets, either use ``\left...\right``, or replace ``matrix`` with 
+    ``pmatrix`` :math:`\begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix}`, 
+    ``bmatrix`` :math:`\begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix}`, 
+    ``Bmatrix`` :math:`\begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix}`, 
+    ``vmatrix`` :math:`\begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix}`, 
+    ``Vmatrix`` :math:`\begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix}`.
