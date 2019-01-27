@@ -32,21 +32,6 @@ numpy Function Note 01
             The type of the output array.  If `dtype` is not given, infer the data
             type from the other input arguments.
     
-    Returns::
-
-        samples : ndarray
-            There are `num` equally spaced samples in the closed interval
-            ``[start, stop]`` or the half-open interval ``[start, stop)``
-            (depending on whether `endpoint` is True or False).
-        step : float, optional
-           Size of spacing between samples. Only returned if `retstep` is True.
-
-    See Also::
-
-        arange : Similar to `linspace`, but uses a step size (instead of the
-                 number of samples).
-        logspace : Samples uniformly distributed in log space.
-        
     Examples::
 
         >>> np.linspace(2.0, 3.0, num=5)
@@ -95,22 +80,6 @@ numpy Function Note 01
             If `step` is specified as a position argument, `start` must also be given.
         dtype : dtype
             The type of the output array.
-    
-    Returns::
-
-        arange : ndarray
-            Array of evenly spaced values.
-        
-            For floating point arguments, the length of the result is
-            ``ceil((stop - start)/step)``. Because of floating point overflow,
-            this rule may result in the last element of `out` being greater
-            than `stop`.
-    
-    See Also::
-
-        linspace : Evenly spaced numbers with careful handling of endpoints.
-        ogrid: Arrays of evenly spaced numbers in N-dimensions.
-        mgrid: Grid-shaped arrays of evenly spaced numbers in N-dimensions.
     
     Examples::
 
