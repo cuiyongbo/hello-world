@@ -218,10 +218,27 @@ numpy Function Note 02
         >>> np.random.standard_normal((1, 5)).shape
         (1, 5)
 
+.. function:: numpy.random.randint(low, high=None, size=None, dtype='l')
+
+    Return random integers from `low` (inclusive) to `high` (exclusive).
+
+    Return random integers from the **discrete uniform distribution** of
+    the specified dtype in the "half-open" interval [`low`, `high`). If
+    `high` is None (the default), then results are from [0, `low`).
+
+    .. code-block:: py
+
+        >>> np.random.randint(2, 10)
+        2
+        >>> np.random.randint(2, size=10)
+        array([0, 1, 0, 0, 0, 0, 1, 0, 1, 1])
+        >>> np.random.randint(2, size=(2,2))
+        array([[0, 1],
+               [0, 0]])
+
 .. function:: numpy.random.standard_normal(size=None)
 
     Draw samples from a standard Normal distribution (mean=0, stdev=1).
-
     Same as `numpy.random.randn` but take tuple as input.
 
 .. function:: numpy.sum(a, axis=None, dtype=None, out=None, keepdims=<no value>, initial=<no value>)

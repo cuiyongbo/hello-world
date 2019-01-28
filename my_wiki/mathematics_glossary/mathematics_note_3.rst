@@ -26,10 +26,8 @@ Mathematics Notes 3
 
     .. math::
 
-        \left|
-        \begin{matrix}
+        \begin{vmatrix}
         \underline{a_{00}} & a_{01} & a_{02} \\
         a_{10} & \underline{a_{11}} & a_{12} \\
         a_{20} & a_{21} & \underline{a_{22}} \\
-        \end{matrix}
-        \right|
+        \end{vmatrix}
