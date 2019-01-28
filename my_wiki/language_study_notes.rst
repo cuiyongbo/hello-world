@@ -21,6 +21,7 @@ Language Study
    languages/english_notes_12
    languages/japanese_notes
    languages/japanese_notes_02
+   languages/japanese_notes_03
    languages/song_lyric_collection_01
    languages/song_lyric_collection_02
    languages/song_lyric_collection_03

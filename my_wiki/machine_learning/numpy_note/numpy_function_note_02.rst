@@ -144,13 +144,13 @@ numpy Function Note 02
             above the main diagonal, and `k<0` for diagonals below the main
             diagonal.
     
-    See Also
-    --------
-    diagonal : Return specified diagonals.
-    diagflat : Create a 2-D array with the flattened input as a diagonal.
-    trace : Sum along diagonals.
-    triu : Upper triangle of an array.
-    tril : Lower triangle of an array.
+    See Also::
+
+        diagonal : Return specified diagonals.
+        diagflat : Create a 2-D array with the flattened input as a diagonal.
+        trace : Sum along diagonals.
+        triu : Upper triangle of an array.
+        tril : Lower triangle of an array.
     
     Examples::
 
