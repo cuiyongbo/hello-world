@@ -10,6 +10,7 @@ Now Let's start it.
    machine_learning/machine_learning_concepts
    machine_learning/tensorflow_install_note
    machine_learning/blp_note
+   machine_learning/knn_note
    machine_learning/matplotlib_note
    machine_learning/numpy_notes
    

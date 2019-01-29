@@ -359,9 +359,8 @@ should store the result in a variable for later use. ::
    >>> m
    <re.Match object; span=(0, 5), match='tempo'>
 
-Now you can query the :ref:`match object <match-objects>` for information
-about the matching string.  Match object instances
-also have several methods and attributes; the most important ones are:
+Now you can query the :ref:`match object <match-objects>` for information about the matching string.  
+Match object instances also have several methods and attributes; the most important ones are:
 
 +------------------+---------------------------------------------+
 | Method/Attribute | Purpose                                     |
@@ -737,10 +736,10 @@ Grouping
 --------
 
 Frequently you need to obtain more information than just whether the RE matched
-or not.  Regular expressions are often used to dissect strings by writing a RE
+or not. Regular expressions are often used to dissect strings by writing a RE
 divided into several subgroups which match different components of interest.
 For example, an RFC-822 header line is divided into a header name and a value,
-separated by a ``':'``, like this::
+separated by a `:`, like this::
 
    From: author@example.com
    User-Agent: Thunderbird 1.5.0.9 (X11/20061227)
@@ -751,25 +750,20 @@ This can be handled by writing a regular expression which matches an entire
 header line, and has one group which matches the header name, and another group
 which matches the header's value.
 
-Groups are marked by the ``'('``, ``')'`` metacharacters. ``'('`` and ``')'``
-have much the same meaning as they do in mathematical expressions; they group
-together the expressions contained inside them, and you can repeat the contents
-of a group with a repeating qualifier, such as ``*``, ``+``, ``?``, or
-``{m,n}``.  For example, ``(ab)*`` will match zero or more repetitions of
-``ab``. ::
+Groups are marked by the ``()`` metacharacters, they group together the expressions 
+contained inside them, and you can repeat the contents of a group with a repeating qualifier, 
+such as ``*``, ``+``, ``?``, or ``{m,n}``. For example::
 
    >>> p = re.compile('(ab)*')
    >>> print(p.match('ababababab').span())
    (0, 10)
 
-Groups indicated with ``'('``, ``')'`` also capture the starting and ending
+Groups indicated with ``()`` also capture the starting and ending
 index of the text that they match; this can be retrieved by passing an argument
 to :meth:`~re.Match.group`, :meth:`~re.Match.start`, :meth:`~re.Match.end`, and
-:meth:`~re.Match.span`.  Groups are
-numbered starting with 0.  Group 0 is always present; it's the whole RE, so
-:ref:`match object <match-objects>` methods all have group 0 as their default
-argument.  Later we'll see how to express groups that don't capture the span
-of text that they match. ::
+:meth:`~re.Match.span`.  Groups are numbered starting with 0. Group 0 is always present; 
+it's the whole RE, so :ref:`match object <match-objects>` methods all have group 0 as 
+their default argument::
 
    >>> p = re.compile('(a)b')
    >>> m = p.match('ab')
@@ -778,9 +772,9 @@ of text that they match. ::
    >>> m.group(0)
    'ab'
 
-Subgroups are numbered from left to right, from 1 upward.  Groups can be nested;
+Subgroups are numbered from left to right, from 1 upward. Groups can be nested;
 to determine the number, just count the opening parenthesis characters, going
-from left to right. ::
+from left to right::
 
    >>> p = re.compile('(a(b)c)d')
    >>> m = p.match('abcd')
@@ -792,35 +786,27 @@ from left to right. ::
    'b'
 
 :meth:`~re.Match.group` can be passed multiple group numbers at a time, in which case it
-will return a tuple containing the corresponding values for those groups. ::
+will return a tuple containing the corresponding values for those groups::
 
    >>> m.group(2,1,2)
    ('b', 'abc', 'b')
 
 The :meth:`~re.Match.groups` method returns a tuple containing the strings for all the
-subgroups, from 1 up to however many there are. ::
+subgroups, from 1 up to however many there are ::
 
    >>> m.groups()
    ('abc', 'b')
 
 Backreferences in a pattern allow you to specify that the contents of an earlier
-capturing group must also be found at the current location in the string.  For
+capturing group must also be found at the current location in the string. For
 example, ``\1`` will succeed if the exact contents of group 1 can be found at
-the current position, and fails otherwise.  Remember that Python's string
-literals also use a backslash followed by numbers to allow including arbitrary
-characters in a string, so be sure to use a raw string when incorporating
-backreferences in a RE.
+the current position, and fails otherwise. e.g., the following RE detects doubled 
+words in a string. ::
 
-For example, the following RE detects doubled words in a string. ::
-
-   >>> p = re.compile(r'\b(\w+)\s+\1\b')
+   # always use a raw string
+   >>> p = re.compile(r'\b\s+(\w+)\1\b')
    >>> p.search('Paris in the the spring').group()
    'the the'
-
-Backreferences like this aren't often useful for just searching through a string
---- there are few text formats which repeat data in this way --- but you'll soon
-find out that they're *very* useful when performing string substitutions.
-
 
 Modifying Strings
 =================
@@ -948,8 +934,8 @@ Backreferences, such as ``\6``, are replaced with the substring matched by the
 corresponding group in the RE.  This lets you incorporate portions of the
 original text in the resulting replacement string.
 
-This example matches the word ``section`` followed by a string enclosed in
-``{``, ``}``, and changes ``section`` to ``subsection``::
+This example matches the word "section" followed by a string enclosed in
+``{}``, and changes "section" to "subsection"::
 
    >>> p = re.compile('section{ ( [^}]* ) }', re.VERBOSE)
    >>> p.sub(r'subsection{\1}','section{First} section{second}')

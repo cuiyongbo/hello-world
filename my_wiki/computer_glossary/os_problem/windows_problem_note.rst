@@ -201,9 +201,9 @@ Windows Problems
    Open **regedit** and locate to 
    ``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\BackupProductKeyDefault``.
 
-#. windows10 to refresh DNS cache.
+#. windows10 to refresh DNS cache or flush hosts changes.
    
-   Run ``ipconfig /flushdns``.
+   Run ``ipconfig /flushdns`` in CMD.
 
 #. vs cannot pass argument to python script in custom build tool
    

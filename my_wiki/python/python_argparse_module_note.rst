@@ -2,7 +2,6 @@
 Python argparse note
 ********************
 
-
 **EXAMPLES**
 
 .. code-block:: py
@@ -220,3 +219,50 @@ Python argparse note
         >>> parser.add_argument('--foo', default='badger')
         >>> parser.get_default('foo')
         'badger'
+
+#. mutually group to add default argument
+   
+
+#. custom action
+
+.. code-block:: py
+
+   class ClientAction(argparse.Action):
+    def __init__(self, option_strings, dest, nargs=None, **kwargs):
+        super(ClientAction, self).__init__(option_strings, dest, nargs=None, **kwargs)
+
+    def __call__(self, parser, namespace, values, option_string=None):
+        print("%r %r %r" % (namespace, values, option_string))
+        setattr(namespace, self.dest, 'hello')
+
+    if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(description='Get NavInfoIds in a route')
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('-i', '--intranet', action='store_true', help="send request to <%s> " % g_server_url_dict['intranet'])
+    group.add_argument('-o', '--internet', action='store_true', help="send request to <%s> " % g_server_url_dict['internet'])
+    group.add_argument('-l', '--local', action='store_true', help="send request to <%s> " % g_server_url_dict['local'])
+    group.add_argument('-n', '--ncbeta', action='store_true', help="send request to <%s> " % g_server_url_dict['ncbeta'])
+
+    #group.add_argument('-i', '--intranet', action=ClientAction, dest='server_type', help="send request to <%s> " % g_server_url_dict['intranet'])
+    #group.add_argument('-o', '--internet', action=ClientAction, dest='server_type', help="send request to <%s> " % g_server_url_dict['internet'])
+    #group.add_argument('-l', '--local', action=ClientAction, dest='server_type', help="send request to <%s> " % g_server_url_dict['local'])
+    #group.add_argument('-n', '--ncbeta', action=ClientAction, dest='server_type', help="send request to <%s> " % g_server_url_dict['ncbeta'])
+    #group.set_defaults(server_type='intranet')
+    #args = parser.parse_args(['-o',  '(11635660,4001864)', '(11635660,4001864)'])
+    #sys.exit(0)
+
+    parser.add_argument('start', help='route start point, e.g. (11635660,4001864)')
+    parser.add_argument('end', help='route end point, e.g. (11636104,4000891)')
+
+    args = parser.parse_args()
+    #print(args)
+
+    if args.intranet:
+        server_type = 'intranet'
+    elif args.internet:
+        server_type = 'internet'
+    elif args.local:
+        server_type = 'local'
+    elif args.ncbeta:
+        server_type = 'ncbeta'
