@@ -84,3 +84,7 @@ Mottoes
 -- 驱魔少年
 
 杀生的罪恶感会伴随一生。
+
+We have to honor the past, but we make our own future.
+
+-- Hotel Transylvania
