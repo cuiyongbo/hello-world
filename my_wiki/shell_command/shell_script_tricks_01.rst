@@ -22,12 +22,6 @@ Shell Script Tricks 01
       "redirect stderr to a file named 1." "&" indicates that what follows is a file 
       descriptor and not a filename.  
 
-#. use "-" in operand
-   
-   .. code-block:: sh
-
-      rm -- -bar
-
 #. Command line arguments
 
    .. code-block:: sh
@@ -277,21 +271,3 @@ Shell Script Tricks 01
       >>> proc_stat
       posix.stat_result(st_mode=16749, st_ino=180056677, st_dev=3L, st_nlink=9, st_uid=1013, 
       st_gid=1015, st_size=0, st_atime=1545814746, st_mtime=1545814746, st_ctime=1545814746)
-
-#. Call python script from shell script
-   
-   .. code-block:: sh
-
-      # Call shell script from another shell script
-      source `pwd`/reload.sh
-
-      # Call python script from shell script
-      python `pwd`/reload.py
-
-      # Call python script from another python script
-      import start # import start.py as module
-      def main():
-          if is_process_stopped(program_name):
-              return start.main() # call start.py function
-          else:
-              return reload_process(program_name)

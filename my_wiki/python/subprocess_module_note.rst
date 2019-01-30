@@ -1,6 +1,6 @@
-***************
-Subprocess note
-***************
+**********************
+Python Subprocess note
+**********************
 
 .. method:: subprocess.call(*popenargs, **kwargs)
 

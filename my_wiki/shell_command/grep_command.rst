@@ -369,6 +369,7 @@ grep Manual
    shell_command//binary_file_viewer.rst
    ...
 
+   # DON'T decent into subdirectories
    $ grep -rIH label .
    ./nan_test.py:plt.xlabel('time (s)')
    ./nan_test.py:plt.ylabel('voltage (mV)')
