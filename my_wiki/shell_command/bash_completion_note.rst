@@ -62,4 +62,4 @@ First, run ``apt list bash-completion`` check if **bash_completion** has been in
 
 .. [#] `Programmable Completion <http://www.gnu.org/software/bash/manual/bash.html#Programmable-Completion>`_
 .. [#] `Programmable Completion Builtins <http://www.gnu.org/software/bash/manual/bash.html#Programmable-Completion-Builtins>`_
-.. [#] `More examples < http://bash-completion.alioth.debian.org/>`_
+.. [#] `More examples <http://bash-completion.alioth.debian.org/>`_
