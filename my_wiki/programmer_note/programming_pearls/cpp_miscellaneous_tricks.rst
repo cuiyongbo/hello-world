@@ -6,53 +6,12 @@ C/C++ Miscellaneous Tricks
    :titlesonly:
 
    addressof_manual
-   macro_tricks
    extern_c_linkage
    cpp_smart_pointer
    cpp_allocator
    pointer_to_function_demo
    flexible_array_tricks
    cpp_std_map_notes
-   cpp_atomic_note
-
-.. contents::
-   :local:
-
-#. ``inline`` keyword
-
-   In the C and C++ programming languages, an inline function is one qualified with the keyword ``inline``; 
-   this serves two purposes:
-   
-      * Firstly, it serves as a compiler directive that suggests (but does not require) that the compiler 
-        substitute the body of the function inline by performing inline expansion, i.e. by inserting the 
-        function code at the address of each function call, thereby avoiding the overhead of a function call.
-        In this respect it is analogous to the register storage class specifier, which similarly provides 
-        an optimization hint. 
-   
-      * The second purpose of inline is to change linkage behavior; the details of this are complicated.
-        This is necessary due to the C/C++'s separate compilation + linkage model, specifically because 
-        the definition (body) of the function must be duplicated in all translation units where it is used,
-        to allow inlining during compiling, which, if the function has external linkage, causes a collision 
-        during linking (it violates uniqueness of external symbols). 
-   
-   Indiscriminate uses of inline function can result in larger code (bloated executable file), 
-   minimal or no performance gain, and in some cases even a loss in performance.
-   The compiler cannot inline the function in all circumstances, even when inlining is forced.
-   
-   Forcing inlining is useful if
-   
-      * inline is not respected by the compiler (ignored by compiler cost/benefit analyzer),
-      * inlining results in a necessary performance boost
-        
-   For code portability, the following preprocessor directives can be used::
-   
-      #ifdef _MSC_VER
-      #define forceinline __forceinline
-      #elif defined(__GNUC__)
-      #define forceinline __attribute__((always_inline)) inline
-      #else
-      #define forceinline inline
-      #endif
 
 #. ``sizeof`` operator
 
@@ -249,49 +208,4 @@ C/C++ Miscellaneous Tricks
       #endif
       #if defined(_MSC_VER)
       #  pragma warning(disable: 4068)
-      #endif
-
-#. ``explicit`` keyword
-   
-  The ``explicit`` specifier specifies that a constructor or conversion function is explicit, 
-  that is, it cannot be used for implicit conversions and copy-initialization.
-
-   A constructor with a single non-default parameter that is declared without 
-   the function specifier explicit is called a converting constructor.
-
-   .. code-block:: cpp
-
-      struct A
-      {
-          A(int) { }      // converting constructor
-          A(int, int) { } // converting constructor (C++11)
-          operator bool() const { return true; }
-      };
-       
-      struct B
-      {
-          explicit B(int) { }
-          explicit B(int, int) { }
-          explicit operator bool() const { return true; }
-      };
-       
-      int main()
-      {
-          A a1 = 1;      // OK: copy-initialization selects A::A(int)
-          A a2(2);       // OK: direct-initialization selects A::A(int)
-          A a3 {4, 5};   // OK: direct-list-initialization selects A::A(int, int)
-          A a4 = {4, 5}; // OK: copy-list-initialization selects A::A(int, int)
-          A a5 = (A)1;   // OK: explicit cast performs static_cast
-          if (a1) ;      // OK: A::operator bool()
-          bool na1 = a1; // OK: copy-initialization selects A::operator bool()
-          bool na2 = static_cast<bool>(a1); // OK: static_cast performs direct-initialization
-       
-      //  B b1 = 1;      // error: copy-initialization does not consider B::B(int)
-          B b2(2);       // OK: direct-initialization selects B::B(int)
-          B b3 {4, 5};   // OK: direct-list-initialization selects B::B(int, int)
-      //  B b4 = {4, 5}; // error: copy-list-initialization does not consider B::B(int,int)
-          B b5 = (B)1;   // OK: explicit cast performs static_cast
-          if (b2) ;      // OK: B::operator bool()
-      //  bool nb1 = b2; // error: copy-initialization does not consider B::operator bool()
-          bool nb2 = static_cast<bool>(b2); // OK: static_cast performs direct-initialization
-      }     
+      #endif    

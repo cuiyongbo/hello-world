@@ -1,13 +1,11 @@
-***********
-std::atomic
-***********
+***************
+CPP atomic note
+***************
 
 If one thread writes to an atomic object while another thread reads from it, 
 the behavior is well-defined (see `memory model <https://en.cppreference.com/w/cpp/language/memory_model>`_
 for details on data races). In addition, accesses to atomic objects may establish inter-thread synchronization 
-and order non-atomic memory accesses as specified by ``std::memory_order.``
-``std::atomic`` is neither copyable nor movable.
-
+and order non-atomic memory accesses as specified by ``std::memory_order``. ``std::atomic`` is neither copyable nor movable.
 
 .. code-block:: cpp
    :caption: a MSVC implementation
@@ -41,16 +39,3 @@ and order non-atomic memory accesses as specified by ``std::memory_order.``
          return _My_base::operator=(_Right);
       }
    };
-
-.. code-block:: cpp
-
-   class NonAssignable {
-   public:
-      // disallow copying or assignmentf
-      NonAssignable(NonAssignable const&) = delete; // 
-      NonAssignable& operator=(NonAssignable const&) = delete;
-      NonAssignable() {}
-   };
-
-   NonAssignable n1;
-   NonAssignable n2 = n1; 'NonAssignable::NonAssignable(const NonAssignable &)' : attempting to reference a deleted function

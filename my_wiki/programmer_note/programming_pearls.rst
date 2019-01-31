@@ -9,10 +9,7 @@ Simple, few parts, easy to maintain, and very strong.
 .. toctree::
    :titlesonly:
 
-   programming_pearls/cpp_output_format
-   programming_pearls/cpp_class_basics
-   programming_pearls/cpp_type_tricks
-   programming_pearls/cpp_string_literal
+   programming_pearls/cpp_notes
    programming_pearls/hacker_delight
    programming_pearls/reference_count
    programming_pearls/json_overview
@@ -21,5 +18,3 @@ Simple, few parts, easy to maintain, and very strong.
    memory_allocation/memory_allocation_hooks
    memory_allocation/memory_alignment
    memory_allocation/cpp_memory_layout
-   programming_pearls/cpp_miscellaneous_tricks
-

@@ -1,0 +1,102 @@
+************
+CPP Keywords
+************
+
+#. default
+   
+    * switch statement: as the declaration of the default case label.
+      
+    * explicitly-defaulted function definition: as an explicit instruction 
+      to the compiler to generate special member function or a comparison operator for a class
+
+    .. code-block:: c
+        :caption: GUN thread implementation
+
+        class thread
+        {
+            // ...
+            thread() noexcept = default;
+            thread(thread&) = delete;
+            thread(const thread&) = delete;
+        }
+
+#. delete
+   
+    * delete expression
+    * allocation functions as the name of operator-like functions
+    * deleted functions
+
+    .. note::
+
+        If the special syntax ``= delete``; is used, the function is defined as deleted. 
+        Any use of a deleted function is ill-formed (the program will not compile). 
+        This includes calls, both explicit (with a function call operator) and implicit 
+        (a call to deleted overloaded operator, special member function, allocation function etc), 
+        constructing a pointer or pointer-to-member to a deleted function, and even the use of 
+        a deleted function in an unevaluated expression. However, implicit ODR-use of a non-pure 
+        virtual member function that happens to be deleted is allowed.
+
+        If the function is overloaded, overload resolution takes place first, and the program 
+        is only ill-formed if the deleted function was selected::
+
+            struct sometype
+            {
+                void* operator new(std::size_t) = delete;
+                void* operator new[](std::size_t) = delete;
+            };
+            sometype* p = new sometype; // error: attempts to call deleted sometype::operator new
+
+        The deleted definition of a function must be the first declaration in a translation unit: 
+        a previously-declared function cannot be redeclared as deleted:
+
+            struct sometype { sometype(); };
+            sometype::sometype() = delete; // error: must be deleted on the first declaration
+
+#. explicit specifier
+   
+    Specifies that a constructor or conversion function is explicit, 
+    that is, it cannot be used for implicit conversions and copy-initialization.
+
+    .. code-block:: cpp
+
+        struct B
+        {
+            explicit B(int) { }
+            explicit B(int, int) { }
+            explicit operator bool() const { return true; }
+        };
+
+    .. note::
+
+        A constructor with a single non-default parameter that is declared 
+        without the function specifier explicit is called a **converting constructor**.
+
+#. inline
+
+    In the C and C++ programming languages, an inline function is one qualified with the keyword ``inline``; 
+    this serves two purposes:
+   
+        * Firstly, it serves as a compiler directive that suggests that the compiler  substitute the body 
+          of the function inline by performing inline expansion, i.e. by inserting the  function code at 
+          the address of each function call, thereby avoiding the overhead of a function call.
+   
+        * The second purpose of inline is to change linkage behavior; the details of this are complicated.
+          This is necessary due to the C/C++'s separate compilation and linkage model, specifically because 
+          the function body must be duplicated in all translation units where it is used, to allow inlining 
+          during compiling, which, if the function has external linkage, causes a collision during linking 
+          (it violates uniqueness of external symbols). 
+   
+    Indiscriminate uses of inline function can result in larger code (bloated executable file), 
+    minimal or no performance gain, and in some cases even a loss in performance.
+    The compiler cannot inline the function in all circumstances, even when inlining is forced.
+
+        
+    For code portability, the following preprocessor directives can be used::
+   
+        #ifdef _MSC_VER
+        #define forceinline __forceinline
+        #elif defined(__GNUC__)
+        #define forceinline __attribute__((always_inline)) inline
+        #else
+        #define forceinline inline
+        #endif

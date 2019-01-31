@@ -96,3 +96,7 @@ Preprocessor symbols
         // Line No: 28
         // Date: Sep  4 2018
         // Time: 23:06:22
+
+    .. note:: 
+
+        ``__FUNCTION__`` is non standard, ``__func__`` exists in C99 / C++11.

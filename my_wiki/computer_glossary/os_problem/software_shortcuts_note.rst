@@ -339,3 +339,43 @@ Sublime Text
 #. Find in files - Cmd + shift + F (mac)
 #. Insert Line After - Cmd + Enter
 #. Insert Line Before - Shift + Cmd + Enter (replace Cmd with Ctrl on windows)
+
+
+What's more
+-----------
+
+See the help message::
+
+$ ncserverctl.py -h
+usage: ncserverctl.py [-h] [-d SERVER_DIR]
+                      {start,stop,forcekill,restart,reload,status,test} ...
+                      SERVER_NAME
+
+Management of Ncserver
+
+positional arguments:
+  {start,stop,forcekill,restart,reload,status,test}
+    start               start program if it is not running
+    stop                stop program if it is running
+    forcekill           terminate program forcefully if it is running
+    restart             stop program if it is running, then start it
+    reload              reload program if it is running, otherwise start it
+    status              report program's current status
+    test                run tests about server
+  SERVER_NAME           module to be operated
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d SERVER_DIR, --directory SERVER_DIR
+                        directory where the server is resident, default to
+                        '/etc/ncserver'
+                        
+# see the help message of subcommand
+$ ncserverctl.py start -h
+usage: ncserverctl.py start [-h] [-c CHILD_COUNT]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c CHILD_COUNT, --child-count CHILD_COUNT
+                        Assign the worker processes's number to fork, default
+                        to 4
