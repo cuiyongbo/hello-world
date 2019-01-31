@@ -258,8 +258,39 @@ numpy Function Note 02
         >>> np.sum([10], dtype=np.float32)
         10.0
 
+.. function:: numpy.mean(a, axis=None, dtype=None, out=None, keepdims=<no value>)
+.. function:: numpy.std(a, axis=None, dtype=None, out=None, ddof=0, keepdims=<no value>)
+.. function:: numpy.var(a, axis=None, dtype=None, out=None, ddof=0, keepdims=<no value>)
+
+    Compute the arithmetic mean, standard deviation, variance along the specified axis.
+
+    Examples::
+
+        >>> a = np.array([[1, 2], [3, 4]])
+        >>> np.mean(a)
+        2.5
+        >>> np.mean(a, axis=0)
+        array([ 2.,  3.])
+        >>> np.mean(a, axis=1)
+        array([ 1.5,  3.5])
+
+.. function:: numpy.nanmean(a, axis=None, dtype=None, out=None, keepdims=<no value>)
+.. function:: numpy.nanstd(a, axis=None, dtype=None, out=None, ddof=0, keepdims=<no value>)
+.. function:: numpy.nanvar(a, axis=None, dtype=None, out=None, ddof=0, keepdims=<no value>)
+
+    Ditto, but ignoring NaNs.
+
 .. function:: numpy.argmax(a, axis=None, out=None)
 .. function:: numpy.argmin(a, axis=None, out=None)
 
     Returns the indices of the maximum/minimum values along an axis.
     Same as `ndarray.argmax, argmin`.
+
+
+  >>> a = np.array([[1, np.nan], [3, 4]])
+    >>> np.nanmean(a)
+    2.6666666666666665
+    >>> np.nanmean(a, axis=0)
+    array([ 2.,  4.])
+    >>> np.nanmean(a, axis=1)
+    array([ 1.,  3.5])

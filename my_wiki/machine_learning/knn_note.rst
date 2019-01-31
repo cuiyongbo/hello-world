@@ -14,6 +14,26 @@ K Nearest Neighbours Method
 
     Return probability estimates for the test data X.
 
+.. function:: sklearn.neighbors.classification.KNeighborsClassifier.score(X, y, sample_weight=None) 
+
+    Returns the mean accuracy on the given test data and labels.
+
+    Parameters::
+
+        X : array-like, shape = (n_samples, n_features)
+            Test samples.
+
+        y : array-like, shape = (n_samples) or (n_samples, n_outputs)
+            True labels for X.
+
+        sample_weight : array-like, shape = [n_samples], optional
+            Sample weights.
+
+    Returns::
+
+        score : float
+            Mean accuracy of self.predict(X) wrt. y.
+
 .. code-block:: py
 
     >>> from sklearn import neighbors
@@ -47,3 +67,15 @@ K Nearest Neighbours Method
         for match_str in code_match.findall(s):
             link_count_in_code += len(link_match.findall(match_str))
         return len(link_match.findall(s)) - link_count_in_code
+
+    from sklearn.cross_validation import KFold
+    scores = []
+    cv = KFold(n=len(X), k=10, indices=True)
+    for train, test in cv:
+        x_train, y_train = X[train], Y[train]
+        x_test, y_test = X[test], Y[test]
+        clf = neighbors.KNeighborsClassifier()
+        clf.fit(x_train, y_train)
+        scores.append(clf.score(x_test, y_test))
+    
+    print('Mean(scores)=%.5f\tStddev(scores)=%.5f'%(np.means(scores), np.std(scores)))
