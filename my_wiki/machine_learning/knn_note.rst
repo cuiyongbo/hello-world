@@ -59,8 +59,10 @@ K Nearest Neighbours Method
     >>> knn.predict_proba([[3.5]])
     array([[0.5, 0.5]])
 
-    code_match = re.compile('<pre>(.*?)</pre>', re.MULTILINE|re.DOTALL)
-    link_match = re.compile('<a href="http://.*?".*?>(.*?)</a>', re.MULTILINE|re.DOTALL)
+    code_match = re.compile(r'<pre>(.*?)</pre>', re.MULTILINE|re.DOTALL)
+    link_match = re.compile(r'<a href="http://.*?".*?>(.*?)</a>', re.M|re.S)
+    tag_match = re.compile(r'<[^>]*>', re.M|re.S)
+    img_match = re.compile(r'<img(.*?)/>', re.M|re.S)
     
     def extract_features_from_body(s):
         link_count_in_code = 0
@@ -79,3 +81,21 @@ K Nearest Neighbours Method
         scores.append(clf.score(x_test, y_test))
     
     print('Mean(scores)=%.5f\tStddev(scores)=%.5f'%(np.means(scores), np.std(scores)))
+
+    def extract_features_from_body(s):
+        num_code_lines = 0
+        link_count_in_code = 0
+        num_imgs = len(img_match.findall(s))
+        code_free_s = s
+        for match_str in code_match.findall(s):
+            num_code_lines += match_str.count('\n')
+            code_free_s = code_match.sub('', code_free_s)
+            link_count_in_code += len(link_match.findall(match_str))
+        links = link_match.findall(s)
+        link_count = len(links) - link_count_in_code
+        link_free_s = re.sub(' +', ' ', tag_match.sub('', code_free_s)).replace('\n', '')
+        for link in links:
+            if link.lower().startswith('http://'):
+                link_free_s = link_free_s.replace(link, '')
+        num_text_tokens = link_free_s.count(' ')
+        return num_text_tokens, num_code_lines, link_count, num_imgs

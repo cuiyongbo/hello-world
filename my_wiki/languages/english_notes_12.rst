@@ -92,6 +92,28 @@ English Note 12
 | reflection [倒影]
 | Usage: Marianne surveyed her reflection in the mirror.
 | Usage: he doesn't get much time for reflection. [consideration]
+|
+| golden
+| Usage: curls of glossy golden hair.
+| Usage: bake until golden.
+| Definition: (of a period) very happy and prosperous.
+| Usage: those golden days before World War I. [黄金时期]
+| Definition: (of an opportunity) very favorable.
+| Usage: a golden opportunity to boost foreign trade.
+| Definition: denoting the fiftieth year of something.
+| Usage: golden wedding anniversary. [金婚]
+| Usage: A silver wedding is known to be 25 years of marriage anniversary. [银婚]
+| 
+| compromise
+| Definition: settle a dispute by mutual concession.
+| Definition: cause to become vulnerable or funtion less effectively.
+| Usage: Last month’s leak of source code will not compromise your IT security.
+| Usage: I should compromise the matter with my parents.
+| 
+| trade-off
+| Definition: a balance achieved between two desirable but incompatible features; a compromise.
+| Usage: a fundamental trade-off between capitalist prosperity and economic security
+| 
 
 .. image:: images/mist_on_moors.jpg
 .. image:: images/foothill.jpg

@@ -2,7 +2,7 @@
 Preprocessor symbols
 ********************
 
-#. Preprocessor convert to string(#)
+#. Stringizing(#)
    
     .. code-block:: c
 
@@ -32,8 +32,21 @@ Preprocessor symbols
         static void pr_limits(char*, int);
         #define doit(name) pr_limits(#name, name)
 
+    .. code-block:: c
+        :caption: Taken from *GUN Documentation*
 
-#. Preprocessor concatenate(##)
+        #define WARN_IF(EXP) \
+        do { if (EXP) \
+                fprintf (stderr, "Warning: " #EXP "\n"); } \
+        while (0)
+
+        WARN_IF (x == 0);
+
+        // do { if (x == 0)
+        //           fprintf (stderr, "Warning: " "x == 0" "\n"); } while (0);
+        
+
+#. Token concatenation(##)
 
     .. code-block:: cpp
 
@@ -99,4 +112,29 @@ Preprocessor symbols
 
     .. note:: 
 
-        ``__FUNCTION__`` is non standard, ``__func__`` exists in C99 / C++11.
+        ``__FUNCTION__`` is non-standard, ``__func__`` exists in C99 / C++11.
+
+
+    .. code-block:: c
+        :caption: Taken from *GUN documentations* 
+    
+        struct Command
+        {
+            char *name;
+            void (*function) (void);
+        };
+        
+        #define COMMAND(NAME) { #NAME, NAME ## _func}
+        
+        struct Command commands[] = {
+            COMMAND(help),
+            COMMAND(quit),
+            // ...
+        };
+
+
+.. rubric:: Footnotes
+
+.. [#] `Stringizing(#) <https://gcc.gnu.org/onlinedocs/cpp/Stringizing.html#Stringizing>`_
+.. [#] `Token concatenation(##) <https://gcc.gnu.org/onlinedocs/cpp/Concatenation.html#Concatenation>`_
+.. [#] `Swallowing the Semicolon <https://gcc.gnu.org/onlinedocs/cpp/Swallowing-the-Semicolon.html#Swallowing-the-Semicolon>`_
