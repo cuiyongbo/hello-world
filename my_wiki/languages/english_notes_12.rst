@@ -80,7 +80,30 @@ English Note 12
 | 
 | par
 | Defintion: (Golf) the number of strkes a first-class player should normally require for a hole or course.
-
+| 
+| shadow [影子]
+| Usage: trees cast long shadows.
+| Usage: the shadow of war fell across Europe.
+| Definition: an inseparable attendant or companion.
+| Usage: her faithful shadow, a Yorkshire terrier called Heathcliffe.
+| Definition: follow and observe (someone) closely and secretly.
+| Usage: he had been up all night shadowing a team of poachers.
+| 
+| reflection [倒影]
+| Usage: Marianne surveyed her reflection in the mirror.
+| Usage: he doesn't get much time for reflection. [consideration]
 
 .. image:: images/mist_on_moors.jpg
+.. image:: images/foothill.jpg
+.. image:: images/sunrise.jpg
+.. image:: images/river.jpg
+.. image:: images/sea_side.jpg
+.. image:: images/water_reflection.jpg
 
+.. figure:: images/spring_festival_laterns.jpg
+
+   Laterns [灯笼]
+
+.. figure:: images/hot-air-balloon.jpg
+
+   Hot air balloon [热气球]

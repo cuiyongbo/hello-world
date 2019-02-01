@@ -392,3 +392,4 @@ The object being sensed is often referred to as the proximity sensor's target.
 
 .. image:: images/Rappel1.jpg
 .. image:: images/rappel-silhouette-vector.png
+.. image:: images/climb_iceberg.jpg
