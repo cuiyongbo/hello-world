@@ -18,6 +18,8 @@ J. S. Bach shares his given name with six immediate family
 members and many extended family members. He shares his family
 name, also known as surname, with most family members.
 
+| fiance [未婚夫] fiancee [未婚妻] suitor [求婚者]
+| 
 | past tense 过去式
 | past participle 过去分词
 | present participle 现在进行时
@@ -2263,10 +2265,6 @@ admitted the computer was named after his daughter.
 | Definition: demand or specify (a requirement), typically as part of bargain or agreement.
 | Usage: They donated their collection of prints with the stipulations that they will never be publicly exhibited.
 | 
-| elude
-| Definition: evade or escape from (a danger, enemy, or pursuer), typically in a skillful or cunning way.
-| Usage: He managed to elude his pursuers by escaping into an ally.
-| 
 | jiggle
 | Definition: shake something lightly up and down or from side to side.
 | Usage: He jiggled his head up and down when he spoke.
@@ -2799,11 +2797,6 @@ subjected to verbal and physical abuse over a period of years.
 | 
 | ingenuity
 | Definition: the ability to invent things or solve problems in a clever way. 
-| 
-| miserly
-| miser [吝啬鬼，守财奴]
-| Definition: a person who hoards wealth and spend as little money as possible.
-| Usage: His miserly great-uncle proved to be worth nearly $1 million.
 | 
 
 A :abbr:`PCC (police and crime commissioner)` had backed a proposal to

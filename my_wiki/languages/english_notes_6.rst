@@ -123,6 +123,19 @@ English Note 6
 | Definition: to walk in an awkward or lazy way, as if dragging your feet along the ground. 
 | Usage: he shambled off down the corridor.
 | 
+| stumble
+| Definition: trip or momentarily lose one's balance; almost fall. [蹒跚，踉跄]
+| Usage: I stumbled into the telephone box and dialed 911.
+| Definition: make a mistake or repeated mistakes in speaking.
+| Usage: She stumbled over the words. [结结巴巴]
+| 
+| stagger
+| Definition: to walk with weak unsteady steps, as if you are about to fall.
+| Usage: The injured woman staggered to her feet. 
+| Usage: The company is staggering under the weight of a £10m debt.
+| Definition: to shock or surprise sb very much.
+| Usage: It staggers me that the government is doing nothing about it.
+| 
 | clean slate
 | Definition: an absence of existing restraints or commitments.
 | Usage: no government starts with a clean slate.

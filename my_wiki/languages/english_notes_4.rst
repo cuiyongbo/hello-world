@@ -188,7 +188,7 @@ The object being sensed is often referred to as the proximity sensor's target.
 | 
 | bun
 | Definition: a bread roll of various shapes and flavorings, typically sweetened and often containing dried fruit.
-| Definition: a hairstyle in which the hair is drawn back into a tight coil at the back of the head.
+| Definition: a hairstyle in which the hair is drawn back into a tight coil at the back of the head. [丸子头]
 |
 | triangular
 | Definition: shaped like a triangle; having three sides and three corners.
@@ -200,7 +200,6 @@ The object being sensed is often referred to as the proximity sensor's target.
 .. image:: images/triangular_sanwitch.jpg
 .. image:: images/Plain-Baby-Bun.jpg
 .. image:: images/messy-bun-hairstyles.jpg
-
 
 | powder
 | powdery

@@ -231,14 +231,6 @@ English Notes 2
 | Definition: make (someone) unable to perceive the truth of a situation.
 | Usage: We got blindsided by our own government.
 | 
-| stumble
-| Definition: trip or momentarily lose one's balance; almost fall. [蹒跚，踉跄]
-| Usage: I stumbled into the telephone box and dialed 911.
-| Definition: make a mistake or repeated mistakes in speaking.
-| Usage: She stumbled over the words. [结结巴巴]
-| Definition: stumble across/on/upon
-| Usage: A policeman stumbled across a gang of youths.
-| 
 | extol
 | Definition: to praise (someone or something) enthusiastically.
 | Usage: He extolled the virtues of the Russian people.
@@ -499,6 +491,14 @@ in a number of Christian kingdoms.
 .. figure:: images/mannequin.png
 
     Mannequin [服装模特人偶]
+
+.. figure:: images/Bun-Heidi-Klum.jpg
+
+    Blond [金发女郎]
+
+.. figure:: images/zoey-deutch-aktrisa-bryunetka.jpg
+
+    Brunette [褐发女郎]
 
 #. morganatic
 

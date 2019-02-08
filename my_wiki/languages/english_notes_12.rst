@@ -136,6 +136,61 @@ English Note 12
 | Definition: harm the good reputation of (someone or something).
 | Usage: his remarks were taken out of context in an effort to discredit him.
 | Usage: they committed crimes that brought discredit upon the administration.
+| 
+| obstinacy
+| obstinate
+| Definition: stubbornly refusing to change one's opinion, despite attempts to persuade one to do so.
+| Usage: He can be very obstinate when he wants to be! [顽固，执拗]
+| Definition: difficult to get rid of or deal with.
+| Usage: the obstinate problem of unemployment.
+| 
+| pastor
+| parson
+| Synonyms: priest
+| 
+| parsonage
+| Definition: a parson's house.
+|
+| pulpit [布道席]
+| Defintion: a raised platform or lectern in a church or chapel from which the preacher delivers a sermon.
+| 
+| sermon [布道，说教]
+| Definition: a talk on a moral or religious subject, usually given by a religious leader during a service.
+| Definition: a long or tedious piece of admonition or reproof; a lecture.
+| 
+| preach
+| Definition: to give a religious talk in a public place, especially in a church during a service.
+| Usage: The minister preached a sermon on the parable of the lost sheep. 
+| Definition: to give sb advice on moral standards, behaviour, etc., especially in a way that they find annoying or boring.
+| Usage: I'm sorry, but I didn't mean to preach.
+| Idiom: preach to the converted/choir
+| Definition: To argue in favor of a viewpoint already held by one's audience.
+| Usage: You're preaching to the converted here—we all have kids and understand how busy life can get.
+| 
+| elude
+| Definition: evade or escape from (a danger, enemy, or pursuer), typically in a skillful or cunning way.
+| Usage: The two men managed to elude the police for six weeks.
+| Definition: (of an idea or fact) fail to be grasped or remembered by (someone).
+| Usage: Finally he remembered the tiny detail that had eluded him the night before. 
+| Definition: (of an achievement, or something desired or pursued) fail to be attained.
+| Usage: He was extremely tired but sleep eluded him. 
+| 
+| blight
+| Definition: a plant disease, especially one caused by fungi such as mildews, rusts, and smuts. [枯萎]
+| Usage: potato blight.
+| Definition: to spoil or damage sth, especially by causing a lot of problems.
+| Usage: His career has been blighted by injuries. 
+| 
+| candor
+| Definition: the quality of being open and honest in expression; frankness.
+| Usage: a man of refreshing candor.
+| 
+| miserly
+| miser [吝啬鬼，守财奴]
+| Definition: a person who hoards wealth and spend as little money as possible.
+| Usage: His miserly great-uncle proved to be worth nearly $1 million.
+| 
+| close-fisted: unwilling to spend money.
 
 .. figure:: images/taproom_01.jpg
 
@@ -167,3 +222,4 @@ English Note 12
 .. figure:: images/1958_MercedesBenz_220SE_Cabriolet.jpg
 
     Cabriolet [敞篷车]
+
