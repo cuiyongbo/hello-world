@@ -114,6 +114,39 @@ English Note 12
 | Definition: a balance achieved between two desirable but incompatible features; a compromise.
 | Usage: a fundamental trade-off between capitalist prosperity and economic security
 | 
+| illustrious
+| Definition: well known, respected, and admired for past achievements.
+| Usage: His illustrious predecessor.
+| 
+| defame
+| Definition: damage the good reputation of (someone); slander or libel.
+| Usage: He claimed that the article defamed his family.
+| 
+| slander [诽谤]
+| Definition: The action or crime of making a false spoken statement damaging to a person’s reputation.
+| Usage: He is suing the TV network for slander.
+| Usage: He angrily accused the investigators of slandering both him and his family. 
+| Usage: I've had just about all I can stomach of your slanders.
+|  
+| libel [恶意中伤]
+| Definition: A pulished false statement that is damaging to a person’s reputation; a written defamation.
+| Usage: The councilor who sued two national newspaper for libel.
+| 
+| discredit
+| Definition: harm the good reputation of (someone or something).
+| Usage: his remarks were taken out of context in an effort to discredit him.
+| Usage: they committed crimes that brought discredit upon the administration.
+
+.. figure:: images/taproom_01.jpg
+
+    Taproom [酒吧间]
+
+    A room where alcoholic drinks, especially beer, are available on tap; 
+    a bar in a hotel or inn.
+
+.. figure:: images/Bamboo_Izakaya.jpg
+
+    居酒屋「いざかや」
 
 .. image:: images/mist_on_moors.jpg
 .. image:: images/foothill.jpg
@@ -129,3 +162,8 @@ English Note 12
 .. figure:: images/hot-air-balloon.jpg
 
    Hot air balloon [热气球]
+
+.. image:: images/medieval_cabriolet.png
+.. figure:: images/1958_MercedesBenz_220SE_Cabriolet.jpg
+
+    Cabriolet [敞篷车]

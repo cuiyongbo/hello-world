@@ -284,19 +284,6 @@ Military Terms
 | Usage: Ascending the shaky ladder to the scaffold, More addressed the executioner.
 | Definition: A scaffold is a temporary raised platform on which workers stand to paint, repair, or build high parts of a building.
 | 
-| defame
-| Definition: damage the good reputation of (someone); slander or libel.
-| Usage: He claimed that the article defamed his family.
-| 
-| slander [诽谤]
-| Definition: The action or crime of making a false spoken statement damaging to a person’s reputation.
-| Usage: He is suing the TV network for slander.
-| Usage: I ‘ve had just about all I can stomach of your slanders.
-|  
-| libel [恶意中伤]
-| Definition: A pulished false statement that is damaging to a person’s reputation; a written defamation.
-| Usage: The councilor who sued two national newspaper for libel.
-| 
 | precinct
 | Definition: one of the parts into which a town or city is divided in order to organize elections. [选区]
 | Definition: a part of a city that has its own police station. [派出所]

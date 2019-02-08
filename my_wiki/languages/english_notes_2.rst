@@ -61,17 +61,7 @@ English Notes 2
 | 
 | svelte
 | Definition: (of a person) slender and elegant.
-| 
-| jersey [ジャージー服] [运动服]
-| Definition: a knitted garment with long sleeves worn over the upper body.
-| camisole [キャミソール] [(背心式)女内衣]
-| Definition: a short piece of women's underwear that is worn on the top half of the body and is held up with narrow strips of material over the shoulders.
-| hakama
-| Definition: loose trousers with many pleats in the front, forming part of Japaness formal dress.
-| button-down
-| Definition: (of a collar) having points that are buttoned to the garment.
-| Definition: (of a person) conservative or unimaginative.
-| 
+|
 | toggle
 | Definition: a short rod of wood or plastic sewn to one side of a coat or other garment, pushed through a hole or loop on the other side and twisted so as to act as a fastener.
 | Definition: a pin or other crosspiece put through the eye of a rope or a link of a chain to keep it in place.
@@ -79,47 +69,16 @@ English Notes 2
 | Definition: (computing) switch from one effect, feature, or state to another by using a toggle. [切换，开关]
 | Usage: the play/pause button toggles between those functions.
 | Usage: there are a number of attributes which can be toggled on or off.
-| 
-| attire
-| Definition: clothes, especially fine or formal ones.
-| Usage: holiday attire.
-| Usage: Donna was attired in an elaborate evening gown.
 
 .. image:: images/toggle.jpg
 .. image:: images/clothe_toggle.jpg
 .. image:: images/Wool-Toggle-Coat.jpeg
 
-.. image:: images/hakama.png
-.. image:: images/jersey.jpg
-.. image:: images/camisole.jpeg
-.. image:: images/difference-between-a-button-up-and-a-button-down-shirt.jpg
-.. figure:: images/Red-Velvet-Skater-Dress.jpg
-
-   Velvet 天鹅绒
-
-.. figure:: images/scarlett_coat.jpg
-
-   Scarlet 猩红色
-
-.. figure:: images/balenciaga-red-suspended-tunic.jpg
-
-   Tunic 女士的束腰外衣
-
-.. figure:: images/mattress.png
-   
-   Mattress 床垫
-
-|
-| pane [橱柜]
-| Definition: A single sheet of glass in a window or door.
-| mannequin
-| Definition: A mannequin is a life-sized model of a person which is used to display clothes, especiall in shop windows.
-| Definition: A mannequin is a person who displays clothes, hats, or shoes by wearing them, especially in fashion shows or in fashion photographs.
-| Synonyms: model
-
-.. image:: images/isabelle-daeron-window-display.jpg
-.. image:: images/mannequin.png
-
+| 
+| attire
+| Definition: clothes, especially fine or formal ones.
+| Usage: holiday attire.
+| Usage: Donna was attired in an elaborate evening gown.
 |
 | coffer
 | Definition: a strongbox used to store money or valuable things. [保险柜，金库]
@@ -488,6 +447,58 @@ in a number of Christian kingdoms.
 .. figure:: images/tooth_cleaner.jpg
 
    toothpaste and toothbrush
+
+.. figure:: images/shirt_cuff.jpg
+
+    Cuff [衬衣袖口]
+
+.. figure:: images/white_jabot.jpg
+
+    Jabot [女衬胸饰]
+
+.. figure:: images/japanese_kimono.jpg
+
+    着物「きもの」
+
+.. figure:: images/hakama.png
+
+    袴「はかま」
+    
+.. figure:: images/jersey.jpg
+
+    Jersey [ジャージー服]
+
+.. figure:: images/camisole.jpeg
+
+    Camisole [女式背心内衣]
+
+.. figure:: images/difference-between-a-button-up-and-a-button-down-shirt.jpg
+
+    Difference between a button-up and a button-down shirt
+
+.. figure:: images/Red-Velvet-Skater-Dress.jpg
+
+   Velvet [天鹅绒]
+
+.. figure:: images/scarlett_coat.jpg
+
+   Scarlet [猩红色]
+
+.. figure:: images/balenciaga-red-suspended-tunic.jpg
+
+   Tunic [女士的束腰外衣]
+
+.. figure:: images/mattress.png
+   
+   Mattress 床垫
+
+.. figure:: images/isabelle-daeron-window-display.jpg
+
+    Pane [橱柜]
+
+.. figure:: images/mannequin.png
+
+    Mannequin [服装模特人偶]
 
 #. morganatic
 
