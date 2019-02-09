@@ -191,6 +191,25 @@ English Note 12
 | Usage: His miserly great-uncle proved to be worth nearly $1 million.
 | 
 | close-fisted: unwilling to spend money.
+| 
+| deprave
+| depravity
+| depravation
+| Definition: make sb immoral or wicked.
+| Usage: this book would deprave and corrupt young children.
+| Usage: a life of depravity.
+| 
+| divine
+| Definition: coming from or connected with God.
+| Usage: divine will.
+| Definition: to find out sth by guessing.
+| Usage: She could divine what he was thinking just by looking at him.
+| Definition: to search for underground water using a stick in the shape of a Y, called a divining rod.
+
+.. image:: images/divining-rod-dowsing.jpg
+.. figure:: images/water-dowsing.jpg
+
+    Water witching Dowsing Rods
 
 .. figure:: images/taproom_01.jpg
 

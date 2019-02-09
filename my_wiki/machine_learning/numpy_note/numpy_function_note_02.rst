@@ -284,13 +284,44 @@ numpy Function Note 02
 .. function:: numpy.argmin(a, axis=None, out=None)
 
     Returns the indices of the maximum/minimum values along an axis.
+    By default, the index is into the flattened array if axis is None.
     Same as `ndarray.argmax, argmin`.
 
+.. function:: ndarray.flat
+.. function:: ndarray.flatten(order='C')
+    
+    `ndarray.flat` returns a flat iterator over an array;
+    `ndarray.flatten` returns a flattened copy of an array.
 
-  >>> a = np.array([[1, np.nan], [3, 4]])
-    >>> np.nanmean(a)
-    2.6666666666666665
-    >>> np.nanmean(a, axis=0)
-    array([ 2.,  4.])
-    >>> np.nanmean(a, axis=1)
-    array([ 1.,  3.5])
+    .. code-block:: py
+
+        >>> a = np.random.rand(4,4)
+        >>> a.min(), a.max()
+        (0.09135296252158254, 0.9401144780963407)
+        >>> a.argmin(), a.argmax()
+        (9, 11)
+        >>> a.flatten()[9]
+        0.09135296252158254
+        >>> a.flatten()[11]
+        0.9401144780963407
+
+        >>> for x in a.flat:
+                print(x)
+
+.. function:: ndarray.all(axis=None, out=None, keepdims=False)
+.. function:: ndarray.any(axis=None, out=None, keepdims=False)
+    
+    `ndarray.all` returns True if all elements evaluate to True.
+    `ndarray.any` returns True if any of the elements of array evaluate to True.
+
+    .. code-block:: py
+
+        >>> np.zeros((2,2)).any()
+        False
+        >>> a = np.array([1, 2, 3, 2])
+        >>> b = np.array([2, 2, 3, 2])
+        >>> c = np.array([6, 4, 4, 5])
+        >>> ((a<=b)&(b<=c)).all()
+        True
+        >>> np.any(a>2)
+        True
