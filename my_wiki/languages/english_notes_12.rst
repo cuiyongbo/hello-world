@@ -93,6 +93,11 @@ English Note 12
 | Usage: Marianne surveyed her reflection in the mirror.
 | Usage: he doesn't get much time for reflection. [consideration]
 |
+| silhouette [轮廓，侧影]
+| Definition: the dark outline or shape of a person or an object that you see against a light background.
+| Usage: The mountains stood out in silhouette.
+| Usage: A figure stood in the doorway, silhouetted against the light. 
+| 
 | golden
 | Usage: curls of glossy golden hair.
 | Usage: bake until golden.
@@ -205,6 +210,41 @@ English Note 12
 | Definition: to find out sth by guessing.
 | Usage: She could divine what he was thinking just by looking at him.
 | Definition: to search for underground water using a stick in the shape of a Y, called a divining rod.
+|
+| complacent
+| complacency [自鸣得意，满不在乎]
+| Definition: too satisfied with oneself or one's achievements.
+| Usage: You can't afford to be complacent about security.
+| 
+| vulgar [下流，粗俗]
+| Definition: lacking sophistication or good taste.
+| Usage: She found their laughter and noisy games coarse and rather vulgar. 
+| Definition: making explicit and offensive reference to sex or bodily functions.
+| Usage: a vulgar joke. 
+| 
+| flaunt
+| Definition: to show sth you are proud of to other people, in order to impress them.
+| Usage: She openly flaunted her affair with the senator. 
+| Idiom: if you've got it, flaunt it [是骡子是马，拉出来溜溜]
+| Definition: used to tell sb that they should not be afraid of allowing other people to see their qualities and abilities.
+| 
+| reticent
+| reticence
+| Definition: not revealing one's thoughts or feelings readily.
+| Usage: she was extremely reticent about her personal affairs.
+| 
+| meticulous
+| Definition: showing great attention to detail; very careful and precise.
+| Usage: he had always been so meticulous about his appearance.
+| Usage: Their room had been prepared with meticulous care. 
+| 
+| Stone Age --> Bronze Age --> Iron Age
+| 
+| congenial [意气相投]
+| Definition: pleasant to spend time with because their interests and character are similar to your own.
+| Usage: everyone crave for congenial companies.
+| Usage: he went back to a climate more congenial to his cold stony soul.
+| 不如意事常八九，可与言者无二三
 
 .. image:: images/divining-rod-dowsing.jpg
 .. figure:: images/water-dowsing.jpg
@@ -242,3 +282,6 @@ English Note 12
 
     Cabriolet [敞篷车]
 
+.. figure:: images/marrionette.png
+
+    Marrionette [牵线人偶]

@@ -46,6 +46,12 @@ English Notes 5
 | Definition: in a difficult and awkward situation.
 | Usage: Caroline had sure as hell got herself into a pickle this time.
 | 
+| leaven [酵母, 催化剂]
+| Definition: a substance, typically yeast, that is added to dough to make it ferment and rise.
+| Definition: a pervasive influence that modifies something or transforms it for the better.
+| Usage: A few jokes add leaven to a boring speech. 
+| Usage: they acted as an intellectual leaven to the warriors who dominated the city.
+| 
 | churn
 | Definition: a machine or container in which butter is made by agitating milk or cream.
 | Phrase: churn something out

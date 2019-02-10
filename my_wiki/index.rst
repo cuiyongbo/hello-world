@@ -13,6 +13,8 @@ Welcome to My Wiki's documentation!
     pending_tasks
     book_reading_progress_note
     computer_glossary
+    data_structure_note
+    algorithm_docs
     shell_commands
     programmer_note
     python_note

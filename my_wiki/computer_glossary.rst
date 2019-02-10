@@ -12,8 +12,6 @@ Computer Glossary
     computer_glossary/computer_terminology
     computer_glossary/computer_terminology_2
     computer_glossary/computer_terminology_3
-    computer_glossary/data_structure_note
-    computer_glossary/algorithm_docs
     computer_glossary/unix_concepts_note
     computer_glossary/segmentation_fault_cracks
     computer_glossary/rst_syntax_note

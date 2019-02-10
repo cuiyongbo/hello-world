@@ -419,6 +419,9 @@ English Note 7
 | Definition: highly experienced, practiced, or skilled; very knowledgeable; learned.
 | Usage: He is a well-versed scholar on the subject of biblical literature.
 | 
+| erudition
+| Definition: great academic knowledge.
+| 
 | polymath
 | polymathic 
 | Definition: a person of wide-ranging knowledge or learning.

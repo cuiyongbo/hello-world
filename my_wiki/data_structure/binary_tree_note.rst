@@ -4,6 +4,14 @@ Binary Tree
 
 Thinking for an hour and coding for an hour.
 
+**Rooted-tree property**
+
+The number of children of a node x in a rooted tree T equals the **degree** of x. 
+The length of the simple path from the root r to a node x is the **depth** of x in T. 
+A **level** of a tree consists of all nodes at the same depth. The **height** of a node 
+in a tree is the number of edges on the longest simple downward path from the node to a leaf, 
+and **the height of a tree is the height of its root.** 
+
 **binary-search-tree property**
 
 Let x be a node in a binary search tree. If y is a node in the left subtree

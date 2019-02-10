@@ -497,17 +497,10 @@ Dystopia
 | Definition: If a country annexes another country or an area of land, it seizes it and take control of it.
 | Usage: Indonesia's annexation of East Timor has never won the acceptance of the UN.
 | 
-| complacent
-| complacency
-| Definition: showing smug or uncritical satisfication with oneself or one's achievements.
-| Synonyms: self-satisfied
-| Usage: You can't afford to be complacent about security.
-| 
 | vigilante [义警]
 | Definition: a member of a self-appointed group of citizens who undertake law enforcement in their community without legal authority, typically because the legal agencies are thought to be inadequate.
 | 
-| memorandum
-| Plural: memoranda
+| memorandum (pl. memoranda)
 | Definition: a written message, especially in business or diplomacy.
 | Definition: a note or record made for future use.
 | Usage: The two countries signed a memorandum of understanding on economic cooperation. [备忘录]

@@ -3,7 +3,7 @@ Greedy algorithms
 *****************
 
 **Greedy-choice property**: we can assemble a globally optimal solution 
-by making locally optimal (greedy) choices. 
+by making locally optimal choices. 
 
 A problem exhibits **optimal substructure** if an optimal solution 
 to the problem contains within it optimal solutions to subproblems.
