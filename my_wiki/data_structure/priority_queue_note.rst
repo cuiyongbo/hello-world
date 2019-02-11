@@ -16,12 +16,9 @@ Priority Queue
                 largest = l
             if r <= A.length and A[r] > A[largest]
                 largest = r
-    
-            if largest == i
-                    break
-
-            swap(A[i], A[largest])
-            Max-Heapify-siftDown(A, largest)
+            if largest != i
+                swap(A[i], A[largest])
+                Max-Heapify-siftDown(A, largest)
 
         Heap-Maximum(A)
             return A[1]
@@ -128,12 +125,11 @@ Priority Queue
             return min
 
         Min-Heapify-siftDown(A, i)
-            l = Left(i)
-            smallest = i
+            l, smallest = Left(i), i
             if l <= A.heap_size and A[l] < A[smallest]
                 smallest = l
             if l+1 <= A.heap_size and A[l+1] < A[smallest]
-                smallest = r
+                smallest = l+1
             if smallest != i
                 swap(A[smallest], A[i])
                 Min-Heapify-siftDown(A, smallest)
@@ -144,9 +140,17 @@ Priority Queue
                 error("new key is larger than current key") 
             A[i] = key
             # A[i, A.heap_size] maintains the heap property
-           while i > 1 and A[Parent(i)] > A[i]
-              swap(A[Parent(i)], A[i])
-              i = Parent(i)
+            while i > 1 and A[Parent(i)] > A[i]
+                swap(A[Parent(i)], A[i])
+                i = Parent(i)
+
+        Heap-Decrease-to-key_2(A, i, k)
+            if key > A[i]
+                error("new key is larger than current key")   
+            while i>1 and A[Parent(i)] > k
+                A[i] = A[Parent(i)]
+                i = Parent(i)
+            A[i] = k
       
         # O(log n)
         Min-Heap-insert(A, key)

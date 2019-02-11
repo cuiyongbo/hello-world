@@ -88,3 +88,11 @@ Mottoes
 We have to honor the past, but we make our own future.
 
 -- Hotel Transylvania
+
+人生五十年，如梦亦如幻。有生方有死，壮士何所憾。
+
+-- 织田信长
+
+力拔山兮气盖世。时不利兮骓不逝。骓不逝兮可奈何！虞兮虞兮奈若何！
+
+-- 项羽

@@ -245,6 +245,35 @@ English Note 12
 | Usage: everyone crave for congenial companies.
 | Usage: he went back to a climate more congenial to his cold stony soul.
 | 不如意事常八九，可与言者无二三
+| 
+| compassion
+| compassionate
+| Definition: feeling or showing sympathy for people who are suffering.
+| Usage: He was allowed to go home on compassionate grounds.
+| 
+| melancholy
+| melancholia
+| Definition: a deep feeling of sadness that lasts for a long time and often cannot be explained.
+| Usage: A mood of melancholy descended on us. 
+| Usage: rain slithered down the windows, encouraging a creeping melancholia.
+| 
+| reprove [责备，非难]
+| Definition: to tell sb that you do not approve of sth that they have done.
+| Usage: He reproved her for rushing away. 
+| 
+| delude [deceive]
+| delusive
+| delusion 
+| Definition: a false belief or opinion about yourself or your situation
+| Usage: the delusions of the mentally ill.
+| Usage: too many theorists have deluded the public.
+| Idiom: delusions of grandeur
+| Definition: a false impression of one's own importance.
+| Usage: Don't go getting delusions of grandeur
+| 
+| daemon [神祇]
+| demigod [半神]
+| Definition: some Roman emperors claimed descent from demigods such as Hercules.
 
 .. image:: images/divining-rod-dowsing.jpg
 .. figure:: images/water-dowsing.jpg

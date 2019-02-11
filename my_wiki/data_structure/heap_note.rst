@@ -56,16 +56,11 @@ heapsort can be used to sort an array **in-place.**
 .. code-block:: none
     :caption: Taken from **Introduction to Algorithms**
 
-    Parent(i):
-        return i/2
-
-    Left(i):
-        return 2*i
-
-    Right(i):
-        return 2*i + 1
+    Parent(i): return i/2
+    Left(i): return 2*i
+    Right(i): return 2*i + 1
     
-    siftDown(A, i):
+    siftDown(A, i)
         l, r = Left(i), Right(i)
         largest = i
         if l <= A.heap_size and A[l] > A[i]

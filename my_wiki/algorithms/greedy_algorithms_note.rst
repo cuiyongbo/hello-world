@@ -54,5 +54,5 @@ In the **activity-selection problem**, we wish to select a maximum-size subset o
                 z.left = Extract-Min(Q) // O(log n)
                 z.right = Extract-Min(Q) 
                 z.freq = z.left.freq + z.right.freq
-                insert(Q, z)
+                Insert(Q, z)
             return Extract-Min(Q) // return the root of the tree
