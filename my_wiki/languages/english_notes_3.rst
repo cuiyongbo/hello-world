@@ -4,6 +4,12 @@ English Notes 3
 
 **读未见书，如得良友；见已读书，如逢故人。**
 
+.. image:: images/wood-grain.jpg
+.. image:: images/Brown-wood-grain.jpg
+.. figure:: images/stump.jpg
+
+   Stump 树桩
+
 | grain
 | Definition: The longitudinal arrangement or pattern of fibres in wood, paper, etc.
 | Usage: He scored along the grain of the table with the knife.
@@ -19,19 +25,13 @@ English Notes 3
 | Defintion: to view something with scepticism or not to interpret something literally.
 | Usage: You must take anything she says with a grain of salt. She doesn't always tell the truth.
 | Usage: Take whatever that paper publishes with a pinch of salt—it's really a tabloid.
-
-.. image:: images/wood-grain.jpg
-.. image:: images/Brown-wood-grain.jpg
-.. figure:: images/stump.jpg
-
-   Stump 树桩
-
 | 
 | quibble
+| quibbler [喋喋不休，咬文嚼字的人]
 | Definition: a slight objection or criticism. 
 | Usage: the only quibble about this book is the price.
 | Definition: argue or raise objections about a trivial matter. 
-| Usage: they are always quibbling about the amount they are prepared to pay.
+| Usage: they are always quibbling about the amount they are prepared to pay. [讨价还价]
 | 
 | par
 | Definition: the number of strokes a first-class player should normally require for a particular hole or course.
@@ -260,6 +260,12 @@ English Notes 3
 | Definition: connect or link (two or more things) closely.
 | Usage: Dickens has been very clever to intertwine all these aspects and ideas.
 | Usage: Our fates have been entwined, Elizabeth, but never joined.
+| 
+| tangle
+| Definition: a twisted mass of threads, hair, etc. that cannot be easily separated
+| Usage: Her hair was a mass of tangles. 
+| Usage: His financial affairs are in a tangle. 
+| Usage: She had tangled up the sheets on the bed as she lay tossing and turning. 
 | 
 | parenthesis
 | Definition: an interlude or interval.

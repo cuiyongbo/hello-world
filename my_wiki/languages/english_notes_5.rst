@@ -33,8 +33,32 @@ English Notes 5
 | Definition: make (a dish or meal) by combining various ingredients. [杂烩？]
 | Usage: they concoct relish from corn that is so naturally sweet no extra sugar is needed.
 | Definition: create or devise (said especially of a story or plan). [杜撰，编造事实]
-| Synonyms: make up.
 | Usage: She concocted some elaborate story to explain her absence.
+| 
+| poach
+| Definition: cook (an egg), without its shell, in or over boiling water.
+| Definition: to cook food, especially fish, gently in a small amount of liquid. [煎，炖]
+| Definition: illegally hunt on land that is not one’s own, or in contravention of offical protection. [盗猎，偷猎]
+| Usage: The elephants are poached for their tusks.
+| Idiom: poach on someone’s territory [私闯民宅]
+| 
+| stuff
+| Definition: to fill a vegetable, chicken, etc. with another type of food. [填料]
+| Usage: Will you stuff the turkey and shove it in the oven for me?
+| Definition: If a dead animal is stuffed, it is filled with a substance so that it can be preserved and display.
+| Usage: He didn't much care for the stuffed animal heads that hung on the walls.
+| Definition: If you stuff yourself, you eat a lot of food.
+| Usage: But you're just so stuffed you won't be able to drink anything.
+|
+| bland
+| Definition: lacking strong features or characteristics and therefore uninteresting.
+| Usage: Rebelling against the bland uniformity.
+| Definition: (of food or drink) mild or insipid.
+| Usage: bland beers of mediocre quality.
+| 
+| insipid
+| Definition: lacking flavor.
+| Usgae: a cup of insipid coffee.
 | 
 | condiment [调料，酱汁]
 | Definition: a substance such as salt or ketchup(番茄酱) that is used to add flavor to food.

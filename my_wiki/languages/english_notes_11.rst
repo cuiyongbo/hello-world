@@ -34,6 +34,38 @@ Only paranoid can surrive.
 | Definition: put (something) right; correct. [澄清，修正]
 | Usage: mistakes made now cannot be rectified later.
 | 
+| interpolation
+| Definition: An interpolation is an addition to a piece of writing.
+| Usage: The interpolation appears to have been inserted very soon after the original text was finished.
+| 
+| interleave [留白]
+| Definition: insert pages, typically blank ones, between the pages of (a book).
+| Usage: Books of maps interleaved with tracing paper.
+| 
+| postscript
+| Definition: (abbr. **PS**) an extra message that you add at the end of a letter after your signature. [附言]
+| Usage: He added a postscript: "Leaving tomorrow".
+| Definition: an additional statement or action that provides further information on or a sequel to something.[后话]
+| Usage: As a postscript to this, Paul did finally marry.
+|
+| sequel
+| Definition: a book, film, movie, play etc. that continues the story of an earlier one. [续集]
+| Usage: A sequel to the hit movie *Sister Act*.
+| Definition: Something that takes place after  or as a result of an earlier event.
+| Usage: This encouragement to grow potatoes had a disastrous sequel some fifty years later.
+| 
+| prologue
+| Definition: A prologue is a speech or section of text that introduces a play or book. [序]
+| Usage: The prologue to the novel is written in the form of a newspaper account.
+| Definition: If one event is a prologue to another, it leads to it. [序曲]
+| Usage: Civil unrest in a few isolated villages became the prologue to widerspread rebellion.
+| 
+| elide
+| Definition: If you elide something, especially a distinction, you leave it out or ignore it.
+| Usage: These habits of thinking elide the difference between what is common and what is normal.
+| Definition: In linguistics, if you elide a word, you do not pronounce or write fully.
+| Usage: He complained about BBC announcers eliding their words.
+| 
 | exorcism
 | exorcist
 | exorcise

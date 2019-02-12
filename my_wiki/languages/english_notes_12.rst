@@ -274,6 +274,76 @@ English Note 12
 | daemon [神祇]
 | demigod [半神]
 | Definition: some Roman emperors claimed descent from demigods such as Hercules.
+| 
+| posthumour
+| Definition: occurring, awarded, or appearing after the death of the originator.
+| Usage: he was awarded a posthumous Military Cross.
+| Usage: a posthumous collection of his articles.
+| Definition: (of a child) born after the death of its father. 
+| Usage: a posthumous child. [遗腹子]
+| Usage: a posthumous work. [遗作]
+| 
+| reproach
+| Definition: address sb in such a way as to express disapproval or disappointment; accuse
+| Usage: Critics of the administration reproached the president for his failure to tackle the deficiency.
+| Usage: His wife reproached hime with cowardice.
+| 
+| pensive
+| Definition: engaged in, involving, or reflecting deep or serious thought.
+| Usage: A pensive mood. [沉重，严肃]
+| 
+| risible [滑稽可笑]
+| Definition: deserving to be laughed at rather than taken seriously.
+| Usage: a risible scene of lovemaking in a tent.
+| 
+| squander
+| Definition: to waste money, time, etc. in a stupid or careless way.
+| Usage: He squandered all his money on gambling.
+| 
+| vehement
+| vehemence
+| Definition: the display of strong feeling; passion.
+| Usage: they speak with starry vehemence about their project.
+| Usage: her voice was low but vehement.
+| 
+| star
+| starry
+| Usage: a beautiful starry night. [繁星满天的夜晚]
+| 
+| antipathy
+| antipathic
+| Definition: a deep-seated feeling of dislike; aversion.
+| Usage: antipathy to change.
+| 
+| averse
+| aversion
+| Definition: a strong dislike or disinclination.
+| Usage: he had a deep-seated aversion to most forms of exercise.
+| Usage: I mentioned it to Kate and she wasn't averse to the idea. 
+| 
+| indispose
+| Definition: make sb unfit for or unable to do something.
+| 
+| precarious
+| Definition: not securely held or in position; dangerously likely to fall or collapse.
+| Usage: a precarious ladder.
+| Usage: He balanced the glass precariously on the arm of his chair. 
+| Usage: He earned a precarious living as an artist. [朝不保夕]
+| 
+| soliloquy [独白]
+| soliloquize
+| Definition: an act of speaking one's thoughts aloud when by oneself or regardless of any hearers, especially by a character in a play.
+| Usage: Hamlet's famous soliloquy, 'To be or not to be...'
+| 
+| altercate
+| altercation
+| Definition: a noisy argument or disagreement, especially in public.
+| Usage: I had an altercation with the conductor.
+| 
+| calamity
+| Definition: an event that causes great damage to people's lives, property, etc.
+| Usage: the fire was the latest calamity to strike the area.
+| 
 
 .. image:: images/divining-rod-dowsing.jpg
 .. figure:: images/water-dowsing.jpg

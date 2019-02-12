@@ -665,47 +665,12 @@ name, also known as surname, with most family members.
 | mooring
 | Definition: A place where a boat or ship is moored.
 | Usage: The boat had been at its usual moorings immediately prior to the storm.
-|
-| 
-| interpolation
-| Definition: An interpolation is an addition to a piece of writing.
-| Usage: The interpolation appears to have been inserted very soon after the original text was finished.
-| 
-| interleave [留白]
-| Definition: insert pages, typically blank ones, between the pages of (a book).
-| Usage: Books of maps interleaved with tracing paper.
-| 
-| postscript
-| Definition: (abbr. **PS**) an extra message that you add at the end of a letter after your signature. [附言]
-| Usage: He added a postscript: "Leaving tomorrow".
-| Definition: an additional statement or action that provides further information on or a sequel to something.[后话]
-| Usage: As a postscript to this, Paul did finally marry.
-|
-| sequel
-| Definition: a book, film, movie, play etc. that continues the story of an earlier one. [续集]
-| Usage: A sequel to the hit movie *Sister Act*.
-| Definition: Something that takes place after  or as a result of an earlier event.
-| Usage: This encouragement to grow potatoes had a disastrous sequel some fifty years later.
-| 
-| prologue
-| Definition: A prologue is a speech or section of text that introduces a play or book. [序]
-| Usage: The prologue to the novel is written in the form of a newspaper account.
-| Definition: If one event is a prologue to another, it leads to it. [序曲]
-| Usage: Civil unrest in a few isolated villages became the prologue to widerspread rebellion.
-| 
-| elide
-| Definition: If you elide something, especially a distinction, you leave it out or ignore it.
-| Usage: These habits of thinking elide the difference between what is common and what is normal.
-| Definition: In linguistics, if you elide a word, you do not pronounce or write fully.
-| Usage: He complained about BBC announcers eliding their words.
-| Synonyms: omit, ignore, contract
 | 
 | repository
 | Definition: A repository is a place where something is kept safely.
-| Synonyms: store
 | Usage: A church in Moscow became a repository for police files.
-| Definition: A repository of information is a person or group of people who know a lot of information about a particular place or subject.
-| Usage: The repository of all important knowledge in a small town was the chief barman of the local pub.
+| Definition: A repository of information is a person or group of people who know a lot of information about a particular place or subject. [情报屋]
+| Usage: The repository of all important knowledge in a small town was the chief barman [酒吧男侍] of the local pub.
 | 
 | violate
 | violation
@@ -938,12 +903,6 @@ name, also known as surname, with most family members.
 | thrift
 | Definition: The quality of using money and other resources carefully and not wastefully.
 | Usage: The value of thrift and self-reliance.
-| 
-| reproach
-| Definition: address (someone) in such a way as to express disapproval or disappointment.
-| Usage: Critics of the administration reproached the president for his failure to tackle the deficiency.
-| Definition: (reproach someone with) accuse someone of.
-| Usage: His wife reproached hime with cowardice.
 | 
 | hem
 | Definition: The edge of a piece of clothing that has been turned under and sewn.
@@ -1722,19 +1681,12 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: A thrilling climax to the game.
 | Definition: an orgasm. [性高潮]
 | 
-| pensive
-| Definition: engaged in, involving, or reflecting deep or serious thought.
-| Usage: A pensive mood. [沉重，严肃]
-| 
 | predecessor
 | Definition: a person who held a job or office before the current holder. 
 | Usage: The new president’s foreign policy is very similar to that of his predecessor.
 | Definition: the predecessor of an object or machine is the object or machine that came before it in a sequence or process of development.
 | Synonyms: forerrunner
 | Usage: Although the car is 40mm shorter than its predecessor, its boot is 20 per cent larger.
-| 
-| risible
-| Definition: such as to provoke laughter.
 | 
 | checkmate
 | Definition: a position in which one player cannot prevent his or her king being captured and therefore loses the game. [将军]
@@ -1986,36 +1938,7 @@ admitted the computer was named after his daughter.
 | discrepant
 | discrepancy
 | Definition: a lack of compatibility or similarity between two or more facts.
-| Definition: There's a discrepancy between your account and his.
-| 
-| concoct
-| Definition: make (a dish or meal) by combining various ingredients.
-| Usage: They concocted relish from corn that is so naturally sweet no extra sugar is needed.
-| 
-| poach
-| Definition: cook (an egg), without its shell, in or over boiling water.
-| Definition: to cook food, especially fish, gently in a small amount of liquid. [煎，炖]
-| Definition: illegally hunt or catch (game or fish) on land that is not one’s own, or in contravention of offical protection. [盗猎，偷猎]
-| Usage: The elephants are poached for their tusks.
-| Idiom: poach on someone’s territory [私闯民宅]
-| 
-| stuff
-| Definition: If you stuff a bird such as a chicken or a vegetable such as pepper, you put a mixture of food inside it before cooking it.
-| Usage: Will you stuff the turkey and shove it in the oven for me?
-| Definition: If a dead animal is stuffed, it is filled with a substance so that it can be preserved and display.
-| Usage: He didn't much care for the stuffed animal heads that hung on the walls.
-| Definition: If you stuff yourself, you eat a lot of food.
-| Usage: But you're just so stuffed you won't be able to drink anything.
-|
-| bland
-| Definition: lacking strong features or characteristics and therefore uninteresting.
-| Usage: Rebelling against the bland uniformity.
-| Definition: (of food or drink) mild or insipid.
-| Usage: bland beers of mediocre quality.
-| 
-| insipid
-| Definition: lacking flavor.
-| Usgae: a cup of insipid coffee.
+| Usage: There's a discrepancy between your account and his.
 | 
 | brag
 | Definition: say in a boastful manner.
