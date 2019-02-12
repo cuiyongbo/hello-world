@@ -24,6 +24,11 @@ English Notes 5
 | Definiton: partially burn (an object) so as to blacken its surface.
 | Usage: Their bodies were badly charred in the fire.
 | 
+| thaw
+| Definition: (of ice and snow) to turn back into water after being frozen.
+| Usage: It is starting to thaw.
+| Usage: Leave the meat to thaw completely before cooking. [解冻]
+| 
 | cuisine
 | culinary [烹饪]
 | Definition: culinary means concerned with cooking.

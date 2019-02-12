@@ -161,11 +161,6 @@ name, also known as surname, with most family members.
 | Definition: (of literature or behavior) weakly or foolishly sentimental
 | Usage: Lovers of sloppy romance.
 | 
-| etiquette [礼仪，职业操守]
-| Definition: (noun) The customary of polite behavior in society or among members of a particular profession or group.
-| Usage: Advice on etiquette.
-| Usage: Medical / legal / professional etiquette.
-| 
 | gentility
 | Definition: social superiority as demonstrated by genteel manners, behavior, or appearance.
 | Usage: He took her hand with discreet gentility.
@@ -283,7 +278,6 @@ name, also known as surname, with most family members.
 | Usage: I stubbed my toes against a table leg.
 | 
 | invoice  发票
-| 
 | coupon [优惠券]
 | Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
 | Synonyms: voucher
@@ -2488,25 +2482,12 @@ admitted the computer was named after his daughter.
 | vigilant
 | vigilance
 | Definition: Someone who is vigilant gives careful attention to a particular problem or situation and concentrates on noticing any danger or trouble that there might be.
-| Synonyms: argus-eyed.
 | Usage: Drugs are a problem that requires contant vigilance.
 | 
-
-argus
-
-(Greek Mythology) a monster with a hundred eyes, used by Hera to watch over lo.
-He was killed by Hermes, and Hera then used his eyes to deck the peacock's tail.
-
-.. image:: images/ArgosPanoptes.jpg
-
 | lethargy
 | lethargic 无精打采
 | Definition: a lack of energy and enthusiasm.
 | Usage: There was an air of lethargy around him.
-|
-| pansy
-| Definition: 三色堇
-| Definition: an offensive word for a homosexual man. [娘娘腔，娘炮]
 | 
 | be nuts about
 | Definition: like very much.

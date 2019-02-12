@@ -271,10 +271,6 @@ English Note 12
 | Definition: a false impression of one's own importance.
 | Usage: Don't go getting delusions of grandeur
 | 
-| daemon [神祇]
-| demigod [半神]
-| Definition: some Roman emperors claimed descent from demigods such as Hercules.
-| 
 | posthumour
 | Definition: occurring, awarded, or appearing after the death of the originator.
 | Usage: he was awarded a posthumous Military Cross.
@@ -284,9 +280,17 @@ English Note 12
 | Usage: a posthumous work. [遗作]
 | 
 | reproach
-| Definition: address sb in such a way as to express disapproval or disappointment; accuse
+| Definition: address sb in such a way as to express disapproval or disappointment; accuse.
 | Usage: Critics of the administration reproached the president for his failure to tackle the deficiency.
 | Usage: His wife reproached hime with cowardice.
+| 
+| censure
+| Definition: to criticize sb severely, and often publicly, because of sth they have done.
+| Usage: a judge was censured in 1983 for a variety of types of injudicious conduct.
+|
+| deplore [谴责]
+| Definition: Feel or express strong disapproval of something.
+| Usage: We deplored this act of violence.
 | 
 | pensive
 | Definition: engaged in, involving, or reflecting deep or serious thought.
@@ -311,7 +315,7 @@ English Note 12
 | Usage: a beautiful starry night. [繁星满天的夜晚]
 | 
 | antipathy
-| antipathic
+| antipathic 
 | Definition: a deep-seated feeling of dislike; aversion.
 | Usage: antipathy to change.
 | 
@@ -344,6 +348,17 @@ English Note 12
 | Definition: an event that causes great damage to people's lives, property, etc.
 | Usage: the fire was the latest calamity to strike the area.
 | 
+| daemon [神祇]
+| demigod [半神]
+| Definition: some Roman emperors claimed descent from demigods such as Hercules.
+| 
+
+.. figure:: images/ArgosPanoptes.jpg
+
+    Argus
+
+    (Greek Mythology) a monster with a hundred eyes, used by Hera to watch over lo.
+    He was killed by Hermes, and Hera then used his eyes to deck the peacock's tail.
 
 .. image:: images/divining-rod-dowsing.jpg
 .. figure:: images/water-dowsing.jpg
@@ -384,3 +399,7 @@ English Note 12
 .. figure:: images/marrionette.png
 
     Marrionette [牵线人偶]
+
+.. figure:: images/nosegay.jpg
+
+    Nosegay

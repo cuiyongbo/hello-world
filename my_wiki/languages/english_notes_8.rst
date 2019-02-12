@@ -6,13 +6,17 @@ what is called a reason for living also the excellent one for dying.
 
 -- Alber Camus
 
-| maltreat
+| maltreat [虐待]
 | Definition: treat (a person or animal) cruelly or violently.
 | Usage: if you maltreat the puppy, we will take it away immediately.
 | 
+| etiquette
+| Definition: The customary of polite behavior in society or among members of a particular profession or group.
+| Usage: Advice on etiquette. [礼仪]
+| Usage: Medical / legal / professional etiquette. [职业操守]
+| 
 | deportment
 | Definition: a person's behavior or manners.
-| Usage: there are team rules governing deportment on and off the field.
 | Usage: lessons for young ladies in deportment and etiquette. [礼仪，举止]
 | 
 | disposition
