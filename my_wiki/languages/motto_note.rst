@@ -2,8 +2,6 @@
 Mottoes
 *******
 
-.. image:: images/daily_life.jpg
-
 我的作品一经完成，就没有再加修改的习惯。因为我深信部分的变换足以改变作品的性格。
 
 -- 路德维希·凡·贝多芬
@@ -28,12 +26,11 @@ Mottoes
 
 .. figure:: images/Michelangelo-Buonarroti.jpg
 
-   Michelangelo Buonarroti
+    Michelangelo Buonarroti
 
 .. figure:: images/Michelangelo's_Pieta.jpg
 
-   米开朗琪罗 - 哀悼基督
-
+    米开朗琪罗 - 哀悼基督
 
 我自己想，像我这样一个鼻子那么宽，口唇那么大，眼睛那么小的人，世界上是没有他的快乐的。
 
@@ -44,7 +41,7 @@ Mottoes
 
 .. figure:: images/Lev_Nikolaevich_Tolstoy.jpg
 
-   Лев Николаевич Толстой
+    Лев Николаевич Толстой
 
 生而为人，我很抱歉。
 
@@ -52,26 +49,26 @@ Mottoes
 
 .. figure:: images/Osamu_Dazai.jpg
 
-   太宰治
+    太宰治
 
 .. code-block:: none
 
-   假如生活欺骗了你
+    假如生活欺骗了你
 
-   [俄] 普希金
+    [俄] 普希金
 
-   假如生活欺骗了你，
-   不要悲伤，不要心急！
-   忧郁的日子里须要镇静：
-   相信吧，快乐的日子将会来临！
-   心儿永远向往着未来；
-   现在却常是忧郁。
-   一切都是瞬息，一切都将会过去；
-   而那过去了的，就会成为亲切的怀恋。
+    假如生活欺骗了你，
+    不要悲伤，不要心急！
+    忧郁的日子里须要镇静：
+    相信吧，快乐的日子将会来临！
+    心儿永远向往着未来；
+    现在却常是忧郁。
+    一切都是瞬息，一切都将会过去；
+    而那过去了的，就会成为亲切的怀恋。
 
 .. figure:: images/pushkin.jpg
 
-   Александр Сергеевич Пушкин
+    Александр Сергеевич Пушкин
 
 一切命运的安排都建立在你的努力之上。
 
@@ -96,3 +93,7 @@ We have to honor the past, but we make our own future.
 力拔山兮气盖世。时不利兮骓不逝。骓不逝兮可奈何！虞兮虞兮奈若何！
 
 -- 项羽
+
+I think, therefore I am
+
+-- *Descartes*

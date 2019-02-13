@@ -58,13 +58,11 @@ such as quicksort, heapsort, or merge sort. However, insertion sort provides sev
 
     InsertionSort(A)
         for j=2 to A.length
-            key = A[j]
-            i = j-1
-            while i>0 and A[i] > key
-                A[i+1] = A[i]
+            i, k = j, A[j]
+            while i>1 and A[i-1] > k
+                A[i] = A[i-1]
                 i = i-1
-            A[i+1] = key
-
+            A[i] = k
 
 **Relation to other sorting algorithms**
 

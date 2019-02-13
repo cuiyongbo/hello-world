@@ -403,3 +403,8 @@ English Note 12
 .. figure:: images/nosegay.jpg
 
     Nosegay
+
+.. figure:: images/1980_USSR_stamp_Olympic_mascot.jpg
+
+    Misha, the bear—the official mascot of the 1980 Moscow Olympics 
+

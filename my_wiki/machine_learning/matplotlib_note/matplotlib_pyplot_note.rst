@@ -17,6 +17,7 @@ Matplotlib Pyplot Note
     # plt.clf() clears the current figure
     # plt.cla() clears the current axes
     # plt.title(title)
+    # plt.legend()
     # plt.xlabel(label)
     # plt.ylabel(label)
     # plt.grid(bool)

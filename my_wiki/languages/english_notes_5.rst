@@ -1,11 +1,12 @@
-***************
-English Notes 5
-***************
+**************
+English Note 5
+**************
 
 **What's important is finding that one thing that will truly put your heart at rest.**
 
 .. image:: images/cookbook_01.png
 .. image:: images/cookbook_02.jpg
+.. image:: images/daily_life.jpg
 
 | cookbook
 | Definition: a book of cooking directions and recipes. [食谱，菜谱]

@@ -271,7 +271,12 @@ A professional practices until he cannot get it wrong.
 
    .. math::
 
-      \lim \limits_{i \to \infty} {\sum_{i=0}^{n} q^n} = \frac {a_0}{1-q}
+      \lim \limits_{i \to \infty} {\sum_{i=0}^{n} {a_0 q^n}} = \frac {a_0}{1-q}
+
+#. Arithmetic series
+   
+   The summation :math:`\sum_{k=1}^{n}k=1+2+\cdots+n,`is an arithmetic series 
+   and has the value :math:`\sum_{k=1}^{n}k=\frac{n(n+1)}{2}=\Theta(n^2).`
 
 #. Prime number versus Composite number
    

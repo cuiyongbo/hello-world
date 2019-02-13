@@ -75,7 +75,32 @@ English Note 13
 | propitious
 | Definition: likely to produce a successful result.
 | Usage: It was not a propitious time to start a new business. 
-
-mascot
-auspicious
-
+| 
+| auspicious
+| Definition: showing signs that sth is likely to be successful in the future.
+| Usage: an auspicious start to the new school year.
+| 
+| prosperous
+| Definition: bringing wealth and success.
+| Usage: we wish you a prosperous New Year.
+| 
+| follow
+| Usage: She works in television, following in her father's footsteps. [子承父业, 步xx后尘]
+| Phrase: follow one's nose
+| Definition: trust to one's instincts.
+| Usage: you are on the right track so follow your nose.
+| Phrase: follow suit
+| Definition: (in bridge, whist, and other card games) play a card of the suit led. [跟牌]
+| Definition: conform to another's actions.
+| Usage: Spain cut its rates by half a percent but no other country has followed suit.
+| Phrase: follow something up
+| Definition: pursue or investigate something further:
+| Usage: The police are following up several leads after their TV appeal for information. 
+| 
+| efface
+| effacement
+| Definition: erase (a mark) from a surface.
+| Usage: his anger was effaced when he stepped into the open air.
+| Definition: (efface oneself) make oneself appear insignificant or inconspicuous. [隐姓埋名, 销声匿迹]
+| Usage: Fan Li tried to efface himself from Yue Kingdom after the Wu Kingdom was conquered.
+| 
