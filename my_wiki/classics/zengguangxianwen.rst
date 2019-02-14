@@ -7,7 +7,7 @@
 
 .. sidebar:: 增广贤文
 
-   .. image:: Illustration/zengguangxianwen.jpg
+   .. image:: images/zengguangxianwen.jpg
 
 《增广贤文》为中国古代儿童启蒙书目。又名《昔时贤文》、《古今贤文》。
 书名最早见之于明代万历年间的戏曲《牡丹亭》，据此可推知此书最迟写成于万历年间。
@@ -20,7 +20,7 @@
 又用十二地支来表示，以夜半二十三点至一点为子时，一至三点为
 丑时，三至五点为寅时，依次递推。
 
-.. image:: Illustration/old_timing.jpg
+.. image:: images/old_timing.jpg
 
 上篇
 ====

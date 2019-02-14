@@ -265,8 +265,7 @@ English Note 9
 | Usage: classified information on nuclear experiments.
 | Usage: government officials classified 6.3 million documents in 1992.
 | 
-| self-describing
-| self-explanatory
+| self-describing self-explanatory
 | 
 | ironclad
 | Definition: covered or protected with iron.

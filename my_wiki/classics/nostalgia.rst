@@ -39,7 +39,7 @@
 
 .. sidebar:: 书香门第
 
-   .. image:: Illustration/courtyard.jpg
+   .. image:: images/courtyard.jpg
 
 歸有光, 我想他應該是一個典型的讀書人, 有過很愜意的少年生活, 
 回想一下, 我在那個年紀, 讀書也是很純粹, 那個時候我真的有過

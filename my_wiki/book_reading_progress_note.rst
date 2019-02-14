@@ -35,8 +35,13 @@ Introduction To Algorithm
     - Ch13 Red black tree (Finished 2018-12-04)
     - Ch14 Augmenting data structure (Finished 2018-12-05)
     - Ch15 Dynamic programming (2018-12-08 -- 2018-12-31)
-    - Ch16 Greedy Algorithms (2019-01-16 -- )
+    - Ch16 Greedy Algorithms (Finished 2019-01-25)
     - Ch17 Amortized Analysis (Finished, 2019-01-14)
+      
+    - Ch22 Elementary Graph Algorithms
+      
+      - Representations of graph (Finished, 2019-02-14)
+      - Breadth-first search (Finished, 2019-02-14)
 
 
 Advanced Programming in UNIX Environment

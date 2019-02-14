@@ -104,3 +104,17 @@ English Note 13
 | Definition: (efface oneself) make oneself appear insignificant or inconspicuous. [隐姓埋名, 销声匿迹]
 | Usage: Fan Li tried to efface himself from Yue Kingdom after the Wu Kingdom was conquered.
 | 
+| adjoin
+| Definition: be next to and joined with (a building, room, or piece of land).
+| Usage: the dining room adjoins a small library.
+| Usage: We'll have more space if we knock down the adjoining wall.
+| 
+| archetype
+| Definition: a very typical example of a certain person or thing.
+| Usage: the book is a perfect archetype of the genre.
+| Definition: an original that has been imitated. [原型]
+| Usage: the archetype of faith is Abraham.
+| 
+| vacuous
+| Definition: having or showing a lack of thought or intelligence; mindless.
+| Usage: a vacuous smile.

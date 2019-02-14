@@ -15,3 +15,4 @@ Classics
     classics/depression
     classics/baorenanshu
     classics/francis_bacon_of_studies
+    classics/motto_note

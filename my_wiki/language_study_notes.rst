@@ -30,6 +30,5 @@ Language Study
    languages/military_terms_02
    languages/steve_jobs_obituary
    languages/stephen_hawking_obituary
-   languages/motto_note
-   languages/video_scene
+   languages/snapshots_collections
    

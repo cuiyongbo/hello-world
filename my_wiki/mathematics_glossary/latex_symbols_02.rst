@@ -9,20 +9,28 @@ Latex Symbol Note 02
     \sqrt[3]{\frac xy} --> :math:`\sqrt[3]{\frac xy}.`
     For complicated expressions, consider using ``{...}^{1/2}`` instead.
 
-#. limit
+#. Sum and integrals
+   
+    ``\sum`` and ``\int``; the subscript is the lower limit and the superscript is the upper limit, 
+    so for example :math:`\sum_1^n`. Don't forget ``{}`` if the limits are more than a single symbol. 
+    For example, :math:`\sum_{i=0}^\infty i^2`. Similarly, ``\prod`` :math:`\prod`, ``\int`` :math:`\int`,
+    ``\bigcup`` math:`\bigcup`, ``\bigcap`` :math:`\bigcap`, ``\iint`` :math:`\iint`, ``\iiint`` :math:`\iiint`,
+    ``idotsint`` :math:`\idotsint`.
+
+#. Limit
    
     Some special functions such as "lim", "sin", "max", "ln", and so on are normally 
     set in roman font instead of italic font. Use ``\lim, \sin,`` etc. to make these: 
     \sin x  --> :math:`\sin x.` Use subscripts to attach a notation to \lim: 
     \lim_{x \to 0} --> :math:`\lim \limits_{x \to 0}`
 
-#. degree and radian
+#. Degree and radian
    
     An acute angle is less than :math:`90^\circ`.
     An right angle is exactly :math:`90^\circ`.
     An obtuse angle is between :math:`90^\circ` and :math:`180^\circ`.
 
-#. dot sign
+#. Dot sign
    
     ``\cdot`` is a centered dot: :math:`x \cdot y` while ``\dot``, ``\ddot`` is used 
     in deriatives: :math:`\dot x \ddot x`. 
@@ -41,12 +49,15 @@ Latex Symbol Note 02
 
         \operatorname*{Res}_{z=1}^{n} \left(\frac {1}{z^2-1}\right) = 1
 
-#. underline and overline
+#. Underline and overline
    
-    | \overline: :math:`\overline{A}`
-    | \underline: :math:`\underline{B}`
-    | \overbrace: :math:`\overbrace{(n-2) + \overbrace{(n-1) + n + (n+1)} + (n+2)}`
-    | \underbrace: :math:`\underbrace{(n-2) + \underbrace{(n-1) + n + (n+1)} + (n+2)}`
+    | ``\overline``: :math:`\overline{A}`
+    | ``\underline``: :math:`\underline{B}`
+    | ``\overbrace``: :math:`\overbrace{(n-2) + \overbrace{(n-1) + n + (n+1)} + (n+2)}`
+    | ``\underbrace``: :math:`\underbrace{(n-2) + \underbrace{(n-1) + n + (n+1)} + (n+2)}`
+    | ``\underleftarrow``: :math:`\underleftarrow{E}` variant: ``\xleftarrow`` :math:`\xleftarrow{abc}`
+    | ``\underrightarrow``: :math:`\underrightarrow{E}` variant: ``\xrightarrow`` :math:`\xrightarrow{abc}`
+    | ``\underleftrightarrow``: :math:`\underleftrightarrow{AA}`
 
     To annotate the brace, e.g. :math:`\underbrace{a\cdot a\cdots a}_{b\text{ times}}`
 
@@ -62,7 +73,7 @@ Latex Symbol Note 02
         | ``\dot \ddot \dddot``: :math:`\dot{x} \ddot{x} \dddot{x}`
         | ``\mathring``: :math:`\mathring{A}` 
 
-#. bracket and parenthesis
+#. Bracket and parenthesis
    
    ``\left`` and ``\right`` apply to all the following sorts of parentheses: ``(), [], \{\}, \|`` :math:`\{x\}` :math:`|y|` , 
    ``\vert`` :math:`\vert x \vert`, ``\Vert`` :math:`\Vert x \Vert`, ``\langle`` and ``\rangle`` :math:`\langle x \rangle`, 
@@ -74,7 +85,7 @@ Latex Symbol Note 02
     ``\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`` 
     gives :math:`\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)`
 
-#. matrix
+#. Matrix
    
     Use ``\begin{matrix}...\end{matrix}`` in between the ``\begin`` and ``\end``, 
     put the matrix elements, End each each matrix rou with ``\\``, and separate matrix 
@@ -94,3 +105,46 @@ Latex Symbol Note 02
     ``Bmatrix`` :math:`\begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix}`, 
     ``vmatrix`` :math:`\begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix}`, 
     ``Vmatrix`` :math:`\begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix}`.
+
+#. Fonts
+   
+    * Use ``\mathbb`` for "blackboard bold": :math:`\mathbb{RZ}`
+    * Use ``\mathbf`` for boldface: :math:`\mathbf{RZ}`
+    * Use ``\mathit`` for italics: :math:`\mathit{abcd}`
+    * Use ``\pmb`` for boldfaced italics: :math:`\pmb{abcd}`
+    * Use ``\mathtt`` for typewriter font: :math:`\mathtt{abcd}`
+    * Use ``\mathrm`` for roman font: :math:`\mathrm{ABCD}`
+    * Use ``\mathsf`` for sans-serif font: :math:`\mathsf{ABCD}`
+    * Use ``\mathcal`` for "calligraphic" letters: :math:`\mathcal{ABCD}`
+    * Use ``\mathscr`` for script letters: :math:`\mathcal{ABCD}`
+    * Use ``\mathfrak`` for "Fraktur" (old German style) letters: :math:`\mathfrak{ABCD}`
+
+#. Definition by cases
+   
+    Use ``\begin{cases}…\end{cases}``. End each case with a ``\\``, and use ``&`` 
+    before parts that should be aligned. for example,
+
+    .. math::
+
+        f(n)=
+        \begin{cases}
+        n/2, & \text{if n is even} \\
+        3n+1, & \text{if n is odd}
+        \end{cases}
+
+        f(n)=
+        \begin{cases}
+        \frac{n}{2}, & \text{if n is even} \\[2ex]
+        3n+1, & \text{if n is odd}
+        \end{cases}
+
+        \left.
+        \begin{array}{l}
+        \text{if $n$ is even:}&n/2\\
+        \text{if $n$ is odd:}&3n+1
+        \end{array}
+        \right\}
+        =f(n)
+
+    **Note**: An ‘ex’ is a length equal to the height of the letter x; 
+    2ex here means the space should be two exes high.
