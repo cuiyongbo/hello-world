@@ -118,3 +118,29 @@ English Note 13
 | vacuous
 | Definition: having or showing a lack of thought or intelligence; mindless.
 | Usage: a vacuous smile.
+| 
+| stochastic
+| stochastically
+| Definition: randomly determined; having a random probability distribution or pattern 
+| that may be analyzed statistically but may not be predicted precisely.
+| 
+| gradient
+| Definition: the degree to which the ground slopes, especially on a road or railway.
+| Definition: (Physics) an increase or decrease in the magnitude of a property (e.g., temperature, pressure, 
+| or concentration) observed in passing from one point or moment to another.
+| Definition: (Mathematics) the vector formed by the operator :math:`\nabla` acting on a scalar function 
+| at a given point in a scalar field.
+|
+| affine
+| Definition: (Mathematics) allowing for or preserving parallel relationships.
+| Definition: (Anthropology) a relative by marriage. [姻亲]
+| 
+| affinity
+| Definition: a spontaneous or natural liking or sympathy for someone or something.
+| Usage: Sam was born in the country and had a deep affinity with nature. 
+| Definition: a similarity of characteristics suggesting a relationship, especially a resemblance 
+| in structure between animals, plants, or languages.
+| Usage: a building with no affinity to contemporary architectural styles.
+| Usage: There is a close affinity between Italian and Spanish.
+| Definition: relationship, especially by marriage as opposed to blood ties.
+| 

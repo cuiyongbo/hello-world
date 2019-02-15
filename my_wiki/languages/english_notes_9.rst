@@ -331,6 +331,10 @@ English Note 9
 | Definition: deliberately created rather than arising naturally or spontaneously.
 | Definition: created or arranged in a way that seems artificial and unrealistic.
 | Usage: the ending of the novel is too pat and contrived.
+|
+| spontaneous [自发地，自然的]
+| Definition: occurring as a result of a sudden inner impulse and without premeditation or external stimulus.
+| Usage: the audience broke into spontaneous applause | a spontaneous display of affection.
 | 
 | drastic
 | Definition: likely to have a strong or far-reaching effect; radical and extreme.
