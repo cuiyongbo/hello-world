@@ -346,10 +346,6 @@ name, also known as surname, with most family members.
 | 
 | Definition: If you step into breach, you do a job or task which someone else was supposed to do or has done in the past, because they are suddenly unable to do it.
 | Usage: I was persuaded to step into the breach temporarily when they became too ill to continue.
-| 
-| nocturnal
-| Definition: Done, active or occurring at night.
-| Usage: Most owls are nocturnal.
 |
 | frump
 | Definition: An unattrative woman who wears dowdy old-fashioned clothes.

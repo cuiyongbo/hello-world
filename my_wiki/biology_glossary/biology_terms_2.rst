@@ -111,33 +111,6 @@ Nature Lifes
    history. By the time Spanish explorer Vasco Núñez de Balboa ‘found’ the Pacific Ocean in 1513, General Sherman had 
    been growing for more than 1,500 years.
 
-.. figure:: images/spotted-hyena-kenya.jpg
-
-   Hyena [鬣狗]
-
-.. figure:: images/nile-crocodile.jpg
-
-   crocodile [尼罗鳄]
-
-.. figure:: images/alligator_american.jpg
-
-   Alligator [短吻鳄]
-
-.. figure:: images/rhino.jpg
-
-   rhinoceros
-
-.. figure:: images/spotted-house-gecko.jpg
-
-   Gecko [壁虎]
-
-.. figure:: images/chameleon.jpg
-
-   Chameleon [变色龙]
-
-   A person who changes their opinions 
-   or behavior according to the situation. [墙头草]
-
 | krait 环蛇
 | corba 眼镜蛇
 | viper 蝮蛇
@@ -150,14 +123,6 @@ Nature Lifes
 
 .. image:: images/pork-cut-diagram.jpg
 .. image:: images/horse_hock-knee.jpg
-
-.. figure:: images/scorpion.png
-
-   Scorpion 蝎子
-
-.. figure:: images/cicada.png
-
-   Cicada  [知了，蝉]
 
 .. figure:: images/hoverfly.jpg
    

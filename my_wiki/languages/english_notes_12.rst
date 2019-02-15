@@ -360,6 +360,10 @@ English Note 12
     (Greek Mythology) a monster with a hundred eyes, used by Hera to watch over lo.
     He was killed by Hermes, and Hera then used his eyes to deck the peacock's tail.
 
+.. figure:: images/gladiator.jpg
+
+   Gladiator [角斗士]
+
 .. image:: images/divining-rod-dowsing.jpg
 .. figure:: images/water-dowsing.jpg
 
