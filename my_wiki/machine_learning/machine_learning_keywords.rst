@@ -16,3 +16,39 @@ Line Regression
 
 Mean squared error
 
+test set and training set
+
+accuracy and error rate
+
+scarlar
+
+Vectors: A vector is an array of numbers. The numbers are arranged in
+order. We can identify each individual number by its index in that ordering.
+Typically we give vectors lower case names written in bold typeface, such
+as :math:`\mathbf{x}`. 
+
+Matrices: A matrix is a 2-D array of numbers, so each element is identified
+by two indices instead of just one. We usually give matrices upper-case
+variable names with bold typeface, such as :math:`\mathbf{A}`.
+
+The transpose of the matrix can be thought of as a mirror image across the main diagonal.
+
+Tensors: In some cases we will need an array with more than two axes.
+In the general case, an array of numbers arranged on a regular grid with a
+variable number of axes is known as a tensor. We denote a tensor named “A”
+with this typeface: :math:`\mathsf{A}`. 
+
+broadcasting
+
+distributive: :math:`A(B+C)=AB+AC`
+
+associative: :math:`A(BC)=(AB)C`
+
+commutative: :math:`ab=ba`
+
+Identity matrix: `np.eye()`
+
+matrix inverse: :math:`\mathbf{A^{-1}A = I_n}`
+
+norm, Euclidean norm, :math:`L^2 norm`
+

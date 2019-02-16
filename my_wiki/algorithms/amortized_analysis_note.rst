@@ -53,7 +53,7 @@ Amortized Analysis
         if T.size == 0
             allocate T.table with 1 slot
             T.size = 1
-        if T.num == T.size
+        elseif T.num == T.size
             allocate a new-table with 2*T.size slots
             insert all items in T.table into new-table
             free T.table

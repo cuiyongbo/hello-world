@@ -353,7 +353,6 @@ English Note 9
 | complement
 | complementary
 | Definition: add to (something) in a way that enhances or improves it; make perfect.
-| Usage: a classic blazer complements a look that's stylish or casual.
 | Usage: the proposals complement the incentives already available.
 | 
 | preclude

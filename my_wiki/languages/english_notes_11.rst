@@ -60,6 +60,31 @@ Only paranoid can surrive.
 | Definition: If one event is a prologue to another, it leads to it. [序曲]
 | Usage: Civil unrest in a few isolated villages became the prologue to widerspread rebellion.
 | 
+| colophon [版权页, 版本记录]
+| Definition: a publisher's emblem or imprint, especially one on the title page or spine of a book.
+| Definition: a statement at the end of a book, typically with a printer's emblem, giving information about its authorship and printing.
+| 
+| emblem [国徽，徽章，象征]
+| Definition: a heraldic device or symbolic object as a distinctive badge of a nation, organization, or family.
+| Usage: America's national emblem, the bald eagle. 
+| Usage: The dove is an emblem of peace.
+| Definition: (emblem of) a thing serving as a symbolic representation of a particular quality or concept.
+| Usage: Our child would be a dazzling emblem of our love. [结晶]
+| 
+| imprint
+| Definition: the name of the publisher of a book, usually printed below the title on the first page. [出版社]
+| Definition: a mark made by pressing something onto a softer substance so that its outline is reproduced.
+| Usage: He made imprints of the keys in the bars of soap.
+| Usage: Tire marks were imprinted in the snow. [车辙印]
+| Usage: Clothes imprinted with the logos of sports teams.
+| Definition: a lasting impression or effect.
+| Usage: Years in the colonies had left their imprint.
+| Usage: He would always have this ghastly image imprinted on his mind. [久久不能释怀]
+
+.. image:: images/colophon.jpg
+.. image:: images/barcelona_football_emblem.jpg
+
+| 
 | elide
 | Definition: If you elide something, especially a distinction, you leave it out or ignore it.
 | Usage: These habits of thinking elide the difference between what is common and what is normal.
@@ -319,4 +344,3 @@ Only paranoid can surrive.
 .. figure:: images/Alan_Turing_Notebook.jpg
 
    Notes from a genius 
-

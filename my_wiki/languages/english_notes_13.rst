@@ -144,3 +144,22 @@ English Note 13
 | Usage: There is a close affinity between Italian and Spanish.
 | Definition: relationship, especially by marriage as opposed to blood ties.
 | 
+| cursory
+| Definition: hasty and therefore not thorough or detailed.
+| Usage: a cursory glance at the figures.
+|
+| heuristic
+| Definition: enabling a person to discover or learn something for themselves.
+| Usage: Heuristic teaching encourages you to learn by discovering things for yourself.
+| Definition: (Computing) proceeding to a solution by trial and error or by rules that are loosely defined.
+| 
+| contigent
+| Definition: subject to chance.
+| Usage: the contingent nature of the job. [by chance]
+| Definition: (of losses, liabilities, etc.) that can be anticipated to arise if a particular event occurs. [predicable]
+| Usage: businesses need to be aware of their liabilities, both actual and contingent.
+| Definition: occurring or existing only if (certain circumstances) are the case; dependent on.
+| Usage: resolution of the conflict was contingent on the signing of a ceasefire agreement.
+| Definition: a group of people united by some common feature, forming part of a larger group.
+| Usage: a contingent of Japanese businessmen attending a conference. [代表团]
+| 

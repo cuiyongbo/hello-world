@@ -109,15 +109,15 @@ Latex Symbol Note 02
 #. Fonts
    
     * Use ``\mathbb`` for "blackboard bold": :math:`\mathbb{RZ}`
-    * Use ``\mathbf`` for boldface: :math:`\mathbf{RZ}`
-    * Use ``\mathit`` for italics: :math:`\mathit{abcd}`
-    * Use ``\pmb`` for boldfaced italics: :math:`\pmb{abcd}`
-    * Use ``\mathtt`` for typewriter font: :math:`\mathtt{abcd}`
-    * Use ``\mathrm`` for roman font: :math:`\mathrm{ABCD}`
-    * Use ``\mathsf`` for sans-serif font: :math:`\mathsf{ABCD}`
-    * Use ``\mathcal`` for "calligraphic" letters: :math:`\mathcal{ABCD}`
-    * Use ``\mathscr`` for script letters: :math:`\mathcal{ABCD}`
-    * Use ``\mathfrak`` for "Fraktur" (old German style) letters: :math:`\mathfrak{ABCD}`
+    * Use ``\mathbf`` for boldface: :math:`\mathbf{abcdABCD}`
+    * Use ``\mathit`` for italics: :math:`\mathit{abcdABCD}`
+    * Use ``\pmb`` for boldfaced italics: :math:`\pmb{abcdABCD}`
+    * Use ``\mathtt`` for typewriter font: :math:`\mathtt{abcdABCD}`
+    * Use ``\mathrm`` for roman font: :math:`\mathrm{abcdABCD}`
+    * Use ``\mathsf`` for sans-serif font: :math:`\mathsf{abcdABCD}`
+    * Use ``\mathcal`` for "calligraphic" letters: :math:`\mathcal{abcdABCD}`
+    * Use ``\mathscr`` for script letters: :math:`\mathcal{abcdABCD}`
+    * Use ``\mathfrak`` for "Fraktur" (old German style) letters: :math:`\mathfrak{abcdABCD}`
 
 #. Definition by cases
    

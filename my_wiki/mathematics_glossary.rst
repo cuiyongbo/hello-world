@@ -22,3 +22,4 @@ Mathematics
 .. rubric:: Footnotes
 
 .. [#] `Integral Calculator <https://www.integral-calculator.com/>`_
+.. [#] `Partial derivative <https://en.wikipedia.org/wiki/Partial_derivative>`_
