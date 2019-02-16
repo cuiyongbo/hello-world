@@ -163,3 +163,45 @@ English Note 13
 | Definition: a group of people united by some common feature, forming part of a larger group.
 | Usage: a contingent of Japanese businessmen attending a conference. [代表团]
 | 
+| adjudicate
+| adjudicative
+| Definition: make a formal judgment or decision about a problem or disputed matter.
+| Usage: the committee adjudicates on all betting disputes.
+| Definition: act as a judge in a competition.
+| Usage: we asked him to adjudicate at the local flower show.
+| 
+| excerpt
+| Definition: take (a short extract) from a text.
+| Usage: the notes are excerpted from his forthcoming biography.
+|
+| dispel
+| Definition: make (a doubt, feeling, or belief) disappear.
+| Usage: the brightness of the day did nothing to dispel Elaine's dejection.
+| Usage: His speech dispelled any fears about his health. 
+| 
+| dejection
+| Definition: a sad and depressed state; low spirits.
+| Usage: he was slumped in deep dejection.
+| 
+| factual
+| Definition: concerned with what is actually the case rather than interpretations of or reactions to it.
+| Usage: The essay contains a number of factual errors. 
+| 
+| chaff
+| Definition: the husks of corn or other seed separated by winnowing or threshing. [谷壳，糠] 
+| Definition: to make jokes about sb in a friendly way.
+| Ididom: separate the wheat from the chaff
+| Definition: distinguish valuable people or things from worthless ones.
+| 
+| grail [圣杯]
+| Definition: a thing that is being earnestly pursued or sought after.
+| Usage: profit has become the holy grail. [唯利是图]
+
+#. the Grail [圣杯]
+   
+    (in medieval legend) the cup or platter used by Jesus at the Last Supper, 
+    and in which Joseph of Arimathea received Christ's blood at the Cross. 
+    Quests for it undertaken by medieval knights are described in versions of 
+    the Arthurian legends written from the early 13th century onward.
+
+    

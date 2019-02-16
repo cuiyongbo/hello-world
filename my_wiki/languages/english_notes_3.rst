@@ -90,7 +90,12 @@ English Note 3
 | Usage: A medieval ballad about a knight and a lady. [民谣，叙事诗]
 | Definition: a small popular song about love. [情歌]
 | Usage: Here latest single is a ballad.
-| Origin: Traditional ballads are typically of unknown authorship, having been passed on orally from one generation to the next as part of folk culture.
+| 
+| saga
+| Definiton: a long story of heroic achievement, especially a medieval prose narrative in Old Norse or Old Icelandic.
+| Usage: A figure straight out of a viking saga.
+| Definition: a long, involved story, account, or series of incidents.
+| Usage: The saga of her engagement.
 |
 | coalesce
 | Definition: combine (elements) in a mass or whole.
@@ -328,21 +333,6 @@ English Note 3
 | Definition: very weak or slight.
 | Usage: the tenuous link between interest rates and investment.
 |
-| déjà vu [デジャヴ　既視感]
-| Definition: the illusion of remembering scenes and events when experienced for the first time
-| Definition: a feeling that one has seen or heard something before
-| Definition: something overly or unpleasantly familiar.
-| Usage: The team's poor start to the season was déjà vu for its long-suffering fans.
-
-.. image:: images/DejaVu_1.jpg
-.. image:: images/DejaVu_2.jpg
-.. image:: images/DejaVu_3.jpg
-.. image:: images/steinsgate-okabe-rintarou-makise-kurisu.jpg
-
-.. figure:: images/Gekijōban_Shutainzu_Gēto_Fuka_Ryōiki_no_Dejavu.jpg
-
-   劇場版　シュタインズ•ゲート：負荷領域のデジャヴ
-
 | degenerate
 | degeneracy
 | Definition: the state or property of being degenerate.
@@ -362,4 +352,18 @@ English Note 3
 | deranged
 | Definition: mad; insane.
 | Usage: Three years ago today a deranged man shot and killed 14 people in the main square.
-| 
+|
+| déjà vu [デジャヴ　既視感]
+| Definition: the illusion of remembering scenes and events when experienced for the first time
+| Definition: a feeling that one has seen or heard something before
+| Definition: something overly or unpleasantly familiar.
+| Usage: The team's poor start to the season was déjà vu for its long-suffering fans.
+
+.. image:: images/DejaVu_1.jpg
+.. image:: images/DejaVu_2.jpg
+.. image:: images/DejaVu_3.jpg
+.. image:: images/steinsgate-okabe-rintarou-makise-kurisu.jpg
+
+.. figure:: images/Gekijōban_Shutainzu_Gēto_Fuka_Ryōiki_no_Dejavu.jpg
+
+   劇場版　シュタインズ•ゲート：負荷領域のデジャヴ

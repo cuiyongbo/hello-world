@@ -80,3 +80,13 @@ Biological Terms 3
 .. figure:: images/t-rex.jpg
 
     Tyrannosaurus Rex [霸王龙]
+
+.. image:: images/MapGreatRiftValley.png
+.. figure:: images/Great-Rift-Valle.jpg
+
+   The Great Rift Valley
+
+.. image:: images/gelada_baboon.jpg
+.. figure:: images/baboon.jpg
+
+   Baboon [狒狒]

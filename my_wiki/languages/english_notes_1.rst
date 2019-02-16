@@ -299,12 +299,6 @@ name, also known as surname, with most family members.
 | shrine 
 | Definition: A place regarded as holy because of its associations with a divinity or a sacred person or relic, typically marked by a building or other | construction.
 | 
-| saga
-| Definiton: a long story of heroic achievement, especially a medieval prose narrative in Old Norse or Old Icelandic.
-| Definition: a long, involved story, account , or series of incidents.
-| Usage: The saga of her engagement.
-| Usage: A figure straight out of a viking saga.
-| 
 | perverse
 | Definition: Contrary to the accepted or expected standard or the practice.
 | Usage: In two general elections the outcome was quit perverse.
