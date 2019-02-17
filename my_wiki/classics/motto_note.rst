@@ -95,3 +95,5 @@ We have to honor the past, but we make our own future.
 I think, therefore I am
 
 -- *Descartes*
+
+What doesn't kill you will make you stronger.

@@ -50,10 +50,6 @@ Nature Lifes
 .. image:: images/phorsphorescence_3.jpg
 .. image:: images/phorsphorescence_4.jpg
 
-.. figure:: images/Warbler.jpg
-
-   Warbler [黄莺]
-
 .. figure:: images/elk.jpg
 
    Elk [麋鹿]
@@ -225,13 +221,6 @@ Nature Lifes
 
    Iris 虹膜，鸢尾
 
-.. figure:: images/winter_time.jpg
-
-   A Ladybird [七星瓢虫] hibernates in Tewin, England
-
-.. figure:: images/european_goldfinch.jpg
-
-   Red in the face
 
 #. taxonomy
    

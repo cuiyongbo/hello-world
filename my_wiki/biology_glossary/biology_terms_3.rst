@@ -49,6 +49,7 @@ Biological Terms 3
     A person who changes their opinions 
     or behavior according to the situation. [墙头草]
 
+.. image:: images/pangolin_02.jpg
 .. figure:: images/pangolin.jpg
 
     Pangolin [穿山甲]
@@ -68,6 +69,10 @@ Biological Terms 3
 .. figure:: images/cicada.png
 
    Cicada  [知了，蝉]
+
+.. figure:: images/winter_time.jpg
+
+    A Ladybird [七星瓢虫] hibernates in Tewin, England
 
 .. figure:: images/praying_mantis.jpg
 
@@ -90,3 +95,15 @@ Biological Terms 3
 .. figure:: images/baboon.jpg
 
    Baboon [狒狒]
+
+.. figure:: images/black-crested_titmouse.jpg
+
+    Black-crested titmouse
+
+.. figure:: images/european_goldfinch.jpg
+
+    Red in the face
+
+.. figure:: images/Warbler.jpg
+
+    Warbler [黄莺]

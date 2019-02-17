@@ -24,3 +24,7 @@ Pending tasks
 #. matplotlib to draw the cover of murphy's machine learning
    
 #. matplotlib draw with annotation, set interval for axis display
+   
+#. review c++ class facilities: Inside C++ Object Model
+#. learn machine learning basics, Linear algebra, Numerical computation
+#. review Unix process and thread facilities
