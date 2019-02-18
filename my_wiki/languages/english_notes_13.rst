@@ -193,6 +193,37 @@ English Note 13
 | Ididom: separate the wheat from the chaff
 | Definition: distinguish valuable people or things from worthless ones.
 | 
+| lifeline
+| Definition: a rope or line used for life-saving, typically one thrown to rescue someone in difficulties in water 
+| or one used by sailors to secure themselves to a boat.
+| Definition: a line used by a diver for sending signals to the surface.
+| Definition: a thing on which someone or something depends or which provides a means of escape from a difficult situation.
+| Usage: fertility treatment can seem like a lifeline to childless couples.
+| Usage: The extra payments are a lifeline for most single mothers. 
+| Definition: (in palmistry) a line on the palm of a person's hand, regarded as indicating how long they will live.
+| Phrase: throw a lifeline to sb [雪中送炭]
+| Definition: provide sb with a means of escaping from a difficult situation.
+| 
+| spirit
+| Definition: a specified emotion or mood, especially one prevailing at a particular time.
+| Usage: I hope the team will build on this spirit of confidence.
+| Phrase: in (or in the) spirit
+| Definition: in thought or intention though not physically.
+| Usage: he couldn't be here in person, but he is with us in spirit.
+| Phrase: out of spirits
+| Definition: sad; discouraged.
+| Usage: I was too tired and out of spirits to eat or drink much.
+| Idiom: the spirit is willing but the flesh is weak [心有余而力不足，力不从心]
+| Definition: proverb someone has good intentions but fails to live up to them.
+| 
+| bruise [撞伤，淤青]
+| Definition: an injury appearing as an area of discolored skin on the body, caused by a blow or impact rupturing underlying blood vessels.
+| Definition: an area of damage on a fruit, vegetable, or plant.
+| Usage: She had slipped and badly bruised her face. 
+| Usage: Strawberries bruise easily. 
+| Usage: They had been badly bruised by the defeat. 
+| Usage: a bruised ego.
+| 
 | grail [圣杯]
 | Definition: a thing that is being earnestly pursued or sought after.
 | Usage: profit has become the holy grail. [唯利是图]
@@ -204,4 +235,19 @@ English Note 13
     Quests for it undertaken by medieval knights are described in versions of 
     the Arthurian legends written from the early 13th century onward.
 
+#. Palmistry [手相]
+   
+   the art or practice of supposedly interpreting a person's character 
+   or predicting their future by examining the lines and other features 
+   of the hand, especially the palm and fingers.
+
+#. Zodiac [黄道十二宫，占星术] 
+   
+    A belt of the heavens within about :math:`8^\circ` either side of the ecliptic, 
+    including all apparent positions of the sun, moon, and most familiar planets.
+    It is divided into twelve equal divisions or signs (Aries, Taurus, Gemini, Cancer, 
+    Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces), which some 
+    people believe can be used to predict how the planets will influence our lives.
+
+    .. image:: images/zodiac-signs.jpg
     

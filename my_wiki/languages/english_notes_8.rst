@@ -379,11 +379,6 @@ what is called a reason for living also the excellent one for dying.
 | 
 
 .. image:: images/facepalm.png
-
-.. figure:: images/zodiac-signs.jpg
-
-   Zodiac [十二星座]
-
 .. figure:: images/candelabrum.jpg
 
    Candelabrum (pl. candelabra) [灯座，烛台] 

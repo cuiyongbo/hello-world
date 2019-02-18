@@ -4,12 +4,18 @@ English Note 7
 
 **The tragedy of old age is not that one is old, but that one is young.**
 
-| in the ascendant
+| ascent
+| Definition: the act of climbing or moving up; an upward journey.
+| Usage: the first ascent of Mount Everest. [珠穆朗玛峰]
+| Usage: the first balloon ascent was in 1783.
+| Usage: man's ascent to civilization.
+| Definition: a rise to an important position or a higher level.
+| Usage: his ascent to power.
+| Phrase: ascend the throne
+| Definition: become king or queen.
+| Phrase: in the ascendant
 | Definition: rising in power or influence. [上升时期，崛起]
 | Usage: the reformers are in the ascendant.
-| 
-| ascend the throne
-| Definition: become king or queen.
 |
 | CV [简历]
 | Full: curriculum vitae
