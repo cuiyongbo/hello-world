@@ -15,7 +15,6 @@ Heapsort
    to satisfy the heap property. Before the actual sorting takes place, 
    the heap tree structure is shown briefly for illustration.
 
-
 **Origin**
 
 In computer science, heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: 
@@ -166,8 +165,6 @@ Movement 'down' means from the root towards the leaves.
       A.heap_size = A.length
       for i=A.length/2 downto 1
          Max-Heapify(A, i)
-
-
 
 **Example**
 

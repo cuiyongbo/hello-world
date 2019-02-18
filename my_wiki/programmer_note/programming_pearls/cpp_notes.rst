@@ -19,4 +19,3 @@ CPP Notes
     cpp_thread_note
     cpp_miscellaneous_tricks
     cpp_miscellaneous_tricks_02
-    std_alg_insight_note

@@ -2,60 +2,6 @@
 Frquently Used Algorithms
 *************************
 
-Reverse algorithm
-=================
-
-.. code-block:: c++
-   :caption: std::reverse 
-
-   template<class BidirIt>
-   void reverse(BidirIt first, BidirIt last)
-   {
-      for(; first != last && first != --last; ++first)
-         std::iter_swap(first, last);
-   }
-
-
-Rotate algorithm
-================
-
-#. Possible implementation 1
-   
-   .. code-block:: c++
-      :caption: std::rotate
-   
-      template<class _BidIt> inline
-      void _Rotate(_BidIt _First, _BidIt _Mid, _BidIt _Last)
-      {  // rotate [_First, _Last), _Mid as the pivot
-         reverse(_First, _Mid);
-         reverse(_Mid, _Last);
-         reverse(_First, _Last);
-      }
-   
-   .. note::
-   
-      reverse can be seen as an instance of rotate where the pivot is the midpoint.
-
-#. Possible implementation 2
-   
-   .. code-block:: c++
-      :caption: std::rotate
-   
-      template <class ForwardIt>
-      void rotate(ForwardIt first, ForwardIt mid, ForwardIt last)
-      {
-         ForwardIt next = mid;
-         while (first != next) {
-            std::iter_swap(first++, next++);
-            if (next == last) {
-                next = mid;
-            } else if (first == mid) {
-                mid = next;
-            }
-         }
-      }
-
-
 Unique algorithm
 ================
 
@@ -168,5 +114,3 @@ Unique algorithm
             }
          }
       }
-
-

@@ -7,5 +7,4 @@ Sort APIs
 .. toctree::
    :titlesonly:
 
-   heap_sort
    nth_element_partial_sort
