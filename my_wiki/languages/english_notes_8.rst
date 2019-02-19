@@ -208,13 +208,6 @@ what is called a reason for living also the excellent one for dying.
 | Definition: very drunk.
 | Usage: I went out and got totally plastered.
 | 
-| steep
-| Definition: soak (food or tea) in water or other liquid so as to extract its flavor or to soften it.
-| Usage: the noodles should be left to steep for 3–4 minutes. [浸泡]
-| Definition: (usually be steeped in) surround or fill with a quality or influence.
-| Usage: a city steeped in history. [沧桑古城]
-| Usage: they spent a month steeping themselves in Chinese culture. 
-| 
 | nether
 | Defintion:  (literary or humorous)  lower
 | Usage: a person's nether regions (= their genitals ) [下半身]

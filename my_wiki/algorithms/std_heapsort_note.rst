@@ -47,6 +47,6 @@ range ``[first, last-1).``
 
 **Complexity**
 
-* At most ``3*std::distance(first, last)`` comparisons for *make_heap().*
-* At most 2log(N) comparisons where ``N=std::distance(first, last)`` for *pop_heap().*
-* At most log(N) comparisons where ``N=std::distance(first, last).`` for *push_heap().*
+* At most ``3*std::distance(first, last)`` comparisons for `make_heap()`.
+* At most :math:`2\log(N)` comparisons where ``N=std::distance(first, last)`` for `pop_heap()`.
+* At most :math:`\log(N)` comparisons where ``N=std::distance(first, last)`` for `push_heap()`.

@@ -182,32 +182,6 @@ The object being sensed is often referred to as the proximity sensor's target.
 | Usage: Agreement has been reached to interlink the airport's two baggage systems.
 | Usage: The film, Puls Fiction, written and directed by Quentin Tarantino, consists of a series of short interlinking stories.
 | 
-| hoagie
-| Definition: a long piece of bread filled with meat, cheese and salad.
-| Synonyms: submarine sandwich.
-| 
-| bun
-| Definition: a bread roll of various shapes and flavorings, typically sweetened and often containing dried fruit.
-| Definition: a hairstyle in which the hair is drawn back into a tight coil at the back of the head. [丸子头]
-|
-| triangular
-| Definition: shaped like a triangle; having three sides and three corners.
-| Usage: dainty triangular sandwiches.
-| Definition: involving three people or parties. [三角关系]
-| Usage: a triangular relationship.
-
-.. image:: images/hoagie.jpg
-.. image:: images/triangular_sanwitch.jpg
-.. image:: images/Plain-Baby-Bun.jpg
-.. image:: images/messy-bun-hairstyles.jpg
-
-| powder
-| powdery
-| Definition: consisting of or resembling powder.
-| Usage: powdery snow.
-| Definition: covered with powder.
-| Usage: her pale powdery cheeks.
-| 
 | commiserate
 | commiserative
 | Definition: express or feel sympathy or pity; sympathize.

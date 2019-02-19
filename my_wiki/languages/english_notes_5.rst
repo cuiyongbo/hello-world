@@ -8,10 +8,10 @@ English Note 5
 .. image:: images/cookbook_02.jpg
 .. image:: images/daily_life.jpg
 
-| cookbook
-| Definition: a book of cooking directions and recipes. [食谱，菜谱]
-| Definition: a book of detailed instructions. [工具书]
-| Usage: Python cookbooks
+| cuisine
+| culinary [烹饪]
+| Definition: culinary means concerned with cooking.
+| Usage: She was keen to acquire more advanced culinary skills.
 | 
 | diet
 | dietary
@@ -20,20 +20,64 @@ English Note 5
 | Usage: Animal research showed that breast tumours struggled without the dietary nutrient asparagine. [天冬氨酸]
 | Definition: provided by one's diet.
 | Usage: the average dietary calcium intake was 140 milligrams per day.
+|
+| cookbook
+| Definition: a book of cooking directions and recipes. [食谱，菜谱]
+| Definition: a book of detailed instructions. [工具书]
+| Usage: Python cookbooks
 | 
+| flavor
+| Definition: the distinctive taste of a food or drink.
+| Usage: the yogurt comes in eight fruit flavors.
+| Definition: a substance used to alter or enhance the taste of food or drink; a flavoring.
+| Usage: we use vanilla and almond flavors.
+| Phrase: flavor of the month
+| Definition: a person or thing that enjoys a short period of great popularity.
+| Usage: social networking is no longer the flavor of the month among investors.
+| 
+| net weight [净重]
+| Definition: the net weight of something is its weight without its container.
+| Usage: a box of sweets weighing 500 grams net.
+| 
+| net profit [净利润]
+| Definition: the actual profit after working expenses not included in the calculation of gross profit.
+| Usage: Twitter has posted its first quarter net profit, help by video advert sales growth.
+| 
+| net effect
+| Definition: a net effect or result is the final one, after everything has been considered.
+| Usage: The net effect of this policy has been higher employment but lower wages.
+|
 | char
 | Definiton: partially burn (an object) so as to blacken its surface.
 | Usage: Their bodies were badly charred in the fire.
+| 
+| boil
+| Phrase: boil down to
+| Definition: be in essence a matter of. [归结为，概括为]
+| Usage: everything boiled down to cash in the end.
+| Usage: The trade-off usually boils down to one of flexibility (OO) versus efficiency (OB).
+| Definition: to make sth, especially information, shorter by leaving out the parts that are not important [压缩]
+| Usage: The original speech I had written got boiled down to about two minutes. 
+| Phrase: keep the pot boiling
+| Usage: maintain the momentum or interest value of something.
+| Phrase: make one's blood boil
+| Definition: infuriate sb.
+| 
+| infuriate
+| Definition: make (someone) extremely angry and impatient.
+| Usage: her silences infuriated him.
 | 
 | thaw
 | Definition: (of ice and snow) to turn back into water after being frozen.
 | Usage: It is starting to thaw.
 | Usage: Leave the meat to thaw completely before cooking. [解冻]
 | 
-| cuisine
-| culinary [烹饪]
-| Definition: culinary means concerned with cooking.
-| Usage: She was keen to acquire more advanced culinary skills.
+| steep
+| Definition: soak (food or tea) in water or other liquid so as to extract its flavor or to soften it.
+| Usage: the noodles should be left to steep for 3–4 minutes. [浸泡]
+| Definition: (usually be steeped in) surround or fill with a quality or influence.
+| Usage: a city steeped in history. [沧桑古城]
+| Usage: they spent a month steeping themselves in Chinese culture. 
 | 
 | concoct
 | Definition: make (a dish or meal) by combining various ingredients. [杂烩？]
@@ -92,61 +136,83 @@ English Note 5
 .. image:: images/butter_churn.png
 .. figure:: images/condiment.jpg
 
-   Salt, pepper, and sugar are commonly placed on Western restaurant tables.
+    Salt, pepper, and sugar are commonly placed on Western restaurant tables.
 
 .. figure:: images/utensil.jpg
-
-   Cooking / kitchen utensils. [炊具；厨房用具]
+    
+    Cooking / kitchen utensils. [炊具；厨房用具]
 
 .. figure:: images/aluminum-scoop.jpg
 
-   Scoop
+    Scoop
    
 .. figure:: images/escargot.jpg
    
-   Escargot [蜗牛]
+    Escargot [蜗牛]
 
-   A snail, especially as an item on a menu.
+    A snail, especially as an item on a menu.
+
+.. figure:: images/hoagie.jpg
+
+    Hoagie: a long piece of bread filled with meat, cheese and salad
+
+.. figure:: images/Plain-Baby-Bun.jpg
+
+    Bun: a bread roll of various shapes and flavorings, typically sweetened and often containing dried fruit [干果]
+
+.. figure:: images/messy-bun-hairstyles.jpg
+
+    Bun [丸子头]
+
+.. figure:: images/triangular_sanwitch.jpg
+
+    Triangular sandwiches [三明治]
 
 .. figure:: images/Pastry_with_Azuki_beans.jpg
 
-   Profiterole 泡芙
+    Profiterole 泡芙
 
-   | Profiterole 泡芙
-   | Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
-   | choux  高麗萊
-   | Definition: very light pastry made with egg, typically used for eclairs and profiteroles.
-   | pastry [油酥麪团，油酥麪皮]
-   | Definition: a dough of flour, and water, used as a base and covering in baked dishes such as pies.
+    | Profiterole 泡芙
+    | Definition: a small hollow pastry typically filled with cream and covered with chocolate sauce.
+    | choux  高麗萊
+    | Definition: very light pastry made with egg, typically used for eclairs and profiteroles.
+    | pastry [油酥麪团，油酥麪皮]
+    | Definition: a dough of flour, and water, used as a base and covering in baked dishes such as pies.
 
 .. figure:: images/donut.jpg
   
-   Doughnut / donut 甜甜圈
+    Doughnut / donut 甜甜圈
 
 .. figure:: images/sencha_green_tea.jpg
 
-   Sancha green tea
+    Sancha green tea
 
-   Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) 
-   which is prepared by infusing the processed whole tea leaves 
-   in hot water. It is the most popular tea in Japan.
+    Sencha (煎茶) is a type of Japanese ryokucha (緑茶, green tea) 
+    which is prepared by infusing the processed whole tea leaves 
+    in hot water. It is the most popular tea in Japan.
    
 .. figure:: images/omlet.jpg
 
-   Omelette 煎蛋卷,摊鸡蛋(常加入奶酪、肉和蔬菜)
+    Omelette 煎蛋卷,摊鸡蛋(常加入奶酪、肉和蔬菜)
 
-   In cuisine, an omelette or omelet is a dish made from beaten eggs 
-   fried with butter or oil in a frying pan. It is quite common for 
-   the omelette to be folded around a filling such as cheese, chives, 
-   vegetables, mushrooms, meat, or some combination of the above.
+    In cuisine, an omelette or omelet is a dish made from beaten eggs 
+    fried with butter or oil in a frying pan. It is quite common for 
+    the omelette to be folded around a filling such as cheese, chives, 
+    vegetables, mushrooms, meat, or some combination of the above.
 
 .. figure:: images/Slow-Cooker-Homemade-Beef-Stew.jpg
    
-   stew [炖汤]
+    Stew [炖汤]
 
-   A dish of meat and vegetables cooked 
-   slowly in liquid in a closed dish or pan. 
+    A dish of meat and vegetables cooked slowly in liquid in a closed dish or pan. 
 
+| poder
+| powdery
+| Definition: consisting of or resembling powder.
+| Usage: powdery snow.
+| Definition: covered with powder.
+| Usage: her pale powdery cheeks.
+|
 | cramp
 | Definition: a painful, involuntary contraction of a muscle or muscles, typically caused by fatigue or strain.
 | Usage: he suffered severe cramps in his foot. [痉挛]
@@ -365,17 +431,17 @@ English Note 5
 .. image:: images/trough.jpg
 .. figure:: images/plastic-hanging-trough.jpg
 
-   trough 水槽，饲料槽
+    Trough 水槽，饲料槽
 
+.. image:: images/convent.jpeg
 .. figure:: images/glade.jpg
 
-   Glade : an open space in a forest
+    Glade : an open space in a forest
 
 .. image:: images/armored_soldier.jpg
 .. image:: images/armor.jpeg
 .. image:: images/japanese_swords.jpg
 .. figure:: images/claymore.png
 
-   Claymore [西洋剑]
+    Claymore [西洋剑]
 
-.. image:: images/convent.jpeg

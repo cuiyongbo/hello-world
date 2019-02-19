@@ -48,14 +48,17 @@ English Note 13
 | Definition: a male homosexual.
 | Definition: a bundle of sticks or twigs bound together as fuel.
 |
-| pansy
-| Definition: 三色堇
+| pansy [三色堇]
 | Definition: an offensive word for a homosexual man. [娘娘腔，娘炮]
 | 
 | sensual
 | Definition: connected with your physical feelings; giving pleasure to your physical senses, especially sexual pleasure.
 | Usage: ensual pleasure. [感官之乐，肉欲]
 | 
+| triangular
+| Definition: involving three people or parties. 
+| Usage: a triangular relationship. [三角关系]
+|
 | revocable
 | irrevocable
 | Definition: not able to be changed, reversed, or recovered; final
@@ -214,7 +217,15 @@ English Note 13
 | Definition: sad; discouraged.
 | Usage: I was too tired and out of spirits to eat or drink much.
 | Idiom: the spirit is willing but the flesh is weak [心有余而力不足，力不从心]
-| Definition: proverb someone has good intentions but fails to live up to them.
+| Definition: sb has good intentions but fails to live up to them.
+| 
+| advent
+| Definition: the arrival of a notable person, thing, or event.
+| Usage: The advent of television.
+| 
+| observant
+| Definition: quick to notice things.
+| Usage: her observant eye took in every detail.
 | 
 | bruise [撞伤，淤青]
 | Definition: an injury appearing as an area of discolored skin on the body, caused by a blow or impact rupturing underlying blood vessels.

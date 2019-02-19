@@ -391,11 +391,11 @@ name, also known as surname, with most family members.
 | Usage: He was deposed and replaced by a more pliant succesor.
 | 
 | naught
-| Definition: nothing; the digit 0
+| Definition: nothing; the digit 0.
 | Usage: He is naught bu a worthless fool.
 | 
 | aught
-| Definition: anything at all
+| Definition: anything at all.
 | Usage: know you aught of this fellow, young sir?
 | 
 | archaic
@@ -1255,18 +1255,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: performing, involving, or adept at spectaculargymnastic feats.
 | Usage: An acrobatic dive.
 | 
-| net profit [净利润]
-| Definition: the actual profit after working expenses not included in the calculation of gross profit.
-| Usage: Twitter has posted its first quarter net profit, help by video advert sales growth.
-| 
-| net effect
-| Definition: a net effect or result is the final one, after everything has been considered.
-| Usage: The net effect of this policy has been higher employment but lower wages.
-| 
-| net weight [净重]
-| Definition: the net weight of something is its weight without its container。
-| Usage: a box of sweets weighing 500 grams net。
-| 
 | meager
 | Definition: Deficient in amount  or quality or extent.
 | Usage: They were forced to supplement their meager earning.
@@ -1914,10 +1902,6 @@ admitted the computer was named after his daughter.
 | Usage: The committee was set up in the wake of inquiry.
 | Idiom: wake up and smell the coffee
 | Definition: become aware of the realities of situation, however unpleasant.
-| 
-| advent
-| Definition: the arrival of a notable person, thing, or event.
-| Usage: The advent of television.
 | 
 | discrepant
 | discrepancy
