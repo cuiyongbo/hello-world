@@ -2,6 +2,17 @@
 Biological Terms 3
 ******************
 
+| tailing [尾矿]
+| the residue of something, especially ore[矿石]. 
+| 
+| flora [植物群]
+| Definition: the plants of a particular region, habitat, or geological period. 
+| Usage: the river's flora and fauna have been inventoried and protected.
+| 
+| fauna [动物群]
+| Definition: the animals of a particular region, habitat, or geological period.
+| Usage: "the flora and fauna of Siberia.
+| 
 | nocturnal
 | Definition: Done, active or occurring at night.
 | Usage: Most owls are nocturnal.
@@ -107,3 +118,11 @@ Biological Terms 3
 .. figure:: images/Warbler.jpg
 
     Warbler [黄莺]
+
+.. figure:: images/heartbreaking_pollution.jpg
+
+    A tailing pond found deep within western Australia
+
+.. figure:: images/Australisk_fauna_Nordisk_familjebok.jpg
+
+    Australia fauna

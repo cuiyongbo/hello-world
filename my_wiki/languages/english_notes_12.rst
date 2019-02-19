@@ -49,7 +49,7 @@ English Note 12
 | Definition: bringing strong images, memories, or feelings to mind.
 | Usage: Her new book is wonderfully evocative of village life. 
 | 
-| secretation
+| secretion
 | Definition: the process by which liquid substances are produced by parts of the body or plants. [分泌过程]
 | Usage: the secretion of bile by the liver. [肝脏分泌胆汁的过程]
 | Definition: a liquid substance produced by parts of the body or plants [分泌物]
@@ -58,10 +58,7 @@ English Note 12
 | Definition: something that is kept or meant to be kept unknown or unseen by others.
 | Usage: a state secret. [国家机密]
 | Usage: at first I tried to keep it a secret from my wife.
-| Definition: the resupply effort was probably kept secret from Congress.
-| 
-| Phrase: be in on the secret
-| Definition: be among the few people who know something.
+| Usage: the resupply effort was probably kept secret from Congress.
 | Usage: Details of the proposals remain secret.
 | Phrase: in secret
 | Definition: without others knowing.
@@ -69,6 +66,11 @@ English Note 12
 | Phrase: make no secret of something
 | Definition: make something perfectly clear.
 | Usage: He made no secret of his ambition.
+| 
+| behind one's back
+| Definition: without someone's knowledge : in secret.
+| Usage: You shouldn't gossip about people behind their back(s).
+| Usage: She went behind his back and spoke directly to his supervisor.
 | 
 | lunch
 | Usage: public relations people lunch their clients there.

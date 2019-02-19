@@ -150,3 +150,53 @@ Standard Algorithm Library Note
    
         `reverse` can be seen as an instance of `rotate` where the pivot is the midpoint.
 
+#. unique
+   
+    .. code-block:: cpp
+
+        template<class ForwardIt>
+        ForwardIt unique(ForwardIt first, ForwardIt last)
+        {
+            if(first == last)
+                return last;
+
+            ForwardIt result = first;
+            while(++first != last)
+            {
+                if(!(*result == *first) && (++result != first))
+                    *result = std::move(*first)
+            }
+            return ++result;
+        }
+
+        template<class ForwardIt, class BinaryPredicate>
+        ForwardIt unique(ForwardIt first, ForwardIt last, BinaryPredicate p)
+        {
+            if(first == last)
+                return last;
+
+            ForwardIt result = first;
+            while(++first != last)
+            {
+                if(!p(*result == *first) && (++result != first))
+                    *result = std::move(*first)
+            }
+            return ++result;
+        }
+
+    .. note::
+
+        Eliminates all but the first element from every consecutive group of equivalent elements 
+        from the range `[first, last)` and returns a past-the-end iterator for the new logical end of the range.
+        Removing is done by shifting the elements in the range in such a way that elements to be erased are overwritten. 
+        Relative order of the elements that remain is preserved and **the physical size of the container is unchanged.**
+
+        p -  binary predicate which returns ​true if the elements should be treated as equal. 
+
+        The signature of the predicate function should be equivalent to the following::
+
+            bool pred(const Type1& a, const Type2& b);
+
+        Complexity: For nonempty ranges, exactly `std::distance(first,last) -1` applications of the corresponding predicate.
+
+    
