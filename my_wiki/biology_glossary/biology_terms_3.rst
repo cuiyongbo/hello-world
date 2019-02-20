@@ -126,3 +126,7 @@ Biological Terms 3
 .. figure:: images/Australisk_fauna_Nordisk_familjebok.jpg
 
     Australia fauna
+
+.. figure:: images/raccoon.jpg
+
+    Raccoon [浣熊]

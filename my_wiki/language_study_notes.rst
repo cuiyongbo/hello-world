@@ -20,6 +20,7 @@ Language Study
    languages/english_notes_11
    languages/english_notes_12
    languages/english_notes_13
+   languages/english_notes_14
    languages/japanese_notes
    languages/japanese_notes_02
    languages/japanese_notes_03

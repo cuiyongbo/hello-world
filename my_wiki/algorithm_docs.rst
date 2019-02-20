@@ -38,3 +38,4 @@ Algorithms
     algorithms/std_alg_insight_note
     algorithms/std_alg_insight_note_02
     algorithms/std_heapsort_note
+    algorithms/prime_test_alg_note

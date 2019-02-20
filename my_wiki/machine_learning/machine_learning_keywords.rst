@@ -52,3 +52,6 @@ matrix inverse: :math:`\mathbf{A^{-1}A = I_n}`
 
 norm, Euclidean norm, :math:`L^2 norm`
 
+
+
+

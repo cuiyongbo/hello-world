@@ -905,27 +905,6 @@ name, also known as surname, with most family members.
 | Synonyms: pooh-pooh
 | Usage: He spoke gruffly, as if afraid that his invitation would be spurned. [傲娇]
 | 
-| pooh-pooh
-| Definition: reject with contempt.
-| Usage: Oh pooh! Don't be such a spoilsport.
-|
-| spoilsport [扫兴，扫把星]
-| Definition: a person who behaves in a way that spoils others' pleasure, especially by not | joining in an activity.
-|
-| disdain
-| Definition: The felling that someone is unworthy of one’s consideration or respect; contempt
-| Usage: Her upper lip curled in disdain.
-| Usage: An aristocratic disdain for manual labor.
-| 
-| haughty
-| Definition: Arrogantly superior and disdainful.
-| Usage: A haughty aristocrat.
-| 
-| tempest
-| Definition: a violent windy storm.
-| Idiom: a tempest in a teapot.
-| Definition: great anger or excitement about a trivial matter.
-| 
 | strife
 | Definition: angry or bitter disagreement over fundamental issues; conflict.
 | Usage: Strife with community.

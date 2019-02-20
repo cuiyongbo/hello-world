@@ -389,9 +389,13 @@ English Note 12
 .. image:: images/sea_side.jpg
 .. image:: images/water_reflection.jpg
 
-.. figure:: images/spring_festival_laterns.jpg
+.. figure:: images/spring_festival_lanterns.jpg
 
-   Laterns [灯笼]
+   Lanterns [灯笼]
+
+.. figure:: images/sky_laterns.jpg
+
+    Pingxi Sky Lantern Festival in Taipei, China [孔明灯]
 
 .. figure:: images/hot-air-balloon.jpg
 

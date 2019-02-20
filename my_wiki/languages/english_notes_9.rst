@@ -408,6 +408,10 @@ English Note 9
 | Definition: interrupt verbally.
 | Usage: “It's true!” he intervened.
 |
+| intercede
+| Definition: intervene on behalf of another.
+| Usage: I begged him to intercede for Theresa, but he never did a thing.
+| 
 | makeshift
 | Definition: serving as a temporary substitute; sufficient for the time being.
 | Usage: A few cushions formed a makeshift bed.
