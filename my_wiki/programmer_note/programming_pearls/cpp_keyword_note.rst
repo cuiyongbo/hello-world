@@ -71,6 +71,33 @@ CPP Keywords
         A constructor with a single non-default parameter that is declared 
         without the function specifier explicit is called a **converting constructor**.
 
+#. final specifier
+
+    When used in a virtual function declaration or definition, `final` ensures that the function 
+    is virtual and specifies that it may not be overridden by derived classes.
+
+    When used in a class definition, `final` specifies that this class cannot be derived from. 
+
+    .. code-block:: cpp
+
+        struct Base
+        {
+            virtual void foo();
+        };
+ 
+        struct A : Base
+        {
+            void foo() final; // A::foo is overridden and it is the final override
+            void bar() final; // Error: non-virtual function cannot be overridden or be final
+        };
+ 
+        struct B final : A // struct B is final
+        {
+            void foo() override; // Error: foo cannot be overridden as it's final in A
+        };
+ 
+        struct C : B {}; // Error: B is final
+
 #. inline
 
     In the C and C++ programming languages, an inline function is one qualified with the keyword ``inline``; 
@@ -100,3 +127,4 @@ CPP Keywords
         #else
         #define forceinline inline
         #endif
+

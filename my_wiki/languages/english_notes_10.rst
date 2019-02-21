@@ -52,11 +52,23 @@ English Note 10
 | Definition: mark with spots or smears of color.
 | Usage: the cow's coat was light red mottled with white.
 | Definition: an irregular arrangement of spots or patches of color.
-| Usage: the ship was a mottle of khaki and black. [卡其色，尤其用于军装]
+| Usage: the ship was a mottle of khaki and black.
 | Usage: white marble with mottlings of black and gray. [斑驳]
 | 
-| khaki
+| khaki [卡其色，尤其用于军装]
 | Definition: a strong greenish or yellowish brown cloth, used especially for making military uniforms.
+| 
+| camouflage
+| Definition: the disguising of military personnel, equipment, and installations by painting or covering them to make them blend in with their surroundings.
+| Usage: the war area had to be camouflaged with mud.
+| Usage: on the trenches were pieces of turf which served for camouflage. [迷彩]
+| Definition: the clothing or materials used for disguise.
+| Usage: figures dressed in army camouflage.
+| Definition: an animal's natural coloring or form that enables it to blend in with its surroundings.
+| Usage: the whiteness of polar bears provides camouflage.
+| Usage: much of my apparent indifference was merely protective camouflage.
+| Definition: conceal the existence of (something undesirable).
+| Usage: grievances should be discussed, not camouflaged.
 | 
 | sultry
 | Definition: (of the air or weather) hot and humid. [闷热]
