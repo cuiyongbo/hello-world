@@ -184,11 +184,6 @@ Nature Lifes
 
    Fungi
 
-.. image:: images/black_swan.jpg
-.. figure:: images/tundra_swan.jpg
-
-   Swan
-
 .. image:: images/arctic_fox.jpg
 
 .. image:: images/walnut_01.jpg

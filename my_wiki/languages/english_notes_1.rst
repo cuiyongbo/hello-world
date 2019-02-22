@@ -1287,17 +1287,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: The penultimate thing in a series of things is the last but one; second last.
 | Usage: It is the first time Barcelona have been 19 points above Real since the penultimate day of 1990-91 season.
 | 
-| comeback
-| Definition: If someone such as an entertainer or sports personality makes a comeback, they return to their profession or sport after a period away.
-| Usage: Suarez, Messi lead Barcelona to 4-2 comeback win at Sociedad.
-| Definition: If something makes a comeback, it becomes fashionable again.
-| Usage: Loose fitting pants are making a comeback.
-| 
-| retrofit
-| Definition: add (a component or accessory) to something that did not having it when manufactured.
-| Usage: Bus have been retroffited with easy-access feature.
-| Usage:  Voice recorders were retrofitted into planes already in service.
-| 
 | refrain
 | Definition: stop oneself from doing something.
 | Usage: She refrained from comment.

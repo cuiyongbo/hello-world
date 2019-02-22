@@ -93,9 +93,22 @@ Biological Terms 3
 
     Porcupine [豪猪]
 
+| Tertiary period [三叠纪]
+| Jurassic period [侏罗纪]
+| Cretaceous period [白垩纪]
+
+.. figure:: images/allosaurus.png
+
+    Allosaurus [异特龙]
+
+.. image:: images/moros_intrepidus.jpg
 .. figure:: images/t-rex.jpg
 
     Tyrannosaurus Rex [霸王龙]
+
+    Tyrannosaurus rex wasn't always the king of the dinosaurs. 
+    Before they became towering predators [顶级掠食者], tyrannosaurs started 
+    out much smaller, and a newly discovered fossil is helping fill the gap between those two extremes.
 
 .. image:: images/MapGreatRiftValley.png
 .. figure:: images/Great-Rift-Valle.jpg
@@ -130,3 +143,9 @@ Biological Terms 3
 .. figure:: images/raccoon.jpg
 
     Raccoon [浣熊]
+
+.. image:: images/sandhill_crane_take_flight.jpg
+.. image:: images/black_swan.jpg
+.. figure:: images/tundra_swan.jpg
+
+    Swan

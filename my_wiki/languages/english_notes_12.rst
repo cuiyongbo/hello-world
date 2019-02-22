@@ -174,6 +174,12 @@ English Note 12
 | Definition: To argue in favor of a viewpoint already held by one's audience.
 | Usage: You're preaching to the converted here—we all have kids and understand how busy life can get.
 | 
+| podium
+| Definition: a small platform on which a person may stand to be seen by an audience, as when making a speech or conducting an orchestra.
+| Synonyms: lectern [讲台]
+| Definition: (sports) a structure consisting of three adjacent platforms of different heights, on which the competitors finishing in first, second, and third places receive their awards.
+| Usage: it was more than I could imagine to be up on the podium and singing the national anthem. [颁奖台]
+| 
 | elude
 | Definition: evade or escape from (a danger, enemy, or pursuer), typically in a skillful or cunning way.
 | Usage: The two men managed to elude the police for six weeks.

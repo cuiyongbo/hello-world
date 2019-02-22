@@ -161,11 +161,10 @@ grep Manual
          that a binary file does not match; this is equivalent to the :option:`-I`
          option. 
 
-         .. warning::
-         
-            ``grep --binary-files=text`` might output binary garbage, which can have
-            nasty side effects if the output is a terminal and if the terminal driver
-            interprets some of it as commands.
+      .. option:: -I     
+
+         Process a binary file as if it did not contain matching data; 
+         this is equivalent to the `--binary-files=without-match` option.
 
       .. option:: -r, --recursive
 
@@ -381,4 +380,10 @@ grep Manual
    # in ubuntu, you don't need add '-r' option when searching a directory
    $ grep "uint8" /usr/include/*.h
    /usr/include/stdint.h:typedef unsigned char     uint8_t;
+
+   $ grep -rHn ' tr ' --include=*.rst
+   shell_command/tr_manual.rst:9:      tr [OPTION]... SET1 [SET2]
+   shell_command/tr_manual.rst:59:   $ echo "wwwwwwwwweeeeeeee" | tr -s "we"
+   shell_command/uniq_manual.rst:55:   $ cat sample | tr " " "\n" | sort | uniq -c | sort -r
+
 
