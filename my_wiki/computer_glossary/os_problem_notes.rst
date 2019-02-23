@@ -6,6 +6,7 @@ OS Problem Note
     :titlesonly:
 
     os_problem/macos_problem_note
+    os_problem/macos_problem_note_02
     os_problem/ubuntu_problem_note
     os_problem/ubuntu_problem_note_02
     os_problem/windows_problem_note

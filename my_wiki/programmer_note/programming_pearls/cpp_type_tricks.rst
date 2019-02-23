@@ -15,10 +15,6 @@ Concepts
    ``std::malloc``, it can be copied with ``std::memmove``, etc, and can be exchanged with C libraries directly,
    in its binary form.
    
-   Note that the standard doesn't define a named requirement or concept with this name.
-   This is a type category defined by the core language. It is included here as concept
-   only for consistency.
-
 Language Support
 ----------------
    

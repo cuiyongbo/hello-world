@@ -299,6 +299,12 @@ what is called a reason for living also the excellent one for dying.
 | Definition: My parents really freaked when they saw my hair. 
 | Usage: Snakes really freak me out. 
 | 
+| stillborn
+| Definition: (of an infant) born dead. [死胎]
+| Usage: one of the twins was stillborn.
+| Definition: (of a proposal or plan) having failed to develop or be realized.
+| Usage: The proposed wealth tax was stillborn. [胎死腹中]
+| 
 | armageddon
 | Definition: (in the New Testament) the last battle between good and evil before the Day of Judgment.
 | Definition: a dramatic and catastrophic conflict, typically seen as likely to destroy the world or the human race.

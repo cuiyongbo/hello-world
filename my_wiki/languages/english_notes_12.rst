@@ -87,7 +87,7 @@ English Note 12
 | Usage: trees cast long shadows.
 | Usage: the shadow of war fell across Europe.
 | Definition: an inseparable attendant or companion.
-| Usage: her faithful shadow, a Yorkshire terrier called Heathcliffe.
+| Usage: her faithful shadow, a Yorkshire terrier [一种猎犬] called Heathcliffe.
 | Definition: follow and observe (someone) closely and secretly.
 | Usage: he had been up all night shadowing a team of poachers.
 | 

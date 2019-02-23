@@ -261,36 +261,10 @@ name, also known as surname, with most family members.
 | 
 | rule the roost
 | Definition: be in complete control.
-| 
-| I am the one who runs facebook.
+| Usage: I am the one who runs facebook.
 | 
 | as a rule
 | Definition: usually, but not always.
-| 
-| stub
-| Definition: The stub of a cigrette or a pencil is the last short piece of it, which remains when the rest has been used. [烟蒂，铅笔头]
-| Definition: A cheque stub is the small part that you keep as a record of what you have paid. [凭据]
-| Definition: If you stub your toe, you hurt it by accidentally kicking something.
-| Definition: A ticket stub is the part that you keep when you go in to watch a performance.
-| Usage: He pulled the stub of a pencil from behind his ear.
-| Usage: an ashtray of cigarette stubs.
-| Usage: Fans who still have their original ticket stubs should contact Sheffield Arena by July 3.
-| Usage: I stubbed my toes against a table leg.
-| 
-| invoice  发票
-| coupon [优惠券]
-| Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
-| Synonyms: voucher
-|
-| voucher
-| Definition: a voucher is a piece of paper that can be used instead of money to pay for something.
-| Usage: The winner will each receive a voucher for a pair of cinema tickets.
-| 
-| Faction
-| Definition 1: A faction is an organized group of people within a larger group. Which opposes some of the ideas of the larger group and fights for its own | ideas.
-| Definition 2: Faction is also used to describe argument and disagreement within a group of people.
-| Usage: A peace agreement will be signed by the leaders of the country’s warring factions.
-| Usage: Faction and self-interest appear to be norm.
 | 
 | Demote
 | Definition: Give somebody a lower rank or less senior position, usually as a punishment.
@@ -897,13 +871,6 @@ name, also known as surname, with most family members.
 | vigour
 | Definition: physical strength and good health
 | Usage: They set about the task with vigor.
-| 
-| spurn
-| Definition: strike, tread, or push away with the foot
-| Usage: With one touch of my feet, I spurn the solid Earth.
-| Definition: reject with disdain or contempt.
-| Synonyms: pooh-pooh
-| Usage: He spoke gruffly, as if afraid that his invitation would be spurned. [傲娇]
 | 
 | strife
 | Definition: angry or bitter disagreement over fundamental issues; conflict.
@@ -2590,22 +2557,11 @@ subjected to verbal and physical abuse over a period of years.
 | Definition: a means of estimating something, or a criterion or test.
 | Usage: Emigration is pherhaps the best gauge of public unease.
 | 
-| stillborn
-| Definition: (of an infant) born dead. [死胎]
-| Usage: one of the twins was stillborn.
-| Definition: (of a proposal or plan) having failed to develop or be realized.
-| Usage: The proposed wealth tax was stillborn.
-| 
 | in hock
 | Definition: if someone is in hock, they are in debt.
 | Definition: if you are in hock to somebody, you feel you have to do somethings for them because they have given you money or support.
 | Usage: Even company directors on $100,000 a year can be deeply in hock to the banks.
 | Usage: It is almost impossible for the prime minister to stand above the factions. He always seems in hock to one or another.
-|
-| en masse
-| Definition: in a group; all together.
-| Usage: The Cabinet immediately resigned en masse. 
-| 
 | 
 | tether
 | Definition: a rope or chain with which an animal is tied to restrict its movement.

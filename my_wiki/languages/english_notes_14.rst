@@ -2,8 +2,16 @@
 English Note 14
 ***************
 
+**Now or Never**
+
+| spurn
+| Definition: strike, tread, or push away with the foot
+| Usage: With one touch of my feet, I spurn the solid Earth.
+| Definition: reject with disdain or contempt.
+| Synonyms: pooh
+| Usage: He spoke gruffly, as if afraid that his invitation would be spurned. [傲娇　ツンデレ]
 | 
-| pooh-pooh
+| pooh
 | Definition: reject with contempt.
 | Usage: Oh pooh! Don't be such a spoilsport.
 |
@@ -92,3 +100,66 @@ English Note 14
 | Definition: relating to Byzantium (now Istanbul), the Byzantine Empire, or the Eastern Orthodox Church.
 | Definition: (of a system or situation) excessively complicated, and typically involving a great deal of administrative detail.
 | Usage: Byzantine insurance regulations.
+| 
+| enmasse
+| Definition: in a group; all together. [集体，全员]
+| Usage: the board of directors resigned en masse.
+| Usage: The Cabinet immediately resigned en masse. 
+| 
+| lurcher [混种狗]
+| Definition: a dog that is a mixture of two different breeds of dog, one of which is usually a greyhound.
+| 
+| peerless [无双的]
+| Definition: better than all others of its kind. 
+| Usage: a peerless performance 
+| 
+| poke
+| Definition: jab or prod (someone or something), especially with one's finger. [捅，戳，顶]
+| Usage: She poked her elbow into his ribs. 
+| Usage: I'm sick of being poked and prodded by doctors. 
+| Phrase: poke about/around
+| Definition: look around a place, typically in search of something.
+| Usage: The police spent the day poking around in his office but found nothing. 
+| Usage: We've had journalists poking around and asking a lot of questions. 
+| Idiom: better than a poke in the eye (with a sharp stick) [有总比没有强]
+| Definition: welcome or pleasing, even if other circumstances might be better.
+| Usage: I got a tax rebate—not a huge amount but better than a poke in the eye with a sharp stick. [退税]
+| 
+| rebate
+| rebatable
+| Definition: a partial refund to someone who has paid too much money for tax, rent, or a utility.
+| Usage: Buyers are offered a cash rebate.
+| 
+| invoice  [发票]
+| coupon [优惠券]
+| Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
+| Synonyms: voucher
+|
+| voucher [代金券]
+| Definition: a voucher is a piece of paper that can be used instead of money to pay for something.
+| Usage: The winner will each receive a voucher for a pair of cinema tickets.
+| 
+| stub
+| Definition: The stub of a cigrette or a pencil is the last short piece of it, which remains when the rest has been used. [烟蒂，铅笔头]
+| Usage: He pulled the stub of a pencil from behind his ear.
+| Usage: an ashtray of cigarette stubs.
+| Definition: A cheque stub is the small part that you keep as a record of what you have paid. [凭据]
+| Definition: A ticket stub is the part that you keep when you go in to watch a performance. [票据]
+| Usage: Fans who still have their original ticket stubs should contact Sheffield Arena by July 3.
+| Definition: If you stub your toe, you hurt it by accidentally kicking something.
+| Usage: I stubbed my toes against a table leg.
+| 
+| faction
+| Definition: a state of conflict within an organization; dissension.
+| Definition: a small, organized, dissenting group within a larger one, especially in politics.
+| Usage: the left-wing faction of the party.
+| Usage: A peace agreement will be signed by the leaders of the country’s warring factions.
+| 
+| leverage
+| Definition: the act of using a lever to open or lift sth. [杠杆原理]
+| Definition: the power to influence a person or situation to achieve a particular outcome.
+| Usage: the right wing had lost much of its political leverage in the Assembly.
+| Definition: the ratio of a company's loan capital (debt) to the value of its common stock (equity).
+| 
+| make out like a bandit
+| Definition: profit greatly from an activity.
