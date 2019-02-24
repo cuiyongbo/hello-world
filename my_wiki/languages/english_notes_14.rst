@@ -229,6 +229,26 @@ English Note 14
 | Definition: the time when one sign of the zodiac ends and the next begins
 | Usage: I was born on the cusp between Virgo and Libra.
 | Definition: He was on the cusp between small acting roles and moderate fame. [小荷初露尖尖角，初见端倪]
+| 
+| factor in/out
+| Definition: include (or exclude) something as a relevant element when making a calculation or decision.
+| Usage: Remember to factor in staffing costs when you are planning the project. 
+| 
+| froth
+| Definition: rise or overflow in a soft, light mass.
+| Definition: She wore an ivory silk blouse, frothing at nect and cuffs.
+| Definition: form or contain a rising or overflowing mass of small bubbles; foam [啤酒沫]
+| Usage: He took a quick quick sip of beer as it frothed out of the can.
+| 
+| ravage
+| Definition: casue severe and extensive damage to.
+| Usage: Fears that a war could ravage their country. [蹂躏，摧残]
+| Definition: the severely damaging or destructive effects of something.
+| Usage: His face had withstood the ravages of time.
+| 
+| blatant
+| Definition: (of bad behavior) done openly and unashamedly
+| Usage: He just blatantly lied about it. [睁眼说瞎话]
 
 .. figure:: images/Winnie-the-Pooh.jpg
 

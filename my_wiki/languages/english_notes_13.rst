@@ -260,5 +260,6 @@ English Note 13
     Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces), which some 
     people believe can be used to predict how the planets will influence our lives.
 
-    .. image:: images/zodiac-signs.jpg
+    .. image:: images/zodiac_signs.jpg
+    .. image:: images/zodiac_signs_02.png
     
