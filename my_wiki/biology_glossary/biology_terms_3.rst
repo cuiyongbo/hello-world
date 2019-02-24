@@ -77,6 +77,8 @@ Biological Terms 3
 
    Scorpion [蝎子]
 
+.. image:: images/life_cycle_of_a_17_year_periodical_cicada.jpg
+.. image:: images/cicada-metamorphosis.jpg
 .. figure:: images/cicada.png
 
    Cicada  [知了，蝉]
@@ -149,3 +151,46 @@ Biological Terms 3
 .. figure:: images/tundra_swan.jpg
 
     Swan
+
+.. image:: images/Ceatacean_Drawing.jpg
+.. image:: images/marine_megafauna.jpg
+.. image:: images/whales-of-the-world-laura-row.jpg
+.. image:: images/ken-hurd-a-collection-of-whales.jpg
+
+
+#. Ontogeny
+   
+    Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 
+    usually from the time of fertilization of the egg to the organism's mature form. Yet, the term 
+    can be used to refer to the study of the entirety of an organism's lifespan.
+
+    .. image:: images/Ontogeny.jpg
+    .. image:: images/prokaryotic_creatures.jpg
+
+#. Phlogeny
+   
+    Phylogenetics, in biology, is the study of the evolutionary history and relationships 
+    among individuals or groups of organisms (e.g. species, or populations). These relationships 
+    are discovered through phylogenetic inference methods that evaluate observed heritable traits, 
+    such as DNA sequences or morphology under a model of evolution of these traits.
+
+    .. image:: images/Phylogenetic-tree.png
+    .. image:: images/phylogeny_tree_02.jpg
+    .. image:: images/strom-zivota.jpg
+    .. image:: images/Evolution__Biologia.jpg
+
+#. Ontogeny recapitulates phylogeny
+
+    The phrase "ontogeny recapitulates phylogeny" refers to a scientific theory 
+    that an organism's fetal development follows the species' previous evolutionary 
+    forms. This theory has been disproven.
+
+    .. image:: images/Embryological-evidences.jpg
+
+#. Metamorphosis
+   
+   (in an insect or amphibian) the process of transformation from an immature 
+   form to an adult form in two or more distinct stages.
+
+   .. image:: images/Butterfly-life-cycles.png
+   .. image:: images/metamorphosis.jpg

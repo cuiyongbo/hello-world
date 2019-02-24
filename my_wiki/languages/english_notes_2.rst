@@ -258,6 +258,14 @@ English Note 2
 | Definition: inflict (vengeance).
 | Usage: He swore to wreak vengeance on those who had betrayed him.
 | 
+| havoc
+| Definition: widespread destruction.
+| Usage: the hurricane ripped through Florida, causing havoc.
+| Phrase: play havoc with
+| Definition: completely disrupt; cause serious damage to.
+| Usage: shift work plays havoc with the body clock.
+| Usage: Continuing strikes are beginning to play havoc with the national economy.
+| 
 | kitchen sink
 | Definition: a sink in a kitchen, used for washing dishes and preparing food. [水池]
 | Usage: The traditional view of women as dedicated housewives tied to the kitchen sink is all but extinct.

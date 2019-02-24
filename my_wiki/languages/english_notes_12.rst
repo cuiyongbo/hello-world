@@ -67,9 +67,24 @@ English Note 12
 | Definition: make something perfectly clear.
 | Usage: He made no secret of his ambition.
 | 
+| dark
+| Idiom: the darkest hour is just before the dawn
+| Definition: when things seem to be at their worst, they are about to start improving.
+| Idiom: a dark horse [黑马，深藏不露的人]
+| Definition: a person taking part in a race, etc. who surprises everyone by winning.
+| Definition: a person who does not tell other people much about their life, and who surprises other people by having interesting qualities.
+| Phrase: in the dark
+| Definition: in a state of ignorance about something.
+| Usage: we're clearly being kept in the dark about what's happening.
+| Phrase: keep something dark
+| Usage: keep something secret from other people.
+| Usage: I asked Ann to keep my identity dark.
+| Phrase: a shot (or stab) in the dark. [快刀斩乱麻，病急乱投医]
+| Definition: an act whose outcome cannot be foreseen; a mere guess.
+| 
 | behind one's back
 | Definition: without someone's knowledge : in secret.
-| Usage: You shouldn't gossip about people behind their back(s).
+| Usage: You shouldn't gossip about people behind their backs.
 | Usage: She went behind his back and spoke directly to his supervisor.
 | 
 | lunch
@@ -311,6 +326,10 @@ English Note 12
 | squander
 | Definition: to waste money, time, etc. in a stupid or careless way.
 | Usage: He squandered all his money on gambling.
+| 
+| anathema
+| Definition: something or someone that one vehemently dislikes.
+| Usage: racial hatred was anathema to her.
 | 
 | vehement
 | vehemence

@@ -1552,29 +1552,12 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: It was like water off a duck’s back to Nick, But I’m sure it upset Paul.
 | Usage: quite an odd duck ??
 | 
-| albeit
-| Synonyms: although
-| Usage: He finally agreed, albeit rather reluctantly, to help us.
-| 
-| ditto
-| Definition: used in accounts and lists to indicate that an item is repeated (often indicated by a ditto mark under the word or figure to be repeated).
-| Usage: The waiters were rude and unhelpful, the manager ditto.
-| 
-| hitherto
-| Definition: untill now.
-| Usage: There is a need to replace what has hitherto been a haphazard method of payment.
-| 
-| whatsoever
-| Definition: (with negative) at all (used for emphasis)
-| Usage: I have no doubt whatsoever.
-| 
 | vintage
 | Definition: a wine of high quality made from the crop of a single identified district in a good year.
 | Definition: denoting something of high quality, especially something from the past or characteristic of the best period of a person’s work.
 | Usage: The opera is vintage Rossini.
 | 
-| porcelain [釉，陶瓷]
-| Definition: china 
+| porcelain [釉，陶瓷] : china 
 | 
 | culmination [结晶，高潮，巅峰]
 | Definition: the highest or climactic point of something, especially as attained after a long time.

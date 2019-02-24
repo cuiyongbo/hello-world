@@ -42,6 +42,11 @@ English Note 14
 | Definition: a hidden or unsuspected danger or difficulty.
 | Usage: buying a house can be full of pitfalls for the unwary.
 | 
+| unwary
+| Definition: not cautious; not aware of possible dangers or problems.
+| Usage: accidents can happen to the unwary traveler.
+| Usage: The stock market is full of traps for the unwary.
+| 
 | mumble
 | Definition: say something indistinctly and quietly, making it difficult for others to hear.
 | Usage: he mumbled something she didn't catch.
@@ -163,3 +168,68 @@ English Note 14
 | 
 | make out like a bandit
 | Definition: profit greatly from an activity.
+| 
+| metamorphosis [变态发育，蜕变]
+| Definition: (in an insect or amphibian) the process of transformation from an immature form to an adult form in two or more distinct stages.
+| Usage: the metamorphosis of a caterpillar into a butterfly 
+| Usage: She had undergone an amazing metamorphosis from awkward schoolgirl to beautiful woman. 
+| 
+| incantation
+| incantatory
+| Definition: a series of words said as a magic spell or charm.
+| Usage: an incantation to raise the dead.
+| Usage: there was no magic in such incantation.
+| 
+| cross one's fingers (or keep one's fingers crossed)
+| Definition: put one finger across another as a sign of hoping for good luck.
+| Definition: hope that someone or something will be successful.
+| Usage: In general this worked, but one still had to cross one's fingers and murmur an incantation when porting cfront to each new platform.
+| 
+| cross my heart (and hope to die) [我发誓(否则不得好死)]
+| Definition: used to emphasize that you are telling the truth or will do what you promise
+| Usage: I saw him do it—cross my heart. 
+| 
+| cross one's mind
+| Definition: (of a thought) occur to one, especially transiently.
+| Usage: it never crossed my mind to leave the tent and live in a house.
+| 
+| have a (heavy) cross to bear 
+| Definition: to have a difficult problem that makes you worried or unhappy but that you have to deal with
+| Usage: We all have our crosses to bear. [家家有本难念的经]
+| 
+| munch
+| Definition: eat (something) with a continuous and often audible action of the jaws.
+| Usage: I munched my way through a huge bowl of cereal.
+| Usage: popcorn to munch on while watching the movie. [爆米花]
+| 
+| whereas [然而，鉴于]
+| Definition: in contrast or comparison with the fact that.
+| Usage: you treat the matter lightly, whereas I myself was never more serious.
+| Definition: (in law) used at the beginning of a sentence in an official document to mean 'because of the fact that...'. 
+| 
+| albeit
+| Synonyms: although
+| Usage: He finally agreed, albeit rather reluctantly, to help us.
+| 
+| ditto
+| Definition: used in accounts and lists to indicate that an item is repeated (often indicated by a ditto mark under the word or figure to be repeated).
+| Usage: The waiters were rude and unhelpful, the manager ditto.
+| 
+| hitherto
+| Definition: untill now.
+| Usage: There is a need to replace what has hitherto been a haphazard method of payment.
+| 
+| whatsoever
+| Definition: (with negative) at all (used for emphasis)
+| Usage: I have no doubt whatsoever.
+| 
+| cusp
+| Definition: a pointed end where two curves meet
+| Usage: the cusp of a leaf 
+| Definition: the time when one sign of the zodiac ends and the next begins
+| Usage: I was born on the cusp between Virgo and Libra.
+| Definition: He was on the cusp between small acting roles and moderate fame. [小荷初露尖尖角，初见端倪]
+
+.. figure:: images/Winnie-the-Pooh.jpg
+
+    Winnie the Pooh [小熊维尼]
