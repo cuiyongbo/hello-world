@@ -2,6 +2,8 @@
 Pending tasks
 *************
 
+**Now or Never**
+
 #. review json code.
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
@@ -27,5 +29,12 @@ Pending tasks
    
 #. review c++ class facilities: Inside C++ Object Model [finished, 2019-02-17 -- 2019-02-25]
 #. learn machine learning basics, Linear algebra, Numerical computation
-#. python algorithm
 #. review Unix process and thread facilities
+   
+
+2019 Targets
+============
+
+    #. Deep Learning (Part I and Part II)
+    #. Python algorithm
+    

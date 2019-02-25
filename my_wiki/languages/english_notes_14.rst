@@ -2,8 +2,6 @@
 English Note 14
 ***************
 
-**Now or Never**
-
 | spurn
 | Definition: strike, tread, or push away with the foot
 | Usage: With one touch of my feet, I spurn the solid Earth.

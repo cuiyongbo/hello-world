@@ -76,9 +76,6 @@ English Note 6
 | Phrase: cut corners [破例]
 | Definition: undertake something in what appears to be the easiest, quickest, or cheapest way, especially by omitting to do something important or ignoring rules.
 |
-| state-of-art
-| Definition: State-of-art (sometimes cutting edge) refers to the highest level of general development, as of a device, technique, or scientific field achieved at a particular time.
-|
 | grubby
 | Definition: rather dirty, usually because it has not been washed or cleaned. [邋遢]
 | Usage: grubby hands / clothes 
