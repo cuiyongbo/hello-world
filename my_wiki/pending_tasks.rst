@@ -25,6 +25,7 @@ Pending tasks
    
 #. matplotlib draw with annotation, set interval for axis display
    
-#. review c++ class facilities: Inside C++ Object Model
+#. review c++ class facilities: Inside C++ Object Model [finished, 2019-02-17 -- 2019-02-25]
 #. learn machine learning basics, Linear algebra, Numerical computation
+#. python algorithm
 #. review Unix process and thread facilities

@@ -17,5 +17,6 @@ CPP Notes
     cpp_abstract_class_note
     cpp_atomic_note
     cpp_thread_note
+    cpp_auto_ptr_note
     cpp_miscellaneous_tricks
     cpp_miscellaneous_tricks_02

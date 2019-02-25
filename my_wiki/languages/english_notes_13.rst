@@ -176,6 +176,10 @@ English Note 13
 | excerpt
 | Definition: take (a short extract) from a text.
 | Usage: the notes are excerpted from his forthcoming biography.
+| 
+| forthcoming
+| Definition: planned for or about to happen in the near future.
+| Usage: the forthcoming football season.
 |
 | dispel
 | Definition: make (a doubt, feeling, or belief) disappear.

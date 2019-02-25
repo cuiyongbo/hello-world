@@ -23,11 +23,7 @@ Gdb Tricks 02
         (gdb) bt
         ****#0  0x00007f66b0c06428 in __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:54
         #1  0x00007f66b0c0802a in __GI_abort () at abort.c:89
-        #2  0x00007f66b0c487ea in __libc_message (do_abort=do_abort@entry=2, fmt=fmt@entry=0x7f66b0d61ed8 "*** Error in `%s': %s: 0x%s ***\n") at ../sysdeps/posix/libc_fatal.c:175
-        #3  0x00007f66b0c5137a in malloc_printerr (ar_ptr=<optimized out>, ptr=<optimized out>, str=0x7f66b0d61fa0 "double free or corruption (fasttop)", action=3) at malloc.c:5006
-        #4  _int_free (av=<optimized out>, p=<optimized out>, have_lock=0) at malloc.c:3867
-        #5  0x00007f66b0c5553c in __GI___libc_free (mem=<optimized out>) at malloc.c:2968
-        #6  0x0000000000400594 in main () at core_dump_demo.c:8
+        ...
         (gdb) frame 6
         #6  0x0000000000400594 in main () at core_dump_demo.c:8
         8      free(a);
@@ -52,7 +48,6 @@ Gdb Tricks 02
             -r--------  1 cherry  admin   718M Sep 11 22:33 core.1038
             -r--------  1 cherry  admin   701M Jul 15 21:37 core.3379
             -r--------  1 cherry  admin   701M Jul 15 21:40 core.3424
-
 
 #. Gdb to debug a running process
    

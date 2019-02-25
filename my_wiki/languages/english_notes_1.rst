@@ -671,10 +671,6 @@ name, also known as surname, with most family members.
 | Definition: Take a risk on the assumption that one will continue to be successful or in favor.
 | Usage: There is no sense in pushing your luck.
 | 
-| outset
-| Definition: If something happens at the outset of an event, process, or period of time, it happens at the beginning of it. If something happens from the | outset, it happens from the beginning and continue to happen.
-| Usage: Decide at the outset what kind of learning programme you want to follow.
-| 
 | betwixt
 | Definition: archaic term for between.
 | 

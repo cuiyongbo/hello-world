@@ -256,6 +256,16 @@ English Note 14
 | exasperation
 | Definition: a feeling of intense irritation or annoyance.
 | Usage: she rolled her eyes in exasperation.
+| 
+| outset
+| Definition: the start or beginning of something.
+| Usage: Decide at the outset what kind of learning programme you want to follow.
+| 
+| come into play
+| Definition: To become a factor in a particular situation; begin to operate or be active; have an effect or influence.
+| Usage: It’s time for the first part of our plan to come into play. 
+| Usage: A lot of different factors came into play in making this decision.
+| Usage: Once personal insults come into play, it's very hard to resolve a situation calmly. 
 
 .. figure:: images/Winnie-the-Pooh.jpg
 
