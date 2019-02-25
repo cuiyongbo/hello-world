@@ -249,6 +249,13 @@ English Note 14
 | blatant
 | Definition: (of bad behavior) done openly and unashamedly
 | Usage: He just blatantly lied about it. [睁眼说瞎话]
+| 
+| throw up one's hand
+| Definition: raise both hands in the air as an indication of one's exasperation.
+| 
+| exasperation
+| Definition: a feeling of intense irritation or annoyance.
+| Usage: she rolled her eyes in exasperation.
 
 .. figure:: images/Winnie-the-Pooh.jpg
 
