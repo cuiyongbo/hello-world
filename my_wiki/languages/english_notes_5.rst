@@ -323,6 +323,7 @@ English Note 5
 +---------------------------------+---------------------------------+
 
 .. image:: images/cirrus_clouds.jpg
+.. image:: images/cumulus_colouds_over_carribean.jpg
 
 | bet
 | bettor / better [赌徒]
