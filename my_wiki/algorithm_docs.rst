@@ -13,6 +13,7 @@ Algorithms
     algorithms/alg_complexity_summary
     algorithms/divide_and_conquer_note
     algorithms/binary_search_alg
+    algorithms/std_bsearch_note
     algorithms/counting_sort_alg
     algorithms/radix_sort_alg
     algorithms/sa_is_alg_note

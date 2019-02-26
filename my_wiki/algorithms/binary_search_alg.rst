@@ -4,91 +4,81 @@ Binary search
 
 **Algorithm**
 
-Given an array A of n elements with values or records :math:`A_0, A_1, ..., A_{n−1},` sorted such that 
+Given an array A of n elements with records :math:`A_0, A_1, ..., A_{n−1},` sorted such that 
 :math:`A_0 \le A_1 \le ... \le A_{n−1},` and target value T, the following subroutine uses binary search 
 to find the index of T in A.
 
 .. code-block:: none
-   :caption: Pseudocode
 
-   function binary_search(A, n, T):
-       L := 0
-       R := n − 1
-       while L <= R:
-           m := floor((L + R) / 2)
-           if A[m] < T:
-               L := m + 1
-           else if A[m] > T:
-               R := m - 1
-           else:
+    binary_search(A, n, T)
+       L, R= 0, n-1
+       while L <= R
+           m = floor((L + R) / 2)
+           if A[m] < T
+               L = m + 1
+           else if A[m] > T
+               R = m - 1
+           else
                return m
        return unsuccessful
 
 The procedure may return any index whose element is equal to the target value, 
-even if there are duplicate elements in the array. For example, if the array to 
-be searched was ``[1, 2, 3, 4, 4, 5, 6, 7]`` and the target was 4, then it would 
-be correct for the algorithm to either return the 4th (index 3) or 5th (index 4) element. 
-The regular procedure would return the 4th element (index 3). However, **it is sometimes necessary 
-to find the leftmost element or the rightmost element if the target value is duplicated in the array.** 
+even if there are duplicate elements in the array. However, which to return is undefined.
+**it is sometimes necessary to find the leftmost element or the rightmost element if the target value is duplicated in the array.** 
 
 **Procedure for finding the leftmost element**
 
 To find the leftmost element, the following procedure can be used:
 
-   #. Set L to 0 and R to n.
-   #. If L >= R, go to step 6.
-   #. Set m to ``floor((L + R)/2).``
-   #. If A[m] < T, set L to m + 1 and go to step 2.
-   #. Otherwise, if A[m] >= T, set R to m and go to step 2.
-   #. Now L = R, the search is done, return L.
+    #. Set L to 0 and R to n.
+    #. If L >= R, go to step 6.
+    #. Set m to ``floor((L + R)/2).``
+    #. If A[m] < T, set L to m + 1 and go to step 2.
+    #. Otherwise, if A[m] >= T, set R to m and go to step 2.
+    #. Now L = R, the search is done, return L.
 
 If L < n and A[L] = T, then A[L] is the leftmost element that equals T. 
 Even if T is not in the array, L is the rank of T in the array, or the 
 number of elements in the array that are less than T.
 
 .. code-block:: none
-   :caption: Pseudocode
 
-   function binary_search_leftmost(A, n, T):
-       L := 0
-       R := n
-       while L < R:
-           m := floor((L + R) / 2)
-           if A[m] < T:
-               L := m + 1
-           else:
-               R := m
-       return L
+    lowerBound(A, n, T)
+        L, R = 0, n
+        while L < R
+            m = floor((L + R) / 2)
+            if A[m] < T
+                L = m + 1
+            else
+                R = m
+        return L
 
 **Procedure for finding the rightmost element**
 
 To find the rightmost element, the following procedure can be used:
 
-   #. Set L to 0 and R to n.
-   #. If L >= R, go to step 6.
-   #. Set m (the position of the middle element) to ``floor((L + R)/2).``
-   #. If A[m] > T, set R to m and go to step 2.
-   #. Otherwise, if A[m] <= T, set L to m + 1 and go to step 2.
-   #. Now L = R, the search is done, return L - 1.
+    #. Set L to 0 and R to n.
+    #. If L >= R, go to step 6.
+    #. Set m (the position of the middle element) to ``floor((L + R)/2).``
+    #. If A[m] > T, set R to m and go to step 2.
+    #. Otherwise, if A[m] <= T, set L to m + 1 and go to step 2.
+    #. Now L = R, the search is done, return L - 1.
 
 If L > 0 and A[L-1] = T, then A[L-1] is the rightmost element that equals T. 
 Even if T is not in the array, n - L is the number of elements in the array 
 that are greater than T.
 
 .. code-block:: none
-   :caption: Pseudocode
 
-   function binary_search_rightmost(A, n, T):
-       L := 0
-       R := n
-       while L < R:
-           m := floor((L + R) / 2)
-           if A[m] <= T:
-               L := m + 1
-           else:
-               R := m
+    upperBound(A, n, T)
+        L, R = 0, n
+        while L < R
+            m = floor((L + R) / 2)
+            if A[m] <= T
+                L = m + 1
+            else
+                R = m
        return L - 1
-
 
 **Performance**
 
@@ -107,7 +97,7 @@ built in a similar fashion. This model represents binary search; starting from t
 node, the left or right subtrees are traversed depending on whether the target value is less 
 or more than the node under consideration, representing the successive elimination of elements.
 
-The worst case is :math:`{ \lfloor \log _{2}(n)+1 \rfloor }` iterations of the comparison loop, 
+The worst case is :math:`{ \lfloor \log_{2}{n}+1 \rfloor }` iterations of the comparison loop, 
 The worst case is reached when the search reaches the deepest level of the tree, equivalent to 
 a binary search that has reduced to one element and, in each iteration, always eliminates the 
 smaller subarray out of the two if they are not of equal size.
@@ -123,15 +113,15 @@ and merge sort, require at least :math:`O(n\log n)` comparisons in the worst cas
 **Hashing**
 
 For implementing associative arrays, **hash tables,** a data structure that maps keys to records using a hash function, 
-are generally faster than binary search on a sorted array of records; most implementations require only amortized constant 
-time on average. **However, hashing is not useful for approximate matches,** such as computing the next-smallest, next-largest, 
+are generally faster than binary search on a sorted array of records; most implementations require only **amortized constant 
+time on average**. **However, hashing is not useful for approximate matches,** such as computing the next-smallest, next-largest, 
 and nearest key, as the only information given on a failed search is that the target is not present in any record. Binary 
 search is ideal for such matches, performing them in logarithmic time. Binary search also supports approximate matches. 
 Some operations, like finding the smallest and largest element, can be done efficiently on sorted arrays but not on hash tables.
 
 **Trees**
 
-Binary search trees are searched using an algorithm similar to binary search.
+**Binary search trees** are searched using an algorithm similar to binary search.
 A binary search tree is a binary tree data structure that works based on the principle of binary search. 
 The records of the tree are arranged in sorted order, and each record in the tree can be searched using 
 an algorithm similar to binary search, taking on average logarithmic time. Insertion and deletion also 
@@ -148,7 +138,7 @@ time approaching n comparisons. Besides, Binary search trees take more space tha
 **Set membership algorithms**
 
 A related problem to search is set membership. Any algorithm that does lookup, like binary search, can also be used for set membership. 
-There are other algorithms that are more specifically suited for set membership. A bit array is the simplest, useful when the range of keys 
+There are other algorithms that are more specifically suited for set membership. A **bit array** is the simplest, useful when the range of keys 
 is limited. It compactly stores a collection of bits, with each bit representing a single key within the range of keys. Bit arrays are very 
 fast, requiring only **O(1)** time. 
 

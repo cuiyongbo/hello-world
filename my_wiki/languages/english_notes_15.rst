@@ -17,3 +17,7 @@ English Note 15
 | Definition: ice cream flavored with vanilla. [香草冰淇淋]
 | Definition: having no special or extra features; ordinary or standard.
 | Usage: they seem to be quite content in their plain vanilla domestic life.
+| 
+| bogus
+| Definition: pretending to be real or genuine.
+| Usage: a bogus insurance claim.

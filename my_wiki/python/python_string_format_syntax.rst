@@ -171,7 +171,7 @@ Grammer for a replacement field as follow::
    conversion        ::=  "r" | "s"
    format_spec       ::=  <described in the next section>
 
-standard format specifier::
+standard **format specifier**::
 
    format_spec ::=  [[fill]align][sign][#][0][width][,][.precision][type]
    fill        ::=  <any character>
@@ -184,9 +184,9 @@ standard format specifier::
 .. note::
 
    If you need to include a brace character in the literal text,
-   it can be escaped by doubling: ``{{`` and ``}}``.
+   it can be escaped by doubling: `{{` and `}}`.
 
-The meaning of the various alignment options is as follows::
+The meaning of the various **alignment options** is as follows::
 
    +--------+--------------------------------------------------------------------------------+
    | Option | Meaning                                                                        |
@@ -208,7 +208,7 @@ The meaning of the various alignment options is as follows::
 Note that unless a minimum field width is defined, the field width will always be the same size
 as the data to fill it, so that the alignment option has no meaning in this case.
 
-The sign option is only valid for number types, and can be one of the following::
+The **sign option** is only valid for number types, and can be one of the following::
 
    +--------+-----------------------------------------------------------+
    | Option | Meaning                                                   |
@@ -223,29 +223,25 @@ The sign option is only valid for number types, and can be one of the following:
    |        | positive numbers, and a minus sign on negative numbers.   |
    +--------+-----------------------------------------------------------+
 
-The ``'#'`` option causes the “alternate form” to be used for the conversion.
-The alternate form is defined differently for different types.
+The `#` option causes the “alternate form” to be used for the conversion.
 **This option is only valid for integer, float, complex and Decimal types**.
 For integers, when binary, octal, or hexadecimal output is used, this option
-adds the prefix respective ``'0b'``, ``'0o'``, or ``'0x'`` to the output value.
+adds the prefix respective `0b`, `0o`, or `0x` to the output value.
 For floats, complex and Decimal the alternate form causes the result of the
 conversion to always contain a decimal-point character, even if no digits follow it.
-Normally, a decimal-point character appears in the result of these conversions
-only if a digit follows it. In addition, for ``'g'`` and ``'G'`` conversions,
-trailing zeros are not removed from the result.
+In addition, for ``'g'`` and ``'G'`` conversions, trailing zeros are not removed from the result.
 
-The ``','`` option signals the use of a comma for a thousands separator.
-For a locale aware separator, use the ``'n'`` integer presentation type instead.
+The `,` option signals the use of a comma for a thousands separator.
+For a locale aware separator, use the `n` integer presentation type instead.
 
-
-width is a decimal integer defining the minimum field width.
+**width** is a decimal integer defining the minimum field width.
 If not specified, then the field width will be determined by the content.
 
 When no explicit alignment is given, preceding the width field by
 a zero ('0') character enables sign-aware zero-padding for numeric types.
 This is equivalent to a fill character of ``'0'`` with an alignment type of ``'='``.
 
-The precision is a decimal number indicating how many digits should be
+The **precision** is a decimal number indicating how many digits should be
 displayed after the decimal point for a floating point value formatted
 with ``'f'`` and ``'F'``, or before and after the decimal point for a
 floating point value formatted with ``'g'`` or ``'G'``. For non-number
@@ -253,8 +249,7 @@ types the field indicates the maximum field size - in other words,
 how many characters will be used from the field content.
 The precision is not allowed for integer values.
 
-Finally, the type determines how the data should be presented.
-
+Finally, the **type** determines how the data should be presented.
 
 Examples
 --------
