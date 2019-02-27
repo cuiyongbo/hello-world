@@ -274,7 +274,6 @@ English Note 5
 | sacrilege
 | sacrilegious
 | Definition: Violation or misuse of what is regarded as sacred.
-| Definition: Involving or committing sacrilege.
 | Usage: It seems sacrilegious to say this, but it’s really not that great a movie.
 | 
 | pilgrim

@@ -629,27 +629,7 @@ name, also known as surname, with most family members.
 | Usage: A church in Moscow became a repository for police files.
 | Definition: A repository of information is a person or group of people who know a lot of information about a particular place or subject. [情报屋]
 | Usage: The repository of all important knowledge in a small town was the chief barman [酒吧男侍] of the local pub.
-| 
-| violate
-| violation
-| Definition: If someone violates an agreement, law, or promise, they break it.
-| Usage: They violated the ceasefire agreement. [停火协议] 
-| Usage: To deprive the boy of his education is a violation of state law.
-| Definition: treat (something sacred) with irreverence or disrespect.
-| Usage: He was accused of violating a tomb. [亵渎死者]
-| Usage: They denied that human rights were being violated.
-| 
-| invalid
-| Definition: a person made weak or disabled by illness or injury. [虚弱]
-| Usage: An invalid husband.
-| Usage: She had been a delicate child and her parents had treated her as an invalid. [自幼体弱多病]
-| Definition: to force somebody to leave the armed forces because of an illness or injury.
-| Usage: He was invalided out of the army in 1943. [因伤退役]
-| Definition: not legally or offically acceptable.
-| Usage: The treaties made by the former government were declared invalid by the new one.
-| Definition: of a type that the computer cannot recognize.
-| Usage: An error code will be displayed if any invalid information has been entered.
-| 
+|  
 | heretical
 | Definition: Holding an opinion at odds with what is generally accepted.
 | Usage: I feel a bit heretical saying this, but I think the film has too much action.

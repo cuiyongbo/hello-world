@@ -268,3 +268,5 @@ English Note 14
 .. figure:: images/Winnie-the-Pooh.jpg
 
     Winnie the Pooh [小熊维尼]
+
+.. image:: images/isis_temple_grand_canyon.jpg

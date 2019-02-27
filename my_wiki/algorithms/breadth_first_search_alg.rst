@@ -16,7 +16,7 @@ Breadth-first search
         for each vertex u in G.V
             u.color = WHITE
             u.d = inf # distance
-            u.predecessor = NIL # predecessor
+            u.p = NIL # predecessor
         s.color = GRAY
         s.d = 0
         s.p = NIL
