@@ -97,3 +97,7 @@ I think, therefore I am
 -- *Descartes*
 
 What doesn't kill you will make you stronger.
+
+努力只不过是为了结果的过程，无论努力是怎样珍贵的行为，只对于过程而感到骄傲的话就是本末倒置了。
+
+-- 吉井玲《笨蛋测验召唤兽》

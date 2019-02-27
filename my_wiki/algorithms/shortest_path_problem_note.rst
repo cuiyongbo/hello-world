@@ -25,3 +25,6 @@ We define the shortest-path weight :math:`\delta(u,v)` from u to v by
 A **shortest path** from vertex u to vertex v is then defined as any path p 
 with weight :math:`w(p)=\delta(u,v)`.
 
+
+
+
