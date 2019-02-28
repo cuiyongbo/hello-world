@@ -42,3 +42,47 @@ English Note 15
 | adhesive
 | Synonyms: sticky; glue.
 | Usage: an adhesive label. 
+| 
+| remiss
+| Definition: not giving sth enough care and attention. [懈怠, 怠慢]
+| Usage: It was remiss of them not to inform us of these changes sooner. 
+| Usage: She had clearly been remiss in her duty. 
+| 
+| maroon
+| Definition: a dark brownish-red colour. [褐红色]
+| Definition: a firework that makes a loud bang, used mainly as a signal or warning. [信号弹]
+| Definition: to leave sb in a place that they cannot escape from, for example an island.
+| Usage: *Lord of the Flies* is a novel about English schoolboys marooned on a desert island. 
+| 
+| bleak
+| Definition: (of an area of land) lacking vegetation and exposed to the elements.
+| Usage: a bleak and barren moor.
+| Definition: not encouraging or giving any reason to have hope.
+| Usage: The future looks bleak for the fishing industry.
+| Usage: 'There seems no hope,' she said bleakly. 
+| 
+| moor
+| Definition: a tract of open uncultivated upland; a heath.
+| 
+| heath [野地，荒地]
+| Definition: an area of open uncultivated land, with characteristic vegetation of heather, gorse, and coarse grasses.
+| 
+| solipsist
+| solipsism
+| solipsistic [自我中心论]
+| Definition: the view or theory that the self is all that can be known to exist.
+| 
+| playwright 
+| Definition: a person who writes plays.
+| 
+| conformist
+| Definition: a person who conforms to accepted behavior or established practices.
+| Definition: British chiefly historical a person who conforms to the practices of the Church of England. [英格兰圣公会]
+| 
+| Machiavellie [类似春秋战国的纵横家]
+| 
+| charisma
+| Definition: the powerful personal quality that some people have to attract and impress other people
+| Usage: the President has great personal charisma. [个人魅力]
+
+

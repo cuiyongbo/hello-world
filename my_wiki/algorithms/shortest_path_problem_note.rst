@@ -28,7 +28,7 @@ with weight :math:`w(p)=\delta(u,v)`.
 Optimal structure for a shortest path: **Subpaths of shortest paths are shortest paths.** 
 
 .. code-block:: none
-    :Bellman Ford Algorithm implementation
+    :caption: Bellman Ford Algorithm implementation
 
     Initialize-Single-Source(G, s)
         for each vertex v in G.v

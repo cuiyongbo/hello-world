@@ -36,5 +36,9 @@ Pending tasks
 ============
 
     #. Deep Learning (Part I and Part II)
+    #. Hacker and Painters
     #. Python algorithm
+    #. 2019年底存款不低于 40 万
+    #. 英语电影摆脱字幕
+    #. 日语漫画不需要字典可以看懂旁白
     

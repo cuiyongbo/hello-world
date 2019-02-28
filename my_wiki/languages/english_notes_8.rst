@@ -245,6 +245,12 @@ what is called a reason for living also the excellent one for dying.
 | Definition: maintain a feeling of ill will or resentment toward someone.
 | Usage: I hope you will not bear me a grudge. [记仇]
 | 
+| nerd [呆子，技术痴]
+| Definition: a foolish or contemptible person who lacks social skills or is boringly studious.
+| Usage: one of those nerds who never asked a girl to dance.
+| Definition: a single-minded expert in a particular technical field.
+| Usage: a computer nerd.
+| 
 | retard
 | Definition: delay or hold back in terms of progress, development, or accomplishment
 | Usage: his progress was retarded by his limp.
@@ -256,7 +262,7 @@ what is called a reason for living also the excellent one for dying.
 | Usage: without a good set of notes you will handicap yourself when it comes to exams.
 | Usage: a criminal conviction is a handicap and a label that may stick forever. [一日为贼,终生为贼]
 | 
-| jackass
+| jackass [蠢驴]
 | Definition: a stupid person.
 | Synonyms: moron.
 | Definition: a male ass or donkey.

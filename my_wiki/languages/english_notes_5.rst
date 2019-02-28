@@ -297,6 +297,15 @@ English Note 5
 | Definition: a small, flat, thin piece of something, typically one that has broken away or been peeled off a larger piece. 
 | Usage: Paint peeling off the walls in unsightly flakes.
 | 
+| engrave
+| Definition: cut or carve (a text or design) on the surface of a hard object.
+| Usage: His name was engraved on the silver cup. 
+| Definition: (be engraved on or in) be permanently fixed in (one's memory or mind).
+| Usage: the image would be forever engraved in his memory.
+| Idiom: be written (or engraved or set) in stone
+| Definition: used to emphasize that something is fixed and unchangeable.
+| Usage: anything can change—nothing is written in stone.
+|  
 | etch
 | Definition: to cut lines into a piece of glass, metal etc. in order to make words or a picture.
 | Usage: a glass tankard etched with his initials.
