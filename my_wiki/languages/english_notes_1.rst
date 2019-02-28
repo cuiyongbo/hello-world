@@ -1860,16 +1860,6 @@ admitted the computer was named after his daughter.
 | Usage: She inhaled deeply on another cigarette.
 | Definition: eat (food) greedily or rapidly.
 | Usage: Later on I inhaled a box of chocolate cookies while watching TV.
-| 
-| long pig
-| Definition: [obsolete] human flesh eaten by cannibals.
-|
-| cannibal
-| cannibalize
-| cannibalism
-| Definition: an animal that eats the flesh of other animals of the same kind.
-| Definition: a person who eats human flesh.
-| Usage: Cannibal tributes.
 |
 | home-brew 
 | Definition: beer that sb made at home

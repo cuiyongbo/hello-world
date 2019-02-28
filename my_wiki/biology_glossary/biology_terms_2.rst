@@ -166,10 +166,6 @@ Nature Lifes
 
    Redwood [红树林]
 
-.. figure:: images/wombat.jpg
-
-   Wombat [袋熊]
-
 .. figure:: images/CommonPipistrelle.jpg
 
    Pipistrelle bat
@@ -183,8 +179,6 @@ Nature Lifes
 .. figure:: images/fungi.jpg
 
    Fungi
-
-.. image:: images/arctic_fox.jpg
 
 .. image:: images/walnut_01.jpg
 .. figure:: images/walnut_open_husk.jpg

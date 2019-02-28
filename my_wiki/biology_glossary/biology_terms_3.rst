@@ -142,6 +142,18 @@ Biological Terms 3
 
     Australia fauna
 
+.. figure:: images/arctic_fox.jpg
+
+    Arctic fox [北极狐]
+
+.. figure:: images/arctic_fox.jpg
+
+    Polar bear [北极熊]
+
+.. figure:: images/wombat.jpg
+
+    Wombat [袋熊]
+
 .. figure:: images/raccoon.jpg
 
     Raccoon [浣熊]

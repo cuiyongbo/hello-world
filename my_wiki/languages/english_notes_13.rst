@@ -39,7 +39,13 @@ English Note 13
 | 
 | snare
 | Definition: a trap for catching birds or animals, typically one having a noose of wire or cord.
-| Usage: He found himself snared in a web of intrigue.
+| Usage: He found himself snared in a web of intrigue. [阴谋]
+| 
+| intrigue
+| Definition: arouse the curiosity or interest of; fascinate.
+| Usage: I was intrigued by your question.
+| Definition: make secret plans to do something illicit or detrimental to someone.
+| Usage: the delegates were intriguing for their own gains.
 | 
 | pauper
 | Definition: a very poor person; begger.

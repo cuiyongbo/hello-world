@@ -270,3 +270,4 @@ English Note 14
     Winnie the Pooh [小熊维尼]
 
 .. image:: images/isis_temple_grand_canyon.jpg
+.. image:: images/hongkong_zhuhai_macau_bridge.jpg

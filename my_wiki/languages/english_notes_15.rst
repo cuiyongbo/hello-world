@@ -84,5 +84,23 @@ English Note 15
 | charisma
 | Definition: the powerful personal quality that some people have to attract and impress other people
 | Usage: the President has great personal charisma. [个人魅力]
-
-
+| 
+| long pig [人肉]
+| Definition: [obsolete] human flesh eaten by cannibals.
+|
+| cannibal
+| cannibalize
+| cannibalism
+| Definition: an animal that eats the flesh of other animals of the same kind.
+| Definition: a person who eats human flesh.
+| Usage: Cannibal tributes.
+| 
+| savage
+| Definition: (of an animal or force of nature) fierce, violent, and uncontrolled.
+| Usage: packs of savage dogs roamed the streets.
+| Definition: (of something bad or negative) very great; severe.
+| Usage: the decision was a savage blow for the town. [恶劣]
+| Definition: (of a person or group) primitive and uncivilized.
+| Synonyms: barbarous.
+| Usage: a savage race. [野蛮]
+| Usage: many early child-rearing practices were barbarous by modern standards.
