@@ -40,9 +40,14 @@ Introduction To Algorithm
       
     - Ch22 Elementary Graph Algorithms
       
-      - Representations of graph (Finished, 2019-02-14)
-      - Breadth-first search (Finished, 2019-02-14)
+        - Representations of graph (Finished, 2019-02-14)
+        - Breadth-first search (Finished, 2019-02-14)
 
+    - Ch24 Single-source shortes paths
+
+        - The Bellman-Ford algorithm (Finished)
+        - Single-source shortest paths and relation (Finished)
+        - Dijkstra's algorithm (Finished)
 
 Advanced Programming in UNIX Environment
 ========================================
