@@ -32,6 +32,7 @@ Algorithms
     algorithms/distance_of_a_point_to_line
     algorithms/triangle_polygon_area
     algorithms/line_splitting_alg
+    algorithms/path_finding_alg_note
     algorithms/breadth_first_search_alg
     algorithms/shortest_path_problem_note
     algorithms/gzip_alg_note

@@ -293,6 +293,37 @@ Only paranoid can surrive.
 | Definition: a site or location of something specified.
 | Usage: Washington, the seat of the federal government.
 | 
+| by the seat of one's pants (alos seat-of-the-pants)
+| Definition: Based on or using intuition and experience rather than a plan or method.
+| Definition: Performed without using instruments.
+| Usage: a seat-of-the-pants landing of the aircraft.
+| 
+| rule of thumb
+| Definition: a broadly accurate guide or principle, based on experience or practice rather than theory.
+| 
+| as a rule
+| Definition: usually, but not always.
+|
+| rule out
+| Definition: exclude (or include) something as a possibility.
+| Usage: The prime mimister is believed to have ruled out cuts in child benefit or pensions. 
+| Usage: A serious car accident in 1986 ruled out a permanent future for him in football.
+| Usage: the doctor ruled out appendicitis. [阑尾炎]
+| 
+| make it a rule to do something
+| Definition: have as a habit or general principle to do something.
+| Usage: I make it a rule never to mix business with pleasure.
+| 
+| rule the roost
+| Definition: be in complete control.
+| Usage: I am the one who runs facebook.
+| 
+| thumb through / leaf through
+| Definition: to look through a book, maganize, or newspaper without reading it carefully.
+| Synonyms: skim. [略读]
+| Usage: I have only thumbed through the book, but it looks very interesting.
+| Usage: I leafed through a magazine while waiting to see my doctor.
+|
 | default
 | Definition: failure to fulfill an obligation, especially to repay a loan or appear in a court of law.
 | Usage: it will have to restructure its debts to avoid default.

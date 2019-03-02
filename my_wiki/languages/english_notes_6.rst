@@ -133,19 +133,6 @@ English Note 6
 | Definition: to shock or surprise sb very much.
 | Usage: It staggers me that the government is doing nothing about it.
 | 
-| clean slate
-| Definition: an absence of existing restraints or commitments.
-| Usage: no government starts with a clean slate.
-| 
-| inevitable
-| Synonyms: unavoidable.
-| Usage: War was inevitable.
-| 
-| out of hand
-| Definition: not under control
-| Definition: without taking time to think.
-| Usage: She's so stubborn that she just rejected my suggestion out of hand.
-| 
 | falter [窝囊]
 | Definition: start to lose strength or momentum.
 | Usage: her smile faltered and then faded.
@@ -158,12 +145,32 @@ English Note 6
 | Definition: speak with sudden involuntary pauses and a tendency to repeat the initial letters of words.
 | Usage: “I … I can’t,” Isabel stammered.
 | 
+| mumble
+| Definition: say something indistinctly and quietly, making it difficult for others to hear.
+| Usage: he mumbled something she didn't catch.
+| 
+| murmur
+| Definition: say something in a low, soft, or indistinct voice.
+| Usage: Nina murmured an excuse and hurried away.
+| 
+| garrulity [话痨]
+| Definition: excessive talkativeness, especially on trivial matters.
+| Usage: the character's comic garrulity.
+|
+| clean slate
+| Definition: an absence of existing restraints or commitments.
+| Usage: no government starts with a clean slate.
+| 
+| inevitable
+| Synonyms: unavoidable.
+| Usage: War was inevitable.
+| 
 | corporate
 | corporation
 | Definition: relating to a corporation.
 | Usage: airlines are very keen on their corporate identity. [公司形象]
 | 
-| tangiblei
+| tangible
 | tangiblity
 | Antonyms: intangible
 | Definition: perceptible by touch.

@@ -139,19 +139,6 @@ English Note 7
 | Definition: evade (a responsibility or duty).
 | Usage: we believe the board is abrogating its responsibilities to its shareholders.
 | 
-| arrogate
-| Definition: take or claim (something) for oneself without justification.
-| Usage: in the emergency committee arrogated to itself whatever powers it chose. [便宜行事]
-|
-| on the fly
-| Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
-| Definition: If you do something on the fly, you do it quickly, without thinking about it or planning it in advance.
-| Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
-| 
-| garrulity [话痨]
-| Definition: excessive talkativeness, especially on trivial matters.
-| Usage: the character's comic garrulity.
-| 
 | reentrant
 | Definition: (of an angle) pointing inward.The opposite of salient.
 | Definition: a re-entrant angle.

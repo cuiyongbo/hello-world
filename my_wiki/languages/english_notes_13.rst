@@ -171,6 +171,15 @@ English Note 13
 | Usage: resolution of the conflict was contingent on the signing of a ceasefire agreement.
 | Definition: a group of people united by some common feature, forming part of a larger group.
 | Usage: a contingent of Japanese businessmen attending a conference. [代表团]
+|
+| arrogate
+| Definition: take or claim (something) for oneself without justification.
+| Usage: in the emergency committee arrogated to itself whatever powers it chose. [便宜行事]
+|
+| on the fly
+| Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
+| Definition: do sth quickly, without thinking about it or planning it in advance.
+| Usage: These people can make decisions on the fly and don’t have to phone home to their boss. [便宜行事]
 | 
 | adjudicate
 | adjudicative
@@ -272,4 +281,16 @@ English Note 13
 
     .. image:: images/zodiac_signs.jpg
     .. image:: images/zodiac_signs_02.png
-    
+
+#. Big Bang
+   
+    A fireball of radiation at extremely high temperature and density, but occupying a tiny volume, 
+    is believed to have formed around 13.7 billion years ago. This expanded and cooled, extremely 
+    fast at first, but more slowly as subatomic particles condensed into matter that later 
+    accumulated to form galaxies and stars. The galaxies are currently still retreating from one another. 
+    What was left of the original radiation continued to cool and has been detected as a uniform 
+    background of weak microwave radiation.
+
+    .. image:: images/bedin1.png
+    .. image:: images/cosmos-space.jpg
+    .. image:: images/cosmos-space_2.jpg

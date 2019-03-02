@@ -93,7 +93,7 @@ English Note 12
 | Definition: informal, chiefly North American meet for lunch.
 | Phrase: out to lunch
 | Definition: unaware of or inattentive to present conditions.
-| Phrase: there's no such thing as a free lunch / there is no free lunch
+| Phrase: there's no such thing as a free lunch / there is no free lunch.
 | 
 | par
 | Defintion: (Golf) the number of strkes a first-class player should normally require for a hole or course.

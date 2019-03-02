@@ -83,7 +83,7 @@ English Note 15
 | 
 | charisma
 | Definition: the powerful personal quality that some people have to attract and impress other people
-| Usage: the President has great personal charisma. [个人魅力]
+| Usage: Prime Minister President has great personal charisma. [个人魅力]
 | 
 | long pig [人肉]
 | Definition: [obsolete] human flesh eaten by cannibals.
@@ -104,3 +104,66 @@ English Note 15
 | Synonyms: barbarous.
 | Usage: a savage race. [野蛮]
 | Usage: many early child-rearing practices were barbarous by modern standards.
+| 
+| daunting
+| Synonym: intimidating
+| Usage: a daunting task.
+| 
+| innards
+| Definition: internal workings (of a device or machine).
+| Definition: the organs inside the body of a person or an animal, especially the stomach. [内脏]
+| Synonyms: entrail
+| 
+| entrails
+| Definition: a person or animal's intestines or internal organs, especially when removed or exposed.
+| Definition: the innermost parts of something.
+| Usage: digging copper out of the entrails of the earth.
+| 
+| sterile
+| Definition: not able to produce children or young.
+| Usage: the disease had made him sterile. [绝育]
+| Definition: (of a plant) not able to produce fruit or seeds.
+| Definition: (of land or soil) too poor in quality to produce crops. [贫瘠]
+| Definition: free from bacteria or other living microorganisms; totally clean. [无菌]
+| 
+| throwaway
+| Definition: (of a remark) you say quickly without careful thought, sometimes in order to be funny.
+| Usage: She was very upset at what to him was just a throwaway remark. [开玩笑的，随口说的]
+| Definition: (of goods, etc.) produced cheaply and intended to be thrown away after use. [一次性的]
+| 
+| obfuscate
+| obfuscation [搪塞]
+| Definition: the action making something obscure, unclear, or unintelligible.
+| Usage: When confronted with sharp questions they resorted to obfuscation.
+| 
+| circumvent [绕行]
+| Definition: find a way around (an obstacle).
+| Usage: They found a way of circumventing the law. [钻空子]
+| Definition: to go on travel around something that is blocking your way; detour.
+| 
+| detour
+| Definition: an alternative route for use by traffic when the usual road is temporarily closed.
+| Usage: I would detour the endless stream of motor home.
+| 
+| obscure
+| obscurity
+| Definition: not discovered or known about; uncertain.
+| Usage: He was born around 1650 but his origins remain obscure. 
+| Usage: an obscure German poet. [名不见经传]
+| Usage: gray clouds obscure the sun.
+| Definition: difficult to understand
+| Usage: I found her lecture very obscure. [费解]
+| 
+| momentum
+| Definition: the quantity of motion of a moving body, measured as a product of its mass and velocity. [动量]
+| Usage: the vehicle gained momentum as the road dipped.
+| Definition: the impetus and driving force gained by the development of a process or course of events.
+| Usage: The fight for his release gathers momentum each day.
+| Usage: They began to lose momentum in the second half of the game.
+| 
+| impetus
+| Definition: the force or energy with which a body moves.
+| Definition: the force that makes something happen or happen more quickly.
+| Usage: the crisis of the 1860s provided the original impetus for the settlements.
+
+

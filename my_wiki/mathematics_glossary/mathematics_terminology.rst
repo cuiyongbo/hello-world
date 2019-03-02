@@ -120,18 +120,6 @@ I think, therefore I am
 
    abacus 算盘
 
-.. figure:: images/Manhattan_distance.svg
-
-   Manhanttan Distance
-   
-   | Red: Manhattan distance.
-   | Green: diagonal, straight-line distance. 
-   | Blue, yellow: equivalent Manhattan distances.
-
-The Manhattan distance is the simple sum of the
-horizontal and vertical components, whereas the diagonal distance might be
-computed by applying the Pythagorean theorem. [勾股定理]
-
 .. image:: images/right_triangle.png
 .. figure:: images/trigonometrics.png
    

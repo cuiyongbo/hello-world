@@ -45,14 +45,6 @@ English Note 14
 | Usage: accidents can happen to the unwary traveler.
 | Usage: The stock market is full of traps for the unwary.
 | 
-| mumble
-| Definition: say something indistinctly and quietly, making it difficult for others to hear.
-| Usage: he mumbled something she didn't catch.
-| 
-| murmur
-| Definition: say something in a low, soft, or indistinct voice.
-| Usage: Nina murmured an excuse and hurried away.
-| 
 | arcane
 | Definition: understood by few; mysterious or secret.
 | Usage: modern math and its arcane notation.
@@ -248,6 +240,10 @@ English Note 14
 | Definition: (of bad behavior) done openly and unashamedly
 | Usage: He just blatantly lied about it. [睁眼说瞎话]
 | 
+| out of hand
+| Definition: not under control
+| Definition: without taking time to think.
+| Usage: She's so stubborn that she just rejected my suggestion out of hand. 
 | throw up one's hand
 | Definition: raise both hands in the air as an indication of one's exasperation.
 | 
@@ -271,3 +267,13 @@ English Note 14
 
 .. image:: images/isis_temple_grand_canyon.jpg
 .. image:: images/hongkong_zhuhai_macau_bridge.jpg
+
+
+#. Platformer
+   
+    Platform games, or platformers, are a video game genre and subgenre of action game. 
+    In a platformer the player controlled character must jump and climb between suspended
+    platforms while avoiding obstacles. 
+
+    .. image:: images/Donkey_Kong.png
+    .. image:: images/top_platformers.jpg

@@ -132,11 +132,6 @@ name, also known as surname, with most family members.
 | Usage: Nifty footwork.
 | Usage:   A nifty black t-shirt.
 | 
-| daunting
-| Definition: (adjective) Seeing difficult to deal with in anticipation
-| Synonym: intimidating
-| Usage: a daunting task.
-| 
 | up one’s sleeve
 | Definition: (of a strategy, idea, or resource) kept secret and in reserve for use when needed.
 | Usage: He was new to the game but had a few tricks up his sleeve.
@@ -222,11 +217,6 @@ name, also known as surname, with most family members.
 | Usage: the family will be living under canvas.
 | Definition: with sails spread [扬帆远航]
 | 
-| thumb through / leaf through
-| Definition: to look through a book, maganize, or newspaper without reading it carefully
-| Usage: I have only thumbed through the book, but it looks very interesting.
-| Usage: I leafed through a magazine while waiting to see my doctor.
-| 
 | unprejudiced
 | Definition: (adjective) Free from undue bias or preconceived opinions.
 | Synonyms: impartial
@@ -245,26 +235,6 @@ name, also known as surname, with most family members.
 | Definition: (adjective) So shocked or astonished as to be rendered speechless
 | Synonyms: dumbfounded, thunderstruck, flabbergastered, stupefied
 | Usage: He stood dumbstruck in the doorway as the partygoers yelled “Surpise!” in the unison.
-| 
-| rule out
-| Definition: If you rule out a course of action, an idea, or a solution, you decide that it is impossible or unsuitable
-| Definition: If something rules out a situation, it prevents it from happening or from being possible
-| Usage: The prime mimister is believed to have ruled out cuts in child benefit or pensions. 
-| Usage: A serious car accident in 1986 ruled out a permanent future for him in football.
-| 
-| rule of thumb
-| Definition: a broadly accurate guide or principle, based on experience or practice rather than theory.
-| 
-| make it a rule to do something
-| Definition: have as a habit or general principle to do something.
-| Usage: I make it a rule never to mix business with pleasure.
-| 
-| rule the roost
-| Definition: be in complete control.
-| Usage: I am the one who runs facebook.
-| 
-| as a rule
-| Definition: usually, but not always.
 | 
 | Demote
 | Definition: Give somebody a lower rank or less senior position, usually as a punishment.
@@ -1365,20 +1335,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Synonyms: infer; conjecture. [推断]
 | Usage: There’s little to go on, we can only surmise what happened.
 | Usage: His surmise proved correct.
-| 
-| circumvent [绕行]
-| Definition: find a way around (an obstacle).
-| Usage: They found a way of circumventing the law. [钻空子]
-| Definition: to go on travel around something that is blocking your way; detour.
-| 
-| obfuscate
-| obfuscation [搪塞]
-| Definition: the action making something obscure, unclear, or unintelligible.
-| Usage: When confronted with sharp questions they resorted to obfuscation.
-| 
-| detour
-| Definition: an alternative route for use by traffic when the usual road is temporarily closed.
-| Usage: I would detour the endless stream of motor home.
 | 
 | mere
 | Definition: used to emphasized how small or insignificant someone or something is.

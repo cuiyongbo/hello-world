@@ -135,10 +135,10 @@ English Note 2
 | 
 | bog
 | Definition: a bog is an area of land which is very wet and muddy.
-| Definition: toilet.
 | Phrase: bog down
-| Definition: if a plan or process is bogged down or something bogs it down, it is delayed and no progress is made.
-| Usage: The talk has been bogged down over the issue os military reform.
+| Definition:  (of a person or process) be unable to make progress.
+| Usage: The talk has been bogged down over the issue of military reform.
+| Usage: you must not get bogged down in detail.
 | 
 | opportunist
 | opportunity
