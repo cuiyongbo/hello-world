@@ -439,6 +439,9 @@ in a number of Christian kingdoms.
 | Definition: a hard calcified deposit that forms on the teeth and contributes to their decay. [齿垢]
 | Definition: a deposit of impure potassium(钾) hydrogen tartrate formed during the fermentation of wine.
 | 
+| hemline [裙边，下摆]
+| Definition: the bottom edge of a dress or skirt; the length of a dress or skirt.
+| Usage: Shorter hemlines are back in this season. 
 
 .. figure:: images/sucking_finger.jpeg
    

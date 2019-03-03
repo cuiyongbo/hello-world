@@ -123,12 +123,12 @@ name, also known as surname, with most family members.
 | Usage: Every gardener will at first balk at enclosing the garden.
 | 
 | copious 
-| Definition: (adjective) Abundant in supply or quantity
+| Definition: Abundant in supply or quantity.
 | Usage: She took copious notes. 
 | 
 | nifty
-| Definition: (adjective) Particularly good, skillfull, or effective
-| Definition: (adjective) fashionable
+| Definition: Particularly good, skillfull, or effective.
+| Definition: fashionable
 | Usage: Nifty footwork.
 | Usage:   A nifty black t-shirt.
 | 
@@ -356,12 +356,6 @@ name, also known as surname, with most family members.
 | ecstasy
 | Definition: a feeling or state of very great happiness.
 | Usage: There was a look of ecstasy on his face. 
-| 
-| Percolate
-| Definition: If an idea , feeling, or piece of information percolates through a group of people or a thing, it spreads slowly through the group or thing.
-| Usage: New fashions took a long time to percolate down.
-| Definition: To percolate somewhere means to pass slowly through something that has very small holes or gaps in it
-| Usage: Rain water will only percolate through slowly
 | 
 | imprimatur
 | Definition: Formal and explicit approval

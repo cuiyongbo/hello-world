@@ -267,13 +267,3 @@ English Note 14
 
 .. image:: images/isis_temple_grand_canyon.jpg
 .. image:: images/hongkong_zhuhai_macau_bridge.jpg
-
-
-#. Platformer
-   
-    Platform games, or platformers, are a video game genre and subgenre of action game. 
-    In a platformer the player controlled character must jump and climb between suspended
-    platforms while avoiding obstacles. 
-
-    .. image:: images/Donkey_Kong.png
-    .. image:: images/top_platformers.jpg

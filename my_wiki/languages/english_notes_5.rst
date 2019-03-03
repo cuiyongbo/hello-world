@@ -256,15 +256,15 @@ English Note 5
 | Definition: Marked by bad temper, anger, or profanity.
 | Usage: A sulfurous glance.
 | 
+| atheist [无神论者]
+| Definition: a person who believes that God does not exist.
+|
 | profane
 | profaner
 | profanity
 | profaneness
 | Definition: blasphemous or obscene language.
 | Usage: An outburst of profanity.
-| 
-| atheist [无神论者]
-| Definition: a person who believes that God does not exist.
 | 
 | blasphemy
 | blasphemous
@@ -276,6 +276,13 @@ English Note 5
 | Definition: Violation or misuse of what is regarded as sacred.
 | Usage: It seems sacrilegious to say this, but it’s really not that great a movie.
 | 
+| heresy
+| herestical
+| Definition: belief or opinion contrary to orthodox religious (especially Christian) doctrine.
+| Usage: Huss was burned for heresy
+| Definition: opinion profoundly at odds with what is generally accepted.
+| Usage: I feel a bit heretical saying this, but I think the film has too much action.
+| 
 | pilgrim
 | pilgrimage 
 | Definition: a person who journeys to a sacred place for religious reasons.
@@ -285,16 +292,27 @@ English Note 5
 .. image:: images/pilgrimage.jpeg
 
 | 
-| piety 虔诚
-| Definition: the state of having or showing a deep respect for somebody or something, especially for God and religion; the state of being pious.
+| piety [虔诚]
+| Definition: the state of showing a deep respect for sb or sth, especially for God and religion.
+| Synonyms: pious.
 | Usage: Act of piety and charity.
+| 
+| pious
+| Definition: making a hypocritical display of virtue。
+| Usage: there'll be no pious words said over her.
+| Definition: (of a hope) sincere but unlikely to be fulfilled.
+| Usage: Such reforms seem likely to remain little more than pious hopes. 
+| 
+| hypocritical
+| Definition: behaving in a way that suggests one has higher standards or more noble beliefs than is the case.
+| Usage: it would be entirely hypocritical of me to say I regret it, because I don't. [伪善，道貌岸然]
 | 
 | begrime
 | Definition: make soiled, filthy or dirty.
 | Usage: Paint flaking from begrimed walls.
 | 
 | flake [剥落]
-| Definition: a small, flat, thin piece of something, typically one that has broken away or been peeled off a larger piece. 
+| Definition: a small, flat, thin piece of something, typically one that has been peeled off a larger piece. 
 | Usage: Paint peeling off the walls in unsightly flakes.
 | 
 | engrave
@@ -306,7 +324,7 @@ English Note 5
 | Definition: used to emphasize that something is fixed and unchangeable.
 | Usage: anything can change—nothing is written in stone.
 |  
-| etch
+| etch [蚀刻]
 | Definition: to cut lines into a piece of glass, metal etc. in order to make words or a picture.
 | Usage: a glass tankard etched with his initials.
 | Usage: Tiredness was etched on his face. 

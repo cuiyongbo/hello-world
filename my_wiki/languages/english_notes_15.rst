@@ -165,5 +165,24 @@ English Note 15
 | Definition: the force or energy with which a body moves.
 | Definition: the force that makes something happen or happen more quickly.
 | Usage: the crisis of the 1860s provided the original impetus for the settlements.
-
-
+| 
+| percolate
+| percolation
+| Definition: (of information or an idea or feeling) spread gradually through an area or group of people.
+| Usage: New fashions took a long time to percolate down.
+| Definition: (of a liquid or gas) filter gradually through a porous surface or substance
+| Usage: the water percolating through the soil may leach out minerals.
+| 
+| divisible
+| Definition: capable of being divided.
+| Usage: the marine environment is divisible into a number of areas.
+| Definition: Mathematics (of a number) capable of being divided by another number without a remainder.
+| Usage: 24 is divisible by 4.
+| 
+| lesion [病变，损伤]
+| Definition: a region in an organ or tissue that has suffered damage through injury or disease.
+| 
+| taboo
+| Definition: a social practice that is prohibited or restricted. [禁忌，避讳]
+| Usage: speaking about sex is a taboo in his country.
+| Usage; The subject is still a taboo in our family. 
