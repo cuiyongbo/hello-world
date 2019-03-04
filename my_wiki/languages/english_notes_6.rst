@@ -266,44 +266,9 @@ English Note 6
 | Definition: Having an urgent need to use the toilet. [内急] 
 | Usage: I always go to the bathroom before a long drive, to avoid being caught short.
 | 
-| android
-| Definition: (in science fiction) a robot with a human appearance.
-| Usage: a space station inhabited only by androids.
-| Definition: an OS developed by Google running on mobile phones.
-
-.. image:: images/android.jpg
-
-.. figure:: images/ripple-effect.jpg
-
-   Ripple effect
-
-   A ripple effect is a situation in which, like ripples expanding across the water 
-   when an object is dropped into it, an effect from an initial state can be followed 
-   outwards incrementally.
-   
-   Ripple effect is often used colloquially to mean a multiplier (economics).
-   
-   In sociology, it can be observed how social interactions can affect situations 
-   not directly related to the initial interaction, and in charitable activities 
-   where information can be disseminated and passed from community to community 
-   to broaden its impact.
-   
-   The concept has been applied in computer science within the field of software 
-   metrics as a complexity measure.
-
-.. figure:: images/HomerWatercolor.jpg
-
-   Watercolor painting 水彩画
-
-.. figure:: images/lattice.png
-
-   Lattice [百叶窗]
-
+| cartography: The activity of making map. [制图]
 | 
-| cartography [制图]
-| Definition: The activity of making map.
-| 
-| Terrain 地形
+| Terrain [地形]
 | Definition: a stretch of land, especially with regard to its physical features.
 | Usage: they were delayed by rough terrain.
 |
@@ -318,8 +283,53 @@ English Note 6
 .. image:: images/terrain.jpg
 .. figure:: images/watershed-diagram.jpg
 
-   Watershed diagram
+    Watershed diagram
 
 .. figure:: images/basin.jpg
 
-   Basin Geology
+    Basin Geology
+
+.. figure:: images/HomerWatercolor.jpg
+
+    Watercolor painting [水彩画]
+
+.. figure:: images/lattice.png
+
+    Lattice [百叶窗]
+
+.. image:: images/flipphone.jpg
+.. image:: images/candybarphone.jpg
+.. image:: images/slider-phone.jpg
+.. image:: images/roundiphone.jpg
+.. image:: images/squarephone.jpg
+.. figure:: images/android.jpg
+
+    Android: (in science fiction) a robot with a human appearance.
+
+#. :abbr:`MWC (Mobile World Congress)`: Why do smartphones look so alike?
+
+    The reaction from many rivals, including Huawei, HTC, and LG, appears to have been to 
+    hold off their own flagship [旗舰机] launches until later in the year. 
+    
+    But the world changed in 2007 when Steven Jobs pulled the IPhone out of his pocket, 
+    and had what became the dominant design. We’ve since gravitated to the black rectangle 
+    with a touchscreen as the form factor of choice, and it feels like we’ve now reached a 
+    technology plateau where firms compete by offering marginal changes around the edges.
+
+#. Ripple effect
+   
+    A ripple effect is a situation in which, like ripples expanding across the water 
+    when an object is dropped into it, an effect from an initial state can be followed 
+    outwards incrementally.
+   
+    Ripple effect is often used colloquially to mean a multiplier (economics).
+   
+    In sociology, it can be observed how social interactions can affect situations 
+    not directly related to the initial interaction, and in charitable activities 
+    where information can be disseminated and passed from community to community 
+    to broaden its impact.
+   
+    The concept has been applied in computer science within the field of software 
+    metrics as a complexity measure.
+
+    .. image:: images/ripple-effect.jpg

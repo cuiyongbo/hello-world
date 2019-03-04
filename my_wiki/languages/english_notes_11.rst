@@ -355,6 +355,7 @@ Only paranoid can surrive.
 |
 | azure
 | Definition: bright blue in color like a cloudless sky.
+| Synonyms: teal.
 | Usage: white beaches surrounded by azure seas.
 
 .. image:: images/convex-vs-concave-lens.jpg

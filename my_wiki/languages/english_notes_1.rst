@@ -2190,39 +2190,10 @@ admitted the computer was named after his daughter.
 | Definition: total defeat.
 | Usage: A show of independence is its only hope of avoiding annihilation in the next year's elections.
 | 
-| catastrophic
 | catastrophe
+| catastrophic
 | Definition: an event causing great and often sudden damage or suffering; a disaster.
 | Usage: A national economic catastrophe.
-|
-| MWC
-| Full: Mobile World Congress
-| 
-| MWC: Why do smartphones look so alike?
-| The reaction from many rivals, including Huawei, HTC, and LG, appears to have been to hold off their own flagship launches until later in the year. [旗舰机]
-| But the world changed in 2007 when Steven Jobs pulled the IPhone out of his pocket, and had what became the dominant design.
-| We've since gravitated to the black rectangle with a touchscreen as the form factor of choice, and it feels like we've now reached a technology plateau where firms compete by offering marginal | changes around the edges.
-| 
-| flip-phone [翻盖机]
-
-.. image:: images/flipphone.jpg
-
-| candy-bar phone
-
-.. image:: images/candybarphone.jpg
-
-| silders
-
-.. image:: images/slider-phone.jpg
-
-| round phone
-
-.. image:: images/roundiphone.jpg
-
-| square phone
-
-.. image:: images/squarephone.jpeg
-
 | 
 |  gentlemen's agreement 君子协定
 |

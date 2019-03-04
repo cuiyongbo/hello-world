@@ -185,4 +185,16 @@ English Note 15
 | taboo
 | Definition: a social practice that is prohibited or restricted. [禁忌，避讳]
 | Usage: speaking about sex is a taboo in his country.
-| Usage; The subject is still a taboo in our family. 
+| Usage: The subject is still a taboo in our family. 
+
+oblivious
+Definition: not aware of or not concerned about what is happening around one.
+Usage: she became absorbed, oblivious to the passage of time.
+
+admissible
+Definition: acceptable or valid, especially as evidence in a court of law.
+Usage: the Court unanimously held that the hearsay was admissible.
+Definition: having the right to be admitted to a place.
+Usage: foreigners were admissible only as temporary workers.
+
+band aid [创可贴]

@@ -109,5 +109,5 @@ Standard Algorithm Library Note
 
         `partition` reorders the elements in the range `[first, last)` in such a way that all elements 
         for which the predicate `p` returns `true` precede the elements for which predicate `p` 
-        returns `false`. Relative order of the elements is not preserved. `stable_partition` ditto, but
+        returns `false`. Relative order of the elements is not preserved. `stable_partition` dittos, but
         keeps the relative order of elements.

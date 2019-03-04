@@ -72,7 +72,7 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
         # Manhattan distance on a square grid
         return abs(a.x-b.x) + abs(a.y-b.y)
 
-    # Greedy-first search using distance to dest
+    # Greedy Best-first-search using distance to dest
     frontier = PriorityQueue()
     frontier.put(src, 0)
     came_from = {}
@@ -105,7 +105,39 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
                 frontier.put(next, priority)
                 came_from[next] = current
 
+
+.. code-block:: none
+    :caption: A* implementation
+
+    OPEN = priority queue containing START
+    CLOSED = empty set
+    while lowest rank in OPEN is not the GOAL:
+      current = remove lowest rank item from OPEN
+      add current to CLOSED
+      for neighbors of current:
+        cost = g(current) + movementcost(current, neighbor)
+        if neighbor in OPEN and cost less than g(neighbor):
+          remove neighbor from OPEN, because new path is better
+        if neighbor in CLOSED and cost less than g(neighbor): # note
+          remove neighbor from CLOSED
+        if neighbor not in OPEN and neighbor not in CLOSED:
+          set g(neighbor) to cost
+          add neighbor to OPEN
+          set priority queue rank to g(neighbor) + h(neighbor)
+          set neighbor's parent to current
+    
+    reconstruct reverse path from goal to start
+    by following parent pointers
+
+    # note This should never happen if you have an consistent admissible heuristic. 
+
+
+
+
 .. rubric:: Footnotes
 
 .. [#] `Introduction to A* (Animated) <https://www.redblobgames.com/pathfinding/a-star/introduction.html>`_
 .. [#] `Introduction to A* Algorithm <http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html>`_
+.. [#] `A* Demonstration <http://www.ccg.leeds.ac.uk/people/j.macgill/xaStar/>`_
+.. [#] `Pathfinding for tower defence <https://www.redblobgames.com/pathfinding/tower-defense/>`_
+.. [#] `Recastnavigation - a C++ implementation <https://github.com/recastnavigation/recastnavigation>`_

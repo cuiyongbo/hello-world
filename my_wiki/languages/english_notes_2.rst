@@ -442,6 +442,12 @@ in a number of Christian kingdoms.
 | hemline [裙边，下摆]
 | Definition: the bottom edge of a dress or skirt; the length of a dress or skirt.
 | Usage: Shorter hemlines are back in this season. 
+| 
+| outfit
+| Definition: a set of clothes worn together, typically for a particular occasion or purpose.
+| Usage: a riding outfit.
+| Definition: a group of people undertaking a particular activity together, as a group of musicians, a military unit, or a business concern.
+| Usage: Tom was the brains of the outfit.
 
 .. figure:: images/sucking_finger.jpeg
    

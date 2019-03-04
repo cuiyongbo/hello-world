@@ -108,6 +108,12 @@ English Note 14
 | Definition: better than all others of its kind. 
 | Usage: a peerless performance 
 | 
+| nudge
+| Definition: prod (someone) gently, typically with one's elbow, in order to draw their attention to something.
+| Usage: people were nudging each other and pointing at me.
+| Definition: coax or gently encourage (someone) to do something.
+| Usage: we have to nudge the politicians in the right direction
+| 
 | poke
 | Definition: jab or prod (someone or something), especially with one's finger. [捅，戳，顶]
 | Usage: She poked her elbow into his ribs. 
@@ -203,7 +209,7 @@ English Note 14
 | 
 | ditto
 | Definition: used in accounts and lists to indicate that an item is repeated (often indicated by a ditto mark under the word or figure to be repeated).
-| Usage: The waiters were rude and unhelpful, the manager ditto.
+| Usage: The waiters were rude and unhelpful, the manager dittoed.
 | 
 | hitherto
 | Definition: untill now.

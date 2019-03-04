@@ -231,3 +231,8 @@ Priority Queue
     
         while len(array)>0:
             print extract_maximum(array)
+
+
+.. rubric:: Footnotes
+
+.. [#] `Std Priority Quque <https://en.cppreference.com/w/cpp/container/priority_queue>`_

@@ -1,6 +1,6 @@
-******************
-Biological Terms 3
-******************
+*************
+Wild Lives 03
+*************
 
 | tailing [尾矿]
 | the residue of something, especially ore[矿石]. 
@@ -168,7 +168,7 @@ Biological Terms 3
 .. image:: images/marine_megafauna.jpg
 .. image:: images/whales-of-the-world-laura-row.jpg
 .. image:: images/ken-hurd-a-collection-of-whales.jpg
-
+.. image:: images/fin_whale.jpg
 
 #. Ontogeny
    

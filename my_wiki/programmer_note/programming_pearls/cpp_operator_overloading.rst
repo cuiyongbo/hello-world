@@ -30,7 +30,6 @@ type as the right argument (``b in a@b``), they must be implemented as non-membe
        return is;
    }
 
-
 Assignment operator
 ===================
 
@@ -91,7 +90,6 @@ Allocation and deallocation Functions
 
    void* operator new  ( std::size_t count ); (1)
    void* operator new[]( std::size_t count ); (2)
-
    void operator delete  ( void* ptr );       (3)
    void operator delete[]( void* ptr );       (4)
 
@@ -183,20 +181,6 @@ They may also be called using regular function call syntax.
         delete[] xs;
    }
 
-Output::
-
-   global op new called, size = 4
-   global op delete called
-   global op new called, size = 40
-   global op delete called
-   custom new for size 4
-   global op new called, size = 4
-   global op delete called
-   custom new for size 8
-   global op new called, size = 8
-   global op delete called
-
-
 Pointer-to-member operator howto
 ================================
 
@@ -224,8 +208,3 @@ Pointer-to-member operator howto
    
        return 0;
    }
-
-Output::
-
-   tt.a = 123
-   f()
