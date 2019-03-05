@@ -206,3 +206,12 @@ English Note 15
 | Definition: infringe on / upon something
 | Usage: I wouldn’t infinge on his privacy.
 | Usage: An infringement of liberty.
+| 
+| crook
+| Definition: bend (something, especially a finger as a signal).
+| Usage: he crooked a finger for the waitress.
+| Definition: (of a person or a part of the body) unwell or injured.
+| Usage: a crook knee.
+| Definition: (especially of a situation) bad, unpleasant, or unsatisfactory.
+| Usage: it was pretty crook on the land in the early 1970s.
+| 

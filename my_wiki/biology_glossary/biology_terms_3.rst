@@ -170,6 +170,8 @@ Wild Lives 03
 .. image:: images/ken-hurd-a-collection-of-whales.jpg
 .. image:: images/fin_whale.jpg
 
+.. image:: images/elephant_herd_in_namibia.jpg
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 

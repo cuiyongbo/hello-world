@@ -60,9 +60,8 @@ map or unmap files or devices into memory
 
       MAP_ANONYMOUS
          The mapping is not backed by any file; its contents are initialized to zero. The *fd* and *offset* arguments
-         are ignored; however, some implementations require *fd* to be *-1* if ``MAP_ANONYMOUS`` is specified, and
-         portable applications should ensure this. The use of *MAP_ANONYMOUS* in conjunction with *MAP_SHARED* is
-         supported on Linux only since kernel 2.4.
+         are ignored; however, some implementations require *fd* to be *-1* if `MAP_ANONYMOUS` is specified, and
+         portable applications should ensure this. 
 
       MAP_FIXED
          Don't interpret *addr* as a hint: place the mapping at exactly that address. *addr* must be a multiple of

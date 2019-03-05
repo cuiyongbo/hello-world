@@ -25,9 +25,8 @@ rather than a linear-time search to find the maximum.
 Although somewhat slower in practice on most machines than a well-implemented quicksort, it has the advantage of a more favorable 
 worst-case :math:`O(n\log n)` runtime. Heapsort is an **in-place** algorithm, but it is **not a stable sort.**
 
-Heapsort was invented by *J. W. J. Williams* in 1964. This was also the birth of the heap, presented already by Williams as a useful 
+Heapsort was invented by *J. W. J. Williams* in 1964. This was also the birth of the heap, presented already by `Williams` as a useful 
 data structure in its own right.
-
 
 **Property**
 
@@ -39,7 +38,6 @@ data structure in its own right.
 | Worst-case space complexity | **O(1)** auxiliary |
 +-----------------------------+--------------------+
 
-
 **Algorithm**
 
 The heapsort algorithm involves preparing the list by first turning it into a max heap. 
@@ -50,127 +48,56 @@ the new first value into its position in the heap. This repeats until the range 
 The steps are:
 
    #. Call the *buildMaxHeap()* function on the list.
-   #. Swap the first element of the list with the final element. Decrease the considered range of the list by one.
+   #. Swap the first element of the list with the final element. 
    #. Call the *siftDown()* function on the list to sift the new first element to its appropriate index in the heap.
    #. Go to step 2 unless the considered range of the list is one element.
 
 The *buildMaxHeap()* operation is run once, and is *O(n)* in performance. The *siftDown()* function is **O(log n),** 
 and is called *n* times. Therefore, the performance of this algorithm is :math:`O(n + n \log n) = O(n \log n).`
 
-The following is a simple way to implement the algorithm in pseudocode. Arrays are zero-based. 
-Movement 'down' means from the root towards the leaves.
-
-.. code-block:: none
-   :caption: pseudocode
-
-   function heapsort(a, count)
-   {
-       heapify(a, count)
-   
-       end := count - 1
-       while end > 0 do
-           swap(a[end], a[0])
-           end := end - 1
-           siftDown(a, 0, end)
-   }
-   
-   function heapify-siftDown(a, count)
-   {
-       start = Parent(count-1)
-       while start >= 0 do
-           siftDown(a, start, count - 1)
-           start := start - 1
-   }
-   
-   function siftDown(a, start, end)
-   {
-       root := start
-       while LeftChild(root) <= end do   
-           child := LeftChild(root)  
-           swap := root            
-           if a[swap] < a[child]
-               swap := child
-           if child+1 ≤ end and a[swap] < a[child+1]
-               swap := child + 1
-           if swap = root
-               return
-           else
-               swap(a[root], a[swap])
-               root := swap           
-   }
-
-   function heapify-siftUp(a,count)
-   {
-       end := 1
-       while end < count
-           siftUp(a, 0, end)
-           end := end + 1
-   }
- 
-   function siftUp(a, start, end)
-   {
-       child := end 
-       while child > start
-           parent := Parent(child)
-           if a[parent] < a[child] then (out of max-heap order)
-               swap(a[parent], a[child])
-               child := parent
-           else
-               return
-   }
-
-
-.. code-block:: none
-   :caption: Taken from **Introduction to algorithms**
-
-   Parent(i)
-      return i>>1
-
-   Left(i)
-      return 2*i
-
-   Right(i)
-      return 2*i+1
-
-   Max-Heapify(A, i)
-      l = Left(i)
-      r = Right(i)
-      largest = i
-      if l <= A.heap_size and A[l] > A[largest]
-         largest = l
-      if r <= A.heap_size and A[r] > A[largest]
-         largest = r
-      if largest != i
-         swap(A[i], A[largest])
-         Max-Heapify(A, largest)
-
-   Iterative-Max-Heapify(A, i)
-      p = i
-      while p < A.heap_size
-         l = Left(i)
-         largest = i
-         r = Right(i)
-         if l <= A.heap_size and A[l] > A[largest]
-            largest = l
-         if r <= A.heap_size and A[r] > A[largest]
-            largest = r
-
-         if largest == i
-            break
-      
-         swap(A[i], A[largest])
-         p = largest
-
-   Build-Max-Heap(A)
-      A.heap_size = A.length
-      for i=A.length/2 downto 1
-         Max-Heapify(A, i)
-
-**Example**
-
-Let ``{ 6, 5, 3, 1, 8, 7, 2, 4 }`` be the list that we want to sort from the smallest to the largest. 
-(NOTE, for 'Building the Heap' step: Larger nodes don't stay below smaller node parents. They are swapped 
-with parents, and then recursively checked if another swap is needed, to keep larger numbers above smaller 
-numbers on the heap binary tree.)
-
 .. image:: images/heapsort-example.gif
+
+.. code-block:: none
+    :caption: Taken from **Introduction to algorithms**
+
+    Parent(i): return i>>1
+    Left(i): return 2*i
+    Right(i): return 2*i+1
+
+    Max-Heapify(A, i)
+        largest = i
+        l, r = Left(i), Right(i)
+        if l <= A.heap_size and A[l] > A[largest]
+            largest = l
+        if r <= A.heap_size and A[r] > A[largest]
+            largest = r
+        if largest != i
+            swap(A[i], A[largest])
+            Max-Heapify(A, largest)
+
+    Iterative-Max-Heapify(A, i)
+        while i < A.heap_size
+            largest = i
+            l, r = Left(i), Right(i)
+            if l <= A.heap_size and A[l] > A[largest]
+                largest = l
+            if r <= A.heap_size and A[r] > A[largest]
+                largest = r
+
+            if largest == i
+                break
+      
+            swap(A[i], A[largest])
+            i = largest
+
+    Build-Max-Heap(A)
+        A.heap_size = A.length
+        for i=A.length/2 downto 1
+            Max-Heapify(A, i)
+
+    HeapSort(A)
+        Build-Max-Heap(A)
+        for i=A.length downto 2
+            swap(A[1], A[i])
+            A.heap_size--
+            Max-Heapify(A, 1)
