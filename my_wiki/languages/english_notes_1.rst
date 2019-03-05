@@ -1616,15 +1616,7 @@ admitted the computer was named after his daughter.
 | 
 | bobbin [绕线筒，线轴]
 | Definition: a winder around which thread or tape or film or other flexible material can be wounded.
-| 
-| infringe
-| infringement
-| Definition: actively break the terms of (a law, agreement, etc.).
-| Usage: Making an unauthorized copy would infringe copyright. [盗版必究？]
-| Definition: infringe on / upon something
-| Usage: I wouldn’t infinge on his privacy.
-| Usage: An infringement of liberty.
-| 
+|
 | encroach
 | encroachment
 | Definition: intrude on ( a person’s territory or a thing considered to be a right).

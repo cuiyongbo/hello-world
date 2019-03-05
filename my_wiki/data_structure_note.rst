@@ -5,7 +5,7 @@ Data Structure
 **晴天不肯去，只待雨淋头**
 
 .. toctree::
-   :titlesonly:
+    :titlesonly:
 
     data_structure/stack_note
     data_structure/queue_note

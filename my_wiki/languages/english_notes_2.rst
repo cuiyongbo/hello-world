@@ -517,6 +517,19 @@ in a number of Christian kingdoms.
 
     Brunette [褐发女郎]
 
+.. figure:: images/messy-bun-hairstyles.jpg
+
+    Bun [丸子头]
+
+.. figure:: images/short-side-fringe-hairstyles.jpg
+
+    Fringe haircut [刘海儿]
+
+.. figure:: images/overall-fringed-cardigan.jpg
+
+    Fringe clothe [流苏]
+
+
 #. morganatic
 
    of or denoting a marriage between a person of royal or noble birth and 

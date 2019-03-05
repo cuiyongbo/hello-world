@@ -160,10 +160,6 @@ English Note 5
 
     Bun: a bread roll of various shapes and flavorings, typically sweetened and often containing dried fruit [干果]
 
-.. figure:: images/messy-bun-hairstyles.jpg
-
-    Bun [丸子头]
-
 .. figure:: images/triangular_sanwitch.jpg
 
     Triangular sandwiches [三明治]
