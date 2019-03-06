@@ -197,8 +197,6 @@ English Note 15
 | Definition: having the right to be admitted to a place.
 | Usage: foreigners were admissible only as temporary workers.
 | 
-| band aid [创可贴]
-| 
 | infringe
 | infringement
 | Definition: actively break the terms of (a law, agreement, etc.).
@@ -215,3 +213,43 @@ English Note 15
 | Definition: (especially of a situation) bad, unpleasant, or unsatisfactory.
 | Usage: it was pretty crook on the land in the early 1970s.
 | 
+| circuit [巡回赛]
+| Definition: (in sport) a series of games or matches in which the same players regularly take part.
+| Synonyms: tournament.
+| Usage: The women’s tennis circuit.
+| 
+| tour [巡演]
+| Definition: (in golf, tennis, and other sports) the annual round of events in which top professionals complete. [例如澳网公开赛]
+| Definition: a journey made by performers or an athletic team, in which they perform or play in several different places.
+| Usage: She joined the Royal Shakespeare Company on tour.
+| Usage: The band is currently on a nine-day tour of France.
+| Usage: The Prince will visit Boston on the last leg of his American tour. [国事访问]
+| 
+| The Champions League and Europa league return this week as the knockout stage in each competition gets under way. [欧冠淘汰赛]
+| 
+| transfer window   转会窗口
+| quarter-final  四分之一决赛 
+| semi-final  半决赛
+| final       决赛
+| defending champion   卫冕冠军
+| grand slam 大满贯
+| band aid [创可贴]
+| 
+| regress 
+| Definition: return to a former or less developed state.
+| Usage: regression test [回归测试]
+| Definition: return mentally to a former stage of life or a supposed previous life, especially through hypnosis or mental illness.
+| Synonyms: hypnotize.
+| Usage: Art has been regressing toward adolescence for more than a generation now.
+| Usage: I regressed Sylvia to early childhood. [催眠]
+| Usage: She only remembered details of the accident under hypnosis.
+| 
+
+
+#. Hypnosis
+   
+   The induction of a state of consciousness in which a person apparently loses the power of voluntary action 
+   and is highly responsive to suggestion or direction. Its use in therapy, typically to recover suppressed 
+   memories or to allow modification of behavior by suggestion, has been revived but is still controversial.
+
+   .. image:: images/photo-for-learning-hypnosis.jpg

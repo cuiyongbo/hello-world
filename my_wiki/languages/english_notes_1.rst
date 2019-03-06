@@ -1050,20 +1050,9 @@ The Real, who finished second in the group to Tottenham, face Paris St-Germain
 in the Champions League last-16 [欧冠 16强] with the first leg [首回合] on 14
 February at Bernabeu.
 
-The Champions League and Europa league return this week as the knockout stage
-in each competition gets under way. [欧冠淘汰赛]
-
 Cristiano Ronaldo scored in a 10th straight game for Real Madrid but
 they were held to a derby [德比] draw by Atletico Madrid. 
 
-| 
-| transfer window   转会窗口
-| quarter-final  四分之一决赛 
-| semi-final  半决赛
-| final       决赛
-| defending champion   卫冕冠军
-| grand slam 大满贯
-| 
 
 Italy and  Argentina observed a minute's silence as a mark
 of respect to David Astori before kick-off. [默哀一分钟]
@@ -1413,28 +1402,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | apiary
 | apiarist [养蜂人]
 | Definition: a place where bees are kept; a collection of beehives.
-| 
-| circuit [巡回赛]
-| Definition: (in sport) a series of games or matches in which the same players regularly take part.
-| Usage: The women’s tennis circuit.
-| 
-| tour
-| Definition: a journey made by performers or an athletic team, in which they perform or play in several different places.
-| Definition: (in golf, tennis, and other sports) the annual round of events in which top professionals complete.
-| Usage: She joined the Royal Shakespeare Company on tour.
-| Usage: The band is currently on a nine-day tour of France.
-| Usage: The Prince will visit Boston on the last leg of his American tour.
-| 
-| regress 
-| Definition:  return to a former or less developed state.
-| Definition: return mentally to a former stage of life or a supposed previous life, especially through hypnosis or mental illness.
-| Usage: Art has been regressing toward adolescence for more than a generation now.
-| Usage: I regressed Sylvia to early childhood. [催眠]
-| Usage: regression test [回归测试]
-| 
-| hypnosis
-| Definition: The induction of a state of consciousness in which a person apparently loses the power of voluntary action and is highly responsive to suggestion | or direction. Its use in therapy, typically to recover supressed memories or to allow modification of behavior by suggestion, has been revived but is still | controversial.
-| Usage: She only remembered details of the accident under hypnosis.
 | 
 | dual
 | Definition: having two parts or aspects.

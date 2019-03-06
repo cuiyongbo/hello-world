@@ -31,6 +31,11 @@ Military Terms
 | The Kremlin 克里姆林宫
 | The US State Department 美国国会
 | 
+| totalitarian
+| totalitarianism
+| Definition: relating to a system of government that is centralized and dictatorial and requires complete subservience to the state.
+| Usage: a totalitarian regime. [中央集权，独裁政权]
+| 
 | anti-Semitism
 | Definition: hostility to or prejudice against Jews.
 |
