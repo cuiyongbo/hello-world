@@ -23,8 +23,8 @@ what is called a reason for living also the excellent one for dying.
 | Definition: the natural qualities of a person's character. [性格，性情]
 | Synonyms: temperament.
 | Usage: people of a nervous disposition. [歇斯底里，神经质的人]
-| Definition: the way someone tends to behave or feel.
 | Usage: The rides are unsuitable for people of a nervous disposition.
+| Usage: she has an artistic temperament.
 | Definition: (formal) the way something is placed or arranged. [处置，安排]
 | Synonyms: arrangement.
 | 

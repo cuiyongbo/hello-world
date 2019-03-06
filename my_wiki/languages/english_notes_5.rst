@@ -108,7 +108,7 @@ English Note 5
 | 
 | insipid
 | Definition: lacking flavor.
-| Usgae: a cup of insipid coffee.
+| Usage: a cup of insipid coffee.
 | 
 | condiment [调料，酱汁]
 | Definition: a substance such as salt or ketchup(番茄酱) that is used to add flavor to food.
@@ -303,6 +303,17 @@ English Note 5
 | Definition: behaving in a way that suggests one has higher standards or more noble beliefs than is the case.
 | Usage: it would be entirely hypocritical of me to say I regret it, because I don't. [伪善，道貌岸然]
 | 
+| prudish
+| Definition: to be easily shocked by matters relating to sex or nudity; excessively concerned with sexual propriety.
+| Usage: the prudish moral climate of the late 19th century. 
+| Usage: Older people will have grown up in a time of greater sexual prudishness. [谈性色变]
+| 
+| nude [裸身]
+| Definition: wearing no clothes; naked.
+| Usage: a painting of a nude model.
+| Definition: relating to clothing or makeup that is of a color resembling that of the wearer’s skin. 
+| Usage: a nude camisole under a sheer blouse. [肉色]
+| 
 | begrime
 | Definition: make soiled, filthy or dirty.
 | Usage: Paint flaking from begrimed walls.
@@ -436,7 +447,7 @@ English Note 5
 | 
 | hide
 | Definition:  an animal's skin, especially when it is bought or sold or used for leather. [兽皮]
-| Usgae: boots made from buffalo hide.
+| Usage: boots made from buffalo hide.
 | Phrase: hide one's head
 | Definition: cover up one's face or keep out of sight, especially from shame.
 | Phrase: hide one's light under a bushel

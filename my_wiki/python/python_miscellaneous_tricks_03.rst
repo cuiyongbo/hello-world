@@ -167,7 +167,6 @@ Python Miscellaneous Tricks 03
 
 #. python to list all submodules in a module
    
-
     .. code-block:: py
 
 
@@ -200,3 +199,6 @@ Python Miscellaneous Tricks 03
         ndimage
         signal
 
+#. python to check if an array is sorted
+   
+    Solution: ``all([l[i] <= l[i+1] for i in xrange(len(l)-1)])``.

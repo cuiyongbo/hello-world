@@ -41,8 +41,8 @@ Quicksort is a **divide and conquer** algorithm. It behaves as following:
     #. Partitioning: reorder the array so that all elements with values less than 
        the pivot come before the pivot, while all elements with values greater than 
        the pivot come after it (equal values can go either way). After this partitioning, 
-       the pivot is in its final position. This is called the partition operation.
-   
+       the pivot is in its final position. 
+
     #. Recursively apply the above steps to the sub-arrays.
    
 .. code-block:: none
@@ -94,6 +94,7 @@ Quicksort is a **divide and conquer** algorithm. It behaves as following:
         if p < r
             # The Partition-Hoare procedure always places the pivot value
             # into one of the two partitions A[p, j], and A[j+1, r]
+            # A[p, q] <= A[q+1, r]
             q = Partition-Hoare(A, p, r) 
             QuickSort-Hoare(A, p, q)
             QuickSort-Hoare(A, q+1, r)
@@ -123,3 +124,30 @@ Quicksort is a **divide and conquer** algorithm. It behaves as following:
             low, high = threeWayPartition(items, p, r)
             quick_sort_three_way_partition(items, p, low-1)
             quick_sort_three_way_partition(items, high+1, r)
+
+.. code-block:: py
+
+    def partition(l, p, r):
+        k = l[p]
+        i, j=p-1, r+1
+        while True:
+                while True:
+                        j-=1
+                        if l[j] <= k: break
+                while True:
+                        i+=1
+                        if l[i] >= k: break
+                if i<j:
+                        l[i], l[j] = l[j], l[i]
+                else: return j
+    
+    def quicksort(l, p, r):
+        if r-p < 1:
+                return
+        q = partition(l, p, r)
+        quicksort(l, p, q)
+        quicksort(l, q+1, r)
+    
+    ll = random.sample(xrange(1000), 10)
+    quicksort(ll, 0, len(ll)-1)
+    all([ll[i] <= ll[i+1] for i in range(len(ll)-1)])

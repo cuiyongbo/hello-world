@@ -18,8 +18,8 @@ ftruncate & truncate
 
 **DESCRIPTION**
 
-   The ``truncate()`` and ``ftruncate()`` functions cause the regular file named by *path*
-   or referenced by fd to be truncated to a size of precisely *length* bytes.
+   The `truncate()` and `ftruncate()` functions cause the regular file named by *path*
+   or referenced by `fd` to be truncated to a size of precisely *length* bytes.
 
    If the file previously was larger than this size, the extra data is lost.
    If the file previously was shorter, it is extended, and the extended part

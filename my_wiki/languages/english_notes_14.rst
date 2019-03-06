@@ -13,8 +13,9 @@ English Note 14
 | Definition: reject with contempt.
 | Usage: Oh pooh! Don't be such a spoilsport.
 |
-| spoilsport [扫兴，扫把星]
-| Definition: a person who behaves in a way that spoils others' pleasure, especially by not | joining in an activity.
+| spoilsport [扫兴，扫把星，大煞风景]
+| Definition: a person who behaves in a way that spoils others' pleasure, especially by not joining in an activity.
+| Synonyms: killjoy
 | 
 | haughty
 | Definition: Arrogantly superior and disdainful.

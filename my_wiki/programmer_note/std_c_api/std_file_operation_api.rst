@@ -5,7 +5,6 @@ File Operations
 .. contents::
    :local:
 
-
 stream open functions
 =====================
 

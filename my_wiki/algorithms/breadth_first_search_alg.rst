@@ -19,7 +19,6 @@ Breadth-first search
             u.p = NIL # predecessor
         s.color = GRAY
         s.d = 0
-        s.p = NIL
         initial Q to empty # a first-in, first-out queue
         Enqueue(Q, s)
         # invariant Q consists of the set of gray vertice
