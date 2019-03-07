@@ -127,7 +127,9 @@ English Note 13
 | vacuous
 | Definition: having or showing a lack of thought or intelligence; mindless.
 | Usage: a vacuous smile.
-| 
+| Definition: silly
+| Usage: that vacuous laugh of his drives me nuts.
+|
 | stochastic
 | stochastically
 | Definition: randomly determined; having a random probability distribution or pattern 

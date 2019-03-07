@@ -19,19 +19,20 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     frontier = Queue()
     frontier.put(src)
     visited = {}
-    visited[srced] = True
+    visited[src] = True
     while not frontier.empty():
         current = frontier.get()
         for next in graph.neighbours(current):
             if next not in visited:
                 frontier.put(next)
                 visited[next] = True
-    
+
     # keep track of where we came from for every visited location
     frontier = Queue()
     frontier.put(src)
     came_from = {}
-    came_from[srced] = None
+    Node = namedtuple("Node", ['predecessor', 'distance_from_src'])
+    came_from[src] = Node(None, 0)
     while not frontier.empty():
         current = frontier.get()
         if current == dest:
@@ -39,14 +40,14 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
         for next in graph.neighbours(current):
             if next not in came_from:
                 frontier.put(next)
-                came_from[next] = current
+                came_from[next] = Node(current, came_from[current].distance_from_src+1)
     
         # reconstruct the path
         current = dest
         path = []
         while current != None:
-            path.append(current)
-            current = came_from[current]
+            path.append(current.predecessor)
+            current = came_from[current].predecessor
         path.reverse() # optional
 
     # Dijkstra's algorithm using distance from src
@@ -132,6 +133,8 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     # note This should never happen if you have an consistent admissible heuristic. 
 
 
+all sources one destination
+
 
 
 .. rubric:: Footnotes
@@ -141,3 +144,4 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 .. [#] `A* Demonstration <http://www.ccg.leeds.ac.uk/people/j.macgill/xaStar/>`_
 .. [#] `Pathfinding for tower defence <https://www.redblobgames.com/pathfinding/tower-defense/>`_
 .. [#] `Recastnavigation - a C++ implementation <https://github.com/recastnavigation/recastnavigation>`_
+.. [#] `A* implementation <https://www.redblobgames.com/pathfinding/a-star/implementation.html>`_

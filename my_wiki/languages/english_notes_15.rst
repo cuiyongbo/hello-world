@@ -244,13 +244,15 @@ English Note 15
 | Usage: I regressed Sylvia to early childhood. [催眠]
 | Usage: She only remembered details of the accident under hypnosis.
 | 
-
-temperature
-Definition: the degree of internal heat of a person's body.
-Usage: I'll take her temperature.
-Definition: a body temperature above the normal; fever.
-Usage: he was running a temperature.
-
+| temperature
+| Definition: the degree of internal heat of a person's body.
+| Usage: I'll take her temperature.
+| Definition: a body temperature above the normal; fever.
+| Usage: he was running a temperature.
+| 
+| narcissus / daffodi [水仙]
+| narcissism [自恋]
+| Definition:  (formal, disapproving)  the habit of admiring yourself too much, especially your appearance. 
 
 #. Hypnosis
    

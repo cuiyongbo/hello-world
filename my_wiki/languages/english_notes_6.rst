@@ -205,13 +205,10 @@ English Note 6
 |
 | morgue
 | Definition: a place where bodies are kept, especially to be identified or claimed.
-| Synonyms: mortuary 霊安室  太平间，停尸间
-| Usage: the cadavers were bagged and removed to the city morgue.
+| Synonyms: mortuary [霊安室  太平间，停尸间]
+| Usage: the cadavers (corpses) were bagged and removed to the city morgue.
 | Definition: used metaphorically to refer to a place that is quiet, gloomy, or cold.
 | Usage: she put us in that drafty morgue of a sitting room.
-| 
-| cadaver
-| Synonyms: corpse
 | 
 | devoid
 | Definition: entirely lacking or free from.
@@ -251,6 +248,17 @@ English Note 6
 | Usage: the group was constituted ad hoc
 | Usage: ad hoc committees to examine specific problems. [临时委员]
 |
+| tile
+| Usage: the lobby was tiled in blue. [铺砖，瓦片]
+| Phrase: on the tiles
+| Definition: informal, chiefly British having a lively night out.
+| Usage: it won't be the first time he's spent a night on the tiles.
+| 
+| slab
+| Definition: a large, thick, flat piece of stone, concrete, or wood, typically rectangular.
+| Usage: she settled on a slab of rock.
+| Usage: a slab of chocolate.
+| 
 | grandeur
 | grandiose
 | Definition: impressive and imposing in appearance or style, especially pretentiously so.
