@@ -34,6 +34,7 @@ Algorithms
     algorithms/line_splitting_alg
     algorithms/path_finding_alg_note
     algorithms/breadth_first_search_alg
+    algorithms/depth_first_search_alg
     algorithms/shortest_path_problem_note
     algorithms/gzip_alg_note
     algorithms/single_precision_floating_point_format

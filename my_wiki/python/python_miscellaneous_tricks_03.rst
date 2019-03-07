@@ -103,7 +103,7 @@ Python Miscellaneous Tricks 03
         import getpass
         getpass.getuser()
         'cherry'
-
+   
 #. python to add an additional directory to search path
    
     Augment the default search path for module files. The format is the same as the shell’s **PATH**: 
@@ -169,32 +169,14 @@ Python Miscellaneous Tricks 03
    
     .. code-block:: py
 
-
         >>> import types
         >>> for key, obj in sp.__dict__.items():
         ...     if type(obj) is types.ModuleType:
         ...         print(key)
         ... 
         char
-        rec
-        emath
         math
-        random
-        ctypeslib
-        ma
-        _distributor_init
-        __config__
-        version
-        _lib
-        sparse
-        linalg
-        special
-        spatial
-        interpolate
-        misc
-        optimize
-        integrate
-        stats
+        ...
         fftpack
         ndimage
         signal
@@ -231,3 +213,10 @@ Python Miscellaneous Tricks 03
         Point(x=11, y=22)
         >>> p._replace(x=100)               # _replace() is like str.replace() but targets named fields
         Point(x=100, y=22)
+
+#. python to print without newline
+
+    From Python2.6 you can import the print function from Python3: ``from __future__ import`` 
+    This allows you to use the Python3's `print` function. In Python3, the `print` statement 
+    has been changed into a function. In Python 3, you can instead do: ``print('.', end='')``. 
+    If you are having trouble with buffering, you can flush the output by adding ``flush=True`` keyword argument.

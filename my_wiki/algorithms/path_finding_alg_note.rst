@@ -133,10 +133,6 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     # note This should never happen if you have an consistent admissible heuristic. 
 
 
-all sources one destination
-
-
-
 .. rubric:: Footnotes
 
 .. [#] `Introduction to A* (Animated) <https://www.redblobgames.com/pathfinding/a-star/introduction.html>`_

@@ -12,6 +12,7 @@ Breadth-first search
     # of a vetex u in G.V with `G.Adj[u]`.
     # referer to Ch22.1 representations of Graph for further information.
 
+    # O(V+E)
     BFS(G, s)
         for each vertex u in G.V
             u.color = WHITE
