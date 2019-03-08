@@ -128,7 +128,7 @@ Windows Problems
    `Solution User Options File <https://docs.microsoft.com/en-us/visualstudio/extensibility/internals/solution-user-options-dot-suo-file?view=vs-2017>`_
    for more information.
 
-#. VS console app exits without pause even running with Ctrl + F5
+#. VS console app exits without pause even running with `Ctrl + F5`
    
    Solution::
 

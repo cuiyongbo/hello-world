@@ -19,10 +19,10 @@ If *format* requires a single argument, values may be a single non-tuple object.
 Otherwise, values must be a tuple with exactly the number of items specified by the format string,
 or a single mapping object (for example, a dictionary).
 
-A conversion specifier contains two or more characters and has the following components,
+A **conversion specifier** contains two or more characters and has the following components,
 which must occur in this order:
 
-   #. The "%" character, which marks the start of the specifier.
+   #. The `%` character, which marks the start of the specifier.
      
    #. Mapping key (optional), consisting of a parenthesised
       sequence of characters (for example, (somename)).
@@ -55,7 +55,7 @@ to be formatted from the mapping. For example::
    >>> "%s %d" % ("hello world", 6)
    'hello world 6'
 
-The conversion flag characters are::
+The **conversion flag characters** are::
 
    +------+-----------------------------------------------------------+
    | Flag | Meaning                                                   |
@@ -73,10 +73,10 @@ The conversion flag characters are::
    |      | (or empty string) produced by a signed conversion.        |
    +------+-----------------------------------------------------------+
 
-A length modifier (h, l, or L) may be present, but is ignored
+A **length modifier** (h, l, or L) may be present, but is ignored
 as it is not necessary for Python.
 
-The conversion types are::
+The **conversion types** are::
 
    +------------+--------------------------------------------------------------------+-------+
    | Conversion | Meaning                                                            | Notes |

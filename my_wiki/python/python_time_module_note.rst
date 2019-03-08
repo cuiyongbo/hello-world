@@ -125,7 +125,6 @@ or having elements of the wrong type, a :exc:`TypeError` is raised.
    as a floating point number, based on the Win32 function *QueryPerformanceCounter()*. The resolution 
    is typically better than one microsecond.
 
-
 .. function:: time.strftime(format[, t])
 
    Convert a tuple or *struct_time* representing a time as returned by *gmtime()* or *localtime()* to a 

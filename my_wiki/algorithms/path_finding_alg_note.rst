@@ -2,6 +2,8 @@
 Path Finding Algorithms
 ***********************
 
+**今日事今日毕**
+
 .. figure:: images/Manhattan_distance.svg
 
     Manhanttan Distance
@@ -141,3 +143,5 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 .. [#] `Pathfinding for tower defence <https://www.redblobgames.com/pathfinding/tower-defense/>`_
 .. [#] `Recastnavigation - a C++ implementation <https://github.com/recastnavigation/recastnavigation>`_
 .. [#] `A* implementation <https://www.redblobgames.com/pathfinding/a-star/implementation.html>`_
+.. [#] `Easystar - javascript version <https://easystarjs.com/>`_
+.. [#] `Simple C++ version - https://github.com/vandersonmr/A_Star_Algorithm.git`
