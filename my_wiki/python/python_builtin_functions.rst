@@ -753,11 +753,11 @@ Class utilities
 
 .. class:: object()
 
-   Return a new featureless object.  :class:`object` is a base for all classes.
+   Return a new featureless object. `object` is a base for all classes.
    It has the methods that are common to all instances of Python classes.
    This function does not accept any arguments.
 
-   .. code-block:: python
+   .. code-block:: py
 
       >>> help(object)
       Help on class object in module __builtin__:
@@ -767,9 +767,8 @@ Class utilities
 
    .. note::
 
-      :class:`object` does *not* have a :attr:`~object.__dict__`, so you can't
+      `object` does *not* have a :attr:`~object.__dict__`, so you can't
       assign arbitrary attributes to an instance of the :class:`object` class.
-
 
 .. function:: super([type[, object-or-type]])
 
@@ -778,30 +777,15 @@ Class utilities
    been overridden in a class. The search order is same as that used by
    :func:`getattr` except that the *type* itself is skipped.
 
-   The :attr:`~class.__mro__` attribute of the *type* lists the method
-   resolution search order used by both :func:`getattr` and :func:`super`.  The
-   attribute is dynamic and can change whenever the inheritance hierarchy is
-   updated.
-
-   If the second argument is omitted, the super object returned is unbound.  If
-   the second argument is an object, ``isinstance(obj, type)`` must be true.  If
-   the second argument is a type, ``issubclass(type2, type)`` must be true (this
-   is useful for classmethods).
-
-   There are two typical use cases for *super*.  In a class hierarchy with
-   single inheritance, *super* can be used to refer to parent classes without
-   naming them explicitly, thus making the code more maintainable.  This use
-   closely parallels the use of *super* in other programming languages.
+   There are two typical use cases for `super`.  In a class hierarchy with
+   **single inheritance**, `super` can be used to refer to parent classes without
+   naming them explicitly, thus making the code more maintainable.  
 
    The second use case is to support cooperative multiple inheritance in a
-   dynamic execution environment.  This use case is unique to Python and is
+   dynamic execution environment. This use case is unique to Python and is
    not found in statically compiled languages or languages that only support
-   single inheritance.  This makes it possible to implement "diamond diagrams"
-   where multiple base classes implement the same method.  Good design dictates
-   that this method have the same calling signature in every case (because the
-   order of calls is determined at runtime, because that order adapts
-   to changes in the class hierarchy, and because that order can include
-   sibling classes that are unknown prior to runtime).
+   single inheritance. This makes it possible to implement "diamond diagrams"
+   where multiple base classes implement the same method. 
 
    For both use cases, a typical superclass call looks like this::
 
@@ -810,44 +794,29 @@ Class utilities
               super().method(arg)    # This does the same thing as:
                                      # super(C, self).method(arg)
 
-   Note that :func:`super` is implemented as part of the binding process for
-   explicit dotted attribute lookups such as ``super().__getitem__(name)``.
-   It does so by implementing its own :meth:`__getattribute__` method for searching
-   classes in a predictable order that supports cooperative multiple inheritance.
-   Accordingly, :func:`super` is undefined for implicit lookups using statements or
-   operators such as ``super()[name]``.
-
-   Also note that, aside from the zero argument form, :func:`super` is not
-   limited to use inside methods.  The two argument form specifies the
-   arguments exactly and makes the appropriate references.  The zero
+   Note that, aside from the zero argument form, `super()` is not
+   limited to use inside methods. The two argument form specifies the
+   arguments exactly and makes the appropriate references. The zero
    argument form only works inside a class definition, as the compiler fills
    in the necessary details to correctly retrieve the class being defined,
    as well as accessing the current instance for ordinary methods.
 
-   For practical suggestions on how to design cooperative classes using
-   :func:`super`, see `guide to using super()
-   <https://rhettinger.wordpress.com/2011/05/26/super-considered-super/>`_.
-
-
 .. class:: type(object)
 .. class:: type(name, bases, dict)
 
-   .. index:: object: type
-
-   With one argument, return the type of an *object*.  The return value is a
-   type object and generally the same object as returned by
-   :attr:`object.__class__ <instance.__class__>`.
+   With one argument, return the type of an `object`.  The return value is a
+   type object and generally the same object as returned by ``object.__class__``.
 
    The :func:`isinstance` built-in function is recommended for testing the type
    of an object, because it takes subclasses into account.
 
-   With three arguments, return a new type object.  This is essentially a
+   With three arguments, return a new type object. This is essentially a
    dynamic form of the :keyword:`class` statement. The *name* string is the
    class name and becomes the :attr:`~definition.__name__` attribute; the *bases*
    tuple itemizes the base classes and becomes the :attr:`~class.__bases__`
    attribute; and the *dict* dictionary is the namespace containing definitions
    for class body and is copied to a standard dictionary to become the
-   :attr:`~object.__dict__` attribute.  For example, the following two
+   :attr:`~object.__dict__` attribute. For example, the following two
    statements create identical :class:`type` objects::
 
       >>> class X:

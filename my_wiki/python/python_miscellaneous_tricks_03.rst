@@ -220,3 +220,24 @@ Python Miscellaneous Tricks 03
     This allows you to use the Python3's `print` function. In Python3, the `print` statement 
     has been changed into a function. In Python 3, you can instead do: ``print('.', end='')``. 
     If you are having trouble with buffering, you can flush the output by adding ``flush=True`` keyword argument.
+
+#. python to call `super()`
+  
+    .. code-block:: py
+    
+        class SquareGrid:
+        def __init__(self, width, height):
+            self.width = width
+            self.height = height
+
+        class GridWithWeights(SquareGrid):
+            def __init__(self, width, height):
+                #SquareGrid.__init__(self, width, height) # python2.x patch
+                super().__init__(width, height) # python3
+
+    Refer to python super() guide [#super_guide]_ and pthon2 super error [#py2_super_error]_ for further information.
+
+.. rubric:: Footnotes
+
+.. [#super_guide] https://rhettinger.wordpress.com/2011/05/26/super-considered-super/
+.. [#py2_super_error] https://stackoverflow.com/questions/9698614/super-raises-typeerror-must-be-type-not-classobj-for-new-style-class

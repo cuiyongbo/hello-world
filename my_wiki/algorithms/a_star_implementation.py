@@ -27,7 +27,6 @@ def breadth_first_search_1(graph, start):
     frontier.put(start)
     visited = {}
     visited[start] = True
-
     while not frontier.empty():
         current = frontier.get()
         print('Visiting %r' % current)
@@ -35,6 +34,33 @@ def breadth_first_search_1(graph, start):
             if next not in visited:
                 frontier.put(next)
                 visited[next] = True
+
+def breadth_first_search_2(graph, start):
+    frontier = Queue()
+    frontier.put(start)
+    came_from = {}
+    came_from[start] = None
+    while not frontier.empty():
+        current = frontier.get()
+        for next in graph.neighbors(current):
+            if next not in came_from:
+                frontier.put(next)
+                came_from[next] = current
+    return came_from
+
+def breadth_first_search_3(graph, start, goal):
+    frontier = Queue()
+    frontier.put(start)
+    came_from = {}
+    came_from[start] = None
+    while not frontier.empty():
+        current = frontier.get()
+        if current == goal: break
+        for next in graph.neighbors(current):
+            if next not in came_from:
+                frontier.put(next)
+                came_from[next] = current
+    return came_from
 
 class SquareGrid:
     def __init__(self, width, height):
@@ -52,10 +78,35 @@ class SquareGrid:
     def neighbors(self, id):
         (x, y) = id
         results = [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]
-        if(x+y)%2==0: results.results.reverse()
+        if(x+y)%2==0: results.reverse()
         results = filter(self.in_bounds, results)
         results = filter(self.passable, results)
         return results
+
+class GridWithWeights(SquareGrid):
+    def __init__(self, width, height):
+        #SquareGrid.__init__(self, width, height) # python2.x patch
+        super().__init__(width, height) # python3
+        self.weights = {}
+
+    def cost(self, from_node, to_node):
+        return self.weights.get(to_node, 1)
+
+import heapq
+
+class PriorityQueue:
+    def __init__(self):
+        Node = collections.namedtuple('Node', ['priority', 'item'])
+        self.elements = []
+
+    def empty(self):
+        return len(self.elements) == 0
+
+    def put(self, item, priority):
+        heapq.heappush(self.elements, Node(priority, item))
+
+    def get(self):
+        return heapq.heappop(self.elements).item
 
 # utility functions for dealing with square grids
 def from_id_width(id, width):
@@ -94,11 +145,20 @@ if __name__ == '__main__':
         'E': ['B']
     }
 
-    breadth_first_search_1(example_graph, 'A')
+    # breadth_first_search_1(example_graph, 'A')
+
+    ll = [21,22,51,52,81,82,93,94,111,112,123,124,133,134,141,142,153,154,163,164,171,172,
+    173,174,175,183,184,193,194,201,202,203,204,205,213,214,223,224,243,244,253,254,273,
+    274,283,284,303,304,313,314,333,334,343,344,373,374,403,404,433,434]
 
     g = SquareGrid(30, 15)
-    g.walls = [from_id_width(id, width=30) for id in [21,22,51,52,81,82,93,94,111,112,123,124,133,134,141,142,153,154,163,164,171,172,173,174,175,183,184,193,194,201,202,203,204,205,213,214,223,224,243,244,253,254,273,274,283,284,303,304,313,314,333,334,343,344,373,374,403,404,433,434]]
-    draw_grid(g)
+    g.walls = [from_id_width(id, width=30) for id in ll]
+    #draw_grid(g)
+
+    #parents = breadth_first_search_2(g, (8,7))
+    parents = breadth_first_search_3(g, (8,7), (17, 12))
+    draw_grid(g, width=2, point_to=parents, start=(8,7), goal=(17,12))
 
 
-# python super https://stackoverflow.com/questions/9698614/super-raises-typeerror-must-be-type-not-classobj-for-new-style-class
+
+

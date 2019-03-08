@@ -192,6 +192,17 @@ English Note 10
 | Usage: the party still has a hard core of supporters that will always vote for them. [铁杆支持者]
 | Usage: hardcore gamers. [硬核玩家, 多代指愣头青]
 | 
+| hard-code
+| Definition: fix (data or parameters) in a program in such a way that they cannot be altered without modifying the program.
+| Usage: the rate at which the supply of bitcoins grows is hardwired into the system
+| Definition: make (a pattern of behavior or belief) standard or instinctive.
+| Usage: it takes about three weeks for a new habit to be hardwired in your brain.
+| 
+| hardwire
+| Definition: involving or achieved by permanently connected circuits.
+| Definition: informal genetically determined or compelled.
+| Usage: fear is hardwired in our brain.
+| 
 | junkie
 | Definition: a drug addict. [瘾君子]
 | Definition: a person with a compulsive habit or obsessive dependency on something.
