@@ -55,3 +55,9 @@ Computer Terminology 3
     | Drawbacks   | Incur process context switch          | Processor is busy doing nothing till |
     |             | and scheduling cost.                  | lock is granted, wasting CPU cycles. |
     +-------------+---------------------------------------+--------------------------------------+
+
+#. One-hot
+
+    In digital circuits, one-hot refers to a group of bits among which the legal combinations of values 
+    are only those with a single high (1) bit and all the others low (0). A similar implementation in 
+    which all bits are '1' except one '0' is sometimes called one-cold.

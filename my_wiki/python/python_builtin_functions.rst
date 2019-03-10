@@ -309,13 +309,8 @@ Iterator functions
    ``None``. for example::
 
       >>> se = range(1,10)
-      >>> filter((lambda x: x%2), se)
-      [1, 3, 5, 7, 9]
       >>> filter(lambda x: x%2, se)
       [1, 3, 5, 7, 9]
-
-   See :func:`itertools.filterfalse` for the complementary function that returns
-   elements of *iterable* for which *function* returns false.
 
 
 Numeric functions

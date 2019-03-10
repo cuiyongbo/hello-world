@@ -157,6 +157,34 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
                 frontier.put(next)
                 seed[next] = seed[current]
 
+#. Beam Seach
+   
+    In the main A* loop, the `OPEN` set stores all the nodes that may need to be searched to find a path. 
+    The Beam Search is a variation of A* that places a limit on the size of the `OPEN` set. 
+    If the set becomes too large, the node with the worst chances of giving a good path is dropped. 
+    One drawback is that you have to keep your set sorted to do this, which limits the choices of data structures.
+
+#. Dynamic weighting
+   
+    With dynamic weighting, you get the cost function as ``f(p) = g(p) + w(p) * h(p)``,
+    you assume that at the beginning of your search, it’s more important to get (anywhere) 
+    quickly; at the end of the search, it’s more important to get to the goal.
+
+    There is a weight (``w >= 1``) associated with the heuristic. As you get closer to the goal, 
+    you decrease the weight; this decreases the importance of the heuristic, and increases the 
+    relative importance of the actual cost of the path.
+
+#. Iterative deepening
+
+    Iterative Deepening is an approach used in many AI algorithms to start with an approximate answer, 
+    then make it more accurate. The name comes from game tree searches, where you look some number of 
+    moves ahead (for example, in Chess). You can try to deepen the tree by looking ahead more moves. 
+    Once your answer doesn’t change or improve much, you assume that you have a pretty good answer, 
+    and it won’t improve when you try to make it more accurate again. In `IDA*`, **the depth is a cutoff for f values.** 
+    When the `f` value is too large, the node won’t even be considered (i.e., it won’t be added to the `OPEN` set). 
+    The first time through you process very few nodes. Each subsequent pass, you increase the number of nodes you visit. 
+    If you find that the path improves, then you continue to increase the cutoff; otherwise, you can stop. 
+
 #. Bidirectional Search
 
     Instead of searching from the start to the finish, you can start two searches 
