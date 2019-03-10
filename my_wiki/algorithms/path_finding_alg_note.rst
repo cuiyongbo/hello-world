@@ -134,6 +134,50 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 
     # note This should never happen if you have an consistent admissible heuristic. 
 
+.. code-block:: py
+    :caption: Distance to selected points
+
+    frontier = Queue()
+    cost_sofar = {}
+    seed = {}
+
+    # set the distance to 0 at all start points
+    # each start point is its own seed
+    for s in start:
+        frontier.put(s)
+        cost_sofar[s] = 0
+        seed[s] = s
+
+    # Expand outwards from existing points
+    while not frontier.empty():
+        current = frontier.get()
+        for next in current.neighbors():
+            if next not in cost_sofar:
+                cost_sofar[next] = cost_sofar[current] + 1
+                frontier.put(next)
+                seed[next] = seed[current]
+
+#. Bidirectional Search
+
+    Instead of searching from the start to the finish, you can start two searches 
+    in parallel―one from start to finish, and one from finish to start. When they meet, 
+    you should have a good path.
+
+    It’s a good idea that will help in some situations. The idea behind bidirectional searches 
+    is that searching results in a “tree” that fans out over the map. A big tree is much worse 
+    than two small trees, so it’s better to have two small search trees.
+
+    The front-to-front variation links the two searches together. Instead of choosing the best 
+    forward-search node, ``g(start,x) + h(x,goal)`` or the best backward-search node, ``g(y,goal) + h(start,y)``, 
+    this algorithm chooses a pair of nodes with the best ``g(start,x) + h(x,y) + g(y,goal)``.
+
+    The retargeting approach abandons simultaneous searches in the forward and backward directions. 
+    Instead, it performs a forward search for a short time, chooses the best forward candidate, 
+    and then performs a backward search―not to the starting point, but to that candidate. 
+    After a while, it chooses a best backward candidate and performs a forward search from 
+    the best forward candidate to the best backward candidate. This process continues until 
+    the two candidates are the same point.
+
 
 .. rubric:: Footnotes
 
@@ -144,4 +188,4 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 .. [#] `Recastnavigation - a C++ implementation <https://github.com/recastnavigation/recastnavigation>`_
 .. [#] `A* implementation <https://www.redblobgames.com/pathfinding/a-star/implementation.html>`_
 .. [#] `Easystar - javascript version <https://easystarjs.com/>`_
-.. [#] `Simple C++ version - https://github.com/vandersonmr/A_Star_Algorithm.git`
+.. [#] `Simple C++ version - <https://github.com/vandersonmr/A_Star_Algorithm.git>`_

@@ -109,6 +109,12 @@ English Note 14
 | Definition: better than all others of its kind. 
 | Usage: a peerless performance 
 | 
+| eminent
+| Definition: famous and respected, especially in a particular profession.
+| Usage:  one of the world's most eminent statisticians.
+| Definition: used to emphasize the presence of a positive quality.
+| Usage: the guitar's eminent suitability for recording studio work.
+| 
 | nudge
 | Definition: prod (someone) gently, typically with one's elbow, in order to draw their attention to something.
 | Usage: people were nudging each other and pointing at me.
@@ -150,6 +156,16 @@ English Note 14
 | Usage: Fans who still have their original ticket stubs should contact Sheffield Arena by July 3.
 | Definition: If you stub your toe, you hurt it by accidentally kicking something.
 | Usage: I stubbed my toes against a table leg.
+| 
+| discount
+| Definition: regard (a possibility, fact, or person) as being unworthy of consideration because it lacks credibility.
+| Usage: I'd heard rumors, but discounted them.
+| Phrase: at a discount
+| Antonyms: at a premium
+| Definition: below the nominal or usual price
+| Usage: a plan that allows tenants to buy their homes at a discount.
+| Usage: books with pristine dust jackets are less common and sell at a premium.
+| Usage: space was at a premium. [scarce and in demand,  稀缺]
 | 
 | faction
 | Definition: a state of conflict within an organization; dissension.

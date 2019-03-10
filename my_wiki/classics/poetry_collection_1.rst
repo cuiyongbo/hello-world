@@ -30,10 +30,11 @@
    料得年年腸斷處, 明月夜, 短松岡. 
 
 .. image:: images/lisi-1.jpg
+.. image:: images/dream-3.jpg
+.. image:: images/silhouette_heroine.jpg
 .. image:: images/dream-1.jpg
 .. image:: images/dream-2.jpg
 .. image:: images/wenrensaoke.jpg
-
 
 .. code-block:: none
    :caption: 念歸

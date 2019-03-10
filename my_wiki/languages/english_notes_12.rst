@@ -110,7 +110,7 @@ English Note 12
 | Usage: Marianne surveyed her reflection in the mirror.
 | Usage: he doesn't get much time for reflection. [consideration]
 |
-| silhouette [轮廓，侧影]
+| silhouette [轮廓，侧影，背影]
 | Definition: the dark outline or shape of a person or an object that you see against a light background.
 | Usage: The mountains stood out in silhouette.
 | Usage: A figure stood in the doorway, silhouetted against the light. 

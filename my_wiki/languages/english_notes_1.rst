@@ -1236,11 +1236,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Idiom: hitch one’s wagon to a star [找关系]
 | Definition: try to succeed by forming a relationship with someone who is already successful.
 | 
-| eccentric
-| Definition: (of a thing) not placed centrally or not having its axis or other part placed centrally.
-| definiton: (of a person or their behavior) unconventional and slightly strange.
-| Usage: My favorite aunt is very eccentric.
-| 
 | almanac [年鉴]
 | Defininiton: a book that is pulished every year giving information for that year about a particular subject or activity. [年鉴]
 | 

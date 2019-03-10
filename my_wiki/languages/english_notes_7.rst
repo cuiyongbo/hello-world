@@ -57,6 +57,12 @@ English Note 7
 | Synonyms: hermit.
 | Definition: a person who lives a solitary life and tends to avoid other people.
 | 
+| eccentric
+| esscetricity
+| Definition: (of a thing) not placed centrally or not having its axis or other part placed centrally.
+| definiton: (of a person or their behavior) unconventional and slightly strange.
+| Usage: My favorite aunt is very eccentric.
+|
 | shun
 | Definition: to avoid sb / sth
 | Usage: She was shunned by her family when she remarried. 
