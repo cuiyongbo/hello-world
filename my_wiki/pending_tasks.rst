@@ -16,8 +16,6 @@ Pending tasks
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
 #. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
 
-#. getrlimit, setlimit
-
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. https://github.com/goodfeli/dlbook_exercises.git
    

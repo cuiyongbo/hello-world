@@ -31,7 +31,7 @@ order. We can identify each individual number by its index in that ordering.
 Typically we give vectors lower case names written in bold typeface, such
 as :math:`\mathbf{x}`. 
 
-Matrices: A matrix is a 2-D array of numbers, so each element is identified
+Matries: A matrix is a 2-D array of numbers, so each element is identified
 by two indices instead of just one. We usually give matrices upper-case
 variable names with bold typeface, such as :math:`\mathbf{A}`.
 

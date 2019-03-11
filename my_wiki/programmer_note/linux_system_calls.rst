@@ -9,6 +9,7 @@ Linux System Call
     linux_system_call/control_characters_note
     linux_system_call/general_unix_api_note_01
     linux_system_call/general_unix_api_note_02
+    linux_system_call/general_unix_api_note_03
     linux_system_call/time_api_note
     linux_system_call/fork_info
     linux_system_call/vfork_info
