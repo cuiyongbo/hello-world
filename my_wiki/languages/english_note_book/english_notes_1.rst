@@ -1372,11 +1372,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Synonyms: concise
 | Usage: Keep your answers as succint as possible.
 | 
-| courier
-| Definition: a person or company  whose job is to take packages or important papers somewhere
-| Usage: We sent the document by courier. [快递，快递员]
-| Definition: a person who is employed by a travel company to give advice and help to a group of tourist on holiday. [导游]
-| 
 | tap [水龙头]
 | hose [水管]
 | Definition: a flexible tue conveying water, used especially for watering plants and in firefighting. 

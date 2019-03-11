@@ -52,6 +52,16 @@ matrix inverse: :math:`\mathbf{A^{-1}A = I_n}`
 
 norm, Euclidean norm, :math:`L^2 norm`
 
+:abbr:`SVM (Support Vector Machine)`
 
+Logistic regression
 
+convex optimization
 
+:abbr:`RBF (Radial Basis Function)`
+
+Kernel method, kernel trick
+
+:abbr:`KNN (K-Nearest Neighbors)`
+
+decision tree

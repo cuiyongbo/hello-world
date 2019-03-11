@@ -107,7 +107,7 @@ English Note 14
 | 
 | peerless [无双的]
 | Definition: better than all others of its kind. 
-| Usage: a peerless performance 
+| Usage: a peerless performance.
 | 
 | eminent
 | Definition: famous and respected, especially in a particular profession.

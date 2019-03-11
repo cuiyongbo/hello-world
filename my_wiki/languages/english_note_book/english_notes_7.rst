@@ -172,12 +172,17 @@ English Note 7
 | Usage: God incarnate.
 | Definition: represented in the ultimate or most extreme form.
 | Usage: here is capitalism incarnate.
-| Definition: embody or represent (a deity or spirit) in human form.
-| Usage: the idea that God incarnates himself in man.
-| Definition: put (an idea or other abstract concept) into concrete form.
-| Usage: a desire to make things which will incarnate their personality.
 | Definition: (of a person) be the living embodiment of (a quality). [真实写照]
 | Usage: the man who incarnates the suffering which has affected every single Mozambican. [莫桑比克人]
+| Definition: (with reference to reincarnation) one of a series of lifetimes that a person spends on earth.
+| Usage: in my next incarnation, I'd like to be the Secretary of Fun. [来生]
+| Usage: He believed he had been a prince in a previous incarnation. [前生]
+| 
+| reincarnate
+| reincarnation
+| Definition: cause (someone) to undergo rebirth in another body. [投胎，转世]
+| Usage: a man may be reincarnated in animal form.
+| Usage: they were afraid she would reincarnate as a vampire.
 | 
 | traction
 | Definition: the action of drawing or pulling something over a surface, especially a road or track.

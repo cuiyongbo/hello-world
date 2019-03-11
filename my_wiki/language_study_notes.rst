@@ -5,8 +5,6 @@ Language Study
 .. toctree::
     :titlesonly:
 
-    languages/ascii_chart
-    languages/punctuations
     languages/greek_alphabet
     languages/english_study
     languages/japanese_study

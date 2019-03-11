@@ -65,7 +65,11 @@ Mathematics Notes 2
    
     centroid: the center of mass of a geometric object of uniform density. [质心，重心]
     incenter: the center of the incircle [内切圆] of a triangle or other figure. [内心]
-    orthocenter the point where all three altitudes [垂线] of the triangle intersect. [垂心]
+    orthocenter: the point where all three altitudes [垂线] of the triangle intersect. [垂心]
 
     .. image:: images/centroid-of-triangles.png
 
+#. manifold
+   
+    a collection of points forming a certain kind of set, such as those of a topologically 
+    closed surface or an analog of this in three or more dimensions.
