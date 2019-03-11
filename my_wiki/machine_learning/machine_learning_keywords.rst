@@ -2,6 +2,10 @@
 Machine Learning Keywords
 *************************
 
+feature example object recognition face recognition speech recognition
+
+medical diagnosis Google Street View Transcription Machine translation
+
 frequentist estimator and Bayesian inference
 
 supervised learning and unsupervised learning
@@ -65,3 +69,11 @@ Kernel method, kernel trick
 :abbr:`KNN (K-Nearest Neighbors)`
 
 decision tree
+
+diagonal matrix symmetric matrix orthogonal matrix
+
+unit vector
+
+othogonal othonormal
+
+eigendecomposition eigenvector eigenvalue

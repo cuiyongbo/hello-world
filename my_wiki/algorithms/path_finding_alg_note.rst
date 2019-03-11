@@ -119,9 +119,9 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
       add current to CLOSED
       for neighbors of current:
         cost = g(current) + movementcost(current, neighbor)
-        if neighbor in OPEN and cost less than g(neighbor):
+        if neighbor in OPEN and cost < g(neighbor):
           remove neighbor from OPEN, because new path is better
-        if neighbor in CLOSED and cost less than g(neighbor): # note
+        if neighbor in CLOSED and cost < g(neighbor): # note
           remove neighbor from CLOSED
         if neighbor not in OPEN and neighbor not in CLOSED:
           set g(neighbor) to cost

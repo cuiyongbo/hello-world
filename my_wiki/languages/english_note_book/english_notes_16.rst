@@ -41,7 +41,25 @@ English Note 16
 | Definition: to tell sb what to do, especially in an annoying way.
 | Usage: that doesn't give you the right to dictate to me.
 | Usage: They are in no position to dictate terms.
-
+| 
+| aerial
+| Definition: existing, happening, or operating in the air.
+| Usage: an aerial battle.
+| 
+| imputate
+| imputation
+| Definition: a charge or claim that someone has done something undesirable; an accusation.
+| Usage: there are grounds for inquiring into the imputations of misconduct against him.
+| 
+| orthogonal
+| Definition: of or involving right angles; at right angles.
+| Definition: (of variates) statistically independent.
+| Definition: (of an experiment) having variates which can be treated as statistically independent.
+| 
+| eigen
+| Definition: proper, characteristic.
+| Usage: eigendecomposition, eigenvector, eigenvalue.
+| 
 
 .. image:: images/fanned_hair.jpg
 .. figure:: images/swing.jpg

@@ -171,6 +171,7 @@ Wild Lives 03
 .. image:: images/fin_whale.jpg
 
 .. image:: images/elephant_herd_in_namibia.jpg
+.. image:: images/leopard_snoozing_in_a_tree.jpg
 
 #. Ontogeny
    
