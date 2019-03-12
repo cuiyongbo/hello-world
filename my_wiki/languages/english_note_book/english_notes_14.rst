@@ -65,6 +65,30 @@ English Note 14
 | Usage: If Mom gets wind of this prank we're planning, we'll be grounded for the rest of the summer. 
 | Usage: If the press gets wind of this, the campaign will be over.
 |
+| head
+| Usage: he is a head taller than his sister.
+| Usage: It costs about $12 a head to eat here.
+| Phrase: have a head for
+| Usage: Steve has a good head for mathematics.
+| Usage: I have no head for business.
+| Phrase: have a head on one's shoulder
+| Usage: She has a head on her shoulder. [有头脑，有见解]
+| Phrase: head and shoulders above
+| Usage: as far as she was concerned, her husband stood head and shoulders above any other.
+| Phrase: above one's head
+| Usage: All that sort of thing is well above my head.
+| Phrase: head above heels
+| Definition: she is head above heels in love. [坠入爱河]
+| Phrase: go to one's head
+| Usage: The drinks went to his head. [上头]
+| Usage: You mustn't let this success go to your head. [被胜利冲昏头脑]
+| Phrase: turn sb's head
+| Usage: She has not allowed success to turn her head.
+| Phrase: put out of one's head
+| Usage: you'd better put the idea of marriage out of your head.
+| Phrase: bite one's head off
+| Usage: my mother bit my head off because i came home late last night.
+| 
 | comeback [复出]
 | Definition: If someone such as an entertainer or sports personality makes a comeback, they return to their profession or sport after a period away.
 | Usage: Suarez, Messi lead Barcelona to 4-2 comeback win at Sociedad. [逆转]

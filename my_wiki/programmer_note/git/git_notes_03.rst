@@ -70,3 +70,13 @@ Command line instructions
     * Expire all reflogs: ``git reflog expire --expire=now --all``.
 
     * Garbage collect all unreferenced objects with ``git gc --prune=now``.
+
+#. location of configure file
+   
+    .. code-block:: sh
+    
+        # solution one
+        git config --list --show-origin
+
+        # solution two
+        git config --global --edit

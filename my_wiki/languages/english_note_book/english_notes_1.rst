@@ -25,6 +25,13 @@ name, also known as surname, with most family members.
 | present participle 现在进行时
 | third person present 第三人称单数
 | 
+| singular
+| Definition: (of a word or form) denoting or referring to just one person or thing. [单数形式]
+| Antonyms: plural
+| Definition: mathematics (of a square matrix) having a zero determinant. [行列式]
+| Definition: exceptionally good or great; remarkable.
+| Usage: The singular beauty of the desert.
+| 
 | positive
 | Definition: (of an adjective or adverb) expressing a quality in its basic, primary degree. [一般形式]
 | Definition: (of the results of a test or experiment) indicating that a certain substance or condition is present or exists.
