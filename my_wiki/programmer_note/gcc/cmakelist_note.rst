@@ -58,6 +58,18 @@ CMakeList Howto
    Adds definitions to the compiler command line for sources in the current directory and below. 
    This command can be used to add any flags, but it is intended to add preprocessor definitions. 
 
+#. Hot enviroments
+   
+    .. code-block:: sh
+
+        CMAKE_CURRENT_BINARY_DIR
+        The path to the binary directory currently being processed.
+
+        CMAKE_CURRENT_SOURCE_DIR
+        The path to the source directory currently being processed.
+
+    Refer to CMake variables [#CMake_Environments]_ for further information.
+
 .. code-block:: sh
    :caption: tip_radar project structure
 
@@ -153,3 +165,4 @@ CMakeList Howto
 .. rubric:: Footnotes
 
 .. [#] `CMake FAQ <https://gitlab.kitware.com/cmake/community/wikis/FAQ>`_
+.. [#CMake_Environments]  https://cmake.org/cmake/help/v3.0/manual/cmake-variables.7.html?highlight=cmake_current_list_dir

@@ -143,7 +143,11 @@ Military Terms
 
 .. figure:: images/saturn.jpg
 
-   Saturn 土星
+   Saturn [土星]
+
+.. figure:: images/uranus.jpg
+
+   Uranus [天王星]
 
 |
 | rendezvous
