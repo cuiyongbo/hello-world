@@ -336,3 +336,9 @@ numpy Function Note 02
     Eigendecompostion:
 
         :math:`A = V W W_{-1}`
+
+.. function:: numpy.linalg.det(a)
+
+    Compute the determinant of an array.
+
+    The determinant of a 2-D array `[[a, b], [c, d]]` is `ad - bc`

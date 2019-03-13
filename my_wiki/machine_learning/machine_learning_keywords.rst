@@ -79,3 +79,5 @@ othogonal othonormal
 eigendecomposition eigenvector eigenvalue
 
 :abbr:`SVD (Singular Value Decomposition)`
+
+:abbr:`PCA (Principal Components Analysis)`
