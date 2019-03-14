@@ -284,6 +284,15 @@ English Note 13
     .. image:: images/zodiac_signs.jpg
     .. image:: images/zodiac_signs_02.png
 
+#. Astronomy [天文学]
+   
+    The branch of science that deals with celestial objects, space, and the physical universe as a whole.
+
+    In ancient times, observation of the sun, moon, stars, and planets formed the basis of timekeeping 
+    and navigation. Astronomy was greatly furthered by the invention of the optical telescope, but modern
+    observations are made in all parts of the spectrum, including X-ray and radio frequencies, using 
+    terrestrial and orbiting instruments and space probes.
+
 #. Big Bang
    
     A fireball of radiation at extremely high temperature and density, but occupying a tiny volume, 

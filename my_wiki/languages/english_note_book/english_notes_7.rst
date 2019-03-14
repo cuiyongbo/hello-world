@@ -329,6 +329,21 @@ English Note 7
 | Definition: a subordinate title of a published work or article giving additional information about its content.
 | Usage: much of the film is subtitled. [字幕，旁白]
 | 
+| transcribe
+| Definition: put (thoughts, speech, or data) into written or printed form.
+| Usage: each interview was taped and transcribed.
+| Usage: How many official documents have been transcribed into Braille for blind people? 
+| Definition:  arrange (a piece of music) for a different instrument, voice, or group of these.
+| Usage: a piano piece transcribed for the guitar.
+| 
+| dictate
+| dictation
+| Definition: to say words for sb else to write down.
+| Usage: He dictated a letter to his secretary. 
+| Definition: to tell sb what to do, especially in an annoying way.
+| Usage: that doesn't give you the right to dictate to me.
+| Usage: They are in no position to dictate terms.
+| 
 | remunerate
 | remunerative
 | Definition: financially rewarding; lucrative.

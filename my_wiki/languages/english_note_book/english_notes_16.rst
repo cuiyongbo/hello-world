@@ -34,14 +34,6 @@ English Note 16
 | Definition: (of an object or substance) having a physical property which has the same value when measured in different directions.
 | Antonyms: anisotropic.
 | 
-| dictate
-| dictation
-| Definition: to say words for sb else to write down.
-| Usage: He dictated a letter to his secretary. 
-| Definition: to tell sb what to do, especially in an annoying way.
-| Usage: that doesn't give you the right to dictate to me.
-| Usage: They are in no position to dictate terms.
-| 
 | aerial
 | Definition: existing, happening, or operating in the air.
 | Usage: an aerial battle.
@@ -60,6 +52,19 @@ English Note 16
 | Definition: proper, characteristic.
 | Usage: eigendecomposition, eigenvector, eigenvalue.
 | 
+| didactic [说教]
+| Definition: designed to teach people sth, especially a moral lesson.
+| Usage: a didactic novel that set out to expose social injustice.
+
+astronomy
+astronomical
+Definition: relating to astronomy.
+Usage: astronomical observations.
+Definition: informal (of an amount) extremely large.
+Usage: The figures are astronomical. [天文数字]
+: he wanted an astronomical fee.
+
+
 
 .. image:: images/fanned_hair.jpg
 .. figure:: images/swing.jpg

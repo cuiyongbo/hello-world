@@ -173,6 +173,16 @@ Wild Lives 03
 .. image:: images/elephant_herd_in_namibia.jpg
 .. image:: images/leopard_snoozing_in_a_tree.jpg
 
+.. figure::  images/salamander.jpg
+
+    Salamander [蝾螈]
+
+.. image:: images/life-cycle-of-a-frog-1.jpg
+.. image:: images/life-cycle-of-a-frog-2.png
+.. figure:: images/Kaulquappen_Tadpole.jpg
+
+    Tadpole [蝌蚪]
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 
