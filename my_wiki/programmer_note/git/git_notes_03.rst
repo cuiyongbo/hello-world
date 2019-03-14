@@ -86,3 +86,25 @@ Command line instructions
     .. code-block:: sh
 
         git config --global core.autocrlf true
+
+#. Git to reset commit author
+   
+    .. code-block:: sh
+
+        $ git commit -a -m'added git to force line ending to LF'
+        # [master 0d44322] added git to force line ending to LF
+        #  Committer: natsume-pc <natsume@mlubuntu.localdomain>
+        # Your name and email address were configured automatically based
+        # on your username and hostname. Please check that they are accurate.
+        # You can suppress this message by setting them explicitly:
+        # 
+        #     git config --global user.name "Your Name"
+        #     git config --global user.email you@example.com
+        # 
+        # After doing this, you may fix the identity used for this commit with:
+        # 
+        #     git commit --amend --reset-author
+        
+        $ git config --global user.name "natsume"
+        $ git config --global user.email "csu20140909@gmail.com"
+        $ git commit --amend --reset-author

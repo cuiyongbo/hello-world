@@ -14,3 +14,4 @@ OS Problem Note
     os_problem/programming_problem_note
     os_problem/mac_ubuntu_usb_stick
     os_problem/vim_configure_note
+    os_problem/nginx_usage_note
