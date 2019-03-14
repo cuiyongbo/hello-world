@@ -80,3 +80,9 @@ Command line instructions
 
         # solution two
         git config --global --edit
+
+#. Git to force line ending to LF
+   
+    .. code-block:: sh
+
+        git config --global core.autocrlf true
