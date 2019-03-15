@@ -55,15 +55,26 @@ English Note 16
 | didactic [说教]
 | Definition: designed to teach people sth, especially a moral lesson.
 | Usage: a didactic novel that set out to expose social injustice.
-
-astronomy
-astronomical
-Definition: relating to astronomy.
-Usage: astronomical observations.
-Definition: informal (of an amount) extremely large.
-Usage: The figures are astronomical. [天文数字]
-: he wanted an astronomical fee.
-
+| 
+| astronomy
+| astronomical
+| Definition: relating to astronomy.
+| Usage: astronomical observations. [天文观测]
+| Definition: informal (of an amount) extremely large.
+| Usage: The figures are astronomical. [天文数字]
+| 
+| shim
+| Definition: a washer or thin strip of material used to align parts, make them fit, or reduce wear. [楔子，填充物]
+| Synonyms: wedge
+| 
+| drive a wedge between
+| Definition: separate.
+| Usage: the general aimed to drive a wedge between the city and its northern defenses.
+| Definition: cause disagreement or hostility between.
+| Usage: his parents drove a wedge between us. [离间，分离]
+| 
+| thin end of the wedge
+| Definition: an action or procedure of little importance in itself, but likely to lead to more serious developments.
 
 
 .. image:: images/fanned_hair.jpg

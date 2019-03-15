@@ -37,4 +37,5 @@ Python note
     python/python_miscellaneous_tricks
     python/python_miscellaneous_tricks_02
     python/python_miscellaneous_tricks_03
+    python/python_miscellaneous_tricks_04
     python/python_application_examples
