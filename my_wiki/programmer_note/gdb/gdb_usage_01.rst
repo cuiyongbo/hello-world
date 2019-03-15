@@ -10,7 +10,7 @@ Gdb Tricks 01
 
    .. note:: 
 
-      :command:`file` without arguments discard symbol table
+      :command:`file` without arguments discards symbol table
       of current executable.
 
 

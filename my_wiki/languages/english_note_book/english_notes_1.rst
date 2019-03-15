@@ -1362,10 +1362,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: reducing the power rating of (a component or device).
 | Usage: The engines were derated to 90 horse power.
 | 
-| selfie [自拍]
-| Definition: a photograph that one has taken of oneself, typically one taken with smartphone or webcam and shared via social media.
-| Usage: occasional selfies are acceptable, but posting a new picture of yourself everyday is not necessary.
-| 
 | liability
 | Definition: the state of being responsible for something, especially by law.
 | Usage: The partner accept unlimited liability for any risks they undertake.

@@ -129,6 +129,12 @@ The object being sensed is often referred to as the proximity sensor's target.
 | Definition: to replace something because it has become old-fashioned or unacceptable.
 | Synonyms: supplant.
 | Usage: Hand tools are relics of the past that have now been superseded by the machine.
+| 
+| selfie [自拍]
+| Definition: a photograph that one has taken of oneself, typically one taken with smartphone or webcam and shared via social media.
+| Usage: occasional selfies are acceptable, but posting a new picture of yourself everyday is not necessary.
+|
+| Flickr: an image hosting and video hosting website, web services suite, and online community.
 |
 | tweet
 | Definition: the chirp of a small or young bird.

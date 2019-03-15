@@ -75,7 +75,27 @@ English Note 16
 | 
 | thin end of the wedge
 | Definition: an action or procedure of little importance in itself, but likely to lead to more serious developments.
+| 
+| sound the alarm
+| Definition: Literally, to activate an alarm. 
+| Usage: I think I see smoke coming from the warehouse. Someone run upstairs and sound the alarm!
+| Definition: To alert other people about something dangerous, risky, or troublesome. 
+| Usage: A number of top economic advisors tried to sound the alarm before the economic crash, but no policy makers seemed to heed their warnings.
+| Usage: Legal experts and civil rights advocates are sounding the alarm on researchers' use of photos of ordinary people.
+| 
+| cutthroat
+| Definition: (of a competitive situation or activity) fierce and intense; involving the use of ruthless measures.
+| Usage: cutthroat competition led to a lot of bankruptcies
+| Synonyms: ruthless; merciless.
+
+
+
+.. figure:: images/circular_agriculture_fields.jpg
+
+    麦田怪圈
 
 
 .. image:: images/fanned_hair.jpg
 .. figure:: images/swing.jpg
+
+    Swing [秋千]

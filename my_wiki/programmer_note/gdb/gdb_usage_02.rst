@@ -62,6 +62,26 @@ Gdb Tricks 02
         # Solution three
         gdb program_name program_pid
 
+        # if you want change the process to debug, use `attach` command
+        attach new_pid
+
+    .. important:: Sometime you man need `sudo` previlege to see debug symbol table.   
+
+#. attach command
+   
+    Attach to a process or file outside of GDB.
+    
+    This command attaches to another target, of the same type as your last
+    "target" command ("info files" will show your target stack).
+    The command may take as argument a process id or a device file.
+    For a process id, you must have permission to send the process a signal,
+    and it must have the same effective uid as the debugger.
+    When using "attach" with a process id, the debugger finds the
+    program running in the process, looking first in the current working
+    directory, or (if not found there) using the source file search path
+    (see the "directory" command).  You can also use the "file" command
+    to specify the program, and to load its symbol table.    
+
 #. Gdb to peek all methods in a class
    
     .. code-block:: sh
