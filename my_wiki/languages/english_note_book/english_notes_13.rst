@@ -306,6 +306,36 @@ English Note 13
     .. image:: images/cosmos-space.jpg
     .. image:: images/cosmos-space_2.jpg
 
+    .. image:: images/Atmospheric_Layers_01.png
+    .. image:: images/Atmospheric_Layers_02.jpg
+
+#. troposphere [对流层]
+   
+    The lowest region of the atmosphere, extending from the earth's surface to a height of 
+    about 3.7–6.2 miles (6–10 km), which is the lower boundary of the stratosphere.
+
+#. stratosphere [同温层]
+
+    The layer of the earth's atmosphere above the troposphere, extending to about 32 miles (50 km) 
+    above the earth's surface (the lower boundary of the mesosphere).
+
+#. mesosphere [中间层]
+
+    The region of the earth's atmosphere above the stratosphere and below the thermosphere, 
+    between about 30 and 50 miles (50 and 80 km) in altitude.
+
+#. Thermosphere [热层]
+
+    The region of the atmosphere above the mesosphere and below the height at which 
+    the atmosphere ceases to have the properties of a continuous medium. The thermosphere 
+    is characterized throughout by an increase in temperature with height.
+
+#. Ionosphere [电离层]
+   
+    The layer of the earth's atmosphere that contains a high concentration of ions and free electrons 
+    and is able to reflect radio waves. It lies above the mesosphere and extends from about 50 to 600 miles 
+    (80 to 1,000 km) above the earth's surface.
+
 #. Platformer
    
     Platform games, or platformers, are a video game genre and subgenre of action game. 
