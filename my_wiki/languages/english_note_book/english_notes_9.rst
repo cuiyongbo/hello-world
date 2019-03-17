@@ -346,10 +346,6 @@ English Note 9
 | Definition: a worldview underlying the theories and methodology of a particular scientific subject.
 | Usage: the discovery of universal gravitation became the paradigm of successful science.
 | 
-| deterministic
-| Definition: relating to the philosophical doctrine that all events, including human action, are ultimately determined by causes regarded as external to the will.
-| Usage: a deterministic history. [客观]
-| 
 | complement
 | complementary
 | Definition: add to (something) in a way that enhances or improves it; make perfect.

@@ -130,9 +130,14 @@ English Note 13
 | Definition: silly
 | Usage: that vacuous laugh of his drives me nuts.
 |
+| deterministic
+| Definition: relating to the philosophical doctrine that all events are ultimately determined by causes regarded as external to the will.
+| Usage: a deterministic history. [客观]
+|
 | stochastic
 | stochastically
-| Definition: randomly determined; having a random probability distribution or pattern 
+| stochasticity
+| Definition: randomly determined; having a random probability distribution or pattern
 | that may be analyzed statistically but may not be predicted precisely.
 | 
 | gradient

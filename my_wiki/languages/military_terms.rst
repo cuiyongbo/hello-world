@@ -500,4 +500,5 @@ Military Terms
 | lieutenant 中尉
 | colonel 上校
 | sentinel 哨兵
-| cadet [军官候补生]
+| cadet [军官候补生] 
+| :abbr:`CVR (Cabinet Video Recorder)` 黑匣子

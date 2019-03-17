@@ -17,7 +17,6 @@ Mathematics
     mathematics_glossary/binominal_distribution
     mathematics_glossary/bernoulli_distribution
     mathematics_glossary/cross_product
-    mathematics_glossary/bayes_theorem_note
 
 .. rubric:: Footnotes
 

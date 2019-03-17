@@ -81,3 +81,15 @@ eigendecomposition eigenvector eigenvalue
 :abbr:`SVD (Singular Value Decomposition)`
 
 :abbr:`PCA (Principal Components Analysis)`
+
+Frequentist Probability  Bayesian Probability 
+
+Conditional Probability  Intervention query
+
+The Chain rule of Conditional Probabilty Bayes' rule
+
+Independence and Conditional Independence
+
+Expectation Variance Standard deviation Covariance
+
+correlation
