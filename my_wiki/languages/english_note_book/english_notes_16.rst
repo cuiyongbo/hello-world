@@ -121,6 +121,18 @@ English Note 16
 | Usage: an imperfect grasp of English.
 | Definition: (of a tense) denoting a past action in progress but not completed at the time in question.
 | 
+| brittle
+| Definition: hard but easily broken.
+| Usage: her bones became fragile and brittle.
+| Definition: (of a sound, especially a person's voice) unpleasantly hard and sharp and showing signs of instability or nervousness.
+| Usage: a brittle laugh.
+| Definition: (of a person or behavior) appearing aggressive or hard but unstable or nervous within.
+| Usage: her manner was artificially bright and brittle.
+| 
+| ravel
+| Definition: confuse or complicate (a question or situation).
+| Usage: sleep raveled out the tangles of his mind.
+| Usage: He was trying to ravel out the complicated series of events that had led to this situation. 
 
 .. figure:: images/circular_agriculture_fields.jpg
 

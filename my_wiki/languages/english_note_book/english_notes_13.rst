@@ -122,6 +122,7 @@ English Note 13
 | Definition: a very typical example of a certain person or thing.
 | Usage: the book is a perfect archetype of the genre.
 | Definition: an original that has been imitated. [原型]
+| Synonyms: prototype.
 | Usage: the archetype of faith is Abraham.
 | 
 | vacuous

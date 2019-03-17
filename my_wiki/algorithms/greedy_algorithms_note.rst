@@ -2,6 +2,8 @@
 Greedy algorithms
 *****************
 
+**路漫漫其修远兮，吾将上下而求索。**
+
 **Greedy-choice property**: we can assemble a globally optimal solution 
 by making locally optimal choices. 
 
@@ -48,7 +50,7 @@ In the **activity-selection problem**, we wish to select a maximum-size subset o
         // O(n log n)
         Huffman(C)
             n = C.alphabetSize
-            Q = C // build a min-priority queue from input in O(n)
+            Q = C // build a min-priority queue, keyed by frequency of occurrence of character, from input in O(n)
             for i=1 to n-1
                 allocate a new node z
                 z.left = Extract-Min(Q) // O(log n)
@@ -56,3 +58,48 @@ In the **activity-selection problem**, we wish to select a maximum-size subset o
                 z.freq = z.left.freq + z.right.freq
                 Insert(Q, z)
             return Extract-Min(Q) // return the root of the tree
+
+.. code-block:: py
+    :caption: Python implementation
+
+    #!/usr/bin/env python3
+
+    denom = [100, 50, 10, 5, 1, .5, .1]
+    denom.sort(reverse=True)
+    owed = 56329
+    payed = []
+    for d in denom:
+        while owed >= d:
+            owed -= d
+            payed.append(d)
+    
+    sum(payed)
+    len(payed)
+
+    from heapq import heapify, heappush, heappop
+    from itertools import count
+    
+    def huffman(seq, frq):
+        num = count()
+        tree = list(zip(frq, num, seq))
+        heapify(tree)
+        while len(tree) > 1:
+            fa, _, a = heappop(tree)
+            fb, _, b = heappop(tree)
+            n = next(num)
+            heappush(tree, (fa+fb, n, [a, b]))
+        return tree[0][-1]
+    
+    def codes(tree, prefix=""):
+        if len(tree) == 1:
+            yield (tree, prefix)
+            return 
+        for bit, child in zip("01", tree): # left (0) and right (1)
+            for pair in codes(child, prefix+bit): 
+                yield pair
+    
+    seq = "abcdefghi"
+    frq = [4,5,6,9, 11, 12, 15, 16, 20]
+    huffman_codec = list(codes(huffman(seq, frq)))
+    for character, code in huffman_codec:
+        print("%s: %s" % (character, code))
