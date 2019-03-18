@@ -22,3 +22,4 @@ Data Structure
     data_structure/data_structure_augment_note
     data_structure/longest_common_subsequence_note
     data_structure/std_containers_library_note
+    data_structure/std_vector_note

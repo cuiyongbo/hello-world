@@ -2,7 +2,6 @@
 Std Containers
 **************
 
-
 #. Container adaptors
 
     Container adaptors provide a different interface for sequential containers.
