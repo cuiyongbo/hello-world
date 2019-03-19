@@ -133,6 +133,23 @@ English Note 16
 | Definition: confuse or complicate (a question or situation).
 | Usage: sleep raveled out the tangles of his mind.
 | Usage: He was trying to ravel out the complicated series of events that had led to this situation. 
+| 
+| knot
+| knotty
+| Definition: full of knots.
+| Definition: (of a problem or matter) extremely difficult or intricate.
+| Usage: The new management team faces some knotty problems.
+| 
+| interpose
+| Definition: place or insert between one thing and another.
+| Usage: he interposed himself between her and the stairs.
+| Usage: she interposed herself between the newcomers.
+| Definition: say (words) as an interruption.
+| Usage: if I might interpose a personal remark here.
+| Usage: at this point it is necessary to interpose a note of caution.
+| Definition: intervene between parties.
+| Usage: the legislature interposed to suppress these amusements.
+
 
 .. figure:: images/circular_agriculture_fields.jpg
 

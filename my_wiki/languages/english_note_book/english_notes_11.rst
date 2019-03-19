@@ -54,6 +54,10 @@ Only paranoid can surrive.
 | Definition: Something that takes place after  or as a result of an earlier event.
 | Usage: This encouragement to grow potatoes had a disastrous sequel some fifty years later.
 | 
+| addendum [附录]
+| Plural: addenda 
+| Definition: an item of additional material, typically omissions, added at the end of a book or other publication.
+| 
 | prologue
 | Definition: A prologue is a speech or section of text that introduces a play or book. [序]
 | Usage: The prologue to the novel is written in the form of a newspaper account.

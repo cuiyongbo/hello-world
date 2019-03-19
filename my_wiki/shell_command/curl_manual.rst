@@ -115,6 +115,9 @@ curl - transfer a URL
    Content-Length: 4706728
    Accept-ranges: bytes
    Last-Modified: Thu, 22 Nov 2018 05:45:08 GMT
+
+   $ curl -s -d `getRouteLinks.py -i '(11602934,4014603)(11606411,4016913)' -vv` http://w.mapbar.com/nc/v1/nav2tmc?ver=2.0
+
   
 #. Download Http directiory with all files and subdirectories
    

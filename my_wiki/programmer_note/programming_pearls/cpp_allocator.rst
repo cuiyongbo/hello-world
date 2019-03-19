@@ -81,6 +81,17 @@ is actually interpreted by the compiler as::
         {  // default construct object at _Ptr
            ::new ((void *)_Ptr) _Ty();
         }
+
+        void construct(_Ty *_Ptr, const _Ty& _Val)
+        {   // construct object at _Ptr with value _Val
+            ::new ((void *)_Ptr) _Ty(_Val);
+        }
+
+        template<class _Objty, class... _Types>
+        void construct(_Objty *_Ptr, _Types&&... _Args)
+        {   // construct _Objty(_Types...) at _Ptr
+            ::new ((void *)_Ptr) _Objty(_STD forward<_Types>(_Args)...);
+        }
    
         template<class _Uty>
         void destroy(_Uty *_Ptr)
@@ -214,3 +225,35 @@ is actually interpreted by the compiler as::
                     v1.push_back(n);
             }
         }
+
+#.  A custom `Allocator::construct`
+   
+    .. code-block:: cpp
+
+        // Allocator adaptor that interposes construct() calls to
+        // convert value initialization into default initialization.
+        template <typename T, typename A=std::allocator<T>>
+        class default_init_allocator : public A
+        {
+            typedef std::allocator_traits<A> a_t;
+        public:
+            template <typename U> struct rebind 
+            {
+                using other =
+                default_init_allocator<U, typename a_t::template rebind_alloc<U> >;
+            };
+        
+          using A::A;
+        
+            template <typename U>
+            void construct(U* ptr) noexcept(std::is_nothrow_default_constructible<U>::value) 
+            {
+                ::new(static_cast<void*>(ptr)) U;
+            }
+          
+            template <typename U, typename...Args>
+            void construct(U* ptr, Args&&... args) 
+            {
+                a_t::construct(static_cast<A&>(*this), ptr, std::forward<Args>(args)...);
+            }
+        };
