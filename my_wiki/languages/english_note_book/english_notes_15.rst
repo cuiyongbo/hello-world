@@ -254,6 +254,7 @@ English Note 15
 | narcissism [自恋]
 | Definition:  (formal, disapproving)  the habit of admiring yourself too much, especially your appearance. 
 
+
 #. Hypnosis
    
    The induction of a state of consciousness in which a person apparently loses the power of voluntary action 

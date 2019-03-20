@@ -50,7 +50,6 @@ is often convenient to think of them as a permanent part of the language.
    false values as true and false respectively. The **nobooolalpha** 
    manipulator will return the printed values to 1 and 0.
 
-
 #. showpos and noshowpos
    
    This manipulator determines how **positive numbers** are printed. 

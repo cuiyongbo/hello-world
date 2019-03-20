@@ -169,6 +169,8 @@ English Note 16
 | Definition: (of a machine) working badly; shaky.
 | Usage: the cranky elevator breaks down periodically.
 
+harness
+
 .. figure:: images/circular_agriculture_fields.jpg
 
     Crop Circle [麦田怪圈]

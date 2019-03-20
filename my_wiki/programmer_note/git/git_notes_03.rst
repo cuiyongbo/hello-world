@@ -71,16 +71,6 @@ Command line instructions
 
     * Garbage collect all unreferenced objects with ``git gc --prune=now``.
 
-#. location of configure file
-   
-    .. code-block:: sh
-    
-        # solution one
-        git config --list --show-origin
-
-        # solution two
-        git config --global --edit
-
 #. Git to force line ending to LF
    
     .. code-block:: sh

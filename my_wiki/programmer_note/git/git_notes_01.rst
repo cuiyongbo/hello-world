@@ -276,14 +276,6 @@ Git Tricks 01
    similar mode ``'current'`` instead of ``'simple'`` if you sometimes use
    older versions of Git).
 
-   Add following configure to global :file:`.gitconfig`::
-      
-      [remote "origin"]
-      prune = true
-
-   to remove remote branch(es) that have been deleted.  
-
-
 #. Git to abort git pull
 
    .. code-block:: sh

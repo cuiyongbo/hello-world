@@ -201,6 +201,9 @@ Nature Lifes
 
    Iris 虹膜，鸢尾
 
+.. figure:: images/crocus_flower.jpg
+
+    Crocus flower / Daffoli [水仙花]
 
 #. taxonomy
    
