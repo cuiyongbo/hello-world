@@ -58,6 +58,9 @@ Only paranoid can surrive.
 | Plural: addenda 
 | Definition: an item of additional material, typically omissions, added at the end of a book or other publication.
 | 
+| afterword [后话]
+| Definition: a concluding section in a book, typically by a person other than the author.
+| 
 | prologue
 | Definition: A prologue is a speech or section of text that introduces a play or book. [序]
 | Usage: The prologue to the novel is written in the form of a newspaper account.

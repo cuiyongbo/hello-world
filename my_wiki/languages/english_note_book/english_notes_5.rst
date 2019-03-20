@@ -209,6 +209,15 @@ English Note 5
 | Definition: covered with powder.
 | Usage: her pale powdery cheeks.
 |
+| convulse
+| convulsive
+| convulsion [肌肉痉挛]
+| Definition: (of a person) suffer violent involuntary contraction of the muscles, producing contortion of the body or lims.
+| Synonyms: spasm; cramp.
+| Usage: She convulsed, collapsing to the floor with the pain.
+| Definition: a violent social or political upheaval.
+| Usage: the convulsions of 1939–45.
+| 
 | cramp
 | Definition: a painful, involuntary contraction of a muscle or muscles, typically caused by fatigue or strain.
 | Usage: he suffered severe cramps in his foot. [痉挛]

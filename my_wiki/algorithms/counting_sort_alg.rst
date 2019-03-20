@@ -2,8 +2,7 @@
 Counting Sort
 *************
 
-Introduction
-============
+**Introduction**
 
 In computer science, counting sort is an algorithm 
 for sorting a collection of objects according to keys 
@@ -29,99 +28,58 @@ preallocated memory to hold the sets of items within each bucket,
 whereas counting sort instead stores a single number (the count of 
 items) per bucket.
 
-
-Input and output assumptions
-============================
+**Input and output assumptions**
 
 In the most general case, the input to counting sort consists of a collection
 of *n* items, each of which has a non-negative integer key whose maximum value
-is at most k. In some descriptions of counting sort, the input to be sorted is 
+is at most *k*. In some descriptions of counting sort, the input to be sorted is 
 assumed to be more simply a sequence of integers itself, but this simplification 
 does not accommodate many applications of counting sort. For instance, when used 
 as a subroutine in radix sort, the keys for each call to counting sort are individual 
 digits of larger item keys; it would not suffice to return only a sorted list of the 
 key digits, separated from the items.
 
-In applications such as in radix sort, a bound on the maximum key value *k* will be 
-known in advance, and can be assumed to be part of the input to the algorithm. 
-However, if the value of *k* is not already known then it may be computed, 
-as a first step, by an additional loop over the data to determine the maximum 
-key value that actually occurs within the data.
-
 The output is an array of the items, in order by their keys. Because of the application 
-to radix sorting, it is important for counting sort to be a **stable sort**: if two 
-items have the same key as each other, they should have the same relative position 
-in the output as they did in the input.
+to radix sorting, it is important for counting sort to be a **stable sort**.
 
+.. code-block:: py
+    :caption: Python implementation
 
-Algorithm implementation
-========================
-
-In summary, the algorithm loops over the items, computing a histogram of the number 
-of times each key occurs within the input collection. It then performs a prefix sum 
-computation (a second loop, over the range of possible keys) to determine, for each 
-key, the starting position in the output array of the items having that key. Finally, 
-it loops over the items again, moving each item into its sorted position in the 
-output array.
-
-In pseudocode, this may be expressed as follows::
-
-   # variables:
-   #    input -- the array of items to be sorted; 
-   #    key(x) -- function that returns the key for item x
-   #    k -- a number such that all keys are in the range 0..k-1
-   #    count -- an array of numbers, with indexes 0..k-1, initially all zero
-   #    output -- an array of items, with indexes 0..n-1
-   #    x -- an individual input item, used within the algorithm
-   #    total, oldCount, i -- numbers used within the algorithm
-   
-   # calculate the histogram of key frequencies:
-   for x in input:
-      count[key(x)] += 1
-   
-   # calculate the starting index for each key:
-   total = 0
-   for i in range(k):   # i = 0, 1, ... k-1
-      oldCount = count[i]
-      count[i] = total
-      total += oldCount
-   
-   # copy to output array, preserving order of inputs with equal keys:
-   for x in input:
-      output[count[key(x)]] = x
-      count[key(x)] += 1
-   
-   return output
-
-After the first for loop, *count[i]* stores the number of items with key equal to *i*. 
-After the second for loop, it instead stores the number of items with key less than *i*, 
-which is the same as the first index at which an item with key *i* should be stored in 
-the output array. Throughout the third loop, *count[i]* always stores the next position 
-in the output array into which an item with key *i* should be stored, so each item is 
-moved into its correct position in the output array. The relative order of items with 
-equal keys is preserved here; i.e., **this is a stable sort**.
-
+    def counting_sort(a):
+        k = max(a)+1
+        count = [0 for i in range(k)]
+        for x in a:
+            count[x] += 1
+        # calculate prefix sum
+        total = 0
+        for i in range(k):
+            old_count = count[i]
+            count[i] = total
+            total += old_count
+        out = [0 for i in range(len(a))]
+        for x in a:
+            out[count[x]] = x
+            count[x] += 1
+        return out
 
 .. code-block:: none
-   :caption: Take from *Introduction to algorithms*
+    :caption: Take from *Introduction to algorithms*
 
-   Counting-Sort(A, B, k)
-      let C[0, k] be a new array
-      for i=0 to k
-         C[i] = 0
-      for j=1 to A.length
-         C[A[j]] = C[A[j]] + 1
-      // C[i] contains the number of elements equal to i
-      for i=1 to k
-         C[i] = C[i] + C[i-1]
-      // C[i] contains the number of elements less than or equal to i
-      for j=A.length downto 1 // for a stable-sort
-         B[C[A[j]]] = A[j]
-         C[A[j]] = C[A[j]] - 1
+    Counting-Sort(A, B, k)
+        let C[0, k] be a new array
+        for i=0 to k
+            C[i] = 0
+        for j=1 to A.length
+            C[A[j]] = C[A[j]] + 1
+        // C[i] contains the number of elements equal to i
+        for i=1 to k
+            C[i] = C[i] + C[i-1]
+        // C[i] contains the number of elements less than or equal to i
+        for j=A.length downto 1 // for a stable-sort
+            B[C[A[j]]] = A[j]
+            C[A[j]] = C[A[j]] - 1
 
-
-Complexity analysis
-===================
+**Complexity analysis**
 
 Because the algorithm uses only simple for loops, without recursion or subroutine calls, 
 it is straightforward to analyze. The initialization of the count array, and the second 
@@ -135,33 +93,17 @@ is also ``O(n + k)``. For problem instances in which the maximum key value is si
 smaller than the number of items, counting sort can be highly space-efficient, as the only 
 storage it uses other than its input and output arrays is the Count array which uses space **O(k)**.
 
-
-Variant algorithms
-==================
+**Variant algorithms**
 
 If each item to be sorted is itself an integer, and used as key as well, then the second 
 and third loops of counting sort can be combined; in the second loop, instead of computing 
 the position where items with key *i* should be placed in the output, simply append *Count[i]* 
 copies of the number *i* to the output.
 
-This algorithm may also be used to eliminate duplicate keys, by replacing the Count array 
+This algorithm may also be used to **eliminate duplicate keys**, by replacing the Count array 
 with a bit vector that stores a one for a key that is present in the input and a zero for 
 a key that is not present. If additionally the items are the integer keys themselves, 
 both second and third loops can be omitted entirely and the bit vector will itself serve 
 as output, representing the values as offsets of the non-zero entries, added to the range's 
 lowest value. Thus the keys are sorted and the duplicates are eliminated in this variant 
 just by being placed into the bit array.
-
-For data in which the maximum key size is significantly smaller than the number of data items, 
-counting sort may be parallelized by splitting the input into subarrays of approximately equal 
-size, processing each subarray in parallel to generate a separate count array for each subarray, 
-and then merging the count arrays. When used as part of a parallel radix sort algorithm, the key 
-size (base of the radix representation) should be chosen to match the size of the split subarrays.
-The simplicity of the counting sort algorithm and its use of the easily parallelizable prefix sum 
-primitive also make it usable in more fine-grained parallel algorithms.
-
-As described, **counting sort is not an in-place algorithm**; even disregarding the count array, 
-it needs separate input and output arrays. It is possible to modify the algorithm so that it places 
-the items into sorted order within the same array that was given to it as the input, using only the 
-count array as auxiliary storage; however, the modified in-place version of counting sort is not stable.
-

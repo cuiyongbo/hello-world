@@ -1709,27 +1709,6 @@ admitted the computer was named after his daughter.
 | Synonyms: boast
 | Usage: They were bragging about how easy it had been.
 | 
-| lewd
-| Definition: crude and offensive in a sexual way. [いやらしい]
-| Usage: She began to gyrate to the music and sing a lewd song.
-| 
-| gyrate
-| Definition: dance in a wild or suggestive manner.
-| Usage: Strippers gyrated to rock music on a low stage. [脱衣舞者]
-| 
-| strippergram
-| Definition: a novelty greetings message dilivered by a person who accompanies it with a striptease act.
-| 
-| striptease [脱衣舞]
-| Definition: a form of entertainment in which a performer gradually undress to music in a way intended to be sexually exciting.
-| 
-| convulse
-| convulsive
-| convulsion
-| Definition: (of a person) suffer violent involutary contraction of the muscles, producing contortion of the body or lims.
-| Synonyms: spasm
-| Usage: She convulsed, collapsing to the floor with the pain.
-| 
 | amortize
 | amortization
 | Definition: gradually write off the initial cost of (an asset).
@@ -1802,10 +1781,6 @@ admitted the computer was named after his daughter.
 
 .. image:: images/facet_of_a_gem.png
 
-| stale
-| Definition: (of food) no longer fresh and plesant to eat.
-| Definition: no longer new and interesting.
-| Usage: Their marriage has gone stale
 | 
 | pedant [学究]
 | pedantic

@@ -58,3 +58,16 @@ Git Tricks 02
 
         # solution two
         git config --global --edit
+
+#. git to save username and password
+   
+    .. code-block:: sh
+        
+        # solution one will save your information permanently unless you change it later
+        git config --global credential.helper store
+
+        # solution two will cache your information for a while, default to 15 minutes.
+        git config --global credential.helper  cache
+        git config --global credential.helper  'cache  --timeout=3600' # in second
+
+

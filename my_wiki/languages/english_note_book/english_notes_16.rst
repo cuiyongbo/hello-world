@@ -168,8 +168,30 @@ English Note 16
 | Usage: a cranky scheme to pipe ground-level ozone into the stratosphere.
 | Definition: (of a machine) working badly; shaky.
 | Usage: the cranky elevator breaks down periodically.
-
-harness
+| 
+| harness [马具]
+| Definition: a set of straps and fittings by which a horse or other draft animal is fastened to a cart, plow, etc., and is controlled by its driver.
+| Usage: the horse was harnessed to two long shafts.
+| Definition: control and make use of (natural resources), especially to produce energy.
+| Usage: attempts to harness solar energy. 
+| Usage: projects that harness the creativity of those living in the ghetto.
+| Phrase: in harness
+| Definition: (of a horse or other animal) used for driving or draft work.
+| Definition: in the routine of daily work.
+| Usage: a man who died in harness far beyond the normal age of retirement. [过劳死]
+| Usage: working closely with someone to achieve something.
+| Usage: local and central government should work in harness.
+| 
+| ghetto [少数民族居住区]
+| Definition: a part of a city, especially a slum area, occupied by a minority group or groups.
+| Usage: The south coast of Spain has become something of a tourist ghetto. 
+|
+| stale
+| Definition: (of food) no longer fresh and plesant to eat.
+| Definition: no longer new and interesting.
+| Usage: Their marriage has gone stale.
+| Definition: (of a person) no longer able to perform well or creatively because of having done something for too long.
+| Usage: a top executive tends to get stale.
 
 .. figure:: images/circular_agriculture_fields.jpg
 

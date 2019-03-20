@@ -330,12 +330,22 @@ in a number of Christian kingdoms.
    The Gleaners by Jean-François Millet, 1857
 
 | 
+| lewd
+| Definition: crude and offensive in a sexual way. [いやらしい]
+| Usage: She began to gyrate to the music and sing a lewd song.
+| 
 | gyrate
 | gyrator
 | Definition: move or cause to move in a circle or spiral, especially quickly.
 | Usage: Their wings gyrate through the water like paddle wheels.
 | Definition: dance in a wild or suggestive manner.
 | Usage: Strippers gyrated to rock music on a low stage. [脱衣舞]
+| 
+| strippergram
+| Definition: a novelty greetings message dilivered by a person who accompanies it with a striptease act.
+| 
+| striptease [脱衣舞]
+| Definition: a form of entertainment in which a performer gradually undress to music in a way intended to be sexually exciting.
 | 
 | axiom
 | axiomatic
