@@ -220,6 +220,10 @@ English Note 12
 | 
 | close-fisted: unwilling to spend money.
 | 
+| parsimony
+| Definition: extreme unwillingness to spend money or use resources:.
+| Usage: a great tradition of public design has been shattered by government parsimony.
+| 
 | deprave
 | depravity
 | depravation
@@ -379,6 +383,31 @@ English Note 12
 | demigod [半神]
 | Definition: some Roman emperors claimed descent from demigods such as Hercules.
 | 
+
+#. principle (or law) of parsimony
+   
+    The scientific principle that things are usually connected or behave in the simplest 
+    or most economical way, especially with reference to alternative evolutionary pathways. 
+
+#. Occam's razor 
+
+    The principle (attributed to *William of Occam*) that in explaining a thing, 
+    no more assumptions should be made than are necessary. The principle is often 
+    invoked to defend reductionism or nominalism. 
+
+#. reductionism [还原论]
+   
+    The practice of analyzing and describing a complex phenomenon in terms of phenomena 
+    that are held to represent a simpler or more fundamental level, especially when this 
+    is said to provide a sufficient explanation.    
+
+#. nominalism [唯名论]
+   
+    The doctrine that universals or general ideas are mere names without any corresponding reality,
+    and that only particular objects exist; properties, numbers, and sets are thought of as merely 
+    features of the way of considering the things that exist. Important in medieval scholastic thought, 
+    nominalism is associated particularly with *William of Occam*. Often contrasted with realism. 
+
 
 .. figure:: images/ArgosPanoptes.jpg
 

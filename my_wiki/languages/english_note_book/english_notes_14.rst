@@ -191,6 +191,12 @@ English Note 14
 | Usage: books with pristine dust jackets are less common and sell at a premium.
 | Usage: space was at a premium. [scarce and in demand,  稀缺]
 | 
+| undersell
+| Definition: sell something at a lower price than (a competitor).
+| Usage: we can equal or undersell mail order.
+| Definition: promote or rate (something) insufficiently; undervalue. 
+| Usage: don't undersell yourself. [妄自菲薄]
+| 
 | faction
 | Definition: a state of conflict within an organization; dissension.
 | Definition: a small, organized, dissenting group within a larger one, especially in politics.

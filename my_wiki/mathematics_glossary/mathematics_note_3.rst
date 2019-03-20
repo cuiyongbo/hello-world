@@ -65,3 +65,14 @@ Mathematics Notes 3
     The incidence matrix of a directed graph is a :math:`n \times m` matrix B, where n and m are the numbers 
     of vertices and edges respectively, such that `B[i,j] = -1` if the edge :math:`e_j` leaves vertex :math:`v_i`, 
     1 if enters vertex vertex :math:`v_i`, and 0 otherwise.
+
+#. matroid vs greedoid
+    
+    In combinatorics, a branch of mathematics, a matroid is a structure that captures 
+    and generalizes the notion of linear independence in vector spaces. There are many 
+    equivalent ways to define a matroid, the most significant being in terms of independent 
+    sets, bases, circuits, closed sets or flats, closure operators, and rank functions.
+
+    In combinatorics, a greedoid is a type of set system. It arises from the notion of the matroid, 
+    which was originally introduced by *Whitney* in 1935 to study *planar graphs* and was later used 
+    by *Edmonds* to characterize a class of optimization problems that can be solved by ``greedy algorithms``.

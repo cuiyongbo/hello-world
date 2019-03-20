@@ -149,7 +149,25 @@ English Note 16
 | Usage: at this point it is necessary to interpose a note of caution.
 | Definition: intervene between parties.
 | Usage: the legislature interposed to suppress these amusements.
-
+| 
+| outsource
+| Definition: obtain (goods or a service) from an outside or foreign supplier, especially in place of an internal source。
+| Usage: outsourcing can dramatically lower total costs.
+| Definition: contract (work) out or abroad. [外包]
+| Usage: you may choose to outsource this function to another company or do it yourself.
+| 
+| per se
+| Definition: by or in itself or themselves.
+| Usage: The drug is not harmful per se, but is dangerous when taken with alcohol. 
+| Usage: possessing a knief was not per se an unlawful act.
+| 
+| cranky
+| Definition: ill-tempered; irritable.
+| Usage: he was bored and cranky after eight hours of working.
+| Definition: eccentric or strange, typically because highly unorthodox.
+| Usage: a cranky scheme to pipe ground-level ozone into the stratosphere.
+| Definition: (of a machine) working badly; shaky.
+| Usage: the cranky elevator breaks down periodically.
 
 .. figure:: images/circular_agriculture_fields.jpg
 

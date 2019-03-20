@@ -90,6 +90,8 @@ The Chain rule of Conditional Probabilty Bayes' rule
 
 Independence and Conditional Independence
 
-Expectation Variance Standard deviation Covariance
+Expectation Variance Standard deviation Covariance Correlation
 
-correlation
+underfitting overfitting
+
+represent capacity effective capacity
