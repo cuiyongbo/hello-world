@@ -42,26 +42,6 @@ key digits, separated from the items.
 The output is an array of the items, in order by their keys. Because of the application 
 to radix sorting, it is important for counting sort to be a **stable sort**.
 
-.. code-block:: py
-    :caption: Python implementation
-
-    def counting_sort(a):
-        k = max(a)+1
-        count = [0 for i in range(k)]
-        for x in a:
-            count[x] += 1
-        # calculate prefix sum
-        total = 0
-        for i in range(k):
-            old_count = count[i]
-            count[i] = total
-            total += old_count
-        out = [0 for i in range(len(a))]
-        for x in a:
-            out[count[x]] = x
-            count[x] += 1
-        return out
-
 .. code-block:: none
     :caption: Take from *Introduction to algorithms*
 

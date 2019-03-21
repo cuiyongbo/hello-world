@@ -8,9 +8,9 @@ Pending tasks
 
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
 
-#. http://geomalgorithms.com/
+#. Computer graphics algorithms [#geomatric_alg]_
    
-#. http://www.kohala.com/start/
+#. Unix Network Programming [#unix_network_programming]_
 
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
 #. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
@@ -39,3 +39,5 @@ Pending tasks
 .. rubric:: Footnotes
 
 .. [#a_star_algorithm] http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
+.. [#unix_network_programming] http://www.kohala.com/start/ 
+.. [#geomatric_alg] http://geomalgorithms.com/
