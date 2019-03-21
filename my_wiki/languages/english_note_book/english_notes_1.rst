@@ -1766,9 +1766,10 @@ admitted the computer was named after his daughter.
 | Usage: He had  managed to make the entirely spurious impression that the company is thriving.
 | 
 | purport
-| Definition: If you say that someone or something purports to do or be a particular thing, you mean that they clainm to do or | to to be that thing, although you man not always believe that claim.
-| Synonyms: claim
+| Definition: appear or claim to be or do something, especially falsely; profess.
+| Synonyms: claim.
 | Usage: A book that purports to tell the whole truth.
+| Usage: She is not the person she purports to be.
 | 
 | imbue
 | Definition: (often be imbued with) inspire or permeate with a strong feeling or quality.
