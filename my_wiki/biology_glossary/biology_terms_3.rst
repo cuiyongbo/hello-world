@@ -183,6 +183,10 @@ Wild Lives 03
 
     Tadpole [蝌蚪]
 
+.. image:: images/lion.jpg
+.. image:: images/feathers.jpg
+.. image:: images/plume_types.jpg
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 
