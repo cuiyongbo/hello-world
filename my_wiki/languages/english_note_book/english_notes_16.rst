@@ -192,6 +192,10 @@ English Note 16
 | Usage: Their marriage has gone stale.
 | Definition: (of a person) no longer able to perform well or creatively because of having done something for too long.
 | Usage: a top executive tends to get stale.
+| 
+| intermittent
+| Definition: occurring at irregular intervals; not continuous or steady.
+| Usage: intermittent rain. [阵雨]
 
 .. figure:: images/circular_agriculture_fields.jpg
 
@@ -201,3 +205,7 @@ English Note 16
 .. figure:: images/swing.jpg
 
     Swing [秋千]
+
+.. figure:: images/water_wheel.jpg
+
+    Water wheel [水车]
