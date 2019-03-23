@@ -95,3 +95,5 @@ Expectation Variance Standard deviation Covariance Correlation
 underfitting overfitting
 
 represent capacity effective capacity
+
+:abbr:`lerp (Linear intERPolation)`

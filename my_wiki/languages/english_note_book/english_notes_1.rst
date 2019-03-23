@@ -858,23 +858,6 @@ name, also known as surname, with most family members.
 | Definition: speak or write authoritatively about a topic.
 | Usage: She could discourse at great length on the history of Europe.
 | 
-| elf [精灵]
-| goblin (also hobgoblin) [哥布林]
-| Defintion: (in stories) a small ugly creature that likes to trick people or cause trouble.
-| 
-| smell a rat [猫腻]
-| Definition: suspect trickery or deception.
-| 
-| smell blood
-| Definition: discern weakness or vulnerability in an opponent.
-| 
-| smell the roses
-| Definition: enjoy or appreciate what is often ignored.
-| 
-| smell something up
-| Definition: permeate an area with a bad smell.
-| Usage: He smelled up the whole house.
-| 
 | exceed
 | Definition: be greater in number or size than (a quantity, number, or other measureable thing).
 | Definition: go beyond what is allowed or stipulated by (a set limit, especially of one’s authority).

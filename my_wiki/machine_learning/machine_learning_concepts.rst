@@ -67,3 +67,18 @@ Machine learning concepts
     algorithms. Traditionally, people refer to **regression**, **classification** and 
     **structured output problems** as supervised learning. **Density estimation** in support 
     of other tasks is usually considered unsupervised learning.
+
+#. Neural Network, Reinforcement Learning and Genetic Algorithms
+   
+    Neural Networks model a brain learning by **example**―given a set of right answers, 
+    it learns the general patterns. (**Supervised Learning**) Reinforcement Learning models a brain learning by 
+    **experience**―given some set of actions and an eventual reward or punishment, 
+    it learns which actions are good or bad. (**Unsupervised Learning**) Genetic Algorithms model evolution by 
+    **natural selection**―given some set of agents, let the better ones live and 
+    the worse ones die. (alse **Unsupervised Learning**) Typically, genetic algorithms do not allow agents to learn 
+    during their lifetimes, while neural networks allow agents to learn only during 
+    their lifetimes. Reinforcement learning allows agents to learn during their lifetimes 
+    and share knowledge with other agents.
+   
+
+

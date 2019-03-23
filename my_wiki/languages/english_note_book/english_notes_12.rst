@@ -383,6 +383,11 @@ English Note 12
 | demigod [半神]
 | Definition: some Roman emperors claimed descent from demigods such as Hercules.
 | 
+| elf [精灵]
+| goblin (also hobgoblin) [哥布林]
+| dwarf [矮人]
+| orc [兽人]
+| 
 
 #. principle (or law) of parsimony
    

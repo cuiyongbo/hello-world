@@ -196,6 +196,25 @@ English Note 16
 | intermittent
 | Definition: occurring at irregular intervals; not continuous or steady.
 | Usage: intermittent rain. [阵雨]
+| 
+| smell
+| Usage: a bunch of sweet-smelling flowers.
+| Usage: Dinner smells good.
+| Usage: His breath smelt of garlic. 
+| Phrase: smell out
+| Definition: detect or discover something by the faculty of smell.
+| Usage: his nose can smell out an animal from ten miles away.
+| Definition: detect or suspect (something) by means of instinct or intuition.
+| Usage: he can smell trouble long before it gets serious.
+| Phrase: smell a rat [猫腻]
+| Definition: suspect trickery or deception.
+| Phrase: smell blood
+| Definition: discern weakness or vulnerability in an opponent.
+| Phrase: smell the roses
+| Definition: enjoy or appreciate what is often ignored.
+| Phrase: smell something up
+| Definition: permeate an area with a bad smell.
+| Usage: He smelled up the whole house.
 
 .. figure:: images/circular_agriculture_fields.jpg
 

@@ -2,9 +2,11 @@
 Mathematics
 ***********
 
+**汨余若将不及兮，恐年岁之不吾与**
+
 .. toctree::
     :titlesonly:
-    :maxdepth: 2
+    :maxdepth: 1
 
     mathematics_glossary/mathematics_history
     mathematics_glossary/mathematics_note_1
