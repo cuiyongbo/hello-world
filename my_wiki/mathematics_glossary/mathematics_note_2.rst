@@ -61,7 +61,7 @@ Mathematics Notes 2
     Often it begins with the number one, and it can begin with any natural number, establishing the truth 
     of the property for all natural numbers greater than or equal to the starting number.
 
-#. centroid
+#. Centroid
    
     centroid: the center of mass of a geometric object of uniform density. [质心，重心]
     incenter: the center of the incircle [内切圆] of a triangle or other figure. [内心]
@@ -69,7 +69,7 @@ Mathematics Notes 2
 
     .. image:: images/centroid-of-triangles.png
 
-#. manifold
+#. Manifold
    
     a collection of points forming a certain kind of set, such as those of a topologically 
     closed surface or an analog of this in three or more dimensions.

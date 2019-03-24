@@ -307,28 +307,20 @@ society.
 | bale
 | Definition: a bundle of paper, hay, cotton, etc., tightly wrapped and bound with cords or hoops.
 | Usage: the fire destroyed 500 bales of hay. [麦秸垛，干草堆]
-| make (something) into bales.
-| Definition: they baled a lot of good hay.
+| Usage: The waste paper is baled, then sent for recycling. 
+
+.. image:: images/hay_bales.jpg 
+
 |
 | glean 
 | Definition: extract (information) from various sources.
 | Usage: The information is gleaned from press clippings.
 | Definiton: gather (leftover grain or other produce) after a harvest (as noun gleaning). 
 | Usage: The conditions of farm workers in the 1890s made gleaning essential. [捡拾麦穗]
-|
-
-Gleaning is the act of collecting leftover crops from farmers' fields
-after they have been commercially harvested or on fields where it is
-not economically profitable to harvest. It is a practice described in
-the Hebrew Bible that became a legally enforced entitlement of the poor
-in a number of Christian kingdoms.
-
-.. image:: images/hay_bales.jpg 
-.. figure:: images/The_Gleaners.jpg
-   :align: center
-
-   The Gleaners by Jean-François Millet, 1857
-
+| 
+| garner
+| Definition: gather or collect (something, especially information or approval).
+| Usage: the police struggled to garner sufficient evidence.
 | 
 | lewd
 | Definition: crude and offensive in a sexual way. [いやらしい]
@@ -539,7 +531,6 @@ in a number of Christian kingdoms.
 
     Fringe clothe [流苏]
 
-
 #. morganatic
 
    of or denoting a marriage between a person of royal or noble birth and 
@@ -552,4 +543,17 @@ in a number of Christian kingdoms.
    It was first encountered by the Spanish in South America in the 16th century, 
    and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
    catalysts.
+
+#. Gleaner 
+   
+    Gleaning is the act of collecting leftover crops from farmers' fields
+    after they have been commercially harvested or on fields where it is
+    not economically profitable to harvest. It is a practice described in
+    the Hebrew Bible that became a legally enforced entitlement of the poor
+    in a number of Christian kingdoms.
+
+    .. figure:: images/The_Gleaners.jpg
+       :align: center
+    
+       The Gleaners by Jean-François Millet, 1857
    

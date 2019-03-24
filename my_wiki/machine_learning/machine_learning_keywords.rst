@@ -86,7 +86,7 @@ Frequentist Probability  Bayesian Probability
 
 Conditional Probability  Intervention query
 
-The Chain rule of Conditional Probabilty Bayes' rule
+The Chain rule of Conditional Probabilty Bayesian rule
 
 Independence and Conditional Independence
 
@@ -97,3 +97,23 @@ underfitting overfitting
 represent capacity effective capacity
 
 :abbr:`lerp (Linear intERPolation)`
+
+posterior distribution VS prior distribution
+
+:abbr:`Maximum a posteriori`
+
+maximum likelihood VS log-likelihood 
+
+negative conditional log-likelihood
+
+Gaussian distribution = Normal distribution
+
+Bayesian inference
+
+:abbr:`SGD (stochastic gradient descent)`
+
+minibatch
+
+Generalization error
+
+manifold

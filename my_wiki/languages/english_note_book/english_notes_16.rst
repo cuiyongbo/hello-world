@@ -253,6 +253,16 @@ English Note 16
 | Usage: Lionel Messi made his debut for Barcelona 12 years ago this weekend. 
 | Usage: Barca brought on the 23-year-old Columbia defender Yerry Mina for his debut.
 | :abbr:`IPO (initial public offering)`
+| 
+| fair and square
+| Definition: honestly and straightforwardly.
+| Usage: Well I appreciate it, but I prefer to win fair and square.
+|
+| pay
+| Phrase: pay one's way
+| Definition: to pay for oneself or another person; to contribute one's or someone else's portion of the cost.
+| Usage: I appreciate the offer, but I can pay my way!
+
 
 .. figure:: images/circular_agriculture_fields.jpg
 

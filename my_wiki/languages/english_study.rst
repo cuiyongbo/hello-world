@@ -20,5 +20,6 @@ English page
     english_note_book/english_notes_14
     english_note_book/english_notes_15
     english_note_book/english_notes_16
+    english_note_book/english_notes_17
     english_note_book/steve_jobs_obituary
     english_note_book/stephen_hawking_obituary

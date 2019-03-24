@@ -109,3 +109,13 @@ What doesn't kill you will make you stronger.
 .. figure:: images/CARPENTERS_YESTERDAY_ONCE_MORE.jpg
 
     There is always one song that brings back old memories.
+
+The more a man knows, the less he knows what he knows.
+
+The soul is not where it lives, but it loves.
+
+They who cannot do what they would must do as they can.
+
+Thinking well is wise, planning well wiser, doing well wisest and the best of all.
+
+Tomorrow you thought of comes never.

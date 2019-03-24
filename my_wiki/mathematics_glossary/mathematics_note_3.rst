@@ -66,7 +66,7 @@ Mathematics Notes 3
     of vertices and edges respectively, such that `B[i,j] = -1` if the edge :math:`e_j` leaves vertex :math:`v_i`, 
     1 if enters vertex vertex :math:`v_i`, and 0 otherwise.
 
-#. matroid vs greedoid
+#. Matroid vs Greedoid
     
     In combinatorics, a branch of mathematics, a matroid is a structure that captures 
     and generalizes the notion of linear independence in vector spaces. There are many 
