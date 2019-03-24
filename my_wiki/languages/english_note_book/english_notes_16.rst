@@ -2,6 +2,9 @@
 English Note 16
 ***************
 
+| Inspirational story [励志故事]
+| Spiritual home [精神家园]
+|
 | garage
 | Definition: a building or shed for housing a motor vehicle or vehicles.
 | Usage: a building or shed for housing a motor vehicle or vehicles. [车库]
@@ -186,6 +189,11 @@ English Note 16
 | Definition: a part of a city, especially a slum area, occupied by a minority group or groups.
 | Usage: The south coast of Spain has become something of a tourist ghetto. 
 |
+| run-of-the-mill
+| Definition: lacking unusual or special aspects; ordinary.
+| Usage: Michael is no run-of-the-mill kind of guy.
+| Usage: It was a run-of-the-mill dish you could find in any fine dining restaurant.
+| 
 | stale
 | Definition: (of food) no longer fresh and plesant to eat.
 | Definition: no longer new and interesting.
@@ -215,6 +223,36 @@ English Note 16
 | Phrase: smell something up
 | Definition: permeate an area with a bad smell.
 | Usage: He smelled up the whole house.
+| 
+| break
+| Phrase: break ground
+| Definition: do preparatory digging or other work prior to building or planting something.
+| Usage: The president of the company came to break ground for the new building.
+| Phrase: break new (or fresh) ground
+| Definition: do something innovative that is considered an advance or positive benefit.
+| Usage: Apple's really broken new ground with their latest product—I've never seen anything like it.
+| Phrase: break off
+| Definition: If part of something breaks off or if you break it off, it come off or is removed by force.
+| Usage: Grace broke off a large piece of the clay.
+| Definition: interrupt.
+| Usage: Luias broke off in mid-sentence.
+| 
+| beenline
+| Definition: a straight line between two places.
+| Phrase: make a beeline for
+| Definition: hurry directly to.
+| Usage: Billy came into the kitchen and made a beeline for the cookies.
+| 
+| maiden flight/voyage [处女航]
+| Definition: The maiden voyage or flight of a ship or aircraft is the first offical journey that it makes.
+| Usage: In 1912, the Titanic sank on her maiden voyage.
+| 
+| debut
+| Definition: The debut of a performer or sports player is their first public performance, appearance, or recording.
+| Usage: Her debut album “Sugar time”. [出道作品]
+| Usage: Lionel Messi made his debut for Barcelona 12 years ago this weekend. 
+| Usage: Barca brought on the 23-year-old Columbia defender Yerry Mina for his debut.
+| :abbr:`IPO (initial public offering)`
 
 .. figure:: images/circular_agriculture_fields.jpg
 

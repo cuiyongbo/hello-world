@@ -333,6 +333,8 @@ English Note 10
 | Definition: impose on (someone) an excessive burden of work or commitments.
 | Usage: he should not overextend himself on the mortgage.
 | 
+| pirated version [盗版]
+|
 | shelf
 | Usage: The book I wanted was on the top shelf. 
 | Phrase: off the shelf

@@ -9,8 +9,9 @@ Pending tasks
 #. https://en.wikipedia.org/wiki/Jordan_curve_theorem
 
 #. Computer graphics algorithms [#geomatric_alg]_
-   
 #. Unix Network Programming [#unix_network_programming]_
+#. Apple Open Soure [#apple_opensource]_
+#. Fast CGI [#fastcgi]_
 
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
 #. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
@@ -41,3 +42,5 @@ Pending tasks
 .. [#a_star_algorithm] http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
 .. [#unix_network_programming] http://www.kohala.com/start/ 
 .. [#geomatric_alg] http://geomalgorithms.com/
+.. [#apple_opensource] https://opensource.apple.com
+.. [#fastcgi] https://opensource.apple.com/source/FastCGI/

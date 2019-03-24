@@ -105,3 +105,7 @@ What doesn't kill you will make you stronger.
 将自己的生命燃烧到灰一样白。
 
 -- 矢吹丈 《明日之丈》
+
+.. figure:: images/CARPENTERS_YESTERDAY_ONCE_MORE.jpg
+
+    There is always one song that brings back old memories.

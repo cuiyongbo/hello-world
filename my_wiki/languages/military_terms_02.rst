@@ -99,7 +99,6 @@ Military Terms 02
     An institution, place, or person strongly defending 
     or upholding particular principles, attitudes, or activities.
     
-
 .. image:: images/roll-yaw-pitch.jpg
 .. image:: images/tupolev-tu-160-blackjack_1.jpg
 .. figure:: images/tupolev-tu-160-blackjack_2.png

@@ -2,9 +2,9 @@
 Military Terms
 **************
 
-| MIA -- missing-in-action [失踪]
-| KIA -- killed-in-action [阵亡]
-| DOA -- dead on arrival [不治身亡]
+| :abbr:`MIA (missing in action)` [失踪]
+| :abbr:`KIA (killed in action)` [阵亡]
+| :abbr:`DOA (dead on arrival)` [不治身亡]
 | Allied Powers [盟军]
 | Axis Powers [轴心国]
 | United Nations [联合国]
@@ -30,6 +30,16 @@ Military Terms
 | the White house 白宫
 | The Kremlin 克里姆林宫
 | The US State Department 美国国会
+| :abbr:`NATO (North Atlantic Treaty Organization)`
+| Intelligence agent [情报部门]
+| Memorial Hall [纪念馆]
+| airworthiness certification [适航证]
+| hump airlift [驼峰航线]
+| 20th group armies [第20集团军]
+|
+| sinology
+| sinologist [汉学家]
+| Definition: the study of Chinese language, history, customs, and politics.
 | 
 | totalitarian
 | totalitarianism

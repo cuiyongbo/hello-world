@@ -1575,24 +1575,6 @@ admitted the computer was named after his daughter.
 | Definition: If something is in decline or on the decline, it is gradually decreasing in importance, quality, or power.
 | Usage: He is still one of the world’s most popular football players, but his game is in decline.
 | 
-| break off
-| Definition: If part of something breaks off or if you break it off, it come off or is removed by force.
-| Usage: Grace broke off a large piece of the clay.
-| Definition: If you break off when you doing or saying something, you suddenly stop doing it or saying it.
-| Usage: Luias broke off in mid-sentence.
-| 
-| maiden flight [处女航]
-| Definition: The maiden voyage or flight of a ship or aircraft is the first offical journey that it makes.
-| Usage: In 1912, the Titanic sank on her maiden voyage.
-| 
-| debut
-| Definition: The debut of a performer or sports player is their first public performance, appearance, or recording.
-| Usage: Her debut album “Sugar time”. [出道作品]
-| Usage: Lionel Messi made his debut for Barcelona 12 years ago this weekend. 
-| Usage: Barca brought on the 23-year-old Columbia defender Yerry Mina for his debut.
-| 
-| 成名作 
-| 
 | ferocious
 | Definition: A ferocious animal, person, or action is very fierce and violent.
 | Synonyms: fierce
