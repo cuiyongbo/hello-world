@@ -7,9 +7,7 @@ Computer Glossary
 .. toctree::
     :titlesonly:
 
-    computer_glossary/ascii_chart
-    computer_glossary/punctuations
-    computer_glossary/ascii_chart
+    computer_glossary/character_set_note
     computer_glossary/cpu_docs
     computer_glossary/os_problem_notes
     computer_glossary/computer_terminology

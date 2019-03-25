@@ -55,16 +55,19 @@ English Note 14
 | Definition: a strengthening crosspiece in the structure of a chair.
 | Usage:  the top rung of society.
 | 
-| get one's second wind [缓过神来]
+| wind
+| Phrase: get one's second wind [缓过神来]
 | Definition: find energy, strength or enthusiasm after feeling tired or after a period when you produce little.
 | Usage: After midnight the dancers seemed to get their second wind and went on till dawn.
-| Origin: This expression comes from running; after feeling out of breath at the beginning of a race, you later find it easier to breathe.
-| 
-| get wind of something [听到xx风声，传到xx耳朵里]
-| Definition: To become aware of something, especially something being kept secret, through indirect means. 
+| Phrase: get wind of something [听到xx风声，传到xx耳朵里]
+| Definition: become aware of something, especially something being kept secret, through indirect means. 
 | Usage: If Mom gets wind of this prank we're planning, we'll be grounded for the rest of the summer. 
 | Usage: If the press gets wind of this, the campaign will be over.
 |
+| prank
+| Definition: a practical joke or mischievous act.
+| Usage: April Fool's Day is celebrated here but the pranking continues on May 1st.
+| 
 | head
 | Usage: he is a head taller than his sister.
 | Usage: It costs about $12 a head to eat here.
