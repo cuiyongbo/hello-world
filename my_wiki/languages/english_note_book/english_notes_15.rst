@@ -25,6 +25,10 @@ English Note 15
 | Definition: treat (something sacred) with irreverence or disrespect.
 | Usage: He was accused of violating a tomb. [亵渎死者]
 | Usage: They denied that human rights were being violated.
+|
+| inviolate
+| Definition: free or safe from injury or violation.
+| Usage: an international memorial which must remain inviolate.
 | 
 | invalid
 | Definition: a person made weak or disabled by illness or injury. [虚弱]

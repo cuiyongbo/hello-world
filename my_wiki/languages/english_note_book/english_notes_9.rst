@@ -170,7 +170,10 @@ English Note 9
 | 
 | belittle  (also be little)
 | Definition: make (sb or sth) seem unimportant.
+| Synonyms: disparage
 | Usage: She felt belittled.
+| Usage: he never missed an opportunity to disparage his competitors.
+| Usage: I don't mean to disparage your achievements. 
 | 
 | play down
 | Definition: If you play down something, you try to make people believe that it is  not particularly important.

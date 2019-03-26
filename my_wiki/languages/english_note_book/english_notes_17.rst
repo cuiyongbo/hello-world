@@ -26,3 +26,13 @@ English Note 17
 | Usage: he embarked for India in 1817.
 | Definition: (embark on/upon) start to do sth new or difficult.
 | Usage: She is about to embark on a diplomatic career.
+| 
+| larval [幼虫]
+| Definition: relating to or denoting the active immature form of an insect.
+| Usage: the larval stage of a fly.
+| Usage: a larval salamander. [蝾螈]
+| 
+| inconclusive
+| Definition: not leading to a firm conclusion; not ending doubt or dispute.
+| Usage: The last meeting had ended inconclusively. 
+| Usage: the medical evidence is inconclusive.

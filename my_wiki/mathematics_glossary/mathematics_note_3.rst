@@ -76,3 +76,14 @@ Mathematics Notes 3
     In combinatorics, a greedoid is a type of set system. It arises from the notion of the matroid, 
     which was originally introduced by *Whitney* in 1935 to study *planar graphs* and was later used 
     by *Edmonds* to characterize a class of optimization problems that can be solved by ``greedy algorithms``.
+
+
+#. Convex function
+   
+    In mathematics, a real-valued function defined on an n-dimensional interval is called convex 
+    (or convex downward or concave upward) if the line segment between any two points on the graph 
+    of the function lies above or on the graph. Equivalently, a function is convex if its epigraph 
+    (the set of points on or above the graph of the function) is a convex set. For a twice differentiable
+    function of a single variable, if the second derivative is always greater than or equal to zero for its 
+    entire domain then the function is convex. Well-known examples of convex functions include the quadratic 
+    function :math:`x^2` and the exponential function :math:`e^x`.

@@ -117,3 +117,27 @@ minibatch
 Generalization error
 
 manifold
+
+partial derivative VS directional derivative
+
+learnig rate 
+
+line search
+
+hill climbing
+
+Jacobian matrix VS Hessian matrix
+
+Tayler Series
+
+sencond derivative test
+
+condition number
+
+Newton's method
+
+first-order optimization algorithms VS second-order optimization algorithms
+
+:abbr:`KKT (Karush-Kuhn-Tucker)`
+
+Generalized Largrangian
