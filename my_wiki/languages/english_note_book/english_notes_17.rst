@@ -36,3 +36,27 @@ English Note 17
 | Definition: not leading to a firm conclusion; not ending doubt or dispute.
 | Usage: The last meeting had ended inconclusively. 
 | Usage: the medical evidence is inconclusive.
+| 
+| grovel
+| Definition: lie or crawl abjectly on the ground with one's face downward.
+| Usage: she was groveling on the floor in fear.
+| Definition: act in an obsequious way in order to obtain someone's forgiveness or favor.
+| Usage: everyone expected me to grovel with gratitude. [卑躬屈膝]
+| Usage: I don't grovel to anybody.
+|
+| laundry detergent [洗衣液]
+| 
+| wiggle
+| move or cause to move up and down or from side to side with small rapid movements.
+| Definition: Stasia wiggled her toes.
+| 
+| blunder
+| Definition: make a stupid or careless mistake; act or speak clumsily.
+| Usage: the mayor and the City Council have blundered in an ill-advised campaign.
+| Usage: we were blundering around in the darkness.
+| 
+| play hardball
+| Definition: To be ruthless, aggressive, or harsh (with one) in order to achieve a certain result, especially compared to previous, less aggressive tactics. 
+| Usage: I think it's time we play hardball with the suspect—he's not going to talk otherwise. 
+| Definition: The president has decided to play hardball on this issue. 
+| Usage: If he wants to play hardball with us, we can play that way, too.

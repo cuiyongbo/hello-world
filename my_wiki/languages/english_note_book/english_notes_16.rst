@@ -253,6 +253,7 @@ English Note 16
 | Usage: Lionel Messi made his debut for Barcelona 12 years ago this weekend. 
 | Usage: Barca brought on the 23-year-old Columbia defender Yerry Mina for his debut.
 | :abbr:`IPO (initial public offering)`
+| startup company [创业公司]
 | 
 | fair and square
 | Definition: honestly and straightforwardly.
