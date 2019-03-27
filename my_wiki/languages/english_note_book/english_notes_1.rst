@@ -2408,22 +2408,6 @@ his is able to return to duty. [缝了九针]
 | hold/stand sb. in good stead
 | Definition: If an experience stands a person in good stead, it is or will be of great use to him.
 | Usage: Getting some work experience now will stand you in good stead when you apply for a permanent job.
-| 
-| malign
-| Definition: speak unfavorably about. [中伤，诽谤，说坏话]
-| Usage: Don't you dare malign her in my presence.
-| Definition: evil in nature or effect; malevolent.
-| Usage: She had a strong and malign influence.
-| 
-| malevolent
-| Definition: having or showing a wish to do evil to others.
-| Usage: The glint of dark, malevolent eye. [眼神邪魅]
-| 
-| malignant
-| Definition: (of a disease) very virulent or infectious.
-| Definition: (of a tumor) tending to invade normal tissue or recur after removal; cancerous.
-| Antonyms: benign.
-| Usage: A malignant tumor.
 |
 | stoicism
 | Definition: An indifference to pleasure or pain.

@@ -224,6 +224,18 @@ English Note 16
 | Definition: permeate an area with a bad smell.
 | Usage: He smelled up the whole house.
 | 
+| depth
+| Phrase: hidden depths
+| Definition: usually admirable but previously unnoticed qualities of a person.
+| Usage: hidden depths and insights within children.
+| Phrase: in depth
+| Definition: in great detail; comprehensively and thoroughly.
+| Usage: an in-depth study. [深入研究]
+| Phrase: out of one's depth
+| Definition: to be in water that is too deep to stand in with your head above water.
+| Definition: beyond one's knowledge or ability to cope.
+| Usage: He felt totally out of his depth in his new job. 
+| 
 | break
 | Phrase: break ground
 | Definition: do preparatory digging or other work prior to building or planting something.

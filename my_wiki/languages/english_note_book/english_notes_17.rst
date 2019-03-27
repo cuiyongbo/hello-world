@@ -55,8 +55,28 @@ English Note 17
 | Usage: the mayor and the City Council have blundered in an ill-advised campaign.
 | Usage: we were blundering around in the darkness.
 | 
-| play hardball
+| play hardball [采取强硬手段]
 | Definition: To be ruthless, aggressive, or harsh (with one) in order to achieve a certain result, especially compared to previous, less aggressive tactics. 
 | Usage: I think it's time we play hardball with the suspect—he's not going to talk otherwise. 
 | Definition: The president has decided to play hardball on this issue. 
-| Usage: If he wants to play hardball with us, we can play that way, too.
+| Usage: If he wants to play hardball with us, we can play that way, too. [用强]
+| 
+| beneficiay [受益人]
+| Definition: a person who derives advantage from something, especially a trust, will, or life insurance policy.
+| 
+| malign
+| Definition: speak unfavorably about. [中伤，诽谤，说坏话]
+| Usage: Don't you dare malign her in my presence.
+| Definition: evil in nature or effect; malevolent.
+| Usage: She had a strong and malign influence.
+| 
+| malignant
+| Definition: (of a disease) very virulent or infectious.
+| Definition: (of a tumor) tending to invade normal tissue or recur after removal; cancerous.
+| Antonyms: benign.
+| Usage: A malignant tumor. [恶性肿瘤]
+| 
+| malevolent
+| Definition: having or showing a wish to do evil to others.
+| Synonyms: malicious.
+| Usage: The glint of dark, malevolent eye. [眼神邪魅]

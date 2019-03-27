@@ -11,6 +11,17 @@ To be or not to be, this is a question.
 .. contents::
    :local:
 
+Deep Learning
+=============
+
+    - Part I (finished 2019-03-26)
+    - Part II
+
+Introduction machine learning with python
+=========================================
+
+    - Ch01 Introduction (finished 2019-03-26)
+
 Introduction To Algorithm
 =========================
 
