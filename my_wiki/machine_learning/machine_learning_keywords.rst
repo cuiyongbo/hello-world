@@ -16,9 +16,9 @@ Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
 is asked to output a function :math:`f : \mathbb{R}^n \rightarrow \mathbb{R}`.
 
-Line Regression
+Linear Regression
 
-Mean squared error
+:abbr:`MES (mean squared error)`
 
 test set and training set
 
@@ -58,7 +58,7 @@ norm, Euclidean norm, :math:`L^2 norm`
 
 :abbr:`SVM (Support Vector Machine)`
 
-Logistic regression
+Linear regression VS Ridge Regression VS Logistic regression
 
 convex optimization
 
@@ -94,7 +94,9 @@ Expectation Variance Standard deviation Covariance Correlation
 
 underfitting overfitting
 
-represent capacity effective capacity
+model capacity VS mode complexity
+
+represent capacity VS effective capacity
 
 :abbr:`lerp (Linear intERPolation)`
 

@@ -18,6 +18,7 @@ Pending tasks
 
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. https://github.com/goodfeli/dlbook_exercises.git
+#. Introduction machine learning with python [#introduction_ml_py]_
    
 #. matplotlib to draw the cover of murphy's machine learning
 #. matplotlib draw with annotation, set interval for axis display
@@ -46,3 +47,4 @@ Pending tasks
 .. [#geomatric_alg] http://geomalgorithms.com/
 .. [#apple_opensource] https://opensource.apple.com
 .. [#fastcgi] https://opensource.apple.com/source/FastCGI/
+.. [#introduction_ml_py] Introduction machine learning with python

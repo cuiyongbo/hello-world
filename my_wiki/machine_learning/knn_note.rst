@@ -2,6 +2,10 @@
 K Nearest Neighbours Method
 ***************************
 
+.. function:: sklearn.model_selection.train_test_split()
+
+    Split arrays or matrices into random train and test subsets.
+
 .. function:: sklearn.neighbors.classification.KNeighborsClassifier.fit(X, y) 
 
     Fit the model using X as training data and y as target values.
@@ -38,14 +42,7 @@ K Nearest Neighbours Method
 
     >>> from sklearn import neighbors
     >>> knn = neighbors.KNeighborsClassifier(n_neighbors=2)
-    >>> print(knn)
-    KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
-               metric_params=None, n_jobs=None, n_neighbors=2, p=2,
-               weights='uniform')
     >>> knn.fit([[1], [2], [3], [4], [5], [6]], [0,0,0,1,1,1])
-    KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
-               metric_params=None, n_jobs=None, n_neighbors=2, p=2,
-               weights='uniform')
     >>> knn.predict([[1.5]])
     array([0])
     >>> knn.predict([[37]])
