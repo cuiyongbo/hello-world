@@ -80,3 +80,14 @@ English Note 17
 | Definition: having or showing a wish to do evil to others.
 | Synonyms: malicious.
 | Usage: The glint of dark, malevolent eye. [眼神邪魅]
+| 
+| takeaway
+| Definition: a takeout restaurant.
+| Usage: a fast-food takeaway.
+| Usage: takeout meals.
+| Definition: a key fact, point, or idea to be remembered, typically one emerging from a discussion or meeting.
+| Usage: the main takeaway for me is that we need to continue to communicate all the things we're doing for our customers.
+| 
+| practitioner
+| Definition: a person actively engaged in an art, discipline, or profession, especially medicine.
+| Usage: patients are treated by skilled practitioners.

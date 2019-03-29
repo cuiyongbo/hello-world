@@ -143,3 +143,22 @@ first-order optimization algorithms VS second-order optimization algorithms
 :abbr:`KKT (Karush-Kuhn-Tucker)`
 
 Generalized Largrangian
+
+.. math::
+
+    \begin{align*}
+    &\hat{y} = w[0] x[0] + w[1] x[1] + \dotsc + w[p] x[p] + b &\text{ (1) linear regression} 
+    \end{align*}
+
+.. math:: 
+
+    \begin{align*}
+    &\hat{y} = w[0] x[0] + w[1] x[1] + \dotsc + w[p] x[p] + b > 0 &\text{ (2) linear binary classification}
+    \end{align*}
+
+.. math:: 
+
+    \begin{align*}
+    & w[0] x[0] + w[1] x[1] + \dotsc + w[p] x[p] + b & \text{ (3) classification confidence}
+    \end{align*}
+
