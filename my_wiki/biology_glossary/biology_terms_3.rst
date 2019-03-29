@@ -134,6 +134,10 @@ Wild Lives 03
 
     Warbler [黄莺]
 
+.. figure:: images/hummingbird.jpg
+
+    A rufous-tailed hummingbird in Costa Rica
+
 .. figure:: images/heartbreaking_pollution.jpg
 
     A tailing pond found deep within western Australia
@@ -146,7 +150,7 @@ Wild Lives 03
 
     Arctic fox [北极狐]
 
-.. figure:: images/arctic_fox.jpg
+.. figure:: images/polar_bear.jpg
 
     Polar bear [北极熊]
 
