@@ -20,6 +20,7 @@ Matplotlib Pyplot Note
     # plt.legend()
     # plt.xlabel(label)
     # plt.ylabel(label)
+    # plt.annotate()
     # plt.grid(bool)
 
 .. function:: matplotlib.pyplot.plot(*args, scalex=True, scaley=True, data=None, **kwargs)

@@ -21,7 +21,6 @@ Pending tasks
 #. Introduction machine learning with python [#introduction_ml_py]_
    
 #. matplotlib to draw the cover of murphy's machine learning
-#. matplotlib draw with annotation, set interval for axis display
 #. review Unix process and thread facilities
 #. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
    
