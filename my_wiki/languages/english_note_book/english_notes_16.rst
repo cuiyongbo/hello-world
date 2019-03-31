@@ -266,6 +266,32 @@ English Note 16
 | Usage: Barca brought on the 23-year-old Columbia defender Yerry Mina for his debut.
 | :abbr:`IPO (initial public offering)`
 | startup company [创业公司]
+| entrepreneur [创业者，企业家]
+| 
+| bellwether [领头羊]
+| Definition: the leading sheep of a flock, with a bell on its neck.
+| Definition: an indicator or predicator of something.
+| Usage: University campuses are often the bellwether of change.
+|
+| game-changer
+| game-changing
+| Definition: an event, idea, or procedure that effects a significant shift in the current manner of doing or thinking about something.
+| Usage: A potential game changer that could revitalize the entire US aerospace industry.
+| 
+| game-over
+| Definition: said when a situation is regarded as hopeless or irreversible.
+| Usage: It’ll be game-over for all other heavy-lift rockets.
+| 
+| checkmate
+| Definition: a position in which one player cannot prevent his or her king being captured and therefore loses the game. [将军]
+| Definition: a situation in which somebody has been completely defeated.
+| Usage: She hoped the plan would checkmate her opponents. 
+| 
+| endgame
+| Definition: the final stage of a game such as chess or bridge, when few pieces or cards remain.
+| Usage: The knight was trapped in the endgame.
+| Definition: the final stage of a political process.
+| Usage: The retaliatory endgame of nuclear warfare.
 | 
 | fair and square
 | Definition: honestly and straightforwardly.

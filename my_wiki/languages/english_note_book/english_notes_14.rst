@@ -81,7 +81,8 @@ English Note 14
 | Phrase: above one's head
 | Usage: All that sort of thing is well above my head.
 | Phrase: head above heels
-| Definition: she is head above heels in love. [坠入爱河]
+| Usage: she is head above heels in love. [坠入爱河]
+| swain: a young man who is in love. [情郎]
 | Phrase: go to one's head
 | Usage: The drinks went to his head. [上头]
 | Usage: You mustn't let this success go to your head. [被胜利冲昏头脑]
@@ -296,12 +297,48 @@ English Note 14
 | Definition: (of bad behavior) done openly and unashamedly
 | Usage: He just blatantly lied about it. [睁眼说瞎话]
 | 
-| out of hand
+| reserve
+| Definition: In sports, a reserve is someone who is available to play as part of a team if one of the members is ill or cannot play.
+| Synonyms: substitude [替补]
+| Usage: He ended up as a reserve, but still qualified for a team gold medal.
+| Definition: If someone shows reserve, they keep their feeling hidden.
+| Usage: I do hope you’ll overcome your reserve and let me know. [矜持]
+| Definition: If you have something in reserve, you have it available for use when it is needed.
+| Usage: He poked around the top of his cupboard for the bottle of whisky that he kept in reserve.
+| [我有斗酒，藏之久矣，以待子不时之需]
+| Definition: refrain from delivering (a judgment or decision) immediately or without due consideration or evidence.
+| Usage: I'll reserve my views on his ability until he's played again. [对 xx 持保留意见]
+| Definition: If you reserver the charges you make a phone call, the person you are phoning pay the cost.
+| 
+| up one’s sleeve
+| Definition: (of a strategy, idea, or resource) kept secret and in reserve for use when needed.
+| Usage: He was new to the game but had a few tricks up his sleeve.
+|
+| hand
+| Phrase: in hand
+| Definition: ready for use if required; in reserve.
+| Usage: he had $1,000 of borrowed cash in hand.
+| Definition: receiving or requiring immediate attention.
+| Usage: he threw himself into the work in hand.
+| Definition: in progress.
+| Usage: negotiations are now well in hand.
+| Definition: under one's control.
+| Usage: the police had the situation well in hand.
+| Definition: in safe hands [藏之名山，传之其人]
+| Usage: protected by someone trustworthy from harm or damage.
+| Usage: the future of the cathedral is in safe hands.
+| Phrase: keep one's hand in
+| Usage: become (or remain) practiced in something. [宝刀未老] 
+| Phrase: out of hand
 | Definition: not under control
 | Definition: without taking time to think.
 | Usage: She's so stubborn that she just rejected my suggestion out of hand. 
-| throw up one's hand
+| Phrase: throw up one's hand
 | Definition: raise both hands in the air as an indication of one's exasperation.
+| 
+| knee-jerk [不假思索，下意识]
+| Definition: (of a response) automatic and unthinking.
+| Usage: It was a knee-jerk action on her part.
 | 
 | exasperation
 | Definition: a feeling of intense irritation or annoyance.

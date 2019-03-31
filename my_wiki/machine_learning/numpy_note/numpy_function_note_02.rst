@@ -289,6 +289,10 @@ numpy Function Note 02
         >>> for x in a.flat:
                 print(x)
 
+.. function:: numpy.ravel() 
+
+    Return a flattened array.
+    
 .. function:: ndarray.all(axis=None, out=None, keepdims=False)
 .. function:: ndarray.any(axis=None, out=None, keepdims=False)
     

@@ -21,6 +21,8 @@ Introduction machine learning with python
 =========================================
 
     - Ch01 Introduction (finished 2019-03-26)
+    - Ch02 Supervised Learning Algorithms (finished, 2019-03-31)
+    - Ch02 Unsupervised Learning Algorithms and Preprocessing (finished, 2019-03-31)
 
 Introduction To Algorithm
 =========================

@@ -8,9 +8,11 @@ medical diagnosis Google Street View Transcription Machine translation
 
 frequentist estimator and Bayesian inference
 
-supervised learning and unsupervised learning
+supervised learning: regression, classification
 
-stochastic gradient descent
+unsupervised learning: transformations of datasets, clustering
+
+:abbr:`SGD (stochastic gradient descent)`
 
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
@@ -162,3 +164,7 @@ Generalized Largrangian
     & w[0] x[0] + w[1] x[1] + \dotsc + w[p] x[p] + b & \text{ (3) classification confidence}
     \end{align*}
 
+.. math:: 
+
+    \begin{align*}
+    &k_\text{rbf}(x_1, x_2) = \exp(\gamma||x_1 - x_2||^2) &\text{ (4) Gaussian kernel}  \end{align*}

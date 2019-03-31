@@ -295,29 +295,33 @@ Only paranoid can surrive.
 | Usage: he lost his seat in the 1998 election.
 | Definition: a site or location of something specified.
 | Usage: Washington, the seat of the federal government.
-| 
-| by the seat of one's pants (alos seat-of-the-pants)
+| Phrase: by the seat of one's pants (alos seat-of-the-pants)
 | Definition: Based on or using intuition and experience rather than a plan or method.
 | Definition: Performed without using instruments.
 | Usage: a seat-of-the-pants landing of the aircraft.
-| 
-| rule of thumb
-| Definition: a broadly accurate guide or principle, based on experience or practice rather than theory.
-| 
-| as a rule
-| Definition: usually, but not always.
 |
-| rule out
+| ballpark
+| Definition: (of prices or costs) approximate; rough.
+| Usage: The ballpark figure is $400-500.
+| 
+| tried-and-true
+| Definition: proved good, desirable, or feasible; shown or known to be worthy.
+| Usage: A tried-and-true sales technique.
+| 
+| rule
+| Phrase: rule of thumb
+| Definition: a broadly accurate guide or principle, based on experience or practice rather than theory.
+| Phrase: as a rule
+| Definition: usually, but not always.
+| Phrase: rule out
 | Definition: exclude (or include) something as a possibility.
 | Usage: The prime mimister is believed to have ruled out cuts in child benefit or pensions. 
 | Usage: A serious car accident in 1986 ruled out a permanent future for him in football.
 | Usage: the doctor ruled out appendicitis. [阑尾炎]
-| 
-| make it a rule to do something
+| Phrase: make it a rule to do something
 | Definition: have as a habit or general principle to do something.
 | Usage: I make it a rule never to mix business with pleasure.
-| 
-| rule the roost
+| Phrase: rule the roost
 | Definition: be in complete control.
 | Usage: I am the one who runs facebook.
 | 

@@ -22,8 +22,8 @@ Pending tasks
    
 #. matplotlib to draw the cover of murphy's machine learning
 #. matplotlib draw with annotation, set interval for axis display
-#. learn machine learning basics, Linear algebra, Numerical computation
 #. review Unix process and thread facilities
+#. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
    
 
 2019 Targets

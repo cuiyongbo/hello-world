@@ -137,15 +137,7 @@ name, also known as surname, with most family members.
 | Definition: Particularly good, skillfull, or effective.
 | Definition: fashionable
 | Usage: Nifty footwork.
-| Usage:   A nifty black t-shirt.
-| 
-| up one’s sleeve
-| Definition: (of a strategy, idea, or resource) kept secret and in reserve for use when needed.
-| Usage: He was new to the game but had a few tricks up his sleeve.
-| 
-| tried-and-true
-| Definition: (adjective) proved good, desirable, or feasible; shown or known to be worthy
-| Usage: A tried-and-true sales technique.
+| Usage: A nifty black t-shirt.
 | 
 | fictitious
 | Definition: (adjective) not real or true, being imaginary or having been fabricated
@@ -265,13 +257,8 @@ name, also known as surname, with most family members.
 | Usage: She clenched on her lip so as not to cry out with her failure to pass the interview.
 | 
 | hapless
-| Definition: (especially of s person) unfortunate
+| Definition: (especially of s person) unfortunate.
 | Usage: If you are one of the many hapless car buyers who have been shafted.
-| 
-| onerous
-| Definition: troublesome or oppressive
-| Synonyms: burdensome, taxing.
-| Usage: Preparing income tax returns is an onerous task, and many people resort to hiring professional accountants during tax season.
 | 
 | ideate
 | Definition: To form an idea of; image or conceive
@@ -1328,10 +1315,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: For years radio has been the Cinderella of the media world.
 | Usage: Is research into breast cancer to remain the Cinderella of medicine?
 | 
-| knee-jerk [不假思索，下意识]
-| Definition: (of a response) automatic and unthinking.
-| Usage: It was a knee-jerk action on her part.
-| 
 | quiz
 | Definition: a test of knowledge, especially a brief, informal test given to students.
 | Usage: A reading comprehension quiz.
@@ -1447,25 +1430,9 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Synonyms: forerrunner
 | Usage: Although the car is 40mm shorter than its predecessor, its boot is 20 per cent larger.
 | 
-| checkmate
-| Definition: a position in which one player cannot prevent his or her king being captured and therefore loses the game. [将军]
-| Definition: a situation in which somebody has been completely defeated.
-| Usage: She hoped the plan would checkmate her opponents. 
-| 
-| endgame
-| Definition: the final stage of a game such as chess or bridge, when few pieces or cards remain.
-| Usage: The knight was trapped in the endgame.
-| Definition: the final stage of a political process.
-| Usage: The retaliatory endgame of nuclear warfare.
-| 
 | proximity
 | Definition: nearness in space, time, or relationship.
 | Usage: A house in the proximity of the highway.
-| 
-| bootstrap
-| Definition: a technique of loading a program into a computer by means of a few initial instructions that enable  the introduction of the rest of the program | from an input device.
-| Idiom: pull oneself up by one’s (own) bootstraps [自力更生]
-| Definition: If you have pulled yourself up by your bootstraps, you have achieved success by your own efforts, starting from very difficult circumstances and | without help from anyone.
 | 
 | fiasco
 | Definition: If you describe an event or attempt to do something as a fiasco, you are emphasizing that it fails completely.
@@ -1615,31 +1582,6 @@ admitted the computer was named after his daughter.
 | Usage: She was regarded as a bit of an oddity.
 | Usage: She suddenly realized the oddity of her remark and blushed.
 | 
-| entrepreneur [创业者，企业家]
-| Definition: a person who organizes and operates a business or businesses, taking on greater than normal financial risks in order to do so. 
-| 
-| game-changer
-| game-changing
-| Definition: an event, idea, or procedure that effects a significant shift in the current manner of doing or thinking about something.
-| Usage: A potential game changer that could revitalize the entire US aerospace industry.
-| 
-| game-over
-| Definition: said when a situation is regarded as hopeless or irreversible.
-| Usage: It’ll be game-over for all other heavy-lift rockets.
-| 
-| reserve
-| Definition: In sports, a reserve is someone who is available to play as part of a team if one of the members is ill or cannot play.
-| Synonyms: substitude [替补]
-| Usage: He ended up as a reserve, but still qualified for a team gold medal.
-| Definition: If someone shows reserve, they keep their feeling hidden.
-| Usage: I do hope you’ll overcome your reserve and let me know. [矜持]
-| Definition: If you have something in reserve, you have it available for use when it is needed.
-| Usage: He poked around the top of his cupboard for the bottle of whisky that he kept in reserve.
-| [我有斗酒，藏之久矣，以待子不时之需]
-| Definition: refrain from delivering (a judgment or decision) immediately or without due consideration or evidence.
-| Usage: I'll reserve my views on his ability until he's played again. [对 xx 持保留意见]
-| Definition: If you reserver the charges you make a phone call, the person you are phoning pay the cost.
-| 
 | punctuation
 | Definition: punctuation is the use of symbols such as full stops or periods, commas, or question marks to divide written words into sentences and clauses.
 | Usage: He was known for his poor grammer and punctuation.
@@ -1752,11 +1694,6 @@ admitted the computer was named after his daughter.
 | pedantic
 | Definition: too worried about small details or rules. 
 | Usage: Many of the essays are long, dense, and too pedantic to hold great appeal.
-| 
-| bellwether [领头羊]
-| Definition: the leading sheep of a flock, with a bell on its neck.
-| Definition: an indicator or predicator of something.
-| eg: University campuses are often the bellwether of change.
 | 
 | continue
 | continuation

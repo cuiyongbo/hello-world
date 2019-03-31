@@ -333,17 +333,6 @@ English Note 10
 | Definition: impose on (someone) an excessive burden of work or commitments.
 | Usage: he should not overextend himself on the mortgage.
 | 
-| pirated version [盗版]
-|
-| shelf
-| Usage: The book I wanted was on the top shelf. 
-| Phrase: off the shelf
-| Definition: that can be bought immediately and does not have to be specially designed or ordered
-| Usage: : I bought this package off the shelf. [现货]
-| Phrase: on the shelf [束之高阁]
-| Definition: (of people or things) no longer useful or desirable.
-| Usage: an injury that has kept him on the shelf.
-| 
 | resuscitate
 | resuscitation
 | Definition: revive (someone) from unconsciousness or apparent death.

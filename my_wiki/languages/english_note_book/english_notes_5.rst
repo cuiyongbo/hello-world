@@ -413,9 +413,6 @@ English Note 5
 | Definition: (formal) to drop your moral standards far enough to do sth bad or unpleasant [卑鄙(或堕落)到…地步]
 | Usage: She was unwilling to believe anyone would stoop so low as to steal a ring from a dead woman's finger. 
 | 
-| swain [情郎]
-| Definition: a young man who is in love.
-| 
 | coil
 | Definition: a length of something wound or arranged in a spiral or sequence of rings.
 | Usage: a coil of rope.
@@ -461,10 +458,6 @@ English Note 5
 | Definition: cover up one's face or keep out of sight, especially from shame.
 | Phrase: hide one's light under a bushel
 | Definition: keep quiet about one's talents or accomplishments.
-|
-| ballpark
-| Definition: (of prices or costs) approximate; rough.
-| Usage: The ballpark figure is $400-500.
 |
 | demographic
 | Definition: relating to the structure of populations.

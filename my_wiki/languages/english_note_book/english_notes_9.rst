@@ -262,7 +262,7 @@ English Note 9
 | Usage: classified information on nuclear experiments.
 | Usage: government officials classified 6.3 million documents in 1992.
 | 
-| self-describing self-explanatory
+| self-describing VS self-explanatory
 | 
 | ironclad
 | Definition: covered or protected with iron.
@@ -281,21 +281,30 @@ English Note 9
 | Definition: An action or event serving as an introduction to something more important.
 | Usage: Education cannot simply be a prelude to a career.
 | 
-| take stock
+| stock
+| Phrase: take stock
 | Definition: Review or make an overall assessment of a particular situation, typically as prelude to make a decision.
 | Usage: He needed a period of peace and quiet in order to take stock of his life.
-| 
-| put stock in
+| Phrase: put stock in
 | Definition: [often with negative] have a specific amount of belief or faith in.
 | Usage: I don’t put much stock in traditional Chinese medicine.
-| 
-| in (or out of) stock
+| Phrase: in (or out of) stock
 | Definition: (of goods) available (or unavailable) for immediate sale in store.
-| Usage: The new Iphone8 is out of stock at the present.
-| 
-| on the stocks
+| Usage: The new Iphone8 is out of stock at the present. [脱销，售罄]
+| Phrase: on the stocks
 | Definition: in construction or preparation.
 | Usage: Also on the stocks is a bill to bring about tax relief for these business. 
+| 
+| pirated version [盗版]
+|
+| shelf
+| Usage: The book I wanted was on the top shelf. 
+| Phrase: off the shelf
+| Definition: that can be bought immediately and does not have to be specially designed or ordered
+| Usage: : I bought this package off the shelf. [现货]
+| Phrase: on the shelf [束之高阁]
+| Definition: (of people or things) no longer useful or desirable.
+| Usage: an injury that has kept him on the shelf.
 | 
 | provenance
 | Definition: the place of origin or earliest known history of something.
@@ -335,7 +344,14 @@ English Note 9
 | 
 | drastic
 | Definition: likely to have a strong or far-reaching effect; radical and extreme.
-| Usage: a drastic reduction of staffing levels.
+| Usage: Things have started to go drastically wrong. 
+| Usage: The government is threatening to take drastic action.
+| 
+| play hardball [采取强硬手段]
+| Definition: To be ruthless, aggressive, or harsh (with one) in order to achieve a certain result, especially compared to previous, less aggressive tactics. 
+| Usage: I think it's time we play hardball with the suspect—he's not going to talk otherwise. 
+| Definition: The president has decided to play hardball on this issue. 
+| Usage: If he wants to play hardball with us, we can play that way, too. [用强]
 | 
 | paradigm
 | Definition: a typical example or pattern of something; a model.

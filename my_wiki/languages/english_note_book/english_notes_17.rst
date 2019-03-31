@@ -55,12 +55,6 @@ English Note 17
 | Usage: the mayor and the City Council have blundered in an ill-advised campaign.
 | Usage: we were blundering around in the darkness.
 | 
-| play hardball [采取强硬手段]
-| Definition: To be ruthless, aggressive, or harsh (with one) in order to achieve a certain result, especially compared to previous, less aggressive tactics. 
-| Usage: I think it's time we play hardball with the suspect—he's not going to talk otherwise. 
-| Definition: The president has decided to play hardball on this issue. 
-| Usage: If he wants to play hardball with us, we can play that way, too. [用强]
-| 
 | beneficiay [受益人]
 | Definition: a person who derives advantage from something, especially a trust, will, or life insurance policy.
 | 
@@ -91,3 +85,41 @@ English Note 17
 | practitioner
 | Definition: a person actively engaged in an art, discipline, or profession, especially medicine.
 | Usage: patients are treated by skilled practitioners.
+| 
+| onerous
+| Definition: troublesome or oppressive
+| Synonyms: burdensome, taxing.
+| Usage: Preparing income tax returns is an onerous task, and many people resort to hiring professional accountants during tax season.
+| Usage: This shouldn't be too taxing for you. 
+| 
+| ensemble
+| Definition: a group of musicians, actors, or dancers who perform together.
+| Usage: a Bulgarian folk ensemble. [乐团]
+| Definition: a group of items viewed as a whole rather than individually.
+| Usage: the buildings in the square present a charming provincial ensemble.
+| 
+| bootstrap
+| Definition: a loop at the back of a boot, used to pull it on.
+| Definition: a technique of loading a program into a computer by means of a few initial instructions that enable the introduction of the rest of the program from an input device.
+| Definition: get (oneself or something) into or out of a situation using existing resources.
+| Usage: the company is bootstrapping itself out of a marred financial past.
+| Definition: start up (an enterprise), especially one based on the Internet, with minimal resources.
+| Usage: they are bootstrapping their stations themselves, not with lots of dot-com venture capital.
+| Idiom: pull oneself up by one’s (own) bootstraps [自力更生]
+| Definition: improve one's position by one's own efforts.
+| 
+| stratify
+| Definition: form or arrange into strata.
+| Usage: the residues have begun to stratify.
+| 
+| stratum
+| Plural: strata.
+| Definition: a layer or a series of layers of rock in the ground.
+| Definition: a level or class to which people are assigned according to their social status, education, or income.
+| Usage: members of other social strata.
+
+quartile
+Definition: each of four equal groups into which a population can be divided according to the distribution of values of a particular variable.
+Definition: each of the three values of the random variable that divide a population into four groups.
+
+
