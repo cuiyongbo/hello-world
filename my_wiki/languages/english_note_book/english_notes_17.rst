@@ -117,9 +117,9 @@ English Note 17
 | Definition: a layer or a series of layers of rock in the ground.
 | Definition: a level or class to which people are assigned according to their social status, education, or income.
 | Usage: members of other social strata.
-
-quartile
-Definition: each of four equal groups into which a population can be divided according to the distribution of values of a particular variable.
-Definition: each of the three values of the random variable that divide a population into four groups.
+| 
+| quartile
+| Definition: each of four equal groups into which a population can be divided according to the distribution of values of a particular variable.
+| Definition: each of the three values of the random variable that divide a population into four groups.
 
 
