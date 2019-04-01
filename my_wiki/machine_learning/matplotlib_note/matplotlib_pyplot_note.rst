@@ -20,6 +20,8 @@ Matplotlib Pyplot Note
     # plt.legend()
     # plt.xlabel(label)
     # plt.ylabel(label)
+    # plt.xscale()
+    # plt.yscale()
     # plt.annotate()
     # plt.grid(bool)
 
