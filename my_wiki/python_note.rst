@@ -25,7 +25,7 @@ Python note
     python/re_module_doc
     python/python_time_module_note
     python/struct_module_doc
-    python/unittest_module_note
+    python/python_unittest_note
     python/python_os_module_note
     python/python_sys_module_note
     python/random_module_note

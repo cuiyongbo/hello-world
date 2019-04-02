@@ -93,7 +93,7 @@ It makes sense that a data format that is interchangeable with programming langu
 .. image:: images/json_number.gif
 
 
-#. Python JSONEncoder 
+#. Python type VS JSON type conversion table 
 
    +-------------------+---------------+
    | Python            | JSON          |
@@ -121,3 +121,20 @@ It makes sense that a data format that is interchangeable with programming langu
          '/usr/lib/python2.7/json/__init__.pyc'
 
 
+#. python `json` api
+   
+   .. function:: json.dump(obj, fp, **options)
+
+      Serialize `obj` as a JSON formatted stream to `fp`.
+
+   .. function:: json.dumps(obj, **options)
+
+      Serialize `obj` to a JSON formatted string. 
+
+   .. function:: json.load(fp[, *options])
+
+      Deserialize `fp` (a .read()-supporting file-like object containing a JSON document) to a Python object.
+
+   .. function:: json.loads(s[, *options])
+
+      Deserialize `s` (a str or unicode instance containing a JSON document) to a Python object.

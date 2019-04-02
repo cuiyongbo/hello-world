@@ -403,11 +403,6 @@ name, also known as surname, with most family members.
 | Definition: If a number of similar things are for sale at a certain price apiece, that is the price for each one of them.
 | Usage: Entire roast chickens were 60 cents apiece.
 | 
-| Predicament
-| Definition: If you are in a predicament, you are in an unplesant situation that is difficult to get out of.
-| Synonyms: dilemma
-| Usage: The decision will leave her in a peculiar predicament.
-| 
 | clunky
 | Definition: If you describe something as clunky, you mean that it is solid, heavy, rather awkward.
 | Usage: A clunky piece of architecture.

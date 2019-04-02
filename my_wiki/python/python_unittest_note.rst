@@ -101,6 +101,10 @@ lines may be replaced with::
          suite.addTest(Test("test_dynamic_adjustment_no_better_route"))
          suite.addTest(Test("test_dynamic_adjustment_new_better_route"))
          result = unittest.TextTestRunner(verbosity=2).run(suite)
+
+         suite = unittest.TestSuite()
+         suite.addTest(RoutingServerTest("test_enroute_adas"))
+         unittest.TextTestRunner(verbosity=2).run(suite)
    
    #. run all tests from a test suite
       

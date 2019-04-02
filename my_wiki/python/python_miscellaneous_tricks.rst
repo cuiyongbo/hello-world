@@ -151,7 +151,6 @@ Python Miscellaneous Usages
       >>> print '\u5f53\u524d\u9053\u8def\u56e0\u9053\u8def\u65bd\u5de5\u7981\u6b62\u901a\u884c'.decode('unicode-escape')
       当前道路因道路施工禁止通行
 
-
 #. Binary to Decimal
 
    .. code-block:: py
@@ -164,7 +163,6 @@ Python Miscellaneous Usages
       ...
       >>> def get_int_little_endian(data):
       ...     return int(data[::-1].encode('hex'), 16)
-
 
 #. Save Chinese characters to file
 
@@ -235,5 +233,3 @@ Python Miscellaneous Usages
              return getattr(self.stream, attr)
 
       sys.stdout = Unbuffered(sys.stdout)
-
-

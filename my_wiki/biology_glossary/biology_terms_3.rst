@@ -154,6 +154,10 @@ Wild Lives 03
 
     Polar bear [北极熊]
 
+.. figure:: images/ursus_arctos.jpg
+
+    Ursus Arctos [棕熊]
+
 .. figure:: images/wombat.jpg
 
     Wombat [袋熊]
