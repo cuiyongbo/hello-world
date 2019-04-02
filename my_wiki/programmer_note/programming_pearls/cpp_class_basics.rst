@@ -170,7 +170,7 @@ C++ Class Basics
       
 #. friend class
 
-    Friendship is neither inherited nor transtiive. For example::
+    Friendship is neither inherited nor transitive. For example::
 
         class A
         {
