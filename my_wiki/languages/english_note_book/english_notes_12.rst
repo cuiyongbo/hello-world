@@ -221,7 +221,7 @@ English Note 12
 | close-fisted: unwilling to spend money.
 | 
 | parsimony
-| Definition: extreme unwillingness to spend money or use resources:.
+| Definition: extreme unwillingness to spend money or use resources.
 | Usage: a great tradition of public design has been shattered by government parsimony.
 | 
 | deprave

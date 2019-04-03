@@ -100,6 +100,8 @@ model capacity VS mode complexity
 
 represent capacity VS effective capacity
 
+Bayes error
+
 :abbr:`lerp (Linear intERPolation)`
 
 posterior distribution VS prior distribution

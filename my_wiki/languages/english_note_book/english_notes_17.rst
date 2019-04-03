@@ -121,5 +121,10 @@ English Note 17
 | quartile
 | Definition: each of four equal groups into which a population can be divided according to the distribution of values of a particular variable.
 | Definition: each of the three values of the random variable that divide a population into four groups.
-
+| 
+| underlie
+| Definition: (especially of a layer of rock or soil) lie or be situated under (something).
+| Usage: the fundamental issue that underlies the conflict.
+| Usage: It is a principle that underlies all the party's policies. 
+| Usage: the underlying causes of poverty and drug addiction.
 
