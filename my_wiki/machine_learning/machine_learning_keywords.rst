@@ -134,13 +134,15 @@ hill climbing
 
 Jacobian matrix VS Hessian matrix
 
-Tayler Series
+Tayler Series VS Newton's method
 
 sencond derivative test
 
 condition number
 
-Newton's method
+objective function, criterion
+
+cost function, loss function, error function
 
 first-order optimization algorithms VS second-order optimization algorithms
 
