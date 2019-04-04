@@ -266,7 +266,24 @@ English Note 6
 | Definition: excessively grand or ambitious.
 | Usage: grandiose plans to reform the world. [华而不实]
 | 
-| catch short
+| fiasco
+| Definition: a thing that is a complete failure, especially in a ludicrous or humiliating way.
+| Usage: His plans turned into a fiasco.
+| 
+| flop
+| Definition: to be completely unsuccessful.
+| Usage: The film flopped badly at the box office. [票房惨淡，跳票]
+| 
+| tank
+| Definition: fail completely, especially at great financial cost.
+| Usage: The company's shares tanked on Wall Street. 
+| Definition: to lose a game, especially deliberately.
+| Usage: She was accused of tanking the match. [踢假球]
+|
+| catch
+| Definition: a hidden problem or disadvantage in an apparently ideal situation.
+| Usage: there's a catch in it somewhere.
+| Phrase: catch short
 | Definition: Found to be lacking something one needs, especially money.
 | Usage: I'm caught a little short. Can I borrow a few bucks? [手头紧]
 | Definition: Pregnant when one is not married. [未婚先育] 

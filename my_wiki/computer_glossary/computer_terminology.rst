@@ -7,14 +7,11 @@ Computer Terminology
 | two’s complement [二进制补码]
 | backward compatibility [向下兼容]
 | regression test [回归测试]
-| compile time
-| run-time
 | predecessor [前驱]
 | successor  [后继]
 | spam email [垃圾邮件]
 | implementation-dependent
 | ELF = Executable and Linking Format
-|
 | PEP -- python enhancement proposal
 | DoS  -- Denial-of-Service
 | DDoS -- Distributed Denial-of-Service
@@ -43,6 +40,9 @@ Computer Terminology
 | SCM = Source Code Management
 | RAII = Resource Acquisition Is Initialization
 | ISP = Internet Service Provider
+| Interpreter VS compiler
+|
+| Techno-weenie: An ineffectual or insignificant computer nerd.
 |
 | divide-and-rule / divide-and-conquer [分而治之]
 | Definition: the policy of maintaining control over one's subordinates or subjects by encouraging dissent between them.

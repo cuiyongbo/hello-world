@@ -127,4 +127,25 @@ English Note 17
 | Usage: the fundamental issue that underlies the conflict.
 | Usage: It is a principle that underlies all the party's policies. 
 | Usage: the underlying causes of poverty and drug addiction.
-
+| 
+| wholesale
+| Definition: on a large scale.
+| Definition: sell (goods) in large quantities at low prices to be retailed by others.
+| Usage: the safety clauses seem to have been taken wholesale from union documents.
+| Usage: the wholesale destruction of the natural order.
+| Usage: wholesale prices. [批发价]
+| 
+| dog food
+| Definition: 
+| Phrase: eat one's own dog food
+| Definition: use a product or service developed by that company so as to test it before it is made available to customers. [内部试用]
+| Usage: we had to eat our own dog food—we had to make sure the tools worked.
+| Usage: it was a great opportunity to dogfood the phones.
+| Usage: If you're writing software intended for other developers then dogfooding makes perfect sense.
+| 
+| henchman [心腹，亲信]
+| Definition: a faithful follower or political supporter, especially one prepared to engage in crime or dishonest practices by way of service.
+| 
+| wacko or whacko
+| Definition: mad; insane.
+| Usage: his willingness to pursue every wacko idea that enters his mind.
