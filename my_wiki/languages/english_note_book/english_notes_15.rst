@@ -130,11 +130,6 @@ English Note 15
 | Definition: (of land or soil) too poor in quality to produce crops. [贫瘠]
 | Definition: free from bacteria or other living microorganisms; totally clean. [无菌]
 | 
-| throwaway
-| Definition: (of a remark) you say quickly without careful thought, sometimes in order to be funny.
-| Usage: She was very upset at what to him was just a throwaway remark. [开玩笑的，随口说的]
-| Definition: (of goods, etc.) produced cheaply and intended to be thrown away after use. [一次性的]
-| 
 | obfuscate
 | obfuscation [搪塞]
 | Definition: the action making something obscure, unclear, or unintelligible.

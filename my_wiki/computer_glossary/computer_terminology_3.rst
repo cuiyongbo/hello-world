@@ -20,7 +20,6 @@ Computer Terminology 3
 
     .. image:: images/brute-force-attack.jpg
 
-   
 #. Memory barrier
    
     A memory barrier, also known as a membar, memory fence or fence instruction, 
@@ -61,3 +60,12 @@ Computer Terminology 3
     In digital circuits, one-hot refers to a group of bits among which the legal combinations of values 
     are only those with a single high (1) bit and all the others low (0). A similar implementation in 
     which all bits are '1' except one '0' is sometimes called one-cold.
+
+#. Serialization
+   
+    In computer science, in the context of data storage, serialization is the process of translating data 
+    structures or object state into a format that can be stored (for example, in a file or memory buffer, 
+    or transmitted across a network connection link) and reconstructed later in the same or another computer environment.
+
+    This process of serializing an object is also called *marshalling* an object. The opposite operation, 
+    extracting a data structure from a series of bytes, is *deserialization* (also called *unmarshalling*).

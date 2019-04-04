@@ -340,6 +340,11 @@ English Note 14
 | Definition: (of a response) automatic and unthinking.
 | Usage: It was a knee-jerk action on her part.
 | 
+| throwaway
+| Definition: (of a remark) you say quickly without careful thought, sometimes in order to be funny.
+| Usage: She was very upset at what to him was just a throwaway remark. [开玩笑的，随口说的]
+| Definition: (of goods, etc.) produced cheaply and intended to be thrown away after use. [一次性的]
+| 
 | exasperation
 | Definition: a feeling of intense irritation or annoyance.
 | Usage: she rolled her eyes in exasperation.
