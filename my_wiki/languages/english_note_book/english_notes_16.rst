@@ -301,7 +301,13 @@ English Note 16
 | Phrase: pay one's way
 | Definition: to pay for oneself or another person; to contribute one's or someone else's portion of the cost.
 | Usage: I appreciate the offer, but I can pay my way!
-
+| 
+| buzzword [(报刊等的)时髦术语,流行行话]
+| Definition: a word or phrase, often an item of jargon, that is fashionable at a particular time or in a particular context.
+| 
+| red herring
+| Definition: something, especially a clue, that is or is intended to be misleading or distracting.
+| Usage: the book is fast-paced, exciting, and full of red herrings.
 
 .. figure:: images/circular_agriculture_fields.jpg
 
@@ -315,3 +321,12 @@ English Note 16
 .. figure:: images/water_wheel.jpg
 
     Water wheel [水车]
+
+#. Pointy-haired boss
+   
+    The Pointy-haired Boss is Dilbert's boss in the Dilbert comic strip. 
+    He is notable for his micromanagement, gross incompetence, obliviousness 
+    to his surroundings, and unhelpful buzzword usage; yet somehow retains 
+    power in the workplace. 
+
+    .. image:: images/Pointy-Haired_Boss.jpg

@@ -486,7 +486,8 @@ English Note 5
 
     Claymore [西洋剑]
 
-| Taekwondo 跆拳道
+| taekwondo 跆拳道
 | karate 空手道
+| aikido  合气道
 | judo 柔道
 | sumo 相扑

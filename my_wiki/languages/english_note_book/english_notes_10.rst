@@ -284,15 +284,29 @@ English Note 10
 | Usage: some highly imaginative tax shelters [避税天堂] dreamed up by the accounting alchemists.
 | 
 | dispense
+| dispenser
 | Definition: distribute or provide (a service or information) to a number of people.
 | Usage: he dispensed a gentle pat on Claude's back.
 | Definition: (of a machine) supply (a product or cash).
-| Usage: the machines dispense a range of drinks and snacks.
+| Usage: the machines dispense a range of drinks and snacks. [自动贩卖机]
+| Usage: water dispenser. [饮水机]
 | Definition: (of a pharmacist) make up and give out (medicine) according to a doctor's prescription. [按处方配药]
 | Definition: (dispense with) manage without; get rid of.
 | Usage: let's dispense with the formalities, shall we? [免去客套]
 | Phrase: dispense with someone's services
 | Definition: dismiss someone from a job.
+| 
+| water cooler conversation
+| Definition: indicating the kind of informal conversation among office staff that takes place at such a dispenser
+| Usage: water-cooler conversations.
+| 
+| lunch
+| Usage: public relations people lunch their clients there.
+| Phrase: do lunch
+| Definition: informal, chiefly North American meet for lunch.
+| Phrase: out to lunch
+| Definition: unaware of or inattentive to present conditions.
+| Phrase: there's no such thing as a free lunch / there is no free lunch.
 | 
 | acyclic
 | Definition: not displaying or forming part of a cycle.

@@ -108,9 +108,6 @@ name, also known as surname, with most family members.
 | Definition: words or expressions that are used by a particular profession or group of people, and are difficult for others to understand.
 | Usage: Try to avoid using too much technical jargon.
 | 
-| buzzword [(报刊等的)时髦术语,流行行话]
-| Definition: a word or phrase, especially one connected with a particular subject that has become fashionable and popular and is used a lot in newspaper, etc.
-| 
 | abyssal
 | Definition: (adjective) Of or relating to the great depths of the oceans.
 | Synonyms: abysmal, unfathomable

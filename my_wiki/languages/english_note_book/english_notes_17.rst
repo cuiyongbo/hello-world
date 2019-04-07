@@ -149,3 +149,25 @@ English Note 17
 | wacko or whacko
 | Definition: mad; insane.
 | Usage: his willingness to pursue every wacko idea that enters his mind.
+| 
+| continuum
+| Plural: continua.
+| Definition: a continuous sequence in which adjacent elements are not perceptibly different from each other, although the extremes are quite distinct.
+| Usage: a space-time continuum. [四次元]
+| Usage: It is impossible to say at what point along the continuum a dialect becomes a separate language. 
+| 
+| gibberish
+| Definition: unintelligible or meaningless speech or writing; nonsense.
+| Usage: he talks gibberish.
+| Usage: You were talking gibberish in your sleep. [梦呓，说梦话]
+| 
+| entrench
+| Definition: establish (an attitude, habit, or belief) so firmly that change is very difficult or unlikely.
+| Usage: ageism is entrenched in our society.
+| Usage: establish (a person or their authority) in a position of great strength or security.
+| Usage: by 1947 de Gaulle's political opponents were firmly entrenched in power.
+| 
+| ageism
+| ageist
+| Definition: prejudice or discrimination on the basis of a person's age.
+| Usage: a lot of ageist jokes about not being able to use technology.

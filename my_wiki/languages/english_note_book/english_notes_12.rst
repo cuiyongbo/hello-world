@@ -87,14 +87,6 @@ English Note 12
 | Usage: You shouldn't gossip about people behind their backs.
 | Usage: She went behind his back and spoke directly to his supervisor.
 | 
-| lunch
-| Usage: public relations people lunch their clients there.
-| Phrase: do lunch
-| Definition: informal, chiefly North American meet for lunch.
-| Phrase: out to lunch
-| Definition: unaware of or inattentive to present conditions.
-| Phrase: there's no such thing as a free lunch / there is no free lunch.
-| 
 | par
 | Defintion: (Golf) the number of strkes a first-class player should normally require for a hole or course.
 | 

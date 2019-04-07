@@ -441,6 +441,18 @@ English Note 7
 | erudition
 | Definition: great academic knowledge.
 | 
+| whiz
+| Definition: move quickly through the air with a whistling or whooshing sound.
+| Usage: missiles whizzed past.
+| Usage: the weeks whizzed by.
+| Definition: (whiz through) do or deal with quickly.
+| Usage: Audrey would whiz through a few chores in the shop.
+| Definition: (also wiz) informal a person who is extremely clever at something.
+| Synonyms: prodigy.
+| Usage: a computer whiz.
+| Usage: a Russian pianist who was a child prodigy in his day.
+| Usage: Germany seemed a prodigy of industrial discipline.
+| 
 | polymath
 | polymathic 
 | Definition: a person of wide-ranging knowledge or learning.

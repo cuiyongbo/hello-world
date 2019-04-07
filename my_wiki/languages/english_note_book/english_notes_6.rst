@@ -331,6 +331,10 @@ English Note 6
 
     Android: (in science fiction) a robot with a human appearance.
 
+.. figure:: images/pepper.jpg
+
+    National Robotic Week
+
 #. :abbr:`MWC (Mobile World Congress)`: Why do smartphones look so alike?
 
     The reaction from many rivals, including Huawei, HTC, and LG, appears to have been to 
