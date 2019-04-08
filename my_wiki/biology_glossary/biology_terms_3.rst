@@ -194,6 +194,7 @@ Wild Lives 03
 .. image:: images/lion.jpg
 .. image:: images/feathers.jpg
 .. image:: images/plume_types.jpg
+.. image:: images/beaver.jpg
 
 #. Ontogeny
    
