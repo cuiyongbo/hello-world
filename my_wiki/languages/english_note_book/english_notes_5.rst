@@ -150,6 +150,10 @@ English Note 5
 .. figure:: images/aluminum-scoop.jpg
 
     Scoop
+
+.. figure:: images/bunch-of-broccoli.jpg
+
+   Broccoli [西兰花]
    
 .. figure:: images/escargot.jpg
    

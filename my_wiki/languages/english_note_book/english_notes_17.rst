@@ -171,3 +171,18 @@ English Note 17
 | ageist
 | Definition: prejudice or discrimination on the basis of a person's age.
 | Usage: a lot of ageist jokes about not being able to use technology.
+| 
+| recipient
+| Definition: a person or thing that receives or is awarded something.
+| Usage: the recipient of the Nobel Peace Prize.
+| 
+| credulous [轻信]
+| Definition: having or showing too great a readiness to believe things.
+| Usage: a ceremony staged for credulous tourists.
+| 
+| gall
+| Definition: bold and impudent behavior.
+| Usage: the bank had the gall to demand a fee.
+| Definition: the contents of the gallbladder; bile (proverbial for its bitterness). [胆汁]
+| Definition: used to refer to something bitter or cruel. 
+| Usage: accept life's gall without blaming somebody else.

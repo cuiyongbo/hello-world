@@ -192,6 +192,7 @@ Wild Lives 03
     Tadpole [蝌蚪]
 
 .. image:: images/lion.jpg
+.. image:: images/lion_cubs.jpg
 .. image:: images/feathers.jpg
 .. image:: images/plume_types.jpg
 .. image:: images/beaver.jpg
