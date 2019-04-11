@@ -95,7 +95,7 @@ numpy Function Note 02
         array([ 0.1,  0.1,  0.1,  0.1,  0.1,  0.1])
 
 .. function:: numpy.empty_like(prototype, dtype=None, order='K', subok=True)
-.. function:: numpy.ones_like(a, dtype=None, order='K', subok=True)
+.. function:: numpy.zeros_like(a, dtype=None, order='K', subok=True)
 .. function:: numpy.ones_like(a, dtype=None, order='K', subok=True)
 
     Ditto.

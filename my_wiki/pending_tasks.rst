@@ -23,7 +23,6 @@ Pending tasks
 #. matplotlib to draw the cover of murphy's machine learning
 #. review Unix process and thread facilities
 #. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
-#. 人间四月芳菲尽   
 
 2019 Targets
 ============

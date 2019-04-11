@@ -84,6 +84,8 @@ eigendecomposition eigenvector eigenvalue
 
 :abbr:`PCA (Principal Components Analysis)`
 
+:abbr:`NMF (Non-negative Matrix Factorization)`
+
 Frequentist Probability  Bayesian Probability 
 
 Conditional Probability  Intervention query

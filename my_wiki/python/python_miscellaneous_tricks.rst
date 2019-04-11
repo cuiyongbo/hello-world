@@ -207,6 +207,8 @@ Python Miscellaneous Usages
       >>> ll
       [1, 2, 3, 4, 5, 21]
 
+      # use numpy.unique
+
 #. Force stdout to be unbuffered
    
    .. code-block:: py
