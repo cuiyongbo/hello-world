@@ -186,3 +186,8 @@ English Note 17
 | Definition: the contents of the gallbladder; bile (proverbial for its bitterness). [胆汁]
 | Definition: used to refer to something bitter or cruel. 
 | Usage: accept life's gall without blaming somebody else.
+| 
+| backdrop
+| Definition: a painted cloth hung at the back of a theater stage as part of the scenery.
+| Usage: the conference took place against a backdrop of increasing diplomatic activity.
+| Usage: an ornate fountain, and at its center, backdropped with golden spray, a statue of a young girl.
