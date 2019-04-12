@@ -53,6 +53,11 @@ English Note 7
 | Definition: avoiding the company of other people; solitary. [孤僻，与世隔绝]
 | Usage: a reclusive life in rural Ireland. 
 | 
+| ostracize
+| ostracism
+| Definition: exclusion from a society or group.
+| Usage: the family suffered social ostracism.
+| 
 | recluse [隐士]
 | Synonyms: hermit.
 | Definition: a person who lives a solitary life and tends to avoid other people.

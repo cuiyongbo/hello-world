@@ -196,3 +196,12 @@ English Note 17
 | glyphic
 | Definition: a symbol carved out of stone, especially six from an ancient writing system. [象形文字]
 | Definition: (Computing) a small graphic symbol.
+| 
+| gratify
+| gratification
+| Usage: a thirst for sexual gratification.
+| Usage: not all the sexual impulses can be gratified.
+| 
+| have a nose for (something)
+| Definition: To have an intuitive ability to detect or excel at something. 
+| Usage: He has a nose for determining which way the stock market is going to shift.
