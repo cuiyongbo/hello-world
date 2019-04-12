@@ -12,6 +12,8 @@ supervised learning: regression, classification
 
 unsupervised learning: transformations of datasets, clustering
 
+K-means clustering vector quantization
+
 :abbr:`SGD (stochastic gradient descent)`
 
 Regression: In this type of task, the computer program is asked to predict a

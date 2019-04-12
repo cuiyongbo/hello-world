@@ -79,6 +79,3 @@ Machine learning concepts
     during their lifetimes, while neural networks allow agents to learn only during 
     their lifetimes. Reinforcement learning allows agents to learn during their lifetimes 
     and share knowledge with other agents.
-   
-
-

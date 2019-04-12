@@ -191,3 +191,8 @@ English Note 17
 | Definition: a painted cloth hung at the back of a theater stage as part of the scenery.
 | Usage: the conference took place against a backdrop of increasing diplomatic activity.
 | Usage: an ornate fountain, and at its center, backdropped with golden spray, a statue of a young girl.
+| 
+| glyph
+| glyphic
+| Definition: a symbol carved out of stone, especially six from an ancient writing system. [象形文字]
+| Definition: (Computing) a small graphic symbol.

@@ -363,7 +363,6 @@ English Note 14
 
     Winnie the Pooh [小熊维尼]
 
-.. image:: images/hunter.jpg
+.. image:: images/hunters.jpg
 .. image:: images/isis_temple_grand_canyon.jpg
 .. image:: images/hongkong_zhuhai_macau_bridge.jpg
-.. image:: images/bioluminescent_algae_along_shores.jpg

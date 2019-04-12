@@ -483,6 +483,10 @@ Military Terms
 | Definition: to kill all the members of a group of people or animals.
 | Usage: they use poison to exterminate moles.
 | 
+| ground troops [地面部队]
+| Definition: soldiers deployed on land rather than in the air or at sea.
+| Usage: simultaneous aerial attacks come as ground troops are carrying out a pincer movement.
+| 
 | squadron
 | Definition: a group of military aircraft or ships forming a section of a military force.
 | usage: A bomber / flighter squadron. [轰炸机／战斗机中队]
