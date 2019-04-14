@@ -213,6 +213,10 @@ Nature Lifes
    are given a taxonomic rank; groups of a given rank can be aggregated 
    to form a super group of higher rank, thus creating a taxonomic hierarchy.
 
+   .. figure:: images/dendrogram_fig.png
+
+      Dendrogram: a tree diagram, especially one showing taxonomic relationships.
+
 #. Biosimilar 
    
    Biosimilars also known as follow-on biologics are biologic medical products 

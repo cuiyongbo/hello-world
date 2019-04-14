@@ -246,6 +246,13 @@ English Note 13
 | Idiom: the spirit is willing but the flesh is weak [心有余而力不足，力不从心]
 | Definition: sb has good intentions but fails to live up to them.
 | 
+| morale
+| Definition: the confidence, enthusiasm, and discipline of a person or group at a particular time.
+| Usage: Morale amongst the players is very high at the moment. [士气高昂]
+| Usage: Staff are suffering from low morale. [士气低落]
+| Usage: the first Test win was a real morale booster.
+| Usage: this is just what the players needed for morale-boosting.
+| 
 | advent
 | Definition: the arrival of a notable person, thing, or event.
 | Usage: The advent of television.

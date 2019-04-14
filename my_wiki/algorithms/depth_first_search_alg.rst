@@ -27,3 +27,7 @@ Depth-first Search Algorithm
         time = time + 1
         u.f = time # finishing time
 
+    TOPOLOGICAL-SORT(G)
+        call DFS(G) to compute finishing times f for each vertex
+        as each vertex is finished, insert it onto the front of a linked list
+        return the linked list of vertices

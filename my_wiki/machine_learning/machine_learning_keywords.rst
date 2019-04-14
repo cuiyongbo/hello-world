@@ -2,6 +2,8 @@
 Machine Learning Keywords
 *************************
 
+浪费机会必定会遭到惩罚。
+
 feature example object recognition face recognition speech recognition
 
 medical diagnosis Google Street View Transcription Machine translation
@@ -12,7 +14,13 @@ supervised learning: regression, classification
 
 unsupervised learning: transformations of datasets, clustering
 
-K-means clustering vector quantization
+K-means clustering, vector quantization
+
+Agglomerative clustering, Hierarchical clustering
+
+:abbr:`DBSCAN (Density- based spatial clustering of applications with noise)`
+
+:abbr:`ARI (Adjusted rand index)`, :abbr:`NMI (Normalized Mutual Information)`
 
 :abbr:`SGD (stochastic gradient descent)`
 
@@ -176,3 +184,4 @@ Generalized Largrangian
 
     \begin{align*}
     &k_\text{rbf}(x_1, x_2) = \exp(\gamma||x_1 - x_2||^2) &\text{ (4) Gaussian kernel}  \end{align*}
+

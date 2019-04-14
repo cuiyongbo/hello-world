@@ -119,3 +119,5 @@ They who cannot do what they would must do as they can.
 Thinking well is wise, planning well wiser, doing well wisest and the best of all.
 
 Tomorrow you thought of comes never.
+
+天予不取，反受其咎。

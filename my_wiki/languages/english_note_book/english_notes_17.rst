@@ -197,6 +197,10 @@ English Note 17
 | Definition: a symbol carved out of stone, especially six from an ancient writing system. [象形文字]
 | Definition: (Computing) a small graphic symbol.
 | 
+| typeface
+| Definition: a set of letters, numbers, etc. of a particular design, used in printing.
+| Usage: I'd like the heading to be in a different typeface from the text. 
+|
 | gratify
 | gratification
 | Usage: a thirst for sexual gratification.
@@ -205,3 +209,25 @@ English Note 17
 | have a nose for (something)
 | Definition: To have an intuitive ability to detect or excel at something. 
 | Usage: He has a nose for determining which way the stock market is going to shift.
+| 
+| short order
+| Definition: an order or dish of food that can be quickly prepared and served.
+| Usage: a short order of souvlaki.
+| Usage: I'm a short-order cook.
+| 
+| in short order
+| Definition: immediately; rapidly.
+| 
+| replenish
+| Definition: fill (something) up again.
+| Usage: He replenish Tom's class with spirits. [倒酒]
+| Usage: all creatures need sleep to replenish their energies.
+| 
+| arcn [青少年时期的粉刺]
+| Definition: she used to suffer from acne.
+| 
+| ergonomic
+| ergonomics
+| Definition: the study of people's efficiency in their working environment.
+| Usage: ergonomic keyboard design. [人体工程学键盘]
+
