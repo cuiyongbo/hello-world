@@ -24,11 +24,15 @@ Agglomerative clustering, Hierarchical clustering
 
 :abbr:`SGD (stochastic gradient descent)`
 
+Linear model, tree-based model, naive Bayes
+
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
 is asked to output a function :math:`f : \mathbb{R}^n \rightarrow \mathbb{R}`.
 
-Linear Regression
+Linear Regression, Logistic Regression
+
+:abbr:`RFE (Recursive Feature Elimination)`
 
 :abbr:`MES (mean squared error)`
 
@@ -70,7 +74,7 @@ norm, Euclidean norm, :math:`L^2 norm`
 
 :abbr:`SVM (Support Vector Machine)`
 
-Linear regression VS Ridge Regression VS Logistic regression
+Linear regression, Ridge Regression, Logistic regression
 
 convex optimization
 

@@ -19,3 +19,7 @@ Englis Note 18
 | Usage: She already has a couple of good wins under her belt. 
 | Definition: (of food or drink) consumed. 
 | Usage: Gus already had a large brandy under his belt. [xx下肚]
+| 
+| hacky
+| Definition: (of a piece of computer code) providing a clumsy or inelegant solution to a particular problem.
+| Usage: I realize this is a hacky workaround but I don't have time to investigate a more solid fix.
