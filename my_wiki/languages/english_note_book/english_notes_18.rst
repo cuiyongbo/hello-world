@@ -23,3 +23,9 @@ Englis Note 18
 | hacky
 | Definition: (of a piece of computer code) providing a clumsy or inelegant solution to a particular problem.
 | Usage: I realize this is a hacky workaround but I don't have time to investigate a more solid fix.
+| 
+| weed
+| Definition: remove unwanted plants from (an area of ground or the plants cultivated in it).
+| Usage: I was weeding a flower bed.
+| Definition: remove an inferior or unwanted component of a group or collection.
+| Usage: we must raise the level of research and weed out the poorest work.
