@@ -61,6 +61,7 @@ what is called a reason for living also the excellent one for dying.
 | Definition: last but one in a series of things; second last.
 | Usage: the penultimate chapter of the book.
 | 
+| colloquial [口语，俚语]
 | colloquially
 | Definition: in the language of ordinary or familiar conversation; informally.
 | Usage: the storms hit several states along a corridor colloquially referred to as “tornado alley”

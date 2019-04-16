@@ -26,6 +26,10 @@ Agglomerative clustering, Hierarchical clustering
 
 Linear model, tree-based model, naive Bayes
 
+cross validation, k-fold cross-validation, stratified k-fold cross-validation, leave-one-out crosss-validation
+
+Grid search
+
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
 is asked to output a function :math:`f : \mathbb{R}^n \rightarrow \mathbb{R}`.
@@ -36,7 +40,7 @@ Linear Regression, Logistic Regression
 
 :abbr:`MES (mean squared error)`
 
-test set and training set
+test set, validation set, and training set
 
 accuracy and error rate
 

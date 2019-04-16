@@ -186,9 +186,6 @@ name, also known as surname, with most family members.
 | Definition: (noun)  A sudden strong feeling of excitement or fear; a thrill
 | Usage: A frisson of excitement.
 | 
-| colloquial [口语，俚语]
-| Definition: (adjective) Characteristic of informal spoken language or conversation
-| 
 | chunky
 | Definition: (adjective) Short and thick; stocky
 | Synonyms: low-set, squat, squatty, stumpy, dumpy
