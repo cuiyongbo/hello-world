@@ -30,6 +30,18 @@ cross validation, k-fold cross-validation, stratified k-fold cross-validation, l
 
 Grid search
 
+False positive, False negative, True positive, True negative
+
+imbalanced datasets, confusion matrix
+
+By definition a confusion matrix :math:`C` is such that :math:`C_{i, j}`
+is equal to the number of observations known to be in group :math:`i` but
+predicted to be in group :math:`j`.
+    
+Thus in binary classification, the count of true negatives is
+:math:`C_{0,0}`, false negatives is :math:`C_{1,0}`, true positives is
+:math:`C_{1,1}` and false positives is :math:`C_{0,1}`.
+
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
 is asked to output a function :math:`f : \mathbb{R}^n \rightarrow \mathbb{R}`.
@@ -192,4 +204,36 @@ Generalized Largrangian
 
     \begin{align*}
     &k_\text{rbf}(x_1, x_2) = \exp(\gamma||x_1 - x_2||^2) &\text{ (4) Gaussian kernel}  \end{align*}
+
+Accuracy
+
+.. math::
+
+    \begin{equation}
+    \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}
+    \end{equation}
+
+Precision, :abbr:`PPV (Positive Predicate Value)`
+
+.. math::
+
+    \begin{equation}
+    \text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}} 
+    \end{equation}
+
+Recall, :abbr:`TPR (True Positive Rate)`
+
+.. math::
+
+    \begin{equation}
+    \text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}} 
+    \end{equation}
+
+f-score
+
+.. math::
+
+    \begin{equation}
+    \text{F} = 2 \cdot \frac{\text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}
+    \end{equation}
 

@@ -15,3 +15,14 @@ Python Miscellaneous Tricks 04
    save it as `python3` and choose it as defaul build system.
 
 #.  No `xrange` function in Python3 any more, use `range` instead
+    
+#. sklearn.model_selection.ParameterGrid
+   
+    .. code-block:: py
+
+        >>> from sklearn.model_selection import ParameterGrid
+        >>> param_grid = {'a': [1, 2], 'b': [True, False]}
+        >>> list(ParameterGrid(param_grid)) == (
+        ...    [{'a': 1, 'b': True}, {'a': 1, 'b': False},
+        ...     {'a': 2, 'b': True}, {'a': 2, 'b': False}])
+        True
