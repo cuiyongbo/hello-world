@@ -122,6 +122,7 @@
    空山有雪相待，野路无人自还。
 
 .. image:: images/mountain.jpg 
+.. image:: images/sunlight_shine_on_farm.jpg
 .. image:: images/bioluminescent_algae_along_shores.jpg
 
 .. code-block:: none

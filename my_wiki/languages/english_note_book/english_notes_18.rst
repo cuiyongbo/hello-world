@@ -1,6 +1,6 @@
-**************
-Englis Note 18
-**************
+***************
+English Note 18
+***************
 
 | agglomerate
 | agglomerative
