@@ -29,3 +29,7 @@ English Note 18
 | Usage: I was weeding a flower bed.
 | Definition: remove an inferior or unwanted component of a group or collection.
 | Usage: we must raise the level of research and weed out the poorest work.
+| 
+| stand-in [替身演员]
+| Definition: a person who stands in for another, especially in a performance; a substitute.
+| Usage: his stand-in does all the dancing sequences.

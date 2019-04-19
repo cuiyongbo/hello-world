@@ -25,6 +25,7 @@ Introduction machine learning with python
     - Ch03 Unsupervised Learning Algorithms and Preprocessing (finished, 2019-03-31 - 2019-04-13)
     - Ch04 Summary of scikit-learn methods and usage (finished, 2019-04-13)
     - Ch05 Representing Data and Engineering Features (finished, 2019-04-14 - 2019-04-15)
+    - Ch06 Model evaluation and improvement (finished, 2019-04-15 - 2019-04-18)
 
 Introduction To Algorithm
 =========================

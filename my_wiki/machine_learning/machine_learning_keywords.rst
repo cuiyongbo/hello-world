@@ -56,6 +56,12 @@ test set, validation set, and training set
 
 accuracy and error rate
 
+precision, recall, f-score
+
+operating point, precision-recall curve
+
+:abbr:`ROC (Receiver Operating Characteristics)`, :abbr:`AUC (Area Under Curve)`
+
 scarlar
 
 Vectors: A vector is an array of numbers. The numbers are arranged in

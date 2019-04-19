@@ -157,6 +157,13 @@ Only paranoid can surrive.
 | Usage: his distaste for travel is an endearing quirk.
 | Usage: her sense of humor was decidedly quirky.
 | 
+| kink
+| Definition: a sharp twist or curve in something that is otherwise straight.
+| Usage: a kink in the road.
+| Definition: a flaw or obstacle in a plan, operation, etc.
+| Usage: though the system is making some headway, there are still some kinks to iron out.
+| Definition: a quirk of character or behavior.
+| 
 | ephemeral
 | ephemerality
 | Definition: lasting for a very short time.
