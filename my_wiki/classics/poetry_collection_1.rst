@@ -124,6 +124,8 @@
 .. image:: images/mountain.jpg 
 .. image:: images/sunlight_shine_on_farm.jpg
 .. image:: images/bioluminescent_algae_along_shores.jpg
+.. image:: images/lake_flower.jpg
+.. image:: images/tree_01.jpg
 
 .. code-block:: none
 
