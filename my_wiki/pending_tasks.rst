@@ -28,7 +28,7 @@ Pending tasks
 ============
 
     #. Deep Learning (Part I and Part II)
-    #. Introduction machine learning with python (2019-03-26 -- )
+    #. Introduction machine learning with python (2019-03-26 -- 2019-04-20)
     #. Building machine learning system using python
     #. Hacker and Painters [Finished, 2019-04-13]
     #. A* algorithm [#a_star_algorithm]_ (Finished, 2019-03-10)

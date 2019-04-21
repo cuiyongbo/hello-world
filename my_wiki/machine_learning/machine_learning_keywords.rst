@@ -42,6 +42,8 @@ Thus in binary classification, the count of true negatives is
 :math:`C_{0,0}`, false negatives is :math:`C_{1,0}`, true positives is
 :math:`C_{1,1}` and false positives is :math:`C_{0,1}`.
 
+:abbr:`RNN (Recurrent Neural Networks)`
+
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
 is asked to output a function :math:`f : \mathbb{R}^n \rightarrow \mathbb{R}`.
@@ -61,6 +63,12 @@ precision, recall, f-score
 operating point, precision-recall curve
 
 :abbr:`ROC (Receiver Operating Characteristics)`, :abbr:`AUC (Area Under Curve)`
+
+:abbr:`NLP (Natural Language Processing)`, :abbr:`IR (Information Retrieval)`
+
+corpus, document
+
+Bag of words: Tokenization, Vocabulary building, Encoding 
 
 scarlar
 
@@ -243,3 +251,10 @@ f-score
     \text{F} = 2 \cdot \frac{\text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}
     \end{equation}
 
+:abbr:`TF-IDF (Term Frequency-Inverse Document Frequency)`
+
+.. math::
+
+    \begin{equation*}
+    \text{tfidf}(w, d) = \text{tf} \log\big(\frac{N + 1}{N_w + 1}\big) + 1 
+    \end{equation*}

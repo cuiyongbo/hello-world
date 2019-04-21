@@ -26,6 +26,8 @@ Introduction machine learning with python
     - Ch04 Summary of scikit-learn methods and usage (finished, 2019-04-13)
     - Ch05 Representing Data and Engineering Features (finished, 2019-04-14 - 2019-04-15)
     - Ch06 Model evaluation and improvement (finished, 2019-04-15 - 2019-04-18)
+    - Ch07 Algorithm Chains and Pipelines (finished, 2019-04-19 - 2019-04-20)
+    - Ch08 Working with Text Data (finished, 2019-04-20)
 
 Introduction To Algorithm
 =========================

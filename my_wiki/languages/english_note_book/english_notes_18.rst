@@ -33,3 +33,32 @@ English Note 18
 | stand-in [替身演员]
 | Definition: a person who stands in for another, especially in a performance; a substitute.
 | Usage: his stand-in does all the dancing sequences.
+| 
+| eyeball [眼球]
+| Definition: the number of people who visit a website, watch a TV program, read a publication, etc., especially when regarded as a potential source of revenue.
+| Usage: I think we got a few more eyeballs on the site.
+| Usage: media compete to attract eyeballs.
+| Definition: look or stare at closely.
+| Usage: we eyeballed one another.
+| Phrase: eyeball to eyeball
+| Definition: face to face with someone, especially in an aggressive way.
+| Usage: The protesters and police stood eyeball to eyeball. 
+| Phrase: give someone the hairy eyeball
+| Definition: stare at someone disapprovingly or angrily, especially with one's eyelids partially lowered.
+| Phrase: up to one's eyeballs
+| Definition: used to emphasize the extreme degree of an undesirable situation or condition.
+| Usage: he's up to his eyeballs in debt.
+| Usage: They're up to their eyeballs in work. 
+| 
+| franchise
+| Definition: an authorization granted by a government or company to an individual or group enabling them to carry out specified commercial activities.
+| Usage: In the reorganization, Southern Television lost their franchise.  [特许经营权]
+| Usage: franchised restaurants .
+| Definition: a general title or concept used for creating or marketing a series of products, typically films or television shows.
+| Usage: the Harry Potter franchise.
+| 
+| umbrella
+| Usage: I put up my umbrella. 
+| Definition: a thing that includes or contains many different elements or parts.
+| Usage: an umbrella organization.
+| Usage: 'Contact sports' is an umbrella term for a variety of different sports.
