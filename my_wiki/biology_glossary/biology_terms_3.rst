@@ -65,13 +65,13 @@ Wild Lives 03
 
     Pangolin [穿山甲]
 
-.. figure:: images/pitcher_plant.jpg
-
-    Pitcher plant [猪笼草]
-
 .. figure:: images/sengi.jpg
 
    Sengi [桑吉鼠]
+
+.. figure:: images/brown-cockroach.jpg
+
+   Cockroach [蟑螂] 
 
 .. figure:: images/scorpion.png
 
@@ -177,6 +177,9 @@ Wild Lives 03
 .. image:: images/whales-of-the-world-laura-row.jpg
 .. image:: images/ken-hurd-a-collection-of-whales.jpg
 .. image:: images/fin_whale.jpg
+.. figure:: images/harbor-porpoise.jpg
+
+   Harbor Porpoise
 
 .. image:: images/elephant_herd_in_namibia.jpg
 .. image:: images/leopard_snoozing_in_a_tree.jpg
@@ -196,6 +199,54 @@ Wild Lives 03
 .. image:: images/feathers.jpg
 .. image:: images/plume_types.jpg
 .. image:: images/beaver.jpg
+
+.. figure:: images/elk.jpg
+
+    Elk [麋鹿]
+
+.. image:: images/rabbit_in_the_grass.jpg
+.. figure:: images/hare.jpg
+
+    Hare [野兔]
+
+.. image:: images/laysan_albatross_chick.jpg
+.. figure:: images/Laysan_Albatross.jpg
+
+    Laysan Albatross [信天翁]
+
+.. figure:: images/gull.jpeg
+
+   Gull [海鸥]
+
+.. figure:: images/tuna.jpg
+   
+   Tuan [金枪鱼]
+
+.. figure:: images/bonito.jpeg
+   
+   Bontino
+
+.. figure:: images/skunk.jpg
+
+   Skunk [美洲臭鼬]
+
+.. figure:: images/wolverine-walking.jpg
+
+   Wolverine [狼獾，金刚狼]
+
+.. figure:: images/buffalo.jpg
+
+   Buffalo
+
+.. figure:: images/bison_day.jpg
+
+   Bison day 11-03
+
+.. figure:: images/CommonPipistrelle.jpg
+
+   Pipistrelle bat
+
+   a small insectivorous Old World bat with jerky, erratic flight.
 
 #. Ontogeny
    

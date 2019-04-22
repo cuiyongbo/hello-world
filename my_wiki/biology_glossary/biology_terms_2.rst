@@ -50,26 +50,6 @@ Nature Lifes
 .. image:: images/phorsphorescence_3.jpg
 .. image:: images/phorsphorescence_4.jpg
 
-.. figure:: images/elk.jpg
-
-   Elk [麋鹿]
-
-.. figure:: images/hare.jpg
-
-   Hare [野兔]
-
-.. figure:: images/tuna.jpg
-   
-   Tuan [金枪鱼]
-
-.. figure:: images/bonito.jpeg
-   
-   Bontino
-
-.. figure:: images/harbor-porpoise.jpg
-
-   Harbor Porpoise
-
 +----------------------------------+----------------------------------+
 | .. image:: images/lavender_1.jpg | .. image:: images/lavender_2.jpg |
 +----------------------------------+----------------------------------+
@@ -96,17 +76,6 @@ Nature Lifes
 
    Paramecium [草履虫]
 
-.. figure:: images/giant_sequoia.jpg
-
-   Sequoia [红杉树]
-   
-   Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at, 
-   some trees in the giant sequoia grove had called this home for thousands of years before they were given the 
-   protection of a national park. The Giant Forest in Sequoia National Park is where **General Sherman,** the largest 
-   tree in the world, stands. It is estimated to be 2,300 to 2,700 years old—a silent witness to both natural and human 
-   history. By the time Spanish explorer Vasco Núñez de Balboa ‘found’ the Pacific Ocean in 1513, General Sherman had 
-   been growing for more than 1,500 years.
-
 | krait 环蛇
 | corba 眼镜蛇
 | viper 蝮蛇
@@ -128,10 +97,6 @@ Nature Lifes
 
    wasp [黄蜂]
 
-.. figure:: images/gull.jpeg
-
-   Gull [海鸥]
-
 .. figure:: images/eel.png
 
    Eel [鳗鱼]
@@ -142,39 +107,28 @@ Nature Lifes
    occasionally venture into the shallows, so it's hard 
    to say for sure.
 
-.. figure:: images/brown-cockroach.jpg
-
-   Cockroach [蟑螂] 
-
 .. figure:: images/penguin_regurgitation.jpg
 
    Penguin regurgitation [反刍喂食]
-
-.. figure:: images/skunk.jpg
-
-   Skunk [美洲臭鼬]
-
-.. figure:: images/wolverine-walking.jpg
-
-   Wolverine [狼獾，金刚狼]
-
-.. figure:: images/buffalo.jpg
-
-   Buffalo
 
 .. figure:: images/redwood.jpg
 
    Redwood [红树林]
 
-.. figure:: images/CommonPipistrelle.jpg
+.. figure:: images/giant_sequoia.jpg
 
-   Pipistrelle bat
+   Sequoia [红杉树]
+   
+   Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at, 
+   some trees in the giant sequoia grove had called this home for thousands of years before they were given the 
+   protection of a national park. The Giant Forest in Sequoia National Park is where **General Sherman,** the largest 
+   tree in the world, stands. It is estimated to be 2,300 to 2,700 years old—a silent witness to both natural and human 
+   history. By the time Spanish explorer Vasco Núñez de Balboa ‘found’ the Pacific Ocean in 1513, General Sherman had 
+   been growing for more than 1,500 years.
 
-   a small insectivorous Old World bat with jerky, erratic flight.
+.. figure:: images/pitcher_plant.jpg
 
-.. figure:: images/bison_day.jpg
-
-   Bison day 11-03
+    Pitcher plant [猪笼草]
 
 .. figure:: images/fungi.jpg
 
