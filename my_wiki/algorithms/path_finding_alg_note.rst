@@ -44,13 +44,13 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
                 frontier.put(next)
                 came_from[next] = Node(current, came_from[current].distance_from_src+1)
     
-        # reconstruct the path
-        current = dest
-        path = []
-        while current != None:
-            path.append(current.predecessor)
-            current = came_from[current].predecessor
-        path.reverse() # optional
+    # reconstruct the path
+    current = dest
+    path = []
+    while current != None:
+        path.append(current.predecessor)
+        current = came_from[current].predecessor
+    path.reverse() # optional
 
     # Dijkstra's algorithm using distance from src
     frontier = PriorityQueue()
