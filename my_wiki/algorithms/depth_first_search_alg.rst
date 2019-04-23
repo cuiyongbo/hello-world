@@ -31,3 +31,16 @@ Depth-first Search Algorithm
         call DFS(G) to compute finishing times f for each vertex
         as each vertex is finished, insert it onto the front of a linked list
         return the linked list of vertices
+
+:abbr:`SCC (Strongly Connected Component)` : a strongly connected component of a directed
+graph **G(V, E)** is a maximal set of vertices :math:`C \in V` such that for every pair
+of vertices u and v in C , we have :math:`u \rightleftharpoons v`.
+
+.. code-block:: none
+    
+    call DFS(G) to compute finishing times u.f for each vertex u
+    compute the transpose of G (G.T)
+    call DFS(G.T), but in the main loop of DFS, consider
+        the vertices in order of decreasing u.f
+    Output the vertices of each tree in the depth-first forest as 
+        a separate strongly connected component

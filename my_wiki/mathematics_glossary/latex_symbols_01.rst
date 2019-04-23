@@ -1,6 +1,6 @@
-*************
-Latex Symbols
-*************
+****************
+Latex Symbols 01
+****************
 
 Refer to `Mathjax Basic <https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference>`_
 for further information.
