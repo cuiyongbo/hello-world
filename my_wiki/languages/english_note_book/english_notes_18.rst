@@ -62,3 +62,9 @@ English Note 18
 | Definition: a thing that includes or contains many different elements or parts.
 | Usage: an umbrella organization.
 | Usage: 'Contact sports' is an umbrella term for a variety of different sports.
+| 
+| imperative
+| Definition: of vital importance; crucial.
+| Usage: immediate action was imperative.
+| Usage: free movement of labor was an economic imperative.
+| Usage: an imperative sentence. [祈使句]
