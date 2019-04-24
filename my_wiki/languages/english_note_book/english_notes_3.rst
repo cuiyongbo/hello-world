@@ -13,8 +13,7 @@ English Note 3
 | grain
 | Definition: The longitudinal arrangement or pattern of fibres in wood, paper, etc.
 | Usage: He scored along the grain of the table with the knife.
-| Definition: the texture of wood, stone, etc., as determined by the arrangement and size of constituent  particles.
-| Usage: The lighter, finer grain of the wood is attractive.
+| Usage: The lighter, finer grain of the wood is attractive. [质地，纹理]
 | Definition: give a rough surface or texture to.
 | Usage: Her fingers were grained with chalk dust.
 | Phrase: against the grain
