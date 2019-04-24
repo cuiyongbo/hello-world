@@ -7,8 +7,6 @@ Computer Terminology
 | two’s complement [二进制补码]
 | backward compatibility [向下兼容]
 | regression test [回归测试]
-| predecessor [前驱]
-| successor  [后继]
 | spam email [垃圾邮件]
 | implementation-dependent
 | ELF = Executable and Linking Format
@@ -40,6 +38,7 @@ Computer Terminology
 | SCM = Source Code Management
 | RAII = Resource Acquisition Is Initialization
 | ISP = Internet Service Provider
+| CGI = Common Gate Interface
 | Interpreter VS compiler
 |
 | Techno-weenie: An ineffectual or insignificant computer nerd.

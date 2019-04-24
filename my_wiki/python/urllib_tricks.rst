@@ -53,11 +53,21 @@ of HTTP headers with brief explanations of their meaning and use.
 HTTP response codes
 ===================
 
+All HTTP response status codes are separated into five classes. The first digit of the status 
+code defines the class of response. The last two digits do not have any class or categorization role. 
+There are five values for the first digit:
+
+   * 1xx (Informational): The request was received, continuing process
+   * 2xx (Successful): The request was successfully received, understood, and accepted
+   * 3xx (Redirection): Further action needs to be taken in order to complete the request
+   * 4xx (Client Error): The request contains bad syntax or cannot be fulfilled
+   * 5xx (Server Error): The server failed to fulfill an apparently valid request
+
 Because the default handlers handle redirects (codes in the 300 range), and
 codes in the 100--299 range indicate success, you will usually only see error
 codes in the 400--599 range.
 
-.. code-block:: python
+.. code-block:: py
 
    >>> import http.server
    >>> statusCode = http.server.BaseHTTPRequestHandler.responses
@@ -65,7 +75,7 @@ codes in the 400--599 range.
 
 :attr:`http.server.BaseHTTPRequestHandler.responses` is a useful dictionary of
 response codes in that shows all the response codes used by RFC 2616. The
-dictionary is reproduced here for convenience ::
+dictionary is reproduced here for convenience::
 
    import http.server
    responses = http.server.BaseHTTPRequestHandler.responses
@@ -144,10 +154,9 @@ Another http response code lookup table::
    table = requests.codes.__dict__
    pprint(table)
 
-4XX was a client error and 5XX a server one.
-
 .. rubric:: Footnotes
 
 .. [#] `Quick Reference to HTTP Headers <http://jkorpela.fi/http.html>`_
 .. [#] `Quick reference to common Http Status code <https://wiki.apache.org/httpd/CommonHTTPStatusCodes>`_
+.. [#] `List of HTTP status codes <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>`_
 
