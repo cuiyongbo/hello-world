@@ -98,4 +98,4 @@ Directory structure::
       $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $(USER_DIR)/sample1_unittest.cc
    
    sample1_unittest : sample1.o sample1_unittest.o gtest_main.a
-      $(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@  
+      $(CXX) $(CPPFLAGS) $(CXXFLAGS) -pthread $^ -o $@  

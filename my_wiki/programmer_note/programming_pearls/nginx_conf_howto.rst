@@ -19,3 +19,9 @@ nginx conf
          include        fastcgi_params;
        }
    }
+
+
+.. rubric:: Footnotes
+
+.. [#] `FastCGI configure example <https://www.nginx.com/resources/wiki/start/topics/examples/fastcgiexample/>`_
+.. [#] `FastCGI repository <https://fastcgi-archives.github.io/>`_
