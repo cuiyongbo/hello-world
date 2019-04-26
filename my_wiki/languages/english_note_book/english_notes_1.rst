@@ -1182,26 +1182,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: At 25, I found family life stifling.
 | Usage: They hope the new rules will not stifle creativity.
 | 
-| glitch
-| Definition: A glitch is a problem, which stops something from working properly or being successful.
-| Synonyms: hitch; problem.
-| Usage: Manufacturing glitches have limited the factory’s output, and costs are still far too high.
-| 
-| hitch
-| Definition: A knot used for fastening a rope to another rope or something else.
-| Usage: He returned to where he had hitched his horse.
-| Definition: A period of service.
-| Usage: His 12-yeas hitch in the navy.
-| Definition: A temporary interruption or problem.
-| Usage: Everything went without a hitch.
-| Usage: After some technical hitches the show finally got under the way. 
-| Definition: To get a free ride in a person’s car.
-| Usage: They hitched a ride in a truck. [搭顺风车]
-| Idiom: get hitched 
-| Defintion: get married.
-| Idiom: hitch one’s wagon to a star [找关系]
-| Definition: try to succeed by forming a relationship with someone who is already successful.
-| 
 | almanac [年鉴]
 | Defininiton: a book that is pulished every year giving information for that year about a particular subject or activity. [年鉴]
 | 
