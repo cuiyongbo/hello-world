@@ -68,5 +68,18 @@ Hash Table
         error "not found"
 
 
+    // collision resolution
+    
+    // primary clustering
+    Hash-linearProbing(k, i)
+        return (auxillary_hash_func(k) + i) mod m
+
+    // secondary clustering
+    Hash-quadraticProbing(k, i)
+        return (auxillary_hash_func(k) + c_1 * i + c_2 * i * i) mod m
+
+    Hash-doubleHashing(k, i)
+        return (auxillary_hash_func_1(k) + i * auxillary_hash_func_2(k) ) mod m
+
 
 

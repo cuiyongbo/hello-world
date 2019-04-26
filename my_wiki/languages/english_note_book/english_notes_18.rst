@@ -88,3 +88,15 @@ English Note 18
 | Defintion: get married.
 | Idiom: hitch one’s wagon to a star [找关系]
 | Definition: try to succeed by forming a relationship with someone who is already successful.
+| 
+| mediocre
+| mediocrity
+| Definition: of only moderate quality; not very good.
+| Usage: I thought the play was only mediocre.
+| Usage: Hero rises above the mediocrity that surrounds him.
+| 
+| outstanding
+| Definition: exceptionally good.
+| Usage: the team's outstanding performance.
+| Definition: remaining to be paid, done, or dealt with.
+| Usage: how much work is still outstanding?

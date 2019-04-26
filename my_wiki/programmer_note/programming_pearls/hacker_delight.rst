@@ -7,6 +7,11 @@ Hackers' Delight
     find the least integer *c* to make ``c*b`` no less than *a*: 
     ``(size + alignment - 1) / alignment`` typically used for memory alignment.
 
+    .. code-block:: c
+        :caption: Taken from *fcgi* source code
+
+        int AlignInt8(unsigned n) { return (n + 7) & (UINT_MAX - 7); }
+
 #. Bit tricks
 
     Check if an unsigned integer x is a power of 2: ``x & (x-1)``

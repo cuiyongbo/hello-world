@@ -808,12 +808,6 @@ name, also known as surname, with most family members.
 | Usage: They were apt to exaggerate any aches and pains.
 | Usage: I couldn’t sleep for three days -- I ‘m not exaggerating.
 | 
-| mediocre
-| mediocrity
-| Definition: of only moderate quality; not very good.
-| Usage: I thought the play was only mediocre.
-| Usage: Hero rises above the mediocrity that surrounds him.
-| 
 | bigot
 | Definition: a person who is intolerant towards those holding different opinions.
 | Usage: Don’t let a few small-minded bigots destroy the good image of the city.

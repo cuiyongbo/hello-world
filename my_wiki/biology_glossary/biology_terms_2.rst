@@ -111,6 +111,7 @@ Nature Lifes
 
    Penguin regurgitation [反刍喂食]
 
+.. image:: images/coast_redwoods.jpg
 .. figure:: images/redwood.jpg
 
    Redwood [红树林]
