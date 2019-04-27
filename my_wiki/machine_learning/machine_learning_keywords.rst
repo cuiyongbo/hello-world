@@ -138,6 +138,8 @@ The Chain rule of Conditional Probabilty Bayesian rule
 
 Independence and Conditional Independence
 
+:abbr:`i.i.d (Independent and identifically distributed)`
+
 Expectation Variance Standard deviation Covariance Correlation
 
 underfitting overfitting

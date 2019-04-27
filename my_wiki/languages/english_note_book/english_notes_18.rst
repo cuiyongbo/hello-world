@@ -34,6 +34,10 @@ English Note 18
 | Definition: a person who stands in for another, especially in a performance; a substitute.
 | Usage: his stand-in does all the dancing sequences.
 | 
+| surrogate
+| Definition: a substitute, especially a person deputizing for another in a specific role or office.
+| Usage: she was regarded as the surrogate for the governor during his final illness.
+| 
 | eyeball [眼球]
 | Definition: the number of people who visit a website, watch a TV program, read a publication, etc., especially when regarded as a potential source of revenue.
 | Usage: I think we got a few more eyeballs on the site.
@@ -52,7 +56,7 @@ English Note 18
 | 
 | franchise
 | Definition: an authorization granted by a government or company to an individual or group enabling them to carry out specified commercial activities.
-| Usage: In the reorganization, Southern Television lost their franchise.  [特许经营权]
+| Usage: In the reorganization, Southern Television lost their franchise. [特许经营权]
 | Usage: franchised restaurants .
 | Definition: a general title or concept used for creating or marketing a series of products, typically films or television shows.
 | Usage: the Harry Potter franchise.
@@ -100,3 +104,31 @@ English Note 18
 | Usage: the team's outstanding performance.
 | Definition: remaining to be paid, done, or dealt with.
 | Usage: how much work is still outstanding?
+| 
+| infinitesimal
+| Definition: extremely small.
+| Usage: an infinitesimal pause.
+| Definition: an indefinitely small quantity; a value approaching zero.
+| 
+| assignment
+| Definition: a task or piece of work assigned to someone as part of a job or course of study
+| Usage: a homework assignment.
+| Usage: You will need to complete three written assignments per semester.
+| 
+| innocuous
+| Definition: not intended to offend or upset anyone.
+| Usage: It seemed a perfectly innocuous remark.
+| 
+| viscous
+| viscosity
+| Definition: having a thick, sticky consistency between solid and liquid.
+| Usage: viscous lava.
+| 
+| syrup
+| Definition: a thick sweet liquid made by dissolving sugar in boiling water, often used for preserving fruit.
+| Definition: a thick sweet liquid containing medicine or used as a drink.
+| Usage: cough syrup. [止咳糖浆]
+| 
+
+
+

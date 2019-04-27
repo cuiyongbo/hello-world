@@ -1025,7 +1025,8 @@ Real became the first team to successfully defend the Champions League last seas
 
 Sevilla reached their second Copa del Rey final in three seasons with a 3-1 aggregate win over La Liga rivals Leganes.
 
-Spurs showed maturity as well as excellence to come from two goals down to earn a draw in Turin in the first leg, putting themselves in a favourable position to finish the job and secure a place in the quarter-finals.
+Spurs showed maturity as well as excellence to come from two goals down to earn a draw in Turin in the first leg, 
+putting themselves in a favourable position to finish the job and secure a place in the quarter-finals.
 
 And yet from a position of strength bolstered even further
 by Son's goal just before the interval [中场休息], Spurs once again came up short.
@@ -1053,6 +1054,11 @@ and took their chance.
 | Definition: having the experience and knowledge necessary to deal with the potential difficulties or dangers of life in urban.
 | Definition: reflective of modern life, especially that of urban youth. [市侩]
 |
+| adroit
+| Definition: clever or skillful in using the hands or mind.
+| Usage: he was adroit at tax avoidance.
+| Usage: an adroit negotiator.
+| 
 | tangible
 | tangibly
 | tangibility

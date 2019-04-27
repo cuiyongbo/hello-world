@@ -144,6 +144,14 @@ English Note 15
 | Definition: an alternative route for use by traffic when the usual road is temporarily closed.
 | Usage: I would detour the endless stream of motor home.
 | 
+| circum
+| Definition: about; around.
+| Usage: we wanted to marry but circumstances didn't permit.
+| Usage: they were thrown together by circumstance.
+| 
+| circumnavigate
+| Definition: sail or travel all the way around (something, especially the world).
+| 
 | obscure
 | obscurity
 | Definition: not discovered or known about; uncertain.

@@ -52,6 +52,7 @@ English Note 7
 | reclusiveness
 | Definition: avoiding the company of other people; solitary. [孤僻，与世隔绝]
 | Usage: a reclusive life in rural Ireland. 
+| Usage: I live a pretty solitary life.
 | 
 | ostracize
 | ostracism

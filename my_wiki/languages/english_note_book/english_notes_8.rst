@@ -15,6 +15,15 @@ what is called a reason for living also the excellent one for dying.
 | Usage: Advice on etiquette. [礼仪]
 | Usage: Medical / legal / professional etiquette. [职业操守]
 | 
+| bearing
+| Definition: the way one behaves or conducts oneself.
+| Usage: a man of precise military bearing.
+| Usage: Her whole bearing was alert. 
+| Usage: she has the bearing of a First Lady.
+| Definition: relation or relevance.
+| Usage: Recent events had no bearing on our decision. 
+| Usage: Regular exercise has a direct bearing on fitness and health. 
+| 
 | deportment
 | Definition: a person's behavior or manners.
 | Usage: lessons for young ladies in deportment and etiquette. [礼仪，举止]
