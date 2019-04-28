@@ -108,6 +108,11 @@ Skip certain tests::
    to TEST_F(AutomationCarTester, DISABLED_inhibitSAutoSleep) to skip
    AutomationCarTester.inhibitSAutoSleep test.
 
+.. code-block:: bash
+
+   # run TripRecorderTest.case* except TripRecorderTest.case6
+   --gtest_filter=TripRecorderTest.case*:-TripRecorderTest.case6
+
 
 **ASSERT MACROS**
 
