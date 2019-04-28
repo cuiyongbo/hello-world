@@ -134,6 +134,7 @@ Wild Lives 03
 
     Warbler [黄莺]
 
+.. figure:: images/hummingbird_02.jpg
 .. figure:: images/hummingbird.jpg
 
     A rufous-tailed hummingbird in Costa Rica
