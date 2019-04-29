@@ -81,7 +81,7 @@ then :math:`y.key \geq x.key`.
    Tree-Predecessor(x)
       if x.left != NIL
          return Tree-Maximum(x.left)
-      y = y.p
+      y = x.p
       while y != NIL and x == y.left
          x = y
          y = y.p

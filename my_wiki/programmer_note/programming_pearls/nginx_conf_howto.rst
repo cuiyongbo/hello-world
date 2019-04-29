@@ -23,5 +23,5 @@ nginx conf
 
 .. rubric:: Footnotes
 
-.. [#] `FastCGI configure example <https://www.nginx.com/resources/wiki/start/topics/examples/fastcgiexample/>`_
 .. [#] `FastCGI repository <https://fastcgi-archives.github.io/>`_
+.. [#] `NGINX FastCGI example <http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#example>`_

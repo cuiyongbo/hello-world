@@ -249,6 +249,10 @@ Wild Lives 03
 
    a small insectivorous Old World bat with jerky, erratic flight.
 
+.. figure:: images/sloth.jpg
+
+    Sloth [树懒]
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 

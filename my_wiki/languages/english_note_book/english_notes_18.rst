@@ -129,6 +129,8 @@ English Note 18
 | Definition: a thick sweet liquid containing medicine or used as a drink.
 | Usage: cough syrup. [止咳糖浆]
 | 
-
+| chatbot
+| Definition: a computer program designed to simulate conversation with human users, especially over the Internet.
+| Usage: chatbots often treat conversations like they're a game of tennis: talk, reply, talk, reply.
 
 
