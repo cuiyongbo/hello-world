@@ -260,3 +260,22 @@ f-score
     \begin{equation*}
     \text{tfidf}(w, d) = \text{tf} \log\big(\frac{N + 1}{N_w + 1}\big) + 1 
     \end{equation*}
+
+
+
+The probability density for the **Gaussian distribution** is
+
+.. math:: p(x) = \frac{1}{\sqrt{ 2 \pi \sigma^2 }}
+                 e^{ - \frac{ (x - \mu)^2 } {2 \sigma^2} },
+
+where :math:`\mu` is the mean and :math:`\sigma` the standard
+deviation. The square of the standard deviation, :math:`\sigma^2`,
+is called the variance.
+
+The function has its peak at the mean, and its "spread" increases with
+the standard deviation (the function reaches 0.607 times its maximum at
+:math:`x + \sigma` and :math:`x - \sigma`).  This implies that
+`numpy.random.normal` is more likely to return samples lying close to
+the mean, rather than those far away.
+
+https://github.com/chiphuyen/stanford-tensorflow-tutorials.git
