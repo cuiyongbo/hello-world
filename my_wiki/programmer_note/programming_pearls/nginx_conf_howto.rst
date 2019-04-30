@@ -25,3 +25,4 @@ nginx conf
 
 .. [#] `FastCGI repository <https://fastcgi-archives.github.io/>`_
 .. [#] `NGINX FastCGI example <http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#example>`_
+.. [#] `NGINX Connect Cpp FastCGI <http://chriswu.me/blog/writing-hello-world-in-fcgi-with-c-plus-plus/>`_

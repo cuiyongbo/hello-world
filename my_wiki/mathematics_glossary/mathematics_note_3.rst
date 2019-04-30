@@ -77,7 +77,6 @@ Mathematics Notes 3
     which was originally introduced by *Whitney* in 1935 to study *planar graphs* and was later used 
     by *Edmonds* to characterize a class of optimization problems that can be solved by ``greedy algorithms``.
 
-
 #. Convex function
    
     In mathematics, a real-valued function defined on an n-dimensional interval is called convex 
@@ -87,3 +86,15 @@ Mathematics Notes 3
     function of a single variable, if the second derivative is always greater than or equal to zero for its 
     entire domain then the function is convex. Well-known examples of convex functions include the quadratic 
     function :math:`x^2` and the exponential function :math:`e^x`.
+
+#. Softmax function
+   
+    In mathematics, the softmax function, also known as softargmax or normalized exponential function,
+    is a function that takes as input a vector of K real numbers, and normalizes it into a probability
+    distribution consisting of K probabilities. That is, prior to applying softmax, some vector components
+    could be negative, or greater than one; and might not sum to 1; but after applying softmax, each component
+    will be in the interval (0, 1), and the components will add up to 1, so that they can be interpreted as probabilities.
+
+#. Sigmoid function
+   
+    A sigmoid function is a mathematical function having a characteristic "S"-shaped curve or sigmoid curve.

@@ -83,6 +83,26 @@ System requirements::
       model.fit(x_train, y_train, epochs=5)
       model.evaluate(x_test, y_test)
 
+#. Supress tensorflow warnings
+   
+   .. code-block:: py
+
+      # in scripts
+
+      import os
+      import tensorflow as tf
+      os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+      
+      # 0 = all messages are logged (default behavior)
+      # 1 = INFO messages are not printed
+      # 2 = INFO and WARNING messages are not printed
+      # 3 = INFO, WARNING, and ERROR messages are not printed
+
+   .. code-block:: sh
+
+      # add environment variable
+      export TF_CPP_MIN_LOG_LEVEL=2
+
 .. rubric:: Footnotes
 
 .. [#] `Install tensorflow <https://www.tensorflow.org/install/pip>`_

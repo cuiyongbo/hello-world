@@ -278,4 +278,4 @@ the standard deviation (the function reaches 0.607 times its maximum at
 `numpy.random.normal` is more likely to return samples lying close to
 the mean, rather than those far away.
 
-https://github.com/chiphuyen/stanford-tensorflow-tutorials.git
+activation function
