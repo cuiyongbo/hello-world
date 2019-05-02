@@ -132,5 +132,9 @@ English Note 18
 | chatbot
 | Definition: a computer program designed to simulate conversation with human users, especially over the Internet.
 | Usage: chatbots often treat conversations like they're a game of tennis: talk, reply, talk, reply.
-
-
+| 
+| epoch
+| Definition: a period of time in history or a person's life, typically one marked by notable events or particular characteristics.
+| Usage: the Victorian epoch.
+| Definition: the beginning of a distinctive period in the history of someone or something.
+| Usage: welfare reform was an epoch in the history of U.S. social policy.

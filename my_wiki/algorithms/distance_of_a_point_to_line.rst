@@ -6,18 +6,7 @@ Distance definition
 ===================
 
 To calculate the distance between two points. We assume this is the standard Euclidean metric "L2 norm" 
-based on the Pythagorean theorem. That is, for an n-dimensional vector :math:`v=(v_1,v_2,...,v_n),` its 
-length :math:`|v|` is given by
-
-.. math::
-
-   |v|^2 = \sum_{i=1}^{n} {v_i}^2   
-
-and for two points :math:`P=(p_1,...,p_n) \text{ and } Q=(q_1,...,q_n)`, the distance between them is:
-
-.. math::
-
-   d(P, Q) = | P - Q | = \sqrt{\sum_{i=1}^{n} (p_i - q_i)^2}
+based on the **Pythagorean theorem**.
 
 
 Line Equations
@@ -26,7 +15,7 @@ Line Equations
 ======================  ===========================  ===========================
 Type                    Equation                     Usage                      
 ======================  ===========================  ===========================
-Explicit 2D Equation    :math:`y=f(x)=mx+b`          a non-vertical 2D line     
+Explicit 2D Equation    :math:`f(x)=kx+b`            a non-vertical 2D line     
 Implicit 2D Equation    :math:`f(x,y)=ax+by+c=0`     any 2D line                
 Parametric Equation     :math:`P(t) = P_0 + tv_L`    any line in any dimension  
 ======================  ===========================  ===========================
@@ -60,14 +49,10 @@ The 2-Point Line
 ----------------
 
 In 2D and 3D, when L is given by two points P0 and P1, one can use the cross-product 
-to directly compute the distance from any point P to L. The 2D case is handled by embedding 
-it in 3D with a third z-coordinate = 0. The key observation to make is that the magnitude of 
-the cross-product of two 3D vectors is equal to the area of the parallelogram spanned by them, 
-since :math:`|v \times w| = |v||w| \sin{\theta}` where :math:`\theta` is the angle between 
-the two vectors v and w. However, this area is also equal to the magnitude of the base times 
-the height of the parallelogram, and we can arrange the geometry so that the height is the 
-distance d(P,L). Let :math:`v_L=P_1 - P_0` and :math:`w = P - P_0` as in the diagram:
-
+to directly compute the distance from any point P to L. since :math:`|v \times w| = |v||w| \sin{\theta}` 
+where :math:`\theta` is the angle between the two vectors v and w. However, this area is also equal to the 
+magnitude of the base times the height of the parallelogram, and we can arrange the geometry so 
+that the height is the distance d(P,L). Let :math:`v_L=P_1 - P_0` and :math:`w = P - P_0` as in the diagram:
 
 .. figure:: images/distance_p_2_l_by_cross_product.gif
 
@@ -96,20 +81,7 @@ Writing out the details,
 #. since not both a and b are zero, assume :math:`a \ne 0` and select :math:`P_0 = (-c / a, 0)` which is on the line.
 #. for any :math:`P_0` on L we have: :math:`n_L \cdot P_0P = |n_L||P_0P| \cos{\theta} = |n_L| d(P, L).`
 #. also for our specific :math:`P_0`: :math:`n_L \cdot P_0P = (a, b) \cdot (x+c/a, y) = f(P).`
-
-yields the formula:
-
-.. math::
-
-   d(P,L) = \frac{f(P)}{|n_L|} = \frac{ax+by+c}{\sqrt{a^2 + b^2}}
-
-Further, one can divide the coefficients of f(x,y) by :math:`|n_L|` to prenormalize the implicit equation so that 
-:math:`|n_L| = 1.` This results in the very efficient formula:
-
-.. math::
-
-   d(P,L) = ax+by+c \text{, when } a^2 + b^2 = 1
-
+#. yields the formula :math:`d(P,L) = \frac{f(P)}{|n_L|} = \frac{ax+by+c}{\sqrt{a^2 + b^2}}`
 
 The Parametric Line
 -------------------

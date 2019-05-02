@@ -61,3 +61,8 @@ at tasks in T, as measured by P, improves with experience E.
         Compute velocity update: v = alpha * v − k * g
         Apply update: θ =  θ + v
     end while
+
+
+#. Algorithm 8.4 The AdaGrad algorithm P308
+#. Algorithm 8.5 The RMSProp algorithm P309
+#. Algorithm 8.6 RMSProp algorithm with Nesterov momentum P310
