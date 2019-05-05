@@ -24,6 +24,14 @@ what is called a reason for living also the excellent one for dying.
 | Usage: Recent events had no bearing on our decision. 
 | Usage: Regular exercise has a direct bearing on fitness and health. 
 | 
+| idiosyncrasy
+| idiosyscratic
+| Definition: a mode of behavior or way of thought peculiar to an individual.
+| Usage: one of his little idiosyncrasies was always preferring to be in the car first.
+| Definition: a distinctive or peculiar feature or characteristic of a place or thing.
+| Usage: the idiosyncrasies of the prison system.
+| Usage: she emerged as one of the great, idiosyncratic talents of the nineties.
+| 
 | deportment
 | Definition: a person's behavior or manners.
 | Usage: lessons for young ladies in deportment and etiquette. [礼仪，举止]

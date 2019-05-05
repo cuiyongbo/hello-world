@@ -66,3 +66,41 @@ at tasks in T, as measured by P, improves with experience E.
 #. Algorithm 8.4 The AdaGrad algorithm P308
 #. Algorithm 8.5 The RMSProp algorithm P309
 #. Algorithm 8.6 RMSProp algorithm with Nesterov momentum P310
+   
+.. code-block:: py
+    :caption: Gradient Descent algorithm 
+
+    def update_w_and_b(spendings, sales, w, b, alpha):
+        dl_dw = 0.0
+        dl_db = 0.0
+        N = len(spending)
+    
+        for i in range(N):
+            dl_dw += -2*spendings[i]*(sales[i] - (w*spendings[i] + b))
+            dl_db += -2*(sales[i] - (w*spendings[i] + b))
+    
+        w = w - (1/float(N))*dl_dw*alpha
+        b = b - (1/float(N))*dl_db*alpha
+        return w, b
+    
+    def train(spendings, sales, w, b, alpha, epochs):
+        for e in range(epochs):
+            w, b = update_w_and_b(spendings, sales, w, b, alpha)
+            if (e+1)%400 == 0:
+                print('epoch: ', e, 'loss: ', avg_loss(spendings, sales, w, b))
+        return w, b
+    
+    def avg_loss(spendings, sales, w, b):
+        N = len(spendings)
+        total_error = 0.0
+        for i in range(N):
+            total_error += (sales[i] = (w*spendings[i] + b))
+        return total_error/float(N)
+
+    def predict(x, w, b):
+        return w*x + b
+
+    w, b = train(x, y, 0.0, 0.0, 0.001, 150000)
+    x_new = 23.0
+    y_new = predict(x_new, w, b)
+    print(y_new)

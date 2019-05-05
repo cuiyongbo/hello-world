@@ -42,7 +42,13 @@ Thus in binary classification, the count of true negatives is
 :math:`C_{0,0}`, false negatives is :math:`C_{1,0}`, true positives is
 :math:`C_{1,1}` and false positives is :math:`C_{0,1}`.
 
+Neural Networks
+
+:abbr:`FFNN (Feed-Forward Neural Networks)`
+
 :abbr:`RNN (Recurrent Neural Networks)`
+
+:abbr:`MLP (MultiLayer Perceptron)`
 
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
