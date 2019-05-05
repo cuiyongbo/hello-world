@@ -253,6 +253,8 @@ Wild Lives 03
 
     Sloth [树懒]
 
+.. image:: images/ruff_male_displaying.jpg
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 

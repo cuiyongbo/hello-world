@@ -5,17 +5,17 @@ Machine Learning
 Now Let's start it.
 
 .. toctree:: 
-   :titlesonly:
+    :titlesonly:
 
-   machine_learning/machine_learning_keywords
-   machine_learning/machine_learning_concepts
-   machine_learning/machine_learning_alg_notes
-   machine_learning/bayes_theorem_note
-   machine_learning/tensorflow_install_note
-   machine_learning/blp_note
-   machine_learning/knn_note
-   machine_learning/matplotlib_note
-   machine_learning/numpy_notes
+    machine_learning/machine_learning_keywords
+    machine_learning/machine_learning_concepts
+    machine_learning/machine_learning_alg_notes
+    machine_learning/bayes_theorem_note
+    machine_learning/tensorflow_install_note
+    machine_learning/blp_note
+    machine_learning/knn_note
+    machine_learning/matplotlib_note
+    machine_learning/numpy_notes
    
 
 **Workflow**
@@ -40,4 +40,6 @@ Now Let's start it.
 .. [#] `NumPy and SciPy doc <https://docs.scipy.org/doc/>`_
 .. [#] `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_
 .. [#] `Machine Learning Dataset sources <http://archive.ics.uci.edu/ml/index.php>`_
+.. [$] `MINIST datasets <http://yann.lecun.com/exdb/mnist/>`_
 .. [#] `AI Google <https://ai.google/>`_
+.. [#] `Tom Mitchell Page <http://www.cs.cmu.edu/~tom/NewChapters.html>`_

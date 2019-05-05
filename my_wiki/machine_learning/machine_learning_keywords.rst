@@ -52,7 +52,7 @@ Linear Regression, Logistic Regression
 
 :abbr:`RFE (Recursive Feature Elimination)`
 
-:abbr:`MES (mean squared error)`
+:abbr:`MSE (Mean Squared Error)`
 
 test set, validation set, and training set
 
@@ -87,6 +87,8 @@ Tensors: In some cases we will need an array with more than two axes.
 In the general case, an array of numbers arranged on a regular grid with a
 variable number of axes is known as a tensor. We denote a tensor named “A”
 with this typeface: :math:`\mathsf{A}`. 
+
+Tensor: a mathematical object analogous to but more general than a vector, represented by an array of components that are functions of the coordinates of a space.
 
 broadcasting
 
@@ -260,8 +262,6 @@ f-score
     \begin{equation*}
     \text{tfidf}(w, d) = \text{tf} \log\big(\frac{N + 1}{N_w + 1}\big) + 1 
     \end{equation*}
-
-
 
 The probability density for the **Gaussian distribution** is
 

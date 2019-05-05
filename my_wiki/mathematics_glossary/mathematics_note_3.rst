@@ -98,3 +98,5 @@ Mathematics Notes 3
 #. Sigmoid function
    
     A sigmoid function is a mathematical function having a characteristic "S"-shaped curve or sigmoid curve.
+
+#. Codomain: a set that includes all the possible values of a given function.
