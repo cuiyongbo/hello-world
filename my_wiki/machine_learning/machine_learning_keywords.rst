@@ -285,3 +285,13 @@ the standard deviation (the function reaches 0.607 times its maximum at
 the mean, rather than those far away.
 
 activation function
+
+backpropagation, backpropagation through time
+
+:abbr:`LSTM (long short-term memory)`
+
+:abbr:`GRU (gated recurrent unit)`, minimal gated GRU
+
+:abbr:`MND (Multivariate Normal distribution)`
+
+:abbr:`PDF (Probability Density Function)`
