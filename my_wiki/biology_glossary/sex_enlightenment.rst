@@ -5,17 +5,26 @@ Physilogical Term Note
 | physilogy
 | Definition: the branch of biology that deals with the normal functions of living organisms and their parts.
 | 
+| uterine
+| Definition: relating to the uterus or womb.
+| Usage: uterine contractions.
+| Definition: born of the same mother but not having the same father.
+| Usage: a uterine sister. [同母异父]
+| 
 | womb
 | Definition: the organ in the lower body of a woman or femal mammal where offsprings are conceived and in which they gestate before birth.
-| Synonyms: uterus
 | 
 | vagina
 | Definition: the muscular tube leading from the external genitals to the cervix of uterus in women and most female mammals.
 | Synonyms: pussy [阴道]
 | Definition: any sheathlike structure, especially a sheath formed around a stem by the base of a leaf.
 | 
-| genital 
-| Synonyms: dick [阴茎]
+| menstrual
+| menstruate
+| Definition: connected with the time when a woman menstruates each month. [月经]
+| Definition: The average length of a woman's menstrual cycle is 28 days.
+| 
+| genital : dick [阴茎]
 | cum [高潮]
 | precum, pre-seminal fluid [男性性生活时阴茎的分泌物]
 | semen [精液]
@@ -25,6 +34,10 @@ Physilogical Term Note
 | Oral sex 口交
 | blood bank 血库
 |
+| hypertension
+| Definition: abnormally high blood pressure. [高血压]
+| Definition: a state of great psychological stress.
+| 
 | masochist
 | masochism
 | Definition: the tendency to derive pleasure, especially sexual gratification, from one’s own pain or humiliation.

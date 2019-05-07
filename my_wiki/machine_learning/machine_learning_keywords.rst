@@ -46,9 +46,13 @@ Neural Networks
 
 :abbr:`FFNN (Feed-Forward Neural Networks)`
 
+:abbr:`CNN (Convolutional Neural Network)`
+
 :abbr:`RNN (Recurrent Neural Networks)`
 
 :abbr:`MLP (MultiLayer Perceptron)`
+
+:abbr:`ReLU (Rectified Linear Unit)`
 
 Regression: In this type of task, the computer program is asked to predict a
 numerical value given some input. To solve this task, the learning algorithm
