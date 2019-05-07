@@ -178,6 +178,8 @@ Bayesian inference
 
 :abbr:`SGD (stochastic gradient descent)`
 
+gradient descent, gradient boosting
+
 minibatch
 
 Generalization error

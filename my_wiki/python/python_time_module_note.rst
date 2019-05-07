@@ -1,6 +1,6 @@
-***********
-time Module
-***********
+******************
+Python time Module
+******************
 
 Hot APIs
 ========
@@ -46,7 +46,7 @@ or having elements of the wrong type, a :exc:`TypeError` is raised.
 
 .. function:: time.time()
 
-   Return the time in seconds since the epoch as a floating point number. 
+   Return the **time in seconds since the epoch** as a floating point number. 
    Note that even though the time is always returned as a floating point number, 
    not all systems provide time with a better precision than 1 second. While this 
    function normally returns non-decreasing values, it can return a lower value than 
@@ -59,15 +59,11 @@ or having elements of the wrong type, a :exc:`TypeError` is raised.
       epoch is defined in terms of UTC and establishes a global moment in time. 
       *time.time()* returns the same value at the same moment wherever you are.
 
-
 .. function:: time.ctime([secs])
 
-   Convert a time expressed in seconds since the epoch to a string representing local time. 
+   Convert a time expressed in seconds since the epoch to a string representing **local time**. 
    If *secs* is not provided or *None*, the current time as returned by *time()* is used. 
    *ctime(secs)* is equivalent to *asctime(localtime(secs))*. 
-
-   Locale information is not used.
-
 
 .. function:: time.gmtime([secs])
 
@@ -76,12 +72,10 @@ or having elements of the wrong type, a :exc:`TypeError` is raised.
    the current time as returned by *time()* is used. Fractions of a second are 
    ignored.
 
-
 .. function:: time.localtime([secs])
 
    Like *gmtime()* but converts to local time.
    The *dst* flag is set to 1 when DST applies to the given time.
-
 
 .. function:: time.mktime(t)
 
