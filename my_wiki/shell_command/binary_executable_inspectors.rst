@@ -54,8 +54,47 @@ Binary executable inspectors
         wow64cpu.dll => /c/WINDOWS/System32/wow64cpu.dll (0x77c70000)
         ...
 
-
 #. strip - remove symbols
+   
+    .. code-block:: sh
+
+        Usage: strip <option(s)> in-file(s)
+         Removes symbols and sections from files
+         The options are:
+          -I --input-target=<bfdname>      Assume input file is in format <bfdname>
+          -O --output-target=<bfdname>     Create an output file in format <bfdname>
+          -F --target=<bfdname>            Set both input and output format to <bfdname>
+          -p --preserve-dates              Copy modified/access timestamps to the output
+          -D --enable-deterministic-archives
+                                           Produce deterministic output when stripping archives (default)
+          -U --disable-deterministic-archives
+                                           Disable -D behavior
+          -R --remove-section=<name>       Also remove section <name> from the output
+          -s --strip-all                   Remove all symbol and relocation information
+          -g -S -d --strip-debug           Remove all debugging symbols & sections
+             --strip-dwo                   Remove all DWO sections
+             --strip-unneeded              Remove all symbols not needed by relocations
+             --only-keep-debug             Strip everything but the debug information
+          -N --strip-symbol=<name>         Do not copy symbol <name>
+          -K --keep-symbol=<name>          Do not strip symbol <name>
+             --keep-file-symbols           Do not strip file symbol(s)
+          -w --wildcard                    Permit wildcard in symbol comparison
+          -x --discard-all                 Remove all non-global symbols
+          -X --discard-locals              Remove any compiler-generated symbols
+          -v --verbose                     List all object files modified
+          -V --version                     Display this program's version number
+          -h --help                        Display this output
+             --info                        List object formats & architectures supported
+          -o <file>                        Place stripped output into <file>
+
+    .. code-block:: sh
+
+        cherry apue$ gcc -g test.c
+        cherry apue$ strip a.out -o a.out.s
+        cherry apue$ ll a.out*
+        -rwxrwxr-x 1 cherry cherry 8.6K May  9 06:34 a.out*
+        -rwxrwxr-x 1 cherry cherry 5.5K May  9 06:34 a.out.s*
+
 #. readelf
    
 #. strace and ltrace

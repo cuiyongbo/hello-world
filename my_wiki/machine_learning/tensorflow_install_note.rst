@@ -106,3 +106,4 @@ System requirements::
 .. rubric:: Footnotes
 
 .. [#] `Install tensorflow <https://www.tensorflow.org/install/pip>`_
+.. [#] `Tensorflow ZH Community <http://www.tensorfly.cn/tfdoc/get_started/introduction.html>`_

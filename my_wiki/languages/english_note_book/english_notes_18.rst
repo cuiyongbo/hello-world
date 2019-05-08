@@ -139,3 +139,11 @@ English Note 18
 | Definition: the beginning of a distinctive period in the history of someone or something.
 | Usage: welfare reform was an epoch in the history of U.S. social policy.
 
+
+#. duck test
+   
+    A form of logical, intuitive reasoning to deduce the nature of an uncertain thing or situation, 
+    usually in the absence or in spite of concrete evidence. Adapted from the saying, "If it looks 
+    like a duck, swims like a duck, and quacks like a duck, then it's probably a duck." for example, 
+    You aren't sure whether he likes you? Just use the duck test—if he's showing you all the signs of 
+    being interested, then he most likely is.

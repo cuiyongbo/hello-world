@@ -29,3 +29,7 @@ APUE Note
 .. image:: images/figure_04_13.jpg
 .. image:: images/figure_04_14.jpg
 .. image:: images/figure_04_15.jpg
+
+.. rubric:: Footnotes
+
+.. [#] https://github.com/banool/apue-exercises/blob/master/exercises.md

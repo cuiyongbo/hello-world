@@ -18,16 +18,47 @@ Now Let's start it.
     machine_learning/numpy_notes
    
 
-**Workflow**
 
-* Reading in the data
-* Preprocessing and cleaning the data
-* Choosing the right model and learning algorithm
-* Training and testing
+**Overview**
 
-**Preparation**
 
-* Download all datasets: ``wget -r -np -nH --cut-dirs=1 -R index.html -e robots=off http://archive.ics.uci.edu/ml/machine-learning-databases/``.
+#. Classification
+
+    * Identifying to which category an object belongs to.
+    * Applications: Spam detection, Image recognition.
+    * Algorithms: SVM, nearest neighbors, random forest, …
+
+#. Regression
+
+    * Predicting a continuous-valued attribute associated with an object.
+    * Applications: Drug response, Stock prices.
+    * Algorithms: SVR, ridge regression, Lasso, …
+
+#. Clustering
+
+    * Automatic grouping of similar objects into sets.
+    * Applications: Customer segmentation, Grouping experiment outcomes
+    * Algorithms: k-Means, spectral clustering, mean-shift, …
+
+#. Dimensionality reduction
+
+    * Reducing the number of random variables to consider.
+    * Applications: Visualization, Increased efficiency
+    * Algorithms: PCA, feature selection, non-negative matrix factorization.
+
+#. Model selection
+
+    * Comparing, validating and choosing parameters and models.
+    * Goal: Improved accuracy via parameter tuning
+    * Modules: grid search, cross validation, metrics.
+
+#. Preprocessing
+
+    * Feature extraction and normalization.
+    * Application: Transforming input data such as text for use with machine learning algorithms.
+    * Modules: preprocessing, feature extraction.
+
+
 
 .. rubric:: Footnotes
 
