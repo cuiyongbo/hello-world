@@ -15,3 +15,4 @@ Bayes Theorem
 .. note::
 
     :math:`P(A \mid B)` is a conditional probability: the likelihood of event A occurring given that B is true.
+

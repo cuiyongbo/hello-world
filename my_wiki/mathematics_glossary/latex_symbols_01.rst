@@ -114,3 +114,4 @@ Refer to Mathjax Basic [#mathjax_ref]_ for further information.
 
 .. [#mathjax_ref] https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 .. [#sharelatex_ref] https://www.sharelatex.com/learn/List_of_Greek_letters_and_math_symbols
+.. [#matplotlib_ref] https://matplotlib.org/tutorials/text/mathtext.html

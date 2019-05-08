@@ -455,56 +455,60 @@ English Note 9
 
 .. figure:: images/harpoon.jpg
 
-   Big harpoon is 'Solution to space junk'
+    Big harpoon is 'Solution to space junk'
 
-   Airbus is testing a big harpoon to snare rouge 
-   or redundant satellites and pull them out of the sky.
+    Airbus is testing a big harpoon to snare rouge 
+    or redundant satellites and pull them out of the sky.
 
 .. figure:: images/embroidery.jpg
 
-   Embroidery [刺绣]
+    Embroidery [刺绣]
 
 .. figure:: images/water_waves.jpg
 
-   Interference [波的干涉]
+    Interference [波的干涉]
 
-   the combination of two or more electromagnetic waveforms 
-   to form a resultant wave in which the displacement is
-   either reinforced or canceled.
+    the combination of two or more electromagnetic waveforms 
+    to form a resultant wave in which the displacement is
+    either reinforced or canceled.
 
 .. figure:: images/Metronome_Nikko.jpg
 
-   Metronome [节拍器]
+    Metronome [节拍器]
+
+.. figure:: images/hourglass.jpg
+
+    Hourglass [沙漏]
 
 .. figure:: images/Pendulum.gif
 
-   Pendulum [钟摆]
+    Pendulum [钟摆]
 
 .. figure:: images/vertigo.png
 
-   Vertigo [眩晕]
+    Vertigo [眩晕]
 
-   a sensation of whirling and loss of balance, 
-   associated particularly with looking down from 
-   a great height, or caused by disease affecting 
-   the inner ear or the vestibular nerve. 
+    a sensation of whirling and loss of balance, 
+    associated particularly with looking down from 
+    a great height, or caused by disease affecting 
+    the inner ear or the vestibular nerve. 
 
 .. figure:: images/dart.jpg
 
-   Dart [飞镖]
+    Dart [飞镖]
 
 .. figure:: images/roulette.jpg
 
-   Roulette
+    Roulette
 
-   a gambling game in which a ball is dropped onto a revolving wheel 
-   with numbered compartments, the players betting on the number at 
-   which the ball will come to rest.
+    a gambling game in which a ball is dropped onto a revolving wheel 
+    with numbered compartments, the players betting on the number at 
+    which the ball will come to rest.
 
 .. figure:: images/russian_roulette.jpg
 
-   Russian roulette
+    Russian roulette
 
-   the practice of loading a bullet into one chamber of a revolver, 
-   spinning the cylinder, and then pulling the trigger while pointing 
-   the gun at one's own head.
+    the practice of loading a bullet into one chamber of a revolver, 
+    spinning the cylinder, and then pulling the trigger while pointing 
+    the gun at one's own head.
