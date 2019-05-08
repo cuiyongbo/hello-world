@@ -18,11 +18,19 @@ K-means clustering, vector quantization
 
 Agglomerative clustering, Hierarchical clustering
 
-:abbr:`DBSCAN (Density- based spatial clustering of applications with noise)`
+:abbr:`PGM (Probabilistic Graphical Model)`, :abbr:`CRF (Conditional Random fields)`
+
+:abbr:`HMM (Hidden Markov model)`
+
+:abbr:`GLM (Generalized Linear Model)`
+
+:abbr:`DBSCAN (Density-based spatial clustering of applications with noise)`
 
 :abbr:`ARI (Adjusted rand index)`, :abbr:`NMI (Normalized Mutual Information)`
 
 :abbr:`SGD (stochastic gradient descent)`
+
+:abbr:`GA (Genetic Algorithm)`, :abbr:`RL (Reinforcement Learning)`
 
 Linear model, tree-based model, naive Bayes
 
