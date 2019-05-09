@@ -17,10 +17,7 @@ Now Let's start it.
     machine_learning/matplotlib_note
     machine_learning/numpy_notes
    
-
-
 **Overview**
-
 
 #. Classification
 
@@ -59,7 +56,6 @@ Now Let's start it.
     * Modules: preprocessing, feature extraction.
 
 
-
 .. rubric:: Footnotes
 
 .. [#] `Matplotlib <https://matplotlib.org/#>`_
@@ -71,6 +67,8 @@ Now Let's start it.
 .. [#] `NumPy and SciPy doc <https://docs.scipy.org/doc/>`_
 .. [#] `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_
 .. [#] `Machine Learning Dataset sources <http://archive.ics.uci.edu/ml/index.php>`_
-.. [$] `MINIST datasets <http://yann.lecun.com/exdb/mnist/>`_
+.. [#] `MINIST datasets <http://yann.lecun.com/exdb/mnist/>`_
 .. [#] `AI Google <https://ai.google/>`_
 .. [#] `Tom Mitchell Page <http://www.cs.cmu.edu/~tom/NewChapters.html>`_
+.. [#] `The Hundred-Page Machine Learning Book GitHub <https://github.com/aburkov/theMLbook>`_
+.. [#] `The Hundred-Page Machine Learning Book  <http://themlbook.com/wiki/doku.php>`

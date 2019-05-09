@@ -255,6 +255,8 @@ Wild Lives 03
 
 .. image:: images/ruff_male_displaying.jpg
 
+.. image:: images/zebra.jpg
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 

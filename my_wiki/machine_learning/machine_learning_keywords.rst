@@ -76,7 +76,7 @@ test set, validation set, and training set
 
 accuracy and error rate
 
-precision, recall, f-score
+precision, recall, f-score, :abbr:`MAP (mean average precision)`
 
 operating point, precision-recall curve
 
@@ -308,4 +308,12 @@ backpropagation, backpropagation through time
 
 :abbr:`MND (Multivariate Normal distribution)`
 
+:abbr:`GMM (Gaussian Mixture Model)`
+
+:abbr:`EM (Expectation Maximization algorithm)`
+
 :abbr:`PDF (Probability Density Function)`
+
+:abbr:`UMAP (Uniform Manifold Approximation and Projection)`
+
+cross-entropy: a widely used metric of similarity between two probability distributions
