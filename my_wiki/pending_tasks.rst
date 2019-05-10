@@ -29,7 +29,7 @@ Pending tasks
 
     #. Deep Learning (Part I and Part II)
     #. Introduction machine learning with python (Fininshed, 2019-03-26 -- 2019-04-20)
-    #. The Hundred-Page Machine Learning Book (2019-05-03 -- )
+    #. The Hundred-Page Machine Learning Book (2019-05-03 -- 2019-05-10)
     #. Building machine learning system using python
     #. Hacker and Painters [Finished, 2019-04-13]
     #. A* algorithm [#a_star_algorithm]_ (Finished, 2019-03-10)

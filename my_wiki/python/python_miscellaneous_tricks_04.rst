@@ -26,3 +26,9 @@ Python Miscellaneous Tricks 04
         ...    [{'a': 1, 'b': True}, {'a': 1, 'b': False},
         ...     {'a': 2, 'b': True}, {'a': 2, 'b': False}])
         True
+
+#. Python `tkinter` import error
+
+    Python2: ``sudo apt install python-tk``.
+
+    Python3: ``sudo apt install python3-tk``.
