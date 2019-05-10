@@ -42,6 +42,9 @@ Ubuntu Problems
 
         sudo -i 
 
+    To run a command as administrator (user `root`), use ``sudo <command>``.
+    See ``man sudo_root`` for details.
+
 #. Ubuntu to disable system failure reporting.
    
     .. image:: images/ubuntu_system_failure_report.png

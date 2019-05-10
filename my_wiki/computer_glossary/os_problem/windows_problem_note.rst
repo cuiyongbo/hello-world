@@ -218,3 +218,12 @@ Windows Problems
 
    .. image:: images/note_pad_tab_to_space_01.jpg
    .. image:: images/note_pad_tab_to_space_02.jpg
+
+#. windows to delete service
+   
+   .. code-block:: sh
+
+      # sc delete service_name
+      # service_name can be obtained from service property
+      > sc delete CDPUserSvc_8d2c2
+      [SC] DeleteService SUCCESS

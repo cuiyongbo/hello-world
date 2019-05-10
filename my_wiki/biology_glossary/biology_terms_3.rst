@@ -147,6 +147,7 @@ Wild Lives 03
 
     Australia fauna
 
+.. image:: images/gray_fox.jpg
 .. figure:: images/arctic_fox.jpg
 
     Arctic fox [北极狐]

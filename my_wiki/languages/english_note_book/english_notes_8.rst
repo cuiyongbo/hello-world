@@ -15,6 +15,11 @@ what is called a reason for living also the excellent one for dying.
 | Usage: Advice on etiquette. [礼仪]
 | Usage: Medical / legal / professional etiquette. [职业操守]
 | 
+| repertoire
+| Definition: a stock of plays, dances, or pieces that a company or a performer knows or is prepared to perform.
+| Definition: a stock of skills or types of behavior that a person habitually uses.
+| Usage: his repertoire of threats, stares, and denigratory gestures.
+| 
 | bearing
 | Definition: the way one behaves or conducts oneself.
 | Usage: a man of precise military bearing.
