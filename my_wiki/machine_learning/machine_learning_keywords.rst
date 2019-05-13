@@ -180,6 +180,8 @@ maximum likelihood VS log-likelihood
 
 negative conditional log-likelihood
 
+:abbr:`ML (Maximum likeihood)`, :abbr:`NLL (Negative log-likelihood)`
+
 Gaussian distribution = Normal distribution
 
 Bayesian inference

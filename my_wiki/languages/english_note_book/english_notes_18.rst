@@ -138,7 +138,46 @@ English Note 18
 | Usage: the Victorian epoch.
 | Definition: the beginning of a distinctive period in the history of someone or something.
 | Usage: welfare reform was an epoch in the history of U.S. social policy.
+| 
+| serene
+| serenely
+| serenity
+| Definition: calm and peaceful
+| Usage: a lake, still and serene in the sunlight 
+| Usage: She smiled serenely. 
+| Usage: The hotel offers a haven of peace and serenity away from the bustle of the city. 
+| 
+| bloodlust
+| Definition: uncontrollable desire to kill or maim others.
+| 
+| maxim
+| Definition: wound or injure (someone) so that part of the body is permanently damaged.
+| Usage: 100,000 soldiers were killed or maimed.
+| Usage: Hundreds of people are killed or maimed in car accidents every week. 
+| 
+| superpose
+| superpostion
+| Definition: to put sth on or above sth else.
+| Usage: They had superposed a picture of his head onto someone else's body. 
+| Usage: Yet another technique in the forensic specialist's repertoire is photo superposition.
+| Geology: The principle that in a group of stratified sedimentary rocks the lowest were the earliest to be deposited.
+| 
+| saturate
+| saturable
+| Definition; cause (something) to become thoroughly soaked with liquid so that no more can be absorbed.
+| Usage: the soil is saturated.
+| Usage: the groundwater is saturated with calcium hydroxide.
+| Usage: they've become thoroughly saturated with powerful and seductive messages from the media.
+| Definition: supply (a market) beyond the point at which the demand for a product is satisfied.
+| Usage: Japan's electronics industry began to saturate the world markets.
+| Definition: overwhelm (an enemy target area) by concentrated bombing.
+| 
 
+#. the apple doesn't fall far from the tree [有其父必有其子]
+
+    the apple doesn't fall far from the tree. also the apple never falls far from the tree.
+    a child usually has a similar character or similar qualities to his or her parents. for example,
+    her daughter soon showed her own musical talent, proving that the apple doesn't fall far from the tree.
 
 #. duck test
    
@@ -147,3 +186,14 @@ English Note 18
     like a duck, swims like a duck, and quacks like a duck, then it's probably a duck." for example, 
     You aren't sure whether he likes you? Just use the duck test—if he's showing you all the signs of 
     being interested, then he most likely is.
+
+#. Murphy's Law
+   
+    a supposed law of nature, expressed in various humorous popular sayings, 
+    to the effect that anything that can go wrong will go wrong.
+
+#. Superposition principle
+
+    In physics and systems theory, the superposition principle, also known as superposition property, 
+    states that, for all linear systems, the net response at a given place and time caused by two or 
+    more stimuli is the sum of the responses which would have been caused by each stimulus individ.

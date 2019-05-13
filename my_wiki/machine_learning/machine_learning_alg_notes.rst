@@ -9,7 +9,7 @@ at tasks in T, as measured by P, improves with experience E.
 -- Tom Mitchell
 
 .. code-block:: none
-    :caption: K fold cross-validation 
+    :caption: K fold cross-validation, P123
 
     KFoldXV(D, A, L, k):
         Require: D, the given dataset, with elements z_i
@@ -72,10 +72,8 @@ at tasks in T, as measured by P, improves with experience E.
     :caption: Gradient Descent algorithm 
 
     def update_w_and_b(spendings, sales, w, b, alpha):
-        dl_dw = 0.0
-        dl_db = 0.0
+        dl_dw, dl_db = 0.0, 0.0
         N = len(spending)
-    
         for i in range(N):
             dl_dw += -2*spendings[i]*(sales[i] - (w*spendings[i] + b))
             dl_db += -2*(sales[i] - (w*spendings[i] + b))

@@ -441,6 +441,13 @@ society.
 | Definition: a hard calcified deposit that forms on the teeth and contributes to their decay. [齿垢]
 | Definition: a deposit of impure potassium(钾) hydrogen tartrate formed during the fermentation of wine.
 | 
+| impure
+| impurity
+| Definition: morally wrong, especially in sexual matters.
+| Definition: citizens suspected of harboring impure thoughts.
+| Definition: a thing or constituent that impairs the purity of something.
+| Usage: aluminum and lead [铅] are impurities frequently found in tap water.
+| 
 | hemline [裙边，下摆]
 | Definition: the bottom edge of a dress or skirt; the length of a dress or skirt.
 | Usage: Shorter hemlines are back in this season. 
