@@ -134,6 +134,10 @@ Wild Lives 03
 
     Warbler [黄莺]
 
+.. figure:: images/piping_plover.jpg
+
+    Piping plover [笛鸻]
+
 .. figure:: images/hummingbird_02.jpg
 .. figure:: images/hummingbird.jpg
 

@@ -32,3 +32,16 @@ Python Miscellaneous Tricks 04
     Python2: ``sudo apt install python-tk``.
 
     Python3: ``sudo apt install python3-tk``.
+
+#. Python to get combinations of `list`
+   
+    .. code-block:: py
+
+        import itertools
+        help(itertools.combinations)
+
+        # combinations(iterable, r) --> combinations object
+        # Return successive r-length combinations of elements in the iterable.
+
+        >>> list(itertools.combinations(range(iris.data.shape[1]), 2))
+        [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]
