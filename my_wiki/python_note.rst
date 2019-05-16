@@ -17,7 +17,7 @@ Python note
     python/python_set_notes
     python/python_dict_notes
     python/python_file_notes
-    python/string_notes
+    python/python_string_notes
     python/python_complex_type_note
     python/list_tricks
     python/urllib_tricks

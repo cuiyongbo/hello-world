@@ -45,3 +45,13 @@ Python Miscellaneous Tricks 04
 
         >>> list(itertools.combinations(range(iris.data.shape[1]), 2))
         [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3)]
+
+#. Python `smtpd`
+   
+   Solution: ``python -m smtpd --help``
+
+#. python SimpleHTTPServer
+   
+   Solution: ``python -m SimpleHTTPServer 3456``
+
+   Browser: ``http://127.0.0.1:3456/``

@@ -144,13 +144,6 @@ Python Miscellaneous Usages
       #!/usr/bin/env python
       #coding: cp1252
 
-#. Convert uncode string to Chinese characters
-
-   .. code-block:: python
-   
-      >>> print '\u5f53\u524d\u9053\u8def\u56e0\u9053\u8def\u65bd\u5de5\u7981\u6b62\u901a\u884c'.decode('unicode-escape')
-      当前道路因道路施工禁止通行
-
 #. Binary to Decimal
 
    .. code-block:: py
@@ -163,34 +156,6 @@ Python Miscellaneous Usages
       ...
       >>> def get_int_little_endian(data):
       ...     return int(data[::-1].encode('hex'), 16)
-
-#. Save Chinese characters to file
-
-   .. code-block:: py
-
-      #!/usr/bin/env python
-      #coding: utf-8
-      
-      import codecs, json, sys
-      
-      def get_interested_events(src, linkId):
-         results = []
-         result_obj = {}
-         root = json.load(src)
-         events = root["result"]["events"]
-         for event in events:
-            if linkId in event["niLinkIds"]:
-               results.append(event)
-         results.sort(key=lambda event: event["niLinkIds"])
-         result_obj["interested_events"] = results
-         return result_obj
-   
-      with open("./event.json") as f:
-         result = get_interested_events(f, sys.argv[1])
-         format = codecs.open("./interested_event.json", "w", encoding='utf-8') # Basically open result file with utf-8 encoding
-         json.dump(result, format, ensure_ascii=False, indent=1, separators=(",", ":"))
-         format.close()
-         f.close()
 
 #. Python list unique
    

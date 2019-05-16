@@ -128,6 +128,7 @@
    雁来音信无凭，路遥归梦难成。离恨恰如春草，更行更远还生。
 
 .. image:: images/mountain.jpg 
+.. image:: images/mountain_lake.jpg
 .. image:: images/sunlight_shine_on_farm.jpg
 .. image:: images/bioluminescent_algae_along_shores.jpg
 .. image:: images/lake_flower.jpg
@@ -199,3 +200,7 @@
    君叹妾生迟，妾叹君生早。
 
    在错误的时间遇见了对的人。
+
+.. image:: images/ride_company.jpg
+.. image:: images/sunset_20190516.jpg
+.. image:: images/beach.jpg

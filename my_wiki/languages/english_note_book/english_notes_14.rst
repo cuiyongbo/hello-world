@@ -367,6 +367,7 @@ English Note 14
 .. image:: images/isis_temple_grand_canyon.jpg
 .. image:: images/hongkong_zhuhai_macau_bridge.jpg
 .. image:: images/Vasco_da_Gama_Bridge.jpg
+.. image:: images/city_panorama.jpg
 
 .. image:: images/dubi_miracle_garden.jpg
 .. image:: images/paepalanthus_flower_at_sunset.jpg
