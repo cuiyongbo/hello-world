@@ -216,7 +216,7 @@ Python Miscellaneous Tricks 03
 
 #. python to print without newline
 
-    From Python2.6 you can import the print function from Python3: ``from __future__ import`` 
+    From Python2.6 you can import the print function from Python3: ``from __future__ import print_function`` 
     This allows you to use the Python3's `print` function. In Python3, the `print` statement 
     has been changed into a function. In Python 3, you can instead do: ``print('.', end='')``. 
     If you are having trouble with buffering, you can flush the output by adding ``flush=True`` keyword argument.

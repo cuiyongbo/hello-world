@@ -61,6 +61,11 @@ Introduction To Algorithm
         - Representations of graph (Finished, 2019-02-14)
         - Breadth-first search (Finished, 2019-02-14)
         - Depth-first search (2019-03-06 -- 2019-04-23)
+    
+    - Ch23 Minimum Spanning Trees
+      
+        - 23.1 Growing a minimum spanning tree
+        - 23.2 The algorithm of Kruskal and Prim
 
     - Ch24 Single-source shortes paths
 

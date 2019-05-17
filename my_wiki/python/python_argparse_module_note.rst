@@ -109,6 +109,36 @@ Python argparse note
     elif args.subcommand_name == "reload":
         pass
 
+
+.. code-block:: py
+    
+    #!/usr/bin/env python3
+    
+    import getopt, sys, os
+    
+    if __name__ == "__main__":
+    
+        usage = "Usage: %s -h [--help] -l logfile [--log-file=file]" % os.path.basename(sys.argv[0])
+        print("sys.argv: ", sys.argv)
+        args = sys.argv[1:]
+        try:
+            option_list, arg_left = getopt.gnu_getopt(args, "l:h", ["log-file=", "help"])
+        except getopt.GetoptError as err:
+            print(str(err))
+            print(usage)
+            sys.exit(1)
+    
+        print("option list: ", option_list)
+        print("other arg: ", arg_left)
+    
+        for o, a in option_list:
+            if o in ("-h", "--help"):
+                print(usage)
+                sys.exit(0)
+            elif o in ("-l", "--logfile"):
+                print("output log file: ", a)
+
+
 .. function:: ArgumentParser.add_argument(name or flags...[, action][, nargs][, const][, default][, type][, choices][, required][, help][, metavar][, dest])
 
     Define how a single command-line argument should be parsed. 
