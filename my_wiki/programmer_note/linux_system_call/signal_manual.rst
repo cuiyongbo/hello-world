@@ -338,3 +338,4 @@ No    Name         Default Action       Description
     On some systems (but not on Linux), NULL may instead be returned 
     for an invalid signal number.
 
+    See also `psignal(3)` for similar APIs.

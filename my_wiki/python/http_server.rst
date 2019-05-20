@@ -15,10 +15,16 @@ Http Server
     HTTPS_PORT_NUMBER = 8443
 
     class TestHTTPHandler(BaseHTTPRequestHandler):
-        """
-        This class will handles any incoming requests
-        from the browser or NaviCore client.
-        """
+
+        def __init__(self, *args, **kwargs):
+            self.member = ""
+
+            # BaseHTTPRequestHandler calls do_GET **inside** __init__
+            # we must put call to BaseHTTPRequestHandler.__init__ after derived class member declaration
+            
+            super(BaseHTTPRequestHandler, self).__init__(*args, **kwargs) # python3
+            # BaseHTTPRequestHandler.__init__(self, *args, **kwargs) # python2
+
         BaseHTTPRequestHandler.protocol_version = 'HTTP/1.1'
 
         def make_plain_text_response(self, content):

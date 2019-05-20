@@ -221,7 +221,7 @@ Python Miscellaneous Tricks 03
     has been changed into a function. In Python 3, you can instead do: ``print('.', end='')``. 
     If you are having trouble with buffering, you can flush the output by adding ``flush=True`` keyword argument.
 
-#. python to call `super()`
+#. `super()`: TypeError: must be type, not classobj
   
     .. code-block:: py
     
@@ -233,7 +233,9 @@ Python Miscellaneous Tricks 03
         class GridWithWeights(SquareGrid):
             def __init__(self, width, height):
                 #SquareGrid.__init__(self, width, height) # python2.x patch
-                super().__init__(width, height) # python3
+                super(SquareGrid, self).__init__(width, height) # python3
+
+        # Another solution: make `SquareGrid` inherit from `object`, others remain unchanged
 
     Refer to python super() guide [#super_guide]_ and pthon2 super error [#py2_super_error]_ for further information.
 

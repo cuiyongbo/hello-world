@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from __future__ import print_function
-import collections
+from collections import deque, namedtuple
 
 class SimpleGraph:
     def __init__(self):
@@ -11,7 +11,7 @@ class SimpleGraph:
 
 class Queue:
     def __init__(self):
-        self.elements = collections.deque()
+        self.elements = deque()
 
     def empty(self):
         return len(self.elements) == 0
@@ -62,7 +62,7 @@ def breadth_first_search_3(graph, start, goal):
                 came_from[next] = current
     return came_from
 
-class SquareGrid:
+class SquareGrid(object):
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -85,15 +85,15 @@ class SquareGrid:
 
 class GridWithWeights(SquareGrid):
     def __init__(self, width, height):
-        SquareGrid.__init__(self, width, height) # python2.x patch
-        #super().__init__(width, height) # python3
+        #SquareGrid.__init__(self, width, height) # python2.x patch
+        super(GridWithWeights, self).__init__(width, height) # python3
         self.weights = {}
 
     def cost(self, from_node, to_node):
         return self.weights.get(to_node, 1)
 
 import heapq
-Node = collections.namedtuple('Node', ['priority', 'item'])
+Node = namedtuple('Node', ['priority', 'item'])
 
 class PriorityQueue:
     def __init__(self):
@@ -129,9 +129,9 @@ def dijkstra_search(graph, start, goal):
 
 def reconstruct_path(came_from, start, goal):
     current = goal
-    path = collections.deque()
+    path = deque()
     while current != None:
-        path.appendLeft(current)
+        path.appendleft(current)
         current = came_from[current]
     return path
 

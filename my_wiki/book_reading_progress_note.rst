@@ -8,6 +8,15 @@ To be or not to be, this is a question.
 
 -- William Shakespeare
 
+Currently supported interfaces:
+
+    * *check* - check for expired shared memory files
+      
+    * *list* - list current shared memory files with patterns, list all files if no pattern is provided
+      
+        * filter=pattern1,pattern2,...
+
+
 .. contents::
    :local:
 
@@ -211,3 +220,5 @@ Marked Books
 .. figure:: images/moshouchuanshuo_by_xiezhirong.jpg
 
     魔兽传说 谢志荣
+
+

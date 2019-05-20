@@ -129,7 +129,6 @@ General Unix API 03
     .. code-block:: c
 
         #include <signal.h>
-      
         int kill(pid_t pid, int sig);
       
         /*killpg -- send signal to a process group*/
