@@ -4,25 +4,22 @@ Pending tasks
 
 **Now or Never**
 
-#. review json code.
-
-#. https://en.wikipedia.org/wiki/Jordan_curve_theorem
-
 #. Computer graphics algorithms [#geomatric_alg]_
 #. Unix Network Programming [#unix_network_programming]_
 #. Apple Open Soure [#apple_opensource]_
-#. Fast CGI [#fastcgi]_
-
 #. https://github.com/alxn/ppearls.git (programming pearls solutions)
 #. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
-
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
-#. https://github.com/goodfeli/dlbook_exercises.git
-#. Introduction machine learning with python [#introduction_ml_py]_
-   
 #. matplotlib to draw the cover of murphy's machine learning
-#. review Unix process and thread facilities
 #. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
+   
+#. Search system for the WIKI docs
+
+    - Search keyword, and return relevant results.
+    - preprocessing: docs to feature vectors
+    - how to compute similarity: clustering or classification
+    - Make some ranking
+
 
 2019 Targets
 ============
@@ -45,5 +42,3 @@ Pending tasks
 .. [#unix_network_programming] http://www.kohala.com/start/ 
 .. [#geomatric_alg] http://geomalgorithms.com/
 .. [#apple_opensource] https://opensource.apple.com
-.. [#fastcgi] https://opensource.apple.com/source/FastCGI/
-.. [#introduction_ml_py] Introduction machine learning with python

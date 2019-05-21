@@ -35,7 +35,6 @@ Python Miscellaneous Tricks 03
         file than when it is read from a ``.py`` file; the only thing 
         that’s faster about ``.pyc`` files is the speed with which they are loaded.
 
-
 #. The Interactive Startup File
 
     When you use Python interactively, it is frequently handy to have some standard commands
@@ -65,11 +64,7 @@ Python Miscellaneous Tricks 03
                 startup_file = fobj.read()
          exec(startup_file)
    
-   
-    Add follow codes to :file:`.bashrc`::
-     
-        PYTHONSTARTUP=~/.pythonrc
-        export PYTHONSTARTUP
+    Add follow codes to :file:`.bashrc`: ``export PYTHONSTARTUP=~/.pythonrc``
    
     Add command(s) you want to execute in :file:`~/.pythonrc`. like::
    

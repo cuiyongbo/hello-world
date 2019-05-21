@@ -14,7 +14,7 @@ Python Miscellaneous Tricks 04
 
    save it as `python3` and choose it as defaul build system.
 
-#.  No `xrange` function in Python3 any more, use `range` instead
+#. No `xrange` function in Python3 any more, use `range` instead
     
 #. sklearn.model_selection.ParameterGrid
    
@@ -48,10 +48,24 @@ Python Miscellaneous Tricks 04
 
 #. Python `smtpd`
    
-   Solution: ``python -m smtpd --help``
+    Solution: ``python -m smtpd --help``
 
-#. python SimpleHTTPServer
+#. Python SimpleHTTPServer
    
-   Solution: ``python -m SimpleHTTPServer 3456``
+    Solution: ``python -m SimpleHTTPServer 3456``
 
-   Browser: ``http://127.0.0.1:3456/``
+    Browser: ``http://127.0.0.1:3456/``
+
+#. Python to start interpreter without reading `$PYTHONSTARTUP` file
+   
+    .. code-block:: sh
+
+        python3 -ic ''
+
+        # -i   
+        # When a script is passed as first argument or the -c option is used, 
+        # enter interactive mode after executing the script or the command. 
+        # It does not read the $PYTHONSTARTUP file.
+        #
+        # -c command
+        # Specify  the command to execute (see next section).

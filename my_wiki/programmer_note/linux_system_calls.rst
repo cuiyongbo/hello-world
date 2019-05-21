@@ -30,6 +30,8 @@ Linux System Call
     linux_system_call/nonlocal_jumps_note
 
 
+#. see errno definition: ``man errno`` or ``errno -l`` (Installation: ``sudo apt install moreutils``)
+
 .. rubric:: Footnotes
 
 .. [#] `Linux Manpage <https://www.systutorials.com/docs/linux/man/>`_
