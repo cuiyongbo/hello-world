@@ -154,11 +154,15 @@ Nature Lifes
 
 .. figure:: images/iris_plant.jpg
 
-   Iris 虹膜，鸢尾
+   Iris [虹膜，鸢尾]
 
 .. figure:: images/crocus_flower.jpg
 
     Crocus flower / Daffoli [水仙花]
+
+.. figure:: images/lanling.jpg
+
+    蓝铃花
 
 #. taxonomy
    
