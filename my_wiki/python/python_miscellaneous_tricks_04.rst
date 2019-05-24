@@ -69,3 +69,12 @@ Python Miscellaneous Tricks 04
         #
         # -c command
         # Specify  the command to execute (see next section).
+
+#. Numpy Bernoulli random generator
+   
+    .. code-block:: sh
+
+        np.random.choice([0, 1], size=200, p=[0.7, 0.3])
+
+        # sample for 200 examples, outputing 1 with a probability of 0.3
+        # and 0 with 0.7 
