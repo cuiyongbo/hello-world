@@ -127,6 +127,7 @@
    别来春半，触目愁肠断。砌下落梅如雪乱，拂了一身还满。
    雁来音信无凭，路遥归梦难成。离恨恰如春草，更行更远还生。
 
+.. image:: images/pembrokeshire_coast.jpg 
 .. image:: images/mountain.jpg 
 .. image:: images/mountain_lake.jpg
 .. image:: images/sunlight_shine_on_farm.jpg

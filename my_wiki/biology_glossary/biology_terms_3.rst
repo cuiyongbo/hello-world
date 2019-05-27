@@ -130,9 +130,10 @@ Wild Lives 03
 
     Red in the face
 
+.. image:: images/songbird_in_jersey_wood.jpg
 .. figure:: images/Warbler.jpg
 
-    Warbler [黄莺]
+    Warbler/Songbird [黄莺]
 
 .. figure:: images/piping_plover.jpg
 
