@@ -89,14 +89,6 @@ Nature Lifes
 .. image:: images/pork-cut-diagram.jpg
 .. image:: images/horse_hock-knee.jpg
 
-.. figure:: images/hoverfly.jpg
-   
-   Hoverfly [蝇虎]
-
-.. figure:: images/wasp.jpg
-
-   wasp [黄蜂]
-
 .. figure:: images/eel.png
 
    Eel [鳗鱼]

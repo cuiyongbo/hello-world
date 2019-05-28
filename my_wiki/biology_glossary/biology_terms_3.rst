@@ -83,6 +83,15 @@ Wild Lives 03
 
    Cicada  [知了，蝉]
 
+.. figure:: images/hoverfly.jpg
+   
+   Hoverfly [蝇虎]
+
+.. image:: images/honey_bee.jpg
+.. figure:: images/wasp.jpg
+
+   wasp [黄蜂]
+
 .. figure:: images/winter_time.jpg
 
     A Ladybird [七星瓢虫] hibernates in Tewin, England
