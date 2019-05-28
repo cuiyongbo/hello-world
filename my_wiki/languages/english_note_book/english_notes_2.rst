@@ -306,6 +306,7 @@ society.
 |
 | bale
 | Definition: a bundle of paper, hay, cotton, etc., tightly wrapped and bound with cords or hoops.
+| Synonyms: haystack
 | Usage: the fire destroyed 500 bales of hay. [麦秸垛，干草堆]
 | Usage: The waste paper is baled, then sent for recycling. 
 
