@@ -8,3 +8,4 @@ Letcode notes
 #. Find Min in rotated sorted array: https://leetcode.com/articles/find-minimum-in-rotated-sorted-array/
 #. Cycle detection: https://www.kimsereylam.com/racket/python/2019/03/06/cycle-detection-with-floyd-tortoise-and-hare.html
 #. Find K-th smallest pair distance: https://leetcode.com/articles/find-k-th-smallest-pair-distance/
+#. Construct binary tree form inorder and postorder traversal: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/solution/

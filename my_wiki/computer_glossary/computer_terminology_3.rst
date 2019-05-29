@@ -69,3 +69,9 @@ Computer Terminology 3
 
     This process of serializing an object is also called *marshalling* an object. The opposite operation, 
     extracting a data structure from a series of bytes, is *deserialization* (also called *unmarshalling*).
+
+
+#. Palindrome 
+   
+    A palindrome [回文] is a word, phrase, number, or other sequence of characters which reads the same backward or forward. 
+    Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
