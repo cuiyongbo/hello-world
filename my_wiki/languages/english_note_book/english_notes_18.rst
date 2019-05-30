@@ -172,6 +172,14 @@ English Note 18
 | Usage: Japan's electronics industry began to saturate the world markets.
 | Definition: overwhelm (an enemy target area) by concentrated bombing.
 | 
+| portmanteau
+| Plural: portmanteaux/ portmanteaus
+| Synonyms: suitcase [行李箱]
+| Definition: a word blending the sounds and combining the meanings of two others, for example motel (from ‘motor’ and ‘hotel’) or brunch (from ‘breakfast’ and ‘lunch’).
+| Usage: podcast is a portmanteau, a made-up word coined from a combination of the words iPod and broadcast.
+| Definition: consisting of or combining two or more aspects or qualities.
+| Usage: a portmanteau movie composed of excerpts from his most famous films.
+
 
 #. the apple doesn't fall far from the tree [有其父必有其子]
 

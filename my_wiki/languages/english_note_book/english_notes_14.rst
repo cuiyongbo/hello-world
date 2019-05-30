@@ -374,3 +374,4 @@ English Note 14
 .. image:: images/quinault_rainforest_olympic_national_park.jpg
 .. image:: images/ice_cave_at_sunset.jpg
 .. image:: images/st.maria.waterfall.jpg
+.. image:: images/new_york_sun-sation.jpg

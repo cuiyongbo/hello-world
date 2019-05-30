@@ -75,3 +75,11 @@ Computer Terminology 3
    
     A palindrome [回文] is a word, phrase, number, or other sequence of characters which reads the same backward or forward. 
     Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
+
+
+#. Codec
+   
+    A codec is a device or computer program for encoding or decoding a digital data stream or signal.
+    Codec is a portmanteau of coder-decoder. A coder encodes a data stream or a signal for transmission or storage, 
+    possibly in encrypted form, and the decoder function reverses the encoding for playback or editing. 
+    Codecs are used in videoconferencing, streaming media, and video editing applications.
