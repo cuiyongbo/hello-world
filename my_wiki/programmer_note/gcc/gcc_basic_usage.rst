@@ -493,6 +493,12 @@ gcc - GNU project C and C++ compiler
    **Note:** this option can speed up compilation when building a huge project, but will
    consume more memory in return. 
 
+.. option:: -fkeep-inline-functions
+   
+   In C, emit "static" functions that are declared "inline" into the object file, even if the 
+   function has been inlined into all of its callers. This switch does not affect functions using
+   the "extern inline" extension in GNU C90. In C++, emit any and all inline functions into the object file.
+
 
 **TRICKS**
 
