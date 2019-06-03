@@ -78,3 +78,16 @@ Python Miscellaneous Tricks 04
 
         # sample for 200 examples, outputing 1 with a probability of 0.3
         # and 0 with 0.7 
+
+#. Python to reload a module
+   
+    .. code-block:: py
+
+        # python 2.x
+        reload(module)
+
+        # python 3.x
+        import importlib
+        importlib.reload(module)
+
+
