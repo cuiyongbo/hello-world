@@ -103,6 +103,10 @@ Nature Lifes
 
    Penguin regurgitation [反刍喂食]
 
+.. image:: images/tree_canopy.jpg
+.. image:: images/forest_overview.jpg
+.. image:: images/see_overview.jpg
+
 .. image:: images/coast_redwoods.jpg
 .. figure:: images/redwood.jpg
 
