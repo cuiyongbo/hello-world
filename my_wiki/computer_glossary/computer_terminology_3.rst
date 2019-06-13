@@ -65,17 +65,16 @@ Computer Terminology 3
    
     In computer science, in the context of data storage, serialization is the process of translating data 
     structures or object state into a format that can be stored (for example, in a file or memory buffer, 
-    or transmitted across a network connection link) and reconstructed later in the same or another computer environment.
+    or transmitted across a network connection link) and reconstructed later in the same or 
+    another computer environment.
 
     This process of serializing an object is also called *marshalling* an object. The opposite operation, 
     extracting a data structure from a series of bytes, is *deserialization* (also called *unmarshalling*).
-
 
 #. Palindrome 
    
     A palindrome [回文] is a word, phrase, number, or other sequence of characters which reads the same backward or forward. 
     Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
-
 
 #. Codec
    
@@ -83,3 +82,8 @@ Computer Terminology 3
     Codec is a portmanteau of coder-decoder. A coder encodes a data stream or a signal for transmission or storage, 
     possibly in encrypted form, and the decoder function reverses the encoding for playback or editing. 
     Codecs are used in videoconferencing, streaming media, and video editing applications.
+
+#. Memoization
+   
+   In computing, memoization is an optimization technique used primarily to speed up computer programs 
+   by storing the results of expensive function calls and returning the cached result when the same inputs occur again.

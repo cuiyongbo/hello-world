@@ -50,7 +50,7 @@ Hash Table
         i = 0
         repeat
             j = h(k,i)
-            if T[j] != DELETED and T[j] == k
+            if T[j] == k
                 return j
             i = i + 1
         until T[j] == NIL or i == m

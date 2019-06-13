@@ -179,6 +179,22 @@ English Note 18
 | Usage: podcast is a portmanteau, a made-up word coined from a combination of the words iPod and broadcast.
 | Definition: consisting of or combining two or more aspects or qualities.
 | Usage: a portmanteau movie composed of excerpts from his most famous films.
+| 
+| showcase
+| Definition: a glass case used for displaying articles in a store or museum.
+| Definition: a place or occasion for presenting something favorably to general attention.
+| Usage: the gallery will provide a showcase for Atlanta's young photographers.
+| Usage: Jack found a film role that showcased all his talents. 
+| 
+| canopy
+| Definition: an ornamental cloth covering hung or held up over something, especially a throne or bed.
+| Usage: a romantic four-poster bed complete with drapes and a canopy.
+| Usage: a full moon and a canopy of stars.
+| Usage: the river was canopied by overhanging trees.
+| 
+| pictorial
+| Definition: of or expressed in pictures; illustrated.
+| Usage: feelings presented in a pictorial form.
 
 
 #. the apple doesn't fall far from the tree [有其父必有其子]

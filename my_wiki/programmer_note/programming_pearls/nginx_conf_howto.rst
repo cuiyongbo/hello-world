@@ -26,5 +26,6 @@ nginx conf
 .. [#] `FastCGI repository <https://fastcgi-archives.github.io/>`_
 .. [#] `Spawn-fcgi repository <https://github.com/lighttpd/spawn-fcgi>`_
 .. [#] `Another FastCGI Library <http://althenia.net/fcgicc>`_
+.. [#] `Tencent Server frame <https://github.com/Tencent/phxpaxos.git>`
 .. [#] `NGINX FastCGI example <http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#example>`_
 .. [#] `NGINX Connect Cpp FastCGI <http://chriswu.me/blog/writing-hello-world-in-fcgi-with-c-plus-plus/>`_
