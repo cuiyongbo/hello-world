@@ -204,6 +204,7 @@ Wild Lives 03
 
     Salamander [蝾螈]
 
+.. image:: images/tree_frog.jpg
 .. image:: images/life-cycle-of-a-frog-1.jpg
 .. image:: images/life-cycle-of-a-frog-2.png
 .. figure:: images/Kaulquappen_Tadpole.jpg
