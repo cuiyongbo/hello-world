@@ -34,3 +34,13 @@ Janpanese Note 03
     +--------+-------------------------+
     | どこ   | where                   |
     +--------+-------------------------+
+
+#. Shogun
+   
+    a hereditary commander-in-chief in feudal Japan. Because of the military power concentrated in his hands
+    and the consequent weakness of the nominal head of state (the mikado or emperor), the shogun was generally 
+    the real ruler of the country until feudalism was abolished in 1867.
+
+#. samurai
+   
+    a member of a powerful military caste in feudal Japan, especially a member of the class of military retainers of the daimyos.

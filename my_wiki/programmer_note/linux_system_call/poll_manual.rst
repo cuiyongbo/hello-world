@@ -111,13 +111,3 @@ poll Manual
    On success, the number of descriptor(s) with events or errors reported is returned;  
    A value of 0 indicates that the call timed out and no file descriptors were ready. 
    On error, -1 is returned, and errno is set appropriately.
-
-
-**ERRORS**
-
-   The poll() fails with setting global variable errno to indicate the error::
-
-      EFAULT The array given as argument was not contained in the calling program's address space.
-      EINTR  A signal occurred before any requested event; see signal(7).
-      EINVAL The nfds value exceeds the RLIMIT_NOFILE value.
-      ENOMEM There was no space to allocate file descriptor tables.

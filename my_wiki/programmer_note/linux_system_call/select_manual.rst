@@ -66,7 +66,7 @@ select Manual
    add and remove a given file descriptor from a set. *FD_ISSET()* tests to see if a file descriptor is part of 
    the set; this is useful after *select()* returns.
 
-   *nfds* is the highest-numbered file descriptor in any of the three sets, plus 1.
+   **nfds is the highest-numbered file descriptor in any of the three sets, plus 1.**
    i.e., the descriptors from 0 through *nfds-1* in the descriptor sets are examined.  
    (Example: If you have set two file descriptors "4" and "17", nfds should not be "2", 
    but rather "17 + 1" or "18".)
@@ -111,19 +111,6 @@ select Manual
    *writefds*, *exceptfds*) which may be zero if the *timeout* expires before anything interesting 
    happens. On error, -1 is returned, and *errno* is set appropriately; the sets and timeout become 
    undefined, so do not rely on their contents after an error.
-
-**ERRORS**
-
-   The function calls fail if::
-
-      EBADF  
-      An invalid file descriptor was given in one of the sets. 
-      Perhaps a file descriptor that was already closed, or one 
-      on which an error has occurred.
-         
-      EINTR  A signal was caught; see signal(7).
-      EINVAL nfds is negative or the value contained within timeout is invalid.
-      ENOMEM unable to allocate memory for internal tables.
 
 **NOTES**
 

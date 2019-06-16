@@ -213,6 +213,7 @@ Wild Lives 03
 
 .. image:: images/lion.jpg
 .. image:: images/lion_cubs.jpg
+.. image:: images/fathers_day.jpg
 .. image:: images/feathers.jpg
 .. image:: images/plume_types.jpg
 .. image:: images/beaver.jpg
