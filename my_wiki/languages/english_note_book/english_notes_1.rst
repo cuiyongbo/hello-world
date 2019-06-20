@@ -1615,16 +1615,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: she flushed with anger.
 | Definition: cleanse (something, especially a toilet) by causing large | quantities of water to pass through it.
 | 
-| spurious
-| Definition: not being what it purports to be true; false or fake.
-| Usage: He had  managed to make the entirely spurious impression that the company is thriving.
-| 
-| purport
-| Definition: appear or claim to be or do something, especially falsely; profess.
-| Synonyms: claim.
-| Usage: A book that purports to tell the whole truth.
-| Usage: She is not the person she purports to be.
-| 
 | imbue
 | Definition: (often be imbued with) inspire or permeate with a strong feeling or quality.
 | Usage: Her voice was imbued with an unusual seriousness.

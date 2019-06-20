@@ -61,8 +61,7 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     cost_sofar[src] = 0
     while not frontier.empty():
         current = frontier.get()
-        if current == dest:
-            break
+        if current == dest: break
         for next in graph.neighbours(current):
             new_cost = cost_sofar[current] + graph.cost(current, next)
             if next not in came_from or new_cost < cost_sofar[next]:
@@ -82,8 +81,7 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     came_from[src] = None
     while not frontier.empty():
         current = frontier.get()
-        if current == dest:
-            break
+        if current == dest: break
         for next in graph.neighbours(current):
             if next not in came_from:
                 priority = heuristic(dest, next)
@@ -99,14 +97,14 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     cost_sofar[src] = 0
     while not frontier.empty():
         current = frontier.get()
-        if current == dest:
-            break
+        if current == dest: break
         for next in graph.neighbours(current):
             new_cost = cost_sofar[current] + graph.cost(current, next)
             if next not in came_from or new_cost < cost_sofar[next]:
                 priority = heuristic(dest, next) + new_cost
                 frontier.put(next, priority)
                 came_from[next] = current
+                cost_sofar[next] = new_cost
 
 
 .. code-block:: none
@@ -118,7 +116,7 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
       current = remove lowest rank item from OPEN
       add current to CLOSED
       for neighbors of current:
-        cost = g(current) + movementcost(current, neighbor)
+        cost = g(current) + movement_cost(current, neighbor)
         if neighbor in OPEN and cost < g(neighbor):
           remove neighbor from OPEN, because new path is better
         if neighbor in CLOSED and cost < g(neighbor): # note
@@ -217,3 +215,4 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 .. [#] `A* implementation <https://www.redblobgames.com/pathfinding/a-star/implementation.html>`_
 .. [#] `Easystar - javascript version <https://easystarjs.com/>`_
 .. [#] `Simple C++ version <https://github.com/vandersonmr/A_Star_Algorithm.git>`_
+.. [#] `Simple Java version < https://github.com/coderodde/cskit.git>`_

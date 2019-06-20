@@ -123,6 +123,7 @@ Nature Lifes
    history. By the time Spanish explorer Vasco Núñez de Balboa ‘found’ the Pacific Ocean in 1513, General Sherman had 
    been growing for more than 1,500 years.
 
+.. image:: images/sundew_plant.jpg
 .. figure:: images/pitcher_plant.jpg
 
     Pitcher plant [猪笼草]

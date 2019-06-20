@@ -10,7 +10,7 @@ Unix signal Manual
 
     We need to define some of the terms used throughout our discussion of signals. 
     First, a signal is **generated** for a process when the event that causes the 
-    signal occurs. The event could be a hardware exception (e.g., divide by 0), 
+    signal occurs. The event could be a hardware exception (e.g., divided by 0), 
     a software condition (e.g., an alarm timer expiring), a terminal-generated signal, 
     or a call to the kill function. When the signal is generated, the kernel usually 
     sets a flag of some form in the process table. We say that a signal is **delivered** 

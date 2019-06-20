@@ -12,7 +12,9 @@ Pending tasks
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. matplotlib to draw the cover of murphy's machine learning
 #. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
-   
+
+#. Chrome plugin: https://github.com/crimx/ext-saladict
+
 #. Search system for the WIKI docs
 
     - Search keyword, and return relevant results.

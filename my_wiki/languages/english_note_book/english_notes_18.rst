@@ -195,6 +195,17 @@ English Note 18
 | pictorial
 | Definition: of or expressed in pictures; illustrated.
 | Usage: feelings presented in a pictorial form.
+| 
+| spurious
+| Definition: not being what it purports to be true; false or fake.
+| Usage: He had  managed to make the entirely spurious impression that the company is thriving.
+| 
+| purport
+| Definition: appear or claim to be or do something, especially falsely; profess.
+| Synonyms: claim.
+| Usage: A book that purports to tell the whole truth.
+| Usage: She is not the person she purports to be.
+
 
 
 #. the apple doesn't fall far from the tree [有其父必有其子]
