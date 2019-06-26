@@ -215,4 +215,4 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 .. [#] `A* implementation <https://www.redblobgames.com/pathfinding/a-star/implementation.html>`_
 .. [#] `Easystar - javascript version <https://easystarjs.com/>`_
 .. [#] `Simple C++ version <https://github.com/vandersonmr/A_Star_Algorithm.git>`_
-.. [#] `Simple Java version < https://github.com/coderodde/cskit.git>`_
+.. [#] `Simple Java version <https://github.com/coderodde/cskit.git>`_
