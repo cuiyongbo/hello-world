@@ -207,7 +207,6 @@ English Note 18
 | Usage: She is not the person she purports to be.
 
 
-
 #. the apple doesn't fall far from the tree [有其父必有其子]
 
     the apple doesn't fall far from the tree. also the apple never falls far from the tree.
@@ -232,3 +231,7 @@ English Note 18
     In physics and systems theory, the superposition principle, also known as superposition property, 
     states that, for all linear systems, the net response at a given place and time caused by two or 
     more stimuli is the sum of the responses which would have been caused by each stimulus individ.
+
+
+.. image:: images/firefly_season.jpg
+.. image:: images/winter_on_sutherland.jpg
