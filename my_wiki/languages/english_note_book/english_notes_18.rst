@@ -235,3 +235,5 @@ English Note 18
 
 .. image:: images/firefly_season.jpg
 .. image:: images/winter_on_sutherland.jpg
+.. image:: images/glastonblury.jpg
+.. image:: images/tree_bridge.jpg
