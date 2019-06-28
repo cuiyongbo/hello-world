@@ -207,6 +207,22 @@ English Note 18
 | Usage: She is not the person she purports to be.
 
 
+#. Undercover angent vs Plainclothes
+   
+    To go "undercover" is to avoid detection by the entity one is observing,
+    and especially to disguise one's own identity or use an assumed identity [化名，伪装]
+    for the purposes of gaining the trust of an individual or organization to learn or
+    confirm confidential information or to gain the trust of targeted individuals in 
+    order to gather information or evidence.
+
+    Undercover agents should not be confused with law enforcement officers who wear plainclothes.
+    This method is used by law enforcement and intelligence agencies. To wear plainclothes is to
+    wear civilian clothes, instead of wearing a uniform, to avoid detection or identification as
+    a law enforcement officer. However, plainclothes police officers typically carry normal police
+    equipment and normal identification. **Police officers in plainclothes must identify themselves
+    when using their police powers;** however, they are not required to identify themselves on demand 
+    and may lie about their status as a police officer in some situations.
+
 #. the apple doesn't fall far from the tree [有其父必有其子]
 
     the apple doesn't fall far from the tree. also the apple never falls far from the tree.
@@ -223,7 +239,7 @@ English Note 18
 
 #. Murphy's Law
    
-    a supposed law of nature, expressed in various humorous popular sayings, 
+    A supposed law of nature, expressed in various humorous popular sayings, 
     to the effect that anything that can go wrong will go wrong.
 
 #. Superposition principle
