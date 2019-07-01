@@ -71,6 +71,10 @@ CPP Keywords
         A constructor with a single non-default parameter that is declared 
         without the function specifier explicit is called a **converting constructor**.
 
+#. override specifier
+   
+    ``override`` Specifies that a virtual function overrides another virtual function.
+
 #. final specifier
 
     When used in a virtual function declaration or definition, `final` ensures that the function 
