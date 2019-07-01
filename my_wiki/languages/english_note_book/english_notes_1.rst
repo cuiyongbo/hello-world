@@ -566,11 +566,7 @@ name, also known as surname, with most family members.
 | Definition: Not friendly or interested in other people; distant, remote.
 | Idioms: keep / hold oneself aloof; remain / stand aloof. [清高，疏远]
 | Usage: The Emperor kept himself aloof from the people.
-| 
-| mooring
-| Definition: A place where a boat or ship is moored.
-| Usage: The boat had been at its usual moorings immediately prior to the storm.
-| 
+|
 | repository
 | Definition: A repository is a place where something is kept safely.
 | Usage: A church in Moscow became a repository for police files.

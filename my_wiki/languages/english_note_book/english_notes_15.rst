@@ -67,6 +67,8 @@ English Note 15
 | 
 | moor
 | Definition: a tract of open uncultivated upland; a heath.
+| Definition: A place where a boat or ship is moored.
+| Usage: The boat had been at its usual moorings immediately prior to the storm.
 | 
 | heath [野地，荒地]
 | Definition: an area of open uncultivated land, with characteristic vegetation of heather, gorse, and coarse grasses.
