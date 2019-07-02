@@ -159,7 +159,10 @@ Military Terms
 
    Uranus [天王星]
 
-|
+.. figure:: images/solar_eclipse.jpg
+
+   Solar Eclipse [月食]
+
 | rendezvous
 | Definition: A rendevous is a meeting, often a secret one, that you have arranged with sb at a particular time and place.
 | Usage: I had almost decided to keep my rendezvous with Tony.

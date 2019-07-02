@@ -253,3 +253,4 @@ English Note 18
 .. image:: images/winter_on_sutherland.jpg
 .. image:: images/glastonblury.jpg
 .. image:: images/tree_bridge.jpg
+.. image:: images/boating_on_canada_day.jpg

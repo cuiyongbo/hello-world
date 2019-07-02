@@ -13,3 +13,4 @@ Letcode notes
 #. The skyline problem: https://briangordon.github.io/2014/08/the-skyline-problem.html
 #. The permutation: https://www.prodevelopertutorial.com/given-a-collection-of-distinct-integers-return-all-possible-permutations/
 #. Bidirectional BFS: https://www.geeksforgeeks.org/bidirectional-search/
+#. Construct string for binary tree: https://leetcode.com/problems/construct-string-from-binary-tree/solution/
