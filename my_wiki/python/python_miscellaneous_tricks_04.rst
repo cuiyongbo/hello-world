@@ -90,4 +90,10 @@ Python Miscellaneous Tricks 04
         import importlib
         importlib.reload(module)
 
+#. Python to copy file
+   
+    .. code-block:: py
 
+        >>> import shutil
+        >>> [p for p in dir(shutil) if 'copy' in p]
+        ['copy', 'copy2', 'copyfile', 'copyfileobj', 'copymode', 'copystat', 'copytree']

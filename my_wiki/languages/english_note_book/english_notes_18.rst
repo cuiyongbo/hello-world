@@ -254,3 +254,6 @@ English Note 18
 .. image:: images/glastonblury.jpg
 .. image:: images/tree_bridge.jpg
 .. image:: images/boating_on_canada_day.jpg
+.. image:: images/summer_in_salcombe.jpg
+.. image:: images/scenary_01.jpg
+.. image:: images/scenary_02.jpg
