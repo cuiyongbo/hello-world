@@ -19,6 +19,12 @@ members and many extended family members. He shares his family
 name, also known as surname, with most family members.
 
 | fiance [未婚夫] fiancee [未婚妻] suitor [求婚者]
+|
+| lexicon
+| Definition: the vocabulary of a person, language, or branch of knowledge.
+| Usage: the size of the English lexicon.
+| Definition: a dictionary, especially of Greek, Hebrew, Syriac, or Arabic.
+| Usage: a Greek-Latin lexicon.
 | 
 | past tense 过去式
 | past participle 过去分词

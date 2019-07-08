@@ -77,7 +77,7 @@ Command line instructions
 
         git config --global core.autocrlf true
 
-#. Git to reset commit author
+#. Git to change the author of last commit
    
     .. code-block:: sh
 
@@ -98,3 +98,26 @@ Command line instructions
         $ git config --global user.name "natsume"
         $ git config --global user.email "csu20140909@gmail.com"
         $ git commit --amend --reset-author
+
+#. Undo ``git update-index --skip-worktree``
+   
+    Solution:: ``git update-index --no-skip-worktree <file>``
+
+#. Git - Difference Between ``assume-unchanged`` and ``skip-worktree``
+   
+    ``assume-unchanged`` is designed for cases where it is expensive to check
+    whether a group of files have been modified; when you set the bit, git assumes
+    the files corresponding to that portion of the index have not been modified in 
+    the working copy. So it avoids a mess of ``stat`` calls.
+
+    ``skip-worktree`` is more than that: even where git knows that the file has been
+    modified, it will pretend it has not been, using the version from the index instead.
+
+    ``--assume-unchanged`` assumes that a developer shouldn’t change a file.
+    This flag is meant for improving performance for not-changing folders like SDKs.
+
+    ``--skip-worktree`` is useful when you instruct git not to touch a specific file ever
+    because developers should change it. For example, if the main repository upstream hosts
+    some production-ready configuration files and you don’t want to accidentally commit changes 
+    to those files, ``--skip-worktree`` is exactly what you want.
+

@@ -111,12 +111,12 @@ Git log
         |/
         *   3c5de50 Merge branch 'real3d-broken'
 
-#. Check the history of a specific file
+#. Check the commit history of a specific file
 
     .. code-block:: sh
 
         # First
-        $ gitk <fileName> 
+        $ gitk [--follow] <fileName> 
 
         # Second
         $ git log --follow -p  --word-diff=color <fileName>
