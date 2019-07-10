@@ -200,6 +200,7 @@ Wild Lives 03
 
 .. image:: images/elephant_herd_in_namibia.jpg
 .. image:: images/leopard_snoozing_in_a_tree.jpg
+.. image:: images/jaguar_in_pentanal_wetlands.jpg
 
 .. figure::  images/salamander.jpg
 

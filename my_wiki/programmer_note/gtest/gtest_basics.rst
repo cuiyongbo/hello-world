@@ -88,6 +88,7 @@ Test Output::
    --gtest_output=xml[:DIRECTORY_PATH\|:FILE_PATH]
       Generate an XML report in the given directory or with the given file
       name. FILE_PATH defaults to test_details.xml.
+      e.g. : ``--gtest_output=xml:./summary.xml``
 
 Assertion Behavior::
 
