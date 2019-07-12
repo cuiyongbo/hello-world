@@ -205,6 +205,9 @@ English Note 18
 | Synonyms: claim.
 | Usage: A book that purports to tell the whole truth.
 | Usage: She is not the person she purports to be.
+| 
+| urn [骨灰盒]
+| Definition: a tall, rounded vase with a base, and often a stem, especially one used for storing the ashes of a cremated person.
 
 
 #. Undercover angent vs Plainclothes
