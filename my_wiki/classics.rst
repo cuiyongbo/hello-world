@@ -9,6 +9,7 @@ Classics
     classics/19_poems
     classics/poetry_collection_1
     classics/poetry_collection_2
+    classics/poetry_collection_3
     classics/zhuzibaijia
     classics/daiyuzanghua
     classics/nostalgia

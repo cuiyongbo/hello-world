@@ -208,6 +208,12 @@ English Note 18
 | 
 | urn [骨灰盒]
 | Definition: a tall, rounded vase with a base, and often a stem, especially one used for storing the ashes of a cremated person.
+| 
+| self-seeking
+| Definition: Taking advantage of opportunities without regard for the consequences for others.
+| Synonyms: self-serving
+| Usage: public accountability is replaced by self-serving propaganda.
+| Usage: He had one devoted friend at least, and he had conquered one soul in the world that was neither rudimentary nor tainted with self-seeking.
 
 
 #. Undercover angent vs Plainclothes
