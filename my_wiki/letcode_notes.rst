@@ -16,3 +16,4 @@ Letcode notes
 #. Construct string for binary tree: https://leetcode.com/problems/construct-string-from-binary-tree/solution/
 #. Best Time to Buy and Sell Stock with Transaction Fee: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 #. Count Complete Tree Nodes: https://www.programcreek.com/2014/06/leetcode-count-complete-tree-nodes-java/
+#. Minimum Height Trees: https://www.geeksforgeeks.org/roots-tree-gives-minimum-height/
