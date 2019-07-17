@@ -330,11 +330,3 @@ English Note 16
     power in the workplace. 
 
     .. image:: images/Pointy-Haired_Boss.jpg
-
-   
-#. Ground truth
-   
-    Ground truth is a term used in various fields to refer to information provided by direct observation
-    as opposed to information provided by inference. In machine learning, the term "ground truth" refers 
-    to the accuracy of the training set's classification for supervised learning techniques. 
-    This is used in statistical models to prove or disprove research hypotheses.

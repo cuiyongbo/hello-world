@@ -79,3 +79,10 @@ Machine learning concepts
     during their lifetimes, while neural networks allow agents to learn only during 
     their lifetimes. Reinforcement learning allows agents to learn during their lifetimes 
     and share knowledge with other agents.
+   
+#. Ground truth
+   
+    Ground truth is a term used in various fields to refer to information provided by direct observation
+    as opposed to information provided by inference. In machine learning, the term "ground truth" refers 
+    to the accuracy of the training set's classification for supervised learning techniques. 
+    This is used in statistical models to prove or disprove research hypotheses.

@@ -121,3 +121,25 @@ Command line instructions
     some production-ready configuration files and you don’t want to accidentally commit changes 
     to those files, ``--skip-worktree`` is exactly what you want.
 
+#. Git - Check out, review, and merge locally
+
+    * Fetch and check out the branch for this merge request
+
+        .. code-block:: sh
+
+            git fetch origin
+            git checkout -b stable_ti_selectionCost origin/stable_ti_selectionCost
+
+    * Review the changes locally
+
+    * Merge the branch and fix any conflicts that come up
+
+        .. code-block:: sh
+
+            git fetch origin
+            git checkout origin/master
+            git merge --no-ff stable_ti_selectionCost
+
+    * Push the result of the merge to GitLab
+
+        ``git push origin master``

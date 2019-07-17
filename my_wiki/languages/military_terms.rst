@@ -37,6 +37,10 @@ Military Terms
 | hump airlift [驼峰航线]
 | 20th group armies [第20集团军]
 |
+| dog tag 
+| Definition: a metal tag attached to a dog's collar, typically giving its name and owner's address.
+| Definition: a soldier's metal identity tag, worn on a chain around the neck.
+|
 | sinology
 | sinologist [汉学家]
 | Definition: the study of Chinese language, history, customs, and politics.

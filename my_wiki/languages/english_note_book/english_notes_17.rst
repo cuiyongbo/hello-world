@@ -236,3 +236,4 @@ English Note 17
 .. image:: images/slope_observator.jpg
 .. image:: images/forest_overview.jpg
 .. image:: images/cypress_tunnel.jpg
+.. image:: images/sheep_flock.jpg
