@@ -6,6 +6,10 @@ English Note 9
 
 -- 陆游《冬夜读书示子聿》
 
+知行合一
+
+-- 王阳明
+
 | ancillary
 | Definition: providing necessary support to the primary activities or operation of an organization, institution, industry, or system.
 | Synonyms: auxillary.
