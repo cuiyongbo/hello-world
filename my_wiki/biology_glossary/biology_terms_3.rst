@@ -276,6 +276,7 @@ Wild Lives 03
 
 .. image:: images/zebra.jpg
 
+.. image:: images/leatherback_sea_turtle.jpg
 .. image:: images/green_sea_turtle.jpg
 .. image:: images/seal.jpg
 

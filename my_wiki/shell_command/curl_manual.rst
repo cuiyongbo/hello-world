@@ -43,7 +43,8 @@ curl - transfer a URL
 
    .. option:: -D, --dump-header <file>
               
-      Write the protocol headers to the specified file.
+      Write the protocol headers to the specified file. note the ``-`` after the ``-D`` 
+      which indicates that the output file is ``stdout``. e.g. ``curl -D - http://www.baidu.com``
 
    .. option:: --connect-timeout <seconds>
       

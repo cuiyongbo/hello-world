@@ -4,6 +4,8 @@ Machine Learning
 
 Now Let's start it.
 
+A fairly good place to start comes here `Machine Learning 101 <https://leetcode.com/explore/learn/card/machine-learning-101/>`_
+
 .. toctree:: 
     :titlesonly:
 

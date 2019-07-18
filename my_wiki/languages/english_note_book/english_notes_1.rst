@@ -1110,15 +1110,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: It is not difficult to see why Edward is enamored with her.
 | Usage: She was truly enamoured of New York.
 | 
-| raison d’être
-| Origin: French, literally ‘reason for being’.
-| Definition: The most important reason or purpose for someone or something’s existence.
-| Usage: An instituation whose raison d’être is public service broadcasting.
-| 
-| de facto 
-| Synonyms: in fact
-| Usage: The general took de facto control of the country.
-| 
 | shoehorn
 | Defiintion: a curved instrument used to ease one’s heel into a shoe.
 | Definition: force into an inadequate space.
@@ -1659,10 +1650,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | confer
 | Definition: have discussions; exchange opinions.
 | Usage: The officials  were conferring with allies.
-| 
-| ubiquitous
-| Definition: present. appearing, or found everywhere.
-| Usage: His ubiquitous influence was felt by all the family.
 | 
 | sanity
 | Definition: the ability to think and behave in a normal and rational manner.

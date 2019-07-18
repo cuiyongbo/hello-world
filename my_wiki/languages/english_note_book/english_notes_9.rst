@@ -452,6 +452,13 @@ English Note 9
 | Usage: a pendulum oscillates about its lowest point.
 | Definition: waver between extremes of opinion, action, or quality.
 | Usage: he was oscillating between fear and bravery. [摇摆不定]
+| 
+| bulleye
+| Definition: the center of the target in sports such as archery, shooting, and darts. [靶心]
+| Definition: a shot that hits the center of a target in archery, shooting, and darts.
+| Definition: used to refer to something that achieves exactly the intended effect.
+| Usage: the silence told him he'd scored a bullseye. [一语中的，一针见血]
+
 
 .. figure:: images/harpoon.jpg
 

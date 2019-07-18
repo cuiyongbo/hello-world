@@ -200,7 +200,7 @@ English Note 2
 | Definition: postpone consideration of or an action on.
 | Usage: A planned test of new ale has been back-burnered.
 | 
-| silver bullet
+| silver bullet [灵丹妙药]
 | Definition: a bullet made of silver, used in fiction as a supposedly magical method of killing werewolves. [狼人]
 | Definition: a simple and seemingly magical solution to a complicated problem.
 | Usage: There is no silver bullet here that will make the biosimilar market go gangbusters.
