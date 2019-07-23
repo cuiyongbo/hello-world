@@ -77,6 +77,7 @@ Wild Lives 03
 
    Scorpion [蝎子]
 
+.. image:: images/hummingbird_hawk_moth.jpg
 .. image:: images/burgundy_snail.jpg
 .. image:: images/life_cycle_of_a_17_year_periodical_cicada.jpg
 .. image:: images/cicada-metamorphosis.jpg
