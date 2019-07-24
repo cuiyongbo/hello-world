@@ -65,6 +65,7 @@ Wild Lives 03
 
     Pangolin [穿山甲]
 
+.. image:: images/meerkat.jpg
 .. figure:: images/sengi.jpg
 
    Sengi [桑吉鼠]
