@@ -143,3 +143,7 @@ Command line instructions
     * Push the result of the merge to GitLab
 
         ``git push origin master``
+
+#. Git to set default commit message editor 
+   
+    Set to vim: ``git config --global core.editor "vim"``

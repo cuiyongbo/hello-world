@@ -17,3 +17,4 @@ Letcode notes
 #. Best Time to Buy and Sell Stock with Transaction Fee: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 #. Count Complete Tree Nodes: https://www.programcreek.com/2014/06/leetcode-count-complete-tree-nodes-java/
 #. Minimum Height Trees: https://www.geeksforgeeks.org/roots-tree-gives-minimum-height/
+#. Maximal Rectangle: https://www.geeksforgeeks.org/maximum-size-rectangle-binary-sub-matrix-1s/
