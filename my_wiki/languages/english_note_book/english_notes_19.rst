@@ -28,7 +28,6 @@ English Note 19
 | Definition: characterized by comprehension of the parts of something as intimately interconnected and explicable only by reference to the whole.
 | Usage: But on top of all that I'm passionate about a holistic vision of design, where design is a life skill, not a professional skill. 
 | 
-| 
 | treacly
 | Definition: like treacle [糖浆]
 | Definition: a treacly brown liquid.
@@ -36,3 +35,9 @@ English Note 19
 | Usage: treacly music [霏靡之音]
 | 
 | barcode (a.k.a. Universal product code) 条形码
+| 
+| boggle
+| Definition: (of a person or a person's mind) be astonished or overwhelmed when trying to imagine something.
+| Usage: the mind boggles at the spectacle.
+| Usage: you never boggle at plain speaking.
+| 
