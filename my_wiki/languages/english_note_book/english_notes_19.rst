@@ -41,3 +41,6 @@ English Note 19
 | Usage: the mind boggles at the spectacle.
 | Usage: you never boggle at plain speaking.
 | 
+| yesteryear
+| Definition: last year or the recent past, especially as nostalgically recalled.
+| Usage: return with us now to those thrilling days of yesteryear.

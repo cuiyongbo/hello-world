@@ -28,6 +28,7 @@ Linux System Call
     linux_system_call/exit_system_calls_note
     linux_system_call/process_shedule_apis
     linux_system_call/nonlocal_jumps_note
+    linux_system_call/linux_daemon_basics
 
 
 #. see errno definition: ``man errno`` or ``errno -l`` (Installation: ``sudo apt install moreutils``)
