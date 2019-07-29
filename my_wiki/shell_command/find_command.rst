@@ -344,3 +344,5 @@ find - search for files in a directory hierarchy
       /run/shm/idListHashMap
       /run/shm/teHashMap
       
+      # display loc in a project
+      $ find ti-servers/ -name *.cpp -o -name *.h | xargs wc -l \{\} \;
