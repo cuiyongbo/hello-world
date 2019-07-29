@@ -44,3 +44,47 @@ English Note 19
 | yesteryear
 | Definition: last year or the recent past, especially as nostalgically recalled.
 | Usage: return with us now to those thrilling days of yesteryear.
+| 
+| disinterest
+| Usage: His total disinterest in money puzzled his family. 
+| Definition: the state of not being influenced by personal involvement in something; impartiality.
+| Usage: I do not claim any scholarly disinterest with this book.
+| 
+| reimburse
+| reimbursable
+| Definition: repay (a person who has spent or lost money).
+| Usage: the investors should be reimbursed for their losses.
+| Usage: they spend thousands of dollars that are not reimbursed by insurance.
+| 
+| paunchy
+| Definition: having a large or protruding belly.
+| Usage: a slightly paunchy, balding, middle-aged man. [大腹便便]
+| 
+| protrude
+| Definition: extend beyond or above a surface.
+| Usage: something like a fin protruded from the water.
+| 
+| eschew
+| Definition: deliberately avoid using; abstain from.
+| Usage: he appealed to the crowd to eschew violence.
+| 
+| abstain
+| Definition: restrain oneself from doing or enjoying something.
+| Usage: most pregnant women abstain or drink very little.
+| Definition: to choose not to use a vote, either in favour of or against sth. 
+| Usage: Ten people voted in favour, nine against and ten abstained. [弃权]
+| 
+| overwrought
+| Definition: in a state of nervous excitement or anxiety.
+| Synonyms: distraught
+| Usage: she was too overwrought to listen to reason.
+| Usage: a distraught woman sobbed and screamed for help.
+| 
+| heliotherapy
+| Definition: the therapeutic use of sunlight. [日光浴]
+| 
+| verbose
+| verbosity
+| Definition: using or experssed in more words than are needed.
+| Synonyms: verbiage [累赘]
+| Usage: Much academic terms are obscure and verbose.

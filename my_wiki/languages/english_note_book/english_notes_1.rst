@@ -1332,11 +1332,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: She had dual nationality. [双重国籍]
 | Usage: dual-core CPU. [双核处理器]
 | 
-| verbose
-| verbosity
-| Definition: using or experssed in more words than are needed.
-| Usage: Much academic terms are obscure and verbose.
-| 
 | resort   
 | Definition: a strategy or course of action that may be adopted in a difficult situation.
 | Usage: German and Italy tried to resolve their economic and social failures by resort to fascism.
