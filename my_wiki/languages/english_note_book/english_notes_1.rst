@@ -839,8 +839,11 @@ name, also known as surname, with most family members.
 | Usage: The officers had exceeded their authority.
 | 
 | fluctutant
+| fluctuation
 | Synonyms: fluctuating; unstable
-| 
+| Definition: an irregular rising and falling in number or amount; a variation.
+| Usage: fluctuations in the yearly values could be caused by a variety of factors"
+|
 | versatile
 | Definition: able to adapt or be adapted to many diferent functions or activities.
 | Usage: A versatile fighter.

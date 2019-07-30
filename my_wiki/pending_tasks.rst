@@ -44,3 +44,4 @@ Pending tasks
 .. [#unix_network_programming] http://www.kohala.com/start/ 
 .. [#geomatric_alg] http://geomalgorithms.com/
 .. [#apple_opensource] https://opensource.apple.com
+.. [#programing books] http://www.banshujiang.cn/
