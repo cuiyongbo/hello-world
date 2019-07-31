@@ -278,6 +278,7 @@ Wild Lives 03
 
 .. image:: images/zebra.jpg
 
+.. image:: images/giant_tortoise_in_galapagos_island.jpg
 .. image:: images/leatherback_sea_turtle.jpg
 .. image:: images/green_sea_turtle.jpg
 .. image:: images/seal.jpg

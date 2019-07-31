@@ -15,4 +15,6 @@ Linux Daemon
 .. [#] `Linux to create a daemon <https://stackoverflow.com/questions/17954432/creating-a-daemon-in-linux>`_
 .. [#] `why fork twice <https://stackoverflow.com/questions/881388/what-is-the-reason-for-performing-a-double-fork-when-creating-a-daemon>`_
 .. [#] `Nginx architecture <https://www.ashnik.com/nginx-architecture-an-insight-part-1/>`_
+.. [#] `Nginx source code analysis <https://github.com/suraj-bk/nginx>`_
+
 
