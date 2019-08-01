@@ -10,6 +10,14 @@ Linux Daemon
    
 #. nginx architecture: event-driven, asynchronous, non-blocking
 
+#. nginx worker process event cycle: 
+   
+    ``ngx_start_worker_processes``, ``ngx_spawn_process``, 
+    ``ngx_worker_process_cycle``, ``ngx_process_events_and_timers``
+
+    In the last function call, nginx processes two queue, ``ngx_posted_accept_events`` and ``ngx_posted_events``.
+    and invokes callback to dispatch events. 
+
 .. [#] `Daemon programming howto <http://www.enderunix.org/docs/eng/daemon.php>`_
 .. [#] `Daemon example <https://github.com/jirihnidek/daemon/blob/master/src/daemon.c>`_
 .. [#] `Linux to create a daemon <https://stackoverflow.com/questions/17954432/creating-a-daemon-in-linux>`_
