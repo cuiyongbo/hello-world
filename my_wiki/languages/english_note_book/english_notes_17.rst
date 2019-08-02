@@ -243,3 +243,4 @@ English Note 17
 .. image:: images/trillium_lake.jpg
 .. image:: images/hawaii_volcanoes.jpg
 .. image:: images/snowberger.jpg
+.. image:: images/crummock_water_lake_district.jpg
