@@ -346,3 +346,6 @@ find - search for files in a directory hierarchy
       
       # display loc in a project
       $ find ti-servers/ -name *.cpp -o -name *.h | xargs wc -l \{\} \;
+
+      # batch rename files
+      $ find . -type f -exec mv \{\} \{\}.jpg \; 

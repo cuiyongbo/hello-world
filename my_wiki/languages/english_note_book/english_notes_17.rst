@@ -239,5 +239,7 @@ English Note 17
 .. image:: images/sheep_flock.jpg
 .. image:: images/scenary_spot_1563428393.jpg
 .. image:: images/scenary_spot_1563868227.jpg
+.. image:: images/scenary_spot_1564716345.jpg
 .. image:: images/trillium_lake.jpg
 .. image:: images/hawaii_volcanoes.jpg
+.. image:: images/snowberger.jpg

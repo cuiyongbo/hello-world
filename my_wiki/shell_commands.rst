@@ -18,7 +18,7 @@ Shell Commands
     shell_command/shell_script_notes
     shell_command/addr2line_note
     shell_command/awk_manual
-    shell_command/cal_manual
+    shell_command/linux_date_commands
     shell_command/binary_executable_inspectors
     shell_command/binary_file_viewer
     shell_command/bsdiff_and_bspatch_note
