@@ -71,10 +71,11 @@ Command line instructions
 
     * Garbage collect all unreferenced objects with ``git gc --prune=now``.
 
-#. Git to force line ending to LF
+#. Git to force line ending to CRLF
    
     .. code-block:: sh
 
+        # https://help.github.com/en/articles/configuring-git-to-handle-line-endings
         git config --global core.autocrlf true
 
 #. Git to change the author of last commit

@@ -142,6 +142,7 @@ Wild Lives 03
 
     Red in the face
 
+.. image:: images/white_strokes.jpg
 .. image:: images/songbird_in_jersey_wood.jpg
 .. figure:: images/Warbler.jpg
 
@@ -164,6 +165,7 @@ Wild Lives 03
 
     Australia fauna
 
+.. image:: images/fox_1564972038.jpg
 .. image:: images/gray_fox.jpg
 .. figure:: images/arctic_fox.jpg
 
