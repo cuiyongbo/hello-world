@@ -131,6 +131,9 @@ English Note 5
 | Usage: A few jokes add leaven to a boring speech. 
 | Usage: they acted as an intellectual leaven to the warriors who dominated the city.
 | 
+| lettuce 莴苣
+| cucumber 黄瓜
+|
 | churn
 | Definition: a machine or container in which butter is made by agitating milk or cream.
 | Phrase: churn something out
