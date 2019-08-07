@@ -88,3 +88,12 @@ English Note 19
 | Definition: using or experssed in more words than are needed.
 | Synonyms: verbiage [累赘]
 | Usage: Much academic terms are obscure and verbose.
+| 
+| prescribe
+| Definition: (of a medical practitioner) advise and authorize the use of (a medicine or treatment) for someone, especially in writing.
+| Usage: Dr. Greene prescribed magnesium sulfate.
+| Usage: marriage is often prescribed as a universal remedy.
+| prescriptive
+| Definition: A prescriptive approach to something involves telling people what they should do, rather than simply giving suggestions or describing what is done. 
+| Usage: prescriptive attitudes to language on the part of teachers.
+| Usage: Most teachers think the government's guidelines on homework are too prescriptive.

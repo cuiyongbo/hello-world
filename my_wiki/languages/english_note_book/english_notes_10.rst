@@ -44,6 +44,7 @@ English Note 10
 | Usage: many animals die in quarantine.
 | 
 | curate
+| curator
 | Definition: select, organize, and look after the items in a collection or exhibition.
 | Usage: both exhibitions are curated by the museum's director.
 | Usage: nearly every major news organization is using Twitter’s new lists feature to curate tweets about the earthquake.

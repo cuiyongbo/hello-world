@@ -87,3 +87,17 @@ Computer Terminology 3
    
    In computing, memoization is an optimization technique used primarily to speed up computer programs 
    by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
+
+#. Framework
+   
+    In general, a framework is a real or conceptual structure intended to serve as a support or guide 
+    for the building of something that expands the structure into something useful.
+
+    In computer systems, a framework is often a layered structure indicating what kind of programs can
+    or should be built and how they would interrelate. Some computer system frameworks also include actual
+    programs, specify programming interfaces, or offer programming tools for using the frameworks.
+    A framework may be for a set of functions within a system and how they interrelate; the layers of an OS;
+    the layers of an application subsystem; how communication should be standardized at some level of a network;
+    and so forth. A framework is generally more comprehensive than a protocol and more prescriptive than a structure.
+
+    .. [#] `Server framework <https://www.jianshu.com/p/63f664409183>`_

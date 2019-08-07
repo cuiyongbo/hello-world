@@ -142,6 +142,7 @@ Wild Lives 03
 
     Red in the face
 
+.. image:: images/magpie_tixi.jpg
 .. image:: images/white_strokes.jpg
 .. image:: images/songbird_in_jersey_wood.jpg
 .. figure:: images/Warbler.jpg
