@@ -1664,14 +1664,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: Traveling can be a hassle.
 | Definition: deliberate harassment.
 | 
-| hierarchy
-| hierarchical
-| Definition: an arrangement or classification of things according to relative | importance or inclusiveness.
-| Usage: She is quite high up in the management hierarchy.
-| 
-| hierarch
-| Definition: a chief priest, archbishop, or other leader.
-| 
 | intricate   
 | intricacy
 | Definition: very complicated or detailed.
@@ -1680,8 +1672,7 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | intrinsic
 | Definition: belonging naturally; essential.
 | Usage: Access to the arts is intrinsic to a high quality of life.
-| Usage: There is nothing intrinsically wrong with the idea.
-| [这种想法本身并没有错]
+| Usage: There is nothing intrinsically wrong with the idea. [这种想法本身并没有错]
 | 
 | illustrate
 | illustration [插图]

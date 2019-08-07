@@ -158,8 +158,19 @@ English Note 12
 | Definition: difficult to get rid of or deal with.
 | Usage: the obstinate problem of unemployment.
 | 
-| pastor
-| parson
+| magus
+| Definition: a member of a priestly caste of ancient Persia.
+| Definition: a man with magic powers, a sorcerer. [术士]
+| 
+| hierarchy
+| hierarchical
+| Definition: an arrangement or classification of things according to relative importance or inclusiveness.
+| Usage: She is quite high up in the management hierarchy.
+| 
+| hierarch
+| Definition: a chief priest, archbishop, or other leader.
+|
+| pastor, parson
 | Synonyms: priest
 | 
 | parsonage

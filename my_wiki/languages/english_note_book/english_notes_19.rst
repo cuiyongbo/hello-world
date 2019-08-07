@@ -97,3 +97,8 @@ English Note 19
 | Definition: A prescriptive approach to something involves telling people what they should do, rather than simply giving suggestions or describing what is done. 
 | Usage: prescriptive attitudes to language on the part of teachers.
 | Usage: Most teachers think the government's guidelines on homework are too prescriptive.
+|
+| hail-fellow-well-met
+| Definition: If a man or his actions are described as hail-fellow-well-met, they are very friendly and enthusiastic, sometimes in a way that is not sincere.
+| Usage: He was greeted with the usual hail-fellow-well-met slap on the back and handshake.
+| Usage: Harold was accustomed to hail-fellow-well-met salesmen.
