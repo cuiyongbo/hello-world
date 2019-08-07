@@ -172,6 +172,7 @@ Wild Lives 03
 
     Arctic fox [北极狐]
 
+.. image:: images/grown_bear_familiy_1565172200.jpg
 .. figure:: images/polar_bear.jpg
 
     Polar bear [北极熊]
@@ -286,6 +287,7 @@ Wild Lives 03
 .. image:: images/leatherback_sea_turtle.jpg
 .. image:: images/green_sea_turtle.jpg
 .. image:: images/seal.jpg
+.. image:: images/seal_mock_emotion.jpg
 
 
 #. Ontogeny

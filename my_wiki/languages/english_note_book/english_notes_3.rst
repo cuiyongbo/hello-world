@@ -205,6 +205,7 @@ English Note 3
 
 .. image:: images/gravel_1.jpg
 .. image:: images/gravel_2.jpg
+.. image:: images/pebble_1565172200.jpg
 
 .. figure:: images/boulder.jpeg
 
