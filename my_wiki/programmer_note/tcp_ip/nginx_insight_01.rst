@@ -153,6 +153,32 @@ nginx conf
             ngx_post_event(rev, queue);
         }
 
+#. nginx configure file parsing
+   
+    ``ngx_conf_param``, ``ngx_conf_parse``, ``ngx_conf_open_file``
+
+
+#. nginx event cycle
+   
+    .. code-block:: c
+   
+        #define ngx_add_timer        ngx_event_add_timer
+        #define ngx_del_timer        ngx_event_del_timer
+
+        extern ngx_rbtree_t  ngx_event_timer_rbtree;
+
+        static ngx_inline void ngx_event_del_timer(ngx_event_t *ev)
+        {
+            ngx_rbtree_delete(&ngx_event_timer_rbtree, &ev->timer);
+        }
+        
+        static ngx_inline void ngx_event_add_timer(ngx_event_t *ev, ngx_msec_t timer)
+        {
+            // ...
+            ngx_rbtree_insert(&ngx_event_timer_rbtree, &ev->timer);
+        }
+
+
 .. rubric:: Footnotes
 
 .. [#] `Nginx architecture <https://www.ashnik.com/nginx-architecture-an-insight-part-1/>`_

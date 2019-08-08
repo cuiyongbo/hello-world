@@ -1,20 +1,16 @@
 :orphan:
 
-*****
-umask
-*****
-
-**NAME**
-
-   umask - set file mode creation mask
+***********************************
+umask - set file mode creation mask
+***********************************
 
 **SYNOPSIS**
 
-   .. code-block:: c
+    .. code-block:: c
 
-      #include <sys/types.h>
-      #include <sys/stat.h>
-      mode_t umask(mode_t mask);
+        #include <sys/types.h>
+        #include <sys/stat.h>
+        mode_t umask(mode_t mask);
 
 **DESCRIPTION**
 
@@ -31,9 +27,7 @@ umask
    the *umask* is ignored, the default ACL is inherited, the permission bits are set
    based on the inherited ACL, and permission bits absent in the *mode* argument are
    turned off. For example, the following default ACL is equivalent to a 
-   *umask* of 022::
-
-      u::rwx,g::r-x,o::r-x
+   *umask* of 022: ``u::rwx,g::r-x,o::r-x``.
 
    Combining the effect of this default ACL with a *mode* argument of ``0666 (rw-rw-rw-)``,
    the resulting file permissions would be ``0644 (rw-r--r--)``.
@@ -68,6 +62,5 @@ umask
    to System V IPC objects created by the process (using :manpage:`msgget(2)`,
    :manpage:`semget(2)`, :manpage:`shmget(2)`).
 
-**SEE ALSO**
+   You may refer to acl(5) for further information
 
-   chmod(2), mkdir(2), open(2), stat(2), acl(5)

@@ -67,5 +67,3 @@ ulimit Manual
 		
 		$ ulimit -Hn
 		4096
-
-	
