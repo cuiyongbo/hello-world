@@ -1430,11 +1430,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: abnormally thin or weak, especially because of illness or a lack of food.
 | Usage: She was so emaciated that she could hardly stand.
 | 
-| telltale
-| Definition: a person, especially a child, who report others’ wrongdoings or reveals their secrets. [告密者，打小报告，小麻雀]
-| Definition: a device or object that automatically gives a visual indication of the state or presence of something.
-| Usage: Earlier this winter though, an image of an emaciated polar bear went viral, with many asking if this was the telltale image of climate change.
-| 
 | cloud
 | Definition: spoil or mar (something).
 | Usage: The general election was clouded by violence. [蒙上一层阴影]
@@ -2313,29 +2308,11 @@ the vicissitudes of fortune and to pleasure and pain. [禁欲主义]
 | fitful
 | Definition: something that is fitful happens for irregular periods of time or occurs at irregular times, rather than being continous.
 | Usage: The government is making slow and fitful progress in these negotiations.
-|
-
-It was three weeks ago that Facebook suspended Cambridge Analytica
-just hours before a whistleblower's revelations to the Observer
-newspaper triggered the current scandal over improper use of data.
-
-The death toll on Scottish sheep farms has seen a sharp increase
-following spells of heavy snow this winter, according to official
-figures.
-
-| whistleblower
-| whistle-blower [告密者，揭发者]
-| Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
 | 
 | corollary
 | Definition: a corollary of something is an idea, argument, or fact that results directly from it.
 | Synonyms: consequence; result.
 | Usage: The number of prisoners increased as a corollary of the government's determination to combat violent crime.
-|
-| take (quite) a toll / tolls on (somebody or something)
-| Definition: to cause damage by hard living.
-| Usage: Drug abuse takes quite a toll on the lives of people.
-| Usage: Heavy snow takes toll on Scotland's lambs.
 | 
 | attrition
 | Definition: The process of reducing something's strength or effectiveness through sustained attack or pressure.

@@ -102,3 +102,18 @@ English Note 19
 | Definition: If a man or his actions are described as hail-fellow-well-met, they are very friendly and enthusiastic, sometimes in a way that is not sincere.
 | Usage: He was greeted with the usual hail-fellow-well-met slap on the back and handshake.
 | Usage: Harold was accustomed to hail-fellow-well-met salesmen.
+| 
+| telltale
+| Definition: a person, especially a child, who report others’ wrongdoings or reveals their secrets. [告密者，打小报告，小麻雀]
+| Definition: a device or object that automatically gives a visual indication of the state or presence of something.
+| Usage: Earlier this winter though, an image of an emaciated polar bear went viral, with many asking if this was the telltale image of climate change.
+|
+| whistleblower
+| whistle-blower [告密者，揭发者]
+| Definition: a whistleblower is someone who finds out that the organization they are working for is doing something immoral or illegal and tells the authorities or the public about it.
+| Usage: It was three weeks ago that Facebook suspended Cambridge Analytica just hours before a whistleblower's revelations to the Observer newspaper triggered the current scandal over improper use of data.
+|
+| take (quite) a toll / tolls on (somebody or something)
+| Definition: to cause damage by hard living.
+| Usage: Drug abuse takes quite a toll on the lives of people.
+| Usage: The death toll on Scottish sheep farms has seen a sharp increase following spells of heavy snow this winter, according to official figures.

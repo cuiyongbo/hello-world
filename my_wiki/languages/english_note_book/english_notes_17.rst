@@ -246,4 +246,5 @@ English Note 17
 .. image:: images/snowberger.jpg
 .. image:: images/crummock_water_lake_district.jpg
 .. image:: images/sea_view_1565172200.jpg
+.. image:: images/sea_view_1565226555.jpg
 .. image:: images/night_view_1565172200.jpg
