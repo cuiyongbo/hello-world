@@ -18,7 +18,20 @@ A fairly good place to start comes here `Machine Learning 101 <https://leetcode.
     machine_learning/knn_note
     machine_learning/matplotlib_note
     machine_learning/numpy_notes
-   
+
+
+**Preparation**
+
+    .. code-block:: sh
+
+        $ cat requirment-machine-learning.txt
+        requests==2.18.4
+        scikit-learn==0.21.3
+        scipy==1.3.1
+        tensorflow==1.14.0
+        
+        $ pip3 install -r requirment-machine-learning.txt
+
 **Overview**
 
 #. Classification
