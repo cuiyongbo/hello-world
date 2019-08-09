@@ -248,3 +248,7 @@ English Note 17
 .. image:: images/sea_view_1565172200.jpg
 .. image:: images/sea_view_1565226555.jpg
 .. image:: images/night_view_1565172200.jpg
+.. image:: images/rollercoaster_1565349629.jpg
+.. image:: images/scenary_spot_1565349419.jpg
+.. image:: images/scenary_spot_1565349629.jpg
+.. image:: images/supertree_grove_by_singapore.jpg

@@ -117,3 +117,5 @@ English Note 19
 | Definition: to cause damage by hard living.
 | Usage: Drug abuse takes quite a toll on the lives of people.
 | Usage: The death toll on Scottish sheep farms has seen a sharp increase following spells of heavy snow this winter, according to official figures.
+|
+| spacerail 云霄飞车

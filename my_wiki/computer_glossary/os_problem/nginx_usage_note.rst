@@ -31,6 +31,12 @@ Nginx Usage
             }
         }
     
+#. nginx src compilation problem
+   
+    .. code-block:: sh
+
+        sudo apt-get install zlib1g zlib1g.dev
+        sudo apt-get install libpcre3 libpcre3-dev
 
 .. rubric:: Footnotes
 

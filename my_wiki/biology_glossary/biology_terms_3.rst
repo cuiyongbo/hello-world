@@ -283,6 +283,7 @@ Wild Lives 03
 .. image:: images/ruff_male_displaying.jpg
 
 .. image:: images/zebra.jpg
+.. image:: images/deer_1565349419.jpg
 
 .. image:: images/giant_tortoise_in_galapagos_island.jpg
 .. image:: images/leatherback_sea_turtle.jpg

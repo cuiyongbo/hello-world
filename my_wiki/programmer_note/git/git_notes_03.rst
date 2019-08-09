@@ -148,3 +148,7 @@ Command line instructions
 #. Git to set default commit message editor 
    
     Set to vim: ``git config --global core.editor "vim"``
+
+#. Git bash command line can't drag and drop files
+   
+   Enable ``Run as Administrator`` when running git bash.
