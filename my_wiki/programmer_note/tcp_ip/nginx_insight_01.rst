@@ -1,6 +1,6 @@
-**********
-nginx conf
-**********
+****************
+nginx Insight 01
+****************
 
 #. nginx worker process daemon
    
@@ -37,6 +37,9 @@ nginx conf
         void ngx_process_events_and_timers(ngx_cycle_t *cycle)
         {
         
+            // find the timeout that is closest to expiring
+            timer = ngx_event_find_timer();
+
             // add events to event queue
             (void)ngx_process_events(cycle, timer, flags);
         
@@ -158,7 +161,7 @@ nginx conf
     ``ngx_conf_param``, ``ngx_conf_parse``, ``ngx_conf_open_file``
 
 
-#. nginx event cycle
+#. nginx event cycle - timer event
    
     .. code-block:: c
    
@@ -167,15 +170,15 @@ nginx conf
 
         extern ngx_rbtree_t  ngx_event_timer_rbtree;
 
-        static ngx_inline void ngx_event_del_timer(ngx_event_t *ev)
-        {
-            ngx_rbtree_delete(&ngx_event_timer_rbtree, &ev->timer);
-        }
-        
         static ngx_inline void ngx_event_add_timer(ngx_event_t *ev, ngx_msec_t timer)
         {
             // ...
             ngx_rbtree_insert(&ngx_event_timer_rbtree, &ev->timer);
+        }
+        
+        static ngx_inline void ngx_event_del_timer(ngx_event_t *ev)
+        {
+            ngx_rbtree_delete(&ngx_event_timer_rbtree, &ev->timer);
         }
 
 
@@ -183,4 +186,6 @@ nginx conf
 
 .. [#] `Nginx architecture <https://www.ashnik.com/nginx-architecture-an-insight-part-1/>`_
 .. [#] `Nginx source code analysis <https://github.com/suraj-bk/nginx>`_
-.. [#] `Inside the nginx <https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/>`
+.. [#] `Inside the nginx <https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/>`_
+.. [#] `Development guid <http://nginx.org/en/docs/dev/development_guide.html>`_
+

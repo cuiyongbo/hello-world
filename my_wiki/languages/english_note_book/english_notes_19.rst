@@ -119,3 +119,10 @@ English Note 19
 | Usage: The death toll on Scottish sheep farms has seen a sharp increase following spells of heavy snow this winter, according to official figures.
 |
 | spacerail 云霄飞车
+| 
+| facial
+| Definition: of or affecting the face.
+| Usage: facial expressions.
+| Definition: a beauty treatment for the face. [整容]
+| Usage: the offer include a facial, makeup, and manicure. 
+| Usage: she manicured Elizabeth's fingernails. [修指甲]
