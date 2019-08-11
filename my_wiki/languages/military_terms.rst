@@ -36,6 +36,25 @@ Military Terms
 | airworthiness certification [适航证]
 | hump airlift [驼峰航线]
 | 20th group armies [第20集团军]
+| 
+| autocracy
+| Synonyms: monocracy.
+| Antonyms: democracy.
+| Definition: a system of government by one person with absolute power. [独裁，专治]
+| Usage: the Grand Duchy of Tuscany was an autocracy.
+| 
+| duchy
+| Definition: the terrotory of a duke or duchess, a dukedom. [公国，领地]
+| 
+| aristocracy
+| aristocratic
+| Definition: The highest class in certain societies, especially those holding hereditary titles or offices.
+| Usage: The ancient Polish aristocracy had hereditary right to elect the king.
+| Definition: A group regared as privileged or superior in a particular sphere.
+| Usage: High-level technocrats make up a large part of this "technical aristocracy."
+| 
+| hereditary
+| Definition: (of a title, office, or right) conferred by or based on inheritance.
 |
 | dog tag 
 | Definition: a metal tag attached to a dog's collar, typically giving its name and owner's address.

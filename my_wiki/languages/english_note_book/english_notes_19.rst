@@ -126,3 +126,6 @@ English Note 19
 | Definition: a beauty treatment for the face. [整容]
 | Usage: the offer include a facial, makeup, and manicure. 
 | Usage: she manicured Elizabeth's fingernails. [修指甲]
+| 
+| any port in a storm
+| Definition: in adverse circumstances one welcomes any source of relief or escape.

@@ -330,3 +330,6 @@ English Note 16
     power in the workplace. 
 
     .. image:: images/Pointy-Haired_Boss.jpg
+
+
+.. image:: images/thunderstorm_on_the_roll.jpg

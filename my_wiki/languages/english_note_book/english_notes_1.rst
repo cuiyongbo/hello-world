@@ -170,16 +170,6 @@ name, also known as surname, with most family members.
 | Usage: He lived in genteel poverty.
 | Usage: (of a place) quiet and old-fashioned and perhaps slightly boring.
 | 
-| aristocracy
-| aristocratic
-| Definition: The highest class in certain societies, especially those holding hereditary titles or offices.
-| Usage: The ancient Polish aristocracy had hereditary right to elect the king.
-| Definition: A group regared as privileged or superior in a particular sphere.
-| Usage: High-level technocrats make up a large part of this "technical aristocracy."
-| 
-| hereditary
-| Definition: (of a title, office, or right) conferred by or based on inheritance.
-| 
 | monitory
 | Definition: (adjective) Conveying an admonition or a warning
 | Synonyms: admonitory, cautionary, exemplary, warning

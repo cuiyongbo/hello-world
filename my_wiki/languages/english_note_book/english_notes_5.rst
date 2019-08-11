@@ -214,6 +214,8 @@ English Note 5
 
     A dish of meat and vegetables cooked slowly in liquid in a closed dish or pan. 
 
+| You can't an omelette without breaking a few eggs. [有失才有得，舍不得孩子套不着狼]
+|
 | poder
 | powdery
 | Definition: consisting of or resembling powder.
