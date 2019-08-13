@@ -43,7 +43,6 @@ nginx Insight 01
             // add events to event queue
             (void)ngx_process_events(cycle, timer, flags);
         
-        
             // drain events in event queue
             ngx_event_process_posted(cycle, &ngx_posted_accept_events);
             ngx_event_process_posted(cycle, &ngx_posted_events);
@@ -188,4 +187,3 @@ nginx Insight 01
 .. [#] `Nginx source code analysis <https://github.com/suraj-bk/nginx>`_
 .. [#] `Inside the nginx <https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/>`_
 .. [#] `Development guid <http://nginx.org/en/docs/dev/development_guide.html>`_
-

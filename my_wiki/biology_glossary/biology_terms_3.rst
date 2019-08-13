@@ -204,6 +204,7 @@ Wild Lives 03
 
    Harbor Porpoise
 
+.. image:: images/elephant_day_1565597840.jpg
 .. image:: images/elephants_1564717511.jpg
 .. image:: images/elephant_herd_in_namibia.jpg
 .. image:: images/leopard_1565264154.jpg
