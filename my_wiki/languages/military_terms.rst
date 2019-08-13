@@ -169,6 +169,7 @@ Military Terms
 | Definition: the smallest planet in the solar system , nearest to the sun. [水星]
 | Definition: (symb Hg) a chemical element. which is a poisonous silver liquid metal, used in thermometers. [汞]
 
+.. image:: images/icy_cap_on_mar_south_pole.jpg
 .. image:: images/Sirius.jpg
 .. figure:: images/solar_system.png
 
