@@ -111,6 +111,7 @@ Wild Lives 03
 | Jurassic period [侏罗纪]
 | Cretaceous period [白垩纪]
 
+.. image:: images/lazard_1565776378.jpg
 .. figure:: images/allosaurus.png
 
     Allosaurus [异特龙]
