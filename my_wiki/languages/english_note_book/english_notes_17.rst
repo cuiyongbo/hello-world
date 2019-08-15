@@ -47,8 +47,21 @@ English Note 17
 | laundry detergent [洗衣液]
 | 
 | wiggle
-| move or cause to move up and down or from side to side with small rapid movements.
-| Definition: Stasia wiggled her toes.
+| Definition: move or cause to move up and down or from side to side with small rapid movements.
+| Usage: He removed his shoes and wiggled his toes. 
+| Definition:  (wiggle out of) avoid (something), especially by devious means.
+| Usage: they're trying to wiggle out of their agreement.
+| Phrase: get a wiggle on
+| Definition: get moving; hurry.
+| 
+| devious
+| Definition: showing a skillful use of underhanded tactics to achieve goals.
+| Usage: he's as devious as a politician needs to be.
+| Usage: they have devious ways of making money.
+| 
+| underhanded [阴险，下作]
+| Definition: acting or done in a secret or dishonest way.
+| Usage: an underhanded method of snatching clients from rivals.
 | 
 | blunder
 | Definition: make a stupid or careless mistake; act or speak clumsily.

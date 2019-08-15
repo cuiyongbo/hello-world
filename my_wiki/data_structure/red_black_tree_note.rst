@@ -151,4 +151,6 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
    * ngx_rbtree_min - find left-most node
    * ngx_rbtree_next - find a node's successor
    * ngx_rbtree_insert
+   * ngx_rbtree_left_rotate
+   * ngx_rbtree_right_rotate
    * ngx_rbtree_delete

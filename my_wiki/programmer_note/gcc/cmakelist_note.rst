@@ -177,4 +177,4 @@ CMakeList Howto
 .. rubric:: Footnotes
 
 .. [#] `CMake FAQ <https://gitlab.kitware.com/cmake/community/wikis/FAQ>`_
-.. [#CMake_Environments]  https://cmake.org/cmake/help/v3.0/manual/cmake-variables.7.html?highlight=cmake_current_list_dir
+.. [#] `CMake_Environments <https://cmake.org/cmake/help/v3.0/manual/cmake-variables.7.html?highlight=cmake_current_list_dir>`_
