@@ -127,3 +127,5 @@ ls - list directory contents
    #    - f: regular file
    #    - l: symbolic link
    #    - s: socket
+
+#. tree - list contents of directories in a tree-like format

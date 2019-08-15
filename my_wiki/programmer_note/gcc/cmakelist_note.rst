@@ -58,6 +58,18 @@ CMakeList Howto
    Adds definitions to the compiler command line for sources in the current directory and below. 
    This command can be used to add any flags, but it is intended to add preprocessor definitions. 
 
+#. Include source files
+
+   Syntax::
+
+      file(GLOB variable [RELATIVE path] [globbing expressions]...)
+      file(GLOB_RECURSE variable [RELATIVE path]
+        [FOLLOW_SYMLINKS] [globbing expressions]...)
+
+   ``GLOB`` will generate a list of all files that match the globbing expressions
+   and store it into the variable. ``GLOB_RECURSE`` will generate a list similar to 
+   the regular ``GLOB``, except it will traverse all the subdirectories of the matched directory and match the files.
+
 #. Hot enviroments
    
     .. code-block:: sh

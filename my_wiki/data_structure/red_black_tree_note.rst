@@ -10,8 +10,7 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
    #. The root is black.
    #. Every leaf (nil) is black.
    #. If a node is red, then both its children are black.
-   #. For each node, all simple paths from the node to descendant leaves 
-      contain the same number of black nodes.
+   #. For each node, all simple paths from the node to descendant leaves contain the same number of black nodes.
 
 **Operation**
 
@@ -146,3 +145,10 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
                x = T.root
          else (same as then clause with right and left exchanged)
       x.color = BLACK
+
+#. Case study - nginx red black tree
+
+   * ngx_rbtree_min - find left-most node
+   * ngx_rbtree_next - find a node's successor
+   * ngx_rbtree_insert
+   * ngx_rbtree_delete
