@@ -9,11 +9,7 @@ Ubuntu Problems
         sudo rm /var/lib/dpkg/lock
         sudo dpkg --configure -a
 
-#. Location where to find the downloaded files of apt-get
-
-    .. code-block:: sh
-
-        /var/cache/apt/*
+#. Location where to find the downloaded files of apt-get: ``/var/cache/apt/*``
 
 #. download the source file of linux binary file
 
@@ -28,13 +24,6 @@ Ubuntu Problems
     "Edit" - "Profile Preferences" - "General" - "Cursor Shape".
 
     .. image:: images/terminal_cursor_shape_configure.png
-
-#. Show current time
-   
-    .. code-block:: sh
-   
-        $ date
-        Sun Jul 15 23:07:11 CST 2018
 
 #. Terminal switch to root.
       
@@ -61,14 +50,6 @@ Ubuntu Problems
         ~$ gsettings set com.canonical.Unity.Launcher launcher-position Left
         ~$ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
         # Note you may not excute these commands with sudo.
-
-#. Ubuntu to install pthread manual
-   
-    Run ``sudo apt-get install manpages-posix manpages-posix-dev``.
-
-#. Ubuntu to update vim
-   
-    Run ``sudo apt-get install vim``.
 
 #. Ubuntu to remove LibreOffice suite.
    

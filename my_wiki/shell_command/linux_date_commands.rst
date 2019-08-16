@@ -178,3 +178,11 @@ Date Commands
 
         $ date -d @1564716345
         Fri, Aug  2, 2019 11:25:45
+
+
+#. Show current time
+   
+    .. code-block:: sh
+   
+        $ date
+        Sun Jul 15 23:07:11 CST 2018

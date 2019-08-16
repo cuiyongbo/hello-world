@@ -12,8 +12,9 @@ Classics
     classics/poetry_collection_3
     classics/zhuzibaijia
     classics/daiyuzanghua
-    classics/nostalgia
-    classics/depression
-    classics/baorenanshu
-    classics/francis_bacon_of_studies
+    classics/xiangjixuanzhi_guiyouguang
+    classics/xiaoshitanji_liuzongyuan
+    classics/lisao_quyuan
+    classics/baorenanshu_simaqian
+    classics/of_studies_francis_bacon
     classics/motto_note

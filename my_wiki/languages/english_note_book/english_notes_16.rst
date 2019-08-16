@@ -333,3 +333,4 @@ English Note 16
 
 
 .. image:: images/thunderstorm_on_the_roll.jpg
+.. image:: images/sceneray_spot_1565953436.jpg

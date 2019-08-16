@@ -12,6 +12,10 @@ VIM Note
     with many additional features designed to be helpful in editing program source code. Originally, 
     the acronym stood for **Vi IMitation,** but that was changed with the release of Vim 2.0 in December 1993.
 
+#. Ubuntu to update VIM
+   
+    Solution: ``sudo apt-get install vim``.
+
 #. Look for vim tutorial
    
     Run ``vimtutor`` in your terminal. 

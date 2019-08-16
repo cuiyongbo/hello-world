@@ -181,3 +181,7 @@ the uncertain routine, etc.
 #. Compiling on Linux
 
    On Linux, programs that use the Pthreads API should be compiled using ``cc -pthread``.
+
+#. Ubuntu to install pthread manpages
+   
+   Run ``sudo apt-get install manpages-posix manpages-posix-dev``.

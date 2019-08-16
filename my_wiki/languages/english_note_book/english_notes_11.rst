@@ -174,7 +174,8 @@ Only paranoid can surrive.
 | Definition: unload (a cargo).
 | Usage: men were offloading bags of salt.
 | Definition: rid oneself of (something) by selling or passing it on to someone else.
-| Usage: a dealer offloaded 5,000 of these shares on a client.
+| Usage: Prices have been cut by developers anxious to offload unsold apartments. [开发商]
+| Usage: Already in financial difficulties, Turner offloaded the painting on to the Getty Museum. [出手，转让]
 | Definition: relieve oneself of (a problem or worry) by talking to someone else.
 | Usage: it would be nice to have been able to offload your worries onto someone.
 | Definition: move (data or a task) from one processor to another in order to free the first processor for other tasks.
