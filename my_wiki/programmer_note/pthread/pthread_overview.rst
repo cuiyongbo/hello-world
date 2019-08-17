@@ -5,15 +5,9 @@ Pthread Overview
 **What is a Thread**
 
 Technically, **a thread is defined as an independent stream of instructions that can
-be scheduled to run as such by the OS**. But what does this mean?
+be scheduled to run as such by the OS**. 
 
-To the software developer, the concept of a **procedure** that runs independently
-from its main program may best describe a thread. To go one step further, imagine
-a program that contains a number of procedures. Then imagine all of these procedures
-being able to be scheduled to run simultaneously and/or independently by OS. That
-would describe a **multithreaded** program. But how is this accomplished?
-  
-Before understanding a thread, one first needs to understand a **UNIX process**.
+But before understanding a thread, one first needs to understand a **UNIX process**.
 A process is created by OS, and requires a fair amount of "overhead." Processes
 contain information about program resources and program execution state, including:
 
@@ -185,3 +179,7 @@ the uncertain routine, etc.
 #. Ubuntu to install pthread manpages
    
    Run ``sudo apt-get install manpages-posix manpages-posix-dev``.
+
+#. Case study: nginx thread pool
+   
+   Srcs: ``ngx_thread_pool.h, ngx_thread_pool.c``.

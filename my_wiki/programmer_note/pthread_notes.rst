@@ -9,6 +9,6 @@ Pthread Introduction
     pthread/special_process_type
     pthread/pthread_overview
     pthread/pthread_concepts
-    pthread/pthread_api
+    pthread/pthread_api_overview
     pthread/pthread_hot_api_note
     pthread/exercise

@@ -45,21 +45,6 @@ Wild Lives 03
 
     Rhinoceros
 
-.. figure:: images/rhinoceros_beetle.jpg
-
-    Rhinoceros beetle [独角仙]
-
-.. figure:: images/spotted-house-gecko.jpg
-
-    Gecko [壁虎]
-
-.. figure:: images/chameleon.jpg
-
-    Chameleon [变色龙]
-
-    A person who changes their opinions 
-    or behavior according to the situation. [墙头草]
-
 .. image:: images/pangolin_02.jpg
 .. figure:: images/pangolin.jpg
 
@@ -70,39 +55,6 @@ Wild Lives 03
 
    Sengi [桑吉鼠]
 
-.. figure:: images/brown-cockroach.jpg
-
-   Cockroach [蟑螂] 
-
-.. figure:: images/scorpion.png
-
-   Scorpion [蝎子]
-
-.. image:: images/hummingbird_hawk_moth.jpg
-.. image:: images/burgundy_snail.jpg
-.. image:: images/life_cycle_of_a_17_year_periodical_cicada.jpg
-.. image:: images/cicada-metamorphosis.jpg
-.. figure:: images/cicada.png
-
-   Cicada  [知了，蝉]
-
-.. figure:: images/hoverfly.jpg
-   
-   Hoverfly [蝇虎]
-
-.. image:: images/honey_bee.jpg
-.. figure:: images/wasp.jpg
-
-   wasp [黄蜂]
-
-.. figure:: images/winter_time.jpg
-
-    A Ladybird [七星瓢虫] hibernates in Tewin, England
-
-.. figure:: images/praying_mantis.jpg
-
-    Praying mantis [螳螂] man-eater
-
 .. figure:: images/porcupine.jpg
 
     Porcupine [豪猪]
@@ -111,7 +63,6 @@ Wild Lives 03
 | Jurassic period [侏罗纪]
 | Cretaceous period [白垩纪]
 
-.. image:: images/lazard_1565776378.jpg
 .. figure:: images/allosaurus.png
 
     Allosaurus [异特龙]
@@ -125,6 +76,29 @@ Wild Lives 03
     Before they became towering predators [顶级掠食者], tyrannosaurs started 
     out much smaller, and a newly discovered fossil is helping fill the gap between those two extremes.
 
+.. figure:: images/spotted-house-gecko.jpg
+
+    Gecko [壁虎]
+
+.. image:: images/lazard_1565776378.jpg
+.. figure:: images/chameleon.jpg
+
+    Chameleon [变色龙]
+
+    A person who changes their opinions 
+    or behavior according to the situation. [墙头草]
+
+.. figure::  images/salamander.jpg
+
+    Salamander [蝾螈]
+
+.. image:: images/tree_frog.jpg
+.. image:: images/life-cycle-of-a-frog-1.jpg
+.. image:: images/life-cycle-of-a-frog-2.png
+.. figure:: images/Kaulquappen_Tadpole.jpg
+
+    Tadpole [蝌蚪]
+
 .. image:: images/MapGreatRiftValley.png
 .. figure:: images/Great-Rift-Valle.jpg
 
@@ -134,30 +108,6 @@ Wild Lives 03
 .. figure:: images/baboon.jpg
 
    Baboon [狒狒]
-
-.. figure:: images/black-crested_titmouse.jpg
-
-    Black-crested titmouse
-
-.. figure:: images/european_goldfinch.jpg
-
-    Red in the face
-
-.. image:: images/magpie_tixi.jpg
-.. image:: images/white_strokes.jpg
-.. image:: images/songbird_in_jersey_wood.jpg
-.. figure:: images/Warbler.jpg
-
-    Warbler/Songbird [黄莺]
-
-.. figure:: images/piping_plover.jpg
-
-    Piping plover [笛鸻]
-
-.. figure:: images/hummingbird_02.jpg
-.. figure:: images/hummingbird.jpg
-
-    A rufous-tailed hummingbird in Costa Rica
 
 .. figure:: images/heartbreaking_pollution.jpg
 
@@ -190,46 +140,19 @@ Wild Lives 03
 
     Raccoon [浣熊]
 
-.. image:: images/sandhill_crane_take_flight.jpg
-.. image:: images/black_swan.jpg
-.. figure:: images/tundra_swan.jpg
-
-    Swan
-
-.. image:: images/Ceatacean_Drawing.jpg
-.. image:: images/marine_megafauna.jpg
-.. image:: images/whales-of-the-world-laura-row.jpg
-.. image:: images/ken-hurd-a-collection-of-whales.jpg
-.. image:: images/fin_whale.jpg
-.. figure:: images/harbor-porpoise.jpg
-
-   Harbor Porpoise
-
 .. image:: images/elephant_day_1565597840.jpg
 .. image:: images/elephants_1564717511.jpg
 .. image:: images/elephant_herd_in_namibia.jpg
 .. image:: images/leopard_1565264154.jpg
 .. image:: images/leopard_snoozing_in_a_tree.jpg
 .. image:: images/jaguar_in_pentanal_wetlands.jpg
-
-.. figure::  images/salamander.jpg
-
-    Salamander [蝾螈]
-
-.. image:: images/tree_frog.jpg
-.. image:: images/life-cycle-of-a-frog-1.jpg
-.. image:: images/life-cycle-of-a-frog-2.png
-.. figure:: images/Kaulquappen_Tadpole.jpg
-
-    Tadpole [蝌蚪]
-
 .. image:: images/lion.jpg
 .. image:: images/lion_cubs.jpg
-.. image:: images/fathers_day.jpg
-.. image:: images/feathers.jpg
-.. image:: images/plume_types.jpg
+.. image:: images/lion_father_cubs_1566034125.jpg
 .. image:: images/beaver.jpg
 
+.. image:: images/zebra.jpg
+.. image:: images/deer_1565349419.jpg
 .. figure:: images/elk.jpg
 
     Elk [麋鹿]
@@ -238,23 +161,6 @@ Wild Lives 03
 .. figure:: images/hare.jpg
 
     Hare [野兔]
-
-.. image:: images/laysan_albatross_chick.jpg
-.. figure:: images/Laysan_Albatross.jpg
-
-    Laysan Albatross [信天翁]
-
-.. figure:: images/gull.jpeg
-
-   Gull [海鸥]
-
-.. figure:: images/tuna.jpg
-   
-   Tuan [金枪鱼]
-
-.. figure:: images/bonito.jpeg
-   
-   Bontino
 
 .. figure:: images/skunk.jpg
 
@@ -281,18 +187,6 @@ Wild Lives 03
 .. figure:: images/sloth.jpg
 
     Sloth [树懒]
-
-.. image:: images/ruff_male_displaying.jpg
-
-.. image:: images/zebra.jpg
-.. image:: images/deer_1565349419.jpg
-
-.. image:: images/giant_tortoise_in_galapagos_island.jpg
-.. image:: images/leatherback_sea_turtle.jpg
-.. image:: images/green_sea_turtle.jpg
-.. image:: images/seal.jpg
-.. image:: images/seal_mock_emotion.jpg
-
 
 #. Ontogeny
    
