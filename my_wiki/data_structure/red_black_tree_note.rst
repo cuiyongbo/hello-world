@@ -87,9 +87,9 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
       T.root.color = BLACK
 
    RB-Transplant(T, u, v)
-      if u.p = T.nil
+      if u.p == T.nil
          T.root = v
-      else if u = u.p.left
+      else if u == u.p.left
          u.p.left = v
       else 
          u.p.right = v
