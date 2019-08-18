@@ -102,60 +102,7 @@ The worst case is reached when the search reaches the deepest level of the tree,
 a binary search that has reduced to one element and, in each iteration, always eliminates the 
 smaller subarray out of the two if they are not of equal size.
 
-**Linear search**
-
-Linear search is a simple search algorithm that checks every record until it finds the target value. 
-Linear search can be done on a linked list, which allows for faster insertion and deletion than an array. 
-Binary search is faster than linear search for sorted arrays except if the array is short, 
-although the array needs to be sorted beforehand. Comparison sorting algorithms, such as quicksort 
-and merge sort, require at least :math:`O(n\log n)` comparisons in the worst case. 
-
-**Hashing**
-
-For implementing associative arrays, **hash tables,** a data structure that maps keys to records using a hash function, 
-are generally faster than binary search on a sorted array of records; most implementations require only **amortized constant 
-time on average**. **However, hashing is not useful for approximate matches,** such as computing the next-smallest, next-largest, 
-and nearest key, as the only information given on a failed search is that the target is not present in any record. Binary 
-search is ideal for such matches, performing them in logarithmic time. Binary search also supports approximate matches. 
-Some operations, like finding the smallest and largest element, can be done efficiently on sorted arrays but not on hash tables.
-
-**Trees**
-
-**Binary search trees** are searched using an algorithm similar to binary search.
-A binary search tree is a binary tree data structure that works based on the principle of binary search. 
-The records of the tree are arranged in sorted order, and each record in the tree can be searched using 
-an algorithm similar to binary search, taking on average logarithmic time. Insertion and deletion also 
-require on average logarithmic time in binary search trees. This can be faster than the linear time 
-insertion and deletion of sorted arrays, and binary trees retain the ability to perform all the operations 
-possible on a sorted array, including range and approximate queries.
-
-However, binary search is usually more efficient for searching as binary search trees will most likely be 
-imperfectly balanced, resulting in slightly worse performance than binary search. This even applies to balanced 
-binary search trees, because they rarely produce optimally-balanced trees. Although unlikely, the tree may be 
-severely imbalanced with few internal nodes with two children, resulting in the average and worst-case search 
-time approaching n comparisons. Besides, Binary search trees take more space than sorted arrays.
-
-**Set membership algorithms**
-
-A related problem to search is set membership. Any algorithm that does lookup, like binary search, can also be used for set membership. 
-There are other algorithms that are more specifically suited for set membership. A **bit array** is the simplest, useful when the range of keys 
-is limited. It compactly stores a collection of bits, with each bit representing a single key within the range of keys. Bit arrays are very 
-fast, requiring only **O(1)** time. 
-
-For approximate results, **Bloom filters,** another probabilistic data structure based on hashing, store a set of keys by encoding the keys 
-using a bit array and multiple hash functions. Bloom filters are much more space-efficient than bit arrays in most cases and not much slower: 
-with k hash functions, membership queries require only **O(k)** time. However, Bloom filters suffer from false positives.
-
-**Other data structures**
-
-There exist data structures that may improve on binary search in some cases for both searching and other operations available for sorted arrays. 
-For example, searches, approximate matches, and the operations available to sorted arrays can be performed more efficiently than binary search 
-on specialized data structures such as **van Emde Boas trees, fusion trees, tries, and bit arrays.** However, while these operations can always 
-be done at least efficiently on a sorted array regardless of the keys, such data structures are usually only faster because they exploit the 
-properties of keys with a certain attribute (usually keys that are small integers), and thus will be time or space consuming for keys that 
-lack that attribute. Some structures, such as **Judy arrays,** use a combination of approaches to mitigate this while retaining efficiency 
-and the ability to perform approximate matching
-
+**Applications**
 
 #. std binary search
    
@@ -180,3 +127,85 @@ and the ability to perform approximate matching
     
         Until `bsearch_s`, users of bsearch often used global variables to pass additional 
         context to the comparison function.
+
+#. bound search
+   
+    .. code-block:: cpp
+
+        template<class ForwardIt, class T, class Compare>
+        bool binary_search(ForwardIt first, ForwardIt last, const T& value, Compare comp)
+        {
+            first = std::lower_bound(first, last, value, comp);
+            return (!(first == last) && !(comp(value, *first)));
+        }
+
+        template<class ForwardIt, class T, class Compare>
+        ForwardIt lower_bound(ForwardIt first, ForwardIt last, const T& value, Compare comp)
+        {
+            typename std::iterator_traits<ForwardIt>::difference_type count, step;
+            count = std::distance(first, last);
+            ForwardIt it;
+ 
+            while (count > 0) 
+            {
+                it = first;
+                step = count/2;
+                std::advance(it, step);
+                if (comp(*it, value)) 
+                {
+                    first = ++it;
+                    count -= step+1;
+                }
+                else
+                {
+                    count = step;
+                }
+            }
+            return first;
+        }
+
+        template <class ForwardIt, class T, class Compare>
+        ForwardIt upper_bound(ForwardIt first, ForwardIt last, const T& value, Compare comp)
+        {
+            typename std::iterator_traits<ForwardIt>::difference_type count, step;
+            count = std::distance(first, last);
+            ForwardIt it;
+            while(count > 0)
+            {
+                it = first;
+                step = count/2;
+                std::advance(it, step);
+                if(!comp(value, *it))
+                {
+                    first = ++it;
+                    count -= step+1;
+                }
+                else
+                {
+                    count = step;
+                }
+            }
+            return first;
+        }
+
+        template<class ForwardIt, class T, class Compare>
+        std::pair<ForwardIt,ForwardIt> equal_range(ForwardIt first, ForwardIt last, const T& value, Compare comp)
+        {
+            return std::make_pair(std::lower_bound(first, last, value, comp),
+                                std::upper_bound(first, last, value, comp));
+        }
+
+    .. note::
+
+        `upper_bound` returns an iterator pointing to the first element in the range `[first, last)` 
+        that is greater than `value`. while `lower_bound` returns an iterator pointing to the first 
+        element that is not less than `value`. Otherwise `last` if no such element is found.
+        `equal_range` returns a range containing all elements equivalent to value in the range [first, last).
+        If there are no elements not less than value, `last` is returned as the first element. 
+        Similarly if there are no elements greater than value, `last` is returned as the second element
+
+        comp - binary predicate which returns ​true if the first argument is less than the second. 
+        
+        Elements in the range `[first, last)` must be sorted using `comp`.
+
+        Complexity: :math:`\log_2(last-first) + O(1)`
