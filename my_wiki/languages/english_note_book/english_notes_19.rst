@@ -129,3 +129,8 @@ English Note 19
 | 
 | any port in a storm
 | Definition: in adverse circumstances one welcomes any source of relief or escape.
+| 
+| behemoth
+| Definition: a huge or monstrous creature.
+| Definition: something enormous, especially a big and powerful organization.
+| Usage: shoppers are now more loyal to their local stores than to faceless behemoths.

@@ -2,8 +2,6 @@
 Red Black Tree
 **************
 
-明明知道不会有结果，为什么还要心存期待？
-
 **Property**
 
 A red-black tree is a binary tree that satisfies the following **red-black properties**:
