@@ -11,7 +11,8 @@ Classics
     classics/poetry_collection_2
     classics/poetry_collection_3
     classics/zhuzibaijia
-    classics/daiyuzanghua
+    classics/zanghuaci_caoxueqin
+    classics/guiqulaixici_taoyuanming
     classics/xiangjixuanzhi_guiyouguang
     classics/xiaoshitanji_liuzongyuan
     classics/lisao_quyuan

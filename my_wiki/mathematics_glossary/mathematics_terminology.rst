@@ -39,6 +39,7 @@ I think, therefore I am
 | parallelepiped 平行六面体
 | parallelogram 平行四边形
 | quadrilateral 四边形
+| trapzoid: a quadrilateral with only one pair of parallel sides
 | colinear 共线
 | polyheron 多面体
 | convex polygon 凸多边形

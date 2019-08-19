@@ -131,5 +131,3 @@ Condition Variables
 * The **bug4.c** program is yet another example of what can go wrong when using condition variables. 
    
 * Review, compile (for gcc include the **-lm** flag) and run the code. Observe the output and then see if you can fix the problem. 
-
-

@@ -2,6 +2,10 @@
 Binary search
 *************
 
+I am the loser.
+
+-- Michael Jackson
+
 **Algorithm**
 
 Given an array A of n elements with records :math:`A_0, A_1, ..., A_{n−1},` sorted such that 

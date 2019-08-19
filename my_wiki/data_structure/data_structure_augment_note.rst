@@ -180,7 +180,11 @@ Agumenting Data Structure
 
 .. code-block:: none
 
+   // `int` stands for `interval` here
    x.max = max(x.int.high, x.left.max, x.right.max)
+
+   // i overlaps i' means `i.low <= i'.high && i'.low <= i.high`
+   // and thus is contrapositive of `!(i.low > i'.high || i.high < i'.low)`
 
    Interval-Search(T, i)
       x = T.root
