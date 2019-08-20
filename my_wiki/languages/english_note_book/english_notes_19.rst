@@ -134,3 +134,8 @@ English Note 19
 | Definition: a huge or monstrous creature.
 | Definition: something enormous, especially a big and powerful organization.
 | Usage: shoppers are now more loyal to their local stores than to faceless behemoths.
+| 
+| quintessential
+| Definition: representing the most perfect or typical example of a quality or class.
+| Usage: he was the quintessential tough guy—strong, silent, and self-contained.
+| 

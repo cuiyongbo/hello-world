@@ -334,3 +334,5 @@ English Note 16
 
 .. image:: images/thunderstorm_on_the_roll.jpg
 .. image:: images/sceneray_spot_1565953436.jpg
+.. image:: images/summer_beach_1566302344.jpg
+.. image:: images/camp_alone_river_1566302344.jpg

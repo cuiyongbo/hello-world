@@ -2,53 +2,6 @@
 Install Tensorflow
 ******************
 
-System requirements::
-
-   Ubuntu 16.04 or later (64-bit)
-   macOS 10.12.6 (Sierra) or later (64-bit) (no GPU support)
-
-
-#. Install the Python development environment on your system (Assume Python 2.7)
-   
-   Check if your Python environment is already configured::
-
-      python --version
-      pip --version
-      virtualenv --version
-
-   If these packages are already installed, skip to the next step.
-   Otherwise, install Python, the pip package manager, 
-   and Virtualenv::
-
-      sudo apt update
-      sudo apt install python-dev python-pip
-      sudo pip install -U virtualenv  # system-wide install
-
-#. Create a virtual environment (recommended)
-   
-   Python virtual environments are used to isolate package installation from the system.
-   Create a new virtual environment by choosing a Python interpreter and 
-   making a ``./venv`` directory to hold it::
-
-      virtualenv --system-site-packages -p python2.7 ./venv
-
-   Activate the virtual environment using a shell-specific 
-   command::
-
-      source ./venv/bin/activate  # sh, bash, ksh, or zsh
-
-   When virtualenv is active, your shell prompt is prefixed with (venv).
-
-   Install packages within a virtual environment without affecting 
-   the host system setup. Start by upgrading pip::
-
-      pip install --upgrade pip
-      pip list  # show packages installed within the virtual environment
-
-   And to exit virtualenv later::
-
-      deactivate  # don't exit until you're done using TensorFlow
-
 #. Install the TensorFlow pip package
 
    Choose one of the following TensorFlow packages to 

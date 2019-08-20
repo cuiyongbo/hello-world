@@ -8,15 +8,6 @@ To be or not to be, this is a question.
 
 -- William Shakespeare
 
-Currently supported interfaces:
-
-    * *check* - check for expired shared memory files
-      
-    * *list* - list current shared memory files with patterns, list all files if no pattern is provided
-      
-        * filter=pattern1,pattern2,...
-
-
 .. contents::
    :local:
 
@@ -24,7 +15,11 @@ Deep Learning
 =============
 
     - Part I (finished 2019-03-26)
+    
     - Part II
+    
+        - Chapter 6 Deep Feedforward Networks 
+
 
 Introduction machine learning with python
 =========================================

@@ -39,13 +39,8 @@ Disk Usage inspector
       the last one takes effect.
 
       --exclude=PATTERN
-      exclude files that match PATTERN
-
-   .. note:: 
-
-      **PATTERN** is a shell pattern (not a regular expression). The pattern *?* matches any one character, 
-      whereas \* matches any string (composed of zero, one or multiple characters). For example, the command
-      ``du --exclude='*.o'`` will skip all files and subdirectories ending in *.o* (including the file *.o* itself).
+      exclude files that match PATTERN.
+      PATTERN is a shell pattern (not a regular expression).
 
 #. df - report file system disk space usage
 
@@ -83,12 +78,6 @@ Disk Usage inspector
 
       -x, --exclude-type=TYPE
       limit listing to file systems not of type TYPE
-
-      --sync 
-      invoke sync before getting usage info
-
-      --no-sync
-      do not invoke sync before getting usage info (default)
 
 .. code-block:: sh
    :caption: df Examples
@@ -128,7 +117,16 @@ Disk Usage inspector
    $ du -h -t 1M
    3.4G  ./past7/2018-11-26-Mon
    15G   ./past7
-   15G   
+   15G 
+
+   $ du -sh --exclude-from=/home/cuiyb/ past_ti_pattern
+   3.9G    .
+   $ cat /home/cuiyb/past_ti_pattern
+   route*
+   tiData*
+   teData*
+   idList*
+   temp* 
 
 .. code-block:: sh
    :caption: df Examples
@@ -138,13 +136,10 @@ Disk Usage inspector
    udev           devtmpfs   20G  4.0K   20G   1% /dev
    tmpfs          tmpfs     4.0G  640K  4.0G   1% /run
    /dev/dm-0      ext4      157G  135G   15G  91% /
-   none           tmpfs     4.0K     0  4.0K   0% /sys/fs/cgroup
-   none           tmpfs     5.0M     0  5.0M   0% /run/lock
-   none           tmpfs      20G  469M   20G   3% /run/shm
    none           tmpfs     100M     0  100M   0% /run/user
    /dev/sda1      ext2      236M   40M  184M  18% /boot
    tmpfs          tmpfs     4.0G  2.0G  2.1G  49% /tmp/realtime
-   tmpfs          tmpfs      10G  8.8G  1.3G  88% /tmp/poi-server
+   ...
    total          -         214G  147G   61G  71% -
    
    $ df -h /dev/shm
