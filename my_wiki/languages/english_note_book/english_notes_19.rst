@@ -139,3 +139,6 @@ English Note 19
 | Definition: representing the most perfect or typical example of a quality or class.
 | Usage: he was the quintessential tough guy—strong, silent, and self-contained.
 | 
+| piazza
+| Definition: a public square or marketplace, especially in an Italian town.
+| Usage: piassa form.

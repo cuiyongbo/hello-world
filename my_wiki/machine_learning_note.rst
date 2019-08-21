@@ -87,3 +87,4 @@ A fairly good place to start comes here `Machine Learning 101 <https://leetcode.
 .. [#] `Tom Mitchell Page <http://www.cs.cmu.edu/~tom/NewChapters.html>`_
 .. [#] `The Hundred-Page Machine Learning Book GitHub <https://github.com/aburkov/theMLbook>`_
 .. [#] `The Hundred-Page Machine Learning Book <http://themlbook.com/wiki/doku.php>`_
+.. [#] `Stanford Tensorflow tutorial <https://github.com/chiphuyen/stanford-tensorflow-tutorials.git>`
