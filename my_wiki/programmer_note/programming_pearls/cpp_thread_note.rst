@@ -33,14 +33,31 @@ CPP thread note
 
     After calling detach ``*this`` no longer owns any thread.
 
-.. method:: std::thread::id get_id() const noexcept
-
-    Returns a value of ``std::thread::id`` identifying the thread associated with ``*this``.
-
-.. method:: std::thread::native_handle  native_handle()
-
-    Returns the implementation defined underlying thread handle.
-
 .. method:: void swap( thread& other ) noexcept
 
     Exchanges the underlying handles of two thread objects.
+
+.. method:: std::thread::id get_id() const noexcept
+.. method:: std::thread::native_handle  native_handle()
+
+#. Compile program with ``-pthread`` flag
+
+#. Get current thread id
+   
+   - call ``std::this_thread::get_id()``
+   - call ``pthread_self()``
+
+#. Argument passing and thred function return value
+   
+    The arguments to the thread function are moved or copied by value. 
+    If a reference argument needs to be passed to the thread function, 
+    it has to be wrapped (e.g. with ``std::ref`` or ``std::cref``).
+
+    Any return value from the function is ignored. If the function throws an exception, 
+    ``std::terminate`` is called. In order to pass return values or exceptions back to 
+    the calling thread, ``std::promise`` or ``std::async`` may be used.
+
+#. ``thread local`` keyword - thread storage duration
+   
+    The storage for the object is allocated when the thread begins and deallocated when the thread ends. 
+    Each thread has its own instance of the object. Only objects declared ``thread_local`` have this storage duration. 

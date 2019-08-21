@@ -142,3 +142,25 @@ English Note 19
 | piazza
 | Definition: a public square or marketplace, especially in an Italian town.
 | Usage: piassa form.
+| 
+| scapegoat [替罪羊]
+| Definition: (in the Bible) a goat sent into the wilderness after the Jewish chief priest had symbolically laid the sins of the people upon it.
+| Definition: a person who is blamed for the wrongdoings, mistakes, or faults of others, especially for reasons of expediency.
+| Usage: few things are harder for kids to bear than being scapegoated.
+| Phrase: make a scapegoat of.
+| 
+| expedient
+| expediency
+| Definition: the quality of being convenient and practical despite possibly being improper or immoral; convenience.
+| Usage: an act of political expediency.
+| 
+| ad-hoc
+| Definition: when necessary or needed.
+| Synonyms: makeshift.
+| Usage: the group was constituted ad hoc.
+| Usage: ad hoc committees to examine specific problems. [临时委员]
+| 
+| makeshift
+| Definition: serving as a temporary substitute; sufficient for the time being.
+| Usage: A few cushions formed a makeshift bed.
+

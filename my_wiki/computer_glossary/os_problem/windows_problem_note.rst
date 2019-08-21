@@ -201,6 +201,10 @@ Windows Problems
    
     .. image:: images/vs_chiness_display_solution.png
 
+#. Windows terminal 中 VIM 字体和系统不一致
+   
+   Solution: Install ``Microsoft YaHei Mono.ttf`` font
+
 .. rubric:: Footnotes
 
 .. [#] `Run time library options <https://msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx>`_

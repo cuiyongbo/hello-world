@@ -425,10 +425,6 @@ English Note 9
 | Definition: intervene on behalf of another.
 | Usage: I begged him to intercede for Theresa, but he never did a thing.
 | 
-| makeshift
-| Definition: serving as a temporary substitute; sufficient for the time being.
-| Usage: A few cushions formed a makeshift bed.
-| 
 | interim
 | Definition: the intervening time.
 | Usage: in the interim I'll just keep my fingers crossed/

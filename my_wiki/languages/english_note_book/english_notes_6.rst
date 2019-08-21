@@ -241,12 +241,6 @@ English Note 6
 | Usage: the introduction is abridged from the author's afterword to the novel.
 | Definition: curtail (a right or privilege).
 | Usage: even the right to free speech can be abridged.
-| 
-| ad-hoc
-| Definition: when necessary or needed.
-| Synonyms: make-shift.
-| Usage: the group was constituted ad hoc
-| Usage: ad hoc committees to examine specific problems. [临时委员]
 |
 | tile
 | Usage: the lobby was tiled in blue. [铺砖，瓦片]

@@ -10,7 +10,7 @@ Pthread Hot APIs
     int pthread_equal(pthread_t t1, pthread_t t2);
 
     int pthread_setname_np(pthread_t thread, const char *name);
-    int pthread_getname_np(pthread_t thread, char *name, size_t len);
+    int pthread_getname_np(pthread_t thread, char *name, size_t len); // np means non-portable
 
     int pthread_create(pthread_t *thread, const pthread_attr_t *attr, 
                            void *(*start_routine)(void *), void *arg);
