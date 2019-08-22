@@ -188,6 +188,10 @@ Wild Lives 03
 
     Sloth [树懒]
 
+.. figure:: images/martes_1566473048.jpg
+
+    Martes [貂]
+
 #. Ontogeny
    
     Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 

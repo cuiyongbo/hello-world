@@ -88,3 +88,4 @@ A fairly good place to start comes here `Machine Learning 101 <https://leetcode.
 .. [#] `The Hundred-Page Machine Learning Book GitHub <https://github.com/aburkov/theMLbook>`_
 .. [#] `The Hundred-Page Machine Learning Book <http://themlbook.com/wiki/doku.php>`_
 .. [#] `Stanford Tensorflow tutorial <https://github.com/chiphuyen/stanford-tensorflow-tutorials.git>`
+.. [#] `Fash Mnist <https://github.com/zalandoresearch/fashion-mnist/blob>`_

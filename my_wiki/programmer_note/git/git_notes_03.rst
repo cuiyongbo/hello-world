@@ -39,7 +39,7 @@ Command line instructions
 
         cd existing_repo
         git remote rename origin old-origin
-        git remote add origin git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
+        git remote set-url origin git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
         git push -u origin --all
         git push -u origin --tags
 
