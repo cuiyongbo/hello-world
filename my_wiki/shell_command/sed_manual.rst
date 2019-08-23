@@ -203,15 +203,22 @@ REGULAR EXPRESSIONS
 EXAMPLES
 
 #. replace string in a file
-   
-    .. code-block::
+
+    .. code-block:: sh
 
         $ cat sample
         time="1.234" name="test1"
-        
+
         $ sed 's/name/test_name/g' sample
         time="1.234" test_name="test1"
-        
+
         $ sed 's/time="[0-9.]*"//g' sample
          name="test1"
 
+#. replace whitespace with new line
+
+    .. code-block:: sh
+
+        sed -i "s/ /\n/g" links
+        sed -i "s/\*/\n/g" links
+        grep -f links 17-00.txt > result

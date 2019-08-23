@@ -3,11 +3,11 @@ TCP/IP Note
 ***********
 
 .. toctree::
-   
+
     tcp_ip/tcp_ip_terminology_note
+    tcp_ip/nginx_usage_note
     tcp_ip/nginx_insight_01
     tcp_ip/nginx_insight_02
-
 
 .. rubric:: Footnotes
 

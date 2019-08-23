@@ -3,19 +3,19 @@ nginx Insight 01
 ****************
 
 #. nginx worker process daemon
-   
+
     Refer to master process's signal handling: ``ngx_init_signals``, ``ngx_signal_handler``.
 
 #. nginx daemonize: ``ngx_int_t ngx_daemon(ngx_log_t *log)``
 #. nginx architecture: event-driven, asynchronous, non-blocking
 
 #. nginx worker process event cycle - 1
-   
-    ``ngx_start_worker_processes``, ``ngx_spawn_process``, 
+
+    ``ngx_start_worker_processes``, ``ngx_spawn_process``,
     ``ngx_worker_process_cycle``, ``ngx_process_events_and_timers``
 
     In the last function call, nginx processes two queues, ``ngx_posted_accept_events`` and ``ngx_posted_events``.
-    and invokes callback to dispatch events. 
+    and invokes callback to dispatch events.
 
 #. nginx worker process event cycle - select module
 
@@ -26,7 +26,7 @@ nginx Insight 01
             // initialize two event queues
             ngx_queue_init(&ngx_posted_accept_events);
             ngx_queue_init(&ngx_posted_events);
-        
+
             // initialize selected module
             if (module->actions.init(cycle, ngx_timer_resolution) != NGX_OK) {
                 /* fatal */
@@ -36,13 +36,13 @@ nginx Insight 01
 
         void ngx_process_events_and_timers(ngx_cycle_t *cycle)
         {
-        
+
             // find the timeout that is closest to expiring
             timer = ngx_event_find_timer();
 
             // add events to event queue
             (void)ngx_process_events(cycle, timer, flags);
-        
+
             // drain events in event queue
             ngx_event_process_posted(cycle, &ngx_posted_accept_events);
             ngx_event_process_posted(cycle, &ngx_posted_events);
@@ -80,14 +80,14 @@ nginx Insight 01
         static ngx_int_t ngx_select_process_events(ngx_cycle_t *cycle, ngx_msec_t timer, ngx_uint_t flags)
         {
             ready = select(max_fd + 1, &work_read_fd_set, &work_write_fd_set, NULL, tp);
-        
-            // add event to queue   
+
+            // add event to queue
             queue = ev->accept ? &ngx_posted_accept_events : &ngx_posted_events;
             ngx_post_event(ev, queue);
         }
 
 #. nginx worker process event cycle - epoll module
-   
+
     .. code-block:: c
 
         typedef struct {
@@ -126,13 +126,13 @@ nginx Insight 01
                  ngx_epoll_done,                  /* done the events */
              }
         };
-        
+
         static ngx_int_t ngx_epoll_init(ngx_cycle_t *cycle, ngx_msec_t timer)
         {
             // ...
             ep = epoll_create(cycle->connection_n / 2);
 
-            // ...       
+            // ...
             ngx_event_actions = ngx_epoll_module_ctx.actions;
         }
 
@@ -156,14 +156,14 @@ nginx Insight 01
         }
 
 #. nginx configure file parsing
-   
+
     ``ngx_conf_param``, ``ngx_conf_parse``, ``ngx_conf_open_file``
 
 
 #. nginx event cycle - timer event
-   
+
     .. code-block:: c
-   
+
         #define ngx_add_timer        ngx_event_add_timer
         #define ngx_del_timer        ngx_event_del_timer
 
@@ -174,7 +174,7 @@ nginx Insight 01
             // ...
             ngx_rbtree_insert(&ngx_event_timer_rbtree, &ev->timer);
         }
-        
+
         static ngx_inline void ngx_event_del_timer(ngx_event_t *ev)
         {
             ngx_rbtree_delete(&ngx_event_timer_rbtree, &ev->timer);

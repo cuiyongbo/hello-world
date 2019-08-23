@@ -2,7 +2,7 @@
 Algorithms
 **********
 
-.. toctree:: 
+.. toctree::
     :titlesonly:
 
     algorithms/alg_analysis_and_design
