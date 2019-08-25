@@ -167,3 +167,11 @@ English Note 19
 | flip-flop
 | Definition: Reverse (a direction, attitude, or course of action). [反悔]
 | Usage: Larry may promise you a ticket now, but I would not be surprised if he flip-flops on that decision later.
+| 
+| porcelain [釉，陶瓷] : china, ceramic
+| 
+| shard
+| Definition: a piece of broken ceramic, metal, glass, or rock, typically having sharp edges.
+| Usage: shards of glass flew in all directions.
+
+

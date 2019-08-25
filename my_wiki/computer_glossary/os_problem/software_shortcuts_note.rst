@@ -204,11 +204,13 @@ MacOS Terminal
 #. Cursor Left – Ctrl + B
 #. Cursor Right – Ctrl + F
 #. Delete Right – Ctrl + D
-#. Delete to Right of Cursor from right – Ctrl + K
+#. Delete to head from cursor – Ctrl + U
+#. Delete to end from cursor – Ctrl + K
 #. Display previous Command – Ctrl + P
 #. Display next Command – Ctrl + N
 #. Clear screen - Ctrl + L
 #. Move between words - Shift + Left/Right
+#. Search input history - Ctrl + R
 
 
 MacOS Preview

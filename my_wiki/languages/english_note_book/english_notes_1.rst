@@ -1359,8 +1359,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: denoting something of high quality, especially something from the past or characteristic of the best period of a person’s work.
 | Usage: The opera is vintage Rossini.
 | 
-| porcelain [釉，陶瓷] : china 
-| 
 | culmination [结晶，高潮，巅峰]
 | Definition: the highest or climactic point of something, especially as attained after a long time.
 | Usage: The product was the culmination of 13 years of research.

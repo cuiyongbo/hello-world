@@ -2,6 +2,11 @@
 English Note 18
 ***************
 
+Easy doesn't Enter into grown-up life.
+
+-- The Weather Man
+
+
 | agglomerate
 | agglomerative
 | Definition: collect or form into a mass or group.
