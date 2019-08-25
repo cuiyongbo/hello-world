@@ -134,10 +134,14 @@ English Note 18
 | Usage: chatbots often treat conversations like they're a game of tennis: talk, reply, talk, reply.
 | 
 | epoch
+| epochal
 | Definition: a period of time in history or a person's life, typically one marked by notable events or particular characteristics.
 | Usage: the Victorian epoch.
 | Definition: the beginning of a distinctive period in the history of someone or something.
 | Usage: welfare reform was an epoch in the history of U.S. social policy.
+| Phrase: epoch-making [划时代的]
+| Definition: of major importance; likely to have a significant effect on a particular period of time.
+| Usage: the meeting is an epoch-making event for peace and stability.
 | 
 | serene
 | serenely

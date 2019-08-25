@@ -74,18 +74,14 @@ A fairly good place to start comes here `Machine Learning 101 <https://leetcode.
 .. rubric:: Footnotes
 
 .. [#] `Matplotlib <https://matplotlib.org/#>`_
-.. [#] `Matplotlib.axes.Axes class <https://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes>`_
-.. [#] `Matplotlib.pyplot.figure <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure>`_
-.. [#] `Matplotlib.pyplot.plot <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot>`_
-.. [#] `Matplotlib.pyplot.subplots <https://matplotlib.org/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots>`_
 .. [#] `Matplotlib pyplot tutorial <https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py>`_
 .. [#] `NumPy and SciPy doc <https://docs.scipy.org/doc/>`_
 .. [#] `Scipy Lecture Notes <http://www.scipy-lectures.org/>`_
 .. [#] `Machine Learning Dataset sources <http://archive.ics.uci.edu/ml/index.php>`_
-.. [#] `MNIST datasets <http://yann.lecun.com/exdb/mnist/>`_
 .. [#] `AI Google <https://ai.google/>`_
 .. [#] `Tom Mitchell Page <http://www.cs.cmu.edu/~tom/NewChapters.html>`_
 .. [#] `The Hundred-Page Machine Learning Book GitHub <https://github.com/aburkov/theMLbook>`_
 .. [#] `The Hundred-Page Machine Learning Book <http://themlbook.com/wiki/doku.php>`_
 .. [#] `Stanford Tensorflow tutorial <https://github.com/chiphuyen/stanford-tensorflow-tutorials.git>`
+.. [#] `MNIST datasets <http://yann.lecun.com/exdb/mnist/>`_
 .. [#] `Fash Mnist <https://github.com/zalandoresearch/fashion-mnist/blob>`_

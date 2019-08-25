@@ -163,4 +163,7 @@ English Note 19
 | makeshift
 | Definition: serving as a temporary substitute; sufficient for the time being.
 | Usage: A few cushions formed a makeshift bed.
-
+| 
+| flip-flop
+| Definition: Reverse (a direction, attitude, or course of action). [反悔]
+| Usage: Larry may promise you a ticket now, but I would not be surprised if he flip-flops on that decision later.
