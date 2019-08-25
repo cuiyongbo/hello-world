@@ -167,7 +167,6 @@ Mac OS X
 
 #. 微调音量: shift＋option＋F12
 #. 调节音量时关闭提示音: shift + fn + F11/F12
-#. ShutDown dialog: control＋power
 #. Log out: Command + Shift + Q
 #. Force Close: Command＋Q
 #. Force quit: Command＋option＋ESC
@@ -189,7 +188,9 @@ Mac OS X
 #. Fold current directory with subdirectories: Option + left
 #. Unfold current directory with subdirectories: Option + right
 #. Show/Hide sidebar: Option + Command + S
-
+#. ShutDown dialog: control＋power
+#. Lock Screen: Ctrl + shift + Power
+#. Restart: Ctrol + CMD + Power
 
 MacOS Terminal
 ==============
