@@ -3,20 +3,20 @@ Wild Lives 03
 *************
 
 | tailing [尾矿]
-| the residue of something, especially ore[矿石]. 
-| 
+| the residue of something, especially ore[矿石].
+|
 | flora [植物群]
-| Definition: the plants of a particular region, habitat, or geological period. 
+| Definition: the plants of a particular region, habitat, or geological period.
 | Usage: the river's flora and fauna have been inventoried and protected.
-| 
+|
 | fauna [动物群]
 | Definition: the animals of a particular region, habitat, or geological period.
 | Usage: "the flora and fauna of Siberia.
-| 
+|
 | nocturnal
 | Definition: Done, active or occurring at night.
 | Usage: Most owls are nocturnal.
-| 
+|
 | nocturne
 | Definition: a short composition of a romantic or dreamy character suggestive of night, typically for piano. [夜曲]
 | Definition: a picture of a night scene.
@@ -72,8 +72,8 @@ Wild Lives 03
 
     Tyrannosaurus Rex [霸王龙]
 
-    Tyrannosaurus rex wasn't always the king of the dinosaurs. 
-    Before they became towering predators [顶级掠食者], tyrannosaurs started 
+    Tyrannosaurus rex wasn't always the king of the dinosaurs.
+    Before they became towering predators [顶级掠食者], tyrannosaurs started
     out much smaller, and a newly discovered fossil is helping fill the gap between those two extremes.
 
 .. figure:: images/spotted-house-gecko.jpg
@@ -85,7 +85,7 @@ Wild Lives 03
 
     Chameleon [变色龙]
 
-    A person who changes their opinions 
+    A person who changes their opinions
     or behavior according to the situation. [墙头草]
 
 .. figure::  images/salamander.jpg
@@ -123,14 +123,15 @@ Wild Lives 03
 
     Arctic fox [北极狐]
 
-.. image:: images/grown_bear_familiy_1565172200.jpg
-.. figure:: images/polar_bear.jpg
-
-    Polar bear [北极熊]
-
+.. image:: images/brown_bears_1566782396.jpg
+.. image:: images/brown_bear_familiy_1565172200.jpg
 .. figure:: images/ursus_arctos.jpg
 
     Ursus Arctos [棕熊]
+
+.. figure:: images/polar_bear.jpg
+
+    Polar bear [北极熊]
 
 .. figure:: images/wombat.jpg
 
@@ -193,19 +194,19 @@ Wild Lives 03
     Martes [貂]
 
 #. Ontogeny
-   
-    Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism, 
-    usually from the time of fertilization of the egg to the organism's mature form. Yet, the term 
+
+    Ontogeny (also ontogenesis or morphogenesis) is the origination and development of an organism,
+    usually from the time of fertilization of the egg to the organism's mature form. Yet, the term
     can be used to refer to the study of the entirety of an organism's lifespan.
 
     .. image:: images/Ontogeny.jpg
     .. image:: images/prokaryotic_creatures.jpg
 
 #. Phlogeny
-   
-    Phylogenetics, in biology, is the study of the evolutionary history and relationships 
-    among individuals or groups of organisms (e.g. species, or populations). These relationships 
-    are discovered through phylogenetic inference methods that evaluate observed heritable traits, 
+
+    Phylogenetics, in biology, is the study of the evolutionary history and relationships
+    among individuals or groups of organisms (e.g. species, or populations). These relationships
+    are discovered through phylogenetic inference methods that evaluate observed heritable traits,
     such as DNA sequences or morphology under a model of evolution of these traits.
 
     .. image:: images/Phylogenetic-tree.png
@@ -215,15 +216,15 @@ Wild Lives 03
 
 #. Ontogeny recapitulates phylogeny
 
-    The phrase "ontogeny recapitulates phylogeny" refers to a scientific theory 
-    that an organism's fetal development follows the species' previous evolutionary 
+    The phrase "ontogeny recapitulates phylogeny" refers to a scientific theory
+    that an organism's fetal development follows the species' previous evolutionary
     forms. This theory has been disproven.
 
     .. image:: images/Embryological-evidences.jpg
 
 #. Metamorphosis
-   
-   (in an insect or amphibian) the process of transformation from an immature 
+
+   (in an insect or amphibian) the process of transformation from an immature
    form to an adult form in two or more distinct stages.
 
    .. image:: images/Butterfly-life-cycles.png
