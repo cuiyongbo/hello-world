@@ -10,7 +10,7 @@ English Note 2
 | Definition: the space above a driver's head in a vehicle.
 | Definition: the space or clearance between the top of a vehicle and the underside of a bridge.
 | Usage: There's a lot of headroom for such a small car.
-| 
+|
 | subsume
 | subsumable
 | subsumption
@@ -29,36 +29,36 @@ English Note 2
 | Usage: Rumors of a further scandal abound.
 | Phrase: abound in/with
 | Usage: This land abounds with wildlife.
-| 
+|
 | doppelganger
 | Definition: a person's doppelganger is another person who looks exactly like them.
 | Usage: He has a doppelganger named Donald, his invented twin brother.
-| 
+|
 | invent
 | Definition: make up (an idea, name, story, etc.), especially so as to deceive.
 | Usage: I didn't have to invent any tales about my past.
-| 
+|
 | imposter
 | Definition: a person who pretends to be someone else so as to deceive others, especially for fraudulent gain.
-| 
+|
 | feign
 | Definition: pretend to be affected by (a feeling, state, or injury). [假装，佯装]
 | Usage: He survived the massacre by feigning death. [装死]
-| Usage: 'Who cares?' said Alex, feigning indifference. 
-| 
+| Usage: 'Who cares?' said Alex, feigning indifference.
+|
 | margin
 | marginal
 | Definition: relating to or suited at the edge or margin of something.
 | Usage: Margin notes.
 | Definition: of secondary or minor importance; not central.
 | Usage: It seems to make only a marginal difference.
-| 
+|
 | avalanche
 | Definition: a mass of snow, ice, or rocks falling rapidly down a mountainside.
 | Usage: An avalanche of mud. [泥石流]
 | Definition: a sudden arrival or occurrence of something in overwhelming quantities.
 | Usage: We received an avalanche of letters to replay our advertisement.
-| 
+|
 | svelte
 | Definition: (of a person) slender and elegant.
 |
@@ -74,7 +74,7 @@ English Note 2
 .. image:: images/clothe_toggle.jpg
 .. image:: images/Wool-Toggle-Coat.jpeg
 
-| 
+|
 | attire
 | Definition: clothes, especially fine or formal ones.
 | Usage: holiday attire.
@@ -84,15 +84,15 @@ English Note 2
 | Definition: a strongbox used to store money or valuable things. [保险柜，金库]
 | Definition: the funds or the finacial reserves of an institution or organization.
 | Usage: The ferderal government's empty coffer.
-| 
+|
 | strongbox
 | Definition: a small lockable box, typically made of metal, in which valuables are kept.
-| 
+|
 | crimson
 | Definition: something is crimson is deep red in color.
 | Definition: if someone goes crimson, their face becomes red because they are angry or embarrassed.
 | Usage: I used to refuse invitations to parties because I knew I'd go crimson every time someone talked to me.
-| 
+|
 | slicker
 | Definition: a raincoat made of smooth material.
 | Definition: a person who is smooth and persuasive but untrustworthy.
@@ -111,7 +111,7 @@ English Note 2
 | permatanned
 | perma-tanned
 | Definition: permanently suntanned.
-| 
+|
 | suntan
 | suntanned
 | Definition: a browning of skin caused by exposure to the sun. [古铜色肤色]
@@ -132,14 +132,14 @@ English Note 2
 | Definition: to explain something in detail.
 | Usage: A bank spokeman was unable to clarify the situation.
 | Usage: The union has written to the minister asking for clarification of the government's controversial decision.
-| 
+|
 | bog
 | Definition: a bog is an area of land which is very wet and muddy.
 | Phrase: bog down
 | Definition:  (of a person or process) be unable to make progress.
 | Usage: The talk has been bogged down over the issue of military reform.
 | Usage: you must not get bogged down in detail.
-| 
+|
 | opportunist
 | opportunity
 | opportunistic [机会主义，投机者]
@@ -151,11 +151,11 @@ English Note 2
 | Usage: The calculating and opportunistic politician.
 | Phrase: opportunity knocks.
 | Definition: a changce for success or advancement occurs.
-| 
+|
 | allusion
 | Definition: an indirect reference to somebody or something.
 | Usage: The last point was understood to be an allusion to the long-standing hostility between the two leaders.
-| 
+|
 | synthesize
 | synthesise
 | Definition: to produce something by means of chemical or biological reactions.
@@ -163,7 +163,7 @@ English Note 2
 | Definition: If you synthesize different ideas, facts, or experiences, you combine them to form a single idea or impression.
 | Synonyms: fuse.
 | Usage: Darwinian theory has been synthesized with modern genetics.
-| 
+|
 | wrap
 | Definition: cause (a word or sentence) to be carried over to a new line automatically as the margin is reached, to fit around embedded features such as pictures.
 | Usage: Words are wrapped to the next line if they are too long.
@@ -183,23 +183,23 @@ English Note 2
 | Phrase: wrap up
 | Definition: (also wrap someone up) put on (or dress someone in) warm clothes.
 | Usage: Tim was well wrapped up against the weather.
-| Definition: (also wrap it up) be quite; stop talking or making a noise. 
-| 
+| Definition: (also wrap it up) be quite; stop talking or making a noise.
+|
 | top-notch
 | top-notcher
 | Definition: of the highest quality.
 | Usage: a top-notch hotel.
-| 
+|
 | atrocious
 | Definition: of a very poor quality; extremely bad or unpleasant.
 | Usage: He attempted an atrocious imitation of my English accent.
 | Definition: horrifyingly wicked.
 | Usage: Atrocious cruelties.
-| 
+|
 | back-burner
 | Definition: postpone consideration of or an action on.
 | Usage: A planned test of new ale has been back-burnered.
-| 
+|
 | silver bullet [灵丹妙药]
 | Definition: a bullet made of silver, used in fiction as a supposedly magical method of killing werewolves. [狼人]
 | Definition: a simple and seemingly magical solution to a complicated problem.
@@ -213,16 +213,16 @@ English Note 2
 | Definition: rescue (a wrecked or disabled ship or its cargo) from loss at sea.
 | Definition: If you manage to salvage a difficult situation, you manage to get something useful from it so that it is not a complete failure.
 | Usage: Diplomats are still hoping to salvage something from the meeting.
-| 
+|
 | oxymoron
 | oxymoronic [自相矛盾]
 | Definition: a figure of speech in which apparently contradictory terms appeared in conjunction.
 | Usage: Faith unfaithful kept him falsely true.
-| 
+|
 | compendium
 | Definition: a short but detailed collection of information, usually in a book.
 | Usage: The Roman Catholic Church has issued a compendium of its teachings.
-| 
+|
 | blindside
 | blind side [盲点]
 | Definition: a direction in which a person has a poor view of approaching traffic or danger.
@@ -230,34 +230,34 @@ English Note 2
 | Usage: A punch delivered on the referee's blind side.
 | Definition: make (someone) unable to perceive the truth of a situation.
 | Usage: We got blindsided by our own government.
-| 
+|
 | extol
 | Definition: to praise (someone or something) enthusiastically.
 | Usage: He extolled the virtues of the Russian people.
-| 
+|
 | one-stop
 | Definition: a one-stop shop is a place where you can buy everything you need for a particular purpose.
-| 
+|
 | streak
 | Definition: a long stipe or mark on a surface which contrasts with the surface because it's a different color.
 | Usage: There are dark streaks on the surface of the moon.
 | Usage: A streak of oil. [油迹线]
 | Definition: a narrow line of bacteria smeared on the surface of a solid culture medium. [固态培养基]
-| 
+|
 | show-stopping
 | Definition: a show-stopping performance or product is very impressive.
-| 
+|
 | roadblock [路障]
 | Definition: a barrier or barricade on a road, especially one set up by the authorities to stop and examine traffic.
 | Definition: a hindrance or obstruction.
 | Usage: The biggest roadblock to solar power is its price tag.
-|  
+|
 | wreak
 | Definition: cause (a large amount of damage or harm).
 | Usage: Torrential rainstorm wreaked havoc yesterday.
 | Definition: inflict (vengeance).
 | Usage: He swore to wreak vengeance on those who had betrayed him.
-| 
+|
 | havoc
 | Definition: widespread destruction.
 | Usage: the hurricane ripped through Florida, causing havoc.
@@ -265,7 +265,7 @@ English Note 2
 | Definition: completely disrupt; cause serious damage to.
 | Usage: shift work plays havoc with the body clock.
 | Usage: Continuing strikes are beginning to play havoc with the national economy.
-| 
+|
 | kitchen sink
 | Definition: a sink in a kitchen, used for washing dishes and preparing food. [水池]
 | Usage: The traditional view of women as dedicated housewives tied to the kitchen sink is all but extinct.
@@ -286,20 +286,20 @@ society.
 |
 | drab [单调乏味]
 | Definition: lacking brightness or interest; drearily dull.
-| Usage: the landscape was drab and gray. 
-| 
+| Usage: the landscape was drab and gray.
+|
 | sordid
 | Definition: involving ignoble actions and motives; arousing moral distaste and contempt.
 | Usage: The story paints a sordid picture of bribes and scams.
 | Definition: very dirty and unpleasant. [污秽不堪]
 | Usage: The overcrowded housing conditions were sordid and degrading.
-| 
+|
 | proverbial
 | Definition: (of a word or phrase) referred to in a proverb or idiom.
 | Usage: I'm going to stick out like the proverbial sore thumb.
 | Definition: well known, especially so as to be stereotypical.
 | Usage: The Welsh people, whose hospitality is proverbial.
-| 
+|
 | stick/stand out like a sore thumb
 | Definition: to be very obvious or noticeable.
 | Usage: Do you think I would stick out like a sore thumb at the party if I wear this coat?
@@ -308,48 +308,48 @@ society.
 | Definition: a bundle of paper, hay, cotton, etc., tightly wrapped and bound with cords or hoops.
 | Synonyms: haystack
 | Usage: the fire destroyed 500 bales of hay. [麦秸垛，干草堆]
-| Usage: The waste paper is baled, then sent for recycling. 
+| Usage: The waste paper is baled, then sent for recycling.
 
-.. image:: images/hay_bales.jpg 
+.. image:: images/hay_bales.jpg
 
 |
-| glean 
+| glean
 | Definition: extract (information) from various sources.
 | Usage: The information is gleaned from press clippings.
-| Definiton: gather (leftover grain or other produce) after a harvest (as noun gleaning). 
+| Definiton: gather (leftover grain or other produce) after a harvest (as noun gleaning).
 | Usage: The conditions of farm workers in the 1890s made gleaning essential. [捡拾麦穗]
-| 
+|
 | garner
 | Definition: gather or collect (something, especially information or approval).
 | Usage: the police struggled to garner sufficient evidence.
-| 
+|
 | lewd
 | Definition: crude and offensive in a sexual way. [いやらしい]
 | Usage: She began to gyrate to the music and sing a lewd song.
-| 
+|
 | gyrate
 | gyrator
 | Definition: move or cause to move in a circle or spiral, especially quickly.
 | Usage: Their wings gyrate through the water like paddle wheels.
 | Definition: dance in a wild or suggestive manner.
 | Usage: Strippers gyrated to rock music on a low stage. [脱衣舞]
-| 
+|
 | strippergram
 | Definition: a novelty greetings message dilivered by a person who accompanies it with a striptease act.
-| 
+|
 | striptease [脱衣舞]
 | Definition: a form of entertainment in which a performer gradually undress to music in a way intended to be sexually exciting.
-| 
+|
 | axiom
 | axiomatic
 | Definition: self-evident or unquestionable.
 | Usage: Tt is axiomatic that dividends have to be financed.
 | Definition: chiefly Mathematics relating to or containing axioms. [公理]
-| 
+|
 | comforter
 | Definition: (North American) a warm quilt. [床被]
 | Definition: a person or thing that provides consolation.
-| 
+|
 | solace
 | Definition: to give comfort or cheer to (a person) in time of sorrow or distress.
 | Usage: His grandchildren were a solace in his old age. [安慰，慰藉]
@@ -367,7 +367,7 @@ society.
 | Definition: (of a plan or action) rebound adversely on the originator; have the opposite effect to what was intended.
 | Usage: overzealous publicity backfired on her. [适得其反]
 | Definition: a fire set intentionally to arrest the progress of an approaching fire by creating a burned area in its path, thus depriving the fire of fuel.
-| 
+|
 | tweak
 | Definition: If you tweak something, especially part of someone's body, you hold it between your finger and thumb and twist it or pull it.
 | Usage: He tweaked Guy's ear roughly. [拧耳朵]
@@ -375,7 +375,7 @@ society.
 | Definition: If you tweak such as a system or a design, you improve it by making a slight change.
 | Synonyms: tune.
 | Usage: He expects the system to get even better as the engineers tweak its performance.
-| 
+|
 | abhore
 | Definition: If you abhor something, you hate it very much, especially for moral reason.
 | Synonyms: detest.
@@ -385,14 +385,14 @@ society.
 | Synonyms: not at all; certainly not.
 | Antonyms: by all means.
 | Usage: The result is by no means guaranteed.
-| Usage: "May I make a suggestion?", "By all means." 
+| Usage: "May I make a suggestion?", "By all means."
 |
 | pee
 | Definition: urinate.
 | Usage: The puppy was peeing on the caret.
 | Usage: I really need to take a pee.
 | Phrase: pee in one's pants
-| Definition:  Literally, to urinate while still wearing one's clothing. 
+| Definition:  Literally, to urinate while still wearing one's clothing.
 | Usage: I need you to pull over the car right now, or else I'm going to pee my pants!
 | Definition: To be absolutely petrified with terror; to be scared out of one's wits.[吓尿了]
 | Usage: I was peeing my pants when that huge burly guy started threatening me and my girlfriend.
@@ -410,26 +410,26 @@ society.
 | rascal
 | Definition: a mischievous or cheeky person, especially a child or man (typically used in an affectionate way).
 | Usage: Come here, you little rascal. [淘气鬼，捣蛋鬼]
-| 
+|
 | mischievous
-| Definition: (of a person, animal, or their behavior) causing or showing a fondness for causing trouble in a playful way. 
+| Definition: (of a person, animal, or their behavior) causing or showing a fondness for causing trouble in a playful way.
 | Usage: two mischievous kittens had decorated the bed with shredded newspaper.
-| Definition: (of an action or thing) causing or intended to cause harm or trouble. 
+| Definition: (of an action or thing) causing or intended to cause harm or trouble.
 | Usage: a mischievous allegation for which there is not a shred of evidence.
-| 
+|
 | shred
 | Definition: a strip of some material, such as paper, cloth, or food, that has been torn, cut, or scraped from something larger.
 | Usage: Her beautiful dress was torn to shreds.
-| 
-| wistful 
+|
+| wistful
 | Definition: having or showing a feeling of vague or regretful longing.
 | Usage: She sighed wistfully. [伤感地]
 | Usage: “If only I had known you then,” he said wistfully.
 |
 | vague
-| Definition: of uncertain, indefinite, or unclear character or meaning. 
+| Definition: of uncertain, indefinite, or unclear character or meaning.
 | Usage: many patients suffer vague symptoms.
-| Definition: thinking or communicating in an unfocused or imprecise way. 
+| Definition: thinking or communicating in an unfocused or imprecise way.
 | Usage: he had been very vague about his activities.
 |
 | sidestep
@@ -441,26 +441,30 @@ society.
 | tartar
 | Definition: a hard calcified deposit that forms on the teeth and contributes to their decay. [齿垢]
 | Definition: a deposit of impure potassium(钾) hydrogen tartrate formed during the fermentation of wine.
-| 
+|
 | impure
 | impurity
 | Definition: morally wrong, especially in sexual matters.
 | Definition: citizens suspected of harboring impure thoughts.
 | Definition: a thing or constituent that impairs the purity of something.
 | Usage: aluminum and lead [铅] are impurities frequently found in tap water.
-| 
+|
 | hemline [裙边，下摆]
 | Definition: the bottom edge of a dress or skirt; the length of a dress or skirt.
-| Usage: Shorter hemlines are back in this season. 
-| 
+| Usage: Shorter hemlines are back in this season.
+|
 | outfit
 | Definition: a set of clothes worn together, typically for a particular occasion or purpose.
 | Usage: a riding outfit.
 | Definition: a group of people undertaking a particular activity together, as a group of musicians, a military unit, or a business concern.
 | Usage: Tom was the brains of the outfit.
+|
+| don
+| Definition: put on (an item of clothing)
+| Usage: in the locker room the players donned their football jerseys.
 
 .. figure:: images/sucking_finger.jpeg
-   
+
    Sucking finger
 
 .. figure:: images/tooth_cleaner.jpg
@@ -482,7 +486,7 @@ society.
 .. figure:: images/hakama.png
 
     袴「はかま」
-    
+
 .. figure:: images/jersey.jpg
 
     Jersey [ジャージー服]
@@ -508,7 +512,7 @@ society.
    Tunic [女士的束腰外衣]
 
 .. figure:: images/mattress.png
-   
+
    Mattress 床垫
 
 .. figure:: images/isabelle-daeron-window-display.jpg
@@ -541,19 +545,19 @@ society.
 
 #. morganatic
 
-   of or denoting a marriage between a person of royal or noble birth and 
-   a partner of lower rank, in which neither the spouse of lower rank nor 
+   of or denoting a marriage between a person of royal or noble birth and
+   a partner of lower rank, in which neither the spouse of lower rank nor
    any children have any claim to the possessions or title of the spouse of higher rank.
 
 #. platinum [铂金]
 
-   a precious silvery-white metal, the chemical element of atomic number 78. 
-   It was first encountered by the Spanish in South America in the 16th century, 
-   and is used in jewelry, electrical contacts, laboratory equipment, and industrial 
+   a precious silvery-white metal, the chemical element of atomic number 78.
+   It was first encountered by the Spanish in South America in the 16th century,
+   and is used in jewelry, electrical contacts, laboratory equipment, and industrial
    catalysts.
 
-#. Gleaner 
-   
+#. Gleaner
+
     Gleaning is the act of collecting leftover crops from farmers' fields
     after they have been commercially harvested or on fields where it is
     not economically profitable to harvest. It is a practice described in
@@ -562,6 +566,6 @@ society.
 
     .. figure:: images/The_Gleaners.jpg
        :align: center
-    
+
        The Gleaners by Jean-François Millet, 1857
-   
+

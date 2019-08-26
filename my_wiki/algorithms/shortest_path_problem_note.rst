@@ -4,8 +4,8 @@ Shortest path problem
 
 In a **shortest-paths problem**, we are given a weighted, directed graph
 :math:`G=(V, E),` with weight function :math:`w: E \rightarrow \mathbb{R}`
-mapping edges to real-valued weights. The weight :math:`w(p)` of path 
-:math:`p=\langle {v_0, v_1, \ldots, v_k} \rangle` 
+mapping edges to real-valued weights. The weight :math:`w(p)` of path
+:math:`p=\langle {v_0, v_1, \ldots, v_k} \rangle`
 is the sum of the weights of its constituent edges:
 
 .. math::
@@ -22,14 +22,17 @@ We define the shortest-path weight :math:`\delta(u,v)` from u to v by
     \infty, &\text{otherwise}
     \end{cases}
 
-A **shortest path** from vertex u to vertex v is then defined as any path p 
-with weight :math:`w(p)=\delta(u,v)`.
+A **shortest path** from vertex u to vertex v is then defined as any path p
+with weight :math:`w(p)=\delta(u,v)`. The breadth-first-search algorithm is
+a shortest-paths algorithm that works on unweighted graphs, that is, graphs in
+which each edge has unit weight.
 
-Optimal structure for a shortest path: **Subpaths of shortest paths are shortest paths.** 
+Optimal structure for a shortest path: **Subpaths of shortest paths are shortest paths.**
 
 .. code-block:: none
     :caption: Bellman Ford Algorithm implementation
 
+    // detect negative-weight cycle in a graph
     Initialize-Single-Source(G, s)
         for each vertex v in G.v
             v.d = inf
@@ -64,7 +67,7 @@ Optimal structure for a shortest path: **Subpaths of shortest paths are shortest
 .. code-block:: none
     :caption: Dijkstra Algorithm implementation
 
-    # Dijkstra's algorithm solves the single-source shortest-paths 
+    # Dijkstra's algorithm solves the single-source shortest-paths
     # problem on a weighted, directed graph G=(V,E) for the case in
     # which all edge weights are nonnegative.
 
