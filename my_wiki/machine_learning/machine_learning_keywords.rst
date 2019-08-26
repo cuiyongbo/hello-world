@@ -317,5 +317,3 @@ backpropagation, backpropagation through time
 :abbr:`PDF (Probability Density Function)`
 
 :abbr:`UMAP (Uniform Manifold Approximation and Projection)`
-
-cross-entropy: a widely used metric of similarity between two probability distributions

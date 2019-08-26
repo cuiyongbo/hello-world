@@ -86,3 +86,11 @@ Machine learning concepts
     as opposed to information provided by inference. In machine learning, the term "ground truth" refers 
     to the accuracy of the training set's classification for supervised learning techniques. 
     This is used in statistical models to prove or disprove research hypotheses.
+
+#. Cross-entropy: a widely used metric of similarity between two probability distributions
+   
+    Entropy, cross entropy, and KL-divergence [#Introduction to cross entropy]_ .
+
+.. rubric:: Footnotes
+
+.. [#] `Introduction to cross entropy <https://rdipietro.github.io/friendly-intro-to-cross-entropy-loss/>`_
