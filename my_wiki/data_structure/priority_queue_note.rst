@@ -22,7 +22,7 @@ Priority Queue
 
         Heap-Maximum(A)
             return A[1]
-   
+
         Heap-Extract-Max(A)
             if A.heap_size < 1
                 error("heap underflow")
@@ -31,7 +31,7 @@ Priority Queue
             A.heap_size = A.heap_size - 1
             Max-Heapify-siftDown(A, 1)
             return max
-   
+
         Heap-Increase-to-Key(A, i, key)
             if key < A[i]
                error("new key is smaller than current key")
@@ -104,10 +104,10 @@ Priority Queue
         #        /    \
         #       7      9
         #      / \    /
-        #     3   5  8  
+        #     3   5  8
 
 #. Implement a min-priority queue with min-heap
-   
+
     .. code-block:: none
         :caption: Taken from **Introduction to Algorithms**
 
@@ -137,7 +137,7 @@ Priority Queue
         # O(log n)
         Heap-Decrease-to-key(A, i, key)
             if key > A[i]
-                error("new key is larger than current key") 
+                error("new key is larger than current key")
             A[i] = key
             # A[i, A.heap_size] maintains the heap property
             while i > 1 and A[Parent(i)] > A[i]
@@ -146,12 +146,12 @@ Priority Queue
 
         Heap-Decrease-to-key_2(A, i, k)
             if key > A[i]
-                error("new key is larger than current key")   
+                error("new key is larger than current key")
             while i>1 and A[Parent(i)] > k
                 A[i] = A[Parent(i)]
                 i = Parent(i)
             A[i] = k
-      
+
         # O(log n)
         Min-Heap-insert(A, key)
             A.heap_size = A.heap_size + 1
@@ -159,7 +159,7 @@ Priority Queue
             Heap-Decrease-to-key(A, A.heap_size, key)
 
 #. python max priority queue toy
-   
+
     .. code-block:: py
 
         #!/usr/bin/env python
@@ -167,7 +167,7 @@ Priority Queue
 
         def parent(i):
             return (i-1)/2
-        
+
         def left(i):
             return i*2+1
 
@@ -225,10 +225,10 @@ Priority Queue
         for i in a:
             insert_new_key(array, i)
         print array
-    
+
         array = heap_delete(array, random.choice(range(10)))
         print array
-    
+
         while len(array)>0:
             print extract_maximum(array)
 

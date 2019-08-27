@@ -69,7 +69,7 @@ Optimal structure for a shortest path: **Subpaths of shortest paths are shortest
 
     # Dijkstra's algorithm solves the single-source shortest-paths
     # problem on a weighted, directed graph G=(V,E) for the case in
-    # which all edge weights are nonnegative.
+    # which all edge weights are **nonnegative.**
 
     Dijkstra(G, w, s)
         Initialize-Single-Source(G, s)
