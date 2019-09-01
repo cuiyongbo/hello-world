@@ -13,6 +13,11 @@ implemented using singly linked list. and has several benefits:
 
 Source files: ``ngx_palloc.h, ngx_palloc.c, ngx_alloc.h, ngx_alloc.c``.
 
+.. note::
+
+    Different pool size may result in different memory usage. However, the less system malloc,
+    the less memory fragmentations, which means the less memory usage.
+
 .. rubric:: Footnotes
 
 .. [#] `What is memory mapping <http://ecomputernotes.com/fundamental/input-output-and-memory/memory-mapping>`_

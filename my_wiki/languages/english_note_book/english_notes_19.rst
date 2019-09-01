@@ -173,5 +173,12 @@ English Note 19
 | shard
 | Definition: a piece of broken ceramic, metal, glass, or rock, typically having sharp edges.
 | Usage: shards of glass flew in all directions.
-
-
+| 
+| paragon
+| Definition: a person or thing regarded as a perfect example of a particular quality.
+| Usage: it would have taken a paragon of virtue not to feel viciously jealous.
+| Usage: your cook is a paragon.
+| 
+| boilerplate
+| Definition: standardized pieces of text for use as clauses in contracts or as part of a computer program.
+| Usage: some sections have been written as boilerplate for use in all proposals.

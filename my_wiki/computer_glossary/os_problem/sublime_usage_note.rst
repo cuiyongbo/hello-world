@@ -72,4 +72,5 @@ Sublime Text Usage
     "bold_folder_labels": true,
     "highlight_modified_tabs": true,
     "default_line_ending": "unix",
-    "auto_find_in_selection": true
+    "auto_find_in_selection": true,
+    "update_check": false
