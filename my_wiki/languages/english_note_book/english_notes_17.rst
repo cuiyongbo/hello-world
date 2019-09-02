@@ -245,6 +245,7 @@ English Note 17
 | Usage: ergonomic keyboard design. [人体工程学键盘]
 
 .. image:: images/path_in_trees.jpg
+.. image:: images/corridor_1567423582.jpg
 .. image:: images/boat_on_the_beach.jpg
 .. image:: images/slope_observator.jpg
 .. image:: images/forest_overview.jpg
