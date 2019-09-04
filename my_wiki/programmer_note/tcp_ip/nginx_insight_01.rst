@@ -2,12 +2,27 @@
 nginx Insight 01
 ****************
 
-#. nginx worker process daemon
+#. nginx signal handling
 
-    Refer to master process's signal handling: ``ngx_init_signals``, ``ngx_signal_handler``.
+    Refer to master process's signal handling: ``ngx_init_signals``, ``ngx_signal_handler``, ``ngx_process_cycle.h``.
+
+    .. code-block:: sh
+        :caption: Taken from nginx MAKEFILE
+
+        upgrade:
+            /usr/local/nginx/sbin/nginx -t
+
+            # notify older binary to fork process using new binary
+            kill -USR2 `cat /usr/local/nginx/logs/nginx.pid`
+
+            sleep 1
+            test -f /usr/local/nginx/logs/nginx.pid.oldbin
+
+            # kill older processes
+            kill -QUIT `cat /usr/local/nginx/logs/nginx.pid.oldbin`
 
 #. nginx daemonize: ``ngx_int_t ngx_daemon(ngx_log_t *log)``
-#. nginx architecture: event-driven, asynchronous, non-blocking
+#. nginx architecture: multi-process, event-driven, asynchronous, non-blocking
 
 #. nginx worker process event cycle - 1
 
@@ -187,3 +202,4 @@ nginx Insight 01
 .. [#] `Nginx source code analysis <https://github.com/suraj-bk/nginx>`_
 .. [#] `Inside the nginx <https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/>`_
 .. [#] `Development guid <http://nginx.org/en/docs/dev/development_guide.html>`_
+.. [#] `JavaScript Event loop Analysis <http://www.ruanyifeng.com/blog/2014/10/event-loop.html>`_

@@ -112,7 +112,7 @@ For example, to sort by grade then by age::
    [('john', 'A', 15), ('dave', 'B', 10), ('jane', 'B', 12)]
    >>>
    >>> sorted(student_objects, key=attrgetter('grade', 'age'))
-   [('john', 'A', 15), ('dave', 'B', 10), ('jane', 'B', 12)]   
+   [('john', 'A', 15), ('dave', 'B', 10), ('jane', 'B', 12)]
 
 
 Ascending and Descending
@@ -161,12 +161,12 @@ The Old Way Using Decorate-Sort-Undecorate
 This idiom is called :abbr:`DSU (DSUDecorate-Sort-Undecorate)` after its three steps:
 
    * First, the initial list is decorated with new values that control the sort order.
-     
+
    * Second, the decorated list is sorted.
-     
+
    * Finally, the decorations are removed, creating a list
      that contains only the initial values in the new order.
-     
+
 For example, to sort the student data by grade using the DSU approach::
 
    >>> decorated = [(student.grade, i, student) for i, student in enumerate(student_objects)]
@@ -190,8 +190,8 @@ but including it gives two benefits:
      So for example the original list could contain
      complex numbers which cannot be sorted directly.
 
-Another name for this idiom is 
-`Schwartzian transform <https://en.wikipedia.org/wiki/Schwartzian_transform>`_, 
+Another name for this idiom is
+`Schwartzian transform <https://en.wikipedia.org/wiki/Schwartzian_transform>`_,
 after Randal L. Schwartz, who popularized it among Perl programmers.
 
 Now that Python sorting provides key-functions, this technique is not often needed.
@@ -215,14 +215,14 @@ For example, we can do::
 
    >>> def numeric_compare(x, y):
    ...     return x - y
-   >>> sorted([5, 2, 4, 1, 3], cmp=numeric_compare) 
+   >>> sorted([5, 2, 4, 1, 3], cmp=numeric_compare)
    [1, 2, 3, 4, 5]
 
 Or you can reverse the order of comparison with:
 
    >>> def reverse_numeric(x, y):
    ...     return y - x
-   >>> sorted([5, 2, 4, 1, 3], cmp=reverse_numeric) 
+   >>> sorted([5, 2, 4, 1, 3], cmp=reverse_numeric)
    [5, 4, 3, 2, 1]
 
 When porting code from Python 2.x to 3.x, the situation can arise when you have
