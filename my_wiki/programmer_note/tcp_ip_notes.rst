@@ -8,6 +8,7 @@ TCP/IP Note
     tcp_ip/nginx_usage_note
     tcp_ip/nginx_insight_01
     tcp_ip/nginx_insight_02
+    tcp_ip/nginx_insight_03
 
 .. rubric:: Footnotes
 

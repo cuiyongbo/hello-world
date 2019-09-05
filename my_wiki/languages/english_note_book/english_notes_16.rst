@@ -335,8 +335,9 @@ English Note 16
 
 
 .. image:: images/thunderstorm_on_the_roll.jpg
-.. image:: images/sceneray_spot_1565953436.jpg
-.. image:: images/scenary_spot_1567403844.jpg
+.. image:: images/scenery_spot_1567676541.jpg
+.. image:: images/scenery_spot_1565953436.jpg
+.. image:: images/scenery_spot_1567403844.jpg
 .. image:: images/summer_beach_1566302344.jpg
 .. image:: images/summer_beach_1567250994.jpg
 .. image:: images/camp_alone_river_1566302344.jpg

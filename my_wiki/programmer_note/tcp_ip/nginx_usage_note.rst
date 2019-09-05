@@ -113,3 +113,4 @@ Nginx Usage
 .. [#] `NGINX FastCGI example <http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html#example>`_
 .. [#] `NGINX Connect Cpp FastCGI <http://chriswu.me/blog/writing-hello-world-in-fcgi-with-c-plus-plus/>`_
 .. [#] `Inside the nginx <https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/>`_
+.. [#] `Http load balancer <https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/>`_

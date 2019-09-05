@@ -3,9 +3,9 @@ C/C++ Miscellaneous Tricks 02
 *****************************
 
 #. unnamed namespace
-   
-    It is often useful to wrap a set of declarations in a namespace simply to protect against 
-    the possibility of name clashes. and sometimes we don't even want to bother naming it. 
+
+    It is often useful to wrap a set of declarations in a namespace simply to protect against
+    the possibility of name clashes. and sometimes we don't even want to bother naming it.
     In that case, we can simply leave the namespace without a name::
 
         namespace
@@ -16,7 +16,7 @@ C/C++ Miscellaneous Tricks 02
 
     and it is equivalent to::
 
-        namespace someCollection    
+        namespace someCollection
         {
             int a;
             void f() {}
@@ -27,13 +27,13 @@ C/C++ Miscellaneous Tricks 02
 
     .. code-block:: cpp
 
-        sizeof( type )   
+        sizeof( type )
         sizeof expression
 
     Queries size of the object or type.
     Used when actual size of the object must be known.
     Both versions return a constant of type ``std::size_t``.
-    
+
     ``sizeof`` cannot be used with function types, incomplete types, or bit-field glvalues.
     When applied to a reference type, the result is the size of the referenced type.
     When applied to a class type, the result is the size of an object of that class
@@ -46,16 +46,16 @@ C/C++ Miscellaneous Tricks 02
 #. ``alignof`` operator
 
     ``alignof( type-id )`` Queries alignment requirements of a type. Returns a value of type ``std::size_t``.
-   
+
     Returns the alignment, a value of type ``std::size_t`` in bytes, required for any
     instance of the type indicated by *type-id*, which is either complete type, an
     array type, or a reference type.
-   
+
     If the type is reference type, the operator returns the alignment of referenced type;
     if the type is array type, alignment requirement of the element type is returned.
-   
+
 #. ``offsetof`` macro
-   
+
     .. code-block:: cpp
 
         // offsetof is a macro defined in stddef.h
@@ -70,3 +70,12 @@ C/C++ Miscellaneous Tricks 02
         #define container_of(ptr_, type_, member_)  ((type_ *)((char *)ptr_ - offsetof(type_, member_)))
         #define json_to_object(json_)  container_of(json_, json_object_t, json)
 
+#. access specifiers and pure virtual function
+
+    Access specifiers apply in the same way as they would to any other name during name lookup.
+    The fact that the function is virtual does not matter at all.
+
+    If name lookup determines a viable function to be a virtual function, the access specifier of the
+    virtual function is checked in the scope of **the static type of the object expression** used to
+    name the function. At run time, the actual function to be called could be defined in the derived class
+    with a completely different access specifier. This is because 'access specifiers' are a compile time phenomonon.
