@@ -342,3 +342,6 @@ English Note 16
 .. image:: images/summer_beach_1567250994.jpg
 .. image:: images/camp_alone_river_1566302344.jpg
 .. image:: images/bieyoudongtian_1566473048.jpg
+.. image:: images/castillo_del_morro.jpeg
+.. image:: images/mount_fanjing.jpg
+

@@ -44,3 +44,5 @@ Biology Terms - Birds
 .. figure:: images/hummingbird.jpg
 
     A rufous-tailed hummingbird in Costa Rica
+
+.. image:: images/southernyellow.jpeg
