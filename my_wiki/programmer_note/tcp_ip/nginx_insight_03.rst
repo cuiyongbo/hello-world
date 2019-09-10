@@ -9,7 +9,6 @@ Load balancing method:
    - IP Hash
    - Generic Hash
 
-
 Server Weights
 
 By default, NGINX distributes requests among the servers in the group according to their weights
@@ -29,7 +28,12 @@ but the one with IP address ``192.0.0.1`` is marked as a ``backup`` server and d
 unless both of the other servers are unavailable. With this configuration of weights, out of every 6 requests,
 5 are sent to ``backend1.example.com`` and 1 to ``backend2.example.com.``
 
-#. Load balance source code: ``ngx_http_upstream_get_peer``
+#. Load balance source code:
+
+   - ngx_http_upstream_get_peer
+   - ngx_stream_upstream_free_round_robin_peer
+   - ngx_stream_upstream_get_least_conn_peer
+   - ngx_stream_upstream_get_hash_peer
 
 .. rubric:: Footnotes
 
