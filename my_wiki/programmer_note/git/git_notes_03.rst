@@ -7,12 +7,12 @@ Command line instructions
 #. Git global setup
 
     .. code-block:: sh
-   
+
         git config --global user.name "cuiyb"
         git config --global user.email "cuiyb@mapbar.com"
 
 #. Create a new repository
-      
+
     .. code-block:: sh
 
         git clone git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
@@ -44,27 +44,27 @@ Command line instructions
         git push -u origin --tags
 
 #. Existing local repository
-   
+
     .. code-block:: sh
 
         $ git remote set-url --add origin git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
         $ git push -u origin master
 
 #. Git to track the commit history of a file
-   
-    You really removed all variants of a filename, if a blob was moved over its lifetime. 
+
+    You really removed all variants of a filename, if a blob was moved over its lifetime.
     ``git log --name-only --follow --all -- filename`` can help you find renames.
 
 #. Git to shrink the size of a repository
-   
-    * Cleanup ignore files: ``git clean -dx -ff``, Make sure you really want to get rid of them, 
+
+    * Cleanup ignore files: ``git clean -dx -ff``, Make sure you really want to get rid of them,
       Alway perform ``git clean -dx -n`` to see the files will be removed. Another shortcut would
       be git clone the repository in a new location.
 
-    * If you really don’t want to clone it, for whatever reasons, then check the following points instead. 
+    * If you really don’t want to clone it, for whatever reasons, then check the following points instead.
       This is a very destructive approach, so make a backup or go back to cloning it. You have been warned.
 
-    * Remove the original refs backed up by git-filter-branch: 
+    * Remove the original refs backed up by git-filter-branch:
       ``git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d``.
 
     * Expire all reflogs: ``git reflog expire --expire=now --all``.
@@ -72,14 +72,14 @@ Command line instructions
     * Garbage collect all unreferenced objects with ``git gc --prune=now``.
 
 #. Git to force line ending to CRLF
-   
+
     .. code-block:: sh
 
         # https://help.github.com/en/articles/configuring-git-to-handle-line-endings
         git config --global core.autocrlf true
 
 #. Git to change the author of last commit
-   
+
     .. code-block:: sh
 
         $ git commit -a -m'added git to force line ending to LF'
@@ -88,27 +88,27 @@ Command line instructions
         # Your name and email address were configured automatically based
         # on your username and hostname. Please check that they are accurate.
         # You can suppress this message by setting them explicitly:
-        # 
+        #
         #     git config --global user.name "Your Name"
         #     git config --global user.email you@example.com
-        # 
+        #
         # After doing this, you may fix the identity used for this commit with:
-        # 
+        #
         #     git commit --amend --reset-author
-        
+
         $ git config --global user.name "natsume"
         $ git config --global user.email "csu20140909@gmail.com"
         $ git commit --amend --reset-author
 
 #. Undo ``git update-index --skip-worktree``
-   
+
     Solution:: ``git update-index --no-skip-worktree <file>``
 
 #. Git - Difference Between ``assume-unchanged`` and ``skip-worktree``
-   
+
     ``assume-unchanged`` is designed for cases where it is expensive to check
     whether a group of files have been modified; when you set the bit, git assumes
-    the files corresponding to that portion of the index have not been modified in 
+    the files corresponding to that portion of the index have not been modified in
     the working copy. So it avoids a mess of ``stat`` calls.
 
     ``skip-worktree`` is more than that: even where git knows that the file has been
@@ -119,7 +119,7 @@ Command line instructions
 
     ``--skip-worktree`` is useful when you instruct git not to touch a specific file ever
     because developers should change it. For example, if the main repository upstream hosts
-    some production-ready configuration files and you don’t want to accidentally commit changes 
+    some production-ready configuration files and you don’t want to accidentally commit changes
     to those files, ``--skip-worktree`` is exactly what you want.
 
 #. Git - Check out, review, and merge locally
@@ -145,10 +145,20 @@ Command line instructions
 
         ``git push origin master``
 
-#. Git to set default commit message editor 
-   
+#. Git to set default commit message editor
+
     Set to vim: ``git config --global core.editor "vim"``
 
 #. Git bash command line can't drag and drop files
-   
-   Enable ``Run as Administrator`` when running git bash.
+
+    Enable ``Run as Administrator`` when running git bash.
+
+#. Git to show a list of modified files between commits
+
+    Solution: ``git diff --name-only commit1Hash commit2Hash``.
+
+    Particularly, if you want compare between a commit and HEAD,
+    run ``git diff --name-only commit1Hash HEAD``, or ``git diff --name-only commit1Hash``
+    if you want to include changed-not-yet-committed files.
+    Using the ``--name-status`` flag instead of ``--name-only`` is handy
+    to get a list of files and see their modification status, such as Added or Modified.
