@@ -6,7 +6,7 @@ Dynamic Programming
 
    #. Characterize the structure of an optimal solution
    #. Recursively define the value of an optimal solution
-   #. Compute the value of an trivial optimal solution
+   #. Compute the value of an optimal solution
    #. Construct an optimal solution from computed information
 
 #. Rod-cutting problem
