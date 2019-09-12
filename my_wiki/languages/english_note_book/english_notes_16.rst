@@ -344,4 +344,6 @@ English Note 16
 .. image:: images/bieyoudongtian_1566473048.jpg
 .. image:: images/castillo_del_morro.jpeg
 .. image:: images/mount_fanjing.jpg
+.. image:: images/aerial_view_of_rainforest_1568277649.jpg
+.. image:: images/milky_way_1568277649.jpg
 
