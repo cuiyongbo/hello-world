@@ -54,6 +54,19 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
         else
             Print-LCS(b, x, i, j-1)
 
+    Iterative-LCS-Length(x, y)
+        m, n= x.length, y.length
+        // let c[i][j] be the LCS of x_i, y_j
+        // i, j mean substring's length
+        let c[0..m,0..n] be new tables
+        c[0][:] = c[:][0] = 0
+        for i=1 to m+1
+            for j=1 to n+1
+                if x[i] == y[j]
+                    c[i][j] = c[i-1][j-1] + 1
+                else
+                    c[i][j] = max(dp[i-1][j], dp[i][j-1])
+
     Recursive-LCS-Length(x, y)
         m, n= x.length, y.length
         // let c[i][j] be the LCS of x_i, y_j
@@ -97,5 +110,5 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
 
 #. leetCode related problems
 
-   - 1143. Longest Common Subsequence
-   - 72. Edit Distance
+   - Longest Common Subsequence
+   - Edit Distance

@@ -6,16 +6,16 @@ Thinking for an hour and coding for an hour.
 
 **Rooted-tree property**
 
-The number of children of a node x in a rooted tree T equals the **degree** of x. 
-The length of the simple path from the root r to a node x is the **depth** of x in T. 
-A **level** of a tree consists of all nodes at the same depth. The **height** of a node 
-in a tree is the number of edges on the longest simple downward path from the node to a leaf, 
-and **the height of a tree is the height of its root.** 
+The number of children of a node x in a rooted tree T equals the **degree** of x.
+The length of the simple path from the root r to a node x is the **depth** of x in T.
+A **level** of a tree consists of all nodes at the same depth. The **height** of a node
+in a tree is the number of edges on the longest simple downward path from the node to a leaf,
+and **the height of a tree is the height of its root.**
 
 **binary-search-tree property**
 
 Let x be a node in a binary search tree. If y is a node in the left subtree
-of x, then :math:`y.key \leq x.key`. If y is a node in the right subtree of x, 
+of x, then :math:`y.key \leq x.key`. If y is a node in the right subtree of x,
 then :math:`y.key \geq x.key`.
 
 **Implementation**
@@ -88,33 +88,33 @@ then :math:`y.key \geq x.key`.
         if x == NIL
             T.root = z
         else if z.key > x.key
-            Recursive-Tree-Insert(x.right, z) 
+            Recursive-Tree-Insert(x.right, z)
         else
             Recursive-Tree-Insert(x.left, z)
-   
-    Translate(T, u, v)
+
+    Transplant(T, u, v)
         if u.p == NIL
             T.root = v
         else if u = u.p.left
             u.p.left = v
         else
             u.p.right = v
-   
+
         if v != NIL
             v.p = u.p
-   
+
     Tree-Delete(T, z)
         if z.left == NIL
-            Translate(T, z, z.right)
+            Transplant(T, z, z.right)
         else if z.right == NIL
-            Translate(T, z, z.left)
+            Transplant(T, z, z.left)
         else
             y = Tree-Minimum(z.right) # find z's successor
             if y != z.right
-               Translate(T, y, y.right)
+               Transplant(T, y, y.right)
                y.right = z.right
                z.right.p = y
-            Translate(T, z, y)
+            Transplant(T, z, y)
             y.left = z.left
             z.left.p = y
 
@@ -125,8 +125,13 @@ then :math:`y.key \geq x.key`.
     +========================================+============================================+
     | .. image:: images/full_binary_tree.jpg | .. image:: images/complete_binary_tree.jpg |
     +----------------------------------------+--------------------------------------------+
-   
-    According to wikipedia, A full binary tree is a tree in which every node 
-    other than the leaves has two children. A complete binary tree is a binary 
-    tree in which every level, except possibly the last, is completely filled, 
-    and all nodes are as far left as possible.   
+
+    According to wikipedia, A full binary tree is a tree in which every node
+    other than the leaves has two children. A complete binary tree is a binary
+    tree in which every level, except possibly the last, is completely filled,
+    and all nodes are as far left as possible.
+
+#. leetcode exercise
+
+    * Explore - BST
+    *
