@@ -36,12 +36,12 @@ Pending tasks
     #. 2019年底存款不低于 40 万
     #. 英语电影摆脱字幕
     #. 日语漫画不需要字典可以看懂旁白
-    
+
 
 .. rubric:: Footnotes
 
 .. [#a_star_algorithm] http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html
-.. [#unix_network_programming] http://www.kohala.com/start/ 
+.. [#unix_network_programming] http://www.unpbook.com
 .. [#geomatric_alg] http://geomalgorithms.com/
 .. [#apple_opensource] https://opensource.apple.com
 .. [#programing books] http://www.banshujiang.cn/
