@@ -89,77 +89,9 @@ Nature Lifes
 .. image:: images/pork-cut-diagram.jpg
 .. image:: images/horse_hock-knee.jpg
 
-.. figure:: images/eel.png
-
-   Eel [鳗鱼]
-
-   Given recent weather events in Texas, however,
-   it's possible that rought winds and strong currents
-   played a part in the animal's demise. The eels do
-   occasionally venture into the shallows, so it's hard
-   to say for sure.
-
 .. figure:: images/penguin_regurgitation.jpg
 
    Penguin regurgitation [反刍喂食]
-
-.. image:: images/tree_canopy.jpg
-.. image:: images/forest_overview.jpg
-.. image:: images/see_overview.jpg
-
-.. image:: images/coast_redwoods.jpg
-.. figure:: images/redwood.jpg
-
-   Redwood [红树林]
-
-.. figure:: images/giant_sequoia.jpg
-
-   Sequoia [红杉树]
-
-   Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at,
-   some trees in the giant sequoia grove had called this home for thousands of years before they were given the
-   protection of a national park. The Giant Forest in Sequoia National Park is where **General Sherman,** the largest
-   tree in the world, stands. It is estimated to be 2,300 to 2,700 years old—a silent witness to both natural and human
-   history. By the time Spanish explorer Vasco Núñez de Balboa ‘found’ the Pacific Ocean in 1513, General Sherman had
-   been growing for more than 1,500 years.
-
-.. image:: images/sundew_plant.jpg
-.. figure:: images/pitcher_plant.jpg
-
-    Pitcher plant [猪笼草]
-
-.. figure:: images/fungi.jpg
-
-   Fungi
-
-.. image:: images/walnut_01.jpg
-.. figure:: images/walnut_open_husk.jpg
-
-   Walnut [核桃]
-
-.. image:: images/Chestnut_01.jpg
-.. figure:: images/Chestnut_02.jpg
-
-   Chestnut [板栗]
-
-.. figure:: images/Petal-sepal.jpg
-
-   Flower
-
-   | Petal 花瓣
-   | Sepal 花萼
-
-.. figure:: images/iris_plant.jpg
-
-   Iris [虹膜，鸢尾]
-
-.. figure:: images/crocus_flower.jpg
-
-    Crocus flower / Daffoli [水仙花]
-
-.. figure:: images/lanling.jpg
-
-    蓝铃花
 
 #. taxonomy
 
