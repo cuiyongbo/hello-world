@@ -11,14 +11,29 @@ To be or not to be, this is a question.
 .. contents::
    :local:
 
+Unix Network Programming Volume one
+===================================
+
+    - Ch05 TCP Client/Server Example ( -- 2019-09-22)
+    - Ch06 I/O Multiplexing: select and poll ( -- 2019-09-22)
+    - Ch24 Out-of-Band Data ( -- 2019-09-22)
+
+TCP/IP Illustrated Volume one
+=============================
+
+    - Ch01 Introduction (Finished, 2018-12-08 - 2018-12-09)
+    - Ch04 and Ch05 ARP and RARP
+    - Ch14 the Domain Name System
+    - Ch15 the Trivial File Transfer Protocol
+
 Deep Learning
 =============
 
     - Part I (finished 2019-03-26)
-    
+
     - Part II
-    
-        - Chapter 6 Deep Feedforward Networks 
+
+        - Chapter 6 Deep Feedforward Networks
 
 
 Introduction machine learning with python
@@ -37,15 +52,15 @@ Introduction To Algorithm
 =========================
 
     - Ch03 Growth of Functions (Finished 2018-10-13)
-     
+
     - Ch04 Divide-and-conquer (2018-10-13 -- 10-24)
-     
+
         - The maximum-subarray problem (finished)
         - Strassen’s algorithm for matrix multiplication (finished)
         - The substitution method for solving recurrences (finished)
         - The recursion-tree method for solving recurrences (finished)
         - The master method for solving recurrences (finished)
-   
+
     - Ch05 Probabilistic Analysis and Randomized Algorithms (2018-10-24 -- )
     - Ch06 Heapsort (reviewed, 2018-11-20 -- 2018-11-25)
     - Ch07 Quicksort (reviewed, 2018-11-25)
@@ -59,15 +74,15 @@ Introduction To Algorithm
     - Ch15 Dynamic programming (2018-12-08 -- 2018-12-31)
     - Ch16 Greedy Algorithms (Finished 2019-01-25)
     - Ch17 Amortized Analysis (Finished, 2019-01-14)
-      
+
     - Ch22 Elementary Graph Algorithms
-      
+
         - Representations of graph (Finished, 2019-02-14)
         - Breadth-first search (Finished, 2019-02-14)
         - Depth-first search (2019-03-06 -- 2019-04-23)
-    
+
     - Ch23 Minimum Spanning Trees
-      
+
         - 23.1 Growing a minimum spanning tree
         - 23.2 The algorithm of Kruskal and Prim
 
@@ -81,9 +96,9 @@ Advanced Programming in UNIX Environment
 ========================================
 
     - Ch01 Unix system overview (Finished before 2018-09)
-   
+
     - Ch03 File I/O
-     
+
         - File descriptor (finished, 2018-11-06)
         - I/O efficiency (finished, 2018-11-07)
         - File sharing (finished, 2018-11-06)
@@ -92,9 +107,9 @@ Advanced Programming in UNIX Environment
         - sync, fsync and fdatasync functions (finished, 2018-11-07)
         - fcntl function (finished, 2018-11-07)
         - /dev/fd (finished, 2018-11-03)
-        
+
     - Ch04 Files and directories
-     
+
         - stat, fstat, and lstat function (finished, 2018-11-02)
         - File types (finished, 2018-11-01)
         - Sticky bit (finished, 2018-11-01)
@@ -104,17 +119,17 @@ Advanced Programming in UNIX Environment
     - Ch06 System data file and information (finished, 2018-11-24)
 
     - Process (Finished before 2018-09)
-     
+
         - Ch07 Process environment (Finished)
         - Ch08 Process control (Finished, but skipped several sections)
         - Ch09 Process relationship (Finished)
 
     - Ch10 Signal (Finished before 2018-10)
-     
+
     - Pthread
 
         - Ch11 Threads (finished)
-        
+
             - Introduction (finished, 2018-10-23)
             - Thread concepts (finished, 2018-10-23)
             - Thread identification (finished, 2018-10-23)
@@ -124,7 +139,7 @@ Advanced Programming in UNIX Environment
             - Condition variable, spin locks, barrier (finished,  2018-10-25)
 
         - Ch12 Thread control (2018-10-26 -- 10-28)
-        
+
             - Introduction (finished)
             - Thread Limits (finished)
             - Thread Attributes (finished)
@@ -137,17 +152,17 @@ Advanced Programming in UNIX Environment
             - Threads and IO (finished)
 
     - Ch14 Advanced I/O
-     
+
         - Memory-mapped I/O (2018-10-09, finished)
 
     - Ch15 Interprocess Communication
-     
+
         - Shared memory (2018-10-08, finished)
 
     - Ch16 Network IPC: Sockets (2018-09-27 -- 2018-10-08)
-   
+
     - Ch17 Advanced IPC
-     
+
         - Introduction (Finished, 2018-10-13)
         - Unix Domain Sockets (Finished, 2018-10-13)
         - Unique connections (Finished, 2018-10-14)
@@ -155,11 +170,11 @@ Advanced Programming in UNIX Environment
         - Open Server(Finished, 2018-10-13 -- 10-20)
 
     - Ch18 Terminal I/O
-   
+
         - Overview (finished)
         - Special Input Characters (finished)
- 
-    
+
+
 Programming Pearls
 ==================
 
@@ -172,10 +187,10 @@ Programming Pearls
     - Column 09 (reviewed, 2018-10-06 - 10-07)
     - Column 11 (reviewed, 2018-10-19)
     - Column 12 (reviewed, 2018-10-14)
-    - Column 13 
+    - Column 13
     - Column 14 (reviewed, 2018-10-22)
     - Column 15 (2018-10-01 -- 2018-10-06)
-     
+
 
 More Programming Pearls
 =======================
@@ -194,15 +209,6 @@ More Programming Pearls
     - Column 13 (finished, 2018-10-23)
     - Column 14 (finished, 2018-10-21)
     - Column 15 (finished, 2018-10-22 -- 10-23)
-
-
-TCP/IP Illustrated Volume one
-=============================
-
-    - Ch01 Introduction (Finished, 2018-12-08 - 2018-12-09)
-    - Ch04 and Ch05 ARP and RARP
-    - Ch14 the Domain Name System
-    - Ch15 the Trivial File Transfer Protocol
 
 Marked Books
 ============

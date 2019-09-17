@@ -26,7 +26,7 @@ ps -- process status
    lines (one line per thread) for some processes.  By default all of these output
    lines are sorted first by controlling terminal, then by process ID.  The :option:`-m`,
    :option:`-r`, and :option:`-v` options will change the sort order.  If more than one
-   sorting option was given, then the selected processes will be sorted by the last 
+   sorting option was given, then the selected processes will be sorted by the last
    sorting option which was specified.
 
    For the processes which have been selected for display, the information to
@@ -38,20 +38,20 @@ ps -- process status
 
 **OPTIONS**
 
-   .. option:: -h 
+   .. option:: -h
 
       Repeat the information header as often as necessary to
       guarantee one header per page of information.
 
-   .. option:: -M 
+   .. option:: -M
 
       Print the threads corresponding to each task.
 
-   .. option::  -T     
+   .. option::  -T
 
       Show threads, possibly with SPID column.
 
-   .. option:: -A / -e    
+   .. option:: -A / -e
 
       Display information about other users' processes,
       including those without controlling terminals.
@@ -60,7 +60,7 @@ ps -- process status
 
       Like :option:`-A`, but excludes session leaders.
 
-   .. option:: -a  
+   .. option:: -a
 
       Display information about other users' processes as well as your
       own. This will skip any processes which do not have a controlling
@@ -71,14 +71,14 @@ ps -- process status
       Display information about processes which match the specified process IDs.
 
    .. option: -q pidlist
-              
-      Select by PID (quick mode). This selects the processes 
-      whose process ID numbers appear in pidlist. With this 
-      option ps reads the necessary info only for the pids 
-      listed in the pidlist and doesn't apply additional 
-      filtering rules. The order of pids is unsorted and 
-      preserved. No additional selection options, sorting 
-      and forest type listings are allowed in this mode.  
+
+      Select by PID (quick mode). This selects the processes
+      whose process ID numbers appear in pidlist. With this
+      option ps reads the necessary info only for the pids
+      listed in the pidlist and doesn't apply additional
+      filtering rules. The order of pids is unsorted and
+      preserved. No additional selection options, sorting
+      and forest type listings are allowed in this mode.
       Identical to q and --quick-pid.
 
    .. option:: -G
@@ -109,8 +109,8 @@ ps -- process status
       Don't mix it with :option:`-c`.
 
    .. option:: -C cmdlist
-      
-      Select by command name. This selects the processes 
+
+      Select by command name. This selects the processes
       whose executable name is given in cmdlist.
 
    .. option:: -f
@@ -126,32 +126,27 @@ ps -- process status
       **user, pid, ppid, pgid, sess, jobc, state,
       tt, time, and command**.
 
-   .. option:: -l   
+   .. option:: -l
 
       Display information associated with the following keywords:
       **uid, pid, ppid, flags, cpu, pri, nice, vsz=SZ, rss, wchan,
       state=S, paddr=ADDR, tty, time, and command=CMD**.
 
-   .. option:: -v 
+   .. option:: -v
 
       Display information associated with the following keywords:
       **pid, state, time, sl, re, pagein, vsz, rss, lim, tsiz,
       %cpu, %mem, and command**.
       The :option:`-v` option implies the :option:`-m` option.
 
-   .. option:: -L   
-
-      List the set of keywords available for
-      the :option:`-O` and :option:`-o` options.
-
-   .. option:: -O   
+   .. option:: -O
 
       Add the information associated with the space or comma separated list of keywords specified,
       after the process ID, in the default information display. Keywords may be appended with an
       equals ('=') sign and a string. This causes the printed header to use the specified string
       instead of the standard header.
 
-   .. option:: -o 
+   .. option:: -o
 
       Display information associated with the space or comma separated list of keywords specified.
       Multiple keywords may also be given in the form of more than one :option:`-o` option.
@@ -159,11 +154,11 @@ ps -- process status
       to use the specified string instead of the standard header. If all keywords have empty header
       texts, no header line is written.
 
-   .. option:: -r    
+   .. option:: -r
 
       Sort by current CPU usage.
 
-   .. option:: -m 
+   .. option:: -m
 
       Sort by memory usage.
 
@@ -171,75 +166,75 @@ ps -- process status
 **Keywords**
 
 ==========  ===============================================================================
-keywords    Description                                                                    
+keywords    Description
 ==========  ===============================================================================
-%cpu        percentage CPU usage (alias pcpu)                                              
-%mem        percentage memory usage (alias pmem)                                           
-acflag      accounting flag (alias acflg)                                                  
-args        command and arguments                                                          
-comm        command                                                                        
-command     command and arguments                                                          
-cpu         short-term CPU usage factor (for scheduling)                                   
-etime       elapsed running time                                                           
-flags       the process flags, in hexadecimal (alias f)                                    
-gid         processes group id (alias group)                                               
-inblk       total blocks read (alias inblock)                                              
-jobc        job control count                                                              
-ktrace      tracing flags                                                                  
-ktracep     tracing vnode                                                                  
-lim         memoryuse limit                                                                
-logname     login name of user who started the session                                     
-lstart      time started                                                                   
-majflt      total page faults                                                              
-minflt      total page reclaims                                                            
-msgrcv      total messages received (reads from pipes/sockets)                             
-msgsnd      total messages sent (writes on pipes/sockets)                                  
-nice        nice value (alias ni)                                                          
-nivcsw      total involuntary context switches                                             
-nsigs       total signals taken (alias nsignals)                                           
-nswap       total swaps in/out                                                             
-nvcsw       total voluntary context switches                                               
-nwchan      wait channel (as an address)                                                   
-oublk       total blocks written (alias oublock)                                           
-p_ru        resource usage (valid only for zombie)                                         
-paddr       swap address                                                                   
-pagein      pageins (same as majflt)                                                       
-pgid        process group number                                                           
-pid         process ID                                                                     
-ppid        parent process ID                                                              
-pri         scheduling priority                                                            
-re          core residency time (in seconds; 127 = infinity)                               
-rgid        real group ID                                                                  
-rss         resident set size                                                              
-ruid        real user ID                                                                   
-ruser       user name (from ruid)                                                          
-sess        session ID                                                                     
-sig         pending signals (alias pending)                                                
-sigmask     blocked signals (alias blocked)                                                
-sl          sleep time (in seconds; 127 = infinity)                                        
-start       time started                                                                   
-state       symbolic process state (alias stat)                                            
-svgid       saved gid from a setgid executable                                             
-svuid       saved UID from a setuid executable                                             
-tdev        control terminal device number                                                 
-time        accumulated CPU time, user + system (alias cputime)                            
-tpgid       control terminal process group ID                                              
-tsess       control terminal session ID                                                    
-tsiz        text size (in Kbytes)                                                          
-tt          control terminal name (two letter abbreviation)                                
-tty         full name of control terminal                                                  
-ucomm       name to be used for accounting                                                 
-uid         effective user ID                                                              
-upr         scheduling priority on return from system call (alias usrpri)                  
-user        user name (from UID)                                                           
-utime       user CPU time (alias putime)                                                   
-vsz         virtual size in Kbytes (alias vsize)                                           
-wchan       wait channel (as a symbolic name)                                              
-wq          total number of workqueue threads                                              
-wqb         number of blocked workqueue threads                                            
-wqr         number of running workqueue threads                                            
-wql         workqueue limit status (C = constrained thread limit, T = total thread limit)  
-xstat       exit or stop status (valid only for stopped or zombie process)                 
+%cpu        percentage CPU usage (alias pcpu)
+%mem        percentage memory usage (alias pmem)
+acflag      accounting flag (alias acflg)
+args        command and arguments
+comm        command
+command     command and arguments
+cpu         short-term CPU usage factor (for scheduling)
+etime       elapsed running time
+flags       the process flags, in hexadecimal (alias f)
+gid         processes group id (alias group)
+inblk       total blocks read (alias inblock)
+jobc        job control count
+ktrace      tracing flags
+ktracep     tracing vnode
+lim         memoryuse limit
+logname     login name of user who started the session
+lstart      time started
+majflt      total page faults
+minflt      total page reclaims
+msgrcv      total messages received (reads from pipes/sockets)
+msgsnd      total messages sent (writes on pipes/sockets)
+nice        nice value (alias ni)
+nivcsw      total involuntary context switches
+nsigs       total signals taken (alias nsignals)
+nswap       total swaps in/out
+nvcsw       total voluntary context switches
+nwchan      wait channel (as an address)
+oublk       total blocks written (alias oublock)
+p_ru        resource usage (valid only for zombie)
+paddr       swap address
+pagein      pageins (same as majflt)
+pgid        process group number
+pid         process ID
+ppid        parent process ID
+pri         scheduling priority
+re          core residency time (in seconds; 127 = infinity)
+rgid        real group ID
+rss         resident set size
+ruid        real user ID
+ruser       user name (from ruid)
+sess        session ID
+sig         pending signals (alias pending)
+sigmask     blocked signals (alias blocked)
+sl          sleep time (in seconds; 127 = infinity)
+start       time started
+state       symbolic process state (alias stat)
+svgid       saved gid from a setgid executable
+svuid       saved UID from a setuid executable
+tdev        control terminal device number
+time        accumulated CPU time, user + system (alias cputime)
+tpgid       control terminal process group ID
+tsess       control terminal session ID
+tsiz        text size (in Kbytes)
+tt          control terminal name (two letter abbreviation)
+tty         full name of control terminal
+ucomm       name to be used for accounting
+uid         effective user ID
+upr         scheduling priority on return from system call (alias usrpri)
+user        user name (from UID)
+utime       user CPU time (alias putime)
+vsz         virtual size in Kbytes (alias vsize)
+wchan       wait channel (as a symbolic name)
+wq          total number of workqueue threads
+wqb         number of blocked workqueue threads
+wqr         number of running workqueue threads
+wql         workqueue limit status (C = constrained thread limit, T = total thread limit)
+xstat       exit or stop status (valid only for stopped or zombie process)
 ==========  ===============================================================================
 
 
@@ -248,18 +243,14 @@ xstat       exit or stop status (valid only for stopped or zombie process)
 .. code-block:: sh
 
    ps -e -U "$(who am i | cut –f1 -d " ")"
-   ps ux (不带-的 u 选项不是上面的意思)
-   ps –aux
-   ps U jjones
-   ps uU jjones
    ps aux | grep -i thunder | grep -v grep (忽略 grep 匹配行)
    ps aux | grep -i word | grep -v grep | awk '{print $2}'(提取PID)
    ps  u -p 72 (查询 PID 为72的进程)
 
    $ ps -o 'pid %cpu %mem state'
    PID  %CPU %MEM STAT
-   435   0.0  0.0 S   
- 
+   435   0.0  0.0 S
+
    $ ps -O '%cpu %mem state'
    PID  %CPU %MEM STAT   TT  STAT      TIME COMMAND
    435   0.0  0.0 S    s000  S      0:00.86 -bash
@@ -281,7 +272,7 @@ xstat       exit or stop status (valid only for stopped or zombie process)
    # To print a process tree:
    ps -ejH
    ps axjf
-   
+
    $ ps -ejH | grep a.out
    16225 16225 15569 pts/2    00:00:00           a.out
    16226 16225 15569 pts/2    00:00:00             a.out
