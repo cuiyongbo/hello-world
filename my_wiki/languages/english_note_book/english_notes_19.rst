@@ -202,3 +202,12 @@ English Note 19
 | Definition: the most intense, exciting or important point of something; a culmination or apex.
 | Usage: A thrilling climax to the game.
 | Definition: an orgasm. [性高潮]
+|
+| tamper
+| Definition: interfere with (something) in order to cause damage or make unauthorized alterations.
+| Usage: someone tampered with the brakes on my car.
+| Usage: He found his computer had been tampered with.
+|
+| cognizant
+| Definition: having knowledge or being aware of.
+| Usage: statesmen must be cognizant of the political boundaries within which they work.

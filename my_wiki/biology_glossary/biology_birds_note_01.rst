@@ -46,3 +46,7 @@ Biology Terms - Birds
     A rufous-tailed hummingbird in Costa Rica
 
 .. image:: images/southernyellow.jpeg
+
+.. .. figure:: images/loon_1568887120.jpg
+
+   Loon [潜鸟]
