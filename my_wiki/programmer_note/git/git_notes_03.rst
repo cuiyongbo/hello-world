@@ -162,3 +162,15 @@ Command line instructions
     if you want to include changed-not-yet-committed files.
     Using the ``--name-status`` flag instead of ``--name-only`` is handy
     to get a list of files and see their modification status, such as Added or Modified.
+
+    .. code-block:: sh
+
+        $ git log -3 --format=format:'%h:%s'
+        64ce04de:added loon pic
+        2ddcc7cc:added a tree pic
+        96074ea8:added cross-grained
+
+        $ git diff --name-status 2ddcc7cc
+        M       my_wiki/Makefile
+        ...
+
