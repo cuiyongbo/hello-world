@@ -2,7 +2,7 @@
 Computer Terminology
 ********************
 
-| Type coercison and conversion 
+| Type coercison and conversion
 | Automatic coercison [强制转换]
 | two’s complement [二进制补码]
 | backward compatibility [向下兼容]
@@ -39,6 +39,7 @@ Computer Terminology
 | RAII = Resource Acquisition Is Initialization
 | ISP = Internet Service Provider
 | CGI = Common Gate Interface
+| FAQ = Frequently Asked Question
 | Interpreter VS compiler
 |
 | Techno-weenie: An ineffectual or insignificant computer nerd.
@@ -49,33 +50,33 @@ Computer Terminology
 | concatenate
 | concatenation
 | Definition: a concatenation of things or events is their occurrence one after another, because they are linked.
-| 
+|
 | cipher
 | Definition: A person or thing of no importance, especially a person who does the bidding of others and seems to have no will of their own.
 | Definition: A sceret way of writing, especially six in which a set of letters or symbols is used to represent others.
 | Usage: A message in cipher.
-| 
+|
 | corrupt
 | corruption
 | Definition: the process by which something, typically a word or expression, is changed from its original use or meaning to one that is regarded as erroneous or debased.
 | Usage: The word “holiday” is a corruption of “holy day”.
 | Definition: the process of causing errors to appear in a computer program or database.
-| 
+|
 | overhead == cost
 | hover
 | Definition: (Computing) use a mouse or other device to position the cursor over a particular area of a computer screen so as to cause a program to respond, without clicking a button on the device.
 | Usage: You can hover your cursor over any button to see an explanation.
-| 
+|
 | on the fly
 | Definition: (of an addition or modification in computing) Carried out during the running of a program without interruption.
-| 
+|
 | sync
 | synchronize
-| synchronization   
+| synchronization
 | Definition: occur at the same time or rate.
 | Definition: (Computing) cause (a set of data or files) to remain identical in more than one location.
 | Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
-| 
+|
 | simplex: allowing telecommunication in only one direction
 | prepend VS append
 | modularity
@@ -87,7 +88,7 @@ Computer Terminology
 | public inheritance
 | protected inheritance
 | private inheritance
-| 
+|
 | Qualcomm Snapdragon processor 高通骁龙处理器
 | Samsung 三星
 |
@@ -103,9 +104,9 @@ Computer Terminology
 
 .. image:: images/portfolio.png
 
-The Core i9 laptop is now much faster than it was before and, crucially, 
-faster than its Core i7 predecessor MacBook Pros, and it also remains quiet, 
-which is a major selling point [卖点] of the MacBook Pro — though the thicker, 
+The Core i9 laptop is now much faster than it was before and, crucially,
+faster than its Core i7 predecessor MacBook Pros, and it also remains quiet,
+which is a major selling point [卖点] of the MacBook Pro — though the thicker,
 louder Core i9 laptops from other manufacturers do offer much greater performance.
 
 BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code)

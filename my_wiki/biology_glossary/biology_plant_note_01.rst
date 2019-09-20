@@ -10,6 +10,7 @@ Plants Note 01
 
     Redwood [红树林]
 
+.. image:: images/Sequoia_1568974359.jpg
 .. figure:: images/giant_sequoia.jpg
 
     Sequoia [红杉树]
@@ -48,6 +49,8 @@ Plants Note 01
 .. figure:: images/lanling.jpg
 
     蓝铃花
+
+.. image:: images/moutain_view_1568974359.jpg
 
 #. Sequoia National Park
 
