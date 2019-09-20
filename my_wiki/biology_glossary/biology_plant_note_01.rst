@@ -15,6 +15,10 @@ Plants Note 01
 
     Sequoia [红杉树]
 
+.. figure:: images/aspen_1568974359.jpg
+
+    Aspen [白杨]
+
 .. image:: images/sundew_plant.jpg
 .. figure:: images/pitcher_plant.jpg
 
