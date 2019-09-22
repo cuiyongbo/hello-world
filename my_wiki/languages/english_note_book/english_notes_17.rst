@@ -185,6 +185,10 @@ English Note 17
 | Definition: prejudice or discrimination on the basis of a person's age.
 | Usage: a lot of ageist jokes about not being able to use technology.
 |
+| discriminator
+| Definition: a characteristic that enables things, people, or classes to be distinguished from one another.
+| Usage: age should not be used as a primary discriminator in recruitment.
+|
 | recipient
 | Definition: a person or thing that receives or is awarded something.
 | Usage: the recipient of the Nobel Peace Prize.

@@ -115,3 +115,4 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
    - Longest Common Subsequence
    - Edit Distance
    - Length of Longest Fibonacci Subsequence
+   - Maximum Length of Repeated Subarray
