@@ -185,6 +185,11 @@ English Note 2
 | Usage: Tim was well wrapped up against the weather.
 | Definition: (also wrap it up) be quite; stop talking or making a noise.
 |
+| behind schdule
+| Definition: not having progressed as much as is necessary to meet a particular deadline.
+| Usage: I'm so far behind schedule that I'll never get this report done by Friday.
+| Usage: we're already behind schedule
+|
 | top-notch
 | top-notcher
 | Definition: of the highest quality.

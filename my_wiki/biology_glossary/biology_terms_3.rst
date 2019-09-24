@@ -99,10 +99,14 @@ Wild Lives 03
 
     Tadpole [蝌蚪]
 
+.. figure:: images/gorilla-beringei_beringei_1569290472.jpg
+
+    山地大猩猩
+
 .. image:: images/MapGreatRiftValley.png
 .. figure:: images/Great-Rift-Valle.jpg
 
-   The Great Rift Valley
+   The Great Rift Valley [东非大裂谷]
 
 .. image:: images/gelada_baboon.jpg
 .. figure:: images/baboon.jpg

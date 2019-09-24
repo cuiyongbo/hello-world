@@ -272,3 +272,7 @@ English Note 15
    memories or to allow modification of behavior by suggestion, has been revived but is still controversial.
 
    .. image:: images/photo-for-learning-hypnosis.jpg
+
+
+.. image:: images/goodbye_summer_2019.jpg
+.. image:: images/mayan_pyramid_1569289731.jpg
