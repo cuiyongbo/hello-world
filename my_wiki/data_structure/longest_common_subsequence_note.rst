@@ -6,6 +6,9 @@ Longest Common Subsequence Note
 
 **Definition**
 
+A **subsequence** is derived from another sequence A by deleting any number of
+elements (including none) from A, without changing the order of the remaining elements.
+
 Given a sequence :math:`X = \bigl( x_1, x_2, ..., x_m \bigr)`, another sequence
 :math:`Z = \bigl( z_1, z_2, ..., z_k \bigr)` is a **subsequence** of :math:`X`
 if there exits a strictly increasing sequence :math:`\bigl( i_1, i_2, ..., i_k \bigr)` of
@@ -18,7 +21,6 @@ Given two sequences :math:`X` and :math:`Y`, we say that a sequence :math:`Z` is
 In the **longest-common-subsequence problem**, we are given two sequences
 :math:`X = \bigl( x_1, x_2, ..., x_m \bigr)` and :math:`Y = \bigl( y_1, y_2, ..., y_n \bigr)`
 and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
-
 
 **Implementation**
 
@@ -112,3 +114,4 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
 
    - Longest Common Subsequence
    - Edit Distance
+   - Length of Longest Fibonacci Subsequence
