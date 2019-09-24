@@ -1,14 +1,14 @@
-***********
-TCP/IP Note
-***********
+************************
+Network Programming Note
+************************
 
 .. toctree::
 
-    tcp_ip/tcp_ip_terminology_note
-    tcp_ip/nginx_usage_note
-    tcp_ip/nginx_insight_01
-    tcp_ip/nginx_insight_02
-    tcp_ip/nginx_insight_03
+    network_programming/tcp_ip_terminology_note
+    network_programming/nginx_usage_note
+    network_programming/nginx_insight_01
+    network_programming/nginx_insight_02
+    network_programming/nginx_insight_03
 
 .. rubric:: Footnotes
 

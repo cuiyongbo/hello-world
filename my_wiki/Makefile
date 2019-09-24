@@ -20,7 +20,7 @@ help:
 # workaround because sphinx does not completely clean up (#11139)
 clean:
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-	rm -rf "$(SOURCEDIR)/_build"
+	rm -rf "$(BUILDDIR)"
 	rm -rf "$(SOURCEDIR)/api/_as_gen"
 	rm -rf "$(SOURCEDIR)/gallery"
 	rm -rf "$(SOURCEDIR)/tutorials"

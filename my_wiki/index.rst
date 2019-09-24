@@ -19,6 +19,7 @@ Welcome to My Wiki's documentation!
     shell_commands
     programmer_note
     python_note
+    network_programming_notes
     more_cpp_idioms_note
     machine_learning_note
     mathematics_glossary
