@@ -55,7 +55,11 @@ IP address structures::
 | RARP = Reverse Address Resolution Protocol
 | DNS = Domain Name System
 | RFC = Request For Comment
-| 
+| RTT = Round Trip Time
+|
+| :abbr:`TTL (Time To Live)`
+| Definition: a value in an IP packet that limits the lifespan of a packet of data in a computer or network.
+|
 | multiplex
 | Definition: consisting of many elements in a complex relationship
 | Usage: multiplex ties of work and friendship.

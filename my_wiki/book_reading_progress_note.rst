@@ -14,7 +14,7 @@ To be or not to be, this is a question.
 Unix Network Programming Volume one
 ===================================
 
-    - Ch05 TCP Client/Server Example ( -- 2019-09-22)
+    - Ch05 TCP Client/Server Example ( -- 2019-09-25) [3 days behind schedule]
     - Ch06 I/O Multiplexing: select and poll ( -- 2019-09-22)
     - Ch24 Out-of-Band Data ( -- 2019-09-22)
 
