@@ -198,6 +198,7 @@ Wild Lives 03
     Martes [貂]
 
 .. image:: images/Litocranius_walleri_Nigeria.jpg
+.. image:: images/sea_otter_1569497425.jpg
 
 #. Ontogeny
 

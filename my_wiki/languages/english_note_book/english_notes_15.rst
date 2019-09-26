@@ -277,3 +277,4 @@ English Note 15
 .. image:: images/goodbye_summer_2019.jpg
 .. image:: images/mayan_pyramid_1569289731.jpg
 .. image:: images/surfing_1569398049.jpg
+.. image:: images/scenery_spot_1569491228.jpg

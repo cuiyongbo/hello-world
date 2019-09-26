@@ -24,3 +24,8 @@ English Note 20
 | Usage: military action would only aggravate the situation.
 | Usage: The drug may cause an aggravation of the condition.
 | Usage: I don't need all this aggravation at work.
+|
+| have a bone to pick with somebody
+| Definition: (informal) have something that you want to complain to somebody about.
+| Usage: Here, I’ve got a bone to pick with you: why did you tell David I wasn’t at home when he phoned?
+|
