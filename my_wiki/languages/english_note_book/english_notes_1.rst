@@ -142,13 +142,7 @@ name, also known as surname, with most family members.
 | Usage: Nifty footwork.
 | Usage: A nifty black t-shirt.
 |
-| fictitious
-| Definition: (adjective) not real or true, being imaginary or having been fabricated
-| Usage: She pleased guilty to stealing thousands in taxpayer dollars by having a ficticious employee on her payroll.
-| Definition: (adjective) relating to or denoting the imaginary characters and events found in fiction
-| Usage: The people in this novel are fictitious; the backgroud of public events is not.
-|
-| sloppy [adjective]
+| sloppy
 | Definition: careless and unsystematic; excessively casual
 | Usage: Your speech has always been sloppy.
 | Definition: (of a garment) casual and loose-fitting
