@@ -44,3 +44,8 @@ of vertices u and v in C , we have :math:`u \rightleftharpoons v`.
         the vertices in order of decreasing u.f
     Output the vertices of each tree in the depth-first forest as
         a separate strongly connected component
+
+
+#. Leetcode exercises
+
+    - Friend circles
