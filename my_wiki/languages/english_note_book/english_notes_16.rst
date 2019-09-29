@@ -346,7 +346,6 @@ English Note 16
 .. image:: images/mount_fanjing.jpg
 .. image:: images/aerial_view_of_rainforest_1568277649.jpg
 .. image:: images/milky_way_1568277649.jpg
-.. image:: images/scenery_spot_1568286551.jpg
 .. image:: images/scenery_spot_1568286615.jpg
 .. image:: images/scenery_spot_1568286663.jpg
 .. image:: images/sea_overview_1568601049.jpg

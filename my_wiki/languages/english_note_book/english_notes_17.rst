@@ -249,13 +249,11 @@ English Note 17
 | Usage: ergonomic keyboard design. [人体工程学键盘]
 
 .. image:: images/path_in_trees.jpg
-.. image:: images/corridor_1567423582.jpg
 .. image:: images/boat_on_the_beach.jpg
 .. image:: images/slope_observator.jpg
 .. image:: images/forest_overview.jpg
 .. image:: images/cypress_tunnel.jpg
 .. image:: images/sheep_flock.jpg
-.. image:: images/scenary_spot_1563428393.jpg
 .. image:: images/scenary_spot_1563868227.jpg
 .. image:: images/scenary_spot_1564716345.jpg
 .. image:: images/scenary_spot_1565175675.jpg
