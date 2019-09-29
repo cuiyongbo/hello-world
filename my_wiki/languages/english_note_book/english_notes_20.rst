@@ -46,3 +46,20 @@ English Note 20
 | Usage: native brook trout are very much the canary in the coal mine for the health of a stream.
 | Origin: with reference to the former practice of taking live canaries into coal mines to test
 | for the presence of toxic gases; death of the canary would serve as an indication that such gases were present.
+|
+| expedite
+| Definition: make (an action or process) happen sooner or be accomplished more quickly.
+| Usage: he promised to expedite economic reforms.
+|
+| emulate
+| Definition: match or surpass (a person or achievement), typically by imitation.
+| Usage: lesser men trying to emulate his greatness.
+| Usage: hers is not a hairstyle I wish to emulate.
+| Definition: reproduce the function or action of (a different computer, software system, etc.).
+| Usage: the adaptor is factory set to emulate a Hercules graphics board.
+|
+| artifact
+| Definition: an object made by a human being, typically an item of cultural or historical interest.
+| Usage: gold and silver artifacts. [工艺品]
+| Usage: widespread tissue infection may be a technical artifact. [人为因素]
+|

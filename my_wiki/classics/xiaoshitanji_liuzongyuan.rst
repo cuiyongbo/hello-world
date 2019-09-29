@@ -20,11 +20,9 @@
 
         同游者：吴武陵，龚古，余弟宗玄。隶而从者，崔氏二小生：曰恕己，曰奉壹。
 
-
 .. image:: images/quinault_rainforest_olympic_national_park.jpg
 .. image:: images/scenery_spot_1568286551.jpg
 .. image:: images/water_reflection.jpg
 .. image:: images/corridor_1567423582.jpg
 .. image:: images/scenary_spot_1563428393.jpg
 .. image:: images/scenery_spot_1569723514.jpg
-

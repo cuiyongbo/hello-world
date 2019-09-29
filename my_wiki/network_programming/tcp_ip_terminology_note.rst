@@ -56,6 +56,7 @@ IP address structures::
 | DNS = Domain Name System
 | RFC = Request For Comment
 | RTT = Round Trip Time
+| Out-of-band data Vs Urgent mode
 |
 | :abbr:`TTL (Time To Live)`
 | Definition: a value in an IP packet that limits the lifespan of a packet of data in a computer or network.
