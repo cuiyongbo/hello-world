@@ -32,11 +32,11 @@ Range for 5 different classes of IP addresses:
 
 IP address structures::
 
-   A: 0    | netid(7 bits)  | hostid(24 bits)
-   B: 10   | netid(14 bits) | hostid(16 bits)
-   C: 110  | netid(21 bits) | hostid(8 bits)
-   D: 1110 | multicast group ID(28 bits)
-   D: 1111 | reserved(28 bits)
+    A: 0    | netid(7 bits)  | hostid(24 bits)
+    B: 10   | netid(14 bits) | hostid(16 bits)
+    C: 110  | netid(21 bits) | hostid(8 bits)
+    D: 1110 | multicast group ID(28 bits)
+    D: 1111 | reserved(28 bits)
 
 .. image:: images/tcpip_data_flow_encapsulation.gif
 .. image:: images/ethernet_frame_demultiplex.gif
@@ -51,11 +51,14 @@ IP address structures::
 | SNMP = Simple Network Management Protocol
 | LAN = Local Area Network
 | Wan = Wide Area Network
+| VPN = Virtual Priavte Network
+| SSH = Secure Shell
 | ARP = Address Resolution Protocol
 | RARP = Reverse Address Resolution Protocol
 | DNS = Domain Name System
 | RFC = Request For Comment
 | RTT = Round Trip Time
+| MTU = Maximum Transfer Unit (1500 bytes for Ethernet)
 | Out-of-band data and Urgent mode
 |
 | :abbr:`TTL (Time To Live)`
@@ -69,14 +72,50 @@ IP address structures::
 |
 
 .. code-block:: sh
-   :caption: Snacks
+    :caption: Snacks
 
-   $ grep ^telnet /etc/services
-   telnet           23/udp     # Telnet
-   telnet           23/tcp     # Telnet
-   $ grep ^domain /etc/services
-   domain           53/udp     # Domain Name Server
-   domain           53/tcp     # Domain Name Server
+    $ grep ^telnet /etc/services
+    telnet           23/udp
+    telnet           23/tcp
+    $ grep ^domain /etc/services
+    domain           53/udp     # Domain Name Server
+    domain           53/tcp     # Domain Name Server
+
+#. Four-layered TCP Model and :abbr:`OSI (Open System Interaction)` Model
+
+    +--------------+-------------+
+    | Application  |             |
+    +--------------+             +
+    | Presentation |             |
+    +--------------+ Application +
+    | Session      |             |
+    +--------------+-------------+
+    | Transport    | Transport   |
+    +--------------+-------------+
+    | Network      | Network     |
+    +--------------+-------------+
+    | Datalink     |             |
+    +--------------+ Linker      +
+    | Physical     |             |
+    +--------------+-------------+
+
+    Refer to *Unix Network Programming vol 1, section 1.1 and section 1.7* for details.
+
+#. TCP three-way handshake and termination sequence
+
+    Refer to *Unix Network Programming vol 1, section 2.6* for details.
+
+#. Server Framework
+
+    - Iterative server
+        - iterative through each client, one at a time
+
+    - Concurrent server
+        - fork one process for each child
+        - create one thread for each child
+        - pre-fork a fixed number of child processes at start-up
+
+#. daemonization: section 13.4
 
 .. rubric:: Footnotes
 
