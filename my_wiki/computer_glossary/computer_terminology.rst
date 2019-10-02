@@ -62,7 +62,6 @@ Computer Terminology
 | Usage: The word “holiday” is a corruption of “holy day”.
 | Definition: the process of causing errors to appear in a computer program or database.
 |
-| overhead == cost
 | hover
 | Definition: (Computing) use a mouse or other device to position the cursor over a particular area of a computer screen so as to cause a program to respond, without clicking a button on the device.
 | Usage: You can hover your cursor over any button to see an explanation.
@@ -78,6 +77,7 @@ Computer Terminology
 | Usage: you can synchronize your calendar with your GPS devices and get alerted when you need to leave for an appointment.
 |
 | simplex: allowing telecommunication in only one direction
+| full-duplex: allowing telecommunication in both directions
 | prepend VS append
 | modularity
 | data hiding
@@ -88,12 +88,6 @@ Computer Terminology
 | public inheritance
 | protected inheritance
 | private inheritance
-|
-| Qualcomm Snapdragon processor 高通骁龙处理器
-| Samsung 三星
-|
-| breadth-first traversal 广度优先遍历
-| depth-first traversal 深度优先遍历
 |
 | archive
 | Definition: The archive or archives are a collection of documents and records that contain historical information.

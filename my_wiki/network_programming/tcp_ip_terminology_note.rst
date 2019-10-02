@@ -7,7 +7,7 @@ The Four layers of TCP/IP suite:
 +-------------+-----------------------------------+
 | Application | Telnet, FTP, e-mail, etc          |
 +-------------+-----------------------------------+
-| Transport   | TCP, UDP                          |
+| Transport   | TCP, UDP, SCTP                    |
 +-------------+-----------------------------------+
 | Network     | IP, ICMP, IGMP                    |
 +-------------+-----------------------------------+
@@ -47,6 +47,7 @@ IP address structures::
 | TCP = Transport Control Protocol
 | UDP = User Datagram Protocol
 | FTP = File Transfer Protocol
+| SCTP = Stream Control Transmission Protocol
 | SMTP = Simple Mail Transport Protocol
 | SNMP = Simple Network Management Protocol
 | LAN = Local Area Network
@@ -59,6 +60,8 @@ IP address structures::
 | RFC = Request For Comment
 | RTT = Round Trip Time
 | MTU = Maximum Transfer Unit (1500 bytes for Ethernet)
+| MSS = Maximum Segment Size
+| MSL = Maximum Segment Life
 | Out-of-band data and Urgent mode
 |
 | :abbr:`TTL (Time To Live)`
@@ -101,9 +104,13 @@ IP address structures::
 
     Refer to *Unix Network Programming vol 1, section 1.1 and section 1.7* for details.
 
-#. TCP three-way handshake and termination sequence
+#. TCP three-way handshake, connection termination sequence, and state transition diagram
 
-    Refer to *Unix Network Programming vol 1, section 2.6* for details.
+    .. figure:: images/tcp_state_transition_diagram.png
+
+        TCP State Transition Diagram
+
+        Refer to *Unix Network Programming vol 1, section 2.6* for details.
 
 #. Server Framework
 
@@ -115,8 +122,27 @@ IP address structures::
         - create one thread for each child
         - pre-fork a fixed number of child processes at start-up
 
+#. TCP vs UDP
+
+    TCP Characteristics::
+
+        connection-oriented
+        acknowledgement, retransimission, timeout
+        sequence numbers, RTT estimation
+        flow control (advertised window)
+
+    UDP Characteristics: connectionless
+
 #. daemonization: section 13.4
+#. IPv4 version of ping: ch28
+#. Why UDP other than TCP: 22.4
 
 .. rubric:: Footnotes
 
 .. [#] `Multiplexing and Demultiplexing <http://macao.communications.museum/eng/Exhibition/secondfloor/moreinfo/2_8_6_Multiplexing.html>`_
+
+
+
+TCP
+
+

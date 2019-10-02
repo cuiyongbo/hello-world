@@ -63,3 +63,17 @@ English Note 20
 | Usage: gold and silver artifacts. [工艺品]
 | Usage: widespread tissue infection may be a technical artifact. [人为因素]
 |
+| connotation
+| Definition: an idea or feeling that a word invokes in addition to its literal or primary meaning.
+| Usage: the word “discipline” has unhappy connotations of punishment and repression.
+| Usage: The word 'professional' has connotations of skill and excellence.
+|
+| piggyback
+| Definition: a ride on someone's back and shoulders. [背]
+| Usage: Give me a piggyback, Daddy!
+| Usage: a piggyback ride.
+| Definition: attached to or riding on a larger object.
+| Usage: a telescope with fittings for piggyback cameras.
+| Usage: providers of information have piggybacked their own networks onto the system.
+| Usage: we were piggybacking on their training program.
+|
