@@ -77,3 +77,20 @@ English Note 20
 | Usage: providers of information have piggybacked their own networks onto the system.
 | Usage: we were piggybacking on their training program.
 |
+| tenacious
+| Definition: Tending to keep a firm hold of something; clinging or adhering closely.
+| Usage: A tenacious grip.
+| Definition: Not readily relinquishing a position, principle, or course of action; determined.
+| Usage: You’re tenacious and you get at the truth.
+|
+| relinquish
+| Definition: voluntarily cease to keep or claim; give up.
+| Usage: he relinquished his managerial role to become chief executive.
+| Usage: They had relinquished all hope that she was alive.
+
+
+.. image:: images/father-giving-son-piggyback-ride.jpg
+.. figure:: images/mother-giving-daughter-piggyback-ride.jpg
+
+    Piggyback
+

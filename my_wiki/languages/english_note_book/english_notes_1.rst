@@ -509,12 +509,6 @@ name, also known as surname, with most family members.
 | Definition: Without great thought or preparation.
 | UsageL Police was made on the hoof.
 |
-| tenacious
-| Definition: Tending to keep a firm hold of something; clinging or adhering closely.
-| Usage: A tenacious grip.
-| Definition: Not readily relinquishing a position, principle, or course of action; determined.
-| Usage: You’re tenacious and you get at the truth.
-|
 | durability
 | Definition: The ability to withstand wear, pressure, or damage.
 | Usage: The reliability and durability of plastics.

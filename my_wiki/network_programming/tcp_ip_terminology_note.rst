@@ -142,7 +142,3 @@ IP address structures::
 .. [#] `Multiplexing and Demultiplexing <http://macao.communications.museum/eng/Exhibition/secondfloor/moreinfo/2_8_6_Multiplexing.html>`_
 
 
-
-TCP
-
-
