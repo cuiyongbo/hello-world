@@ -87,7 +87,10 @@ English Note 20
 | Definition: voluntarily cease to keep or claim; give up.
 | Usage: he relinquished his managerial role to become chief executive.
 | Usage: They had relinquished all hope that she was alive.
-
+|
+| teleport
+| teleportation
+| Definition: (especially in science fiction) transport or be transported across space and distance instantly.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

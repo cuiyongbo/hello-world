@@ -5,6 +5,7 @@ Network Programming Note
 .. toctree::
 
     network_programming/tcp_ip_terminology_note
+    network_programming/tcp_layer_note
     network_programming/unix_network_services_note
     network_programming/unix_io_model_note
     network_programming/nginx_usage_note

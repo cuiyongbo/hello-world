@@ -19,7 +19,9 @@ Unix Network Programming Volume one
     - Ch13 Daemon Process and the inetd superserver ( -- 2019-10-03)
     - Ch05 TCP Client/Server Example ( -- 2019-09-25) [3 days behind schedule]
     - Ch06 I/O Multiplexing: select and poll ( -- 2019-09-29) [7 days behind schedule]
+    - Ch16 Nonblocking I/O ( -- 2019-10-07)
     - Ch24 Out-of-Band Data ( -- 2019-09-30) [8 days behind schedule]
+    - Ch25 Signal-driven I/O ( -- 2019-10-07)
 
 TCP/IP Illustrated Volume one
 =============================

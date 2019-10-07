@@ -104,39 +104,6 @@ IP address structures::
 
     Refer to *Unix Network Programming vol 1, section 1.1 and section 1.7* for details.
 
-#. TCP three-way handshake, connection termination sequence, and state transition diagram
-
-    .. figure:: images/tcp_state_transition_diagram.png
-
-        TCP State Transition Diagram
-
-        Refer to *Unix Network Programming vol 1, section 2.6* for details.
-
-#. Server Framework
-
-    - Iterative server
-        - iterative through each client, one at a time
-
-    - Concurrent server
-        - fork one process for each child
-        - create one thread for each child
-        - pre-fork a fixed number of child processes at start-up
-
-#. TCP vs UDP
-
-    TCP Characteristics::
-
-        connection-oriented
-        acknowledgement, retransimission, timeout
-        sequence numbers, RTT estimation
-        flow control (advertised window)
-
-    UDP Characteristics: connectionless
-
-#. daemonization: section 13.4
-#. IPv4 version of ping: ch28
-#. Why UDP other than TCP: 22.4
-
 .. rubric:: Footnotes
 
 .. [#] `Multiplexing and Demultiplexing <http://macao.communications.museum/eng/Exhibition/secondfloor/moreinfo/2_8_6_Multiplexing.html>`_
