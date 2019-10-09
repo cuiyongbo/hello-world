@@ -25,12 +25,20 @@ TCP Layer Note
     TCP Characteristics::
 
         connection-oriented
-        acknowledgement, retransimission, timeout
-        sequence numbers, RTT estimation
-        flow control (advertised window)
+        positive acknowledgements,
+        retransimission of lost packets,
+        duplicate detection,
+        sequencing of packets reorder by the network.
+        timeout, RTT estimation,
+        windowed flow control,
+        slow start and congestion avoidance
 
-    UDP Characteristics: connectionless
+    UDP Characteristics::
+
+        connectionless (no connection setup or teardown),
+        support broadcast and multicast
+
+    Refer to *Unix Network Programming vol 1, section 22.4* for details.
 
 #. IPv4 version of ping: ch28
-#. Why UDP other than TCP: 22.4
 #. TCP's slow-start and congestion avoidance algorithms: *TCPv1 Ch21*
