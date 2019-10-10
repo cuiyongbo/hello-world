@@ -38,3 +38,7 @@ Biology Terms - Sea Animals
     played a part in the animal's demise. The eels do
     occasionally venture into the shallows, so it's hard
     to say for sure.
+
+.. figure:: images/octopus_1570672289.jpg
+
+    Octopus [章鱼]

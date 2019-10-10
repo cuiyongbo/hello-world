@@ -47,6 +47,8 @@ Biology Terms - Birds
 
 .. image:: images/southernyellow.jpeg
 
-.. .. figure:: images/loon_1568887120.jpg
+.. figure:: images/loon_1568887120.jpg
 
    Loon [潜鸟]
+
+.. image:: images/penguin_1570672289.jpg

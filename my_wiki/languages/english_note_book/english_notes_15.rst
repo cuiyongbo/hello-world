@@ -279,3 +279,7 @@ English Note 15
 .. image:: images/surfing_1569398049.jpg
 .. image:: images/scenery_spot_1569491228.jpg
 .. image:: images/falling_for_riojia.jpg
+.. image:: images/great_canyon_of_the_east.jpg
+.. image:: images/marlborough_sounds_in_new_zealand.jpg
+.. image:: images/merced_river_in_yosemite_national_park.jpg
+.. image:: images/bubble_nebula.jpg

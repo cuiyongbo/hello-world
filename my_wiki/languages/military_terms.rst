@@ -189,6 +189,10 @@ Military Terms
 
    Solar Eclipse [月食]
 
+.. figure:: images/jupiter_1570672289.jpg
+
+   Jupiter [木星]
+
 | rendezvous
 | Definition: A rendevous is a meeting, often a secret one, that you have arranged with sb at a particular time and place.
 | Usage: I had almost decided to keep my rendezvous with Tony.
