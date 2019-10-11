@@ -100,6 +100,29 @@ VIM Note
     **NOTE:** When the search reaches the end of the file it will continue
     at the start, unless the 'wrapscan' option has been reset.
 
+    .. code-block:: sh
+
+        /hello\c # case-insensitive search
+        /hello\C # case-sensitive search
+
 #. vim replacement
 
-   In command mode, type, For example, ``%s/old-pattern/new-pattern/g``.
+    In command mode, type, For example, ``:%s/old-pattern/new-pattern/g``.
+
+#. vim to replace only whole-word matches
+
+    In command mode, run ``:%s/\<old-word\>/new-word/g``.
+
+    .. code-block:: sh
+
+        :%s/foo/bar/gci
+        # Change each 'foo' (case insensitive due to the i flag) to 'bar'; ask for confirmation.
+        # This may be wanted after using :set noignorecase to make searches case sensitive (the default).
+
+        :%s/foo/bar/gcI
+        # Change each 'foo' (case sensitive due to the I flag) to 'bar'; ask for confirmation.
+
+
+.. rubric:: Footnotes
+
+.. [#] `Vim search and replace <https://vim.fandom.com/wiki/Search_and_replace>`_
