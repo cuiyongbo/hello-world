@@ -35,7 +35,7 @@ gcc - GNU project C and C++ compiler
 
    For any given input file, the file name suffix determines what kind of compilation is done::
 
-      file.c 
+      file.c
          C source code that must be preprocessed.
 
       file.i
@@ -78,7 +78,7 @@ gcc - GNU project C and C++ compiler
 
 **OPTIONS**
 
-.. option:: -c  
+.. option:: -c
 
    Compile or assemble the source files, but do not link.
    The linking stage simply is not done. The ultimate output
@@ -86,7 +86,7 @@ gcc - GNU project C and C++ compiler
 
    By default, the object file name for a source file is
    made by replacing the suffix .c, .i, .s, etc., with .o.
-   
+
    Unrecognized input files, not requiring compilation or
    assembly, are ignored.
 
@@ -101,7 +101,7 @@ gcc - GNU project C and C++ compiler
 
    Input files that don't require compilation are ignored.
 
-.. option:: -E  
+.. option:: -E
 
    Stop after the preprocessing stage; do not run the compiler proper.
    The output is in the form of preprocessed source code, which is sent
@@ -123,11 +123,11 @@ gcc - GNU project C and C++ compiler
 
 .. option:: -static
 
-   Prevent gcc from using shared libraries, force compile to link with static library(*.a). 
+   Prevent gcc from using shared libraries, force compile to link with static library(*.a).
    By default, gcc link with shared object (*.so).
 
 .. option::  -shared
-           
+
    Produce a shared object which can then be linked with other objects to form an executable.
    Not all systems support this option. For predictable results, you must also specify the same
    set of options used for compilation (-fpic, -fPIC, or model suboptions) when you specify this
@@ -163,7 +163,7 @@ gcc - GNU project C and C++ compiler
    These options are similar to -fpic and -fPIC, but generated PIC can be only linked into executables.
    Usually these options are used when -pie GCC option is used during linking.
 
-   -fpie and -fPIE both define the macros ``__pie__`` and ``__PIE__``. 
+   -fpie and -fPIE both define the macros ``__pie__`` and ``__PIE__``.
    The macros have the value 1 for -fpie and 2 for -fPIE.
 
 .. option:: -g
@@ -186,8 +186,8 @@ gcc - GNU project C and C++ compiler
    the optimizer for programs that might have bugs.
 
 .. option:: -ggdb
-           
-   Produce debugging information for use by GDB. This means to use the most expressive format 
+
+   Produce debugging information for use by GDB. This means to use the most expressive format
    available (DWARF 2, stabs, or the native format if neither of those are supported), including
    GDB extensions if at all possible.
 
@@ -199,8 +199,8 @@ gcc - GNU project C and C++ compiler
    on by default and have no options to control them.
 
 .. option:: -Wextra
-   
-   This enables some extra warning flags that are not enabled by -Wall. 
+
+   This enables some extra warning flags that are not enabled by -Wall.
 
    The option -Wextra also prints warning messages for the following cases:
 
@@ -212,20 +212,20 @@ gcc - GNU project C and C++ compiler
       *   (C++ only) A base class is not initialized in a derived class's copy constructor.
 
 .. option:: -Werror
-   
+
    Make all warnings into hard errors.  Source code which triggers warnings will be rejected.
 
 .. option::  -Wpedantic, -pedantic
 
-   Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use 
-   forbidden extensions, and some other programs that do not follow ISO C and ISO C++. 
+   Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use
+   forbidden extensions, and some other programs that do not follow ISO C and ISO C++.
    For ISO C, follows the version of the ISO C standard specified by any -std option used.
 
 .. option:: -pedantic-errors
-          
+
    Give an error whenever the base standard (see -Wpedantic) requires a diagnostic.
 
-.. option:: -w  
+.. option:: -w
 
    Suppress all warnings, including those which GNU CPP issues by default.
 
@@ -242,7 +242,7 @@ gcc - GNU project C and C++ compiler
    in the order they appear on the command line.
 
 .. option:: -imacros file
-         
+
    Exactly like -include, except that any output produced by scanning
    *file* is thrown away.  Macros it defines remain defined. This allows
    you to acquire all the macros from a header without also processing
@@ -252,7 +252,7 @@ gcc - GNU project C and C++ compiler
    by -include.
 
 .. option:: -isystem dir
-           
+
    Search *dir* for header files, after all directories specified by -I but
    before the standard system directories. Mark it as a system directory,
    so that it gets the same special treatment as is applied to the standard
@@ -260,7 +260,7 @@ gcc - GNU project C and C++ compiler
    by the sysroot prefix; see --sysroot and -isysroot.
 
 .. option:: --sysroot=dir
-           
+
    Use *dir* as the logical root directory for headers and libraries. For example,
    if the compiler normally searches for headers in :file:`/usr/include` and libraries
    in :file:`/usr/lib`, it instead searches :file:`dir/usr/include` and :file:`dir/usr/lib`.
@@ -273,7 +273,7 @@ gcc - GNU project C and C++ compiler
    works, but the library aspect does not.
 
 .. option:: -isysroot dir
-           
+
    This option is like the --sysroot option, but applies only to header files (except for
    Darwin targets, where it applies to both header files and libraries).
 
@@ -286,11 +286,11 @@ gcc - GNU project C and C++ compiler
    treatment of system headers are not defeated.
 
 .. option:: -Ldir
-           
+
    Add directory *dir* to the list of directories to be searched for -l.
 
 .. option:: -llibrary, -l library
-           
+
    Search the library named *library* when linking. (The second alternative with the library
    as a separate argument is only for POSIX compliance and is not recommended.)
 
@@ -312,7 +312,7 @@ gcc - GNU project C and C++ compiler
    searches several directories.
 
 .. option:: -Dname, -D name=definition
-      
+
    With the first format, predefine *name* as a macro, with definition 1.
 
    As with the second format, The contents of definition are tokenized
@@ -327,7 +327,7 @@ gcc - GNU project C and C++ compiler
    If you wish to define a function-like macro on the command line,
    write its argument list with surrounding parentheses before the
    equals sign (if any). Parentheses are meaningful to most shells,
-   so you will need to quote the option. 
+   so you will need to quote the option.
    With sh and csh, ``-D'name(args...)=definition'`` works.
 
    -D and -U options are processed in the order they are given on
@@ -338,7 +338,7 @@ gcc - GNU project C and C++ compiler
 
    Cancel any previous definition of name, either built in or provided with a -D option.
 
-.. option:: -M  
+.. option:: -M
 
    Instead of outputting the result of preprocessing, output a rule suitable for make
    describing the dependencies of the main source file. The preprocessor outputs one
@@ -377,7 +377,7 @@ gcc - GNU project C and C++ compiler
    When used with the driver options -MD or -MMD, -MF overrides the default
    dependency output file.
 
-.. option:: -MD 
+.. option:: -MD
 
    -MD is equivalent to ``-M -MF`` file, except that -E is not implied. The driver
    determines file based on whether an -o option is given. If it is, the driver
@@ -396,19 +396,19 @@ gcc - GNU project C and C++ compiler
 
    Like -MD except mention only user header files, not system header files.
 
-.. option:: -MG 
+.. option:: -MG
 
    In conjunction with an option such as -M requesting dependency generation,
    -MG assumes missing header files are generated files and adds them to the
    dependency list without raising an error. The dependency filename is taken
-   directly from the ``#include`` directive without prepending any path. 
+   directly from the ``#include`` directive without prepending any path.
 
    -MG also suppresses preprocessed output, as a missing header file renders
    this useless.
 
    This feature is used in automatic updating of makefiles.
 
-.. option:: -MP 
+.. option:: -MP
 
    This option instructs CPP to add a phony target for each dependency other
    than the main file, causing each to depend on nothing. These dummy rules
@@ -447,7 +447,7 @@ gcc - GNU project C and C++ compiler
 
 .. option:: -std=standard, -ansi
 
-   Specify the standard to which the code should conform. 
+   Specify the standard to which the code should conform.
    Currently CPP knows about C and C++ standards; others
    may be added in the future.
 
@@ -457,7 +457,7 @@ gcc - GNU project C and C++ compiler
          The -ansi option is equivalent to -std=c90.
 
       "gnu++98"
-         The same as -std=c++98 plus GNU extensions. 
+         The same as -std=c++98 plus GNU extensions.
          This is the default for C++ code.
 
       c++11
@@ -469,33 +469,33 @@ gcc - GNU project C and C++ compiler
    symbol table. This option is needed for some uses of "dlopen" or to allow obtaining
    backtraces from within a program.
 
-.. option:: -s 
+.. option:: -s
 
    Remove all symbol table and relocation information from the executable.
 
 .. option:: -pthread / -pthreads
-           
+
    Adds support for multithreading with the pthreads library. This option
    sets flags for both the preprocessor and linker.
 
 .. option:: -Olevel
 
    set code optimization level, -O2 is usual.
-   Note: don't turn on this optimization when you are programming, 
-   debugging, or with limited resources such as on embedded devices. 
+   Note: don't turn on this optimization when you are programming,
+   debugging, or with limited resources such as on embedded devices.
 
 .. option:: -pipe
-           
-   Use pipes rather than temporary files for communication between the various stages of 
-   compilation. This fails to work on some systems where the assembler is unable to read 
+
+   Use pipes rather than temporary files for communication between the various stages of
+   compilation. This fails to work on some systems where the assembler is unable to read
    from a pipe; but the GNU assembler has no trouble.
 
    **Note:** this option can speed up compilation when building a huge project, but will
-   consume more memory in return. 
+   consume more memory in return.
 
 .. option:: -fkeep-inline-functions
-   
-   In C, emit "static" functions that are declared "inline" into the object file, even if the 
+
+   In C, emit "static" functions that are declared "inline" into the object file, even if the
    function has been inlined into all of its callers. This switch does not affect functions using
    the "extern inline" extension in GNU C90. In C++, emit any and all inline functions into the object file.
 
@@ -503,25 +503,40 @@ gcc - GNU project C and C++ compiler
 **TRICKS**
 
 #. Set -std default to c99
-   
+
    For bash only, add ``alias gcc='gcc -Wall -std=c99'`` to **.bashrc** in HOME directory.
-   To check the shell you currently use, type ``echo $SHELL``. 
+   To check the shell you currently use, type ``echo $SHELL``.
 
 #. Using g++ with template class
-   
-   **Solution one:** It's possible to put all the code in the class declaration, in essence making all member functions inline. 
+
+   **Solution one:** It's possible to put all the code in the class declaration, in essence making all member functions inline.
    Inline functions don't cause conflicts with multiple definitions when linking. This is the solution used in the ``std::vector.``
 
-   **Solution two:** when the declaration and definition are separated in two files, just #include the source code/implementation/definition 
-   of the templated class. although some compiler may complain about multiple definitions of the same functions. 
+   **Solution two:** when the declaration and definition are separated in two files, just #include the source code/implementation/definition
+   of the templated class. although some compiler may complain about multiple definitions of the same functions.
 
 #. check the builtin library search paths
 
    .. code-block:: sh
-   
+
       $ gcc --print-search-dirs
       install: /usr/lib/gcc/x86_64-linux-gnu/4.8/
       programs: =/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:
       : ...
       :/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-   
+
+#. disable certain compiler warnings
+
+   .. code-block:: c
+
+      #if defined(__clang__)
+      // disable warning about "this != NULL"
+      #  pragma clang diagnostic ignored "-Wtautological-undefined-compare"
+      // disabled warning "delete called on non-final 'XXX' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]"
+      #  pragma clang diagnostic ignored "-Wdelete-non-virtual-dtor"
+      #elif defined(__GNUC__)
+      #  pragma GCC diagnostic ignored "-Wunknown-pragmas"
+      #endif
+      #if defined(_MSC_VER)
+      #  pragma warning(disable: 4068)
+      #endif
