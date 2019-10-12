@@ -22,7 +22,7 @@ Unix Network Programming Volume one
     - Ch16 Nonblocking I/O ( -- 2019-10-07)
     - Ch24 Out-of-Band Data ( -- 2019-09-30) [8 days behind schedule]
     - Ch25 Signal-driven I/O ( -- 2019-10-07)
-    - Ch30 Client/Server Design Alternatives ( -- 2019-10-08)
+    - Ch30 Client/Server Design Alternatives ( -- 2019-10-08) [4 days behind schedule]
 
 TCP/IP Illustrated Volume one
 =============================
