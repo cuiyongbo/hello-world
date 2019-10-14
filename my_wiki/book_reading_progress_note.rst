@@ -17,6 +17,7 @@ Unix Network Programming Volume one
     - Ch01 Introduction ( -- 2019-10-01)
     - Ch02 The Transport Layer ( -- 2019-10-02)
     - Ch13 Daemon Process and the inetd superserver ( -- 2019-10-03)
+    - Ch15 Unix Domain Socket  ( -- 2019-10-13)
     - Ch05 TCP Client/Server Example ( -- 2019-09-25) [3 days behind schedule]
     - Ch06 I/O Multiplexing: select and poll ( -- 2019-09-29) [7 days behind schedule]
     - Ch16 Nonblocking I/O ( -- 2019-10-07)

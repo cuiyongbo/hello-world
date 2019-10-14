@@ -42,3 +42,4 @@ TCP Layer Note
 
 #. IPv4 version of ping: ch28
 #. TCP's slow-start and congestion avoidance algorithms: *TCPv1 Ch21*
+#. descriptor passing: section 15.7 28.7 30.9
