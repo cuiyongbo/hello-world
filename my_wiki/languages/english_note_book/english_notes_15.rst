@@ -284,3 +284,5 @@ English Note 15
 .. image:: images/merced_river_in_yosemite_national_park.jpg
 .. image:: images/bubble_nebula.jpg
 .. image:: images/red_rocks_in_arches_national_park.jpg
+.. image:: images/boats_massing_for_the_barcolana_regentta.jpg
+.. image:: images/canada_thanks_giving.jpg

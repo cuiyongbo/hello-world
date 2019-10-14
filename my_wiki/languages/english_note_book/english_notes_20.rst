@@ -91,6 +91,11 @@ English Note 20
 | teleport
 | teleportation
 | Definition: (especially in science fiction) transport or be transported across space and distance instantly.
+|
+| trek
+| Definition: a long arduous journey, especially one made on foot.
+| Usage: a trek to the South Pole.
+| Usage: we trekked through the jungle.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg
