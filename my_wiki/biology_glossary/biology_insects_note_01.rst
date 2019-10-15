@@ -8,7 +8,7 @@ Biology terms - Insects
 
 .. figure:: images/brown-cockroach.jpg
 
-   Cockroach [蟑螂] 
+   Cockroach [蟑螂]
 
 .. figure:: images/scorpion.png
 
@@ -23,7 +23,7 @@ Biology terms - Insects
    Cicada  [知了，蝉]
 
 .. figure:: images/hoverfly.jpg
-   
+
    Hoverfly [蝇虎]
 
 .. image:: images/honey_bee_day_1566033046.jpg
@@ -39,3 +39,5 @@ Biology terms - Insects
 .. figure:: images/praying_mantis.jpg
 
     Praying mantis [螳螂] man-eater
+
+.. image:: images/wing_of_dragon_fly.jpg
