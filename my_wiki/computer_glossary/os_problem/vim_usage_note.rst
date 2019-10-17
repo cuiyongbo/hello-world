@@ -122,6 +122,11 @@ VIM Note
         :%s/foo/bar/gcI
         # Change each 'foo' (case sensitive due to the I flag) to 'bar'; ask for confirmation.
 
+#. vim sustitute - backreference
+
+    .. code-block:: sh
+
+        :%s/\(pipefd\)/g_\1/gc
 
 .. rubric:: Footnotes
 
