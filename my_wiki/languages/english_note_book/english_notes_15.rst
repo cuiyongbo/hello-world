@@ -286,3 +286,4 @@ English Note 15
 .. image:: images/red_rocks_in_arches_national_park.jpg
 .. image:: images/boats_massing_for_the_barcolana_regentta.jpg
 .. image:: images/canada_thanks_giving.jpg
+.. image:: images/redleaves_hunting_golden_fish.jpg
