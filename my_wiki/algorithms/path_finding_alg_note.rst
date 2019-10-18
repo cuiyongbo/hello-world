@@ -218,10 +218,4 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 .. [#] `Simple Java version <https://github.com/coderodde/cskit.git>`_
 .. [#] `Respository with different benchmark <https://github.com/quantumelixir/pathfinding>`_
 .. [#] `Algorithm benchmark sets <https://www.movingai.com/benchmarks/grids.html>`_
-.. [#] `An instruction <https://www.oreilly.com/library/view/graph-algorithms/9781492047674/ch04.html>`_
 .. [#] `An orelly book Respository with graph theory <https://github.com/neo4j-graph-analytics>`_
-
-
-graph algorithms : practical examples in apache spark and neo4j
-
-http://finelybook.com/graph-algorithms-practical-examples-in-apache-spark-and-neo4j/

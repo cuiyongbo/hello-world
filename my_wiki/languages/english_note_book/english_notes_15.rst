@@ -287,3 +287,4 @@ English Note 15
 .. image:: images/boats_massing_for_the_barcolana_regentta.jpg
 .. image:: images/canada_thanks_giving.jpg
 .. image:: images/redleaves_hunting_golden_fish.jpg
+.. image:: images/fall_color_sweep_across_the_west.jpg

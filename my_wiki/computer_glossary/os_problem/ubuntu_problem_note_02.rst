@@ -34,3 +34,11 @@ Ubuntu problem note 02
 #. "ar: xxx.a: Malformed archive"
 
     Solution: remove library file, and rebuild.
+
+#. Ubuntu to install boost
+
+    .. code-block:: sh
+
+        sudo apt update
+        sudo apt install libboost-dev
+        sudo apt install libboost-all-dev
