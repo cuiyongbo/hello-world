@@ -96,6 +96,11 @@ English Note 20
 | Definition: a long arduous journey, especially one made on foot.
 | Usage: a trek to the South Pole.
 | Usage: we trekked through the jungle.
+|
+| plthera
+| Definition: an amount that is greater than is needed or can be used.
+| Synonyms: excess
+| Usage:  a plethora of committees and subcommittees.
 
 
 .. image:: images/father-giving-son-piggyback-ride.jpg

@@ -153,3 +153,9 @@ Dynamic Programming
                if q < m[i][j]
                   m[i][j] = q
          return m[i][j]
+
+#. Leetcode exercise
+
+    - Longest Increasing Subsequence
+    - Numbers of Longest Increasing Subsequence
+    - Longest Continuous Increasing Subsequence

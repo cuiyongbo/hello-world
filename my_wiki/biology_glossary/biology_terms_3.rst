@@ -189,7 +189,8 @@ Wild Lives 03
 
    a small insectivorous Old World bat with jerky, erratic flight.
 
-.. figure:: images/sloth.jpg
+.. image:: images/pale-throated-sloth_1571582236.jpg
+.. figure:: images/sloth_1571582236.jpg
 
     Sloth [树懒]
 

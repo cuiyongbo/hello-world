@@ -95,13 +95,11 @@ Biology Terms 01
 | Usage: Without sufficient pollination, the growth of the corn is stunted.
 |
 
-
 New clues to decline to of bees and other pollinators.
 
 they provide ecosystem service s indluding pollination and for some spieces, biological control of crop pests.
 
 It remains to be seen how the virus may affect the ability to hoverflies to undergo a strenuous long-distance mirgation or how long the virus may persist in their bodies given no virus replication was detected.
-
 
 | pigment [色素]
 | Definition: A pigment is a substance that gives something a particular color.
