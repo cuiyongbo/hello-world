@@ -101,7 +101,18 @@ English Note 20
 | Definition: an amount that is greater than is needed or can be used.
 | Synonyms: excess
 | Usage:  a plethora of committees and subcommittees.
-
+|
+| atlas
+| Definition: a book of maps or charts.
+| Usage: I looked in the atlas to find a map of Italy.
+| Definition: a book of illustrations or diagrams on any subject.
+| Usage: Atlas of Surgical Operations.
+|
+| miniature
+| Definition： (especially of a replica of something) of a much smaller size than normal; very small.
+| Usage: children dressed as miniature adults.
+| Definition: a thing that is much smaller than normal, especially a small replica or model.
+| Usage: seven full-size car bodies and three miniatures were used.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

@@ -236,3 +236,4 @@ In her condition, she would have end up in neonatal :abbr:`ICU (Intensive Care U
 
    .. image:: images/imprinted_fossil.jpg
    .. image:: images/fossilized_carboniferous_fern.jpg
+   .. image:: images/dinosaur_footprints_1571622111.jpg

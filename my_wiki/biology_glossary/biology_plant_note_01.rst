@@ -34,6 +34,7 @@ Plants Note 01
     Walnut [核桃]
 
 .. image:: images/Chestnut_01.jpg
+.. image:: images/chestnut_1571622111.jpg
 .. figure:: images/Chestnut_02.jpg
 
     Chestnut [板栗]

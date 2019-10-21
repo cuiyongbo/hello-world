@@ -134,6 +134,7 @@ Wild Lives 03
     Ursus Arctos [棕熊]
 
 .. figure:: images/polar_bear.jpg
+.. figure:: images/polar_bear_family_1571622111.jpg
 
     Polar bear [北极熊]
 
