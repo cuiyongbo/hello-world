@@ -55,6 +55,10 @@ Plants Note 01
 
     蓝铃花
 
+.. figure:: images/bunch-of-broccoli.jpg
+
+    Broccoli [西兰花]
+
 .. image:: images/moutain_view_1568974359.jpg
 
 #. Sequoia National Park
