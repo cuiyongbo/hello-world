@@ -113,6 +113,28 @@ English Note 20
 | Usage: children dressed as miniature adults.
 | Definition: a thing that is much smaller than normal, especially a small replica or model.
 | Usage: seven full-size car bodies and three miniatures were used.
+|
+| hygiene
+| Definition: conditions or practices conducive to maintaining health and preventing disease, especially through cleanliness.
+| Usage: poor standards of food hygiene.
+| Usage: personal hygiene.
+|
+| conducive
+| Definition: making a certain situation or outcome likely or possible.
+| Usage: the harsh lights and cameras were hardly conducive to a relaxed atmosphere.
+|
+| snap
+| Definition: break or cause to break suddenly and completely, typically with a sharp cracking sound.
+| Usage: guitar strings kept snapping.
+| Definition: (of an animal) make a sudden audible bite.
+| Usage: a dog was snapping at his heels.
+| Definition: suddenly lose one's self-control.
+| Usage: she claims she snapped after years of violence.
+| Definition: take a snapshot of.
+| Usage: he planned to spend the time snapping rare wildlife.
+| Definition: a hurried, irritable tone or manner.
+| Usage: "I'm still waiting,” he said with a snap.
+
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

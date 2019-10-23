@@ -61,6 +61,10 @@ Plants Note 01
 
 .. image:: images/moutain_view_1568974359.jpg
 
+.. figure:: images/blackbird_ate_crab_apple.jpg
+
+    Crab apple [海棠果]
+
 #. Sequoia National Park
 
     Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at,
