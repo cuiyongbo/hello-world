@@ -204,6 +204,11 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     the best forward candidate to the best backward candidate. This process continues until
     the two candidates are the same point.
 
+#. Traveling salesman problem
+
+    a mathematical problem in which one tries to find the shortest route that passes
+    through each of a set of points once and only once.
+
 
 .. rubric:: Footnotes
 

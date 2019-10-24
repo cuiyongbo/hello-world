@@ -134,7 +134,12 @@ English Note 20
 | Usage: he planned to spend the time snapping rare wildlife.
 | Definition: a hurried, irritable tone or manner.
 | Usage: "I'm still waiting,” he said with a snap.
-
+|
+| heavy lifting
+| Definition: the lifting of heavy objects.
+| Definition: hard or difficult work.
+| Usage: the heavy lifting in this business is in designing external distribution systems.
+|
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg
