@@ -222,3 +222,7 @@ EXAMPLES
         sed -i "s/ /\n/g" links
         sed -i "s/\*/\n/g" links
         grep -f links 17-00.txt > result
+
+#. delete empty line from txt file
+
+    Solution: ``sed -i '/^$/d' links``

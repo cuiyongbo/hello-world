@@ -1927,21 +1927,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Synonyms: exceed
 | Usage: Supply far outstripped demand.
 |
-| anonym [匿名]
-| anonymous
-| Definition: (of a person) not identified by name; of unknown name.
-| Usage: an anonymous phone call.
-| Usage: anonumous source.
-|
-| pseudonym [笔名，化名]
-| Definition: a fictious name, especially one used by an authour.
-| Usage: She writes under a pseudonym.
-|
-| pseudo
-| Definition: not genuine; false or pretended.
-| Usage: pseudocode.
-| Usage: pseudo-science.
-|
 | beaucoup
 | Definition: many; a lot.
 | Usage: You can spent beaucoup bucks on software.

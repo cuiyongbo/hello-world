@@ -260,6 +260,11 @@ English Note 6
 | Definition: excessively grand or ambitious.
 | Usage: grandiose plans to reform the world. [华而不实]
 |
+| facade
+| Definition: the face of a building, especially the principal front that looks onto a street or open space. [门面]
+| Definition: an outward appearance that is maintained to conceal a less pleasant or creditable reality.
+| Usage: her flawless public facade masked private despair。
+|
 | fiasco
 | Definition: a thing that is a complete failure, especially in a ludicrous or humiliating way.
 | Usage: His plans turned into a fiasco.

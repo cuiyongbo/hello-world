@@ -274,6 +274,21 @@ Only paranoid can surrive.
 | Definition: a standard or point of reference against which things may be compared or assessed.
 | Usage: we are benchmarking our performance against external criteria.
 |
+| anonym [匿名]
+| anonymous
+| Definition: (of a person) not identified by name; of unknown name.
+| Usage: an anonymous phone call.
+| Usage: anonumous source.
+|
+| pseudonym [笔名，化名]
+| Definition: a fictious name, especially one used by an authour.
+| Usage: She writes under a pseudonym.
+|
+| pseudo
+| Definition: not genuine; false or pretended.
+| Usage: pseudocode.
+| Usage: pseudo-science.
+|
 | fictitious
 | Definition: not real or true, being imaginary or having been fabricated
 | Usage: She pleased guilty to stealing thousands in taxpayer dollars by having a ficticious employee on her payroll.
@@ -285,6 +300,19 @@ Only paranoid can surrive.
 | Usage: The assembly and fabrication of electronic products.
 | Definition: an invention; a lie.
 | Usage: The story was a complete fabrication. [本故事纯属虚构]
+|
+| phantom
+| Definition: a ghost.
+| Usage: a phantom who haunts lonely roads.
+| Usage: a phantom ship [幽灵船]
+| Definition: a figment of the imagination.
+| Usage: he tried to clear the phantoms from his head and grasp reality
+| Definition: denoting a financial arrangement or transaction that has been invented for fraudulent purposes but that does not really exist.
+| Usage: he diverted an estimated $1,500,000 into “phantom” bank accounts.
+|
+| figment
+| Definition: a thing that someone believes to be real but that exists only in their imagination.
+| Usage: it really was Ross and not a figment of her overheated imagination.
 |
 | built-in
 | Definition: forming an integral part of a structure or device.
