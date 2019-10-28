@@ -6,12 +6,27 @@ English Note 13
 | Definition: ask (someone) urgently and fervently to do something; implore; entreat.
 | Usage: Let him go, I beseech you!
 |
+| tacit
+| Definition: understood or implied without being stated. [默许]
+| Usage: Your silence may be taken to mean tacit agreement.
+|
 | connive
 | connier
 | Definition: secretly allow (something considered immoral, illegal, wrong, or harmful) to occur. [默许]
 | Usage: you have it in your power to connive at my escape.
 | Definition: conspire to do something considered immoral, illegal, or harmful.
 | Usage: The government was accused of having connived with the security forces to permit murder.
+|
+| wink
+| Definition: close and open one eye quickly, typically to indicate that something is a joke or a secret or as a signal of affection or greeting.
+| Usage: he winked at Nicole as he passed.
+| Usage: Barney gave him a knowing wink.
+| Definition: (wink at)pretend not to notice (something bad or illegal).
+| Usage: the authorities winked at their illegal trade. [睁一只眼闭一只眼]
+| Phrase: not sleep a wink
+| Definition: not sleep at all.
+| Phrase: as easy as winking
+| Definition: very easy.
 |
 | apprehend
 | apprehension

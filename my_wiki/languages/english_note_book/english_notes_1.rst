@@ -1698,10 +1698,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Definition: shake something lightly up and down or from side to side.
 | Usage: He jiggled his head up and down when he spoke.
 |
-| tacit
-| Definition: understood or implied without being stated. [默许]
-| Usage: Your silence may be taken to mean tacit agreement.
-|
 | jar
 | Definition: send a painful or damaging shock through (something, especially a part of body).
 | Usage: Do you fancy a jar after work?

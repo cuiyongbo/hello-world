@@ -226,3 +226,7 @@ EXAMPLES
 #. delete empty line from txt file
 
     Solution: ``sed -i '/^$/d' links``
+
+#. remove leading spaces per line
+
+    Solution: ``sed -i 's/^[ \t]*//g' sample``

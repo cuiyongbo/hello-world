@@ -140,6 +140,11 @@ English Note 20
 | Definition: hard or difficult work.
 | Usage: the heavy lifting in this business is in designing external distribution systems.
 |
+| mind game
+| Definition: a psychological tactic used to manipulate or intimidate.
+| Usage: I have been playing mind games to get him to invite us.
+| Usage: The particularities of Logan’s mind games are telling.
+
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg
