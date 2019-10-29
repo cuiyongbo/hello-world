@@ -184,6 +184,7 @@ Wild Lives 03
 
    Bison day 11-03
 
+.. image:: images/straw-colored_fruit_bat_in_zambia.jpg
 .. figure:: images/CommonPipistrelle.jpg
 
    Pipistrelle bat
