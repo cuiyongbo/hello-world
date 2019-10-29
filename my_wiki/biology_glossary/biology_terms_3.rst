@@ -199,6 +199,10 @@ Wild Lives 03
 
     Martes [貂]
 
+.. figure:: images/ring-tailed_lemur_in_madagascar.jpg
+
+    World Lemur Day [狐猴]
+
 .. image:: images/Litocranius_walleri_Nigeria.jpg
 .. image:: images/sea_otter_1569497425.jpg
 
