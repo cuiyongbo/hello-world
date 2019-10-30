@@ -271,5 +271,5 @@ English Note 17
 .. image:: images/night_view_1568600334.jpg
 .. image:: images/night_view_1565172200.jpg
 .. image:: images/goodbye_summer_2019.jpg
-.. image:: images/scenery_spot_1571622111.jpg
+.. image:: images/charles_bridge_over_valtava_river.jpg
 .. image:: images/scenery_spot_1571622111.jpg
