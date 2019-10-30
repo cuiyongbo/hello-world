@@ -263,7 +263,9 @@ English Note 6
 | facade
 | Definition: the face of a building, especially the principal front that looks onto a street or open space. [门面]
 | Definition: an outward appearance that is maintained to conceal a less pleasant or creditable reality.
-| Usage: her flawless public facade masked private despair。
+| Usage: her flawless public facade masked private despair.
+| Usage: She managed to maintain a facade of indifference.
+| Usage: Squalor and poverty lay behind the city's glittering facade.
 |
 | fiasco
 | Definition: a thing that is a complete failure, especially in a ludicrous or humiliating way.
