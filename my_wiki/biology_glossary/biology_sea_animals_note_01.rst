@@ -12,6 +12,7 @@ Biology Terms - Sea Animals
 .. image:: images/marine_megafauna.jpg
 .. image:: images/whales-of-the-world-laura-row.jpg
 .. image:: images/ken-hurd-a-collection-of-whales.jpg
+.. image:: images/whale_tail_pure_sea.jpg
 .. image:: images/fin_whale.jpg
 .. figure:: images/harbor-porpoise.jpg
 

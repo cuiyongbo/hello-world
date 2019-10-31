@@ -1,6 +1,6 @@
-************************************************
-find - search for files in a directory hierarchy
-************************************************
+***********
+find Manual
+***********
 
 **DESCRIPTION**
 
@@ -28,11 +28,11 @@ find - search for files in a directory hierarchy
    to signal that any remaining arguments are not options (though ensuring that all start points begin with either './' or
    '/' is generally safer if you use wildcards in the list of start points).
 
-   .. option:: -P     
+   .. option:: -P
 
-      Never follow symbolic links. This is the default behaviour. 
+      Never follow symbolic links. This is the default behaviour.
 
-   .. option:: -L     
+   .. option:: -L
 
       Follow symbolic links.  When find examines or prints information about files, the information used shall
       be taken from the properties of the file to which the link points, not from the link itself (unless it is
@@ -46,14 +46,14 @@ find - search for files in a directory hierarchy
       can cause symbolic links to become broken while find is executing (for example -delete) can give rise  to
       confusing behaviour.  Using -L causes the -lname and -ilname predicates always to return false.
 
-   .. option:: -H     
+   .. option:: -H
 
       Do not follow symbolic links, except while processing the command line arguments. If -H is in effect
       and one of the  paths specified on the command line is a symbolic link to a directory, the contents of
       that directory will be examined (though of course -maxdepth 0 would prevent this).
 
       If more than one of -H, -L and -P is specified, each overrides the others; the last one appearing on
-      the command line takes effect. 
+      the command line takes effect.
 
 
 **EXPRESSION**
@@ -63,7 +63,7 @@ find - search for files in a directory hierarchy
    with the files that were matched. An expression is composed of a sequence
    of things::
 
-      Tests  
+      Tests
          Tests return a true or false value, usually on the basis of some property
          of a file we are considering. The -empty test for example is true only
          when the current file is empty.
@@ -73,18 +73,18 @@ find - search for files in a directory hierarchy
          and return either true or false, usually based on whether or not they are successful.
          The -print action for example prints the name of the current file on the standard output.
 
-       Global options
+      Global options
          Global options affect the operation of tests and actions specified on any part
          of the command line. Global options always return true. The -depth option for
          example makes find traverse the file system in a depth-first order.
 
-       Positional options
+      Positional options
          Positional optiona affect only tests or actions which follow them.
          Positional options always return true. The -regextype option for example
          is positional, specifying the regular expression dialect for regulat
          expressions occurring later on the command line.
 
-       Operators
+      Operators
          Operators join together the other items within the expression.
          They include for example -o (meaning logical OR) and -a (meaning
          logical AND). Where an operator is missing, -a is assumed.
@@ -104,7 +104,7 @@ find - search for files in a directory hierarchy
 
    .. option:: -warn, -nowarn
 
-      Turn warning messages on or off. 
+      Turn warning messages on or off.
 
    **GLOBAL OPTIONS**
 
@@ -113,19 +113,19 @@ find - search for files in a directory hierarchy
       before the first test, positional option or action::
 
       .. option:: -d / -depth
-         
+
          Process each directory's contents before the directory itself.
          The -delete action also implies -depth.
 
       .. option:: -maxdepth levels
-         
+
          Descend at most levels (a non-negative integer) levels of directories
          below the starting-points. -maxdepth 0 means only apply the tests
          and actions to the starting-points themselves.
 
       .. option:: -mount / -xdev
-         
-         Don't descend directories on other filesystems. 
+
+         Don't descend directories on other filesystems.
 
       .. option:: -noleaf
 
@@ -141,7 +141,7 @@ find - search for files in a directory hierarchy
    **TESTS**
 
       .. option:: -fstype type
-         
+
          File is on a filesystem of type *type*. You can use -printf with the %F
          directive to see the types of your filesystems.
 
@@ -199,7 +199,7 @@ find - search for files in a directory hierarchy
             - s: socket
 
       .. option:: -xtype c
-      
+
          The same as -type unless the file is a symbolic link.
          -xtype checks the type of the file that -type does not check.
 
@@ -224,7 +224,7 @@ find - search for files in a directory hierarchy
          command line that you later intend to use with -delete, you should explicitly specify -depth in order to
          avoid later surprises. Because -delete implies -depth, you cannot usefully use -prune and -delete together.
 
-      .. option:: -print 
+      .. option:: -print
 
          True; print the full file name on the standard output, followed by a newline. If you are piping the
          output of find into another program and there is the faintest possibility that the files which you are
@@ -343,9 +343,9 @@ find - search for files in a directory hierarchy
       $ find /run/shm/ | grep -E "idListHashMap|teHashMap"
       /run/shm/idListHashMap
       /run/shm/teHashMap
-      
+
       # display loc in a project
       $ find ti-servers/ -name *.cpp -o -name *.h | xargs wc -l \{\} \;
 
       # batch rename files
-      $ find . -type f -exec mv \{\} \{\}.jpg \; 
+      $ find . -type f -exec mv \{\} \{\}.jpg \;

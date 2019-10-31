@@ -60,7 +60,8 @@ VS 2013
 #. Toggle Bookmark: Ctrl + K, K
 #. Open Performance Tools: Alt + F2
 #. Open Disassembly window: Alt + 8 (stop debugging)
-#. collapse ``if, for, while`` code block: set ``option - C/C++ - View - Outline Statement Blocks`` to ``true``
+#. Collapse ``if, for, while`` code block: set ``option - C/C++ - View - Outline Statement Blocks`` to ``true``
+#. Move between matching "()", "{}", "[]": Ctrl + ]
 
 
 VAssist X

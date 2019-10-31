@@ -1,6 +1,6 @@
-************************
-File Copy & Move Command
-************************
+*********************
+Copy and Move Command
+*********************
 
 #. cp - copy files and directories
 
@@ -16,22 +16,22 @@ File Copy & Move Command
 
         -R, -r, --recursive
         copy directories recursively.
-        If SOURCE designates a directory, cp copies the directory 
-        and the entire subtree connected at that point.  If the SOURCE 
-        ends in a /, the contents of the directory are copied rather 
+        If SOURCE designates a directory, cp copies the directory
+        and the entire subtree connected at that point.  If the SOURCE
+        ends in a /, the contents of the directory are copied rather
         than the directory itself.
 
         -n, --no-clobber
-        do not overwrite an existing file (overrides a 
+        do not overwrite an existing file (overrides a
         previous -i option).
 
         -f, --force
         if an existing destination file cannot be opened,
-        remove it and try again (this option is ignored 
+        remove it and try again (this option is ignored
         when the -n option is also used)
 
         -u, --update
-        copy only when the SOURCE file is newer than the destination 
+        copy only when the SOURCE file is newer than the destination
         file or when the destination file is missing
 
         -l, --link
@@ -48,7 +48,7 @@ File Copy & Move Command
 
 #. mv - move files
 
-    SYNOPSIS: ``mv [OPTION]... SOURCE... DIRECTORY`` 
+    SYNOPSIS: ``mv [OPTION]... SOURCE... DIRECTORY``
 
     Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
 
@@ -59,19 +59,19 @@ File Copy & Move Command
 
         -i
         prompt before overwrite.
-        
+
         -n, --no-clobber
         do not overwrite an existing file.
-        
+
         -f, --force
         do not prompt before overwriting.
-        
+
         -u, --update
         move only when the SOURCE file is newer than the destination
         file or when the destination file is missing
 
 #. mkdir - make directories
-   
+
     SYNOPSIS: ``mkdir [OPTION]... DIRECTORY...``
 
     Create the DIRECTORY(ies), if they do not already exist.
@@ -82,5 +82,5 @@ File Copy & Move Command
         no error if existing, make parent directories as needed
 
 #. remove file with '-' in file name
-   
-   Use ``--``, for example:``rm -- -bar``.
+
+    Use ``--``, for example:``rm -- -bar``.

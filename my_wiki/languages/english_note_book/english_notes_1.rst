@@ -900,6 +900,11 @@ name, also known as surname, with most family members.
 | Definition: denoting something happening or done very quickly, easily, or uncontrollably.
 | Usage: The runaway success of the book.
 |
+| leg
+| Definition: a section or stage of a journey or process.
+| Usage: the return leg of his journey.
+| Definition: (in soccer and other sports) each of two games constituting a round of a competition.
+| Usage: they were defending a 3–0 lead from the first leg.
 
 Lionel Messi scored a hat-trick as runaway leaders Barcelona equalled the La Liga record
 of 38 games unbeaten with victory over Leganes.
@@ -934,7 +939,6 @@ the Stade de France. [法兰西大球场]
 
 Barcelona completed one of the greatest comebacks in football history
 as Paris Saint-Germain choked an incredible night at Camp Nou . [诺坎普]
-
 
 Rakitic was almost impeccable on Wednesday. He completed 74 passes, more than any other player, at a conversion rate of 94.6%,
 with his controlled and sensible passing keepping his team ticking over in the way Busquets has done for so many years.
