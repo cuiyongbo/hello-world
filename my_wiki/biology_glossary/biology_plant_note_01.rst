@@ -65,6 +65,10 @@ Plants Note 01
 
     Crab apple [海棠果]
 
+.. figure:: images/cork_tree_forest.jpg
+
+    Cork Tree [软木橡树，一种被剥皮后仍能存活的树]
+
 #. Sequoia National Park
 
     Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at,
