@@ -8,6 +8,7 @@ Windows Problems
 
         $HOME\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_***\LocalState\Assets
         Batch rename: dir | rename * *.jpg
+        Batch rename: find . -type f -exec mv \{\} \{\}.jpg \;
 
 #. Windows software
 
@@ -18,7 +19,9 @@ Windows Problems
         Nodepad++
         福昕阅读器
         TortoiseGit
+        Visual Studio xxxx
         Chrome
+        360 zip
 
 #. Chrome plugin
 
