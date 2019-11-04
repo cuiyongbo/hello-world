@@ -180,6 +180,7 @@ Wild Lives 03
 
    Buffalo
 
+.. image:: images/bison_at_yellowstone_national_park.jpg
 .. figure:: images/bison_day.jpg
 
    Bison day 11-03
