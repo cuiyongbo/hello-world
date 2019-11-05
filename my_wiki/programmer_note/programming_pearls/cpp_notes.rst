@@ -4,7 +4,7 @@ CPP Notes
 
 .. toctree::
     :titlesonly:
-   
+
     cpp_operator_precedence
     cpp_keyword_note
     cpp_type_tricks
@@ -17,6 +17,11 @@ CPP Notes
     cpp_abstract_class_note
     cpp_atomic_note
     cpp_thread_note
-    cpp_auto_ptr_note
+    cpp_smart_pointer
     cpp_miscellaneous_tricks
     cpp_miscellaneous_tricks_02
+
+
+.. rubric:: Footnotes
+
+.. [#] `libstdc++ testsuites <https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3/testsuite>`_

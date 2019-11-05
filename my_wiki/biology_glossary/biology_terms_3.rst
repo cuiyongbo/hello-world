@@ -206,7 +206,9 @@ Wild Lives 03
     World Lemur Day [狐猴]
 
 .. image:: images/Litocranius_walleri_Nigeria.jpg
-.. image:: images/sea_otter_1569497425.jpg
+.. image:: images/camel_and_herders.jpg
+
+
 
 #. Ontogeny
 

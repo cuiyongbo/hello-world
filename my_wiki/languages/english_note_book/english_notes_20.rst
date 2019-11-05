@@ -144,7 +144,11 @@ English Note 20
 | Definition: a psychological tactic used to manipulate or intimidate.
 | Usage: I have been playing mind games to get him to invite us.
 | Usage: The particularities of Logan’s mind games are telling.
-
+|
+| clique
+| Definition: a small group of people, with shared interests or other features in common, who spend time together and do not readily allow others to join them.
+| Usage: The country is run by a small clique of wealthy families.
+| Usage: Anna Ford recently hits out at some male clique which she believe holds back women in TV.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

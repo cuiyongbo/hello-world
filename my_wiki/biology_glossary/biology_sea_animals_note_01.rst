@@ -43,3 +43,5 @@ Biology Terms - Sea Animals
 .. figure:: images/octopus_1570672289.jpg
 
     Octopus [章鱼]
+
+.. image:: images/sea_otter_1569497425.jpg
