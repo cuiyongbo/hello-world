@@ -69,6 +69,10 @@ Plants Note 01
 
     Cork Tree [软木橡树，一种被剥皮后仍能存活的树]
 
+.. figure:: images/saffron_bloom_in_spain.jpg
+
+    Saffron [藏红花]
+
 #. Sequoia National Park
 
     Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at,

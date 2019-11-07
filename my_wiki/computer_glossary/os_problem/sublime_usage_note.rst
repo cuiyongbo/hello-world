@@ -74,3 +74,9 @@ Sublime Text Usage
     "default_line_ending": "unix",
     "auto_find_in_selection": true,
     "update_check": false
+
+
+**Plugin Collection**
+
+#. Pretty Json
+#. Sublime-rst-complement

@@ -19,9 +19,10 @@ Windows Problems
         Nodepad++
         福昕阅读器
         TortoiseGit
-        Visual Studio xxxx
+        Visual Studio 2019
         Chrome
         360 zip
+        Postman
 
 #. Chrome plugin
 

@@ -337,6 +337,25 @@ English Note 9
 | Definition: (especially of language) hard or impossible to understand.
 | Usage: technical jargon that was opaque to her.
 |
+| translucent
+| Definition: (of a substance) allowing light, but not detailed shapes, to pass through; semitransparent.
+| Usage: fry until the onions become translucent.
+| Usage: She had fair hair, blue eye and translucent skin.
+| Usage: The sky was changing from translucent blue to thicker grey.
+|
+| transparent
+| Definition: (of a material or article) allowing light to pass through so that objects behind can be distinctly seen.
+| Usage: transparent blue water.
+| Definition: easy to perceive or detect.
+| Usage: the residents will see through any transparent attempt to buy their votes.
+| Usage: the meaning of the poem is by no means transparent.
+| Definition: having thoughts, feelings, or motives that are easily perceived.
+| Usage: you'd be no good at poker—you're too transparent.
+| Definition: (of an organization or its activities) open to public scrutiny.
+| Usage: if you had transparent government procurement, corruption would go away.
+| Definition: (computing) (of a process or interface) functioning without the user being aware of its presence.
+| Usage: the protocol details is totally transparent to users.
+|
 | contrived
 | Definition: deliberately created rather than arising naturally or spontaneously.
 | Definition: created or arranged in a way that seems artificial and unrealistic.
