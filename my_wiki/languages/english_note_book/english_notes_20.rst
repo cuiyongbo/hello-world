@@ -149,6 +149,21 @@ English Note 20
 | Definition: a small group of people, with shared interests or other features in common, who spend time together and do not readily allow others to join them.
 | Usage: The country is run by a small clique of wealthy families.
 | Usage: Anna Ford recently hits out at some male clique which she believe holds back women in TV.
+|
+| dormant
+| Definition: (of an animal) having normal physical functions suspended or slowed down for a period of time; in or as if in a deep sleep.
+| Usage: dormant butterflies. [休眠, 蛰伏]
+| Definition: (of a volcano) temporarily inactive. [休眠火山]
+| Definition: (of a disease) causing no symptoms but not cured and liable to recur.
+| Usage: the disease may remain dormant and undetected until transmitted to other fish.
+| Definition: temporarily inactive or inoperative.
+| Usage: the event evoked memories that she would rather had lain dormant.
+|
+| bootcamp
+| Definition: a military training camp for new recruits, with strict discipline.
+| Definition: a prison for youthful offenders, run on military lines. [禁闭室]
+| Definition: a short, intensive, and rigorous course of training. [训练营]
+| Usage: a grueling, late-summer boot camp for would-be football players
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg
