@@ -15,20 +15,20 @@ Command line instructions
 
     .. code-block:: sh
 
-        git clone git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
+        git clone git@XXX/**.git
         cd past-ti-fetcher
         touch README.md
         git add README.md
         git commit -m "add README"
         git push -u origin master
 
-#. Existing folder
+#. Existing project
 
     .. code-block:: sh
 
         cd existing_folder
         git init
-        git remote add origin git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
+        git remote add origin git@XXX/**.git
         git add .
         git commit -m "Initial commit"
         git push -u origin master
@@ -39,7 +39,7 @@ Command line instructions
 
         cd existing_repo
         git remote rename origin old-origin
-        git remote set-url origin git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
+        git remote set-url origin git@XXX/**.git
         git push -u origin --all
         git push -u origin --tags
 
@@ -47,7 +47,13 @@ Command line instructions
 
     .. code-block:: sh
 
-        $ git remote set-url --add origin git@gitlab.mapbar.com:cuiyb/past-ti-fetcher.git
+        # first solution
+        $ git remote rm origin # you may need remove `origin` configuration in global gitconfig
+        $ git remote add origin git@XXX/**.git
+
+        # second solution, works but no remote branch in git log
+        $ git remote set-url --add origin git@XXX/**.git
+
         $ git push -u origin master
 
 #. Git to track the commit history of a file
