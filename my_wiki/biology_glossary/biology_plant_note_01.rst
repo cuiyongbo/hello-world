@@ -73,6 +73,10 @@ Plants Note 01
 
     Saffron [藏红花]
 
+.. image:: images/silver_birch_woodland.jpg
+.. image:: images/wild_flowers_1573379766.jpg
+.. image:: images/frost_on_blueberry.jpg
+
 #. Sequoia National Park
 
     Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at,
