@@ -32,7 +32,7 @@ English Note 20
 | let the cat out of the bag
 | Definition: to tell a secret carelessly or by mistake
 | Usage: I wanted it to be a surprise, but my sister let the cat out of the bag.
-| like a ˌcat on hot bricks [局促不安；如坐针毡；像热锅上的蚂蚁]
+| like a cat on hot bricks [局促不安；如坐针毡；像热锅上的蚂蚁]
 | Definition: very nervous
 | Usage: She was like a cat on hot bricks before her driving test.
 | like the cat that got the cream [踌躇满志]
@@ -163,7 +163,20 @@ English Note 20
 | Definition: a military training camp for new recruits, with strict discipline.
 | Definition: a prison for youthful offenders, run on military lines. [禁闭室]
 | Definition: a short, intensive, and rigorous course of training. [训练营]
-| Usage: a grueling, late-summer boot camp for would-be football players
+| Usage: a grueling, late-summer boot camp for would-be football players.
+|
+| landmark [地标]
+| Definition: an object or feature of a landscape or town that is easily seen and recognized from a distance, especially one that enables someone to establish their location.
+| Usage: The ambassador is a Los Angeles landmark.
+| Definition: an event, discovery, or change marking an important stage or turning point in something.
+| Usage: the birth of a child is an important landmark in the lives of all concerned
+| Definition: the boundary of an area of land, or an object marking this.
+|
+| lousy
+| Definition: very poor or bad; disgusting.
+| Usage: the service is usually lousy
+| Definition: ill; in poor physical condition.
+| Usage: she felt lousy.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

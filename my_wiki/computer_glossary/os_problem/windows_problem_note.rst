@@ -14,12 +14,12 @@ Windows Problems
 
     .. code-block:: none
 
-        Zeal
+        Zeal (similar to Dash)
         Sublime text
         Nodepad++
         福昕阅读器
-        TortoiseGit
-        Visual Studio 2019
+        TortoiseGit (need git for windows of course)
+        Visual Studio 2019 (well, still need to install a bunch of dependencies)
         Chrome
         360 zip
         Postman

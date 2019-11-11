@@ -117,3 +117,15 @@ Computer Terminology 3
     Other examples include the path traced by a molecule as it travels in a liquid or a gas, the search
     path of a foraging animal, the price of a fluctuating stock and the financial status of a gambler:
     all can be approximated by random walk models, even though they may not be truly random in reality.
+
+#. RPC
+
+    In distributed computing, a :abbr:`RPC (remote procedure call)` is when a computer program causes a procedure
+    to execute in a different address space (commonly on another computer on a shared network), which is coded
+    as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the
+    remote interaction. That is, the programmer writes essentially the same code whether the procedure is local
+    to the executing program, or remote. In the object-oriented programming paradigm, RPC calls are represented
+    by :abbr:`RMI (remote method invocation)`. The RPC model implies a level of location transparency, namely that
+    calling procedures is largely the same whether it is local or remote, but usually they are not identical,
+    so local calls can be distinguished from remote calls. Remote calls are usually orders of magnitude slower
+    and less reliable than local calls, so distinguishing them is important.
