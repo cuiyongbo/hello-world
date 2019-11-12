@@ -177,6 +177,10 @@ English Note 20
 | Usage: the service is usually lousy
 | Definition: ill; in poor physical condition.
 | Usage: she felt lousy.
+|
+| hedgehog [刺猬]
+| Usage: An irritable man is like a hedgehog rolled up the wrong way, tormenting himself with his own prickles
+|
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

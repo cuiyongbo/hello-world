@@ -7,7 +7,7 @@ Algorithm analysis and design
    Taken from *Introduction to algorithms*
 
 #. :math:`\Theta \text{-notation}` - asymptotically tight bound
-   
+
    .. math::
 
       \Theta(g(n)) = \{0 \le c_1g(n) \le f(n) \le c_2g(n) \}
@@ -20,18 +20,18 @@ Algorithm analysis and design
 
    .. note::
 
-      O-notation is often used to bound the worse-case running 
+      O-notation is often used to bound the worse-case running
       time of an algorithm.
 
 #. :math:`\Omega \text{-notation}` - asymptotic lower bound
-   
+
    .. math::
 
       \Omega(g(n)) = \{0 \le cg(n) \le f(n) \}
 
 #. Theorem 3.1
-   
-   For any two functions f(n) and g(n), we have :math:`f(n)= \Theta(g(n))` 
+
+   For any two functions f(n) and g(n), we have :math:`f(n)= \Theta(g(n))`
    if and only if :math:`f(n)=O(g(n))` and :math:`f(n)=\Omega(g(n)).`
 
 #. :math:`o \text{-notation}` - upper bound
@@ -43,8 +43,8 @@ Algorithm analysis and design
    .. note::
 
       The main difference between O-notation and o-notation is that
-      in f(n)=O(g(n)), the bound :math:`0 \le f(n) \le cg(n)` holds
-      true for some constant c > 0. but in f(n)=o(g(n)), the bound 
+      in :math:`f(n)=O(g(n))`, the bound :math:`0 \le f(n) \le cg(n)` holds
+      true for some constant c > 0. but in :math:`f(n)=o(g(n))`, the bound
       :math:`0 \le f(n) \lt cg(n)` holds true for all constants c > 0.
       that is, :math:`\lim \limits_{n \to \infty} \frac{f(n)}{g(n)} = 0.`
 
@@ -61,7 +61,7 @@ Algorithm analysis and design
       implies that :math:`\lim \limits_{n \to \infty} \frac{f(n)}{g(n)} = \infty.`
 
 #. Randomized algorithms - hiring problem
-   
+
    .. code-block:: none
 
       Hire-assistant(n)
@@ -82,7 +82,7 @@ Algorithm analysis and design
                best = i
 
 #. Randomized algorithms - randomly permuting arrays
-   
+
    .. code-block:: none
 
       Permute-by-sorting(A)
@@ -91,4 +91,4 @@ Algorithm analysis and design
          for i=1 to n
             P[i] = Random(1, n^3)
          sort A, using P as sorting keys
-         
+

@@ -45,6 +45,10 @@ Wild Lives 03
 
     Rhinoceros
 
+.. figure:: images/hedgehog_1573539034.jpg
+
+    Hedgehog [刺猬]
+
 .. image:: images/pangolin_02.jpg
 .. figure:: images/pangolin.jpg
 

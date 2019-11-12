@@ -6,11 +6,11 @@ Breadth-first search
 .. code-block:: none
     :caption: Taken from *Introduction to Algorithms*
 
-    # The breadth-first-search procedure BFS below assumes 
-    # that the input graph G = (V, E) is represented using 
-    # adjacency lists. and we can refer to the adjacency list 
+    # The breadth-first-search procedure BFS below assumes
+    # that the input graph G = (V, E) is represented using
+    # adjacency lists. and we can refer to the adjacency list
     # of a vetex u in G.V with `G.Adj[u]`.
-    # referer to Ch22.1 representations of Graph for further information.
+    # referer to `Ch22.1 representations of Graph` for further information.
 
     # O(V+E)
     BFS(G, s)
@@ -22,7 +22,7 @@ Breadth-first search
         s.d = 0
         initial Q to empty # a first-in, first-out queue
         Enqueue(Q, s)
-        # invariant Q consists of the set of gray vertice
+        # invariant: Q consists of the set of gray vertice
         while not isEmpty(Q):
             u = Dequeue(Q)
             for each v in G.Adj[u]
@@ -41,3 +41,7 @@ Breadth-first search
         else
             PrintPath(G, s, v.p)
             print v
+
+#. leetcode exercise
+
+    - Is Graph Bipartite

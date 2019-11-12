@@ -51,8 +51,8 @@ Optimal structure for a shortest path: **Subpaths of shortest paths are shortest
                 Relax(u, v, w)
         for each edge (u, v) in G.E
             if v.d > u.d + w(u, v)
-                return False // negative weight cycle detected
-        return True
+                return false // negative weight cycle detected
+        return true
 
 .. code-block:: none
 
@@ -79,7 +79,7 @@ Optimal structure for a shortest path: **Subpaths of shortest paths are shortest
             u = Extract-Min(Q)
             S.union(u)
             for each vertex v in G.Adj[u]
-                Relax(u, v, w) // implicity call Decrease-Key if v.d is updated
+                Relax(u, v, w) // implicitly call Decrease-Key if v.d is updated
 
 #. Shortest-path-algorithm
 
@@ -89,3 +89,9 @@ Optimal structure for a shortest path: **Subpaths of shortest paths are shortest
     - Floyd-Warshall algorithm
     - Johnson Algorithm
     - Contraction Hierarchies algorithm
+
+
+#. leetcode exercise
+
+   - Cheapest Flights Within K Stops
+   - Swim in rising water

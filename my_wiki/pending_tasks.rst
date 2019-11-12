@@ -4,16 +4,14 @@ Pending tasks
 
 **Now or Never**
 
+#. Fibonacci heap
+#. union find and disjoint sets
 #. Computer graphics algorithms [#geomatric_alg]_
 #. Unix Network Programming [#unix_network_programming]_
 #. Apple Open Soure [#apple_opensource]_
-#. https://github.com/alxn/ppearls.git (programming pearls solutions)
-#. https://github.com/banool/apue-exercises.git (Advanced Programming Environment solution)
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. matplotlib to draw the cover of murphy's machine learning
 #. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
-
-#. Chrome plugin: https://github.com/crimx/ext-saladict
 
 #. Search system for the WIKI docs
 
