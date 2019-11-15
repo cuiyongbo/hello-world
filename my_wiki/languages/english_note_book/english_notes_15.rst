@@ -276,7 +276,9 @@ English Note 15
 
 .. image:: images/mayan_pyramid_1569289731.jpg
 .. image:: images/snowberger.jpg
+.. image:: images/ride_the_wave.jpg
 .. image:: images/surfing_1569398049.jpg
+.. image:: images/surfing_1573696306.jpg
 .. image:: images/scenery_spot_1569491228.jpg
 .. image:: images/falling_for_riojia.jpg
 .. image:: images/great_canyon_of_the_east.jpg

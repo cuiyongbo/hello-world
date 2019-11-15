@@ -257,6 +257,7 @@ English Note 17
 .. image:: images/scenary_spot_1563868227.jpg
 .. image:: images/scenary_spot_1564716345.jpg
 .. image:: images/scenary_spot_1565175675.jpg
+.. image:: images/scenery_spot_1573817966.jpg
 .. image:: images/hawaii_volcanoes.jpg
 .. image:: images/volcano_eruption_1566891322.jpg
 .. image:: images/crummock_water_lake_district.jpg
@@ -272,4 +273,3 @@ English Note 17
 .. image:: images/night_view_1565172200.jpg
 .. image:: images/goodbye_summer_2019.jpg
 .. image:: images/charles_bridge_over_valtava_river.jpg
-.. image:: images/scenery_spot_1571622111.jpg

@@ -309,6 +309,7 @@ English Note 16
 | Definition: something, especially a clue, that is or is intended to be misleading or distracting.
 | Usage: the book is fast-paced, exciting, and full of red herrings.
 
+.. image:: images/scenery_spot_1571622111.jpg
 .. image:: images/desert_art_popup_1566782396.jpg
 .. image:: images/harvest_time_1566782396.jpg
 .. figure:: images/circular_agriculture_fields.jpg

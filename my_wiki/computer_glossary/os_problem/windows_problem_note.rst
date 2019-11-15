@@ -234,7 +234,11 @@ Windows Problems
 
 #. Windows terminal 中 VIM 字体和系统不一致
 
-   Solution: Install ``Microsoft YaHei Mono.ttf`` font
+    Solution: Install ``Microsoft YaHei Mono.ttf`` font
+
+#. ssh 登录免密码
+
+    Solution: ssh-copy-id -i path/to/.ssh/id_rsa.pub username@hostname
 
 .. rubric:: Footnotes
 
