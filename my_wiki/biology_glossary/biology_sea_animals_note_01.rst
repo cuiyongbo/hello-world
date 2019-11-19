@@ -45,3 +45,4 @@ Biology Terms - Sea Animals
     Octopus [章鱼]
 
 .. image:: images/sea_otter_1569497425.jpg
+.. image:: images/sea_cows_1574128468.jpg

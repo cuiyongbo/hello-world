@@ -341,9 +341,6 @@ English Note 16
 .. image:: images/scenery_spot_1567403844.jpg
 .. image:: images/summer_beach_1566302344.jpg
 .. image:: images/summer_beach_1567250994.jpg
-.. image:: images/camp_alone_river_1566302344.jpg
-.. image:: images/bieyoudongtian_1566473048.jpg
-.. image:: images/castillo_del_morro.jpeg
 .. image:: images/aerial_view_of_rainforest_1568277649.jpg
 .. image:: images/milky_way_1568277649.jpg
 .. image:: images/scenery_spot_1568286615.jpg
@@ -353,6 +350,7 @@ English Note 16
 .. image:: images/castle_reflection_1568974359.jpg
 .. image:: images/scenery_spot_1568712042.jpg
 .. image:: images/scenery_spot_1568864223.jpg
+.. image:: images/yunwuliaorao.jpg
 .. image:: images/scenary_spot_1565349419.jpg
 .. image:: images/mount_fanjing.jpg
 

@@ -252,12 +252,7 @@ English Note 17
 .. image:: images/boat_on_the_beach.jpg
 .. image:: images/slope_observator.jpg
 .. image:: images/forest_overview.jpg
-.. image:: images/cypress_tunnel.jpg
 .. image:: images/sheep_flock.jpg
-.. image:: images/scenary_spot_1563868227.jpg
-.. image:: images/scenary_spot_1564716345.jpg
-.. image:: images/scenary_spot_1565175675.jpg
-.. image:: images/scenery_spot_1573817966.jpg
 .. image:: images/hawaii_volcanoes.jpg
 .. image:: images/volcano_eruption_1566891322.jpg
 .. image:: images/crummock_water_lake_district.jpg
@@ -273,3 +268,11 @@ English Note 17
 .. image:: images/night_view_1565172200.jpg
 .. image:: images/goodbye_summer_2019.jpg
 .. image:: images/charles_bridge_over_valtava_river.jpg
+.. image:: images/scenary_spot_1563868227.jpg
+.. image:: images/scenary_spot_1564716345.jpg
+.. image:: images/scenary_spot_1565175675.jpg
+.. image:: images/scenery_spot_1573817966.jpg
+.. image:: images/camp_alone_river_1566302344.jpg
+.. image:: images/bieyoudongtian_1566473048.jpg
+.. image:: images/castillo_del_morro.jpeg
+.. image:: images/canvas_on_the_church.jpg
