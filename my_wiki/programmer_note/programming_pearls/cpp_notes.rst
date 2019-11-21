@@ -22,6 +22,18 @@ CPP Notes
     cpp_miscellaneous_tricks_02
 
 
+#. Mathlib collection
+
+   - Eigen[eigen]_ is a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
+
+#. Frequently used data structure
+
+   - A type-safe generic hashmap[#c_hashmap]_ implementation for C.
+
 .. rubric:: Footnotes
 
 .. [#] `libstdc++ testsuites <https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3/testsuite>`_
+.. [#eigen] `Eigen <http://eigen.tuxfamily.org/index.php?title=Main_Page>`_
+.. [#c_hashmap] `rxi-map <https://github.com/rxi/map>`_
+
+

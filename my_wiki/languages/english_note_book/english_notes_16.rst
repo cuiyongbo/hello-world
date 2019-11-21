@@ -353,4 +353,6 @@ English Note 16
 .. image:: images/yunwuliaorao.jpg
 .. image:: images/scenary_spot_1565349419.jpg
 .. image:: images/mount_fanjing.jpg
+.. image:: images/ldyllic_view_1574334178.jpg
+.. image:: images/autumn_view_1574334178.jpg
 

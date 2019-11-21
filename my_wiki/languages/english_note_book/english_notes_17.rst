@@ -276,3 +276,4 @@ English Note 17
 .. image:: images/bieyoudongtian_1566473048.jpg
 .. image:: images/castillo_del_morro.jpeg
 .. image:: images/canvas_on_the_church.jpg
+.. image:: images/la_digue_bridge.jpg

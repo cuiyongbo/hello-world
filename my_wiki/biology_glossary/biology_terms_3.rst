@@ -112,6 +112,7 @@ Wild Lives 03
 
    The Great Rift Valley [东非大裂谷]
 
+.. image:: images/baboon_atop_the_roof_of_africa.jpg
 .. image:: images/gelada_baboon.jpg
 .. figure:: images/baboon.jpg
 
