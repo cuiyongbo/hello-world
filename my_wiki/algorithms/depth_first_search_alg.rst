@@ -45,7 +45,15 @@ of vertices u and v in C , we have :math:`u \rightleftharpoons v`.
     Output the vertices of each tree in the depth-first forest as
         a separate strongly connected component
 
+#. Tarjan's algorithm
+
+    Tarjan's algorithm is a procedure for finding SCCs of a directed graph.
+    A SCC is a maximum set of vertices, in which exists at least one oriented
+    path between every two vertices. Tarjan's algorithm is based on DFS.
+    The vertices are indexed as they are traversed by DFS procedure.
 
 #. Leetcode exercises
 
     - Friend circles
+    - Smallest String With Swaps (Connected Component)
+    - Critical Connections in a Network (SCC)
