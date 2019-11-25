@@ -41,3 +41,4 @@ Biology terms - Insects
     Praying mantis [螳螂] man-eater
 
 .. image:: images/wing_of_dragon_fly.jpg
+.. image:: images/migrating_monarch_butterflies.jpg

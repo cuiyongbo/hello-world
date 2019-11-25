@@ -77,6 +77,10 @@ Plants Note 01
 .. image:: images/wild_flowers_1573379766.jpg
 .. image:: images/frost_on_blueberry.jpg
 
+.. image:: images/cypress_tunnel.jpg
+.. image:: images/atchafalya_cypress_swamp.jpg
+.. image:: images/queen_victoria_agrave.jpg
+
 #. Sequoia National Park
 
     Sequoia National Park was founded on this day in 1890, and while the park’s 128 years is nothing to sneeze at,
