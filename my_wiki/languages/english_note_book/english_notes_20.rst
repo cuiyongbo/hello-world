@@ -181,6 +181,12 @@ English Note 20
 | hedgehog [刺猬]
 | Usage: An irritable man is like a hedgehog rolled up the wrong way, tormenting himself with his own prickles
 |
+| repast
+| Definition: a sumptuous meal
+|
+| sumptuous
+| Definition: splendid and expensive-looking.
+| Usage: the banquet was a sumptuous, luxurious meal.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

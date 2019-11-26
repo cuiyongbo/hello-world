@@ -45,3 +45,4 @@ Breadth-first search
 #. leetcode exercise
 
     - Is Graph Bipartite
+    - As Far from Land as Possible
