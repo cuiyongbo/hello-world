@@ -187,3 +187,9 @@ Command line instructions
         $ git for-each-ref --format='%(authorname) %09 %(refname)' | grep origin | grep cuiyb
         cuiyb    refs/remotes/origin/extract_route_result_logic
         cuiyb    refs/remotes/origin/fix_navicore-4025
+
+#. Git to view changes of a specific commit
+
+    .. code-block:: sh
+
+        git diff COMMIT_HASH~ COMMIT_HASH

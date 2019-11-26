@@ -23,6 +23,7 @@ Windows Problems
         Chrome
         360 zip
         Postman
+        ScreenToGif
 
 #. Chrome plugin
 
