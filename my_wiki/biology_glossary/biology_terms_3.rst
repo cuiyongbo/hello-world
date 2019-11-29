@@ -186,6 +186,7 @@ Wild Lives 03
 
    Buffalo
 
+.. image:: images/highland_cattle_in_netherlands_national_park.jpg
 .. image:: images/bison_at_yellowstone_national_park.jpg
 .. figure:: images/bison_day.jpg
 
@@ -213,8 +214,7 @@ Wild Lives 03
 
 .. image:: images/Litocranius_walleri_Nigeria.jpg
 .. image:: images/camel_and_herders.jpg
-
-
+.. image:: images/wild_turkey_in_repose.jpg
 
 #. Ontogeny
 

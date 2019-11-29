@@ -355,4 +355,5 @@ English Note 16
 .. image:: images/mount_fanjing.jpg
 .. image:: images/ldyllic_view_1574334178.jpg
 .. image:: images/autumn_view_1574334178.jpg
+.. image:: images/aspen_hiking.jpg
 
