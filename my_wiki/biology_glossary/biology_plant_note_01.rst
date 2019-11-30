@@ -1,6 +1,6 @@
-**************
-Plants Note 01
-**************
+**********************
+Biology Terms - Plants
+**********************
 
 .. image:: images/tree_canopy.jpg
 .. image:: images/forest_overview.jpg
