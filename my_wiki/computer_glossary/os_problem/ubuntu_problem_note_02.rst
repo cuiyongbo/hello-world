@@ -42,3 +42,8 @@ Ubuntu problem note 02
         sudo apt update
         sudo apt install libboost-dev
         sudo apt install libboost-all-dev
+
+#. Ubuntu to set a short password
+
+    Solution: ``sudo passwd username``
+
