@@ -68,3 +68,15 @@ Ubuntu problem note 02
     benchmarks. Because writing to this file causes the benefits of caching to be lost,
     it can degrade overall system performance. Because writing to this file is a nondestructive
     operation and dirty objects are not freeable, the user should run sync(1) first.
+
+#. Ubuntu to install sogou input
+
+    .. code-block:: sh
+
+        sudo apt install fcitx
+
+        # go to download installation package
+
+        sudo dpkg -i deb_package_name
+
+        sudo apt install -f # fix broken dependencies
