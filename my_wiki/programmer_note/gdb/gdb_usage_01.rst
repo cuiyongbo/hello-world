@@ -3,19 +3,19 @@ Gdb Tricks 01
 *************
 
 #. select executable file
-   
+
    .. code-block:: sh
 
       file executableName
 
-   .. note:: 
+   .. note::
 
       :command:`file` without arguments discards symbol table
       of current executable.
 
 
 #. set / show args
-   
+
    Lauch debugging with multi-arguments: ``gdb --args executable args``.
 
    Show the arguments to give your program when it is started: ``show args``.
@@ -52,32 +52,26 @@ Gdb Tricks 01
       $_probe_arg7 = <error: No probe at PC 0x0000000100000f1a>
       $_probe_arg6 = <error: No probe at PC 0x0000000100000f1a>
       $_probe_arg5 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg4 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg3 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg2 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg1 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg0 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_argc = <error: No probe at PC 0x0000000100000f1a>
       $_siginfo = void
       $_exception = <error: not stopped at a C++ exception catchpoint>
       $_sdata = void
 
 
 #. Launch gdb without front materials
-   
+
    .. code-block:: sh
 
       gdb --silent
 
 
 #. Execute shell command
-   
+
    .. code-block:: sh
 
       shell command args
 
 #. show fields of a struct.
- 
+
    .. code-block:: sh
       :caption: Solution
 
@@ -89,21 +83,21 @@ Gdb Tricks 01
       or "enum ENUM-TAG") or an expression.
       The selected stack frame's lexical context is used to look up the name.
       Contrary to "whatis", "ptype" always unrolls any typedefs.
-   
+
       Available FLAGS are:
         /r    print in "raw" form; do not substitute typedefs
         /m    do not print methods defined in a class
         /M    print methods defined in a class
         /t    do not print typedefs defined in a class
         /T    print typedefs defined in a class
-   
+
       (gdb) ptype object
       type = struct {
           json_t json;
           hashtable_t hashtable;
           int visited;
       } *
-   
+
       (gdb) print object->json
       $3 = {type = JSON_OBJECT, refcount = 1}
       (gdb) ptype json_t
@@ -113,7 +107,7 @@ Gdb Tricks 01
       }
 
 #. Force to call a function or return from a function.
-   
+
    .. code-block:: sh
 
       (gdb) help return
@@ -121,7 +115,7 @@ Gdb Tricks 01
       Control remains in the debugger, but when you continue
       execution will resume in the frame above the one now selected.
       If an argument is given, it is an expression for the value to return.
-   
+
       (gdb) help call
       Call a function in the program.
       The argument is the function name and arguments, in the notation of the
@@ -130,14 +124,14 @@ Gdb Tricks 01
 
 
 #. print and x command
-   
+
    .. code-block:: sh
 
       (gdb) help print
       Print value of expression EXP.
       Variables accessible are those of the lexical environment of the selected
       stack frame, plus all those whose scope is global or an entire file.
-      
+
       $NUM gets previous value number NUM.  $ and $$ are the last two values.
       $$NUM refers to NUM'th value back from the last one.
       Names starting with $ refer to registers (with the values they would have
@@ -145,14 +139,14 @@ Gdb Tricks 01
       all registers saved by frames farther in) or else to debugger
       "convenience" variables (any such name not a known register).
       Use assignment expressions to give values to convenience variables.
-      
+
       {TYPE}ADREXP refers to a datum of data type TYPE, located at address ADREXP.
       @ is a binary operator for treating consecutive data objects
       anywhere in memory as an array.  FOO@NUM gives an array whose first
       element is FOO, whose second element is stored in the space following
       where FOO is stored, etc.  FOO must be an expression whose value
       resides in memory.
-      
+
       EXP may be preceded with /FMT, where FMT is a format letter
       but no count or size letter (see "x" command).
 
@@ -165,11 +159,11 @@ Gdb Tricks 01
       Format letters are o(octal), x(hex), d(decimal), u(unsigned decimal),
         t(binary), f(float), a(address), i(instruction), c(char), s(string)
         and z(hex, zero padded on the left).
-      Size letters are b(byte), h(halfword, 2 bytes), w(word, 4 bytes), 
-      g(giant, 8 bytes).The specified number of objects of the specified 
-      size are printed according to the format.  If a negative number is 
+      Size letters are b(byte), h(halfword, 2 bytes), w(word, 4 bytes),
+      g(giant, 8 bytes).The specified number of objects of the specified
+      size are printed according to the format.  If a negative number is
       specified, memory is examined backward from the address.
-      
+
       Defaults for format and size letters are those previously used.
       Default count is 1.  Default address is following last thing printed
       with this command or "print".
@@ -191,12 +185,12 @@ Gdb Tricks 01
       (gdb) l
       8     scanf("%d", &input);
       9     printf("You input %d.\n", input);
-      10 
+      10
       11    int a[5];
       12    int i=0;
       13    for(; i<5; i++)
       14       a[i] = i;
-      15 
+      15
       16    return 0;
       17 }
 
@@ -206,9 +200,9 @@ Gdb Tricks 01
       $8 = 9
       (gdb) print input
       $9 = 9
-      
+
       # view struct
-         
+
       (gdb) ptype p
       type = struct Node {
           int data;
@@ -225,7 +219,7 @@ Gdb Tricks 01
       1  #include <stdio.h>
       2  #include <stdlib.h>
       3  #include <string.h>
-      4  
+      4
       5  int main()
       6  {
       7      const int n = 5;
@@ -237,7 +231,7 @@ Gdb Tricks 01
       13     free(a);
       14     return 0;
       15 }
-      16 
+      16
       (gdb) b 13
       Breakpoint 1 at 0x4005eb: file test.c, line 13.
       (gdb) r
@@ -254,15 +248,15 @@ Gdb Tricks 01
       $4 = {0, 1, 2, 3, 4}
 
       # view struct array
-      
+
       (gdb) l
       5  typedef struct Node
       6  {
       7      int key;
       8      int value;
       9  } Node;
-      10 
-      11 
+      10
+      11
       12 int main()
       13 {
       14     const int n = 5;
@@ -285,18 +279,18 @@ Gdb Tricks 01
       (gdb) set $i=0
       (gdb) p nodes[$i++].key
       $3 = 0
-      (gdb) 
+      (gdb)
       $4 = 1
-      (gdb) 
+      (gdb)
       $5 = 2
-      (gdb) 
+      (gdb)
       $6 = 3
-      (gdb) 
+      (gdb)
       $7 = 4
 
 
 #. list command
-   
+
    .. code-block:: sh
 
       (gdb) help list
@@ -314,7 +308,7 @@ Gdb Tricks 01
         *ADDRESS, to list around the line containing that address.
       With two args, if one is empty, it stands for ten lines away from
       the other arg.
-   
+
       By default, when a single location is given, display ten lines.
       This can be changed using "set listsize", and the current value
       can be shown using "show listsize".
@@ -325,7 +319,7 @@ Gdb Tricks 01
       (gdb) show listsize
       Number of source lines gdb will list by default is 5.
       (gdb) l 5
-      3  
+      3
       4  int main()
       5  {
       6     int input = 0;

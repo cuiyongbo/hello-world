@@ -187,6 +187,12 @@ English Note 20
 | sumptuous
 | Definition: splendid and expensive-looking.
 | Usage: the banquet was a sumptuous, luxurious meal.
+|
+| repose
+| Definition: a state of rest, sleep, or tranquility.
+| Usage: in repose her face looked relaxed.
+| Definition: composure.
+| Usage: he had lost none of his grace or his repose.
 
 .. image:: images/father-giving-son-piggyback-ride.jpg
 .. figure:: images/mother-giving-daughter-piggyback-ride.jpg

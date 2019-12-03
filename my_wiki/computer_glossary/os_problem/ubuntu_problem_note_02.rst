@@ -47,3 +47,24 @@ Ubuntu problem note 02
 
     Solution: ``sudo passwd username``
 
+#. Ubuntu to free cached memory manually
+
+    .. code-block:: sh
+
+        # free pagecache
+        sync; sudo echo 1 > /proc/sys/vm/drop_caches
+
+        # free dentries and inodes
+        sync; sudo echo 2 > /proc/sys/vm/drop_caches
+
+        # free pagecache, dentries and inodes
+        sync; sudo echo 3 > /proc/sys/vm/drop_caches
+
+    /proc/sys/vm/drop_caches (since Linux 2.6.16)
+
+    Writing to this file causes the kernel to drop clean caches, dentries,
+    and inodes from memory, causing that memory to become free. This can be
+    useful for memory management testing and performing reproducible filesystem
+    benchmarks. Because writing to this file causes the benefits of caching to be lost,
+    it can degrade overall system performance. Because writing to this file is a nondestructive
+    operation and dirty objects are not freeable, the user should run sync(1) first.

@@ -348,6 +348,7 @@ English Note 16
 .. image:: images/trillium_lake.jpg
 .. image:: images/castle_reflection_1568620072.jpg
 .. image:: images/castle_reflection_1568974359.jpg
+.. image:: images/castle_reflection_1575374849.jpg
 .. image:: images/scenery_spot_1568712042.jpg
 .. image:: images/scenery_spot_1568864223.jpg
 .. image:: images/yunwuliaorao.jpg
@@ -355,5 +356,9 @@ English Note 16
 .. image:: images/mount_fanjing.jpg
 .. image:: images/ldyllic_view_1574334178.jpg
 .. image:: images/autumn_view_1574334178.jpg
+.. image:: images/fall_color_sweep_across_the_west.jpg
+.. image:: images/falling_for_riojia.jpg
+.. image:: images/wild_alaska_winter.jpg
 .. image:: images/aspen_hiking.jpg
+.. image:: images/rock_1575374849.jpg
 

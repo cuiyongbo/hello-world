@@ -280,15 +280,15 @@ English Note 15
 .. image:: images/surfing_1569398049.jpg
 .. image:: images/surfing_1573696306.jpg
 .. image:: images/scenery_spot_1569491228.jpg
-.. image:: images/falling_for_riojia.jpg
 .. image:: images/great_canyon_of_the_east.jpg
 .. image:: images/marlborough_sounds_in_new_zealand.jpg
 .. image:: images/merced_river_in_yosemite_national_park.jpg
+.. image:: images/scenery_spot_1575374849.jpg
 .. image:: images/bubble_nebula.jpg
+.. image:: images/cosmos_1575374849.jpg
+.. image:: images/aurora_antarctica.jpg
 .. image:: images/red_rocks_in_arches_national_park.jpg
 .. image:: images/boats_massing_for_the_barcolana_regentta.jpg
 .. image:: images/canada_thanks_giving.jpg
 .. image:: images/redleaves_hunting_golden_fish.jpg
-.. image:: images/fall_color_sweep_across_the_west.jpg
 .. image:: images/bridge_of_hillsborough_county.jpg
-

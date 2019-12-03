@@ -3,37 +3,37 @@ Gdb Basics
 **********
 
 #. Frequently used commands
-   
+
    Here are some of the most frequently needed GDB commands::
 
       help [name]
          Show information about GDB command name, or general information about using GDB.
-     
+
       break [file:]functiop
       Set a breakpoint at function (in file).
-   
+
       run [arglist]
       Start your program (with arglist, if specified).
-   
+
       c   Continue running your program (after stopping, e.g. at a breakpoint).
-   
+
       bt  Backtrace: display the program stack.
-   
+
       print expr
       Display the value of an expression.
-   
+
       edit [file:]function
          look at the program line where it is presently stopped.
-   
+
       list [file:]function
          type the text of the program in the vicinity of where it is presently stopped.
-   
+
       next
          Execute next program line (after stopping); step over any function calls in the line.
-   
+
       step
          Execute next program line (after stopping); step into any function calls in the line.
-   
+
       quit
          Exit from GDB.
 
@@ -63,7 +63,7 @@ Gdb Basics
    +---------------------+--------------------------------------------------------------+
 
 #. Other commands
-   
+
    +------------------+----------------------------------------------------------------------+
    | Command          | Description                                                          |
    +==================+======================================================================+
@@ -83,7 +83,7 @@ Gdb Basics
    +------------------+----------------------------------------------------------------------+
 
 #. Gdb info command
-   
+
    .. code-block:: sh
 
       (gdb) help info
@@ -122,7 +122,7 @@ Gdb Basics
       info watchpoints -- Status of specified watchpoints (all watchpoints if no argument)
 
 #. Gdb info example
-   
+
    .. code-block:: sh
 
       (gdb) info proc
@@ -171,18 +171,18 @@ Gdb Basics
       Source language is c++.
       Compiled with DWARF 2 debugging format.
       Does not include preprocessor macro info.
-      $ wc -l past_ti_compiler/src/main.cpp 
+      $ wc -l past_ti_compiler/src/main.cpp
       131 past_ti_compiler/src/main.cpp
 
       (gdb) info stack
       #0  main () at /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:104
 
       (gdb) info threads
-        Id   Target Id         Frame 
+        Id   Target Id         Frame
         3    Thread 0x7ffff2008700 (LWP 16923) "fileWatchThread" 0x00007ffff6a50c5d in poll () at ../sysdeps/unix/syscall-template.S:81
         2    Thread 0x7ffff7fdb700 (LWP 16922) "timerSysThread" 0x00007ffff7558b9d in nanosleep () at ../sysdeps/unix/syscall-template.S:81
       * 1    Thread 0x7ffff7fdd780 (LWP 16918) "past_ti_compile" main () at /past_ti_compiler/src/main.cpp:104
-        
+
      (gdb) info types Past
      All types matching regular expression "Past":
 
@@ -195,13 +195,13 @@ Gdb Basics
      PastTiFestival;
 
      (gdb) ptype PastTiFestival
-     type = enum PastTiFestival {PastTiFestival_none, PastTiFestival_newYearDay, PastTiFestival_springFestival, 
-     PastTiFestival_qingmingFestival, PastTiFestival_mayDay, PastTiFestival_dragonBoatFestival, 
-     PastTiFestival_midAutumnDay, PastTiFestival_nationalDay, PastTiFestival_max} 
+     type = enum PastTiFestival {PastTiFestival_none, PastTiFestival_newYearDay, PastTiFestival_springFestival,
+     PastTiFestival_qingmingFestival, PastTiFestival_mayDay, PastTiFestival_dragonBoatFestival,
+     PastTiFestival_midAutumnDay, PastTiFestival_nationalDay, PastTiFestival_max}
 
      (gdb) info variables g_isRunning
       All variables matching regular expression "g_isRunning":
-      
+
       File /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:
       static std::atomic_bool g_isRunning;
 
@@ -216,4 +216,4 @@ Gdb Basics
       [6]: 0x451c32 <ncserver::NcServer::cleanupUnforkableResources()>
       [7]: 0x451c42 <ncserver::NcServer::finalizeProcess()>
       [8]: 0x451468 <EnrouteTiServer::query(ncserver::ServiceIo*, ncserver::Request*)>
-      
+
