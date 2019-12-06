@@ -5,17 +5,17 @@ Gdb Tricks 02
 **You force yourself to speed up because you don't want to keep others waitting.**
 
 #. Generate core dump
-   
+
     First to check if core dump is enabled::
 
         $ ulimit -c
         0
         $ ulimit -c unlimited
 
-    Second compile test program with ``gcc -g core_dump_demo.c`` 
+    Second compile test program with ``gcc -g core_dump_demo.c``
     then run::
 
-        $ ./a.out 
+        $ ./a.out
         Aborted (core dumped)
         $ ls
         a.out  core  core_dump_demo.c
@@ -28,7 +28,7 @@ Gdb Tricks 02
         #6  0x0000000000400594 in main () at core_dump_demo.c:8
         8      free(a);
         (gdb) list
-        3  
+        3
         4  int main()
         5  {
         6      int* a = (int*)malloc(sizeof(int));
@@ -38,9 +38,9 @@ Gdb Tricks 02
         10 }
 
     .. note::
-        
-        Most implementations leave the core file in the current working directory 
-        of the corresponding process; Mac OS X places all core files 
+
+        Most implementations leave the core file in the current working directory
+        of the corresponding process; Mac OS X places all core files
         in **/cores** instead::
 
             cherry@MacBook-Pro scaffold$ ll /cores/
@@ -50,7 +50,7 @@ Gdb Tricks 02
             -r--------  1 cherry  admin   701M Jul 15 21:40 core.3424
 
 #. Gdb to debug a running process
-   
+
     .. code-block:: sh
 
         # Solution one
@@ -65,12 +65,12 @@ Gdb Tricks 02
         # if you want change the process to debug, use `attach` command
         attach new_pid
 
-    .. important:: Sometime you man need `sudo` previlege to see debug symbol table.   
+    .. important:: Sometime you man need `sudo` previlege to see debug symbol table.
 
 #. attach command
-   
+
     Attach to a process or file outside of GDB.
-    
+
     This command attaches to another target, of the same type as your last
     "target" command ("info files" will show your target stack).
     The command may take as argument a process id or a device file.
@@ -80,10 +80,10 @@ Gdb Tricks 02
     program running in the process, looking first in the current working
     directory, or (if not found there) using the source file search path
     (see the "directory" command).  You can also use the "file" command
-    to specify the program, and to load its symbol table.    
+    to specify the program, and to load its symbol table.
 
 #. Gdb to peek all methods in a class
-   
+
     .. code-block:: sh
 
         (gdb) ptype PastTiCompiler
@@ -101,7 +101,7 @@ Gdb Tricks 02
 
         (gdb) info functions PastTiCompiler
         All functions matching regular expression "PastTiCompiler":
-      
+
         File /past_ti_compiler/src/past_ti_compiler.cpp:
         void PastTiCompiler::PastTiCompiler();
         TiLinkMap *PastTiCompiler::allocFilteredMap(TiData*);
@@ -111,20 +111,72 @@ Gdb Tricks 02
         bool PastTiCompiler::prepare();
 
 #. Gdb to print all function names
-   
+
     .. code-block:: sh
 
-        (gdb) file a.out
+        (gdb) help info functions
+        All function names, or those matching REGEXP.
+
         (gdb) info function
         All defined functions:
-      
+
         File selection_partial_sort_alg.c:
         int main();
         int randint(int, int);
         void select_nthElement(int *, int, int, int);
-        void select_nthElement_2(int *, int, int, int);
         void select_nthElement_loop(int *, int, int, int);
-      
+
         Non-debugging symbols:
         0x0000000000400460  _init
         ...
+
+        (gdb) info functions map_*
+        All functions matching regular expression "map_*":
+
+        File ../src/map.c:
+        void map_deinit_(map_base_t *);
+        void *map_get_(map_base_t *, const char *);
+        map_iter_t map_iter_(void);
+        ...
+
+#. Gdb to print long string
+
+    .. code-block:: sh
+
+        set print elements 0
+
+        # set print elements number-of-elements
+        # Set a limit on how many elements of an array GDB will print.
+        # If GDB is printing a large array, it stops printing after it
+        # has printed the number of elements set by the ``set print elements`` command.
+        # This limit also applies to the display of strings. When GDB starts, this limit
+        # is set to 200. Setting number-of-elements to zero means that the printing is unlimited.
+
+#. Gdb to locate your current location
+
+    .. code-block:: sh
+
+        (gdb) info frame
+        Stack level 0, frame at 0x7ffffffee150:
+         rip = 0x8000fce in map_set_ (../src/map.c:150); saved rip = 0x800091e
+         called by frame at 0x7ffffffee1b0
+         source language c.
+         Arglist at 0x7ffffffee140, args: m=0x7ffffffee170, key=0x8001248 "cyb", value=0x7ffffffee188, vsize=4
+         Locals at 0x7ffffffee140, Previous frame's sp is 0x7ffffffee150
+         Saved registers:
+          rbp at 0x7ffffffee140, rip at 0x7ffffffee148
+
+        (gdb) info line
+        Line 150 of "../src/map.c" starts at address 0x8000fce <map_set_+95> and ends at 0x8000fe8 <map_set_+121>.
+
+        (gdb) bt
+        #0  map_set_ (m=0x7ffffffee170, key=0x8001248 "cyb", value=0x7ffffffee188, vsize=4) at ../src/map.c:150
+        #1  0x000000000800091e in main () at example.c:12
+        (gdb) frame 1
+        #1  0x000000000800091e in main () at example.c:12
+        12          map_set(&m, "cyb", 1);
+        (gdb) frame
+        #1  0x000000000800091e in main () at example.c:12
+        12          map_set(&m, "cyb", 1);
+        (gdb) info line
+        Line 12 of "example.c" starts at address 0x80008f7 <main+45> and ends at 0x800091e <main+84>.
