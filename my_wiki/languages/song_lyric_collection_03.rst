@@ -273,6 +273,53 @@ Song lyrics collection 3
     遠回りしたけど
     辿りついたんだね
 
+.. code-block:: none
+    :caption: Hotel California - Eagles
 
+    On a dark desert highway, Cool wind in my hair
+    Warm smell of colitas, Rising up through the air
+    Up ahead in the distance, I saw a shimmering light
+    My head grew heavy and my sight grew dim, I had to stop for the night
+    There she stood in the doorway, I heard the mission bell
+    And I was thinking to myself, "This could be Heaven or this could be Hell"
+    Then she lit up a candle, And she showed me the way
+    There were voices down the corridor, I thought I heard them say
 
+    [Chorus: Don Henley]
+    "Welcome to the Hotel California
+    Such a lovely place (Such a lovely place)
+    Such a lovely face
+    Plenty of room at the Hotel California
+    Any time of year (Any time of year)
+    You can find it here"
 
+    [Verse 2: Don Henley]
+    Her mind is Tiffany-twisted, She got the Mercedes Benz
+    She got a lot of pretty, pretty boys, She calls friends
+    How they dance in the courtyard, Sweet summer sweat
+    Some dance to remember, Some dance to forget
+    So I called up the Captain, "Please bring me my wine"
+    He said, "We haven't had that spirit here since 1969"
+    And still those voices are calling from far away
+    Wake you up in the middle of the night, Just to hear them say
+
+    [Chorus: Don Henley]
+    "Welcome to the Hotel California
+    Such a lovely place (Such a lovely place)
+    Such a lovely face
+    They living it up at the Hotel California
+    What a nice surprise (what a nice surprise)
+    Bring your alibis"
+
+    [Verse 3: Don Henley]
+    Mirrors on the ceiling, The pink champagne on ice
+    And she said: "We are all just prisoners here
+    Of our own device"
+    And in the master's chambers, They gathered for the feast
+    They stab it with their steely knives, But they just can't kill the beast
+    Last thing I remember, I was Running for the door
+    I had to find the passage back, To the place I was before
+    "Relax," said the night man,
+    "We are programmed to receive
+    You can check out any time you like
+    But you can never leave!"

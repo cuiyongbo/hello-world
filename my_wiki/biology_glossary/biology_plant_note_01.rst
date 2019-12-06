@@ -80,6 +80,7 @@ Biology Terms - Plants
 .. image:: images/cypress_tunnel.jpg
 .. image:: images/atchafalya_cypress_swamp.jpg
 .. image:: images/queen_victoria_agrave.jpg
+.. image:: images/canada_tree_farm.jpg
 
 #. Sequoia National Park
 

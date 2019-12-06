@@ -41,6 +41,7 @@ Wild Lives 03
 
     Alligator [短吻鳄]
 
+.. image:: images/rhinoceros_cubs_1575595357.jpg
 .. figure:: images/rhino.jpg
 
     Rhinoceros
