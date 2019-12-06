@@ -11,7 +11,7 @@ Welcome to My Wiki's documentation!
     :caption: Contents:
 
     pending_tasks
-    letcode_notes
+    leetcode_notes
     book_reading_progress_note
     computer_glossary
     data_structure_note
