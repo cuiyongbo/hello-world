@@ -183,15 +183,16 @@ Wild Lives 03
 
    Wolverine [狼獾，金刚狼]
 
-.. figure:: images/buffalo.jpg
-
-   Buffalo
-
+.. image:: images/icelandic_sheep_1576338456.jpg
 .. image:: images/highland_cattle_in_netherlands_national_park.jpg
 .. image:: images/bison_at_yellowstone_national_park.jpg
 .. figure:: images/bison_day.jpg
 
    Bison day 11-03
+
+.. figure:: images/buffalo.jpg
+
+   Buffalo
 
 .. image:: images/straw-colored_fruit_bat_in_zambia.jpg
 .. figure:: images/CommonPipistrelle.jpg

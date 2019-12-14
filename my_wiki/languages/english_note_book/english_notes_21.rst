@@ -34,3 +34,8 @@ English Note 21
 |
 | out of the question
 | Synonyms: impossible.
+|
+| cask
+| Definition: a small wooden barrel used for storing liquids, especially wine; the amount contained in a cask
+| Usage: a wine cask
+| Usage: a cask of wine
