@@ -31,7 +31,10 @@ Linux System Call
     linux_system_call/linux_daemon_basics
 
 
-#. see errno definition: ``man errno`` or ``errno -l`` (Installation: ``sudo apt install moreutils``)
+#. see errno definition
+
+    MacOS: ``man errno``.
+    Ubuntu: ``errno -l``, (may need install: ``sudo apt install moreutils``).
 
 .. rubric:: Footnotes
 

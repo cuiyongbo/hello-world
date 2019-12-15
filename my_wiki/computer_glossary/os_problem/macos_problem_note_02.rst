@@ -9,7 +9,6 @@ MacOS Problems 02
         sudo spctl --master-enable # hide
         sudo spctl --master-disable # show
 
-
 #. MacOS to enable read and write on NTFS disk
 
     add ``LABEL=Driver_name none ntfs rw,auto,nobrowse``
@@ -35,6 +34,10 @@ MacOS Problems 02
 
         $ sudo mkdir /Volumes/toshiba
 
-        # something insidious comes here, I'm not sure what the exact commbination
-        # to make rw come into effect
+        # something insidious comes here, I'm not sure the exact commbinations
+        # which make ``rw`` come into effect
         $ sudo mount_ntfs -t rw,sync,nobrowse /dev/disk2s1 /Volumes/toshiba
+
+#. Mac to customize Thunder display
+
+   Remove plugins in ``Thunder.app/Contents/plugins/``.
