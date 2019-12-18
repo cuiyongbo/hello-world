@@ -39,3 +39,8 @@ English Note 21
 | Definition: a small wooden barrel used for storing liquids, especially wine; the amount contained in a cask
 | Usage: a wine cask
 | Usage: a cask of wine
+|
+| garbled
+| Definition: (of a message, sound, or transmission) confused and distorted; unclear.
+| Usage: I got a garbled set of directions.
+| Usage: Email message body is garbled when Simplified Chinese characters are included on BCC line in an Exchange Server environment. [乱码]
