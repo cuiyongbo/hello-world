@@ -277,3 +277,5 @@ English Note 17
 .. image:: images/castillo_del_morro.jpeg
 .. image:: images/canvas_on_the_church.jpg
 .. image:: images/la_digue_bridge.jpg
+.. image:: images/hall_xmas_market_1576833240.jpg
+.. image:: images/winter_at_valley_forge_1576832859.jpg

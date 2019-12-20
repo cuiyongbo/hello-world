@@ -344,6 +344,7 @@ English Note 16
 .. image:: images/aerial_view_of_rainforest_1568277649.jpg
 .. image:: images/milky_way_1568277649.jpg
 .. image:: images/scenery_spot_1568286615.jpg
+.. image:: images/rainbow_eucalypus_maui_1576833240.jpg
 .. image:: images/scenery_spot_1568286663.jpg
 .. image:: images/trillium_lake.jpg
 .. image:: images/castle_reflection_1568620072.jpg
@@ -363,3 +364,5 @@ English Note 16
 .. image:: images/rock_1575374849.jpg
 .. image:: images/xiaoxue_2019.jpg
 .. image:: images/scenic_route_express_switzerland.jpg
+.. image:: images/cape_town_at_dusk_1576832859.jpg
+.. image:: images/winter_is_coming_1576832859.jpg
