@@ -58,6 +58,7 @@ Sublime Text Usage
 .. code-block:: none
     :caption: Hot Configure
 
+    "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
     "trim_trailing_white_space_on_save": true,
     "ensure_newline_at_eof_on_save": true,
     "font_face": "Microsoft YaHei Mono",

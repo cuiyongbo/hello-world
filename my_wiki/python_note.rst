@@ -39,3 +39,24 @@ Python note
     python/python_miscellaneous_tricks_03
     python/python_miscellaneous_tricks_04
     python/python_application_examples
+
+**Preparation**
+
+    .. code-block:: sh
+
+        $ cat requirement.txt
+
+            sphinx-rtd-theme==0.4.3
+            sphinxcontrib-applehelp==1.0.1
+            sphinxcontrib-devhelp==1.0.1
+            sphinxcontrib-htmlhelp==1.0.2
+            sphinxcontrib-jsmath==1.0.1
+            sphinxcontrib-qthelp==1.0.2
+            sphinxcontrib-serializinghtml==1.1.3
+            requests==2.18.4
+            scikit-learn==0.21.3
+            scipy==1.3.1
+            tensorflow==1.14.0
+            matplotlib-3.1.2
+
+        $ pip3 install -r requirement.txt
