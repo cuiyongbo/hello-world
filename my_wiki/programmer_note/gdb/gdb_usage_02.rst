@@ -152,6 +152,22 @@ Gdb Tricks 02
         # This limit also applies to the display of strings. When GDB starts, this limit
         # is set to 200. Setting number-of-elements to zero means that the printing is unlimited.
 
+        (gdb) set print element 0
+        (gdb) p (char*)postData->m_bytes
+        $24 = 0x2b88680 "{\"departureTime\": \"2019/12/18 03:16:10\", \"vehicleInfo\":
+        {\"hasPassport\": false}, \"routePlan\": {\"enableOnlineJunctionView\": false,
+        \"requireRegulationRestrictions\": false, \"vehicleInfo\": {\"hasPassport\": false},
+        \"regulationRestrictionEnabled\": false, \"timeConditionRestrictionEnabled\": false,
+        \"requireCurvatureAndHeadingAngle\": false, \"departInFuture\": true, \"routePoints\":
+        [{\"position\": \"11628871,3997442\", \"type\": 1, \"name\": \"Start\", \"entryPoint\":
+        \"11628871,3997442\"}, {\"position\": \"11634728,3988498\", \"type\": 1, \"name\": \"End\",
+        \"entryPoint\": \"11634728,3988498\"}], \"switchTarget\": 0, \"resultReorderEnabled\": true,
+        \"departureTime\": \"2019/12/18 03:16:10\", \"startOri\": 32767, \"isReroute\": false,
+        \"smartModeEnabled\": true, \"requirePhysicalRestrictions\": false, \"physicalRestrictionEnabled\": false,
+        \"curLinkIdx\": -1, \"transportationType\": 0, \"routePreference\": 0, \"allowWalkToDestination\": true,
+        \"requiredDistanceForAdas\": 0, \"enrouteNearbyLinkIds\": [], \"familiarRouteType\": 0, \"routeMode\": 1,
+        \"requireNavInfoId\": false, \"useTollCostApi\": false}}"
+
 #. Gdb to locate your current location
 
     .. code-block:: sh
