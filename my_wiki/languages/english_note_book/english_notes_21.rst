@@ -44,3 +44,9 @@ English Note 21
 | Definition: (of a message, sound, or transmission) confused and distorted; unclear.
 | Usage: I got a garbled set of directions.
 | Usage: Email message body is garbled when Simplified Chinese characters are included on BCC line in an Exchange Server environment. [乱码]
+|
+| lacklustre
+| Definition: lacking in vitality, force, or conviction; uninspired or uninspiring.
+| Usage: no excuses were made for the team's lacklustre performance.
+| Definition: (of the hair or the eyes) not shining; dull.
+| Usage: the conditioner will revitalize lacklustre hair.

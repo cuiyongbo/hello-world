@@ -366,3 +366,6 @@ English Note 16
 .. image:: images/scenic_route_express_switzerland.jpg
 .. image:: images/cape_town_at_dusk_1576832859.jpg
 .. image:: images/winter_is_coming_1576832859.jpg
+.. image:: images/winter_is_comming_1577020802.jpg
+.. image:: images/snowflake_1577020802.jpg
+.. image:: images/seventeen-arch_bridge_kunming_lake.jpg
