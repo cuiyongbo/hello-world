@@ -55,6 +55,7 @@ Biology Terms - Birds
 
    Loon [潜鸟]
 
+.. image:: images/gentoo_penguin_1577185016.jpg
 .. image:: images/penguin_1570672289.jpg
 .. image:: images/sea_bird_flock.jpg
 .. image:: images/atlantic_puffin_1575375058.jpg

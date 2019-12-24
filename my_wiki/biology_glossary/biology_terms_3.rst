@@ -165,6 +165,8 @@ Wild Lives 03
 .. image:: images/beaver.jpg
 
 .. image:: images/zebra.jpg
+
+.. image:: images/reindeer_norway_1577185016.jpg
 .. image:: images/deer_1565349419.jpg
 .. figure:: images/elk.jpg
 

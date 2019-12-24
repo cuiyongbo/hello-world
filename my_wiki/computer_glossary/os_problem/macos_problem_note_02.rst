@@ -38,6 +38,11 @@ MacOS Problems 02
         # which make ``rw`` come into effect
         $ sudo mount_ntfs -t rw,sync,nobrowse /dev/disk2s1 /Volumes/toshiba
 
+    Free third-party tools:
+
+        - ntfs-3g
+        - `NTFS_for_Mac.dmg <https://www.seagate.com/support/downloads/item/ntfs-driver-for-mac-os-master-dl/>`_
+
 #. Mac to customize Thunder display
 
    Remove plugins in ``Thunder.app/Contents/plugins/``.
