@@ -50,3 +50,22 @@ English Note 21
 | Usage: no excuses were made for the team's lacklustre performance.
 | Definition: (of the hair or the eyes) not shining; dull.
 | Usage: the conditioner will revitalize lacklustre hair.
+|
+| singleton
+| Definition: a single person or thing of the kind under consideration.
+| Usage: splitting the clumps of plants into singletons.
+| Usage: Bank is a 38-year-old singleton who grew up in Philadelphia. [单身人士]
+| Definition: a child or animal born singly, rather than one of a multiple birth.
+| Usage: singleton boys.
+| Definition: (Mathematics) a set which contains exactly one element.
+| Usage: Lewis argues that the relation of a singleton to its only member is mysterious.
+|
+| bottom out
+| Definition: to reach a lowest or worst point usually before beginning to rise or improve
+| Usage: House prices have bottomed out.
+|
+| level out
+| Definition: to stop going up and down
+| Usage: Inflation is finally levelling out at around 11% a month.
+| Usage: The aircraft levelled out at about 30,000 feet.
+|
