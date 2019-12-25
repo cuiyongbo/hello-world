@@ -13,6 +13,7 @@ OS Problem Note
     os_problem/software_shortcuts_note
     os_problem/programming_problem_note
     os_problem/mac_ubuntu_usb_stick
+    os_problem/mac_usb_stick
     os_problem/vim_usage_note
     os_problem/sublime_usage_note
 

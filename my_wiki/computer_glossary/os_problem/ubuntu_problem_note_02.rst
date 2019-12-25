@@ -118,3 +118,11 @@ Ubuntu problem note 02
         ├─sda5   8:5    0 1022M  0 part [SWAP]
         └─sda1   8:1    0   63G  0 part /
 
+#. Ubuntu to creat user with root priviedge
+
+    .. code-block:: sh
+
+        # assume to create a user with name ``natsume``
+        $ sudo useradd -m  natsume
+        $ sudo passwd natsume
+        $ sudo usermod -aG sudo natsume
