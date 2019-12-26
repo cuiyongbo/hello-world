@@ -163,3 +163,13 @@ Standard Algorithm Library Note 02
 
     .. code-block:: cpp
         :caption: Possible implementation
+
+        template< class ForwardIt, class Generator >
+        void generate( ForwardIt first, ForwardIt last, Generator g )
+        {
+            while(first != last)
+            {
+                *first++ = g();
+            }
+        }
+
