@@ -70,7 +70,7 @@ C/C++ Miscellaneous Tricks 02
         #define container_of(ptr_, type_, member_)  ((type_ *)((char *)ptr_ - offsetof(type_, member_)))
         #define json_to_object(json_)  container_of(json_, json_object_t, json)
 
-#. access specifiers and pure virtual function
+#. Access specifiers and pure virtual function
 
     Access specifiers apply in the same way as they would to any other name during name lookup.
     The fact that the function is virtual does not matter at all.

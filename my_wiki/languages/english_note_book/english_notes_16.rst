@@ -364,6 +364,7 @@ English Note 16
 .. image:: images/rock_1575374849.jpg
 .. image:: images/xiaoxue_2019.jpg
 .. image:: images/scenic_route_express_switzerland.jpg
+.. image:: images/winter_at_slovenia_1577358855.jpg
 .. image:: images/cape_town_at_dusk_1576832859.jpg
 .. image:: images/winter_is_coming_1576832859.jpg
 .. image:: images/winter_is_comming_1577020802.jpg

@@ -47,3 +47,13 @@ Application: grouping n distinct elements into a collection of disjoint sets.
         if x != x.p
             x.p = Find-Set(x.p)
         return x.p
+
+    Find-Set(x)
+        initialize an empty stack s
+        while x != x.p
+            s.push(x)
+            x = x.p
+        while s not empty
+            t = s.top(); s.pop()
+            t.p = x
+        return x
