@@ -229,7 +229,7 @@ English Note 10
 | Usage: garish clothes. [衣服花里胡哨]
 |
 | novice
-| Synonyms: beginner
+| Synonyms: beginner; newbie
 | Usage: He was a complete novice in foreign affairs.
 |
 | neophyte

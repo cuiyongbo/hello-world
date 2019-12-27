@@ -13,6 +13,7 @@ Data Structure
     data_structure/linked_list_note
     data_structure/free_list
     data_structure/heap_note
+    data_structure/fibonacci_heap_note
     data_structure/lru_alg_implementation
     data_structure/priority_queue_note
     data_structure/hash_table_note
