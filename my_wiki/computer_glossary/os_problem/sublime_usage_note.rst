@@ -41,7 +41,7 @@ Sublime Text Usage
 
         The hotkeys may not work because the modifier has been assigned to "Mission Control"
         and "Application Windows". To get around this, uncheck the options in "System Preference"
-        \- "Keyboad" \- "Shortcuts" \- "Mission Control".
+        \- "Keyboad" \- "Shortcuts" \- "Mission Control" and "Application Windows".
 
         .. image:: images/Mac-MissionControl-shortcuts-setting.png
 
@@ -53,30 +53,57 @@ Sublime Text Usage
 #. Insert Line After - Cmd + Enter
 #. Insert Line Before - Shift + Cmd + Enter (replace Cmd with Ctrl on windows)
 
-**Sublime Text Configure**
+#. Sublime Configure customization
 
-.. code-block:: none
-    :caption: Hot Configure
+    .. code-block:: json
 
-    "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
-    "trim_trailing_white_space_on_save": true,
-    "ensure_newline_at_eof_on_save": true,
-    "font_face": "monaco",
-    "disable_tab_abbreviations": true,
-    "translate_tabs_to_spaces": true,
-    "tab_size": 4,
-    "save_on_focus_lost": true,
-    "highlight_line": true,
-    "word_wrap": "true",
-    "fade_fold_buttons": false,
-    "bold_folder_labels": true,
-    "highlight_modified_tabs": false,
-    "default_line_ending": "unix",
-    "auto_find_in_selection": true,
-    "update_check": false
+        "color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+        "trim_trailing_white_space_on_save": true,
+        "ensure_newline_at_eof_on_save": true,
+        "font_face": "monaco",
+        "disable_tab_abbreviations": true,
+        "translate_tabs_to_spaces": true,
+        "tab_size": 4,
+        "save_on_focus_lost": true,
+        "highlight_line": true,
+        "word_wrap": "true",
+        "fade_fold_buttons": false,
+        "bold_folder_labels": true,
+        "highlight_modified_tabs": false,
+        "default_line_ending": "unix",
+        "auto_find_in_selection": true,
+        "update_check": false
 
+#. Sublime to install  *Package Control*
+
+    .. code-block:: sh
+        :caption: For sublime 3
+
+        import urllib.request,os,hashlib;
+        h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60';
+        pf = 'Package Control.sublime-package';
+        ipp = sublime.installed_packages_path();
+        urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );
+        by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read();
+        dh = hashlib.sha256(by).hexdigest();
+        print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+
+#. Package Control encounter SSL errror: *HTTP exception InvalidCertificateException*
+
+    Add following snippets to ``Package Control.sublime-settings``:
+
+    .. code-block:: json
+
+        "downloader_precedence":
+        {
+            "linux": [ "urllib", "curl", "wget" ],
+            "osx": [ "curl", "urllib" ],
+            "windows": [ "wininet" ]
+        }
 
 **Plugin Collection**
 
+#. Package control
 #. Pretty Json
-#. Sublime-rst-complement
+#. Sublime-rst-completion
+#. OmniMarkupPreviewer
