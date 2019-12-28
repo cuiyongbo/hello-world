@@ -11,4 +11,3 @@ Pthread Introduction
     pthread/pthread_concepts
     pthread/pthread_api_overview
     pthread/pthread_hot_api_note
-    pthread/exercise

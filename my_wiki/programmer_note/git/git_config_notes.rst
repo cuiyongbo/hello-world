@@ -24,7 +24,7 @@ Git Gonfig Note
         # set vim as the default commit message editor
         git config --global core.editor "vim"
 
-        git config --global core.autocrlf auto
+        git config --global core.autocrlf true
 
 #. git to save username and password
 
