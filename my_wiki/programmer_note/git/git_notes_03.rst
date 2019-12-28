@@ -2,15 +2,6 @@
 Git Tricks 03
 *************
 
-Command line instructions
-
-#. Git global setup
-
-    .. code-block:: sh
-
-        git config --global user.name "cuiyb"
-        git config --global user.email "cuiyb@mapbar.com"
-
 #. Create a new repository
 
     .. code-block:: sh
@@ -76,13 +67,6 @@ Command line instructions
     * Expire all reflogs: ``git reflog expire --expire=now --all``.
 
     * Garbage collect all unreferenced objects with ``git gc --prune=now``.
-
-#. Git to force line ending to CRLF
-
-    .. code-block:: sh
-
-        # https://help.github.com/en/articles/configuring-git-to-handle-line-endings
-        git config --global core.autocrlf true
 
 #. Git to change the author of last commit
 
@@ -151,10 +135,6 @@ Command line instructions
 
         ``git push origin master``
 
-#. Git to set default commit message editor
-
-    Set to vim: ``git config --global core.editor "vim"``
-
 #. Git bash command line can't drag and drop files
 
     Enable ``Run as Administrator`` when running git bash.
@@ -193,3 +173,21 @@ Command line instructions
     .. code-block:: sh
 
         git diff COMMIT_HASH~ COMMIT_HASH
+
+#. Remove unused reference
+
+    .. figure:: images/unsupported_reference.png
+
+        Solution: ``git update-ref -d refs/original/refs/heads/master``
+
+#. Remove file/directory from commit history
+
+    .. code-block:: sh
+
+        $ git filter-branch -f --index-filter 'git rm -r --ignore-unmatch python-2.7.14-docs-pdf-a4/'
+        $ git filter-branch -f --index-filter 'git rm  --cached --ignore-unmatch *.docx'
+        $ git filter-branch -f --index-filter 'git rm  --ignore-unmatch "google test frame.docx"'
+
+#. git to fastward pull
+
+    Solution: ``git pull -ff``.

@@ -1,6 +1,6 @@
-*******************************
-MacOS startup stick Fabrication
-*******************************
+*********************************
+MacOS Bootable installer Creation
+*********************************
 
 .. code-block:: sh
 
@@ -18,3 +18,10 @@ MacOS startup stick Fabrication
 
     $ sudo /Applications/Install_Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/Yosemite \
             --applicationpath /Applications/Install_Yosemite.app --nointeraction
+
+
+
+.. rubric:: Footnotes
+
+.. [#] `How to create a bootable installer for macOS <https://support.apple.com/en-us/HT201372>`_
+

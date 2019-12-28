@@ -16,6 +16,8 @@ Biology Terms - Birds
     Gull [海鸥]
 
 .. image:: images/sandhill_crane_take_flight.jpg
+
+.. image:: images/cygnus_buccinator_1577490792.jpg
 .. image:: images/black_swan.jpg
 .. figure:: images/tundra_swan.jpg
 
