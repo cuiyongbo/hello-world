@@ -48,7 +48,9 @@ MacOS Problems 02
 
 #. Mac to install Homebrew
 
-    Run: ``/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
+    Run: ``/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``.
+    and after finishing installation, run: ``brew install git gcc gdb valgrind python3 unzip htop pidof`` to
+    install softwares.
 
 #. Mac to codesign gdb
 
@@ -58,3 +60,8 @@ MacOS Problems 02
         https://sourceware.org/gdb/wiki/BuildingOnDarwin
 
     On 10.12 (Sierra) or later with SIP, you need to run this: ``echo "set startup-with-shell off" >> ~/.gdbinit``
+
+    and further to stop mac from promoting "take control" when running gdb,
+    run: ``sudo security authorizationdb write system.privilege.taskport allow``
+
+    .. image:: images/gdb_take_control_notification.png

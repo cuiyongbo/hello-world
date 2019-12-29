@@ -5,23 +5,23 @@ Python Built-in Functions
 Python interpreter has many functions built into it that are always available, They are listed in alphabatical order.
 
 =====================  ===================  ====================  ==================  ======================
-..                     ..                   Built-in Functions    ..                  ..                    
+..                     ..                   Built-in Functions    ..                  ..
 =====================  ===================  ====================  ==================  ======================
-:func:`abs`            |func-dict|_         :func:`help`          :func:`next`        :func:`slice`         
-:func:`all`            :func:`dir`          :func:`hex`           :func:`object`      :func:`sorted`        
-:func:`any`            :func:`divmod`       :func:`id`            :func:`oct`         :func:`staticmethod`  
-:func:`ascii`          :func:`enumerate`    :func:`input`         :func:`open`        |func-str|_           
-:func:`bin`            :func:`eval`         :func:`int`           :func:`ord`         :func:`sum`           
-:func:`bool`           :func:`exec`         :func:`isinstance`    :func:`pow`         :func:`super`         
-:func:`breakpoint`     :func:`file`         :func:`issubclass`    :func:`print`       |func-tuple|_         
-|func-bytearray|_      :func:`filter`       :func:`iter`          :func:`property`    :func:`type`          
-|func-bytes|_          :func:`float`        :func:`len`           |func-range|_       :func:`unicode`       
-:func:`callable`       :func:`format`       |func-list|_          :func:`reload`      :func:`vars`          
-:func:`chr`            |func-frozenset|_    :func:`locals`        :func:`repr`        :func:`xrange`        
-:func:`classmethod`    :func:`getattr`      :func:`map`           :func:`reversed`    :func:`zip`           
-:func:`compile`        :func:`globals`      :func:`max`           :func:`round`       :func:`__import__`    
-:func:`complex`        :func:`hasattr`      |func-memoryview|_    |func-set|_       
-:func:`delattr`        :func:`hash`         :func:`min`           :func:`setattr`   
+:func:`abs`            |func-dict|_         :func:`help`          :func:`next`        :func:`slice`
+:func:`all`            :func:`dir`          :func:`hex`           :func:`object`      :func:`sorted`
+:func:`any`            :func:`divmod`       :func:`id`            :func:`oct`         :func:`staticmethod`
+:func:`ascii`          :func:`enumerate`    :func:`input`         :func:`open`        |func-str|_
+:func:`bin`            :func:`eval`         :func:`int`           :func:`ord`         :func:`sum`
+:func:`bool`           :func:`exec`         :func:`isinstance`    :func:`pow`         :func:`super`
+:func:`breakpoint`     :func:`file`         :func:`issubclass`    :func:`print`       |func-tuple|_
+|func-bytearray|_      :func:`filter`       :func:`iter`          :func:`property`    :func:`type`
+|func-bytes|_          :func:`float`        :func:`len`           |func-range|_       :func:`unicode`
+:func:`callable`       :func:`format`       |func-list|_          :func:`reload`      :func:`vars`
+:func:`chr`            |func-frozenset|_    :func:`locals`        :func:`repr`        :func:`xrange`
+:func:`classmethod`    :func:`getattr`      :func:`map`           :func:`reversed`    :func:`zip`
+:func:`compile`        :func:`globals`      :func:`max`           :func:`round`       :func:`__import__`
+:func:`complex`        :func:`hasattr`      |func-memoryview|_    |func-set|_
+:func:`delattr`        :func:`hash`         :func:`min`           :func:`setattr`
 =====================  ===================  ====================  ==================  ======================
 
 
@@ -39,7 +39,7 @@ Python interpreter has many functions built into it that are always available, T
 .. |func-bytes| replace:: ``bytes()``
 
 
-Basically, they can be classified into distinct groups: container functions, iterator functions, 
+Basically, they can be classified into distinct groups: container functions, iterator functions,
 numeric types and mathematical functions, string functions, string-int conversion functions,
 class utilities, file utilities, miscellaneous utility function.
 
@@ -185,7 +185,7 @@ Iterator functions
    iteration protocol (the :meth:`__iter__` method), or it must support the
    sequence protocol (the :meth:`__getitem__` method with integer arguments
    starting at ``0``).  If it does not support either of those protocols,
-   :exc:`TypeError` is raised. 
+   :exc:`TypeError` is raised.
 
    If the second argument, *sentinel*, is given,
    then *object* must be a callable object.  The iterator created in this case
@@ -280,19 +280,19 @@ Iterator functions
 .. class:: xrange(stop)
 .. class:: xrange(start, stop[, step])
 
-   This function is very similar to :func:`range`, but returns an :class:`xrange object` instead of a list. 
-   This is an opaque sequence type which yields the same values as the corresponding list, 
-   without actually storing them all simultaneously. The advantage of :func:`xrange` over :func:`range` is 
-   minimal (since :func:`xrange` still has to create the values when asked for them) except 
-   when a very large range is used on a memory-starved machine or when all of the range’s elements 
-   are never used (such as when the loop is usually terminated with ``break``). 
+   This function is very similar to :func:`range`, but returns an :class:`xrange object` instead of a list.
+   This is an opaque sequence type which yields the same values as the corresponding list,
+   without actually storing them all simultaneously. The advantage of :func:`xrange` over :func:`range` is
+   minimal (since :func:`xrange` still has to create the values when asked for them) except
+   when a very large range is used on a memory-starved machine or when all of the range’s elements
+   are never used (such as when the loop is usually terminated with ``break``).
 
-   .. note:: 
+   .. note::
 
-      :func:`xrange` is intended to be simple and fast. Implementations may impose restrictions to achieve this. 
-      The C implementation of Python restricts all arguments to native C longs (“short” Python integers), 
-      and also requires that the number of elements fit in a native C long. 
-      If a larger range is needed, an alternate version can be crafted using 
+      :func:`xrange` is intended to be simple and fast. Implementations may impose restrictions to achieve this.
+      The C implementation of Python restricts all arguments to native C longs (“short” Python integers),
+      and also requires that the number of elements fit in a native C long.
+      If a larger range is needed, an alternate version can be crafted using
       the :mod:`itertools` module: ``islice(count(start, step), (stop-start+step-1+2*(step<0))//step)``.
 
 .. function:: filter(function, iterable)
@@ -312,21 +312,24 @@ Iterator functions
       >>> filter(lambda x: x%2, se)
       [1, 3, 5, 7, 9]
 
+      >>> points = '(11621845,3992457)(11626685,3992417)(11632048,3992364)(11650723,3993236)'
+      >>> r1 = re.split("\(?\)?", points)
+      >>> list(filter(None, r1))
 
 Numeric functions
 -----------------
 
 .. class:: class complex([real[, imag]])
 
-   Return a complex number with the value real + imag*1j or convert a string or number to a complex number. 
-   If the first parameter is a string, it will be interpreted as a complex number and the function must be called without a second parameter. 
-   The second parameter can never be a string. Each argument may be any numeric type (including complex). 
-   If imag is omitted, it defaults to zero and the function serves as a numeric conversion function like ``int()``, ``long()`` and ``float()``. 
+   Return a complex number with the value real + imag*1j or convert a string or number to a complex number.
+   If the first parameter is a string, it will be interpreted as a complex number and the function must be called without a second parameter.
+   The second parameter can never be a string. Each argument may be any numeric type (including complex).
+   If imag is omitted, it defaults to zero and the function serves as a numeric conversion function like ``int()``, ``long()`` and ``float()``.
    If both arguments are omitted, returns ``0j``.
 
    .. note::
-   
-      Note When converting from a string, the string must not contain whitespace around the central ``+`` or ``-`` operator. 
+
+      Note When converting from a string, the string must not contain whitespace around the central ``+`` or ``-`` operator.
       For example, ``complex('1+2j')`` is fine, but ``complex('1 + 2j')`` raises ``ValueError``.
 
 
@@ -334,16 +337,16 @@ Numeric functions
 
    Return a floating point number constructed from a number or string x.
 
-   If the argument is a string, it must contain a possibly signed decimal or floating point number, possibly embedded in whitespace. 
-   The argument may also be [+|-]nan or [+|-]inf. Otherwise, the argument may be a plain or long integer or a floating point number, 
-   and a floating point number with the same value (within Python’s floating point precision) is returned. 
+   If the argument is a string, it must contain a possibly signed decimal or floating point number, possibly embedded in whitespace.
+   The argument may also be [+|-]nan or [+|-]inf. Otherwise, the argument may be a plain or long integer or a floating point number,
+   and a floating point number with the same value (within Python’s floating point precision) is returned.
    If no argument is given, returns ``0.0``.
 
-   .. note:: 
+   .. note::
 
-      Note When passing in a string, values for NaN and Infinity may be returned, depending on the underlying C library. 
-      Float accepts the strings nan, inf and -inf for NaN and positive or negative infinity. 
-      The case and a leading + are ignored as well as a leading - is ignored for NaN. 
+      Note When passing in a string, values for NaN and Infinity may be returned, depending on the underlying C library.
+      Float accepts the strings nan, inf and -inf for NaN and positive or negative infinity.
+      The case and a leading + are ignored as well as a leading - is ignored for NaN.
       Float always represents NaN and infinity as nan, inf or -inf.
 
 
@@ -360,9 +363,9 @@ Numeric functions
    literal <integers>` in radix *base*.  Optionally, the literal can be
    preceded by ``+`` or ``-`` (with no space in between) and surrounded by
    whitespace.  A base-n literal consists of the digits 0 to n-1, with ``a``
-   to ``z`` (or ``A`` to ``Z``) having values 10 to 35. 
+   to ``z`` (or ``A`` to ``Z``) having values 10 to 35.
 
-   The default *base* is 10. The allowed values are 0 and 2--36. 
+   The default *base* is 10. The allowed values are 0 and 2--36.
    Base-2, -8, and -16 literals can be optionally prefixed with ``0b``/``0B``,
    ``0o``/``0O``, or ``0x``/``0X``, as with integer literals in code.  Base 0
    means to interpret exactly as a code literal, so that the actual base is 2,
@@ -373,10 +376,10 @@ Numeric functions
 .. function:: class long(x=0)
 .. function:: class long(x, base=10)
 
-   Return a long integer object constructed from a string or number ``x``. 
-   If the argument is a string, it must contain a possibly signed number of arbitrary size, possibly embedded in whitespace. 
+   Return a long integer object constructed from a string or number ``x``.
+   If the argument is a string, it must contain a possibly signed number of arbitrary size, possibly embedded in whitespace.
    The ``base`` argument is interpreted in the same way as for ``int()``, and may only be given when x is a string.
-   Otherwise, the argument may be a plain or long integer or a floating point number, and a long integer with the same value is returned. 
+   Otherwise, the argument may be a plain or long integer or a floating point number, and a long integer with the same value is returned.
    Conversion of floating point numbers to integers truncates (towards zero). If no arguments are given, returns ``0L``.
 
 
@@ -385,30 +388,30 @@ Boolean functions
 
 .. class:: bool([x])
 
-   Return a Boolean value, i.e. one of ``True`` or ``False``. 
-   *x* is converted using the standard truth testing procedure. 
-   If x is false or omitted, this returns ``False``; otherwise it returns ``True``. 
-   bool is also a class, which is a subclass of int. Class bool cannot be subclassed further. 
+   Return a Boolean value, i.e. one of ``True`` or ``False``.
+   *x* is converted using the standard truth testing procedure.
+   If x is false or omitted, this returns ``False``; otherwise it returns ``True``.
+   bool is also a class, which is a subclass of int. Class bool cannot be subclassed further.
    Its only instances are ``False`` and ``True``.
 
 
 .. function:: all(iterable)
 
-   Return ``True`` if all elements of the iterable are true (or if the iterable is empty). 
+   Return ``True`` if all elements of the iterable are true (or if the iterable is empty).
    Equivalent to::
-   
+
       def all(iterable):
          for element in iterable:
             if not element:
                return False
          return True
-   
+
 
 .. function:: any(iterable)
 
-   Return ``True`` if all elements of the iterable are true (or if the iterable is empty). 
+   Return ``True`` if all elements of the iterable are true (or if the iterable is empty).
    Equivalent to::
-   
+
       def any(iterable):
          for element in iterable:
             if element:
@@ -453,7 +456,7 @@ Mathematical functions
    If the iterable is empty and *default* is not provided, a :exc:`ValueError` is raised.
 
    If multiple items are maximal, the function returns the first one encountered.
-   This is consistent with other sort-stability preserving tools such as 
+   This is consistent with other sort-stability preserving tools such as
    ``sorted(iterable, key=keyfunc, reverse=True)[0]`` and
    ``heapq.nlargest(1, iterable, key=keyfunc)``.
 
@@ -474,7 +477,7 @@ Mathematical functions
    If the iterable is empty and *default* is not provided, a :exc:`ValueError` is raised.
 
    If multiple items are minimal, the function returns the first one encountered.
-   This is consistent with other sort-stability preserving tools such as 
+   This is consistent with other sort-stability preserving tools such as
    ``sorted(iterable, key=keyfunc)[0]`` and ``heapq.nsmallest(1, iterable, key=keyfunc)``.
 
 
@@ -538,10 +541,10 @@ String functions
 .. _func-str:
 .. class:: class str(object='')
 
-   Return a string containing a nicely printable representation of an object. 
-   For strings, this returns the string itself. 
-   The difference with ``repr(object)`` is that ``str(object)`` does not always 
-   attempt to return a string that is acceptable to ``eval()``; 
+   Return a string containing a nicely printable representation of an object.
+   For strings, this returns the string itself.
+   The difference with ``repr(object)`` is that ``str(object)`` does not always
+   attempt to return a string that is acceptable to ``eval()``;
    its goal is to return a printable string. If no argument is given, returns the empty string, ''.
 
 
@@ -610,7 +613,7 @@ str-int conversion functions
 
 .. function:: oct(x)
 
-   Convert an integer number (of any size) to an octal string. 
+   Convert an integer number (of any size) to an octal string.
 
 .. function:: hex(x)
 
@@ -620,28 +623,28 @@ str-int conversion functions
 
    As :func:`repr`, return a string containing a printable representation of an
    object, but escape the non-ASCII characters in the string returned by
-   :func:`repr` using ``\x``, ``\u`` or ``\U`` escapes. 
+   :func:`repr` using ``\x``, ``\u`` or ``\U`` escapes.
 
 .. function:: chr(i)
 
-   Return a string of one character whose ASCII code is the integer ``i``. 
-   This is the inverse of :func:`ord`. The argument must be in the range [0..255]; 
-   ``ValueError`` will be raised if i is outside that range. 
-   
+   Return a string of one character whose ASCII code is the integer ``i``.
+   This is the inverse of :func:`ord`. The argument must be in the range [0..255];
+   ``ValueError`` will be raised if i is outside that range.
+
    .. code-block:: py
-   
+
       >>> chr(97)
       'a'
 
 .. function:: unichr(i)
 
    Return the Unicode string of one character whose Unicode code is the integer ``i``.
-   This is the inverse of :func:`ord` for Unicode strings. The valid range for the 
-   argument depends how Python was configured – it may be either UCS2 ``[0..0xFFFF]`` 
-   or UCS4 ``[0..0x10FFFF]``. ``ValueError`` is raised otherwise. 
-   
+   This is the inverse of :func:`ord` for Unicode strings. The valid range for the
+   argument depends how Python was configured – it may be either UCS2 ``[0..0xFFFF]``
+   or UCS4 ``[0..0x10FFFF]``. ``ValueError`` is raised otherwise.
+
    .. code-block:: py
-   
+
       >>> unichr(97)
       u'a'
 
@@ -679,10 +682,10 @@ str-int conversion functions
 
 .. function:: ord(c)
 
-   Inverse of :func:`chr` for 8-bit strings and of :func:`unichr` for unicode objects. 
-   
+   Inverse of :func:`chr` for 8-bit strings and of :func:`unichr` for unicode objects.
+
    .. code-block:: python
-   
+
       >>> ord('a')
       97
       >>> ord(u'\u2020')
@@ -696,10 +699,10 @@ File Utilities
 
 .. class:: file(name[, mode[, buffering]])
 
-   Constructor function for the file type, described further in section File Objects. 
+   Constructor function for the file type, described further in section File Objects.
    The constructor’s arguments are the same as those of the :func:`open` built-in function described below.
 
-   When opening a file, it’s preferable to use :func:`open` instead of invoking this constructor directly. 
+   When opening a file, it’s preferable to use :func:`open` instead of invoking this constructor directly.
    file is more suited to type testing (for example, writing ``isinstance(f, file)``).
 
    .. versionadded::
@@ -717,30 +720,30 @@ File Utilities
 
 
       ===========  =================================================================
-      Character    Meaning                                                          
+      Character    Meaning
       ===========  =================================================================
-      ``'r'``      open for reading (default)                                       
-      ``'w'``      open for writing, truncating the file first                      
-      ``'x'``      open for exclusive creation, failing if the file already exists  
-      ``'a'``      open for writing, appending to the end of the file if it exists  
-      ``'b'``      binary mode                                                      
-      ``'t'``      text mode (default)                                              
-      ``'+'``      open a disk file for updating (reading and writing)              
+      ``'r'``      open for reading (default)
+      ``'w'``      open for writing, truncating the file first
+      ``'x'``      open for exclusive creation, failing if the file already exists
+      ``'a'``      open for writing, appending to the end of the file if it exists
+      ``'b'``      binary mode
+      ``'t'``      text mode (default)
+      ``'+'``      open a disk file for updating (reading and writing)
       ===========  =================================================================
 
    The optional *buffering* argument specifies the file’s desired buffer size:
 
       =======  ======================
-      Value    Meaning               
+      Value    Meaning
       =======  ======================
-      <0       system default        
-      0        unbuffered            
-      1        line buffered         
-      >1       buffer size in bytes  
+      <0       system default
+      0        unbuffered
+      1        line buffered
+      >1       buffer size in bytes
       =======  ======================
 
-   If omitted, the system default is used, which is usually line buffered for tty devices 
-   and fully buffered for other files. 
+   If omitted, the system default is used, which is usually line buffered for tty devices
+   and fully buffered for other files.
 
 
 Class utilities
@@ -756,7 +759,7 @@ Class utilities
 
       >>> help(object)
       Help on class object in module __builtin__:
-      
+
       class object
        |  The most base type
 
@@ -774,13 +777,13 @@ Class utilities
 
    There are two typical use cases for `super`.  In a class hierarchy with
    **single inheritance**, `super` can be used to refer to parent classes without
-   naming them explicitly, thus making the code more maintainable.  
+   naming them explicitly, thus making the code more maintainable.
 
    The second use case is to support cooperative multiple inheritance in a
    dynamic execution environment. This use case is unique to Python and is
    not found in statically compiled languages or languages that only support
    single inheritance. This makes it possible to implement "diamond diagrams"
-   where multiple base classes implement the same method. 
+   where multiple base classes implement the same method.
 
    For both use cases, a typical superclass call looks like this::
 
@@ -822,17 +825,17 @@ Class utilities
 
 .. function:: isinstance(object, classinfo)
 
-   Return true if the *object* argument is an instance of the *classinfo* argument, or of a (direct, indirect or virtual) subclass thereof. 
-   Also return true if *classinfo* is a type object (new-style class) and *object* is an object of that type or of a (direct, indirect or virtual) subclass thereof. 
-   If *object* is not a class instance or an object of the given type, the function always returns false. 
-   If *classinfo* is a tuple of class or type objects (or recursively, other such tuples), return true if object is an instance of any of the classes or types. 
+   Return true if the *object* argument is an instance of the *classinfo* argument, or of a (direct, indirect or virtual) subclass thereof.
+   Also return true if *classinfo* is a type object (new-style class) and *object* is an object of that type or of a (direct, indirect or virtual) subclass thereof.
+   If *object* is not a class instance or an object of the given type, the function always returns false.
+   If *classinfo* is a tuple of class or type objects (or recursively, other such tuples), return true if object is an instance of any of the classes or types.
    If *classinfo* is not a class, type, or tuple of classes, types, and such tuples, a ``TypeError`` exception is raised.
 
 
 .. function:: issubclass(class, classinfo)
 
-   Return true if ``class`` is a subclass (direct, indirect or virtual) of ``classinfo``. 
-   A class is considered a subclass of itself. ``classinfo`` may be a tuple of class objects, 
+   Return true if ``class`` is a subclass (direct, indirect or virtual) of ``classinfo``.
+   A class is considered a subclass of itself. ``classinfo`` may be a tuple of class objects,
    in which case every entry in ``classinfo`` will be checked. In any other case, a ``TypeError`` exception is raised.
 
 
@@ -854,7 +857,7 @@ Class utilities
 
 
 .. function:: setattr(object, name, value)
-  
+
    This is the counterpart of :func:`getattr`.  The arguments are an object, a
    string and an arbitrary value.  The string may name an existing attribute or a
    new attribute.  The function assigns the value to the attribute, provided the
@@ -864,8 +867,8 @@ Class utilities
 
 .. function:: delattr(object, name)
 
-   This is a relative of ``setattr()``. The arguments are an object and a string. 
-   The string must be the name of one of the object’s attributes. The function deletes the named attribute, provided the object allows it. 
+   This is a relative of ``setattr()``. The arguments are an object and a string.
+   The string must be the name of one of the object’s attributes. The function deletes the named attribute, provided the object allows it.
    For example, delattr(x, 'foobar') is equivalent to del x.foobar.
 
 
@@ -938,7 +941,7 @@ Miscellaneous utilities
 
    Equivalent to ``eval(raw_input(prompt))``.
 
-   This function does not catch user errors. If the input is not syntactically valid, a :exc:`SyntaxError` will be raised. 
+   This function does not catch user errors. If the input is not syntactically valid, a :exc:`SyntaxError` will be raised.
    Other exceptions may be raised if there is an error during evaluation.
 
    If the :mod:`readline` module was loaded, then :func:`input` will use it to provide elaborate line editing and history features.
@@ -1075,7 +1078,7 @@ Miscellaneous utilities
    from each of the argument sequences. The returned list is truncated
    in length to the length of the shortest argument sequence.
 
-   ``zip()`` in conjunction with the ``*`` operator can be used to 
+   ``zip()`` in conjunction with the ``*`` operator can be used to
    unzip a list::
 
       >>> zip('rgb')
@@ -1089,8 +1092,8 @@ Miscellaneous utilities
       [(1, 4), (2, 5), (3, 6)]
       >>> x1, y1 = zip(*zipped)
       >>> x == list(x1) and y == list(y1)
-      True 
-      
+      True
+
       >>> mapped = map(None, x, y)
       >>> mapped
       [(1, 4), (2, 5), (3, 6)]
@@ -1461,7 +1464,7 @@ Miscellaneous utilities
    * As with all other objects in Python the old objects are only reclaimed after their reference counts drop to zero.
 
    * The names in the module namespace are updated to point to any new or changed objects.
-     
+
    * Other references to the old objects (such as names external to the module) are not rebound to refer to the new objects and must be updated in each namespace where they occur if that is desired.
 
 There are a number of other caveats:

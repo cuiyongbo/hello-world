@@ -32,9 +32,8 @@ Depth-first Search Algorithm
         as each vertex is finished, insert it onto the front of a linked list
         return the linked list of vertices
 
-:abbr:`SCC (Strongly Connected Component)` : a strongly connected component of a directed
-graph **G(V, E)** is a maximal set of vertices :math:`C \in V` such that for every pair
-of vertices u and v in C , we have :math:`u \rightleftharpoons v`.
+:abbr:`SCC (Strongly Connected Component)` : a SCC of a directed graph **G(V, E)** is a maximal set
+of vertices :math:`C \in V` such that for every pair of vertices u and v in C , we have :math:`u \rightleftharpoons v`.
 
 .. code-block:: none
 
@@ -45,12 +44,41 @@ of vertices u and v in C , we have :math:`u \rightleftharpoons v`.
     Output the vertices of each tree in the depth-first forest as
         a separate strongly connected component
 
-#. Tarjan's algorithm
+#. Tarjan's algorithm - a procedure for finding SCCs of a directed graph.
 
-    Tarjan's algorithm is a procedure for finding SCCs of a directed graph.
-    A SCC is a maximum set of vertices, in which exists at least one oriented
-    path between every two vertices. Tarjan's algorithm is based on DFS.
-    The vertices are indexed as they are traversed by DFS procedure.
+    .. code-block:: none
+        :caption: Algorithm pesudocode taken from wiki
+
+        index = 0
+        S = empty stack
+        scc_list = empty list
+
+        tarjanAlgorithm(G)
+            for u in G.V
+                if v is not visited
+                    strongConnect(G, u)
+
+        strongConnect(G, u)
+            u.index = index     // index defined by DFS order
+            u.lowlink = index   // the smallest index of node reachable from v, including v itself.
+            index += 1
+            S.push(u)
+            u.onStack = true
+            for v in G.adj[u]
+                if v is not visited
+                    strongConnect(v)
+                    u.lowlink = min(u.lowlink, v.lowlink)
+                else if v.onStack
+                    u.lowlink = min(u.lowlink, v.index)
+
+            if u.lowlink == u.index
+                scc = empty list
+                do
+                    v = S.pop()
+                    v.onStack = false
+                    scc.add(v)
+                while(u != v)
+                scc_list.add(scc)
 
 #. Leetcode exercises
 

@@ -28,21 +28,21 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
 
     // O(mn)
     LCS-Length(x, y)
-       m, n = x.length, y.length
-       let b[1..m,1..n] and c[0..m,0..n] be new tables
-       c[:][0] = c[0][:] = 0
-       for i=1 to m
-          for j=1 to n
-             if x[i] == y[j]
-                c[i][j] = c[i-1][j-1] + 1
-                b[i][j] = LEFTUP
-             else if c[i-1][j] >= c[i][j-1]
-                c[i][j] = c[i-1][j]
-                b[i][j] = UP
-             else
-                c[i][j] = c[i-1][j]
-                b[i][j] = LEFT
-       return (c, b)
+        m, n = x.length, y.length
+        let b[1..m,1..n] and c[0..m,0..n] be new tables
+        c[:][0] = c[0][:] = 0
+        for i=1 to m
+            for j=1 to n
+                if x[i] == y[j]
+                    c[i][j] = c[i-1][j-1] + 1
+                    b[i][j] = LEFTUP
+                else if c[i-1][j] >= c[i][j-1]
+                    c[i][j] = c[i-1][j]
+                    b[i][j] = UP
+                else
+                    c[i][j] = c[i][j-1]
+                    b[i][j] = LEFT
+        return (c, b)
 
     // O(m+n)
     Print-LCS(b, x, i, j)
@@ -116,3 +116,4 @@ and wish to find a maximum-length common subsequence of :math:`X` and :math:`Y`.
    - Edit Distance
    - Length of Longest Fibonacci Subsequence
    - Maximum Length of Repeated Subarray
+   - Longest Increasing Subsequence

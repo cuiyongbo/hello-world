@@ -81,6 +81,7 @@ Biology Terms - Plants
 .. image:: images/atchafalya_cypress_swamp.jpg
 .. image:: images/queen_victoria_agrave.jpg
 .. image:: images/canada_tree_farm.jpg
+.. image:: images/poinsettia_christmas.jpg
 
 #. Sequoia National Park
 

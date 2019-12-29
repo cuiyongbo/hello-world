@@ -172,6 +172,7 @@ Wild Lives 03
 
     Elk [麋鹿]
 
+.. image:: images/hare_napping_in_the_snow.jpg
 .. image:: images/rabbit_in_the_grass.jpg
 .. figure:: images/hare.jpg
 

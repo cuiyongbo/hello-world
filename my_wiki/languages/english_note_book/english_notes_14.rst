@@ -166,6 +166,11 @@ English Note 14
 | Definition: a partial refund to someone who has paid too much money for tax, rent, or a utility.
 | Usage: Buyers are offered a cash rebate.
 |
+| surcharge
+| Definition: an extra payment of money in addition to the usual payment for something.
+| Usage: Fuel oil surcharge. [燃油附加税]
+| Usage: The government introduced a 15% surcharge on imports.
+|
 | invoice  [发票]
 | coupon [优惠券]
 | Definition: a small printed piece of paper that entitles the holer to a discount or that may be exchanged for goods or services.
