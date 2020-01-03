@@ -9,30 +9,30 @@ Python Miscellaneous Tricks 03
     * Uninstall python3: ``brew uninstall python3``
 
 #. set python3 as default python interpreter
-   
+
     Added ``alias python=python3`` in **.bashrc** file.
 
 #. Prohibit generating ``*.pyc`` file
 
     Add this code in your scripts::
-   
+
         import sys
         sys.dont_write_bytecode = True
-   
+
     The variable must be set **BEFORE** any import.
     and you can add it to your :envvar:`PYTHONSTARTUP`.
 
     About ``sys.dont_write_bytecode``:
-    
-    If this is true, Python won’t try to write ``.pyc`` or ``.pyo`` files on the import of source modules. 
-    This value is initially set to True or False depending on the ``-B`` command line option and the 
-    ``PYTHONDONTWRITEBYTECODE`` environment variable, but you can set it yourself to control bytecode 
+
+    If this is true, Python won’t try to write ``.pyc`` or ``.pyo`` files on the import of source modules.
+    This value is initially set to True or False depending on the ``-B`` command line option and the
+    ``PYTHONDONTWRITEBYTECODE`` environment variable, but you can set it yourself to control bytecode
     file generation.
 
     .. note::
 
-        A program doesn’t run any faster when it is read from a ``.pyc`` 
-        file than when it is read from a ``.py`` file; the only thing 
+        A program doesn’t run any faster when it is read from a ``.pyc``
+        file than when it is read from a ``.py`` file; the only thing
         that’s faster about ``.pyc`` files is the speed with which they are loaded.
 
 #. The Interactive Startup File
@@ -41,44 +41,44 @@ Python Miscellaneous Tricks 03
     executed every time the interpreter is started. You can do this by setting an environment
     variable named :envvar:`PYTHONSTARTUP` to the name of a file containing your start-up commands.
     This is similar to the :file:`.profile` feature of the Unix shells.
-   
+
     **This file is only read in interactive sessions**, not when Python reads commands from a script,
     and not when :file:`/dev/tty` is given as the explicit source of commands (which otherwise behaves
     like an interactive session). It is executed in the same namespace where interactive commands are executed,
     so that objects that it defines or imports can be used without qualification in the interactive session.
     You can also change the prompts ``sys.ps1`` and ``sys.ps2`` in this file.
-   
+
     If you want to read an additional start-up file from the current directory,
     you can program this in the global start-up file using code like::
-   
+
         if os.path.isfile('.pythonrc.py'):
             exec(open('.pythonrc.py').read())
-   
+
     If you want to use the startup file in a script,
     you must do this explicitly in the script::
-   
+
         import os
         filename = os.environ.get('PYTHONSTARTUP')
         if filename and os.path.isfile(filename):
             with open(filename) as fobj:
                 startup_file = fobj.read()
          exec(startup_file)
-   
+
     Add follow codes to :file:`.bashrc`: ``export PYTHONSTARTUP=~/.pythonrc``
-   
+
     Add command(s) you want to execute in :file:`~/.pythonrc`. like::
-   
+
         import math, time, re
         import os, sys
         from pprint import pprint
 
     .. note::
 
-        On windows, add an environmental variable named **PYTHONSTARTUP**, 
+        On windows, add an environmental variable named **PYTHONSTARTUP**,
         and fill its value with the script's full path. (the lettercase doesn't matter)
 
 #. python convert between uid and username
-   
+
     .. code-block:: py
 
         import pwd, grp
@@ -98,31 +98,31 @@ Python Miscellaneous Tricks 03
         import getpass
         getpass.getuser()
         'cherry'
-   
+
 #. python to add an additional directory to search path
-   
-    Augment the default search path for module files. The format is the same as the shell’s **PATH**: 
-    one or more directory pathnames separated by ``os.pathsep`` (e.g. colons on Unix or semicolons on Windows). 
+
+    Augment the default search path for module files. The format is the same as the shell’s **PATH**:
+    one or more directory pathnames separated by ``os.pathsep`` (e.g. colons on Unix or semicolons on Windows).
     Non-existent directories are silently ignored.
 
-    In addition to normal directories, individual **PYTHONPATH** entries may refer to zipfiles containing 
+    In addition to normal directories, individual **PYTHONPATH** entries may refer to zipfiles containing
     pure Python modules (in either source or compiled form). Extension modules cannot be imported from zipfiles.
 
-    The default search path is installation dependent, but generally begins with ``prefix/lib/pythonversion``. 
+    The default search path is installation dependent, but generally begins with ``prefix/lib/pythonversion``.
     It is always appended to **PYTHONPATH**.
 
     The search path can be manipulated from within a Python program as the variable ``sys.path``.
 
 #. sys.path
 
-    A list of strings that specifies the search path for modules. 
+    A list of strings that specifies the search path for modules.
     Initialized from the environment variable **PYTHONPATH**, plus an installation-dependent default.
 
-    As initialized upon program startup, the first item of this list, ``path[0]``, is the directory 
-    containing the script that was used to invoke the Python interpreter. If the script directory is 
-    not available (e.g. if the interpreter is invoked interactively or if the script is read 
-    from standard input), ``path[0]`` is the empty string, which directs Python to search modules 
-    in the current directory first. Notice that the script directory is inserted before the entries 
+    As initialized upon program startup, the first item of this list, ``path[0]``, is the directory
+    containing the script that was used to invoke the Python interpreter. If the script directory is
+    not available (e.g. if the interpreter is invoked interactively or if the script is read
+    from standard input), ``path[0]`` is the empty string, which directs Python to search modules
+    in the current directory first. Notice that the script directory is inserted before the entries
     inserted as a result of ``PYTHONPATH``::
 
         >>> pprint(sys.path)
@@ -138,12 +138,12 @@ Python Miscellaneous Tricks 03
          '/usr/lib/python2.7/dist-packages/gtk-2.0',
          '/usr/lib/pymodules/python2.7']
         >>> os.getenv('PYTHONPATH')
-        >>> 
+        >>>
 
     A program is free to modify this list for its own purposes.
 
 #. python convert between gid and group name
-   
+
     .. code-block:: py
 
         import pwd, grp
@@ -161,14 +161,14 @@ Python Miscellaneous Tricks 03
         grp.struct_group(gr_name='staff', gr_passwd='*', gr_gid=20, gr_mem=['root', 'cherry'])
 
 #. python to list all submodules in a module
-   
+
     .. code-block:: py
 
         >>> import types
         >>> for key, obj in sp.__dict__.items():
         ...     if type(obj) is types.ModuleType:
         ...         print(key)
-        ... 
+        ...
         char
         math
         ...
@@ -177,11 +177,11 @@ Python Miscellaneous Tricks 03
         signal
 
 #. python to check if an array is sorted
-   
+
     Solution: ``all([l[i] <= l[i+1] for i in xrange(len(l)-1)])``.
 
-#. python namedtuple
-   
+#. python to define C-like struct - namedtuple
+
     .. code-block:: sh
 
         from colllectins import namedtuple
@@ -189,7 +189,7 @@ Python Miscellaneous Tricks 03
         help(namedtuple)
             namedtuple(typename, field_names, verbose=False, rename=False)
             Returns a new subclass of tuple with named fields.
-    
+
         >>> Point = namedtuple('Point', ['x', 'y'])
         >>> Point.__doc__                   # docstring for the new class
         'Point(x, y)'
@@ -211,15 +211,15 @@ Python Miscellaneous Tricks 03
 
 #. python to print without newline
 
-    From Python2.6 you can import the print function from Python3: ``from __future__ import print_function`` 
-    This allows you to use the Python3's `print` function. In Python3, the `print` statement 
-    has been changed into a function. In Python 3, you can instead do: ``print('.', end='')``. 
+    From Python2.6 you can import the print function from Python3: ``from __future__ import print_function``
+    This allows you to use the Python3's `print` function. In Python3, the `print` statement
+    has been changed into a function. In Python 3, you can instead do: ``print('.', end='')``.
     If you are having trouble with buffering, you can flush the output by adding ``flush=True`` keyword argument.
 
 #. `super()`: TypeError: must be type, not classobj
-  
+
     .. code-block:: py
-    
+
         class SquareGrid:
         def __init__(self, width, height):
             self.width = width

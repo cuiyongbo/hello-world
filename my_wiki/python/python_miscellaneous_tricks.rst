@@ -5,31 +5,31 @@ Python Miscellaneous Usages
 #. input vs raw_input
 
    ``input()`` assumes that what you enter is a valid Python expression (it’s
-   more or less the inverse of ``repr``). If you write your name as a string, 
+   more or less the inverse of ``repr``). If you write your name as a string,
    that’s no problem::
-   
+
       >>> name = input("name:")
       name:'nihao'
-   
+
    However, it’s just a bit too much to ask that users write their name in quotes like this.
-   
+
    .. code-block:: python
-   
+
       >>> name = input("name:")
       name:nihao
       Traceback (most recent call last):
         File "<stdin>", line 1, in <module>
         File "<string>", line 1, in <module>
       NameError: name 'nihao' is not defined
-   
-   Therefore, we use ``raw_input()``, which treats all input as raw data 
+
+   Therefore, we use ``raw_input()``, which treats all input as raw data
    and puts it into a string::
-   
+
       >>> name = raw_input("name:")
       name:nihao
-   
+
    Unless you have a special need for ``input()``, you should probably use ``raw_input()``.
-      
+
 #. Useful Function List
 
    +------------------------------+------------------------------------------------------------------------+
@@ -72,93 +72,64 @@ Python Miscellaneous Usages
 
 #. Python ByteOrder
 
-   For multibyte data, It follows the architecture of the machine by default. If you need it to work cross-platform, 
-   then you'll want to force it. ASCII and UTF-8 are encoded as a single byte per character, so is it affected by 
+   For multibyte data, It follows the architecture of the machine by default. If you need it to work cross-platform,
+   then you'll want to force it. ASCII and UTF-8 are encoded as a single byte per character, so is it affected by
    the byte ordering? No.
-   
+
    Here is how to pack little ``<`` or big ``>`` endian:
-   
+
    .. code-block:: py
-   
+
       import struct
-      
+
       struct.pack('<L', 1234)
       '\xd2\x04\x00\x00'
-      
+
       struct.pack('>L', 1234)
       '\x00\x00\x04\xd2'
-   
+
    You can also encode strings as big or little endian this way if you are using UTF-16, as an example:
-   
+
    .. code-block:: py
-   
+
       s.encode('utf-16LE')
       s.encode('utf-16BE')
-   
+
    UTF-8, ASCII do not have endianness since it is 1 byte per character.
-
-#. Executable Python Scripts
-
-   On BSD’ish Unix systems, Python scripts can be made directly executable,
-   like shell scripts, by putting the line
-   
-   .. code-block:: sh
-   
-      #!/usr/bin/env python
-      # coding: utf-8 # source code encoding
-   
-   (assuming that the interpreter is on the user’s :envvar:`PATH`) at the beginning of the script
-   and giving the file an executable mode. The ``#!`` must be the first two characters of the file.
-   On some platforms, this first line must end with a Unix-style line ending ('\n'),
-   not a Windows ('\r\n') line ending. Note that the hash, or pound, character,
-   ``'#'``, is used to start a comment in Python.
-   
-   The script can be given an executable mode, or permission,
-   using the :command:`chmod` command.
-   
-   .. code-block:: sh
-   
-      $ chmod +x myscript.py
-   
-   On Windows systems, there is no notion of an “executable mode”.
-   The Python installer automatically associates ``.py`` files with :command:`python.exe`
-   so that a double-click on a Python file will run it as a script. The extension can also be ``.pyw``,
-   in that case, the console window that normally appears is suppressed.
-
 
 #. Source Code Encoding
 
-   By default, Python source files are treated as encoded in ASCII. 
-   To declare an encoding other than the default one, a special comment 
-   line should be added as the first line of the file. The syntax is 
-   as follows ``#coding: encoding`` where *encoding* is one of the 
+   By default, Python source files are treated as encoded in ASCII.
+   To declare an encoding other than the default one, a special comment
+   line should be added as the first line of the file. The syntax is
+   as follows ``#coding: encoding`` where *encoding* is one of the
    valid codecs supported by Python.
-   
-   For example, to declare that Windows-1252 encoding is to be used, the 
+
+   For example, to declare that Windows-1252 encoding is to be used, the
    first line of your source code file should be ``#coding: cp1252.``
-   
-   One exception to the first line rule is when the source code starts with 
-   a UNIX “shebang” line. In this case, the encoding declaration should be 
+
+   One exception to the first line rule is when the source code starts with
+   a UNIX “shebang” line. In this case, the encoding declaration should be
    added as the second line of the file. For example::
-   
+
       #!/usr/bin/env python
       #coding: cp1252
 
 #. Binary to Decimal
 
    .. code-block:: py
-   
+
       >>> int("1111", 2)
       15
-      
+
       >>> def get_int_big_endian(data):
       ...     return int(data.encode('hex'), 16)
       ...
       >>> def get_int_little_endian(data):
       ...     return int(data[::-1].encode('hex'), 16)
 
-#. Python list unique
-   
+#. Python to unique list
+
    .. code-block:: py
 
       mylist = [u'nowplaying', u'PBS', u'PBS', u'nowplaying', u'job', u'debate', u'thenandnow']
@@ -175,11 +146,11 @@ Python Miscellaneous Usages
       # use numpy.unique
 
 #. Force stdout to be unbuffered
-   
+
    .. code-block:: py
 
       import sys, os
-      
+
       # Solution one
       # add #!/usr/bin/env python -u
 
