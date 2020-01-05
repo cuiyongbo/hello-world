@@ -27,11 +27,11 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
             T.root = y
         else if x == x.p.left
             x.p.left = y
-        else 
+        else
             x.p.right = y
         y.left = x
         x.p = y
-   
+
     Right-Rotate(T, x)
         y = x.left
         x.left = y.right
@@ -42,11 +42,11 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
             T.root = y
         else if x == x.p.left
             x.p.left = y
-        else 
+        else
             x.p.right = y
         y.right = x
         x.p = y
-   
+
     RB-Insert(T, z)
         y = T.nil
         x = T.root
@@ -69,14 +69,14 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
     RB-Insert-Fixup(T, z)
         while z.p.color == RED
             if z.p == z.p.p.left
-                y = z.p.p.right   // z's uncle   
+                y = z.p.p.right   // z's uncle
                 if y.color == RED      // case 1
                     z.p.color = BlACK
                     y.color = BLACK
                     z.p.p.color = RED
                     z = z.p.p
-                else 
-                    if z == z.p.right  
+                else
+                    if z == z.p.right
                         z = z.p            // case 2
                         Left-Rotate(T, z)
                     z.p.color = BLACK      // case 3
@@ -91,9 +91,9 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
             T.root = v
         else if u == u.p.left
             u.p.left = v
-        else 
+        else
             u.p.right = v
-        v.p = u.p 
+        v.p = u.p
 
     RB-Delete(T, z)
         y = z
@@ -110,7 +110,7 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
             x = y.right
             if y.p == z
                 x.p = y
-            else 
+            else
                 RB-Transplant(T, y, y.right)
                 y.right = z.right
                 y.right.p = y
@@ -124,7 +124,7 @@ A red-black tree is a binary tree that satisfies the following **red-black prope
     RB-Delete-Fixup(T, x)
         while x != T.root and x.color == BLACK
             if x == x.p.left
-                w = x.p.right  // x's sibling                  
+                w = x.p.right  // x's sibling
                 if w.color == RED
                     w.color = BLACK               // case 1
                     x.p.color = RED

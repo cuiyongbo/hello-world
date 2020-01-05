@@ -21,10 +21,10 @@ The hook variables are declared in :file:`malloc.h`.
     // __memalign_hook
     void *function (size_t alignment, size_t size, const void *caller)
 
-.. note:: 
-   
+.. note::
+
     The value of *caller* is the return address found on the stack when
-    the ``malloc/realloc/free/aligned_alloc/memalign/posix_memalign/valloc`` function 
+    the ``malloc/realloc/free/aligned_alloc/memalign/posix_memalign/valloc`` function
     was called. This value allows you to trace the memory consumption of the program.
 
 You must make sure that the function you install as a hook for one of these functions does not call
@@ -49,9 +49,9 @@ here that *realloc* and *memalign* are not used in our program.
 
     /* Prototypes for __malloc_hook, __free_hook */
     #include <malloc.h>
-   
-    typedef void *(*malloc_hook_func)(size_t __size, const void *); 
-    typedef void *(*free_hook_func)(void* ptr, const void *); 
+
+    typedef void *(*malloc_hook_func)(size_t __size, const void *);
+    typedef void *(*free_hook_func)(void* ptr, const void *);
 
     static malloc_hook_func old_malloc_hook = NULL;
     static free_hook_func old_free_hook = NULL;
@@ -60,7 +60,7 @@ here that *realloc* and *memalign* are not used in our program.
     static void my_init_hook (void);
     static void *my_malloc_hook (size_t, const void *);
     static void my_free_hook (void*, const void *);
-   
+
     static void my_init (void)
     {
         old_malloc_hook = __malloc_hook;
@@ -68,7 +68,7 @@ here that *realloc* and *memalign* are not used in our program.
         __malloc_hook = my_malloc_hook;
         __free_hook = my_free_hook;
     }
-   
+
     static void* my_malloc_hook (size_t size, const void *caller)
     {
         void *result;
@@ -87,7 +87,7 @@ here that *realloc* and *memalign* are not used in our program.
         __free_hook = my_free_hook;
         return result;
     }
-   
+
     static void my_free_hook (void *ptr, const void *caller)
     {
         /* Restore all old hooks */
@@ -104,7 +104,7 @@ here that *realloc* and *memalign* are not used in our program.
         __malloc_hook = my_malloc_hook;
         __free_hook = my_free_hook;
     }
-   
+
     int main()
     {
         my_init();
@@ -121,36 +121,36 @@ Another example is memory operation taken from :file:`jansson/memory.c`.
 
     typedef void *(*json_malloc_t)(size_t);
     typedef void (*json_free_t)(void *);
-    
+
     void json_set_alloc_funcs(json_malloc_t malloc_fn, json_free_t free_fn);
     void json_get_alloc_funcs(json_malloc_t *malloc_fn, json_free_t *free_fn);
-    
+
     /* memory function pointers */
     static json_malloc_t do_malloc = malloc;
     static json_free_t do_free = free;
-    
+
     void *jsonp_malloc(size_t size)
     {
         if(!size)
             return NULL;
-    
+
         return (*do_malloc)(size);
     }
-    
+
     void jsonp_free(void *ptr)
     {
         if(!ptr)
             return;
-    
+
         (*do_free)(ptr);
     }
-    
+
     void json_set_alloc_funcs(json_malloc_t malloc_fn, json_free_t free_fn)
     {
         do_malloc = malloc_fn;
         do_free = free_fn;
     }
-    
+
     void json_get_alloc_funcs(json_malloc_t *malloc_fn, json_free_t *free_fn)
     {
         if (malloc_fn)

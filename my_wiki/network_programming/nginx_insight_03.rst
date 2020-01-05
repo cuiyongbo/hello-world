@@ -4,10 +4,10 @@ Nginx insight note 03
 
 Load balancing method:
 
-   - Round Robin
-   - Least Connections
-   - IP Hash
-   - Generic Hash
+    - Round Robin
+    - Least Connections
+    - IP Hash
+    - Generic Hash
 
 Server Weights
 
@@ -30,10 +30,10 @@ unless both of the other servers are unavailable. With this configuration of wei
 
 #. Load balance source code:
 
-   - ngx_http_upstream_get_peer
-   - ngx_stream_upstream_free_round_robin_peer
-   - ngx_stream_upstream_get_least_conn_peer
-   - ngx_stream_upstream_get_hash_peer
+    - ngx_http_upstream_get_peer
+    - ngx_stream_upstream_free_round_robin_peer
+    - ngx_stream_upstream_get_least_conn_peer
+    - ngx_stream_upstream_get_hash_peer
 
 .. rubric:: Footnotes
 

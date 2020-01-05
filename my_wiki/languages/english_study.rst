@@ -4,15 +4,15 @@ English page
 
 .. toctree::
 
-    english_note_book/english_notes_1
-    english_note_book/english_notes_2
-    english_note_book/english_notes_3
-    english_note_book/english_notes_4
-    english_note_book/english_notes_5
-    english_note_book/english_notes_6
-    english_note_book/english_notes_7
-    english_note_book/english_notes_8
-    english_note_book/english_notes_9
+    english_note_book/english_notes_01
+    english_note_book/english_notes_02
+    english_note_book/english_notes_03
+    english_note_book/english_notes_04
+    english_note_book/english_notes_05
+    english_note_book/english_notes_06
+    english_note_book/english_notes_07
+    english_note_book/english_notes_08
+    english_note_book/english_notes_09
     english_note_book/english_notes_10
     english_note_book/english_notes_11
     english_note_book/english_notes_12

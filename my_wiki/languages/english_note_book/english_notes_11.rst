@@ -41,6 +41,8 @@ Only paranoid can surrive.
 | interleave [留白]
 | Definition: insert pages, typically blank ones, between the pages of (a book).
 | Usage: Books of maps interleaved with tracing paper.
+| Definition: divide (memory or processing power) between a number of tasks by allocating segments of it to each task in turn.
+| Usage: memory is automatically interleaved as additional memory cards are added.
 |
 | postscript
 | Definition: (abbr. **PS**) an extra message that you add at the end of a letter after your signature. [附言]

@@ -285,3 +285,9 @@ Easy doesn't Enter into grown-up life.
 .. image:: images/snowflake_1577020802.jpg
 .. image:: images/winter_at_finnish_wilds.jpg
 .. image:: images/winter_at_valley_forge_1576832859.jpg
+.. image:: images/scenic_spots_1578240849.jpg
+.. image:: images/scenic_spots_1578240938.jpg
+.. image:: images/hawaii_volcanoes.jpg
+.. image:: images/volcano_eruption_1566891322.jpg
+.. image:: images/dormant_volcano_1578374696.jpg
+.. image:: images/sunrise_at_mount_fuji.jpg

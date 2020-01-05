@@ -34,13 +34,10 @@ what is called a reason for living also the excellent one for dying.
 | Definition: (one's bearings) awareness of one's position relative to one's surroundings.
 | Usage: he rose unsteadily to his feet and tried to get his bearings.
 |
-| idiosyncrasy
-| idiosyscratic
-| Definition: a mode of behavior or way of thought peculiar to an individual.
-| Usage: one of his little idiosyncrasies was always preferring to be in the car first.
+| idiosyncratic, idiosyncrasy
 | Definition: a distinctive or peculiar feature or characteristic of a place or thing.
 | Usage: the idiosyncrasies of the prison system.
-| Usage: she emerged as one of the great, idiosyncratic talents of the nineties.
+| Usage: she emerged as one of the greatest idiosyncratic talents of the Nineties.
 |
 | deportment
 | Definition: a person's behavior or manners.
@@ -338,13 +335,6 @@ what is called a reason for living also the excellent one for dying.
 | Usage: one of the twins was stillborn.
 | Definition: (of a proposal or plan) having failed to develop or be realized.
 | Usage: The proposed wealth tax was stillborn. [胎死腹中]
-|
-| armageddon
-| Definition: (in the New Testament) the last battle between good and evil before the Day of Judgment.
-| Definition: a dramatic and catastrophic conflict, typically seen as likely to destroy the world or the human race.
-| Usage: nuclear Armageddon.
-|
-| Jerusalem 耶路撒冷
 |
 | monkey
 | Definition: behave in a silly or playful way.

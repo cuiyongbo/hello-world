@@ -31,6 +31,7 @@ Windows Problems
 
         Saladict
         Proxy SwitchyOmega
+        百度广告屏蔽
 
 #. VS plugin collection
 

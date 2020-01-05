@@ -152,25 +152,10 @@ Python Miscellaneous Usages
       import sys, os
 
       # Solution one
-      # add #!/usr/bin/env python -u
+      # add ``#!/usr/bin/env python -u``
 
       # Solution two
-      sys.stdout = os.fdopen(sys.stdout, "w", 0)
+      sys.stdout = os.fdopen(sys.stdout.fileno(), "w", 0)
 
       #fdopen(fd [, mode='r' [, bufsize]]) -> file_object
       #Return an open file object connected to a file descriptor.
-
-      # Solution three
-      class Unbuffered(object):
-         def __init__(self, stream):
-             self.stream = stream
-         def write(self, data):
-             self.stream.write(data)
-             self.stream.flush()
-         def writelines(self, datas):
-             self.stream.writelines(datas)
-             self.stream.flush()
-         def __getattr__(self, attr):
-             return getattr(self.stream, attr)
-
-      sys.stdout = Unbuffered(sys.stdout)

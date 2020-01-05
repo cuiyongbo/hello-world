@@ -20,14 +20,9 @@ Git Tricks 04
 
         $ git cherry-pick 655b11c 368ac83 # the order matters
         [master 5aef46c] added an example
-         Date: Tue Nov 26 23:43:19 2019 +0800
-         4 files changed, 74 insertions(+), 1 deletion(-)
-         create mode 100644 .gitignore
-         create mode 100644 example/Makefile
-         create mode 100644 example/example.c
+        ...
         [master 89e03a1] refactored map_deinit
-         Date: Wed Nov 27 00:02:01 2019 +0800
-         3 files changed, 58 insertions(+), 57 deletions(-)
+        ...
 
         $ git log --oneline
         89e03a1 (HEAD -> master) refactored map_deinit

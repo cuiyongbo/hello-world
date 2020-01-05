@@ -31,12 +31,8 @@ Linux System Call
     linux_system_call/linux_daemon_basics
 
 
-#. see errno definition
+#. see ``errno`` definition
 
-    MacOS: ``man errno``.
-    Ubuntu: ``errno -l``, (may need install: ``sudo apt install moreutils``).
-
-.. rubric:: Footnotes
-
-.. [#] `Linux Manpage <https://www.systutorials.com/docs/linux/man/>`_
-.. [#] `GUN libc Manual <http://www.gnu.org/software/libc/manual/html_node/index.html#SEC_Contents>`_
+    - MacOS: ``man errno``
+    - Ubuntu: ``errno -l``, (need install: ``sudo apt install moreutils``)
+    - or look it up in ``/usr/include/sys/errno.h``

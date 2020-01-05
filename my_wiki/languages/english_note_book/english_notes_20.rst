@@ -2,6 +2,10 @@
 English Note 20
 ***************
 
+幸福不会主动走来，我必须要全力去争取。
+
+守株待兔
+
 | loon
 | Definition: act in a foolish or desultory way.
 | Usage: he decided to loon around London.

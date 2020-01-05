@@ -26,7 +26,7 @@ VIM Note
     .. code-block:: sh
         :caption: Edit **.vimrc** in your **HOME** directory
 
-        "set tab width, there is some problem with makefile
+        "set tab width
         set tabstop=4
 
         "indent automatically
@@ -34,6 +34,8 @@ VIM Note
 
         "replace tab with space
         set expandtab
+
+        " do not replace tab with space
         set noexpandtab
 
         "mark syntax with different colors
@@ -127,6 +129,26 @@ VIM Note
     .. code-block:: sh
 
         :%s/\(pipefd\)/g_\1/gc
+
+#. vim to replace existing tab with space
+
+   Type: ``:retab``.
+
+#. shiftwidth and cindent
+
+    A program is much easier to understand when the lines have been properly
+    indented.  Vim offers various ways to make this less work.  For C or C style
+    programs like Java or C++, set the **cindent** option. Set the **shiftwidth** option
+    to the amount of spaces you want for a deeper level. Four spaces will work fine.
+    One ":set" command will do it: ``:set cindent shiftwidth=4``.
+
+    With this option enabled, when you type something such as ``if (x)``, the next
+    line will automatically be indented an additional level.
+
+    When you type something in curly braces ({}), the text will be indented at the
+    start and unindented at the end. The unindenting will happen after typing the
+    '}', since Vim can't guess what you are going to type.
+
 
 .. rubric:: Footnotes
 

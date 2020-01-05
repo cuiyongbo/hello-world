@@ -4,14 +4,15 @@ Pending tasks
 
 **Now or Never**
 
-#. Fibonacci heap
-#. union find and disjoint sets
+**自救或者去死**
+
 #. Computer graphics algorithms [#geomatric_alg]_
 #. Unix Network Programming [#unix_network_programming]_
 #. Apple Open Soure [#apple_opensource]_
 #. https://github.com/janishar/mit-deep-learning-book-pdf.git
 #. matplotlib to draw the cover of murphy's machine learning
-#. explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
+#. Explore boston_housing, diabetes datasets for regression, the digits dataset for multi-class classification.
+#. The architecture of open source applications [#open_source_app_architecture]_
 
 #. Search system for the WIKI docs
 
@@ -31,9 +32,9 @@ Pending tasks
     #. Hacker and Painters [Finished, 2019-04-13]
     #. A* algorithm [#a_star_algorithm]_ (Finished, 2019-03-10)
     #. Review *Inside C++ Object Model* [finished, 2019-02-17 -- 2019-02-25]
-    #. 2019年底存款不低于 40 万
-    #. 英语电影摆脱字幕
-    #. 日语漫画不需要字典可以看懂旁白
+    #. 2019年底存款不低于 40 万 [**Failed**]
+    #. 英语电影摆脱字幕 [**Failed**]
+    #. 日语漫画不需要字典可以看懂旁白 [**Failed**]
 
 
 .. rubric:: Footnotes
@@ -43,3 +44,4 @@ Pending tasks
 .. [#geomatric_alg] http://geomalgorithms.com/
 .. [#apple_opensource] https://opensource.apple.com
 .. [#programing books] http://www.banshujiang.cn/
+.. [#open_source_app_architecture] https://www.aosabook.org/en/index.html

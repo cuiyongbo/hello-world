@@ -37,7 +37,7 @@ Mottoes
 骄傲是我的大缺点，一种夸大的自尊心，毫无理智的我的野心，那么强烈。
 如果我必得在光荣与德性（我爱好的）中选择其一，我确信我将选择前者。
 
--- 列夫·尼古拉耶维奇·托尔斯泰 
+-- 列夫·尼古拉耶维奇·托尔斯泰
 
 .. figure:: images/Lev_Nikolaevich_Tolstoy.jpg
 
@@ -102,10 +102,6 @@ What doesn't kill you will make you stronger.
 
 -- 吉井玲《笨蛋测验召唤兽》
 
-将自己的生命燃烧到灰一样白。
-
--- 矢吹丈 《明日之丈》
-
 .. figure:: images/CARPENTERS_YESTERDAY_ONCE_MORE.jpg
 
     There is always one song that brings back old memories.
@@ -121,3 +117,35 @@ Thinking well is wise, planning well wiser, doing well wisest and the best of al
 Tomorrow you thought of comes never.
 
 天予不取，反受其咎。
+
+.. code-block:: none
+
+    世界上最遥远的距离,
+    不是生与死，而是我就站在你的面前，你却不知道我爱你 　　
+    世界上最遥远的距离 　　
+    不是我站在你面前你却不知道我爱你 　
+    而是明明知道彼此相爱却不能在一起 　
+    世界上最遥远的距离 　
+    不是明明知道彼此相爱却不能在一起 　　
+    而是明明无法抵挡这股想念 　
+    却还得装作丝毫没有把你放在心里 　　
+    世界上最遥远的距离 　
+    不是明明无法抵挡这股想念 　
+    却还得装作丝毫没有把你放在心里
+    而是用自己冷漠的心再爱你的人之间掘了一条无法跨越的沟渠
+
+    世界上最遥远的距离
+    不是树与树的距离
+    而是同根生长的树枝却无法在风中相依
+    世界上最遥远的距离
+    不是树枝无法相依
+    而是相互瞭望的星星却没有交汇的轨迹
+    世界上最遥远的距离
+    不是星星没有交汇的轨迹
+    而是纵然轨迹交汇却在转瞬间无处寻觅
+    世界上最遥远的距离
+    不是瞬间便无处寻觅
+    而是尚未相遇便注定无法相聚
+    世界上最遥远的距离
+    是鱼与飞鸟的距离
+    一个翱翔天际，一个却深潜海底

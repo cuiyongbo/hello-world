@@ -253,8 +253,6 @@ English Note 17
 .. image:: images/slope_observator.jpg
 .. image:: images/forest_overview.jpg
 .. image:: images/sheep_flock.jpg
-.. image:: images/hawaii_volcanoes.jpg
-.. image:: images/volcano_eruption_1566891322.jpg
 .. image:: images/crummock_water_lake_district.jpg
 .. image:: images/sea_view_1565172200.jpg
 .. image:: images/sea_view_1565226555.jpg

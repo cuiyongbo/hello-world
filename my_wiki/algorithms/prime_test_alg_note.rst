@@ -5,13 +5,13 @@ Prime Test
 
 .. image:: images/Primes-vs-composites.svg.png
 
-A **prime number** is a natural number greater than 1 that cannot be formed 
-by multiplying two smaller natural numbers. A natural number greater 
+A **prime number** is a natural number greater than 1 that cannot be formed
+by multiplying two smaller natural numbers. A natural number greater
 than 1 that is not prime is called a **composite number**.
 
-The simplest primality test is **trial division:** Given an input number n, 
-check whether any prime integer m from 2 to :math:`\sqrt{n}` evenly divides. 
-If n is divisible by any m then n is composite, otherwise it is prime. 
+The simplest primality test is **trial division:** Given an input number n,
+check whether any prime integer m from 2 to :math:`\sqrt{n}` evenly divides.
+If n is divisible by any m then n is composite, otherwise it is prime.
 Thus, its running time is polynomial in the size of the input.
 
 .. code-block:: cpp
@@ -21,7 +21,7 @@ Thus, its running time is polynomial in the size of the input.
     {
         if (n != 2)
         {
-            if (n < 2 || n % 2 == 0) 
+            if (n < 2 || n % 2 == 0)
             {
                 return false;
             }
@@ -32,7 +32,7 @@ Thus, its running time is polynomial in the size of the input.
             }
         }
         return true;
-    } 
+    }
 
     bool isPrime_02(int n)
     {
@@ -55,13 +55,13 @@ Refer to [#Primality_test]_ for further information.
 
 .. image:: images/Sieve_of_Eratosthenes_animation.gif
 
-In mathematics, the sieve of Eratosthenes [#Sieve_of_Eratosthenes]_ is a simple, 
+In mathematics, the sieve of Eratosthenes [#Sieve_of_Eratosthenes]_ is a simple,
 ancient algorithm for finding all prime numbers up to any given limit.
 
-It does so by iteratively marking as composite the multiples of each prime, 
-starting with the first prime number, 2. The multiples of a given prime are 
-generated as a sequence of numbers starting from that prime, with constant difference 
-between them that is equal to that prime. This is the sieve's key distinction from using 
+It does so by iteratively marking as composite the multiples of each prime,
+starting with the first prime number, 2. The multiples of a given prime are
+generated as a sequence of numbers starting from that prime, with constant difference
+between them that is equal to that prime. This is the sieve's key distinction from using
 trial division [#Trial_division]_ to sequentially test each candidate number for divisibility by each prime.
 
 .. code-block:: none

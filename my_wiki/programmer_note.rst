@@ -19,4 +19,5 @@ no longer anything to take away.
     programmer_note/pthread_notes
     programmer_note/std_c_api
     programmer_note/linux_system_calls
+    programmer_note/memory_management_note
     programmer_note/programming_pearls

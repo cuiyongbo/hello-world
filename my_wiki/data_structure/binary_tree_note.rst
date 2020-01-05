@@ -48,7 +48,9 @@ then :math:`y.key \geq x.key`.
             x = x.right
         return x
 
-   Tree-Successor(x)
+    # the successor of node x is the node with smallest key
+    # that is larger than x.key
+    Tree-Successor(x)
         if x.right != NIL
             return Tree-Minimum(x.right)
         y = x.p
@@ -57,6 +59,8 @@ then :math:`y.key \geq x.key`.
             y = y.p
         return y
 
+    # the predecessor of node x is the node with largest key
+    # that is smaller than x.key
     Tree-Predecessor(x)
         if x.left != NIL
             return Tree-Maximum(x.left)
@@ -95,7 +99,7 @@ then :math:`y.key \geq x.key`.
     Transplant(T, u, v)
         if u.p == NIL
             T.root = v
-        else if u = u.p.left
+        else if u == u.p.left
             u.p.left = v
         else
             u.p.right = v

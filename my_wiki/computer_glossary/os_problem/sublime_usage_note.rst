@@ -12,7 +12,6 @@ Sublime Text Usage
 #. Folding/unfolding: shift + TAB (alt + TAB in Mac) [put the cursor in a completed header]
 #. adjust header level: ctrl + + (plus key) and ctrl + - (minus key) (alt + + and alt + -, in Mac)
 #. render preview: ctrl + shift + r
-#. Folding/unfolding: shift + TAB (alt + TAB in Mac)
 #. Navigation: alt+down and alt+up move the cursor position to the closer next or previous header respectively.
    alt+shift+down and alt+shift+up to the same, but only between headers with the same or higher level
 
@@ -47,11 +46,12 @@ Sublime Text Usage
 
 #. Open package control: Cmd + Shift + P (mac), Ctrl + Shift + P (windows)
 #. Move backward/forward: Ctrl + - / Shift + Ctrl + -
-#. Quick open file - Cmd + P / Cmd + T (mac)
+#. Quick open file: Cmd + P / Cmd + T (mac)
 #. Preview markdown file: install markdown html preview, then "Ctrl + shift + m"
-#. Find in files - Cmd + shift + F (mac)
-#. Insert Line After - Cmd + Enter
-#. Insert Line Before - Shift + Cmd + Enter (replace Cmd with Ctrl on windows)
+#. Find in files: Cmd + shift + F (mac)
+#. Insert Line After: Cmd + Enter
+#. Insert Line Before: Shift + Cmd + Enter (replace Cmd with Ctrl on windows)
+#. Switch Header/Implementation: Option + Cmd + Up
 
 #. Sublime Configure customization
 

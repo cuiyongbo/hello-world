@@ -13,7 +13,9 @@ Biology Terms - Sea Animals
 .. image:: images/whales-of-the-world-laura-row.jpg
 .. image:: images/ken-hurd-a-collection-of-whales.jpg
 .. image:: images/whale_tail_pure_sea.jpg
+.. image:: images/sperm_mother_and_baby.jpg
 .. image:: images/fin_whale.jpg
+.. image:: images/whale_jump_out_of_water.jpg
 .. figure:: images/harbor-porpoise.jpg
 
     Harbor Porpoise
