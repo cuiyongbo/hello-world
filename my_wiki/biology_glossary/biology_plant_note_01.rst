@@ -47,9 +47,10 @@ Biology Terms - Plants
 
    Iris [虹膜，鸢尾]
 
+.. figure:: images/narcissus_sneeze_spring_1581380852.jpg
 .. figure:: images/crocus_flower.jpg
 
-    Crocus flower / Daffoli [水仙花]
+    Crocus flower / Daffodil [水仙花]
 
 .. figure:: images/lanling.jpg
 

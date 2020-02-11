@@ -168,3 +168,14 @@ English Note 21
 | search me
 | Definition: I don't know
 | Usage: "where is your girlfriend?" Search me!
+|
+| jetty
+| Definition: a landing stage or small pier at which boats can dock or be moored. [码头]
+| Definition: a breakwater constructed to protect or defend a harbor, stretch of coast, or riverbank. [防波堤]
+|
+| constipation [便秘]
+| sneeze [打喷嚏]
+| Usage: the smoke made her sneeze.
+| Phrase: not to be sneezed at
+| Definition: not to be rejected without careful consideration; worth having or taking into account.
+| Usage: a saving of $550 was not to be sneezed at. [不容小觑]

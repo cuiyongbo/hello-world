@@ -203,3 +203,9 @@ English Note 20
 
     Piggyback
 
+.. image:: images/albert_bubbles_1581380852.jpg
+.. image:: images/lantern_festival_20200215.jpg
+.. image:: images/lion_rock_1581380852.jpg
+.. image:: images/scenic_spot_1581380852.jpg
+.. image:: images/snow_mountain_1581380852.jpg
+.. image:: images/sunrise_at_brighton_jetty.jpg

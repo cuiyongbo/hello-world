@@ -42,3 +42,4 @@ Biology terms - Insects
 
 .. image:: images/wing_of_dragon_fly.jpg
 .. image:: images/migrating_monarch_butterflies.jpg
+.. image:: images/butterfly_pair_1581380852.jpg
