@@ -106,3 +106,25 @@ Python Miscellaneous Tricks 04
         >>> l = [1,1,1,2,2,3,3,4,5]
         >>> Counter(l)
         Counter({1: 3, 2: 2, 3: 2, 4: 1, 5: 1})
+
+#. Text progress bar example
+
+    .. code-block:: py
+
+        chapter_name = 'volume-01'
+        total = 1000
+        width = len(str(total))
+        current, remains = 1, total-1
+        for url in page_urls:
+            progress = '\rDownloading {}, current {:{}}, remain {:{}}'.format(chapter_name, current, width, remains, width)
+            sys.stdout.write(progress)
+            sys.stdout.flush()
+
+            time.sleep(1)
+
+            current += 1
+            remains -= 1
+
+        sys.stdout.write('\rFinish downloading {}, total {} pictures.{}'.format(chapter_name, total, ' ' * 100))
+        sys.stdout.flush()
+        print()

@@ -21,7 +21,6 @@ Pending tasks
     - how to compute similarity: clustering or classification
     - Make some ranking
 
-
 2019 Targets
 ============
 

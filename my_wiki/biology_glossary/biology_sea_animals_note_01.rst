@@ -2,7 +2,7 @@
 Biology Terms - Sea Animals
 ***************************
 
-
+.. image:: images/pinzon_island_tortoise.jpg
 .. image:: images/giant_tortoise_in_galapagos_island.jpg
 .. image:: images/leatherback_sea_turtle.jpg
 .. image:: images/green_sea_turtle.jpg
