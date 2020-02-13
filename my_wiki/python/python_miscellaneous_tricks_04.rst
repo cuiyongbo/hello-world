@@ -128,3 +128,15 @@ Python Miscellaneous Tricks 04
         sys.stdout.write('\rFinish downloading {}, total {} pictures.{}'.format(chapter_name, total, ' ' * 100))
         sys.stdout.flush()
         print()
+
+#. Python process pool
+
+    .. code-block:: py
+
+        from multiprocessing import Pool
+
+        def f(x): return x*x
+
+        with Pool(5) as p:
+            p.map(f, range(10))
+

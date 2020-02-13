@@ -209,3 +209,4 @@ English Note 20
 .. image:: images/scenic_spot_1581380852.jpg
 .. image:: images/snow_mountain_1581380852.jpg
 .. image:: images/sunrise_at_brighton_jetty.jpg
+.. image:: images/abiqua_fall.jpg

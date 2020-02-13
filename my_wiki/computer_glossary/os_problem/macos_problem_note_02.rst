@@ -65,3 +65,16 @@ MacOS Problems 02
     run: ``sudo security authorizationdb write system.privilege.taskport allow``
 
     .. image:: images/gdb_take_control_notification.png
+
+#. Dash Document location: ``/Users/cherry/Library/Application Support/Dash/DocSets``
+
+#. Mac workhorses
+
+    - Dash
+    - eZip
+    - Sublime Text 3
+    - gdb, gcc
+    - Moviest
+    - Parallel Desktop
+    - Python3
+    - Thunder
