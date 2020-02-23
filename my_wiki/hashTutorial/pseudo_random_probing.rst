@@ -1,5 +1,6 @@
-Section 6.2 - Pseudo-random Probing
-===================================
+*********************************
+Section 6.2 Pseudo-random Probing
+*********************************
 
 The ideal probe function would select the next position
 on the probe sequence at random from among the unvisited

@@ -107,6 +107,18 @@ Nginx Usage
         sudo apt-get install zlib1g zlib1g.dev
         sudo apt-get install libpcre3 libpcre3-dev
 
+#. nginx to establish static web server
+
+    .. code-block:: sh
+
+        # add a ``location`` in ``server`` block
+        location mywiki
+        {
+            alias /path/to/mywiki
+            index index.html index.htm;
+        }
+
+
 
 .. rubric:: Footnotes
 

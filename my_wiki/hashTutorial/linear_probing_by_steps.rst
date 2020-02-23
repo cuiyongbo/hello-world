@@ -1,12 +1,12 @@
-Section 6.1 - Linear Probing by Steps
-=====================================
+***********************************
+Section 6.1 Linear Probing by Steps
+***********************************
 
-How can we avoid **primary clustering**? One possible improvement might be to use linear
+How can we avoid **primary clustering?** One possible improvement might be to use linear
 probing, but to skip slots by some constant *c* other than 1. This would make the probe
 function *probe(K, i) = ci*, and so the :math:`i^{th}` slot in the probe sequence will
 be ``(hash(K) + ic)%M``. In this way, records with adjacent home positions will not
-follow the same probe sequence. For example, if we were to skip by 2, then our offsets
-from the home slot would be 2, then 4, then 6, and so on.
+follow the same probe sequence.
 
 One quality of a good probe sequence is that it will cycle through all slots in the
 hash table before returning to the home position. Clearly linear probing (which

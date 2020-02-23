@@ -39,11 +39,11 @@ Operators in the same box evaluate left to right.
 | in, not in, is, is not,    | Comparisons, membership, identity   |
 | <, <=,  >,  >=, <>, !=, == |                                     |
 +----------------------------+-------------------------------------+
-| not x                      | Boolean NOT                         |
+| not x                      | Logical NOT                         |
 +----------------------------+-------------------------------------+
-| and                        | Boolean AND                         |
+| and                        | Logical AND                         |
 +----------------------------+-------------------------------------+
-| or                         | Boolean OR                          |
+| or                         | Logical OR                          |
 +----------------------------+-------------------------------------+
 | lambda                     | Lambda expression                   |
 +----------------------------+-------------------------------------+

@@ -7,6 +7,7 @@ Welcome to My Wiki's documentation!
 ===================================
 
 .. toctree::
+    :titlesonly:
     :maxdepth: 2
     :caption: Contents:
 
@@ -19,6 +20,7 @@ Welcome to My Wiki's documentation!
     shell_commands
     programmer_note
     python_note
+    hash_tutorial
     network_programming_notes
     more_cpp_idioms_note
     machine_learning_note

@@ -1,7 +1,8 @@
-Section 4 - Bucket Hashing
-==========================
+****************************************
+Section 4  Closed Hashing with Bucketing
+****************************************
 
-Closed hashing stores all records directly in the hash table.
+Closed hashing (aka Open addressing) stores all records directly in the hash table.
 Each record *R* with key value :math:`k_R` has a home position
 that is h(:math:`k_R`), the slot computed by the hash function.
 If *R* is to be inserted and another record already occupies R's
@@ -26,7 +27,7 @@ overflow bucket.
 When searching for a record, the first step is to hash the key to determine
 which bucket should contain the record. The records in this bucket are then
 searched. If the desired key value is not found and the bucket still has free
-slots, then the search is complete. If the bucket is full, then it is possible
+slots, then the search is done. If the bucket is full, then it is possible
 that the desired record is stored in the overflow bucket. In this case, the
 overflow bucket must be searched until the record is found or all records
 in the overflow bucket have been checked. If there are many records in the

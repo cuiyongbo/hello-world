@@ -1,5 +1,6 @@
-Section 7 - Analysis of Closed Hashing
-======================================
+************************************
+Section 7 Analysis of Closed Hashing
+************************************
 
 How efficient is hashing? **We can measure hashing performance in terms of the number of record accesses required when performing an operation.** The primary operations of concern are **insertion**, **deletion**, and **search**. It is useful to distinguish between successful and unsuccessful searches. Before a record can be deleted, it must be found. Thus, the number of accesses required to delete a record is equivalent to the number required to successfully search for it. To insert a record, an empty slot along the record's probe sequence must be found. This is equivalent to an unsuccessful search for the record (recall that a successful search for the record during insertion should generate an error because two records with the same key are not allowed to be stored in the table).
 
@@ -9,11 +10,9 @@ From this discussion, we see that the expected cost of hashing is a function of 
 
 An estimate of the expected cost for an insertion (or an unsuccessful search) can be derived analytically as a function of α in the case where we assume that the probe sequence follows a random permutation of the slots in the hash table. Assuming that every slot in the table has equal probability of being the home slot for the next record, the probability of finding the home position occupied is **α**. The probability of finding both the home position occupied and the next slot on the probe sequence occupied is :math:`\frac{N(N-1)}{M(M-1)}`. The probability of *i* collisions is :math:`\frac{N(N-1) ... (N-i+1)}{M(M-1) ... (M-i+1)}`. If **N** and **M** are large, then this is approximately :math:`\frac{N}{M_i}`. The expected number of probes is one plus the sum over *i* >= 1 of the probability of i collisions, which is approximately
 
-.. math::
+.. math:: 1 + \sum_{i=1}^{∞}\frac{N}{M_i} = \frac{1}{1-\alpha}
 
-   1 + \sum_{i=1}^{∞}\frac{N}{M_i} = \frac{1}{1-\alpha}
-
-The cost for a successful search (or a deletion) has the same cost as originally inserting that record. However, the expected value for the insertion cost depends on the value of **α** not at the time of deletion, but rather at the time of the original insertion. We can derive an estimate of this cost (essentially an average over all the insertion costs) by integrating from 0 to the current value of **α**, yielding a result of :math:`\frac{1}{1-\alpha}log_e\frac{1}{1-\alpha}`.
+The cost for a successful search (or a deletion) has the same cost as originally inserting that record. However, the expected value for the insertion cost depends on the value of **α** not at the time of deletion, but rather at the time of the original insertion. We can derive an estimate of this cost (essentially an average over all the insertion costs) by integrating from 0 to the current value of **α**, yielding a result of :math:`\frac{1}{1-\alpha}ln\frac{1}{1-\alpha}`.
 
 It is important to realize that these equations represent the expected cost for operations using the unrealistic assumption that the probe sequence is based on a random permutation of the slots in the hash table (thus avoiding all expense resulting from clustering). Thus, these costs are lower-bound estimates in the average case. The true average cost under linear probing is :math:`0.5(1 + \frac{1}{(1-\alpha)^2})` for insertions or unsuccessful searches and :math:`0.5(1 + \frac{1}{1-\alpha})` for deletions or successful searches.
 

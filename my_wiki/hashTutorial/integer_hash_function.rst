@@ -1,12 +1,8 @@
-Section 9 - Integer Hash Function
-=================================
+:orphan:
 
-Abstract
---------
-
-An integer hash function accepts an integer hash key, and returns an
-integer hash result with **uniform distribution**. In this article, we will
-be discussing the construction of integer hash functions.
+*********************
+Integer Hash Function
+*********************
 
 Introduction
 ------------
@@ -35,7 +31,7 @@ If the input word size and the output word size are identical, and in addition
 the operations in ``h()`` are reversible, then the following properties are true.
 
 #. If ``h(x1) == y1``, then there is an inverse function ``h_inverse(y1) == x1``
-   
+
 #. Because the inverse function exists, there cannot be a value *x2*
    such that ``x1 != x2``, and ``h(x2) == y1``.
 
@@ -50,10 +46,6 @@ the input will make about 1/2 of the output bits be different. At a
 point in the chain, a new result is obtained by a computation involving
 earlier results.
 
-For example, the operation ``a = a + b`` is reversible if we know the value
-of *b*, and the after value of *a*. The before value of *a* is obtained
-by subtracting the after value of *a* with the value of *b*.
-
 
 Knuth's Multiplicative Method
 -----------------------------
@@ -66,7 +58,7 @@ function. The key is multiplied by the golden ratio of :math:`2^{32}`
 Since :math:`2^{31} - 1` and :math:`2^{32}` has no common factors in
 common, the multiplication produces a complete mapping of the key to
 hash result with no overlap. This method works pretty well if the keys
-have small values. Bad hash results are produced if the keys vary in 
+have small values. Bad hash results are produced if the keys vary in
 the upper bits. As is true in all multiplications, variations of
 upper digits do not influence the lower digits of the multiplication
 result.
@@ -343,16 +335,3 @@ Using the inlined version of the integer hash function is faster than
 doing a remaindering operation with a prime number! An integer remainder
 operation may take up to 18 cycles or longer to complete, depending on
 machine architecture.
-
-
-Conclusions
------------
-
-In this article, we have examined a number of hash function construction
-algorithms. Knuth's multiplicative method is the simplest, but has some
-known defects. Robert Jenkins' 96 bit mix function can be used as an
-integer hash function, but is more suitable for hashing long keys. A
-dedicated hash function is well suited for hashing an integer number.
-
-We have also presented an application of the integer hash function to
-improve the quality of a hash value.

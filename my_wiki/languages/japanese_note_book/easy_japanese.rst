@@ -24,6 +24,7 @@ Easy Japanese
     easy_japanese/easy_japanese_summary_1580910752
     easy_japanese/easy_japanese_summary_1580995231
     easy_japanese/japanese_grammer_note
+    easy_japanese/japanese_grammer_note_02
 
 
 .. rubric:: Footnotes

@@ -1,5 +1,6 @@
-Section 6.3 - Quadratic Probing
-===============================
+*****************************
+Section 6.3 Quadratic Probing
+*****************************
 
 Another probe function that eliminates **primary clustering** is called quadratic probing.
 Here the probe function is some quadratic function :math:`probe(K, i) = c_1 i^2 + c_2 i + c_3`
@@ -8,34 +9,28 @@ for some choice of constants :math:`c_1, c_2, c_3`.
 The simplest variation is :math:`probe(K, i) = i^2 (i.e., c_1 = 1, c_2 = 0, c_3 = 0)`.
 Then the :math:`i^{th}` value in the probe sequence would be :math:`(hash(K) + i^2) % M`.
 Under quadratic probing, two keys with different home positions will have diverging probe
-sequences. For example, given a hash table of size ``M = 101``, assume for keys :math:`k_1, k_2`
-that :math:`hash(k_1) = 30, hash(k_2) = 29`. The probe sequence for :math:`k_1 = 30`, then 31,
-then 34, then 39. The probe sequence for :math:`k_2 = 29`, then 30, then 33, then 38. Thus,
-while :math:`k_2` will probe to :math:`k_{1}'s` home position as its second choice, the two
-keys' probe sequences diverge immediately thereafter.
+sequences.
 
 Unfortunately, quadratic probing has the disadvantage that typically not all hash table slots
 will be on the probe sequence. Using :math:`probe(K, i) = i^2` gives particularly inconsistent
 results. For many hash table sizes, this probe function will cycle through a relatively small
 number of slots. If all slots on that cycle happen to be full, this means that the record cannot
-be inserted at all! For example, if our hash table has three slots, then records that hash to
-slot 0 can probe only to slots 0 and 1 (that is, the probe sequence will never visit slot 2 in
-the table). Thus, if slots 0 and 1 are full, then the record cannot be inserted even though the
-table is not full! A more realistic example is a table with 105 slots. The probe sequence starting
+be inserted at all! For example A table with 105 slots. The probe sequence starting
 from any given slot will only visit 23 other slots in the table. If all 24 of these slots should
 happen to be full, even if other slots in the table are empty, then the record cannot be inserted
 because the probe sequence will continually hit only those same 24 slots.
 
-.. code-block:: python
-   
-   for i in xrange(0, 105):
-     s=set();j=1
-     while True:
-        k=i+j**2
-        if k%m==i:break
-        s.add(k%m)
-        j+=1
-     len(s)
+.. code-block:: py
+
+    m = 105
+    for i in range(m):
+        s = set(); j=1
+        while True:
+                k = i + j**2
+                if k%m == i: break
+                s.add(k%m)
+                j += 1
+        print(len(s))
 
 Fortunately, it is possible to get good results from quadratic probing at low cost. The right
 combination of probe function and table size will visit many slots in the table. In particular,

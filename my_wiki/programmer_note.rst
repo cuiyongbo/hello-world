@@ -11,7 +11,6 @@ no longer anything to take away.
 .. toctree::
     :titlesonly:
 
-    programmer_note/hash_tutorial
     programmer_note/git_notes
     programmer_note/gcc_notes
     programmer_note/gdb_notes

@@ -1,5 +1,6 @@
-Section 3 - Open Hashing
-========================
+**********************
+Section 3 Open Hashing
+**********************
 
 While the goal of a hash function is to minimize collisions,
 some collisions are unavoidable in practice. Thus, hashing
@@ -13,7 +14,8 @@ the two has to do with whether collisions are stored outside
 the table (open hashing), or whether collisions result in storing
 one of the records at another slot in the table (closed hashing)*.
 Open hashing is treated in this section, and closed hashing in
-:doc:`Section 4 <bucket_hashing>` and :doc:`Section 5 <collision_resolution>`.
+:doc:`Closed hashing with bucketing <closed_hashing_with_bucketing>`
+and :doc:`Closed hashing without bucketing <closed_hashing_without_bucketing>`.
 
 The simplest form of open hashing defines each slot in the hash table
 to be the head of a linked list. All records that hash to a particular
@@ -36,10 +38,9 @@ spread the records evenly among the M positions in the table, yielding on
 average N/M records for each list. Assuming that the table has more slots
 than there are records to be stored, we can hope that few slots will contain
 more than one record. In the case where a list is empty or has only one record,
-a search requires only one access to the list. Thus, the average cost for hashing
-should be :math:`Θ(1)`. However, if clustering causes many records to hash to only
+a search requires only one access to the list. However, if clustering causes many records to hash to only
 a few of the slots, then the cost to access a record will be much higher because
-many elements on the linked list must be searched.
+more elements on the linked list must be searched.
 
 **Open hashing is most appropriate when the hash table is kept in main memory,
 with the lists implemented by a standard in-memory linked list.** Storing an
@@ -48,9 +49,6 @@ of a given linked list might be stored on different disk blocks. This
 would result in multiple disk accesses when searching for a particular key
 value, which defeats the purpose of using hashing.
 
-There are similarities between open hashing and Binsort. One way to view
-open hashing is that each record is simply placed in a bin. While multiple
-records may hash to the same bin, this initial binning should still greatly
-reduce the number of records accessed by a search operation. In a similar 
-ashion, a simple Binsort reduces the number of records in each bin to a
-small number that can be sorted in some other way.
+Known Applications:
+
+    - Jansson.json_object_t.hashtable_t
