@@ -80,7 +80,20 @@ CMakeList Howto
         CMAKE_CURRENT_SOURCE_DIR
         The path to the source directory currently being processed.
 
+        CMAKE_BUILD_TYPE
+        project configuration, such as Debug, Release
+
     Refer to CMake variables [#CMake_Environments]_ for further information.
+
+#. CMAKE to pass customized Environments
+
+    .. code-block:: sh
+
+        # -D <var>:<type>=<value>, -D <var>=<value>
+        # for example to pass the build type for the generator,
+        # you can run
+        cmake -DCMAKE_BUILD_TYPE=Debug ..
+
 
 .. code-block:: sh
    :caption: tip_radar project structure

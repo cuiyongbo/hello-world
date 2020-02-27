@@ -119,7 +119,7 @@ Disk Usage inspector
     15G   ./past7
     15G
 
-    $ du -sh --exclude-from=/home/cuiyb/ past_ti_pattern
+    $ du -sh --exclude-from=/home/cuiyb/past_ti_pattern
     3.9G    .
     $ cat /home/cuiyb/past_ti_pattern
     route*

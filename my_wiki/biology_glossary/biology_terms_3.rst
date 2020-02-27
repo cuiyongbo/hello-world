@@ -141,6 +141,7 @@ Wild Lives 03
 
 .. figure:: images/polar_bear.jpg
 .. figure:: images/polar_bear_family_1571622111.jpg
+.. figure:: images/polar_bear_family_1582797794.jpg
 
     Polar bear [北极熊]
 

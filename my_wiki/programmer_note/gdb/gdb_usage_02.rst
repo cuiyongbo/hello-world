@@ -196,3 +196,13 @@ Gdb Tricks 02
         12          map_set(&m, "cyb", 1);
         (gdb) info line
         Line 12 of "example.c" starts at address 0x80008f7 <main+45> and ends at 0x800091e <main+84>.
+
+#. Gdb to return from the current function
+
+    .. code-block:: sh
+
+        (gdb) help return
+        Make selected stack frame return to its caller.
+        Control remains in the debugger, but when you continue
+        execution will resume in the frame above the one now selected.
+        If an argument is given, it is an expression for the value to return.
