@@ -118,7 +118,7 @@ Ubuntu problem note 02
         ├─sda5   8:5    0 1022M  0 part [SWAP]
         └─sda1   8:1    0   63G  0 part /
 
-#. Ubuntu to creat user with root priviedge
+#. Ubuntu to create user with root priviedge
 
     .. code-block:: sh
 
@@ -126,3 +126,24 @@ Ubuntu problem note 02
         $ sudo useradd -m  natsume
         $ sudo passwd natsume
         $ sudo usermod -aG sudo natsume
+
+#. Ubuntu to restart network
+
+    .. code-block:: sh
+
+        $ service network-manager
+        Usage: /etc/init.d/network-manager {start|stop|restart|force-reload|status}
+
+        sudo service network-manager restart
+
+#. Ubuntu to install node.js
+
+    .. code-block:: sh
+
+        # Using Ubuntu
+        curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+        sudo apt-get install -y nodejs
+
+        # Using Debian, as root
+        curl -sL https://deb.nodesource.com/setup_13.x | bash -
+        apt-get install -y nodejs
