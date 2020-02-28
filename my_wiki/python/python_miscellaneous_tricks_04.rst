@@ -141,3 +141,18 @@ Python Miscellaneous Tricks 04
             p.map(f, range(10))
 
 
+#. Reason to inherit from *object* when creating *class*
+
+    In Python 3.x, it is not necessary because the language
+    has done this behind the scene, and ``class newClass(object)``
+    is written for compability with Python 2.x.
+
+    In Python 2.x, it makes a big difference whether a class is
+    inherited from *object*, classes defined with ``class newClass``
+    are "classic" classes, while classes with ``classs newClass(object)``
+    new classes. for more detatils refer to here [#python_class_inherits_object]_.
+
+
+.. rubric:: Footnotes
+
+.. [#python_class_inherits_object] https://stackoverflow.com/questions/4015417/python-class-inherits-object.
