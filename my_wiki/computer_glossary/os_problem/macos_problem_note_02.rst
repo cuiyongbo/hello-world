@@ -1,6 +1,6 @@
-*****************
-MacOS Problems 02
-*****************
+*********************
+MacOS problem note 02
+*********************
 
 #. show or hide "Allow Apps downloaded from Anywhere"
 

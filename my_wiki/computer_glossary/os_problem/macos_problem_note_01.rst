@@ -1,8 +1,8 @@
-**************
-MacOS Problems
-**************
+*********************
+MacOS problem note 01
+*********************
 
-#.  You have not agreed to the Xcode license
+#.  Problem: You have not agreed to the Xcode license
 
 	Run: ``sudo xcodebuild -license accept``.
 

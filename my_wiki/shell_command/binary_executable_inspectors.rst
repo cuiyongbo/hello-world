@@ -6,8 +6,8 @@ Binary executable inspectors
 
     .. code-block:: sh
 
-        # which returns the pathnames of the files (or links) which would be executed in the current environment, 
-        # had its arguments been given as commands in a strictly POSIX-conformant shell. It does this by searching 
+        # which returns the pathnames of the files (or links) which would be executed in the current environment,
+        # had its arguments been given as commands in a strictly POSIX-conformant shell. It does this by searching
         # the PATH for executable files matching the names of the arguments. It does not follow symbolic links.
         $ which cc
         /usr/bin/cc
@@ -28,18 +28,18 @@ Binary executable inspectors
                     --target=<bfdname>        Set the binary file format
                     @<file>                   Read options from <file>
           -h        --help                    Display this information
-   
+
         $ size /bin/ls /usr/bin/cc
         text     data      bss      dec      hex  filename
         105182     2044     3424   110650    1b03a  /bin/ls
         761967     8160    81056   851183    cfcef  /usr/bin/cc
-   
+
 #. file — determine file type
-   
+
     .. code-block:: sh
 
-        $ file a.out 
-        a.out: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), 
+        $ file a.out
+        a.out: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs),
         for GNU/Linux 2.6.24, BuildID[sha1]=221dd2443eaa05493fc2d2861c09551676ba60dc, not stripped
         $ file test.c
         test.c: C source, ASCII text
@@ -54,8 +54,14 @@ Binary executable inspectors
         wow64cpu.dll => /c/WINDOWS/System32/wow64cpu.dll (0x77c70000)
         ...
 
+        $ ldd /bin/ls
+        linux-vdso.so.1 (0x00007fffebcc2000)
+        libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x00007faff6920000)
+        libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007faff6520000)
+        ...
+
 #. strip - remove symbols
-   
+
     .. code-block:: sh
 
         Usage: strip <option(s)> in-file(s)
@@ -96,25 +102,25 @@ Binary executable inspectors
         -rwxrwxr-x 1 cherry cherry 5.5K May  9 06:34 a.out.s*
 
 #. readelf
-   
+
 #. strace and ltrace
 
     .. code-block:: sh
 
         #   strace options
-        #   -f          
-        #   Trace child processes as they are created by currently traced processes 
-        #   as a result of the fork(2), vfork(2) and clone(2) system calls. 
-        #   Note that -p PID -f will attach all threads of process PID if 
+        #   -f
+        #   Trace child processes as they are created by currently traced processes
+        #   as a result of the fork(2), vfork(2) and clone(2) system calls.
+        #   Note that -p PID -f will attach all threads of process PID if
         #   it is multi-threaded, not only thread with thread_id = PID.
-        #   -ff         
-        #   If the -o filename option is in effect, each processes trace is written to filename.pid 
+        #   -ff
+        #   If the -o filename option is in effect, each processes trace is written to filename.pid
         #   where pid is the numeric process id of each process.
 
         $ ltrace uptime
-    
+
 #. peek fuction list in a ``*.so`` object
-   
+
     .. code-block:: sh
 
         $ nm -D  libfcgi.so | grep FCG
@@ -126,8 +132,8 @@ Binary executable inspectors
         ...
 
 #. type - view alias information
-   
+
     .. code-block:: sh
-    
+
         $ type ll
         ll is aliased to `ls -hlGF'
