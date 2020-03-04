@@ -74,6 +74,11 @@ Biology Terms - Plants
 
     Saffron [藏红花]
 
+
+.. figure:: images/carnegiea_gigantea_1583397374.jpg
+
+    Cactus [仙人掌]
+
 .. image:: images/silver_birch_woodland.jpg
 .. image:: images/wild_flowers_1573379766.jpg
 .. image:: images/frost_on_blueberry.jpg

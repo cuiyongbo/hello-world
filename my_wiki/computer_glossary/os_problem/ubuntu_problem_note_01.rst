@@ -1,6 +1,6 @@
-***********************
-Ubuntu problems note 01
-***********************
+**********************
+Ubuntu problem note 01
+**********************
 
 #. Unable to lock the administration directory (`/var/lib/dpkg/`) is another process using it
 

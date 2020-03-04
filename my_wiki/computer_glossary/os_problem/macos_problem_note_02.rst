@@ -36,7 +36,7 @@ MacOS problem note 02
 
         # something insidious comes here, I'm not sure the exact commbinations
         # which make ``rw`` come into effect
-        $ sudo mount_ntfs -t rw,sync,nobrowse /dev/disk2s1 /Volumes/toshiba
+        $ sudo mount_ntfs -o rw,sync,nobrowse /dev/disk2s1 /Volumes/toshiba
 
     Free third-party tools:
 
@@ -78,3 +78,5 @@ MacOS problem note 02
     - Parallel Desktop
     - Python3
     - Thunder
+    - Visual studio code
+    - iStatistica

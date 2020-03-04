@@ -4,10 +4,8 @@
 Regular Expression HOWTO
 ************************
 
-Introduction
-============
-
-See :doc:`re module introduction re_module_introduction`. 
+.. contents::
+   :local:
 
 
 Simple Patterns
@@ -359,7 +357,7 @@ should store the result in a variable for later use. ::
    >>> m
    <re.Match object; span=(0, 5), match='tempo'>
 
-Now you can query the :ref:`match object <match-objects>` for information about the matching string.  
+Now you can query the :ref:`match object <match-objects>` for information about the matching string.
 Match object instances also have several methods and attributes; the most important ones are:
 
 +------------------+---------------------------------------------+
@@ -750,8 +748,8 @@ This can be handled by writing a regular expression which matches an entire
 header line, and has one group which matches the header name, and another group
 which matches the header's value.
 
-Groups are marked by the ``()`` metacharacters, they group together the expressions 
-contained inside them, and you can repeat the contents of a group with a repeating qualifier, 
+Groups are marked by the ``()`` metacharacters, they group together the expressions
+contained inside them, and you can repeat the contents of a group with a repeating qualifier,
 such as ``*``, ``+``, ``?``, or ``{m,n}``. For example::
 
    >>> p = re.compile('(ab)*')
@@ -761,8 +759,8 @@ such as ``*``, ``+``, ``?``, or ``{m,n}``. For example::
 Groups indicated with ``()`` also capture the starting and ending
 index of the text that they match; this can be retrieved by passing an argument
 to :meth:`~re.Match.group`, :meth:`~re.Match.start`, :meth:`~re.Match.end`, and
-:meth:`~re.Match.span`.  Groups are numbered starting with 0. Group 0 is always present; 
-it's the whole RE, so :ref:`match object <match-objects>` methods all have group 0 as 
+:meth:`~re.Match.span`.  Groups are numbered starting with 0. Group 0 is always present;
+it's the whole RE, so :ref:`match object <match-objects>` methods all have group 0 as
 their default argument::
 
    >>> p = re.compile('(a)b')
@@ -800,7 +798,7 @@ subgroups, from 1 up to however many there are ::
 Backreferences in a pattern allow you to specify that the contents of an earlier
 capturing group must also be found at the current location in the string. For
 example, ``\1`` will succeed if the exact contents of group 1 can be found at
-the current position, and fails otherwise. e.g., the following RE detects doubled 
+the current position, and fails otherwise. e.g., the following RE detects doubled
 words in a string. ::
 
    # always use a raw string

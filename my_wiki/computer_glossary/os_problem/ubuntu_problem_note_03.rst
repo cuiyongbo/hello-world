@@ -1,5 +1,5 @@
 **********************
-Ubuntu problem note 02
+Ubuntu problem note 03
 **********************
 
 #. Check glibc version
@@ -20,3 +20,8 @@ Ubuntu problem note 02
 
         $ gcc test.c; ./a.out
         2.27
+
+#. Ubuntu link error: fatal error: xxxxx: Input/output error
+
+    This problem is due to the fact that the code project resides in virtual machine's shared folder,
+    moving the project to ``/home/$USER`` can solve it.

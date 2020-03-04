@@ -59,6 +59,7 @@ Biology Terms - Birds
 .. image:: images/penguin_1570672289.jpg
 .. image:: images/atlantic_puffin_1575375058.jpg
 .. image:: images/spruce_grouse_1576338456.jpg
+.. image:: images/blue_bird_1583485836.jpg
 
 .. image:: images/sea_bird_flock.jpg
 .. image:: images/sandhill_crane_take_flight.jpg

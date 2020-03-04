@@ -49,3 +49,4 @@ Janpanese Note 03
 
     故郷忘じ難し
 
+#. 下駄 (geta) 木屐

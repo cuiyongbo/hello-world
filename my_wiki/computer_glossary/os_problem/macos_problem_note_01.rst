@@ -45,24 +45,6 @@ MacOS problem note 01
 
 	.. image:: images/edit_enviroment.png
 
-#. QQ 背景图片 tag
-
-	.. code-block:: html
-
-		<div class="lay_background" id="lay_bg" style="width: 1440px; height: 839px;">
-		<img class="lay_background_img lay_background_img_fade_out" id="lay_bg_img" alt="" src="backgroud_image_uri">
-		</div>
-
-#. Kugou 音乐资源tag
-
-	.. code-block:: html
-
-		<audio class="music" id="myAudio" src="music_file_uri"> </audio>
-
-		<div class="jspPane" style="padding: 0px; top: 0px; width: 448px;">
-		＃lyric zone
-		</div>
-
 #. Mac disk format map
 
 	.. image:: images/mac_osx_disk_format.png

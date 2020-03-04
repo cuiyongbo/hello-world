@@ -90,7 +90,6 @@ Optimal structure for a shortest path: **Subpaths of shortest paths are shortest
     - Johnson Algorithm
     - Contraction Hierarchies algorithm
 
-
 #. leetcode exercise
 
    - Cheapest Flights Within K Stops

@@ -22,7 +22,7 @@ Python note
     python/list_tricks
     python/urllib_tricks
     python/sort_tricks
-    python/re_module_doc
+    python/python_re_module_note
     python/python_time_module_note
     python/struct_module_doc
     python/python_unittest_note

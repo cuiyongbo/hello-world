@@ -6,6 +6,7 @@ Pending tasks
 
 **自救或者去死**
 
+#. C++ smart pointer: ``shared_ptr, uniq_ptr``
 #. Computer graphics algorithms [#geomatric_alg]_
 #. Unix Network Programming [#unix_network_programming]_
 #. Apple Open Soure [#apple_opensource]_

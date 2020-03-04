@@ -1,9 +1,9 @@
-*************************
-python re Module Overview
-*************************
+**********************
+RE Module Introduction
+**********************
 
 Regular expressions can contain both special and ordinary characters.
-Most ordinary characters are the simplest regular expressions; 
+Most ordinary characters are the simplest regular expressions;
 they simply match themselves.
 
 The special characters are::
@@ -82,4 +82,4 @@ Some of the functions in this module takes flags as optional parameters::
     X  VERBOSE     Ignore whitespace and comments for nicer looking RE's.
     U  UNICODE     Make \w, \W, \b, \B, dependent on the Unicode locale.
 
-See :doc:`re_module_howto` for further information.
+Refer to :doc:`python_re_module_howto` for further information.

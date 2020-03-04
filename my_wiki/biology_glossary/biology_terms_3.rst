@@ -219,6 +219,7 @@ Wild Lives 03
 
     World Lemur Day [狐猴]
 
+.. image:: images/spectral_tarsier_1583224378.jpg
 .. image:: images/Litocranius_walleri_Nigeria.jpg
 .. image:: images/camel_and_herders.jpg
 .. image:: images/wild_turkey_in_repose.jpg

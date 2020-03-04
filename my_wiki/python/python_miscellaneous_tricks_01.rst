@@ -1,6 +1,6 @@
-***************************
-Python Miscellaneous Usages
-***************************
+******************************
+Python Miscellaneous Tricks 02
+******************************
 
 #. input vs raw_input
 

@@ -208,5 +208,9 @@ English Note 20
 .. image:: images/lion_rock_1581380852.jpg
 .. image:: images/scenic_spot_1581380852.jpg
 .. image:: images/snow_mountain_1581380852.jpg
-.. image:: images/sunrise_at_brighton_jetty.jpg
 .. image:: images/abiqua_fall.jpg
+.. image:: images/winter_1582819371.jpg
+.. image:: images/sunrise_at_brighton_jetty.jpg
+.. image:: images/sunset_1583631152.jpg
+.. image:: images/diving_1583299343.jpg
+.. image:: images/tokyo_tower_sakura_1583631152.jpg

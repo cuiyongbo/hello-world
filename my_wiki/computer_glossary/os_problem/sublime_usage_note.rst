@@ -61,6 +61,12 @@ Sublime Text Usage
         "trim_trailing_white_space_on_save": true,
         "ensure_newline_at_eof_on_save": true,
         "font_face": "monaco",
+        "font_options":
+        [
+            "gray_antialias",
+            "subpixel_antialias"
+        ],
+        "font_size": 12,
         "disable_tab_abbreviations": true,
         "translate_tabs_to_spaces": true,
         "tab_size": 4,

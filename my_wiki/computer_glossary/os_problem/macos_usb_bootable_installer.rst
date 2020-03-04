@@ -20,7 +20,6 @@ MacOS Bootable installer Creation
             --applicationpath /Applications/Install_Yosemite.app --nointeraction
 
 
-
 .. rubric:: Footnotes
 
 .. [#] `How to create a bootable installer for macOS <https://support.apple.com/en-us/HT201372>`_

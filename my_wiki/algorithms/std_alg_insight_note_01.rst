@@ -1,6 +1,6 @@
-*******************************
-Standard Algorithm Library Note
-*******************************
+**********************************
+Standard Algorithm Library Note 01
+**********************************
 
 #. copy and copy_if
 

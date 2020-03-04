@@ -266,10 +266,11 @@ English Note 3
 |
 | interwine
 | Definition: twist or twin together.
-| Synonyms: entwine.
+| Synonyms: entwine; interweave.
 | Definition: connect or link (two or more things) closely.
 | Usage: Dickens has been very clever to intertwine all these aspects and ideas.
 | Usage: Our fates have been entwined, Elizabeth, but never joined.
+| Usage: the branches met and interwove above his head.
 |
 | tangle
 | Definition: a twisted mass of threads, hair, etc. that cannot be easily separated

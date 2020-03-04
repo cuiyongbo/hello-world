@@ -39,7 +39,7 @@ Python Miscellaneous Tricks 03
 
     When you use Python interactively, it is frequently handy to have some standard commands
     executed every time the interpreter is started. You can do this by setting an environment
-    variable named :envvar:`PYTHONSTARTUP` to the name of a file containing your start-up commands.
+    variable named :envvar:`PYTHONSTARTUP` to the absolute path of a file containing your start-up commands.
     This is similar to the :file:`.profile` feature of the Unix shells.
 
     **This file is only read in interactive sessions**, not when Python reads commands from a script,
@@ -48,29 +48,13 @@ Python Miscellaneous Tricks 03
     so that objects that it defines or imports can be used without qualification in the interactive session.
     You can also change the prompts ``sys.ps1`` and ``sys.ps2`` in this file.
 
-    If you want to read an additional start-up file from the current directory,
-    you can program this in the global start-up file using code like::
-
-        if os.path.isfile('.pythonrc.py'):
-            exec(open('.pythonrc.py').read())
-
-    If you want to use the startup file in a script,
-    you must do this explicitly in the script::
-
-        import os
-        filename = os.environ.get('PYTHONSTARTUP')
-        if filename and os.path.isfile(filename):
-            with open(filename) as fobj:
-                startup_file = fobj.read()
-         exec(startup_file)
-
-    Add follow codes to :file:`.bashrc`: ``export PYTHONSTARTUP=~/.pythonrc``
-
     Add command(s) you want to execute in :file:`~/.pythonrc`. like::
 
         import math, time, re
         import os, sys
         from pprint import pprint
+
+    Then add following codes to :file:`.bashrc`: ``export PYTHONSTARTUP=~/.pythonrc``
 
     .. note::
 

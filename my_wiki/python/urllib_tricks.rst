@@ -12,26 +12,26 @@ urllib tricks
 HTTP Headers
 ============
 
-Typical headers include 'Content-length', 'Content-type', and so on. 
-See Quick Reference to HTTP Headers [#]_ for a useful listing 
+Typical headers include 'Content-length', 'Content-type', and so on.
+See Quick Reference to HTTP Headers [#]_ for a useful listing
 of HTTP headers with brief explanations of their meaning and use.
 
 .. code-block:: py
 
     >>> s = requests.get("http://www.baidu.com")
-    >>> s.headers                                                                                                                                          
-    {'Cache-Control': 'private, no-cache, no-store, proxy-revalidate, no-transform', 
-    'Connection': 'Keep-Alive', 'Content-Encoding': 'gzip', 
-    'Content-Type': 'text/html', 'Date': 'Thu, 22 Aug 2019 03:35:40 GMT', 
-    'Last-Modified': 'Mon, 23 Jan 2017 13:27:36 GMT', 'Pragma': 'no-cache', 
-    'Server': 'bfe/1.0.8.18', 'Set-Cookie': 'BDORZ=27315; max-age=86400; 
+    >>> s.headers
+    {'Cache-Control': 'private, no-cache, no-store, proxy-revalidate, no-transform',
+    'Connection': 'Keep-Alive', 'Content-Encoding': 'gzip',
+    'Content-Type': 'text/html', 'Date': 'Thu, 22 Aug 2019 03:35:40 GMT',
+    'Last-Modified': 'Mon, 23 Jan 2017 13:27:36 GMT', 'Pragma': 'no-cache',
+    'Server': 'bfe/1.0.8.18', 'Set-Cookie': 'BDORZ=27315; max-age=86400;
     domain=.baidu.com; path=/', 'Transfer-Encoding': 'chunked'}
 
 HTTP response codes
 ===================
 
-All HTTP response status codes are separated into five classes. The first digit of the status 
-code defines the class of response. The last two digits do not have any class or categorization role. 
+All HTTP response status codes are separated into five classes. The first digit of the status
+code defines the class of response. The last two digits do not have any class or categorization role.
 There are five values for the first digit:
 
     * 1xx (Informational): The request was received, continuing process
@@ -63,7 +63,7 @@ dictionary is reproduced here for convenience::
        100: ('Continue', 'Request received, please continue'),
        101: ('Switching Protocols',
              'Switching to new protocol; obey Upgrade header'),
-    
+
        200: ('OK', 'Request fulfilled, document follows'),
        201: ('Created', 'Document created, URL follows'),
        202: ('Accepted',
@@ -72,7 +72,7 @@ dictionary is reproduced here for convenience::
        204: ('No Content', 'Request fulfilled, nothing follows'),
        205: ('Reset Content', 'Clear input form for further input.'),
        206: ('Partial Content', 'Partial content follows.'),
-    
+
        300: ('Multiple Choices',
              'Object has several resources -- see URI list'),
        301: ('Moved Permanently', 'Object moved permanently -- see URI list'),
@@ -85,7 +85,7 @@ dictionary is reproduced here for convenience::
              'resource.'),
        307: ('Temporary Redirect',
              'Object moved temporarily -- see URI list'),
-    
+
        400: ('Bad Request',
              'Bad request syntax or unsupported method'),
        401: ('Unauthorized',
@@ -113,7 +113,7 @@ dictionary is reproduced here for convenience::
              'Cannot satisfy request range.'),
        417: ('Expectation Failed',
              'Expect condition could not be satisfied.'),
-    
+
        500: ('Internal Server Error', 'Server got itself in trouble'),
        501: ('Not Implemented',
              'Server does not support this operation'),
@@ -126,33 +126,33 @@ dictionary is reproduced here for convenience::
     }
 
 Another http response code lookup table::
-   
+
     import requests
     table = requests.codes.__dict__
     pprint(table)
 
 
 #. http header - ``cache-control``
-   
-    ``cache-control`` is an HTTP header used to specify browser caching policies in both client requests and server responses. 
+
+    ``cache-control`` is an HTTP header used to specify browser caching policies in both client requests and server responses.
     Policies include how a resource is cached, where it’s cached and its maximum age before expiring (i.e., time to live).
 
     The cache-control header is broken up into directives, the most common of which are detailed below:
 
     - Cache-Control: Max-Age
 
-        The max-age request directive defines, in seconds, 
-        the amount of time it takes for a cached copy of a resource to expire. 
+        The max-age request directive defines, in seconds,
+        the amount of time it takes for a cached copy of a resource to expire.
 
     - Cache-Control: No-Cache
-        
-        The no-cache directive means that a browser may cache a response, 
+
+        The no-cache directive means that a browser may cache a response,
         but must first submit a validation request to an origin server.
 
     - Cache-Control: No-Store
 
-        The no-store directive means browsers aren’t allowed to cache a response 
-        and must pull it from the server each time it’s requested. 
+        The no-store directive means browsers aren’t allowed to cache a response
+        and must pull it from the server each time it’s requested.
         This setting is usually used for sensitive data, such as personal banking details.
 
     - Cache-Control: Public
@@ -161,8 +161,8 @@ Another http response code lookup table::
 
     - Cache-Control: Private
 
-        The private response directive indicates that a resource is user specific—it can still be cached, 
-        but only on a client device. For example, a web page response marked as private can be cached 
+        The private response directive indicates that a resource is user specific—it can still be cached,
+        but only on a client device. For example, a web page response marked as private can be cached
         by a desktop browser, but not a :abbr:`CDN (content delivery network)`.
 
 
