@@ -203,17 +203,18 @@ MacOS Terminal
 #. Move to left/right – Command + Shift + [ / ]
 #. Home – Ctrl + A
 #. End – Ctrl + E
-#. Cursor Left – Ctrl + B
-#. Cursor Right – Ctrl + F
-#. Delete Right – Ctrl + D
+#. Cursor Left (backward) – Ctrl + B
+#. Cursor Right (forward) – Ctrl + F
+#. Delete Right character – Ctrl + D
+#. Delete Left word – Ctrl + W
 #. Delete to head from cursor – Ctrl + U
 #. Delete to end from cursor – Ctrl + K
+#. Paste character(s) deleted by above commands - Ctrl + Y
+#. Search History Commands – Ctrl + R
 #. Display previous Command – Ctrl + P
 #. Display next Command – Ctrl + N
 #. Clear screen - Ctrl + L
 #. Move between words - Shift + Left/Right
-#. Search input history - Ctrl + R
-
 
 MacOS Preview
 =============
