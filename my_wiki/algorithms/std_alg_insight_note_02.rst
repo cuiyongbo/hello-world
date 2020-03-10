@@ -173,3 +173,43 @@ Standard Algorithm Library Note 02
             }
         }
 
+#. all_of, any_of and none_of
+
+    .. code-block:: cpp
+
+        #include <algorithm>
+
+        template<class InputIt, class UnaryPredicate>
+        bool all_of(InputIt first, InputIt last, UnaryPredicate p);
+
+        template<class InputIt, class UnaryPredicate>
+        bool any_of(InputIt first, InputIt last, UnaryPredicate p);
+
+        template<class InputIt, class UnaryPredicate>
+        bool none_of(InputIt first, InputIt last, UnaryPredicate p);
+
+    .. code-block:: none
+        :caption: Possible implementations
+
+        template<class InputIt, class UnaryPredicate>
+        bool all_of( InputIt first, InputIt last, UnaryPredicate p)
+        {
+            return std::find_if_not(first, last, p) == last;
+        }
+
+        template<class InputIt, class UnaryPredicate>
+        bool any_of(InputIt first, InputIt last, UnaryPredicate p)
+        {
+            return std::find_if(first, last, p) != last;
+        }
+
+        template<class InputIt, class UnaryPredicate>
+        bool none_of(InputIt first, InputIt last, UnaryPredicate p)
+        {
+            return std::find_if(first, last, p) == last;
+        }
+
+    .. note::
+
+        The expression ``p(v)`` must be convertible to bool for every argument v of
+        type ``InputIt::value_type``, and must not modify v.

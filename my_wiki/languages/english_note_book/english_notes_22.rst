@@ -22,3 +22,7 @@ English Note 22
 | Definition: Similar to the phrases "if you will" and "in a manner of speaking."
 | Usage: He was a fixer, so to speak—a man who could get things done.
 | Usage: This arrangement will allow us to eliminate our debt and get back to solid ground, so to speak.
+|
+| Code of Conduct [行为准则]
+| Definition: A code of conduct is a set of rules outlining the norms, rules, and responsibilities or proper practices of a individual party or an organisation.
+| Usage: US Military Code Of Conduct Rules For Prisoners of War.

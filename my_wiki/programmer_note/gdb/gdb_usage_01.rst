@@ -28,47 +28,33 @@ Gdb Tricks 01
 
    .. code-block:: sh
 
-      (gdb) show convenience # inspect current environment set
-      $__ = 4
-      $_ = (int32_t *) 0x7fff5fbffa00
-      $bpnum = 1
-      $_regex = <internal function _regex>
-      $_streq = <internal function _streq>
-      $_strlen = <internal function _strlen>
-      $_memeq = <internal function _memeq>
-      $_any_caller_matches = <internal function _any_caller_matches>
-      $_any_caller_is = <internal function _any_caller_is>
-      $_caller_matches = <internal function _caller_matches>
-      $_caller_is = <internal function _caller_is>
-      $_as_string = <internal function _as_string>
-      $_inferior = 1
-      $_isvoid = <internal function _isvoid>
-      $_gthread = 3
-      $_thread = 3
-      $_probe_arg11 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg10 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg9 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg8 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg7 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg6 = <error: No probe at PC 0x0000000100000f1a>
-      $_probe_arg5 = <error: No probe at PC 0x0000000100000f1a>
-      $_siginfo = void
-      $_exception = <error: not stopped at a C++ exception catchpoint>
-      $_sdata = void
-
+      (gdb) set args berlin.osm.pbf
+      (gdb) show args
+      Argument list to give program being debugged when it is started is "berlin.osm.pbf".
 
 #. Launch gdb without front materials
 
-   .. code-block:: sh
-
-      gdb --silent
-
+   Soulution: ``gdb --silent``.
 
 #. Execute shell command
 
    .. code-block:: sh
 
-      shell command args
+      # shell command args
+      (gdb) shell ls -l
+      total 1535200
+      -rwxrwxrwx 1 cherry cherry     39140 Mar 11 15:04 CMakeCache.txt
+      drwxrwxrwx 1 cherry cherry       512 Mar 11 15:23 CMakeFiles
+      -rwxrwxrwx 1 cherry cherry      3506 Mar 11 15:04 CPackConfig.cmake
+      ...
+
+      (gdb) shell
+      cherry@cuiyb:/mnt/c/VS-Demo/pathFinding/osrm-backend/debug$ ls
+      CMakeCache.txt     CPackSourceConfig.cmake  cmake_install.cmake    include
+      ...
+      cherry@cuiyb:/mnt/c/VS-Demo/pathFinding/osrm-backend/debug$ exit
+      exit
+      (gdb)
 
 #. show fields of a struct.
 
@@ -287,7 +273,6 @@ Gdb Tricks 01
       $6 = 3
       (gdb)
       $7 = 4
-
 
 #. list command
 

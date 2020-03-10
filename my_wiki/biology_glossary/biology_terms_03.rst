@@ -133,6 +133,7 @@ Wild Lives 03
 
     Arctic fox [北极狐]
 
+.. image:: images/grizzly_bear_1583820045.jpg
 .. image:: images/brown_bears_1566782396.jpg
 .. image:: images/brown_bear_familiy_1565172200.jpg
 .. figure:: images/ursus_arctos.jpg
@@ -140,6 +141,7 @@ Wild Lives 03
     Ursus Arctos [棕熊]
 
 .. figure:: images/polar_bear.jpg
+.. figure:: images/polar_bear_cubs_1583923569.jpg
 .. figure:: images/polar_bear_family_1571622111.jpg
 .. figure:: images/polar_bear_family_1582797794.jpg
 

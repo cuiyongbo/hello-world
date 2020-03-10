@@ -214,12 +214,16 @@ Windows Problems
     .. image:: images/vs_py_argument_passing_custom_build_tool_01.jpg
     .. image:: images/vs_py_argument_passing_custom_build_tool_02.jpg
 
-#. note pad++ change tab to space
+#. Note pad++ change tab to space
 
     Solution: ``Settings`` - ``Preferences``
 
     .. image:: images/note_pad_tab_to_space_01.jpg
     .. image:: images/note_pad_tab_to_space_02.jpg
+
+#. Note pad++ 实现类似vs中的行复制粘贴功能
+
+    Solution: Install plugin ``Visual Studio Line Copy``.
 
 #. windows to delete service
 
@@ -236,11 +240,21 @@ Windows Problems
 
 #. Windows terminal 中 VIM 字体和系统不一致
 
-    Solution: Install ``Microsoft YaHei Mono.ttf`` font
+    Solution: Install ``Microsoft YaHei Mono.ttf`` font.
 
 #. ssh 登录免密码
 
-    Solution: ssh-copy-id -i path/to/.ssh/id_rsa.pub username@hostname
+    Solution: ``ssh-copy-id -i path/to/.ssh/id_rsa.pub username@hostname``.
+
+#. Windows terminal 文本粘贴格式混乱
+
+   Solution: 关掉 vim 自动缩进功能.
+
+   .. code-block:: sh
+
+        set nosmartindent
+        set noautoindent
+
 
 .. rubric:: Footnotes
 

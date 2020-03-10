@@ -63,6 +63,9 @@ VIM Note
         set wrapscan
         set nowrapscan
 
+        set smartindent
+        set autoindent
+
 #. vim shortcuts
 
     .. code-block:: none

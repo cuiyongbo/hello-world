@@ -206,3 +206,39 @@ Gdb Tricks 02
         Control remains in the debugger, but when you continue
         execution will resume in the frame above the one now selected.
         If an argument is given, it is an expression for the value to return.
+
+#. Gdb `command` note
+
+    .. code-block:: sh
+
+        (gdb) help command
+        Set commands to be executed when the given breakpoints are hit.
+        Give a space-separated breakpoint list as argument after "commands".
+        A list element can be a breakpoint number (e.g. `5') or a range of numbers
+        (e.g. `5-7').
+        With no argument, the targeted breakpoint is the last one set.
+        The commands themselves follow starting on the next line.
+        Type a line containing "end" to indicate the end of them.
+        Give "silent" as the first line to make the breakpoint silent;
+        then no output is printed when it is hit, except what the commands print.
+
+        (gdb) command
+        Type commands for breakpoint(s) 10, one per line.
+        End with a line saying just "end".
+        >silent
+        >p number_of_contracted_nodes
+        >end
+        (gdb) info b 10
+        Num     Type           Disp Enb Address            What
+        10      breakpoint     keep y   0x0000000008796361 in osrm::contractor::contractGraph(...) at graph_contractor.cpp:761
+                breakpoint already hit 40 times
+                silent
+                p number_of_contracted_nodes
+
+        (gdb) c
+        Continuing.
+        $50 = 2412
+        (gdb) c
+        Continuing.
+         10% $51 = 3061
+        (gdb) disable 10 # disabling breakpoint will cancle command as well

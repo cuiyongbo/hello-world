@@ -214,3 +214,6 @@ English Note 20
 .. image:: images/sunset_1583631152.jpg
 .. image:: images/diving_1583299343.jpg
 .. image:: images/tokyo_tower_sakura_1583631152.jpg
+.. image:: images/scenery_spot_1583820231.jpg
+.. image:: images/scenery_spot_1583820264.jpg
+.. image:: images/scenery_spot_1583820305.jpg
