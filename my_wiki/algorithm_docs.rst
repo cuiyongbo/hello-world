@@ -7,9 +7,10 @@ Algorithms
 
     algorithms/alg_analysis_and_design
     algorithms/amortized_analysis_note
+    algorithms/pseudocode_introduction
+    algorithms/multithreaded_algorithm_note
     algorithms/dynamic_programming_note
     algorithms/greedy_algorithms_note
-    algorithms/pseudocode_introduction
     algorithms/alg_complexity_summary
     algorithms/divide_and_conquer_note
     algorithms/binary_search_alg

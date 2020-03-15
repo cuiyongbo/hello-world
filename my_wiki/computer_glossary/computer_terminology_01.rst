@@ -40,6 +40,7 @@ Computer Terminology 01
 | ISP = Internet Service Provider
 | CGI = Common Gate Interface
 | FAQ = Frequently Asked Question
+| DAG = Directed Acyclic Graph
 |
 | Techno-weenie: An ineffectual or insignificant computer nerd.
 |

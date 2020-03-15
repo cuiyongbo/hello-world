@@ -57,8 +57,7 @@ English Note 20
 |
 | emulate
 | Definition: match or surpass (a person or achievement), typically by imitation.
-| Usage: lesser men trying to emulate his greatness.
-| Usage: hers is not a hairstyle I wish to emulate.
+| Usage: they tried to emulate Lucy's glowing performance.
 | Definition: reproduce the function or action of (a different computer, software system, etc.).
 | Usage: the adaptor is factory set to emulate a Hercules graphics board.
 |
@@ -217,3 +216,4 @@ English Note 20
 .. image:: images/scenery_spot_1583820231.jpg
 .. image:: images/scenery_spot_1583820264.jpg
 .. image:: images/scenery_spot_1583820305.jpg
+.. image:: images/scenery_spot_1584285046.jpg

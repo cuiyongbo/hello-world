@@ -10,8 +10,7 @@ Standard Algorithm Library Note 02
         ForwardIt partition(ForwardIt first, ForwardIt last UnaryPredicate p)
         {
             first = std::find_if_not(first, last, p);
-            if(first == last)
-                return first;
+            if(first == last) return first;
             for(ForwardIt it=std::next(first); it != last; ++it)
             {
                 if(p(*it))
