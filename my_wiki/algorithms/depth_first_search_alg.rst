@@ -1,6 +1,6 @@
-****************************
-Depth-first Search Algorithm
-****************************
+******************
+Depth First Search
+******************
 
 .. code-block:: none
     :caption: Taken from *Introduction to Algorithms*

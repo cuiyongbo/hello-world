@@ -11,6 +11,11 @@ Numpy Constants
    np.nan
 
    np.isnan()
-   
+
    >>> np.nan != np.nan
    True
+
+   import math
+
+   math.inf
+   math.nan

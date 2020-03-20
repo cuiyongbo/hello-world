@@ -24,8 +24,8 @@ ps -- process status
    For the processes which have been selected for display, :command:`ps` will usually
    display one line per process.  The :option:`-M` option may result in multiple output
    lines (one line per thread) for some processes.  By default all of these output
-   lines are sorted first by controlling terminal, then by process ID.  The :option:`-m`,
-   :option:`-r`, and :option:`-v` options will change the sort order.  If more than one
+   lines are sorted first by controlling terminal, then by process ID. The :option:`-m`,
+   :option:`-r`, and :option:`-v` options will change the sort order. If more than one
    sorting option was given, then the selected processes will be sorted by the last
    sorting option which was specified.
 
@@ -42,6 +42,10 @@ ps -- process status
 
       Repeat the information header as often as necessary to
       guarantee one header per page of information.
+
+   .. option:: -H
+
+      Show process hierarchy (forest).
 
    .. option:: -M
 

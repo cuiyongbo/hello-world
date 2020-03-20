@@ -1,5 +1,5 @@
 ********************
-Breadth-first search
+Breadth First Search
 ********************
 
 
@@ -34,7 +34,7 @@ Breadth-first search
             u.color = BLACK
 
     PrintPath(G, s, v)
-        if v==s
+        if v == s
             print s
         elseif v.p == NIL
             print "no path from" s "to" v "exists"

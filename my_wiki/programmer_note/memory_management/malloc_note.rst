@@ -67,7 +67,7 @@ Allocate and free dynamic memory
     allocate and free memory, there could be contention for these mutexes. To scalably handle memory allocation in
     multithreaded applications, glibc creates additional memory allocation arenas if mutex contention is detected.
     Each arena is a large region of memory that is internally allocated by the system (using :manpage:`brk(2)` or
-    :manpage:`mmap(2)``), and managed with its own mutexes.
+    :manpage:`mmap(2)`), and managed with its own mutexes.
 
     Crashes in ``malloc()``, ``calloc()``, ``realloc()``, or ``free()`` are almost always related to heap corruption,
     such as overflowing an allocated chunk or freeing the same pointer twice.

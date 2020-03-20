@@ -189,7 +189,7 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
     in parallel―one from start to finish, and one from finish to start. When they meet,
     you should have a good path.
 
-    It’s a good idea that will help in some situations. The idea behind bidirectional searches
+    It’s a good idea that will help in some situations. The idea behind bidirectional search
     is that searching results in a “tree” that fans out over the map. A big tree is much worse
     than two small trees, so it’s better to have two small search trees.
 
@@ -199,7 +199,7 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
 
     The retargeting approach abandons simultaneous searches in the forward and backward directions.
     Instead, it performs a forward search for a short time, chooses the best forward candidate,
-    and then performs a backward search―not to the starting point, but to that candidate.
+    and then performs a backward search from that candidate.
     After a while, it chooses a best backward candidate and performs a forward search from
     the best forward candidate to the best backward candidate. This process continues until
     the two candidates are the same point.
