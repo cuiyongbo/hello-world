@@ -26,3 +26,86 @@ English Note 22
 | Code of Conduct [行为准则]
 | Definition: A code of conduct is a set of rules outlining the norms, rules, and responsibilities or proper practices of a individual party or an organisation.
 | Usage: US Military Code Of Conduct Rules For Prisoners of War.
+|
+| come to terms with sth/sb
+| Definition: To begin to or make an effort to understand, accept, and deal with a difficult or problematic person, thing, or situation.
+| Usage: I should have the report ready for you by this afternoon, I just need to come to terms with this new software update first.
+| Usage: I've tried, but I just can't come to terms with Amy, she's totally out of control!
+| Definition: To reach mutual agreement.
+| Usage: The warring factions have finally come to terms.
+|
+| jeer
+| Definition: make rude and mocking remarks, typically in a loud voice.
+| Usage: Some of the younger men jeered at him.
+| Usage: The players were jeered by disappointed fans. [嘘]
+|
+| mock
+| Definition: tease or laugh at in a scornful or contemptuous manner.
+| Usage: he mocks them as Washington insiders.
+| Definition: not authentic or real, but without the intention to deceive.
+| Usage: Jim threw up his hands in mock horror.
+| Usage: (of an examination, battle, etc.) arranged for training or practice, or performed as a demonstration.
+| Usage: Dukakis will have a mock debate with Barnett.
+| Usage: mock interviews.
+|
+| troika
+| Definition: a Russian vehicle pulled by a team of three horses abreast. [三驾马车]
+| Definition: a group of three people working together, especially in an administrative or managerial capacity.
+|
+| trident [三叉戟]
+|
+| imbue
+| Definition: inspire or permeate with (a feeling or quality).
+| Usage: the entire performance was imbued with sparkle and elan.
+| Usage: a guards officer imbued with a military sense of duty and loyalty.
+|
+| fall in(to) place
+| Definition: To suddenly make sense.
+| Usage: The lesson started to fall in place after I re-read the chapter.
+| Definition: To produce an ideal or desired outcome.
+| Usage: There were a lot of missteps along the way, but all of our plans have finally fallen in place.
+| Usage: If everything falls into place, we'll be rich.
+|
+| dagger
+| Phrase: to be at daggers drawn with sb （与某人）势不两立
+| Usage: The police have had to intervene because those rival gangs have been at daggers drawn lately.
+| Usage: The government now finds itself at daggers drawn with the same press it had gone to such great lengths to give freedom of expression to.
+| Phrase: to look daggers at sb 对某人怒目而视
+| Usage: I noticed the bride looking daggers at the best man as he started making vulgar jokes during his speech.
+|
+| oversight
+| Definition: an unintentional failure to notice or do something:.
+| Usage he said his failure to pay for the tickets was an oversight.
+| Usage: was the mistake due to oversight?
+|
+| crumb
+| Definition: a small fragment of bread, cake or cracker. [面包渣]
+| Definition: The budget provided few crumbs of comfort. [些许安慰]
+| Definition: used to express dismay or surprise.
+| Usage: she earns £100,000 a year — crumbs!
+| Idioms: crumbs from someone’s (or a rich man’s) table. [残羹剩饭]
+| Definition: an unfair and inadequate or unsatisfactory share of something.
+| Usage: I know he can afford to pay me more, so I refuse to accept crumbs from his table.
+|
+| no less than
+| Definition: used to emphasize a large amount.
+| Usage: The audience was no less than five thousand. [多达...]
+| Definition: Used to emphasize the superlative status or importance of a particular person, thing, group, or organization.
+| Usage: Do you know who that is? That is no less than the founder of the company!
+| not less than
+| Definition: at least as much as ...
+| Usage: She is not less beautiful than Jane.
+|
+| plucky
+| Definition: having or showing determined courage in the face of difficulties.
+| Usage: the plucky youngster has astounded medical staff.
+|
+| astound
+| Definition: shock or greatly surprise.
+| Usage: you never fail to astound me!
+
+#. Accumulative vs. Cumulative
+
+   Increasing or increased in quantity, degree, or force by successive additions is called Cumulative,
+   whereas, gathering or growing by gradual increase is called Accumulative. Cumulative is the addition
+   that comes up with successive contributors, while accumulative is the addition that happens gradually.

@@ -64,6 +64,22 @@ reStructure Syntax FAQ
             @$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 
+#. Paragraph-level markup directives
+
+    .. code-block:: none
+
+        .. note::
+        .. warning::
+        .. important::
+        .. versionadded:: version
+        .. versionchanged:: version
+        .. deprecated:: version
+        .. rubric:: title
+        .. centered::
+        .. hlist::
+        .. seealso::
+
+
 .. rubric:: Footnotes
 
 .. [#sphinx_supress_warning] `Sphinx to suppress warning <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-suppress_warnings>`_

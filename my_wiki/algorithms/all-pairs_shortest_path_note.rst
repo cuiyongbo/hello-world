@@ -109,6 +109,13 @@ All-pairs Shortest Path Note
     >>> sl == fl
     True
 
+
+:math:`d^{(k)}_{ij}` means weight of the shortest path from i to j
+with all intermediate vertices are in the set :math:`\{ 1,2,\ldots,k \}`.
+
+We define the **transitive closure** of G as the graph :math:`G^* = (V, E^*)`
+where :math:`E^* = \{(i, j): \text{there is a path from vertex i to vertex j in G} \}.`
+
 .. code-block:: none
     :caption: The Floyd-Warshall algorithm
 

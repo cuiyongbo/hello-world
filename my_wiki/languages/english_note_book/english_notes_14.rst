@@ -189,6 +189,9 @@ English Note 14
 | Usage: Fans who still have their original ticket stubs should contact Sheffield Arena by July 3.
 | Definition: If you stub your toe, you hurt it by accidentally kicking something.
 | Usage: I stubbed my toes against a table leg.
+| Phrase: stub out [在烟灰缸上摁灭香烟的动作]
+| Usage: He stubbed out the cigarette and got up to leave.
+| Usage: I'm so sorry, I didn't realize the smoke was bothering you. Let me stub this out.
 |
 | discount
 | Definition: regard (a possibility, fact, or person) as being unworthy of consideration because it lacks credibility.

@@ -138,4 +138,3 @@ then :math:`y.key \geq x.key`.
 #. leetcode exercise
 
     * Explore - BST
-    *

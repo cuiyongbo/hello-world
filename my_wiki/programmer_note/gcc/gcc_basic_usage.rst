@@ -171,20 +171,6 @@ gcc - GNU project C and C++ compiler
    Produce debugging information in the OS's native format (stabs, COFF, XCOFF, or DWARF 2).
    GDB can work with this debugging information.
 
-   On most systems that use stabs format, -g enables use of extra debugging information that
-   only GDB can use; this extra information makes debugging work better in GDB but probably makes
-   other debuggers crash or refuse to read the program. If you want to control for certain whether
-   to generate the extra information, use -gstabs+, -gstabs, -gxcoff+, -gxcoff, or -gvms.
-
-   GCC allows you to use -g with -O. The shortcuts taken by optimized code may occasionally
-   produce surprising results: some variables you declared may not exist at all; flow of
-   control may briefly move where you did not expect it; some statements may not be executed
-   because they compute constant results or their values are already at hand; some statements
-   may execute in different places because they have been moved out of loops.
-
-   Nevertheless it proves possible to debug optimized output. This makes it reasonable to use
-   the optimizer for programs that might have bugs.
-
 .. option:: -ggdb
 
    Produce debugging information for use by GDB. This means to use the most expressive format
@@ -346,27 +332,10 @@ gcc - GNU project C and C++ compiler
    names of all the included files, including those coming from -include or -imacros
    command-line options.
 
-   Unless specified explicitly (with -MT or -MQ), the object file name consists of the
-   name of the source file with any suffix replaced with object file suffix and with
-   any leading directory parts removed. If there are many included files then the rule
-   is split into several lines using \-newline.  The rule has no commands.
-
-   This option does not suppress the preprocessor's debug output, such as -dM. To avoid
-   mixing such debug output with the dependency rules you should explicitly specify the
-   dependency output file with -MF, or use an environment variable like
-   :envvar:`DEPENDENCIES_OUTPUT`. Debug output will still be sent to the regular output
-   stream as normal.
-
-   Passing -M to the driver implies -E, and suppresses warnings with an implicit -w.
-
 .. option:: -MM
 
    -MM Like -M but do not mention header files that are found in system header directories,
    nor header files that are included, directly or indirectly, from such a header.
-
-   This implies that the choice of angle brackets or double quotes in an ``#include``
-   directive does not in itself determine whether that header will appear in -MM dependency
-   output. This is a slight change in semantics from GCC versions 3.0 and earlier.
 
 .. option:: -MF file
 
@@ -374,23 +343,9 @@ gcc - GNU project C and C++ compiler
    If no -MF switch is given the preprocessor sends the rules to the same
    place it would have sent preprocessed output.
 
-   When used with the driver options -MD or -MMD, -MF overrides the default
-   dependency output file.
-
 .. option:: -MD
 
-   -MD is equivalent to ``-M -MF`` file, except that -E is not implied. The driver
-   determines file based on whether an -o option is given. If it is, the driver
-   uses its argument but with a suffix of .d, otherwise it takes the name of
-   the input file, removes any directory components and suffix, and applies
-   a .d suffix.
-
-   If -MD is used in conjunction with -E, any -o switch is understood to specify
-   the dependency output file, but if used without -E, each -o is understood to
-   specify a target object file.
-
-   Since -E is not implied, -MD can be used to generate a dependency output file
-   as a side-effect of the compilation process.
+   -MD is equivalent to ``-M -MF file``, except that -E is not implied.
 
 .. option:: -MMD
 
@@ -428,10 +383,6 @@ gcc - GNU project C and C++ compiler
    appends the platform's usual object suffix. The result is the
    target.
 
-   An -MT option will set the target to be exactly the string you specify.
-   If you want multiple targets, you can specify them as a single argument
-   to -MT, or use multiple -MT options.
-
    For example, ``-MT '$(objpfx)foo.o'`` might give::
 
       $(objpfx)foo.o: foo.c
@@ -439,11 +390,6 @@ gcc - GNU project C and C++ compiler
 .. option:: -MQ target
 
    Same as -MT, but it quotes any characters which are special to Make.
-   -MQ '$(objpfx)foo.o' gives::
-
-      $$(objpfx)foo.o: foo.c
-
-   The default target is automatically quoted, as if it were given with -MQ.
 
 .. option:: -std=standard, -ansi
 
@@ -540,3 +486,7 @@ gcc - GNU project C and C++ compiler
       #if defined(_MSC_VER)
       #  pragma warning(disable: 4068)
       #endif
+
+#. pass macro to make
+
+   Solution: ``make CFLAGS=-DNDEBUG test``

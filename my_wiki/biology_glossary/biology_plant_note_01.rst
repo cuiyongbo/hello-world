@@ -74,7 +74,6 @@ Biology Terms - Plants
 
     Saffron [藏红花]
 
-
 .. figure:: images/carnegiea_gigantea_1583397374.jpg
 
     Cactus [仙人掌]
@@ -88,6 +87,7 @@ Biology Terms - Plants
 .. image:: images/queen_victoria_agrave.jpg
 .. image:: images/canada_tree_farm.jpg
 .. image:: images/poinsettia_christmas.jpg
+.. image:: images/charleston_azaleas_1585357638.jpg
 
 #. Sequoia National Park
 

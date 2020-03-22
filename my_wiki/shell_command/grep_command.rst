@@ -18,14 +18,14 @@ grep Manual
 **OPTIONS**
 
    #. Matcher Selection
-      
+
       .. option:: -E, --extended-regexp
-         
+
          Interpret *PATTERN* as an extended regular expression (ERE, see
          below). (-E is specified by POSIX.)
 
       .. option:: -F, --fixed-strings
-         
+
          Interpret *PATTERN* as a list of fixed strings (rather than
          regular expressions), separated by newlines, any of which is to
          be matched. (-F is specified by POSIX.)
@@ -36,17 +36,17 @@ grep Manual
          below). This is the default.
 
    #. Matching Control
-       
+
       .. option:: -i, --ignore-case
-         
+
          Ignore case distinctions in both the *PATTERN* and the input files.
 
       .. option:: -v, --invert-match
-              
+
          Invert the sense of matching, to select non-matching lines.
 
       .. option:: -x, --line-regexp
-         
+
          Select only those matches that exactly match the whole line.
          This option has the same effect as anchoring the expression with
          ``^`` and ``$``.
@@ -54,33 +54,33 @@ grep Manual
    #. General Output Control
 
       .. option:: -c, --count
-              
+
          Suppress normal output; instead print a count of matching lines
          for each input file. With the ``-v, --invert-match`` option,
-         count non-matching lines. 
+         count non-matching lines.
 
       .. option:: --color[=WHEN], --colour[=WHEN]
-         
+
          Surround the matched (non-empty) strings, matching lines, context
-         lines, file names, line numbers, byte offsets, and separators 
+         lines, file names, line numbers, byte offsets, and separators
          (for fields and groups of context lines) with escape sequences to
          display them in color on the terminal. *WHEN* is ``never``, ``always``,
          or ``auto``.
 
       .. option:: -L, --files-without-match
-          
+
          Suppress normal output; instead print the name of each input
          file from which no output would normally have been printed. The
          scanning will stop on the first match.
- 
+
       .. option:: -l, --files-with-matches
-          
+
          Suppress normal output; instead print the name of each input file
          from which output would normally have been printed. The scanning
          will stop on the first match. (:option:`-l`  is specified by POSIX.)
 
       .. option:: -m NUM, --max-count=NUM
-         
+
          Stop reading a file after *NUM* matching lines.
 
       .. option:: -o, --only-matching
@@ -89,20 +89,20 @@ grep Manual
          with each such part on a separate output line.
 
       .. option:: -q, --quiet, --silent
-              
+
          Quiet; do not write anything to standard output. Exit immediately with
          zero status if any match is found, even if an error was detected.
 
       .. option:: -s, --no-messages
-         
+
          Suppress error messages about nonexistent or unreadable files.
 
    #. Output Line Prefix Control
-      
+
       .. option:: -b, --byte-offset
-         
+
          Print the 0-based byte offset within the input file before each
-         line of output. If :option:`-o, --only-matching` is specified, 
+         line of output. If :option:`-o, --only-matching` is specified,
          print the offset of the matching part itself.
 
       .. option:: -H, --with-filename
@@ -117,59 +117,59 @@ grep Manual
          search.
 
       .. option:: -n, --line-number
-         
+
          Prefix each line of output with the 1-based line number within
          its input file. (:option:`-n` is specified by POSIX.)
 
       .. option:: -Z, --null
-         
+
          Output a zero byte (the ASCII NUL character) instead of the
-         character that normally follows a file name. For example, 
+         character that normally follows a file name. For example,
          ``grep -lZ`` outputs a zero byte after each file name instead
          of the usual newline. This option makes the output unambiguous,
          even in the presence of file names containing unusual characters
          like newlines. This option can be used with commands like
-         ``find -print0``, ``perl -0``, ``sort -z``, and ``xargs -0`` 
+         ``find -print0``, ``perl -0``, ``sort -z``, and ``xargs -0``
          to process arbitrary file names, even those that contain
          newline characters.
 
    #. Context Line Control
-      
+
       .. option:: -A NUM, --after-context=NUM
       .. option:: -B NUM, --before-context=NUM
 
          Print *NUM* lines of trailing context before/after matching lines.
 
       .. option:: -C NUM, -NUM, --context=NUM
-         
+
          Print *NUM* lines of output context.
 
    #. File and Directory Selection
-      
+
       .. option:: -a, --text
-              
+
          Process a binary file as if it were text; this is equivalent to
          the ``--binary-files=text`` option.
 
       .. option:: --binary-files=TYPE
-              
+
          If the first few bytes of a file indicate that the file contains
          binary data, assume that the file is of type TYPE. By default,
          *TYPE* is binary, and :command:`grep` normally outputs either
          a one-line message saying that a binary file matches, or no message if
          there is no match. If *TYPE* is ``without-match``, :command:`grep` assumes
          that a binary file does not match; this is equivalent to the :option:`-I`
-         option. 
+         option.
 
-      .. option:: -I     
+      .. option:: -I
 
-         Process a binary file as if it did not contain matching data; 
+         Process a binary file as if it did not contain matching data;
          this is equivalent to the `--binary-files=without-match` option.
 
       .. option:: -r, --recursive
 
          Read all files under each directory, recursively, following
-         symbolic links only if they are on the command line. 
+         symbolic links only if they are on the command line.
 
       .. option:: -R, --dereference-recursive
 
@@ -177,7 +177,7 @@ grep Manual
          symbolic links, unlike :option:`-r`.
 
       .. option:: --exclude=GLOB
-             
+
          Skip files whose base name matches *GLOB* (using wildcard
          matching). A file-name glob can use ``*``, ``?``, and ``[...]``
          as wildcards, and ``\`` to quote a wildcard or backslash
@@ -187,15 +187,15 @@ grep Manual
 
          Search only files whose base name matches *GLOB* (using wildcard
          matching as described under :option:`--exclude`).
-         
+
       .. option:: --exclude-from=FILE
-              
+
          Skip files whose base name matches any of the file-name globs
          read from *FILE* (using wildcard matching as described under
          :option:`--exclude`).
 
       .. option:: --exclude-dir=DIR
-              
+
          Exclude directories matching the pattern *DIR* from
          recursive searches.
 
@@ -240,7 +240,7 @@ grep Manual
    syntaxes. In other implementations, basic regular expressions are less
    powerful. The following description applies to extended regular
    expressions; differences for basic regular expressions are summarized
-   afterwards. 
+   afterwards.
 
    The fundamental building blocks are the regular expressions that match
    a single character. Most characters, including all letters and digits,
@@ -250,7 +250,7 @@ grep Manual
    The period ``.`` matches any single character.
 
    #. Character Classes and Bracket Expressions
-      
+
       A bracket expression is a list of characters enclosed by ``[`` and ``]``.
       It matches any single character in that list; if the first character of
       the list is the caret ``^`` then it matches any character not in the list.
@@ -259,7 +259,7 @@ grep Manual
 
       Within a bracket expression, a range expression consists of two characters
       separated by a hyphen (``-``).  For example, in the default C locale, ``[a-d]``
-      is equivalent to ``[abcd]``.  
+      is equivalent to ``[abcd]``.
 
       Finally, certain named classes of characters are predefined within bracket
       expressions, as follows. Their names are self explanatory, and
@@ -267,7 +267,7 @@ grep Manual
       [:lower:], [:print:], [:punct:], [:space:], [:upper:], and [:xdigit:].
       For example, [[:alnum:]] means ``[0-9A-Za-z]``. (Note that the brackets in
       these class names are part of the symbolic names, and must be included
-      in addition to the brackets delimiting the bracket expression.) 
+      in addition to the brackets delimiting the bracket expression.)
 
       .. note::
 
@@ -277,12 +277,12 @@ grep Manual
          literal ``-`` place it last.
 
    #. Anchoring
-      
+
       The caret ``^`` and the dollar sign ``$`` are meta-characters that
       respectively match the empty string at the beginning and end of a line.
 
    #. The Backslash Character and Special Expressions
-      
+
       The symbols ``\<`` and ``\>`` respectively match the empty string at the
       beginning and end of a word. The symbol ``\b`` matches the empty string at
       the edge of a word, and ``\B`` matches the empty string provided it's not
@@ -291,7 +291,7 @@ grep Manual
       to **re_format(7)** [macOS], or **regex(7)** [ubntu].
 
    #. Repetition
-      
+
       A regular expression may be followed by one of several repetition
       operators::
 
@@ -306,7 +306,7 @@ grep Manual
                 than m times.
 
    #. Alternation
-      
+
       Two regular expressions may be joined by the infix operator (|); the
       resulting regular expression matches any string matching either
       alternate expression.
@@ -354,7 +354,7 @@ grep Manual
 
    $ grep 20181111142200_6802_43145_56_458_2 event.json -o
    20181111142200_6802_43145_56_458_2
-   
+
    $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
    61391497:20181111142200_6802_43145_56_458_2
 
@@ -372,10 +372,6 @@ grep Manual
    $ grep -rIH label .
    ./nan_test.py:plt.xlabel('time (s)')
    ./nan_test.py:plt.ylabel('voltage (mV)')
-   ./nan_test.py:plt.xlabel('time (s)')
-   ./nan_test.py:plt.ylabel('more nans')
-   ./simple_plot.py: xlabel="time (s)", 
-   ./simple_plot.py: ylabel="voltage (mV)",
 
    # in ubuntu, you don't need add '-r' option when searching a directory
    $ grep "uint8" /usr/include/*.h
@@ -387,3 +383,22 @@ grep Manual
    shell_command/uniq_manual.rst:55:   $ cat sample | tr " " "\n" | sort | uniq -c | sort -r
 
 
+#. find file(s) ending with certain patterns
+
+   .. code-block:: sh
+
+      $ find eta-server -type f | grep -E "*\.(md|py)"
+      eta-server/make.py
+      eta-server/README.md
+      eta-server/src/changelog/changelog.py
+
+#. Count the number of lines in a project
+
+   .. code-block:: sh
+
+      $ find eta-server/ -type f | grep -E "*\.(h|cpp|md|rst|py)" | xargs wc -l
+      ...
+      2898 total
+
+      $ find eta-server/ -name "*.cpp" -exec wc -l \{\} \; | awk '{s+=$1}END{print s}'
+      1272

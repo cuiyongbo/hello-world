@@ -39,7 +39,6 @@ Algorithms
     algorithms/minimum_spanning_trees_note
     algorithms/shortest_path_problem_note
     algorithms/all-pairs_shortest_path_note
-    algorithms/gzip_alg_note
     algorithms/std_alg_insight_note_01
     algorithms/std_alg_insight_note_02
     algorithms/std_heapsort_note

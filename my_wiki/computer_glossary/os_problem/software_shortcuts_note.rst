@@ -63,7 +63,6 @@ VS 2013
 #. Collapse ``if, for, while`` code block: set ``option - C/C++ - View - Outline Statement Blocks`` to ``true``
 #. Move between matching "()", "{}", "[]": Ctrl + ]
 
-
 VAssist X
 =========
 
@@ -77,7 +76,6 @@ VAssist X
 .. note::
 
    You can customize the shortcuts in settings <"tools" – "options" – "environment" - "keyboard">
-
 
 Chrome
 ======

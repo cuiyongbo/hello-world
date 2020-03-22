@@ -97,6 +97,7 @@ Wild Lives 03
 
     Salamander [蝾螈]
 
+.. image:: images/kissimme_frog_1586042914.jpg
 .. image:: images/tree_frog.jpg
 .. image:: images/life-cycle-of-a-frog-1.jpg
 .. image:: images/life-cycle-of-a-frog-2.png
@@ -134,6 +135,7 @@ Wild Lives 03
     Arctic fox [北极狐]
 
 .. image:: images/grizzly_bear_1583820045.jpg
+.. image:: images/spirit_bear_siblings_1586525522.jpg
 .. image:: images/brown_bears_1566782396.jpg
 .. image:: images/brown_bear_familiy_1565172200.jpg
 .. figure:: images/ursus_arctos.jpg
@@ -155,6 +157,7 @@ Wild Lives 03
 
     Raccoon [浣熊]
 
+.. image:: images/elephant_hide_in_tree.jpg
 .. image:: images/elephant_day_1565597840.jpg
 .. image:: images/elephants_1564717511.jpg
 .. image:: images/elephant_herd_in_namibia.jpg
@@ -169,6 +172,7 @@ Wild Lives 03
 
 .. image:: images/zebra.jpg
 
+.. image:: images/pronghorn_antelope_1585992570.jpg
 .. image:: images/reindeer_norway_1577185016.jpg
 .. image:: images/deer_1565349419.jpg
 .. figure:: images/elk.jpg

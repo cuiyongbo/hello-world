@@ -107,3 +107,17 @@ Mathematics Notes 3
     that establishes the fundamental relationship between the trigonometric functions and the
     complex exponential function. Euler's formula states that for any real number x:
     :math:`e^{ix} = \cos{x} + i \sin{x},`
+
+#. Power set
+
+    For the set :math:`\{a,b,c\}`:
+
+        - The empty set :math:`\{\}` is a subset of :math:`\{a,b,c\}`
+        - And these are subsets: :math:`\{a\}, \{b\} \text{ and } \{c\}`
+        - And these are also subsets: :math:`\{a, b\}, \{a, c\} \text{ and } \{b, c\}`
+        - And :math:`\{a,b,c\}` is a subset of :math:`\{a,b,c\}`
+
+    And altogether we get the **Power Set** of :math:`\{a,b,c\}`:
+    :math:`P(S) = \{ \{\}, \{a\}, \{b\}, \{c\}, \{a, b\}, \{a, c\}, \{b, c\}, \{a, b, c\} \}`
+    Think of it as all the different ways we can select the items (the order of the items doesn't matter),
+    including selecting none, or all.

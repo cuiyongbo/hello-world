@@ -214,14 +214,9 @@ name, also known as surname, with most family members.
 | Definition: (verb) to make (a hole, cavity, or tunnel by hollowing or removing the centre of inner part)
 | Usage: The cheapest way of doing this was to excavate a long trench.
 |
-| dumbstruck
-| Definition: (adjective) So shocked or astonished as to be rendered speechless
-| Synonyms: dumbfounded, thunderstruck, flabbergastered, stupefied
-| Usage: He stood dumbstruck in the doorway as the partygoers yelled “Surpise!” in the unison.
-|
-| Demote
+| demote
 | Definition: Give somebody a lower rank or less senior position, usually as a punishment.
-| Usage: The head of the army was demoted to deputy defense secretary.
+| Usage: The head of the army was demoted to deputy defense secretary. [降职，贬黜]
 |
 | shrine
 | Definition: A place regarded as holy because of its associations with a divinity or a sacred person or relic, typically marked by a building or other | construction.
@@ -741,12 +736,6 @@ name, also known as surname, with most family members.
 | Definition: an account of a person’s life written by that person.
 | Usage: He gives a vivid description of his childhood in his autobiography.
 |
-| crumb
-| Definition: a small fragment of bread, cake or cracker.
-| Definition: The budget provided few crumbs of comfort.
-| Idioms: crumbs from someone’s (or a rich man’s) table.
-| Definition: an unfair and inadequate or unsatisfactory share of something.
-|
 | savory
 | Definition: (of food) belonging to the category that is salt or spicy rather than sweet.
 | Definition: Having an appetizing taste or smell.
@@ -867,11 +856,6 @@ name, also known as surname, with most family members.
 | Definition: If someone has a high profile, people notice him or her and what he or she does. If you keep a low profile, you avoid doing things that will make | people notice you.
 | Usage: Football is a high profile business.
 | Usage: The famous actor tries to keep a low profile.
-|
-| jeer
-| Definition: make rude and mocking remarks, typically in a loud voice.
-| Usage: Some of the younger men jeered at him.
-| Usage: The players were jeered by disappointed fans. [嘘]
 |
 | boo
 | Definition: If you boo a speaker or performer, you shout ‘boo’ or make other loud sounds to indicate that you don’t like them, their opinion, or their | performace.
@@ -2072,13 +2056,12 @@ Italy captain Gianluigi Buffon, making his 176th appearance, a European record,
 said that the death of his friend was partly responsible for his decision to
 reverse his international retirement. [收回前言，食言]
 
-Italy will wear the same inscription on their kit when they face England on Tuesday.
-
 | inscription
 | inscriptional
 | inscriptive
 | Definition: words inscribed, as on a monument or in a book.
 | Usage: The inscription on her headstone. [铭文]
+| Usage: Italy will wear the same inscription on their kit when they face England on Tuesday.
 |
 | headstone
 | Definition: a slab of stone set up at the head of a grave, typically inscribed with the name of the dead person.

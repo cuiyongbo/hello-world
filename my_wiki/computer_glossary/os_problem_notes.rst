@@ -17,3 +17,4 @@ OS Problem Note
     os_problem/macos_usb_bootable_installer
     os_problem/vim_usage_note
     os_problem/sublime_usage_note
+    os_problem/vscode_faq_note

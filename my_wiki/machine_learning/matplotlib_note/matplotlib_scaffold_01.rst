@@ -14,7 +14,7 @@ ax.plot(a, c+d, "k", label="Total message length")
 
 legend = ax.legend(loc="upper center", shadow=True, fontsize="x-large")
 
-# PUt a nicer backgroud color on the legend
+# Put a nicer backgroud color on the legend
 legend.get_frame().set_facecolor("C0")
 fig.savefig("./pictures/customized_legend.png")
 plt.show()
@@ -73,7 +73,7 @@ plt.xticks([])
 reference_transform = blended_transform_factory(ax.transAxes, ax.transData)
 for i, (name, line_style) in enumerate(line_styles.items()):
 	ax.annotate(str(line_style), xy=(0.0, i), xycoords=reference_transform,
-		xytext=(-6, -12), textcoords="offset points", color="blue", 
+		xytext=(-6, -12), textcoords="offset points", color="blue",
 		fontsize=8, ha="right", family="monosapce")
 
 plt.tight_layout()
@@ -253,7 +253,7 @@ fig, ax = plt.subplots()
 ax.plot(t, s)
 
 #ax.set(
-#	xlabel="time (s)", 
+#	xlabel="time (s)",
 #	ylabel="voltage (mV)",
 #	title="About as simple as it gets, folks")
 #ax.grid()
@@ -369,15 +369,15 @@ plt.show()
 
     import numpy as np
     import matplotlib.pyplot as plt
-   
+
     recipe = ["375 g flour", "75 g sugar", "250 g butter", "300 g berries"]
     data = [float(x.split()[0]) for x in recipe]
     ingredients = [x.split()[-1] for x in recipe]
-   
+
     def func(pct, allvals):
        absolute = int(pct/100.*np.sum(allvals))
        return "{:.1f}%\n({:d} g)".format(pct, absolute)
-   
+
     # pct stands for percentage
     fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
     wedges, texts, autotexts = ax.pie(data, autopct=lambda pct: func(pct, data), textprops=dict(color="w"))
@@ -390,13 +390,13 @@ plt.show()
     :caption: Donut pie demo
 
     #!/usr/bin/env python
-   
+
     import numpy as np
     import matplotlib.pyplot as plt
-   
+
     size = 0.3
     vals = np.array([[60., 32.], [37., 40.], [29., 10.]])
-   
+
     fig, ax = plt.subplots()
     cmap = plt.get_cmap("tab20c")
     outer_colors = cmap(np.arange(3)*4)
@@ -404,4 +404,4 @@ plt.show()
     ax.pie(vals.sum(axis=1), radius=1, colors=outer_colors, wedgeprops=dict(width=size, edgecolor='w'))
     ax.pie(vals.flatten(), radius=1-size, colors=inner_colors, wedgeprops=dict(width=size, edgecolor='w'))
     ax.set(aspect="equal", title='Pie plot with `ax.pie`')
-    plt.show()   
+    plt.show()

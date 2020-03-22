@@ -217,3 +217,10 @@ English Note 20
 .. image:: images/scenery_spot_1583820264.jpg
 .. image:: images/scenery_spot_1583820305.jpg
 .. image:: images/scenery_spot_1584285046.jpg
+.. image:: images/sceneray_spot_1584456923.jpg
+.. image:: images/angkor_wat_1584626079.jpg
+.. image:: images/loughrigg_tarn_1584852266.jpg
+.. image:: images/the_twist_1585661055.jpg
+.. image:: images/castle_day_20200406.jpg
+.. image:: images/santorini_aerial_view_1586525522.jpg
+.. image:: images/las_medulas_mine_1586696925.jpg

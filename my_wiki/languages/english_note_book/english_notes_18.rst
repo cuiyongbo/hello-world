@@ -2,10 +2,9 @@
 English Note 18
 ***************
 
-Easy doesn't Enter into grown-up life.
+Easy doesn't enter into grown-up life.
 
 -- The Weather Man
-
 
 | agglomerate
 | agglomerative
@@ -24,6 +23,7 @@ Easy doesn't Enter into grown-up life.
 | Usage: She already has a couple of good wins under her belt.
 | Definition: (of food or drink) consumed.
 | Usage: Gus already had a large brandy under his belt. [xx下肚]
+| Usage: conveyor belt [传送带]
 |
 | hacky
 | Definition: (of a piece of computer code) providing a clumsy or inelegant solution to a particular problem.

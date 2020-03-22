@@ -363,7 +363,16 @@ English Note 9
 |
 | spontaneous [自发地，自然的]
 | Definition: occurring as a result of a sudden inner impulse and without premeditation or external stimulus.
-| Usage: the audience broke into spontaneous applause | a spontaneous display of affection.
+| Usage: the audience broke into spontaneous applause.
+|
+| unison
+| Definition: simultaneous performance of action or utterance of speech.
+| Usage: “Yes, sir,” said the girls in unison.
+|
+| dumbstruck
+| Definition: (adjective) So shocked or astonished as to be rendered speechless
+| Synonyms: dumbfounded, thunderstruck, flabbergastered, stupefied
+| Usage: He stood dumbstruck in the doorway as the partygoers yelled “Surpise!” in unison.
 |
 | drastic
 | Definition: likely to have a strong or far-reaching effect; radical and extreme.

@@ -90,23 +90,6 @@ Python Miscellaneous Tricks 04
         import importlib
         importlib.reload(module)
 
-#. Python to copy file
-
-    .. code-block:: py
-
-        >>> import shutil
-        >>> [p for p in dir(shutil) if 'copy' in p]
-        ['copy', 'copy2', 'copyfile', 'copyfileobj', 'copymode', 'copystat', 'copytree']
-
-#. Python to get occurrence map of list
-
-    .. code-block:: py
-
-        >>> from collections import Counter
-        >>> l = [1,1,1,2,2,3,3,4,5]
-        >>> Counter(l)
-        Counter({1: 3, 2: 2, 3: 2, 4: 1, 5: 1})
-
 #. Text progress bar example
 
     .. code-block:: py
@@ -151,6 +134,18 @@ Python Miscellaneous Tricks 04
     inherited from *object*, classes defined with ``class newClass``
     are "classic" classes, while classes with ``classs newClass(object)``
     new classes. for more detatils refer to here [#python_class_inherits_object]_.
+
+#. Python interpreter to print function definition
+
+    .. code-block:: py
+
+        # works only for objects that are imported
+        >>> import re
+        >>> import inspect
+        >>> print(inspect.getsource(re.compile))
+        def compile(pattern, flags=0):
+            "Compile a regular expression pattern, returning a pattern object."
+            return _compile(pattern, flags)
 
 
 .. rubric:: Footnotes

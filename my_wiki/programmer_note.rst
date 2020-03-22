@@ -20,3 +20,5 @@ no longer anything to take away.
     programmer_note/linux_system_calls
     programmer_note/memory_management_note
     programmer_note/programming_pearls
+    programmer_note/libtbb_note
+    programmer_note/memcached_note

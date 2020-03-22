@@ -41,6 +41,10 @@ Computer Terminology 01
 | CGI = Common Gate Interface
 | FAQ = Frequently Asked Question
 | DAG = Directed Acyclic Graph
+| LRU = Least Recently Used
+| LFU = Least Frequently Used
+| DCLP = Double-Checked Locking Pattern
+| Multiplication table [乘法口诀表]
 |
 | Techno-weenie: An ineffectual or insignificant computer nerd.
 |

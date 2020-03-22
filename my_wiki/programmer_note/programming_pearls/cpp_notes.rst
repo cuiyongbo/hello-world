@@ -18,7 +18,7 @@ CPP Notes
     cpp_atomic_note
     cpp_thread_note
     cpp_smart_pointer
-    cpp_miscellaneous_tricks
+    cpp_miscellaneous_tricks_01
     cpp_miscellaneous_tricks_02
 
 
@@ -35,5 +35,3 @@ CPP Notes
 .. [#] `libstdc++ testsuites <https://github.com/gcc-mirror/gcc/tree/master/libstdc%2B%2B-v3/testsuite>`_
 .. [#eigen_lib] `Eigen <http://eigen.tuxfamily.org/index.php?title=Main_Page>`_
 .. [#c_hashmap] `rxi-map <https://github.com/rxi/map>`_
-
-

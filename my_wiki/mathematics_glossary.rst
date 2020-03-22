@@ -9,9 +9,9 @@ Mathematics
     :maxdepth: 1
 
     mathematics_glossary/mathematics_history
-    mathematics_glossary/mathematics_note_1
-    mathematics_glossary/mathematics_note_2
-    mathematics_glossary/mathematics_note_3
+    mathematics_glossary/mathematics_note_01
+    mathematics_glossary/mathematics_note_02
+    mathematics_glossary/mathematics_note_03
     mathematics_glossary/mathematics_terminology
     mathematics_glossary/latex_symbols_01
     mathematics_glossary/latex_symbols_02

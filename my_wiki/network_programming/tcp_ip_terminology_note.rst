@@ -5,7 +5,7 @@ TCP/IP Terminology
 The Four layers of TCP/IP suite:
 
 +-------------+-----------------------------------+
-| Application | Telnet, FTP, e-mail, etc          |
+| Application | Telnet, FTP, e-mail, Http, etc    |
 +-------------+-----------------------------------+
 | Transport   | TCP, UDP, SCTP                    |
 +-------------+-----------------------------------+

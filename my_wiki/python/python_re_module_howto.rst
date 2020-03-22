@@ -1127,3 +1127,14 @@ enables REs to be formatted more neatly::
 This is far more readable than::
 
    pat = re.compile(r"\s*(?P<header>[^:]+)\s*:(?P<value>.*?)\s*$")
+
+#. Group match
+
+    .. code-block:: py
+
+        >>> import re
+        >>> ss = 'TiSearch count: 133, duration: 1 ms'
+        >>> pat = re.compile(r'TiSearch count: (\d+), duration: (\d+) ms')
+        >>> m = pat.search(ss)
+        >>> m.groups()
+        ('133', '1')

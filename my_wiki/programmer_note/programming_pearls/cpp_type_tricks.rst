@@ -8,18 +8,18 @@ C/C++ Data Type tricks
     used in the C programming language, can be manipulated using C library functions: it can be created with
     ``std::malloc``, it can be copied with ``std::memmove``, etc, and can be exchanged with C libraries directly,
     in its binary form.
-   
+
     .. code-block:: cpp
-      
-        #include <type_traits>   
+
+        #include <type_traits>
         template< class T > struct is_pod;
         template< class T > struct is_standard_layout;
 
     If T is a :abbr:`PODType (plain old data type)`, that is, both trivial and standard-layout,
     provides the member constant *value* equal ``true``. For any other type, *value* is ``false``.
-   
+
     a class type (class or struct or union) that:
-   
+
         * has no user-defined copy constructor;
         * has no user-defined destructor;
         * All non-static data members have the same access control
@@ -28,26 +28,26 @@ C/C++ Data Type tricks
         * All non-static data members and base classes are themselves POD;
 
     .. code-block:: cpp
-   
+
         #include <iostream>
         #include <type_traits>
-    
+
         struct A { int m; };
-      
-        struct B 
+
+        struct B
         {
             int m1;
         private:
             int m2;
         };
-       
+
         struct C { virtual void foo(); };
-      
+
         struct Point {
            int x, y;
            float length() {return 0.0f;};   // it can have members
         };
-      
+
         int main()
         {
            std::cout << std::boolalpha;
@@ -75,17 +75,17 @@ C/C++ Data Type tricks
         char* buffer[32];
         int value = 4564;
         sprintf(buffer, "%d", value);
-      
+
         // using snprintf
         char buffer[10];
         int value = 234452;
         snprintf(buffer, 10, "%d", value);
 
     .. note::
-   
-        you can convert a string to integer type, or otherwise, using :class:`std\:\:istringstream` 
+
+        you can convert a string to integer type, or otherwise, using :class:`std\:\:istringstream`
         and :class:`std\:\:ostringstream` like this::
-   
+
             istringstream convert1(Text); //string Text="456"
             convert1 >> Number; //string to int, Number=456
             ostringstream convert2;
@@ -99,29 +99,39 @@ C/C++ Data Type tricks
         #include <stdio.h>
         #include <stdlib.h>
         #include <string.h>
-        
+
         int main()
         {
             int count = 4;
             char** strArr = (char**)malloc(sizeof(char*)*count);
-           
+
             char* str = "hello";
             size_t len = strlen(str) + 1;
             int i;
             for(i=0; i<count; i++)
-            {   
-                strArr[i] = (char*)malloc(len);    
+            {
+                strArr[i] = (char*)malloc(len);
                 strcpy(strArr[i], str);
-            }   
-        
+            }
+
             for(i=0; i<count; i++)
-            {   
+            {
                 printf("%d: %s\n", i, strArr[i]);
                 free(strArr[i]);
-            }   
-        
+            }
+
             free(strArr);
-        
+
             return 0;
         }
 
+
+#. const type qualifier
+
+    +-------------------------+------------------------------+-------------------------------------------+
+    | ``const int* x;``       | pointer to a const int       | ``*x`` can't change                       |
+    +-------------------------+------------------------------+-------------------------------------------+
+    | ``int* const x;``       | const pointer to an int      | ``x`` can't point to a different location |
+    +-------------------------+------------------------------+-------------------------------------------+
+    | ``const int* const x;`` | const pointer to a const int | both ``x`` and ``*x`` can't change        |
+    +-------------------------+------------------------------+-------------------------------------------+

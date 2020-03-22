@@ -16,6 +16,7 @@ Python note
     python/python_constant_flags
     python/python_set_notes
     python/python_dict_notes
+    python/python_collections_module_note
     python/python_file_notes
     python/python_string_notes
     python/python_complex_type_note
@@ -24,6 +25,7 @@ Python note
     python/sort_tricks
     python/python_re_module_note
     python/python_time_module_note
+    python/python_timeit_module_note
     python/struct_module_doc
     python/python_unittest_note
     python/python_os_module_note

@@ -2,6 +2,16 @@
 Pending tasks
 *************
 
+eta-server 开发设计：
+
+3. server frame: multi-process, iterative concurrent server，使用 json 编码，http 协议传输，撰写设计文档
+4. 功能开发：迁移现有 eta 计算逻辑, 设计测试案例，对比现有服务，评估开发效果，完成功能测试
+5. 撰写部署文档，内网部署，选取常规测试案例和远距离路线案例按照一定比例混合压力测试，得出服务 RPS 在 650 左右
+6. 分析服务日志，利用统计学方法，结合 matplotlib 进行可视化，确定性能瓶颈
+7. 确定优化方案：引入缓存，采用 libtbb 作并行计算，预分配减少内存分配次数。
+8. 回归测试，优化后服务 RPS 在 8000 左右。
+9. 满足预先设计目标，整理开发文档，代码通过 review 合并到 master。 通过 Kubernetes 部署到线上。
+
 **Now or Never**
 
 **自救或者去死**

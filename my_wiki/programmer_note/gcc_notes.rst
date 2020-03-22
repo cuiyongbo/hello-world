@@ -10,3 +10,4 @@ Gcc Notes
     gcc/makefile_demo
     gcc/make_basic_usage
     gcc/cmakelist_note
+    gcc/gprof_note

@@ -195,7 +195,7 @@ English Note 16
 | Usage: It was a run-of-the-mill dish you could find in any fine dining restaurant.
 |
 | stale
-| Definition: (of food) no longer fresh and plesant to eat.
+| Definition: (of food) no longer fresh and pleasant to eat.
 | Definition: no longer new and interesting.
 | Usage: Their marriage has gone stale.
 | Definition: (of a person) no longer able to perform well or creatively because of having done something for too long.

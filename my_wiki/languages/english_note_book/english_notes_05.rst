@@ -26,6 +26,12 @@ English Note 5
 | Definition: a book of detailed instructions. [工具书]
 | Usage: Python cookbooks
 |
+| recipe
+| Definition: a set of instructions for preparing a particular dish, including a list of the ingredients required.
+| Usage: a traditional Indonesian recipe
+| Definition: something which is likely to lead to a particular outcome.
+| Usage: sky-high interest rates are a recipe for disaster.
+|
 | flavor
 | Definition: the distinctive taste of a food or drink.
 | Usage: the yogurt comes in eight fruit flavors.

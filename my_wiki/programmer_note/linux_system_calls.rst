@@ -12,7 +12,6 @@ Linux System Call
     linux_system_call/general_unix_api_note_03
     linux_system_call/time_api_note
     linux_system_call/fork_info
-    linux_system_call/vfork_info
     linux_system_call/wait_info
     linux_system_call/signal_manual
     linux_system_call/semaphore_note
