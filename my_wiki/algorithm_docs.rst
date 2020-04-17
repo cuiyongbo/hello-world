@@ -44,3 +44,8 @@ Algorithms
     algorithms/std_heapsort_note
     algorithms/nth_element_partial_sort
     algorithms/prime_test_alg_note
+
+
+.. rubric:: Footnotes
+
+.. [#] `Algorithm Visualization <https://www.cs.usfca.edu/~galles/visualization/Algorithms.html>`_

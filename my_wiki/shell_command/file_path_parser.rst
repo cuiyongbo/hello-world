@@ -40,11 +40,11 @@ Parsing File Path
    :caption: Examples
 
    $ readlink -f start.sh | xargs -0 dirname
-   /etc/ncserver/traffic-data-updater
+   /etc/slider/coke_cola_package
    $ readlink -f start.sh 
-   /etc/ncserver/traffic-data-updater/start.sh
-   $ dirname /etc/ncserver/start.sh
-   /etc/ncserver
+   /etc/slider/coke_cola_package/start.sh
+   $ dirname /etc/slider/start.sh
+   /etc/slider
    $ dirname start.sh
    .
 

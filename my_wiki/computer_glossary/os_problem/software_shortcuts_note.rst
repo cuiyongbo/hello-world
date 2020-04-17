@@ -47,6 +47,7 @@ VS 2013
 #. Open "Property": Alt + F7
 #. Navigate Backward: Ctrl + -
 #. Navigate Forward: Shift + Ctrl + -
+#. Return from current function: Shift + F11
 #. Set breakpoints: F9
 #. Enable or disable breakpoints: Ctrl + F9
 #. Delete all breakpoints: Ctrl + Shift + F9

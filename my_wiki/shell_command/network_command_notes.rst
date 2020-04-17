@@ -7,7 +7,7 @@ Network Commands
     .. code-block:: sh
 
         $ whoami
-        cuiyb
+        beats
 
 #. hostname note
 
@@ -32,9 +32,9 @@ Network Commands
 
         # get computer name
         $ hostname -a
-        wl-server-build
+        dream-lover
         $ hostname -f
-        wl-server-build.mapbar.com
+        dream-lover.example.com
 
 #. uname note
 
@@ -53,7 +53,7 @@ Network Commands
           -o, --operating-system   print the operating system
 
         $ uname -n
-        wl-server-build
+        dream-lover
 
 #. Ubuntu to change host name without reboot.
 

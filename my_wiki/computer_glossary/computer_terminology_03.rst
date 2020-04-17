@@ -102,11 +102,6 @@ Computer Terminology 03
 
     .. [#] `Server framework <https://www.jianshu.com/p/63f664409183>`_
 
-#. RFQ
-
-   A :abbr:`RFQ (request for quotation)` is a standard business process whose purpose is to invite suppliers
-   into a bidding process to bid on specific products or services. RFQ generally means the same thing as
-   :abbr:`IFB (Invitation For Bid)`.
 
 #. Random walk
 
@@ -122,10 +117,39 @@ Computer Terminology 03
 
     In distributed computing, a :abbr:`RPC (remote procedure call)` is when a computer program causes a procedure
     to execute in a different address space (commonly on another computer on a shared network), which is coded
-    as if it were a normal (local) procedure call, without the programmer explicitly coding the details for the
+    as if it were a local procedure call, without the programmer explicitly coding the details for the
     remote interaction. That is, the programmer writes essentially the same code whether the procedure is local
-    to the executing program, or remote. In the object-oriented programming paradigm, RPC calls are represented
-    by :abbr:`RMI (remote method invocation)`. The RPC model implies a level of location transparency, namely that
-    calling procedures is largely the same whether it is local or remote, but usually they are not identical,
-    so local calls can be distinguished from remote calls. Remote calls are usually orders of magnitude slower
-    and less reliable than local calls, so distinguishing them is important.
+    to the executing program, or remote.
+
+#. Distributed computing
+
+    Distributed computing is a field of computer science that studies distributed systems.
+    A distributed system is a system whose components are located on different networked computers,
+    which communicate and coordinate their actions by passing messages to one another.
+    The components interact with one another in order to achieve a common goal.
+    Three significant characteristics of distributed systems are:
+
+        - concurrency of components,
+        - lack of a global clock,
+        - and independent failure of components.
+
+    A computer program that runs within a distributed system is called a distributed program
+    There are many different types of implementations for the message passing mechanism,
+    including pure HTTP, RPC-like connectors and message queues.
+
+    Distributed computing also refers to the use of distributed systems to solve computational problems.
+    In distributed computing, a problem is divided into many tasks, each of which is solved by one or more computers,
+    which communicate with each other via message passing.
+
+    Architectures:
+
+        - Client–server
+        - Peer-to-peer
+        - Three-tier
+        - n-tier
+
+#. parallel edge
+
+    In graph theory, multiple edges (also called parallel edges or a multi-edge),
+    are two or more edges that are incident to the same two vertices.
+    A simple graph has no multiple edges.

@@ -1107,10 +1107,6 @@ helped Real Madrid demolish Juventus in the quarter-final first leg. [自行车�
 | Usage: She gave a little whimper of protest.
 | Usage: A child in a bed began to whimper.
 |
-| penultimate
-| Definition: The penultimate thing in a series of things is the last but one; second last.
-| Usage: It is the first time Barcelona have been 19 points above Real since the penultimate day of 1990-91 season.
-|
 | refrain
 | Definition: stop oneself from doing something.
 | Usage: She refrained from comment.

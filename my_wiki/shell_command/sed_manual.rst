@@ -61,9 +61,6 @@ DESCRIPTION
        If  no  -e, --expression, -f, or --file option is given, then the first non-option argument is taken as the sed script to interpret.  All remaining argu‐
        ments are names of input files; if no input files are specified, then the standard input is read.
 
-       GNU sed home page: <http://www.gnu.org/software/sed/>.  General help using GNU software: <http://www.gnu.org/gethelp/>.  E-mail  bug  reports  to:  <bug-
-       sed@gnu.org>.  Be sure to include the word ``sed'' somewhere in the ``Subject:'' field.
-
 COMMAND SYNOPSIS
        This  is  just  a brief synopsis of sed commands to serve as a reminder to those who already know sed; other documentation (such as the texinfo document)
        must be consulted for fuller descriptions.

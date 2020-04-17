@@ -224,3 +224,5 @@ English Note 20
 .. image:: images/castle_day_20200406.jpg
 .. image:: images/santorini_aerial_view_1586525522.jpg
 .. image:: images/las_medulas_mine_1586696925.jpg
+.. image:: images/art_and_soul.jpg
+.. image:: images/neist_point_1587305418.jpg

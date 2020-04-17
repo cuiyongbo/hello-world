@@ -33,7 +33,7 @@ pidof Manual
 
 .. code-block:: sh
 
-   $ pidof traffic_data_updater 
+   $ pidof coke_cola_package 
    31808
 
    # kill nginx

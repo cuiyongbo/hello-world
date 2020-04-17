@@ -124,31 +124,31 @@ tar Command
       $ tar --newer "2017/01/01" -zcf  photo.tar.gz  ./Desktop/Screenshot/* #压缩比指定日期早的文件
       $ tar -zxvf photo.tar.gz *.png #只解压包内的 png 文件
       
-      $ tar -zcf traffic-data-updater.tar.gz traffic-data-updater/* # pack and compress traffic-data-updater/ into traffic-data-updater.tar.gz
-      $ rm -rf traffic-data-updater/
-      $ tar -xf traffic-data-updater.tar.gz # uncompress traffic-data-updater.tar.gz into traffic-data-updater
+      $ tar -zcf coke_cola_package.tar.gz coke_cola_package/* # pack and compress coke_cola_package/ into coke_cola_package.tar.gz
+      $ rm -rf coke_cola_package/
+      $ tar -xf coke_cola_package.tar.gz # uncompress coke_cola_package.tar.gz into coke_cola_package
 
-      $ tar -czvf past_ti_helper.tar.gz past_ti_helper/ --exclude "past_ti_helper/config"
+      $ tar -czvf pepsi_helper.tar.gz pepsi_helper/ --exclude "pepsi_helper/config"
 
-      $ tar -zxf traffic-data-updater.tar.gz --wildcards "*.cpp" # only extract cpp files
-      $ tar -zxf traffic-data-updater.tar.gz --wildcards "*stdafx.cpp"
+      $ tar -zxf coke_cola_package.tar.gz --wildcards "*.cpp" # only extract cpp files
+      $ tar -zxf coke_cola_package.tar.gz --wildcards "*stdafx.cpp"
 
 
       $ tar -tf log.tar 
-      traffic-data-updater.log.1
-      traffic-data-updater.log.2
-      $ tar -rf log.tar traffic_data_updater_cfg.ini 
+      coke_cola_package.log.1
+      coke_cola_package.log.2
+      $ tar -rf log.tar coke_cola_package_cfg.ini 
       $ tar -tf log.tar 
-      traffic-data-updater.log.1
-      traffic-data-updater.log.2
-      traffic_data_updater_cfg.ini
-      $ tar -f log.tar --delete traffic_data_updater_cfg.ini 
+      coke_cola_package.log.1
+      coke_cola_package.log.2
+      coke_cola_package_cfg.ini
+      $ tar -f log.tar --delete coke_cola_package_cfg.ini 
       $ tar -tf log.tar 
-      traffic-data-updater.log.1
-      traffic-data-updater.log.2
+      coke_cola_package.log.1
+      coke_cola_package.log.2
 
       # remove file after added to archive file
-      tar -rf log.tar --remove-files traffic-data-updater.log.7
+      tar -rf log.tar --remove-files coke_cola_package.log.7
       
       
    .. code-block:: sh
@@ -209,18 +209,18 @@ gzip/gunzip command
    $ gunzip -Nk 06nanjing.txt.gz  # use the original file name in the zip file
 
    $ ll *.gz
-   -rw-r--r-- 1 cuiyb 1049089 424943 Jun 28 14:56 06nanjing.txt.gz
-   -rw-r--r-- 1 cuiyb 1049089 424716 Jun 28 14:56 07nanjing.txt.gz
-   -rw-r--r-- 1 cuiyb 1049089 423827 Jun 28 14:56 08nanjing.txt.gz
-   -rw-r--r-- 1 cuiyb 1049089 422795 Jun 28 14:56 09nanjing.txt.gz
+   -rw-r--r-- 1 beats 1049089 424943 Jun 28 14:56 06nanjing.txt.gz
+   -rw-r--r-- 1 beats 1049089 424716 Jun 28 14:56 07nanjing.txt.gz
+   -rw-r--r-- 1 beats 1049089 423827 Jun 28 14:56 08nanjing.txt.gz
+   -rw-r--r-- 1 beats 1049089 422795 Jun 28 14:56 09nanjing.txt.gz
 
    $ find . -type f -name "*.gz" -exec gunzip -nk \{\} \;
 
    $ ll *.txt
-   -rw-r--r-- 1 cuiyb 1049089 1955776 Jun 28 14:56 06nanjing.txt
-   -rw-r--r-- 1 cuiyb 1049089 1952338 Jun 28 14:56 07nanjing.txt
-   -rw-r--r-- 1 cuiyb 1049089 1949276 Jun 28 14:56 08nanjing.txt
-   -rw-r--r-- 1 cuiyb 1049089 1944800 Jun 28 14:56 09nanjing.txt
+   -rw-r--r-- 1 beats 1049089 1955776 Jun 28 14:56 06nanjing.txt
+   -rw-r--r-- 1 beats 1049089 1952338 Jun 28 14:56 07nanjing.txt
+   -rw-r--r-- 1 beats 1049089 1949276 Jun 28 14:56 08nanjing.txt
+   -rw-r--r-- 1 beats 1049089 1944800 Jun 28 14:56 09nanjing.txt
 
 unzip command
 =============

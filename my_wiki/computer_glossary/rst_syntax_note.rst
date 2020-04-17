@@ -2,6 +2,21 @@
 reStructure Syntax FAQ
 **********************
 
+#. Install sphinx: ``sudo -H pip3 install -U Sphinx``
+
+#. Start a new document project
+
+    .. code-block:: sh
+
+        cherry@cuiyb:~$ mkdir demo
+        cherry@cuiyb:~$ cd demo/
+        cherry@cuiyb:~/demo$ sphinx-quickstart
+        ...
+        You should now populate your master file ./index.rst and create other documentation
+        source files. Use the Makefile to build the docs, like so:
+           make builder
+        where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+
 #. Preserve line breaks while generating docs using Sphinx
 
     Line blocks are a way of preserving line breaks.

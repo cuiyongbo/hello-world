@@ -57,10 +57,10 @@ smem Manual
 .. code-block:: sh
     :caption: Examples
 
-    $ smem -tk -P past_ti_com
+    $ smem -tk -P pepsi_com
       PID User     Command                         Swap      USS      PSS      RSS 
-     4448 cuiyb    /usr/bin/python /usr/bin/sm        0     5.2M     5.4M     7.2M 
-     1578 cuiyb    /etc/ncserver/past_ti_compi        0    17.1M    17.4M    19.7M 
+     4448 beats    /usr/bin/python /usr/bin/sm        0     5.2M     5.4M     7.2M 
+     1578 beats    /etc/slider/pepsi_compi        0    17.1M    17.4M    19.7M 
     -------------------------------------------------------------------------------
         2 1                                           0    22.3M    22.7M    26.9M 
 

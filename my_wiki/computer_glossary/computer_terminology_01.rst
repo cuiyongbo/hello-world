@@ -45,6 +45,7 @@ Computer Terminology 01
 | LFU = Least Frequently Used
 | DCLP = Double-Checked Locking Pattern
 | Multiplication table [乘法口诀表]
+| SoA = Service-oriented Architecture
 |
 | Techno-weenie: An ineffectual or insignificant computer nerd.
 |

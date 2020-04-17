@@ -104,20 +104,20 @@ curl - transfer a URL
 .. code-block:: sh
 
    # HTTP GET
-   $  curl  http://w.mapbar.com/nc/v1/tile/tmc/fastTimestamp -s
+   $  curl  http://w.example.com/nc/v1/tile/dash/fastTimestamp -s
    {"nextUpdateTime":15,"updateTime":1542364560}
 
    # HTTP POST
-   $ curl -s -d '{"linkIds":"0", "flags":"speeds"}' http://116.213.115.77:81/nc/v1/nav2tmc?ver=2.1
+   $ curl -s -d '{"linkIds":"0", "flags":"speeds"}' http://116.213.115.77:81/nc/v1/nav2dash?ver=2.1
    {"timestamp": 1542364620, "trafficColors": "4", "trafficSpeeds": "0.50"}
 
    # HTTP HEAD
-   $ curl -sI file:///C:/WorkSpace/Work-Project/RouteData/data/realtime.data
+   $ curl -sI file:///C:/WorkSpace/Work-Project/data_base/data/FriedPan.data
    Content-Length: 4706728
    Accept-ranges: bytes
    Last-Modified: Thu, 22 Nov 2018 05:45:08 GMT
 
-   $ curl -s -d `getRouteLinks.py -i '(11602934,4014603)(11606411,4016913)' -vv` http://w.mapbar.com/nc/v1/nav2tmc?ver=2.0
+   $ curl -s -d `getRouteLinks.py -i '(11602934,4014603)(11606411,4016913)' -vv` http://w.example.com/nc/v1/nav2dash?ver=2.0
 
 
 #. Download Http directiory with all files and subdirectories

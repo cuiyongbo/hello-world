@@ -17,3 +17,9 @@ Radix trees support insertion, deletion, and searching operations. Searching ope
 not necessarily limited to) exact lookup, find predecessor, find successor, and find all strings with a prefix.
 All of these operations are :math:`O(k)` where k is the maximum length of all strings in the set,
 where length is measured in the quantity of bits equal to the radix of the radix trie.
+
+
+.. rubric:: Footnotes
+
+.. [#] https://iq.opengenus.org/applications-of-trie/
+.. [#] https://www.cs.usfca.edu/~galles/visualization/Trie.html

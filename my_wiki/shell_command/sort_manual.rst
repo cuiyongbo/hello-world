@@ -108,7 +108,7 @@ sort - sort lines of text files
       udev             20G  4.0K   20G   1% /dev
       tmpfs           4.0G  3.3M  4.0G   1% /run
       /dev/sda1       236M   40M  184M  18% /boot
-      tmpfs           4.0G  1.4G  2.7G  33% /tmp/realtime
+      tmpfs           4.0G  1.4G  2.7G  33% /tmp/FriedPan
       none             20G  4.1G   16G  21% /run/shm
       /dev/dm-0       157G  141G  8.8G  95% /
 

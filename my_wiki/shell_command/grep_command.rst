@@ -325,32 +325,26 @@ grep Manual
    $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
    ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/
 
-   # non-empty line count
-   $ grep -Hcve "^\s*$" fig_03_05.c
-   fig_03_05.c:14
    $ wc -l fig_03_05.c
          17 fig_03_05.c
 
-   $ find /run/shm/ | grep -E "idListHashMap|teHashMap"
-   /run/shm/idListHashMap
-   /run/shm/teHashMap
+   # non-empty line count
+   $ grep -Hcve "^\s*$" fig_03_05.c
+   fig_03_05.c:14
+   14
+
+   $ grep -c "^\s*$" fig_03_05.c
+   3
+
+   $ find /run/shm/ | grep -E "cokeMap|pepsiMap"
+   /run/shm/cokeMap
+   /run/shm/pepsiMap
 
    $ grep -A 5 -B 2 20181111142200_6802_43145_56_458_2 formatted_event.json
-   "eventStartTime": "2018-11-12 00:30:00",
-   "reasonTmcCode": "740",
-   "eventId": "20181111142200_6802_43145_56_458_2",
-   "forbid": "0",
-   "eventReason": "14",
-   "roadName": "当前道路",
-   "eventRestrictType": "0",
-   "roadDirection": "东向西",
+   ....
 
    $ grep -C 2 20181111142200_6802_43145_56_458_2 formatted_event.json
-   "eventStartTime": "2018-11-12 00:30:00",
-   "reasonTmcCode": "740",
-   "eventId": "20181111142200_6802_43145_56_458_2",
-   "forbid": "0",
-   "eventReason": "14",
+   ....
 
    $ grep 20181111142200_6802_43145_56_458_2 event.json -o
    20181111142200_6802_43145_56_458_2
@@ -387,18 +381,18 @@ grep Manual
 
    .. code-block:: sh
 
-      $ find eta-server -type f | grep -E "*\.(md|py)"
-      eta-server/make.py
-      eta-server/README.md
-      eta-server/src/changelog/changelog.py
+      $ find xxx-prog -type f | grep -E "*\.(md|py)"
+      xxx-prog/make.py
+      xxx-prog/README.md
+      xxx-prog/src/changelog/changelog.py
 
 #. Count the number of lines in a project
 
    .. code-block:: sh
 
-      $ find eta-server/ -type f | grep -E "*\.(h|cpp|md|rst|py)" | xargs wc -l
+      $ find xxx-prog/ -type f | grep -E "*\.(h|cpp|md|rst|py)" | xargs wc -l
       ...
       2898 total
 
-      $ find eta-server/ -name "*.cpp" -exec wc -l \{\} \; | awk '{s+=$1}END{print s}'
+      $ find xxx-prog/ -name "*.cpp" -exec wc -l \{\} \; | awk '{s+=$1}END{print s}'
       1272

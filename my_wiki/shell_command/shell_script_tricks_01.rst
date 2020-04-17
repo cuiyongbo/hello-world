@@ -263,19 +263,19 @@ Shell Script Tricks 01
    .. code-block:: sh
 
       $ readlink -f start.sh | xargs -0 dirname
-      /etc/ncserver/traffic-data-updater
+      /etc/slider/coke_cola_package
       $ readlink -f start.sh
-      /etc/ncserver/traffic-data-updater/start.sh
+      /etc/slider/coke_cola_package/start.sh
       $ dirname start.sh
       .
-      $ dirname /etc/ncserver/start.sh
-      /etc/ncserver
+      $ dirname /etc/slider/start.sh
+      /etc/slider
 
 #. Get program uid and gid
 
    .. code-block:: sh
 
-      $ pidof traffic_data_updater
+      $ pidof coke_cola_package
       5094
       >>> import os
       >>> proc_stat = os.stat("/proc/5094")

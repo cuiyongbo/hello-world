@@ -4,7 +4,7 @@ Machine Learning
 
 Now Let's start it.
 
-A fairly good place to start comes here `Machine Learning 101 <https://leetcode.com/explore/learn/card/machine-learning-101/>`_
+A fairly good place to start comes here `Machine Learning 101`_
 
 .. toctree::
     :titlesonly:
@@ -72,4 +72,7 @@ A fairly good place to start comes here `Machine Learning 101 <https://leetcode.
 .. [#] `The Hundred-Page Machine Learning Book <http://themlbook.com/wiki/doku.php>`_
 .. [#] `Stanford Tensorflow tutorial <https://github.com/chiphuyen/stanford-tensorflow-tutorials.git>`
 .. [#] `MNIST datasets <http://yann.lecun.com/exdb/mnist/>`_
-.. [#] `Fash Mnist <https://github.com/zalandoresearch/fashion-mnist/blob>`_
+.. [#] `Fash Mnist <https://github.com/zalandoresearch/fashion-mnist/blob>`_'
+.. [#] `Machine Learning 101 <https://leetcode.com/explore/learn/card/machine-learning-101/>`_
+.. [#] https://www.acrcloud.com/blog/how-does-shazam-work
+.. [#] https://iq.opengenus.org/tag/machine-learning/

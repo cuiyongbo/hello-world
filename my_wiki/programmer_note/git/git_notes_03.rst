@@ -7,7 +7,7 @@ Git Tricks 03
     .. code-block:: sh
 
         git clone git@XXX/**.git
-        cd past-ti-fetcher
+        cd kangshifu/
         touch README.md
         git add README.md
         git commit -m "add README"
@@ -164,9 +164,9 @@ Git Tricks 03
 
     .. code-block:: sh
 
-        $ git for-each-ref --format='%(authorname) %09 %(refname)' | grep origin | grep cuiyb
-        cuiyb    refs/remotes/origin/extract_route_result_logic
-        cuiyb    refs/remotes/origin/fix_navicore-4025
+        $ git for-each-ref --format='%(authorname) %09 %(refname)' | grep origin | grep pepsi
+        pepsi    refs/remotes/origin/extract_route_result_logic
+        pepsi    refs/remotes/origin/fix_navicore-4025
 
 #. Git to view changes of a specific commit
 

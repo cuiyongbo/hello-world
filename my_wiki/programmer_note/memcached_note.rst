@@ -15,11 +15,11 @@ Installing it does not automatically accelerate or cache any of your data:
 
     memcached/memcached_introduction
     memcached/memcached_design_philosophy
+    memcached/memcached_faq
 
 
 .. rubric:: Footnotes
 
 .. [#] `Memcached repository <https://github.com/memcached/memcached.git>`_
 .. [#] `Memcached Wiki repository <https://github.com/memcached/memcached.wiki.git>`_
-.. [#] `libmemcached <https://libmemcached.org/libMemcached.html>`_
-.. [#] `test <https://blog.csdn.net/tankles/article/details/7208988>`_
+.. [#] `libmemcached <https://github.com/whupro2017/libmemcached.git>`_

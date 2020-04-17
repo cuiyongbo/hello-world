@@ -2,6 +2,8 @@
 English Note 22
 ***************
 
+God helps those who help themselves
+
 | whack-a-mole
 | Definition: 打鼹鼠游戏
 | Usage: I love coming to this old arcade. I have a lot of fond memories playing Whack-a-Mole and Skee-Ball here as a kid.
@@ -103,9 +105,27 @@ English Note 22
 | astound
 | Definition: shock or greatly surprise.
 | Usage: you never fail to astound me!
+|
+| smash it
+| Synonyms: well done!
+|
+| smart aleck
+| Definition: a person who is irritating because they behave as if they know everything.
+| Synonyms: smart ass
+| Usage: I'm sick of all these smart alecks from the big city running the show.
+|
+| memorization
+| Definition: the process of committing something to memory or learning something by heart.
+| Usage: this understanding and knowledge is acquired through rote memorization.
+| Usage: the use of a popular acronym is probably the most widely used memorization technique.
+|
+| rote
+| Definition: mechanical or habitual repetition of something to be learned.
+| Usage: a poem learned by rote in childhood.
 
 #. Accumulative vs. Cumulative
 
    Increasing or increased in quantity, degree, or force by successive additions is called Cumulative,
    whereas, gathering or growing by gradual increase is called Accumulative. Cumulative is the addition
    that comes up with successive contributors, while accumulative is the addition that happens gradually.
+

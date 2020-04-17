@@ -86,29 +86,23 @@ Gdb Tricks 02
 
     .. code-block:: sh
 
-        (gdb) ptype PastTiCompiler
-        type = class PastTiCompiler {
+        (gdb) ptype BlueGlass
+        type = class BlueGlass {
           private:
-            int64 m_lastTiUpdateTime;
+            int64 m_hugo;
           public:
-            PastTiCompiler(void);
-            bool prepare(void);
-            void finalize(void);
-          private:
-            void initPast7TiSharedMem(void);
-            void loadPast7TiFromDisk(int64);
+            BlueGlass(void);
+            ...
         }
 
-        (gdb) info functions PastTiCompiler
-        All functions matching regular expression "PastTiCompiler":
+        (gdb) info functions BlueGlass
+        All functions matching regular expression "BlueGlass":
 
-        File /past_ti_compiler/src/past_ti_compiler.cpp:
-        void PastTiCompiler::PastTiCompiler();
-        TiLinkMap *PastTiCompiler::allocFilteredMap(TiData*);
-        void PastTiCompiler::finalize();
-        void PastTiCompiler::initPast7TiSharedMem();
-        void PastTiCompiler::initWeeklyPastTiSharedMem();
-        bool PastTiCompiler::prepare();
+        File /blue_glass/src/blue_glass.cpp:
+        void BlueGlass::BlueGlass();
+        void BlueGlass::finalize();
+        bool BlueGlass::prepare();
+        ...
 
 #. Gdb to print all function names
 
@@ -154,19 +148,7 @@ Gdb Tricks 02
 
         (gdb) set print element 0
         (gdb) p (char*)postData->m_bytes
-        $24 = 0x2b88680 "{\"departureTime\": \"2019/12/18 03:16:10\", \"vehicleInfo\":
-        {\"hasPassport\": false}, \"routePlan\": {\"enableOnlineJunctionView\": false,
-        \"requireRegulationRestrictions\": false, \"vehicleInfo\": {\"hasPassport\": false},
-        \"regulationRestrictionEnabled\": false, \"timeConditionRestrictionEnabled\": false,
-        \"requireCurvatureAndHeadingAngle\": false, \"departInFuture\": true, \"routePoints\":
-        [{\"position\": \"11628871,3997442\", \"type\": 1, \"name\": \"Start\", \"entryPoint\":
-        \"11628871,3997442\"}, {\"position\": \"11634728,3988498\", \"type\": 1, \"name\": \"End\",
-        \"entryPoint\": \"11634728,3988498\"}], \"switchTarget\": 0, \"resultReorderEnabled\": true,
-        \"departureTime\": \"2019/12/18 03:16:10\", \"startOri\": 32767, \"isReroute\": false,
-        \"smartModeEnabled\": true, \"requirePhysicalRestrictions\": false, \"physicalRestrictionEnabled\": false,
-        \"curLinkIdx\": -1, \"transportationType\": 0, \"routePreference\": 0, \"allowWalkToDestination\": true,
-        \"requiredDistanceForAdas\": 0, \"enrouteNearbyLinkIds\": [], \"familiarRouteType\": 0, \"routeMode\": 1,
-        \"requireNavInfoId\": false, \"useTollCostApi\": false}}"
+        $24 = 0x2b88680 "{very long string ...}"
 
 #. Gdb to locate your current location
 

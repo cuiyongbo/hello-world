@@ -78,7 +78,7 @@ Shell flow control
       result=""
       until
          sleep 5 
-         result=$(ps aux | grep traffic_data_updater | grep -v grep)
+         result=$(ps aux | grep coke_cola_package | grep -v grep)
          [ -z "$result" ]
       do :; done
 

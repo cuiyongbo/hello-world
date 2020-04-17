@@ -256,6 +256,11 @@ Windows Problems
         set noautoindent
 
 
+#. Windows 下查看错误码
+
+    Refer to "Tools" - "Error Lookup". Or just run ``errlook.exe``
+    in  ``C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools``.
+
 .. rubric:: Footnotes
 
 .. [#] `Run time library options <https://msdn.microsoft.com/en-us/library/aa267384(v=vs.60).aspx>`_

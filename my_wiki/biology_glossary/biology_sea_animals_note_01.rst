@@ -17,6 +17,7 @@ Biology Terms - Sea Animals
 .. image:: images/fin_whale.jpg
 .. image:: images/whale_jump_out_of_water.jpg
 .. image:: images/unicorn_1586441882.jpg
+.. figure:: images/dolphin_1586868562.jpg
 .. figure:: images/harbor-porpoise.jpg
 
     Harbor Porpoise

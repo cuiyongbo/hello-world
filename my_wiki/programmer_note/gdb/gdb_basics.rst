@@ -127,32 +127,32 @@ Gdb Basics
 
       (gdb) info proc
       process 16918
-      cmdline = '/past_ti_compiler'
-      cwd = '/past_ti_compiler'
-      exe = '/past_ti_compiler/past_ti_compiler'
+      cmdline = '/scaffold'
+      cwd = '/scaffold'
+      exe = '/scaffold/scaffold'
 
       (gdb) info program
          Using the running image of child Thread 0x7ffff7fdd780 (LWP 16918).
       Program stopped at 0x44685d.
       It stopped after being stepped.
-      $ addr2line -f -e past_ti_compiler 0x44685d
+      $ addr2line -f -e scaffold 0x44685d
       main
-      /ti-servers/past_ti_compiler/src/main.cpp:104
+      /cpp/scaffold/src/main.cpp:104
 
       (gdb) info target
-      Symbols from "/past_ti_compiler/past_ti_compiler".
+      Symbols from "/scaffold/scaffold".
       Unix child process:
          Using the running image of child Thread 0x7ffff7fdd780 (LWP 16918).
          While running this, GDB does not access memory from...
       Local exec file:
-         `/past_ti_compiler/past_ti_compiler', file type       elf64-x86-64.
+         `/scaffold/scaffold', file type       elf64-x86-64.
          Entry point: 0x446a46
 
       (gdb) info line 78
-      Line 78 of "/ti-servers/past_ti_compiler/src/main.cpp" starts at address 0x446782 <main()+2> and ends at 0x44678c <main()+12>.
-      $ addr2line -f -e past_ti_compiler 0x446782
+      Line 78 of "/cpp/scaffold/src/main.cpp" starts at address 0x446782 <main()+2> and ends at 0x44678c <main()+12>.
+      $ addr2line -f -e scaffold 0x446782
       main
-      /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:78
+      /home/natsume/workspace/projects/cpp/scaffold/src/main.cpp:78
 
       (gdb) info sharedlibrary
       From                To                  Syms Read   Shared Object Library
@@ -164,56 +164,39 @@ Gdb Basics
       0x00007ffff72a0620  0x00007ffff7303803  Yes (*)     /usr/lib/x86_64-linux-gnu/libstdc++.so.6
 
       (gdb) info source
-      Current source file is /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp
-      Compilation directory is /home/cuiyb/workspace/projects/ti-servers/tmp/tmp/past_ti_compiler
-      Located in /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp
+      Current source file is /home/natsume/workspace/projects/cpp/scaffold/src/main.cpp
+      Compilation directory is /home/cuiyb/workspace/projects/haha-servers/tmp/tmp/scaffold
+      Located in /home/natsume/workspace/projects/cpp/scaffold/src/main.cpp
       Contains 131 lines.
       Source language is c++.
       Compiled with DWARF 2 debugging format.
       Does not include preprocessor macro info.
-      $ wc -l past_ti_compiler/src/main.cpp
-      131 past_ti_compiler/src/main.cpp
+      $ wc -l scaffold/src/main.cpp
+      131 scaffold/src/main.cpp
 
       (gdb) info stack
-      #0  main () at /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:104
+      #0  main () at /home/natsume/workspace/projects/cpp/scaffold/src/main.cpp:104
 
       (gdb) info threads
         Id   Target Id         Frame
-        3    Thread 0x7ffff2008700 (LWP 16923) "fileWatchThread" 0x00007ffff6a50c5d in poll () at ../sysdeps/unix/syscall-template.S:81
-        2    Thread 0x7ffff7fdb700 (LWP 16922) "timerSysThread" 0x00007ffff7558b9d in nanosleep () at ../sysdeps/unix/syscall-template.S:81
-      * 1    Thread 0x7ffff7fdd780 (LWP 16918) "past_ti_compile" main () at /past_ti_compiler/src/main.cpp:104
+        3    Thread 0x7ffff2008700 (LWP 16923) "ring" 0x00007ffff6a50c5d in poll () at ../sysdeps/unix/syscall-template.S:81
+        2    Thread 0x7ffff7fdb700 (LWP 16922) "timer" 0x00007ffff7558b9d in nanosleep () at ../sysdeps/unix/syscall-template.S:81
+      * 1    Thread 0x7ffff7fdd780 (LWP 16918) "bravo_server" main () at /scaffold/src/main.cpp:104
 
-     (gdb) info types Past
-     All types matching regular expression "Past":
-
-     File /past_ti_compiler/src/past_ti_compiler.h:
-     PastTiCompiler;
-     File /past_ti_compiler/src/past_ti_shared_data.h:
-     PastTiSharedData;
-     PastTiSharedData::PastTiElement;
-     File /past_ti_compiler/src/past_ti_trait.h:
-     PastTiFestival;
-
-     (gdb) ptype PastTiFestival
-     type = enum PastTiFestival {PastTiFestival_none, PastTiFestival_newYearDay, PastTiFestival_springFestival,
-     PastTiFestival_qingmingFestival, PastTiFestival_mayDay, PastTiFestival_dragonBoatFestival,
-     PastTiFestival_midAutumnDay, PastTiFestival_nationalDay, PastTiFestival_max}
+     (gdb) ptype ChineseFestival
+     type = enum ChineseFestival {ChineseFestival_none, ChineseFestival_newYearDay, ChineseFestival_springFestival,
+     ChineseFestival_qingmingFestival, ChineseFestival_mayDay, ChineseFestival_dragonBoatFestival,
+     ChineseFestival_midAutumnDay, ChineseFestival_nationalDay, ChineseFestival_max}
 
      (gdb) info variables g_isRunning
       All variables matching regular expression "g_isRunning":
 
-      File /home/cuiyb/workspace/projects/ti-servers/past_ti_compiler/src/main.cpp:
+      File /home/natsume/workspace/projects/cpp/scaffold/src/main.cpp:
       static std::atomic_bool g_isRunning;
 
       (gdb) info vtbl s
-      vtable for 'EnrouteTiServer' @ 0x6091f0 (subobject @ 0x8a53f0):
-      [0]: 0x451ce4 <EnrouteTiServer::~EnrouteTiServer()>
-      [1]: 0x451d52 <EnrouteTiServer::~EnrouteTiServer()>
-      [2]: 0x451bf2 <ncserver::NcServer::prepareProcess()>
-      [3]: 0x451c02 <ncserver::NcServer::initUnforkableResources()>
-      [4]: 0x451c12 <ncserver::NcServer::startService()>
-      [5]: 0x451c22 <ncserver::NcServer::stopService()>
-      [6]: 0x451c32 <ncserver::NcServer::cleanupUnforkableResources()>
-      [7]: 0x451c42 <ncserver::NcServer::finalizeProcess()>
-      [8]: 0x451468 <EnrouteTiServer::query(ncserver::ServiceIo*, ncserver::Request*)>
+      vtable for 'BravoServer' @ 0x6091f0 (subobject @ 0x8a53f0):
+      [0]: 0x451ce4 <BravoServer::~BravoServer()>
+      [1]: 0x451d52 <BravoServer::~BravoServer()>
+      [2]: 0x451bf2 <dilidili::prepareProcess()>
 

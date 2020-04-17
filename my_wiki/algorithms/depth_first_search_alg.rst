@@ -49,6 +49,9 @@ of vertices :math:`C \in V` such that for every pair of vertices u and v in C , 
     .. code-block:: none
         :caption: Algorithm pesudocode taken from wiki
 
+        # Time complexity: O(V+E)
+        # Space complexity: O(V)
+
         index = 0
         S = empty stack
         scc_list = empty list
@@ -66,7 +69,7 @@ of vertices :math:`C \in V` such that for every pair of vertices u and v in C , 
             u.onStack = true
             for v in G.adj[u]
                 if v is not visited
-                    strongConnect(v)
+                    strongConnect(G, v)
                     u.lowlink = min(u.lowlink, v.lowlink)
                 else if v.onStack
                     u.lowlink = min(u.lowlink, v.index)
@@ -85,3 +88,10 @@ of vertices :math:`C \in V` such that for every pair of vertices u and v in C , 
     - Friend circles
     - Smallest String With Swaps (Connected Component)
     - Critical Connections in a Network (SCC)
+
+
+.. rubric:: Footnotes
+
+.. [#] https://iq.opengenus.org/tarjans-algorithm/
+.. [#] https://pypi.org/project/tarjan/
+.. [#] https://iq.opengenus.org/kosarajus-algorithm-for-strongly-connected-components/

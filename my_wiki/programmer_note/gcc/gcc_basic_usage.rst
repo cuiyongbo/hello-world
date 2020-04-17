@@ -4,216 +4,118 @@ gcc - GNU project C and C++ compiler
 
 **SYNOPSIS**
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      gcc [-c|-S|-E] [-std=standard]
-           [-g] [-pg] [-Olevel]
-           [-Wwarn...] [-Wpedantic]
-           [-Idir...] [-Ldir...]
-           [-Dmacro[=defn]...] [-Umacro]
-           [-foption...] [-mmachine-option...]
-           [-o outfile] [@file] infile...
-
-      # Only the most useful options are listed here; see below for the remainder.
-      # g++ accepts mostly the same options as gcc.
+        gcc [-c|-S|-E] [-std=standard]
+             [-g] [-pg] [-Olevel]
+             [-Wwarn...] [-Wpedantic]
+             [-Idir...] [-Ldir...]
+             [-Dmacro[=defn]...] [-Umacro]
+             [-foption...] [-mmachine-option...]
+             [-o outfile] [@file] infile...
 
 
 **DESCRIPTION**
 
-   When you invoke GCC, it normally does **preprocessing, compilation, assembly and linking.**
-   The **overall options** allow you to stop this process at an intermediate stage.
-   For example, the -c option says not to run the linker. Then the output consists of object
-   files output by the assembler.
+    When you invoke GCC, it normally does **preprocessing, compilation, assembly and linking.**
+    The **overall options** allow you to stop this process at an intermediate stage.
+    For example, the -c option says not to run the linker. Then the output consists of object
+    files output by the assembler.
 
-**Options Controlling the Kind of Output**
-
-   Compilation can involve up to four stages: preprocessing, compilation proper, assembly and linking,
-   always in that order. GCC is capable of preprocessing and compiling several files either into several
-   assembler input files, or into one assembler input file; then each assembler input file produces an
-   object file, and linking combines all the object files (those newly compiled, and those specified as
-   input) into an executable file.
-
-   For any given input file, the file name suffix determines what kind of compilation is done::
-
-      file.c
-         C source code that must be preprocessed.
-
-      file.i
-         C source code that should not be preprocessed.
-
-      file.ii
-         C++ source code that should not be preprocessed.
-
-      file.h
-         C, C++, header file to be turned into a precompiled header (default),
-         or C, C++ header file to be turned into an Ada spec (via the -fdump-ada-spec switch).
-
-      file.cc
-      file.cp
-      file.cxx
-      file.cpp
-      file.CPP
-      file.c++
-      file.C
-         C++ source code that must be preprocessed. Note that in .cxx, the last two letters must
-         both be literally x. Likewise, .C refers to a literal capital C.
-
-      file.hh
-      file.H
-      file.hp
-      file.hxx
-      file.hpp
-      file.HPP
-      file.h++
-      file.tcc
-         C++ header file to be turned into a precompiled header or Ada spec.
-
-      file.s
-         Assembler code.
-
-      file.S
-      file.sx
-         Assembler code that must be preprocessed.
-
-
-**OPTIONS**
+**HOT OPTIONS**
 
 .. option:: -c
 
-   Compile or assemble the source files, but do not link.
-   The linking stage simply is not done. The ultimate output
-   is in the form of an object file for each source file.
+    Compile or assemble the source files, but do not link.
+    The linking stage simply is not done. The ultimate output
+    is in the form of an object file for each source file.
 
-   By default, the object file name for a source file is
-   made by replacing the suffix .c, .i, .s, etc., with .o.
-
-   Unrecognized input files, not requiring compilation or
-   assembly, are ignored.
+    By default, the object file name for a source file is
+    made by replacing the suffix .c, .i, .s, etc., with .o.
 
 .. option:: -S
 
-   Stop after the stage of compilation proper; do not assemble.
-   The output is in the form of an assembler code file for each
-   non-assembler input file specified.
+    Stop after the stage of compilation proper; do not assemble.
+    The output is in the form of an assembler code file for each
+    non-assembler input file specified.
 
-   By default, the assembler file name for a source file is made
-   by replacing the suffix .c, .i, etc., with .s.
-
-   Input files that don't require compilation are ignored.
+    By default, the assembler file name for a source file is made
+    by replacing the suffix .c, .i, etc., with .s.
 
 .. option:: -E
 
-   Stop after the preprocessing stage; do not run the compiler proper.
-   The output is in the form of preprocessed source code, which is sent
-   to the standard output.
-
-   Input files that don't require preprocessing are ignored.
+    Stop after the preprocessing stage; do not run the compiler proper.
+    The output is in the form of preprocessed source code, which is sent
+    to the standard output.
 
 .. option:: -o file
 
-   Place output in file file. This applies to whatever sort of output
-   is being produced, whether it be an executable file, an object file,
-   an assembler file or preprocessed C code.
-
-   If -o is not specified, the default is to put an executable file in a.out,
-   the object file for source.suffix in source.o, its assembler file in source.s,
-   a precompiled header file in source.suffix.gch, and all preprocessed C source
-   on standard output.
-
+    Place output in file file. This applies to whatever sort of output
+    is being produced, whether it be an executable file, an object file,
+    an assembler file or preprocessed C code.
 
 .. option:: -static
 
-   Prevent gcc from using shared libraries, force compile to link with static library(*.a).
-   By default, gcc link with shared object (*.so).
+    Prevent gcc from using shared libraries, force compile to link with static library(*.a).
+    By default, gcc link with shared object (*.so).
 
-.. option::  -shared
+.. option:: -shared
 
-   Produce a shared object which can then be linked with other objects to form an executable.
-   Not all systems support this option. For predictable results, you must also specify the same
-   set of options used for compilation (-fpic, -fPIC, or model suboptions) when you specify this
-   linker option.
+    Produce a shared object which can then be linked with other objects to form an executable.
+    Not all systems support this option. For predictable results, you must also specify the same
+    set of options used for compilation (-fpic, -fPIC, or model suboptions) when you specify this
+    linker option.
 
 .. option:: -fpic
 
-   Generate position-independent code (PIC) suitable for use in a shared library,
-   if supported for the target machine. Such code accesses all constant addresses
-   through a global offset table (GOT). The dynamic loader resolves the GOT entries
-   when the program starts (the dynamic loader is not part of GCC; it is part of the
-   operating system). If the GOT size for the linked executable exceeds a machine-specific
-   maximum size, you get an error message from the linker indicating that -fpic does not work;
-   in that case, recompile with -fPIC instead. (These maximums are 8k on the SPARC and 32k on
-   the m68k and RS/6000.  The x86 has no such limit.)
-
-   PIC requires special support, and therefore works only on certain machines. For the x86,
-   GCC supports PIC for System V but not for the Sun 386i. Code generated for the IBM RS/6000
-   is always position-independent.
-
-   When this flag is set, the macros ``__pic__`` and ``__PIC__`` are defined to 1.
+    Generate position-independent code (PIC) suitable for use in a shared library,
+    if supported for the target machine. Such code accesses all constant addresses
+    through a global offset table (GOT). The dynamic loader resolves the GOT entries
+    when the program starts (the dynamic loader is not part of GCC; it is part of the
+    operating system). If the GOT size for the linked executable exceeds a machine-specific
+    maximum size, you get an error message from the linker indicating that -fpic does not work;
+    in that case, recompile with -fPIC instead.
 
 .. option:: -fPIC
 
-   If supported for the target machine, emit PIC, suitable for dynamic linking and avoiding any
-   limit on the size of the global offset table.  This option makes a difference on the m68k,
-   PowerPC and SPARC.
-
-   When this flag is set, the macros ``__pic__`` and ``__PIC__`` are defined to 2.
+    If supported for the target machine, emit PIC, suitable for dynamic linking and avoiding any
+    limit on the size of the global offset table.  This option makes a difference on the m68k,
+    PowerPC and SPARC.
 
 .. option:: -fpie, -fPIE
 
-   These options are similar to -fpic and -fPIC, but generated PIC can be only linked into executables.
-   Usually these options are used when -pie GCC option is used during linking.
-
-   -fpie and -fPIE both define the macros ``__pie__`` and ``__PIE__``.
-   The macros have the value 1 for -fpie and 2 for -fPIE.
+    These options are similar to -fpic and -fPIC, but generated PIC can be only linked into executables.
+    Usually these options are used when -pie GCC option is used during linking.
 
 .. option:: -g
 
-   Produce debugging information in the OS's native format (stabs, COFF, XCOFF, or DWARF 2).
-   GDB can work with this debugging information.
-
-.. option:: -ggdb
-
-   Produce debugging information for use by GDB. This means to use the most expressive format
-   available (DWARF 2, stabs, or the native format if neither of those are supported), including
-   GDB extensions if at all possible.
+    Produce debugging information in the OS's native format (stabs, COFF, XCOFF, or DWARF 2).
+    GDB can work with this debugging information.
 
 .. option:: -Wall
 
-   Turns on all optional warnings which are desirable for normal code. At present this is
-   -Wcomment, -Wtrigraphs, -Wmultichar and a warning about integer promotion causing a
-   change of sign in "#if" expressions. Note that many of the preprocessor's warnings are
-   on by default and have no options to control them.
+    Turns on all optional warnings which are desirable for normal code.
 
 .. option:: -Wextra
 
-   This enables some extra warning flags that are not enabled by -Wall.
-
-   The option -Wextra also prints warning messages for the following cases:
-
-      *   A pointer is compared against integer zero with "<", "<=", ">", or ">=".
-      *   (C++ only) An enumerator and a non-enumerator both appear in a conditional expression.
-      *   (C++ only) Ambiguous virtual bases.
-      *   (C++ only) Subscripting an array that has been declared "register".
-      *   (C++ only) Taking the address of a variable that has been declared "register".
-      *   (C++ only) A base class is not initialized in a derived class's copy constructor.
+    This enables some extra warning flags that are not enabled by -Wall.
 
 .. option:: -Werror
 
-   Make all warnings into hard errors.  Source code which triggers warnings will be rejected.
+    Make all warnings into hard errors. Source code which triggers warnings will be rejected.
 
 .. option::  -Wpedantic, -pedantic
 
-   Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use
-   forbidden extensions, and some other programs that do not follow ISO C and ISO C++.
-   For ISO C, follows the version of the ISO C standard specified by any -std option used.
+    Issue all the warnings demanded by strict ISO C and ISO C++; reject all programs that use
+    forbidden extensions, and some other programs that do not follow ISO C and ISO C++.
 
 .. option:: -pedantic-errors
 
-   Give an error whenever the base standard (see -Wpedantic) requires a diagnostic.
+    Give an error whenever the base standard (see -Wpedantic) requires a diagnostic.
 
 .. option:: -w
 
-   Suppress all warnings, including those which GNU CPP issues by default.
+    Suppress all warnings, including those which GNU CPP issues by default.
 
 .. option::  -include file
 
@@ -445,48 +347,64 @@ gcc - GNU project C and C++ compiler
    function has been inlined into all of its callers. This switch does not affect functions using
    the "extern inline" extension in GNU C90. In C++, emit any and all inline functions into the object file.
 
+.. option:: -fpermissive
+
+   Downgrade some diagnostics about nonconformant code from errors to warnings.
+   Thus, using ``-fpermissive`` allows some nonconforming code to compile.
+
 
 **TRICKS**
 
 #. Set -std default to c99
 
-   For bash only, add ``alias gcc='gcc -Wall -std=c99'`` to **.bashrc** in HOME directory.
-   To check the shell you currently use, type ``echo $SHELL``.
+    For bash only, add ``alias gcc='gcc -Wall -std=c99'`` to **.bashrc** in HOME directory.
+    To check the shell you currently use, type ``echo $SHELL``.
 
 #. Using g++ with template class
 
-   **Solution one:** It's possible to put all the code in the class declaration, in essence making all member functions inline.
-   Inline functions don't cause conflicts with multiple definitions when linking. This is the solution used in the ``std::vector.``
+    **Solution one:** It's possible to put all the code in the class declaration, in essence making all member functions inline.
+    Inline functions don't cause conflicts with multiple definitions when linking. This is the solution used in the ``std::vector.``
 
-   **Solution two:** when the declaration and definition are separated in two files, just #include the source code/implementation/definition
-   of the templated class. although some compiler may complain about multiple definitions of the same functions.
+    **Solution two:** when the declaration and definition are separated in two files, just #include the source code/implementation/definition
+    of the templated class. although some compiler may complain about multiple definitions of the same functions.
 
 #. check the builtin library search paths
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      $ gcc --print-search-dirs
-      install: /usr/lib/gcc/x86_64-linux-gnu/4.8/
-      programs: =/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:
-      : ...
-      :/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+        $ gcc --print-search-dirs
+        install: /usr/lib/gcc/x86_64-linux-gnu/4.8/
+        programs: =/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:
+        : ...
+        :/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
 
 #. disable certain compiler warnings
 
-   .. code-block:: c
+    .. code-block:: c
 
-      #if defined(__clang__)
-      // disable warning about "this != NULL"
-      #  pragma clang diagnostic ignored "-Wtautological-undefined-compare"
-      // disabled warning "delete called on non-final 'XXX' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]"
-      #  pragma clang diagnostic ignored "-Wdelete-non-virtual-dtor"
-      #elif defined(__GNUC__)
-      #  pragma GCC diagnostic ignored "-Wunknown-pragmas"
-      #endif
-      #if defined(_MSC_VER)
-      #  pragma warning(disable: 4068)
-      #endif
+        #if defined(__clang__)
+        // disable warning about "this != NULL"
+        #  pragma clang diagnostic ignored "-Wtautological-undefined-compare"
+        // disabled warning "delete called on non-final 'XXX' that has virtual functions but non-virtual destructor [-Wdelete-non-virtual-dtor]"
+        #  pragma clang diagnostic ignored "-Wdelete-non-virtual-dtor"
+        #elif defined(__GNUC__)
+        #  pragma GCC diagnostic ignored "-Wunknown-pragmas"
+        #endif
+        #if defined(_MSC_VER)
+        #  pragma warning(disable: 4068)
+        #endif
 
 #. pass macro to make
 
-   Solution: ``make CFLAGS=-DNDEBUG test``
+    Solution: ``make CFLAGS=-DNDEBUG test``
+
+#. linux system header and library search path environment variables
+
+    .. code-block:: sh
+
+        export THIRD_PARTY_REPO=/home/cuiyb/workSpace/projects/third-party-repo
+        export LIBEVENT_DIR=$THIRD_PARTY_REPO/libevent
+
+        export C_INCLUDE_PATH=$C_INCLUDE_PATH:$LIBEVENT_DIR/include
+        export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$THIRD_PARTY_REPO:$LIBEVENT_DIR/include
+        export LIBRARY_PATH=$LIBRARY_PATH:$THIRD_PARTY_REPO:$LIBEVENT_DIR/lib

@@ -2,6 +2,7 @@
 Biology Terms - Birds
 *********************
 
+.. image:: images/algonquin_grouse_1587225099.jpg
 .. image:: images/ruff_male_displaying.jpg
 .. image:: images/feathers.jpg
 .. image:: images/plume_types.jpg

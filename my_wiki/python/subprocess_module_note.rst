@@ -90,9 +90,9 @@ Python Subprocess note
 
 .. code-block:: sh
 
-   >>> msg = subprocess.check_output("ps -ef | grep -i traffic_data_updater | grep -v grep", shell=True)
+   >>> msg = subprocess.check_output("ps -ef | grep -i coke_cola_package | grep -v grep", shell=True)
    >>> msg
-   'chenbw   28484     1 27 14:16 pts/4    00:13:44 /etc/ncserver/traffic-data-updater/traffic_data_updater\n'
+   'chenbw   28484     1 27 14:16 pts/4    00:13:44 /etc/ncserver/coke_cola_package/coke_cola_package\n'
 
 .. code-block:: sh
 

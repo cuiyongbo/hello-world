@@ -84,6 +84,7 @@ what is called a reason for living also the excellent one for dying.
 | penultimate
 | Definition: last but one in a series of things; second last.
 | Usage: the penultimate chapter of the book.
+| Usage: It is the first time Barcelona have been 19 points above Real since the penultimate day of 1990-91 season.
 |
 | colloquial [口语，俚语]
 | colloquially

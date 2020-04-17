@@ -302,7 +302,7 @@ English Note 7
 | obviate
 | Definition: remove (a need or difficulty).
 | Synonyms: get rid of; avoid; prevent.
-| Usage: the Venetian blinds obviated the need for curtains.
+| Usage: The new medical treatment obviates the need for surgery.
 |
 | blemish
 | Definition: a small mark or flaw which spoils the appearance of something.

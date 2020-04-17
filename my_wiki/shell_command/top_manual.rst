@@ -25,30 +25,30 @@ top - display Linux processes
     $ top -p15702
     PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND
     
-    15702 cuiyb  20   0  293516  73948   3784 S  1.0  3.6   0:29.73 traffic_data_up 
+    15702 beats  20   0  293516  73948   3784 S  1.0  3.6   0:29.73 coke_cola_up 
     
     $ top -H -p15813 
     PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND
     
-    15813 cuiyb     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out
-    15815 cuiyb     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out  
+    15813 beats     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out
+    15815 beats     20   0   14704    320    212 S  0.0  0.0   0:00.00 a.out  
     
     # press "e" to change memory unit cycle from KB to EB
     $ top  -p10016
     PID USER  PR  NI    VIRT    RES    SHR S %CPU %MEM  TIME+ COMMAND
     
-    10016 cuiyb     20   0  241.7m  19.4m   3.0m S   1.7  0.0   0:11.11 past_ti_compile  
+    10016 beats     20   0  241.7m  19.4m   3.0m S   1.7  0.0   0:11.11 pepsi_compile  
     
     # view process status according to name
     # press 'o' then enter COMMAND=process_name [could be a re pattern]
-    # COMMAND=past
+    # COMMAND=pepsi
     
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
-    9251 cuiyb     20   0  247912  20672   3440 S   1.0  0.1   1:19.13 past_ti_compile
-    4523 cuiyb     20   0   98676   3448   2516 S   0.0  0.0   0:28.74 past_ti_fetcher
-    4525 cuiyb     20   0   98676    988     56 S   0.0  0.0   0:33.66 past_ti_fetcher
-    4526 cuiyb     20   0   98884   1772    632 S   0.0  0.0   0:00.00 past_ti_fetcher
-    4527 cuiyb     20   0   98912   1732    572 S   0.0  0.0   0:00.00 past_ti_fetcher 
+    9251 beats     20   0  247912  20672   3440 S   1.0  0.1   1:19.13 pepsi_compile
+    4523 beats     20   0   98676   3448   2516 S   0.0  0.0   0:28.74 pepsi_fetcher
+    4525 beats     20   0   98676    988     56 S   0.0  0.0   0:33.66 pepsi_fetcher
+    4526 beats     20   0   98884   1772    632 S   0.0  0.0   0:00.00 pepsi_fetcher
+    4527 beats     20   0   98912   1732    572 S   0.0  0.0   0:00.00 pepsi_fetcher 
 
 .. code-block:: none
     :caption: Press "f" to enter Fields Management

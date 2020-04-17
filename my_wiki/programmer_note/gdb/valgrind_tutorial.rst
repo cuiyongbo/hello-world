@@ -11,23 +11,23 @@ SYNOPSIS: `valgrind [valgrind-options] [your-program] [your-program-options]`
     :linenos:
 
     #include <iostream>
-    
+
     using namespace std;
-    
+
     class Base
     {
     public:
             virtual ~Base() {}
     };
-    
+
     class Derived : public Base
     {
             int m_a;
     };
-    
+
     int main()
     {
-    
+
             Base* p = new Derived[10];
             delete[] p;
             return 0;
@@ -94,17 +94,6 @@ SYNOPSIS: `valgrind [valgrind-options] [your-program] [your-program-options]`
     --57690-- REDIR: 0x525b570 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c31f90 (strcmp)
     --57690-- REDIR: 0x4ec7f10 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2e7a0 (operator new[](unsigned long))
     ==57690== Use of uninitialised value of size 8
-    ==57690==    at 0x4008E3: main (test.cpp:20)
-    ==57690==  Uninitialised value was created by a heap allocation
-    ==57690==    at 0x4C2E80F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
-    ==57690==    by 0x40087C: main (test.cpp:19)
-    ==57690==
-    ==57690== Invalid read of size 8
-    ==57690==    at 0x4008E3: main (test.cpp:20)
-    ...
-    ==57690== Process terminating with default action of signal 11 (SIGSEGV)
-    ==57690==  Access not within mapped region at address 0x0
-    ==57690==    at 0x4008E3: main (test.cpp:20)
     ...
     --57690-- REDIR: 0x52404f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
     ...
@@ -119,3 +108,12 @@ SYNOPSIS: `valgrind [valgrind-options] [your-program] [your-program-options]`
     ==57690==  Uninitialised value was created by a heap allocation
     ==57690==    at 0x4C2E80F: operator new[](unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
     ==57690==    by 0x40087C: main (test.cpp:19)
+
+.. code-block:: sh
+
+    # --tool=<toolname> [default: memcheck]
+    #     Run the Valgrind tool called toolname, e.g. memcheck, cachegrind, callgrind,
+    #     helgrind, drd, massif, lackey, none, exp-sgcheck, exp-bbv, exp-dhat, etc.
+
+    $ valgrind --tool=maxif ./test
+    $ less massif.txt

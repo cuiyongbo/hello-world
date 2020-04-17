@@ -94,5 +94,5 @@ ln - make links between files
 .. code-block:: sh
    :caption: **EXAMPLE**
 
-   $ ln /run/shm/idListHashMap id_list_ln
-   ln: failed to create hard link ‘id_list_ln’ => ‘/run/shm/idListHashMap’: Invalid cross-device link
+   $ ln /run/shm/cokeMap id_list_ln
+   ln: failed to create hard link ‘id_list_ln’ => ‘/run/shm/cokeMap’: Invalid cross-device link

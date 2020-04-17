@@ -115,24 +115,24 @@ Disk Usage inspector
     126M    .
 
     $ du -h -t 1M
-    3.4G  ./past7/2018-11-26-Mon
-    15G   ./past7
+    3.4G  ./timeline/2018-11-26-Mon
+    15G   ./timeline
     15G
 
-    $ du -sh --exclude-from=/home/cuiyb/past_ti_pattern
+    $ du -sh --exclude-from=/home/beats/pepsi_pattern
     3.9G    .
-    $ cat /home/cuiyb/past_ti_pattern
+    $ cat /home/beats/pepsi_pattern
     route*
-    tiData*
-    teData*
-    idList*
+    binghongcha*
+    xuelizhi*
+    molihuacha*
     temp*
 
     $ du -d 1 -h | sort -rh | head
     126G    .
-    56G     ./server-manager
-    24G     ./tile-server
-    10G     ./poi-server
+    56G     ./Pustule
+    24G     ./s1-server
+    10G     ./s2-server
     ...
 
 
@@ -144,9 +144,7 @@ Disk Usage inspector
     udev           devtmpfs   20G  4.0K   20G   1% /dev
     tmpfs          tmpfs     4.0G  640K  4.0G   1% /run
     /dev/dm-0      ext4      157G  135G   15G  91% /
-    none           tmpfs     100M     0  100M   0% /run/user
-    /dev/sda1      ext2      236M   40M  184M  18% /boot
-    tmpfs          tmpfs     4.0G  2.0G  2.1G  49% /tmp/realtime
+    tmpfs          tmpfs     4.0G  2.0G  2.1G  49% /tmp/FriedPan
     ...
     total          -         214G  147G   61G  71% -
 

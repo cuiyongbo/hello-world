@@ -63,6 +63,8 @@ IP address structures::
 | MSS = Maximum Segment Size
 | MSL = Maximum Segment Life
 | Out-of-band data and Urgent mode
+| TLS = Transportation Layer Security
+| SSL = Secure Sockets Layer
 |
 | :abbr:`TTL (Time To Live)`
 | Definition: a value in an IP packet that limits the lifespan of a packet of data in a computer or network.

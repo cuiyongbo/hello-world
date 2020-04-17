@@ -2,6 +2,16 @@
 English Note 14
 ***************
 
+| tread
+| Definition: To trample something.
+| Usage: Don't tread on the new grass.
+| Usage: a regime treading upon the rights of the citizens.
+| Usage: people who were trodden down by tyrants.
+|
+| stomp
+| Definition: tread heavily and noisily, typically in order to show anger.
+| Usage: Martin stomped off to the spare room.
+|
 | spurn
 | Definition: strike, tread, or push away with the foot
 | Usage: With one touch of my feet, I spurn the solid Earth.
