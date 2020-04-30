@@ -408,3 +408,11 @@ gcc - GNU project C and C++ compiler
         export C_INCLUDE_PATH=$C_INCLUDE_PATH:$LIBEVENT_DIR/include
         export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$THIRD_PARTY_REPO:$LIBEVENT_DIR/include
         export LIBRARY_PATH=$LIBRARY_PATH:$THIRD_PARTY_REPO:$LIBEVENT_DIR/lib
+
+#. make: warning: Clock skew detected. Your build may be incomplete.
+
+    That message is usually an indication that some of your files have modification times
+    newer than the current system time. Since make decides which files to compile when
+    performing an incremental build by checking if a source files has been modified more
+    recently than its object file, this situation can cause unnecessary files to be built,
+    or worse, necessary files to not be built. you can fix it by executing: ``find . -exec touch \{\} \+``.

@@ -122,6 +122,21 @@ God helps those who help themselves
 | rote
 | Definition: mechanical or habitual repetition of something to be learned.
 | Usage: a poem learned by rote in childhood.
+|
+| crawl
+| Definition: (of a person) move forward on the hands and knees or by dragging the body close to the ground.
+| Usage: they crawled out from under the table.
+| Definition: be covered or crowded with insects or people, to an extent that is disgusting or objectionable.
+| Usage: the place was crawling with soldiers.
+|
+| crawler
+| Definition: a thing that crawls or moves at a slow pace, especially an insect.
+| Usage: the light bulb was a magnet for moths and many-legged crawlers.
+| Definition: a tractor or other vehicle moving on an endless caterpillar track.
+| Usage: the crawlers move space shuttles to the launch pads.
+| Definition: a program that systematically browses the World Wide Web in order to create an index of data. [爬虫]
+| Usage: its automated software robots crawl websites, grabbing copies of pages to index.
+
 
 #. Accumulative vs. Cumulative
 

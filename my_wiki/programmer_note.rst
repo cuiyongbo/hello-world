@@ -22,3 +22,4 @@ no longer anything to take away.
     programmer_note/programming_pearls
     programmer_note/libtbb_note
     programmer_note/memcached_note
+    programmer_note/redis_note

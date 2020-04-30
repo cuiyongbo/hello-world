@@ -153,6 +153,30 @@ VIM Note
     '}', since Vim can't guess what you are going to type.
 
 
+#. vim to tune color scheme
+
+    .. code-block:: sh
+
+        $ whereis vim
+        vim: /usr/bin/vim /usr/bin/vim.basic /usr/bin/vim.tiny /etc/vim /usr/share/vim /usr/share/man/man1/vim.1.gz
+        $ cd /usr/share/vim/vimXX/colors/
+        $ ls # list system schemes
+        README.txt    default.vim  elflord.vim   koehler.vim  pablo.vim      shine.vim  zellner.vim
+        blue.vim      delek.vim    evening.vim   morning.vim  peachpuff.vim  slate.vim
+        darkblue.vim  desert.vim   industry.vim  murphy.vim   ron.vim        torte.vim
+
+        $ cat README.txt
+        README.txt for color scheme files
+
+        These files are used for the ":colorscheme" command.  They appear in the
+        Edit/Color Scheme menu in the GUI.
+        ...
+
+        # in comand mode, use ":colorscheme" command to find the current scheme
+        # ":colorscheme theme_name" to preview colorscheme
+        # add ``colorscheme theme`` in ``~/.vimrc`` to set default scheme
+
 .. rubric:: Footnotes
 
 .. [#] `Vim search and replace <https://vim.fandom.com/wiki/Search_and_replace>`_
+.. [#] `vimcolors <https://vimcolors.com/>`_

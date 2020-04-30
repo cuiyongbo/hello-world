@@ -18,3 +18,10 @@ OS Problem Note
     os_problem/vim_usage_note
     os_problem/sublime_usage_note
     os_problem/vscode_faq_note
+
+
+.. note::
+
+    Ubuntu is an ancient African word meaning ‘humanity to others’.
+    It is often described as reminding us that ‘I am what I am because of who we all are’.
+    We bring the spirit of Ubuntu to the world of computers and software.

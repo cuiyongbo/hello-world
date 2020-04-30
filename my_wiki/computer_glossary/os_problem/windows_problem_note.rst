@@ -242,15 +242,13 @@ Windows Problems
 
     Solution: Install ``Microsoft YaHei Mono.ttf`` font.
 
-#. ssh 登录免密码
-
-    Solution: ``ssh-copy-id -i path/to/.ssh/id_rsa.pub username@hostname``.
+#. ssh login without inputing password every time: ``ssh-copy-id -i path/to/.ssh/id_rsa.pub username@hostname``.
 
 #. Windows terminal 文本粘贴格式混乱
 
-   Solution: 关掉 vim 自动缩进功能.
+    Solution: 关掉 vim 自动缩进功能.
 
-   .. code-block:: sh
+    .. code-block:: sh
 
         set nosmartindent
         set noautoindent

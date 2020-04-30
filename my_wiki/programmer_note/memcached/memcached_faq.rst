@@ -5,6 +5,8 @@ Memcached FAQ
 
     - .in'ig.status: error: cannot find input file: Makefile
     - configure: error: cannot find install-sh, install.sh, or shtool in "." "./.." "./../.."
+    - autolocal: ' is already registered with AC_CONFIG_FILES
+    - $ ./test.py: No such file or directory
     - ...
 
     Probable due to line ending problem, fix it using: ``find . -maxdepth 1 -type f -exec dos2unix \{\} \;``.

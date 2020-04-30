@@ -9,17 +9,6 @@ Ubuntu problem note 01
         sudo rm /var/lib/dpkg/lock
         sudo dpkg --configure -a
 
-#. Location where to find the downloaded files of apt-get: ``/var/cache/apt/*``
-
-#. Download the source file of linux binary file
-
-    Solution: ``sudo apt-get source pkg-name``.
-
-#. You must put some 'source' URIs in your sources.list
-
-    Edit ``/etc/apt/source.list`` (better to backup it),
-    uncomment the line begin with ``# deb-src``.
-
 #. Inspect shared memory usage
 
     .. image:: images/ubuntu_view_shared_memory_usage.png

@@ -236,7 +236,7 @@ English Note 14
 |
 | metamorphosis [变态发育，蜕变]
 | Definition: (in an insect or amphibian) the process of transformation from an immature form to an adult form in two or more distinct stages.
-| Usage: the metamorphosis of a caterpillar into a butterfly
+| Usage: the metamorphosis of a caterpillar into a butterfly. [毛毛虫]
 | Usage: She had undergone an amazing metamorphosis from awkward schoolgirl to beautiful woman.
 |
 | incantation

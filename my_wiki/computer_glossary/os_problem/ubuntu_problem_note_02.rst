@@ -2,6 +2,14 @@
 Ubuntu problem note 02
 **********************
 
+#. Location where to find the downloaded files of apt-get: ``/var/cache/apt/*``
+#. Download the source file of linux binary file: ``sudo apt-get source pkg-name``.
+
+    .. note::
+
+        You may need edit ``/etc/apt/source.list`` (better to backup it),
+        and uncomment the lines beginnig with ``# deb-src``.
+
 #. Ubuntu to add :abbr:`PPA (Personal Package Archives)`
 
     .. code-block:: sh
@@ -9,7 +17,26 @@ Ubuntu problem note 02
         sudo add-apt-repository ppa:jonathonf/python-3.7
         sudo apt-get update
 
-#. Ubuntu to enable ssh
+#. Ubuntu to change software repositories.
+
+    .. important:: Backup ``/etc/apt/source.list`` before going on.
+
+    Edit ``/etc/apt/source.list``, add following sources::
+
+        deb http://tel.mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+        deb http://tel.mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+        deb http://tel.mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+        deb http://tel.mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+        deb http://tel.mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+        deb-src http://tel.mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+        deb-src http://tel.mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+        deb-src http://tel.mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+        deb-src http://tel.mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+        deb-src http://tel.mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+
+    Save it, and run ``sudo apt update``.
+
+#. ssh: connect to host cuiyb port 22: Connection refused
 
    Install openssh: ``sudo apt install openssh-server``.
 
