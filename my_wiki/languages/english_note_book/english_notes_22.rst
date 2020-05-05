@@ -136,6 +136,8 @@ God helps those who help themselves
 | Usage: the crawlers move space shuttles to the launch pads.
 | Definition: a program that systematically browses the World Wide Web in order to create an index of data. [爬虫]
 | Usage: its automated software robots crawl websites, grabbing copies of pages to index.
+|
+| shop with confidence [放心购物]
 
 
 #. Accumulative vs. Cumulative
