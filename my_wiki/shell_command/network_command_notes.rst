@@ -150,3 +150,19 @@ Network Commands
 
         $ ping -b 127.0.0.1 # not work on macos
 
+
+#. find network speed
+
+.. code-block:: sh
+
+    $ ethtool eth0 #
+    Settings for eth0:
+            Supported ports: [ TP ]
+            Supported link modes:   1000baseT/Full
+                                    10000baseT/Full
+            Supported pause frame use: No
+            ...
+            Speed: 10000Mb/s # here
+            ...
+
+#. iftop - display bandwidth usage on an interface by host

@@ -101,6 +101,9 @@ Finally, the **type** determines how the data should be presented.
 
 Accessing arguments by position::
 
+    >>> header = ['col1', 'col2', 'col3']
+    >>> "{},{},{}\n".format(*header)
+    'col1,col2,col3\n'
     >>> "{}, {}, {}".format('a', 'b', 'c')
     'a, b, c'
     >>> "{0}, {1}, {2}".format('a', 'b', 'c')

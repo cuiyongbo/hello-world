@@ -106,6 +106,26 @@ IP address structures::
 
     Refer to *Unix Network Programming vol 1, section 1.1 and section 1.7* for details.
 
+#. Http Persistent Connection
+
+    HTTP persistent connection, also called HTTP keep-alive, or HTTP connection reuse,
+    is the idea of using a single TCP connection to send and receive multiple HTTP requests/responses,
+    as opposed to opening a new connection for every single request/response pair. The newer HTTP/2 protocol
+    uses the same idea and takes it further to allow multiple concurrent requests/responses to be multiplexed
+    over a single connection.
+
+    .. image:: images/http_persistent_connection.png
+
+#. Http pipelining
+
+    HTTP pipelining is a technique in which multiple HTTP requests are sent on a single
+    TCP connection without waiting for the corresponding responses.
+    The technique was superseded by multiplexing via HTTP/2, which is supported by most modern browsers.
+    As of 2018, HTTP pipelining is not enabled by default in modern browsers, due to several issues
+    including buggy proxy servers and HOL blocking.
+
+    .. image:: images/http_pipelining.png
+
 .. rubric:: Footnotes
 
 .. [#] `Multiplexing and Demultiplexing <http://macao.communications.museum/eng/Exhibition/secondfloor/moreinfo/2_8_6_Multiplexing.html>`_

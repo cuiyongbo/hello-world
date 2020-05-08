@@ -23,3 +23,8 @@ no longer anything to take away.
     programmer_note/libtbb_note
     programmer_note/memcached_note
     programmer_note/redis_note
+
+
+.. rubric:: Footnotes
+
+.. [#] `C/C++ Recommendations <https://zhuanlan.zhihu.com/p/32245645>`_
