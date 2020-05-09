@@ -40,7 +40,7 @@ English Note 3
 | par
 | Definition: the number of strokes a first-class player should normally require for a particular hole or course.
 | Usage: The sixteen is a par five.
-| Phrase: on a par with [等价于，相当于]
+| Phrase: on (a) par with [等价于，相当于]
 | Definition: equal in importance or quality to; on an equal level with.
 | Usage: this home cooking is on a par with the best in the world.
 | Phrase: par for the course [合情合理]
