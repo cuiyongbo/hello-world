@@ -138,7 +138,13 @@ God helps those who help themselves
 | Usage: its automated software robots crawl websites, grabbing copies of pages to index.
 |
 | shop with confidence [放心购物]
-
+|
+| surplus
+| Definition: an amount of something left over when requirements have been met; an excess of production or supply over demand.
+| Usage: exports of food surpluses.
+| Definition: more than what is needed or used; excess
+| Usage: make the most of your surplus cash.
+|
 
 #. Accumulative vs. Cumulative
 
