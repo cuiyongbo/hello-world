@@ -153,3 +153,9 @@ Computer Terminology 03
     In graph theory, multiple edges (also called parallel edges or a multi-edge),
     are two or more edges that are incident to the same two vertices.
     A simple graph has no multiple edges.
+
+#.  failover
+
+    A method of protecting computer systems from failure,
+    in which standby equipment automatically takes over when the main system fails.
+    e.g., the second server went into failover mode within a minute.

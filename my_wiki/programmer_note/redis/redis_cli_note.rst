@@ -50,3 +50,12 @@ Redis-cli Note
     - expireat, pexpireat
     - rename
     - keys
+
+#. Master-slave configure
+
+    - Solution one: configure ``salveof ip port`` in configure file
+
+    - Solution two: ``redis-cli slaveof``
+
+        - ``redis-cli slaveof no one`` # elect slave as master
+        - ``redis-cli slaveof ip port``

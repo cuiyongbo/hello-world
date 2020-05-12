@@ -253,6 +253,19 @@ Windows Problems
         set nosmartindent
         set noautoindent
 
+#. Windows terminal to split screen
+
+    .. code-block:: json
+
+        // Add any keybinding overrides to this array.
+        // To unbind a default keybinding, set the command to "unbound"
+        "keybindings": [
+            {"command": "nextTab", "keys": ["ctrl+pgdn"]},
+            {"command": "prevTab", "keys": ["ctrl+pgup"]},
+            {"keys": ["alt+shift+="], "command": {"action": "splitPane", "split": "vertical", "splitMode": "duplicate"}},
+            {"keys": ["alt+shift+-"], "command": {"action": "splitPane", "split": "horizontal", "splitMode": "duplicate"}}
+        ]
+
 
 #. Windows 下查看错误码
 

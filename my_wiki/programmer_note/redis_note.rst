@@ -17,9 +17,3 @@ Bitmaps.
     redis/redis_cli_note
     redis/redis_cluster_note
     redis/redis_faq
-
-
-.. rubric:: Footnotes
-
-.. [#] https://blog.csdn.net/zhoujian_Liu/article/details/80866415
-
