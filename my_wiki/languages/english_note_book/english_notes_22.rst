@@ -145,6 +145,9 @@ God helps those who help themselves
 | Definition: more than what is needed or used; excess
 | Usage: make the most of your surplus cash.
 |
+| et cetera
+| Definition: used at the end of a list to indicate that further, similar items are included.
+| Usage: we're trying to resolve problems of obtaining equipment, drugs, et cetera.
 
 #. Accumulative vs. Cumulative
 

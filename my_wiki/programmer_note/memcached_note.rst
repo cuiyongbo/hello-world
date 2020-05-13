@@ -32,6 +32,7 @@ Memcached is not −
     memcached/memcached_introduction
     memcached/memcached_design_philosophy
     memcached/memcached_faq
+    memcached/memcached_network_model
 
 
 .. rubric:: Footnotes
