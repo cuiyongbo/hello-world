@@ -77,7 +77,7 @@ Load balancing methods:
 
     By default, NGINX distributes requests among the servers in the group according to their weights
     using the Round Robin method. The ``weight`` parameter to the server directive sets the weight of
-    a server; the default is 1:
+    a server; the default is 1::
 
         upstream backend {
             server backend1.example.com weight=5;
