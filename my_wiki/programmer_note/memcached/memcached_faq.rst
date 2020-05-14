@@ -67,6 +67,8 @@ Memcached FAQ
         $ ./configure --prefix=$HOME/third-party/libmemcached LIBS=-levent
 
 
+#. Build Debuged memcached: ``./configure CFLAGS='-g'``
+
 #. libevent to specify the location to install
 
     .. code-block:: sh

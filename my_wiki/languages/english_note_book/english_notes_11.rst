@@ -375,12 +375,37 @@ Only paranoid can surrive.
 | Usage: I have only thumbed through the book, but it looks very interesting.
 | Usage: I leafed through a magazine while waiting to see my doctor.
 |
+|
+| tavern [小卖部]
+| Definition: an establishment for the sale of beer and other drinks to be consumed on the premises, sometimes also serving food.
+|
+| premise
+| Definition: an assertion or proposition which forms the basis for a work or theory.
+| Usage: the fundamental premise of the report.
+| Definition: base an argument, theory, or undertaking on.
+| Usage: the reforms were premised on our findings.
+| Definition: a house or building, together with its land and outbuildings, occupied by a business or considered in an official context.
+| Usage: business premises.
+| Usage: supplying alcoholic liquor for consumption on the premises.
+
+.. image:: images/business_premises_1.jpg
+.. image:: images/business_premises_2.jpg
+.. image:: images/murray-premises-hotel.jpg
+
+| eviction
+| Definition: the action of expelling someone, especially a tenant, from a property; expulsion.
+| Usage: the forced eviction of residents
+|
 | default
 | Definition: failure to fulfill an obligation, especially to repay a loan or appear in a court of law.
-| Usage: it will have to restructure its debts to avoid default.
-| Usage: some had defaulted on student loans
+| Usage: the company has to restructure its debts to avoid default.
+| Usage: some had defaulted on student loans.
 | Definition: (of a computer program or other mechanism) revert automatically to (a preselected option).
 | Usage: when you start a fresh letter the system will default to its own style.
+|
+| foreclose [取消赎买权]
+| Definition: take possession of a mortgaged property as a result of the mortgagor's failure to keep up their mortgage payments.
+| Usage: the bank was threatening to foreclose on his mortgage.
 |
 | deposit
 | Definition: a sum of money placed or kept in a bank account, usually to gain interest.

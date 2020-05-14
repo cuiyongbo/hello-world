@@ -326,15 +326,39 @@ No    Name         Default Action       Description
         char *strsignal(int sig);
         extern const char * const sys_siglist[];
 
-    The *strsignal()* function returns a string describing the signal number passed in the argument *sig*.
+    The *strsignal()* returns a string describing the signal number passed in the argument *sig*.
     The string can be used only until the next call to *strsignal().*
 
     The array *sys_siglist* holds the signal description strings indexed by signal number.
-    The *strsignal()* function should be used if possible instead of this array.
+    The *strsignal()* should be used if possible instead of this array.
 
-    The *strsignal()* function returns the appropriate description string,
+    The *strsignal()* returns the appropriate description string,
     or an unknown signal message if the signal number is invalid.
     On some systems (but not on Linux), NULL may instead be returned
     for an invalid signal number.
 
-    See also `psignal(3)` for similar APIs.
+#. signal-safety - async-signal-safe functions
+
+    An  async-signal-safe function is one that can be safely called from within a signal handler.
+    Many functions are not async-signal-safe. In particular, nonreentrant functions are generally
+    unsafe to call from a signal handler.
+
+    The kinds of issues that render a function unsafe can be quickly understood when one considers
+    the implementation of the ``stdio`` library, all of whose functions are not async-signal-safe.
+
+    To avoid problems with unsafe functions, there are two possible choices:
+
+       - Ensure that (a) the signal handler calls only async-signal-safe functions,
+         and (b) the signal handler itself is reentrant with respect to global variables
+         in the main program.
+
+       - Block signal delivery in the main program when calling functions that are unsafe
+         or operating on global data that is also accessed by the signal handler.
+
+    Generally, the second choice is difficult in programs of any complexity, so the first choice is taken.
+    For functions that are async-signal-safe, refer to ``man signal-safety``.
+
+    Typical APIs that are not async-signal-safe includes:
+
+        - malloc/free
+        - stdio library

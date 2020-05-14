@@ -26,13 +26,14 @@ Memcached is not −
    - a large object cache
    - fault-tolerant or highly available
 
-
 .. toctree::
 
     memcached/memcached_introduction
     memcached/memcached_design_philosophy
     memcached/memcached_faq
     memcached/memcached_network_model
+    memcached/memcached_command_note
+    memcached/memcached_memory_management
 
 
 .. rubric:: Footnotes
