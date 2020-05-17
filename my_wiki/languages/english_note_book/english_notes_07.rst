@@ -417,8 +417,13 @@ English Note 7
 | Definition: a person's understanding.
 | Usage: meanings that are beyond my grasp.
 |
+| comeuppance
+| Definition: a punishment or fate that someone deserves. [报应]
+| Usage: I was glad to see that the bad guy got his comeuppance at the end.
+|
+| tathagata 如来佛主
 | karma
-| Definition: (in Hinduism and Buddhism) the sum of a person's actions in this and previous states of existence, viewed as deciding their fate in future existences. [业]
+| Definition: the sum of a person's actions in this and previous states of existence, viewed as deciding their fate in future existences. [业]
 | Definition: destiny or fate, following as effect from cause. [因果报应]
 | Usage: That guy has good karma, so the girls just like to spend time with him.
 |

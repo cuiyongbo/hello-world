@@ -179,10 +179,6 @@ English Note 6
 | curare
 | Definition: 箭毒 (马鞍子的毒素，南美洲印地安人用以浸制毒箭).
 |
-| comeuppance
-| Definition: a punishment or fate that someone deserves. [报应]
-| Usage: I was glad to see that the bad guy got his comeuppance at the end.
-|
 | hard-pressed
 | Definition: closely pursued.
 | Usage: the hard-pressed French infantry. [紧追不舍]

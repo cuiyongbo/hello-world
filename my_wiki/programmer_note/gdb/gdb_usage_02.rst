@@ -224,3 +224,22 @@ Gdb Tricks 02
         Continuing.
          10% $51 = 3061
         (gdb) disable 10 # disabling breakpoint will cancle command as well
+
+#. gdb to view stl containers' contents
+
+    - Check-out the latest Python libstdc++ printers to a place on your machine.
+      In a local directory, do: ``svn co svn://gcc.gnu.org/svn/gcc/trunk/libstdc++-v3/python``.
+
+    - Add the following to your ``~/.gdbinit``. The path needs to match where the python module above was checked-out.
+      So if checked out to: ``/home/maude/gdb_printers/``, the path would be as written in the example::
+
+        python
+        import sys
+        sys.path.insert(0, '/home/maude/gdb_printers/python')
+        from libstdcxx.v6.printers import register_libstdcxx_printers
+        register_libstdcxx_printers (None)
+        end
+
+.. rubric:: Footnotes
+
+.. [#] `GDB STL Support Tools <http://sourceware.org/gdb/wiki/STLSupport>`_

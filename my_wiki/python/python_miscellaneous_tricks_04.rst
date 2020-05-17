@@ -140,13 +140,22 @@ Python Miscellaneous Tricks 04
     .. code-block:: py
 
         # works only for objects that are imported
-        >>> import re
-        >>> import inspect
+        >>> import re, inspect
         >>> print(inspect.getsource(re.compile))
         def compile(pattern, flags=0):
             "Compile a regular expression pattern, returning a pattern object."
             return _compile(pattern, flags)
 
+#. Macos to install pip2
+
+    .. code-block:: py
+
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        sudo -H python get-pip.py
+
+        # add installation path to you PATH if you encounter
+        # WARNING: The scripts pip, pip2 and pip2.7 are installed in '/Users/cherry/Library/Python/2.7/bin'
+        # which is not on PATH. Consider adding this directory to PATH
 
 .. rubric:: Footnotes
 

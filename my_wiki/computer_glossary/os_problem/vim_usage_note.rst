@@ -152,7 +152,6 @@ VIM Note
     start and unindented at the end. The unindenting will happen after typing the
     '}', since Vim can't guess what you are going to type.
 
-
 #. vim to tune color scheme
 
     .. code-block:: sh

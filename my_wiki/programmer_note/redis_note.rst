@@ -16,4 +16,6 @@ Bitmaps.
     redis/redis_sorted_set_note
     redis/redis_cli_note
     redis/redis_cluster_note
+    redis/redis_threaded_io_note
+    redis/redis_event_loop_note
     redis/redis_faq
