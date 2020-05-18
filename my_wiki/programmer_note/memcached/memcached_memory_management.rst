@@ -23,10 +23,11 @@ Memcached Memory Management
 
 .. code-block:: c
 
+    // slab_chunk_size_max < item_size_max < maxbytes/2
     struct settings {
-        size_t maxbytes;    // -m option
-        double factor;      /* chunk size growth factor, -f option */
-        int chunk_size;     // -n option
+        size_t maxbytes;        // -m option
+        double factor;          /* chunk size growth factor, -f option */
+        int chunk_size;         // -n option
         int item_size_max;      /* Maximum item size, -I option */
         int slab_page_size;     /* Slab's page units. hard-coded with 1M */
         int slab_chunk_size_max;  /* Upper end for chunks within slab pages. slab_page_size/2 */
@@ -70,26 +71,18 @@ Memcached Memory Management
     } item;
 
     // Determines the chunk sizes and initializes the slab class descriptors accordingly.
+    // the largest slab chunk size is ``settings.slab_chunk_size_max``.
     void slabs_init();
 
-    // what a SET command would do
-    item *do_item_alloc(char *key, const size_t nkey, const unsigned int flags, const rel_time_t exptime, const int nbytes);
-
     /*
-     * Figures out which slab class (chunk size) is required to store an item of
-     * a given size.
-     *
      * Given object size, return id to use when allocating/freeing memory for object
      * 0 means error: can't store such a large object
      */
+    unsigned int slabs_clsid(const size_t size);
 
-    unsigned int slabs_clsid(const size_t size) {
-        int res = POWER_SMALLEST;
+    // what a SET command would do,
+    // Allocate an item struct only, final workhorse is ``read_into_chunked_item``
+    item *item_alloc(char *key, size_t nkey, int flags, rel_time_t exptime, int nbytes);
 
-        if (size == 0 || size > settings.item_size_max)
-            return 0;
-        while (size > slabclass[res].size)
-            if (res++ == power_largest)     /* won't fit in the biggest slab */
-                return power_largest;
-        return res;
-    }
+    // Does a looped read to fill data chunks
+    static int read_into_chunked_item(conn *c);
