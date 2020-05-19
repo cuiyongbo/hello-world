@@ -59,3 +59,29 @@ Memcached Command Note
         stats slabs
         stats sizes
         flush_all [timeout] [noreply]
+
+#. set
+
+    Most common command. Store this data, possibly overwriting any existing data.
+    New items are at the top of the LRU.
+
+#. add
+
+    Store this data, only if it does not already exist.
+    New items are at the top of the LRU. If an item already
+    exists and an add fails, it promotes the item to the front of the LRU anyway.
+
+#. append
+
+    Add this data after the last byte in an existing item.
+    This does not allow you to extend past the item limit. Useful for managing lists.
+
+#. prepend
+
+    Same as append, but adding new data before existing data.
+
+#. cas
+
+    Check And Set (or Compare And Swap). An operation that stores data,
+    but only if no one else has updated the data since you read it last.
+    Useful for resolving race conditions on updating cache data.

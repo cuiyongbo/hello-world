@@ -156,6 +156,18 @@ Memcached FAQ
     Distributed locks are a very useful primitive in many environments
     where different processes must operate with shared resources in a mutually exclusive way.
 
+#. memcached cache hit
+
+    .. code-block:: sh
+
+        telnet ip port
+        stats
+        ...
+        STAT cmd_get 2260
+        STAT get_hits 514
+        STAT get_misses 1746
+        # hit rate = get_hits / cmd_get
+
 .. rubric:: Footnotes
 
 .. [#] https://dev.mysql.com/doc/mysql-ha-scalability/en/ha-memcached-using-hashtypes.html
