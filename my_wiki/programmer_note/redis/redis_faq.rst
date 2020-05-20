@@ -47,7 +47,7 @@ Redis FAQ
     - mysql binlog + asynchronous update cache (using message queue)
     - use Redis WAIT command to ensure Data consistency between master- slave replications
 
-        WAIT makes sure that a write can wait for acknowledgment until multiple replicas
+        WAIT makes sure that a write can wait for acknowledgement until multiple replicas
         confirm that write. This makes sure that a write confirmed with WAIT on replicas
         are durable even if a node catches on fire and never comes back to the cluster.
 
