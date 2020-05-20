@@ -1,6 +1,6 @@
-*********************
-Nginx insight note 03
-*********************
+********************
+Nginx Load Balancing
+********************
 
 Load balancing methods:
 
@@ -52,9 +52,8 @@ Load balancing methods:
 #. IP Hash
 
     The server to which a request is sent is determined from the client IP address.
-    In this case, either the first three octets of the IPv4 address or the whole IPv6
-    address are used to calculate the hash value. The method guarantees that requests
-    from the same address get to the same server unless it is not available::
+    The method guarantees that requests from the same address get to the same server
+    unless it is not available::
 
         upstream backend {
             ip_hash;
@@ -72,6 +71,24 @@ Load balancing methods:
             server backend2.example.com;
             server backend3.example.com down;
         }
+
+#. Generic Hash
+
+    The server to which a request is sent is determined from a user-defined key
+    which can be a text string, variable, or a combination. For example, the key
+    may be a paired source IP address and port, or a URI as in this example::
+
+        upstream backend {
+            hash $request_uri consistent;
+            server backend1.example.com;
+            server backend2.example.com;
+        }
+
+    The optional ``consistent`` parameter to the hash directive enables ketama consistent hash
+    load balancing. Requests are evenly distributed across all upstream servers based on the
+    user-defined hashed key value. If an upstream server is added to or removed from an upstream
+    group, only a few keys are remapped which minimizes cache misses in the case of load-balancing
+    cache servers or other applications that accumulate state.
 
 #. Server Weights
 

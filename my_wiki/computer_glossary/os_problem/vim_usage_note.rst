@@ -157,7 +157,7 @@ VIM Note
     .. code-block:: sh
 
         $ whereis vim
-        vim: /usr/bin/vim /usr/bin/vim.basic /usr/bin/vim.tiny /etc/vim /usr/share/vim /usr/share/man/man1/vim.1.gz
+        vim: /usr/bin/vim /usr/bin/vim.basic /usr/bin/vim.tiny /etc/vim /usr/share/vim
         $ cd /usr/share/vim/vimXX/colors/
         $ ls # list system schemes
         README.txt    default.vim  elflord.vim   koehler.vim  pablo.vim      shine.vim  zellner.vim
@@ -174,6 +174,8 @@ VIM Note
         # in comand mode, use ":colorscheme" command to find the current scheme
         # ":colorscheme theme_name" to preview colorscheme
         # add ``colorscheme theme`` in ``~/.vimrc`` to set default scheme
+
+#. vim to disable mouse mode: ``set mouse=``
 
 .. rubric:: Footnotes
 

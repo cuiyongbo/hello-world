@@ -106,10 +106,6 @@ Memcached FAQ
         multiple clients, but where each client contains a different list of servers.
         The consistency is enforced only within a single client.
 
-        If you use only a single memcached instance for each client, or your list of memcached servers
-        configured for a client never changes, then the selection of a hashing algorithm is irrelevant,
-        as it has no noticeable effect.
-
         If you change your servers regularly, or you use a common set of servers that are shared among a
         large number of clients, then using a consistent hashing algorithm should help to ensure that your
         cache data is not duplicated and the data is evenly distributed.
@@ -167,6 +163,7 @@ Memcached FAQ
         STAT get_hits 514
         STAT get_misses 1746
         # hit rate = get_hits / cmd_get
+
 
 .. rubric:: Footnotes
 

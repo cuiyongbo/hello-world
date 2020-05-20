@@ -28,6 +28,7 @@ Memcached is not −
 
 .. toctree::
 
+    memcached/cache_term_introduction
     memcached/memcached_introduction
     memcached/memcached_design_philosophy
     memcached/memcached_faq

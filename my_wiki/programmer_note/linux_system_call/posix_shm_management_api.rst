@@ -3,7 +3,7 @@ shm_open & shm_unlink
 *********************
 
 **NAME**
-   
+
     shm_open, shm_unlink - create/open or unlink POSIX shared memory objects
 
 **SYNOPSIS**
@@ -38,17 +38,17 @@ shm_open & shm_unlink
         Open the object for read access.
         A shared memory object opened in this way
         can be mmap(2)ed only for read (``PROT_READ``) access.
-   
-        O_RDWR     
+
+        O_RDWR
         Open the object for read-write access.
-   
-        O_CREAT    
+
+        O_CREAT
         Create the shared memory object if it does not exist.
         A new shared memory object initially has zero length—the size of the object can
         be set using :manpage:`ftruncate(2)`. The newly allocated bytes of a shared memory
         object are automatically initialized to 0.
 
-        O_EXCL 
+        O_EXCL
         If ``O_CREAT`` was also specified, and a shared memory object with the given name
         already exists, return an error. The check for the existence of the object,
         and its creation if it does not exist, are performed atomically.
@@ -57,6 +57,10 @@ shm_open & shm_unlink
         If the shared memory object already exists, truncate it to zero bytes.
 
     Definitions of these flag values can be obtained by including :file:`<fcntl.h>`.
+
+    The *mode* argument specifies the file mode bits be applied when a new file is created.
+    This argument must be supplied when O_CREAT or O_TMPFILE is specified in flags;
+    if neither O_CREAT nor O_TMPFILE  is  specified, then *mode* is ignored.
 
     On successful completion ``shm_open()`` returns a new file descriptor referring to the
     shared memory object. This file descriptor is guaranteed to be the lowest-numbered file

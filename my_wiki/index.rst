@@ -29,6 +29,7 @@ Welcome to My Wiki's documentation!
     language_study_notes
     classics
     camera_glossary
+    server_design_note
 
 
 Indices and tables
