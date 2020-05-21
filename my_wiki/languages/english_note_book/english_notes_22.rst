@@ -19,7 +19,7 @@ God helps those who help themselves
 |
 | so to speak
 | Definition: as one might say; said a certain way, even though the words are not exactly accurate.
-| Usage: John helps me with my taxes. He's my accountant, so to speak.
+| Usage: John helps me with my taxes. He's my accountant, so to speak. [在某种程度上]
 | Usage: I just love my little poodle. she's my baby, so to speak.
 | Definition: Similar to the phrases "if you will" and "in a manner of speaking."
 | Usage: He was a fixer, so to speak—a man who could get things done.
@@ -148,6 +148,16 @@ God helps those who help themselves
 | et cetera
 | Definition: used at the end of a list to indicate that further, similar items are included.
 | Usage: we're trying to resolve problems of obtaining equipment, drugs, et cetera.
+|
+| outage
+| Definition: a period when a power supply or other service is not available or when equipment is closed down.
+| Usage: frequent power outages.
+|
+| tier
+| Definition: having a series of rows or levels placed one above the other.
+| Usage: a theater with tiered seating
+| Definition: (of a garment) having a number of successively overlapping ruffles or flounces.
+| Usage: a tiered skirt.
 
 #. Accumulative vs. Cumulative
 

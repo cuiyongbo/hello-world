@@ -69,17 +69,7 @@ NAME: ``socket -- create an endpoint for communication``
     the file <*sys/socket.h*>.  *setsockopt(2)* and *getsockopt(2)* are used to set and get
     options, respectively.
 
-**RETURN VALUES**
-
-    A -1 is returned if an error occurs, otherwise the return value is a descriptor referencing the socket.
-
 #. Under What Conditions Is a Descriptor Ready?
 
     Refer to *Unix Network Programming, vol 1, ch 6* for further information.
-
-#. Iterative server and concurrent server
-
-    Refer to *Unix Network Programming, vol 1, ch 4* for further information.
-    And there is a brilliant explanation about
-    *Why doesn't the close of connfd by the parent terminate its connection with the client.*
 

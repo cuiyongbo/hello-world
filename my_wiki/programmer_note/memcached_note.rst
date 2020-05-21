@@ -42,3 +42,4 @@ Memcached is not −
 .. [#] `Memcached repository <https://github.com/memcached/memcached.git>`_
 .. [#] `Memcached Wiki repository <https://github.com/memcached/memcached.wiki.git>`_
 .. [#] `libmemcached <https://github.com/whupro2017/libmemcached.git>`_
+.. [#] `Groupcache <https://github.com/golang/groupcache>`_

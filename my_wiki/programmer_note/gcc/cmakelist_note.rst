@@ -86,7 +86,7 @@ CMakeList Howto
         CMAKE_SYSTEM_NAME
         the name of os for which CMake to build.
 
-        CMAKE_ISNTALL_PREFIX
+        CMAKE_INSTALL_PREFIX
         If ``make install`` is invoked or INSTALL is built, this directory is prepended onto all install directories.
         This variable defaults to ``/usr/local`` on UNIX and ``c:/Program Files/${PROJECT_NAME}`` on Windows.
 

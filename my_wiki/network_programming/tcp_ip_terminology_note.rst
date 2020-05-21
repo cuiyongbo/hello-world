@@ -59,6 +59,7 @@ IP address structures::
 | DNS = Domain Name System
 | RFC = Request For Comment
 | RTT = Round Trip Time
+| RTO = Retransmission Timeout
 | MTU = Maximum Transfer Unit (1500 bytes for Ethernet)
 | MSS = Maximum Segment Size
 | MSL = Maximum Segment Life

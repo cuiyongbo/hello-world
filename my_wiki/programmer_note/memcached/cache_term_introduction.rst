@@ -48,8 +48,8 @@ Cache Terms
             }
         }
 
-    Another feasible method is to asynchronously update the cached data through a worker thread so that
-    the hot data will never expire.
+    Another feasible method is to asynchronously update the cached data through a worker thread
+    so that the hot data will never expire.
 
 #. Cache avalanche
 
@@ -69,4 +69,5 @@ Cache Terms
 
 .. rubric:: Footnotes
 
-.. [#] https://www.pixelstech.net/article/1586522853-What-is-cache-penetration-cache-breakdown-and-cache-avalanche
+.. [#] `Cache terms <https://www.pixelstech.net/article/1586522853-What-is-cache-penetration-cache-breakdown-and-cache-avalanche>`_
+.. [#] `Cache avalanche solutions <https://blog.csdn.net/weixin_33813128/article/details/92658963>`_
