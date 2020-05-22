@@ -2,10 +2,14 @@
 Smart Pointer
 *************
 
-A smart pointer is an object encapsulating a dumb pointer
-by overloading the ``->`` and ``*`` operators.
+A smart pointer, which belongs to :abbr:`RAII (Resource Acquisition Is Initialized)` technology,
+is an object encapsulating a dumb pointer by overloading the ``->`` and ``*`` operators.
 
--- Scott Meyers *Effective C++*
+.. note::
+
+    - ``std::auto_ptr`` is deprecated since C++11, since copy operation will make it point to null
+    - 为防止资源泄漏，请使用 RAII 对象，它们在构造函数中获取资源，并在析构函数中是释放资源
+    - 两个建议使用的 RAII classes 分别是 ``std::unique_ptr`` 和 ``std::shared_ptr``。前者不允许 copy 动作，后者允许 copy 动作。
 
 .. code-block:: cpp
 
@@ -38,6 +42,9 @@ by overloading the ``->`` and ``*`` operators.
         {   // return pointer to resource
             return (this->_Get());
         }
+
+        unique_ptr(const _Myt&) = delete;
+        _Myt& operator=(const _Myt&) = delete;
     };
 
     class shared_ptr
@@ -59,3 +66,7 @@ by overloading the ``->`` and ``*`` operators.
         }
     };
 
+
+.. rubric:: Footnotes
+
+.. [#] `C++内存管理 <https://mp.weixin.qq.com/s/YpQekaHi7-0bn76qkQg0uw>`_

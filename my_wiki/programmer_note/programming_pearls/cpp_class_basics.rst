@@ -217,3 +217,6 @@ C++ Class Basics
     the public class is part of. This hides internal implementation details and data from the
     user of the library.
 
+.. rubric:: Footnotes
+
+.. [#] `Private destructor for singleton class <https://stackoverflow.com/questions/2559750/private-destructor-for-singleton-class>`_

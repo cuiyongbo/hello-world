@@ -115,12 +115,29 @@ TCP Layer Note
 
 #. TCP sliding window protocol
 
+    - the window size of sender is determined by the one of receiver.
+    - TCP zero window probe (a timer mechanism similar to keepalive and TIME_WAIT)
+    - TCP Silly Window syndrom (糊涂窗口综合征，Nagle algorithm)
+    - TCP Congestion window (拥塞控制)
 
+#. Configure TCP Nagle algorithm: ``setsockopt(sock_fd, IPPROTO_TCP, TCP_NODELAY);``
+#. TCP Congestion window (拥塞控制)
 
+    拥塞窗口 cwnd 是发送方维护的一个的状态变量，它会根据网络的拥塞程度动态变化的。
+    它和发送窗口 swnd 和接收窗口 rwnd 的关系：``swnd = min(cwnd, rwnd)``
+
+    其实只要「发送方」没有在规定时间内接收到 ACK 应答报文，也就是发生了超时重传，
+    就会认为网络出现了用拥塞。拥塞控制主要是四个算法：
+
+        - 慢启动 (slow start, increase exponentialy until reaching slow start threshold)
+        - 拥塞避免 (increase linearly)
+        - 拥塞发生
+        - 快速恢复
 
 .. rubric:: Footnote
 
 .. [#] `TCP interview questions <https://blog.csdn.net/qq_38950316/article/details/81087809>`_
 .. [#] `TCP interview questions 02 <https://mp.weixin.qq.com/s/KxmSGxTAYe9eiEEVcLkJZg>`_
+.. [#] `TCP interview questions 03 <https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA>`_
 .. [#] `TCP Keepalive HOWTO <http://www.tldp.org/HOWTO/html_single/TCP-Keepalive-HOWTO/>`_
 .. [#] `TCP sliding window protocol <https://www.ibm.com/support/knowledgecenter/en/SSGSG7_7.1.0/com.ibm.itsm.perf.doc/c_network_sliding_window.html>`_

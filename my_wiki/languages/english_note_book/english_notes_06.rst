@@ -92,6 +92,19 @@ English Note 6
 | Definition: a person who misuses their talents or who sacrifices their self-respect for the sake of personal or financial gain.
 | Usage: Many felt he was prostituting himself by writing Hollywood scripts. [糟蹋自己，浪费才华]
 |
+| depreciate
+| Definition: diminish in value over a period of time.
+| Usage: the pound is expected to depreciate against the dollar.
+| Usage: the computers would be depreciated at 50 percent per annum.
+| Definition: disparage or belittle (something).
+| Usage: she was already depreciating her own aesthetic taste.
+|
+| deprecate
+| Definition: express disapproval of.
+| Usage: what I deprecate is persistent indulgence.
+| Definition: (chiefly of a software feature) be usable but regarded as obsolete and best avoided, typically due to having been superseded.
+| Usage: this feature is deprecated and will be removed in later versions.
+|
 | latrine [(营地等的)厕所；(尤指)茅坑,便坑]
 | Definition: a toilet in a camp, etc., especially one made by digging a hole in the ground.
 |
