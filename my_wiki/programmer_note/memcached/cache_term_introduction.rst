@@ -3,7 +3,7 @@ Cache Terms
 
 #. Cache penetration
 
-    Cache penetration is a scenario where the data to be searched doesn't exist at DB
+    Cache penetration is a scenario where **the data to be searched doesn't exist** at DB
     and the returned empty result set is not cached as well and hence every search for
     the key will hit the DB eventually. If a hacker tries to initiate some attack by
     launching lots of searches with such key, the underlying DB layer will be hit too
@@ -11,8 +11,7 @@ Cache Terms
 
     In such cases, there are a few mitigation plans.
 
-        - If there is no data for the key in DB, just return an empty result
-          and cache it for a short period of time but don't set a long expiration time.
+        - also cache the empty result but set a short expiration time.
 
         - Using Bloom filter. Bloom filter is similar to hbase set which can be used to check
           whether a key exists in the data set. If the key exists, go to the cache layer or DB layer,
@@ -26,7 +25,8 @@ Cache Terms
 
     Cache breakdown is a scenario where the cached data expires and at the same time there are
     lots of search on the expired data which suddenly cause the searches to hit DB directly and
-    increase the load to the DB layer dramatically.
+    increase the load to the DB layer dramatically. Note that it differ from Cache avalanche in
+    that the epxired data is not thay many.
 
     This would happen in high concurrency environment. Normally in this case, there needs to be a lock
     on the searched key so that other threads need to wait when some thread is trying to search the key
@@ -66,6 +66,17 @@ Cache Terms
 
         - Can adjust the expiration time for different keys so that they will not expire at the same time.
 
+#. Cache update strategy
+
+    - Cache aside
+    - Read through / Write through
+    - Write behind
+
+    .. note::
+
+        In cache-aside, application updates the database directly synchronously. Whereas,
+        a Write-behind lets your application quickly update the cache and return.
+        Then it lets the cache update the database in the background.
 
 .. rubric:: Footnotes
 

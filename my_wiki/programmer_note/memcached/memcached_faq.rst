@@ -147,6 +147,33 @@ Memcached FAQ
             ...
         }
 
+        static memcached_return_t update_continuum(Memcached *ptr)
+        {
+          for (uint32_t host_index= 0; host_index < memcached_server_count(ptr); ++host_index)
+          {
+            if (memcached_is_weighted_ketama(ptr))
+            {
+                float pct= (float)list[host_index].weight / (float)total_weight;
+                pointer_per_server= (uint32_t) ((::floor((float) (pct * MEMCACHED_POINTS_PER_SERVER_KETAMA / 4 * (float)live_servers + 0.0000000001))) * 4);
+                pointer_per_hash= 4;
+            }
+              // ...
+              for (uint32_t pointer_index= 1;
+                   pointer_index <= pointer_per_server / pointer_per_hash;
+                   pointer_index++)
+              {
+                if (memcached_is_weighted_ketama(ptr))
+                {
+                  for (uint32_t x = 0; x < pointer_per_hash; x++)
+                  {
+                    uint32_t value= ketama_server_hash(sort_host, (size_t)sort_host_length, x);
+                    ptr->ketama.continuum[continuum_index].index= host_index;
+                    ptr->ketama.continuum[continuum_index++].value= value;
+                  }
+                }
+              }
+        }
+
 #. distributed lock
 
     Distributed locks are a very useful primitive in many environments

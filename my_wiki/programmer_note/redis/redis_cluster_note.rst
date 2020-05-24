@@ -55,17 +55,30 @@ layout by adding or removing nodes.
         127.0.0.1:8001 127.0.0.1:8002 127.0.0.1:8003 \
         --cluster-replicas 1
 
+        # --cluster-replicas 1 means one slave for each master
+        # The redis-cli utility implements basic cluster support when started with the -c switch.
+
 #. inspect cluster node information
 
     .. code-block:: sh
 
-        ./redis-cli -p 8001 cluster nodes
-        9c2db617a1305720a32a6ced5ec31cbe71506c2d 127.0.0.1:7003@17003 master - 0 1589252979000 3 connected 10923-16383
-        4f4bdc188efe5f2604283035b06021bed256306c 127.0.0.1:7002@17002 master - 0 1589252981416 2 connected 5461-10922
-        b302f6e88bc29d267c87baff7919ce5aa2544413 127.0.0.1:8003@18003 slave 4f4bdc188efe5f2604283035b06021bed256306c 0 1589252982423 2 connected
-        1a7101275c3a3574744240d47ff43fc297da643e 127.0.0.1:8002@18002 slave ebbc4d6af57c046cd59cf12546bb1a52595d7a2d 0 1589252981000 5 connected
-        3ddad0be560eaf55d6a5caf4d2fa911be4f97850 127.0.0.1:8001@18001 myself,slave 9c2db617a1305720a32a6ced5ec31cbe71506c2d 0 1589252980000 4 connected
-        ebbc4d6af57c046cd59cf12546bb1a52595d7a2d 127.0.0.1:7001@17001 master - 0 1589252980412 1 connected 0-5460
+        $ ./redis-cli -p 7000 cluster nodes
+        b43684c40c1b42a80430a0249e9f87722600fb1e 127.0.0.1:7005@17005 slave 31109a1247cf8b130112c5a53d0ae4c752b77fd4 0 1590332522285 6 connected
+        cc59c8237141cc75f3b9ad34622b092f34c45ed9 127.0.0.1:7000@17000 myself,master - 0 1590332521000 1 connected 0-5460
+        06daec5d5b238b1be87f9a6ba0ccbb10a96ed893 127.0.0.1:7001@17001 master - 0 1590332521000 2 connected 5461-10922
+        31109a1247cf8b130112c5a53d0ae4c752b77fd4 127.0.0.1:7002@17002 master - 0 1590332523295 3 connected 10923-16383
+        d6b513eace19fabd9173cce02cdea1be155d834e 127.0.0.1:7003@17003 slave cc59c8237141cc75f3b9ad34622b092f34c45ed9 0 1590332521000 4 connected
+        5ab511163bd89b1ecfe8c01265cddc4c7bc90eb1 127.0.0.1:7004@17004 slave 06daec5d5b238b1be87f9a6ba0ccbb10a96ed893 0 1590332521276 5 connected
+
+        $ ./redis-cli -p 7000 cluster info
+        cluster_state:ok
+        cluster_slots_assigned:16384
+        cluster_slots_ok:16384
+        cluster_slots_pfail:0
+        cluster_slots_fail:0
+        cluster_known_nodes:6
+        cluster_size:3
+        ...
 
 #. (error) CLUSTERDOWN Hash slot not served: ``./redis-cli --cluster fix ip:port``
 

@@ -106,3 +106,10 @@ Server Design Note
         }
 
 #. GeoHash
+
+    - redis command: GEOHASH
+
+.. rubric:: Footnotes
+
+.. [#] http://geohash.org/
+.. [#] https://wikimili.com/en/Geohash

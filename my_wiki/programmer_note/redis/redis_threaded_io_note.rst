@@ -1,6 +1,10 @@
 Redis threaded I/O Note
 =======================
 
+
+So far redis is not a single threaded program, ``bioInit()`` would start ``BIO_NUM_OPS`` threads
+to do background I/O jobs. Also newer redis support threaded I/O to speedup socket reads and writes.
+
 .. code-block:: none
 
     ################################ THREADED I/O #################################

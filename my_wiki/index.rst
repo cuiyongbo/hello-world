@@ -9,7 +9,6 @@ Welcome to My Wiki's documentation!
 .. toctree::
     :titlesonly:
     :maxdepth: 2
-    :caption: Contents:
 
     pending_tasks
     leetcode_notes
