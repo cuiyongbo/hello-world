@@ -1,6 +1,17 @@
 Server Design Note
 ==================
 
+#. Shorten that long URL into a tiny URL
+
+    Purpose: ease the cost to type a longer url, hide url parameters from users.
+    Note:
+
+        - length of target url
+        - hash conflicts resolution
+        - expiration mechanism
+
+    Examples: TinyURL
+
 #. Resolutions for Service Avalanche Effect
 
     There are different solutions for different causes of Service Avalanche:
@@ -30,3 +41,68 @@ Server Design Note
     In contrast, in most traditional hash tables, a change in the number of array slots
     causes nearly all keys to be remapped because the mapping between the keys and the slots
     is defined by a modular operation.
+
+    when considering weight, the node with more weight will generate more virtual nodes.
+
+#. :abbr:`DBSCAN (Density-based spatial clustering of applications with noise)`
+
+    DBSCAN requires two parameters: :math:`\epsilon (eps)` and the minimum number of points required to
+    form a dense region (minPts). It starts with an arbitrary starting point that has not been visited.
+    This point's :math:`\epsilon`-neighborhood is retrieved, and if it contains sufficiently many points,
+    a cluster is started. Otherwise, the point is labeled as noise.
+
+    If a point is found to be a dense part of a cluster, its :math:`\epsilon`-neighborhood is also part
+    of that cluster. Hence, all points that are found within the :math:`\epsilon`-neighborhood are added,
+    as is their own :math:`\epsilon`-neighborhood when they are also dense.
+    This process continues until the density-connected cluster is completely found. Then, a new unvisited
+    point is retrieved and processed, leading to the discovery of a further cluster or noise.
+
+    DBSCAN can be used with any distance function as well as similarity functions or other predicates.
+
+    .. code-block:: none
+
+        DBSCAN(DB, distFunc, eps, minPts)
+        {
+            C = 0 /* Cluster counter */
+            foreach P in DB
+            {
+                /* Previously processed in inner loop */
+                if(label(P) != undefined)
+                    continue
+
+                Neighbors N = RangeQuery(DB, distFunc, P, eps)
+                if(N.size() < minPts)
+                {
+                    label(P) = Noise /* Label as Noise */
+                    continue
+                }
+
+                C = C + 1
+                label(P) = C /* Label initial point */
+                Seed set S = N - {P} /* Neighbors to expand */
+                foreach point Q in S
+                {
+                    if(label(Q) = Noise) label(Q) = C
+                    if (label(Q) != undefined) continue
+
+                    label(Q) = C
+
+                    Neighbors N = RangeQuery(DB, distFunc, Q, eps)
+                    if(N.size() >= minPts)
+                        S = S + N
+                }
+            }
+        }
+
+        RangeQuery(DB, distFunc, Q, eps)
+        {
+            Neighbors = empty list
+            foreach P in DB
+            {
+                if(distFunc(Q, P) <= eps)
+                    Neighbors = Neighbors + { P }
+            }
+            return Neighbors
+        }
+
+#. GeoHash

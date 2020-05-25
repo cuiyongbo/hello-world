@@ -94,6 +94,10 @@ Computer Terminology 01
 | protected inheritance
 | private inheritance
 |
+| servlet
+| Definition: a small, server-resident program that typically runs automatically in response to user input.
+| Usage: students will build servlets that generate web pages and communicate with other Java servers.
+|
 | archive
 | Definition: The archive or archives are a collection of documents and records that contain historical information.
 | Usage: zip archive.

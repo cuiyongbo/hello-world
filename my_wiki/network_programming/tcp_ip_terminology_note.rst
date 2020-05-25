@@ -106,3 +106,46 @@ IP address structures::
     +--------------+-------------+
 
     Refer to *Unix Network Programming vol 1, section 1.1 and section 1.7* for details.
+
+
+#. TCP Header format
+
+    .. code-block:: none
+
+
+        ------------------------------------------------------------------------
+        | Source Port(16) | Destination Port(16)                               |
+        ------------------------------------------------------------------------
+        | Sequence Number(32)                                                  |
+        ------------------------------------------------------------------------
+        | Acknowledge Number(32)                                               |
+        ------------------------------------------------------------------------
+        | HeaderLen(4) | Reserved(6) |URG|ACK|PSH|RST|SYN|FIN| Window size(16) |
+        ------------------------------------------------------------------------
+        | Checksum(16) | Urgent data pointer(16)                               |
+        ------------------------------------------------------------------------
+        | Optional                                                             |
+        ------------------------------------------------------------------------
+        | Data                                                                 |
+        ------------------------------------------------------------------------
+
+    .. note::
+
+        HeaderLen field gives the size of TCP header in 32-bit words,
+        which means the maximum length of a TCP header is 60 bytes.
+
+#. UDP Header Format
+
+    .. code-block:: none
+
+        ------------------------------------------
+        | Source Port(16) | Destination Port(16) |
+        ------------------------------------------
+        | DatagramLen(16) | Checksum(16)         |
+        ------------------------------------------
+        | Data                                   |
+        ------------------------------------------
+
+    .. note::
+
+        DatagramLen field gives the size of UDP datagram including header and data.
