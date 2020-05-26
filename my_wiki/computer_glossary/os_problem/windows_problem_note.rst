@@ -266,11 +266,12 @@ Windows Problems
             {"keys": ["alt+shift+-"], "command": {"action": "splitPane", "split": "horizontal", "splitMode": "duplicate"}}
         ]
 
-
 #. Windows 下查看错误码
 
     Refer to "Tools" - "Error Lookup". Or just run ``errlook.exe``
     in  ``C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools``.
+
+#. VSCode “Tab” 键 无法缩进的问题: Press ``Ctrl + M``(Toggle Tab Key Moves Focus).
 
 .. rubric:: Footnotes
 

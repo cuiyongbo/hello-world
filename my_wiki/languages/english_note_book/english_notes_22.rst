@@ -158,6 +158,13 @@ God helps those who help themselves
 | Usage: a theater with tiered seating
 | Definition: (of a garment) having a number of successively overlapping ruffles or flounces.
 | Usage: a tiered skirt.
+|
+| VC = Venture Capital
+| PE = Price Earnings Ratio
+
+performant
+Definition: functioning well or as expected.
+Usage: a highly performant database which is easy to use.
 
 #. Accumulative vs. Cumulative
 
