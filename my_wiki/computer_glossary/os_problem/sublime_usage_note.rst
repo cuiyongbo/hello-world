@@ -107,9 +107,21 @@ Sublime Text Usage
             "windows": [ "wininet" ]
         }
 
-**Plugin Collection**
+#. Sublime Text "git_binary" setting problem.
 
-#. Package control
-#. Pretty Json
-#. Sublime-rst-completion
-#. OmniMarkupPreviewer
+    .. image:: images/sublime_text_git_binary_setting.png
+
+    Set git_binary setting to your full git path in user profile.
+
+#. Sublime Text "ignore_vcs_packages" setting.
+
+    .. image:: images/sublime_ignore_vcs_packages_error.png
+
+    added ``"ignore_vcs_packages":true`` to user settings.
+
+#. Plugin Collection
+
+    - Package control
+    - Pretty Json
+    - Sublime-rst-completion
+    - OmniMarkupPreviewer

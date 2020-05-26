@@ -1,6 +1,9 @@
-****************
 Windows Problems
-****************
+================
+
+只有自己足够强大，才能不被别人践踏。
+
+只有自己格外努力，才能显得毫不费力。
 
 #. Windows 10 锁屏壁纸位置
 
@@ -150,18 +153,6 @@ Windows Problems
 
    .. image:: images/windows_view_shared_memory_usage.png
 
-#. Sublime Text "git_binary" setting problem.
-
-    .. image:: images/sublime_text_git_binary_setting.png
-
-    Set git_binary setting to your full git path in user profile.
-
-#. Sublime Text "ignore_vcs_packages" setting.
-
-    .. image:: images/sublime_ignore_vcs_packages_error.png
-
-    added ``"ignore_vcs_packages":true`` to user settings.
-
 #. XShell gets frozen after accidently typing "Ctrl - S"
 
     Solution: Press ``Ctrl - Q`` to unfreeze.
@@ -182,9 +173,7 @@ Windows Problems
           Enables users to control power settings on a local system.
           For detailed command and option information, run "POWERCFG /? <COMMAND>"
 
-#. windows10 to prohibite hiberfil.sys from generating
-
-    Run ``powercfg -h off``.
+#. windows10 to prohibite ``hiberfil.sys`` from generating： ``powercfg -h off``.
 
 #. windows10 to turn off Windows Defender
 
@@ -203,9 +192,7 @@ Windows Problems
     Open **regedit** and locate to
     ``HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\BackupProductKeyDefault``.
 
-#. windows10 to refresh DNS cache or flush hosts changes.
-
-    Run ``ipconfig /flushdns`` in CMD.
+#. windows10 to refresh DNS cache or flush hosts changes： ``ipconfig /flushdns``.
 
 #. vs cannot pass argument to python script in custom build tool
 
@@ -221,9 +208,7 @@ Windows Problems
     .. image:: images/note_pad_tab_to_space_01.jpg
     .. image:: images/note_pad_tab_to_space_02.jpg
 
-#. Note pad++ 实现类似vs中的行复制粘贴功能
-
-    Solution: Install plugin ``Visual Studio Line Copy``.
+#. Note pad++ 实现类似vs中的行复制粘贴功能: 安装插件 ``Visual Studio Line Copy``.
 
 #. windows to delete service
 
@@ -238,20 +223,9 @@ Windows Problems
 
     .. image:: images/vs_chiness_display_solution.png
 
-#. Windows terminal 中 VIM 字体和系统不一致
-
-    Solution: Install ``Microsoft YaHei Mono.ttf`` font.
-
+#. Windows terminal 中 VIM 字体和系统不一致: 安装 ``Microsoft YaHei Mono.ttf`` 字体.
 #. ssh login without inputing password every time: ``ssh-copy-id -i path/to/.ssh/id_rsa.pub username@hostname``.
-
-#. Windows terminal 文本粘贴格式混乱
-
-    Solution: 关掉 vim 自动缩进功能.
-
-    .. code-block:: sh
-
-        set nosmartindent
-        set noautoindent
+#. Windows terminal 文本粘贴格式混乱: 关掉 vim 自动缩进功能.
 
 #. Windows terminal to split screen
 
@@ -270,8 +244,6 @@ Windows Problems
 
     Refer to "Tools" - "Error Lookup". Or just run ``errlook.exe``
     in  ``C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools``.
-
-#. VSCode “Tab” 键 无法缩进的问题: Press ``Ctrl + M``(Toggle Tab Key Moves Focus).
 
 .. rubric:: Footnotes
 
