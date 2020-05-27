@@ -5,7 +5,8 @@ I hate masks, however I have to put it on.
 
 .. toctree::
 
-    grpc/protobuf_note
+    grpc/protobuf_faq
+    grpc/protobuf_grammer_note
     grpc/grpc_load_balancing
 
 .. rubric:: Footnotes

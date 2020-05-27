@@ -1,6 +1,5 @@
-Protocol Buffers - Google's data interchange format
-===================================================
-
+Protocol Buffers FAQ
+====================
 
 #. error: AC_CONFIG_MACRO_DIRS([m4]) conflicts with ACLOCAL_AMFLAGS=-I m4
 
