@@ -400,6 +400,14 @@ gcc - GNU project C and C++ compiler
 
 #. linux system header and library search path environment variables
 
+
+    - ``LD_LIBRARY_PATH`` tells the dll loader where to look for dynamic libraries
+      when starting an executable. The variable is dangerous and deprecated
+
+    - ``LIBRARY_PATH`` tells linker where too look for libraries while building exe or lib
+    - ``INCLUDE_PATH`` tells where to look for files referred in ``#include`` statements.
+      not work as wish, use ``C_INCLUDE_PATH`` and ``CPLUS_INCLUDE_PATH`` instead.
+
     .. code-block:: sh
 
         export THIRD_PARTY_REPO=/home/cuiyb/workSpace/projects/third-party-repo
@@ -408,6 +416,7 @@ gcc - GNU project C and C++ compiler
         export C_INCLUDE_PATH=$C_INCLUDE_PATH:$LIBEVENT_DIR/include
         export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$THIRD_PARTY_REPO:$LIBEVENT_DIR/include
         export LIBRARY_PATH=$LIBRARY_PATH:$THIRD_PARTY_REPO:$LIBEVENT_DIR/lib
+
 
 #. make: warning: Clock skew detected. Your build may be incomplete.
 

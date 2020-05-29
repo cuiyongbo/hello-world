@@ -161,10 +161,16 @@ God helps those who help themselves
 |
 | VC = Venture Capital
 | PE = Price Earnings Ratio
+|
+| performant
+| Definition: functioning well or as expected.
+| Usage: a highly performant database which is easy to use.
+|
+| hype
+| Definition: promote or publicize (a product or idea) intensively, often exaggerating its importance or benefits.
+| Usage: she relied on hype and headlines to stoke up interest in her music.
+| Usage: an industry quick to hype its products.
 
-performant
-Definition: functioning well or as expected.
-Usage: a highly performant database which is easy to use.
 
 #. Accumulative vs. Cumulative
 

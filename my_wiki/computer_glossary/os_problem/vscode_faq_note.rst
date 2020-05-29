@@ -7,6 +7,7 @@ VS Code Note
     - Command Palette: Shift + Command + P
     - Navigation files: Command + P
     - Breadcrumbs: Shift + Command + .
+    - Go to symbol in workspace: Ctrl + T
 
 #. Plugin collection
 

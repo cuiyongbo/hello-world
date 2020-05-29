@@ -122,7 +122,7 @@ Redis persistence options:
         appendonly no
         appendfilename "appendonly.aof"
 
-        # The fsync() call tells the Operating System to actually write data on disk
+        # The fsync() call tells the OS to actually write data on disk
         # instead of waiting for more data in the output buffer. Some OS will really flush
         # data on disk, some other OS will just try to do it ASAP.
         #
