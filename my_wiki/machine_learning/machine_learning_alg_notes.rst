@@ -2,37 +2,31 @@
 Machine Learning algorithms
 ***************************
 
-A computer program is said to learn from **experience** E with respect 
-to some class of **tasks** T and **performance measure** P if its performance 
-at tasks in T, as measured by P, improves with experience E.
-
--- Tom Mitchell
-
 .. code-block:: none
     :caption: K fold cross-validation, P123
 
     KFoldXV(D, A, L, k):
         Require: D, the given dataset, with elements z_i
         Require: A, the learning algorithm, seen as a function that takes D as input and outputs a learned function
-        Require: L, the loss function, seen as a function from f and z_i to a scalar R 
+        Require: L, the loss function, seen as a function from f and z_i to a scalar R
         Require: k, the number of folds
 
-        Split D into k mutually exclusive subsets D_i. 
+        Split D into k mutually exclusive subsets D_i.
         for i = 1 to k
-            f_i = A(D, i) 
+            f_i = A(D, i)
             for z_j in D_i
                 e_j =L(f_i, z_j)
-            end for 
+            end for
         end for
         return e
 
 .. code-block:: none
     :caption: :abbr:`SGD (Stochastic Gradient Descent)` update at training iteration k
 
-    Require: Learning rate k. 
+    Require: Learning rate k.
     Require: Initial parameter theta
     while stopping criterion not met
-        Sample a minibatch of m examples from the training set x_i with corresponding targets y_i 
+        Sample a minibatch of m examples from the training set x_i with corresponding targets y_i
         Compute gradient estimate: g = 1/m * LossFunc(derivative(f(x_i, theta)), y_i)
         Apply update: θ =  θ − k * g
     end while
@@ -67,9 +61,9 @@ at tasks in T, as measured by P, improves with experience E.
 #. Algorithm 8.5 The RMSProp algorithm P309
 #. Algorithm 8.6 RMSProp algorithm with Nesterov momentum P310
 #. Algorithm 8.7 The Adam algorithm P311
-   
+
 .. code-block:: py
-    :caption: Gradient Descent algorithm 
+    :caption: Gradient Descent algorithm
 
     def update_w_and_b(spendings, sales, w, b, alpha):
         dl_dw, dl_db = 0.0, 0.0
@@ -77,18 +71,18 @@ at tasks in T, as measured by P, improves with experience E.
         for i in range(N):
             dl_dw += -2*spendings[i]*(sales[i] - (w*spendings[i] + b))
             dl_db += -2*(sales[i] - (w*spendings[i] + b))
-    
+
         w = w - (1/float(N))*dl_dw*alpha
         b = b - (1/float(N))*dl_db*alpha
         return w, b
-    
+
     def train(spendings, sales, w, b, alpha, epochs):
         for e in range(epochs):
             w, b = update_w_and_b(spendings, sales, w, b, alpha)
             if (e+1)%400 == 0:
                 print('epoch: ', e, 'loss: ', avg_loss(spendings, sales, w, b))
         return w, b
-    
+
     def avg_loss(spendings, sales, w, b):
         N = len(spendings)
         total_error = 0.0

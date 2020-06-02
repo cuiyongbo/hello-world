@@ -170,6 +170,21 @@ God helps those who help themselves
 | Definition: promote or publicize (a product or idea) intensively, often exaggerating its importance or benefits.
 | Usage: she relied on hype and headlines to stoke up interest in her music.
 | Usage: an industry quick to hype its products.
+|
+| walkout
+| Definition: a sudden angry departure, especially as a protest or strike.
+| Usage: opposition MPs staged a walkout during the budget session.
+|
+| leave up
+| Definition: to remain cautious, vigilant, guarded, etc.
+| Usage: Tom isn't a very trusting guy, and he tends to leave his guard up even around relatively close friends.
+| Usage: There will be people looking to exploit you, so you've got to always leave your defenses up.
+|
+| induction
+| Definition: the inference of a general law from particular instances.
+|
+| deduction
+| the inference of particular instances by reference to a general law or principle.
 
 
 #. Accumulative vs. Cumulative
