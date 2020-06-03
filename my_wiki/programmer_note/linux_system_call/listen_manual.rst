@@ -33,3 +33,7 @@ listen -- listen for connections on a socket
     也就是已完成连接建立的队列长度，所以现在通常认为 backlog 是 accept 队列。
 
     .. image:: images/tcp_socket_listen_queue.jpg
+
+.. rubric:: Footnotes
+
+.. [#] `TCP半连接队列和全连接队列 <https://mp.weixin.qq.com/s/2qN0ulyBtO2I67NB_RnJbg>`_

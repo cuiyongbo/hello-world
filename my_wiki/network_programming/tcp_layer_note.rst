@@ -28,12 +28,12 @@ TCP Layer Note
         - 「两次握手」：无法防止历史连接的建立，会造成双方资源的浪费，也无法可靠的同步双方序列号；
         - 「四次握手」：三次握手就已经理论上最少可靠连接建立，所以不需要使用更多的通信次数。
 
-#. why TIME_WAIT has to stay for 2 * MSL times
+#. why ``TIME_WAIT`` has to stay for ``2 * MSL`` times
 
     This comes in 2 reasons:
 
-        - allow the end whose actively close the connection to retransmit find FIN packet
-        - allow the packets belongs to the old connection to expire
+        - allow the end whose actively close the connection to retransmit FIN packet
+        - allow the packets belonging to the old connection to expire
 
     And you can skip TIME_WAIT by set ``SO_LINGER`` option, which will send RST to
     its peer on calling ``close()``.
@@ -136,8 +136,7 @@ TCP Layer Note
 
 .. rubric:: Footnote
 
-.. [#] `TCP interview questions <https://blog.csdn.net/qq_38950316/article/details/81087809>`_
-.. [#] `TCP interview questions 02 <https://mp.weixin.qq.com/s/KxmSGxTAYe9eiEEVcLkJZg>`_
-.. [#] `TCP interview questions 03 <https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA>`_
+.. [#] `图解 TCP 三次握手和四次挥手 <https://mp.weixin.qq.com/s/KxmSGxTAYe9eiEEVcLkJZg>`_
+.. [#] `图解 TCP 重传、滑动窗口、流量控制、拥塞控制 <https://mp.weixin.qq.com/s/Tc09ovdNacOtnMOMeRc_uA>`_
 .. [#] `TCP Keepalive HOWTO <http://www.tldp.org/HOWTO/html_single/TCP-Keepalive-HOWTO/>`_
 .. [#] `TCP sliding window protocol <https://www.ibm.com/support/knowledgecenter/en/SSGSG7_7.1.0/com.ibm.itsm.perf.doc/c_network_sliding_window.html>`_
