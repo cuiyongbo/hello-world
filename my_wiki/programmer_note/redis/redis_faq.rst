@@ -27,3 +27,4 @@ Redis FAQ
 .. [#] `Consistency and Durability <https://docs.redislabs.com/latest/rs/concepts/data-access/consistency-durability/>`_
 .. [#] `top 10 message queue libraries <https://dingyuliang.me/mq-best-10-message-queue-open-source-libraries/>`_
 .. [#] `Distributed cache related articals <https://www.163yun.com/search/5YiG5biD5byP57yT5a2Y5LiA6Ie05oCn>`_
+.. [#] `Redis FAQ <https://redis.io/topics/faq>`_

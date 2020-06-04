@@ -44,6 +44,12 @@ Machine learning concepts
 #. Cross-entropy: a metric of similarity between two probability distributions
 #. Entropy, cross entropy, and KL-divergence `Introduction to cross entropy`_ .
 
+#. Building Blocks of a ML algorithm
+
+    - a loss function
+    - an optimization criterion based on the loss function
+    - an optimization routine that leverages training data to find a solution to the optimization criterion
+
 .. rubric:: Footnotes
 
 .. [#] `Introduction to cross entropy <https://rdipietro.github.io/friendly-intro-to-cross-entropy-loss/>`_

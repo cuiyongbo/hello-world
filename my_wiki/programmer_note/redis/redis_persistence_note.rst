@@ -39,6 +39,12 @@ Redis persistence options:
                 redisFork()
                     rdbSave(filename,rsi)
 
+#. Are Redis on-disk-snapshots atomic?
+
+    Yes, Redis background saving process is always forked when the server is outside of
+    the execution of a command, so every command reported to be atomic in RAM is also
+    atomic from the point of view of the disk snapshot.
+
 #. SAVE directive in ``redis.conf``
 
     .. code-block:: none
