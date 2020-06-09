@@ -2,7 +2,6 @@
 Janpanese Note 03
 *****************
 
-
 #. Subject + Copula + Predicative
 
     私はアンナです。
@@ -41,12 +40,9 @@ Janpanese Note 03
     and the consequent weakness of the nominal head of state (the mikado or emperor), the shogun was generally
     the real ruler of the country until feudalism was abolished in 1867.
 
-#. samurai
+#. samurai: a member of a powerful military caste in feudal Japan, especially a member of the class of military retainers of the daimyos.
 
-    a member of a powerful military caste in feudal Japan, especially a member of the class of military retainers of the daimyos.
-
-#. 故郷　古里
-
-    故郷忘じ難し
-
+#. 故郷　古里: 故郷忘じ難し
 #. 下駄 (geta) 木屐
+#. 行動しない者に、幸福は訪れない。
+
