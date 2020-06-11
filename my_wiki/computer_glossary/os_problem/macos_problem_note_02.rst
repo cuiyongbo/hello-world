@@ -52,6 +52,25 @@ MacOS problem note 02
     and after finishing installation, run: ``brew install git gcc gdb valgrind python3 unzip htop pidof`` to
     install softwares.
 
+#. Homebrew to remove package and dependencies
+
+    .. code-block:: sh
+
+        # inspect package dependencies
+
+        $ brew info python
+        ...
+        ==> Dependencies
+        Build: pkg-config ✘
+        Required: gdbm ✔, openssl@1.1 ✔, readline ✔, sqlite ✔, xz ✔
+        ...
+
+        # install brew-rmtree
+        $ brew tap beeftornado/rmtree && brew install brew-rmtree
+
+        # try and test
+        $ brew rmtree package_name
+
 #. Mac to codesign gdb
 
     gdb requires special privileges to access Mach ports.
