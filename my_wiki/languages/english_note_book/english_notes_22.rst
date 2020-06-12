@@ -185,7 +185,25 @@ God helps those who help themselves
 |
 | deduction
 | the inference of particular instances by reference to a general law or principle.
-
+|
+| plaintiff [原告]
+| Definition: a person who brings a case against another in a court of law. Compare with defendant.
+| Usage: the plaintiff commenced an action for damages.
+|
+| defendant [被告]
+| Definition: an individual, company, or institution sued or accused in a court of law.
+| Usage: the defendant tried to claim that it was self-defense.
+|
+| probation
+| probationer
+| Definition: the release of an offender from detention, subject to a period of good behavior under supervision.
+| Usage: I went to court and was put on probation. [缓刑]
+| Definition: the process or period of testing or observing the character or abilities of a person in a certain role, for example, a new employee.
+| Usage: for an initial period of probation your manager will closely monitor your progress. [试用期]
+| 
+| internship [实习期]
+| Definition: the position of a student or trainee who works in an organization, sometimes without pay, in order to gain work experience or satisfy requirements for a qualification.
+| Usage: they encouraged students to apply for newspaper internships.
 
 #. Accumulative vs. Cumulative
 

@@ -400,15 +400,7 @@ English Note 7
 | Usage: she noted the gist of each message. [关键，要点]
 | Definition: (law) the real point of an action.
 | Usage: damage is the gist of the action and without it the plaintiff must fail.
-|
-| plaintiff [原告]
-| Definition: a person who brings a case against another in a court of law. Compare with defendant.
-| Usage: the plaintiff commenced an action for damages.
-|
-| defendant [被告]
-| Definition: an individual, company, or institution sued or accused in a court of law.
-| Usage: the defendant tried to claim that it was self-defense.
-|
+| 
 | grasp
 | Definition: a firm hold or grip.
 | Usage: the child slipped from her grasp.
