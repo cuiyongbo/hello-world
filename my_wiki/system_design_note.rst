@@ -1,4 +1,4 @@
-Server Design Note
+System Design Note
 ==================
 
 #. Shorten that long URL into a tiny URL
@@ -108,6 +108,12 @@ Server Design Note
 #. GeoHash
 
     - redis command: GEOHASH
+
+#. Distributed system desgin - CAP
+
+    - Consistency
+    - Availability
+    - Partition Tolerance
 
 .. rubric:: Footnotes
 

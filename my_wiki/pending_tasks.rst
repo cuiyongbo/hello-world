@@ -37,7 +37,6 @@ Pending tasks
     #. 英语电影摆脱字幕 [**Failed**]
     #. 日语漫画不需要字典可以看懂旁白 [**Failed**]
 
-
 .. rubric:: Footnotes
 
 .. [#a_star_algorithm] http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html

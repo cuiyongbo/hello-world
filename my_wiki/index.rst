@@ -11,8 +11,8 @@ Welcome to My Wiki's documentation!
     :maxdepth: 2
 
     pending_tasks
-    leetcode_notes
     book_reading_progress_note
+    system_design_note
     computer_glossary
     data_structure_note
     algorithm_docs
@@ -28,7 +28,7 @@ Welcome to My Wiki's documentation!
     language_study_notes
     classics
     camera_glossary
-    server_design_note
+    big_data_note
 
 
 Indices and tables
