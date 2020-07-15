@@ -205,9 +205,10 @@ God helps those who help themselves
 | Definition: the position of a student or trainee who works in an organization, sometimes without pay, in order to gain work experience or satisfy requirements for a qualification.
 | Usage: they encouraged students to apply for newspaper internships.
 
+:abbr:`ATM (Automatic Teller Machine)`
+
 #. Accumulative vs. Cumulative
 
    Increasing or increased in quantity, degree, or force by successive additions is called Cumulative,
    whereas, gathering or growing by gradual increase is called Accumulative. Cumulative is the addition
    that comes up with successive contributors, while accumulative is the addition that happens gradually.
-

@@ -247,38 +247,32 @@ Shell Script Tricks 01
 
 #. Space in variable assignment
 
-   ``var=23`` assigns ``23`` to the variable ``var``.
-
-   ``var =23`` tries to run command (or alias, or function) var with argument ``=23``
-
-   ``var = 23`` ditto, but arguments ``=`` and ``23``
-
-   ``var= 23`` sets ``var`` to blank string, then runs command ``23``
-
-   **Note:** In comparison, ``[ (/usr/bin/[)`` is the command and it requires
-   ``var1, != and var2`` to be 3 separate arguments. ``var1!=var2`` is a single argument
+    * ``var=23`` assigns ``23`` to the variable ``var``.
+    * ``var =23`` tries to run command (or alias, or function) var with argument ``=23``
+    * ``var = 23`` ditto, but arguments ``=`` and ``23``
+    * ``var= 23`` sets ``var`` to blank string, then runs command ``23``
 
 #. Extract file path
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      $ readlink -f start.sh | xargs -0 dirname
-      /etc/slider/coke_cola_package
-      $ readlink -f start.sh
-      /etc/slider/coke_cola_package/start.sh
-      $ dirname start.sh
-      .
-      $ dirname /etc/slider/start.sh
-      /etc/slider
+        $ readlink -f start.sh | xargs -0 dirname
+        /etc/slider/coke_cola_package
+        $ readlink -f start.sh
+        /etc/slider/coke_cola_package/start.sh
+        $ dirname start.sh
+        .
+        $ dirname /etc/slider/start.sh
+        /etc/slider
 
 #. Get program uid and gid
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      $ pidof coke_cola_package
-      5094
-      >>> import os
-      >>> proc_stat = os.stat("/proc/5094")
-      >>> proc_stat
-      posix.stat_result(st_mode=16749, st_ino=180056677, st_dev=3L, st_nlink=9, st_uid=1013,
-      st_gid=1015, st_size=0, st_atime=1545814746, st_mtime=1545814746, st_ctime=1545814746)
+        $ pidof coke_cola_package
+        5094
+        >>> import os
+        >>> proc_stat = os.stat("/proc/5094")
+        >>> proc_stat
+        posix.stat_result(st_mode=16749, st_ino=180056677, st_dev=3L, st_nlink=9, st_uid=1013,
+        st_gid=1015, st_size=0, st_atime=1545814746, st_mtime=1545814746, st_ctime=1545814746)

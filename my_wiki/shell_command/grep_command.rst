@@ -379,20 +379,28 @@ grep Manual
 
 #. find file(s) ending with certain patterns
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      $ find xxx-prog -type f | grep -E "*\.(md|py)"
-      xxx-prog/make.py
-      xxx-prog/README.md
-      xxx-prog/src/changelog/changelog.py
+        $ find xxx-prog -type f | grep -E "*\.(md|py)"
+        xxx-prog/make.py
+        xxx-prog/README.md
+        xxx-prog/src/changelog/changelog.py
 
 #. Count the number of lines in a project
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      $ find xxx-prog/ -type f | grep -E "*\.(h|cpp|md|rst|py)" | xargs wc -l
-      ...
-      2898 total
+        $ find xxx-prog/ -type f | grep -E "*\.(h|cpp|md|rst|py)" | xargs wc -l
+        ...
+        2898 total
 
-      $ find xxx-prog/ -name "*.cpp" -exec wc -l \{\} \; | awk '{s+=$1}END{print s}'
-      1272
+        $ find xxx-prog/ -name "*.cpp" -exec wc -l \{\} \; | awk '{s+=$1}END{print s}'
+        1272
+
+#. Extract email address
+
+    .. code-block:: sh
+
+        $  echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' |grep -oP '\b[^<]+(?=>)'              
+        yongbo.shan@mm.com
+        junqing.li@mm.com

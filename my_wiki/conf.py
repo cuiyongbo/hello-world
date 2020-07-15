@@ -89,8 +89,8 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-#html_theme = 'alabaster'
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'alabaster'
+# html_theme = 'sphinx_rtd_theme'
 
 #html_theme = 'pydoctheme'
 #html_theme_path = ['tools']
@@ -103,7 +103,7 @@ html_theme = 'sphinx_rtd_theme'
 # html_theme_options = {}
 html_theme_options = {
     #'logo_only': True,
-    'collapse_navigation': False
+    #'collapse_navigation': False
 }
 
 # Path to find HTML templates.
@@ -113,8 +113,8 @@ templates_path = ['tools/templates']
 html_sidebars = {
     # Defaults taken from http://www.sphinx-doc.org/en/stable/config.html#confval-html_sidebars
     # Removes the quick search block
-    '**': ['localtoc.html', 'relations.html', 'customsourcelink.html'],
-    'index': ['indexsidebar.html'],
+    # '**': ['localtoc.html', 'relations.html', 'customsourcelink.html'],
+    # 'index': ['indexsidebar.html'],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

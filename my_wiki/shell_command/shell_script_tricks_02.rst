@@ -28,3 +28,17 @@ Shell Script Tricks 02
 
    ``source script`` run the script in the current process, and all variable assignments
    are preserved even after the script has finished. (and you don't have to be explicitly `export`).
+
+#. Pass argument(s) to shell function
+
+    * Shell functions have their own command line argument.
+    * Use variable $1, $2..$n to access argument passed to the function.
+    * The syntax is as follows::
+
+        name(){
+          arg1=$1
+          arg2=$2
+          command on $arg1
+        }
+
+    To invoke the the function use the following syntax: ``name foo bar``

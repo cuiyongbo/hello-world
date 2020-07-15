@@ -93,3 +93,11 @@ Git Tricks 04
         059d64e8 add a cpp note: scoped enumeration
         1dca4811 (origin/master, origin/HEAD) added ubuntu notes: install node.js, restart network
         // ...
+
+#. git to set upstream branch for local branch
+
+.. code-block:: sh
+
+    # local_branch default to current branch if omitted
+    # -u, --set-upstream-to
+    git branch --set-upstream-to=origin/<branch> local_branch 
