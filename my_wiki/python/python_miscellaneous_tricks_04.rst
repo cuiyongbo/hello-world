@@ -157,6 +157,26 @@ Python Miscellaneous Tricks 04
         # WARNING: The scripts pip, pip2 and pip2.7 are installed in '/Users/cherry/Library/Python/2.7/bin'
         # which is not on PATH. Consider adding this directory to PATH
 
+#. Python to calulate similarity ration between 2 sentences
+
+    .. code-block:: py
+
+        >>> import difflib
+        >>> s1 = '社交网络'
+        >>> s2 = '人际交往'
+        >>> s3 = '社交活动'
+        >>> def similarity(s1, s2):
+        ...     return difflib.SequenceMatcher(None, s1, s2).ratio()
+        ...
+        >>> similarity(s1, s2)
+        0.25
+        >>> similarity(s1, s3)
+        0.5
+        >>> similarity(s2, s3)
+        0.25
+        >>> similarity(s2, s1)
+        0.25
+
 .. rubric:: Footnotes
 
 .. [#python_class_inherits_object] https://stackoverflow.com/questions/4015417/python-class-inherits-object.

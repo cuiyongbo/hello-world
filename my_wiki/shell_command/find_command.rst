@@ -155,3 +155,5 @@ find Manual
         ./japanese_study.rst
         ./military_terms.rst
         ...
+
+#. inverse match: ``find base/ -type f ! -name '*.jpg' -exec rm \{\} \;``
