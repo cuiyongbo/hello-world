@@ -177,6 +177,16 @@ Python Miscellaneous Tricks 04
         >>> similarity(s2, s1)
         0.25
 
+#. UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 63: invalid continuation byte
+
+    You should ``open()`` file with ``encoding``. And you can check file encoding with
+
+    .. code-block:: sh
+        
+        $ file -i perf.log.2020071618 
+        perf.log.2020071618: text/plain; charset=iso-8859-1
+    
+
 .. rubric:: Footnotes
 
 .. [#python_class_inherits_object] https://stackoverflow.com/questions/4015417/python-class-inherits-object.

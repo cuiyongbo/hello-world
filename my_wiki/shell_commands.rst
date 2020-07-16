@@ -30,6 +30,7 @@ Shell Commands
     shell_command/disk_usage_inspector
     shell_command/file_cp_mv
     shell_command/file_inspectors
+    shell_command/file_encoding_note
     shell_command/file_path_parser
     shell_command/find_command
     shell_command/grep_command
@@ -52,4 +53,3 @@ Shell Commands
     shell_command/uniq_manual
     shell_command/uptime_manual
     shell_command/xargs_manual
-   
