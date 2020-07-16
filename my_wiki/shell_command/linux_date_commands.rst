@@ -143,46 +143,24 @@ Date Commands
         21 22 23 24 25 26 27  18 19 20 21 22 23 24  18 19 20 21 22 23 24
         28 29 30 31           25 26 27 28           25 26 27 28 29 30 31
                                                     
-               April                  May                   June
-        Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
-         1  2  3  4  5  6  7         1  2  3  4  5                  1  2
-         8  9 10 11 12 13 14   6  7  8  9 10 11 12   3  4  5  6  7  8  9
-        15 16 17 18 19 20 21  13 14 15 16 17 18 19  10 11 12 13 14 15 16
-        22 23 24 25 26 27 28  20 21 22 23 24 25 26  17 18 19 20 21 22 23
-        29 30                 27 28 29 30 31        24 25 26 27 28 29 30
-                                                    
-                July                 August              September
-        Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
-         1  2  3  4  5  6  7            1  2  3  4                     1
-         8  9 10 11 12 13 14   5  6  7  8  9 10 11   2  3  4  5  6  7  8
-        15 16 17 18 19 20 21  12 13 14 15 16 17 18   9 10 11 12 13 14 15
-        22 23 24 25 26 27 28  19 20 21 22 23 24 25  16 17 18 19 20 21 22
-        29 30 31              26 27 28 29 30 31     23 24 25 26 27 28 29
-                                                    30
-              October               November              December
-        Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
-            1  2  3  4  5  6               1  2  3                     1
-         7  8  9 10 11 12 13   4  5  6  7  8  9 10   2  3  4  5  6  7  8
-        14 15 16 17 18 19 20  11 12 13 14 15 16 17   9 10 11 12 13 14 15
-        21 22 23 24 25 26 27  18 19 20 21 22 23 24  16 17 18 19 20 21 22
-        28 29 30 31           25 26 27 28 29 30     23 24 25 26 27 28 29
-                                                  30 31                                                                                                         
+        ...
 
-#. Linux to get current unix timestamp
-   
-    Solution: ``date +%s``
-
-#. Linux to convert timestamp to current local time
+#. Linux ``date`` usage
    
     .. code-block:: sh
+   
+        # show current date
+        $ date
+        Sun Jul 15 23:07:11 CST 2018
 
+        # get current unix timestamp
+        $ date +%s
+        1594909752
+
+        # convert timestamp to current local time
         $ date -d @1564716345
         Fri, Aug  2, 2019 11:25:45
 
-
-#. Show current time
-   
-    .. code-block:: sh
-   
-        $ date
-        Sun Jul 15 23:07:11 CST 2018
+        # ditto, but with specified format
+        $ date '+%Y-%m-%d' -d @1564716345
+        2019-08-02
