@@ -53,3 +53,4 @@ Shell Commands
     shell_command/uniq_manual
     shell_command/uptime_manual
     shell_command/xargs_manual
+    shell_command/comm_command_note

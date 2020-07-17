@@ -316,38 +316,35 @@ grep Manual
 
 .. code-block:: sh
 
-   $ grep -o -E ".{100,100}801857" event.json  # output the matched and the 100 characters before it.
+    $ grep -o -E ".{100,100}801857" event.json  # output the matched and the 100 characters before it.
 
-   $ grep -E ^-?33615290, SWID.txt
-   33615290,140
-   -33615290,140
+    $ grep -E ^-?33615290, SWID.txt
+    33615290,140
+    -33615290,140
 
-   $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
-   ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/
+    $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
+    ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/ 
 
-   $ wc -l fig_03_05.c
-         17 fig_03_05.c
+    $ wc -l fig_03_05.c
+          17 fig_03_05.c
 
-   # non-empty line count
-   $ grep -Hcve "^\s*$" fig_03_05.c
-   fig_03_05.c:14
-   14
+    # non-empty line count
+    $ grep -Hcve "^\s*$" fig_03_05.c
+    fig_03_05.c:14
+    14
 
-   $ grep -c "^\s*$" fig_03_05.c
-   3
+    $ find /run/shm/ | grep -E "cokeMap|pepsiMap"
+    /run/shm/cokeMap
+    /run/shm/pepsiMap
 
-   $ find /run/shm/ | grep -E "cokeMap|pepsiMap"
-   /run/shm/cokeMap
-   /run/shm/pepsiMap
+    $ grep -A 5 -B 2 20181111142200_6802_43145_56_458_2 formatted_event.json
+    ....
 
-   $ grep -A 5 -B 2 20181111142200_6802_43145_56_458_2 formatted_event.json
-   ....
+    $ grep -C 2 20181111142200_6802_43145_56_458_2 formatted_event.json
+    ....
 
-   $ grep -C 2 20181111142200_6802_43145_56_458_2 formatted_event.json
-   ....
-
-   $ grep 20181111142200_6802_43145_56_458_2 event.json -o
-   20181111142200_6802_43145_56_458_2
+    $ grep 20181111142200_6802_43145_56_458_2 event.json -o
+    20181111142200_6802_43145_56_458_2
 
    $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
    61391497:20181111142200_6802_43145_56_458_2
@@ -404,3 +401,9 @@ grep Manual
         $  echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' |grep -oP '\b[^<]+(?=>)'              
         yongbo.shan@mm.com
         junqing.li@mm.com
+
+#. Calculate average 
+
+    .. code-block:: sh
+
+        grep -Eo "rPP=\w+" search_ac.log | awk 'BEGIN{FS="="}{sum+=$2}END{print sum/NR}'
