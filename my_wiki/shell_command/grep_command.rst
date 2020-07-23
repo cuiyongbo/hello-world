@@ -346,33 +346,33 @@ grep Manual
     $ grep 20181111142200_6802_43145_56_458_2 event.json -o
     20181111142200_6802_43145_56_458_2
 
-   $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
-   61391497:20181111142200_6802_43145_56_458_2
+    $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
+    61391497:20181111142200_6802_43145_56_458_2
 
-   $ find shell_command/ -name "*.rst" -exec grep -l grep {} \;
-   shell_command//awk_manual.rst
-   shell_command//binary_executable_inspectors.rst
-   ...
+    $ find shell_command/ -name "*.rst" -exec grep -l grep {} \;
+    shell_command//awk_manual.rst
+    shell_command//binary_executable_inspectors.rst
+    ...
 
-   $ find shell_command/ -name "*.rst" -exec grep -L grep {} \;
-   shell_command//addr2line_note.rst
-   shell_command//binary_file_viewer.rst
-   ...
+    $ find shell_command/ -name "*.rst" -exec grep -L grep {} \;
+    shell_command//addr2line_note.rst
+    shell_command//binary_file_viewer.rst
+    ...
 
-   # DON'T decent into subdirectories
-   $ grep -rIH label .
-   ./nan_test.py:plt.xlabel('time (s)')
-   ./nan_test.py:plt.ylabel('voltage (mV)')
+    $ grep -rIH label .
+    ./nan_test.py:plt.xlabel('time (s)')
+    ./nan_test.py:plt.ylabel('voltage (mV)')
 
-   # in ubuntu, you don't need add '-r' option when searching a directory
-   $ grep "uint8" /usr/include/*.h
-   /usr/include/stdint.h:typedef unsigned char     uint8_t;
+    # in ubuntu, you don't need add '-r' option when searching a directory
+    $ grep "uint8" /usr/include/*.h
+    /usr/include/stdint.h:typedef unsigned char     uint8_t;
 
-   $ grep -rHn ' tr ' --include=*.rst
-   shell_command/tr_manual.rst:9:      tr [OPTION]... SET1 [SET2]
-   shell_command/tr_manual.rst:59:   $ echo "wwwwwwwwweeeeeeee" | tr -s "we"
-   shell_command/uniq_manual.rst:55:   $ cat sample | tr " " "\n" | sort | uniq -c | sort -r
+#. search file with specified pattern
 
+    $ grep -rHn ' tr ' --include=*.rst
+    shell_command/tr_manual.rst:9:      tr [OPTION]... SET1 [SET2]
+
+    $ grep -r '^[ \t\v]ADD_STRATEGY' --include=*.h  --include=*.cpp .  | cut -d, -f2 > strategy_list
 
 #. find file(s) ending with certain patterns
 
