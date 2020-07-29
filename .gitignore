@@ -28,3 +28,6 @@ build
 /scaffold
 /Shell-Script-Note.docx
 /Qt note.docx
+.vscode
+/my_wiki/.vscode
+

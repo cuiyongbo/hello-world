@@ -22,3 +22,4 @@ Memory Management Note
 
 .. [#] http://jemalloc.net/
 .. [#] https://github.com/jemalloc/jemalloc.git
+.. [#] `图解内存管理 <https://mp.weixin.qq.com/s/HJB_ATQFNqG82YBCRr97CA>`_
