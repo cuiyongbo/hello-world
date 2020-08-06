@@ -55,3 +55,4 @@ Shell Commands
     shell_command/xargs_manual
     shell_command/comm_command_note
     shell_command/perf_command_note
+    shell_command/graphviz_note

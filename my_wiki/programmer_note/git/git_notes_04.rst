@@ -29,6 +29,8 @@ Git Tricks 04
         5aef46c added an example
         d6c355f (origin/master, origin/HEAD) Added copyright/license header to source files
 
+#. git to cherry-pick file changes from certain commit: ``git checkout commit_hash_to_pick -- file1/to/restore file2/to/restore`` 
+
 #. Git to make patch and apply patch
 
     .. code-block:: sh
@@ -49,21 +51,7 @@ Git Tricks 04
          .../programming_pearls/cpp_keyword_note.rst        |  156 ++++++++++++++++----
          my_wiki/biology_glossary/biology_terms_3.rst       |    1
          .../images/polar_bear_family_1582797794.jpg        |  Bin
-         my_wiki/programmer_note/gcc/cmakelist_note.rst     |   13 ++
-         my_wiki/programmer_note/gdb/gdb_usage_02.rst       |   10 +
-         my_wiki/shell_command/disk_usage_inspector.rst     |    2
-         .../os_problem/macos_problem_note_01.rst           |    8 +
-         .../os_problem/macos_problem_note_02.rst           |    6 -
-         .../os_problem/ubuntu_problem_note_01.rst          |   34 ++--
-         .../os_problem/ubuntu_problem_note_03.rst          |   22 +++
-         my_wiki/computer_glossary/os_problem_notes.rst     |    6 +
-         .../english_note_book/english_notes_22.rst         |   11 +
-         my_wiki/languages/english_study.rst                |    1
-         .../shell_command/binary_executable_inspectors.rst |   46 +++---
-         my_wiki/computer_glossary/os_problem_notes.rst     |    1
-         my_wiki/python/python_miscellaneous_tricks_01.rst  |    0
-         my_wiki/python/python_miscellaneous_tricks_04.rst  |   15 ++
-         my_wiki/python_note.rst                            |    2
+        ...
          18 files changed, 250 insertions(+), 84 deletions(-)
 
         $ git checkout -B patch_demo origin/master
