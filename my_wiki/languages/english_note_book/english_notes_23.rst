@@ -35,3 +35,12 @@ English Note 23
 | Usage: a conduit for conveying water to the power plant.
 | Definition: a person or organization that acts as a channel for the transmission of something.
 | Usage: the office acts as a conduit for ideas to flow throughout the organization.
+|
+| gasp
+| Definition: to draw in the breath sharply, as from shock.
+| Definition: To breathe convulsively or laboriously.
+| Usage: she surfaced and gasped for air.
+| Phrase: one's (or the) last gasp
+| Definition: the point of exhaustion, death, or completion. [弥留之际]
+| Usage: the last gasp of the Cold War. [最后时刻]
+ 

@@ -161,24 +161,24 @@ gzip/gunzip command
 ===================
 
     .. code-block:: sh
-    :caption: Usage
+        :caption: Usage
 
-    $ gzip -h
-    Usage: gzip [OPTION]... [FILE]...
-    Compress or uncompress FILEs (by default, compress FILES in-place).
-    
-    Mandatory arguments to long options are mandatory for short options too.
-    
-        -a, --ascii       ascii text; convert end-of-line using local conventions
-        -c, --stdout      write on standard output, keep original files unchanged
-        -d, --decompress  decompress
-        -f, --force       force overwrite of output file and compress links
-        -h, --help        give this help
-        -k, --keep        keep (don't delete) input files
-        -l, --list        list compressed file contents
-        ...
-    
-    With no FILE, or when FILE is -, read standard input.
+        $ gzip -h
+        Usage: gzip [OPTION]... [FILE]...
+        Compress or uncompress FILEs (by default, compress FILES in-place).
+        
+        Mandatory arguments to long options are mandatory for short options too.
+        
+            -a, --ascii       ascii text; convert end-of-line using local conventions
+            -c, --stdout      write on standard output, keep original files unchanged
+            -d, --decompress  decompress
+            -f, --force       force overwrite of output file and compress links
+            -h, --help        give this help
+            -k, --keep        keep (don't delete) input files
+            -l, --list        list compressed file contents
+            ...
+        
+        With no FILE, or when FILE is -, read standard input.
    
 .. code-block:: sh
     :caption: Examples

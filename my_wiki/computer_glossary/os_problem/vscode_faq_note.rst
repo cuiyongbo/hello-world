@@ -15,5 +15,7 @@ VS Code Note
     - CMake Tools
     - MarkDown Preview Enhanced
     - Visual Studio IntelliCode
+    - GitLens
+    - docs-markdown
 
 #. VSCode Tab 键无法缩进的问题: Press ``Ctrl + M`` (Toggle Tab Key Moves Focus).

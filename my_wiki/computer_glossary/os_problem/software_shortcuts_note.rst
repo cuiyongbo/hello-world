@@ -3,7 +3,7 @@ Software Shotcuts
 *****************
 
 .. contents::
-   :local:
+    :local:
 
 Windows
 =======
@@ -76,7 +76,7 @@ VAssist X
 
 .. note::
 
-   You can customize the shortcuts in settings <"tools" – "options" – "environment" - "keyboard">
+    You can customize the shortcuts in settings <"tools" – "options" – "environment" - "keyboard">
 
 Chrome
 ======
@@ -93,6 +93,9 @@ Chrome
 #. Show History: Ctrl + H
 #. Search with default engine: Ctrl + L
 #. Force Reload contents from server: Ctrl + F5
+#. Chome plugins:
+    - json formatter: https://github.com/callumlocke/json-formatter
+    - adblock: https://www.cnblogs.com/aiyr/p/10500766.html
 
 
 FireFox
@@ -153,13 +156,11 @@ MS Word
 
 #. Select with F8
 
-   - Click twice – Select a word
-   - Click thrice – Select a sentence
-   - Click four times – Select the whole text
+    - Click twice – Select a word
+    - Click thrice – Select a sentence
+    - Click four times – Select the whole text
 
-.. note::
-
-   In mac replace Ctrl with CMD, mostly.
+.. note:: In mac replace Ctrl with CMD, mostly.
 
 
 Mac OS X
