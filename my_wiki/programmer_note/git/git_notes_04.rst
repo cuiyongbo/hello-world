@@ -84,8 +84,8 @@ Git Tricks 04
 
 #. git to set upstream branch for local branch
 
-.. code-block:: sh
+    .. code-block:: sh
 
-    # local_branch default to current branch if omitted
-    # -u, --set-upstream-to
-    git branch --set-upstream-to=origin/<branch> local_branch 
+        # local_branch default to current branch if omitted
+        # -u, --set-upstream-to
+        git branch --set-upstream-to=origin/<branch> local_branch 

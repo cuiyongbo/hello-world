@@ -12,3 +12,4 @@ Git Notes
     git/git_clean_tricks
     git/git_rebase_tricks
     git/git_config_notes
+    git/git_diff_notes
