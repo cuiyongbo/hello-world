@@ -36,6 +36,7 @@ Python note
     python/python_exception_handling_note
     python/python_argparse_module_note
     python/python_imp_module_note
+    python/python_logging_module_note
     python/python_miscellaneous_tricks_01
     python/python_miscellaneous_tricks_02
     python/python_miscellaneous_tricks_03

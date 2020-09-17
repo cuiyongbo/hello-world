@@ -117,8 +117,8 @@ layout by adding or removing nodes.
     space using 65k slots.
 
     At the same time it is unlikely that Redis Cluster would scale to more than
-    1000 mater nodes because of other design tradeoffs. So 16k was in the right
-    range to ensure enough slots per master with a max of 1000 maters, but a small
+    1000 master nodes because of other design tradeoffs. So 16k was in the right
+    range to ensure enough slots per master with a max of 1000 masters, but a small
     enough number to propagate the slot configuration as a raw bitmap easily.
 
 .. rubric:: Footnotes

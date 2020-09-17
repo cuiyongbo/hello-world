@@ -43,4 +43,11 @@ English Note 23
 | Phrase: one's (or the) last gasp
 | Definition: the point of exhaustion, death, or completion. [弥留之际]
 | Usage: the last gasp of the Cold War. [最后时刻]
- 
+|  
+| straddle
+| Definition: place (one's legs) wide apart.
+| Usage: he shifted his legs, straddling them to keep his balance.
+| Definition: extend across or be situated on both sides of.
+| Usage: a mountain range straddling the Franco-Swiss border. [横跨]
+| Definition: take up or maintain an equivocal position with regard to (a political issue).
+| Usage: a man who had straddled the issue of taxes. [骑墙态度]
