@@ -42,6 +42,7 @@ Shell Commands
     shell_command/nohup_command
     shell_command/pidof_manual
     shell_command/ps_command
+    shell_command/pstree_note
     shell_command/top_manual
     shell_command/smem_manual
     shell_command/sort_manual

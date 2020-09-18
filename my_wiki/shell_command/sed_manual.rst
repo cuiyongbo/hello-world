@@ -8,10 +8,6 @@ DESCRIPTION
        some ways similar to an editor which permits scripted edits (such as ed), sed works by making only one pass over the input(s), and is  consequently  more
        efficient.  But it is sed's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.
 
-       -n, --quiet, --silent
-
-              suppress automatic printing of pattern space
-
        -e script, --expression=script
 
               add the script to the commands to be executed
@@ -30,7 +26,7 @@ DESCRIPTION
 
        -l N, --line-length=N
 
-              specify the desired line-wrap length for the `l' command
+              specify the desired line-wrap length for the 'l' command
 
        --posix
 
