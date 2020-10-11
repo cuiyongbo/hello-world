@@ -6,7 +6,6 @@ C++ Class Basics
 
     .. image:: images/cpp_class_access_control.png
 
-
 #. ``delete this`` in cpp
 
     Basically you are not advised to do ``delete this`` operation unless
@@ -28,11 +27,10 @@ C++ Class Basics
 
     .. code-block:: cpp
 
-        class NonAssignable
-        {
+        class NonAssignable {
         public:
             // disallow copying or assignmentf
-            NonAssignable(NonAssignable const&) = delete; //
+            NonAssignable(NonAssignable const&) = delete;
             NonAssignable& operator=(NonAssignable const&) = delete;
             NonAssignable() {}
         };
@@ -106,46 +104,6 @@ C++ Class Basics
            return *this;
         }
 
-#. cpp class example
-
-    .. code-block:: c++
-
-        #include <stdio.h>
-        #include <string.h>
-
-        struct  Integer
-        {
-            Integer(): size(0), data(NULL) { printf("Default constructor\n"); }
-
-            Integer(int n): size(n), data(NULL)
-            {
-                data = new int[size];
-            }
-
-            Integer(const Integer& other)
-            {
-                size = other.size;
-                data = new int[size];
-                memcpy(data, other.data, size*sizeof(int));
-            }
-
-            Integer& operator=(const Integer& other)
-            {
-                if(data != NULL)
-                    delete[] data;
-
-                size = other.size;
-                data = new int[size];
-                memcpy(data, other.data, size*sizeof(int));
-                return *this;
-            }
-
-            ~Integer() { delete[] data; }
-
-            int size;
-            int* data;
-        };
-
 #. cpp enumerator type to overload `|` and `&`
 
     .. code-block:: cpp
@@ -170,36 +128,28 @@ C++ Class Basics
 
 #. friend class
 
-    Friendship is neither inherited nor transitive. For example::
+    Friendship is neither inherited nor transitive. For example
 
-        class A
-        {
+    .. code-block:: cpp
+
+        class A {
             friend class B;
             int a;
-            void f(B* p)
-            {
+            void f(B* p) {
                p->b++; // error: A is not a friend of B, despite B is a friend of A
             }
         };
-
-        class B
-        {
+        class B {
             friend class C;
             int b;
         };
-
-        class C
-        {
-            void f(A* p)
-            {
+        class C {
+            void f(A* p) {
                p->a++; // error: C is not a friend of A, despite being a friend of a friend of A
             }
         };
-
-        class D: public B
-        {
-           void f(A* p)
-           {
+        class D: public B {
+           void f(A* p) {
               p->a++; // error: D is not a friend of A, despite being derived from a friend of A
            }
         };

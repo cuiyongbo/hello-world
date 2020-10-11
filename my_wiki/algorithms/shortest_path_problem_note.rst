@@ -8,9 +8,7 @@ mapping edges to real-valued weights. The weight :math:`w(p)` of path
 :math:`p=\langle {v_0, v_1, \ldots, v_k} \rangle`
 is the sum of the weights of its constituent edges:
 
-.. math::
-
-    w(p) = \sum_{i=1}^k{w(v_{i-1}, v_i)}
+.. math:: w(p) = \sum_{i=1}^k{w(v_{i-1}, v_i)}
 
 We define the shortest-path weight :math:`\delta(u,v)` from u to v by
 

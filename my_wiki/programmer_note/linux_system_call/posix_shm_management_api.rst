@@ -60,7 +60,7 @@ shm_open & shm_unlink
 
     The *mode* argument specifies the file mode bits be applied when a new file is created.
     This argument must be supplied when O_CREAT or O_TMPFILE is specified in flags;
-    if neither O_CREAT nor O_TMPFILE  is  specified, then *mode* is ignored.
+    if neither O_CREAT nor O_TMPFILE is specified, then *mode* is ignored.
 
     On successful completion ``shm_open()`` returns a new file descriptor referring to the
     shared memory object. This file descriptor is guaranteed to be the lowest-numbered file
@@ -76,9 +76,3 @@ shm_open & shm_unlink
     the contents of the associated memory region. After a successful ``shm_unlink()``, attempts
     to `shm_open()` an object with the same name will fail (unless ``O_CREAT`` was specified,
     in which case a new, distinct object is created).
-
-**RETURN VALUE**
-
-    On success, ``shm_open()`` returns a nonnegative file descriptor.
-    On failure, ``shm_open()`` returns -1.  ``shm_unlink()`` returns 0
-    on success, or -1 on error.

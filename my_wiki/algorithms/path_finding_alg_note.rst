@@ -106,7 +106,6 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
                 came_from[next] = current
                 cost_sofar[next] = new_cost
 
-
 .. code-block:: none
     :caption: A* implementation
 
@@ -118,42 +117,19 @@ whereas the diagonal distance might be computed by applying the Pythagorean theo
       for neighbors of current:
         cost = g(current) + movement_cost(current, neighbor)
         if neighbor in OPEN and cost < g(neighbor):
-          remove neighbor from OPEN, because new path is better
+            remove neighbor from OPEN, because new path is better
         if neighbor in CLOSED and cost < g(neighbor): # note
-          remove neighbor from CLOSED
+            remove neighbor from CLOSED
         if neighbor not in OPEN and neighbor not in CLOSED:
-          set g(neighbor) to cost
-          add neighbor to OPEN
-          set priority queue rank to g(neighbor) + h(neighbor)
-          set neighbor's parent to current
+            set g(neighbor) to cost
+            add neighbor to OPEN
+            set priority queue rank to g(neighbor) + h(neighbor)
+            set neighbor's parent to current
 
-    reconstruct reverse path from goal to start
-    by following parent pointers
+    reconstruct reverse path from goal to start by following parent pointers
 
     # note This should never happen if you have an consistent admissible heuristic.
 
-.. code-block:: py
-    :caption: Distance to selected points
-
-    frontier = Queue()
-    cost_sofar = {}
-    seed = {}
-
-    # set the distance to 0 at all start points
-    # each start point is its own seed
-    for s in start:
-        frontier.put(s)
-        cost_sofar[s] = 0
-        seed[s] = s
-
-    # Expand outwards from existing points
-    while not frontier.empty():
-        current = frontier.get()
-        for next in current.neighbors():
-            if next not in cost_sofar:
-                cost_sofar[next] = cost_sofar[current] + 1
-                frontier.put(next)
-                seed[next] = seed[current]
 
 #. Beam Seach
 
