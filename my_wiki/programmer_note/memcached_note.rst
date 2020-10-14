@@ -13,18 +13,17 @@ Installing it does not automatically accelerate or cache any of your data:
 
 The key features of Memcached are as follows −
 
-   - Memcached server is a big hash table.
-   - It significantly reduces the database load
-   - It is perfectly efficient for websites with high database load.
-   - It is a client-server application over TCP or UDP.
+    - Memcached server is a big hash table
+    - It significantly reduces the database load
+    - It is perfectly efficient for websites with high database load
+    - It is a client-server application over TCP or UDP
 
 Memcached is not −
 
-   - a persistent data store
-   - a database
-   - application-specific
-   - a large object cache
-   - fault-tolerant or highly available
+    - a persistent data store
+    - a database
+    - application-specific
+    - fault-tolerant or highly available
 
 .. toctree::
 

@@ -26,7 +26,7 @@ on incoming connections.
             conn_new (conn_listening ONLY, register callback for listening socket, and add it to main_base)
                 event_handler (callback for listening socket)
                     driver_machine (event processor)
-                        dispatch_conn_new (dispatch incoming connections to workers using round robine)
+                        dispatch_conn_new (dispatch incoming connections to workers using round robin)
                             write(thread->notify_send_fd) (notify worker)
 
 #. Worker thread calling hierarchy

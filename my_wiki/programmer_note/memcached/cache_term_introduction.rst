@@ -4,7 +4,7 @@ Cache Terms
 #. Cache penetration
 
     Cache penetration is a scenario where **the data to be searched doesn't exist** at DB
-    and the returned empty result set is not cached as well and hence every search for
+    and the returned **empty result set is not cached** as well and hence every search for
     the key will hit the DB eventually. If a hacker tries to initiate some attack by
     launching lots of searches with such key, the underlying DB layer will be hit too
     often and may eventually be brought down.
@@ -14,8 +14,7 @@ Cache Terms
         - also cache the empty result but set a short expiration time.
 
         - Using Bloom filter. Bloom filter is similar to hbase set which can be used to check
-          whether a key exists in the data set. If the key exists, go to the cache layer or DB layer,
-          if it doesn't exists in the data set, then just return.
+          whether a key exists in the data set. If it doesn't exists in the data set, then just return.
 
     If the searched key has high repeat rate, then can adopt the first solution.
     Otherwise if the searched key has low repeat rate and the searched keys are too many,
@@ -28,28 +27,24 @@ Cache Terms
     increase the load to the DB layer dramatically. Note that it differ from Cache avalanche in
     that the epxired data is not thay many.
 
-    This would happen in high concurrency environment. Normally in this case, there needs to be a lock
-    on the searched key so that other threads need to wait when some thread is trying to search the key
-    and update the cache. After the cache is updated and lock is released, other threads will be able
-    to read the newly cached data::
+    Normally in this case, there needs to be a lock on the searched key so that other threads need to
+    wait when some thread is trying to search the key and update the cache. After the cache is updated 
+    and lock is released, other threads will be able to read the newly cached data::
 
-        if (memcache.get(key) == null)
-        {
+        if (memcache.get(key) == null) {
             // 3 min timeout to avoid mutex holder crash
-            if (memcache.add(key_mutex, 3 * 60 * 1000) == true)
-            {
+            if (memcache.add(key_mutex, 3 * 60 * 1000) == true) {
                 value = db.get(key);
                 memcache.set(key, value);
                 memcache.delete(key_mutex);
-            } else
-            {
+            } else {
                 sleep(50);
                 retry();
             }
         }
 
     Another feasible method is to asynchronously update the cached data through a worker thread
-    so that the hot data will never expire.
+    so that the hot data will never expire. (force cache to update)
 
 #. Cache avalanche
 
@@ -59,12 +54,12 @@ Cache Terms
 
     To mitigate the problem, some methods can be adopted.
 
-        - Using clusters like redis clusters to ensure that some cache server instance is in service at any point of time.
+        - Using clusters like redis clusters to ensure that some cache server instance is in service at any point of time
 
         - Some other approaches like hystrix circuit breaker and rate limit can be configured so that
           the underlying system can still serve traffic and avoid high load
 
-        - Can adjust the expiration time for different keys so that they will not expire at the same time.
+        -  Adjust the expiration time for different keys so that they will not expire at the same time.
 
 #. Cache update strategy
 

@@ -25,14 +25,6 @@ Also, as the demand for your application grows to the point where you need to ha
 it generally also grows in terms of the data that must be regularly accessed.
 A deployment strategy where these two aspects of your system scale together just makes sense.
 
-The illustration only shows two web servers for simplicity, but the property remains
-the same as the number increases. If you had 50 web servers, you'd still have a usable
-cache size of 64MB in the first example, but in the second, you'd have 3.2GB of usable cache.
-
-Of course, you aren't required to use your web server's memory for cache.
-Many memcached users have dedicated machines that are built to only be memcached servers.
-
-
 .. rubric:: Footnotes
 
 .. [#] https://www.memcached.org/about
