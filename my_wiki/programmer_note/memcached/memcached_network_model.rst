@@ -3,6 +3,17 @@ Memcached Network Model
 
 Framework: multithread I/O, event loop based on libevent.
 
+Multithreading in memcached *was* originally simple:
+
+- One listener thread
+- N "event worker" threads
+- Some misc background threads
+
+Each worker thread is assigned connections, and runs its own epoll loop. The
+central hash table, LRU lists, and some statistics counters are covered by
+global locks. Protocol parsing, data transfer happens in threads. Data lookups
+and modifications happen under central locks.
+
 Main thread is responsible for listening incoming connections,
 and dispatching connections to worker threads using round robin.
 and each worker runs a event loop, in which reads, writes are performed

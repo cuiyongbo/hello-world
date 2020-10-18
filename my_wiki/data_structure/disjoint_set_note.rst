@@ -21,7 +21,7 @@ Application: grouping n distinct elements into a collection of disjoint sets.
 
     find path: The nodes visited on this simple path toward the root constitute the find path.
 
-    rank: the upperbound on the height of the node.
+    rank: the upperbound of the height of the node.
 
     - union by rank
 

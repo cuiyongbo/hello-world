@@ -4,7 +4,7 @@ All-pairs Shortest Path Note
 
 .. note::
 
-    Unlike  the single-source algorithms, which assume and adjacency-list representation
+    Unlike the single-source algorithms, which assume an adjacency-list representation
     of the graph, most of the algorithms in this note use an **adjacency-matrix** representation if unspecified.
 
 .. code-block:: none
@@ -138,7 +138,7 @@ where :math:`E^* = \{(i, j): \text{there is a path from vertex i to vertex j in 
                 else
                     t^(0)[i][j] = 0
         for k = 1 to n
-            let T^(n) be a new n x n matrix
+            let T^(k) be a new n x n matrix
             for i = 1 to n
                 for j = 1 to n
                     t^(k)[i][j] = t^(k-1)[i][j] or (t^(k-1)[i][k] and t^(k-1)[k][j])
