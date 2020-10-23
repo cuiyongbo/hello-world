@@ -21,8 +21,11 @@ grep Manual
 
       .. option:: -E, --extended-regexp
 
-         Interpret *PATTERN* as an extended regular expression (ERE, see
-         below). (-E is specified by POSIX.)
+        Interpret *PATTERN* as an extended regular expression 
+
+    .. option:: -P, --perl-regexp
+        
+        Interpret PATTERN as a Perl regular expression.
 
       .. option:: -F, --fixed-strings
 
@@ -407,3 +410,13 @@ grep Manual
     .. code-block:: sh
 
         grep -Eo "rPP=\w+" search_ac.log | awk 'BEGIN{FS="="}{sum+=$2}END{print sum/NR}'
+
+#. Greedy match vs nongreedy match
+
+    .. code-block:: sh
+
+        $ grep -Po '<.*>' <<< '<title>hello world</title>'
+        <title>My webpage title</title>
+        $ grep -Po '<.*?>' <<< '<title>hello world</title>'
+        <title>
+        </title>

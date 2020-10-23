@@ -2,13 +2,14 @@
 Flexible array member
 *********************
 
+.. warning:: This trick may not work in C++ class, since the acutual memory layout is different from its C counterpart.
+
 Flexible array member is a feature introduced in the C99 standard of the C
 programming language. It is a member of a struct, which is an array without
 a given dimension, and **it must be the last member of such a struct**,
 as in the following example::
 
-    struct vectord 
-    {
+    struct vectord {
        size_t len;
        double arr[]; // the flexible array member must be last
     };
@@ -23,8 +24,7 @@ when determining size for dynamic allocation, as in the following example::
 When allocating such structures on the heap, it is generally required to reserve
 some space for the flexible array member,as in the following example::
 
-    struct vectord *allocate_vectord (size_t len) 
-    {
+    struct vectord *allocate_vectord (size_t len) {
        struct vectord *vec = malloc(offsetof(struct vectord, arr[len]);
        vec->len = len;
        for (size_t i = 0; i < len; i++)
@@ -32,8 +32,7 @@ some space for the flexible array member,as in the following example::
        return vec;
     }
     
-    struct Base3
-    {
+    struct Base3 {
         int count;
         char data[1];
     };
@@ -42,8 +41,7 @@ some space for the flexible array member,as in the following example::
     std::cout << offsetof(Base3, data[8]) << '\n'; // 12 in win64 MSVC
 
     // Taken from linux manual
-    struct inotify_event 
-    {
+    struct inotify_event {
        int      wd;       /* Watch descriptor */
        uint32_t mask;     /* Mask describing event */
        uint32_t cookie;   /* Unique cookie associating related
@@ -57,8 +55,7 @@ some space for the flexible array member,as in the following example::
 .. code-block:: c++
    :caption: Taken from Jansson library
 
-    struct hashtable_pair 
-    {
+    struct hashtable_pair {
         struct hashtable_list list;
         struct hashtable_list ordered_list;
         size_t hash;
