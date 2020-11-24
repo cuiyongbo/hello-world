@@ -202,35 +202,6 @@ grep Manual
          Exclude directories matching the pattern *DIR* from
          recursive searches.
 
-   #. Other Options
-
-      .. option:: --line-buffered
-
-         Use line buffering on output. This can cause a performance
-         penalty.
-
-      .. option:: -U, --binary
-
-         Treat the file(s) as binary. By default, under MS-DOS and MS-
-         Windows, :command:`grep` guesses the file type by looking at the
-         contents of the first 32KB read from the file. If :command:`grep`
-         decides the file is a text file, it strips the CR characters from
-         the original file contents (to make regular expressions with ``^``
-         and ``$`` work correctly). Specifying :option:`-U` overrules this
-         guesswork, causing all files to be read and passed to the matching
-         mechanism verbatim; if the file is a text file with CR/LF pairs at
-         the end of each line, this will cause some regular expressions to
-         fail. This option has no effect on platforms other than MS-DOS and
-         MS-Windows.
-
-      .. option:: -z, --null-data
-
-         Treat the input as a set of lines, each terminated by a zero
-         byte (the ASCII NUL character) instead of a newline. Like the
-         :option:`-Z, --null` option, this option can be used with
-         commands like ``sort -z`` to process arbitrary file names.
-
-
 **REGULAR EXPRESSIONS**
 
    A regular expression is a pattern that describes a set of strings.
@@ -372,10 +343,11 @@ grep Manual
 
 #. search file with specified pattern
 
-    $ grep -rHn ' tr ' --include=*.rst
-    shell_command/tr_manual.rst:9:      tr [OPTION]... SET1 [SET2]
-
-    $ grep -r '^[ \t\v]ADD_STRATEGY' --include=*.h  --include=*.cpp .  | cut -d, -f2 > strategy_list
+    .. code-block:: sh
+    
+        $ grep -rHn ' tr ' --include=*.rst
+        shell_command/tr_manual.rst:9:      tr [OPTION]... SET1 [SET2]
+        $ grep -r '^[ \t\v]ADD_STRATEGY' --include=*.h  --include=*.cpp .  | cut -d, -f2 > strategy_list
 
 #. find file(s) ending with certain patterns
 
@@ -397,19 +369,7 @@ grep Manual
         $ find xxx-prog/ -name "*.cpp" -exec wc -l \{\} \; | awk '{s+=$1}END{print s}'
         1272
 
-#. Extract email address
-
-    .. code-block:: sh
-
-        $  echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' |grep -oP '\b[^<]+(?=>)'              
-        yongbo.shan@mm.com
-        junqing.li@mm.com
-
-#. Calculate average 
-
-    .. code-block:: sh
-
-        grep -Eo "rPP=\w+" search_ac.log | awk 'BEGIN{FS="="}{sum+=$2}END{print sum/NR}'
+#. Calculate average: ``grep -Eo " tm=\w+" search_ac.log | awk 'BEGIN{FS="="}{sum+=$2}END{print sum/NR}'``
 
 #. Greedy match vs nongreedy match
 
@@ -420,3 +380,18 @@ grep Manual
         $ grep -Po '<.*?>' <<< '<title>hello world</title>'
         <title>
         </title>
+
+#. `Lookaround <http://www.regular-expressions.info/lookaround.html>`_
+
+    - positive lookhead ``(?=regex)``
+    - negative lookhead ``(?!regex)``
+    - positive lookbehind ``(?<=text)``
+    - negative lookbehind ``(?<!text)``
+
+    .. code-block:: sh
+
+        # not work in some linux release
+        $ echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' |grep -oP '\b[^<]+(?=>)'
+        $ echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' | grep -oP '(?<=<)[^>]+\b'
+        $ echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' |grep -oP '(?<=<).*?(?=>)' 
+        $ echo "this is (test.com)" | grep -Po '(?<=\().*(?=\))'

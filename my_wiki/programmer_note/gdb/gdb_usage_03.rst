@@ -13,7 +13,7 @@ Gdb Usage 03
         The unfollowed process will continue to run.
         By default, the debugger will follow the parent process.
 
-#. value of type '***' requires 49346472 bytes, which is more than max-value-size
+#. value of type 'SomeType' requires 49346472 bytes, which is more than max-value-size
 
     .. code-block:: sh
 
