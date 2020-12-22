@@ -4,22 +4,19 @@ grep Manual
 
 **DESCRIPTION**
 
-   .. code-block:: sh
+    .. code-block:: sh
 
-      grep [OPTIONS] PATTERN [FILE...]
-      grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...]
+        grep [OPTIONS] PATTERN [FILE...]
+        grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...]
 
-   grep searches the named input *FILEs* (or standard input if no files are
-   named, or if a single hyphen-minus (-) is given as file name) for lines
-   containing a match to the given *PATTERN*. By default, grep prints the
-   matching lines.
-
+    grep searches the named input *FILEs* (or standard input if no files are
+    named, or if a single hyphen-minus (-) is given as file name) for lines
+    containing a match to the given *PATTERN*. By default, grep prints the
+    matching lines.
 
 **OPTIONS**
 
-   #. Matcher Selection
-
-      .. option:: -E, --extended-regexp
+    .. option:: -E, --extended-regexp
 
         Interpret *PATTERN* as an extended regular expression 
 
@@ -27,319 +24,281 @@ grep Manual
         
         Interpret PATTERN as a Perl regular expression.
 
-      .. option:: -F, --fixed-strings
+    .. option:: -F, --fixed-strings
 
-         Interpret *PATTERN* as a list of fixed strings (rather than
-         regular expressions), separated by newlines, any of which is to
-         be matched. (-F is specified by POSIX.)
+        Interpret *PATTERN* as a list of fixed strings (rather than
+        regular expressions), separated by newlines, any of which is to
+        be matched. (-F is specified by POSIX.)
 
-      .. option:: -G, --basic-regexp
+    .. option:: -i, --ignore-case
 
-         Interpret *PATTERN* as a basic regular expression (BRE, see
-         below). This is the default.
+        Ignore case distinctions in both the *PATTERN* and the input files.
 
-   #. Matching Control
+    .. option:: -v, --invert-match
 
-      .. option:: -i, --ignore-case
+        Invert the sense of matching, to select non-matching lines.
 
-         Ignore case distinctions in both the *PATTERN* and the input files.
+    .. option:: -x, --line-regexp
 
-      .. option:: -v, --invert-match
+        Select only those matches that exactly match the whole line.
+        This option has the same effect as anchoring the expression with
+        ``^`` and ``$``.
 
-         Invert the sense of matching, to select non-matching lines.
+    .. option:: -c, --count
 
-      .. option:: -x, --line-regexp
+        Suppress normal output; instead print a count of matching lines
+        for each input file. With the ``-v, --invert-match`` option,
+        count non-matching lines.
 
-         Select only those matches that exactly match the whole line.
-         This option has the same effect as anchoring the expression with
-         ``^`` and ``$``.
+    .. option:: --color[=WHEN], --colour[=WHEN]
 
-   #. General Output Control
+        Surround the matched (non-empty) strings, matching lines, context
+        lines, file names, line numbers, byte offsets, and separators
+        (for fields and groups of context lines) with escape sequences to
+        display them in color on the terminal. *WHEN* is ``never``, ``always``,
+        or ``auto``.
 
-      .. option:: -c, --count
+    .. option:: -L, --files-without-match
 
-         Suppress normal output; instead print a count of matching lines
-         for each input file. With the ``-v, --invert-match`` option,
-         count non-matching lines.
+        Suppress normal output; instead print the name of each input
+        file from which no output would normally have been printed. The
+        scanning will stop on the first match.
 
-      .. option:: --color[=WHEN], --colour[=WHEN]
+    .. option:: -l, --files-with-matches
 
-         Surround the matched (non-empty) strings, matching lines, context
-         lines, file names, line numbers, byte offsets, and separators
-         (for fields and groups of context lines) with escape sequences to
-         display them in color on the terminal. *WHEN* is ``never``, ``always``,
-         or ``auto``.
+        Suppress normal output; instead print the name of each input file
+        from which output would normally have been printed. The scanning
+        will stop on the first match. (:option:`-l`  is specified by POSIX.)
 
-      .. option:: -L, --files-without-match
+    .. option:: -m NUM, --max-count=NUM
 
-         Suppress normal output; instead print the name of each input
-         file from which no output would normally have been printed. The
-         scanning will stop on the first match.
+        Stop reading a file after *NUM* matching lines.
 
-      .. option:: -l, --files-with-matches
+    .. option:: -o, --only-matching
 
-         Suppress normal output; instead print the name of each input file
-         from which output would normally have been printed. The scanning
-         will stop on the first match. (:option:`-l`  is specified by POSIX.)
+        Print only the matched (non-empty) parts of a matching line,
+        with each such part on a separate output line.
 
-      .. option:: -m NUM, --max-count=NUM
+    .. option:: -b, --byte-offset
 
-         Stop reading a file after *NUM* matching lines.
+        Print the 0-based byte offset within the input file before each
+        line of output. If :option:`-o, --only-matching` is specified,
+        print the offset of the matching part itself.
 
-      .. option:: -o, --only-matching
+    .. option:: -H, --with-filename
 
-         Print only the matched (non-empty) parts of a matching line,
-         with each such part on a separate output line.
+        Print the file name for each match. This is the default when
+        there is more than one file to search.
 
-      .. option:: -q, --quiet, --silent
+    .. option:: -h, --no-filename
 
-         Quiet; do not write anything to standard output. Exit immediately with
-         zero status if any match is found, even if an error was detected.
+        Suppress the prefixing of file names on output. This is the
+        default when there is only one file (or only standard input) to
+        search.
 
-      .. option:: -s, --no-messages
+    .. option:: -n, --line-number
 
-         Suppress error messages about nonexistent or unreadable files.
+        Prefix each line of output with the 1-based line number within
+        its input file. (:option:`-n` is specified by POSIX.)
 
-   #. Output Line Prefix Control
+    .. option:: -A NUM, --after-context=NUM
+    .. option:: -B NUM, --before-context=NUM
 
-      .. option:: -b, --byte-offset
+        Print *NUM* lines of trailing context before/after matching lines.
 
-         Print the 0-based byte offset within the input file before each
-         line of output. If :option:`-o, --only-matching` is specified,
-         print the offset of the matching part itself.
+    .. option:: -C NUM, -NUM, --context=NUM
 
-      .. option:: -H, --with-filename
+        Print *NUM* lines of output context.
 
-         Print the file name for each match. This is the default when
-         there is more than one file to search.
+    .. option:: -a, --text
 
-      .. option:: -h, --no-filename
+        Process a binary file as if it were text; this is equivalent to
+        the ``--binary-files=text`` option.
 
-         Suppress the prefixing of file names on output. This is the
-         default when there is only one file (or only standard input) to
-         search.
+    .. option:: --binary-files=TYPE
 
-      .. option:: -n, --line-number
+        If the first few bytes of a file indicate that the file contains
+        binary data, assume that the file is of type TYPE. By default,
+        *TYPE* is binary, and :command:`grep` normally outputs either
+        a one-line message saying that a binary file matches, or no message if
+        there is no match. If *TYPE* is ``without-match``, :command:`grep` assumes
+        that a binary file does not match; this is equivalent to the :option:`-I`
+        option.
 
-         Prefix each line of output with the 1-based line number within
-         its input file. (:option:`-n` is specified by POSIX.)
+    .. option:: -I
 
-      .. option:: -Z, --null
+        Process a binary file as if it did not contain matching data;
+        this is equivalent to the `--binary-files=without-match` option.
 
-         Output a zero byte (the ASCII NUL character) instead of the
-         character that normally follows a file name. For example,
-         ``grep -lZ`` outputs a zero byte after each file name instead
-         of the usual newline. This option makes the output unambiguous,
-         even in the presence of file names containing unusual characters
-         like newlines. This option can be used with commands like
-         ``find -print0``, ``perl -0``, ``sort -z``, and ``xargs -0``
-         to process arbitrary file names, even those that contain
-         newline characters.
+    .. option:: -r, --recursive
 
-   #. Context Line Control
+        Read all files under each directory, recursively, following
+        symbolic links only if they are on the command line.
 
-      .. option:: -A NUM, --after-context=NUM
-      .. option:: -B NUM, --before-context=NUM
+    .. option:: -R, --dereference-recursive
 
-         Print *NUM* lines of trailing context before/after matching lines.
+        Read all files under each directory, recursively. Follow all
+        symbolic links, unlike :option:`-r`.
 
-      .. option:: -C NUM, -NUM, --context=NUM
+    .. option:: --exclude=GLOB
 
-         Print *NUM* lines of output context.
+        Skip files whose base name matches *GLOB* (using wildcard
+        matching). A file-name glob can use ``*``, ``?``, and ``[...]``
+        as wildcards, and ``\`` to quote a wildcard or backslash
+        character literally.
 
-   #. File and Directory Selection
+    .. option:: --include=GLOB
 
-      .. option:: -a, --text
+        Search only files whose base name matches *GLOB* (using wildcard
+        matching as described under :option:`--exclude`).
 
-         Process a binary file as if it were text; this is equivalent to
-         the ``--binary-files=text`` option.
+    .. option:: --exclude-from=FILE
 
-      .. option:: --binary-files=TYPE
+        Skip files whose base name matches any of the file-name globs
+        read from *FILE* (using wildcard matching as described under
+        :option:`--exclude`).
 
-         If the first few bytes of a file indicate that the file contains
-         binary data, assume that the file is of type TYPE. By default,
-         *TYPE* is binary, and :command:`grep` normally outputs either
-         a one-line message saying that a binary file matches, or no message if
-         there is no match. If *TYPE* is ``without-match``, :command:`grep` assumes
-         that a binary file does not match; this is equivalent to the :option:`-I`
-         option.
+    .. option:: --exclude-dir=DIR
 
-      .. option:: -I
-
-         Process a binary file as if it did not contain matching data;
-         this is equivalent to the `--binary-files=without-match` option.
-
-      .. option:: -r, --recursive
-
-         Read all files under each directory, recursively, following
-         symbolic links only if they are on the command line.
-
-      .. option:: -R, --dereference-recursive
-
-         Read all files under each directory, recursively. Follow all
-         symbolic links, unlike :option:`-r`.
-
-      .. option:: --exclude=GLOB
-
-         Skip files whose base name matches *GLOB* (using wildcard
-         matching). A file-name glob can use ``*``, ``?``, and ``[...]``
-         as wildcards, and ``\`` to quote a wildcard or backslash
-         character literally.
-
-      .. option:: --include=GLOB
-
-         Search only files whose base name matches *GLOB* (using wildcard
-         matching as described under :option:`--exclude`).
-
-      .. option:: --exclude-from=FILE
-
-         Skip files whose base name matches any of the file-name globs
-         read from *FILE* (using wildcard matching as described under
-         :option:`--exclude`).
-
-      .. option:: --exclude-dir=DIR
-
-         Exclude directories matching the pattern *DIR* from
-         recursive searches.
+        Exclude directories matching the pattern *DIR* from
+        recursive searches.
 
 **REGULAR EXPRESSIONS**
 
-   A regular expression is a pattern that describes a set of strings.
-   Regular expressions are constructed analogously to arithmetic expressions,
-   by using various operators to combine smaller expressions.
+    A regular expression is a pattern that describes a set of strings.
+    Regular expressions are constructed analogously to arithmetic expressions,
+    by using various operators to combine smaller expressions.
 
-   grep understands three different versions of regular expression syntax:
-   “basic” (BRE), “extended” (ERE) and “perl” (PRCE). In GNU grep, there
-   is no difference in available functionality between basic and extended
-   syntaxes. In other implementations, basic regular expressions are less
-   powerful. The following description applies to extended regular
-   expressions; differences for basic regular expressions are summarized
-   afterwards.
+    grep understands three different versions of regular expression syntax:
+    “basic” (BRE), “extended” (ERE) and “perl” (PRCE). In GNU grep, there
+    is no difference in available functionality between basic and extended
+    syntaxes. In other implementations, basic regular expressions are less
+    powerful. The following description applies to extended regular
+    expressions; differences for basic regular expressions are summarized
+    afterwards.
 
-   The fundamental building blocks are the regular expressions that match
-   a single character. Most characters, including all letters and digits,
-   are regular expressions that match themselves. Any meta-character with
-   special meaning may be quoted by preceding it with a backslash.
+    The fundamental building blocks are the regular expressions that match
+    a single character. Most characters, including all letters and digits,
+    are regular expressions that match themselves. Any meta-character with
+    special meaning may be quoted by preceding it with a backslash.
 
-   The period ``.`` matches any single character.
+    The period ``.`` matches any single character.
 
-   #. Character Classes and Bracket Expressions
+    #. Character Classes and Bracket Expressions
 
-      A bracket expression is a list of characters enclosed by ``[`` and ``]``.
-      It matches any single character in that list; if the first character of
-      the list is the caret ``^`` then it matches any character not in the list.
-      For example, the regular expression ``[0123456789]`` matches any single
-      digit.
+        A bracket expression is a list of characters enclosed by ``[`` and ``]``.
+        It matches any single character in that list; if the first character of
+        the list is the caret ``^`` then it matches any character not in the list.
+        For example, the regular expression ``[0123456789]`` matches any single
+        digit.
 
-      Within a bracket expression, a range expression consists of two characters
-      separated by a hyphen (``-``).  For example, in the default C locale, ``[a-d]``
-      is equivalent to ``[abcd]``.
+        Within a bracket expression, a range expression consists of two characters
+        separated by a hyphen (``-``).  For example, in the default C locale, ``[a-d]``
+        is equivalent to ``[abcd]``.
 
-      Finally, certain named classes of characters are predefined within bracket
-      expressions, as follows. Their names are self explanatory, and
-      they are [:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:],
-      [:lower:], [:print:], [:punct:], [:space:], [:upper:], and [:xdigit:].
-      For example, [[:alnum:]] means ``[0-9A-Za-z]``. (Note that the brackets in
-      these class names are part of the symbolic names, and must be included
-      in addition to the brackets delimiting the bracket expression.)
+        Finally, certain named classes of characters are predefined within bracket
+        expressions, as follows. Their names are self explanatory, and
+        they are [:alnum:], [:alpha:], [:cntrl:], [:digit:], [:graph:],
+        [:lower:], [:print:], [:punct:], [:space:], [:upper:], and [:xdigit:].
+        For example, [[:alnum:]] means ``[0-9A-Za-z]``. (Note that the brackets in
+        these class names are part of the symbolic names, and must be included
+        in addition to the brackets delimiting the bracket expression.)
 
-      .. note::
+        .. note::
 
-         Most meta-characters lose their special meaning inside bracket expressions.
-         To include a literal ``]`` place it first in the list. Similarly, to include
-         a literal ``^`` place it anywhere but first. Finally, to include a
-         literal ``-`` place it last.
+            Most meta-characters lose their special meaning inside bracket expressions.
+            To include a literal ``]`` place it first in the list. Similarly, to include
+            a literal ``^`` place it anywhere but first. Finally, to include a literal ``-`` place it last.
 
-   #. Anchoring
+    #. Anchoring
 
-      The caret ``^`` and the dollar sign ``$`` are meta-characters that
-      respectively match the empty string at the beginning and end of a line.
+        The caret ``^`` and the dollar sign ``$`` are meta-characters that
+        respectively match the empty string at the beginning and end of a line.
 
-   #. The Backslash Character and Special Expressions
+    #. The Backslash Character and Special Expressions
 
-      The symbols ``\<`` and ``\>`` respectively match the empty string at the
-      beginning and end of a word. The symbol ``\b`` matches the empty string at
-      the edge of a word, and ``\B`` matches the empty string provided it's not
-      at the edge of a word. The symbol ``\w`` is a synonym for ``[_[:alnum:]]``
-      and ``\W`` is a synonym for ``[^_[:alnum:]]``. for more information refer
-      to **re_format(7)** [macOS], or **regex(7)** [ubntu].
+        The symbols ``\<`` and ``\>`` respectively match the empty string at the
+        beginning and end of a word. The symbol ``\b`` matches the empty string at
+        the edge of a word, and ``\B`` matches the empty string provided it's not
+        at the edge of a word. The symbol ``\w`` is a synonym for ``[_[:alnum:]]``
+        and ``\W`` is a synonym for ``[^_[:alnum:]]``. for more information refer
+        to **re_format(7)** [macOS], or **regex(7)** [ubntu].
 
-   #. Repetition
+    #. Repetition
 
-      A regular expression may be followed by one of several repetition
-      operators::
+        A regular expression may be followed by one of several repetition
+        operators::
 
-         ?      The preceding item is optional and matched at most once.
-         *      The preceding item will be matched zero or more times.
-         +      The preceding item will be matched one or more times.
-         {n}    The preceding item is matched exactly n times.
-         {n,}   The preceding item is matched n or more times.
-         {,m}   The preceding item is matched at most m times. This is a GNU
-                extension.
-         {n,m}  The preceding item is matched at least n times, but not more
-                than m times.
+            ?      The preceding item is optional and matched at most once.
+            *      The preceding item will be matched zero or more times.
+            +      The preceding item will be matched one or more times.
+            {n}    The preceding item is matched exactly n times.
+            {n,}   The preceding item is matched n or more times.
+            {,m}   The preceding item is matched at most m times.
+            {n,m}  The preceding item is matched at least n times, but not more than m times.
 
-   #. Alternation
+    #. Alternation
 
-      Two regular expressions may be joined by the infix operator (|); the
-      resulting regular expression matches any string matching either
-      alternate expression.
-
+        Two regular expressions may be joined by the infix operator (|); the
+        resulting regular expression matches any string matching either
+        alternate expression.
 
 **EXAMPLE**
 
-.. code-block:: sh
+#. scaffold 
 
-    $ grep -o -E ".{100,100}801857" event.json  # output the matched and the 100 characters before it.
+    .. code-block:: sh
 
-    $ grep -E ^-?33615290, SWID.txt
-    33615290,140
-    -33615290,140
+        $ grep -o -E ".{100,100}801857" event.json  # output the matched and the 100 characters before it.
 
-    $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
-    ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/ 
+        $ grep -E ^-?33615290, SWID.txt
+        33615290,140
+        -33615290,140
 
-    $ wc -l fig_03_05.c
-          17 fig_03_05.c
+        $ find . -name "*.c" -exec grep -Hn exponential \{\} \;
+        ./fig_16_11.c:11:    /*Try to connect with exponential backoff*/ 
 
-    # non-empty line count
-    $ grep -Hcve "^\s*$" fig_03_05.c
-    fig_03_05.c:14
-    14
+        $ wc -l fig_03_05.c
+            17 fig_03_05.c
 
-    $ find /run/shm/ | grep -E "cokeMap|pepsiMap"
-    /run/shm/cokeMap
-    /run/shm/pepsiMap
+        # non-empty line count
+        $ grep -Hcve "^\s*$" fig_03_05.c
+        fig_03_05.c:14
+        14
 
-    $ grep -A 5 -B 2 20181111142200_6802_43145_56_458_2 formatted_event.json
-    ....
+        $ find /run/shm/ | grep -E "cokeMap|pepsiMap"
+        /run/shm/cokeMap
+        /run/shm/pepsiMap
 
-    $ grep -C 2 20181111142200_6802_43145_56_458_2 formatted_event.json
-    ....
+        $ grep -A 5 -B 2 20181111142200_6802_43145_56_458_2 formatted_event.json
+        ....
 
-    $ grep 20181111142200_6802_43145_56_458_2 event.json -o
-    20181111142200_6802_43145_56_458_2
+        $ grep -C 2 20181111142200_6802_43145_56_458_2 formatted_event.json
+        ....
 
-    $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
-    61391497:20181111142200_6802_43145_56_458_2
+        $ grep 20181111142200_6802_43145_56_458_2 event.json -o
+        20181111142200_6802_43145_56_458_2
 
-    $ find shell_command/ -name "*.rst" -exec grep -l grep {} \;
-    shell_command//awk_manual.rst
-    shell_command//binary_executable_inspectors.rst
-    ...
+        $ grep 20181111142200_6802_43145_56_458_2 event.json -ob
+        61391497:20181111142200_6802_43145_56_458_2
 
-    $ find shell_command/ -name "*.rst" -exec grep -L grep {} \;
-    shell_command//addr2line_note.rst
-    shell_command//binary_file_viewer.rst
-    ...
+        $ find shell_command/ -name "*.rst" -exec grep -l grep {} \;
+        shell_command//awk_manual.rst
+        shell_command//binary_executable_inspectors.rst
+        ...
 
-    $ grep -rIH label .
-    ./nan_test.py:plt.xlabel('time (s)')
-    ./nan_test.py:plt.ylabel('voltage (mV)')
+        $ find shell_command/ -name "*.rst" -exec grep -L grep {} \;
+        shell_command//addr2line_note.rst
+        shell_command//binary_file_viewer.rst
+        ...
 
-    # in ubuntu, you don't need add '-r' option when searching a directory
-    $ grep "uint8" /usr/include/*.h
-    /usr/include/stdint.h:typedef unsigned char     uint8_t;
+        $ grep -rIH label .
+        ./nan_test.py:plt.xlabel('time (s)')
+        ./nan_test.py:plt.ylabel('voltage (mV)')
+
+        # in ubuntu, you don't need add '-r' option when searching a directory
+        $ grep "uint8" /usr/include/*.h
+        /usr/include/stdint.h:typedef unsigned char     uint8_t;
 
 #. search file with specified pattern
 
@@ -395,3 +354,12 @@ grep Manual
         $ echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' | grep -oP '(?<=<)[^>]+\b'
         $ echo 'yongbo <yongbo.shan@mm.com>, junqing <junqing.li@mm.com>' |grep -oP '(?<=<).*?(?=>)' 
         $ echo "this is (test.com)" | grep -Po '(?<=\().*(?=\))'
+
+#. Match the last field
+
+    .. code-block:: sh
+
+        $ echo -e 'www.baidu.com\nbing.cn\nmap.google.com.cn' | grep -o '[^.]*$'
+        com
+        cn
+        cn
