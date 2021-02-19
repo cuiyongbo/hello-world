@@ -32,7 +32,7 @@ Gdb Tricks 01
       (gdb) show args
       Argument list to give program being debugged when it is started is "berlin.osm.pbf".
 
-#. Launch gdb without front materials
+#. Launch gdb without verbose materials
 
    Soulution: ``gdb --silent``.
 
@@ -267,12 +267,6 @@ Gdb Tricks 01
       $3 = 0
       (gdb)
       $4 = 1
-      (gdb)
-      $5 = 2
-      (gdb)
-      $6 = 3
-      (gdb)
-      $7 = 4
 
 #. list command
 

@@ -56,3 +56,12 @@ Gdb Usage 03
         Type "apropos word" to search for commands related to "word".
         Command name abbreviations are allowed if unambiguous.
         (gdb) help thread apply all bt # output thread stack and heap information 
+
+#. set temporary variables
+
+    .. code-block:: sh
+
+        # temps start with '$'
+        $ set $i = 9
+
+        
