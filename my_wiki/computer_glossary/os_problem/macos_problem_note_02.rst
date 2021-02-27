@@ -94,8 +94,35 @@ MacOS problem note 02
     - Sublime Text 3
     - gdb, gcc
     - Moviest
-    - Parallel Desktop
+    - Parallel Desktop / VirtualBox
     - Python3
     - Thunder
     - Visual studio code
     - iStatistica
+
+#. VirtualBox to configure UbuntuServer VM
+
+    * Install VM: remember to install `openSSH` while installing
+
+    * change software sources to domestic ones
+
+        Choose `aliyun unbuntu sources`_ according to installed OS version. 
+        backup `/etc/apt/sources.list` and replace its contents, then run `sudo apt update`.
+
+    * configure network if you can ping VM from host
+
+        Go to VM's Settings, Network, Adapater 1, change "Attach to" from "NAT" to "Bridged Adapter".
+        If you can't ping host from VM, perhaps you should check firewall settings. 
+        for me I just turn off the firewall of macbook.
+
+    * configure shared folder settings.
+
+        Go to VM's Settings, Shared Folders, add host folder you wish to share.
+        Then in VM you need to install vb guest option packages by running: `sudo apt install virtualbox-guest-utils`.
+        After installation you will find the shared folder prefixed with `sf_` in `/media`, still you can't access it,
+        so the last step is to add yourself to `vboxsf` group by runnig `sudo adduser your_account vboxsf`.
+        Finally enjoy yourself with VB.
+
+.. rubric:: Footnotes
+
+.. [#] `aliyun unbuntu sources <https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.3e221b114p7WHD>`_
