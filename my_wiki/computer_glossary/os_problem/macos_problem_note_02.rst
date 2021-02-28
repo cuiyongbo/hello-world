@@ -99,6 +99,7 @@ MacOS problem note 02
     - Thunder
     - Visual studio code
     - iStatistica
+    - Typora [markdown编辑器]
 
 #. VirtualBox to configure UbuntuServer VM
 
@@ -126,3 +127,7 @@ MacOS problem note 02
 .. rubric:: Footnotes
 
 .. [#] `aliyun unbuntu sources <https://developer.aliyun.com/mirror/ubuntu?spm=a2c6h.13651102.0.0.3e221b114p7WHD>`_
+
+#. Mac to use OPTION key as ALT key
+
+    In termianl's Setting, Descriptor Files, Keyboard, check "Use Option key as Meta key". 

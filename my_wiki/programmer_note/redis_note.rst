@@ -5,7 +5,6 @@ Redis note
 the dataset is not volatile, The data model is key-value, but many different kind of
 values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.
 
-
 .. toctree::
 
     redis/redis_string_note
@@ -24,3 +23,4 @@ values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperL
 .. rubric:: Footnotes
 
 .. [#] `Redis Client <https://redis.io/clients>`_
+.. [#] `The Little Redis Book <https://www.openmymind.net/2012/1/23/The-Little-Redis-Book/>`_
