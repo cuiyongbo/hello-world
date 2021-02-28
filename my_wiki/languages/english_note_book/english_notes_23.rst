@@ -51,3 +51,7 @@ English Note 23
 | Usage: a mountain range straddling the Franco-Swiss border. [横跨]
 | Definition: take up or maintain an equivocal position with regard to (a political issue).
 | Usage: a man who had straddled the issue of taxes. [骑墙态度]
+
+unpragmatic
+Definition: not sensible or realistic.
+Usage: the current policy is unsustainable and unpragmatic.

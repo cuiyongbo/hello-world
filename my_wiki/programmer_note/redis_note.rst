@@ -20,3 +20,7 @@ values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperL
     redis/redis_persistence_note
     redis/redis_memory_management
     redis/redis_faq
+
+.. rubric:: Footnotes
+
+.. [#] `Redis Client <https://redis.io/clients>`_
