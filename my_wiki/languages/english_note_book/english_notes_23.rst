@@ -63,3 +63,11 @@ English Note 23
 | facilitate
 | Definition: make (an action or process) easy or easier.
 | Usage: schools were located on the same campus to facilitate the sharing of resources.
+| 
+| goof
+| Definition: a mistake.
+| Usage: he made one of the most embarrassing goofs of his tenure.
+| Definition: spend time idly or foolishly; fool around
+| Usage: I was goofing around and broke my arm.
+| Definition: he was goofing off from his math homework.
+| Usage: (goof off) evade a duty; idle or shirk

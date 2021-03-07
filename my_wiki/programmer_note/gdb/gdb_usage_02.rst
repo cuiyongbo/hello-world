@@ -46,8 +46,11 @@ Gdb Tricks 02
             cherry@MacBook-Pro scaffold$ ll /cores/
             total 8712904
             -r--------  1 cherry  admin   718M Sep 11 22:33 core.1038
-            -r--------  1 cherry  admin   701M Jul 15 21:37 core.3379
-            -r--------  1 cherry  admin   701M Jul 15 21:40 core.3424
+
+        how to control core pattern, refer to `/proc/sys/kernel/core_pattern`.
+        In most linux releases, the content of core_pattern file is simply `core`,
+        which means that OS will generate a core file with name 'core' in current directory
+        when coredump is triggered.
 
 #. Gdb to debug a running process
 
