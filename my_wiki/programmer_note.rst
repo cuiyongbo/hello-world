@@ -24,6 +24,7 @@ no longer anything to take away.
     programmer_note/memcached_note
     programmer_note/redis_note
     programmer_note/grpc_note
+    programmer_note/docker_note
 
 .. rubric:: Footnotes
 

@@ -89,3 +89,5 @@ Git Tricks 04
         # local_branch default to current branch if omitted
         # -u, --set-upstream-to
         git branch --set-upstream-to=origin/<branch> local_branch 
+
+#. git to search the history of deleted files: `git log -- path/to/file` [regex pattern is also supported]
