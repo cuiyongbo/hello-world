@@ -56,9 +56,14 @@ English Note 15
 | maroon
 | Definition: a dark brownish-red colour. [褐红色]
 | Definition: a firework that makes a loud bang, used mainly as a signal or warning. [信号弹]
-| Definition: to leave sb in a place that they cannot escape from, for example an island.
+| Definition: to leave sb in a place that they cannot escape from, for example an island. [放逐，遗弃]
 | Usage: *Lord of the Flies* is a novel about English schoolboys marooned on a desert island.
 |
+| firecracker
+| Definition: a loud, explosive firework, typically wrapped in paper and lit with a fuse.
+| Usage: an outstanding, exciting, or attractive person or thing.
+| Usage: the book was hardly a literary firecracker.
+| 
 | bleak
 | Definition: (of an area of land) lacking vegetation and exposed to the elements.
 | Usage: a bleak and barren moor.

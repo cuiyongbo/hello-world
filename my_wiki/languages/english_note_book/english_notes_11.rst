@@ -6,6 +6,10 @@ Electricity travels a foot in a nanosecond.
 
 Only paranoid can surrive.
 
+| paranoia [妄想症]
+| Definition: suspicion and mistrust of people or their actions without evidence or justification.
+| Usage: the global paranoia about hackers and viruses.
+| 
 | a bitter pill (to swallow)
 | Definition: an unpleasant or painful necessity (to accept).
 |

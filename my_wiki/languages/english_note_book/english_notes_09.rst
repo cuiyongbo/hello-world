@@ -310,6 +310,14 @@ English Note 9
 | Definition: (of people or things) no longer useful or desirable.
 | Usage: an injury that has kept him on the shelf.
 |
+| pipelining
+| Definition: a form of computer organization in which successive steps of an instruction sequence are executed 
+| in turn by a sequence of modules able to operate **concurrently**, so that another instruction can be begun 
+| **before** the previous one is finished.
+| in the pipeline
+| Definition: awaiting completion or processing; being developed.
+| Usage: new treatments are in the pipeline.
+| 
 | provenance
 | Definition: the place of origin or earliest known history of something.
 | Usage: an orange rug of Iranian provenance

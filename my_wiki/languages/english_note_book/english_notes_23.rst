@@ -71,3 +71,20 @@ English Note 23
 | Usage: I was goofing around and broke my arm.
 | Definition: he was goofing off from his math homework.
 | Usage: (goof off) evade a duty; idle or shirk
+| 
+| partway
+| Definition: part of the way.
+| Usage: partway along the corridor he stopped.
+| 
+| nuanced
+| Definition: characterized by subtle shades of meaning or expression.
+| Usage: the nuanced tone of the performances.
+| 
+| mouthful
+| Definition: he took a mouthful of beer.
+| Definition: a long or complicated word or phrase that is difficult to say.
+| Usage: “Galinsoga” was too much of a mouthful for most nonbotanists.
+| 
+| unsolicited
+| Definition: not asked for; given or done voluntarily.
+| Usage: unsolicited junk mail.
