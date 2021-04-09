@@ -91,3 +91,5 @@ Git Tricks 04
         git branch --set-upstream-to=origin/<branch> local_branch 
 
 #. git to search the history of deleted files: `git log -- path/to/file` [regex pattern is also supported]
+
+#. got Empty reply from server when pushing to github: `git config --global --unset http.proxy`
