@@ -93,3 +93,12 @@ Git Tricks 04
 #. git to search the history of deleted files: `git log -- path/to/file` [regex pattern is also supported]
 
 #. got Empty reply from server when pushing to github: `git config --global --unset http.proxy`
+
+#. git to recover detached branch's commits from accident checkout
+
+    $ git reflog
+    3800ac5 (HEAD) HEAD@{0}: commit (amend): video-v-3442: migrate funnel at
+    bbb68aa HEAD@{1}: commit (amend): video-v-3442: migrate funnel at
+    ...
+    $ git checkout -B carcass 3800ac5
+    # do everything free
