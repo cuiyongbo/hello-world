@@ -32,16 +32,16 @@ Docker Basics 01
 
         Run 'docker COMMAND --help' for more information on a command.
 
-    $ docker help run
+        $ docker help run
 
-    Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+        Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-    Run a command in a new container
+        Run a command in a new container
 
-    Options:
-        --add-host list                  Add a custom host-to-IP mapping (host:ip)
-        -a, --attach list                    Attach to STDIN, STDOUT or STDERR
-        ...
+        Options:
+            --add-host list                  Add a custom host-to-IP mapping (host:ip)
+            -a, --attach list                    Attach to STDIN, STDOUT or STDERR
+            ...
 
 #. list docker container information
 

@@ -15,6 +15,25 @@ Redis persistence options:
 
     - You can disable persistence completely if you wish.
 
+    .. code-block:: none
+        :caption: configure options
+
+        # snapshotting persistence option
+        save 60 1000
+        stop-writes-on-bgsave-error no
+        rdbcompression yes
+        dbfilename dump.rdb
+
+        # aof persistence option
+        appendonly no
+        appendfsync everysec
+        no-appendfsync-on-rewrite no
+        auto-aof-rewrite-percentage 100
+        auto-aof-rewrite-min-size 64mb
+
+        # shard option: where to store the snapshot or aof file
+        dir ./
+
 #. Snapshotting
 
     By default Redis saves snapshots of the dataset on disk, in a binary file called ``dump.rdb``.
