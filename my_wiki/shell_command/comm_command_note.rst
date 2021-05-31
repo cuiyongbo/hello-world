@@ -5,7 +5,7 @@ SYNOPSIS: ``comm [OPTION]... FILE1 FILE2``
 
 **DESCRIPTION**
 
-    Compare sorted files FILE1 and FILE2 line by line.
+    Compare sorted files FILE1 and FILE2 line by line. [**in lexicographical order**]
 
     With no options, produce three-column output.  Column one contains lines unique 
     to FILE1, column two contains lines unique to FILE2, and column three contains 
@@ -20,5 +20,5 @@ SYNOPSIS: ``comm [OPTION]... FILE1 FILE2``
     # Print only lines present in both file1 and file2.
     comm -12 file1 file2
 
-    # Print lines in file1 not in file2, and vice versa.
-    # comm -3 file1 file2  
+    # Print lines in file1 not in file2
+    # comm -13 file1 file2  

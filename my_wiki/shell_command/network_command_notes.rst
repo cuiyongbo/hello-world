@@ -123,6 +123,13 @@ Network Commands
         tcp4       0      0  172.17.56.124.56377    17.188.165.202.5223    ESTABLISHED
         tcp4       0      0  172.17.56.124.56372    17.57.145.72.5223      ESTABLISHED
 
+        # display summary statistics of host
+        $ netstat -s
+        ...
+        # 半连接队列的溢出情况
+        11979857 times the listen queue of a socket overflowed
+        11979857 SYNs to LISTEN sockets ignored
+
 #. ifconfig note
 
     .. code-block:: sh
@@ -166,3 +173,4 @@ Network Commands
             ...
 
 #. iftop - display bandwidth usage on an interface by host
+

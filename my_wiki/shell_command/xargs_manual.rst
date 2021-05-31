@@ -124,3 +124,8 @@ xargs Manual
 
       # Delete all the excutables except scripts in current directory.
       file * | grep executable | grep -v script | xargs rm -f
+
+      # append to many files
+      # use sed 's/ /\n/' to split former pipe output with newline
+      # use sh -c 'cmd args' to prevent shell from expanding '>> %'
+      find . -name 'conf_template.value' | grep video | sed 's/ /\n/' | xargs -I'%' sh -c 'echo nice >> %'
