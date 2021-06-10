@@ -141,3 +141,5 @@ Git log
         64ce04de:added loon pic
         2ddcc7cc:added a tree pic
         96074ea8:added cross-grained
+
+#. list git tags by creation date: ``git log --tags --oneline``

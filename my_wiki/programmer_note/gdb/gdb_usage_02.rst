@@ -243,6 +243,14 @@ Gdb Tricks 02
         register_libstdcxx_printers (None)
         end
 
+#. gdb to take a look at pid of attached process
+
+    .. code-block:: sh
+
+        # execute c api
+        (gdb) p (long)getpid()
+        $1 = 11362
+
 .. rubric:: Footnotes
 
 .. [#] `GDB STL Support Tools <http://sourceware.org/gdb/wiki/STLSupport>`_
