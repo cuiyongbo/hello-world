@@ -13,3 +13,4 @@ Git Notes
     git/git_rebase_tricks
     git/git_config_notes
     git/git_diff_notes
+    git/svn_note_01

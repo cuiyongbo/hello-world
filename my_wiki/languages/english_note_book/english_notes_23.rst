@@ -88,3 +88,17 @@ English Note 23
 | unsolicited
 | Definition: not asked for; given or done voluntarily.
 | Usage: unsolicited junk mail.
+| 
+| flux
+| Definition: the action or process of flowing or flowing out
+| Usage: the flux of men and women moving back and forth.
+| Phrase: in flux
+| Definition: continuous change
+| Usage: since the fall of the wall Berlin has been a city in flux.
+| 
+| diametrically
+| Definition: (with reference to opposition) completely; directly.
+| Usage: two diametrically opposed viewpoints.
+| Phrase: to be diametrically opposed to [与**截然相反]
+| Usage: Your needs and those of a partner are diametrically opposed.
+| 

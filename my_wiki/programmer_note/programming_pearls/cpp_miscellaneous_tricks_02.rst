@@ -79,3 +79,29 @@ C/C++ Miscellaneous Tricks 02
     virtual function is checked in the scope of **the static type of the object expression** used to
     name the function. At run time, the actual function to be called could be defined in the derived class
     with a completely different access specifier. This is because 'access specifiers' are a compile time phenomonon.
+
+#. GCC branch predicate macro
+
+    One of the most frequently used optimization techniques in the linux kernel is ``__builtin_expect``.
+    when working with condition code(if-esle statements), we often know which branch is true or not. If
+    compiler knows this information in advance, it can generate most optimized code.
+
+    .. code-block:: c
+
+        #define likely(x)      __builtin_expect(!!(x), 1)
+        #define unlikely(x)    __builtin_expect(!!(x), 0)  
+
+    .. warning::
+
+        But don’t use “likely()” and “unlikely()” macros blindly. If prediction is correct, 
+        it means there is 0 cycle of jump instruction, but if prediction is wrong, then it 
+        will take several cycles, because processor needs to flush it’s pipeline which is worse 
+        than no prediction.
+
+    Accessing memory is the slowest CPU operation as compared to other CPU operations. 
+    To avoid this limitation, CPU uses “CPU caches” e.g L1-cache, L2-cache etc. The idea 
+    behind cache is, copy some part of memory into CPU itself. We can access cache memory
+    much faster than any other memory. But the problem is, limited size of “cache memory”, 
+    we can’t copy entire memory into cache. So, the CPU has to guess which memory is going
+    to be used in the near future and load that memory into the CPU cache and above macros 
+    are hint to load memory into the CPU cache.
